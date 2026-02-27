@@ -1,0 +1,53 @@
+{
+  "anthropic-agent-skills": {
+    "source": {
+      "source": "github",
+      "repo": "anthropics/skills"
+    },
+    "installLocation": "${CLAUDE_HOME:-$HOME/.claude}/plugins/marketplaces/anthropic-agent-skills",
+    "lastUpdated": "2026-02-27T12:34:22.625Z",
+    "autoUpdate": true
+  },
+  "superpowers-marketplace": {
+    "source": {
+      "source": "github",
+      "repo": "obra/superpowers-marketplace"
+    },
+    "installLocation": "${CLAUDE_HOME:-$HOME/.claude}/plugins/marketplaces/superpowers-marketplace",
+    "lastUpdated": "2026-02-08T17:24:07.759Z"
+  },
+  "claude-plugins-official": {
+    "source": {
+      "source": "github",
+      "repo": "anthropics/claude-plugins-official"
+    },
+    "installLocation": "${CLAUDE_HOME:-$HOME/.claude}/plugins/marketplaces/claude-plugins-official",
+    "lastUpdated": "2026-02-27T12:29:21.991Z"
+  },
+  "wshobson-agents": {
+    "source": {
+      "source": "github",
+      "repo": "wshobson/agents"
+    },
+    "installLocation": "${CLAUDE_HOME:-$HOME/.claude}/plugins/marketplaces/wshobson-agents",
+    "lastUpdated": "2026-02-27T14:03:06.600Z",
+    "autoUpdate": false
+  },
+  "claude-code-plugins-plus": {
+    "source": {
+      "source": "github",
+      "repo": "jeremylongshore/claude-code-plugins-plus"
+    },
+    "installLocation": "${CLAUDE_HOME:-$HOME/.claude}/plugins/marketplaces/claude-code-plugins-plus",
+    "lastUpdated": "2026-02-08T17:24:06.680Z",
+    "autoUpdate": false
+  },
+  "claude-code-plugins": {
+    "source": {
+      "source": "github",
+      "repo": "anthropics/claude-code"
+    },
+    "installLocation": "${CLAUDE_HOME:-$HOME/.claude}/plugins/marketplaces/claude-code-plugins",
+    "lastUpdated": "2026-02-27T14:01:30.733Z"
+  }
+}
