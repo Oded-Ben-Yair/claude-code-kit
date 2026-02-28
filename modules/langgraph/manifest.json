@@ -1,0 +1,14 @@
+{
+  "name": "langgraph",
+  "version": "2.0.0",
+  "description": "LangGraph production patterns: state machines, validation loops, guardrails, and testing",
+  "when_to_use": "Projects using LangGraph for AI agent development. Covers StateGraph patterns, structured output routing, validation loops, guardrails, and testing strategies.",
+  "type": "domain",
+  "depends_on": ["core"],
+  "files": {
+    "rules": ["langgraph-patterns.md"],
+    "docs": ["langgraph-safety.md", "langgraph-scalability.md", "langgraph-testing.md", "langgraph-domain.md"]
+  },
+  "settings_merge": {},
+  "claude_md_section": "langgraph"
+}

@@ -1,0 +1,42 @@
+{
+  "name": "devops",
+  "version": "2.0.0",
+  "description": "Cloud deployment rules, CI scripts, and pipeline safety",
+  "when_to_use": "Projects deploying to cloud platforms (GCP, AWS, Azure). Provides deployment verification, pipeline gates, and commit discipline.",
+  "type": "domain",
+  "depends_on": ["core"],
+  "files": {
+    "rules": ["cloud-deploy.md"],
+    "hooks": ["deploy-gate.sh", "periodic-commit-check.sh"],
+    "checklists": ["before-deploy.md", "before-pipeline-change.md"]
+  },
+  "settings_merge": {
+    "hooks": {
+      "PreToolUse": [
+        {
+          "matcher": "Bash",
+          "hooks": [
+            {
+              "type": "command",
+              "command": "{CLAUDE_HOME}/hooks/deploy-gate.sh",
+              "timeout": 5
+            }
+          ]
+        }
+      ],
+      "Stop": [
+        {
+          "matcher": "",
+          "hooks": [
+            {
+              "type": "command",
+              "command": "{CLAUDE_HOME}/hooks/periodic-commit-check.sh",
+              "timeout": 30
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "claude_md_section": "devops"
+}
