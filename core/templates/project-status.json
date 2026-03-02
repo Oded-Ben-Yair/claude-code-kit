@@ -1,0 +1,78 @@
+{
+  "$schema": "Project status tracking for Claude Code sessions",
+  "version": "1.0",
+  "project": {
+    "name": "{{PROJECT_NAME}}",
+    "path": "{{PROJECT_PATH}}",
+    "database": "{{DATABASE_NAME}}",
+    "production": false,
+    "lastUpdated": "{{TIMESTAMP}}"
+  },
+  "currentState": {
+    "summary": "Brief description of current state",
+    "branch": "{{GIT_BRANCH}}",
+    "lastCommit": "{{COMMIT_HASH}}",
+    "testsPass": true,
+    "buildStatus": "passing"
+  },
+  "blockers": [
+    {
+      "id": "blocker-1",
+      "description": "Description of blocking issue",
+      "severity": "high|medium|low",
+      "createdAt": "{{TIMESTAMP}}",
+      "status": "active|investigating|resolved",
+      "resolution": null
+    }
+  ],
+  "inProgress": [
+    {
+      "id": "task-1",
+      "description": "Task currently being worked on",
+      "startedAt": "{{TIMESTAMP}}",
+      "files": ["src/file1.ts", "src/file2.ts"],
+      "notes": "Any relevant notes"
+    }
+  ],
+  "nextSteps": [
+    {
+      "priority": 1,
+      "description": "Highest priority next step",
+      "estimatedComplexity": "simple|moderate|complex",
+      "dependencies": []
+    },
+    {
+      "priority": 2,
+      "description": "Second priority step",
+      "estimatedComplexity": "simple|moderate|complex",
+      "dependencies": ["task-1"]
+    }
+  ],
+  "recentDecisions": [
+    {
+      "date": "{{DATE}}",
+      "decision": "What was decided",
+      "rationale": "Why it was decided",
+      "alternatives": ["Option B", "Option C"],
+      "reversible": true
+    }
+  ],
+  "patterns": {
+    "established": [
+      "Pattern name: brief description of established pattern"
+    ],
+    "toAvoid": [
+      "Anti-pattern: why to avoid"
+    ]
+  },
+  "sessionNotes": {
+    "lastSessionId": "{{SESSION_ID}}",
+    "lastSessionDate": "{{DATE}}",
+    "carryoverNotes": "Notes carried over from last session"
+  },
+  "_instructions": {
+    "usage": "This file tracks project state across Claude Code sessions",
+    "update": "Update at session end using /end-of-session skill",
+    "read": "Automatically read at session start when entering project directory"
+  }
+}

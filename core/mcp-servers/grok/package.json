@@ -1,0 +1,29 @@
+{
+  "name": "@claude/grok-mcp",
+  "version": "1.1.0",
+  "description": "Ultimate Grok MCP Server - Full xAI API capabilities including chat, reasoning, vision, image/video generation & editing, live search, and social intelligence",
+  "type": "module",
+  "main": "dist/index.js",
+  "bin": {
+    "grok-mcp": "dist/index.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "dev": "tsx src/index.ts"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.0.0",
+    "zod": "^3.22.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "tsx": "^4.0.0",
+    "typescript": "^5.3.0"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "author": "Oded",
+  "license": "MIT"
+}
