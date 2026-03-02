@@ -1,8 +1,0 @@
-{
-  "model": "opus",
-  "_meta": {
-    "project": "Q.C Call Analyzer",
-    "type": "Python",
-    "description": "Arabic sales call quality control analysis"
-  }
-}

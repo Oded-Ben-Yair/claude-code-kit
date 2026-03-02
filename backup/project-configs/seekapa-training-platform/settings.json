@@ -1,8 +1,0 @@
-{
-  "model": "opus",
-  "_meta": {
-    "project": "Seekapa Training Platform",
-    "type": "React + Python Azure Functions",
-    "description": "Voice-based training platform with ElevenLabs"
-  }
-}
