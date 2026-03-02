@@ -1,0 +1,1258 @@
+- generic [active] [ref=e1]:
+  - generic:
+    - region "Toast message":
+      - heading "0 notifications total" [level=2] [ref=e3]
+      - alert
+  - region [ref=e4]
+  - generic [ref=e5]:
+    - generic [ref=e7]:
+      - button "Skip to search" [ref=e8] [cursor=pointer]:
+        - generic [ref=e9]: Skip to search
+      - button "Skip to main content" [ref=e10] [cursor=pointer]:
+        - generic [ref=e11]: Skip to main content
+      - button "Keyboard shortcuts" [ref=e12] [cursor=pointer]:
+        - generic [ref=e13]: Keyboard shortcuts
+      - button "Close jump menu" [ref=e14] [cursor=pointer]:
+        - img [ref=e15]
+        - generic [ref=e17]: Close jump menu
+    - banner "Global Navigation" [ref=e18]:
+      - generic [ref=e19]:
+        - link "LinkedIn" [ref=e20] [cursor=pointer]:
+          - /url: https://www.linkedin.com/feed/?nis=true
+          - img "LinkedIn" [ref=e23]:
+            - img [ref=e24]
+        - generic [ref=e28]:
+          - combobox "Search" [ref=e29]
+          - generic:
+            - img
+        - navigation "Primary Navigation" [ref=e30]:
+          - list [ref=e31]:
+            - listitem [ref=e32]:
+              - link "new feed updates notifications Home" [ref=e33] [cursor=pointer]:
+                - /url: https://www.linkedin.com/feed/?nis=true&
+                - generic [ref=e34]:
+                  - generic [ref=e37]: new feed updates notifications
+                  - img [ref=e41]
+                - generic "Home" [ref=e43]
+            - listitem [ref=e44]:
+              - link "3 new network updates notifications My Network" [ref=e45] [cursor=pointer]:
+                - /url: https://www.linkedin.com/mynetwork/?
+                - generic [ref=e46]:
+                  - generic [ref=e47]:
+                    - generic [ref=e48]: "3"
+                    - generic [ref=e49]: 3 new network updates notifications
+                  - img [ref=e53]
+                - generic "My Network" [ref=e55]
+            - listitem [ref=e56]:
+              - link "Jobs" [ref=e57] [cursor=pointer]:
+                - /url: https://www.linkedin.com/jobs/?
+                - img [ref=e61]
+                - generic "Jobs" [ref=e63]
+            - listitem [ref=e64]:
+              - link "Messaging" [ref=e65] [cursor=pointer]:
+                - /url: https://www.linkedin.com/messaging/?
+                - img [ref=e69]
+                - generic "Messaging" [ref=e71]
+            - listitem [ref=e72]:
+              - link "22 new notifications Notifications" [ref=e73] [cursor=pointer]:
+                - /url: https://www.linkedin.com/notifications/?
+                - generic [ref=e74]:
+                  - generic [ref=e75]:
+                    - generic [ref=e76]: "22"
+                    - generic [ref=e77]: 22 new notifications
+                  - img [ref=e81]
+                - generic "Notifications" [ref=e83]
+            - listitem [ref=e84]:
+              - button "Oded Ben-Yair Me" [ref=e86] [cursor=pointer]:
+                - img "Oded Ben-Yair" [ref=e87]
+                - generic [ref=e88]:
+                  - text: Me
+                  - img [ref=e89]
+            - listitem [ref=e91]:
+              - button "For Business" [ref=e93] [cursor=pointer]:
+                - img [ref=e97]
+                - generic "For Business" [ref=e99]:
+                  - text: For Business
+                  - img [ref=e100]
+            - listitem [ref=e102]:
+              - 'link "Reactivate Premium: 50% Off" [ref=e104] [cursor=pointer]':
+                - /url: http://www.linkedin.com/premium/redeem/?_ed=0_bvLJH59RTSY-u5c6PMUa4IW0M54p9mxZpuVkfRvTl7r&upsellOrderOrigin=Tracking%3Av1%3Apremium_nav_upsell_text_winback%3ANav%3AIn-Product&referenceId=J7cnZj1iTHaA8DKm93mzUQ%3D%3D&customKey=wb_c&redeemTypeV2=DISCOUNT&destRedirectURL=https%3A%2F%2Fwww.linkedin.com%2Fin%2Foded-ben-yair-ai%2F
+                - generic [ref=e106]: "Reactivate Premium: 50% Off"
+    - generic [ref=e109]:
+      - generic [ref=e112]:
+        - main [ref=e113]:
+          - generic [ref=e114]:
+            - generic [ref=e117]:
+              - button "Background Image" [ref=e118] [cursor=pointer]:
+                - img "Background Image" [ref=e120]
+              - button "Edit background" [ref=e123] [cursor=pointer]:
+                - img [ref=e124]
+            - generic [ref=e126]:
+              - generic [ref=e127]:
+                - button "Oded Ben-Yair" [ref=e132] [cursor=pointer]:
+                  - img "Oded Ben-Yair" [ref=e133]
+                - link "Edit intro" [ref=e137] [cursor=pointer]:
+                  - /url: /in/oded-ben-yair-ai/edit/intro/?profileFormEntryPoint=PROFILE_SECTION
+                  - button "Edit intro" [ref=e138]:
+                    - img [ref=e139]
+              - generic [ref=e142]:
+                - generic [ref=e143]:
+                  - link "Oded Ben-Yair" [ref=e146] [cursor=pointer]:
+                    - /url: /in/oded-ben-yair-ai/overlay/about-this-profile/
+                    - heading "Oded Ben-Yair" [level=1] [ref=e147]
+                    - img [ref=e148]
+                  - generic [ref=e150]: Founding AI Engineer | Multi-LLM Routing & Evaluation in Production | Voice AI · RAG | Azure + Python
+                - generic [ref=e151]:
+                  - generic [ref=e152]: Tel Aviv-Yafo, Tel Aviv District, Israel
+                  - generic [ref=e153]:
+                    - text: ·
+                    - link "Contact info" [ref=e154] [cursor=pointer]:
+                      - /url: /in/oded-ben-yair-ai/overlay/contact-info/
+              - link "GitHub" [ref=e156] [cursor=pointer]:
+                - /url: https://github.com/Oded-Ben-Yair
+                - strong [ref=e157]: GitHub
+                - img [ref=e159]
+              - list [ref=e161]:
+                - listitem [ref=e162]:
+                  - link "500+ connections" [ref=e163] [cursor=pointer]:
+                    - /url: /mynetwork/invite-connect/connections/
+                    - generic [ref=e164]: 500+ connections
+              - generic [ref=e165]:
+                - button "Open to" [ref=e167] [cursor=pointer]
+                - button "Add profile section" [ref=e168] [cursor=pointer]:
+                  - generic [ref=e169]: Add profile section
+                - generic [ref=e170]:
+                  - button "Enhance profile" [ref=e171] [cursor=pointer]:
+                    - generic [ref=e172]: Enhance profile
+                  - button "Resources" [ref=e174] [cursor=pointer]:
+                    - generic [ref=e175]: Resources
+            - generic [ref=e178]:
+              - link "Open to work Artificial Intelligence Engineer, Machine Learning Engineer, Senior Software Engineer, AI Developer and AI Software Engineer roles Show details" [ref=e179] [cursor=pointer]:
+                - /url: https://www.linkedin.com/in/oded-ben-yair-ai/opportunities/job-opportunities/details?profileUrn=urn%3Ali%3Afs_normalized_profile%3AACoAABEJXkIBpHRsj0zFy126tNlNuHKxpGElSpQ&trk=opento_sprofile_details
+                - heading "Open to work" [level=3] [ref=e180]:
+                  - strong [ref=e181]: Open to work
+                - paragraph [ref=e182]: Artificial Intelligence Engineer, Machine Learning Engineer, Senior Software Engineer, AI Developer and AI Software Engineer roles
+                - paragraph [ref=e183]: Show details
+              - link "Edit Open to work" [ref=e185] [cursor=pointer]:
+                - /url: https://www.linkedin.com/in/oded-ben-yair-ai/opportunities/job-opportunities/edit?origin=PROFILE_TOP_CARD&trk=opento_sprofile_topcard
+                - button "Edit" [ref=e186]:
+                  - img [ref=e187]
+                  - generic [ref=e189]: Edit
+          - generic [ref=e190]:
+            - generic [ref=e194]:
+              - heading "Suggested for you" [level=2] [ref=e195]:
+                - generic [ref=e196]: Suggested for you
+                - generic [ref=e197]: Suggested for you
+              - paragraph [ref=e198]:
+                - generic [ref=e199]:
+                  - img [ref=e201]
+                  - text: Private to you
+                - generic [ref=e203]:
+                  - img [ref=e205]
+                  - text: Private to you
+            - list [ref=e211]:
+              - listitem [ref=e212]:
+                - generic [ref=e215]:
+                  - button "Dismiss Add project" [ref=e218] [cursor=pointer]:
+                    - img [ref=e219]
+                  - generic [ref=e222]:
+                    - img [ref=e225]:
+                      - img [ref=e226]
+                    - generic [ref=e230]:
+                      - generic [ref=e231]: Add Github projects that showcase your skills
+                      - generic [ref=e232]: Add Github projects that showcase your skills
+                  - generic [ref=e233]:
+                    - generic [ref=e236]:
+                      - generic [ref=e237]: Show recruiters how you put your skills to use by adding projects to your profile.
+                      - generic [ref=e238]: Show recruiters how you put your skills to use by adding projects to your profile.
+                    - link "Add project" [ref=e242] [cursor=pointer]:
+                      - /url: https://www.linkedin.com/in/oded-ben-yair-ai/add-edit/PROJECT/?profileFormEntryPoint=GUIDANCE_CARD&trackingId=63B%2B3rqsRVWfh15Qd6VazQ%3D%3D&desktopBackground=MAIN_PROFILE&legoTrackingId=0McjRBuCBjum5Is7dFp2oMbz0Zpn9LoRdT9zROol1Ipl9T9zRArQRIpl9T9zAVejAVfmhBt7dBtn5BkCRRrypejQBkildfk3RVgD9Bp79ft6lDp6BT9DdQoSlGrT9MnShAolYOtChxs6xzrDlxr3RAinhBpShFtOoOfmVLqnhFsSZgt6lDp6BT9z0Kc3RBsCZzkT9D9zROol1Ipl9OpOoZp6Zdr6lisCsCc3RKrSBQqndLk71RrT9D9zAVejAVfmhBt7dBtn5BkCRRjD1RrT9D9DdKrSBQoS5vpmdKomhFtmsZp4BMtmZOpOpejQBkildfk3RVgD9Bp79L9DhItm5CpmgZp4BQrClJpSlP9DdAsC5zpmdKomhFtmtBr6BCrT9Mfmh9t6ZIsOpQr7lxpClAfmh9t7lLum5I9C5yryRAon1EoSVRomMZpmRxjClDon0Cq7hTrT9Dfmh9s71x9zkQejgNcPRAimVLqndOpnoCdz8Sdz8UdjwOfmh9tioSdj4Ooz5BcjtxcCoJoztBoyRBd3kQbj1Ccm4Jem4Uoz4OpjkZp4BQu6lQrCZz
+                      - generic [ref=e243]: Add project
+          - generic [ref=e245]:
+            - generic [ref=e249]:
+              - heading "Analytics" [level=2] [ref=e250]:
+                - generic [ref=e251]: Analytics
+                - generic [ref=e252]: Analytics
+              - paragraph [ref=e253]:
+                - generic [ref=e254]:
+                  - img [ref=e256]
+                  - text: Private to you
+                - generic [ref=e258]:
+                  - img [ref=e260]
+                  - text: Private to you
+            - generic [ref=e262]:
+              - list [ref=e263]:
+                - listitem [ref=e264]:
+                  - generic [ref=e265]:
+                    - link "168 profile views" [ref=e267] [cursor=pointer]:
+                      - /url: https://www.linkedin.com/me/profile-views
+                      - img "168 profile views" [ref=e270]:
+                        - img [ref=e271]
+                    - link "168 profile views Discover who's viewed your profile." [ref=e275] [cursor=pointer]:
+                      - /url: https://www.linkedin.com/me/profile-views
+                      - generic [ref=e279]:
+                        - generic [ref=e280]: 168 profile views
+                        - generic [ref=e281]: 168 profile views
+                      - generic [ref=e282]:
+                        - generic [ref=e283]: Discover who's viewed your profile.
+                        - generic [ref=e284]: Discover who's viewed your profile.
+                - listitem [ref=e285]:
+                  - generic [ref=e286]:
+                    - link "163 post impressions" [ref=e288] [cursor=pointer]:
+                      - /url: https://www.linkedin.com/analytics/creator/content?timeRange=past_7_days&dimension=INDUSTRY&metricType=IMPRESSIONS
+                      - img "163 post impressions" [ref=e291]:
+                        - img [ref=e292]
+                    - link "163 post impressions Check out who's engaging with your posts. Past 7 days" [ref=e296] [cursor=pointer]:
+                      - /url: https://www.linkedin.com/analytics/creator/content?timeRange=past_7_days&dimension=INDUSTRY&metricType=IMPRESSIONS
+                      - generic [ref=e300]:
+                        - generic [ref=e301]: 163 post impressions
+                        - generic [ref=e302]: 163 post impressions
+                      - generic [ref=e303]:
+                        - generic [ref=e304]: Check out who's engaging with your posts.
+                        - generic [ref=e305]: Check out who's engaging with your posts.
+                      - generic [ref=e306]:
+                        - generic [ref=e307]: Past 7 days
+                        - generic [ref=e308]: Past 7 days
+                - listitem [ref=e309]:
+                  - generic [ref=e310]:
+                    - link "94 search appearances" [ref=e312] [cursor=pointer]:
+                      - /url: https://www.linkedin.com/me/search-appearances/
+                      - img "94 search appearances" [ref=e315]:
+                        - img [ref=e316]
+                    - link "94 search appearances See how often you appear in search results." [ref=e320] [cursor=pointer]:
+                      - /url: https://www.linkedin.com/me/search-appearances/
+                      - generic [ref=e324]:
+                        - generic [ref=e325]: 94 search appearances
+                        - generic [ref=e326]: 94 search appearances
+                      - generic [ref=e327]:
+                        - generic [ref=e328]: See how often you appear in search results.
+                        - generic [ref=e329]: See how often you appear in search results.
+              - link "Show all analytics" [ref=e333] [cursor=pointer]:
+                - /url: https://www.linkedin.com/dashboard
+                - generic [ref=e334]: Show all analytics
+                - img [ref=e336]
+          - generic [ref=e338]:
+            - generic [ref=e340]:
+              - heading "About" [level=2] [ref=e343]:
+                - generic [ref=e344]: About
+                - generic [ref=e345]: About
+              - link "Edit about" [ref=e349] [cursor=pointer]:
+                - /url: https://www.linkedin.com/in/oded-ben-yair-ai/add-edit/SUMMARY/?profileFormEntryPoint=PROFILE_SECTION&trackingId=gSlCc3TyQkq77%2BfVjTC6dw%3D%3D
+                - img "Edit about" [ref=e351]
+            - generic [ref=e356]:
+              - generic [ref=e357]:
+                - text: My route into AI started in operations. Four years building reliability systems, feedback loops, and data-driven optimization taught me most problems come down to getting the right information to the right person at the right time, consistently. That realization pulled me toward AI engineering.
+                - text: "I retrained through Infinity Labs' intensive program (Python, data structures, OOP, Linux, networking) and 500+ hours of ML coursework through DeepLearning.ai and Coursera. Four years in operations showed me where reliable AI systems were needed; I wanted to build them. I joined Be Z Online, a regulated online trading platform, as their first AI hire. The job: build and ship the company's first AI microservices in under nine months, working with product, compliance, and marketing teams to define what each system needed to do and what \"good enough to ship\" actually meant. We made architecture choices around latency, auditability, and failure modes, especially for compliance. Six production microservices later, the platform runs across 15 Azure Function Apps: Our multi-LLM prediction engine uses Thompson Sampling to route queries across four model providers based on historical accuracy. It cut the neutral prediction rate from 87% to 42%. Traders wanted clear signals, not hedged non-answers. The Hebrew/Arabic voice AI was the hardest challenge. Three failed approaches before we found the right ASR pipeline. Off-the-shelf STT falls apart on Semitic languages with dialect mixing and code-switching on long financial calls. We got word error rate below 5% on 2+ hour calls, validated against manual annotations (Semitic ASR baseline: 12–15%), replacing 3-hour manual reviews with 15-minute automated analysis. In trading and compliance, partial accuracy isn't acceptable, so we invested heavily in guardrails, monitoring, and consistent quality checks before each deployment. Engineering: automated tests (unit, integration, LLM evaluation via DeepEval + Braintrust) gating every deployment. CI/CD through Azure DevOps, Docker, Key Vault RBAC, model monitoring on outputs. Architecture decisions validated with CTO and compliance stakeholders. I prefer simple architectures, the kind you can explain to regulators and debug at 2 a.m. Stack: Python · Azure Functions · Durable Functions · AI Foundry · DevOps · PostgreSQL · Next.js · ElevenLabs I build in the open. github.com/Oded-Ben-Yair has my llm-conversational-router and claude-code-orchestra projects. Native Hebrew, fluent English, based in Israel."
+              - generic [ref=e359]: "My route into AI started in operations. Four years building reliability systems, feedback loops, and data-driven optimization taught me most problems come down to getting the right information to the right person at the right time, consistently. That realization pulled me toward AI engineering. I retrained through Infinity Labs' intensive program (Python, data structures, OOP, Linux, networking) and 500+ hours of ML coursework through DeepLearning.ai and Coursera. Four years in operations showed me where reliable AI systems were needed; I wanted to build them. I joined Be Z Online, a regulated online trading platform, as their first AI hire. The job: build and ship the company's first AI microservices in under nine months, working with product, compliance, and marketing teams to define what each system needed to do and what \"good enough to ship\" actually meant. We made architecture choices around latency, auditability, and failure modes, especially for compliance. Six production microservices later, the platform runs across 15 Azure Function Apps: Our multi-LLM prediction engine uses Thompson Sampling to route queries across four model providers based on historical accuracy. It cut the neutral prediction rate from 87% to 42%. Traders wanted clear signals, not hedged non-answers. The Hebrew/Arabic voice AI was the hardest challenge. Three failed approaches before we found the right ASR pipeline. Off-the-shelf STT falls apart on Semitic languages with dialect mixing and code-switching on long financial calls. We got word error rate below 5% on 2+ hour calls, validated against manual annotations (Semitic ASR baseline: 12–15%), replacing 3-hour manual reviews with 15-minute automated analysis. In trading and compliance, partial accuracy isn't acceptable, so we invested heavily in guardrails, monitoring, and consistent quality checks before each deployment. Engineering: automated tests (unit, integration, LLM evaluation via DeepEval + Braintrust) gating every deployment. CI/CD through Azure DevOps, Docker, Key Vault RBAC, model monitoring on outputs. Architecture decisions validated with CTO and compliance stakeholders. I prefer simple architectures, the kind you can explain to regulators and debug at 2 a.m. Stack: Python · Azure Functions · Durable Functions · AI Foundry · DevOps · PostgreSQL · Next.js · ElevenLabs I build in the open. github.com/Oded-Ben-Yair has my llm-conversational-router and claude-code-orchestra projects. Native Hebrew, fluent English, based in Israel."
+            - list [ref=e362]:
+              - listitem [ref=e363]:
+                - generic [ref=e365]:
+                  - img "Top skills" [ref=e370]
+                  - generic [ref=e374]:
+                    - generic [ref=e378]:
+                      - generic [ref=e379]: Top skills
+                      - generic [ref=e380]: Top skills
+                    - generic [ref=e383]:
+                      - generic [ref=e384]: Python (Programming Language) • Large Language Models (LLM) • Microsoft Azure • Machine Learning • Retrieval-Augmented Generation (RAG)
+                      - generic [ref=e385]: Python (Programming Language) • Large Language Models (LLM) • Microsoft Azure • Machine Learning • Retrieval-Augmented Generation (RAG)
+                  - link "Show top skills" [ref=e389] [cursor=pointer]:
+                    - /url: https://www.linkedin.com/in/oded-ben-yair-ai/overlay/top-skills-details?profileUrn=urn%3Ali%3Afsd_profile%3AACoAABEJXkIBpHRsj0zFy126tNlNuHKxpGElSpQ
+                    - img [ref=e391]
+          - generic [ref=e393]:
+            - generic [ref=e395]:
+              - heading "Featured" [level=2] [ref=e398]:
+                - generic [ref=e399]: Featured
+                - generic [ref=e400]: Featured
+              - generic [ref=e401]:
+                - button "Featured overflow menu" [ref=e404] [cursor=pointer]:
+                  - img "Featured overflow menu" [ref=e407]:
+                    - img [ref=e408]
+                - link "View featured detail screen" [ref=e412] [cursor=pointer]:
+                  - /url: https://www.linkedin.com/in/oded-ben-yair-ai/details/featured?profileUrn=urn%3Ali%3Afsd_profile%3AACoAABEJXkIBpHRsj0zFy126tNlNuHKxpGElSpQ
+                  - img "View featured detail screen" [ref=e414]
+            - list [ref=e419]:
+              - listitem [ref=e420]:
+                - generic [ref=e423]:
+                  - link "Link" [ref=e424] [cursor=pointer]:
+                    - /url: https://www.linkedin.com/in/oded-ben-yair-ai/overlay/1770486086722/single-media-viewer?type=LINK&profileId=ACoAABEJXkIBpHRsj0zFy126tNlNuHKxpGElSpQ
+                    - generic [ref=e426]:
+                      - generic [ref=e427]: Link
+                      - generic [ref=e428]: Link
+                  - 'link "Claude Code Orchestra — Multi-Agent AI Development Environment GitHub Production-grade AI orchestration: 24 skills, 26 hooks, 11 specialized agents, 7 MCP servers. Demonstrates architect-planner → code-worker → code-judge pipeline for complex software engineering workflows." [ref=e429] [cursor=pointer]':
+                    - /url: https://www.linkedin.com/in/oded-ben-yair-ai/overlay/1770486086722/single-media-viewer?type=LINK&profileId=ACoAABEJXkIBpHRsj0zFy126tNlNuHKxpGElSpQ
+                    - generic [ref=e430]:
+                      - img [ref=e432]:
+                        - img [ref=e433]
+                      - generic [ref=e435]:
+                        - generic [ref=e436]:
+                          - generic [ref=e440]:
+                            - generic [ref=e441]: Claude Code Orchestra — Multi-Agent AI Development Environment
+                            - generic [ref=e442]: Claude Code Orchestra — Multi-Agent AI Development Environment
+                          - generic [ref=e443]:
+                            - generic [ref=e444]: GitHub
+                            - generic [ref=e445]: GitHub
+                        - generic [ref=e449]:
+                          - generic [ref=e450]: "Production-grade AI orchestration: 24 skills, 26 hooks, 11 specialized agents, 7 MCP servers. Demonstrates architect-planner → code-worker → code-judge pipeline for complex software engineering workflows."
+                          - generic [ref=e451]: "Production-grade AI orchestration: 24 skills, 26 hooks, 11 specialized agents, 7 MCP servers. Demonstrates architect-planner → code-worker → code-judge pipeline for complex software engineering workflows."
+              - listitem [ref=e452]:
+                - generic [ref=e455]:
+                  - link "Link" [ref=e456] [cursor=pointer]:
+                    - /url: https://www.linkedin.com/in/oded-ben-yair-ai/overlay/1770486044586/single-media-viewer?type=LINK&profileId=ACoAABEJXkIBpHRsj0zFy126tNlNuHKxpGElSpQ
+                    - generic [ref=e458]:
+                      - generic [ref=e459]: Link
+                      - generic [ref=e460]: Link
+                  - link "LLM Conversational Router — Open Source Multi-LLM Routing GitHub Contextual bandit routing across 4 LLM providers (Claude, Gemini, Grok, Perplexity) with Thompson Sampling for cost-performance optimization. Sentiment-aware rerouting, token budget management, and Streamlit monitoring dashboard. Python + Docker Compose." [ref=e461] [cursor=pointer]:
+                    - /url: https://www.linkedin.com/in/oded-ben-yair-ai/overlay/1770486044586/single-media-viewer?type=LINK&profileId=ACoAABEJXkIBpHRsj0zFy126tNlNuHKxpGElSpQ
+                    - generic [ref=e462]:
+                      - img [ref=e464]:
+                        - img [ref=e465]
+                      - generic [ref=e467]:
+                        - generic [ref=e468]:
+                          - generic [ref=e472]:
+                            - generic [ref=e473]: LLM Conversational Router — Open Source Multi-LLM Routing
+                            - generic [ref=e474]: LLM Conversational Router — Open Source Multi-LLM Routing
+                          - generic [ref=e475]:
+                            - generic [ref=e476]: GitHub
+                            - generic [ref=e477]: GitHub
+                        - generic [ref=e481]:
+                          - generic [ref=e482]: Contextual bandit routing across 4 LLM providers (Claude, Gemini, Grok, Perplexity) with Thompson Sampling for cost-performance optimization. Sentiment-aware rerouting, token budget management, and Streamlit monitoring dashboard. Python + Docker Compose.
+                          - generic [ref=e483]: Contextual bandit routing across 4 LLM providers (Claude, Gemini, Grok, Perplexity) with Thompson Sampling for cost-performance optimization. Sentiment-aware rerouting, token budget management, and Streamlit monitoring dashboard. Python + Docker Compose.
+          - generic [ref=e485]:
+            - generic [ref=e487]:
+              - generic [ref=e488]:
+                - generic [ref=e489]:
+                  - heading "Activity" [level=2] [ref=e490]:
+                    - generic [ref=e491]: Activity
+                    - generic [ref=e492]: Activity
+                  - paragraph [ref=e493]:
+                    - link [ref=e495] [cursor=pointer]:
+                      - /url: https://www.linkedin.com/feed/followers/
+                      - strong [ref=e496]: 5,163 followers
+                    - link "5,163 followers" [ref=e498] [cursor=pointer]:
+                      - /url: https://www.linkedin.com/feed/followers/
+                      - strong [ref=e499]: 5,163 followers
+                - link "Create a post" [ref=e503] [cursor=pointer]:
+                  - /url: https://www.linkedin.com/in/oded-ben-yair-ai/overlay/create-post
+                  - generic [ref=e504]: Create a post
+              - link "Edit default content type" [ref=e508] [cursor=pointer]:
+                - /url: https://www.linkedin.com/in/oded-ben-yair-ai/add-edit/CONTENT_COLLECTIONS_STAR_PILL/?profileFormEntryPoint=PROFILE_SECTION&trackingId=2TZWVa1uSjuwFKqIw0g%2FFQ%3D%3D
+                - img [ref=e510]
+            - group "Select type of recent activity" [ref=e514]:
+              - button "Posts" [pressed] [ref=e515] [cursor=pointer]:
+                - generic [ref=e516]: Posts
+              - button "Comments" [ref=e517] [cursor=pointer]:
+                - generic [ref=e518]: Comments
+              - button "Videos" [ref=e519] [cursor=pointer]:
+                - generic [ref=e520]: Videos
+              - button "Images" [ref=e521] [cursor=pointer]:
+                - generic [ref=e522]: Images
+              - button "Documents" [ref=e523] [cursor=pointer]:
+                - generic [ref=e524]: Documents
+            - generic [ref=e528]:
+              - generic [ref=e529]: Loaded 9 Posts posts
+              - generic [ref=e530]:
+                - list [ref=e534]:
+                  - listitem [ref=e535]:
+                    - article [ref=e539]:
+                      - generic [ref=e542]:
+                        - generic [ref=e544]:
+                          - link "View Oded Ben-Yair’s graphic link" [ref=e545] [cursor=pointer]:
+                            - /url: https://www.linkedin.com/in/oded-ben-yair-ai?miniProfileUrn=urn%3Ali%3Afsd_profile%3AACoAABEJXkIBpHRsj0zFy126tNlNuHKxpGElSpQ
+                            - img "View Oded Ben-Yair’s graphic link" [ref=e549]
+                          - generic [ref=e550]:
+                            - 'link "View: Oded Ben-Yair Verified • You Founding AI Engineer | Multi-LLM Routing &amp; Evaluation in Production | Voice AI · RAG | Azure + Python" [ref=e551] [cursor=pointer]':
+                              - /url: https://www.linkedin.com/in/oded-ben-yair-ai?miniProfileUrn=urn%3Ali%3Afsd_profile%3AACoAABEJXkIBpHRsj0zFy126tNlNuHKxpGElSpQ
+                              - generic [ref=e552]:
+                                - generic [ref=e554]:
+                                  - generic [ref=e555]: Oded Ben-Yair
+                                  - generic [ref=e556]: Oded Ben-Yair
+                                - generic [ref=e557]:
+                                  - generic [ref=e558]:
+                                    - img [ref=e559]
+                                    - text: • You
+                                  - generic [ref=e561]: Verified • You
+                              - generic [ref=e562]:
+                                - generic [ref=e563]: Founding AI Engineer | Multi-LLM Routing & Evaluation in Production | Voice AI · RAG | Azure + Python
+                                - generic [ref=e564]: Founding AI Engineer | Multi-LLM Routing & Evaluation in Production | Voice AI · RAG | Azure + Python
+                            - generic [ref=e565]:
+                              - generic [ref=e566]:
+                                - text: 1h •
+                                - img [ref=e569]
+                              - generic [ref=e571]: 1 hour ago • Visible to anyone on or off LinkedIn
+                        - button "Open control menu for post by Oded Ben-Yair" [ref=e574] [cursor=pointer]:
+                          - img [ref=e575]
+                        - 'link "months of shipping AI to production and the thing that surprised me most: the hard part isn''t building the model. it''s catching the 15% of cases where the model is confidently wrong. we built confidence scoring, threshold gates, fallback chains. half our architecture exists just to handle \"I don''t know\" gracefully. everyone demos the 85% that works. nobody shows the engineering behind the 15% that doesn''t." [ref=e579] [cursor=pointer]':
+                          - /url: /feed/update/urn:li:activity:7429438231991009280/
+                          - generic [ref=e583]:
+                            - text: "months of shipping AI to production and the thing that surprised me most:"
+                            - text: the hard part isn't building the model. it's catching the 15% of cases where the model is confidently wrong.
+                            - text: we built confidence scoring, threshold gates, fallback chains. half our architecture exists just to handle "I don't know" gracefully.
+                            - text: everyone demos the 85% that works. nobody shows the engineering behind the 15% that doesn't.
+                        - generic [ref=e584]:
+                          - list [ref=e588]:
+                            - listitem [ref=e589]:
+                              - button "1 reaction" [ref=e590] [cursor=pointer]:
+                                - img "like" [ref=e591]
+                                - generic [ref=e592]: "1"
+                          - generic [ref=e593]:
+                            - generic [ref=e594]:
+                              - button "React Like" [ref=e595] [cursor=pointer]:
+                                - img [ref=e598]
+                              - button "Open reactions menu":
+                                - img [ref=e601] [cursor=pointer]
+                            - link "Comment" [ref=e605] [cursor=pointer]:
+                              - img [ref=e606]
+                            - button "Repost" [ref=e609] [cursor=pointer]:
+                              - img [ref=e610]
+                            - button "Send in a private message" [ref=e614] [cursor=pointer]:
+                              - img [ref=e615]
+                  - listitem [ref=e617]:
+                    - article [ref=e621]:
+                      - generic [ref=e624]:
+                        - generic [ref=e626]:
+                          - link "View Oded Ben-Yair’s graphic link" [ref=e627] [cursor=pointer]:
+                            - /url: https://www.linkedin.com/in/oded-ben-yair-ai?miniProfileUrn=urn%3Ali%3Afsd_profile%3AACoAABEJXkIBpHRsj0zFy126tNlNuHKxpGElSpQ
+                            - img "View Oded Ben-Yair’s graphic link" [ref=e631]
+                          - generic [ref=e632]:
+                            - 'link "View: Oded Ben-Yair Verified • You Founding AI Engineer | Multi-LLM Routing &amp; Evaluation in Production | Voice AI · RAG | Azure + Python" [ref=e633] [cursor=pointer]':
+                              - /url: https://www.linkedin.com/in/oded-ben-yair-ai?miniProfileUrn=urn%3Ali%3Afsd_profile%3AACoAABEJXkIBpHRsj0zFy126tNlNuHKxpGElSpQ
+                              - generic [ref=e634]:
+                                - generic [ref=e636]:
+                                  - generic [ref=e637]: Oded Ben-Yair
+                                  - generic [ref=e638]: Oded Ben-Yair
+                                - generic [ref=e639]:
+                                  - generic [ref=e640]:
+                                    - img [ref=e641]
+                                    - text: • You
+                                  - generic [ref=e643]: Verified • You
+                              - generic [ref=e644]:
+                                - generic [ref=e645]: Founding AI Engineer | Multi-LLM Routing & Evaluation in Production | Voice AI · RAG | Azure + Python
+                                - generic [ref=e646]: Founding AI Engineer | Multi-LLM Routing & Evaluation in Production | Voice AI · RAG | Azure + Python
+                            - generic [ref=e647]:
+                              - generic [ref=e648]:
+                                - text: 6mo •
+                                - img [ref=e651]
+                              - generic [ref=e653]: 6 months ago • Visible to anyone on or off LinkedIn
+                        - button "Open control menu for post by Oded Ben-Yair" [ref=e656] [cursor=pointer]:
+                          - img [ref=e657]
+                        - generic [ref=e659]:
+                          - link "אני שמח לשתף שאני מתחיל תפקיד חדש בתור ‏Ai specialist ‏!" [ref=e661] [cursor=pointer]:
+                            - /url: /feed/update/urn:li:activity:7356537100394987520/
+                            - generic [ref=e665]: אני שמח לשתף שאני מתחיל תפקיד חדש בתור ‏Ai specialist ‏!
+                          - generic [ref=e666]:
+                            - button "Activate link to view larger image." [ref=e669] [cursor=pointer]
+                            - generic [ref=e670]: Starting a New Position
+                        - generic [ref=e671]:
+                          - list [ref=e675]:
+                            - listitem [ref=e676]:
+                              - button "91 reactions" [ref=e677] [cursor=pointer]:
+                                - img "like" [ref=e678]
+                                - img "celebrate" [ref=e679]
+                                - generic [ref=e680]: "91"
+                              - text: ·
+                            - listitem [ref=e681]:
+                              - list [ref=e682]:
+                                - listitem [ref=e683]:
+                                  - link "24 comments on Oded Ben-Yair’s post" [ref=e684] [cursor=pointer]:
+                                    - generic [ref=e685]: 24 comments
+                          - generic [ref=e686]:
+                            - generic [ref=e687]:
+                              - button "React Like" [ref=e688] [cursor=pointer]:
+                                - img [ref=e691]
+                              - button "Open reactions menu":
+                                - img [ref=e694] [cursor=pointer]
+                            - link "Comment" [ref=e698] [cursor=pointer]:
+                              - img [ref=e699]
+                            - button "Repost" [ref=e702] [cursor=pointer]:
+                              - img [ref=e703]
+                            - button "Send in a private message" [ref=e707] [cursor=pointer]:
+                              - img [ref=e708]
+                  - listitem [ref=e710]
+                  - listitem [ref=e712]
+                  - listitem [ref=e714]
+                  - listitem [ref=e716]
+                  - listitem [ref=e718]
+                  - listitem [ref=e720]
+                  - listitem [ref=e722]
+                - button "Navigate to next update" [ref=e725] [cursor=pointer]:
+                  - img [ref=e726]
+            - link "Show all posts" [ref=e730] [cursor=pointer]:
+              - /url: https://www.linkedin.com/in/oded-ben-yair-ai/recent-activity/all/
+              - img [ref=e731]
+              - generic [ref=e733]: Show all posts
+          - generic [ref=e734]:
+            - generic [ref=e736]:
+              - heading "Experience" [level=2] [ref=e739]:
+                - generic [ref=e740]: Experience
+                - generic [ref=e741]: Experience
+              - generic [ref=e742]:
+                - button "Add new experience" [ref=e745] [cursor=pointer]:
+                  - img "Add new experience" [ref=e748]:
+                    - img [ref=e749]
+                - link "View experience detail screen" [ref=e753] [cursor=pointer]:
+                  - /url: https://www.linkedin.com/in/oded-ben-yair-ai/details/experience?profileUrn=urn%3Ali%3Afsd_profile%3AACoAABEJXkIBpHRsj0zFy126tNlNuHKxpGElSpQ
+                  - img "View experience detail screen" [ref=e755]
+            - list [ref=e758]:
+              - listitem [ref=e759]:
+                - generic [ref=e760]:
+                  - link "Be Z Online logo" [ref=e762] [cursor=pointer]:
+                    - /url: https://www.linkedin.com/company/79019575/
+                    - img "Be Z Online logo" [ref=e765]
+                  - generic [ref=e766]:
+                    - link "Founding AI Engineer Be Z Online · Full-time Jun 2025 to Present · 9 mos Israel · On-site" [ref=e768] [cursor=pointer]:
+                      - /url: https://www.linkedin.com/in/oded-ben-yair-ai/add-edit/POSITION/?profileFormEntryPoint=PROFILE_SECTION&entityUrn=urn%3Ali%3Afsd_profilePosition%3A%28ACoAABEJXkIBpHRsj0zFy126tNlNuHKxpGElSpQ%2C2693018398%29&trackingId=NPQGgWWrSvGS%2B4dNz5mvug%3D%3D&desktopBackground=MAIN_PROFILE
+                      - generic [ref=e772]:
+                        - generic [ref=e773]: Founding AI Engineer
+                        - generic [ref=e774]: Founding AI Engineer
+                      - generic [ref=e775]:
+                        - generic [ref=e776]: Be Z Online · Full-time
+                        - generic [ref=e777]: Be Z Online · Full-time
+                      - generic [ref=e778]:
+                        - generic [ref=e779]: Jun 2025 - Present · 9 mos
+                        - generic [ref=e780]: Jun 2025 to Present · 9 mos
+                      - generic [ref=e781]:
+                        - generic [ref=e782]: Israel · On-site
+                        - generic [ref=e783]: Israel · On-site
+                    - list [ref=e785]:
+                      - listitem [ref=e786]:
+                        - list [ref=e788]:
+                          - listitem [ref=e789]:
+                            - generic [ref=e793]:
+                              - generic [ref=e794]: "First AI hire at a regulated online trading platform. Delivered six production microservices in under nine months, scoping requirements with product, compliance, and engineering leadership. Architecture decisions validated through weekly design reviews with CTO and compliance stakeholders. • Multi-LLM prediction engine uses Thompson Sampling to route across four providers based on historical accuracy per asset type. Selected after testing static routing and weighted averages; handled cold-start better and adapted to accuracy drift. 174K executions monthly across 111 financial assets; neutral prediction rate dropped from 87% to 42%, giving traders directional signals instead of hedged non-answers. • Hebrew/Arabic voice AI was the hardest problem. Three failed ASR approaches before finding the right pipeline. Off-the-shelf STT breaks down on Semitic languages with dialect mixing and code-switching on long calls. Below 5% word error rate on 2+ hour financial calls (industry baseline: 12–15%), replacing 3-hour manual compliance reviews with 15-minute automated analysis. • Iterated on AI customer service agents to reach 91.9% pass rate on 221 quality checks: faithfulness, hallucination, relevance (conservative baseline was 65%, tightened through retrieval tuning and prompt guardrails). Also automated 24 daily marketing assets in 4 languages, freeing ~26 hours/week of manual effort. • Engineering: 300+ automated tests gating every deployment through Azure DevOps CI/CD. Docker deployments, Key Vault RBAC, per-app database isolation (chosen over shared schemas for failure isolation and per-service compliance audits), bias monitoring on LLM outputs. Integrated 18+ external data APIs with retry logic, rate limiting, and circuit breakers. Stack: Python, Azure Functions, Azure Durable Functions, Azure AI Foundry, Azure DevOps, PostgreSQL, Next.js, ElevenLabs, Docker"
+                              - generic [ref=e795]: "First AI hire at a regulated online trading platform. Delivered six production microservices in under nine months, scoping requirements with product, compliance, and engineering leadership. Architecture decisions validated through weekly design reviews with CTO and compliance stakeholders. • Multi-LLM prediction engine uses Thompson Sampling to route across four providers based on historical accuracy per asset type. Selected after testing static routing and weighted averages; handled cold-start better and adapted to accuracy drift. 174K executions monthly across 111 financial assets; neutral prediction rate dropped from 87% to 42%, giving traders directional signals instead of hedged non-answers. • Hebrew/Arabic voice AI was the hardest problem. Three failed ASR approaches before finding the right pipeline. Off-the-shelf STT breaks down on Semitic languages with dialect mixing and code-switching on long calls. Below 5% word error rate on 2+ hour financial calls (industry baseline: 12–15%), replacing 3-hour manual compliance reviews with 15-minute automated analysis. • Iterated on AI customer service agents to reach 91.9% pass rate on 221 quality checks: faithfulness, hallucination, relevance (conservative baseline was 65%, tightened through retrieval tuning and prompt guardrails). Also automated 24 daily marketing assets in 4 languages, freeing ~26 hours/week of manual effort. • Engineering: 300+ automated tests gating every deployment through Azure DevOps CI/CD. Docker deployments, Key Vault RBAC, per-app database isolation (chosen over shared schemas for failure isolation and per-service compliance audits), bias monitoring on LLM outputs. Integrated 18+ external data APIs with retry logic, rate limiting, and circuit breakers. Stack: Python, Azure Functions, Azure Durable Functions, Azure AI Foundry, Azure DevOps, PostgreSQL, Next.js, ElevenLabs, Docker"
+                      - listitem [ref=e796]:
+                        - list [ref=e798]:
+                          - listitem [ref=e799]:
+                            - link "Microsoft Azure" [ref=e801] [cursor=pointer]:
+                              - /url: https://www.linkedin.com/in/oded-ben-yair-ai/overlay/urn:li:fsd_profilePosition:(ACoAABEJXkIBpHRsj0zFy126tNlNuHKxpGElSpQ,2693018398)/skill-associations-details?profileUrn=urn%3Ali%3Afsd_profile%3AACoAABEJXkIBpHRsj0zFy126tNlNuHKxpGElSpQ
+                              - list [ref=e803]:
+                                - listitem [ref=e804]:
+                                  - img [ref=e806]
+                              - strong [ref=e811]: Microsoft Azure
+              - listitem [ref=e812]:
+                - generic [ref=e813]:
+                  - link "Outlier logo" [ref=e815] [cursor=pointer]:
+                    - /url: https://www.linkedin.com/company/92583550/
+                    - img "Outlier logo" [ref=e818]
+                  - generic [ref=e819]:
+                    - link "AI Model Quality Analyst (Part-Time Contract) Outlier · Contract Oct 2024 to Jul 2025 · 10 mos United States · Remote" [ref=e821] [cursor=pointer]:
+                      - /url: https://www.linkedin.com/in/oded-ben-yair-ai/add-edit/POSITION/?profileFormEntryPoint=PROFILE_SECTION&entityUrn=urn%3Ali%3Afsd_profilePosition%3A%28ACoAABEJXkIBpHRsj0zFy126tNlNuHKxpGElSpQ%2C2509331037%29&trackingId=UtKOlAc5Ryqs6WaRj6Hw5A%3D%3D&desktopBackground=MAIN_PROFILE
+                      - generic [ref=e825]:
+                        - generic [ref=e826]: AI Model Quality Analyst (Part-Time Contract)
+                        - generic [ref=e827]: AI Model Quality Analyst (Part-Time Contract)
+                      - generic [ref=e828]:
+                        - generic [ref=e829]: Outlier · Contract
+                        - generic [ref=e830]: Outlier · Contract
+                      - generic [ref=e831]:
+                        - generic [ref=e832]: Oct 2024 - Jul 2025 · 10 mos
+                        - generic [ref=e833]: Oct 2024 to Jul 2025 · 10 mos
+                      - generic [ref=e834]:
+                        - generic [ref=e835]: United States · Remote
+                        - generic [ref=e836]: United States · Remote
+                    - list [ref=e838]:
+                      - listitem [ref=e839]:
+                        - list [ref=e841]:
+                          - listitem [ref=e842]:
+                            - generic [ref=e846]:
+                              - generic [ref=e847]: Evaluated and stress-tested LLM outputs across thousands of technical tasks, developing the quality instincts I now apply to production AI test suites. Managed this part-time alongside full-time founding responsibilities at Be Z Online from June 2025. • Assessed LLM-generated code, mathematical reasoning, and technical analysis outputs against quality rubrics for accuracy, safety, and helpfulness • Identified systematic failure modes (hallucination patterns, reasoning errors, edge-case failures) across multiple model families • Provided structured feedback on code generation quality that informed model retraining cycles • Applied evaluation methodology directly when building the 300+ automated test suite (DeepEval + Braintrust) for current production systems
+                              - generic [ref=e848]: Evaluated and stress-tested LLM outputs across thousands of technical tasks, developing the quality instincts I now apply to production AI test suites. Managed this part-time alongside full-time founding responsibilities at Be Z Online from June 2025. • Assessed LLM-generated code, mathematical reasoning, and technical analysis outputs against quality rubrics for accuracy, safety, and helpfulness • Identified systematic failure modes (hallucination patterns, reasoning errors, edge-case failures) across multiple model families • Provided structured feedback on code generation quality that informed model retraining cycles • Applied evaluation methodology directly when building the 300+ automated test suite (DeepEval + Braintrust) for current production systems
+                      - listitem [ref=e849]:
+                        - list [ref=e851]:
+                          - listitem [ref=e852]:
+                            - link "Algorithms, JavaScript and +10 skills" [ref=e854] [cursor=pointer]:
+                              - /url: https://www.linkedin.com/in/oded-ben-yair-ai/overlay/urn:li:fsd_profilePosition:(ACoAABEJXkIBpHRsj0zFy126tNlNuHKxpGElSpQ,2509331037)/skill-associations-details?profileUrn=urn%3Ali%3Afsd_profile%3AACoAABEJXkIBpHRsj0zFy126tNlNuHKxpGElSpQ
+                              - list [ref=e856]:
+                                - listitem [ref=e857]:
+                                  - img [ref=e859]
+                              - strong [ref=e864]: Algorithms, JavaScript and +10 skills
+              - listitem [ref=e865]:
+                - generic [ref=e866]:
+                  - link "Ever Lab logo" [ref=e868] [cursor=pointer]:
+                    - /url: https://www.linkedin.com/company/68739683/
+                    - img "Ever Lab logo" [ref=e871]
+                  - generic [ref=e872]:
+                    - link "Operations & Community Manager Ever Lab · Full-time Jan 2020 to Jan 2024 · 4 yrs 1 mo Herzliya, Tel Aviv District, Israel · On-site" [ref=e874] [cursor=pointer]:
+                      - /url: https://www.linkedin.com/in/oded-ben-yair-ai/add-edit/POSITION/?profileFormEntryPoint=PROFILE_SECTION&entityUrn=urn%3Ali%3Afsd_profilePosition%3A%28ACoAABEJXkIBpHRsj0zFy126tNlNuHKxpGElSpQ%2C2458083493%29&trackingId=DAfuROHhSqOyTLcY6isl0g%3D%3D&desktopBackground=MAIN_PROFILE
+                      - generic [ref=e878]:
+                        - generic [ref=e879]: Operations & Community Manager
+                        - generic [ref=e880]: Operations & Community Manager
+                      - generic [ref=e881]:
+                        - generic [ref=e882]: Ever Lab · Full-time
+                        - generic [ref=e883]: Ever Lab · Full-time
+                      - generic [ref=e884]:
+                        - generic [ref=e885]: Jan 2020 - Jan 2024 · 4 yrs 1 mo
+                        - generic [ref=e886]: Jan 2020 to Jan 2024 · 4 yrs 1 mo
+                      - generic [ref=e887]:
+                        - generic [ref=e888]: Herzliya, Tel Aviv District, Israel · On-site
+                        - generic [ref=e889]: Herzliya, Tel Aviv District, Israel · On-site
+                    - list [ref=e891]:
+                      - listitem [ref=e892]:
+                        - list [ref=e894]:
+                          - listitem [ref=e895]:
+                            - generic [ref=e899]:
+                              - generic [ref=e900]:
+                                - text: Built reliability and process systems for a professional community. The systems thinking and experimentation discipline I now apply to AI engineering.
+                                - text: • Managed 50+ member professional community with data-driven program optimization and uptime monitoring • Designed feedback collection and measurement systems with iterative improvement workflows • Built operational frameworks balancing user experience metrics with business outcomes
+                              - generic [ref=e902]: Built reliability and process systems for a professional community. The systems thinking and experimentation discipline I now apply to AI engineering. • Managed 50+ member professional community with data-driven program optimization and uptime monitoring • Designed feedback collection and measurement systems with iterative improvement workflows • Built operational frameworks balancing user experience metrics with business outcomes
+                      - listitem [ref=e903]:
+                        - list [ref=e905]:
+                          - listitem [ref=e906]:
+                            - link "Communication, General Management and +9 skills" [ref=e908] [cursor=pointer]:
+                              - /url: https://www.linkedin.com/in/oded-ben-yair-ai/overlay/urn:li:fsd_profilePosition:(ACoAABEJXkIBpHRsj0zFy126tNlNuHKxpGElSpQ,2458083493)/skill-associations-details?profileUrn=urn%3Ali%3Afsd_profile%3AACoAABEJXkIBpHRsj0zFy126tNlNuHKxpGElSpQ
+                              - list [ref=e910]:
+                                - listitem [ref=e911]:
+                                  - img [ref=e913]
+                              - strong [ref=e918]: Communication, General Management and +9 skills
+              - listitem [ref=e919]:
+                - generic [ref=e920]:
+                  - link "Israel Defense Forces logo" [ref=e922] [cursor=pointer]:
+                    - /url: https://www.linkedin.com/company/11689046/
+                    - img "Israel Defense Forces logo" [ref=e925]
+                  - generic [ref=e926]:
+                    - link "Captain (Reserve), Special Air Forces Israel Defense Forces 2009 to 2012 · 3 yrs" [ref=e928] [cursor=pointer]:
+                      - /url: https://www.linkedin.com/in/oded-ben-yair-ai/add-edit/POSITION/?profileFormEntryPoint=PROFILE_SECTION&entityUrn=urn%3Ali%3Afsd_profilePosition%3A%28ACoAABEJXkIBpHRsj0zFy126tNlNuHKxpGElSpQ%2C2843996285%29&trackingId=t46NcMZQR66eXMPoHRKfKw%3D%3D&desktopBackground=MAIN_PROFILE
+                      - generic [ref=e932]:
+                        - generic [ref=e933]: Captain (Reserve), Special Air Forces
+                        - generic [ref=e934]: Captain (Reserve), Special Air Forces
+                      - generic [ref=e935]:
+                        - generic [ref=e936]: Israel Defense Forces
+                        - generic [ref=e937]: Israel Defense Forces
+                      - generic [ref=e938]:
+                        - generic [ref=e939]: 2009 - 2012 · 3 yrs
+                        - generic [ref=e940]: 2009 to 2012 · 3 yrs
+                    - list [ref=e942]:
+                      - listitem [ref=e943]:
+                        - list [ref=e945]:
+                          - listitem [ref=e946]:
+                            - generic [ref=e950]:
+                              - generic [ref=e951]: Unit 5700. Special Air Forces.
+                              - generic [ref=e952]: Unit 5700. Special Air Forces.
+          - generic [ref=e953]:
+            - generic [ref=e955]:
+              - heading "Education" [level=2] [ref=e958]:
+                - generic [ref=e959]: Education
+                - generic [ref=e960]: Education
+              - generic [ref=e961]:
+                - link "Add new education" [ref=e964] [cursor=pointer]:
+                  - /url: https://www.linkedin.com/in/oded-ben-yair-ai/add-edit/EDUCATION/?profileFormEntryPoint=PROFILE_SECTION&trackingId=lFGUO4L7SrKWjNt7UqdbcA%3D%3D&desktopBackground=MAIN_PROFILE
+                  - img "Add new education" [ref=e966]
+                - link "View education detail screen" [ref=e970] [cursor=pointer]:
+                  - /url: https://www.linkedin.com/in/oded-ben-yair-ai/details/education?profileUrn=urn%3Ali%3Afsd_profile%3AACoAABEJXkIBpHRsj0zFy126tNlNuHKxpGElSpQ
+                  - img "View education detail screen" [ref=e972]
+            - list [ref=e975]:
+              - listitem [ref=e976]:
+                - generic [ref=e977]:
+                  - link "InfinityLabs R&D logo" [ref=e979] [cursor=pointer]:
+                    - /url: https://www.linkedin.com/company/10457895/
+                    - img "InfinityLabs R&D logo" [ref=e982]
+                  - generic [ref=e983]:
+                    - link "InfinityLabs R&D Bootcamp, Computer Software Engineering Mar 2024 - Jul 2024" [ref=e985] [cursor=pointer]:
+                      - /url: https://www.linkedin.com/in/oded-ben-yair-ai/add-edit/EDUCATION/?profileFormEntryPoint=PROFILE_SECTION&entityUrn=urn%3Ali%3Afsd_profileEducation%3A%28ACoAABEJXkIBpHRsj0zFy126tNlNuHKxpGElSpQ%2C1030685946%29&trackingId=Q3R5ResEQXq7RD87t4Ze0Q%3D%3D&desktopBackground=MAIN_PROFILE
+                      - generic [ref=e989]:
+                        - generic [ref=e990]: InfinityLabs R&D
+                        - generic [ref=e991]: InfinityLabs R&D
+                      - generic [ref=e992]:
+                        - generic [ref=e993]: Bootcamp, Computer Software Engineering
+                        - generic [ref=e994]: Bootcamp, Computer Software Engineering
+                      - generic [ref=e995]:
+                        - generic [ref=e996]: Mar 2024 - Jul 2024
+                        - generic [ref=e997]: Mar 2024 - Jul 2024
+                    - list [ref=e999]:
+                      - listitem [ref=e1000]:
+                        - list [ref=e1002]:
+                          - listitem [ref=e1003]:
+                            - generic [ref=e1007]:
+                              - generic [ref=e1008]: Specialized in C89, Linux, system-level programming, and algorithmic problem-solving.
+                              - generic [ref=e1009]: Specialized in C89, Linux, system-level programming, and algorithmic problem-solving.
+                      - listitem [ref=e1010]:
+                        - list [ref=e1012]:
+                          - listitem [ref=e1013]:
+                            - link "Teamwork, Test Cases and +23 skills" [ref=e1015] [cursor=pointer]:
+                              - /url: https://www.linkedin.com/in/oded-ben-yair-ai/overlay/urn:li:fsd_profileEducation:(ACoAABEJXkIBpHRsj0zFy126tNlNuHKxpGElSpQ,1030685946)/skill-associations-details?profileUrn=urn%3Ali%3Afsd_profile%3AACoAABEJXkIBpHRsj0zFy126tNlNuHKxpGElSpQ
+                              - list [ref=e1017]:
+                                - listitem [ref=e1018]:
+                                  - img [ref=e1020]
+                              - strong [ref=e1025]: Teamwork, Test Cases and +23 skills
+              - listitem [ref=e1026]:
+                - generic [ref=e1027]:
+                  - link "Coursera logo" [ref=e1029] [cursor=pointer]:
+                    - /url: https://www.linkedin.com/company/77663205/
+                    - img "Coursera logo" [ref=e1032]
+                  - generic [ref=e1033]:
+                    - link "Coursera AI/ML Training, Machine Learning, Deep Learning, NLP, LLM Engineering Jan 2024" [ref=e1035] [cursor=pointer]:
+                      - /url: https://www.linkedin.com/in/oded-ben-yair-ai/add-edit/EDUCATION/?profileFormEntryPoint=PROFILE_SECTION&entityUrn=urn%3Ali%3Afsd_profileEducation%3A%28ACoAABEJXkIBpHRsj0zFy126tNlNuHKxpGElSpQ%2C1177893251%29&trackingId=WO31VtRrQe%2Bd5x6GytO7wA%3D%3D&desktopBackground=MAIN_PROFILE
+                      - generic [ref=e1039]:
+                        - generic [ref=e1040]: Coursera
+                        - generic [ref=e1041]: Coursera
+                      - generic [ref=e1042]:
+                        - generic [ref=e1043]: AI/ML Training, Machine Learning, Deep Learning, NLP, LLM Engineering
+                        - generic [ref=e1044]: AI/ML Training, Machine Learning, Deep Learning, NLP, LLM Engineering
+                      - generic [ref=e1045]:
+                        - generic [ref=e1046]: Jan 2024
+                        - generic [ref=e1047]: Jan 2024
+                    - list [ref=e1049]:
+                      - listitem [ref=e1050]:
+                        - list [ref=e1052]:
+                          - listitem [ref=e1053]:
+                            - generic [ref=e1057]:
+                              - generic [ref=e1058]: "500+ hours of self-directed coursework: Machine Learning Specialization, Deep Learning Specialization, NLP, LLM Engineering. Applied directly to production: built 300+ automated test suite (DeepEval + Braintrust), multi-model evaluation pipeline, and Thompson Sampling consensus system."
+                              - generic [ref=e1059]: "500+ hours of self-directed coursework: Machine Learning Specialization, Deep Learning Specialization, NLP, LLM Engineering. Applied directly to production: built 300+ automated test suite (DeepEval + Braintrust), multi-model evaluation pipeline, and Thompson Sampling consensus system."
+          - generic [ref=e1060]:
+            - generic [ref=e1062]:
+              - heading "Licenses & certifications" [level=2] [ref=e1065]:
+                - generic [ref=e1066]: Licenses & certifications
+                - generic [ref=e1067]: Licenses & certifications
+              - generic [ref=e1068]:
+                - link "Add new certification" [ref=e1071] [cursor=pointer]:
+                  - /url: https://www.linkedin.com/in/oded-ben-yair-ai/add-edit/CERTIFICATION/?profileFormEntryPoint=PROFILE_SECTION&trackingId=FZyi6DE6T%2BWFITp%2FhpfarA%3D%3D&desktopBackground=MAIN_PROFILE
+                  - img "Add new certification" [ref=e1073]
+                - link "View certifications detail screen" [ref=e1077] [cursor=pointer]:
+                  - /url: https://www.linkedin.com/in/oded-ben-yair-ai/details/certifications?profileUrn=urn%3Ali%3Afsd_profile%3AACoAABEJXkIBpHRsj0zFy126tNlNuHKxpGElSpQ
+                  - img "View certifications detail screen" [ref=e1079]
+            - list [ref=e1082]:
+              - listitem [ref=e1083]:
+                - generic [ref=e1084]:
+                  - link "Anthropic logo" [ref=e1086] [cursor=pointer]:
+                    - /url: https://www.linkedin.com/company/74126343/
+                    - img "Anthropic logo" [ref=e1089]
+                  - generic [ref=e1090]:
+                    - link "Claude Code in Action Anthropic Issued Aug 2025 Credential ID jzrb3xeb54o6" [ref=e1092] [cursor=pointer]:
+                      - /url: https://verify.skilljar.com/c/jzrb3xeb54o6
+                      - generic [ref=e1096]:
+                        - generic [ref=e1097]: Claude Code in Action
+                        - generic [ref=e1098]: Claude Code in Action
+                      - generic [ref=e1099]:
+                        - generic [ref=e1100]: Anthropic
+                        - generic [ref=e1101]: Anthropic
+                      - generic [ref=e1102]:
+                        - generic [ref=e1103]: Issued Aug 2025
+                        - generic [ref=e1104]: Issued Aug 2025
+                      - generic [ref=e1105]:
+                        - generic [ref=e1106]: Credential ID jzrb3xeb54o6
+                        - generic [ref=e1107]: Credential ID jzrb3xeb54o6
+                    - list [ref=e1109]:
+                      - listitem [ref=e1110]:
+                        - link "Show credential for Claude Code in Action" [ref=e1113] [cursor=pointer]:
+                          - /url: https://verify.skilljar.com/c/jzrb3xeb54o6
+                          - generic [ref=e1114]: Show credential
+                          - img [ref=e1116]
+              - listitem [ref=e1118]:
+                - generic [ref=e1119]:
+                  - generic [ref=e1125]: Neural Networks and Deep Learning
+                  - generic [ref=e1126]:
+                    - link "Neural Networks and Deep Learning DeepLearning.AI Credential ID 6FTX26RLBOZB" [ref=e1128] [cursor=pointer]:
+                      - /url: https://www.coursera.org/account/accomplishments/specialization
+                      - generic [ref=e1132]:
+                        - generic [ref=e1133]: Neural Networks and Deep Learning
+                        - generic [ref=e1134]: Neural Networks and Deep Learning
+                      - generic [ref=e1135]:
+                        - generic [ref=e1136]: DeepLearning.AI
+                        - generic [ref=e1137]: DeepLearning.AI
+                      - generic [ref=e1138]:
+                        - generic [ref=e1139]: Credential ID 6FTX26RLBOZB
+                        - generic [ref=e1140]: Credential ID 6FTX26RLBOZB
+                    - list [ref=e1142]:
+                      - listitem [ref=e1143]:
+                        - link "Show credential for Neural Networks and Deep Learning" [ref=e1146] [cursor=pointer]:
+                          - /url: https://www.coursera.org/account/accomplishments/specialization
+                          - generic [ref=e1147]: Show credential
+                          - img [ref=e1149]
+          - generic [ref=e1151]:
+            - generic [ref=e1153]:
+              - heading "Skills" [level=2] [ref=e1156]:
+                - generic [ref=e1157]: Skills
+                - generic [ref=e1158]: Skills
+              - generic [ref=e1159]:
+                - link "Add new skill" [ref=e1162] [cursor=pointer]:
+                  - /url: https://www.linkedin.com/in/oded-ben-yair-ai/add-edit/SKILL_AND_ASSOCIATION/?profileFormEntryPoint=PROFILE_SECTION&trackingId=W6IKBuZ1QXmAJdsWYr6D3A%3D%3D&desktopBackground=MAIN_PROFILE
+                  - img "Add new skill" [ref=e1164]
+                - link "View skills detail screen" [ref=e1168] [cursor=pointer]:
+                  - /url: https://www.linkedin.com/in/oded-ben-yair-ai/details/skills?profileUrn=urn%3Ali%3Afsd_profile%3AACoAABEJXkIBpHRsj0zFy126tNlNuHKxpGElSpQ
+                  - img "View skills detail screen" [ref=e1170]
+            - generic [ref=e1172]:
+              - list [ref=e1173]:
+                - listitem [ref=e1174]:
+                  - link "Python (Programming Language)" [ref=e1178] [cursor=pointer]:
+                    - /url: https://www.linkedin.com/search/results/all/?keywords=Python+%28Programming+Language%29&origin=PROFILE_PAGE_SKILL_NAVIGATION
+                    - generic [ref=e1182]:
+                      - generic [ref=e1183]: Python (Programming Language)
+                      - generic [ref=e1184]: Python (Programming Language)
+                - listitem [ref=e1185]:
+                  - link "Large Language Models (LLM)" [ref=e1189] [cursor=pointer]:
+                    - /url: https://www.linkedin.com/search/results/all/?keywords=Large+Language+Models+%28LLM%29&origin=PROFILE_PAGE_SKILL_NAVIGATION
+                    - generic [ref=e1193]:
+                      - generic [ref=e1194]: Large Language Models (LLM)
+                      - generic [ref=e1195]: Large Language Models (LLM)
+              - link "Show all 96 skills" [ref=e1199] [cursor=pointer]:
+                - /url: https://www.linkedin.com/in/oded-ben-yair-ai/details/skills?profileUrn=urn%3Ali%3Afsd_profile%3AACoAABEJXkIBpHRsj0zFy126tNlNuHKxpGElSpQ
+                - generic [ref=e1200]: Show all 96 skills
+                - img [ref=e1202]
+          - generic [ref=e1204]:
+            - generic [ref=e1206]:
+              - heading "Recommendations" [level=2] [ref=e1209]:
+                - generic [ref=e1210]: Recommendations
+                - generic [ref=e1211]: Recommendations
+              - generic [ref=e1212]:
+                - button "Recommendations overflow menu" [ref=e1215] [cursor=pointer]:
+                  - img "Recommendations overflow menu" [ref=e1218]:
+                    - img [ref=e1219]
+                - link "View recommendations detail screen" [ref=e1223] [cursor=pointer]:
+                  - /url: https://www.linkedin.com/in/oded-ben-yair-ai/details/recommendations?profileUrn=urn%3Ali%3Afsd_profile%3AACoAABEJXkIBpHRsj0zFy126tNlNuHKxpGElSpQ
+                  - img "View recommendations detail screen" [ref=e1225]
+            - generic [ref=e1227]:
+              - tablist [ref=e1228]:
+                - tab "Received" [selected] [ref=e1229] [cursor=pointer]:
+                  - generic [ref=e1230]: Received
+                  - generic [ref=e1231]: Received
+                - tab "Given" [ref=e1232] [cursor=pointer]:
+                  - generic [ref=e1233]: Given
+                  - generic [ref=e1234]: Given
+              - tabpanel "Received" [ref=e1235]:
+                - list [ref=e1237]:
+                  - listitem [ref=e1238]:
+                    - generic [ref=e1239]:
+                      - link "Or Ainhorn" [ref=e1241] [cursor=pointer]:
+                        - /url: https://www.linkedin.com/in/or-ainhorn-6192271b0
+                        - img "Or Ainhorn" [ref=e1244]
+                      - generic [ref=e1245]:
+                        - link "Or Ainhorn Premium member First degree connection UX/UI Designer @ Wix Studio, Wix.com October 30, 2024, Or worked with Oded on the same team" [ref=e1247] [cursor=pointer]:
+                          - /url: https://www.linkedin.com/in/or-ainhorn-6192271b0
+                          - generic [ref=e1248]:
+                            - generic [ref=e1251]:
+                              - generic [ref=e1252]: Or Ainhorn
+                              - generic [ref=e1253]: Or Ainhorn
+                            - img "Premium member" [ref=e1256]:
+                              - img [ref=e1257]
+                            - generic [ref=e1260]:
+                              - generic [ref=e1261]: · 1st
+                              - generic [ref=e1262]: First degree connection
+                          - generic [ref=e1263]:
+                            - generic [ref=e1264]: UX/UI Designer @ Wix Studio, Wix.com
+                            - generic [ref=e1265]: UX/UI Designer @ Wix Studio, Wix.com
+                          - generic [ref=e1266]:
+                            - generic [ref=e1267]: October 30, 2024, Or worked with Oded on the same team
+                            - generic [ref=e1268]: October 30, 2024, Or worked with Oded on the same team
+                        - list [ref=e1270]:
+                          - listitem [ref=e1271]:
+                            - list [ref=e1273]:
+                              - listitem [ref=e1274]:
+                                - generic [ref=e1278]:
+                                  - generic [ref=e1279]:
+                                    - text: "Oded was an invaluable partner on our app project, combinind technical expertise with a truly collaborative approach. Here’s what made working with him exceptional: Technical Precision: Oded brought my designs to life seamlessly, translating complex ideas into functional, user-friendly features with remarkable skill."
+                                    - text: "Proactive Communication: He kept the workflow smooth with regular updates and an openness to feedback, ensuring each stage aligned with our shared vision. User-Centric Focus: Oded’s commitment to the user experience elevated our app. His thoughtful refinements enhanced usability and kept the end-user in mind at every step. Oded is a rare find—his balance of technical skill, empathy, and teamwork is invaluable. Any team would be fortunate to have him."
+                                  - generic [ref=e1281]: "Oded was an invaluable partner on our app project, combinind technical expertise with a truly collaborative approach. Here’s what made working with him exceptional: Technical Precision: Oded brought my designs to life seamlessly, translating complex ideas into functional, user-friendly features with remarkable skill. Proactive Communication: He kept the workflow smooth with regular updates and an openness to feedback, ensuring each stage aligned with our shared vision. User-Centric Focus: Oded’s commitment to the user experience elevated our app. His thoughtful refinements enhanced usability and kept the end-user in mind at every step. Oded is a rare find—his balance of technical skill, empathy, and teamwork is invaluable. Any team would be fortunate to have him."
+                  - listitem [ref=e1282]:
+                    - generic [ref=e1283]:
+                      - link "Itay Lvovich" [ref=e1285] [cursor=pointer]:
+                        - /url: https://www.linkedin.com/in/itaylvovich
+                        - img "Itay Lvovich" [ref=e1288]
+                      - generic [ref=e1289]:
+                        - link "Itay Lvovich First degree connection Software Engineer at CyberArk | Computer Science student at the Open University October 30, 2024, Itay and Oded studied together" [ref=e1291] [cursor=pointer]:
+                          - /url: https://www.linkedin.com/in/itaylvovich
+                          - generic [ref=e1292]:
+                            - generic [ref=e1295]:
+                              - generic [ref=e1296]: Itay Lvovich
+                              - generic [ref=e1297]: Itay Lvovich
+                            - generic [ref=e1298]:
+                              - generic [ref=e1299]: · 1st
+                              - generic [ref=e1300]: First degree connection
+                          - generic [ref=e1301]:
+                            - generic [ref=e1302]: Software Engineer at CyberArk | Computer Science student at the Open University
+                            - generic [ref=e1303]: Software Engineer at CyberArk | Computer Science student at the Open University
+                          - generic [ref=e1304]:
+                            - generic [ref=e1305]: October 30, 2024, Itay and Oded studied together
+                            - generic [ref=e1306]: October 30, 2024, Itay and Oded studied together
+                        - list [ref=e1308]:
+                          - listitem [ref=e1309]:
+                            - list [ref=e1311]:
+                              - listitem [ref=e1312]:
+                                - generic [ref=e1316]:
+                                  - generic [ref=e1317]: Oded is one of the sharpest minds I've met! Oded is able to learn new concepts quickly, and has a winner mindset. A valuable team player that communicates well. I highly recommend him to any organization.
+                                  - generic [ref=e1318]: Oded is one of the sharpest minds I've met! Oded is able to learn new concepts quickly, and has a winner mindset. A valuable team player that communicates well. I highly recommend him to any organization.
+          - generic [ref=e1319]:
+            - heading "Interests" [level=2] [ref=e1324]:
+              - generic [ref=e1325]: Interests
+              - generic [ref=e1326]: Interests
+            - generic [ref=e1327]:
+              - tablist [ref=e1328]:
+                - tab "Top Voices" [selected] [ref=e1329] [cursor=pointer]:
+                  - generic [ref=e1330]: Top Voices
+                  - generic [ref=e1331]: Top Voices
+                - tab "Companies" [ref=e1332] [cursor=pointer]:
+                  - generic [ref=e1333]: Companies
+                  - generic [ref=e1334]: Companies
+                - tab "Groups" [ref=e1335] [cursor=pointer]:
+                  - generic [ref=e1336]: Groups
+                  - generic [ref=e1337]: Groups
+                - tab "Newsletters" [ref=e1338] [cursor=pointer]:
+                  - generic [ref=e1339]: Newsletters
+                  - generic [ref=e1340]: Newsletters
+                - tab "Schools" [ref=e1341] [cursor=pointer]:
+                  - generic [ref=e1342]: Schools
+                  - generic [ref=e1343]: Schools
+              - tabpanel "Top Voices" [ref=e1344]:
+                - generic [ref=e1345]:
+                  - list [ref=e1346]:
+                    - listitem [ref=e1347]:
+                      - generic [ref=e1348]:
+                        - link "Harry Stebbings" [ref=e1350] [cursor=pointer]:
+                          - /url: https://www.linkedin.com/in/harrystebbings
+                          - img "Harry Stebbings" [ref=e1353]
+                        - generic [ref=e1354]:
+                          - link "Harry Stebbings Second degree connection Founder @ 20VC 246,975 followers" [ref=e1356] [cursor=pointer]:
+                            - /url: https://www.linkedin.com/in/harrystebbings
+                            - generic [ref=e1357]:
+                              - generic [ref=e1360]:
+                                - generic [ref=e1361]: Harry Stebbings
+                                - generic [ref=e1362]: Harry Stebbings
+                              - img [ref=e1366]
+                              - generic [ref=e1368]:
+                                - generic [ref=e1369]: · 2nd
+                                - generic [ref=e1370]: Second degree connection
+                            - generic [ref=e1371]:
+                              - generic [ref=e1372]: Founder @ 20VC
+                              - generic [ref=e1373]: Founder @ 20VC
+                            - generic [ref=e1374]:
+                              - generic [ref=e1375]: 246,975 followers
+                              - generic [ref=e1376]: 246,975 followers
+                          - list [ref=e1378]:
+                            - listitem [ref=e1379]:
+                              - button "Following Harry Stebbings" [ref=e1381] [cursor=pointer]:
+                                - img [ref=e1382]
+                                - generic [ref=e1384]: Following
+                    - listitem [ref=e1385]:
+                      - generic [ref=e1386]:
+                        - link "Ethan Mollick" [ref=e1388] [cursor=pointer]:
+                          - /url: https://www.linkedin.com/in/emollick
+                          - img "Ethan Mollick" [ref=e1391]
+                        - generic [ref=e1392]:
+                          - link "Ethan Mollick Third degree connection Associate Professor at The Wharton School. Author of Co-Intelligence 368,679 followers" [ref=e1394] [cursor=pointer]:
+                            - /url: https://www.linkedin.com/in/emollick
+                            - generic [ref=e1395]:
+                              - generic [ref=e1398]:
+                                - generic [ref=e1399]: Ethan Mollick
+                                - generic [ref=e1400]: Ethan Mollick
+                              - img [ref=e1404]
+                              - generic [ref=e1406]:
+                                - generic [ref=e1407]: · 3rd
+                                - generic [ref=e1408]: Third degree connection
+                            - generic [ref=e1409]:
+                              - generic [ref=e1410]: Associate Professor at The Wharton School. Author of Co-Intelligence
+                              - generic [ref=e1411]: Associate Professor at The Wharton School. Author of Co-Intelligence
+                            - generic [ref=e1412]:
+                              - generic [ref=e1413]: 368,679 followers
+                              - generic [ref=e1414]: 368,679 followers
+                          - list [ref=e1416]:
+                            - listitem [ref=e1417]:
+                              - button "Following Ethan Mollick" [ref=e1419] [cursor=pointer]:
+                                - img [ref=e1420]
+                                - generic [ref=e1422]: Following
+                  - link "Show all Top Voices" [ref=e1426] [cursor=pointer]:
+                    - /url: https://www.linkedin.com/in/oded-ben-yair-ai/details/interests?profileUrn=urn%3Ali%3Afsd_profile%3AACoAABEJXkIBpHRsj0zFy126tNlNuHKxpGElSpQ&tabIndex=0&detailScreenTabIndex=0
+                    - generic [ref=e1427]: Show all Top Voices
+                    - img [ref=e1429]
+        - complementary [ref=e1431]:
+          - generic [ref=e1432]:
+            - generic [ref=e1433]:
+              - generic [ref=e1434]:
+                - generic [ref=e1435]: Profile language
+                - paragraph [ref=e1436]: English
+              - link "Edit Profile language" [ref=e1437] [cursor=pointer]:
+                - /url: /in/oded-ben-yair-ai/edit/secondary-language/
+                - img "Edit Profile language" [ref=e1438]
+            - separator [ref=e1440]
+            - generic [ref=e1441]:
+              - generic [ref=e1442]:
+                - generic [ref=e1443]: Public profile & URL
+                - link "Edit Public profile" [ref=e1444] [cursor=pointer]:
+                  - /url: https://www.linkedin.com/public-profile/settings?trk=d_flagship3_profile_self_view_public_profile
+                  - img "Edit Public profile" [ref=e1445]
+              - paragraph [ref=e1447]: www.linkedin.com/in/oded-ben-yair-ai
+          - iframe [ref=e1449]:
+            - generic [ref=f15e2]:
+              - generic [ref=f15e3]: Ad
+              - img "overflow-web-small" [ref=f15e6] [cursor=pointer]
+              - link "LinkedIn Premium" [ref=f15e10] [cursor=pointer]:
+                - /url: https://www.linkedin.com/li/tscp/sct?destinationUrl=https%3A%2F%2Fwww.linkedin.com%2Fpremium%2Fredeem%2Fpromo%3F_ed%3DCwEAAAF114596ur6D_C644yaOCckjiuPmlSNohBRLZWzwWabZZHafL3X39_vkIP4OF8-NIE8HlM%26customKey%3Dwb_c%26redeemTypeV2%3DDISCOUNT%26type%3Dpremium%26src%3Dli-dynamic%26trk%3Dbnr_mktg_btn_jss_wb_PREMIUM_C_JSS_ACQ_DA_GLOBAL_EN_Winback_1462_1504_1332_1331_1320_562_Visits_ACCN_Apr25_V2%26upsellOrderOrigin%3DTracking%253Av1%253Abnr_mktg_btn_jss_wb_PREMIUM_C_JSS_ACQ_DA_GLOBAL_EN_Winback_1462_1504_1332_1331_1320_562_Visits_ACCN_Apr25_V2%253ADynamic%2BAds%2BWinback%253AMarketing%26mcid%3D7313273108600184844%26li_fat_id%3D34ecfcb1-cf0f-41a6-a049-e2743088b29e&trackingEvent=%5B%7B%22eventInfo%22%3A%7B%22appId%22%3A%22com.linkedin.ads.rendering.d_web%22%2C%22eventName%22%3A%22SponsoredRightRailContentActionEvent%22%2C%22topicName%22%3A%22SponsoredRightRailContentActionEvent%22%7D%2C%22eventBody%22%3A%7B%22sponsoredEventHeader%22%3A%7B%22encryptedTrackingData%22%3A%22CwEAAAGcawHNh1AymKCjx9uFeKIlO7IH-jHrQ8QixEVodOGoah3YtFJRBJenGpm-jPOCaKbS2o_Td4uNjkZxSNalHUA_lcAfTDnvtX8U8cqxsRE4dr4qwbzoiAwp5tSthUSnKZyfZW8Joj06FWpl6AB5Z8FUDYPRdQ-TM-6puyMFyl6k9A7pmQpyAvHBVQ1V4F3gkd4SAYawh-kuYEVKrst_EuytoSO88_xXpPPOiKOO0NUi9T67eQzBumubY1trv7AfuwpzBfJdY3EekSb81EFmQ_wqQdmNu2MM0vp48LWEMEwN2I9Ced3yfHeOw6mI8Z-WNNANwijplyeK9EurG-xS_HEzslcqBHZfRaauopk93Kcsx5nIfIzUkZRgK2ZO_MmLQOeHm_m81_7lASzksjSvoSp8biIYsCexD5ZEciZva7TitrhNHhfpfKb33-OwEfl57SrdFPQDYWTHx9u7yWdITdbzY9qsNocWRyqFMgu0z1xjN4zMTherhLJIALKHrwc_SaNw56yQjTSo3Dz_CbHXJLn9qr_IdhqtlMMZN3D4iOs8Q8kMty4RlMM34BvJUQV2PZAix2XeCyaBSCKSpdeEzo5jE4r5iM6bFaYE_xWwCJcCYsBrSdkTAWRCkHy15KNl1FiIdR4MTdMVyWCc7-O1RaL0STo7qWnlMcjnTIT-nrcbwsX4IVk_l7aWx-muFhFRMKpJlHDWiStkzuvxiMEx4arfs3ck5i8XnBnJxqe52zk4-Ova1YVPvb8mavDFmuYmhoZCh4s2GpconqyOTSPxDaeHnU8j_sustYWOhVK2_bfgSdFHziGuCTa1fmpvxZEb-rq96dfCwbvO3B_2NEjwW_qoT-MY827F4lpHW9QVnKLmtvSa4vkTxTp_NKp9c2hi-KKOWpb24K7qWdBT5bn_8AF2ryAoRS3lDWLg63VVcsCqPuSuDW3z6IVsAk4HedVM1oisGJARmSFDvZeHGUh_uyPcnifT7Y7Abn2PqvJL6cYjwxEZLBuqQ5FX7WrNfg0pdezYCkFuY9lUYAynyj_J9k0eSCBykIg0joSvQ-rurMcyHLGBXJJ4GeBqbDLv4VY3NaQtIRpP8OuX2swu2_KoOA%22%7D%2C%22header%22%3A%7B%22pageInstance%22%3A%7B%22pageUrn%22%3A%22urn%3Ali%3Apage%3Ad_flagship3_profile_view_base%22%2C%22trackingId%22%3A%2251d07b10-0a72-45c7-90bc-b6e6478f4e0c%22%7D%2C%22time%22%3A1771321806168%2C%22version%22%3A%220.0.0%22%7D%2C%22requestHeader%22%3A%7B%22pageKey%22%3A%22d_flagship3_profile_view_base%22%2C%22interfaceLocale%22%3A%22en-US%22%7D%7D%7D%5D&csrfToken=ajax%3A2872756275449100236
+              - generic [ref=f15e11]:
+                - heading "Oded, enjoy 50% off 2 months of LinkedIn Premium" [level=2] [ref=f15e14]
+                - generic [ref=f15e16]:
+                  - img "Oded" [ref=f15e17]
+                  - generic [ref=f15e18]:
+                    - link "LinkedIn Premium" [ref=f15e19] [cursor=pointer]:
+                      - /url: https://www.linkedin.com/li/tscp/sct?destinationUrl=https%3A%2F%2Fwww.linkedin.com%2Fpremium%2Fredeem%2Fpromo%3F_ed%3DCwEAAAF114596ur6D_C644yaOCckjiuPmlSNohBRLZWzwWabZZHafL3X39_vkIP4OF8-NIE8HlM%26customKey%3Dwb_c%26redeemTypeV2%3DDISCOUNT%26type%3Dpremium%26src%3Dli-dynamic%26trk%3Dbnr_mktg_btn_jss_wb_PREMIUM_C_JSS_ACQ_DA_GLOBAL_EN_Winback_1462_1504_1332_1331_1320_562_Visits_ACCN_Apr25_V2%26upsellOrderOrigin%3DTracking%253Av1%253Abnr_mktg_btn_jss_wb_PREMIUM_C_JSS_ACQ_DA_GLOBAL_EN_Winback_1462_1504_1332_1331_1320_562_Visits_ACCN_Apr25_V2%253ADynamic%2BAds%2BWinback%253AMarketing%26mcid%3D7313273108600184844%26li_fat_id%3D34ecfcb1-cf0f-41a6-a049-e2743088b29e&trackingEvent=%5B%7B%22eventInfo%22%3A%7B%22appId%22%3A%22com.linkedin.ads.rendering.d_web%22%2C%22eventName%22%3A%22SponsoredRightRailContentActionEvent%22%2C%22topicName%22%3A%22SponsoredRightRailContentActionEvent%22%7D%2C%22eventBody%22%3A%7B%22sponsoredEventHeader%22%3A%7B%22encryptedTrackingData%22%3A%22CwEAAAGcawHNh1AymKCjx9uFeKIlO7IH-jHrQ8QixEVodOGoah3YtFJRBJenGpm-jPOCaKbS2o_Td4uNjkZxSNalHUA_lcAfTDnvtX8U8cqxsRE4dr4qwbzoiAwp5tSthUSnKZyfZW8Joj06FWpl6AB5Z8FUDYPRdQ-TM-6puyMFyl6k9A7pmQpyAvHBVQ1V4F3gkd4SAYawh-kuYEVKrst_EuytoSO88_xXpPPOiKOO0NUi9T67eQzBumubY1trv7AfuwpzBfJdY3EekSb81EFmQ_wqQdmNu2MM0vp48LWEMEwN2I9Ced3yfHeOw6mI8Z-WNNANwijplyeK9EurG-xS_HEzslcqBHZfRaauopk93Kcsx5nIfIzUkZRgK2ZO_MmLQOeHm_m81_7lASzksjSvoSp8biIYsCexD5ZEciZva7TitrhNHhfpfKb33-OwEfl57SrdFPQDYWTHx9u7yWdITdbzY9qsNocWRyqFMgu0z1xjN4zMTherhLJIALKHrwc_SaNw56yQjTSo3Dz_CbHXJLn9qr_IdhqtlMMZN3D4iOs8Q8kMty4RlMM34BvJUQV2PZAix2XeCyaBSCKSpdeEzo5jE4r5iM6bFaYE_xWwCJcCYsBrSdkTAWRCkHy15KNl1FiIdR4MTdMVyWCc7-O1RaL0STo7qWnlMcjnTIT-nrcbwsX4IVk_l7aWx-muFhFRMKpJlHDWiStkzuvxiMEx4arfs3ck5i8XnBnJxqe52zk4-Ova1YVPvb8mavDFmuYmhoZCh4s2GpconqyOTSPxDaeHnU8j_sustYWOhVK2_bfgSdFHziGuCTa1fmpvxZEb-rq96dfCwbvO3B_2NEjwW_qoT-MY827F4lpHW9QVnKLmtvSa4vkTxTp_NKp9c2hi-KKOWpb24K7qWdBT5bn_8AF2ryAoRS3lDWLg63VVcsCqPuSuDW3z6IVsAk4HedVM1oisGJARmSFDvZeHGUh_uyPcnifT7Y7Abn2PqvJL6cYjwxEZLBuqQ5FX7WrNfg0pdezYCkFuY9lUYAynyj_J9k0eSCBykIg0joSvQ-rurMcyHLGBXJJ4GeBqbDLv4VY3NaQtIRpP8OuX2swu2_KoOA%22%7D%2C%22header%22%3A%7B%22pageInstance%22%3A%7B%22pageUrn%22%3A%22urn%3Ali%3Apage%3Ad_flagship3_profile_view_base%22%2C%22trackingId%22%3A%2251d07b10-0a72-45c7-90bc-b6e6478f4e0c%22%7D%2C%22time%22%3A1771321806168%2C%22version%22%3A%220.0.0%22%7D%2C%22requestHeader%22%3A%7B%22pageKey%22%3A%22d_flagship3_profile_view_base%22%2C%22interfaceLocale%22%3A%22en-US%22%7D%7D%7D%5D&csrfToken=ajax%3A2872756275449100236
+                      - img "LinkedIn Premium" [ref=f15e20]
+                    - tooltip "LinkedIn Premium" [ref=f15e21]
+                - generic [ref=f15e22]:
+                  - heading "Get hired faster with exclusive tools and features" [level=2] [ref=f15e25]
+                  - link "Redeem offer" [ref=f15e27] [cursor=pointer]:
+                    - /url: https://www.linkedin.com/li/tscp/sct?destinationUrl=https%3A%2F%2Fwww.linkedin.com%2Fpremium%2Fredeem%2Fpromo%3F_ed%3DCwEAAAF114596ur6D_C644yaOCckjiuPmlSNohBRLZWzwWabZZHafL3X39_vkIP4OF8-NIE8HlM%26customKey%3Dwb_c%26redeemTypeV2%3DDISCOUNT%26type%3Dpremium%26src%3Dli-dynamic%26trk%3Dbnr_mktg_btn_jss_wb_PREMIUM_C_JSS_ACQ_DA_GLOBAL_EN_Winback_1462_1504_1332_1331_1320_562_Visits_ACCN_Apr25_V2%26upsellOrderOrigin%3DTracking%253Av1%253Abnr_mktg_btn_jss_wb_PREMIUM_C_JSS_ACQ_DA_GLOBAL_EN_Winback_1462_1504_1332_1331_1320_562_Visits_ACCN_Apr25_V2%253ADynamic%2BAds%2BWinback%253AMarketing%26mcid%3D7313273108600184844%26li_fat_id%3D34ecfcb1-cf0f-41a6-a049-e2743088b29e&trackingEvent=%5B%7B%22eventInfo%22%3A%7B%22appId%22%3A%22com.linkedin.ads.rendering.d_web%22%2C%22eventName%22%3A%22SponsoredRightRailContentActionEvent%22%2C%22topicName%22%3A%22SponsoredRightRailContentActionEvent%22%7D%2C%22eventBody%22%3A%7B%22sponsoredEventHeader%22%3A%7B%22encryptedTrackingData%22%3A%22CwEAAAGcawHNh1AymKCjx9uFeKIlO7IH-jHrQ8QixEVodOGoah3YtFJRBJenGpm-jPOCaKbS2o_Td4uNjkZxSNalHUA_lcAfTDnvtX8U8cqxsRE4dr4qwbzoiAwp5tSthUSnKZyfZW8Joj06FWpl6AB5Z8FUDYPRdQ-TM-6puyMFyl6k9A7pmQpyAvHBVQ1V4F3gkd4SAYawh-kuYEVKrst_EuytoSO88_xXpPPOiKOO0NUi9T67eQzBumubY1trv7AfuwpzBfJdY3EekSb81EFmQ_wqQdmNu2MM0vp48LWEMEwN2I9Ced3yfHeOw6mI8Z-WNNANwijplyeK9EurG-xS_HEzslcqBHZfRaauopk93Kcsx5nIfIzUkZRgK2ZO_MmLQOeHm_m81_7lASzksjSvoSp8biIYsCexD5ZEciZva7TitrhNHhfpfKb33-OwEfl57SrdFPQDYWTHx9u7yWdITdbzY9qsNocWRyqFMgu0z1xjN4zMTherhLJIALKHrwc_SaNw56yQjTSo3Dz_CbHXJLn9qr_IdhqtlMMZN3D4iOs8Q8kMty4RlMM34BvJUQV2PZAix2XeCyaBSCKSpdeEzo5jE4r5iM6bFaYE_xWwCJcCYsBrSdkTAWRCkHy15KNl1FiIdR4MTdMVyWCc7-O1RaL0STo7qWnlMcjnTIT-nrcbwsX4IVk_l7aWx-muFhFRMKpJlHDWiStkzuvxiMEx4arfs3ck5i8XnBnJxqe52zk4-Ova1YVPvb8mavDFmuYmhoZCh4s2GpconqyOTSPxDaeHnU8j_sustYWOhVK2_bfgSdFHziGuCTa1fmpvxZEb-rq96dfCwbvO3B_2NEjwW_qoT-MY827F4lpHW9QVnKLmtvSa4vkTxTp_NKp9c2hi-KKOWpb24K7qWdBT5bn_8AF2ryAoRS3lDWLg63VVcsCqPuSuDW3z6IVsAk4HedVM1oisGJARmSFDvZeHGUh_uyPcnifT7Y7Abn2PqvJL6cYjwxEZLBuqQ5FX7WrNfg0pdezYCkFuY9lUYAynyj_J9k0eSCBykIg0joSvQ-rurMcyHLGBXJJ4GeBqbDLv4VY3NaQtIRpP8OuX2swu2_KoOA%22%7D%2C%22header%22%3A%7B%22pageInstance%22%3A%7B%22pageUrn%22%3A%22urn%3Ali%3Apage%3Ad_flagship3_profile_view_base%22%2C%22trackingId%22%3A%2251d07b10-0a72-45c7-90bc-b6e6478f4e0c%22%7D%2C%22time%22%3A1771321806168%2C%22version%22%3A%220.0.0%22%7D%2C%22requestHeader%22%3A%7B%22pageKey%22%3A%22d_flagship3_profile_view_base%22%2C%22interfaceLocale%22%3A%22en-US%22%7D%7D%7D%5D&csrfToken=ajax%3A2872756275449100236
+          - generic [ref=e1450]:
+            - generic [ref=e1454]:
+              - heading "Who your viewers also viewed" [level=2] [ref=e1455]:
+                - generic [ref=e1456]: Who your viewers also viewed
+                - generic [ref=e1457]: Who your viewers also viewed
+              - paragraph [ref=e1458]:
+                - generic [ref=e1459]:
+                  - img [ref=e1461]
+                  - text: Private to you
+                - generic [ref=e1463]:
+                  - img [ref=e1465]
+                  - text: Private to you
+            - list [ref=e1468]:
+              - listitem [ref=e1469]:
+                - generic [ref=e1470]:
+                  - img "Someone at Planck" [ref=e1475]
+                  - generic [ref=e1476]:
+                    - generic [ref=e1482]:
+                      - generic [ref=e1483]: Someone at Planck
+                      - generic [ref=e1484]: Someone at Planck
+                    - list [ref=e1486]:
+                      - listitem [ref=e1487]:
+                        - button "View" [ref=e1489] [cursor=pointer]:
+                          - generic [ref=e1490]: View
+              - listitem [ref=e1491]:
+                - generic [ref=e1492]:
+                  - img "Someone at Be Z Online" [ref=e1497]
+                  - generic [ref=e1498]:
+                    - generic [ref=e1504]:
+                      - generic [ref=e1505]: Someone at Be Z Online
+                      - generic [ref=e1506]: Someone at Be Z Online
+                    - list [ref=e1508]:
+                      - listitem [ref=e1509]:
+                        - button "View" [ref=e1511] [cursor=pointer]:
+                          - generic [ref=e1512]: View
+              - listitem [ref=e1513]:
+                - generic [ref=e1514]:
+                  - img "Software Developer at Tricentis" [ref=e1519]
+                  - generic [ref=e1520]:
+                    - generic [ref=e1526]:
+                      - generic [ref=e1527]: Software Developer at Tricentis
+                      - generic [ref=e1528]: Software Developer at Tricentis
+                    - list [ref=e1530]:
+                      - listitem [ref=e1531]:
+                        - button "View" [ref=e1533] [cursor=pointer]:
+                          - generic [ref=e1534]: View
+              - listitem [ref=e1535]:
+                - generic [ref=e1536]:
+                  - img "Software Developer at TSG" [ref=e1541]
+                  - generic [ref=e1542]:
+                    - generic [ref=e1548]:
+                      - generic [ref=e1549]: Software Developer at TSG
+                      - generic [ref=e1550]: Software Developer at TSG
+                    - list [ref=e1552]:
+                      - listitem [ref=e1553]:
+                        - button "View" [ref=e1555] [cursor=pointer]:
+                          - generic [ref=e1556]: View
+          - generic [ref=e1557]:
+            - generic [ref=e1561]:
+              - heading "People you may know" [level=2] [ref=e1562]:
+                - generic [ref=e1563]: People you may know
+                - generic [ref=e1564]: People you may know
+              - paragraph [ref=e1565]:
+                - generic [ref=e1566]: From your school
+                - generic [ref=e1567]: From your school
+            - generic [ref=e1568]:
+              - list [ref=e1569]:
+                - listitem [ref=e1570]:
+                  - generic [ref=e1571]:
+                    - link "Tal Garpel" [ref=e1573] [cursor=pointer]:
+                      - /url: https://www.linkedin.com/in/talgrapel
+                      - img "Tal Garpel" [ref=e1576]
+                    - generic [ref=e1577]:
+                      - link "Tal Garpel Software Engineer at Varonis" [ref=e1579] [cursor=pointer]:
+                        - /url: https://www.linkedin.com/in/talgrapel?miniProfileUrn=urn%3Ali%3Afs_miniProfile%3AACoAADqOVM0BzrUpikqZVMhPmjVpZFzwqCJpyss
+                        - generic [ref=e1580]:
+                          - generic [ref=e1583]:
+                            - generic [ref=e1584]: Tal Garpel
+                            - generic [ref=e1585]: Tal Garpel
+                          - img [ref=e1588]
+                        - generic [ref=e1593]:
+                          - generic [ref=e1594]: Software Engineer at Varonis
+                          - generic [ref=e1595]: Software Engineer at Varonis
+                      - list [ref=e1597]:
+                        - listitem [ref=e1598]:
+                          - button "Invite Tal Garpel to connect" [ref=e1600] [cursor=pointer]:
+                            - img [ref=e1601]
+                            - generic [ref=e1603]: Connect
+                - listitem [ref=e1604]:
+                  - generic [ref=e1605]:
+                    - link "David Schwarzer" [ref=e1607] [cursor=pointer]:
+                      - /url: https://www.linkedin.com/in/david-schwarzer-2a508a61
+                      - img "David Schwarzer" [ref=e1610]
+                    - generic [ref=e1611]:
+                      - link "David Schwarzer Software Engineer" [ref=e1613] [cursor=pointer]:
+                        - /url: https://www.linkedin.com/in/david-schwarzer-2a508a61?miniProfileUrn=urn%3Ali%3Afs_miniProfile%3AACoAAA0A3R0Bq2-pWrp69qmvD9eh5p9PNkjz7UI
+                        - generic [ref=e1614]:
+                          - generic [ref=e1617]:
+                            - generic [ref=e1618]: David Schwarzer
+                            - generic [ref=e1619]: David Schwarzer
+                          - img [ref=e1622]
+                        - generic [ref=e1627]:
+                          - generic [ref=e1628]: Software Engineer
+                          - generic [ref=e1629]: Software Engineer
+                      - list [ref=e1631]:
+                        - listitem [ref=e1632]:
+                          - button "Invite David Schwarzer to connect" [ref=e1634] [cursor=pointer]:
+                            - img [ref=e1635]
+                            - generic [ref=e1637]: Connect
+                - listitem [ref=e1638]:
+                  - generic [ref=e1639]:
+                    - link "Amir Litvak" [ref=e1641] [cursor=pointer]:
+                      - /url: https://www.linkedin.com/in/amir-litvak
+                      - img "Amir Litvak" [ref=e1644]
+                    - generic [ref=e1645]:
+                      - link "Amir Litvak MDR Analyst" [ref=e1647] [cursor=pointer]:
+                        - /url: https://www.linkedin.com/in/amir-litvak?miniProfileUrn=urn%3Ali%3Afs_miniProfile%3AACoAADaZOmwB0FYaueouM9lQlu1TrYrC912D4tc
+                        - generic [ref=e1651]:
+                          - generic [ref=e1652]: Amir Litvak
+                          - generic [ref=e1653]: Amir Litvak
+                        - generic [ref=e1657]:
+                          - generic [ref=e1658]: MDR Analyst
+                          - generic [ref=e1659]: MDR Analyst
+                      - list [ref=e1661]:
+                        - listitem [ref=e1662]:
+                          - button "Invite Amir Litvak to connect" [ref=e1664] [cursor=pointer]:
+                            - img [ref=e1665]
+                            - generic [ref=e1667]: Connect
+                - listitem [ref=e1668]:
+                  - generic [ref=e1669]:
+                    - link "Avraham Shurin" [ref=e1671] [cursor=pointer]:
+                      - /url: https://www.linkedin.com/in/avraham-shurin-b90a63162
+                      - img "Avraham Shurin" [ref=e1674]
+                    - generic [ref=e1675]:
+                      - link "Avraham Shurin Software Engineer" [ref=e1677] [cursor=pointer]:
+                        - /url: https://www.linkedin.com/in/avraham-shurin-b90a63162?miniProfileUrn=urn%3Ali%3Afs_miniProfile%3AACoAACb0mNwBA7cKrWeykXTAkXVllvjDKFW67sI
+                        - generic [ref=e1681]:
+                          - generic [ref=e1682]: Avraham Shurin
+                          - generic [ref=e1683]: Avraham Shurin
+                        - generic [ref=e1687]:
+                          - generic [ref=e1688]: Software Engineer
+                          - generic [ref=e1689]: Software Engineer
+                      - list [ref=e1691]:
+                        - listitem [ref=e1692]:
+                          - button "Invite Avraham Shurin to connect" [ref=e1694] [cursor=pointer]:
+                            - img [ref=e1695]
+                            - generic [ref=e1697]: Connect
+                - listitem [ref=e1698]:
+                  - generic [ref=e1699]:
+                    - link "Tuval Kohl" [ref=e1701] [cursor=pointer]:
+                      - /url: https://www.linkedin.com/in/tuval-kohl-b76235132
+                      - img "Tuval Kohl" [ref=e1704]
+                    - generic [ref=e1705]:
+                      - link "Tuval Kohl Senior Software Engineer @ CyberArk" [ref=e1707] [cursor=pointer]:
+                        - /url: https://www.linkedin.com/in/tuval-kohl-b76235132?miniProfileUrn=urn%3Ali%3Afs_miniProfile%3AACoAACBtE0oB0Hadu6ds8vI2AspPz2bDJS_6l9k
+                        - generic [ref=e1708]:
+                          - generic [ref=e1711]:
+                            - generic [ref=e1712]: Tuval Kohl
+                            - generic [ref=e1713]: Tuval Kohl
+                          - img [ref=e1716]
+                        - generic [ref=e1721]:
+                          - generic [ref=e1722]: Senior Software Engineer @ CyberArk
+                          - generic [ref=e1723]: Senior Software Engineer @ CyberArk
+                      - list [ref=e1725]:
+                        - listitem [ref=e1726]:
+                          - button "Invite Tuval Kohl to connect" [ref=e1728] [cursor=pointer]:
+                            - img [ref=e1729]
+                            - generic [ref=e1731]: Connect
+              - link "Show all people you may know" [ref=e1735] [cursor=pointer]:
+                - /url: https://www.linkedin.com/in/oded-ben-yair-ai/overlay/pymk-recommendations-from-school?isPrefetched=true&profileUrn=urn%3Ali%3Afsd_profile%3AACoAABEJXkIBpHRsj0zFy126tNlNuHKxpGElSpQ
+                - generic [ref=e1736]: Show all
+          - generic [ref=e1737]:
+            - generic [ref=e1741]:
+              - heading "You might like" [level=2] [ref=e1742]:
+                - generic [ref=e1743]: You might like
+                - generic [ref=e1744]: You might like
+              - paragraph [ref=e1745]:
+                - generic [ref=e1746]: Pages for you
+                - generic [ref=e1747]: Pages for you
+            - generic [ref=e1748]:
+              - list [ref=e1749]:
+                - listitem [ref=e1750]:
+                  - generic [ref=e1751]:
+                    - link "Weizmann Institute of Science logo" [ref=e1753] [cursor=pointer]:
+                      - /url: https://www.linkedin.com/company/3152/
+                      - img "Weizmann Institute of Science logo" [ref=e1756]
+                    - generic [ref=e1757]:
+                      - link "Weizmann Institute of Science Research 73,020 followers" [ref=e1759] [cursor=pointer]:
+                        - /url: https://www.linkedin.com/company/3152/
+                        - generic [ref=e1763]:
+                          - generic [ref=e1764]: Weizmann Institute of Science
+                          - generic [ref=e1765]: Weizmann Institute of Science
+                        - generic [ref=e1769]:
+                          - generic [ref=e1770]: Research
+                          - generic [ref=e1771]: Research
+                        - generic [ref=e1772]:
+                          - generic [ref=e1773]: 73,020 followers
+                          - generic [ref=e1774]: 73,020 followers
+                      - list [ref=e1776]:
+                        - listitem [ref=e1777]:
+                          - link "4 connections work here" [ref=e1779] [cursor=pointer]:
+                            - /url: https://www.linkedin.com/company/3152/
+                            - list [ref=e1781]:
+                              - listitem [ref=e1782]
+                              - listitem [ref=e1784]
+                              - listitem [ref=e1786]
+                            - generic [ref=e1790]: 4 connections work here
+                        - listitem [ref=e1791]:
+                          - button "Follow Weizmann Institute of Science" [ref=e1793] [cursor=pointer]:
+                            - img [ref=e1794]
+                            - generic [ref=e1796]: Follow
+                - listitem [ref=e1797]:
+                  - generic [ref=e1798]:
+                    - link "The Kind Leader logo" [ref=e1800] [cursor=pointer]:
+                      - /url: https://www.linkedin.com/company/106397251/
+                      - img "The Kind Leader logo" [ref=e1803]
+                    - generic [ref=e1804]:
+                      - link "The Kind Leader Technology, Information and Media 42,871 followers" [ref=e1806] [cursor=pointer]:
+                        - /url: https://www.linkedin.com/company/106397251/
+                        - generic [ref=e1810]:
+                          - generic [ref=e1811]: The Kind Leader
+                          - generic [ref=e1812]: The Kind Leader
+                        - generic [ref=e1816]:
+                          - generic [ref=e1817]: Technology, Information and Media
+                          - generic [ref=e1818]: Technology, Information and Media
+                        - generic [ref=e1819]:
+                          - generic [ref=e1820]: 42,871 followers
+                          - generic [ref=e1821]: 42,871 followers
+                      - list [ref=e1823]:
+                        - listitem [ref=e1824]:
+                          - link "4 connections follow this page" [ref=e1826] [cursor=pointer]:
+                            - /url: https://www.linkedin.com/company/106397251/
+                            - list [ref=e1828]:
+                              - listitem [ref=e1829]
+                              - listitem [ref=e1831]
+                              - listitem [ref=e1833]
+                            - generic [ref=e1837]: 4 connections follow this page
+                        - listitem [ref=e1838]:
+                          - button "Follow The Kind Leader" [ref=e1840] [cursor=pointer]:
+                            - img [ref=e1841]
+                            - generic [ref=e1843]: Follow
+              - link "Show all you might like" [ref=e1847] [cursor=pointer]:
+                - /url: https://www.linkedin.com/in/oded-ben-yair-ai/overlay/company-recommendations?isPrefetched=true&profileUrn=urn%3Ali%3Afsd_profile%3AACoAABEJXkIBpHRsj0zFy126tNlNuHKxpGElSpQ
+                - generic [ref=e1848]: Show all
+          - iframe [ref=e1853]:
+            
+      - contentinfo [ref=e1854]
+    - generic:
+      - generic:
+        - complementary:
+          - generic [ref=e1857]:
+            - generic [ref=e1859] [cursor=pointer]:
+              - generic [ref=e1860]:
+                - img "Oded Ben-Yair" [ref=e1861]
+                - generic [ref=e1863]: Status is online
+              - button "You are on the messaging overlay. Press enter to open the list of conversations." [ref=e1864]:
+                - generic [ref=e1865]:
+                  - generic [ref=e1866]: Messaging
+                  - generic [ref=e1867]: You are on the messaging overlay. Press enter to open the list of conversations.
+            - generic [ref=e1868]:
+              - button "Open messenger dropdown menu" [ref=e1870] [cursor=pointer]:
+                - img "Open messenger dropdown menu" [ref=e1871]
+              - button "Compose message" [ref=e1874] [cursor=pointer]:
+                - img [ref=e1875]
+                - generic [ref=e1877]: Compose message
+              - button "You are on the messaging overlay. Press enter to open the list of conversations." [ref=e1878] [cursor=pointer]:
+                - img [ref=e1879]
+                - generic [ref=e1881]: You are on the messaging overlay. Press enter to open the list of conversations.
+        - complementary "AI-powered assistant to get help with your career, jobs etc"

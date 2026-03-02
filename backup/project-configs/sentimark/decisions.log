@@ -1,0 +1,132 @@
+[2026-02-04] DEPLOYED: Tier 0 Wire Existing Data — 15 files, 4 new API clients, 4 new intelligence modules, migration 057. Pipeline Run 10304 succeeded. 178 functions. New data flowing.
+[2026-02-04] VERIFIED: FRED macro_score=63 (stocks), options_flow_score=52-56 (stocks), technical enriched with MACD+Bollinger+ADX+Williams.
+[2026-02-04] DECISION: UPDATED_AT_COLUMN_MAP dict for source→DB column mapping (fred_macro→macro_updated_at, etc). Source keys diverge from DB prefixes.
+[2026-02-04] DECISION: fmp_technical staleness 6h (was 2h) to stay within FMP 250/day free tier with 7 indicator calls/asset.
+[2026-02-04] DECISION: Removed bgeometrics from stocks SOURCE_CATEGORY_MAP — always returns fallback for non-crypto.
+[2026-02-04] DECISION: Dual review (code-judge + code-reviewer) mandatory for 10+ file deploys. Caught 11 issues including 3 CRITICAL.
+[2026-02-04] DECISION: Fix ALL known limitations before deploy. Dune IDs, MACD/Bollinger, LunarCrush verification all done pre-deploy.
+[2026-02-04] NEXT: Wait for n=200+ post-Tier0 evaluations (~Feb 10). Compare pre-Tier0 25.0% baseline vs post-Tier0 accuracy.
+[2026-02-04] FINDING: Dead code in production — BGeometrics, GDELT, LunarCrush clients exist but asset_rotation.py routes them to wrong functions. On-chain data never fetched.
+[2026-02-04] FINDING: Technical analysis uses RSI only — FMP client has MACD/Bollinger/ADX/SMA/EMA but technical.py never calls them.
+[2026-02-04] FINDING: Earnings/analyst data fetched but only injected as LLM prompt text — not used as numerical scores in financial.py intelligence source.
+[2026-02-04] DECISION: Tier 0 before any new subscriptions — wire BGeometrics (crypto on-chain), full technicals (FMP), earnings scoring (FMP), GDELT (geopolitical). All $0 cost.
+[2026-02-04] DECISION: Tier 1 after baseline — DefiLlama ($0), Unusual Whales (~$30-50/mo for options flow), Dune Analytics ($0). Total new cost: ~$30-50/mo.
+[2026-02-04] DECISION: Skip enterprise data (RavenPack $1K+, Placer.ai $5K+, ExtractAlpha) and AI signal services (altFINS, Tickeron). Unproven ROI, overlaps existing sources.
+[2026-02-04] PLAN: Accuracy improvement plan written to docs/ACCURACY_IMPROVEMENT_PLAN.md. Implementation sequence: Tier 0 (week 1) → new baseline (week 2) → Tier 1 (week 3+).
+[2026-02-04] MEASUREMENT: P0 baseline accuracy measured. V2 accuracy 25.0% (n=64, 24h only). Neutral rate 42.1% (was 86.9%). Placeholder rate 0.5%. Report: docs/BASELINE_ACCURACY_FEB2026.md
+[2026-02-04] FINDING: Confidence scoring is uncalibrated — avg 0.22 for both correct and incorrect predictions. Provides zero discriminative power. Dampening x0.4 too aggressive.
+[2026-02-04] FINDING: V3 NOT ready for production — 0 evaluated predictions, 72.9% neutral (worse than V2 42.1%), 65.9% abstained by signal band.
+[2026-02-04] FINDING: Evaluator backlog — 57 V2 + 138 V3 predictions overdue but unevaluated. Evaluator may be behind or V3 eval not activated.
+[2026-02-04] FINDING: Category accuracy divergence — Indices 55.6% vs Stocks 17.6%. Category-aware weighting is differentiated but needs more data to validate.
+[2026-02-04] FINDING: Bearish skew — 2:1 bearish:bullish ratio in recent predictions. Indices 48% bearish vs 12% bullish. May indicate systematic prompt bias.
+[2026-02-04] DECISION: Do NOT switch to V3 — zero evaluated predictions means no comparison possible. Activate V3 evaluation pipeline first.
+[2026-02-04] DECISION: Wait for n=200+ evaluations (~Feb 10 when 7d horizon evaluates) before drawing accuracy conclusions. Current n=64 has 95% CI [15%, 37%].
+[2026-02-03] FIX: Coherence bug (commit 0c8c74a) — undefined coherence variable caused NameError silently caught → all predictions placeholder. The #1 bug in Sentimark history.
+[2026-02-03] DECISION: Deploy coherence fix + V3 eval corruption fix + V3 INSERT columns fix + market_regime constraint fix + eval threshold type fix.
+[2026-02-02] DECISION: Deploy V2 accuracy fix — category-aware LLM weights, epistemic confidence inversion, bullish contrarian override, 23-symbol purge (commit 242bb7d).
+[2026-02-01] DECISION: Deploy V3 consensus in shadow mode (CONSENSUS_VERSION=v2 default). Migration 055 applied.
+[2026-02-01] DECISION: Revert bulk cleanup commit after production outage (0 functions). Rule: never bulk-delete from shared/.
+
+[2026-02-08] MEASUREMENT: V2 accuracy 36.0% (n=2,411) — barely above random (33.3%). Binomial p=0.002 but Cohen's h=0.059 (negligible). Only 2.45pp above always-neutral baseline.
+[2026-02-08] MEASUREMENT: By direction: Bearish 43.3% (n=490), Neutral 37.1% (n=1406), Bullish 26.6% (n=515). Bullish is BELOW random baseline (32.1%).
+[2026-02-08] MEASUREMENT: By category: Forex 55.4% (n=466), Indices 34.5%, Crypto 30.9%, Stocks 30.7%, Commodities 30.4%.
+[2026-02-08] FINDING: **NO LLM can distinguish bullish from bearish**. Grok scores 0.336 vs 0.305. GPT-5 scores 0.243 vs 0.179 (INVERSE). Perplexity scores 0.283 vs 0.013 (INVERSE). Bullish/bearish signals are noise.
+[2026-02-08] FINDING: Forex 55.4% accuracy is ARTIFACT — forex markets are 64.2% neutral, system predicts neutral → matches. Directional forex: bearish 27.5%, bullish 32.8% (both below random).
+[2026-02-08] FINDING: Directional calls by ANY LLM are 15-24% accurate (worse than coin flip). Claude 23.7%, GPT-5 21.4%, Grok 19.9%, Perplexity 14.7%.
+[2026-02-08] FINDING: Feb 7 "64% accuracy spike" was flat market illusion — neutral predictions 85.4% correct because market was flat. Bearish/bullish that day: 5-12%.
+[2026-02-08] FINDING: Bearish crypto is consistently strong: BTC 100% (8/8), BNB 100% (3/3), SOL 69% (9/13), ETH 55% (6/11). Overall bearish crypto: 73.9% (n=65).
+[2026-02-08] FINDING: Medium LLM disagreement (0.25-0.40) yields 43.7% accuracy vs 33.9% for low disagreement. Moderate disagreement has signal.
+[2026-02-08] FINDING: Confidence does NOT predict accuracy — r=0.12 (1.4% variance explained). High-confidence directional: 25% (worse than low-confidence 44%).
+[2026-02-08] FINDING: V3 is worse than V2: 28.5% vs 30.6% head-to-head on 8,079 matched pairs. V3 has higher neutral rate (71.2% vs 61.9%).
+[2026-02-08] FINDING: Ensemble does NOT destroy value vs Grok alone: Grok standalone 20.9% (not 53.3% — earlier metric was misleading). Ensemble actually corrects Grok more than it overrides (35.4% vs 14.8%).
+[2026-02-08] FINDING: Perplexity 60% failure rate confirmed (2,379 rows vs 5,952 for others). With Perplexity: 38.6% accuracy. Without: 41.6%.
+[2026-02-08] FINDING: V3 evaluator IS working (1,498 evaluated), contradicting Feb 4 finding.
+[2026-02-08] **DECISION: NO-GO on current prediction algorithms**. 36.0% accuracy is negligible effect size. No LLM can predict direction. System's only "skill" is predicting neutral (= "I don't know").
+[2026-02-08] DECISION: 3 options evaluated — (1) Selective Signal Trading (gate+filter, 2-4 weeks), (2) LLM-as-Feature-Extractor + ML (4-8 weeks), (3) Pivot to intelligence product (2-6 weeks).
+[2026-02-08] **ARCHITECTURE DECISION: "IRON DOME"** — 6-model debate (GPT-5.2, Grok-4, Perplexity, Gemini 3 Pro, GPT-5 Pro, GPT-5.2 Codex), 5 rounds, unanimous consensus (8.8/10).
+[2026-02-08] DECISION: Phased hybrid: Phase 0 (wks 0-2) compliance+gate debiasing → Phase 1 (wks 2-6) Regime Radar + Smart Gate live → Phase 2 (wks 6-12) Crash Sentinel + validation → Phase 3 (mo 3-5) LLM-as-feature-extractor + expanded XGBoost.
+[2026-02-08] DECISION: Core insight: "Sell protection, not prediction." Regime Radar is the revenue wedge (compliance-safe research product). Smart Gate is the "sniper" (low coverage, high precision).
+[2026-02-08] DECISION: LLMs are sensors, not oracles — use for feature extraction, not direction prediction. Research-backed (arxiv 2508.04975).
+[2026-02-08] DECISION: 99.3% TRADE accuracy needs debiasing before live — class imbalance and threshold tuning artifacts. Walk-forward + regime slicing + calibration required.
+[2026-02-08] DOCS: ARCHITECTURE_CURRENT.md (full system architecture) + ARCHITECTURE_DECISION.md (debate outcome + roadmap) created.
+[2026-02-08] DECISION: Smart Gate v1 — XGBoost meta-classifier gating TRADE/NO_TRADE. Option 1 selected.
+[2026-02-08] DECISION: 25 features selected based on GO/NO-GO analysis (disagreement, category, intelligence scores, bearish_crypto, time encoding)
+[2026-02-08] DECISION: Walk-forward CV (5-fold, 7-day windows), NEVER random splits — financial data leakage prevention
+[2026-02-08] DECISION: Bearish crypto bypass (73.9% accuracy, n=65) — hardcoded override in gate
+[2026-02-08] DECISION: Kill-switch: auto-disable if TRADE accuracy < 50% or coverage < 5% over rolling 100 decisions
+[2026-02-08] DECISION: Feature-flagged deploy: ENABLE_EDGE_GATE=false, EDGE_GATE_SHADOW=true. Shadow mode first, then canary.
+[2026-02-08] DEPLOYED: Smart Gate v1 to master (commit 4c384f0 merge, 2fceabd fix). Pipeline #10351 succeeded, 180 functions.
+[2026-02-08] TRAINING: Gate v1 trained on 2,525 predictions (Feb 3-7). Walk-forward AUC=0.73, TRADE accuracy=63.3% (3 folds: 60.6%, 77.4%, 51.7%). Optimal threshold=0.83, coverage=11.7%.
+[2026-02-08] TRAINING: Top features: category_forex (0.090), confidence_spread (0.088), direction_bullish (0.064), direction_bearish (0.063), n_llms_responding (0.060), grok_score (0.056), bearish_crypto_flag (0.053).
+[2026-02-08] DEPLOYED: Model uploaded to Azure Blob stsentimarkv2/sentimark-models/gate_v1_model.pkl (594 KB). App settings: ENABLE_EDGE_GATE=true, EDGE_GATE_SHADOW=true.
+[2026-02-08] MIGRATION: 060_gate_monitoring.sql applied — gate_monitoring_log table created for shadow mode logging.
+[2026-02-08] FIX: gate_features.py raw_confidence→confidence column name (commit 2fceabd). DB column is 'confidence', not 'raw_confidence'.
+[2026-02-08] FIX: _get_edge_gate() now supports azure:// blob URIs for model loading (was silently failing with os.path.exists on blob URI).
+[2026-02-07] DEPLOY: Consensus fix (commit 0ae9b86). Pipeline #10344 succeeded. 180 functions. Migration 059 applied (claude rows in bandit_state_v2).
+[2026-02-07] DECISION: Lower consensus base_threshold 0.15→0.08, floor 0.10→0.05. With 4 diverse LLMs, consensus_score typically 0.05-0.12, old threshold caught everything as neutral.
+[2026-02-07] DECISION: Disable contrarian bullish→neutral override. Bullish was 75% correct (3/4 in n=51). Override was converting best prediction type to worst.
+[2026-02-07] DECISION: Soften mixed signals gate 0.35→0.50. With diversified contexts, moderate disagreement is expected.
+[2026-02-07] DECISION: Rebalance weights Grok 40%, Claude 25%, GPT-5 20%, Perplexity 15% (was Grok 20-35%, equal distribution). Based on observed accuracy: Grok 53.3%, Claude 37.8%, GPT-5 23.9%, Perplexity 18.2%.
+[2026-02-07] DECISION: Shift static/dynamic blend 70/30→60/40 to give Thompson sampling bandits more influence.
+[2026-02-07] DECISION: Replace all 'gemini' keys with 'claude' natively in weight dicts. _adapt_weights_for_claude now only remaps legacy gemini keys from DB.
+[2026-02-07] FINDING: Azure Functions consumption plan keeps old instances warm for 12+ hours after deploy. 53% of predictions still from old code 13h after deploy.
+[2026-02-07] FINDING: Even with lowered threshold (0.08), new code only achieves 32.5% directional rate (was 27.7% old code). Fundamental issue: 4 diverse LLMs produce small consensus scores.
+[2026-02-06] DEPLOY: Claude Opus 4.6 integration (commit db693ef). ENABLE_CLAUDE_LLM=true. API key in Key Vault. 177 functions.
+[2026-02-06] DECISION: Claude replaces Gemini as "Strategic Synthesis Analyst" — cross-asset correlations, macro regime, multi-timeframe. Shares Gemini's macro context focus.
+
+[2026-02-10] SPRINT: Perfection Sprint completed — 3 teammates (model-retrainer, bug-fixer, consensus-tuner) working in parallel.
+[2026-02-10] RETRAINED: XGBoost on 4,286 samples (was 2,525). Training WF-AUC 0.7419, eval harness WF-AUC 0.6021, full-data AUC 0.8519.
+[2026-02-10] TUNED: Mixed signals gate 0.50→0.65 + min 2 dissenters. V3 k_threshold 0.50→0.25. Forex neutral_band 0.15→0.10.
+[2026-02-10] WIRED: Confidence calibrator (pocket base rates) into consensus return path via category pass-through.
+[2026-02-10] FIXED: total_return_pct computed in SQL (3 queries in function_app.py). Source health verified.
+[2026-02-10] DEPLOYED: Pipeline #10395. Model to Azure Blob. EDGE_GATE_SHADOW=true verified.
+[2026-02-10] LESSON: Training CV (3-fold) ≠ Eval harness (5-fold). Use eval harness for GO/NO-GO decisions.
+[2026-02-10] LESSON: Kudu HTTP 400 is transient — re-trigger pipeline. Azure Blob --auth-mode key for CI/CD.
+[2026-02-10] LESSON: Max 2 concurrent pytest runs across teammates. 3 saturates CPU.
+[2026-02-10] DECISION: GO/NO-GO #2 criteria: eval harness WF-AUC > 0.70, TRADE accuracy > 60%, n > 50 TRADE, 24h shadow data.
+
+[2026-02-05] INTEGRATION: LunarCrush MCP added to Claude Code environment
+- Provides crypto social intelligence: sentiment, AltRank, Galaxy Score, mentions, interactions
+- Direct complement to existing social_sentiment intelligence source (currently Perplexity-only)
+- Use cases for Sentimark:
+  1. REPLACE/ENHANCE social_sentiment source for crypto assets (111 active symbols)
+  2. Galaxy Score (0-100) as additional feature for LLM ensemble prompts
+  3. AltRank for relative strength ranking across crypto portfolio
+  4. Social mentions + interactions for crowd_wisdom validation
+  5. Real-time sentiment shifts for intraday signal detection
+- API key: LunarCrush-ApiKey in kv-seekapa-apps
+- Rate limits: Builder tier (100 rpm, 20k/day) sufficient for 111 assets
+- NEXT: When resuming Sentimark work, consider adding lunarcrush_intelligence source
+
+[2026-02-11] EVALUATION: GO/NO-GO #3 DEFINITIVE NO-GO — 5 NO-GO, 1 Conditional, 1 Marginal.
+[2026-02-11] ROOT CAUSE: V3 consensus key mismatch at asset_rotation.py:975-981. Production V3 produces 'p_up'/'raw_confidence' but gate reads 'score'/'confidence'. 6 LLM features always at defaults.
+[2026-02-11] ROOT CAUSE #2: Intelligence scores never passed from asset_profile to pred dict at asset_rotation.py:990-997. 6 more features at 0.5.
+[2026-02-11] FINDING: 14/27 features constant. 43.4% of model importance lost. Only 14 distinct probability values.
+[2026-02-11] FINDING: All 8,475 gate decisions in history had zero real LLM disagreement features.
+[2026-02-11] FINDING: Post-fix c3edc60 data identical to pre-fix — wrong bug fixed (v1.0→v1.1 schema, not V3 keys).
+[2026-02-11] FINDING: Simple rule (forex + crypto-bearish) = 55.5% acc at 23% cov vs ML gate 45.1% at 8.5%.
+[2026-02-11] FINDING: Pocket thresholds completely determine decisions — all below model min or above model max probability.
+[2026-02-11] DECISION: 5 golden pieces: GP1 V3 key fix (P0), GP2 rule-based gate (P0), GP3 retrain (P1), GP4 block stocks/commodities (P1), GP5 indices (P2).
+[2026-02-11] DECISION: Prevention Rule #22 — after CONSENSUS_VERSION change, verify all downstream consumers read new keys.
+[2026-02-11] DOCS: GONOGO3_VERDICT.md, GOLDEN_PIECES.md created. CLAUDE.md updated.
+[2026-02-11] PATTERN: 4 new success patterns (046-049), 4 new anti-patterns (040-043) added.
+[2026-02-22] VERIFIED: Weekend skip WORKING — stocks 0, indices 0 predictions on Sat Feb 21. 3 WTI commodity predictions leaked at midnight boundary (timer started 23:59 Fri, DB insert 00:00:18 Sat). Race condition, negligible impact (3 neutral predictions on 1 asset).
+[2026-02-22] VERIFIED: Forex+crypto predictions continue on weekends as expected (15 forex, 9 crypto on Sat Feb 21).
+[2026-02-22] FINDING: Grok calibration 0.7 PARTIAL — weekday bullish avg 24.7% (23.4→25.9% over 5 days). Target <22% not fully met. Early improvement (23.4% on Feb 16) drifted up to 25.9% by Feb 20. Consider lowering factor to 0.6 or 0.5.
+[2026-02-22] FINDING: Post-deploy accuracy (Feb 16-22, n=4,127 evaluated): forex 60.5% (up from 55.6%, best category), crypto 39.3% (up), indices 39.1% (up), stocks 35.0% (down from 39.7%), commodities 23.2% (down from 38.3%, investigate).
+[2026-02-22] FINDING: Gate performance stable — ~46% TRADE, ~54% NO_TRADE, 0% PASS_THROUGH. ~3100 predictions/day on weekdays, 27 on Saturday (forex+crypto only + WTI leak).
+[2026-02-22] DECISION: Lowered GROK_CALIBRATION_FACTOR from 0.7 to 0.6 (Azure App Settings, no code deploy). Bullish rate 24.7% avg (target <22%) insufficient at 0.7. Gradual step-down. Monitor 24h.
+[2026-02-22] FINDING: Commodities accuracy drop (38.3%→23.0%) ROOT CAUSE: market volatility + excessive neutral bias. Post-deploy neutral rate 93.4% (up from 79.1%), but only 21.4% of commodity prices actually stayed neutral (vs 42.4% pre-deploy). Energy commodities most volatile: BRENT 3.3% neutral acc (was 52.1%), WTI 15.0% (was 51.1%), OIL 13.6% (was 59.2%).
+[2026-02-22] FINDING: Gate blocks 100% of commodity predictions post-deploy (all NO_TRADE, up from 94.1% pre-deploy). Combined with near-total neutral predictions, commodities have zero useful signal.
+[2026-02-22] WARNING: Lowering Grok calibration to 0.6 will increase commodity neutral rate further. Commodities may need category-specific calibration (exempt from dampening) or different approach entirely.
+[2026-02-22] FINDING: Cotton is the only stable commodity (100% neutral accuracy, n=29) — prices genuinely flat. All other commodities moved significantly during Feb 16-21.
+[2026-02-23] FINDING: Grok calibration factor 0.6 INSUFFICIENT — bullish rate 25.8% (worse than 24.7% with 0.7). Root cause: stocks 38.4% bullish is multi-LLM consensus, NOT Grok-only bias. Global Grok dampening cannot solve multi-LLM agreement on bullish.
+[2026-02-23] FINDING: Category bullish distribution (factor 0.6, n=1,600): forex 1.5%, crypto 19.5%, commodities 17.9%, stocks 38.4%, indices 33.6%. Commodities improved (from ~0% at 0.7 to 17.9% at 0.6).
+[2026-02-23] DECISION: Implement category-specific Grok calibration. commodities=1.0 (no dampening, accuracy collapsed 38.3%→23.2%), forex=1.0 (no dampening, best accuracy 60.5%), global=0.6 (stocks/indices/crypto keep dampening).
+[2026-02-23] DECISION: Env var pattern: GROK_CALIBRATION_FACTOR_<CATEGORY> overrides global GROK_CALIBRATION_FACTOR. Azure settings set. Code change in llm_prediction.py, 5 new tests, all 19 pass.
+[2026-02-23] FINDING: Paper trade (30 days): rule gate adds +4.9% value. TRADE 43.9% (n=8,690) vs NO_TRADE 35.2% (n=10,090). Forex best: 52.1% (n=3,325). Stocks worst: 27.7% (n=744).
+[2026-03-02] DECISION: Consensus Algorithm Redesign Phase 1 — Removed conf² double penalty (score=0.6*conf → 0.6), removed neutral dilution from directional average, raised MIN_LLMS 1→2. Feature flag CONSENSUS_V2_FIXED (default true). GPT-5.3 Codex reviewed.
+[2026-03-02] DECISION: Enabled DIVERSIFIED_CONTEXT=true — each LLM gets specialized context (Perplexity: News+Social, GPT-5: Fundamentals, Grok: Technical+Social, Claude: Macro). Code existed since Feb 5.
+[2026-03-02] DECISION: Phase 2 — Per-LLM accuracy tracker computes rolling 14-day accuracy per (llm, category, direction, horizon) pocket. Category router uses this to adjust consensus weights. Shadow mode default (ENABLE_CATEGORY_ROUTER=false).
+[2026-03-02] DECISION: Category router strategies: 'single' (>10pp dominance → one LLM), 'top2' (<5pp cluster → top 2 weighted), 'ensemble' (fallback to base weights). Graceful degradation on any error.
+[2026-03-02] DECISION: Router reads env var at call time (_is_router_enabled()) not module import time — enables monkeypatch in tests and hot-toggle in production.

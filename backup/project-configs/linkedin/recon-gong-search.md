@@ -1,0 +1,399 @@
+- generic [ref=e1]:
+  - generic:
+    - region "Toast message":
+      - heading "0 notifications total" [level=2] [ref=e3]
+      - alert
+  - region [ref=e15]
+  - generic [ref=e16]:
+    - generic [ref=e116]:
+      - button "Skip to search" [ref=e117] [cursor=pointer]:
+        - generic [ref=e118]: Skip to search
+      - button "Skip to main content" [ref=e119] [cursor=pointer]:
+        - generic [ref=e120]: Skip to main content
+      - button "Keyboard shortcuts" [ref=e121] [cursor=pointer]:
+        - generic [ref=e122]: Keyboard shortcuts
+      - button "Close jump menu" [ref=e123] [cursor=pointer]:
+        - img [ref=e124]
+        - generic [ref=e126]: Close jump menu
+    - banner "Global Navigation" [ref=e127]:
+      - generic [ref=e128]:
+        - link "LinkedIn" [ref=e129] [cursor=pointer]:
+          - /url: https://www.linkedin.com/feed/?nis=true
+          - img "LinkedIn" [ref=e132]:
+            - img [ref=e133]
+        - generic [ref=e137]:
+          - combobox "Search" [ref=e138]: gong AI
+          - generic:
+            - img
+        - navigation "Primary Navigation" [ref=e139]:
+          - list [ref=e140]:
+            - listitem [ref=e141]:
+              - link "new feed updates notifications Home" [ref=e142] [cursor=pointer]:
+                - /url: https://www.linkedin.com/feed/?nis=true&
+                - generic [ref=e143]:
+                  - generic [ref=e146]: new feed updates notifications
+                  - img [ref=e150]
+                - generic "Home" [ref=e152]
+            - listitem [ref=e153]:
+              - link "4 new network updates notifications My Network" [ref=e154] [cursor=pointer]:
+                - /url: https://www.linkedin.com/mynetwork/?
+                - generic [ref=e155]:
+                  - generic [ref=e156]:
+                    - generic [ref=e157]: "4"
+                    - generic [ref=e158]: 4 new network updates notifications
+                  - img [ref=e162]
+                - generic "My Network" [ref=e164]
+            - listitem [ref=e165]:
+              - link "Jobs" [ref=e166] [cursor=pointer]:
+                - /url: https://www.linkedin.com/jobs/?
+                - img [ref=e170]
+                - generic "Jobs" [ref=e172]
+            - listitem [ref=e173]:
+              - link "Messaging" [ref=e174] [cursor=pointer]:
+                - /url: https://www.linkedin.com/messaging/?
+                - img [ref=e178]
+                - generic "Messaging" [ref=e180]
+            - listitem [ref=e181]:
+              - link "Notifications" [ref=e182] [cursor=pointer]:
+                - /url: https://www.linkedin.com/notifications/?
+                - img [ref=e186]
+                - generic "Notifications" [ref=e188]
+            - listitem [ref=e189]:
+              - button "Oded Ben-Yair Me" [ref=e191] [cursor=pointer]:
+                - img "Oded Ben-Yair" [ref=e192]
+                - generic [ref=e193]:
+                  - text: Me
+                  - img [ref=e194]
+            - listitem [ref=e196]:
+              - button "For Business" [ref=e198] [cursor=pointer]:
+                - img [ref=e202]
+                - generic "For Business" [ref=e204]:
+                  - text: For Business
+                  - img [ref=e205]
+            - listitem [ref=e207]:
+              - 'link "Reactivate Premium: 50% Off" [ref=e209] [cursor=pointer]':
+                - /url: http://www.linkedin.com/premium/redeem/?_ed=0_bvLJH59RTSY-u5c6PMUa4IW0M54p9mxZpuVkfRvTl7r&upsellOrderOrigin=Tracking%3Av1%3Apremium_nav_upsell_text_winback%3ANav%3AIn-Product&referenceId=JbWovmSCRPua7OYnLqoLBg%3D%3D&customKey=wb_c&redeemTypeV2=DISCOUNT&destRedirectURL=https%3A%2F%2Fwww.linkedin.com%2Fsearch%2Fresults%2Fcontent%2F%3Fkeywords%3Dgong%2520AI%26datePosted%3D%2522past-week%2522%26sortBy%3D%2522date_posted%2522
+                - generic [ref=e211]: "Reactivate Premium: 50% Off"
+    - generic [ref=e212]:
+      - navigation "Search filters" [ref=e215]:
+        - list [ref=e216]:
+          - listitem [ref=e217]
+          - listitem [ref=e218]
+          - listitem [ref=e219]
+          - listitem [ref=e220]
+          - listitem [ref=e221]
+          - listitem [ref=e222]
+          - listitem [ref=e223]
+      - generic [ref=e225]:
+        - main [ref=e226]:
+          - heading "Search results for gong AI. There are 3 results. Currently on the page 1 of 78 search result pages." [active] [level=1] [ref=e227]
+          - generic [ref=e230]:
+            - generic [ref=e231]:
+              - list [ref=e234]:
+                - listitem [ref=e235]:
+                  - article [ref=e239]:
+                    - generic [ref=e241]:
+                      - heading "Feed post" [level=2] [ref=e242]
+                      - generic [ref=e243]:
+                        - generic [ref=e244]:
+                          - generic [ref=e245]:
+                            - generic [ref=e246]:
+                              - link "View Thanujah Mahalingam’s graphic link" [ref=e247] [cursor=pointer]:
+                                - /url: https://www.linkedin.com/in/thanujah-mahalingam-2143751b?miniProfileUrn=urn%3Ali%3Afsd_profile%3AACoAAAQlrfABOEugt8GgU9a6F0n0s1t4Fn286gY
+                                - img "View Thanujah Mahalingam’s graphic link" [ref=e251]
+                              - generic [ref=e252]:
+                                - 'link "View: Thanujah Mahalingam Premium • 3rd+ Global Talent Acquisition &amp; Employer Branding Architect I HR Lead I Elevating Hogan Interpretation Into Art" [ref=e253] [cursor=pointer]':
+                                  - /url: https://www.linkedin.com/in/thanujah-mahalingam-2143751b?miniProfileUrn=urn%3Ali%3Afsd_profile%3AACoAAAQlrfABOEugt8GgU9a6F0n0s1t4Fn286gY
+                                  - generic [ref=e254]:
+                                    - generic [ref=e256]:
+                                      - generic [ref=e257]: Thanujah Mahalingam
+                                      - generic [ref=e258]: Thanujah Mahalingam
+                                    - generic [ref=e259]:
+                                      - generic [ref=e260]:
+                                        - img [ref=e261]:
+                                          - img [ref=e262]
+                                        - text: • 3rd+
+                                      - generic [ref=e264]: Premium • 3rd+
+                                  - generic [ref=e265]:
+                                    - generic [ref=e266]: Global Talent Acquisition & Employer Branding Architect I HR Lead I Elevating Hogan Interpretation Into Art
+                                    - generic [ref=e267]: Global Talent Acquisition & Employer Branding Architect I HR Lead I Elevating Hogan Interpretation Into Art
+                                - generic [ref=e268]:
+                                  - generic [ref=e269]:
+                                    - text: 13m •
+                                    - img [ref=e272]
+                                  - generic [ref=e274]: 13 minutes ago • Visible to anyone on or off LinkedIn
+                            - button "Follow Thanujah Mahalingam" [ref=e275] [cursor=pointer]:
+                              - img [ref=e276]
+                              - generic [ref=e278]: Follow
+                          - button "Open control menu for post by Thanujah Mahalingam" [ref=e281] [cursor=pointer]:
+                            - img [ref=e282]
+                        - generic [ref=e285]:
+                          - generic [ref=e288]:
+                            - text: "Saddle up😃 the Year of the Fire Horse is here, and it’s bringing a burst of courage, speed and unstoppable momentum! This year’s fiery spirit is the perfect match for our Play to Win ambition: go bold, move fast, and make a real difference for patients."
+                            - text: "In 2026 we’ll sprint with purpose: putting people first, simplifying how we work so we’re faster and smarter, and unleashing digital and AI to supercharge what we do best."
+                            - text: May the Fire Horse inspire ambition, speed, and the courage to do what matters most! Happy Lunar New Year and Gong Xi Fa Cai!
+                          - button "see more, visually reveals content which is already detected by screen readers" [ref=e289] [cursor=pointer]:
+                            - generic [ref=e290]: …more
+                        - generic [ref=e292]:
+                          - button "Activate to view larger image, No alternative text description for this image" [ref=e294] [cursor=pointer]:
+                            - generic [ref=e295]: Activate to view larger image,
+                            - img "No alternative text description for this image" [ref=e298]
+                          - generic [ref=e299]: Activate to view larger image,
+                        - generic [ref=e301]:
+                          - generic [ref=e302]:
+                            - button "React Like" [ref=e303] [cursor=pointer]:
+                              - generic [ref=e305]:
+                                - img [ref=e306]
+                                - generic [ref=e308]: Like
+                            - button "Open reactions menu":
+                              - img [ref=e310] [cursor=pointer]
+                          - button "Comment" [ref=e314] [cursor=pointer]:
+                            - img [ref=e315]
+                            - generic [ref=e317]: Comment
+                          - button "Repost" [ref=e320] [cursor=pointer]:
+                            - img [ref=e321]
+                            - generic [ref=e323]: Repost
+                          - button "Send in a private message" [ref=e326] [cursor=pointer]:
+                            - img [ref=e327]
+                            - generic [ref=e330]: Send
+                - listitem [ref=e331]:
+                  - article [ref=e335]:
+                    - generic [ref=e337]:
+                      - heading "Feed post" [level=2] [ref=e338]
+                      - generic [ref=e339]:
+                        - generic [ref=e340]:
+                          - generic [ref=e341]:
+                            - generic [ref=e342]:
+                              - link "Boing! Group, graphic." [ref=e343] [cursor=pointer]:
+                                - /url: https://www.linkedin.com/company/boing-group/posts
+                              - generic [ref=e347]:
+                                - 'link "View: Boing! Group 102 followers" [ref=e348] [cursor=pointer]':
+                                  - /url: https://www.linkedin.com/company/boing-group/posts
+                                  - generic [ref=e351]:
+                                    - generic [ref=e353]: Boing! Group
+                                    - generic [ref=e355]: Boing! Group
+                                  - generic [ref=e356]:
+                                    - generic [ref=e357]: 102 followers
+                                    - generic [ref=e358]: 102 followers
+                                - generic [ref=e359]:
+                                  - generic [ref=e360]:
+                                    - text: 1h •
+                                    - img [ref=e363]
+                                  - generic [ref=e365]: 1 hour ago • Visible to anyone on or off LinkedIn
+                            - button "Follow Boing! Group" [ref=e366] [cursor=pointer]:
+                              - img [ref=e367]
+                              - generic [ref=e369]: Follow
+                          - button "Open control menu for post by Boing! Group" [ref=e372] [cursor=pointer]:
+                            - img [ref=e373]
+                        - generic [ref=e376]:
+                          - generic [ref=e379]:
+                            - text: I’m struck by how AI has moved from an emerging trend to a core part of how we work and create. This year, our team embraced AI to take an idea from spark to screen—faster, smarter, and with more creative freedom than ever before.
+                            - text: AI isn’t something to fear, but a powerful partner for marketers. It’s breaking down barriers and opening new possibilities for brands to connect, innovate, and grow.
+                            - text: As marketing leaders, it’s our responsibility to stay curious, adapt, and leverage new tools to drive meaningful results. I’m energised by the opportunities AI is unlocking for our industry—and excited to keep pushing boundaries in the year ahead.
+                            - text: Gong Xi Fa Cai—here’s to prosperity, progress, and inspired storytelling!
+                            - link "hashtag AI" [ref=e380] [cursor=pointer]:
+                              - /url: https://www.linkedin.com/search/results/all/?keywords=%23ai&origin=HASH_TAG_FROM_FEED
+                              - generic [ref=e381]: hashtag
+                              - generic [ref=e382]: "#AI"
+                            - link "hashtag CNY" [ref=e383] [cursor=pointer]:
+                              - /url: https://www.linkedin.com/search/results/all/?keywords=%23cny&origin=HASH_TAG_FROM_FEED
+                              - generic [ref=e384]: hashtag
+                              - generic [ref=e385]: "#CNY"
+                            - link "hashtag MarketingLeadership" [ref=e386] [cursor=pointer]:
+                              - /url: https://www.linkedin.com/search/results/all/?keywords=%23marketingleadership&origin=HASH_TAG_FROM_FEED
+                              - generic [ref=e387]: hashtag
+                              - generic [ref=e388]: "#MarketingLeadership"
+                            - link "hashtag BrandInnovation" [ref=e389] [cursor=pointer]:
+                              - /url: https://www.linkedin.com/search/results/all/?keywords=%23brandinnovation&origin=HASH_TAG_FROM_FEED
+                              - generic [ref=e390]: hashtag
+                              - generic [ref=e391]: "#BrandInnovation"
+                          - button "see more, visually reveals content which is already detected by screen readers" [ref=e392] [cursor=pointer]:
+                            - generic [ref=e393]: …more
+                        - generic [ref=e394]:
+                          - generic [ref=e395]:
+                            - generic [ref=e396]:
+                              - link "Boing! Group, graphic." [ref=e397] [cursor=pointer]:
+                                - /url: https://www.linkedin.com/company/boing-group/posts
+                              - generic [ref=e401]:
+                                - 'link "View: Boing! Group 102 followers" [ref=e402] [cursor=pointer]':
+                                  - /url: https://www.linkedin.com/company/boing-group/posts
+                                  - generic [ref=e405]:
+                                    - generic [ref=e407]: Boing! Group
+                                    - generic [ref=e409]: Boing! Group
+                                  - generic [ref=e410]:
+                                    - generic [ref=e411]: 102 followers
+                                    - generic [ref=e412]: 102 followers
+                                - generic [ref=e413]:
+                                  - generic [ref=e414]:
+                                    - text: 1h •
+                                    - img [ref=e417]
+                                  - generic [ref=e419]: 1 hour ago • Visible to anyone on or off LinkedIn
+                            - button "Follow Boing! Group" [ref=e420] [cursor=pointer]:
+                              - img [ref=e421]
+                              - generic [ref=e423]: Follow
+                          - link [ref=e425] [cursor=pointer]:
+                            - /url: /feed/update/urn:li:activity:7427957877245403136/
+                            - generic [ref=e426]:
+                              - generic [ref=e429]:
+                                - text: With AI capabilities taking centre stage across the industry, the question isn’t whether to fear or embrace the technology—it’s how to harness it. This Chinese New Year, we at Boing! chose to ride the AI wave, producing our greetings video almost entirely with AI tools, from initial concept to final edit.
+                                - text: For marketers, this shift is profound. The need for large production teams is fading as AI empowers professionals to create compelling content rapidly and with greater flexibility. With the right prompts, anyone can craft engaging material that embodies brand values and truly resonates with audiences.
+                                - text: AI is also reshaping agency models, helping predict winning creatives and aligning campaigns with audience trends for greater impact. As we celebrate CNY, we’re excited to embrace AI as a powerful partner in storytelling and campaign effectiveness.
+                                - text: Gong Xi Fa Cai—here’s to prosperity and inspiration as we ride the AI wave!
+                                - text: Curious about how AI can transform your brand’s storytelling? Let’s connect and explore the possibilities together.
+                                - link "hashtag CNY" [ref=e430]:
+                                  - /url: https://www.linkedin.com/search/results/all/?keywords=%23cny&origin=HASH_TAG_FROM_FEED
+                                  - generic [ref=e431]: hashtag
+                                  - generic [ref=e432]: "#CNY"
+                                - link "hashtag AI" [ref=e433]:
+                                  - /url: https://www.linkedin.com/search/results/all/?keywords=%23ai&origin=HASH_TAG_FROM_FEED
+                                  - generic [ref=e434]: hashtag
+                                  - generic [ref=e435]: "#AI"
+                                - link "hashtag brandgovernance" [ref=e436]:
+                                  - /url: https://www.linkedin.com/search/results/all/?keywords=%23brandgovernance&origin=HASH_TAG_FROM_FEED
+                                  - generic [ref=e437]: hashtag
+                                  - generic [ref=e438]: "#brandgovernance"
+                                - link "hashtag marketing" [ref=e439]:
+                                  - /url: https://www.linkedin.com/search/results/all/?keywords=%23marketing&origin=HASH_TAG_FROM_FEED
+                                  - generic [ref=e440]: hashtag
+                                  - generic [ref=e441]: "#marketing"
+                              - button "see more, visually reveals content which is already detected by screen readers" [ref=e442]:
+                                - generic [ref=e443]: …more
+                          - region "Video player" [ref=e448]:
+                            - button "Play" [ref=e453] [cursor=pointer]:
+                              - generic [ref=e454]: Play
+                        - generic [ref=e455]:
+                          - list [ref=e459]:
+                            - listitem [ref=e460]:
+                              - button "2 reactions" [ref=e461] [cursor=pointer]:
+                                - img "like" [ref=e462]
+                                - generic [ref=e463]: "2"
+                          - generic [ref=e464]:
+                            - generic [ref=e465]:
+                              - button "React Like" [ref=e466] [cursor=pointer]:
+                                - generic [ref=e468]:
+                                  - img [ref=e469]
+                                  - generic [ref=e471]: Like
+                              - button "Open reactions menu":
+                                - img [ref=e473] [cursor=pointer]
+                            - button "Comment" [ref=e477] [cursor=pointer]:
+                              - img [ref=e478]
+                              - generic [ref=e480]: Comment
+                            - button "Repost" [ref=e483] [cursor=pointer]:
+                              - img [ref=e484]
+                              - generic [ref=e486]: Repost
+                            - button "Send in a private message" [ref=e489] [cursor=pointer]:
+                              - img [ref=e490]
+                              - generic [ref=e493]: Send
+                - listitem [ref=e494]:
+                  - article [ref=e498]:
+                    - generic [ref=e500]:
+                      - heading "Feed post" [level=2] [ref=e501]
+                      - generic [ref=e502]:
+                        - generic [ref=e503]:
+                          - generic [ref=e504]:
+                            - generic [ref=e505]:
+                              - link "View Nim S.’s graphic link" [ref=e506] [cursor=pointer]:
+                                - /url: https://www.linkedin.com/in/nimm?miniProfileUrn=urn%3Ali%3Afsd_profile%3AACoAADHODUQBcRX7OOEJnUJ1A5MO4hXewJv0eEU
+                                - img "View Nim S.’s graphic link" [ref=e510]
+                              - generic [ref=e511]:
+                                - 'link "View: Nim S. 3rd+ Creative &amp; Content Strategist | L&amp;D Specialist (ACLP, DDDLP, HRDC certified)" [ref=e512] [cursor=pointer]':
+                                  - /url: https://www.linkedin.com/in/nimm?miniProfileUrn=urn%3Ali%3Afsd_profile%3AACoAADHODUQBcRX7OOEJnUJ1A5MO4hXewJv0eEU
+                                  - generic [ref=e513]:
+                                    - generic [ref=e515]:
+                                      - generic [ref=e516]: Nim S.
+                                      - generic [ref=e517]: Nim S.
+                                    - generic [ref=e518]:
+                                      - generic [ref=e519]: • 3rd+
+                                      - generic [ref=e520]: 3rd+
+                                  - generic [ref=e521]:
+                                    - generic [ref=e522]: Creative & Content Strategist | L&D Specialist (ACLP, DDDLP, HRDC certified)
+                                    - generic [ref=e523]: Creative & Content Strategist | L&D Specialist (ACLP, DDDLP, HRDC certified)
+                                - generic [ref=e524]:
+                                  - generic [ref=e525]:
+                                    - text: 1h • Edited •
+                                    - img [ref=e528]
+                                  - generic [ref=e530]: 1 hour ago • Edited • Visible to anyone on or off LinkedIn
+                            - button "Follow Nim S." [ref=e531] [cursor=pointer]:
+                              - img [ref=e532]
+                              - generic [ref=e534]: Follow
+                          - button "Open control menu for post by Nim S." [ref=e537] [cursor=pointer]:
+                            - img [ref=e538]
+                        - generic [ref=e541]:
+                          - generic [ref=e544]:
+                            - text: 🧧✨ Wishing everyone a joyful and prosperous Chinese New Year ahead.
+                            - text: May this new year bring renewed courage, resilience in the face of challenges, and the confidence to step into brighter possibilities ahead.
+                            - text: To celebrate the season, here's a short AI-assisted retelling of The Legend of Nian, a small creative piece inspired by the story behind our traditions. Best experienced with sound on.
+                            - text: "Images: Nano Banana"
+                            - text: "Video: Kling 2.6, Minimax 2.3, Veo 3"
+                            - text: "Audio: Suno AI"
+                            - text: "Edit: OpenArt"
+                            - text: May the year ahead be bold, abundant, and filled with good fortune.
+                            - text: Gong Xi Fa Cai. 🐉✨
+                          - button "see more, visually reveals content which is already detected by screen readers" [ref=e545] [cursor=pointer]:
+                            - generic [ref=e546]: …more
+                        - region "Video player" [ref=e551]:
+                          - button "Play" [ref=e556] [cursor=pointer]:
+                            - generic [ref=e557]: Play
+                        - generic [ref=e558]:
+                          - list [ref=e562]:
+                            - listitem [ref=e563]:
+                              - button "1 reaction" [ref=e564] [cursor=pointer]:
+                                - img "like" [ref=e565]
+                                - generic [ref=e566]: "1"
+                          - generic [ref=e567]:
+                            - generic [ref=e568]:
+                              - button "React Like" [ref=e569] [cursor=pointer]:
+                                - generic [ref=e571]:
+                                  - img [ref=e572]
+                                  - generic [ref=e574]: Like
+                              - button "Open reactions menu":
+                                - img [ref=e576] [cursor=pointer]
+                            - button "Comment" [ref=e580] [cursor=pointer]:
+                              - img [ref=e581]
+                              - generic [ref=e583]: Comment
+                            - button "Repost" [ref=e586] [cursor=pointer]:
+                              - img [ref=e587]
+                              - generic [ref=e589]: Repost
+                            - button "Send in a private message" [ref=e592] [cursor=pointer]:
+                              - img [ref=e593]
+                              - generic [ref=e596]: Send
+              - list [ref=e599]:
+                - listitem [ref=e600]:
+                  - generic [ref=e601]:
+                    - generic [ref=e602]:
+                      - paragraph [ref=e603]: Are these results helpful?
+                      - paragraph [ref=e604]: Your feedback helps us improve search results
+                    - generic [ref=e605]:
+                      - button "Are these results helpful? Yes, these search results are helpful" [ref=e606] [cursor=pointer]:
+                        - img [ref=e607]
+                      - button "Are these results helpful? No, these search results are not helpful" [ref=e610] [cursor=pointer]:
+                        - img [ref=e611]
+            - alert [ref=e617]: Loading more results
+        - complementary "Search suggestions" [ref=e630]:
+          - generic "LinkedIn Footer Content" [ref=e633]:
+            - generic [ref=e634]:
+              - list
+              - generic [ref=e635]:
+                - img "LinkedIn" [ref=e636]:
+                  - img [ref=e637]
+                - text: LinkedIn Corporation © 2026
+    - generic:
+      - generic:
+        - complementary:
+          - generic [ref=e640]:
+            - generic [ref=e642] [cursor=pointer]:
+              - img "Oded Ben-Yair" [ref=e644]
+              - button "You are on the messaging overlay. Press enter to open the list of conversations." [ref=e645]:
+                - generic [ref=e646]:
+                  - generic [ref=e647]: Messaging
+                  - generic [ref=e648]: You are on the messaging overlay. Press enter to open the list of conversations.
+            - generic [ref=e649]:
+              - button "Open messenger dropdown menu" [ref=e651] [cursor=pointer]:
+                - img "Open messenger dropdown menu" [ref=e652]
+              - button "Compose message" [ref=e654] [cursor=pointer]:
+                - img [ref=e655]
+                - generic [ref=e656]: Compose message
+              - button "You are on the messaging overlay. Press enter to open the list of conversations." [ref=e657] [cursor=pointer]:
+                - img [ref=e658]
+                - generic [ref=e659]: You are on the messaging overlay. Press enter to open the list of conversations.
+        - complementary "AI-powered assistant to get help with your career, jobs etc"

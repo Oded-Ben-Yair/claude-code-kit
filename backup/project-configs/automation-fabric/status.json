@@ -1,0 +1,97 @@
+{
+  "$schema": "Project status tracking for Claude Code sessions",
+  "version": "1.0",
+  "project": {
+    "name": "automation-fabric",
+    "path": "/home/odedbe/projects/automation-fabric",
+    "database": "automation_fabric",
+    "production": false,
+    "lastUpdated": "2026-01-25T12:15:00+00:00"
+  },
+  "currentState": {
+    "summary": "Email V9 COMPLETE (dark theme, blur, View Full Report). User requested V10: WHITE theme with dark toggle, 6 charts (4 perm + 2 dynamic), more Grok content.",
+    "branch": "main",
+    "lastCommit": "fb7efd7",
+    "testsPass": true,
+    "buildStatus": "ready_for_v10_redesign"
+  },
+  "blockers": [],
+  "inProgress": [],
+  "nextSteps": [
+    {
+      "priority": 1,
+      "description": "V10: Implement WHITE/light theme as default with dark mode toggle button",
+      "estimatedComplexity": "medium",
+      "dependencies": []
+    },
+    {
+      "priority": 1,
+      "description": "V10: Integrate Grok for dynamic headlines and spicy asset content",
+      "estimatedComplexity": "medium",
+      "dependencies": []
+    },
+    {
+      "priority": 1,
+      "description": "V10: Implement 6-chart system (Gold, Oil, Silver, BTC permanent + 2 dynamic)",
+      "estimatedComplexity": "high",
+      "dependencies": []
+    },
+    {
+      "priority": 2,
+      "description": "Email teaser: 2-3 visible charts, blur rest, prominent View Full Report CTA",
+      "estimatedComplexity": "medium",
+      "dependencies": ["V10 charts"]
+    },
+    {
+      "priority": 2,
+      "description": "Visual validation with Gemini + Playwright for both themes",
+      "estimatedComplexity": "low",
+      "dependencies": ["V10 theme"]
+    }
+  ],
+  "recentDecisions": [
+    {
+      "date": "2026-01-25",
+      "decision": "V10 will use WHITE background as default with dark mode toggle",
+      "rationale": "User feedback - current dark-only is limiting"
+    },
+    {
+      "date": "2026-01-25",
+      "decision": "6 charts: 4 permanent (gold, oil, silver, btc) + 2 dynamic (most changed)",
+      "rationale": "User feedback - more comprehensive coverage"
+    },
+    {
+      "date": "2026-01-25",
+      "decision": "Use Grok for dynamic headlines and per-asset spicy content",
+      "rationale": "Reference landing page shows rich Grok-generated content"
+    }
+  ],
+  "patterns": {
+    "established": [
+      "Teaser + Full Report architecture",
+      "Blur effect for premium content teasing",
+      "ApexCharts for interactive landing page",
+      "signal_label: bullish/bearish/neutral (not BUY/SELL)",
+      "morning_brief as list of strings"
+    ],
+    "toAvoid": [
+      "Dark theme only without toggle option",
+      "Less than 6 charts in landing page",
+      "Dumping all content into email only",
+      "Mock data in production"
+    ]
+  },
+  "sessionNotes": {
+    "lastSessionId": "email-v10-ux-redesign-20260125",
+    "lastSessionDate": "2026-01-25",
+    "carryoverNotes": "V9 complete (95/100 quality). User approved but wants V10 with WHITE theme + toggle, 6 charts, more Grok content. Handover doc created."
+  },
+  "referenceUrls": {
+    "formerGoodLandingPage": "https://stmarketingnewsletter.blob.core.windows.net/landing-pages/market-overview/latest/en.html"
+  },
+  "_instructions": {
+    "usage": "This file tracks project state across Claude Code sessions",
+    "update": "Update at session end using /end-of-session skill",
+    "read": "Automatically read at session start when entering project directory"
+  }
+}

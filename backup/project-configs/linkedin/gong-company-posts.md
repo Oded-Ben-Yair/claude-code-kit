@@ -1,0 +1,730 @@
+- generic [active] [ref=e1]:
+  - generic:
+    - region "Toast message":
+      - heading "0 notifications total" [level=2] [ref=e3]
+      - alert
+  - generic [ref=e4]:
+    - generic [ref=e6]:
+      - button "Skip to search" [ref=e7] [cursor=pointer]:
+        - generic [ref=e8]: Skip to search
+      - button "Skip to main content" [ref=e9] [cursor=pointer]:
+        - generic [ref=e10]: Skip to main content
+      - button "Keyboard shortcuts" [ref=e11] [cursor=pointer]:
+        - generic [ref=e12]: Keyboard shortcuts
+      - button "Close jump menu" [ref=e13] [cursor=pointer]:
+        - img [ref=e14]
+        - generic [ref=e16]: Close jump menu
+    - banner "Global Navigation" [ref=e17]:
+      - generic [ref=e18]:
+        - link "LinkedIn" [ref=e19] [cursor=pointer]:
+          - /url: https://www.linkedin.com/feed/?nis=true
+          - img "LinkedIn" [ref=e22]:
+            - img [ref=e23]
+        - generic [ref=e27]:
+          - combobox "Search" [ref=e28]
+          - generic:
+            - img
+        - navigation "Primary Navigation" [ref=e29]:
+          - list [ref=e30]:
+            - listitem [ref=e31]:
+              - link "new feed updates notifications Home" [ref=e32] [cursor=pointer]:
+                - /url: https://www.linkedin.com/feed/?nis=true&
+                - generic [ref=e33]:
+                  - generic [ref=e36]: new feed updates notifications
+                  - img [ref=e40]
+                - generic "Home" [ref=e42]
+            - listitem [ref=e43]:
+              - link "3 new network updates notifications My Network" [ref=e44] [cursor=pointer]:
+                - /url: https://www.linkedin.com/mynetwork/?
+                - generic [ref=e45]:
+                  - generic [ref=e46]:
+                    - generic [ref=e47]: "3"
+                    - generic [ref=e48]: 3 new network updates notifications
+                  - img [ref=e52]
+                - generic "My Network" [ref=e54]
+            - listitem [ref=e55]:
+              - link "Jobs" [ref=e56] [cursor=pointer]:
+                - /url: https://www.linkedin.com/jobs/?
+                - img [ref=e60]
+                - generic "Jobs" [ref=e62]
+            - listitem [ref=e63]:
+              - link "Messaging" [ref=e64] [cursor=pointer]:
+                - /url: https://www.linkedin.com/messaging/?
+                - img [ref=e68]
+                - generic "Messaging" [ref=e70]
+            - listitem [ref=e71]:
+              - link "Notifications" [ref=e72] [cursor=pointer]:
+                - /url: https://www.linkedin.com/notifications/?
+                - img [ref=e76]
+                - generic "Notifications" [ref=e78]
+            - listitem [ref=e79]:
+              - button "Oded Ben-Yair Me" [ref=e81] [cursor=pointer]:
+                - img "Oded Ben-Yair" [ref=e82]
+                - generic [ref=e83]:
+                  - text: Me
+                  - img [ref=e84]
+            - listitem [ref=e86]:
+              - button "For Business" [ref=e88] [cursor=pointer]:
+                - img [ref=e92]
+                - generic "For Business" [ref=e94]:
+                  - text: For Business
+                  - img [ref=e95]
+            - listitem [ref=e97]:
+              - 'link "Reactivate Premium: 50% Off" [ref=e99] [cursor=pointer]':
+                - /url: http://www.linkedin.com/premium/redeem/?_ed=0_bvLJH59RTSY-u5c6PMUa4IW0M54p9mxZpuVkfRvTl7r&upsellOrderOrigin=Tracking%3Av1%3Apremium_nav_upsell_text_winback%3ANav%3AIn-Product&referenceId=W5jEtbHmQpSh%2FVpzvOJ6Pw%3D%3D&customKey=wb_c&redeemTypeV2=DISCOUNT&destRedirectURL=https%3A%2F%2Fwww.linkedin.com%2Fcompany%2Fgong-io%2Fposts%2F
+                - generic [ref=e101]: "Reactivate Premium: 50% Off"
+    - generic [ref=e106]:
+      - main "Organization page for Gong" [ref=e107]:
+        - generic [ref=e110]:
+          - button [ref=e113]
+          - generic [ref=e116]:
+            - button "Subscribed to page notifications from people you may know. Click to manage." [ref=e118] [cursor=pointer]:
+              - img [ref=e119]
+              - generic [ref=e121]: Subscribed to page notifications from people you may know. Click to manage.
+            - generic [ref=e123]:
+              - generic [ref=e124]:
+                - img "Gong logo" [ref=e125]
+                - generic [ref=e127]:
+                  - heading "Gong" [level=1] [ref=e128]
+                  - link "Verified" [ref=e129] [cursor=pointer]:
+                    - /url: /company/gong-io/about/
+                    - img [ref=e130]
+                  - paragraph [ref=e132]: AI OS for revenue teams
+                  - generic [ref=e133]:
+                    - generic [ref=e134]: · Software Development
+                    - generic [ref=e135]:
+                      - text: ·
+                      - link "Customer Engagement Software" [ref=e136] [cursor=pointer]:
+                        - /url: https://www.linkedin.com/search/results/products/?origin=PRODUCT_PAGE_CATEGORY_CANNED_SEARCH&productCategory=%5B%221194%22%5D
+                        - generic [ref=e137]: Customer Engagement Software
+                    - generic [ref=e138]:
+                      - generic [ref=e139]: · San Francisco, California
+                      - generic [ref=e140]: · 324K followers
+                      - link "· 1K-5K employees" [ref=e141] [cursor=pointer]:
+                        - /url: /search/results/people/?currentCompany=%5B%2210454372%22%5D&origin=COMPANY_PAGE_CANNED_SEARCH
+                        - text: ·
+                        - generic [ref=e142]: 1K-5K employees
+              - generic [ref=e145]:
+                - link "Dana Hay Dana & 7 other connections work here" [ref=e146] [cursor=pointer]:
+                  - /url: http://www.linkedin.com/search/results/people/?origin=COMPANY_PAGE_CANNED_SEARCH&network=%5B%22F%22%5D&currentCompany=%5B%2210454372%22%5D
+                  - img "Dana Hay" [ref=e149]
+                  - heading "Dana & 7 other connections work here" [level=2] [ref=e150]
+                - button "View all featured customers of Gong Used by Morningstar and 6 featured customers" [ref=e151] [cursor=pointer]:
+                  - img "Visit Morningstar’s company page" [ref=e152]
+                  - generic [ref=e153]:
+                    - generic [ref=e154]: View all featured customers of Gong
+                    - generic [ref=e155]: Used by Morningstar and 6 featured customers
+              - generic [ref=e157]:
+                - region [ref=e159]:
+                  - button "Following" [pressed] [ref=e160] [cursor=pointer]:
+                    - img [ref=e161]
+                    - generic [ref=e163]: Following
+                  - link "Visit website" [ref=e164] [cursor=pointer]:
+                    - /url: http://www.gong.io
+                    - generic [ref=e165]:
+                      - text: Visit website
+                      - img [ref=e166]
+                - button "Overflow Actions" [ref=e171] [cursor=pointer]:
+                  - img "Overflow Actions" [ref=e172]
+            - navigation "Organization’s page navigation" [ref=e175]:
+              - list [ref=e176]:
+                - listitem [ref=e177]:
+                  - link "Home" [ref=e178] [cursor=pointer]:
+                    - /url: /company/gong-io/
+                - listitem [ref=e179]:
+                  - link "About" [ref=e180] [cursor=pointer]:
+                    - /url: /company/gong-io/about/
+                - listitem [ref=e181]:
+                  - link "Products" [ref=e182] [cursor=pointer]:
+                    - /url: /company/gong-io/product/
+                - listitem [ref=e183]:
+                  - link "Posts" [ref=e184] [cursor=pointer]:
+                    - /url: /company/gong-io/posts/?feedView=all
+                - listitem [ref=e185]:
+                  - link "Jobs" [ref=e186] [cursor=pointer]:
+                    - /url: /company/gong-io/jobs/
+                - listitem [ref=e187]:
+                  - link "Life" [ref=e188] [cursor=pointer]:
+                    - /url: /company/gong-io/life/
+                - listitem [ref=e189]:
+                  - link "People" [ref=e190] [cursor=pointer]:
+                    - /url: /company/gong-io/people/
+        - generic [ref=e193]:
+          - generic [ref=e194]:
+            - generic [ref=e195]:
+              - img "Gong logo" [ref=e196]
+              - heading "Gong" [level=2] [ref=e197]
+              - paragraph [ref=e198]: 323,942 followers
+            - generic [ref=e199]:
+              - paragraph [ref=e200]: See a collection of active or past ads by Gong.
+              - link "View ad library" [ref=e201] [cursor=pointer]:
+                - /url: /ad-library/search?companyIds=10454372
+          - generic [ref=e202]:
+            - tablist [ref=e204]:
+              - tab "All" [selected] [ref=e205] [cursor=pointer]:
+                - generic [ref=e206]: All
+              - tab "Images" [ref=e207] [cursor=pointer]:
+                - generic [ref=e208]: Images
+              - tab "Videos" [ref=e209] [cursor=pointer]:
+                - generic [ref=e210]: Videos
+              - tab "Articles" [ref=e211] [cursor=pointer]:
+                - generic [ref=e212]: Articles
+              - tab "Documents" [ref=e213] [cursor=pointer]:
+                - generic [ref=e214]: Documents
+            - 'button "Sort by: Top Sort relevance dropdown" [ref=e217] [cursor=pointer]':
+              - text: "Sort by:"
+              - strong [ref=e218]: Top
+              - img "Sort relevance dropdown" [ref=e219]
+            - generic [ref=e222]:
+              - generic [ref=e223]:
+                - article [ref=e228]:
+                  - generic [ref=e230]:
+                    - heading "Feed post number 1" [level=2] [ref=e231]
+                    - generic [ref=e232]:
+                      - generic [ref=e233]:
+                        - generic [ref=e235]:
+                          - link "Gong, graphic." [ref=e236] [cursor=pointer]:
+                            - /url: https://www.linkedin.com/company/gong-io/posts
+                          - generic [ref=e240]:
+                            - 'link "View: Gong 323,942 followers" [ref=e241] [cursor=pointer]':
+                              - /url: https://www.linkedin.com/company/gong-io/posts
+                              - generic [ref=e244]:
+                                - generic [ref=e246]: Gong
+                                - generic [ref=e248]: Gong
+                              - generic [ref=e249]:
+                                - generic [ref=e250]: 323,942 followers
+                                - generic [ref=e251]: 323,942 followers
+                            - generic [ref=e252]:
+                              - generic [ref=e253]:
+                                - text: 18h •
+                                - img [ref=e256]
+                              - generic [ref=e258]: 18 hours ago • Visible to anyone on or off LinkedIn
+                        - button "Open control menu for post by Gong" [ref=e261] [cursor=pointer]:
+                          - img [ref=e262]
+                      - generic [ref=e265]:
+                        - generic [ref=e268]:
+                          - text: STOP ASKING FOR MEETINGS
+                          - text: Executives don’t want another meeting – they want insight.
+                          - text: Instead of “I’d love 15 minutes on your calendar…”
+                          - text: "Try offering something concrete:"
+                          - text: ✨ A benchmark
+                          - text: ✨ A fresh perspective
+                          - text: ✨ A peer insight
+                          - text: "Example:"
+                          - text: “We pulled together a quick benchmark showing how you compare to your peers on X. Open to reviewing it together?”
+                          - text: Make an offer. Earn the meeting.
+                        - button "see more, visually reveals content which is already detected by screen readers" [ref=e269] [cursor=pointer]:
+                          - generic [ref=e270]: …more
+                      - generic [ref=e272]:
+                        - button "Activate to view larger image, No alternative text description for this image" [ref=e274] [cursor=pointer]:
+                          - generic [ref=e275]: Activate to view larger image,
+                          - img "No alternative text description for this image" [ref=e278]
+                        - generic [ref=e279]: Activate to view larger image,
+                      - generic [ref=e280]:
+                        - list [ref=e284]:
+                          - listitem [ref=e285]:
+                            - button "118 reactions" [ref=e286] [cursor=pointer]:
+                              - img "like" [ref=e287]
+                              - img "celebrate" [ref=e288]
+                              - img "insightful" [ref=e289]
+                              - generic [ref=e290]: "118"
+                          - listitem [ref=e291]:
+                            - list [ref=e292]:
+                              - listitem [ref=e293]:
+                                - button "8 comments on Gong’s post" [ref=e294] [cursor=pointer]:
+                                  - generic [ref=e295]: 8 comments
+                                - text: ·
+                              - listitem [ref=e296]:
+                                - button "1 repost of Gong’s post" [ref=e297] [cursor=pointer]:
+                                  - generic [ref=e298]: 1 repost
+                        - generic [ref=e299]:
+                          - generic [ref=e300]:
+                            - button "React Like" [ref=e301] [cursor=pointer]:
+                              - generic [ref=e303]:
+                                - img [ref=e304]
+                                - generic [ref=e306]: Like
+                            - button "Open reactions menu":
+                              - img [ref=e308] [cursor=pointer]
+                          - button "Comment" [ref=e312] [cursor=pointer]:
+                            - img [ref=e313]
+                            - generic [ref=e315]: Comment
+                          - button "Repost" [ref=e318] [cursor=pointer]:
+                            - img [ref=e319]
+                            - generic [ref=e321]: Repost
+                          - button "Send in a private message" [ref=e324] [cursor=pointer]:
+                            - img [ref=e325]
+                            - generic [ref=e328]: Send
+                - article [ref=e333]:
+                  - generic [ref=e335]:
+                    - heading "Feed post number 2" [level=2] [ref=e336]
+                    - generic [ref=e339]:
+                      - button "Open control menu" [ref=e342] [cursor=pointer]:
+                        - img [ref=e343]
+                      - generic [ref=e345]:
+                        - generic [ref=e346]:
+                          - paragraph [ref=e347]:
+                            - generic [ref=e348]: Target key buyers
+                            - generic [ref=e349]: Target key buyers
+                          - paragraph [ref=e350]:
+                            - generic [ref=e351]: Get a discount on 2 months of LinkedIn Sales Navigator
+                            - generic [ref=e352]: Get a discount on 2 months of LinkedIn Sales Navigator
+                          - link "Claim offer now" [ref=e353] [cursor=pointer]:
+                            - /url: https://www.linkedin.com/premium/redeem-v3/?_ed=CwEAAAFvqlyO6M8Q8oNzsFrJnllsOwTEGqdDSfAhW7Ib5vG3e7kEqBnLM6TDzYIfB6J8I4WlA-U&planType=sales&redeemType=WINBACK&src=li-gpgs&trk=emea_EN_GAL_CP_V3_202508_Winback&mcid=7364243851709939714
+                        - link [ref=e355] [cursor=pointer]:
+                          - /url: https://www.linkedin.com/premium/redeem-v3/?_ed=CwEAAAFvqlyO6M8Q8oNzsFrJnllsOwTEGqdDSfAhW7Ib5vG3e7kEqBnLM6TDzYIfB6J8I4WlA-U&planType=sales&redeemType=WINBACK&src=li-gpgs&trk=emea_EN_GAL_CP_V3_202508_Winback&mcid=7364243851709939714
+                - article [ref=e362]:
+                  - generic [ref=e364]:
+                    - heading "Feed post number 3" [level=2] [ref=e365]
+                    - generic [ref=e366]:
+                      - generic [ref=e367]:
+                        - generic [ref=e369]:
+                          - link "Gong, graphic." [ref=e370] [cursor=pointer]:
+                            - /url: https://www.linkedin.com/company/gong-io/posts
+                          - generic [ref=e374]:
+                            - 'link "View: Gong 323,942 followers" [ref=e375] [cursor=pointer]':
+                              - /url: https://www.linkedin.com/company/gong-io/posts
+                              - generic [ref=e378]:
+                                - generic [ref=e380]: Gong
+                                - generic [ref=e382]: Gong
+                              - generic [ref=e383]:
+                                - generic [ref=e384]: 323,942 followers
+                                - generic [ref=e385]: 323,942 followers
+                            - generic [ref=e386]:
+                              - generic [ref=e387]:
+                                - text: 1d •
+                                - img [ref=e390]
+                              - generic [ref=e392]: 1 day ago • Visible to anyone on or off LinkedIn
+                        - button "Open control menu for post by Gong" [ref=e395] [cursor=pointer]:
+                          - img [ref=e396]
+                      - generic [ref=e399]:
+                        - generic [ref=e402]:
+                          - text: THIS 💯
+                          - text: It’s Black History Month, and we’re honoring Black voices, stories, and impact – today and always.
+                          - text: Inspired by the words of Maya Angelou and the reminder that growth starts with awareness… and action.
+                        - button "see more, visually reveals content which is already detected by screen readers" [ref=e403] [cursor=pointer]:
+                          - generic [ref=e404]: …more
+                      - generic [ref=e406]:
+                        - button "Activate to view larger image, No alternative text description for this image" [ref=e408] [cursor=pointer]:
+                          - generic [ref=e409]: Activate to view larger image,
+                          - img "No alternative text description for this image" [ref=e412]
+                        - generic [ref=e413]: Activate to view larger image,
+                      - generic [ref=e414]:
+                        - list [ref=e418]:
+                          - listitem [ref=e419]:
+                            - button "43 reactions" [ref=e420] [cursor=pointer]:
+                              - img "like" [ref=e421]
+                              - img "celebrate" [ref=e422]
+                              - img "love" [ref=e423]
+                              - generic [ref=e424]: "43"
+                          - listitem [ref=e425]:
+                            - list [ref=e426]:
+                              - listitem [ref=e427]:
+                                - button "2 comments on Gong’s post" [ref=e428] [cursor=pointer]:
+                                  - generic [ref=e429]: 2 comments
+                        - generic [ref=e430]:
+                          - generic [ref=e431]:
+                            - button "Unreact Like" [pressed] [ref=e432] [cursor=pointer]:
+                              - generic [ref=e434]:
+                                - img "like" [ref=e435]
+                                - generic [ref=e436]: Like
+                            - button "Open reactions menu":
+                              - img [ref=e438] [cursor=pointer]
+                          - button "Comment" [ref=e442] [cursor=pointer]:
+                            - img [ref=e443]
+                            - generic [ref=e445]: Comment
+                          - button "Repost" [ref=e448] [cursor=pointer]:
+                            - img [ref=e449]
+                            - generic [ref=e451]: Repost
+                          - button "Send in a private message" [ref=e454] [cursor=pointer]:
+                            - img [ref=e455]
+                            - generic [ref=e458]: Send
+              - button "Show more results" [ref=e481] [cursor=pointer]:
+                - generic [ref=e482]: Show more results
+      - complementary "Advertisement" [ref=e483]:
+        - iframe [ref=e485]:
+          - main "Work With Us Container" [ref=f299e3]:
+            - generic [ref=f299e4]:
+              - paragraph [ref=f299e5]: Promoted
+              - button "Ad Options" [ref=f299e6] [cursor=pointer]:
+                - img [ref=f299e7]
+                - generic [ref=f299e11]: Ad Options
+            - generic [ref=f299e12]:
+              - generic [ref=f299e13]:
+                - img "Oded" [ref=f299e14]
+                - paragraph [ref=f299e15]:
+                  - text: Oded, explore jobs at
+                  - generic [ref=f299e16]: Gong
+              - list [ref=f299e17]:
+                - listitem [ref=f299e18]:
+                  - link "Gong Senior Product Content Writer Tel Aviv-Yafo, Tel Aviv District, Israel" [ref=f299e19] [cursor=pointer]:
+                    - /url: https://www.linkedin.com/li/tscp/sct?destinationUrl=http%3A%2F%2Fwww.linkedin.com%2Fjobs%2Fview%2F4366144723%2F%3FrefId%3D%25EF%25BF%25BD0%25EF%25BF%25BDo%25EF%25BF%25BD%25EF%25BF%25BD%2528s%25EF%25BF%25BD%25EF%25BF%25BD%253F%25DD%25A0%25EF%25BF%25BD%2522%2510&trackingEvent=%5B%7B%22eventInfo%22%3A%7B%22appId%22%3A%22com.linkedin.ads.rendering.d_web%22%2C%22eventName%22%3A%22SponsoredRightRailContentActionEvent%22%2C%22topicName%22%3A%22SponsoredRightRailContentActionEvent%22%7D%2C%22eventBody%22%3A%7B%22sponsoredEventHeader%22%3A%7B%22encryptedTrackingData%22%3A%22CwEAAAGcayG1reQbkOfo7ZTc7Xo9ryAAAemzACB8ZNs0EeduFE-By1KgE_U0mu5Mx5DFg1yb7GRoO8pEIWscVJr3U7c7C2FupT5GrkCL4pn0BySx1cMA8dNEUxhh9R4gdqeP1WBCd3_quIBVPMR6FruFZEnbKrei5FfzF4LDGgHmAbs0g0D7LgFVEn8vJBz49SyWsGOscp9Pq5ZnjjfJEb8rCc4t2zP271R4M1rXY5MDdC6ppHGhsOJc4Z4jiV_MJMy7FUr33P25-yUOg1k8Yj_aVul2YOlAUv8B4S4HDj4dyui0_GGCROK60l_mZNWQhy1GIYzvO4NGWpjreAmoCe526XW-3iN4xZ-S9xKvtHAtn4SgwBqemkvhvUutkWbfIhs-0s_0OYX5lsPy9_YKkUWXB45CaDLQvnotci5jKGupXcHRx6Q-q1ZxeQQOpu5wKuYe8KYwE0M-28SpZk3zsFSygK3FKBhAi2psmDnkI8PMdNDdNP7DjGvTENUK8NY2J_V666-_OaYTC9Z4N2otgvjxlbMBxL5kSFBPVB9YG97-rOdQCHwBWBeXtMZiFkqhhZdqJ3tiKQ9dx_XG0EQIunfCNF8vZwfsP6m2JvyDORqUIYwpQWl4mg7V-wZ2Q_jPXSq6VEF6fyZSRMfQfFolBtf4ZFeERu8Qt0IIDQXHBwojlHzobevqUGSGzpsPm08olo4m-FhWZJw-l1RiZupbE6mf6elMHXmzMoj4EFkz4un1BmfoaJynR8MtHJntctfZrfWf4c2mE2bOMIPi_1VEW9c7o-MJzHfLLzujTa1ZuGVWj-IBmekW8Dyl0zVltj5v0mkIjzH2laeh8jgK--On-uM3ngQrY4NqOw1_TyquVNj7HykwAtA%22%7D%2C%22header%22%3A%7B%22pageInstance%22%3A%7B%22pageUrn%22%3A%22urn%3Ali%3Apage%3Ad_flagship3_company_posts%22%2C%22trackingId%22%3A%22cbfc3a9a-58f5-4dc7-aa3c-95882f9b1418%22%7D%2C%22time%22%3A1771323897068%2C%22version%22%3A%220.0.0%22%7D%2C%22requestHeader%22%3A%7B%22pageKey%22%3A%22d_flagship3_company_posts%22%2C%22interfaceLocale%22%3A%22en-US%22%7D%7D%7D%5D&csrfToken=ajax%3A2872756275449100236
+                    - img "Gong" [ref=f299e20]
+                    - generic [ref=f299e21]:
+                      - paragraph [ref=f299e22]: Senior Product Content Writer
+                      - paragraph [ref=f299e23]: Tel Aviv-Yafo, Tel Aviv District, Israel
+                - listitem [ref=f299e24]:
+                  - link "Gong Senior Frontend Developer Tel Aviv-Yafo, Tel Aviv District, Israel" [ref=f299e25] [cursor=pointer]:
+                    - /url: https://www.linkedin.com/li/tscp/sct?destinationUrl=http%3A%2F%2Fwww.linkedin.com%2Fjobs%2Fview%2F4321452369%2F%3FrefId%3D%250D%2514p%25EF%25BF%25BD%2525%25EF%25BF%25BD%2529%25EF%25BF%25BD%25EF%25BF%25BD%2540%25D4%25A8bN%25EF%25BF%25BDD&trackingEvent=%5B%7B%22eventInfo%22%3A%7B%22appId%22%3A%22com.linkedin.ads.rendering.d_web%22%2C%22eventName%22%3A%22SponsoredRightRailContentActionEvent%22%2C%22topicName%22%3A%22SponsoredRightRailContentActionEvent%22%7D%2C%22eventBody%22%3A%7B%22sponsoredEventHeader%22%3A%7B%22encryptedTrackingData%22%3A%22CwEAAAGcayG1rRUJhmyumPPIVHBdY3tOTPJ10CX7tzaJ823erzxZe-pDmG3tCzAjk6CC0TfzzLQHdKSV6yJk8-yxgts_oTMiQUpmMSgP3y2huVxh098GknMKiQo3bQ3gZ3CDMSCNyPkc0fvagLJBhYoPhvo4qJcVHSAiFYQ_ZpWRIF_cXCAFLmxt-Dmi74XkgHKJpvKUiLyMAJVH0Gq5CyotdhbkI2GeXHaYxfYxQhXJC31_lvMnFMbbfkxz4JwLC31Mmlc8Y4RbcJPyyNmpL40XnZlWAWknvz9vjdfiVeIfoShfJefCF2-sWWl4uqnNEULk7JPxW4ZyfWh3bkGyv5VPSibV43mlPMUmU2ac6veN_DtAUx4fXmry_yAfNq2fCyi-M1CA4JFVfel6IXwMA95jAeaXejefBJH1tb1ddqbODhM8VL5f7xXCV9dyJpTX-O3aSZy-PnydHeq10BbcvG8qVixiRE-XgJtyk14BECURZUU121tWgXa35n79Cep-IooEeT7FEvG0xPgaNnGOrelrj1faxRz42Fxs8b8uurAFFKENDZMdZKJ2o9_3maYCi17v7LiCfotlM18tjzW-B8SxfQRGGU01keivTvOr9pHLzGazhTiZXH40QdJnV_f0jDB-N3iHww86FW1JxZb_6ownqZMGkRaY_O7nSW1B9DKmBFN5gIcdRBFXNNyMrD0X8PJ6h_6YCBasyImzJIkxlUSWJoGbyjFFzD0uPyCJRypg3l75lwBTi-iO3ntuEy05M5WC4TSs_1snrEG0ticaioJSYIq0z0Ofkoe59BaiIZriVUjAGX5CynV0KvnvxnPK9ZhvhbaszADzl2vIXv6Y2RnDcusRzcnebSqDyoos8EnSXmFdtVc%22%7D%2C%22header%22%3A%7B%22pageInstance%22%3A%7B%22pageUrn%22%3A%22urn%3Ali%3Apage%3Ad_flagship3_company_posts%22%2C%22trackingId%22%3A%222e0fafd2-7a28-4cc9-b641-9fec6316c122%22%7D%2C%22time%22%3A1771323897068%2C%22version%22%3A%220.0.0%22%7D%2C%22requestHeader%22%3A%7B%22pageKey%22%3A%22d_flagship3_company_posts%22%2C%22interfaceLocale%22%3A%22en-US%22%7D%7D%7D%5D&csrfToken=ajax%3A2872756275449100236
+                    - img "Gong" [ref=f299e26]
+                    - generic [ref=f299e27]:
+                      - paragraph [ref=f299e28]: Senior Frontend Developer
+                      - paragraph [ref=f299e29]: Tel Aviv-Yafo, Tel Aviv District, Israel
+                - listitem [ref=f299e30]:
+                  - link "Gong Senior Product Manager - Forecast Tel Aviv-Yafo, Tel Aviv District, Israel" [ref=f299e31] [cursor=pointer]:
+                    - /url: https://www.linkedin.com/li/tscp/sct?destinationUrl=http%3A%2F%2Fwww.linkedin.com%2Fjobs%2Fview%2F4358585884%2F%3FrefId%3D%25EF%25BF%25BD%25EE%2585%258C%25EF%25BF%25BD%257BT%2B%25211%25EF%25BF%25BDE%25EF%25BF%25BD%250F%25EF%25BF%25BD%25EF%25BF%25BD&trackingEvent=%5B%7B%22eventInfo%22%3A%7B%22appId%22%3A%22com.linkedin.ads.rendering.d_web%22%2C%22eventName%22%3A%22SponsoredRightRailContentActionEvent%22%2C%22topicName%22%3A%22SponsoredRightRailContentActionEvent%22%7D%2C%22eventBody%22%3A%7B%22sponsoredEventHeader%22%3A%7B%22encryptedTrackingData%22%3A%22CwEAAAGcayG1rRfGMs_EDV0lyQ5vpNXy97tMn2PxI3WEO2TZICGNPNOa_2OlwYFu55gQsgumTbvzLT00SNpR3VKzcoDayojlSa29BlUK7JPTdRXaU06NIHGxgNJ34DhnKRII2Q9AwCGBasV3VPa-4xIC0qsTthVj3OWMoTBo8nCP5MT762fHOFk9Ki-GhRbKqxfVyBukAjI_mnPwl6VaxavKLqSRVGTLEY24SevWE4vvj0zaxM5wVsaGKu5AcdIXE4-HKO44xsyghqoTCpqE1pHcdOmps2mV7xXFjgic0cl40GSwKzdsi_qYvywPx6akWDJLEvPIznkiQFaHhZJtetzndc3C7CgEhYa_soKY2DuyZ4lEfFeSLdjVz6mGQqMRouWZPZB9re9Uf1zDFKHayuXppPFb6PiyFLmHb4gABbfjqiC7wdSVUPmhmfpBby3ch_afmDR2JhV3P7TSzhKWr54OPtRnkGjkTQa1ocMnMi54oL2FSYqqaFmPllFycmtc_7UmS0uilMmnV6SznrpixxuSMAfe3zz0cqE5wh6ARnBRw58WZjZ01r4BOFQBOnZpN4n1TdxWEKySuwe_c_0gxKdRXUQv4jQ2CeP6KWwAaoFtFEZn_J4PsYe_h6HlgCW8mrX7C-FGH7gZs5kFiSrZw5DpBJBfhPFJHX7_LsPipzGi2NGc1ZIpOdusAy26HP-NKc9juuBjUgTm1ZNsOxiws7aj9bwjbI3MJSO5hb1sTF0Spt8-8_72aY2O1T96q5yoQoFfOoVlFPO4p-P6IUql8Xz8rXDf9L5DcTk_lNsOErJw1_4N1028cEkjk_E9ht1wYf_nAZAv-s9E-K7GRKQncw3DAG193OyUseH62OorVoUFW8VAmoo%22%7D%2C%22header%22%3A%7B%22pageInstance%22%3A%7B%22pageUrn%22%3A%22urn%3Ali%3Apage%3Ad_flagship3_company_posts%22%2C%22trackingId%22%3A%2292087340-8d2a-43de-8926-97d9d39c8e08%22%7D%2C%22time%22%3A1771323897068%2C%22version%22%3A%220.0.0%22%7D%2C%22requestHeader%22%3A%7B%22pageKey%22%3A%22d_flagship3_company_posts%22%2C%22interfaceLocale%22%3A%22en-US%22%7D%7D%7D%5D&csrfToken=ajax%3A2872756275449100236
+                    - img "Gong" [ref=f299e32]
+                    - generic [ref=f299e33]:
+                      - paragraph [ref=f299e34]: Senior Product Manager - Forecast
+                      - paragraph [ref=f299e35]: Tel Aviv-Yafo, Tel Aviv District, Israel
+              - link "See More Jobs" [ref=f299e36] [cursor=pointer]:
+                - /url: https://www.linkedin.com/li/tscp/sct?destinationUrl=http%3A%2F%2Fwww.linkedin.com%2Fcompany%2F10454372%2Fjobs&trackingEvent=%5B%7B%22eventInfo%22%3A%7B%22appId%22%3A%22com.linkedin.ads.rendering.d_web%22%2C%22eventName%22%3A%22SponsoredRightRailContentActionEvent%22%2C%22topicName%22%3A%22SponsoredRightRailContentActionEvent%22%7D%2C%22eventBody%22%3A%7B%22sponsoredEventHeader%22%3A%7B%22encryptedTrackingData%22%3A%22CwEAAAGcayG1rXkT6zarCm7y19i01EmQ9_71fdcOLPrfyMPJFxSjeflBFFFxaXp83KhYvIHerUWcUv6ULAG3qML8d5jvV2-7aJEEfqfY9pMypIVJN0kqAHki0lA7YogP8HLyoOJDjbk7Xf1QPRHWCAZWX24ZuOqWxeW8PSOFwus3iKO3G1FESZgpZ9emoWANOKr9Q7CsT0cwtp2BydBjfKvXGp047pLkGER220SF0DRC3r-6bEg5yT9Hx6pHubQ5O6yxfS1coWPBzGZNbpSIUxWI1ZaJ7Dd9mH5-YmtA7oN2ZrIYX7vCvAhcYzn69JzQsvjphNMa7FEpnisLAfImGcHOyOeFt0ZKs9TfdF4wry1MWyY_W2i5gjSZYj72lnQ5DwABlKtH-SLW6Lbk2uZutOq5Q7NwCZc-SD4DFdICQx3oGHyKYt6DbVv1GnJWDs8tbn7fA778Gyl0zr-K8l1vgRLAfysYT-gh0_HLoO-xNIiZWMczs7DIf5AYfn1IW7lkrN6a7EPdBR0PAQPOkYsfVXZrHPYk7KpyTc4P6Q5Xxs1ub7dfVaEYr--CpBs0545Qyg4I3POCybzuPImakd42QBfLkHoeEcc8qd1VTP4VN8TjjKYs0KBM3Htntpklwwc3w1dqpBMiLqYpoS6uy3RijjO6Mm9KJ2jMi72JtQy2ufJgnaL2QKN5Y_6uZK4o8OdqUt2Jgd57G3r68Y6MzszB92lg0_OoVKacasdt5WS7D93pIiXtVKaO6rATp6LSUmLTlA2UOaGelAqHJDCbm1vf_0Z7yUTdDgVOxrxMWMSHVnnRvV6l0OTlInHGD7KVVv1DOgxvGPgxOHN1oQR-PKSTpNuXLf8GUIHwDQczJVLTKXde7OVhEmsR4uI%22%7D%2C%22header%22%3A%7B%22pageInstance%22%3A%7B%22pageUrn%22%3A%22urn%3Ali%3Apage%3Ad_flagship3_company_posts%22%2C%22trackingId%22%3A%22775df1c3-3fdf-405a-a54e-2d3de190065c%22%7D%2C%22time%22%3A1771323897068%2C%22version%22%3A%220.0.0%22%7D%2C%22requestHeader%22%3A%7B%22pageKey%22%3A%22d_flagship3_company_posts%22%2C%22interfaceLocale%22%3A%22en-US%22%7D%7D%7D%5D&csrfToken=ajax%3A2872756275449100236
+        - generic [ref=e488]:
+          - generic [ref=e493]:
+            - heading "Affiliated pages" [level=3] [ref=e495]
+            - list [ref=e497]:
+              - listitem [ref=e498]:
+                - generic [ref=e499]:
+                  - generic [ref=e500]:
+                    - link "Gong Israel page logo" [ref=e502] [cursor=pointer]:
+                      - /url: https://www.linkedin.com/showcase/gong-israel/
+                      - generic "Gong Israel page logo" [ref=e504]:
+                        - img "Gong Israel page logo" [ref=e506]
+                    - generic [ref=e507]:
+                      - link "Gong Israel Software Development Showcase page" [ref=e509] [cursor=pointer]:
+                        - /url: https://www.linkedin.com/showcase/gong-israel/
+                        - generic [ref=e510]:
+                          - generic [ref=e512]: Gong Israel
+                          - generic [ref=e514]: Software Development
+                          - generic [ref=e516]: Showcase page
+                      - link "Aleg Malinovsky Aleg & 39 other connections follow this page" [ref=e518] [cursor=pointer]:
+                        - /url: http://www.linkedin.com/showcase/gong-israel/?showInNetworkFollowers=true
+                        - img "Aleg Malinovsky" [ref=e521]
+                        - generic [ref=e522]: Aleg & 39 other connections follow this page
+                  - button "Follow Gong Israel" [ref=e524] [cursor=pointer]:
+                    - img [ref=e525]
+                    - generic [ref=e527]: Follow
+          - generic [ref=e531]:
+            - generic [ref=e532]:
+              - heading "Products people also use" [level=3] [ref=e534]
+              - generic [ref=e535]: Customer Engagement Software
+              - list [ref=e537]:
+                - listitem [ref=e538]:
+                  - generic [ref=e540]:
+                    - link "Zoho SalesIQ page logo" [ref=e542] [cursor=pointer]:
+                      - /url: https://www.linkedin.com/products/zoho-salesiq/
+                      - generic "Zoho SalesIQ page logo" [ref=e544]:
+                        - img "Zoho SalesIQ page logo" [ref=e546]
+                    - generic [ref=e547]:
+                      - link "Zoho SalesIQ Customer Engagement Software" [ref=e549] [cursor=pointer]:
+                        - /url: https://www.linkedin.com/products/zoho-salesiq/
+                        - generic [ref=e550]:
+                          - generic [ref=e552]: Zoho SalesIQ
+                          - generic [ref=e554]: Customer Engagement Software
+                      - link "Aleg Malinovsky Ask Aleg and 49 others about this product" [ref=e556] [cursor=pointer]:
+                        - /url: http://www.linkedin.com/products/zoho-salesiq/helpfulPeople
+                        - img "Aleg Malinovsky" [ref=e559]
+                        - generic [ref=e560]: Ask Aleg and 49 others about this product
+                - listitem [ref=e561]:
+                  - generic [ref=e563]:
+                    - link "Amdocs Customer Engagement page logo" [ref=e565] [cursor=pointer]:
+                      - /url: https://www.linkedin.com/products/amdocs-customer-engagement/
+                      - generic "Amdocs Customer Engagement page logo" [ref=e567]:
+                        - img "Amdocs Customer Engagement page logo" [ref=e569]
+                    - generic [ref=e570]:
+                      - link "Amdocs Customer Engagement Customer Engagement Software" [ref=e572] [cursor=pointer]:
+                        - /url: https://www.linkedin.com/products/amdocs-customer-engagement/
+                        - generic [ref=e573]:
+                          - generic [ref=e575]: Amdocs Customer Engagement
+                          - generic [ref=e577]: Customer Engagement Software
+                      - link "Aleg Malinovsky Ask Aleg and 49 others about this product" [ref=e579] [cursor=pointer]:
+                        - /url: http://www.linkedin.com/products/amdocs-customer-engagement/helpfulPeople
+                        - img "Aleg Malinovsky" [ref=e582]
+                        - generic [ref=e583]: Ask Aleg and 49 others about this product
+                - listitem [ref=e584]:
+                  - generic [ref=e586]:
+                    - link "Genesys Cloud CX page logo" [ref=e588] [cursor=pointer]:
+                      - /url: https://www.linkedin.com/products/genesys-cloud/
+                      - generic "Genesys Cloud CX page logo" [ref=e590]:
+                        - img "Genesys Cloud CX page logo" [ref=e592]
+                    - generic [ref=e593]:
+                      - link "Genesys Cloud CX Customer Engagement Software" [ref=e595] [cursor=pointer]:
+                        - /url: https://www.linkedin.com/products/genesys-cloud/
+                        - generic [ref=e596]:
+                          - generic [ref=e598]: Genesys Cloud CX
+                          - generic [ref=e600]: Customer Engagement Software
+                      - link "Nir Barzilai Ask Nir and 50 others about this product" [ref=e602] [cursor=pointer]:
+                        - /url: http://www.linkedin.com/products/genesys-cloud/helpfulPeople
+                        - img "Nir Barzilai" [ref=e605]
+                        - generic [ref=e606]: Ask Nir and 50 others about this product
+            - button "Show all products" [ref=e608] [cursor=pointer]:
+              - img [ref=e609]
+              - generic [ref=e611]: Show all
+          - generic [ref=e615]:
+            - generic [ref=e616]:
+              - heading "Pages people also viewed" [level=3] [ref=e618]
+              - list [ref=e620]:
+                - listitem [ref=e621]:
+                  - generic [ref=e622]:
+                    - generic [ref=e623]:
+                      - link "HubSpot page logo" [ref=e625] [cursor=pointer]:
+                        - /url: https://www.linkedin.com/company/hubspot/
+                        - generic "HubSpot page logo" [ref=e627]:
+                          - img "HubSpot page logo" [ref=e629]
+                      - generic [ref=e630]:
+                        - link "HubSpot Software Development 1,628,077 followers" [ref=e632] [cursor=pointer]:
+                          - /url: https://www.linkedin.com/company/hubspot/
+                          - generic [ref=e633]:
+                            - generic [ref=e635]: HubSpot
+                            - generic [ref=e637]: Software Development
+                            - generic [ref=e639]: 1,628,077 followers
+                        - link "Hannah Voss Hannah works here" [ref=e641] [cursor=pointer]:
+                          - /url: http://www.linkedin.com/in/hannahelizabethkayvoss
+                          - img "Hannah Voss" [ref=e644]
+                          - generic [ref=e645]: Hannah works here
+                    - button "Follow HubSpot" [ref=e647] [cursor=pointer]:
+                      - img [ref=e648]
+                      - generic [ref=e650]: Follow
+                - listitem [ref=e651]:
+                  - generic [ref=e652]:
+                    - generic [ref=e653]:
+                      - link "Outreach page logo" [ref=e655] [cursor=pointer]:
+                        - /url: https://www.linkedin.com/company/outreach-saas/
+                        - generic "Outreach page logo" [ref=e657]:
+                          - img "Outreach page logo" [ref=e659]
+                      - generic [ref=e660]:
+                        - link "Outreach Software Development 303,114 followers" [ref=e662] [cursor=pointer]:
+                          - /url: https://www.linkedin.com/company/outreach-saas/
+                          - generic [ref=e663]:
+                            - generic [ref=e665]: Outreach
+                            - generic [ref=e667]: Software Development
+                            - generic [ref=e669]: 303,114 followers
+                        - link "Nadav Shomer Nadav & 15 other connections follow this page" [ref=e671] [cursor=pointer]:
+                          - /url: http://www.linkedin.com/company/outreach-saas/?showInNetworkFollowers=true
+                          - img "Nadav Shomer" [ref=e674]
+                          - generic [ref=e675]: Nadav & 15 other connections follow this page
+                    - button "Follow Outreach" [ref=e677] [cursor=pointer]:
+                      - img [ref=e678]
+                      - generic [ref=e680]: Follow
+                - listitem [ref=e681]:
+                  - generic [ref=e682]:
+                    - generic [ref=e683]:
+                      - link "Deel page logo" [ref=e685] [cursor=pointer]:
+                        - /url: https://www.linkedin.com/company/deel/
+                        - generic "Deel page logo" [ref=e687]:
+                          - img "Deel page logo" [ref=e689]
+                      - generic [ref=e690]:
+                        - link "Deel Human Resources Services 709,065 followers" [ref=e692] [cursor=pointer]:
+                          - /url: https://www.linkedin.com/company/deel/
+                          - generic [ref=e693]:
+                            - generic [ref=e695]: Deel
+                            - generic [ref=e697]: Human Resources Services
+                            - generic [ref=e699]: 709,065 followers
+                        - link "Sharon Dar Sharon & 171 other connections follow this page" [ref=e701] [cursor=pointer]:
+                          - /url: http://www.linkedin.com/company/deel/?showInNetworkFollowers=true
+                          - img "Sharon Dar" [ref=e704]
+                          - generic [ref=e705]: Sharon & 171 other connections follow this page
+                    - button "Follow Deel" [ref=e707] [cursor=pointer]:
+                      - img [ref=e708]
+                      - generic [ref=e710]: Follow
+            - button "Show all similar pages" [ref=e712] [cursor=pointer]:
+              - img [ref=e713]
+              - generic [ref=e715]: Show all
+          - generic [ref=e719]:
+            - generic [ref=e720]:
+              - heading "People also follow" [level=3] [ref=e722]
+              - list [ref=e724]:
+                - listitem [ref=e725]:
+                  - generic [ref=e726]:
+                    - generic [ref=e727]:
+                      - link "Slack page logo" [ref=e729] [cursor=pointer]:
+                        - /url: https://www.linkedin.com/company/tiny-spec-inc/
+                        - generic "Slack page logo" [ref=e731]:
+                          - img "Slack page logo" [ref=e733]
+                      - generic [ref=e734]:
+                        - link "Slack Technology, Information and Internet 1,725,955 followers" [ref=e736] [cursor=pointer]:
+                          - /url: https://www.linkedin.com/company/tiny-spec-inc/
+                          - generic [ref=e737]:
+                            - generic [ref=e739]: Slack
+                            - generic [ref=e741]: Technology, Information and Internet
+                            - generic [ref=e743]: 1,725,955 followers
+                        - link "Sharon Dar Sharon & 171 other connections follow this page" [ref=e745] [cursor=pointer]:
+                          - /url: http://www.linkedin.com/company/tiny-spec-inc/?showInNetworkFollowers=true
+                          - img "Sharon Dar" [ref=e748]
+                          - generic [ref=e749]: Sharon & 171 other connections follow this page
+                    - button "Follow Slack" [ref=e751] [cursor=pointer]:
+                      - img [ref=e752]
+                      - generic [ref=e754]: Follow
+                - listitem [ref=e755]:
+                  - generic [ref=e756]:
+                    - generic [ref=e757]:
+                      - link "Stripe page logo" [ref=e759] [cursor=pointer]:
+                        - /url: https://www.linkedin.com/company/stripe/
+                        - generic "Stripe page logo" [ref=e761]:
+                          - img "Stripe page logo" [ref=e763]
+                      - generic [ref=e764]:
+                        - link "Stripe Technology, Information and Internet 1,281,239 followers" [ref=e766] [cursor=pointer]:
+                          - /url: https://www.linkedin.com/company/stripe/
+                          - generic [ref=e767]:
+                            - generic [ref=e769]: Stripe
+                            - generic [ref=e771]: Technology, Information and Internet
+                            - generic [ref=e773]: 1,281,239 followers
+                        - link "Noy Ben Ezra Noy & 93 other connections follow this page" [ref=e775] [cursor=pointer]:
+                          - /url: http://www.linkedin.com/company/stripe/?showInNetworkFollowers=true
+                          - img "Noy Ben Ezra" [ref=e778]
+                          - generic [ref=e779]: Noy & 93 other connections follow this page
+                    - button "Follow Stripe" [ref=e781] [cursor=pointer]:
+                      - img [ref=e782]
+                      - generic [ref=e784]: Follow
+                - listitem [ref=e785]:
+                  - generic [ref=e786]:
+                    - generic [ref=e787]:
+                      - link "Weizmann Institute of Science page logo" [ref=e789] [cursor=pointer]:
+                        - /url: https://www.linkedin.com/school/weizmann-institute-of-science/
+                        - generic "Weizmann Institute of Science page logo" [ref=e791]:
+                          - img "Weizmann Institute of Science page logo" [ref=e793]
+                      - generic [ref=e794]:
+                        - link "Weizmann Institute of Science Research 73,021 followers" [ref=e796] [cursor=pointer]:
+                          - /url: https://www.linkedin.com/school/weizmann-institute-of-science/
+                          - generic [ref=e797]:
+                            - generic [ref=e799]: Weizmann Institute of Science
+                            - generic [ref=e801]: Research
+                            - generic [ref=e803]: 73,021 followers
+                        - link "Gili Solomon green Gili & 4 other connections work here" [ref=e805] [cursor=pointer]:
+                          - /url: http://www.linkedin.com/search/results/people/?origin=COMPANY_PAGE_CANNED_SEARCH&network=%5B%22F%22%5D&currentCompany=%5B%223152%22%5D
+                          - img "Gili Solomon green" [ref=e808]
+                          - generic [ref=e809]: Gili & 4 other connections work here
+                    - button "Follow Weizmann Institute of Science" [ref=e811] [cursor=pointer]:
+                      - img [ref=e812]
+                      - generic [ref=e814]: Follow
+            - button "Show all recommended pages" [ref=e816] [cursor=pointer]:
+              - img [ref=e817]
+              - generic [ref=e819]: Show all
+          - generic [ref=e825]:
+            - generic [ref=e826]:
+              - heading "Connections that work here" [level=3] [ref=e828]
+              - list [ref=e830]:
+                - listitem [ref=e831]:
+                  - generic [ref=e832]:
+                    - generic [ref=e833]:
+                      - link "Dror Brosh profile picture" [ref=e835] [cursor=pointer]:
+                        - /url: https://www.linkedin.com/in/dror-brosh-75340892
+                        - generic "Dror Brosh profile picture" [ref=e837]:
+                          - img "Dror Brosh" [ref=e839]
+                      - link "Dror Brosh 1st Senior Software Engineer at Gong" [ref=e842] [cursor=pointer]:
+                        - /url: https://www.linkedin.com/in/dror-brosh-75340892
+                        - generic [ref=e843]:
+                          - generic [ref=e844]:
+                            - generic [ref=e845]: Dror Brosh
+                            - generic [ref=e846]:
+                              - generic [ref=e847]: 1st
+                              - generic [ref=e848]: · 1st
+                          - generic [ref=e850]: Senior Software Engineer at Gong
+                    - button "Dror Brosh Message" [ref=e853] [cursor=pointer]:
+                      - generic [ref=e854]: Message
+                - listitem [ref=e855]:
+                  - generic [ref=e856]:
+                    - generic [ref=e857]:
+                      - link "Talia Lavie profile picture" [ref=e859] [cursor=pointer]:
+                        - /url: https://www.linkedin.com/in/talia-lavie-459981b
+                        - generic "Talia Lavie profile picture" [ref=e861]:
+                          - img "Talia Lavie" [ref=e863]
+                      - link "Talia Lavie 1st VP of User Experience, Gong" [ref=e866] [cursor=pointer]:
+                        - /url: https://www.linkedin.com/in/talia-lavie-459981b
+                        - generic [ref=e867]:
+                          - generic [ref=e868]:
+                            - generic [ref=e869]: Talia Lavie
+                            - generic [ref=e870]:
+                              - generic [ref=e871]: 1st
+                              - generic [ref=e872]: · 1st
+                          - generic [ref=e874]: VP of User Experience, Gong
+                    - button "Talia Lavie Message" [ref=e877] [cursor=pointer]:
+                      - generic [ref=e878]: Message
+                - listitem [ref=e879]:
+                  - generic [ref=e880]:
+                    - generic [ref=e881]:
+                      - link "Eilon Reshef profile picture" [ref=e883] [cursor=pointer]:
+                        - /url: https://www.linkedin.com/in/eilonreshef
+                        - generic "Eilon Reshef profile picture" [ref=e885]:
+                          - img "Eilon Reshef" [ref=e887]
+                      - link "Eilon Reshef 1st Co-Founder and Chief Product Officer at Gong" [ref=e890] [cursor=pointer]:
+                        - /url: https://www.linkedin.com/in/eilonreshef
+                        - generic [ref=e891]:
+                          - generic [ref=e892]:
+                            - generic [ref=e893]: Eilon Reshef
+                            - generic [ref=e894]:
+                              - generic [ref=e895]: 1st
+                              - generic [ref=e896]: · 1st
+                          - generic [ref=e898]: Co-Founder and Chief Product Officer at Gong
+                    - button "Eilon Reshef Message" [ref=e901] [cursor=pointer]:
+                      - generic [ref=e902]: Message
+            - link "Show all" [ref=e904] [cursor=pointer]:
+              - /url: https://www.linkedin.com/search/results/people/?origin=SHARED_CONNECTIONS_IN_COMPANY_CANNED_SEARCH&network=%22F%22&currentCompany=%5B10454372%5D
+              - generic [ref=e905]: Show all
+              - img [ref=e906]
+        - generic [ref=e909]:
+          - iframe [ref=e911]:
+            
+          - generic "LinkedIn Footer Content" [ref=e912]:
+            - generic [ref=e913]:
+              - list [ref=e914]:
+                - listitem [ref=e915]:
+                  - link "About" [ref=e916] [cursor=pointer]:
+                    - /url: https://about.linkedin.com/
+                    - generic [ref=e917]: About
+                - listitem [ref=e918]:
+                  - link "Accessibility" [ref=e919] [cursor=pointer]:
+                    - /url: https://www.linkedin.com/accessibility
+                    - generic [ref=e920]: Accessibility
+                - listitem [ref=e921]:
+                  - link "Help Center" [ref=e922] [cursor=pointer]:
+                    - /url: https://www.linkedin.com/help/linkedin?trk=footer_d_flagship3_company_posts
+                    - generic [ref=e923]: Help Center
+                - listitem [ref=e924]:
+                  - button "Privacy & Terms" [ref=e926] [cursor=pointer]:
+                    - generic [ref=e928]:
+                      - text: Privacy & Terms
+                      - img [ref=e929]
+                - listitem [ref=e931]:
+                  - link "Ad Choices" [ref=e932] [cursor=pointer]:
+                    - /url: https://www.linkedin.com/help/linkedin/answer/62931
+                    - generic [ref=e933]: Ad Choices
+                - listitem [ref=e934]:
+                  - link "Advertising" [ref=e935] [cursor=pointer]:
+                    - /url: https://www.linkedin.com/ad/start?trk=n_nav_ads_rr
+                    - generic [ref=e936]: Advertising
+                - listitem [ref=e937]:
+                  - button "Business Services" [ref=e939] [cursor=pointer]:
+                    - generic [ref=e941]:
+                      - text: Business Services
+                      - img [ref=e942]
+                - listitem [ref=e944]:
+                  - button "Get the LinkedIn app" [ref=e947] [cursor=pointer]
+                - listitem [ref=e948]:
+                  - button "More options" [ref=e949] [cursor=pointer]: More
+              - generic [ref=e950]:
+                - img "LinkedIn" [ref=e951]:
+                  - img [ref=e952]
+                - text: LinkedIn Corporation © 2026
+    - generic:
+      - generic:
+        - complementary:
+          - generic [ref=e955]:
+            - generic [ref=e957] [cursor=pointer]:
+              - generic [ref=e958]:
+                - img "Oded Ben-Yair" [ref=e959]
+                - generic [ref=e961]: Status is online
+              - button "You are on the messaging overlay. Press enter to open the list of conversations." [ref=e962]:
+                - generic [ref=e963]:
+                  - generic [ref=e964]: Messaging
+                  - generic [ref=e965]: You are on the messaging overlay. Press enter to open the list of conversations.
+            - generic [ref=e966]:
+              - button "Open messenger dropdown menu" [ref=e968] [cursor=pointer]:
+                - img "Open messenger dropdown menu" [ref=e969]
+              - button "Compose message" [ref=e972] [cursor=pointer]:
+                - img [ref=e973]
+                - generic [ref=e975]: Compose message
+              - button "You are on the messaging overlay. Press enter to open the list of conversations." [ref=e976] [cursor=pointer]:
+                - img [ref=e977]
+                - generic [ref=e979]: You are on the messaging overlay. Press enter to open the list of conversations.
+        - complementary "AI-powered assistant to get help with your career, jobs etc"
+  - region [ref=e980]

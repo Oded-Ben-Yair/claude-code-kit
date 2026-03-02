@@ -1,0 +1,1260 @@
+- generic [ref=e1]:
+  - generic:
+    - region "Toast message":
+      - heading "0 notifications total" [level=2] [ref=e3]
+      - alert
+  - generic [ref=e4]:
+    - generic [ref=e6]:
+      - button "Skip to search" [ref=e7] [cursor=pointer]:
+        - generic [ref=e8]: Skip to search
+      - button "Skip to main content" [ref=e9] [cursor=pointer]:
+        - generic [ref=e10]: Skip to main content
+      - button "Keyboard shortcuts" [ref=e11] [cursor=pointer]:
+        - generic [ref=e12]: Keyboard shortcuts
+      - button "Close jump menu" [ref=e13] [cursor=pointer]:
+        - img [ref=e14]
+        - generic [ref=e16]: Close jump menu
+    - banner "Global Navigation" [ref=e17]:
+      - generic [ref=e18]:
+        - link "LinkedIn" [ref=e19] [cursor=pointer]:
+          - /url: https://www.linkedin.com/feed/?nis=true
+          - img "LinkedIn" [ref=e22]:
+            - img [ref=e23]
+        - generic [ref=e27]:
+          - combobox "Search" [ref=e28]
+          - generic:
+            - img
+        - navigation "Primary Navigation" [ref=e29]:
+          - list [ref=e30]:
+            - listitem [ref=e31]:
+              - link "new feed updates notifications Home" [ref=e32] [cursor=pointer]:
+                - /url: https://www.linkedin.com/feed/?nis=true&
+                - generic [ref=e33]:
+                  - generic [ref=e36]: new feed updates notifications
+                  - img [ref=e40]
+                - generic "Home" [ref=e42]
+            - listitem [ref=e43]:
+              - link "My Network" [ref=e44] [cursor=pointer]:
+                - /url: https://www.linkedin.com/mynetwork/?
+                - img [ref=e48]
+                - generic "My Network" [ref=e50]
+            - listitem [ref=e51]:
+              - link "Jobs" [ref=e52] [cursor=pointer]:
+                - /url: https://www.linkedin.com/jobs/?
+                - img [ref=e56]
+                - generic "Jobs" [ref=e58]
+            - listitem [ref=e59]:
+              - link "Messaging" [ref=e60] [cursor=pointer]:
+                - /url: https://www.linkedin.com/messaging/?
+                - img [ref=e64]
+                - generic "Messaging" [ref=e66]
+            - listitem [ref=e67]:
+              - link "Notifications" [ref=e68] [cursor=pointer]:
+                - /url: https://www.linkedin.com/notifications/?
+                - img [ref=e72]
+                - generic "Notifications" [ref=e74]
+            - listitem [ref=e75]:
+              - button "Oded Ben-Yair Me" [ref=e77] [cursor=pointer]:
+                - img "Oded Ben-Yair" [ref=e78]
+                - generic [ref=e79]:
+                  - text: Me
+                  - img [ref=e80]
+            - listitem [ref=e82]:
+              - button "For Business" [ref=e84] [cursor=pointer]:
+                - img [ref=e88]
+                - generic "For Business" [ref=e90]:
+                  - text: For Business
+                  - img [ref=e91]
+            - listitem [ref=e93]:
+              - 'link "Reactivate Premium: 50% Off" [ref=e95] [cursor=pointer]':
+                - /url: http://www.linkedin.com/premium/redeem/?_ed=0_bvLJH59RTSY-u5c6PMUa4IW0M54p9mxZpuVkfRvTl7r&upsellOrderOrigin=Tracking%3Av1%3Apremium_nav_upsell_text_winback%3ANav%3AIn-Product&referenceId=qOLvNjg3QgizWBoR7UBjrg%3D%3D&customKey=wb_c&redeemTypeV2=DISCOUNT&destRedirectURL=https%3A%2F%2Fwww.linkedin.com%2Ffeed%2Fupdate%2Furn%3Ali%3Aactivity%3A7428363627566370817%2F
+                - generic [ref=e97]: "Reactivate Premium: 50% Off"
+    - generic [ref=e104]:
+      - complementary "User profile" [ref=e105]:
+        - generic [ref=e107]:
+          - generic [ref=e108]:
+            - link "Background photo of Oded Ben-Yair" [ref=e109] [cursor=pointer]:
+              - /url: /in/oded-ben-yair-ai/
+            - link "Photo of Oded Ben-Yair" [ref=e111] [cursor=pointer]:
+              - /url: /in/oded-ben-yair-ai/
+              - img "Photo of Oded Ben-Yair" [ref=e112]
+            - generic [ref=e113]:
+              - link "Oded Ben-Yair Founding AI Engineer | Multi-LLM Routing & Evaluation in Production | Voice AI · RAG | Azure + Python Tel Aviv-Yafo, Tel Aviv District" [ref=e114] [cursor=pointer]:
+                - /url: /in/oded-ben-yair-ai/
+                - generic [ref=e115]:
+                  - heading "Oded Ben-Yair" [level=3] [ref=e116]
+                  - img [ref=e120]
+                - paragraph [ref=e122]: Founding AI Engineer | Multi-LLM Routing & Evaluation in Production | Voice AI · RAG | Azure + Python
+                - paragraph [ref=e123]: Tel Aviv-Yafo, Tel Aviv District
+              - link "Be Z Online" [ref=e124] [cursor=pointer]:
+                - /url: /in/oded-ben-yair-ai/
+                - paragraph [ref=e125]:
+                  - generic [ref=e126]: Be Z Online
+          - 'link "Achieve 4x more profile visits Reactivate Premium: 50% Off" [ref=e128] [cursor=pointer]':
+            - /url: http://www.linkedin.com/premium/redeem/?_ed=0_bvLJH59RTSY-u5c6PMUa4IW0M54p9mxZpuVkfRvTl7r&upsellOrderOrigin=Tracking%3Av1%3Apremium_homepage_identity_upsell_winback%3ANav%3AIn-Product&referenceId=KPRQ3%2Bn9TQKlKtMKeNqPvg%3D%3D&customKey=wb_c&redeemTypeV2=DISCOUNT&destRedirectURL=https%3A%2F%2Fwww.linkedin.com%2Ffeed%2Fupdate%2Furn%3Ali%3Aactivity%3A7428363627566370817%2F
+            - heading "Achieve 4x more profile visits" [level=3] [ref=e129]
+            - generic [ref=e130]:
+              - img [ref=e131]
+              - generic [ref=e133]: "Reactivate Premium: 50% Off"
+          - list [ref=e137]:
+            - listitem [ref=e138]:
+              - link "Profile viewers 145" [ref=e139] [cursor=pointer]:
+                - /url: /me/profile-views/
+                - generic [ref=e140]:
+                  - generic [ref=e142]: Profile viewers
+                  - strong [ref=e145]: "145"
+            - listitem [ref=e146]:
+              - link "Post impressions 94" [ref=e147] [cursor=pointer]:
+                - /url: /analytics/creator/content/
+                - generic [ref=e148]:
+                  - generic [ref=e150]: Post impressions
+                  - strong [ref=e153]: "94"
+      - main "Feed detail update" [ref=e154]:
+        - heading "Feed detail update" [level=1] [ref=e155]
+        - generic "Update container" [ref=e156]:
+          - article [ref=e160]:
+            - generic [ref=e162]:
+              - heading "Feed post" [level=2] [ref=e163]
+              - generic [ref=e164]:
+                - generic [ref=e165]:
+                  - generic [ref=e167]:
+                    - link "View Assaf Schwartz’s graphic link" [ref=e168] [cursor=pointer]:
+                      - /url: https://www.linkedin.com/in/assafschwartz?miniProfileUrn=urn%3Ali%3Afsd_profile%3AACoAAAfx4zwBlS4HBTDQqeVc6btcBfgNrSQbYS0
+                      - img "View Assaf Schwartz’s graphic link" [ref=e172]
+                    - generic [ref=e173]:
+                      - 'link "View: Assaf Schwartz Verified • Following HR Executive | LinkedIn Thought Leader | Speaker on Leadership, Culture &amp; Talent" [ref=e174] [cursor=pointer]':
+                        - /url: https://www.linkedin.com/in/assafschwartz?miniProfileUrn=urn%3Ali%3Afsd_profile%3AACoAAAfx4zwBlS4HBTDQqeVc6btcBfgNrSQbYS0
+                        - generic [ref=e175]:
+                          - generic [ref=e177]:
+                            - generic [ref=e178]: Assaf Schwartz
+                            - generic [ref=e179]: Assaf Schwartz
+                          - generic [ref=e180]:
+                            - generic [ref=e181]:
+                              - img [ref=e182]
+                              - text: • Following
+                            - generic [ref=e184]: Verified • Following
+                        - generic [ref=e185]:
+                          - generic [ref=e186]: HR Executive | LinkedIn Thought Leader | Speaker on Leadership, Culture & Talent
+                          - generic [ref=e187]: HR Executive | LinkedIn Thought Leader | Speaker on Leadership, Culture & Talent
+                      - generic [ref=e188]:
+                        - generic [ref=e189]:
+                          - text: 5h •
+                          - img [ref=e192]
+                        - generic [ref=e194]: 5 hours ago • Visible to anyone on or off LinkedIn
+                  - button "Open control menu for post by Assaf Schwartz" [ref=e197] [cursor=pointer]:
+                    - img [ref=e198]
+                - generic [ref=e200]:
+                  - generic [ref=e204]:
+                    - text: ההיחלשות של הדולר היא חדשות לא טובות לעובד ההייטק.
+                    - text: השער היום עומד על 3.09, הכי נמוך מאז 1996.
+                    - text: מצד אחד, כיף לחזור מחו"ל ולהגיד "בואנה, קניתי מעיל Uniqlo ב-80 דולר! כולה 250 שקל!"
+                    - text: מצד שני, אנחנו נהיים יקרים למעסיק.
+                    - text: כמה יקרים?
+                    - text: נניח שאתם מרוויחים 30,000 בחודש.
+                    - text: המעסיק משלם עליכם בערך 40,000
+                    - text: (כי הוא מפריש פנסיה, פיצויים, קרן השתלמות, סיבוס, הוצאות נסיעה ותקציבי fun ופיתוח).
+                    - text: זה שווה ל-158 אלף דולר בשנה.
+                    - text: ולפני שנה וקצת זה היה 128 אלף דולר.
+                    - text: אז התייקרנו ב-30 אלף דולר!
+                    - text: תכפילו נניח ב-100 עובדים וזה 3 מיליון ג׳ובות שהמעסיק מוריד משורת הרווח.
+                    - text: זה המון!
+                    - text: זה אומר שהמעסיק צריך לחשוב פעמיים על פתיחת משרה בישראל ולהיזהר יותר עם העלאות שכר 😥
+                    - text: "טיפים לנו העובדים בתקופה הזו:"
+                    - text: 1. תחסכו כסף לחברה - בצמצום שירותי ענן למשל או אוטומציות שמייתרות צורך בגיוס נוסף.
+                    - text: 2. תייצרו יותר כסף - יותר מכירות, שחרור מהיר יותר של פיצ׳רים.
+                    - text: 3. אם אתם הכי יקרים בצוות, שימו לב שהערך שאתם מביאים מצדיק את זה.
+                    - text: 4. תוודאו שיש לכם מדדים ברורים לתפקיד. מישהו מתישהו ישאל "מה הבחור הזה בדיוק עושה פה?"
+                    - text: בהצלחה!
+                  - button "Show translation" [ref=e207] [cursor=pointer]:
+                    - generic [ref=e208]: Show translation
+                - generic [ref=e210]:
+                  - button "Activate to view larger image, No alternative text description for this image" [ref=e212] [cursor=pointer]:
+                    - generic [ref=e213]: Activate to view larger image,
+                    - img "No alternative text description for this image" [ref=e216]
+                  - generic [ref=e217]: Activate to view larger image,
+                - generic [ref=e218]:
+                  - list [ref=e222]:
+                    - listitem [ref=e223]:
+                      - button "Nitzan Scheftelowitz and 123 others" [ref=e224] [cursor=pointer]:
+                        - img "like" [ref=e225]
+                        - img "insightful" [ref=e226]
+                        - img "love" [ref=e227]
+                        - generic [ref=e228]:
+                          - generic [ref=e229]: "124"
+                          - generic [ref=e230]: Nitzan Scheftelowitz and 123 others
+                    - listitem [ref=e231]:
+                      - list [ref=e232]:
+                        - listitem [ref=e233]:
+                          - button "22 comments on Assaf Schwartz’s post" [ref=e234] [cursor=pointer]:
+                            - generic [ref=e235]: 22 comments
+                          - text: ·
+                        - listitem [ref=e236]:
+                          - button "1 repost of Assaf Schwartz’s post" [ref=e237] [cursor=pointer]:
+                            - generic [ref=e238]: 1 repost
+                  - generic [ref=e239]:
+                    - heading "Reactions" [level=3] [ref=e240]
+                    - list "Reactions" [ref=e241]:
+                      - listitem [ref=e242]:
+                        - link "View Ofir Rozenfeld’s graphic link, reacted with INTEREST, graphic" [ref=e243] [cursor=pointer]:
+                          - /url: https://www.linkedin.com/in/ACoAAALk3dMBH3xAl9MGgHmdNEs3Kx4hXWRShHg
+                          - generic [ref=e245]:
+                            - img "View Ofir Rozenfeld’s graphic link" [ref=e248]
+                            - img "insightful" [ref=e249]
+                      - listitem [ref=e250]:
+                        - link "View Amitay Boneh’s graphic link, reacted with LIKE, graphic" [ref=e251] [cursor=pointer]:
+                          - /url: https://www.linkedin.com/in/ACoAABv5zwgBGWlXh01BCnaRw8nJ6QQEIcPUNzA
+                          - generic [ref=e253]:
+                            - img "View Amitay Boneh’s graphic link" [ref=e256]
+                            - img "like" [ref=e257]
+                      - listitem [ref=e258]:
+                        - link "View Inbar Levi-Degani’s graphic link, reacted with LIKE, graphic" [ref=e259] [cursor=pointer]:
+                          - /url: https://www.linkedin.com/in/ACoAACgRTHgBQPpMOOdjl5Sail_pbAvVoQTR8Ko
+                          - generic [ref=e261]:
+                            - img "View Inbar Levi-Degani’s graphic link" [ref=e264]
+                            - img "like" [ref=e265]
+                      - listitem [ref=e266]:
+                        - link "View Yair Azrieli’s graphic link, reacted with LIKE, graphic" [ref=e267] [cursor=pointer]:
+                          - /url: https://www.linkedin.com/in/ACoAAC_DpHIBjV3ntPr3d8TU7-sMVwjjYZtF2FY
+                          - generic [ref=e269]:
+                            - img "View Yair Azrieli’s graphic link" [ref=e272]
+                            - img "like" [ref=e273]
+                      - listitem [ref=e274]:
+                        - link "View Eli Hirsch’s graphic link, reacted with LIKE, graphic" [ref=e275] [cursor=pointer]:
+                          - /url: https://www.linkedin.com/in/ACoAABZdZY4BfM53vSwrOivYrqJWYJOsNJ_q938
+                          - generic [ref=e277]:
+                            - img "View Eli Hirsch’s graphic link" [ref=e280]
+                            - img "like" [ref=e281]
+                      - listitem [ref=e282]:
+                        - link "View Nitzan Scheftelowitz’s graphic link, reacted with LIKE, graphic" [ref=e283] [cursor=pointer]:
+                          - /url: https://www.linkedin.com/in/ACoAAB6Z6-wB6J6oUm-hTyCZjevnRIG41DCvbU4
+                          - generic [ref=e285]:
+                            - img "View Nitzan Scheftelowitz’s graphic link" [ref=e288]
+                            - img "like" [ref=e289]
+                      - listitem [ref=e290]:
+                        - link "View Amit Shafnir 🇮🇱’s graphic link, reacted with LIKE, graphic" [ref=e291] [cursor=pointer]:
+                          - /url: https://www.linkedin.com/in/ACoAACf8dEkBKuV4sF-Qjmdno7qTSFcI__jXXAg
+                          - generic [ref=e293]:
+                            - img "View Amit Shafnir 🇮🇱’s graphic link" [ref=e296]
+                            - img "like" [ref=e297]
+                      - listitem [ref=e298]:
+                        - link "View Shirley Kauffer’s graphic link, reacted with LIKE, graphic" [ref=e299] [cursor=pointer]:
+                          - /url: https://www.linkedin.com/in/ACoAAAGn_1IBdMPz504vw0OJbDIEdevVaUkPspQ
+                          - generic [ref=e301]:
+                            - img "View Shirley Kauffer’s graphic link" [ref=e304]
+                            - img "like" [ref=e305]
+                      - listitem [ref=e306]:
+                        - button "See 116 more reactions" [ref=e307] [cursor=pointer]: …
+                  - generic [ref=e308]:
+                    - generic [ref=e309]:
+                      - button "React Like" [ref=e310] [cursor=pointer]:
+                        - generic [ref=e312]:
+                          - img [ref=e313]
+                          - generic [ref=e315]: Like
+                      - button "Open reactions menu":
+                        - img [ref=e317] [cursor=pointer]
+                    - button "Comment" [ref=e321] [cursor=pointer]:
+                      - img [ref=e322]
+                      - generic [ref=e324]: Comment
+                    - button "Repost" [ref=e327] [cursor=pointer]:
+                      - img [ref=e328]
+                      - generic [ref=e330]: Repost
+                    - button "Send in a private message" [ref=e333] [cursor=pointer]:
+                      - img [ref=e334]
+                      - generic [ref=e337]: Send
+              - generic [ref=e339]:
+                - generic [ref=e341]:
+                  - img "Oded Ben-Yair" [ref=e343]
+                  - generic [ref=e346]:
+                    - textbox "Text editor for creating content" [active] [ref=e352]:
+                      - paragraph [ref=e353]: נקודה שלא כולם חושבים עליה -- מי שמקבל חלק מהמשכורת בדולר מרגיש את זה כפול. לפני שנה אותו סכום בדולר היה שווה יותר בשקלים. עכשיו גם המעסיק מתייקר וגם העובד מרוויח פחות בפועל. תקופה מעניינת
+                    - generic [ref=e355]:
+                      - generic [ref=e356]:
+                        - button "Open Emoji Keyboard" [ref=e359] [cursor=pointer]:
+                          - img
+                          - generic [ref=e360]: Open Emoji Keyboard
+                        - button "Add a photo" [ref=e362] [cursor=pointer]:
+                          - img [ref=e363]
+                      - button "Comment" [ref=e1764] [cursor=pointer]:
+                        - generic [ref=e1765]: Comment
+                - button "Current selected sort order is Most relevant" [ref=e368] [cursor=pointer]:
+                  - generic [ref=e369]: Current selected sort order is Most relevant
+                  - generic [ref=e370]:
+                    - text: Most relevant
+                    - img [ref=e371]
+                - generic [ref=e376]:
+                  - article [ref=e378]:
+                    - generic [ref=e379]:
+                      - generic [ref=e380]:
+                        - link "View Shimrit Hacmon Ezra’s graphic link" [ref=e381] [cursor=pointer]:
+                          - /url: https://www.linkedin.com/in/shimrit-hacmon-ezra-53339a99
+                          - img "View Shimrit Hacmon Ezra’s graphic link" [ref=e384]
+                        - 'link "View: Shimrit Hacmon Ezra • 1st Senior Manager, HR Business Partner" [ref=e385] [cursor=pointer]':
+                          - /url: https://www.linkedin.com/in/shimrit-hacmon-ezra-53339a99
+                          - heading "Shimrit Hacmon Ezra • 1st" [level=3] [ref=e386]:
+                            - generic [ref=e387]: Shimrit Hacmon Ezra
+                            - generic [ref=e388]:
+                              - img [ref=e389]
+                              - text: • 1st
+                          - generic [ref=e391]: Senior Manager, HR Business Partner
+                      - generic [ref=e392]:
+                        - time [ref=e393]: 5h
+                        - button "Open options for Shimrit Hacmon Ezra’s comment" [ref=e396] [cursor=pointer]:
+                          - img "Open options for Shimrit Hacmon Ezra’s comment" [ref=e397]
+                    - generic [ref=e399]:
+                      - button [ref=e400] [cursor=pointer]
+                      - generic [ref=e403]:
+                        - generic [ref=e407]:
+                          - text: שניה, אסף.. לא בטוחה שהבנתי
+                          - text: איך אותה עלות עובד ומעסיק נהיו יקרות יותר השנה בגלל היחלשות הדולר?
+                        - button "Show translation of this comment" [ref=e409] [cursor=pointer]:
+                          - generic [ref=e410]: Show translation
+                          - generic [ref=e411]: Show translation of this comment
+                    - generic [ref=e412]:
+                      - generic [ref=e413]:
+                        - button [ref=e414] [cursor=pointer]
+                        - generic [ref=e416]:
+                          - generic [ref=e417]:
+                            - generic [ref=e418]:
+                              - button "React Like to Shimrit Hacmon Ezra’s comment" [ref=e419] [cursor=pointer]:
+                                - generic [ref=e422]: Like
+                              - button "Open reactions menu":
+                                - img [ref=e424] [cursor=pointer]
+                            - generic [ref=e426]: ·
+                            - button "1 Reaction on Shimrit Hacmon Ezra’s comment" [ref=e427] [cursor=pointer]:
+                              - img "like" [ref=e428]
+                              - generic [ref=e429]: "1"
+                          - generic [ref=e431]:
+                            - button "Reply to Shimrit Hacmon Ezra’s comment" [ref=e432] [cursor=pointer]:
+                              - generic [ref=e434]: Reply
+                            - generic [ref=e435]: ·
+                            - generic [ref=e436]: 3 replies
+                            - generic [ref=e437]: 3 Replies on Shimrit Hacmon Ezra’s comment
+                      - generic [ref=e438]:
+                        - generic [ref=e439]:
+                          - button [ref=e440] [cursor=pointer]
+                          - button "Load previous replies on Shimrit Hacmon Ezra’s comment" [ref=e443] [cursor=pointer]:
+                            - generic [ref=e444]: See previous replies
+                        - generic [ref=e445]:
+                          - button [ref=e446] [cursor=pointer]
+                          - article [ref=e448]:
+                            - generic [ref=e449]:
+                              - generic [ref=e450]:
+                                - link "View Shimrit Hacmon Ezra’s graphic link" [ref=e451] [cursor=pointer]:
+                                  - /url: https://www.linkedin.com/in/shimrit-hacmon-ezra-53339a99
+                                  - img "View Shimrit Hacmon Ezra’s graphic link" [ref=e454]
+                                - 'link "View: Shimrit Hacmon Ezra • 1st Senior Manager, HR Business Partner" [ref=e455] [cursor=pointer]':
+                                  - /url: https://www.linkedin.com/in/shimrit-hacmon-ezra-53339a99
+                                  - heading "Shimrit Hacmon Ezra • 1st" [level=3] [ref=e456]:
+                                    - generic [ref=e457]: Shimrit Hacmon Ezra
+                                    - generic [ref=e458]:
+                                      - img [ref=e459]
+                                      - text: • 1st
+                                  - generic [ref=e461]: Senior Manager, HR Business Partner
+                              - generic [ref=e462]:
+                                - time [ref=e463]: 3h
+                                - button "Open options for Shimrit Hacmon Ezra’s comment" [ref=e466] [cursor=pointer]:
+                                  - img "Open options for Shimrit Hacmon Ezra’s comment" [ref=e467]
+                            - generic [ref=e473]:
+                              - generic [ref=e477]:
+                                - text: ‏Assaf Schwartz‏ אוקיי זה הפרט שהיה חסר לי ☺️
+                                - text: תודה רבה!
+                              - button "Show translation of this comment" [ref=e479] [cursor=pointer]:
+                                - generic [ref=e480]: Show translation
+                                - generic [ref=e481]: Show translation of this comment
+                            - generic [ref=e486]:
+                              - generic [ref=e488]:
+                                - button "React Like to Shimrit Hacmon Ezra’s comment" [ref=e489] [cursor=pointer]:
+                                  - generic [ref=e492]: Like
+                                - button "Open reactions menu":
+                                  - img [ref=e494] [cursor=pointer]
+                              - button "Reply to Shimrit Hacmon Ezra’s comment" [ref=e498] [cursor=pointer]:
+                                - generic [ref=e500]: Reply
+                  - article [ref=e502]:
+                    - generic [ref=e503]:
+                      - generic [ref=e504]:
+                        - link "View Matan Zurgil 🇮🇱’s graphic link" [ref=e505] [cursor=pointer]:
+                          - /url: https://www.linkedin.com/in/matan-zurgil
+                          - img "View Matan Zurgil 🇮🇱’s graphic link" [ref=e508]
+                        - 'link "View: Matan Zurgil 🇮🇱 • 1st CFO &amp; COO at Loox" [ref=e509] [cursor=pointer]':
+                          - /url: https://www.linkedin.com/in/matan-zurgil
+                          - heading "Matan Zurgil 🇮🇱 • 1st" [level=3] [ref=e510]:
+                            - generic [ref=e511]: Matan Zurgil 🇮🇱
+                            - generic [ref=e512]:
+                              - img [ref=e513]
+                              - text: • 1st
+                          - generic [ref=e515]: CFO & COO at Loox
+                      - generic [ref=e516]:
+                        - time [ref=e517]: 4h
+                        - button "Open options for Matan Zurgil 🇮🇱’s comment" [ref=e520] [cursor=pointer]:
+                          - img "Open options for Matan Zurgil 🇮🇱’s comment" [ref=e521]
+                    - generic [ref=e523]:
+                      - button [ref=e524] [cursor=pointer]
+                      - generic [ref=e527]:
+                        - generic [ref=e531]: מכיוון שלטראמפ יש אינטרס שזה ימשיך אז גם אין צפי שזה ישתנה בקרוב. דולר חלש מעודד ייצוא של מוצרים אמריקאיים, מעודד גיוס של כוח אדם בארה"ב אל מול חברות שמרוויחות בדולר אך משלמות לעובדים במטבע מקומי (כמו ההייטק הישראלי), דולר חלש לרוב מגיע עם ריבית נמוכה שמעודדת את שוק ההון והשקעות נדל''ן ולכן המסקנה היא תחזיקו חזק it's going to be a long and bumpy ride
+                        - button "Show translation of this comment" [ref=e533] [cursor=pointer]:
+                          - generic [ref=e534]: Show translation
+                          - generic [ref=e535]: Show translation of this comment
+                    - generic [ref=e536]:
+                      - generic [ref=e537]:
+                        - button [ref=e538] [cursor=pointer]
+                        - generic [ref=e540]:
+                          - generic [ref=e541]:
+                            - generic [ref=e542]:
+                              - button "React Like to Matan Zurgil 🇮🇱’s comment" [ref=e543] [cursor=pointer]:
+                                - generic [ref=e546]: Like
+                              - button "Open reactions menu":
+                                - img [ref=e548] [cursor=pointer]
+                            - generic [ref=e550]: ·
+                            - button "3 Reactions on Matan Zurgil 🇮🇱’s comment" [ref=e551] [cursor=pointer]:
+                              - img "like" [ref=e552]
+                              - generic [ref=e553]: "3"
+                          - generic [ref=e555]:
+                            - button "Reply to Matan Zurgil 🇮🇱’s comment" [ref=e556] [cursor=pointer]:
+                              - generic [ref=e558]: Reply
+                            - generic [ref=e559]: ·
+                            - generic [ref=e560]: 1 reply
+                            - generic [ref=e561]: 1 Comment on Matan Zurgil 🇮🇱’s comment
+                      - generic [ref=e563]:
+                        - button [ref=e564] [cursor=pointer]
+                        - article [ref=e566]:
+                          - generic [ref=e567]:
+                            - generic [ref=e568]:
+                              - link "View Assaf Schwartz’s graphic link" [ref=e569] [cursor=pointer]:
+                                - /url: https://www.linkedin.com/in/assafschwartz
+                                - img "View Assaf Schwartz’s graphic link" [ref=e572]
+                              - 'link "View: Assaf Schwartz Author, HR Executive | LinkedIn Thought Leader | Speaker on Leadership, Culture &amp; Talent" [ref=e573] [cursor=pointer]':
+                                - /url: https://www.linkedin.com/in/assafschwartz
+                                - heading "Assaf Schwartz Author" [level=3] [ref=e574]:
+                                  - generic [ref=e575]: Assaf Schwartz
+                                  - img [ref=e577]
+                                  - generic [ref=e579]: Author
+                                - generic [ref=e580]: HR Executive | LinkedIn Thought Leader | Speaker on Leadership, Culture & Talent
+                            - generic [ref=e581]:
+                              - time [ref=e582]: 2h
+                              - button "Open options for Assaf Schwartz’s comment" [ref=e585] [cursor=pointer]:
+                                - img "Open options for Assaf Schwartz’s comment" [ref=e586]
+                          - generic [ref=e592]:
+                            - generic [ref=e596]:
+                              - text: כן, אני תוהה עם הקפריזות של טראמפ הן עניין של אופי משוגע או אסטרטגיה ברורה להחליש את המטבע.
+                              - text: כך או כך, מסכים שזה כנראה ייקח זמן.
+                            - button "Show translation of this comment" [ref=e598] [cursor=pointer]:
+                              - generic [ref=e599]: Show translation
+                              - generic [ref=e600]: Show translation of this comment
+                          - generic [ref=e605]:
+                            - generic [ref=e607]:
+                              - button "React Like to Assaf Schwartz’s comment" [ref=e608] [cursor=pointer]:
+                                - generic [ref=e611]: Like
+                              - button "Open reactions menu":
+                                - img [ref=e613] [cursor=pointer]
+                            - button "Reply to Assaf Schwartz’s comment" [ref=e617] [cursor=pointer]:
+                              - generic [ref=e619]: Reply
+                  - article [ref=e621]:
+                    - generic [ref=e622]:
+                      - generic [ref=e623]:
+                        - link "View Omer Politzer’s graphic link" [ref=e624] [cursor=pointer]:
+                          - /url: https://www.linkedin.com/in/omer-politzer
+                          - img "View Omer Politzer’s graphic link" [ref=e627]
+                        - 'link "View: Omer Politzer • 1st Recruitment Manager and HRBP@ Balance@Thinking about people" [ref=e628] [cursor=pointer]':
+                          - /url: https://www.linkedin.com/in/omer-politzer
+                          - heading "Omer Politzer • 1st" [level=3] [ref=e629]:
+                            - generic [ref=e630]: Omer Politzer
+                            - generic [ref=e631]:
+                              - img [ref=e632]:
+                                - img [ref=e633]
+                              - text: • 1st
+                          - generic [ref=e635]: Recruitment Manager and HRBP@ Balance@Thinking about people
+                      - generic [ref=e636]:
+                        - time [ref=e637]: 4h
+                        - button "Open options for Omer Politzer’s comment" [ref=e640] [cursor=pointer]:
+                          - img "Open options for Omer Politzer’s comment" [ref=e641]
+                    - generic [ref=e647]:
+                      - generic [ref=e651]: מסכים עם כל מילה
+                      - button "Show translation of this comment" [ref=e653] [cursor=pointer]:
+                        - generic [ref=e654]: Show translation
+                        - generic [ref=e655]: Show translation of this comment
+                    - generic [ref=e660]:
+                      - generic [ref=e661]:
+                        - generic [ref=e662]:
+                          - button "React Like to Omer Politzer’s comment" [ref=e663] [cursor=pointer]:
+                            - generic [ref=e666]: Like
+                          - button "Open reactions menu":
+                            - img [ref=e668] [cursor=pointer]
+                        - generic [ref=e670]: ·
+                        - button "1 Reaction on Omer Politzer’s comment" [ref=e671] [cursor=pointer]:
+                          - img "like" [ref=e672]
+                          - generic [ref=e673]: "1"
+                      - button "Reply to Omer Politzer’s comment" [ref=e676] [cursor=pointer]:
+                        - generic [ref=e678]: Reply
+                  - article [ref=e680]:
+                    - generic [ref=e681]:
+                      - generic [ref=e682]:
+                        - link "View Aviv Ben Shahar’s graphic link" [ref=e683] [cursor=pointer]:
+                          - /url: https://www.linkedin.com/in/aviv-ben-shahar-33583b211
+                          - img "View Aviv Ben Shahar’s graphic link" [ref=e686]
+                        - 'link "View: Aviv Ben Shahar • 2nd Software Engineer @ LayerX | Software architecture | Open Source Contributor" [ref=e687] [cursor=pointer]':
+                          - /url: https://www.linkedin.com/in/aviv-ben-shahar-33583b211
+                          - heading "Aviv Ben Shahar • 2nd" [level=3] [ref=e688]:
+                            - generic [ref=e689]: Aviv Ben Shahar
+                            - generic [ref=e690]:
+                              - img [ref=e691]
+                              - text: • 2nd
+                          - generic [ref=e693]: Software Engineer @ LayerX | Software architecture | Open Source Contributor
+                      - generic [ref=e694]:
+                        - time [ref=e695]: 3h
+                        - button "Open options for Aviv Ben Shahar’s comment" [ref=e698] [cursor=pointer]:
+                          - img "Open options for Aviv Ben Shahar’s comment" [ref=e699]
+                    - generic [ref=e701]:
+                      - button [ref=e702] [cursor=pointer]
+                      - generic [ref=e705]:
+                        - generic [ref=e709]:
+                          - text: אם נפלנו בכדאיות בגלל ירידה של 10% בשווי הדולר, אנחנו בבעיה מלכתחילה.. ישראל כבסיס R&D שווה הרבה יותר מזה, אנחנו לא בהודו
+                          - text: בלי קשר, שווי הדולר ב 2021 הגיע לשווי דומה, וטיפס חזרה. גאופוליטיקה וכלכלה, קורה לא מעט ;)
+                        - button "Show translation of this comment" [ref=e711] [cursor=pointer]:
+                          - generic [ref=e712]: Show translation
+                          - generic [ref=e713]: Show translation of this comment
+                    - generic [ref=e714]:
+                      - generic [ref=e715]:
+                        - button [ref=e716] [cursor=pointer]
+                        - generic [ref=e718]:
+                          - generic [ref=e719]:
+                            - generic [ref=e720]:
+                              - button "React Like to Aviv Ben Shahar’s comment" [ref=e721] [cursor=pointer]:
+                                - generic [ref=e724]: Like
+                              - button "Open reactions menu":
+                                - img [ref=e726] [cursor=pointer]
+                            - generic [ref=e728]: ·
+                            - button "7 Reactions on Aviv Ben Shahar’s comment" [ref=e729] [cursor=pointer]:
+                              - img "like" [ref=e730]
+                              - generic [ref=e731]: "7"
+                          - generic [ref=e733]:
+                            - button "Reply to Aviv Ben Shahar’s comment" [ref=e734] [cursor=pointer]:
+                              - generic [ref=e736]: Reply
+                            - generic [ref=e737]: ·
+                            - generic [ref=e738]: 1 reply
+                            - generic [ref=e739]: 1 Comment on Aviv Ben Shahar’s comment
+                      - generic [ref=e741]:
+                        - button [ref=e742] [cursor=pointer]
+                        - article [ref=e744]:
+                          - generic [ref=e745]:
+                            - generic [ref=e746]:
+                              - link "View Assaf Schwartz’s graphic link" [ref=e747] [cursor=pointer]:
+                                - /url: https://www.linkedin.com/in/assafschwartz
+                                - img "View Assaf Schwartz’s graphic link" [ref=e750]
+                              - 'link "View: Assaf Schwartz Author, HR Executive | LinkedIn Thought Leader | Speaker on Leadership, Culture &amp; Talent" [ref=e751] [cursor=pointer]':
+                                - /url: https://www.linkedin.com/in/assafschwartz
+                                - heading "Assaf Schwartz Author" [level=3] [ref=e752]:
+                                  - generic [ref=e753]: Assaf Schwartz
+                                  - img [ref=e755]
+                                  - generic [ref=e757]: Author
+                                - generic [ref=e758]: HR Executive | LinkedIn Thought Leader | Speaker on Leadership, Culture & Talent
+                            - generic [ref=e759]:
+                              - time [ref=e760]: 2h
+                              - button "Open options for Assaf Schwartz’s comment" [ref=e763] [cursor=pointer]:
+                                - img "Open options for Assaf Schwartz’s comment" [ref=e764]
+                          - generic [ref=e770]:
+                            - generic [ref=e774]:
+                              - text: מסכים אביב שעל טאלנט ישראלי משלמים פרמיום. אבל בסוף הכל כלכלי וקשור לשורות רווח ולירידה בשער יש השפעה מאקרו מהותית על כל חברה.
+                              - text: נכון, ב 2021 זה נגע בשווי הזה לכמה ימים. ולא חלק ממגמה.
+                              - text: מקווה שזה יהיה זהה עכשיו אבל לא בטוח.
+                            - button "Show translation of this comment" [ref=e776] [cursor=pointer]:
+                              - generic [ref=e777]: Show translation
+                              - generic [ref=e778]: Show translation of this comment
+                          - generic [ref=e783]:
+                            - generic [ref=e784]:
+                              - generic [ref=e785]:
+                                - button "React Like to Assaf Schwartz’s comment" [ref=e786] [cursor=pointer]:
+                                  - generic [ref=e789]: Like
+                                - button "Open reactions menu":
+                                  - img [ref=e791] [cursor=pointer]
+                              - generic [ref=e793]: ·
+                              - button "1 Reaction on Assaf Schwartz’s comment" [ref=e794] [cursor=pointer]:
+                                - img "insightful" [ref=e795]
+                                - generic [ref=e796]: "1"
+                            - button "Reply to Assaf Schwartz’s comment" [ref=e799] [cursor=pointer]:
+                              - generic [ref=e801]: Reply
+                  - article [ref=e803]:
+                    - generic [ref=e804]:
+                      - generic [ref=e805]:
+                        - link "View Ofir Rozenfeld’s graphic link" [ref=e806] [cursor=pointer]:
+                          - /url: https://www.linkedin.com/in/ofir-rozenfeld
+                          - img "View Ofir Rozenfeld’s graphic link" [ref=e809]
+                        - 'link "View: Ofir Rozenfeld • 1st Technology Strategy Lead | AI Portfolio Product Manager | Architecting a GenAI SDLC for productivity at scale | Sports Analyst – Turning sweat into data and performance analytics | Ex-Athlete" [ref=e810] [cursor=pointer]':
+                          - /url: https://www.linkedin.com/in/ofir-rozenfeld
+                          - heading "Ofir Rozenfeld • 1st" [level=3] [ref=e811]:
+                            - generic [ref=e812]: Ofir Rozenfeld
+                            - generic [ref=e813]:
+                              - img [ref=e814]:
+                                - img [ref=e815]
+                              - text: • 1st
+                          - generic [ref=e817]: Technology Strategy Lead | AI Portfolio Product Manager | Architecting a GenAI SDLC for productivity at scale | Sports Analyst – Turning sweat into data and performance analytics | Ex-Athlete
+                      - generic [ref=e818]:
+                        - time [ref=e819]: 33m
+                        - button "Open options for Ofir Rozenfeld’s comment" [ref=e822] [cursor=pointer]:
+                          - img "Open options for Ofir Rozenfeld’s comment" [ref=e823]
+                    - generic [ref=e829]:
+                      - generic [ref=e833]: זה פחות נכון לחברות גלובליות שמרוויחות בדולרים ומעסיקות עובדים שמרוויחים בשקלים
+                      - button "Show translation of this comment" [ref=e835] [cursor=pointer]:
+                        - generic [ref=e836]: Show translation
+                        - generic [ref=e837]: Show translation of this comment
+                    - generic [ref=e842]:
+                      - generic [ref=e844]:
+                        - button "React Like to Ofir Rozenfeld’s comment" [ref=e845] [cursor=pointer]:
+                          - generic [ref=e848]: Like
+                        - button "Open reactions menu":
+                          - img [ref=e850] [cursor=pointer]
+                      - button "Reply to Ofir Rozenfeld’s comment" [ref=e854] [cursor=pointer]:
+                        - generic [ref=e856]: Reply
+                  - article [ref=e858]:
+                    - generic [ref=e859]:
+                      - generic [ref=e860]:
+                        - link "View Adi Itach’s graphic link" [ref=e861] [cursor=pointer]:
+                          - /url: https://www.linkedin.com/in/adi-itach-39a977a7
+                          - img "View Adi Itach’s graphic link" [ref=e864]
+                        - 'link "View: Adi Itach • 2nd Marketing Leader | Strategy Consultant | Lecturer | Podcaster" [ref=e865] [cursor=pointer]':
+                          - /url: https://www.linkedin.com/in/adi-itach-39a977a7
+                          - heading "Adi Itach • 2nd" [level=3] [ref=e866]:
+                            - generic [ref=e867]: Adi Itach
+                            - generic [ref=e868]:
+                              - img [ref=e869]
+                              - text: • 2nd
+                          - generic [ref=e871]: Marketing Leader | Strategy Consultant | Lecturer | Podcaster
+                      - generic [ref=e872]:
+                        - generic [ref=e873]: (edited)
+                        - time [ref=e874]: 3h
+                        - button "Open options for Adi Itach’s comment" [ref=e877] [cursor=pointer]:
+                          - img "Open options for Adi Itach’s comment" [ref=e878]
+                    - generic [ref=e880]:
+                      - button [ref=e881] [cursor=pointer]
+                      - generic [ref=e884]:
+                        - generic [ref=e885]:
+                          - generic [ref=e888]:
+                            - text: מצטערת אבל אני לא שותפה למוטיבציה הזו ״להצדיק את הקיום שלי כעובד״.
+                            - text: בטח לא בתקופת אינפלציה.
+                            - text: זו תגובה מלאת פאניקה, מוטיבציה שמבוססת על פחד, חרדה והישרדות וזה אף פה לא הוביל שום מודל עסקי ושום מותג טוב לשגשוג וצמיחה לאורך זמן.
+                            - text: אני כמובן מבינה את זה שהמעביד משלם על העובדים יותר עכשיו שהדולר בירידה ובהחלט- ההון האנושי נעשה יקר יותר.
+                            - text: וזו בדיוק הסיבה לשמר את העובדים הכי טובים ולהסתכל עליהם כעל ההשקעה הכי חשובה שיש לעסק ברגע הזה.
+                            - text: הרי תקופות שפל ושיא כלכליות באות והולכות ואם המודל העסקי של החברה או הצורה שבה היא מתנהלת עסקית היו מלכתחילה רעועים- אז אינפלציה רק תדגיש את זה. בטח שלא תיצור את זה.
+                            - text: מציעה שנפסיק להסתכל על עובדים כאל ״נטל״.
+                            - text: מה כן לעשות? לייעל את ההתנהלות האופרטיבית של החברה, לעשות שינויים משמעותיים במוצר, בשיווק או בשירות. להדק את הפינות הרופפות. להתגייס כל החברה ולהתייחס למשבר באמת כהזדמנות לשינוי מהותי לביזנס כולו.
+                          - button "see more, visually reveals content which is already detected by screen readers" [ref=e889] [cursor=pointer]:
+                            - generic [ref=e890]: …more
+                        - button "Show translation of this comment" [ref=e892] [cursor=pointer]:
+                          - generic [ref=e893]: Show translation
+                          - generic [ref=e894]: Show translation of this comment
+                    - generic [ref=e895]:
+                      - generic [ref=e896]:
+                        - button [ref=e897] [cursor=pointer]
+                        - generic [ref=e899]:
+                          - generic [ref=e900]:
+                            - generic [ref=e901]:
+                              - button "React Like to Adi Itach’s comment" [ref=e902] [cursor=pointer]:
+                                - generic [ref=e905]: Like
+                              - button "Open reactions menu":
+                                - img [ref=e907] [cursor=pointer]
+                            - generic [ref=e909]: ·
+                            - button "2 Reactions on Adi Itach’s comment" [ref=e910] [cursor=pointer]:
+                              - img "like" [ref=e911]
+                              - img "celebrate" [ref=e912]
+                              - generic [ref=e913]: "2"
+                          - generic [ref=e915]:
+                            - button "Reply to Adi Itach’s comment" [ref=e916] [cursor=pointer]:
+                              - generic [ref=e918]: Reply
+                            - generic [ref=e919]: ·
+                            - generic [ref=e920]: 1 reply
+                            - generic [ref=e921]: 1 Comment on Adi Itach’s comment
+                      - generic [ref=e923]:
+                        - button [ref=e924] [cursor=pointer]
+                        - article [ref=e926]:
+                          - generic [ref=e927]:
+                            - generic [ref=e928]:
+                              - link "View Assaf Schwartz’s graphic link" [ref=e929] [cursor=pointer]:
+                                - /url: https://www.linkedin.com/in/assafschwartz
+                                - img "View Assaf Schwartz’s graphic link" [ref=e932]
+                              - 'link "View: Assaf Schwartz Author, HR Executive | LinkedIn Thought Leader | Speaker on Leadership, Culture &amp; Talent" [ref=e933] [cursor=pointer]':
+                                - /url: https://www.linkedin.com/in/assafschwartz
+                                - heading "Assaf Schwartz Author" [level=3] [ref=e934]:
+                                  - generic [ref=e935]: Assaf Schwartz
+                                  - img [ref=e937]
+                                  - generic [ref=e939]: Author
+                                - generic [ref=e940]: HR Executive | LinkedIn Thought Leader | Speaker on Leadership, Culture & Talent
+                            - generic [ref=e941]:
+                              - time [ref=e942]: 2h
+                              - button "Open options for Assaf Schwartz’s comment" [ref=e945] [cursor=pointer]:
+                                - img "Open options for Assaf Schwartz’s comment" [ref=e946]
+                          - generic [ref=e952]:
+                            - generic [ref=e956]:
+                              - text: תודה על התגובה עדי.
+                              - text: אני דווקא מאמין שגם בימים טובים וגם בפחות, עובד שרוצה להתקדם צריך להיות הכי טוב בצוות, ללמוד ולהתפתח ולהראות אימפקט.
+                              - text: עובדים הם כמובן לא נטל, בלעדיהם אין חברה.
+                            - button "Show translation of this comment" [ref=e958] [cursor=pointer]:
+                              - generic [ref=e959]: Show translation
+                              - generic [ref=e960]: Show translation of this comment
+                          - generic [ref=e965]:
+                            - generic [ref=e967]:
+                              - button "React Like to Assaf Schwartz’s comment" [ref=e968] [cursor=pointer]:
+                                - generic [ref=e971]: Like
+                              - button "Open reactions menu":
+                                - img [ref=e973] [cursor=pointer]
+                            - button "Reply to Assaf Schwartz’s comment" [ref=e977] [cursor=pointer]:
+                              - generic [ref=e979]: Reply
+                  - article [ref=e981]:
+                    - generic [ref=e982]:
+                      - generic [ref=e983]:
+                        - link "View Omer Uzan’s graphic link" [ref=e984] [cursor=pointer]:
+                          - /url: https://www.linkedin.com/in/omer-uzan-1111bb96
+                          - img "View Omer Uzan’s graphic link" [ref=e987]
+                        - 'link "View: Omer Uzan • 2nd Senior Finance Manager | Business Finance | Economics (MA) | Financial Operations" [ref=e988] [cursor=pointer]':
+                          - /url: https://www.linkedin.com/in/omer-uzan-1111bb96
+                          - heading "Omer Uzan • 2nd" [level=3] [ref=e989]:
+                            - generic [ref=e990]: Omer Uzan
+                            - generic [ref=e991]:
+                              - img [ref=e992]
+                              - text: • 2nd
+                          - generic [ref=e994]: Senior Finance Manager | Business Finance | Economics (MA) | Financial Operations
+                      - generic [ref=e995]:
+                        - time [ref=e996]: 3h
+                        - button "Open options for Omer Uzan’s comment" [ref=e999] [cursor=pointer]:
+                          - img "Open options for Omer Uzan’s comment" [ref=e1000]
+                    - generic [ref=e1006]:
+                      - generic [ref=e1010]: כתבת מדוייק ונכון. בסוף הכל זה משוואה כלכלית מאוד ברורה. עובדים שלא ידעו להראות את הערך, בטח שהעלות האלטרנטיבית עולה.. ימצאו עצמם בחוץ.
+                      - button "Show translation of this comment" [ref=e1012] [cursor=pointer]:
+                        - generic [ref=e1013]: Show translation
+                        - generic [ref=e1014]: Show translation of this comment
+                    - generic [ref=e1019]:
+                      - generic [ref=e1020]:
+                        - generic [ref=e1021]:
+                          - button "React Like to Omer Uzan’s comment" [ref=e1022] [cursor=pointer]:
+                            - generic [ref=e1025]: Like
+                          - button "Open reactions menu":
+                            - img [ref=e1027] [cursor=pointer]
+                        - generic [ref=e1029]: ·
+                        - button "2 Reactions on Omer Uzan’s comment" [ref=e1030] [cursor=pointer]:
+                          - img "like" [ref=e1031]
+                          - generic [ref=e1032]: "2"
+                      - button "Reply to Omer Uzan’s comment" [ref=e1035] [cursor=pointer]:
+                        - generic [ref=e1037]: Reply
+                  - article [ref=e1039]:
+                    - generic [ref=e1040]:
+                      - generic [ref=e1041]:
+                        - link "View Ofer R.’s graphic link" [ref=e1042] [cursor=pointer]:
+                          - /url: https://www.linkedin.com/in/pompipompi
+                          - img "View Ofer R.’s graphic link" [ref=e1045]
+                        - 'link "View: Ofer R. • 2nd Software Engineer" [ref=e1046] [cursor=pointer]':
+                          - /url: https://www.linkedin.com/in/pompipompi
+                          - heading "Ofer R. • 2nd" [level=3] [ref=e1047]:
+                            - generic [ref=e1048]: Ofer R.
+                            - generic [ref=e1049]: • 2nd
+                          - generic [ref=e1050]: Software Engineer
+                      - generic [ref=e1051]:
+                        - time [ref=e1052]: 3h
+                        - button "Open options for Ofer R.’s comment" [ref=e1055] [cursor=pointer]:
+                          - img "Open options for Ofer R.’s comment" [ref=e1056]
+                    - generic [ref=e1058]:
+                      - button [ref=e1059] [cursor=pointer]
+                      - generic [ref=e1062]:
+                        - generic [ref=e1063]:
+                          - generic [ref=e1066]:
+                            - text: מעסיקים מחו"ל לרוב קונים חברות ישראליות או שיש להם סניפים של תאגידי ענק? תאגיד ענק לא בדיוק עובד באותה צורה.
+                            - text: הכישלון הכי גדול של ההיי טק בעשורים האחרונים היה של אינטל. ישראל היתה חלק מאוד חשוב מאינטל, לא סגור כמה זה "באשמתנו".
+                            - text: אבל תאגידי ענק מפסידים כסף על דברים הרבה יותר מטופשים מהחלשות הדולר, וקיצוצים הם תמיד אפשרות קיימת גם בתאגידים שמצליחים.
+                            - text: אגב, יש הרבה מיקרים של תאגידים שמסיימות לפתח משהו בהצלחה, ואז מפטרות הרבה אנשים, גם את התורמים והמוכשרים כי המטרה הושגה והם רוצים לחסוך בהוצאות.
+                          - button "see more, visually reveals content which is already detected by screen readers" [ref=e1067] [cursor=pointer]:
+                            - generic [ref=e1068]: …more
+                        - button "Show translation of this comment" [ref=e1070] [cursor=pointer]:
+                          - generic [ref=e1071]: Show translation
+                          - generic [ref=e1072]: Show translation of this comment
+                    - generic [ref=e1073]:
+                      - generic [ref=e1074]:
+                        - button [ref=e1075] [cursor=pointer]
+                        - generic [ref=e1077]:
+                          - generic [ref=e1079]:
+                            - button "React Like to Ofer R.’s comment" [ref=e1080] [cursor=pointer]:
+                              - generic [ref=e1083]: Like
+                            - button "Open reactions menu":
+                              - img [ref=e1085] [cursor=pointer]
+                          - generic [ref=e1088]:
+                            - button "Reply to Ofer R.’s comment" [ref=e1089] [cursor=pointer]:
+                              - generic [ref=e1091]: Reply
+                            - generic [ref=e1092]: ·
+                            - generic [ref=e1093]: 1 reply
+                            - generic [ref=e1094]: 1 Comment on Ofer R.’s comment
+                      - generic [ref=e1096]:
+                        - button [ref=e1097] [cursor=pointer]
+                        - article [ref=e1099]:
+                          - generic [ref=e1100]:
+                            - generic [ref=e1101]:
+                              - link "View Gilad Mor’s graphic link" [ref=e1102] [cursor=pointer]:
+                                - /url: https://www.linkedin.com/in/gilad-mor-b3ab32202
+                                - img "View Gilad Mor’s graphic link" [ref=e1105]
+                              - 'link "View: Gilad Mor • 2nd cyber security manager" [ref=e1106] [cursor=pointer]':
+                                - /url: https://www.linkedin.com/in/gilad-mor-b3ab32202
+                                - heading "Gilad Mor • 2nd" [level=3] [ref=e1107]:
+                                  - generic [ref=e1108]: Gilad Mor
+                                  - generic [ref=e1109]: • 2nd
+                                - generic [ref=e1110]: cyber security manager
+                            - generic [ref=e1111]:
+                              - time [ref=e1112]: 2h
+                              - button "Open options for Gilad Mor’s comment" [ref=e1115] [cursor=pointer]:
+                                - img "Open options for Gilad Mor’s comment" [ref=e1116]
+                          - generic [ref=e1122]:
+                            - generic [ref=e1126]: ‏Ofer R.‏ אינטל קיבלה מהמדינה הרבה הטבות ששוות מליארדים
+                            - button "Show translation of this comment" [ref=e1128] [cursor=pointer]:
+                              - generic [ref=e1129]: Show translation
+                              - generic [ref=e1130]: Show translation of this comment
+                          - generic [ref=e1135]:
+                            - generic [ref=e1137]:
+                              - button "React Like to Gilad Mor’s comment" [ref=e1138] [cursor=pointer]:
+                                - generic [ref=e1141]: Like
+                              - button "Open reactions menu":
+                                - img [ref=e1143] [cursor=pointer]
+                            - button "Reply to Gilad Mor’s comment" [ref=e1147] [cursor=pointer]:
+                              - generic [ref=e1149]: Reply
+                  - article [ref=e1151]:
+                    - generic [ref=e1152]:
+                      - generic [ref=e1153]:
+                        - link "View Alex Abramov’s graphic link" [ref=e1154] [cursor=pointer]:
+                          - /url: https://www.linkedin.com/in/alex-abramov-708b61149
+                          - img "View Alex Abramov’s graphic link" [ref=e1157]
+                        - 'link "View: Alex Abramov • 2nd Software Architect at Palo Alto Networks" [ref=e1158] [cursor=pointer]':
+                          - /url: https://www.linkedin.com/in/alex-abramov-708b61149
+                          - heading "Alex Abramov • 2nd" [level=3] [ref=e1159]:
+                            - generic [ref=e1160]: Alex Abramov
+                            - generic [ref=e1161]:
+                              - img [ref=e1162]
+                              - text: • 2nd
+                          - generic [ref=e1164]: Software Architect at Palo Alto Networks
+                      - generic [ref=e1165]:
+                        - time [ref=e1166]: 2h
+                        - button "Open options for Alex Abramov’s comment" [ref=e1169] [cursor=pointer]:
+                          - img "Open options for Alex Abramov’s comment" [ref=e1170]
+                    - generic [ref=e1172]:
+                      - button [ref=e1173] [cursor=pointer]
+                      - generic [ref=e1176]:
+                        - generic [ref=e1180]: לא מדויק. לחברות בינלאומיות בדרך כלל יש גידור מט״ח למטרות ייצוב הוצאות והכנסות.
+                        - button "Show translation of this comment" [ref=e1182] [cursor=pointer]:
+                          - generic [ref=e1183]: Show translation
+                          - generic [ref=e1184]: Show translation of this comment
+                    - generic [ref=e1185]:
+                      - generic [ref=e1186]:
+                        - button [ref=e1187] [cursor=pointer]
+                        - generic [ref=e1189]:
+                          - generic [ref=e1190]:
+                            - generic [ref=e1191]:
+                              - button "React Like to Alex Abramov’s comment" [ref=e1192] [cursor=pointer]:
+                                - generic [ref=e1195]: Like
+                              - button "Open reactions menu":
+                                - img [ref=e1197] [cursor=pointer]
+                            - generic [ref=e1199]: ·
+                            - button "1 Reaction on Alex Abramov’s comment" [ref=e1200] [cursor=pointer]:
+                              - img "like" [ref=e1201]
+                              - generic [ref=e1202]: "1"
+                          - generic [ref=e1204]:
+                            - button "Reply to Alex Abramov’s comment" [ref=e1205] [cursor=pointer]:
+                              - generic [ref=e1207]: Reply
+                            - generic [ref=e1208]: ·
+                            - generic [ref=e1209]: 1 reply
+                            - generic [ref=e1210]: 1 Comment on Alex Abramov’s comment
+                      - generic [ref=e1212]:
+                        - button [ref=e1213] [cursor=pointer]
+                        - article [ref=e1215]:
+                          - generic [ref=e1216]:
+                            - generic [ref=e1217]:
+                              - link "View Yarden Geiger ירדן גייגר’s graphic link" [ref=e1218] [cursor=pointer]:
+                                - /url: https://www.linkedin.com/in/yarden-geiger-%D7%99%D7%A8%D7%93%D7%9F-%D7%92%D7%99%D7%99%D7%92%D7%A8-62511868
+                                - img "View Yarden Geiger ירדן גייגר’s graphic link" [ref=e1221]
+                              - 'link "View: Yarden Geiger ירדן גייגר • 2nd Strategic Finance Specialist | SaaS &amp; Cybersecurity | Interim CFO Experience | ARR &amp; KPI Expert | Board-Facing | Scaling Global Teams" [ref=e1222] [cursor=pointer]':
+                                - /url: https://www.linkedin.com/in/yarden-geiger-%D7%99%D7%A8%D7%93%D7%9F-%D7%92%D7%99%D7%99%D7%92%D7%A8-62511868
+                                - heading "Yarden Geiger ירדן גייגר • 2nd" [level=3] [ref=e1223]:
+                                  - generic [ref=e1224]: Yarden Geiger ירדן גייגר
+                                  - generic [ref=e1225]:
+                                    - img [ref=e1226]
+                                    - text: • 2nd
+                                - generic [ref=e1228]: Strategic Finance Specialist | SaaS & Cybersecurity | Interim CFO Experience | ARR & KPI Expert | Board-Facing | Scaling Global Teams
+                            - generic [ref=e1229]:
+                              - time [ref=e1230]: 2h
+                              - button "Open options for Yarden Geiger ירדן גייגר’s comment" [ref=e1233] [cursor=pointer]:
+                                - img "Open options for Yarden Geiger ירדן גייגר’s comment" [ref=e1234]
+                          - generic [ref=e1240]:
+                            - generic [ref=e1244]:
+                              - link "Alex Abramov" [ref=e1246] [cursor=pointer]:
+                                - /url: /in/alex-abramov-708b61149/
+                              - text: זה מקל על העניין לא פותר אותו.
+                              - text: לא מגדרים 100% ולא כל ההוצאות השקליות צפויות מראש (בניגוד לשכר). כלומר עדיין יש השפעה מהותית השנה
+                            - button "Show translation of this comment" [ref=e1248] [cursor=pointer]:
+                              - generic [ref=e1249]: Show translation
+                              - generic [ref=e1250]: Show translation of this comment
+                          - generic [ref=e1255]:
+                            - generic [ref=e1256]:
+                              - generic [ref=e1257]:
+                                - button "React Like to Yarden Geiger ירדן גייגר’s comment" [ref=e1258] [cursor=pointer]:
+                                  - generic [ref=e1261]: Like
+                                - button "Open reactions menu":
+                                  - img [ref=e1263] [cursor=pointer]
+                              - generic [ref=e1265]: ·
+                              - button "1 Reaction on Yarden Geiger ירדן גייגר’s comment" [ref=e1266] [cursor=pointer]:
+                                - img "like" [ref=e1267]
+                                - generic [ref=e1268]: "1"
+                            - button "Reply to Yarden Geiger ירדן גייגר’s comment" [ref=e1271] [cursor=pointer]:
+                              - generic [ref=e1273]: Reply
+                  - article [ref=e1275]:
+                    - generic [ref=e1276]:
+                      - generic [ref=e1277]:
+                        - link "View Nathalie Abramowitz-Kaynan’s hiring graphic link" [ref=e1278] [cursor=pointer]:
+                          - /url: https://www.linkedin.com/in/nathalieabramowitzkaynan
+                          - img "View Nathalie Abramowitz-Kaynan’s hiring graphic link" [ref=e1281]
+                        - 'link "View: Nathalie Abramowitz-Kaynan • 2nd Global Director, Head of HR | MBA, Organizational Development" [ref=e1282] [cursor=pointer]':
+                          - /url: https://www.linkedin.com/in/nathalieabramowitzkaynan
+                          - heading "Nathalie Abramowitz-Kaynan • 2nd" [level=3] [ref=e1283]:
+                            - generic [ref=e1284]: Nathalie Abramowitz-Kaynan
+                            - generic [ref=e1285]:
+                              - img [ref=e1286]
+                              - text: • 2nd
+                          - generic [ref=e1288]: Global Director, Head of HR | MBA, Organizational Development
+                      - generic [ref=e1289]:
+                        - time [ref=e1290]: 4h
+                        - button "Open options for Nathalie Abramowitz-Kaynan’s comment" [ref=e1293] [cursor=pointer]:
+                          - img "Open options for Nathalie Abramowitz-Kaynan’s comment" [ref=e1294]
+                    - generic [ref=e1300]:
+                      - generic [ref=e1304]: כל כך מדויק....
+                      - button "Show translation of this comment" [ref=e1306] [cursor=pointer]:
+                        - generic [ref=e1307]: Show translation
+                        - generic [ref=e1308]: Show translation of this comment
+                    - generic [ref=e1313]:
+                      - generic [ref=e1314]:
+                        - generic [ref=e1315]:
+                          - button "React Like to Nathalie Abramowitz-Kaynan’s comment" [ref=e1316] [cursor=pointer]:
+                            - generic [ref=e1319]: Like
+                          - button "Open reactions menu":
+                            - img [ref=e1321] [cursor=pointer]
+                        - generic [ref=e1323]: ·
+                        - button "1 Reaction on Nathalie Abramowitz-Kaynan’s comment" [ref=e1324] [cursor=pointer]:
+                          - img "like" [ref=e1325]
+                          - generic [ref=e1326]: "1"
+                      - button "Reply to Nathalie Abramowitz-Kaynan’s comment" [ref=e1329] [cursor=pointer]:
+                        - generic [ref=e1331]: Reply
+                  - article [ref=e1538]:
+                    - generic [ref=e1539]:
+                      - generic [ref=e1540]:
+                        - link "View Roie K.’s graphic link" [ref=e1541] [cursor=pointer]:
+                          - /url: https://www.linkedin.com/in/roie-kugel
+                          - img "View Roie K.’s graphic link" [ref=e1544]
+                        - 'link "View: Roie K. • 2nd Entrepreneur | Innovation Enthusiast | Tech-Savvy" [ref=e1545] [cursor=pointer]':
+                          - /url: https://www.linkedin.com/in/roie-kugel
+                          - heading "Roie K. • 2nd" [level=3] [ref=e1546]:
+                            - generic [ref=e1547]: Roie K.
+                            - generic [ref=e1548]: • 2nd
+                          - generic [ref=e1549]: Entrepreneur | Innovation Enthusiast | Tech-Savvy
+                      - generic [ref=e1550]:
+                        - time [ref=e1551]: 4h
+                        - button "Open options for Roie K.’s comment" [ref=e1554] [cursor=pointer]:
+                          - img "Open options for Roie K.’s comment" [ref=e1555]
+                    - generic [ref=e1561]:
+                      - generic [ref=e1565]: מסכים ומחזק.
+                      - button "Show translation of this comment" [ref=e1567] [cursor=pointer]:
+                        - generic [ref=e1568]: Show translation
+                        - generic [ref=e1569]: Show translation of this comment
+                    - generic [ref=e1574]:
+                      - generic [ref=e1575]:
+                        - generic [ref=e1576]:
+                          - button "React Like to Roie K.’s comment" [ref=e1577] [cursor=pointer]:
+                            - generic [ref=e1580]: Like
+                          - button "Open reactions menu":
+                            - img [ref=e1582] [cursor=pointer]
+                        - generic [ref=e1584]: ·
+                        - button "1 Reaction on Roie K.’s comment" [ref=e1585] [cursor=pointer]:
+                          - img "like" [ref=e1586]
+                          - generic [ref=e1587]: "1"
+                      - button "Reply to Roie K.’s comment" [ref=e1590] [cursor=pointer]:
+                        - generic [ref=e1592]: Reply
+                  - article [ref=e1594]:
+                    - generic [ref=e1595]:
+                      - generic [ref=e1596]:
+                        - link "View Gadi Rosenfeld’s graphic link" [ref=e1597] [cursor=pointer]:
+                          - /url: https://www.linkedin.com/in/gadirosenfeld
+                          - img "View Gadi Rosenfeld’s graphic link" [ref=e1600]
+                        - 'link "View: Gadi Rosenfeld • 2nd Director of product management - AI and ML domain expert" [ref=e1601] [cursor=pointer]':
+                          - /url: https://www.linkedin.com/in/gadirosenfeld
+                          - heading "Gadi Rosenfeld • 2nd" [level=3] [ref=e1602]:
+                            - generic [ref=e1603]: Gadi Rosenfeld
+                            - generic [ref=e1604]:
+                              - img [ref=e1605]:
+                                - img [ref=e1606]
+                              - text: • 2nd
+                          - generic [ref=e1608]: Director of product management - AI and ML domain expert
+                      - generic [ref=e1609]:
+                        - time [ref=e1610]: 34m
+                        - button "Open options for Gadi Rosenfeld’s comment" [ref=e1613] [cursor=pointer]:
+                          - img "Open options for Gadi Rosenfeld’s comment" [ref=e1614]
+                    - generic [ref=e1620]:
+                      - generic [ref=e1621]:
+                        - generic [ref=e1624]:
+                          - text: דבר ראשון, הסכום ההממוצע לשכר בשקלים הוא גבוהה מאוד ללא קשר לשער הדולר בהייטק. 40000₪ לחודש הם סכום גבוה מאוד, גם אם שער הדולר הוא 5₪ לדולר. רצוי לכל עובד להראות ערך, בוודאי כאשר יש כל כך הרבה מחפשי משרות בשוק היום, ללא קשר לשער המטבע שעליו אין העובד יכול להשפיע בכלל.
+                          - text: דבר שני, זה מאוד תלוי מי החברה ומה מקור ההכנסות שלה. מה שכתבת נכון להמון חברות שמוציאות כסף על שכר בשקלים (עיקר פעילות הפיתוח בארץ) ועיקר ההכנסות בדולרים (למרות שהשקל התחזק מול כל המטבעות, ככה זה עם שערי מטבע צולבים).
+                          - text: חברות בטחוניות המיבאות ציוד וחומרה מחו"ל ומוכרות לצה"ל למשל, לא יפגעו. להיפך.
+                        - button "see more, visually reveals content which is already detected by screen readers" [ref=e1625] [cursor=pointer]:
+                          - generic [ref=e1626]: …more
+                      - button "Show translation of this comment" [ref=e1628] [cursor=pointer]:
+                        - generic [ref=e1629]: Show translation
+                        - generic [ref=e1630]: Show translation of this comment
+                    - generic [ref=e1635]:
+                      - generic [ref=e1636]:
+                        - generic [ref=e1637]:
+                          - button "React Like to Gadi Rosenfeld’s comment" [ref=e1638] [cursor=pointer]:
+                            - generic [ref=e1641]: Like
+                          - button "Open reactions menu":
+                            - img [ref=e1643] [cursor=pointer]
+                        - generic [ref=e1645]: ·
+                        - button "1 Reaction on Gadi Rosenfeld’s comment" [ref=e1646] [cursor=pointer]:
+                          - img "like" [ref=e1647]
+                          - generic [ref=e1648]: "1"
+                      - button "Reply to Gadi Rosenfeld’s comment" [ref=e1651] [cursor=pointer]:
+                        - generic [ref=e1653]: Reply
+                  - article [ref=e1655]:
+                    - generic [ref=e1656]:
+                      - generic [ref=e1657]:
+                        - link "View Elazar Gilad’s graphic link" [ref=e1658] [cursor=pointer]:
+                          - /url: https://www.linkedin.com/in/elazar-gilad
+                          - img "View Elazar Gilad’s graphic link" [ref=e1661]
+                        - 'link "View: Elazar Gilad • 2nd Operations &amp; Growth Executive | AI-Driven Business Intelligence | Scaling Global Digital Platforms | C-Level Leader COO/CMO" [ref=e1662] [cursor=pointer]':
+                          - /url: https://www.linkedin.com/in/elazar-gilad
+                          - heading "Elazar Gilad • 2nd" [level=3] [ref=e1663]:
+                            - generic [ref=e1664]: Elazar Gilad
+                            - generic [ref=e1665]:
+                              - img [ref=e1666]
+                              - text: • 2nd
+                          - generic [ref=e1668]: Operations & Growth Executive | AI-Driven Business Intelligence | Scaling Global Digital Platforms | C-Level Leader COO/CMO
+                      - generic [ref=e1669]:
+                        - generic [ref=e1670]: (edited)
+                        - time [ref=e1671]: 1h
+                        - button "Open options for Elazar Gilad’s comment" [ref=e1674] [cursor=pointer]:
+                          - img "Open options for Elazar Gilad’s comment" [ref=e1675]
+                    - generic [ref=e1681]:
+                      - generic [ref=e1685]: עזוב עזוב
+                      - button "Show translation of this comment" [ref=e1687] [cursor=pointer]:
+                        - generic [ref=e1688]: Show translation
+                        - generic [ref=e1689]: Show translation of this comment
+                    - generic [ref=e1694]:
+                      - generic [ref=e1696]:
+                        - button "React Like to Elazar Gilad’s comment" [ref=e1697] [cursor=pointer]:
+                          - generic [ref=e1700]: Like
+                        - button "Open reactions menu":
+                          - img [ref=e1702] [cursor=pointer]
+                      - button "Reply to Elazar Gilad’s comment" [ref=e1706] [cursor=pointer]:
+                        - generic [ref=e1708]: Reply
+                  - article [ref=e1710]:
+                    - generic [ref=e1711]:
+                      - generic [ref=e1712]:
+                        - link "View Amit Schwachter’s graphic link" [ref=e1713] [cursor=pointer]:
+                          - /url: https://www.linkedin.com/in/amit-schwachter
+                          - img "View Amit Schwachter’s graphic link" [ref=e1716]
+                        - 'link "View: Amit Schwachter • Following 📽 AI Specialist and content director | 🥇 Creating awesome contents for tech companies" [ref=e1717] [cursor=pointer]':
+                          - /url: https://www.linkedin.com/in/amit-schwachter
+                          - heading "Amit Schwachter • Following" [level=3] [ref=e1718]:
+                            - generic [ref=e1719]: Amit Schwachter
+                            - generic [ref=e1720]:
+                              - img [ref=e1721]
+                              - text: • Following
+                          - generic [ref=e1723]: 📽 AI Specialist and content director | 🥇 Creating awesome contents for tech companies
+                      - generic [ref=e1724]:
+                        - time [ref=e1725]: 1h
+                        - button "Open options for Amit Schwachter’s comment" [ref=e1728] [cursor=pointer]:
+                          - img "Open options for Amit Schwachter’s comment" [ref=e1729]
+                    - generic [ref=e1735]:
+                      - generic [ref=e1739]: זה נשמע כמו משהו שתמיד צריך לעשות בלי קשר לדולר 😅. חשבתי שבשביל זה העסיקו אותנו
+                      - button "Show translation of this comment" [ref=e1741] [cursor=pointer]:
+                        - generic [ref=e1742]: Show translation
+                        - generic [ref=e1743]: Show translation of this comment
+                    - generic [ref=e1748]:
+                      - generic [ref=e1750]:
+                        - button "React Like to Amit Schwachter’s comment" [ref=e1751] [cursor=pointer]:
+                          - generic [ref=e1754]: Like
+                        - button "Open reactions menu":
+                          - img [ref=e1756] [cursor=pointer]
+                      - button "Reply to Amit Schwachter’s comment" [ref=e1760] [cursor=pointer]:
+                        - generic [ref=e1762]: Reply
+      - complementary "Advertisement and similar pages" [ref=e1339]:
+        - generic [ref=e1341]:
+          - iframe [ref=e1343]:
+            - generic [ref=f257e2]:
+              - generic [ref=f257e3]: Ad
+              - img "overflow-web-small" [ref=f257e6] [cursor=pointer]
+              - link "LinkedIn for Sales" [ref=f257e10] [cursor=pointer]:
+                - /url: https://www.linkedin.com/li/tscp/sct?destinationUrl=https%3A%2F%2Fwww.linkedin.com%2Fpremium%2Fredeem-v3%2F%3F_ed%3DCwEAAAFvqlyO6M8Q8oNzsFrJnllsOwTEGqdDSfAhW7Ib5vG3e7kEqBnLM6TDzYIfB6J8I4WlA-U%26planType%3Dsales%26redeemType%3DWINBACK%26src%3Dli-dynamic%26trk%3Demea_EN_DA_V2_202507_Winback%26mcid%3D7386103191538618368&trackingEvent=%5B%7B%22eventInfo%22%3A%7B%22appId%22%3A%22com.linkedin.ads.rendering.d_web%22%2C%22eventName%22%3A%22SponsoredRightRailContentActionEvent%22%2C%22topicName%22%3A%22SponsoredRightRailContentActionEvent%22%7D%2C%22eventBody%22%3A%7B%22sponsoredEventHeader%22%3A%7B%22encryptedTrackingData%22%3A%22CwEAAAGcXKtHT-o4UytOOl7IP2ymyl2vu_FLVbIIHQ9AcfQUC6jJ0mbkR8Iaby8QrT8hJCn-1CASaLJzuUr8_DGEA4uOlyca1ag2CF66ltFRvhhK-T8ptJB10wHtpSmNiNk6yrhcUTfMVobCo9zoi6HKmW5WXk2sqQ296jl6tSswHHqEgj1kZMB2vID2TbOibJNyd64772RAjRy9Wle5JEkP6mcXxVXaDPvEO-rKpt-hO7_dLTukuIUexITgnvHJFwtPxorgsr-fH4XXLb9KRKjVbCl4HVhKtjx0u5sBVxPFOSdhrVU72gZ4VC6pUt5cokufwZbL5WZnkoq8uts07YyUKxoyl5XO0fb6OPJwVRt72uNLidKm1AqBKhFRnu-WjLjehs3hn2ZT7_aQ13vud_AqSpVB0Qv7wECg1BbhlVvEGI3KqH5c6gjwTaXf2GA5MD5TuXbBMh1kdWQ601tXbaUVuNZpcAztAlPqHlHhg309rqwq0EkEe4dQ5SQhz9AuWvblKtBrpgnY-xK_mcOFtX3bGeXATQIP7YrsJeyzjmX5nCovlu69BldC2XnzCOQ8ywsAtU1Q8VG0z7BJu221JHwqZYMVim3MdLa8UaMvd-L8fn3vM3vHGI3eGu52q-GAJ1T1dW87xq5r_NICI5gfvz_YOSVFHpdOIhxxDdwyMgNw09BKgxnUovZpzk_CO-uyhfUOPRRMMkE1xwGIAFKWpFl1t136n9hz6ZiTM56kBMsj8IVF6BBxyoJYukEOXoPXSk1NovXxDe5BDk_ts5FszQFGVmTPT7wtNbRLM68jkj96fzY8gPQgtRaapP4JxqYdcelRND6g9ill4dZiix90VW1drlX-vcTa0Z8EX5ZjblUivQTtfVqYxLilbrPZPdqgv4hdBtqT3s-jPFMJyWnX3olyOO97tnzJ8oAmamgaeFcK8LfdHcsjBTYiLI5RcR7L7OQP1JtmkHE0mbD-8M_RsgyBQHOgibqrgeBDabJpmVBTIo_gkseACDYAlEKHxpq7cX653RN9L6NS7VFl1A_EVB-lR55PPbi-dZjebe7Q_nElmO3pOZZPT4x06b59P2_cyzF5DKMLnHVFf-WCEMp1Z-6zaa9uKB3uEGT8QzRjXzfkLqoYkllz8NKytEEjKIBt-cWIKFBG41ex245vfHWhdLTs60kH2icQjSA4hPaS1hSqVffzvjjT_NnjsQ9PIJZB%22%7D%2C%22header%22%3A%7B%22pageInstance%22%3A%7B%22pageUrn%22%3A%22urn%3Ali%3Apage%3Ad_flagship3_detail_base%22%2C%22trackingId%22%3A%22739ec619-b846-4199-9eee-0cca56cd8ce3%22%7D%2C%22time%22%3A1771081254683%2C%22version%22%3A%220.0.0%22%7D%2C%22requestHeader%22%3A%7B%22pageKey%22%3A%22d_flagship3_detail_base%22%2C%22interfaceLocale%22%3A%22en-US%22%7D%7D%7D%5D&csrfToken=ajax%3A2872756275449100236
+              - generic [ref=f257e11]:
+                - heading "Oded, enjoy 50% off 2 months of Sales Navigator!" [level=2] [ref=f257e14]
+                - generic [ref=f257e16]:
+                  - img "Oded" [ref=f257e17]
+                  - generic [ref=f257e18]:
+                    - link "LinkedIn for Sales" [ref=f257e19] [cursor=pointer]:
+                      - /url: https://www.linkedin.com/li/tscp/sct?destinationUrl=https%3A%2F%2Fwww.linkedin.com%2Fpremium%2Fredeem-v3%2F%3F_ed%3DCwEAAAFvqlyO6M8Q8oNzsFrJnllsOwTEGqdDSfAhW7Ib5vG3e7kEqBnLM6TDzYIfB6J8I4WlA-U%26planType%3Dsales%26redeemType%3DWINBACK%26src%3Dli-dynamic%26trk%3Demea_EN_DA_V2_202507_Winback%26mcid%3D7386103191538618368&trackingEvent=%5B%7B%22eventInfo%22%3A%7B%22appId%22%3A%22com.linkedin.ads.rendering.d_web%22%2C%22eventName%22%3A%22SponsoredRightRailContentActionEvent%22%2C%22topicName%22%3A%22SponsoredRightRailContentActionEvent%22%7D%2C%22eventBody%22%3A%7B%22sponsoredEventHeader%22%3A%7B%22encryptedTrackingData%22%3A%22CwEAAAGcXKtHT-o4UytOOl7IP2ymyl2vu_FLVbIIHQ9AcfQUC6jJ0mbkR8Iaby8QrT8hJCn-1CASaLJzuUr8_DGEA4uOlyca1ag2CF66ltFRvhhK-T8ptJB10wHtpSmNiNk6yrhcUTfMVobCo9zoi6HKmW5WXk2sqQ296jl6tSswHHqEgj1kZMB2vID2TbOibJNyd64772RAjRy9Wle5JEkP6mcXxVXaDPvEO-rKpt-hO7_dLTukuIUexITgnvHJFwtPxorgsr-fH4XXLb9KRKjVbCl4HVhKtjx0u5sBVxPFOSdhrVU72gZ4VC6pUt5cokufwZbL5WZnkoq8uts07YyUKxoyl5XO0fb6OPJwVRt72uNLidKm1AqBKhFRnu-WjLjehs3hn2ZT7_aQ13vud_AqSpVB0Qv7wECg1BbhlVvEGI3KqH5c6gjwTaXf2GA5MD5TuXbBMh1kdWQ601tXbaUVuNZpcAztAlPqHlHhg309rqwq0EkEe4dQ5SQhz9AuWvblKtBrpgnY-xK_mcOFtX3bGeXATQIP7YrsJeyzjmX5nCovlu69BldC2XnzCOQ8ywsAtU1Q8VG0z7BJu221JHwqZYMVim3MdLa8UaMvd-L8fn3vM3vHGI3eGu52q-GAJ1T1dW87xq5r_NICI5gfvz_YOSVFHpdOIhxxDdwyMgNw09BKgxnUovZpzk_CO-uyhfUOPRRMMkE1xwGIAFKWpFl1t136n9hz6ZiTM56kBMsj8IVF6BBxyoJYukEOXoPXSk1NovXxDe5BDk_ts5FszQFGVmTPT7wtNbRLM68jkj96fzY8gPQgtRaapP4JxqYdcelRND6g9ill4dZiix90VW1drlX-vcTa0Z8EX5ZjblUivQTtfVqYxLilbrPZPdqgv4hdBtqT3s-jPFMJyWnX3olyOO97tnzJ8oAmamgaeFcK8LfdHcsjBTYiLI5RcR7L7OQP1JtmkHE0mbD-8M_RsgyBQHOgibqrgeBDabJpmVBTIo_gkseACDYAlEKHxpq7cX653RN9L6NS7VFl1A_EVB-lR55PPbi-dZjebe7Q_nElmO3pOZZPT4x06b59P2_cyzF5DKMLnHVFf-WCEMp1Z-6zaa9uKB3uEGT8QzRjXzfkLqoYkllz8NKytEEjKIBt-cWIKFBG41ex245vfHWhdLTs60kH2icQjSA4hPaS1hSqVffzvjjT_NnjsQ9PIJZB%22%7D%2C%22header%22%3A%7B%22pageInstance%22%3A%7B%22pageUrn%22%3A%22urn%3Ali%3Apage%3Ad_flagship3_detail_base%22%2C%22trackingId%22%3A%22739ec619-b846-4199-9eee-0cca56cd8ce3%22%7D%2C%22time%22%3A1771081254683%2C%22version%22%3A%220.0.0%22%7D%2C%22requestHeader%22%3A%7B%22pageKey%22%3A%22d_flagship3_detail_base%22%2C%22interfaceLocale%22%3A%22en-US%22%7D%7D%7D%5D&csrfToken=ajax%3A2872756275449100236
+                      - img "LinkedIn for Sales" [ref=f257e20]
+                    - tooltip "LinkedIn for Sales" [ref=f257e21]
+                - generic [ref=f257e22]:
+                  - heading "Use advanced filters to target decision-makers." [level=2] [ref=f257e25]
+                  - link "Get 50% off today" [ref=f257e27] [cursor=pointer]:
+                    - /url: https://www.linkedin.com/li/tscp/sct?destinationUrl=https%3A%2F%2Fwww.linkedin.com%2Fpremium%2Fredeem-v3%2F%3F_ed%3DCwEAAAFvqlyO6M8Q8oNzsFrJnllsOwTEGqdDSfAhW7Ib5vG3e7kEqBnLM6TDzYIfB6J8I4WlA-U%26planType%3Dsales%26redeemType%3DWINBACK%26src%3Dli-dynamic%26trk%3Demea_EN_DA_V2_202507_Winback%26mcid%3D7386103191538618368&trackingEvent=%5B%7B%22eventInfo%22%3A%7B%22appId%22%3A%22com.linkedin.ads.rendering.d_web%22%2C%22eventName%22%3A%22SponsoredRightRailContentActionEvent%22%2C%22topicName%22%3A%22SponsoredRightRailContentActionEvent%22%7D%2C%22eventBody%22%3A%7B%22sponsoredEventHeader%22%3A%7B%22encryptedTrackingData%22%3A%22CwEAAAGcXKtHT-o4UytOOl7IP2ymyl2vu_FLVbIIHQ9AcfQUC6jJ0mbkR8Iaby8QrT8hJCn-1CASaLJzuUr8_DGEA4uOlyca1ag2CF66ltFRvhhK-T8ptJB10wHtpSmNiNk6yrhcUTfMVobCo9zoi6HKmW5WXk2sqQ296jl6tSswHHqEgj1kZMB2vID2TbOibJNyd64772RAjRy9Wle5JEkP6mcXxVXaDPvEO-rKpt-hO7_dLTukuIUexITgnvHJFwtPxorgsr-fH4XXLb9KRKjVbCl4HVhKtjx0u5sBVxPFOSdhrVU72gZ4VC6pUt5cokufwZbL5WZnkoq8uts07YyUKxoyl5XO0fb6OPJwVRt72uNLidKm1AqBKhFRnu-WjLjehs3hn2ZT7_aQ13vud_AqSpVB0Qv7wECg1BbhlVvEGI3KqH5c6gjwTaXf2GA5MD5TuXbBMh1kdWQ601tXbaUVuNZpcAztAlPqHlHhg309rqwq0EkEe4dQ5SQhz9AuWvblKtBrpgnY-xK_mcOFtX3bGeXATQIP7YrsJeyzjmX5nCovlu69BldC2XnzCOQ8ywsAtU1Q8VG0z7BJu221JHwqZYMVim3MdLa8UaMvd-L8fn3vM3vHGI3eGu52q-GAJ1T1dW87xq5r_NICI5gfvz_YOSVFHpdOIhxxDdwyMgNw09BKgxnUovZpzk_CO-uyhfUOPRRMMkE1xwGIAFKWpFl1t136n9hz6ZiTM56kBMsj8IVF6BBxyoJYukEOXoPXSk1NovXxDe5BDk_ts5FszQFGVmTPT7wtNbRLM68jkj96fzY8gPQgtRaapP4JxqYdcelRND6g9ill4dZiix90VW1drlX-vcTa0Z8EX5ZjblUivQTtfVqYxLilbrPZPdqgv4hdBtqT3s-jPFMJyWnX3olyOO97tnzJ8oAmamgaeFcK8LfdHcsjBTYiLI5RcR7L7OQP1JtmkHE0mbD-8M_RsgyBQHOgibqrgeBDabJpmVBTIo_gkseACDYAlEKHxpq7cX653RN9L6NS7VFl1A_EVB-lR55PPbi-dZjebe7Q_nElmO3pOZZPT4x06b59P2_cyzF5DKMLnHVFf-WCEMp1Z-6zaa9uKB3uEGT8QzRjXzfkLqoYkllz8NKytEEjKIBt-cWIKFBG41ex245vfHWhdLTs60kH2icQjSA4hPaS1hSqVffzvjjT_NnjsQ9PIJZB%22%7D%2C%22header%22%3A%7B%22pageInstance%22%3A%7B%22pageUrn%22%3A%22urn%3Ali%3Apage%3Ad_flagship3_detail_base%22%2C%22trackingId%22%3A%22739ec619-b846-4199-9eee-0cca56cd8ce3%22%7D%2C%22time%22%3A1771081254683%2C%22version%22%3A%220.0.0%22%7D%2C%22requestHeader%22%3A%7B%22pageKey%22%3A%22d_flagship3_detail_base%22%2C%22interfaceLocale%22%3A%22en-US%22%7D%7D%7D%5D&csrfToken=ajax%3A2872756275449100236
+          - generic "LinkedIn Footer Content" [ref=e1344]:
+            - generic [ref=e1345]:
+              - list [ref=e1346]:
+                - listitem [ref=e1347]:
+                  - link "About" [ref=e1348] [cursor=pointer]:
+                    - /url: https://about.linkedin.com/
+                    - generic [ref=e1349]: About
+                - listitem [ref=e1350]:
+                  - link "Accessibility" [ref=e1351] [cursor=pointer]:
+                    - /url: https://www.linkedin.com/accessibility
+                    - generic [ref=e1352]: Accessibility
+                - listitem [ref=e1353]:
+                  - link "Help Center" [ref=e1354] [cursor=pointer]:
+                    - /url: https://www.linkedin.com/help/linkedin?trk=footer_d_flagship3_detail_base
+                    - generic [ref=e1355]: Help Center
+                - listitem [ref=e1356]:
+                  - button "Privacy & Terms" [ref=e1358] [cursor=pointer]:
+                    - generic [ref=e1360]:
+                      - text: Privacy & Terms
+                      - img [ref=e1361]
+                - listitem [ref=e1363]:
+                  - link "Ad Choices" [ref=e1364] [cursor=pointer]:
+                    - /url: https://www.linkedin.com/help/linkedin/answer/62931
+                    - generic [ref=e1365]: Ad Choices
+                - listitem [ref=e1366]:
+                  - link "Advertising" [ref=e1367] [cursor=pointer]:
+                    - /url: https://www.linkedin.com/ad/start?trk=n_nav_ads_rr
+                    - generic [ref=e1368]: Advertising
+                - listitem [ref=e1369]:
+                  - button "Business Services" [ref=e1371] [cursor=pointer]:
+                    - generic [ref=e1373]:
+                      - text: Business Services
+                      - img [ref=e1374]
+                - listitem [ref=e1376]:
+                  - button "Get the LinkedIn app" [ref=e1379] [cursor=pointer]
+                - listitem [ref=e1380]:
+                  - button "More options" [ref=e1381] [cursor=pointer]: More
+              - generic [ref=e1382]:
+                - img "LinkedIn" [ref=e1383]:
+                  - img [ref=e1384]
+                - text: LinkedIn Corporation © 2026
+    - generic:
+      - generic:
+        - complementary:
+          - generic [ref=e1387]:
+            - generic [ref=e1389] [cursor=pointer]:
+              - generic [ref=e1390]:
+                - img "Oded Ben-Yair" [ref=e1391]
+                - generic [ref=e1393]: Status is online
+              - button "You are on the messaging overlay. Press enter to open the list of conversations." [ref=e1394]:
+                - generic [ref=e1395]:
+                  - generic [ref=e1396]: Messaging
+                  - generic [ref=e1397]: You are on the messaging overlay. Press enter to open the list of conversations.
+            - generic [ref=e1398]:
+              - button "Open messenger dropdown menu" [ref=e1400] [cursor=pointer]:
+                - img "Open messenger dropdown menu" [ref=e1401]
+              - button "Compose message" [ref=e1404] [cursor=pointer]:
+                - img [ref=e1405]
+                - generic [ref=e1407]: Compose message
+              - button "You are on the messaging overlay. Press enter to open the list of conversations." [ref=e1408] [cursor=pointer]:
+                - img [ref=e1409]
+                - generic [ref=e1411]: You are on the messaging overlay. Press enter to open the list of conversations.
+          - dialog "Messaging" [ref=e1412]:
+            - generic [ref=e1413]:
+              - generic [ref=e1414] [cursor=pointer]:
+                - generic [ref=e1416]:
+                  - generic [ref=e1418]:
+                    - img "Shai Shlomai" [ref=e1419]
+                    - generic [ref=e1421]: Status is reachable
+                  - heading "Shai Shlomai" [level=2] [ref=e1423]
+                - button "Close your conversation with Oded Ben-Yair and Shai Shlomai" [ref=e1425]:
+                  - img [ref=e1426]
+                  - generic [ref=e1428]: Close your conversation with Oded Ben-Yair and Shai Shlomai
+              - generic [ref=e1430]:
+                - list [ref=e1435]:
+                  - listitem
+                  - listitem [ref=e1436]:
+                    - time [ref=e1437]: Friday
+                    - generic [ref=e1438]: Oded Ben-Yair sent the following message at 8:19 AM
+                    - generic [ref=e1439]:
+                      - link "View Oded’s profile Oded Ben-Yair" [ref=e1440] [cursor=pointer]:
+                        - /url: https://www.linkedin.com/in/ACoAABEJXkIBpHRsj0zFy126tNlNuHKxpGElSpQ
+                        - generic [ref=e1441]: View Oded’s profile
+                        - img "Oded Ben-Yair" [ref=e1442]
+                      - generic [ref=e1443]:
+                        - generic [ref=e1444]:
+                          - link "Oded Ben-Yair" [ref=e1445] [cursor=pointer]:
+                            - /url: https://www.linkedin.com/in/ACoAABEJXkIBpHRsj0zFy126tNlNuHKxpGElSpQ
+                            - generic [ref=e1446]: Oded Ben-Yair
+                          - img "LinkedIn Verified" [ref=e1447]
+                        - time [ref=e1449]: • 8:19 AM
+                      - paragraph [ref=e1453]: "Hey Shai -- thanks for connecting. Your profile caught my eye: autonomous AI + LLM agents in production, plus the MSc. Good combo. I'm doing multi-LLM routing and evals at a regulated fintech here in Israel. What's been the hardest part for you -- latency, reliability, or evaluation? --Oded"
+                  - listitem [ref=e1454]:
+                    - generic [ref=e1455]: Shai Shlomai sent the following message at 2:52 PM
+                    - generic [ref=e1456]:
+                      - link "View Shai’s profile Shai Shlomai" [ref=e1457] [cursor=pointer]:
+                        - /url: https://www.linkedin.com/in/ACoAABR-vs8BFR7dol1zqmLMPlszuaelwBcoYnQ
+                        - generic [ref=e1458]: View Shai’s profile
+                        - img "Shai Shlomai" [ref=e1459]
+                      - generic [ref=e1460]:
+                        - generic [ref=e1461]:
+                          - link "Shai Shlomai" [ref=e1462] [cursor=pointer]:
+                            - /url: https://www.linkedin.com/in/ACoAABR-vs8BFR7dol1zqmLMPlszuaelwBcoYnQ
+                            - generic [ref=e1463]: Shai Shlomai
+                          - img "LinkedIn Verified" [ref=e1464]
+                        - time [ref=e1466]: • 2:52 PM
+                      - paragraph [ref=e1470]:
+                        - text: Hi Oded,
+                        - text: Thanks for connecting :)
+                        - text: The latency is a real pain but for our product it was acceptable. The real challenge that you face in production is to get quality answers for a wide range of customers ( for example- using multi shot examples is a really bad thing since all your tests will pass for very specific customers). The evaluation is a big issue whenever you are developing in iterations over time
+                    - img "Seen by Shai Shlomai at 2:52 PM." [ref=e1472]
+                  - listitem [ref=e1473]:
+                    - time [ref=e1474]: Today
+                    - generic [ref=e1475]: Oded Ben-Yair sent the following messages at 12:48 PM
+                    - generic [ref=e1476]:
+                      - link "View Oded’s profile Oded Ben-Yair" [ref=e1477] [cursor=pointer]:
+                        - /url: https://www.linkedin.com/in/ACoAABEJXkIBpHRsj0zFy126tNlNuHKxpGElSpQ
+                        - generic [ref=e1478]: View Oded’s profile
+                        - img "Oded Ben-Yair" [ref=e1479]
+                      - generic [ref=e1480]:
+                        - generic [ref=e1481]:
+                          - link "Oded Ben-Yair" [ref=e1482] [cursor=pointer]:
+                            - /url: https://www.linkedin.com/in/ACoAABEJXkIBpHRsj0zFy126tNlNuHKxpGElSpQ
+                            - generic [ref=e1483]: Oded Ben-Yair
+                          - img "LinkedIn Verified" [ref=e1484]
+                        - time [ref=e1486]: • 12:48 PM
+                      - generic [ref=e1488]:
+                        - paragraph [ref=e1490]:
+                          - text: Yeah the multi-shot trap -- we hit that exact thing. Tests looked clean for the accounts we built them around, then a new client with different phrasing broke everything. Ended up building eval sets per customer segment instead of one universal set. More work but it actually catches the regressions.
+                          - text: The iteration thing is brutal too. We version prompts and run old vs new on same inputs, but even that misses stuff bc the data distribution keeps shifting. Do you use automated eval or mostly manual review at this point?
+                        - generic "Sent at 2/14/2026, 12:48 PM" [ref=e1491]:
+                          - img [ref=e1492]
+                  - listitem [ref=e1494]
+                  - listitem
+                - generic [ref=e1495]:
+                  - generic [ref=e1496]:
+                    - generic [ref=e1498]:
+                      - textbox "Write a message…" [ref=e1499]:
+                        - paragraph [ref=e1500]
+                      - text: Write a message…
+                    - button "Maximize compose field" [ref=e1502] [cursor=pointer]:
+                      - img [ref=e1503]
+                      - generic [ref=e1505]: Maximize compose field
+                  - generic [ref=e1506]:
+                    - generic [ref=e1507]:
+                      - button "Attach an image to your conversation with Shai Shlomai" [ref=e1509] [cursor=pointer]:
+                        - img [ref=e1510]
+                        - generic [ref=e1512]: Attach an image to your conversation with Shai Shlomai
+                      - button "Attach a file to your conversation with Shai Shlomai" [ref=e1514] [cursor=pointer]:
+                        - img [ref=e1515]
+                        - generic [ref=e1517]: Attach a file to your conversation with Shai Shlomai
+                      - button "Open GIF Keyboard" [ref=e1519] [cursor=pointer]:
+                        - img [ref=e1520]
+                        - generic [ref=e1522]: Open GIF Keyboard
+                      - button "Open Emoji Keyboard" [ref=e1525] [cursor=pointer]:
+                        - generic:
+                          - img
+                        - generic [ref=e1526]: Open Emoji Keyboard
+                    - generic [ref=e1527]:
+                      - button "Send" [disabled] [ref=e1529]
+                      - button "Open send options" [ref=e1532] [cursor=pointer]:
+                        - img [ref=e1533]
+                        - generic [ref=e1535]: Open send options
+        - complementary "AI-powered assistant to get help with your career, jobs etc"
+  - region [ref=e1536]

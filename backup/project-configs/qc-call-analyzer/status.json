@@ -1,0 +1,70 @@
+{
+  "$schema": "Project status tracking for Claude Code sessions",
+  "version": "1.0",
+  "project": {
+    "name": "qc-call-analyzer",
+    "path": "/home/odedbe/projects/qc-call-analyzer",
+    "database": "qc_analyzer",
+    "production": true,
+    "lastUpdated": "2026-02-04T12:00:00+00:00"
+  },
+  "currentState": {
+    "summary": "V6.0 Pipeline Format Standardization complete. 9 bugs fixed, 15 regression tests, master+v2-dev synced and pushed to Azure DevOps. Needs production deployment via func publish.",
+    "branch": "v2-dev",
+    "lastCommit": "73383f3",
+    "testsPass": true,
+    "buildStatus": "pushed-not-deployed"
+  },
+  "blockers": [],
+  "inProgress": [],
+  "nextSteps": [
+    {
+      "priority": 1,
+      "description": "Deploy V6.0 to production: cd src/api && func azure functionapp publish qc-call-analyzer-func --python",
+      "estimatedComplexity": "simple",
+      "dependencies": []
+    },
+    {
+      "priority": 2,
+      "description": "Test with real production call to verify speaker labels persist through full pipeline",
+      "estimatedComplexity": "medium",
+      "dependencies": ["deploy"]
+    },
+    {
+      "priority": 3,
+      "description": "Monitor production Spanish/Portuguese calls for quality after V6.0",
+      "estimatedComplexity": "simple",
+      "dependencies": ["deploy"]
+    }
+  ],
+  "recentDecisions": [
+    "V6.0: Canonical speaker label format is [נציג MM:SS] (V5.0 formatter output)",
+    "V6.0: Two-pass Gemini strategy - raw cleanup before formatting, diarization validation after",
+    "V6.0: Safe template building with %%DELIM%% instead of .format() everywhere",
+    "V6.0: Segments flagged as raw_stt, formatted_transcript is authoritative display field",
+    "V6.0: master branch reset to v2-dev HEAD (no common ancestor, 56 days stale)"
+  ],
+  "patterns": {
+    "established": [
+      "Use %%DELIM%% + str.replace() for templates containing user-generated text",
+      "Use skip_azure flag pattern for explicit STT routing (not fallthrough)",
+      "Single source for shared functions in text_utils.py to prevent circular imports",
+      "Always return transcript_plain from STT activities for raw text access"
+    ],
+    "toAvoid": [
+      "Python .format() on strings containing Arabic text (curly braces crash)",
+      "Gemini cleanup AFTER formatter (destroys speaker labels)",
+      "if/elif/pass fallthrough for conditional routing (accidental behavior)"
+    ]
+  },
+  "sessionNotes": {
+    "lastSessionId": "16414",
+    "lastSessionDate": "2026-02-04",
+    "carryoverNotes": "V6.0 implemented and pushed. Not yet deployed to production. 1 pre-existing test failure in test_speaker_labels_v5.py (Arabic character encoding, unrelated)."
+  },
+  "_instructions": {
+    "usage": "This file tracks project state across Claude Code sessions",
+    "update": "Update at session end using /end-of-session skill",
+    "read": "Automatically read at session start when entering project directory"
+  }
+}

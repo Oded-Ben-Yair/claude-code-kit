@@ -1,0 +1,8 @@
+{
+  "model": "opus",
+  "_meta": {
+    "project": "Axia Seekapa CS Agents",
+    "type": "Azure Functions (Python)",
+    "description": "OTP authentication for Seekapa and AxiaCS AI agents"
+  }
+}

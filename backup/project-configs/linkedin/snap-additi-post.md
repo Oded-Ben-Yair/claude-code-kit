@@ -1,0 +1,591 @@
+- generic [ref=e1]:
+  - generic:
+    - region "Toast message":
+      - heading "0 notifications total" [level=2] [ref=e3]
+      - alert
+  - generic [ref=e4]:
+    - generic [ref=e6]:
+      - button "Skip to search" [ref=e7] [cursor=pointer]:
+        - generic [ref=e8]: Skip to search
+      - button "Skip to main content" [ref=e9] [cursor=pointer]:
+        - generic [ref=e10]: Skip to main content
+      - button "Keyboard shortcuts" [ref=e11] [cursor=pointer]:
+        - generic [ref=e12]: Keyboard shortcuts
+      - button "Close jump menu" [ref=e13] [cursor=pointer]:
+        - img [ref=e14]
+        - generic [ref=e16]: Close jump menu
+    - banner "Global Navigation" [ref=e17]:
+      - generic [ref=e18]:
+        - link "LinkedIn" [ref=e19] [cursor=pointer]:
+          - /url: https://www.linkedin.com/feed/?nis=true
+          - img "LinkedIn" [ref=e22]:
+            - img [ref=e23]
+        - generic [ref=e27]:
+          - combobox "Search" [ref=e28]
+          - generic:
+            - img
+        - navigation "Primary Navigation" [ref=e29]:
+          - list [ref=e30]:
+            - listitem [ref=e31]:
+              - link "new feed updates notifications Home" [ref=e32] [cursor=pointer]:
+                - /url: https://www.linkedin.com/feed/?nis=true&
+                - generic [ref=e33]:
+                  - generic [ref=e36]: new feed updates notifications
+                  - img [ref=e40]
+                - generic "Home" [ref=e42]
+            - listitem [ref=e43]:
+              - link "4 new network updates notifications My Network" [ref=e44] [cursor=pointer]:
+                - /url: https://www.linkedin.com/mynetwork/?
+                - generic [ref=e45]:
+                  - generic [ref=e46]:
+                    - generic [ref=e47]: "4"
+                    - generic [ref=e48]: 4 new network updates notifications
+                  - img [ref=e52]
+                - generic "My Network" [ref=e54]
+            - listitem [ref=e55]:
+              - link "Jobs" [ref=e56] [cursor=pointer]:
+                - /url: https://www.linkedin.com/jobs/?
+                - img [ref=e60]
+                - generic "Jobs" [ref=e62]
+            - listitem [ref=e63]:
+              - link "Messaging" [ref=e64] [cursor=pointer]:
+                - /url: https://www.linkedin.com/messaging/?
+                - img [ref=e68]
+                - generic "Messaging" [ref=e70]
+            - listitem [ref=e71]:
+              - link "Notifications" [ref=e72] [cursor=pointer]:
+                - /url: https://www.linkedin.com/notifications/?
+                - img [ref=e76]
+                - generic "Notifications" [ref=e78]
+            - listitem [ref=e79]:
+              - button "Oded Ben-Yair Me" [ref=e81] [cursor=pointer]:
+                - img "Oded Ben-Yair" [ref=e82]
+                - generic [ref=e83]:
+                  - text: Me
+                  - img [ref=e84]
+            - listitem [ref=e86]:
+              - button "For Business" [ref=e88] [cursor=pointer]:
+                - img [ref=e92]
+                - generic "For Business" [ref=e94]:
+                  - text: For Business
+                  - img [ref=e95]
+            - listitem [ref=e97]:
+              - 'link "Reactivate Premium: 50% Off" [ref=e99] [cursor=pointer]':
+                - /url: http://www.linkedin.com/premium/redeem/?_ed=0_bvLJH59RTSY-u5c6PMUa4IW0M54p9mxZpuVkfRvTl7r&upsellOrderOrigin=Tracking%3Av1%3Apremium_nav_upsell_text_winback%3ANav%3AIn-Product&referenceId=eNd3YkkMQMOhrfLx6d8zTg%3D%3D&customKey=wb_c&redeemTypeV2=DISCOUNT&destRedirectURL=https%3A%2F%2Fwww.linkedin.com%2Ffeed%2Fupdate%2Furn%3Ali%3AugcPost%3A7427073758512996353%2F
+                - generic [ref=e101]: "Reactivate Premium: 50% Off"
+    - generic [ref=e108]:
+      - complementary "User profile" [ref=e109]:
+        - generic [ref=e111]:
+          - generic [ref=e112]:
+            - link "Background photo of Oded Ben-Yair" [ref=e113] [cursor=pointer]:
+              - /url: /in/oded-ben-yair-ai/
+            - link "Photo of Oded Ben-Yair" [ref=e115] [cursor=pointer]:
+              - /url: /in/oded-ben-yair-ai/
+              - img "Photo of Oded Ben-Yair" [ref=e116]
+            - generic [ref=e117]:
+              - link "Oded Ben-Yair Founding AI Engineer | Multi-LLM Routing & Evaluation in Production | Voice AI · RAG | Azure + Python Tel Aviv-Yafo, Tel Aviv District" [ref=e118] [cursor=pointer]:
+                - /url: /in/oded-ben-yair-ai/
+                - generic [ref=e119]:
+                  - heading "Oded Ben-Yair" [level=3] [ref=e120]
+                  - img [ref=e124]
+                - paragraph [ref=e126]: Founding AI Engineer | Multi-LLM Routing & Evaluation in Production | Voice AI · RAG | Azure + Python
+                - paragraph [ref=e127]: Tel Aviv-Yafo, Tel Aviv District
+              - link "Be Z Online" [ref=e128] [cursor=pointer]:
+                - /url: /in/oded-ben-yair-ai/
+                - paragraph [ref=e129]:
+                  - generic [ref=e130]: Be Z Online
+          - 'link "Achieve 4x more profile visits Reactivate Premium: 50% Off" [ref=e132] [cursor=pointer]':
+            - /url: http://www.linkedin.com/premium/redeem/?_ed=0_bvLJH59RTSY-u5c6PMUa4IW0M54p9mxZpuVkfRvTl7r&upsellOrderOrigin=Tracking%3Av1%3Apremium_homepage_identity_upsell_winback%3ANav%3AIn-Product&referenceId=%2Bv7FeASJSYGMzsdrUWr38Q%3D%3D&customKey=wb_c&redeemTypeV2=DISCOUNT&destRedirectURL=https%3A%2F%2Fwww.linkedin.com%2Ffeed%2Fupdate%2Furn%3Ali%3AugcPost%3A7427073758512996353%2F
+            - heading "Achieve 4x more profile visits" [level=3] [ref=e133]
+            - generic [ref=e134]:
+              - img [ref=e135]
+              - generic [ref=e137]: "Reactivate Premium: 50% Off"
+          - list [ref=e141]:
+            - listitem [ref=e142]:
+              - link "Profile viewers 154" [ref=e143] [cursor=pointer]:
+                - /url: /me/profile-views/
+                - generic [ref=e144]:
+                  - generic [ref=e146]: Profile viewers
+                  - strong [ref=e149]: "154"
+            - listitem [ref=e150]:
+              - link "Post impressions 120" [ref=e151] [cursor=pointer]:
+                - /url: /analytics/creator/content/
+                - generic [ref=e152]:
+                  - generic [ref=e154]: Post impressions
+                  - strong [ref=e157]: "120"
+      - main "Feed detail update" [ref=e158]:
+        - heading "Feed detail update" [level=1] [ref=e159]
+        - generic "Update container" [ref=e160]:
+          - article [ref=e164]:
+            - generic [ref=e166]:
+              - heading "Feed post" [level=2] [ref=e167]
+              - generic [ref=e168]:
+                - generic [ref=e169]:
+                  - generic [ref=e170]:
+                    - generic [ref=e171]:
+                      - link "View Additi Upadhyay’s graphic link" [ref=e172] [cursor=pointer]:
+                        - /url: https://www.linkedin.com/in/additi-upadhyay-01a16997?miniProfileUrn=urn%3Ali%3Afsd_profile%3AACoAABR9ntYBxkSABi6nH3wqbLbcehOvJPWcftU
+                        - img "View Additi Upadhyay’s graphic link" [ref=e176]
+                      - generic [ref=e177]:
+                        - 'link "View: Additi Upadhyay Premium • 2nd Helping with evaluating Agents|Founder @ Noveum.ai/API.Market|Ex-Sambanova|Ex-Spenmo(YC S20)|Ex-Playo|B2B Product, Growth|GrowthX Demo Day Winner|IIM Lucknow" [ref=e178] [cursor=pointer]':
+                          - /url: https://www.linkedin.com/in/additi-upadhyay-01a16997?miniProfileUrn=urn%3Ali%3Afsd_profile%3AACoAABR9ntYBxkSABi6nH3wqbLbcehOvJPWcftU
+                          - generic [ref=e179]:
+                            - generic [ref=e181]:
+                              - generic [ref=e182]: Additi Upadhyay
+                              - generic [ref=e183]: Additi Upadhyay
+                            - generic [ref=e184]:
+                              - generic [ref=e185]:
+                                - img [ref=e186]:
+                                  - img [ref=e187]
+                                - text: • 2nd
+                              - generic [ref=e189]: Premium • 2nd
+                          - generic [ref=e190]:
+                            - generic [ref=e191]: Helping with evaluating Agents|Founder @ Noveum.ai/API.Market|Ex-Sambanova|Ex-Spenmo(YC S20)|Ex-Playo|B2B Product, Growth|GrowthX Demo Day Winner|IIM Lucknow
+                            - generic [ref=e192]: Helping with evaluating Agents|Founder @ Noveum.ai/API.Market|Ex-Sambanova|Ex-Spenmo(YC S20)|Ex-Playo|B2B Product, Growth|GrowthX Demo Day Winner|IIM Lucknow
+                        - link "Visit my website" [ref=e193] [cursor=pointer]:
+                          - /url: https://noveum.ai/en
+                          - generic [ref=e194]: Visit my website
+                        - generic [ref=e195]:
+                          - generic [ref=e196]:
+                            - text: 1d •
+                            - img [ref=e199]
+                          - generic [ref=e201]: 1 day ago • Visible to anyone on or off LinkedIn
+                    - button "Follow Additi Upadhyay" [ref=e202] [cursor=pointer]:
+                      - img [ref=e203]
+                      - generic [ref=e205]: Follow
+                  - button "Open control menu for post by Additi Upadhyay" [ref=e208] [cursor=pointer]:
+                    - img [ref=e209]
+                - generic [ref=e215]:
+                  - text: "Post 3/5 — Voice AI Evals: The Metric Most Teams Miss"
+                  - text: "If you’re building voice agents, there’s one metric you can’t afford to ignore:"
+                  - text: Speech Recognition Accuracy.
+                  - text: Most teams measure conversations after intent detection or response quality.
+                  - text: But everything starts earlier — with what the system heard.
+                  - text: That’s where Word Error Rate (WER) comes in.
+                  - text: "WER formula:"
+                  - text: (Substitutions + Deletions + Insertions) / Total Words × 100
+                  - text: "Rule of thumb:"
+                  - text: • < 10% WER → production-ready
+                  - text: • Higher than that → downstream errors stack fast
+                  - text: "How it’s measured:"
+                  - text: You compare the ASR output to a clean reference transcription and count what went wrong.
+                  - text: "Why this matters for voice agents:"
+                  - text: High WER means the agent misunderstands users before reasoning even starts
+                  - text: Errors cascade into wrong intents, bad responses, and frustrated users
+                  - text: You can’t fix dialog logic if the input is already broken
+                  - text: "In short:"
+                  - text: If your ASR is inaccurate, your voice agent isn’t “smart” — it’s guessing.
+                  - text: Many teams optimize prompts, tools, and flows…
+                  - text: …but skip measuring how well the agent hears.
+                  - text: That’s a costly blind spot!
+                - region "Video player" [ref=e220]:
+                  - button "Play" [ref=e225] [cursor=pointer]:
+                    - generic [ref=e226]: Play
+                - generic [ref=e227]:
+                  - list [ref=e231]:
+                    - listitem [ref=e232]:
+                      - button "11 reactions" [ref=e233] [cursor=pointer]:
+                        - img "like" [ref=e234]
+                        - generic [ref=e235]: "11"
+                    - listitem [ref=e236]:
+                      - list [ref=e237]:
+                        - listitem [ref=e238]:
+                          - button "2 comments on Additi Upadhyay’s post" [ref=e239] [cursor=pointer]:
+                            - generic [ref=e240]: 2 comments
+                  - generic [ref=e241]:
+                    - heading "Reactions" [level=3] [ref=e242]
+                    - list "Reactions" [ref=e243]:
+                      - listitem [ref=e244]:
+                        - link "View Akash Upadhyay’s graphic link, reacted with LIKE, graphic" [ref=e245] [cursor=pointer]:
+                          - /url: https://www.linkedin.com/in/ACoAAD956XEB8YToc_K_GVUUvmkW5qFa-SH9lCU
+                          - generic [ref=e247]:
+                            - img "View Akash Upadhyay’s graphic link" [ref=e250]
+                            - img "like" [ref=e251]
+                      - listitem [ref=e252]:
+                        - link "View Manas Thakur’s graphic link, reacted with LIKE, graphic" [ref=e253] [cursor=pointer]:
+                          - /url: https://www.linkedin.com/in/ACoAADbvprYBtrSGrpgpM_-wCPF1OOXCoNnY1A0
+                          - generic [ref=e255]:
+                            - img "View Manas Thakur’s graphic link" [ref=e258]
+                            - img "like" [ref=e259]
+                      - listitem [ref=e260]:
+                        - link "View Additi Upadhyay’s graphic link, reacted with LIKE, graphic" [ref=e261] [cursor=pointer]:
+                          - /url: https://www.linkedin.com/in/ACoAABR9ntYBxkSABi6nH3wqbLbcehOvJPWcftU
+                          - generic [ref=e263]:
+                            - img "View Additi Upadhyay’s graphic link" [ref=e266]
+                            - img "like" [ref=e267]
+                      - listitem [ref=e268]:
+                        - link "View Rahul Tej Mora’s graphic link, reacted with LIKE, graphic" [ref=e269] [cursor=pointer]:
+                          - /url: https://www.linkedin.com/in/ACoAADTj57YBTsVaEGzTWeB7XE457dmK2G3C1cA
+                          - generic [ref=e271]:
+                            - img "View Rahul Tej Mora’s graphic link" [ref=e274]
+                            - img "like" [ref=e275]
+                      - listitem [ref=e276]:
+                        - link "View Nishant Rathore’s graphic link, reacted with LIKE, graphic" [ref=e277] [cursor=pointer]:
+                          - /url: https://www.linkedin.com/in/ACoAADUoFj4BifIF7R90VG89rJEdGGZjDMuwPMI
+                          - generic [ref=e279]:
+                            - img "View Nishant Rathore’s graphic link" [ref=e282]
+                            - img "like" [ref=e283]
+                      - listitem [ref=e284]:
+                        - link "View Tanzeela Sameen’s graphic link, reacted with LIKE, graphic" [ref=e285] [cursor=pointer]:
+                          - /url: https://www.linkedin.com/in/ACoAADcutN8BK7pSkWSHihU-3UKa_Jh9_VAbz7g
+                          - generic [ref=e287]:
+                            - img "View Tanzeela Sameen’s graphic link" [ref=e290]
+                            - img "like" [ref=e291]
+                      - listitem [ref=e292]:
+                        - link "View Nikhil Jethava’s graphic link, reacted with LIKE, graphic" [ref=e293] [cursor=pointer]:
+                          - /url: https://www.linkedin.com/in/ACoAAE3VYsMBn7m11Ur-Za5LNWrUq_nP6x8ROjM
+                          - generic [ref=e295]:
+                            - img "View Nikhil Jethava’s graphic link" [ref=e298]
+                            - img "like" [ref=e299]
+                      - listitem [ref=e300]:
+                        - link "View Shashank Agarwal’s graphic link, reacted with LIKE, graphic" [ref=e301] [cursor=pointer]:
+                          - /url: https://www.linkedin.com/in/ACoAAAY6OH4BoktuUsPc-t0qN3msDuGWIAIKlSs
+                          - generic [ref=e303]:
+                            - img "View Shashank Agarwal’s graphic link" [ref=e306]
+                            - img "like" [ref=e307]
+                      - listitem [ref=e308]:
+                        - button "See 3 more reactions" [ref=e309] [cursor=pointer]: "+3"
+                  - generic [ref=e310]:
+                    - generic [ref=e311]:
+                      - button "React Like" [ref=e312] [cursor=pointer]:
+                        - generic [ref=e314]:
+                          - img [ref=e315]
+                          - generic [ref=e317]: Like
+                      - button "Open reactions menu":
+                        - img [ref=e319] [cursor=pointer]
+                    - button "Comment" [ref=e323] [cursor=pointer]:
+                      - img [ref=e324]
+                      - generic [ref=e326]: Comment
+                    - button "Repost" [ref=e329] [cursor=pointer]:
+                      - img [ref=e330]
+                      - generic [ref=e332]: Repost
+                    - button "Send in a private message" [ref=e335] [cursor=pointer]:
+                      - img [ref=e336]
+                      - generic [ref=e339]: Send
+              - generic [ref=e341]:
+                - generic [ref=e343]:
+                  - img "Oded Ben-Yair" [ref=e345]
+                  - generic [ref=e348]:
+                    - generic [ref=e352]:
+                      - textbox "Text editor for creating content" [ref=e354]:
+                        - paragraph [ref=e355]
+                        - text: Add a comment…
+                      - generic [ref=e356]: Add a comment…
+                    - generic [ref=e358]:
+                      - button "Open Emoji Keyboard" [ref=e361] [cursor=pointer]:
+                        - img
+                        - generic [ref=e362]: Open Emoji Keyboard
+                      - button "Add a photo" [ref=e364] [cursor=pointer]:
+                        - img [ref=e365]
+                - button "Current selected sort order is Most relevant" [ref=e370] [cursor=pointer]:
+                  - generic [ref=e371]: Current selected sort order is Most relevant
+                  - generic [ref=e372]:
+                    - text: Most relevant
+                    - img [ref=e373]
+                - article [ref=e380]:
+                  - generic [ref=e381]:
+                    - generic [ref=e382]:
+                      - link "View Oded Ben-Yair’s graphic link" [ref=e383] [cursor=pointer]:
+                        - /url: https://www.linkedin.com/in/oded-ben-yair-ai
+                        - img "View Oded Ben-Yair’s graphic link" [ref=e386]
+                      - 'link "View: Oded Ben-Yair • You Founding AI Engineer | Multi-LLM Routing &amp; Evaluation in Production | Voice AI · RAG | Azure + Python" [ref=e387] [cursor=pointer]':
+                        - /url: https://www.linkedin.com/in/oded-ben-yair-ai
+                        - heading "Oded Ben-Yair • You" [level=3] [ref=e388]:
+                          - generic [ref=e389]: Oded Ben-Yair
+                          - generic [ref=e390]:
+                            - img [ref=e391]
+                            - text: • You
+                        - generic [ref=e393]: Founding AI Engineer | Multi-LLM Routing & Evaluation in Production | Voice AI · RAG | Azure + Python
+                    - generic [ref=e394]:
+                      - time [ref=e395]: 23h
+                      - button "Open options for Oded Ben-Yair’s comment" [ref=e398] [cursor=pointer]:
+                        - img "Open options for Oded Ben-Yair’s comment" [ref=e399]
+                  - generic [ref=e401]:
+                    - button [ref=e402] [cursor=pointer]
+                    - generic [ref=e409]: The multilingual piece is the part nobody talks about. We had a sentence-splitting regex that worked perfectly for Spanish and silently destroyed Arabic diarization output. Took three weeks to find because we kept blaming the model.
+                  - generic [ref=e410]:
+                    - generic [ref=e411]:
+                      - button [ref=e412] [cursor=pointer]
+                      - generic [ref=e414]:
+                        - generic [ref=e416]:
+                          - button "React Like to Oded Ben-Yair’s comment" [ref=e417] [cursor=pointer]:
+                            - generic [ref=e420]: Like
+                          - button "Open reactions menu":
+                            - img [ref=e422] [cursor=pointer]
+                        - generic [ref=e425]:
+                          - button "Reply to Oded Ben-Yair’s comment" [ref=e426] [cursor=pointer]:
+                            - generic [ref=e428]: Reply
+                          - generic [ref=e429]: ·
+                          - generic [ref=e430]: 1 reply
+                          - generic [ref=e431]: 1 Comment on Oded Ben-Yair’s comment
+                        - generic [ref=e434]: 35 impressions
+                    - generic [ref=e436]:
+                      - button [ref=e437] [cursor=pointer]
+                      - article [ref=e439]:
+                        - generic [ref=e440]:
+                          - generic [ref=e441]:
+                            - link "View Additi Upadhyay’s graphic link" [ref=e442] [cursor=pointer]:
+                              - /url: https://www.linkedin.com/in/additi-upadhyay-01a16997
+                              - img "View Additi Upadhyay’s graphic link" [ref=e445]
+                            - 'link "View: Additi Upadhyay Author, Helping with evaluating Agents|Founder @ Noveum.ai/API.Market|Ex-Sambanova|Ex-Spenmo(YC S20)|Ex-Playo|B2B Product, Growth|GrowthX Demo Day Winner|IIM Lucknow" [ref=e446] [cursor=pointer]':
+                              - /url: https://www.linkedin.com/in/additi-upadhyay-01a16997
+                              - heading "Additi Upadhyay Author" [level=3] [ref=e447]:
+                                - generic [ref=e448]: Additi Upadhyay
+                                - img [ref=e450]:
+                                  - img [ref=e451]
+                                - generic [ref=e453]: Author
+                              - generic [ref=e454]: Helping with evaluating Agents|Founder @ Noveum.ai/API.Market|Ex-Sambanova|Ex-Spenmo(YC S20)|Ex-Playo|B2B Product, Growth|GrowthX Demo Day Winner|IIM Lucknow
+                          - generic [ref=e455]:
+                            - time [ref=e456]: 14h
+                            - button "Open options for Additi Upadhyay’s comment" [ref=e459] [cursor=pointer]:
+                              - img "Open options for Additi Upadhyay’s comment" [ref=e460]
+                        - generic [ref=e470]:
+                          - link "Oded Ben-Yair" [ref=e472] [cursor=pointer]:
+                            - /url: /in/oded-ben-yair-ai/
+                          - text: oh damn!
+                        - generic [ref=e477]:
+                          - generic [ref=e479]:
+                            - button "React Like to Additi Upadhyay’s comment" [ref=e480] [cursor=pointer]:
+                              - generic [ref=e483]: Like
+                            - button "Open reactions menu":
+                              - img [ref=e485] [cursor=pointer]
+                          - button "Reply to Additi Upadhyay’s comment" [ref=e489] [cursor=pointer]:
+                            - generic [ref=e491]: Reply
+      - complementary "Advertisement and similar pages" [ref=e492]:
+        - generic [ref=e494]:
+          - iframe [ref=e496]:
+            - link "Advertise on LinkedIn" [ref=f251e3] [cursor=pointer]:
+              - /url: https://www.linkedin.com/jobs/?trk=li_FA_global_careers_jobsgtm_jsFA_v1&mcid=6899045044465016833
+              - img "Advertise on LinkedIn" [ref=f251e4]
+          - generic "LinkedIn Footer Content" [ref=e497]:
+            - generic [ref=e498]:
+              - list [ref=e499]:
+                - listitem [ref=e500]:
+                  - link "About" [ref=e501] [cursor=pointer]:
+                    - /url: https://about.linkedin.com/
+                    - generic [ref=e502]: About
+                - listitem [ref=e503]:
+                  - link "Accessibility" [ref=e504] [cursor=pointer]:
+                    - /url: https://www.linkedin.com/accessibility
+                    - generic [ref=e505]: Accessibility
+                - listitem [ref=e506]:
+                  - link "Help Center" [ref=e507] [cursor=pointer]:
+                    - /url: https://www.linkedin.com/help/linkedin?trk=footer_d_flagship3_detail_base
+                    - generic [ref=e508]: Help Center
+                - listitem [ref=e509]:
+                  - button "Privacy & Terms" [ref=e511] [cursor=pointer]:
+                    - generic [ref=e513]:
+                      - text: Privacy & Terms
+                      - img [ref=e514]
+                - listitem [ref=e516]:
+                  - link "Ad Choices" [ref=e517] [cursor=pointer]:
+                    - /url: https://www.linkedin.com/help/linkedin/answer/62931
+                    - generic [ref=e518]: Ad Choices
+                - listitem [ref=e519]:
+                  - link "Advertising" [ref=e520] [cursor=pointer]:
+                    - /url: https://www.linkedin.com/ad/start?trk=n_nav_ads_rr
+                    - generic [ref=e521]: Advertising
+                - listitem [ref=e522]:
+                  - button "Business Services" [ref=e524] [cursor=pointer]:
+                    - generic [ref=e526]:
+                      - text: Business Services
+                      - img [ref=e527]
+                - listitem [ref=e529]:
+                  - button "Get the LinkedIn app" [ref=e532] [cursor=pointer]
+                - listitem [ref=e533]:
+                  - button "More options" [ref=e534] [cursor=pointer]: More
+              - generic [ref=e535]:
+                - img "LinkedIn" [ref=e536]:
+                  - img [ref=e537]
+                - text: LinkedIn Corporation © 2026
+    - generic:
+      - generic:
+        - complementary:
+          - generic [ref=e540]:
+            - generic [ref=e542] [cursor=pointer]:
+              - generic [ref=e543]:
+                - img "Oded Ben-Yair" [ref=e544]
+                - generic [ref=e546]: Status is online
+              - button "You are on the messaging overlay. Press enter to open the list of conversations." [ref=e547]:
+                - generic [ref=e548]:
+                  - generic [ref=e549]: Messaging
+                  - generic [ref=e550]: You are on the messaging overlay. Press enter to open the list of conversations.
+            - generic [ref=e551]:
+              - button "Open messenger dropdown menu" [ref=e553] [cursor=pointer]:
+                - img "Open messenger dropdown menu" [ref=e554]
+              - button "Compose message" [ref=e557] [cursor=pointer]:
+                - img [ref=e558]
+                - generic [ref=e560]: Compose message
+              - button "You are on the messaging overlay. Press enter to open the list of conversations." [ref=e561] [cursor=pointer]:
+                - img [ref=e562]
+                - generic [ref=e564]: You are on the messaging overlay. Press enter to open the list of conversations.
+          - dialog "Messaging" [ref=e565]:
+            - generic [ref=e566]:
+              - generic [ref=e567] [cursor=pointer]:
+                - generic [ref=e569]:
+                  - generic [ref=e571]:
+                    - img "David Strucke" [ref=e572]
+                    - generic [ref=e574]: Status is reachable
+                  - heading "David Strucke" [active] [level=2] [ref=e576]
+                - button "Close your conversation with David Strucke and Oded Ben-Yair" [ref=e578]:
+                  - img [ref=e579]
+                  - generic [ref=e581]: Close your conversation with David Strucke and Oded Ben-Yair
+              - generic [ref=e583]:
+                - link "Visit my website" [ref=e586] [cursor=pointer]:
+                  - /url: https://datastreamer.io/
+                  - strong [ref=e587]: Visit my website
+                - list [ref=e590]:
+                  - listitem
+                  - listitem [ref=e591]:
+                    - time [ref=e592]: Monday
+                    - generic [ref=e593]: David Strucke sent the following message at 1:43 PM
+                    - generic [ref=e594]:
+                      - link "View David’s profile David Strucke" [ref=e595] [cursor=pointer]:
+                        - /url: https://www.linkedin.com/in/ACoAAACpVzwBrVubV-bqhicRnlsrd_xHrMvxck8
+                        - generic [ref=e596]: View David’s profile
+                        - img "David Strucke" [ref=e597]
+                      - generic [ref=e598]:
+                        - generic [ref=e599]:
+                          - link "David Strucke" [ref=e600] [cursor=pointer]:
+                            - /url: https://www.linkedin.com/in/ACoAAACpVzwBrVubV-bqhicRnlsrd_xHrMvxck8
+                            - generic [ref=e601]: David Strucke
+                          - img "LinkedIn Verified" [ref=e602]
+                        - time [ref=e604]: • 1:43 PM
+                      - paragraph [ref=e608]:
+                        - text: Hi Oded, thanks for the connection!
+                        - text: Are you currently integrating and standardizing social and web data?
+                        - text: I'd love to hear how you're approaching it.
+                  - listitem [ref=e609]:
+                    - generic [ref=e610]: Oded Ben-Yair sent the following message at 3:54 PM
+                    - generic [ref=e611]:
+                      - link "View Oded’s profile Oded Ben-Yair" [ref=e612] [cursor=pointer]:
+                        - /url: https://www.linkedin.com/in/ACoAABEJXkIBpHRsj0zFy126tNlNuHKxpGElSpQ
+                        - generic [ref=e613]: View Oded’s profile
+                        - img "Oded Ben-Yair" [ref=e614]
+                      - generic [ref=e615]:
+                        - generic [ref=e616]:
+                          - link "Oded Ben-Yair" [ref=e617] [cursor=pointer]:
+                            - /url: https://www.linkedin.com/in/ACoAABEJXkIBpHRsj0zFy126tNlNuHKxpGElSpQ
+                            - generic [ref=e618]: Oded Ben-Yair
+                          - img "LinkedIn Verified" [ref=e619]
+                        - time [ref=e621]: • 3:54 PM
+                      - paragraph [ref=e625]: Hey David nice to meet you 🙂 not sure i fully grasp your question to be honest. I am actively running over 5 projects so you truly wish to have my piece you'll need to be a bit more clear
+                  - listitem [ref=e626]:
+                    - generic [ref=e627]: David Strucke sent the following message at 11:23 PM
+                    - generic [ref=e628]:
+                      - link "View David’s profile David Strucke" [ref=e629] [cursor=pointer]:
+                        - /url: https://www.linkedin.com/in/ACoAAACpVzwBrVubV-bqhicRnlsrd_xHrMvxck8
+                        - generic [ref=e630]: View David’s profile
+                        - img "David Strucke" [ref=e631]
+                      - generic [ref=e632]:
+                        - generic [ref=e633]:
+                          - link "David Strucke" [ref=e634] [cursor=pointer]:
+                            - /url: https://www.linkedin.com/in/ACoAAACpVzwBrVubV-bqhicRnlsrd_xHrMvxck8
+                            - generic [ref=e635]: David Strucke
+                          - img "LinkedIn Verified" [ref=e636]
+                        - time [ref=e638]: • 11:23 PM
+                      - paragraph [ref=e642]:
+                        - text: "Hi Oded, thanks for your reply! To clarify: our platform helps teams ingest, normalize, enrich, and move social and web data at scale. Datastreamer turns what can take weeks of engineering effort into minutes, letting your team focus on high-value product work instead of building and maintaining pipelines."
+                        - text: Given your projects, I’d suggest a short call to see if Datastreamer could simplify any of your workflows, or I can first send a quick video for more context.
+                  - listitem [ref=e643]:
+                    - time [ref=e644]: Tuesday
+                    - generic [ref=e645]: Oded Ben-Yair sent the following message at 4:47 AM
+                    - generic [ref=e646]:
+                      - link "View Oded’s profile Oded Ben-Yair" [ref=e647] [cursor=pointer]:
+                        - /url: https://www.linkedin.com/in/ACoAABEJXkIBpHRsj0zFy126tNlNuHKxpGElSpQ
+                        - generic [ref=e648]: View Oded’s profile
+                        - img "Oded Ben-Yair" [ref=e649]
+                      - generic [ref=e650]:
+                        - generic [ref=e651]:
+                          - link "Oded Ben-Yair" [ref=e652] [cursor=pointer]:
+                            - /url: https://www.linkedin.com/in/ACoAABEJXkIBpHRsj0zFy126tNlNuHKxpGElSpQ
+                            - generic [ref=e653]: Oded Ben-Yair
+                          - img "LinkedIn Verified" [ref=e654]
+                        - time [ref=e656]: • 4:47 AM
+                      - paragraph [ref=e660]: Quick video be great, tnx
+                  - listitem [ref=e661]:
+                    - time [ref=e662]: Thursday
+                    - generic [ref=e663]: David Strucke sent the following messages at 3:53 PM
+                    - generic [ref=e664]:
+                      - link "View David’s profile David Strucke" [ref=e665] [cursor=pointer]:
+                        - /url: https://www.linkedin.com/in/ACoAAACpVzwBrVubV-bqhicRnlsrd_xHrMvxck8
+                        - generic [ref=e666]: View David’s profile
+                        - img "David Strucke" [ref=e667]
+                      - generic [ref=e668]:
+                        - generic [ref=e669]:
+                          - link "David Strucke" [ref=e670] [cursor=pointer]:
+                            - /url: https://www.linkedin.com/in/ACoAAACpVzwBrVubV-bqhicRnlsrd_xHrMvxck8
+                            - generic [ref=e671]: David Strucke
+                          - img "LinkedIn Verified" [ref=e672]
+                        - time [ref=e674]: • 3:53 PM
+                      - paragraph [ref=e678]:
+                        - text: "Sure! Here is a quick video highlighting the latest updates to our platform and how it helps teams in your field accelerate social and web data workflows:"
+                        - link "https://www.youtube.com/watch?v=p5QrdEt2ptg" [ref=e679] [cursor=pointer]:
+                          - /url: https://www.youtube.com/watch?v=p5QrdEt2ptg
+                        - text: If you share any specific challenges or gaps you’ve noticed in your current workflow, I can either ask my team to record a 2-minute demo tailored to your needs, or we can jump on a quick call to walk through it together.
+                      - generic [ref=e684]:
+                        - generic [ref=e686]:
+                          - link "What's new in data pipelines (September 2025)":
+                            - /url: https://www.youtube.com/watch?v=p5QrdEt2ptg
+                            - generic "What's new in data pipelines (September 2025)" [ref=e688] [cursor=pointer]:
+                              - generic [ref=e689]: What's new in data pipelines (September 2025)
+                        - link [ref=e691] [cursor=pointer]:
+                          - /url: https://www.youtube.com/watch?v=p5QrdEt2ptg
+                          - article [ref=e692]:
+                            - generic [ref=e693]: What's new in data pipelines (September 2025)
+                            - generic [ref=e694]: youtube.com
+                    - img "Seen by David Strucke at 3:53 PM." [ref=e696]
+                  - listitem [ref=e697]
+                  - listitem [ref=e698]:
+                    - generic [ref=e699]:
+                      - button "Scroll quick replies left" [disabled] [ref=e700]:
+                        - img
+                        - generic: Scroll quick replies left
+                      - list [ref=e701]:
+                        - listitem [ref=e702]:
+                          - button "Reply to conversation with “No, thanks”" [ref=e703] [cursor=pointer]:
+                            - generic [ref=e704]: Reply to conversation with “No, thanks”
+                            - generic: No, thanks
+                        - listitem [ref=e705]:
+                          - button "Reply to conversation with “No, thank you”" [ref=e706] [cursor=pointer]:
+                            - generic [ref=e707]: Reply to conversation with “No, thank you”
+                            - generic: No, thank you
+                        - listitem [ref=e708]:
+                          - button "Reply to conversation with “Thanks”" [ref=e709] [cursor=pointer]:
+                            - generic [ref=e710]: Reply to conversation with “Thanks”
+                            - generic: Thanks
+                      - button "Scroll quick replies right" [ref=e711] [cursor=pointer]:
+                        - img [ref=e712]
+                        - generic [ref=e714]: Scroll quick replies right
+                  - listitem
+                - generic [ref=e715]:
+                  - generic [ref=e716]:
+                    - generic [ref=e718]:
+                      - textbox "Write a message…" [ref=e719]:
+                        - paragraph [ref=e720]
+                      - text: Write a message…
+                    - button "Maximize compose field" [ref=e722] [cursor=pointer]:
+                      - img [ref=e723]
+                      - generic [ref=e725]: Maximize compose field
+                  - generic [ref=e726]:
+                    - generic [ref=e727]:
+                      - button "Attach an image to your conversation with David Strucke" [ref=e729] [cursor=pointer]:
+                        - img [ref=e730]
+                        - generic [ref=e732]: Attach an image to your conversation with David Strucke
+                      - button "Attach a file to your conversation with David Strucke" [ref=e734] [cursor=pointer]:
+                        - img [ref=e735]
+                        - generic [ref=e737]: Attach a file to your conversation with David Strucke
+                      - button "Open GIF Keyboard" [ref=e739] [cursor=pointer]:
+                        - img [ref=e740]
+                        - generic [ref=e742]: Open GIF Keyboard
+                      - button "Open Emoji Keyboard" [ref=e745] [cursor=pointer]:
+                        - generic:
+                          - img
+                        - generic [ref=e746]: Open Emoji Keyboard
+                    - generic [ref=e747]:
+                      - button "Send" [disabled] [ref=e749]
+                      - button "Open send options" [ref=e752] [cursor=pointer]:
+                        - img [ref=e753]
+                        - generic [ref=e755]: Open send options
+        - complementary "AI-powered assistant to get help with your career, jobs etc"
+  - region [ref=e756]

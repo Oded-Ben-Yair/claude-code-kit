@@ -1,0 +1,195 @@
+- generic [ref=e1]:
+  - generic:
+    - region "Toast message":
+      - heading "0 notifications total" [level=2] [ref=e3]
+      - alert
+  - region [ref=e15]
+  - generic [ref=e16]:
+    - generic [ref=e116]:
+      - button "Skip to search" [ref=e117] [cursor=pointer]:
+        - generic [ref=e118]: Skip to search
+      - button "Skip to main content" [ref=e119] [cursor=pointer]:
+        - generic [ref=e120]: Skip to main content
+      - button "Keyboard shortcuts" [ref=e121] [cursor=pointer]:
+        - generic [ref=e122]: Keyboard shortcuts
+      - button "Close jump menu" [ref=e123] [cursor=pointer]:
+        - img [ref=e124]
+        - generic [ref=e126]: Close jump menu
+    - banner "Global Navigation" [ref=e127]:
+      - generic [ref=e128]:
+        - link "LinkedIn" [ref=e129] [cursor=pointer]:
+          - /url: https://www.linkedin.com/feed/?nis=true
+          - img "LinkedIn" [ref=e132]:
+            - img [ref=e133]
+        - generic [ref=e137]:
+          - combobox "Search" [ref=e138]: Shai Shlomai
+          - generic:
+            - img
+        - navigation "Primary Navigation" [ref=e139]:
+          - list [ref=e140]:
+            - listitem [ref=e141]:
+              - link "new feed updates notifications Home" [ref=e142] [cursor=pointer]:
+                - /url: https://www.linkedin.com/feed/?nis=true&
+                - generic [ref=e143]:
+                  - generic [ref=e146]: new feed updates notifications
+                  - img [ref=e150]
+                - generic "Home" [ref=e152]
+            - listitem [ref=e153]:
+              - link "My Network" [ref=e154] [cursor=pointer]:
+                - /url: https://www.linkedin.com/mynetwork/?
+                - img [ref=e158]
+                - generic "My Network" [ref=e160]
+            - listitem [ref=e161]:
+              - link "Jobs" [ref=e162] [cursor=pointer]:
+                - /url: https://www.linkedin.com/jobs/?
+                - img [ref=e166]
+                - generic "Jobs" [ref=e168]
+            - listitem [ref=e169]:
+              - link "Messaging" [ref=e170] [cursor=pointer]:
+                - /url: https://www.linkedin.com/messaging/?
+                - img [ref=e174]
+                - generic "Messaging" [ref=e176]
+            - listitem [ref=e177]:
+              - link "Notifications" [ref=e178] [cursor=pointer]:
+                - /url: https://www.linkedin.com/notifications/?
+                - img [ref=e182]
+                - generic "Notifications" [ref=e184]
+            - listitem [ref=e185]:
+              - button "Oded Ben-Yair Me" [ref=e187] [cursor=pointer]:
+                - img "Oded Ben-Yair" [ref=e188]
+                - generic [ref=e189]:
+                  - text: Me
+                  - img [ref=e190]
+            - listitem [ref=e192]:
+              - button "For Business" [ref=e194] [cursor=pointer]:
+                - img [ref=e198]
+                - generic "For Business" [ref=e200]:
+                  - text: For Business
+                  - img [ref=e201]
+            - listitem [ref=e203]:
+              - 'link "Reactivate Premium: 50% Off" [ref=e205] [cursor=pointer]':
+                - /url: http://www.linkedin.com/premium/redeem/?_ed=0_bvLJH59RTSY-u5c6PMUa4IW0M54p9mxZpuVkfRvTl7r&upsellOrderOrigin=Tracking%3Av1%3Apremium_nav_upsell_text_winback%3ANav%3AIn-Product&referenceId=ZsIbMYnvTRK1K6DD9%2BjqBw%3D%3D&customKey=wb_c&redeemTypeV2=DISCOUNT&destRedirectURL=https%3A%2F%2Fwww.linkedin.com%2Fsearch%2Fresults%2Fpeople%2F%3Fkeywords%3DShai%2520Shlomai%26network%3D%255B%2522F%2522%255D
+                - generic [ref=e207]: "Reactivate Premium: 50% Off"
+    - generic [ref=e208]:
+      - navigation "Search filters" [ref=e211]:
+        - list [ref=e212]:
+          - listitem [ref=e213]
+          - listitem [ref=e214]
+          - listitem [ref=e215]
+          - listitem [ref=e216]
+          - listitem [ref=e217]
+          - listitem [ref=e218]
+          - listitem [ref=e219]
+      - generic [ref=e220]:
+        - generic [ref=e221]:
+          - main [ref=e222]:
+            - heading "Search results for Shai Shlomai. There are 10 results. Currently on the page 1 of 1 search result page." [active] [level=1] [ref=e223]
+            - generic [ref=e225]:
+              - list [ref=e228]:
+                - listitem [ref=e229]:
+                  - generic [ref=e231]:
+                    - text: Did you mean
+                    - link "shai shlomi" [ref=e232] [cursor=pointer]:
+                      - /url: https://www.linkedin.com/search/results/people/?keywords=shai%20shlomi&origin=SPELL_CHECK_DID_YOU_MEAN&spellCorrectionEnabled=false
+                      - strong [ref=e233]: shai shlomi
+                    - text: "?"
+              - list [ref=e236]:
+                - listitem [ref=e237]:
+                  - generic [ref=e240] [cursor=pointer]:
+                    - link "Shai Shlomai" [ref=e243]:
+                      - /url: https://www.linkedin.com/in/shaishlomai?miniProfileUrn=urn%3Ali%3Afs_miniProfile%3AACoAABR-vs8BFR7dol1zqmLMPlszuaelwBcoYnQ
+                      - img "Shai Shlomai" [ref=e247]
+                    - generic [ref=e248]:
+                      - generic [ref=e249]:
+                        - generic [ref=e253]:
+                          - link "View Shai Shlomai’s profile" [ref=e254]:
+                            - /url: https://www.linkedin.com/in/shaishlomai?miniProfileUrn=urn%3Ali%3Afs_miniProfile%3AACoAABR-vs8BFR7dol1zqmLMPlszuaelwBcoYnQ
+                            - generic [ref=e255]:
+                              - generic [ref=e256]: Shai Shlomai
+                              - generic [ref=e257]: View Shai Shlomai’s profile
+                          - generic [ref=e259]:
+                            - button "Verified member" [ref=e261]:
+                              - img "Verified member" [ref=e264]
+                            - generic [ref=e266]:
+                              - generic [ref=e267]: • 1st
+                              - generic [ref=e268]: 1st degree connection
+                        - generic [ref=e269]: Senior Algorithm Engineer | Autonomous AI & LLM-based Agents | Production AI Systems | MS.c in Artificial Intelligence
+                        - generic [ref=e270]: Israel
+                      - generic [ref=e272]:
+                        - img [ref=e276]
+                        - generic [ref=e279]:
+                          - link "Nadya Lobak" [ref=e280]:
+                            - /url: https://www.linkedin.com/in/ACoAAADku84Brz327w7mJW6i3JZMz3sHoPtlaVI?miniProfileUrn=urn%3Ali%3Afs_miniProfile%3AACoAAADku84Brz327w7mJW6i3JZMz3sHoPtlaVI
+                            - strong [ref=e282]: Nadya Lobak
+                          - text: ","
+                          - link "🌻Nira Shaked" [ref=e283]:
+                            - /url: https://www.linkedin.com/in/ACoAAAEmJ4EBNKfnHpd9FJ-NtChJT2JNO8o30NI?miniProfileUrn=urn%3Ali%3Afs_miniProfile%3AACoAAAEmJ4EBNKfnHpd9FJ-NtChJT2JNO8o30NI
+                            - strong [ref=e285]: 🌻Nira Shaked
+                          - text: ", and"
+                          - link "11 other mutual connections" [ref=e286]:
+                            - /url: https://www.linkedin.com/search/results/people/?facetNetwork=%5B%22F%22%5D&facetConnectionOf=%5B%22ACoAABR-vs8BFR7dol1zqmLMPlszuaelwBcoYnQ%22%5D&origin=SHARED_CONNECTIONS_CANNED_SEARCH
+                            - strong [ref=e288]: 11 other mutual connections
+              - list [ref=e292]:
+                - listitem [ref=e293]:
+                  - generic [ref=e294]:
+                    - generic [ref=e295]:
+                      - paragraph [ref=e296]: Are these results helpful?
+                      - paragraph [ref=e297]: Your feedback helps us improve search results
+                    - generic [ref=e298]:
+                      - button "Are these results helpful? Yes, these search results are helpful" [ref=e299] [cursor=pointer]:
+                        - img [ref=e300]
+                      - button "Are these results helpful? No, these search results are not helpful" [ref=e303] [cursor=pointer]:
+                        - img [ref=e304]
+          - complementary "Search suggestions" [ref=e307]
+        - contentinfo [ref=e309]:
+          - generic [ref=e311]:
+            - generic [ref=e312]:
+              - navigation [ref=e313]:
+                - list
+              - generic [ref=e315]:
+                - list [ref=e316]:
+                  - listitem [ref=e317]:
+                    - img [ref=e318]
+                    - generic [ref=e319]:
+                      - link "Questions? Visit our Help Center." [ref=e320] [cursor=pointer]:
+                        - /url: https://www.linkedin.com/help/linkedin?trk=d_flagship3_search_srp_people
+                        - text: Questions?
+                      - paragraph [ref=e321]: Visit our Help Center.
+                  - listitem [ref=e322]:
+                    - img [ref=e323]
+                    - generic [ref=e324]:
+                      - link "Manage your account and privacy Go to your Settings." [ref=e325] [cursor=pointer]:
+                        - /url: https://www.linkedin.com/psettings/
+                        - text: Manage your account and privacy
+                      - paragraph [ref=e326]: Go to your Settings.
+                  - listitem [ref=e327]:
+                    - img [ref=e328]
+                    - generic [ref=e329]:
+                      - link "Recommendation transparency Learn more about Recommended Content." [ref=e330] [cursor=pointer]:
+                        - /url: https://www.linkedin.com/help/linkedin/answer/a1339724
+                        - text: Recommendation transparency
+                      - paragraph [ref=e331]: Learn more about Recommended Content.
+                - generic [ref=e332]:
+                  - generic [ref=e333]: Select Language
+                  - combobox "Select Language" [ref=e334]
+            - paragraph [ref=e335]: LinkedIn Corporation © 2026
+    - generic:
+      - generic:
+        - complementary:
+          - generic [ref=e337]:
+            - generic [ref=e339] [cursor=pointer]:
+              - img "Oded Ben-Yair" [ref=e341]
+              - button "You are on the messaging overlay. Press enter to open the list of conversations." [ref=e342]:
+                - generic [ref=e343]:
+                  - generic [ref=e344]: Messaging
+                  - generic [ref=e345]: You are on the messaging overlay. Press enter to open the list of conversations.
+            - generic [ref=e346]:
+              - button "Open messenger dropdown menu" [ref=e348] [cursor=pointer]:
+                - img "Open messenger dropdown menu" [ref=e349]
+              - button "Compose message" [ref=e351] [cursor=pointer]:
+                - img [ref=e352]
+                - generic [ref=e353]: Compose message
+              - button "You are on the messaging overlay. Press enter to open the list of conversations." [ref=e354] [cursor=pointer]:
+                - img [ref=e355]
+                - generic [ref=e356]: You are on the messaging overlay. Press enter to open the list of conversations.
+        - complementary "AI-powered assistant to get help with your career, jobs etc"

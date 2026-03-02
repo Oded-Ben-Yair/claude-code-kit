@@ -1,0 +1,10 @@
+[2026-02-03] DECISION: Guide v4.0→v4.1 — Glassmorphic aesthetic, trap 150+ BPM, 4-layer voice stack, boom finish CTA
+[2026-02-03] DECISION: Full glassmorphic (not hybrid Bloomberg) — frosted glass, neon accents, 3D depth, holographic
+[2026-02-03] DECISION: Prompt-only voice energy (no Voice Mirroring) — 4-layer stack approach
+[2026-02-03] DECISION: Guide v4.1→v4.2 — 2-PASS WORKFLOW mandatory. v4.1 proved HeyGen agent ignores complex quality specs
+[2026-02-03] DECISION: Avatar 40-50% screen time (was 25% max). Agent took "minimize" literally, hid avatar
+[2026-02-03] DECISION: Voice Mirroring now MANDATORY for hook+CTA (was optional backup). Voice Director metaphors in prompt are ignored
+[2026-02-03] DECISION: Simple music demand "FAST HIGH-ENERGY" replaces detailed BPM/genre specs (agent ignores those)
+[2026-02-03] DECISION: Single-sentence boom ending replaces multi-step sequence (agent can't parse complex sequences)
+[2026-02-03] DECISION: Per-scene Arabic enforcement + translation table (single global instruction insufficient)
+[2026-02-03] DECISION: Plan audio replacement workflow as fallback if music still slow after 2-pass

@@ -1,0 +1,351 @@
+- generic [active] [ref=e1]:
+  - generic:
+    - region "Toast message":
+      - heading "0 notifications total" [level=2] [ref=e3]
+      - alert
+  - region [ref=e4]
+  - generic [ref=e5]:
+    - generic [ref=e7]:
+      - button "Skip to search" [ref=e8] [cursor=pointer]:
+        - generic [ref=e9]: Skip to search
+      - button "Skip to main content" [ref=e10] [cursor=pointer]:
+        - generic [ref=e11]: Skip to main content
+      - button "Keyboard shortcuts" [ref=e12] [cursor=pointer]:
+        - generic [ref=e13]: Keyboard shortcuts
+      - button "Close jump menu" [ref=e14] [cursor=pointer]:
+        - img [ref=e15]
+        - generic [ref=e17]: Close jump menu
+    - banner "Global Navigation" [ref=e18]:
+      - generic [ref=e19]:
+        - link "LinkedIn" [ref=e20] [cursor=pointer]:
+          - /url: https://www.linkedin.com/feed/?nis=true
+          - img "LinkedIn" [ref=e23]:
+            - img [ref=e24]
+        - generic [ref=e28]:
+          - combobox "Search" [ref=e29]
+          - generic:
+            - img
+        - navigation "Primary Navigation" [ref=e30]:
+          - list [ref=e31]:
+            - listitem [ref=e32]:
+              - link "new feed updates notifications Home" [ref=e33] [cursor=pointer]:
+                - /url: https://www.linkedin.com/feed/?nis=true&
+                - generic [ref=e34]:
+                  - generic [ref=e37]: new feed updates notifications
+                  - img [ref=e41]
+                - generic "Home" [ref=e43]
+            - listitem [ref=e44]:
+              - link "My Network" [ref=e45] [cursor=pointer]:
+                - /url: https://www.linkedin.com/mynetwork/?
+                - img [ref=e49]
+                - generic "My Network" [ref=e51]
+            - listitem [ref=e52]:
+              - link "Jobs" [ref=e53] [cursor=pointer]:
+                - /url: https://www.linkedin.com/jobs/?
+                - img [ref=e57]
+                - generic "Jobs" [ref=e59]
+            - listitem [ref=e60]:
+              - link "Messaging" [ref=e61] [cursor=pointer]:
+                - /url: https://www.linkedin.com/messaging/?
+                - img [ref=e65]
+                - generic "Messaging" [ref=e67]
+            - listitem [ref=e68]:
+              - link "Notifications" [ref=e69] [cursor=pointer]:
+                - /url: https://www.linkedin.com/notifications/?
+                - img [ref=e73]
+                - generic "Notifications" [ref=e75]
+            - listitem [ref=e76]:
+              - button "Oded Ben-Yair Me" [ref=e78] [cursor=pointer]:
+                - img "Oded Ben-Yair" [ref=e79]
+                - generic [ref=e80]:
+                  - text: Me
+                  - img [ref=e81]
+            - listitem [ref=e83]:
+              - button "For Business" [ref=e85] [cursor=pointer]:
+                - img [ref=e89]
+                - generic "For Business" [ref=e91]:
+                  - text: For Business
+                  - img [ref=e92]
+            - listitem [ref=e94]:
+              - 'link "Reactivate Premium: 50% Off" [ref=e96] [cursor=pointer]':
+                - /url: http://www.linkedin.com/premium/redeem/?_ed=0_bvLJH59RTSY-u5c6PMUa4IW0M54p9mxZpuVkfRvTl7r&upsellOrderOrigin=Tracking%3Av1%3Apremium_nav_upsell_text_winback%3ANav%3AIn-Product&referenceId=Dz5GVMuNT1OD8rKpR3yknQ%3D%3D&customKey=wb_c&redeemTypeV2=DISCOUNT&destRedirectURL=https%3A%2F%2Fwww.linkedin.com%2Ffeed%2Fupdate%2Furn%3Ali%3Aactivity%3A7429438231991009280%2F
+                - generic [ref=e98]: "Reactivate Premium: 50% Off"
+    - generic [ref=e105]:
+      - complementary "User profile" [ref=e106]:
+        - generic [ref=e108]:
+          - generic [ref=e109]:
+            - link "Background photo of Oded Ben-Yair" [ref=e110] [cursor=pointer]:
+              - /url: /in/oded-ben-yair-ai/
+            - link "Photo of Oded Ben-Yair" [ref=e112] [cursor=pointer]:
+              - /url: /in/oded-ben-yair-ai/
+              - img "Photo of Oded Ben-Yair" [ref=e113]
+            - generic [ref=e114]:
+              - link "Oded Ben-Yair Founding AI Engineer | Multi-LLM Routing & Evaluation in Production | Voice AI · RAG | Azure + Python Tel Aviv-Yafo, Tel Aviv District" [ref=e115] [cursor=pointer]:
+                - /url: /in/oded-ben-yair-ai/
+                - generic [ref=e116]:
+                  - heading "Oded Ben-Yair" [level=3] [ref=e117]
+                  - img [ref=e121]
+                - paragraph [ref=e123]: Founding AI Engineer | Multi-LLM Routing & Evaluation in Production | Voice AI · RAG | Azure + Python
+                - paragraph [ref=e124]: Tel Aviv-Yafo, Tel Aviv District
+              - link "Be Z Online" [ref=e125] [cursor=pointer]:
+                - /url: /in/oded-ben-yair-ai/
+                - paragraph [ref=e126]:
+                  - generic [ref=e127]: Be Z Online
+          - 'link "Boost your career with Premium Reactivate Premium: 50% Off" [ref=e129] [cursor=pointer]':
+            - /url: http://www.linkedin.com/premium/redeem/?_ed=0_bvLJH59RTSY-u5c6PMUa4IW0M54p9mxZpuVkfRvTl7r&upsellOrderOrigin=Tracking%3Av1%3Apremium_homepage_identity_upsell_winback%3ANav%3AIn-Product&referenceId=j1F3R6rxRRa0%2FHjjVGAfYg%3D%3D&customKey=wb_c&redeemTypeV2=DISCOUNT&destRedirectURL=https%3A%2F%2Fwww.linkedin.com%2Ffeed%2Fupdate%2Furn%3Ali%3Aactivity%3A7429438231991009280%2F
+            - heading "Boost your career with Premium" [level=3] [ref=e130]
+            - generic [ref=e131]:
+              - img [ref=e132]
+              - generic [ref=e134]: "Reactivate Premium: 50% Off"
+          - list [ref=e138]:
+            - listitem [ref=e139]:
+              - link "Profile viewers 164" [ref=e140] [cursor=pointer]:
+                - /url: /me/profile-views/
+                - generic [ref=e141]:
+                  - generic [ref=e143]: Profile viewers
+                  - strong [ref=e146]: "164"
+            - listitem [ref=e147]:
+              - link "Post impressions 248" [ref=e148] [cursor=pointer]:
+                - /url: /analytics/creator/content/
+                - generic [ref=e149]:
+                  - generic [ref=e151]: Post impressions
+                  - strong [ref=e154]: "248"
+      - main "Feed detail update" [ref=e155]:
+        - heading "Feed detail update" [level=1] [ref=e156]
+        - generic "Update container" [ref=e157]:
+          - generic [ref=e158]:
+            - generic [ref=e159]:
+              - generic [ref=e160]: Promote this post to reach people who matter to you.
+              - link "Go to boost post page" [ref=e162] [cursor=pointer]:
+                - /url: https://www.linkedin.com/ad-beta/boost/campaigns/new/details?content=urn%3Ali%3Ashare%3A7429378144014475264&origin=memberPostDetails
+                - text: Boost
+            - article [ref=e165]:
+              - generic [ref=e167]:
+                - heading "Feed post" [level=2] [ref=e168]
+                - generic [ref=e169]:
+                  - generic [ref=e170]:
+                    - generic [ref=e172]:
+                      - link "View Oded Ben-Yair’s graphic link" [ref=e173] [cursor=pointer]:
+                        - /url: https://www.linkedin.com/in/oded-ben-yair-ai?miniProfileUrn=urn%3Ali%3Afsd_profile%3AACoAABEJXkIBpHRsj0zFy126tNlNuHKxpGElSpQ
+                        - img "View Oded Ben-Yair’s graphic link" [ref=e177]
+                      - generic [ref=e178]:
+                        - 'link "View: Oded Ben-Yair Verified • You Founding AI Engineer | Multi-LLM Routing &amp; Evaluation in Production | Voice AI · RAG | Azure + Python" [ref=e179] [cursor=pointer]':
+                          - /url: https://www.linkedin.com/in/oded-ben-yair-ai?miniProfileUrn=urn%3Ali%3Afsd_profile%3AACoAABEJXkIBpHRsj0zFy126tNlNuHKxpGElSpQ
+                          - generic [ref=e180]:
+                            - generic [ref=e182]:
+                              - generic [ref=e183]: Oded Ben-Yair
+                              - generic [ref=e184]: Oded Ben-Yair
+                            - generic [ref=e185]:
+                              - generic [ref=e186]:
+                                - img [ref=e187]
+                                - text: • You
+                              - generic [ref=e189]: Verified • You
+                          - generic [ref=e190]:
+                            - generic [ref=e191]: Founding AI Engineer | Multi-LLM Routing & Evaluation in Production | Voice AI · RAG | Azure + Python
+                            - generic [ref=e192]: Founding AI Engineer | Multi-LLM Routing & Evaluation in Production | Voice AI · RAG | Azure + Python
+                        - generic [ref=e193]:
+                          - generic [ref=e194]:
+                            - text: 4h •
+                            - img [ref=e197]
+                          - generic [ref=e199]: 4 hours ago • Visible to anyone on or off LinkedIn
+                    - button "Open control menu for post by Oded Ben-Yair" [ref=e202] [cursor=pointer]:
+                      - img [ref=e203]
+                  - generic [ref=e209]:
+                    - text: "months of shipping AI to production and the thing that surprised me most:"
+                    - text: the hard part isn't building the model. it's catching the 15% of cases where the model is confidently wrong.
+                    - text: we built confidence scoring, threshold gates, fallback chains. half our architecture exists just to handle "I don't know" gracefully.
+                    - text: everyone demos the 85% that works. nobody shows the engineering behind the 15% that doesn't.
+                  - generic [ref=e210]:
+                    - list [ref=e214]:
+                      - listitem [ref=e215]:
+                        - button "Matan Amir and 1 other" [ref=e216] [cursor=pointer]:
+                          - img "like" [ref=e217]
+                          - generic [ref=e218]:
+                            - generic [ref=e219]: "2"
+                            - generic [ref=e220]: Matan Amir and 1 other
+                      - listitem [ref=e221]:
+                        - list [ref=e222]:
+                          - listitem [ref=e223]:
+                            - button "1 comment on Oded Ben-Yair’s post" [ref=e224] [cursor=pointer]:
+                              - generic [ref=e225]: 1 comment
+                    - generic [ref=e226]:
+                      - heading "Reactions" [level=3] [ref=e227]
+                      - list "Reactions" [ref=e228]:
+                        - listitem [ref=e229]:
+                          - link "View Matan Amir’s graphic link, reacted with LIKE, graphic" [ref=e230] [cursor=pointer]:
+                            - /url: https://www.linkedin.com/in/ACoAADHQP4IBSpO247y7nKwTOduLARZ2Qox-wqU
+                            - generic [ref=e232]:
+                              - img "View Matan Amir’s graphic link" [ref=e235]
+                              - img "like" [ref=e236]
+                        - listitem [ref=e237]:
+                          - link "View Eliott Eccidio’s graphic link, reacted with LIKE, graphic" [ref=e238] [cursor=pointer]:
+                            - /url: https://www.linkedin.com/in/ACoAADe0brYBo9eAm0K2SX6wOH1QCvYVdgVO4Zw
+                            - generic [ref=e240]:
+                              - img "View Eliott Eccidio’s graphic link" [ref=e243]
+                              - img "like" [ref=e244]
+                    - generic [ref=e245]:
+                      - generic [ref=e246]:
+                        - button "React Like" [ref=e247] [cursor=pointer]:
+                          - generic [ref=e249]:
+                            - img [ref=e250]
+                            - generic [ref=e252]: Like
+                        - button "Open reactions menu":
+                          - img [ref=e254] [cursor=pointer]
+                      - button "Comment" [ref=e258] [cursor=pointer]:
+                        - img [ref=e259]
+                        - generic [ref=e261]: Comment
+                      - button "Repost" [ref=e264] [cursor=pointer]:
+                        - img [ref=e265]
+                        - generic [ref=e267]: Repost
+                      - button "Send in a private message" [ref=e270] [cursor=pointer]:
+                        - img [ref=e271]
+                        - generic [ref=e274]: Send
+                - generic [ref=e275]:
+                  - link "155 impressions View analytics" [ref=e277] [cursor=pointer]:
+                    - /url: /analytics/post-summary/urn:li:activity:7429438231991009280/
+                    - generic [ref=e278]:
+                      - generic [ref=e279]:
+                        - img [ref=e280]
+                        - strong [ref=e283]: 155 impressions
+                      - generic [ref=e284]: View analytics
+                  - generic [ref=e285]:
+                    - generic [ref=e287]:
+                      - img "Oded Ben-Yair" [ref=e289]
+                      - generic [ref=e292]:
+                        - generic [ref=e296]:
+                          - textbox "Text editor for creating content" [ref=e298]:
+                            - paragraph [ref=e299]
+                            - text: Add a comment…
+                          - generic [ref=e300]: Add a comment…
+                        - generic [ref=e302]:
+                          - button "Open Emoji Keyboard" [ref=e305] [cursor=pointer]:
+                            - img
+                            - generic [ref=e306]: Open Emoji Keyboard
+                          - button "Add a photo" [ref=e308] [cursor=pointer]:
+                            - img [ref=e309]
+                    - button "Current selected sort order is Most relevant" [ref=e314] [cursor=pointer]:
+                      - generic [ref=e315]: Current selected sort order is Most relevant
+                      - generic [ref=e316]:
+                        - text: Most relevant
+                        - img [ref=e317]
+                    - article [ref=e324]:
+                      - generic [ref=e325]:
+                        - generic [ref=e326]:
+                          - link "View Oded Ben-Yair’s graphic link" [ref=e327] [cursor=pointer]:
+                            - /url: https://www.linkedin.com/in/oded-ben-yair-ai
+                            - img "View Oded Ben-Yair’s graphic link" [ref=e330]
+                          - 'link "View: Oded Ben-Yair Author, Founding AI Engineer | Multi-LLM Routing &amp; Evaluation in Production | Voice AI · RAG | Azure + Python" [ref=e331] [cursor=pointer]':
+                            - /url: https://www.linkedin.com/in/oded-ben-yair-ai
+                            - heading "Oded Ben-Yair Author" [level=3] [ref=e332]:
+                              - generic [ref=e333]: Oded Ben-Yair
+                              - img [ref=e335]
+                              - generic [ref=e337]: Author
+                            - generic [ref=e338]: Founding AI Engineer | Multi-LLM Routing & Evaluation in Production | Voice AI · RAG | Azure + Python
+                        - generic [ref=e339]:
+                          - time [ref=e340]: 2h
+                          - button "Open options for Oded Ben-Yair’s comment" [ref=e343] [cursor=pointer]:
+                            - img "Open options for Oded Ben-Yair’s comment" [ref=e344]
+                      - generic [ref=e354]:
+                        - text: "if you're dealing with the same thing: what's your strategy when the model says \"I'm 94% confident\" and it's dead wrong? threshold tuning? human in the loop? still iterating on this."
+                        - link "hashtag ProductionML" [ref=e355] [cursor=pointer]:
+                          - /url: https://www.linkedin.com/search/results/all/?keywords=%23productionml&origin=HASH_TAG_FROM_FEED
+                          - generic [ref=e356]: hashtag
+                          - generic [ref=e357]: "#ProductionML"
+                        - link "hashtag MachineLearning" [ref=e358] [cursor=pointer]:
+                          - /url: https://www.linkedin.com/search/results/all/?keywords=%23machinelearning&origin=HASH_TAG_FROM_FEED
+                          - generic [ref=e359]: hashtag
+                          - generic [ref=e360]: "#MachineLearning"
+                      - generic [ref=e365]:
+                        - generic [ref=e367]:
+                          - button "React Like to Oded Ben-Yair’s comment" [ref=e368] [cursor=pointer]:
+                            - generic [ref=e371]: Like
+                          - button "Open reactions menu":
+                            - img [ref=e373] [cursor=pointer]
+                        - button "Reply to Oded Ben-Yair’s comment" [ref=e377] [cursor=pointer]:
+                          - generic [ref=e379]: Reply
+                        - generic [ref=e382]: 40 impressions
+      - complementary "Advertisement and similar pages" [ref=e383]:
+        - generic [ref=e385]:
+          - iframe [ref=e387]:
+            - main "Work With Us Container" [ref=f731e3]:
+              - generic [ref=f731e4]:
+                - img [ref=f731e6]
+                - img "Oded" [ref=f731e7]
+                - generic [ref=f731e8]:
+                  - paragraph [ref=f731e9]: Promoted
+                  - button "Ad Options" [ref=f731e10] [cursor=pointer]:
+                    - img [ref=f731e11]
+                    - generic [ref=f731e15]: Ad Options
+              - generic [ref=f731e16]:
+                - paragraph [ref=f731e18]: Oded, explore relevant opportunities with amp
+                - link "amp amp Software Development" [ref=f731e19] [cursor=pointer]:
+                  - /url: https://www.linkedin.com/li/tscp/sct?destinationUrl=http%3A%2F%2Fwww.linkedin.com%2Fcompany%2F75625119%2Flife&trackingEvent=%5B%7B%22eventInfo%22%3A%7B%22appId%22%3A%22com.linkedin.ads.rendering.d_web%22%2C%22eventName%22%3A%22SponsoredRightRailContentActionEvent%22%2C%22topicName%22%3A%22SponsoredRightRailContentActionEvent%22%7D%2C%22eventBody%22%3A%7B%22sponsoredEventHeader%22%3A%7B%22encryptedTrackingData%22%3A%22CwEAAAGca5o6weHPynaEtZ_8RjZTOjygXHWMGjMRkOT6ksRJxVAfIu_9SW97zQincTDMhKtKsONq1abgESP8y_rMRxUcqkQ67JoeZufsU0YgNVyy6XS-BUJ8_8b-YQ3ZIKv4pCwbW9UTsD6n9FPmdbiKS_gAVqpn13wV-ldz7NqpqN4d6C3JidEJLuhtlvMlrBpxHtbSMURVXEihlPFB-MbfGENoGnuGUe_oroRlA-zSEr8qoge4ahN9fVXGFp-VL_8EN2OXsoazZShGrnxHuaRMvD8vDlGdNZxKiXdTHjqh_990Bo2r_AjEbKLV25o1JhaagyYjhnic5mxBjYmFtoxMCic1mhSY-q2ND48illGvB4dTWdUhIURahqKYMmbN5pVJbDsOwMcRc1jxj2-JJ_ijOh8X038jK44w_ByY91_KeiIakA1UFcYGkTV7Yy6JhZ5J7-IyOP58WTjowOVSIWJQMAVix_eqWtOHpTbjkvA_tQ9bkV2S-R690SUivcYJhVxXLB9HmKpG0GYS99A0vXuLgnmD7tdooBGlnf6OCjqxBVNbhfkpNgdPIW9zVujGIYA_X23Id7cYTUDetbHPDq0VAeUjYX_db3ntD7u5DjzLTzLxTRX2t4cYhAat_SwKNiCVWUV2KHNmid0CT-d7I9ZhzaEWY4O_svjzMhrC9NZaI9sJbMJplFRZzinWIA3MHHFEE3IjYBaqEygAE2HaC9PaVIScYAWejE7fvWuvVlW_diS_x0Qw1w30kYGRdTYkZH89nRcK433aphoCAc-1Mx03CVjrOPr93ou71_ZxKRqPFgCpgxAcq_4b9QXUdlvy41g3h0hOzehAHQICbjJCv3ntQYHHNF9sxwetNfyefCLFnWTt-ZjNeBrVKesizw%22%7D%2C%22header%22%3A%7B%22pageInstance%22%3A%7B%22pageUrn%22%3A%22urn%3Ali%3Apage%3Ad_flagship3_detail_base%22%2C%22trackingId%22%3A%22a3080d51-f670-4085-ba9f-625fce95a604%22%7D%2C%22time%22%3A1771331795600%2C%22version%22%3A%220.0.0%22%7D%2C%22requestHeader%22%3A%7B%22pageKey%22%3A%22d_flagship3_detail_base%22%2C%22interfaceLocale%22%3A%22en-US%22%7D%7D%7D%5D&csrfToken=ajax%3A2872756275449100236
+                  - img "amp" [ref=f731e20]
+                  - generic [ref=f731e21]:
+                    - paragraph [ref=f731e22]: amp
+                    - paragraph [ref=f731e23]: Software Development
+                - link "Visit Life" [ref=f731e24] [cursor=pointer]:
+                  - /url: https://www.linkedin.com/li/tscp/sct?destinationUrl=http%3A%2F%2Fwww.linkedin.com%2Fcompany%2F75625119%2Flife&trackingEvent=%5B%7B%22eventInfo%22%3A%7B%22appId%22%3A%22com.linkedin.ads.rendering.d_web%22%2C%22eventName%22%3A%22SponsoredRightRailContentActionEvent%22%2C%22topicName%22%3A%22SponsoredRightRailContentActionEvent%22%7D%2C%22eventBody%22%3A%7B%22sponsoredEventHeader%22%3A%7B%22encryptedTrackingData%22%3A%22CwEAAAGca5o6wX1PEmXJ_Dfy68-x-q7QUM3nEC6Z6rg_S_rwJk-uZvKwnDP_7CDo6OehhA-XRItyjz7A2K8GNvrCTiNuJbNJhtjX7L2UJgcpia27n_LYjXclUFmlkRj_C6vHpHT5WhfTj4_Y1gFmSXqKAMvI1q5KzF2vyuDmume8STXiO8T4Hiod5woXQqMK0bZiE9YBIclK_jno-iDSi4CqDusmVqD_6fizGrW7csvLBuiZffnVH6Mg4MLjBgS3Rwmbd5Sp-cj9Zdog_1sI3dpoa8i_4pcePbYJpUYexseG9VUaYxmxDU5lln1ruLnKlGmpBNYfa0eKRB8B74tkz5xOXXw6sn1yyA7KciKYAFwwLEpIfV3IE_pu3gTg75LLWmgHi_qkgI0Bao3s1hzrzYo7D4e7RlLEnWsf6fPi-LlZSn2raX-eaZ5H7gk2GrhxCKddBzCI_kgooYfH1XUZM43cDAC0VDYoKIWHlKc0mVuXmrGSBceRroflWN57brZUITn4qJxCci3oYBw8EU4CmBTBP6AetpXTPil2c7kQ3KsELf0gA5vMEwIogIYtKj8IsQg8UCiQL8LrogpthsLe7-yIe_PyVtwtY1z1qEg5G-S0CFrkZVS3ExuGWykk6-wjZaCCZvc4RnCMqvEKGp33Bx_Ceg-VEVgDjzmBJFb0Wa_Ad8cuYo8RvJA9CofFniNfl_tZrDaymiZOrWNBOPUe59asXcc7tngO-UnhPhnLhKTLb98fAPmJXOmteEYBQj3vhfL36jhPRThGiiljQ5F4F4tIY046LUB1o2gNbVEuyU6uRbfA4b0dpyjhiWrscsijQThfQov2VweyjLzRg6Bv7PpO-T2PTX7FLTTSuZNE6ZRTxFW3Zpt84Ii8HGyiJg%22%7D%2C%22header%22%3A%7B%22pageInstance%22%3A%7B%22pageUrn%22%3A%22urn%3Ali%3Apage%3Ad_flagship3_detail_base%22%2C%22trackingId%22%3A%22cc170c91-0409-4c7c-a535-3bf101e71721%22%7D%2C%22time%22%3A1771331795600%2C%22version%22%3A%220.0.0%22%7D%2C%22requestHeader%22%3A%7B%22pageKey%22%3A%22d_flagship3_detail_base%22%2C%22interfaceLocale%22%3A%22en-US%22%7D%7D%7D%5D&csrfToken=ajax%3A2872756275449100236
+          - generic "LinkedIn Footer Content" [ref=e388]:
+            - generic [ref=e389]:
+              - list [ref=e390]:
+                - listitem [ref=e391]:
+                  - link "About" [ref=e392] [cursor=pointer]:
+                    - /url: https://about.linkedin.com/
+                    - generic [ref=e393]: About
+                - listitem [ref=e394]:
+                  - link "Accessibility" [ref=e395] [cursor=pointer]:
+                    - /url: https://www.linkedin.com/accessibility
+                    - generic [ref=e396]: Accessibility
+                - listitem [ref=e397]:
+                  - link "Help Center" [ref=e398] [cursor=pointer]:
+                    - /url: https://www.linkedin.com/help/linkedin?trk=footer_d_flagship3_detail_base
+                    - generic [ref=e399]: Help Center
+                - listitem [ref=e400]:
+                  - button "Privacy & Terms" [ref=e402] [cursor=pointer]:
+                    - generic [ref=e404]:
+                      - text: Privacy & Terms
+                      - img [ref=e405]
+                - listitem [ref=e407]:
+                  - link "Ad Choices" [ref=e408] [cursor=pointer]:
+                    - /url: https://www.linkedin.com/help/linkedin/answer/62931
+                    - generic [ref=e409]: Ad Choices
+                - listitem [ref=e410]:
+                  - link "Advertising" [ref=e411] [cursor=pointer]:
+                    - /url: https://www.linkedin.com/ad/start?trk=n_nav_ads_rr
+                    - generic [ref=e412]: Advertising
+                - listitem [ref=e413]:
+                  - button "Business Services" [ref=e415] [cursor=pointer]:
+                    - generic [ref=e417]:
+                      - text: Business Services
+                      - img [ref=e418]
+                - listitem [ref=e420]:
+                  - button "Get the LinkedIn app" [ref=e423] [cursor=pointer]
+                - listitem [ref=e424]:
+                  - button "More options" [ref=e425] [cursor=pointer]: More
+              - generic [ref=e426]:
+                - img "LinkedIn" [ref=e427]:
+                  - img [ref=e428]
+                - text: LinkedIn Corporation © 2026
+    - generic:
+      - generic:
+        - complementary:
+          - generic [ref=e431]:
+            - generic [ref=e433] [cursor=pointer]:
+              - generic [ref=e434]:
+                - img "Oded Ben-Yair" [ref=e435]
+                - generic [ref=e437]: Status is online
+              - button "You are on the messaging overlay. Press enter to open the list of conversations." [ref=e438]:
+                - generic [ref=e439]:
+                  - generic [ref=e440]: Messaging
+                  - generic [ref=e441]: You are on the messaging overlay. Press enter to open the list of conversations.
+            - generic [ref=e442]:
+              - button "Open messenger dropdown menu" [ref=e444] [cursor=pointer]:
+                - img "Open messenger dropdown menu" [ref=e445]
+              - button "Compose message" [ref=e448] [cursor=pointer]:
+                - img [ref=e449]
+                - generic [ref=e451]: Compose message
+              - button "You are on the messaging overlay. Press enter to open the list of conversations." [ref=e452] [cursor=pointer]:
+                - img [ref=e453]
+                - generic [ref=e455]: You are on the messaging overlay. Press enter to open the list of conversations.
+        - complementary "AI-powered assistant to get help with your career, jobs etc"

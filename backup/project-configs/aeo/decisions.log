@@ -1,0 +1,9 @@
+# AEO Platform - Architectural Decisions Log
+# Append-only. Format: [DATE] TYPE: Description
+
+[2026-02-06] DECISION: Frontend stays on Azure Static Web Apps, NOT Docker
+[2026-02-06] DECISION: Backend deploys via az acr build (no pipeline, DevOps repo deleted)
+[2026-02-06] DECISION: docker-compose.yml is backend-only, no frontend service
+[2026-02-06] FIX: Frontend redeployed to SWA with correct API URL after 17 days stale
+[2026-02-06] ARCHITECTURE: Three-way sync rule established - NEXT_PUBLIC_API_URL + CSP connect-src + CORS_ORIGINS must all reference the same backend URL
+[2026-02-06] ARCHITECTURE: Azure DevOps repo for AEO will be deleted. azure-pipelines.yml kept as template/reference only.

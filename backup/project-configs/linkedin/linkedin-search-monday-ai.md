@@ -1,0 +1,491 @@
+- generic [ref=e1]:
+  - generic:
+    - region "Toast message":
+      - heading "0 notifications total" [level=2] [ref=e3]
+      - alert
+  - region [ref=e15]
+  - generic [ref=e16]:
+    - generic [ref=e116]:
+      - button "Skip to search" [ref=e117] [cursor=pointer]:
+        - generic [ref=e118]: Skip to search
+      - button "Skip to main content" [ref=e119] [cursor=pointer]:
+        - generic [ref=e120]: Skip to main content
+      - button "Keyboard shortcuts" [ref=e121] [cursor=pointer]:
+        - generic [ref=e122]: Keyboard shortcuts
+      - button "Close jump menu" [ref=e123] [cursor=pointer]:
+        - img [ref=e124]
+        - generic [ref=e126]: Close jump menu
+    - banner "Global Navigation" [ref=e127]:
+      - generic [ref=e128]:
+        - link "LinkedIn" [ref=e129] [cursor=pointer]:
+          - /url: https://www.linkedin.com/feed/?nis=true
+          - img "LinkedIn" [ref=e132]:
+            - img [ref=e133]
+        - generic [ref=e137]:
+          - combobox "Search" [ref=e138]: monday.com AI
+          - generic:
+            - img
+        - navigation "Primary Navigation" [ref=e139]:
+          - list [ref=e140]:
+            - listitem [ref=e141]:
+              - link "new feed updates notifications Home" [ref=e142] [cursor=pointer]:
+                - /url: https://www.linkedin.com/feed/?nis=true&
+                - generic [ref=e143]:
+                  - generic [ref=e146]: new feed updates notifications
+                  - img [ref=e150]
+                - generic "Home" [ref=e152]
+            - listitem [ref=e153]:
+              - link "3 new network updates notifications My Network" [ref=e154] [cursor=pointer]:
+                - /url: https://www.linkedin.com/mynetwork/?
+                - generic [ref=e155]:
+                  - generic [ref=e156]:
+                    - generic [ref=e157]: "3"
+                    - generic [ref=e158]: 3 new network updates notifications
+                  - img [ref=e162]
+                - generic "My Network" [ref=e164]
+            - listitem [ref=e165]:
+              - link "Jobs" [ref=e166] [cursor=pointer]:
+                - /url: https://www.linkedin.com/jobs/?
+                - img [ref=e170]
+                - generic "Jobs" [ref=e172]
+            - listitem [ref=e173]:
+              - link "Messaging" [ref=e174] [cursor=pointer]:
+                - /url: https://www.linkedin.com/messaging/?
+                - img [ref=e178]
+                - generic "Messaging" [ref=e180]
+            - listitem [ref=e181]:
+              - link "Notifications" [ref=e182] [cursor=pointer]:
+                - /url: https://www.linkedin.com/notifications/?
+                - img [ref=e186]
+                - generic "Notifications" [ref=e188]
+            - listitem [ref=e189]:
+              - button "Oded Ben-Yair Me" [ref=e191] [cursor=pointer]:
+                - img "Oded Ben-Yair" [ref=e192]
+                - generic [ref=e193]:
+                  - text: Me
+                  - img [ref=e194]
+            - listitem [ref=e196]:
+              - button "For Business" [ref=e198] [cursor=pointer]:
+                - img [ref=e202]
+                - generic "For Business" [ref=e204]:
+                  - text: For Business
+                  - img [ref=e205]
+            - listitem [ref=e207]:
+              - 'link "Reactivate Premium: 50% Off" [ref=e209] [cursor=pointer]':
+                - /url: http://www.linkedin.com/premium/redeem/?_ed=0_bvLJH59RTSY-u5c6PMUa4IW0M54p9mxZpuVkfRvTl7r&upsellOrderOrigin=Tracking%3Av1%3Apremium_nav_upsell_text_winback%3ANav%3AIn-Product&referenceId=miLhqi%2FfTtejKUGvKgbZlg%3D%3D&customKey=wb_c&redeemTypeV2=DISCOUNT&destRedirectURL=https%3A%2F%2Fwww.linkedin.com%2Fsearch%2Fresults%2Fcontent%2F%3Fkeywords%3Dmonday.com%2520AI%26datePosted%3D%2522past-24h%2522%26origin%3DFACETED_SEARCH
+                - generic [ref=e211]: "Reactivate Premium: 50% Off"
+    - generic [ref=e212]:
+      - navigation "Search filters" [ref=e215]:
+        - generic [ref=e216]:
+          - list [ref=e217]:
+            - listitem [ref=e218]:
+              - 'button "Filter by: Posts" [ref=e220] [cursor=pointer]':
+                - text: Posts
+                - img [ref=e221]
+            - listitem [ref=e223]
+            - listitem [ref=e224]:
+              - button "Date posted filter. Past 24 hours filter is currently applied. Clicking this button displays all Date posted filter options." [ref=e227] [cursor=pointer]:
+                - text: Past 24 hours
+                - img [ref=e228]
+            - listitem [ref=e230]:
+              - button "Sort by filter. Clicking this button displays all Sort by filter options." [ref=e233] [cursor=pointer]:
+                - text: Sort by
+                - img [ref=e234]
+            - listitem [ref=e236]:
+              - button "Content type filter. Clicking this button displays all Content type filter options." [ref=e239] [cursor=pointer]:
+                - text: Content type
+                - img [ref=e240]
+            - listitem [ref=e242]:
+              - button "From member filter. Clicking this button displays all From member filter options." [ref=e245] [cursor=pointer]:
+                - text: From member
+                - img [ref=e246]
+          - generic [ref=e248]:
+            - button "Show all filters. Clicking this button displays all available filter options." [ref=e251] [cursor=pointer]: All filters
+            - button "Reset applied filters" [ref=e252] [cursor=pointer]:
+              - generic [ref=e253]: Reset
+      - generic [ref=e255]:
+        - main [ref=e256]:
+          - heading "Search results for monday.com AI. There are 3 results. Currently on the page 2 of 101 search result pages." [active] [level=1] [ref=e257]
+          - generic [ref=e260]:
+            - generic [ref=e261]:
+              - list [ref=e264]:
+                - listitem [ref=e265]:
+                  - generic [ref=e267]:
+                    - text: Did you mean
+                    - link "monday com au" [ref=e268] [cursor=pointer]:
+                      - /url: https://www.linkedin.com/search/results/content/?keywords=monday%20com%20au&origin=SPELL_CHECK_DID_YOU_MEAN&spellCorrectionEnabled=false
+                      - strong [ref=e269]: monday com au
+                    - text: "?"
+              - list [ref=e272]:
+                - listitem [ref=e273]:
+                  - article [ref=e277]:
+                    - generic [ref=e279]:
+                      - heading "Feed post" [level=2] [ref=e280]
+                      - generic [ref=e281]:
+                        - generic [ref=e282]:
+                          - generic [ref=e283]:
+                            - generic [ref=e284]:
+                              - link "View Hila Rabinovich’s graphic link" [ref=e285] [cursor=pointer]:
+                                - /url: https://www.linkedin.com/in/hila-rabinovich?miniProfileUrn=urn%3Ali%3Afsd_profile%3AACoAACgGuvIBG_PH5JNlOCw9I6xU8QlAgG-3Kb0
+                                - img "View Hila Rabinovich’s graphic link" [ref=e289]
+                              - generic [ref=e290]:
+                                - 'link "View: Hila Rabinovich Verified • 2nd Senior Knowledge Specialist &amp; Technical Support @ Lusha | Ex - HRBP" [ref=e291] [cursor=pointer]':
+                                  - /url: https://www.linkedin.com/in/hila-rabinovich?miniProfileUrn=urn%3Ali%3Afsd_profile%3AACoAACgGuvIBG_PH5JNlOCw9I6xU8QlAgG-3Kb0
+                                  - generic [ref=e292]:
+                                    - generic [ref=e294]:
+                                      - generic [ref=e295]: Hila Rabinovich
+                                      - generic [ref=e296]: Hila Rabinovich
+                                    - generic [ref=e297]:
+                                      - generic [ref=e298]:
+                                        - img [ref=e299]
+                                        - text: • 2nd
+                                      - generic [ref=e301]: Verified • 2nd
+                                  - generic [ref=e302]:
+                                    - generic [ref=e303]: Senior Knowledge Specialist & Technical Support @ Lusha | Ex - HRBP
+                                    - generic [ref=e304]: Senior Knowledge Specialist & Technical Support @ Lusha | Ex - HRBP
+                                - generic [ref=e305]:
+                                  - generic [ref=e306]:
+                                    - text: 1h •
+                                    - img [ref=e309]
+                                  - generic [ref=e311]: 1 hour ago • Visible to anyone on or off LinkedIn
+                            - button "Follow Hila Rabinovich" [ref=e312] [cursor=pointer]:
+                              - img [ref=e313]
+                              - generic [ref=e315]: Follow
+                          - button "Open control menu for post by Hila Rabinovich" [ref=e318] [cursor=pointer]:
+                            - img [ref=e319]
+                        - generic [ref=e321]:
+                          - generic [ref=e322]:
+                            - generic [ref=e325]:
+                              - text: אחרי הפסקה יפה ומכובדת (אימהות בקהל יש פה? אין כמו הטייטל הזה) חוזרת לטייטל אחר ולתפקיד סופר דופר מעניין שכולל את כל מה שאני אוהבת
+                              - text: יאללה AI and Knowledge Manager! נעליים גדולות שלא נעלו לפניי
+                              - text: מרגש ומשמח 🤩
+                            - button "see more, visually reveals content which is already detected by screen readers" [ref=e326] [cursor=pointer]:
+                              - generic [ref=e327]: …more
+                          - button "Show translation" [ref=e330] [cursor=pointer]:
+                            - generic [ref=e331]: Show translation
+                        - generic [ref=e332]:
+                          - button "Activate link to view larger image." [ref=e335] [cursor=pointer]
+                          - generic [ref=e336]: Starting a New Position
+                        - generic [ref=e337]:
+                          - list [ref=e341]:
+                            - listitem [ref=e342]:
+                              - button "Shir Gazit Tietz and 36 others" [ref=e343] [cursor=pointer]:
+                                - img "like" [ref=e344]
+                                - img "celebrate" [ref=e345]
+                                - generic [ref=e346]:
+                                  - generic [ref=e347]: "37"
+                                  - generic [ref=e348]: Shir Gazit Tietz and 36 others
+                            - listitem [ref=e349]:
+                              - list [ref=e350]:
+                                - listitem [ref=e351]:
+                                  - button "5 comments on Hila Rabinovich’s post" [ref=e352] [cursor=pointer]:
+                                    - generic [ref=e353]: 5 comments
+                          - generic [ref=e354]:
+                            - generic [ref=e355]:
+                              - button "React Like" [ref=e356] [cursor=pointer]:
+                                - generic [ref=e358]:
+                                  - img [ref=e359]
+                                  - generic [ref=e361]: Like
+                              - button "Open reactions menu":
+                                - img [ref=e363] [cursor=pointer]
+                            - button "Comment" [ref=e367] [cursor=pointer]:
+                              - img [ref=e368]
+                              - generic [ref=e370]: Comment
+                            - button "Repost" [ref=e373] [cursor=pointer]:
+                              - img [ref=e374]
+                              - generic [ref=e376]: Repost
+                            - button "Send in a private message" [ref=e379] [cursor=pointer]:
+                              - img [ref=e380]
+                              - generic [ref=e383]: Send
+                - listitem [ref=e384]:
+                  - article [ref=e388]:
+                    - generic [ref=e390]:
+                      - heading "Feed post" [level=2] [ref=e391]
+                      - generic [ref=e392]:
+                        - generic [ref=e393]:
+                          - generic [ref=e394]:
+                            - generic [ref=e395]:
+                              - link "View Alisher Bektassov’s open to work graphic link" [ref=e396] [cursor=pointer]:
+                                - /url: https://www.linkedin.com/in/alisherbekt2005?miniProfileUrn=urn%3Ali%3Afsd_profile%3AACoAAExy_aUBrQXnINpBePYQMGDvTnAwZhrRkEw
+                                - img "View Alisher Bektassov’s open to work graphic link" [ref=e400]
+                              - generic [ref=e401]:
+                                - 'link "View: Alisher Bektassov Premium • 3rd+ --" [ref=e402] [cursor=pointer]':
+                                  - /url: https://www.linkedin.com/in/alisherbekt2005?miniProfileUrn=urn%3Ali%3Afsd_profile%3AACoAAExy_aUBrQXnINpBePYQMGDvTnAwZhrRkEw
+                                  - generic [ref=e403]:
+                                    - generic [ref=e405]:
+                                      - generic [ref=e406]: Alisher Bektassov
+                                      - generic [ref=e407]: Alisher Bektassov
+                                    - generic [ref=e408]:
+                                      - generic [ref=e409]:
+                                        - img [ref=e410]:
+                                          - img [ref=e411]
+                                        - text: • 3rd+
+                                      - generic [ref=e413]: Premium • 3rd+
+                                  - generic [ref=e414]:
+                                    - generic [ref=e415]: "--"
+                                    - generic [ref=e416]: "--"
+                                - generic [ref=e417]:
+                                  - generic [ref=e418]:
+                                    - text: 22h •
+                                    - img [ref=e421]
+                                  - generic [ref=e423]: 22 hours ago • Visible to anyone on or off LinkedIn
+                            - button "Follow Alisher Bektassov" [ref=e424] [cursor=pointer]:
+                              - img [ref=e425]
+                              - generic [ref=e427]: Follow
+                          - button "Open control menu for post by Alisher Bektassov" [ref=e430] [cursor=pointer]:
+                            - img [ref=e431]
+                        - generic [ref=e433]:
+                          - generic [ref=e434]:
+                            - generic [ref=e437]:
+                              - text: Здравствуйте. Я ищу стажировку и буду признателен вам за помощь. Если вам известно о карьерных возможностях или если вы просто хотите пообщаться, отправьте мне сообщение или оставьте комментарий ниже. Мне бы хотелось возобновить связь.
+                              - link "hashtag OpenToWork" [ref=e438] [cursor=pointer]:
+                                - /url: https://www.linkedin.com/search/results/all/?keywords=%23opentowork&origin=HASH_TAG_FROM_FEED
+                                - generic [ref=e439]: hashtag
+                                - generic [ref=e440]: "#OpenToWork"
+                              - text: "Обо мне и о том, что я ищу:"
+                              - text: "💼 Я ищу работу на следующие должности: AI Engineer intern"
+                              - text: "🌎 Меня интересуют вакансии в следующих регионах: Astana."
+                              - text: "⭐ Ранее я работал(а) в компаниях: BI Innovations."
+                            - button "see more, visually reveals content which is already detected by screen readers" [ref=e441] [cursor=pointer]:
+                              - generic [ref=e442]: …more
+                          - button "Show translation" [ref=e445] [cursor=pointer]:
+                            - generic [ref=e446]: Show translation
+                        - link "View the open to work details of Alisher" [ref=e448] [cursor=pointer]:
+                          - /url: https://www.linkedin.com/in/alisherbekt2005/opportunities/job-opportunities/details?profileUrn=urn%3Ali%3Afsd_profile%3AACoAAExy_aUBrQXnINpBePYQMGDvTnAwZhrRkEw
+                          - figure [ref=e450]
+                          - generic [ref=e451]:
+                            - link "View the open to work details of Alisher" [ref=e452]:
+                              - /url: https://www.linkedin.com/in/alisherbekt2005/opportunities/job-opportunities/details?profileUrn=urn%3Ali%3Afsd_profile%3AACoAAExy_aUBrQXnINpBePYQMGDvTnAwZhrRkEw
+                            - generic [ref=e455]: Alisher is open to work
+                            - generic [ref=e456]: Looking for Artificial Intelligence Engineer roles
+                            - link "View the open to work details of Alisher" [ref=e457]:
+                              - /url: https://www.linkedin.com/in/alisherbekt2005/opportunities/job-opportunities/details?profileUrn=urn%3Ali%3Afsd_profile%3AACoAAExy_aUBrQXnINpBePYQMGDvTnAwZhrRkEw
+                              - generic [ref=e458]: View job preferences
+                        - generic [ref=e459]:
+                          - list [ref=e463]:
+                            - listitem [ref=e464]:
+                              - button "4 reactions" [ref=e465] [cursor=pointer]:
+                                - img "like" [ref=e466]
+                                - generic [ref=e467]: "4"
+                          - generic [ref=e468]:
+                            - generic [ref=e469]:
+                              - button "React Like" [ref=e470] [cursor=pointer]:
+                                - generic [ref=e472]:
+                                  - img [ref=e473]
+                                  - generic [ref=e475]: Like
+                              - button "Open reactions menu":
+                                - img [ref=e477] [cursor=pointer]
+                            - button "Comment" [ref=e481] [cursor=pointer]:
+                              - img [ref=e482]
+                              - generic [ref=e484]: Comment
+                            - button "Repost" [ref=e487] [cursor=pointer]:
+                              - img [ref=e488]
+                              - generic [ref=e490]: Repost
+                            - button "Send in a private message" [ref=e493] [cursor=pointer]:
+                              - img [ref=e494]
+                              - generic [ref=e497]: Send
+                - listitem [ref=e498]:
+                  - article [ref=e502]:
+                    - generic [ref=e504]:
+                      - heading "Feed post" [level=2] [ref=e505]
+                      - generic [ref=e506]:
+                        - generic [ref=e507]:
+                          - generic [ref=e508]:
+                            - generic [ref=e509]:
+                              - link "View Abanoub Hany’s graphic link" [ref=e510] [cursor=pointer]:
+                                - /url: https://www.linkedin.com/in/abanoub-hany-232678202?miniProfileUrn=urn%3Ali%3Afsd_profile%3AACoAADO2VkYBTuRttbSXzq_88x5rcuzvjVybXFY
+                                - img "View Abanoub Hany’s graphic link" [ref=e514]
+                              - generic [ref=e515]:
+                                - 'link "View: Abanoub Hany 3rd+ Senior Software Engineer | Manager At PRO EXTRA TECHNOLOGY" [ref=e516] [cursor=pointer]':
+                                  - /url: https://www.linkedin.com/in/abanoub-hany-232678202?miniProfileUrn=urn%3Ali%3Afsd_profile%3AACoAADO2VkYBTuRttbSXzq_88x5rcuzvjVybXFY
+                                  - generic [ref=e517]:
+                                    - generic [ref=e519]:
+                                      - generic [ref=e520]: Abanoub Hany
+                                      - generic [ref=e521]: Abanoub Hany
+                                    - generic [ref=e522]:
+                                      - generic [ref=e523]: • 3rd+
+                                      - generic [ref=e524]: 3rd+
+                                  - generic [ref=e525]:
+                                    - generic [ref=e526]: Senior Software Engineer | Manager At PRO EXTRA TECHNOLOGY
+                                    - generic [ref=e527]: Senior Software Engineer | Manager At PRO EXTRA TECHNOLOGY
+                                - generic [ref=e528]:
+                                  - generic [ref=e529]:
+                                    - text: 17h •
+                                    - img [ref=e532]
+                                  - generic [ref=e534]: 17 hours ago • Visible to anyone on or off LinkedIn
+                            - button "Follow Abanoub Hany" [ref=e535] [cursor=pointer]:
+                              - img [ref=e536]
+                              - generic [ref=e538]: Follow
+                          - button "Open control menu for post by Abanoub Hany" [ref=e541] [cursor=pointer]:
+                            - img [ref=e542]
+                        - generic [ref=e544]:
+                          - generic [ref=e545]:
+                            - generic [ref=e548]:
+                              - text: "🤖 الـ AI بقى جزء من يومنا كمطورين، بس السؤال: بتشتغل معاه إزاي؟"
+                              - text: في ناس بتفتح الـ AI من أول الصبح وتفضل معاه طول اليوم.
+                              - text: وفي ناس بتشتغل deep work لوحدها وبتستخدم AI في مهام محددة بس.
+                              - text: "وفي ناس بتبدّل: ساعة AI، ساعة focus."
+                              - text: أنا لاحظت إن الاستخدام المستمر بيخليني dependent على الـ suggestions، لكن في نفس الوقت الـ productivity بتزيد.
+                              - text: "السؤال: إيه أسلوبك في الشغل مع AI tools?"
+                              - link "hashtag SoftwareEngineering" [ref=e549] [cursor=pointer]:
+                                - /url: https://www.linkedin.com/search/results/all/?keywords=%23softwareengineering&origin=HASH_TAG_FROM_FEED
+                                - generic [ref=e550]: hashtag
+                                - generic [ref=e551]: "#SoftwareEngineering"
+                              - link "hashtag AI" [ref=e552] [cursor=pointer]:
+                                - /url: https://www.linkedin.com/search/results/all/?keywords=%23ai&origin=HASH_TAG_FROM_FEED
+                                - generic [ref=e553]: hashtag
+                                - generic [ref=e554]: "#AI"
+                              - link "hashtag DeveloperProductivity" [ref=e555] [cursor=pointer]:
+                                - /url: https://www.linkedin.com/search/results/all/?keywords=%23developerproductivity&origin=HASH_TAG_FROM_FEED
+                                - generic [ref=e556]: hashtag
+                                - generic [ref=e557]: "#DeveloperProductivity"
+                              - link "hashtag Programming" [ref=e558] [cursor=pointer]:
+                                - /url: https://www.linkedin.com/search/results/all/?keywords=%23programming&origin=HASH_TAG_FROM_FEED
+                                - generic [ref=e559]: hashtag
+                                - generic [ref=e560]: "#Programming"
+                            - button "see more, visually reveals content which is already detected by screen readers" [ref=e561] [cursor=pointer]:
+                              - generic [ref=e562]: …more
+                          - button "Show translation" [ref=e565] [cursor=pointer]:
+                            - generic [ref=e566]: Show translation
+                        - generic [ref=e567]:
+                          - generic [ref=e568]:
+                            - heading "أسلوبك في الشغل مع AI؟" [level=3] [ref=e570]
+                            - generic [ref=e571]:
+                              - text: The author can see how you vote.
+                              - link "Learn more" [ref=e572] [cursor=pointer]:
+                                - /url: https://www.linkedin.com/help/linkedin/answer/119171?lang=en
+                          - generic [ref=e574]:
+                            - radiogroup "أسلوبك في الشغل مع AI؟" [ref=e575]:
+                              - generic [ref=e576]: أسلوبك في الشغل مع AI؟
+                              - radio "🔥 AI شغال معايا 24/7" [ref=e579] [cursor=pointer]:
+                                - generic [ref=e581]: 🔥 AI شغال معايا 24/7
+                              - radio "🎯 Deep work + AI لمهام محددة" [ref=e584] [cursor=pointer]:
+                                - generic [ref=e586]: 🎯 Deep work + AI لمهام محددة
+                              - radio "🔄 بتبدّل حسب المهمة" [ref=e589] [cursor=pointer]:
+                                - generic [ref=e591]: 🔄 بتبدّل حسب المهمة
+                              - radio "❌ بحاول أقلل استخدامه" [ref=e594] [cursor=pointer]:
+                                - generic [ref=e596]: ❌ بحاول أقلل استخدامه
+                            - generic [ref=e597]:
+                              - paragraph [ref=e598]: 3 votes
+                              - generic [ref=e599]: •
+                              - paragraph [ref=e600]:
+                                - generic [ref=e601]: 2d left
+                                - generic [ref=e602]: 2 days left
+                        - generic [ref=e604]:
+                          - generic [ref=e605]:
+                            - button "React Like" [ref=e606] [cursor=pointer]:
+                              - generic [ref=e608]:
+                                - img [ref=e609]
+                                - generic [ref=e611]: Like
+                            - button "Open reactions menu":
+                              - img [ref=e613] [cursor=pointer]
+                          - button "Comment" [ref=e617] [cursor=pointer]:
+                            - img [ref=e618]
+                            - generic [ref=e620]: Comment
+                          - button "Repost" [ref=e623] [cursor=pointer]:
+                            - img [ref=e624]
+                            - generic [ref=e626]: Repost
+                          - button "Send in a private message" [ref=e629] [cursor=pointer]:
+                            - img [ref=e630]
+                            - generic [ref=e633]: Send
+              - list [ref=e636]:
+                - listitem [ref=e637]:
+                  - generic [ref=e638]:
+                    - generic [ref=e639]:
+                      - paragraph [ref=e640]: Are these results helpful?
+                      - paragraph [ref=e641]: Your feedback helps us improve search results
+                    - generic [ref=e642]:
+                      - button "Are these results helpful? Yes, these search results are helpful" [ref=e643] [cursor=pointer]:
+                        - img [ref=e644]
+                      - button "Are these results helpful? No, these search results are not helpful" [ref=e647] [cursor=pointer]:
+                        - img [ref=e648]
+              - list [ref=e653]:
+                - listitem [ref=e654]
+                - listitem [ref=e656]
+                - listitem [ref=e658]
+            - button "Show more results" [ref=e662] [cursor=pointer]:
+              - generic [ref=e663]: Show more results
+        - complementary "Search suggestions" [ref=e664]:
+          - generic [ref=e666]:
+            - iframe [ref=e669]:
+              - generic [ref=f277e2]:
+                - generic [ref=f277e3]: Ad
+                - img "overflow-web-small" [ref=f277e6] [cursor=pointer]
+                - link "LinkedIn for Sales" [ref=f277e10] [cursor=pointer]:
+                  - /url: https://www.linkedin.com/li/tscp/sct?destinationUrl=https%3A%2F%2Fwww.linkedin.com%2Fpremium%2Fredeem-v3%2F%3F_ed%3DCwEAAAFvqlyO6M8Q8oNzsFrJnllsOwTEGqdDSfAhW7Ib5vG3e7kEqBnLM6TDzYIfB6J8I4WlA-U%26planType%3Dsales%26redeemType%3DWINBACK%26src%3Dli-dynamic%26trk%3Demea_EN_DA_V7_202507_Winback%26mcid%3D7356257989898514436%26li_fat_id%3D34ecfcb1-cf0f-41a6-a049-e2743088b29e&trackingEvent=%5B%7B%22eventInfo%22%3A%7B%22appId%22%3A%22com.linkedin.ads.rendering.d_web%22%2C%22eventName%22%3A%22SponsoredRightRailContentActionEvent%22%2C%22topicName%22%3A%22SponsoredRightRailContentActionEvent%22%7D%2C%22eventBody%22%3A%7B%22sponsoredEventHeader%22%3A%7B%22encryptedTrackingData%22%3A%22CwEAAAGcayD7vENu57vHzQWI2StGfJ_jTFRI3uTc_5r4VNMEwtchfk32lT1xVc8k7-zbHs4VF0042pJEYfE5a_OZwIGa1iTSt-jLIvkMuuJzwEu3tEooRLjGohN1Ny6uul94V_Z-eKa7Ul2HFKupTX7M8WkHiNI3ni-kcTZiaIFRg9sSu_nDug9oERNMzVZDYOWiezpE1oWQwlVKyilu_90mnPoOoVfZJUlcAzXcpI5CytgN7HuqQ3CZXJXUisGnk6MV6WHYPblQ2X4cwvUL2GIztdBO_HSwZJ93Sxz5dKQk9KC6lupWQkQmxJY0eE7A9Yd_AtM095Q8TPknPTLjZBNJF8ie0M610NSWLZ3zOZJ358WC-on5rVNc4R0C3ncazGQJ0uA6bdLZIEmUKHAIr9zVkZ_wG6M3XbLeCKy1jbwv_cj3OsW2RyDtkmNWcbQHBLJR09HZ0Hp15pHrbSN_REWwGkLVXeoTxodJLRTegk3vPrlJVEiPL9tPIlkBWc3G88eC4ZSNHgZIJCcwA_jjCpGjfm9TULILyrX3hj-Ylu7TNdnhZR0W3PGUgZ_uTrc09EQDT6ZdNwHCQqu2oztVSwfpfMkLbiJZFTBVTRpv0KhOMV2BjHv7ihCjXhxwXO5FQejAy_ouYr73E81jCNunLx4x5K8u32R7SpmqYVebMSNbc0JrAgjUf9hBUBotTc0yJSd5nXeU_Cn3BnEAj69mlOctHJc5QHXO3vZwl6Rf5TnSFv7kd5p8aVpafhhrSJ-YJEhiz8CQ_-UwCp-fsxU9KiSWar7zzZgahMb_1m0F0dsdhmj7C3JIymm2_hV3zpnK-VfDTTOaHNv20uWFgCc7l-tDeZ75fnTiOYVjIErJIRQia9I6fMvBHXV29Gao2HNx5r_xXQ_LpUqXuuY0wPSrQJs24_1So8X2qpaDPSrvpdee59h8f1Az2jC60MWLNBeBD6aEaTujBEzbp5cS2QWdhkYdoAx6ZAyEEdlhSJ6TCpjtVGzdQuSB4q4V5GmU2-nhY_EIfYLszQFArmslPUxgixAwvWA8ZENyDOo94de82PP8RZJP90GdxyZomEyeqiv4LtXG78qhvl_hIqSNCS9xOfPNQ0sSDAZY59BJuiKI%22%7D%2C%22header%22%3A%7B%22pageInstance%22%3A%7B%22pageUrn%22%3A%22urn%3Ali%3Apage%3Ad_flagship3_search_srp_content%22%2C%22trackingId%22%3A%229df74f58-473c-4727-bad1-8af4b727a2df%22%7D%2C%22time%22%3A1771323849605%2C%22version%22%3A%220.0.0%22%7D%2C%22requestHeader%22%3A%7B%22pageKey%22%3A%22d_flagship3_search_srp_content%22%2C%22interfaceLocale%22%3A%22en-US%22%7D%7D%7D%5D&csrfToken=ajax%3A2872756275449100236
+                - generic [ref=f277e11]:
+                  - heading "Oded, enjoy 50% off 2 months of Sales Navigator!" [level=2] [ref=f277e14]
+                  - generic [ref=f277e16]:
+                    - img "Oded" [ref=f277e17]
+                    - generic [ref=f277e18]:
+                      - link "LinkedIn for Sales" [ref=f277e19] [cursor=pointer]:
+                        - /url: https://www.linkedin.com/li/tscp/sct?destinationUrl=https%3A%2F%2Fwww.linkedin.com%2Fpremium%2Fredeem-v3%2F%3F_ed%3DCwEAAAFvqlyO6M8Q8oNzsFrJnllsOwTEGqdDSfAhW7Ib5vG3e7kEqBnLM6TDzYIfB6J8I4WlA-U%26planType%3Dsales%26redeemType%3DWINBACK%26src%3Dli-dynamic%26trk%3Demea_EN_DA_V7_202507_Winback%26mcid%3D7356257989898514436%26li_fat_id%3D34ecfcb1-cf0f-41a6-a049-e2743088b29e&trackingEvent=%5B%7B%22eventInfo%22%3A%7B%22appId%22%3A%22com.linkedin.ads.rendering.d_web%22%2C%22eventName%22%3A%22SponsoredRightRailContentActionEvent%22%2C%22topicName%22%3A%22SponsoredRightRailContentActionEvent%22%7D%2C%22eventBody%22%3A%7B%22sponsoredEventHeader%22%3A%7B%22encryptedTrackingData%22%3A%22CwEAAAGcayD7vENu57vHzQWI2StGfJ_jTFRI3uTc_5r4VNMEwtchfk32lT1xVc8k7-zbHs4VF0042pJEYfE5a_OZwIGa1iTSt-jLIvkMuuJzwEu3tEooRLjGohN1Ny6uul94V_Z-eKa7Ul2HFKupTX7M8WkHiNI3ni-kcTZiaIFRg9sSu_nDug9oERNMzVZDYOWiezpE1oWQwlVKyilu_90mnPoOoVfZJUlcAzXcpI5CytgN7HuqQ3CZXJXUisGnk6MV6WHYPblQ2X4cwvUL2GIztdBO_HSwZJ93Sxz5dKQk9KC6lupWQkQmxJY0eE7A9Yd_AtM095Q8TPknPTLjZBNJF8ie0M610NSWLZ3zOZJ358WC-on5rVNc4R0C3ncazGQJ0uA6bdLZIEmUKHAIr9zVkZ_wG6M3XbLeCKy1jbwv_cj3OsW2RyDtkmNWcbQHBLJR09HZ0Hp15pHrbSN_REWwGkLVXeoTxodJLRTegk3vPrlJVEiPL9tPIlkBWc3G88eC4ZSNHgZIJCcwA_jjCpGjfm9TULILyrX3hj-Ylu7TNdnhZR0W3PGUgZ_uTrc09EQDT6ZdNwHCQqu2oztVSwfpfMkLbiJZFTBVTRpv0KhOMV2BjHv7ihCjXhxwXO5FQejAy_ouYr73E81jCNunLx4x5K8u32R7SpmqYVebMSNbc0JrAgjUf9hBUBotTc0yJSd5nXeU_Cn3BnEAj69mlOctHJc5QHXO3vZwl6Rf5TnSFv7kd5p8aVpafhhrSJ-YJEhiz8CQ_-UwCp-fsxU9KiSWar7zzZgahMb_1m0F0dsdhmj7C3JIymm2_hV3zpnK-VfDTTOaHNv20uWFgCc7l-tDeZ75fnTiOYVjIErJIRQia9I6fMvBHXV29Gao2HNx5r_xXQ_LpUqXuuY0wPSrQJs24_1So8X2qpaDPSrvpdee59h8f1Az2jC60MWLNBeBD6aEaTujBEzbp5cS2QWdhkYdoAx6ZAyEEdlhSJ6TCpjtVGzdQuSB4q4V5GmU2-nhY_EIfYLszQFArmslPUxgixAwvWA8ZENyDOo94de82PP8RZJP90GdxyZomEyeqiv4LtXG78qhvl_hIqSNCS9xOfPNQ0sSDAZY59BJuiKI%22%7D%2C%22header%22%3A%7B%22pageInstance%22%3A%7B%22pageUrn%22%3A%22urn%3Ali%3Apage%3Ad_flagship3_search_srp_content%22%2C%22trackingId%22%3A%229df74f58-473c-4727-bad1-8af4b727a2df%22%7D%2C%22time%22%3A1771323849605%2C%22version%22%3A%220.0.0%22%7D%2C%22requestHeader%22%3A%7B%22pageKey%22%3A%22d_flagship3_search_srp_content%22%2C%22interfaceLocale%22%3A%22en-US%22%7D%7D%7D%5D&csrfToken=ajax%3A2872756275449100236
+                        - img "LinkedIn for Sales" [ref=f277e20]
+                      - tooltip "LinkedIn for Sales" [ref=f277e21]
+                  - generic [ref=f277e22]:
+                    - heading "Connect insights directly to your pipeline." [level=2] [ref=f277e25]
+                    - link "Get 50% off now" [ref=f277e27] [cursor=pointer]:
+                      - /url: https://www.linkedin.com/li/tscp/sct?destinationUrl=https%3A%2F%2Fwww.linkedin.com%2Fpremium%2Fredeem-v3%2F%3F_ed%3DCwEAAAFvqlyO6M8Q8oNzsFrJnllsOwTEGqdDSfAhW7Ib5vG3e7kEqBnLM6TDzYIfB6J8I4WlA-U%26planType%3Dsales%26redeemType%3DWINBACK%26src%3Dli-dynamic%26trk%3Demea_EN_DA_V7_202507_Winback%26mcid%3D7356257989898514436%26li_fat_id%3D34ecfcb1-cf0f-41a6-a049-e2743088b29e&trackingEvent=%5B%7B%22eventInfo%22%3A%7B%22appId%22%3A%22com.linkedin.ads.rendering.d_web%22%2C%22eventName%22%3A%22SponsoredRightRailContentActionEvent%22%2C%22topicName%22%3A%22SponsoredRightRailContentActionEvent%22%7D%2C%22eventBody%22%3A%7B%22sponsoredEventHeader%22%3A%7B%22encryptedTrackingData%22%3A%22CwEAAAGcayD7vENu57vHzQWI2StGfJ_jTFRI3uTc_5r4VNMEwtchfk32lT1xVc8k7-zbHs4VF0042pJEYfE5a_OZwIGa1iTSt-jLIvkMuuJzwEu3tEooRLjGohN1Ny6uul94V_Z-eKa7Ul2HFKupTX7M8WkHiNI3ni-kcTZiaIFRg9sSu_nDug9oERNMzVZDYOWiezpE1oWQwlVKyilu_90mnPoOoVfZJUlcAzXcpI5CytgN7HuqQ3CZXJXUisGnk6MV6WHYPblQ2X4cwvUL2GIztdBO_HSwZJ93Sxz5dKQk9KC6lupWQkQmxJY0eE7A9Yd_AtM095Q8TPknPTLjZBNJF8ie0M610NSWLZ3zOZJ358WC-on5rVNc4R0C3ncazGQJ0uA6bdLZIEmUKHAIr9zVkZ_wG6M3XbLeCKy1jbwv_cj3OsW2RyDtkmNWcbQHBLJR09HZ0Hp15pHrbSN_REWwGkLVXeoTxodJLRTegk3vPrlJVEiPL9tPIlkBWc3G88eC4ZSNHgZIJCcwA_jjCpGjfm9TULILyrX3hj-Ylu7TNdnhZR0W3PGUgZ_uTrc09EQDT6ZdNwHCQqu2oztVSwfpfMkLbiJZFTBVTRpv0KhOMV2BjHv7ihCjXhxwXO5FQejAy_ouYr73E81jCNunLx4x5K8u32R7SpmqYVebMSNbc0JrAgjUf9hBUBotTc0yJSd5nXeU_Cn3BnEAj69mlOctHJc5QHXO3vZwl6Rf5TnSFv7kd5p8aVpafhhrSJ-YJEhiz8CQ_-UwCp-fsxU9KiSWar7zzZgahMb_1m0F0dsdhmj7C3JIymm2_hV3zpnK-VfDTTOaHNv20uWFgCc7l-tDeZ75fnTiOYVjIErJIRQia9I6fMvBHXV29Gao2HNx5r_xXQ_LpUqXuuY0wPSrQJs24_1So8X2qpaDPSrvpdee59h8f1Az2jC60MWLNBeBD6aEaTujBEzbp5cS2QWdhkYdoAx6ZAyEEdlhSJ6TCpjtVGzdQuSB4q4V5GmU2-nhY_EIfYLszQFArmslPUxgixAwvWA8ZENyDOo94de82PP8RZJP90GdxyZomEyeqiv4LtXG78qhvl_hIqSNCS9xOfPNQ0sSDAZY59BJuiKI%22%7D%2C%22header%22%3A%7B%22pageInstance%22%3A%7B%22pageUrn%22%3A%22urn%3Ali%3Apage%3Ad_flagship3_search_srp_content%22%2C%22trackingId%22%3A%229df74f58-473c-4727-bad1-8af4b727a2df%22%7D%2C%22time%22%3A1771323849605%2C%22version%22%3A%220.0.0%22%7D%2C%22requestHeader%22%3A%7B%22pageKey%22%3A%22d_flagship3_search_srp_content%22%2C%22interfaceLocale%22%3A%22en-US%22%7D%7D%7D%5D&csrfToken=ajax%3A2872756275449100236
+            - generic "LinkedIn Footer Content" [ref=e670]:
+              - generic [ref=e671]:
+                - list [ref=e672]:
+                  - listitem [ref=e673]:
+                    - link "About" [ref=e674] [cursor=pointer]:
+                      - /url: https://about.linkedin.com/
+                      - generic [ref=e675]: About
+                  - listitem [ref=e676]:
+                    - link "Accessibility" [ref=e677] [cursor=pointer]:
+                      - /url: https://www.linkedin.com/accessibility
+                      - generic [ref=e678]: Accessibility
+                  - listitem [ref=e679]:
+                    - link "Help Center" [ref=e680] [cursor=pointer]:
+                      - /url: https://www.linkedin.com/help/linkedin?trk=footer_d_flagship3_search_srp_content
+                      - generic [ref=e681]: Help Center
+                  - listitem [ref=e682]:
+                    - button "Privacy & Terms" [ref=e684] [cursor=pointer]:
+                      - generic [ref=e686]:
+                        - text: Privacy & Terms
+                        - img [ref=e687]
+                  - listitem [ref=e689]:
+                    - link "Ad Choices" [ref=e690] [cursor=pointer]:
+                      - /url: https://www.linkedin.com/help/linkedin/answer/62931
+                      - generic [ref=e691]: Ad Choices
+                  - listitem [ref=e692]:
+                    - link "Advertising" [ref=e693] [cursor=pointer]:
+                      - /url: https://www.linkedin.com/ad/start?trk=n_nav_ads_rr
+                      - generic [ref=e694]: Advertising
+                  - listitem [ref=e695]:
+                    - button "Business Services" [ref=e697] [cursor=pointer]:
+                      - generic [ref=e699]:
+                        - text: Business Services
+                        - img [ref=e700]
+                  - listitem [ref=e702]:
+                    - button "Get the LinkedIn app" [ref=e705] [cursor=pointer]
+                  - listitem [ref=e706]:
+                    - button "More options" [ref=e707] [cursor=pointer]: More
+                - generic [ref=e708]:
+                  - img "LinkedIn" [ref=e709]:
+                    - img [ref=e710]
+                  - text: LinkedIn Corporation © 2026
+    - generic:
+      - generic:
+        - complementary:
+          - generic [ref=e713]:
+            - generic [ref=e715] [cursor=pointer]:
+              - generic [ref=e716]:
+                - img "Oded Ben-Yair" [ref=e717]
+                - generic [ref=e719]: Status is online
+              - button "You are on the messaging overlay. Press enter to open the list of conversations." [ref=e720]:
+                - generic [ref=e721]:
+                  - generic [ref=e722]: Messaging
+                  - generic [ref=e723]: You are on the messaging overlay. Press enter to open the list of conversations.
+            - generic [ref=e724]:
+              - button "Open messenger dropdown menu" [ref=e726] [cursor=pointer]:
+                - img "Open messenger dropdown menu" [ref=e727]
+              - button "Compose message" [ref=e730] [cursor=pointer]:
+                - img [ref=e731]
+                - generic [ref=e733]: Compose message
+              - button "You are on the messaging overlay. Press enter to open the list of conversations." [ref=e734] [cursor=pointer]:
+                - img [ref=e735]
+                - generic [ref=e737]: You are on the messaging overlay. Press enter to open the list of conversations.
+        - complementary "AI-powered assistant to get help with your career, jobs etc"

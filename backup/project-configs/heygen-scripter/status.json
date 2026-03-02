@@ -1,0 +1,124 @@
+{
+  "$schema": "Project status tracking for Claude Code sessions",
+  "version": "1.0",
+  "project": {
+    "name": "heygen-scripter",
+    "path": "/home/odedbe/projects/heygen-scripter",
+    "database": "",
+    "production": false,
+    "lastUpdated": "2026-02-03T13:02:29+00:00"
+  },
+  "currentState": {
+    "summary": "Guide v4.1 COMPLETE — 24 commandments. Glassmorphic Trading Terminal aesthetic. Video #4 feedback incorporated. Videos #1 v2 and #2 v3 rewritten on v4.1 template. AWAITING USER FEEDBACK on v4.1 prompts tested in HeyGen.",
+    "branch": "none",
+    "lastCommit": "none",
+    "testsPass": true,
+    "buildStatus": "n/a"
+  },
+  "blockers": [],
+  "inProgress": [
+    {
+      "id": "task-1",
+      "description": "Build HeyGen Video Agent prompts for 72 Arabic finance videos",
+      "startedAt": "2026-02-02T13:30:00+00:00",
+      "files": ["HEYGEN_VIDEO_AGENT_GUIDE.md", "prompts/video-01-why-invest.md"],
+      "notes": "Guide v4.1 COMPLETE with 24 commandments. Video #4 tested and feedback incorporated. Videos #1 v2 and #2 v3 rewritten on v4.1 glassmorphic template. Awaiting user feedback on v4.1 outputs."
+    }
+  ],
+  "nextSteps": [
+    {
+      "priority": 1,
+      "description": "AWAIT user feedback on Video #1 v2 and Video #2 v3 tested in HeyGen — compare v4.1 vs v4.0 results",
+      "estimatedComplexity": "moderate",
+      "dependencies": []
+    },
+    {
+      "priority": 2,
+      "description": "Apply v4.1/v4.2 learnings and batch-produce prompts for remaining videos",
+      "estimatedComplexity": "complex",
+      "dependencies": ["task-1"]
+    }
+  ],
+  "recentDecisions": [
+    {
+      "date": "2026-02-03",
+      "decision": "v4.0 MAJOR PIVOT: Professional Trading Terminal replaces Hypnotic Purple & Gold",
+      "rationale": "Production feedback: purple/gold looked childlike, not professional. Bloomberg aesthetic = trust. Pre-made Avatar IV = better lip-sync. Voice Director = dynamic tonation.",
+      "alternatives": ["Keep v3.0 Hypnotic Purple & Gold style"],
+      "reversible": true
+    },
+    {
+      "date": "2026-02-03",
+      "decision": "Color palette: Navy #1a3a52 (50-60%), Green #2d9d4a (20-30%), Gold #d4af37 (10-15% accent)",
+      "rationale": "Bloomberg-inspired. Navy=trust, Green=growth+Islamic finance, Gold=premium accent. Red banned. Purple banned as primary.",
+      "alternatives": [],
+      "reversible": false
+    },
+    {
+      "date": "2026-02-03",
+      "decision": "Pre-made Avatar IV (Professional tab) replaces custom avatars",
+      "rationale": "Avatar IV has superior cross-language lip-sync (175+ languages), micro-expressions. Natural language description, no avatar_id.",
+      "alternatives": ["Custom avatar upload"],
+      "reversible": true
+    },
+    {
+      "date": "2026-02-03",
+      "decision": "Voice Director + Voice Mirroring for dynamic tonation (HeyGen does NOT support SSML)",
+      "rationale": "Per-scene emotion control: Excited, Calm, Serious, Urgent. Soccer-announcer energy at peaks, whispering for secrets.",
+      "alternatives": [],
+      "reversible": false
+    },
+    {
+      "date": "2026-02-03",
+      "decision": "CTA tunnel structure: Hook→Problem→Solution→Tension→CTA at peak desire",
+      "rationale": "Video funnels toward CTA moment. Green button + gold accent. Arabic identity-affirming language.",
+      "alternatives": ["CTA at end only"],
+      "reversible": true
+    }
+  ],
+  "patterns": {
+    "established": [
+      "One sentence = One scene (1-3s pacing)",
+      "Pre-made Avatar IV: 2-3s flash shots (30-40% max screen time)",
+      "Navy #1a3a52 + Green #2d9d4a + Gold #d4af37 accent, NEVER red, NEVER purple as primary",
+      "Bloomberg Trading Terminal aesthetic — professional data viz, animated candlesticks",
+      "CTA: Green button + gold accent, tunnel structure (Hook→Problem→Solution→Tension→CTA)",
+      "60-70% B-roll / 30-40% A-roll ratio",
+      "Smooth flowing transitions — NO hard cuts, NO crossfades, NO silence between scenes",
+      "9 sentences = 9 scenes = ~30 seconds",
+      "Trading-specific asset language: candlestick formation, data stream, trading dashboard",
+      "Voice Director per-scene: Excited/Calm/Serious/Urgent/Whisper",
+      "3-layer audio: voiceover (0dB) + music (-12dB continuous) + SFX (-10dB)",
+      "Explicit ban on emoji/clipart/flat2D in every prompt",
+      "Every frame has continuous motion — nothing static",
+      "Charts = animated candlesticks with green/white candles on dark navy",
+      "ZERO English on screen — numbers in Arabic digits too",
+      "Avatar = platform limitation (medium shot only), vary overlays",
+      "Duration cap + NO silence gaps + trim dead air",
+      "CTA = 5-6s dedicated scene, avatar finishes before ending",
+      "Voice Mirroring option for peak emotion lines",
+      "Brand colors ONLY even for negative concepts — charcoal/navy for negatives"
+    ],
+    "toAvoid": [
+      "Purple as primary color — childlike, gaming aesthetic",
+      "Neon anything — unprofessional, not trust-building",
+      "Red color anywhere — loss/danger/stop in finance",
+      "Glossy/holographic/shiny effects — unprofessional",
+      "Monotone voice — must vary emotion per scene via Voice Director",
+      "Hard cuts between scenes — use flowing transitions",
+      "Silence between scenes — continuous audio flow",
+      "English text on screen — ALL text must be Arabic",
+      "Flat 2D charts — must be animated candlesticks on dark backgrounds",
+      "Generic avatar camera terms — HeyGen ignores these",
+      "CTA scene under 5s — avatar speech gets cut off",
+      "Static B-roll — every frame needs motion",
+      "Flash cuts language — HeyGen interprets as hard cuts",
+      "Custom avatar upload — pre-made Avatar IV has better lip-sync"
+    ]
+  },
+  "sessionNotes": {
+    "lastSessionId": "heygen-scripter-session-20260203-969ea2",
+    "lastSessionDate": "2026-02-03",
+    "carryoverNotes": "Guide v4.1 COMPLETE — 24 commandments. Video #4 feedback incorporated (6 problems solved). Videos #1 v2 and #2 v3 rewritten on v4.1 glassmorphic template. P0: AWAIT USER FEEDBACK on v4.1 prompts. Do NOT start new work until feedback arrives."
+  }
+}

@@ -1,0 +1,461 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "azure-compliance-rules",
+  "title": "Azure Compliance Rules Configuration",
+  "version": "1.0.0",
+  "lastUpdated": "2026-02-22",
+  "naming": {
+    "pattern": "^(COMP|func|app|swa|db|sa|vnet|acr|kv)-[a-zA-Z0-9-]+-(DEV|STAGING|PROD|dev|staging|prod)$",
+    "sysadmin_naming_note": "Sysadmin uses COMP- prefix with UPPERCASE env (e.g., COMP-SEEKAPAAITRAININGAPI-PROD). Our lowercase func-/app- also accepted.",
+    "separator": "-",
+    "case": "lowercase",
+    "type_map": {
+      "func": "Azure Function App",
+      "app": "App Service / Web App",
+      "swa": "Static Web App",
+      "db": "Database",
+      "sa": "Storage Account",
+      "vnet": "Virtual Network",
+      "acr": "Container Registry",
+      "kv": "Key Vault"
+    },
+    "environments": ["dev", "staging", "prod"]
+  },
+  "tags": {
+    "required": ["Brand", "Project", "Environment"],
+    "brand_values": {
+      "Seekapa": ["qc-analyzer", "cs-agents", "training", "compliance-exam", "phone-spam-checker", "qc-telephony", "realtime-monitor", "sales-agents"],
+      "Sentimark": ["sentimark", "automation-fabric"]
+    },
+    "environment_values": ["dev", "staging", "prod"]
+  },
+  "shared_resources": {
+    "resource_group": "AZAI_group",
+    "resource_group_sysadmin_name": "Az-ai",
+    "resource_group_note": "Sysadmin doc says Az-ai but actual Azure RG is AZAI_group — clarify with sysadmin",
+    "region": "swedencentral",
+    "storage_account": "stsentimarkv2",
+    "app_service_plan": "ASP-AZAIPROJECTS",
+    "postgresql_server": "aiprojects-company-postsql.postgres.database.azure.com",
+    "postgresql_server_old": "postgres-seekapatraining-prod.postgres.database.azure.com",
+    "postgresql_note": "Sysadmin changed from postgres-seekapatraining-prod to aiprojects-company-postsql (2026-02-23). DB migration pending.",
+    "key_vault": "kv-seekapa-apps",
+    "container_registry": "sentimarkregistry.azurecr.io",
+    "subscription": "U-BTech - CSP (Z-Online)",
+    "devops_org": "https://dev.azure.com/Corp-domain",
+    "devops_project": "Corp-AI"
+  },
+  "projects": [
+    {
+      "id": "sentimark",
+      "name": "Sentimark",
+      "brand": "Sentimark",
+      "path": "~/projects/sentimark/",
+      "repo": "sentimark",
+      "database": "polymarket_analyzer",
+      "resources": {
+        "current": {
+          "function_app": "polymarket-analyzer",
+          "frontend": "sentimark-v2-frontend",
+          "swa": null,
+          "container_registry": "sentimarkregistry"
+        },
+        "target": {
+          "function_app": "func-sentimark-prod",
+          "frontend": "app-sentimark-prod",
+          "swa": null,
+          "container_registry": "sentimarkregistry"
+        }
+      },
+      "compliance_status": "non-compliant"
+    },
+    {
+      "id": "qc-analyzer",
+      "name": "QC Analyzer",
+      "brand": "Seekapa",
+      "path": "~/projects/qc-call-analyzer/",
+      "repo": "qc-call-analyzer",
+      "database": "qc_analyzer",
+      "resources": {
+        "current": {
+          "function_app": "qc-call-analyzer-func",
+          "frontend": null,
+          "swa": "icy-coast-0265d5310",
+          "container_registry": null
+        },
+        "target": {
+          "function_app": "func-qc-analyzer-prod",
+          "frontend": null,
+          "swa": "swa-qc-analyzer-prod",
+          "container_registry": null
+        }
+      },
+      "compliance_status": "non-compliant"
+    },
+    {
+      "id": "cs-agents",
+      "name": "CS Agents",
+      "brand": "Seekapa",
+      "path": "~/projects/axia-seekapa-cs-agents/",
+      "repo": "axia-seekapa-cs-agents",
+      "database": "axia_seekapa_chatbot",
+      "resources": {
+        "current": {
+          "function_app": "TBD",
+          "frontend": null,
+          "swa": null,
+          "container_registry": null
+        },
+        "target": {
+          "function_app": "func-cs-agents-dev",
+          "frontend": null,
+          "swa": null,
+          "container_registry": null
+        }
+      },
+      "compliance_status": "non-compliant"
+    },
+    {
+      "id": "training",
+      "name": "Training Platform",
+      "brand": "Seekapa",
+      "path": "~/projects/seekapa-training-platform/",
+      "repo": "seekapa-training-platform",
+      "database": "seekapa_training",
+      "resources": {
+        "current": {
+          "function_app": "sales-training-platform",
+          "frontend": null,
+          "swa": "gray-field-011716a03",
+          "container_registry": null
+        },
+        "target": {
+          "function_app": "func-training-prod",
+          "frontend": null,
+          "swa": "swa-training-prod",
+          "container_registry": null
+        }
+      },
+      "compliance_status": "non-compliant"
+    },
+    {
+      "id": "compliance-exam",
+      "name": "Compliance Exam",
+      "brand": "Seekapa",
+      "path": "~/projects/seekapa-compliance-exam/",
+      "repo": "seekapa-compliance-exam",
+      "database": "compliance_exam",
+      "resources": {
+        "current": {
+          "function_app": "seekapa-compliance-exam",
+          "frontend": null,
+          "swa": "yellow-hill-0a3781903",
+          "container_registry": null
+        },
+        "target": {
+          "function_app": "func-compliance-exam-prod",
+          "frontend": null,
+          "swa": "swa-compliance-exam-prod",
+          "container_registry": null
+        }
+      },
+      "compliance_status": "non-compliant"
+    },
+    {
+      "id": "phone-spam-checker",
+      "name": "Phone Spam Checker",
+      "brand": "Seekapa",
+      "path": "~/projects/phone-spam-checker/",
+      "repo": "phone-spam-checker",
+      "database": "phone_spam_checker",
+      "resources": {
+        "current": {
+          "function_app": "func-phone-spam-checker-prod",
+          "frontend": null,
+          "swa": "swa-phone-spam-checker-prod",
+          "container_registry": null
+        },
+        "target": {
+          "function_app": "COMPLIANT",
+          "frontend": null,
+          "swa": "COMPLIANT",
+          "container_registry": null
+        }
+      },
+      "compliance_status": "compliant"
+    },
+    {
+      "id": "qc-telephony",
+      "name": "QC Telephony",
+      "brand": "Seekapa",
+      "path": "~/projects/qc-telephony/",
+      "repo": "qc-telephony",
+      "database": "qc_analyzer",
+      "resources": {
+        "current": {
+          "function_app": "qc-telephony-api",
+          "frontend": null,
+          "swa": null,
+          "container_registry": null
+        },
+        "target": {
+          "function_app": "func-qc-telephony-prod",
+          "frontend": null,
+          "swa": null,
+          "container_registry": null
+        }
+      },
+      "compliance_status": "non-compliant"
+    },
+    {
+      "id": "realtime-monitor",
+      "name": "Real-Time Monitor",
+      "brand": "Seekapa",
+      "path": "~/projects/realtime-monitor/",
+      "repo": "realtime-monitor",
+      "database": null,
+      "resources": {
+        "current": {
+          "function_app": null,
+          "frontend": "app-realtime-monitor",
+          "swa": "brave-bay-048da2703",
+          "container_registry": null
+        },
+        "target": {
+          "function_app": null,
+          "frontend": "app-realtime-monitor-prod",
+          "swa": "swa-realtime-monitor-prod",
+          "container_registry": null
+        }
+      },
+      "compliance_status": "non-compliant"
+    },
+    {
+      "id": "automation-fabric",
+      "name": "Automation Fabric",
+      "brand": "Sentimark",
+      "path": "~/projects/automation-fabric/",
+      "repo": "automation-fabric",
+      "database": "automation_fabric",
+      "resources": {
+        "current": {
+          "function_app": "func-marketing-newsletter",
+          "frontend": null,
+          "swa": "swa-marketing-newsletter",
+          "container_registry": null
+        },
+        "target": {
+          "function_app": "func-automation-fabric-prod",
+          "frontend": null,
+          "swa": "swa-automation-fabric-prod",
+          "container_registry": null
+        }
+      },
+      "compliance_status": "non-compliant"
+    },
+    {
+      "id": "sales-agents",
+      "name": "Sales Agents",
+      "brand": "Seekapa",
+      "path": "~/projects/sales-agents/",
+      "repo": "sales-agents",
+      "database": null,
+      "resources": {
+        "current": {
+          "function_app": null,
+          "frontend": null,
+          "swa": null,
+          "container_registry": null
+        },
+        "target": {
+          "function_app": null,
+          "frontend": null,
+          "swa": null,
+          "container_registry": null
+        }
+      },
+      "compliance_status": "not-deployed"
+    },
+    {
+      "id": "aeo",
+      "name": "AEO",
+      "brand": "TBD",
+      "path": null,
+      "repo": null,
+      "database": null,
+      "resources": {
+        "current": {
+          "function_app": null,
+          "frontend": null,
+          "swa": null,
+          "container_registry": null
+        },
+        "target": {
+          "function_app": null,
+          "frontend": null,
+          "swa": null,
+          "container_registry": null
+        }
+      },
+      "compliance_status": "audit-needed"
+    },
+    {
+      "id": "tech4all",
+      "name": "Tech4All",
+      "brand": "TBD",
+      "path": null,
+      "repo": null,
+      "database": null,
+      "resources": {
+        "current": {
+          "function_app": null,
+          "frontend": null,
+          "swa": null,
+          "container_registry": null
+        },
+        "target": {
+          "function_app": null,
+          "frontend": null,
+          "swa": null,
+          "container_registry": null
+        }
+      },
+      "compliance_status": "audit-needed"
+    },
+    {
+      "id": "client-evaluation",
+      "name": "Client Evaluation",
+      "brand": "TBD",
+      "path": null,
+      "repo": null,
+      "database": null,
+      "resources": {
+        "current": {
+          "function_app": null,
+          "frontend": null,
+          "swa": null,
+          "container_registry": null
+        },
+        "target": {
+          "function_app": null,
+          "frontend": null,
+          "swa": null,
+          "container_registry": null
+        }
+      },
+      "compliance_status": "audit-needed"
+    },
+    {
+      "id": "llm-conv-router",
+      "name": "LLM Conv Router",
+      "brand": "TBD",
+      "path": null,
+      "repo": null,
+      "database": null,
+      "resources": {
+        "current": {
+          "function_app": null,
+          "frontend": null,
+          "swa": null,
+          "container_registry": null
+        },
+        "target": {
+          "function_app": null,
+          "frontend": null,
+          "swa": null,
+          "container_registry": null
+        }
+      },
+      "compliance_status": "audit-needed"
+    },
+    {
+      "id": "video-orchestra",
+      "name": "Video Orchestra",
+      "brand": "TBD",
+      "path": null,
+      "repo": null,
+      "database": null,
+      "resources": {
+        "current": {
+          "function_app": null,
+          "frontend": null,
+          "swa": null,
+          "container_registry": null
+        },
+        "target": {
+          "function_app": null,
+          "frontend": null,
+          "swa": null,
+          "container_registry": null
+        }
+      },
+      "compliance_status": "audit-needed"
+    }
+  ],
+  "rules": [
+    {
+      "id": "R001",
+      "name": "resource-group",
+      "description": "All resources must be in Az-ai resource group",
+      "severity": "critical",
+      "auto_fixable": true,
+      "check_command": "az resource list -g Az-ai --query \"[?resourceGroup!='Az-ai']\""
+    },
+    {
+      "id": "R002",
+      "name": "region",
+      "description": "All resources must be in swedencentral",
+      "severity": "critical",
+      "auto_fixable": false,
+      "check_command": "az resource list -g Az-ai --query \"[?location!='swedencentral']\""
+    },
+    {
+      "id": "R003",
+      "name": "naming-convention",
+      "description": "Resource names must follow [type]-[project]-[env] pattern",
+      "severity": "high",
+      "auto_fixable": false,
+      "check_command": null
+    },
+    {
+      "id": "R004",
+      "name": "required-tags",
+      "description": "All resources must have Brand, Project, Environment tags",
+      "severity": "high",
+      "auto_fixable": true,
+      "check_command": "az resource list -g Az-ai --query \"[?tags.Brand==null || tags.Project==null || tags.Environment==null]\""
+    },
+    {
+      "id": "R005",
+      "name": "shared-storage",
+      "description": "Must use existing stsentimarkv2 storage account",
+      "severity": "medium",
+      "auto_fixable": false,
+      "check_command": "az storage account list -g Az-ai --query \"[?name!='stsentimarkv2']\""
+    },
+    {
+      "id": "R006",
+      "name": "shared-asp",
+      "description": "All backends must use ASP-AZAIPROJECTS App Service Plan",
+      "severity": "medium",
+      "auto_fixable": false,
+      "check_command": null
+    },
+    {
+      "id": "R007",
+      "name": "swa-free-tier",
+      "description": "Frontend Static Web Apps must use Free tier",
+      "severity": "low",
+      "auto_fixable": false,
+      "check_command": null
+    },
+    {
+      "id": "R008",
+      "name": "shared-postgresql",
+      "description": "Must use existing PostgreSQL server, never create new",
+      "severity": "medium",
+      "auto_fixable": false,
+      "check_command": null
+    }
+  ]
+}

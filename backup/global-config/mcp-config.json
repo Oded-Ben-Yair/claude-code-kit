@@ -1,0 +1,41 @@
+{
+  "mcpServers": {
+    "automation-fabric": {
+      "command": "node",
+      "args": ["/home/odedbe/projects/automation-fabric/src/mcp-server/dist/index.js"]
+    },
+    "memory": {
+      "command": "npx",
+      "args": ["-y", "@modelcontextprotocol/server-memory"]
+    },
+    "azure-ai-foundry": {
+      "command": "node",
+      "args": ["/home/odedbe/.claude/mcp-servers/azure-ai-foundry/index.js"],
+      "env": {
+        "AZURE_OPENAI_KEY": "${AZURE_OPENAI_KEY}",
+        "AZURE_OPENAI_ENDPOINT": "https://brn-azai.openai.azure.com/"
+      }
+    },
+    "perplexity": {
+      "command": "npx",
+      "args": ["-y", "perplexity-mcp-server"],
+      "env": {
+        "PERPLEXITY_API_KEY": "REDACTED_PERPLEXITY_API_KEY"
+      },
+      "disabled": false
+    },
+    "playwright": {
+      "command": "/home/odedbe/.claude/mcp-servers/playwright-cdp/start-edge-mcp.sh",
+      "args": [],
+      "env": {
+        "DISPLAY": ":0"
+      },
+      "disabled": false
+    },
+    "elevenlabs-creative": {
+      "command": "node",
+      "args": ["/home/odedbe/.claude/mcp-servers/elevenlabs-creative/dist/index.js"],
+      "disabled": false
+    }
+  }
+}

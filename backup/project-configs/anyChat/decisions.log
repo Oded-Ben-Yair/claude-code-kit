@@ -1,0 +1,11 @@
+[2026-02-24] DECISION: Build from scratch instead of using AnyChat.one — it's only a chat widget with no comment management API
+[2026-02-24] DECISION: Multi-tenant with PostgreSQL RLS for tenant isolation (app.current_tenant_id session var)
+[2026-02-24] DECISION: OAuth tokens in Azure Key Vault (not database) — secret name: AnyChat-{TenantSlug}-{Platform}-Token
+[2026-02-24] DECISION: App Service for API/webhooks (always-on), Azure Functions for polling (Consumption plan)
+[2026-02-24] DECISION: GPT-5.2 via Azure AI Foundry for AI classification and auto-reply
+[2026-02-24] DECISION: LangGraph custom StateGraph (not create_react_agent) for auto-reply with validation loop
+[2026-02-24] DECISION: Dual-layer moderation: keyword rules (deterministic, zero-cost) + AI classification (GPT-5.2)
+[2026-02-24] DECISION: Pure ASGI middleware (not BaseHTTPMiddleware) to preserve SSE streaming
+[2026-02-24] DECISION: asyncpg directly (not SQLAlchemy) for database access — simpler, faster, RLS-compatible
+[2026-02-24] DECISION: Database name 'anychat' on shared PostgreSQL server aiprojects-company-postsql.postgres.database.azure.com
+[2026-02-24] DECISION: Phase 1 parallelized into 4 independent agent streams: foundation, API, platforms, tests

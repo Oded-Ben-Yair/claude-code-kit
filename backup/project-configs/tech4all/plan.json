@@ -1,0 +1,65 @@
+{
+  "plan_id": "tech4all-implementation-20260127",
+  "status": "in_progress",
+  "current_step": 1,
+  "total_steps": 7,
+  "tech_stack": {
+    "framework": "Next.js 14.2.x (App Router)",
+    "styling": "Tailwind CSS 3.4.x + clsx + class-variance-authority",
+    "animations": "Framer Motion 11.x",
+    "deployment": "Azure Static Web Apps via Azure DevOps pipeline",
+    "icons": "Lucide React",
+    "fonts": "Geist (variable font)"
+  },
+  "steps": [
+    {
+      "id": 1,
+      "description": "Project scaffolding and design system setup",
+      "status": "pending",
+      "files": ["package.json", "tailwind.config.ts", "app/globals.css", "app/layout.tsx", "tsconfig.json", "next.config.js"],
+      "acceptance": "npm run dev starts successfully, dark mode renders, all 3 phase accent colors visible"
+    },
+    {
+      "id": 2,
+      "description": "Core UI components",
+      "status": "pending",
+      "files": ["components/ui/Button.tsx", "components/ui/Card.tsx", "components/ui/Badge.tsx", "components/ui/PhaseBadge.tsx", "components/ui/Section.tsx", "components/ui/Container.tsx"],
+      "acceptance": "All components render correctly with each phase variant"
+    },
+    {
+      "id": 3,
+      "description": "Navigation system",
+      "status": "pending",
+      "files": ["components/nav/DesktopNav.tsx", "components/nav/MobileNav.tsx", "components/nav/MegaMenu.tsx", "components/nav/AudienceFilter.tsx", "lib/hooks/useAudienceFilter.ts"],
+      "acceptance": "Desktop mega-menu works, mobile bottom tabs work, audience filter persists"
+    },
+    {
+      "id": 4,
+      "description": "Product data and types",
+      "status": "pending",
+      "files": ["lib/types/product.ts", "lib/data/products.ts", "lib/data/phases.ts", "lib/utils/filterByAudience.ts"],
+      "acceptance": "TypeScript compiles, all 8 products have complete data"
+    },
+    {
+      "id": 5,
+      "description": "Homepage and phase landing pages",
+      "status": "pending",
+      "files": ["app/page.tsx", "app/insight/page.tsx", "app/engagement/page.tsx", "app/security/page.tsx", "components/home/*", "components/phase/*"],
+      "acceptance": "All 4 pages render, phase colors correct, audience filter works, LCP < 2.5s"
+    },
+    {
+      "id": 6,
+      "description": "Product detail pages",
+      "status": "pending",
+      "files": ["app/insight/[product]/page.tsx", "app/engagement/[product]/page.tsx", "app/security/[product]/page.tsx", "components/product/*"],
+      "acceptance": "All 8 product pages render with complete content"
+    },
+    {
+      "id": 7,
+      "description": "Static pages, animations, and deployment",
+      "status": "pending",
+      "files": ["app/about/page.tsx", "app/contact/page.tsx", "components/animations/*", "staticwebapp.config.json", "azure-pipelines.yml"],
+      "acceptance": "Full site works in production build, animations trigger, deployment pipeline works"
+    }
+  ]
+}

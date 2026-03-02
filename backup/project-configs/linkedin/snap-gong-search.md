@@ -1,0 +1,523 @@
+- generic [ref=e1]:
+  - generic:
+    - region "Toast message":
+      - heading "0 notifications total" [level=2] [ref=e3]
+      - alert
+  - region [ref=e15]
+  - generic [ref=e16]:
+    - generic [ref=e116]:
+      - button "Skip to search" [ref=e117] [cursor=pointer]:
+        - generic [ref=e118]: Skip to search
+      - button "Skip to main content" [ref=e119] [cursor=pointer]:
+        - generic [ref=e120]: Skip to main content
+      - button "Keyboard shortcuts" [ref=e121] [cursor=pointer]:
+        - generic [ref=e122]: Keyboard shortcuts
+      - button "Close jump menu" [ref=e123] [cursor=pointer]:
+        - img [ref=e124]
+        - generic [ref=e126]: Close jump menu
+    - banner "Global Navigation" [ref=e127]:
+      - generic [ref=e128]:
+        - link "LinkedIn" [ref=e129] [cursor=pointer]:
+          - /url: https://www.linkedin.com/feed/?nis=true
+          - img "LinkedIn" [ref=e132]:
+            - img [ref=e133]
+        - generic [ref=e137]:
+          - combobox "Search" [ref=e138]: Gong AI
+          - generic:
+            - img
+        - navigation "Primary Navigation" [ref=e139]:
+          - list [ref=e140]:
+            - listitem [ref=e141]:
+              - link "new feed updates notifications Home" [ref=e142] [cursor=pointer]:
+                - /url: https://www.linkedin.com/feed/?nis=true&
+                - generic [ref=e143]:
+                  - generic [ref=e146]: new feed updates notifications
+                  - img [ref=e150]
+                - generic "Home" [ref=e152]
+            - listitem [ref=e153]:
+              - link "4 new network updates notifications My Network" [ref=e154] [cursor=pointer]:
+                - /url: https://www.linkedin.com/mynetwork/?
+                - generic [ref=e155]:
+                  - generic [ref=e156]:
+                    - generic [ref=e157]: "4"
+                    - generic [ref=e158]: 4 new network updates notifications
+                  - img [ref=e162]
+                - generic "My Network" [ref=e164]
+            - listitem [ref=e165]:
+              - link "Jobs" [ref=e166] [cursor=pointer]:
+                - /url: https://www.linkedin.com/jobs/?
+                - img [ref=e170]
+                - generic "Jobs" [ref=e172]
+            - listitem [ref=e173]:
+              - link "Messaging" [ref=e174] [cursor=pointer]:
+                - /url: https://www.linkedin.com/messaging/?
+                - img [ref=e178]
+                - generic "Messaging" [ref=e180]
+            - listitem [ref=e181]:
+              - link "Notifications" [ref=e182] [cursor=pointer]:
+                - /url: https://www.linkedin.com/notifications/?
+                - img [ref=e186]
+                - generic "Notifications" [ref=e188]
+            - listitem [ref=e189]:
+              - button "Oded Ben-Yair Me" [ref=e191] [cursor=pointer]:
+                - img "Oded Ben-Yair" [ref=e192]
+                - generic [ref=e193]:
+                  - text: Me
+                  - img [ref=e194]
+            - listitem [ref=e196]:
+              - button "For Business" [ref=e198] [cursor=pointer]:
+                - img [ref=e202]
+                - generic "For Business" [ref=e204]:
+                  - text: For Business
+                  - img [ref=e205]
+            - listitem [ref=e207]:
+              - 'link "Reactivate Premium: 50% Off" [ref=e209] [cursor=pointer]':
+                - /url: http://www.linkedin.com/premium/redeem/?_ed=0_bvLJH59RTSY-u5c6PMUa4IW0M54p9mxZpuVkfRvTl7r&upsellOrderOrigin=Tracking%3Av1%3Apremium_nav_upsell_text_winback%3ANav%3AIn-Product&referenceId=bovkFh3aT0uCIQ2KXLyPTA%3D%3D&customKey=wb_c&redeemTypeV2=DISCOUNT&destRedirectURL=https%3A%2F%2Fwww.linkedin.com%2Fsearch%2Fresults%2Fpeople%2F%3Fkeywords%3DGong%2520AI%26network%3D%255B%2522S%2522%252C%2522O%2522%255D%26origin%3DFACETED_SEARCH
+                - generic [ref=e211]: "Reactivate Premium: 50% Off"
+    - generic [ref=e212]:
+      - navigation "Search filters" [ref=e215]:
+        - generic [ref=e216]:
+          - list [ref=e217]:
+            - listitem [ref=e218]:
+              - 'button "Filter by: People" [ref=e220] [cursor=pointer]':
+                - text: People
+                - img [ref=e221]
+            - listitem [ref=e223]
+            - listitem [ref=e224]:
+              - group "Connections filter" [ref=e226]:
+                - generic [ref=e227]: Connections filter
+                - list [ref=e228]:
+                  - listitem [ref=e229]:
+                    - button "1st" [ref=e230] [cursor=pointer]
+                  - listitem [ref=e231]:
+                    - button "2nd" [pressed] [ref=e232] [cursor=pointer]
+                  - listitem [ref=e233]:
+                    - button "3rd+" [pressed] [ref=e234] [cursor=pointer]
+            - listitem [ref=e235]:
+              - button "Premium actively hiring filter. Clicking this button displays all Premium actively hiring filter options." [ref=e238] [cursor=pointer]:
+                - img [ref=e239]
+                - text: Actively hiring
+                - img [ref=e241]
+            - listitem [ref=e243]:
+              - button "Locations filter. Clicking this button displays all Locations filter options." [ref=e246] [cursor=pointer]:
+                - text: Locations
+                - img [ref=e247]
+            - listitem [ref=e249]:
+              - button "Current company filter. Clicking this button displays all Current company filter options." [ref=e252] [cursor=pointer]:
+                - text: Current company
+                - img [ref=e253]
+          - generic [ref=e255]:
+            - button "Show all filters. Clicking this button displays all available filter options." [ref=e258] [cursor=pointer]: All filters
+            - button "Reset applied filters" [ref=e259] [cursor=pointer]:
+              - generic [ref=e260]: Reset
+      - generic [ref=e261]:
+        - generic [ref=e262]:
+          - main [ref=e263]:
+            - heading "Search results for Gong AI. There are 10 results. Currently on the page 1 of 82 search result pages." [level=1] [ref=e264]
+            - generic [ref=e266]:
+              - list [ref=e269]:
+                - listitem [ref=e270]:
+                  - generic [ref=e273] [cursor=pointer]:
+                    - link "Egon Hygom Poulsen" [ref=e276]:
+                      - /url: https://www.linkedin.com/in/egon-hygom-poulsen?miniProfileUrn=urn%3Ali%3Afs_miniProfile%3AACoAAAAU7X8BsM9e9IExqR9ZCt9U2tVilJYrtL0
+                      - img "Egon Hygom Poulsen" [ref=e280]
+                    - generic [ref=e281]:
+                      - generic [ref=e282]:
+                        - generic [ref=e286]:
+                          - link "View Egon Hygom Poulsen’s profile" [ref=e287]:
+                            - /url: https://www.linkedin.com/in/egon-hygom-poulsen?miniProfileUrn=urn%3Ali%3Afs_miniProfile%3AACoAAAAU7X8BsM9e9IExqR9ZCt9U2tVilJYrtL0
+                            - generic [ref=e288]:
+                              - generic [ref=e289]: Egon Hygom Poulsen
+                              - generic [ref=e290]: View Egon Hygom Poulsen’s profile
+                          - generic [ref=e293]:
+                            - generic [ref=e294]: • 3rd+
+                            - generic [ref=e295]: 3rd+ degree connection
+                        - generic [ref=e296]: Strategic Project Management I Development Manager I Program Manager
+                        - generic [ref=e297]: Aarhus
+                      - link "Provides services - Nature Photography, Portrait Photography, Event Photography, Change Management, Executive Coaching, Project Management" [ref=e300]:
+                        - /url: https://www.linkedin.com/in/ACoAAAAU7X8BsM9e9IExqR9ZCt9U2tVilJYrtL0?miniProfileUrn=urn%3Ali%3Afs_miniProfile%3AACoAAAAU7X8BsM9e9IExqR9ZCt9U2tVilJYrtL0
+                        - strong [ref=e304]: Provides services - Nature Photography, Portrait Photography, Event Photography, Change Management, Executive Coaching, Project Management
+                    - button "Message Egon Hygom Poulsen" [ref=e308]:
+                      - generic [ref=e309]: Message
+                - listitem [ref=e310]:
+                  - generic [ref=e313] [cursor=pointer]:
+                    - link "gong aili" [ref=e316]:
+                      - /url: https://www.linkedin.com/in/gong-aili-2b5b641a?miniProfileUrn=urn%3Ali%3Afs_miniProfile%3AACoAAAQWJqkBLkWGfZDJ8duGL8gV4L7fHEnRAw0
+                      - generic [ref=e320]: gong aili
+                    - generic [ref=e322]:
+                      - generic [ref=e326]:
+                        - link "View gong aili’s profile" [ref=e327]:
+                          - /url: https://www.linkedin.com/in/gong-aili-2b5b641a?miniProfileUrn=urn%3Ali%3Afs_miniProfile%3AACoAAAQWJqkBLkWGfZDJ8duGL8gV4L7fHEnRAw0
+                          - generic [ref=e328]:
+                            - generic [ref=e329]: gong aili
+                            - generic [ref=e330]: View gong aili’s profile
+                        - generic [ref=e333]:
+                          - generic [ref=e334]: • 3rd+
+                          - generic [ref=e335]: 3rd+ degree connection
+                      - generic [ref=e336]: Experienced supply chain management & contract executive
+                      - generic [ref=e337]: Beijing, China
+                    - button "Message gong aili" [ref=e341]:
+                      - generic [ref=e342]: Message
+                - listitem [ref=e343]:
+                  - generic [ref=e346]:
+                    - list [ref=e349]:
+                      - listitem [ref=e350]:
+                        - img [ref=e352]:
+                          - img [ref=e353]
+                    - generic [ref=e355]:
+                      - heading "Easily find people who are actively hiring" [level=3] [ref=e356]
+                      - paragraph [ref=e357]: Search more efficiently with advanced search filters
+                      - 'link "Reactivate Premium: 50% Off" [ref=e358] [cursor=pointer]':
+                        - /url: http://www.linkedin.com/premium/redeem/?_ed=0_bvLJH59RTSY-u5c6PMUa4IW0M54p9mxZpuVkfRvTl7r&upsellOrderOrigin=Tracking%3Av1%3Apremium_advanced_people_search_filter_inline_result_jobseeker_upsell_winback%3AJob+Seeker%3AIn-Product&referenceId=7xxBIbUAQX2Fp1CUzFBJvg%3D%3D&customKey=wb_c&redeemTypeV2=DISCOUNT&destRedirectURL=https%3A%2F%2Fwww.linkedin.com%2Fsearch%2Fresults%2Fpeople%2F%3Fkeywords%3DGong%2520AI%26network%3D%255B%2522S%2522%252C%2522O%2522%255D%26origin%3DFACETED_SEARCH
+                      - paragraph [ref=e359]: Cancel anytime. No hidden fees.
+                - listitem [ref=e360]:
+                  - generic [ref=e363] [cursor=pointer]:
+                    - link "Aili Gong" [ref=e366]:
+                      - /url: https://www.linkedin.com/in/aiiilii?miniProfileUrn=urn%3Ali%3Afs_miniProfile%3AACoAACsQSbsBBoMf86Zek6TK4odOk6zW1ndCUrA
+                      - img "Aili Gong" [ref=e370]
+                    - generic [ref=e372]:
+                      - generic [ref=e376]:
+                        - link "View Aili Gong’s profile" [ref=e377]:
+                          - /url: https://www.linkedin.com/in/aiiilii?miniProfileUrn=urn%3Ali%3Afs_miniProfile%3AACoAACsQSbsBBoMf86Zek6TK4odOk6zW1ndCUrA
+                          - generic [ref=e378]:
+                            - generic [ref=e379]: Aili Gong
+                            - generic [ref=e380]: View Aili Gong’s profile
+                        - generic [ref=e383]:
+                          - generic [ref=e384]: • 3rd+
+                          - generic [ref=e385]: 3rd+ degree connection
+                      - generic [ref=e386]: Production Engineer at Facebook
+                      - generic [ref=e387]: San Francisco Bay Area
+                    - button "Message Aili Gong" [ref=e391]:
+                      - generic [ref=e392]: Message
+                - listitem [ref=e393]:
+                  - generic [ref=e396] [cursor=pointer]:
+                    - link [ref=e399]:
+                      - /url: https://www.linkedin.com/search/results/people/headless?network=%5B%22S%22%2C%22O%22%5D&origin=FACETED_SEARCH&keywords=Gong%20AI
+                    - generic [ref=e404]:
+                      - link "LinkedIn Member" [ref=e409]:
+                        - /url: https://www.linkedin.com/search/results/people/headless?network=%5B%22S%22%2C%22O%22%5D&origin=FACETED_SEARCH&keywords=Gong%20AI
+                      - generic [ref=e410]: 巴州东鹏油田技术服务有限公司 - 董事长
+                      - generic [ref=e411]: Xinjiang Uygur, China
+                - listitem [ref=e413]:
+                  - generic [ref=e416] [cursor=pointer]:
+                    - link "AI Gong" [ref=e419]:
+                      - /url: https://www.linkedin.com/in/ai-gong-7912b1250?miniProfileUrn=urn%3Ali%3Afs_miniProfile%3AACoAAD363h0BQOLY-RzHdZ6ZH8t-KXQAOlqomno
+                      - generic [ref=e423]: AI Gong
+                    - generic [ref=e425]:
+                      - generic [ref=e429]:
+                        - link "View AI Gong’s profile" [ref=e430]:
+                          - /url: https://www.linkedin.com/in/ai-gong-7912b1250?miniProfileUrn=urn%3Ali%3Afs_miniProfile%3AACoAAD363h0BQOLY-RzHdZ6ZH8t-KXQAOlqomno
+                          - generic [ref=e431]:
+                            - generic [ref=e432]: AI Gong
+                            - generic [ref=e433]: View AI Gong’s profile
+                        - generic [ref=e436]:
+                          - generic [ref=e437]: • 3rd+
+                          - generic [ref=e438]: 3rd+ degree connection
+                      - generic [ref=e439]: 合伙人
+                      - generic [ref=e440]: Bangkok
+                    - button "Invite AI Gong to connect" [ref=e443]:
+                      - generic [ref=e444]: Connect
+                - listitem [ref=e445]:
+                  - generic [ref=e448] [cursor=pointer]:
+                    - link [ref=e451]:
+                      - /url: https://www.linkedin.com/search/results/people/headless?network=%5B%22S%22%2C%22O%22%5D&origin=FACETED_SEARCH&keywords=Gong%20AI
+                    - generic [ref=e456]:
+                      - link "LinkedIn Member" [ref=e461]:
+                        - /url: https://www.linkedin.com/search/results/people/headless?network=%5B%22S%22%2C%22O%22%5D&origin=FACETED_SEARCH&keywords=Gong%20AI
+                      - generic [ref=e462]: 康飞 - 经理
+                      - generic [ref=e463]: Nanjing
+                - listitem [ref=e465]:
+                  - generic [ref=e468] [cursor=pointer]:
+                    - link [ref=e471]:
+                      - /url: https://www.linkedin.com/search/results/people/headless?network=%5B%22S%22%2C%22O%22%5D&origin=FACETED_SEARCH&keywords=Gong%20AI
+                    - generic [ref=e476]:
+                      - link "LinkedIn Member" [ref=e481]:
+                        - /url: https://www.linkedin.com/search/results/people/headless?network=%5B%22S%22%2C%22O%22%5D&origin=FACETED_SEARCH&keywords=Gong%20AI
+                      - generic [ref=e482]: 董事长 - 京蔚机械设备租赁有限责任公司
+                      - generic [ref=e483]: Zhangjiakou
+                - listitem [ref=e485]:
+                  - generic [ref=e488] [cursor=pointer]:
+                    - link [ref=e491]:
+                      - /url: https://www.linkedin.com/search/results/people/headless?network=%5B%22S%22%2C%22O%22%5D&origin=FACETED_SEARCH&keywords=Gong%20AI
+                    - generic [ref=e496]:
+                      - link "LinkedIn Member" [ref=e501]:
+                        - /url: https://www.linkedin.com/search/results/people/headless?network=%5B%22S%22%2C%22O%22%5D&origin=FACETED_SEARCH&keywords=Gong%20AI
+                      - generic [ref=e502]: 助理顾问 - 贤士
+                      - generic [ref=e503]: Henan, China
+                - listitem [ref=e505]:
+                  - generic [ref=e508] [cursor=pointer]:
+                    - link "Aili Gong" [ref=e511]:
+                      - /url: https://www.linkedin.com/in/aili-gong?miniProfileUrn=urn%3Ali%3Afs_miniProfile%3AACoAAAezn68BiE7Xwnl43ftCx7WHM0SKN9txzJI
+                      - img "Aili Gong" [ref=e515]
+                    - generic [ref=e517]:
+                      - generic [ref=e521]:
+                        - link "View Aili Gong’s profile" [ref=e522]:
+                          - /url: https://www.linkedin.com/in/aili-gong?miniProfileUrn=urn%3Ali%3Afs_miniProfile%3AACoAAAezn68BiE7Xwnl43ftCx7WHM0SKN9txzJI
+                          - generic [ref=e523]:
+                            - generic [ref=e524]: Aili Gong
+                            - generic [ref=e525]: View Aili Gong’s profile
+                        - generic [ref=e527]:
+                          - button "Verified member" [ref=e529]:
+                            - img "Verified member" [ref=e532]
+                          - generic [ref=e534]:
+                            - generic [ref=e535]: • 3rd+
+                            - generic [ref=e536]: 3rd+ degree connection
+                      - generic [ref=e537]: Software Engineer👩🏻‍💻 | React | Type Script | Node.js
+                      - generic [ref=e538]: Melbourne, VIC
+                    - button "Message Aili Gong" [ref=e542]:
+                      - generic [ref=e543]: Message
+                - listitem [ref=e544]:
+                  - generic [ref=e547] [cursor=pointer]:
+                    - link [ref=e550]:
+                      - /url: https://www.linkedin.com/search/results/people/headless?network=%5B%22S%22%2C%22O%22%5D&origin=FACETED_SEARCH&keywords=Gong%20AI
+                    - generic [ref=e555]:
+                      - link "LinkedIn Member" [ref=e560]:
+                        - /url: https://www.linkedin.com/search/results/people/headless?network=%5B%22S%22%2C%22O%22%5D&origin=FACETED_SEARCH&keywords=Gong%20AI
+                      - generic [ref=e561]: 悉尼科技大学学生
+                      - generic [ref=e562]: Dongguan
+              - list [ref=e566]:
+                - listitem [ref=e567]:
+                  - generic [ref=e568]:
+                    - generic [ref=e569]:
+                      - paragraph [ref=e570]: Are these results helpful?
+                      - paragraph [ref=e571]: Your feedback helps us improve search results
+                    - generic [ref=e572]:
+                      - button "Are these results helpful? Yes, these search results are helpful" [ref=e573] [cursor=pointer]:
+                        - img [ref=e574]
+                      - button "Are these results helpful? No, these search results are not helpful" [ref=e577] [cursor=pointer]:
+                        - img [ref=e578]
+              - generic [ref=e583]:
+                - generic [ref=e584]: Page 1 of 82
+                - button "Previous" [disabled] [ref=e585]:
+                  - img
+                  - generic: Previous
+                - list [ref=e586]:
+                  - listitem [ref=e587]:
+                    - button "Page 1" [ref=e588] [cursor=pointer]:
+                      - generic: "1"
+                  - listitem [ref=e589]:
+                    - button "Page 2" [ref=e590] [cursor=pointer]:
+                      - generic: "2"
+                  - listitem [ref=e591]:
+                    - button "Page 3" [ref=e592] [cursor=pointer]:
+                      - generic: "3"
+                  - listitem [ref=e593]:
+                    - button "Page 4" [ref=e594] [cursor=pointer]:
+                      - generic: "4"
+                  - listitem [ref=e595]:
+                    - button "Page 5" [ref=e596] [cursor=pointer]:
+                      - generic: "5"
+                  - listitem [ref=e597]:
+                    - button "Page 6" [ref=e598] [cursor=pointer]:
+                      - generic: "6"
+                  - listitem [ref=e599]:
+                    - button "Page 7" [ref=e600] [cursor=pointer]:
+                      - generic: "7"
+                  - listitem [ref=e601]:
+                    - button "Page 8" [ref=e602] [cursor=pointer]:
+                      - generic: "8"
+                  - listitem [ref=e603]:
+                    - button "Page 9" [ref=e604] [cursor=pointer]:
+                      - generic: …
+                  - listitem [ref=e605]:
+                    - button "Page 82" [ref=e606] [cursor=pointer]:
+                      - generic: "82"
+                - button "Next" [ref=e607] [cursor=pointer]:
+                  - img [ref=e608]
+                  - generic [ref=e610]: Next
+          - complementary "Search suggestions" [ref=e611]:
+            - iframe [ref=e616]:
+              - link "Advertise on LinkedIn" [ref=f317e3] [cursor=pointer]:
+                - /url: https://www.linkedin.com/jobs/?trk=li_FA_global_careers_jobsgtm_jsFA_v1&mcid=6899045044465016833
+                - img "Advertise on LinkedIn" [ref=f317e4]
+        - contentinfo [ref=e618]
+    - generic:
+      - generic:
+        - complementary:
+          - generic [ref=e621]:
+            - generic [ref=e623] [cursor=pointer]:
+              - generic [ref=e624]:
+                - img "Oded Ben-Yair" [ref=e625]
+                - generic [ref=e627]: Status is online
+              - button "You are on the messaging overlay. Press enter to open the list of conversations." [ref=e628]:
+                - generic [ref=e629]:
+                  - generic [ref=e630]: Messaging
+                  - generic [ref=e631]: You are on the messaging overlay. Press enter to open the list of conversations.
+            - generic [ref=e632]:
+              - button "Open messenger dropdown menu" [ref=e634] [cursor=pointer]:
+                - img "Open messenger dropdown menu" [ref=e635]
+              - button "Compose message" [ref=e638] [cursor=pointer]:
+                - img [ref=e639]
+                - generic [ref=e641]: Compose message
+              - button "You are on the messaging overlay. Press enter to open the list of conversations." [ref=e642] [cursor=pointer]:
+                - img [ref=e643]
+                - generic [ref=e645]: You are on the messaging overlay. Press enter to open the list of conversations.
+          - dialog "Messaging" [ref=e646]:
+            - generic [ref=e647]:
+              - generic [ref=e648] [cursor=pointer]:
+                - generic [ref=e650]:
+                  - generic [ref=e652]:
+                    - img "David Strucke" [ref=e653]
+                    - generic [ref=e655]: Status is reachable
+                  - heading "David Strucke" [active] [level=2] [ref=e657]
+                - button "Close your conversation with David Strucke and Oded Ben-Yair" [ref=e659]:
+                  - img [ref=e660]
+                  - generic [ref=e662]: Close your conversation with David Strucke and Oded Ben-Yair
+              - generic [ref=e664]:
+                - link "Visit my website" [ref=e667] [cursor=pointer]:
+                  - /url: https://datastreamer.io/
+                  - strong [ref=e668]: Visit my website
+                - list [ref=e671]:
+                  - listitem
+                  - listitem [ref=e672]:
+                    - time [ref=e673]: Monday
+                    - generic [ref=e674]: David Strucke sent the following message at 1:43 PM
+                    - generic [ref=e675]:
+                      - link "View David’s profile David Strucke" [ref=e676] [cursor=pointer]:
+                        - /url: https://www.linkedin.com/in/ACoAAACpVzwBrVubV-bqhicRnlsrd_xHrMvxck8
+                        - generic [ref=e677]: View David’s profile
+                        - img "David Strucke" [ref=e678]
+                      - generic [ref=e679]:
+                        - generic [ref=e680]:
+                          - link "David Strucke" [ref=e681] [cursor=pointer]:
+                            - /url: https://www.linkedin.com/in/ACoAAACpVzwBrVubV-bqhicRnlsrd_xHrMvxck8
+                            - generic [ref=e682]: David Strucke
+                          - img "LinkedIn Verified" [ref=e683]
+                        - time [ref=e685]: • 1:43 PM
+                      - paragraph [ref=e689]:
+                        - text: Hi Oded, thanks for the connection!
+                        - text: Are you currently integrating and standardizing social and web data?
+                        - text: I'd love to hear how you're approaching it.
+                  - listitem [ref=e690]:
+                    - generic [ref=e691]: Oded Ben-Yair sent the following message at 3:54 PM
+                    - generic [ref=e692]:
+                      - link "View Oded’s profile Oded Ben-Yair" [ref=e693] [cursor=pointer]:
+                        - /url: https://www.linkedin.com/in/ACoAABEJXkIBpHRsj0zFy126tNlNuHKxpGElSpQ
+                        - generic [ref=e694]: View Oded’s profile
+                        - img "Oded Ben-Yair" [ref=e695]
+                      - generic [ref=e696]:
+                        - generic [ref=e697]:
+                          - link "Oded Ben-Yair" [ref=e698] [cursor=pointer]:
+                            - /url: https://www.linkedin.com/in/ACoAABEJXkIBpHRsj0zFy126tNlNuHKxpGElSpQ
+                            - generic [ref=e699]: Oded Ben-Yair
+                          - img "LinkedIn Verified" [ref=e700]
+                        - time [ref=e702]: • 3:54 PM
+                      - paragraph [ref=e706]: Hey David nice to meet you 🙂 not sure i fully grasp your question to be honest. I am actively running over 5 projects so you truly wish to have my piece you'll need to be a bit more clear
+                  - listitem [ref=e707]:
+                    - generic [ref=e708]: David Strucke sent the following message at 11:23 PM
+                    - generic [ref=e709]:
+                      - link "View David’s profile David Strucke" [ref=e710] [cursor=pointer]:
+                        - /url: https://www.linkedin.com/in/ACoAAACpVzwBrVubV-bqhicRnlsrd_xHrMvxck8
+                        - generic [ref=e711]: View David’s profile
+                        - img "David Strucke" [ref=e712]
+                      - generic [ref=e713]:
+                        - generic [ref=e714]:
+                          - link "David Strucke" [ref=e715] [cursor=pointer]:
+                            - /url: https://www.linkedin.com/in/ACoAAACpVzwBrVubV-bqhicRnlsrd_xHrMvxck8
+                            - generic [ref=e716]: David Strucke
+                          - img "LinkedIn Verified" [ref=e717]
+                        - time [ref=e719]: • 11:23 PM
+                      - paragraph [ref=e723]:
+                        - text: "Hi Oded, thanks for your reply! To clarify: our platform helps teams ingest, normalize, enrich, and move social and web data at scale. Datastreamer turns what can take weeks of engineering effort into minutes, letting your team focus on high-value product work instead of building and maintaining pipelines."
+                        - text: Given your projects, I’d suggest a short call to see if Datastreamer could simplify any of your workflows, or I can first send a quick video for more context.
+                  - listitem [ref=e724]:
+                    - time [ref=e725]: Tuesday
+                    - generic [ref=e726]: Oded Ben-Yair sent the following message at 4:47 AM
+                    - generic [ref=e727]:
+                      - link "View Oded’s profile Oded Ben-Yair" [ref=e728] [cursor=pointer]:
+                        - /url: https://www.linkedin.com/in/ACoAABEJXkIBpHRsj0zFy126tNlNuHKxpGElSpQ
+                        - generic [ref=e729]: View Oded’s profile
+                        - img "Oded Ben-Yair" [ref=e730]
+                      - generic [ref=e731]:
+                        - generic [ref=e732]:
+                          - link "Oded Ben-Yair" [ref=e733] [cursor=pointer]:
+                            - /url: https://www.linkedin.com/in/ACoAABEJXkIBpHRsj0zFy126tNlNuHKxpGElSpQ
+                            - generic [ref=e734]: Oded Ben-Yair
+                          - img "LinkedIn Verified" [ref=e735]
+                        - time [ref=e737]: • 4:47 AM
+                      - paragraph [ref=e741]: Quick video be great, tnx
+                  - listitem [ref=e742]:
+                    - time [ref=e743]: Thursday
+                    - generic [ref=e744]: David Strucke sent the following messages at 3:53 PM
+                    - generic [ref=e745]:
+                      - link "View David’s profile David Strucke" [ref=e746] [cursor=pointer]:
+                        - /url: https://www.linkedin.com/in/ACoAAACpVzwBrVubV-bqhicRnlsrd_xHrMvxck8
+                        - generic [ref=e747]: View David’s profile
+                        - img "David Strucke" [ref=e748]
+                      - generic [ref=e749]:
+                        - generic [ref=e750]:
+                          - link "David Strucke" [ref=e751] [cursor=pointer]:
+                            - /url: https://www.linkedin.com/in/ACoAAACpVzwBrVubV-bqhicRnlsrd_xHrMvxck8
+                            - generic [ref=e752]: David Strucke
+                          - img "LinkedIn Verified" [ref=e753]
+                        - time [ref=e755]: • 3:53 PM
+                      - paragraph [ref=e759]:
+                        - text: "Sure! Here is a quick video highlighting the latest updates to our platform and how it helps teams in your field accelerate social and web data workflows:"
+                        - link "https://www.youtube.com/watch?v=p5QrdEt2ptg" [ref=e760] [cursor=pointer]:
+                          - /url: https://www.youtube.com/watch?v=p5QrdEt2ptg
+                        - text: If you share any specific challenges or gaps you’ve noticed in your current workflow, I can either ask my team to record a 2-minute demo tailored to your needs, or we can jump on a quick call to walk through it together.
+                      - generic [ref=e765]:
+                        - generic [ref=e767]:
+                          - link "What's new in data pipelines (September 2025)":
+                            - /url: https://www.youtube.com/watch?v=p5QrdEt2ptg
+                            - generic "What's new in data pipelines (September 2025)" [ref=e769] [cursor=pointer]:
+                              - generic [ref=e770]: What's new in data pipelines (September 2025)
+                        - link [ref=e772] [cursor=pointer]:
+                          - /url: https://www.youtube.com/watch?v=p5QrdEt2ptg
+                          - article [ref=e773]:
+                            - generic [ref=e774]: What's new in data pipelines (September 2025)
+                            - generic [ref=e775]: youtube.com
+                    - img "Seen by David Strucke at 3:53 PM." [ref=e777]
+                  - listitem [ref=e778]
+                  - listitem [ref=e779]:
+                    - generic [ref=e780]:
+                      - button "Scroll quick replies left" [disabled] [ref=e781]:
+                        - img
+                        - generic: Scroll quick replies left
+                      - list [ref=e782]:
+                        - listitem [ref=e783]:
+                          - button "Reply to conversation with “No, thanks”" [ref=e784] [cursor=pointer]:
+                            - generic [ref=e785]: Reply to conversation with “No, thanks”
+                            - generic: No, thanks
+                        - listitem [ref=e786]:
+                          - button "Reply to conversation with “No, thank you”" [ref=e787] [cursor=pointer]:
+                            - generic [ref=e788]: Reply to conversation with “No, thank you”
+                            - generic: No, thank you
+                        - listitem [ref=e789]:
+                          - button "Reply to conversation with “Thanks”" [ref=e790] [cursor=pointer]:
+                            - generic [ref=e791]: Reply to conversation with “Thanks”
+                            - generic: Thanks
+                      - button "Scroll quick replies right" [ref=e792] [cursor=pointer]:
+                        - img [ref=e793]
+                        - generic [ref=e795]: Scroll quick replies right
+                  - listitem
+                - generic [ref=e796]:
+                  - generic [ref=e797]:
+                    - generic [ref=e799]:
+                      - textbox "Write a message…" [ref=e800]:
+                        - paragraph [ref=e801]
+                      - text: Write a message…
+                    - button "Maximize compose field" [ref=e803] [cursor=pointer]:
+                      - img [ref=e804]
+                      - generic [ref=e806]: Maximize compose field
+                  - generic [ref=e807]:
+                    - generic [ref=e808]:
+                      - button "Attach an image to your conversation with David Strucke" [ref=e810] [cursor=pointer]:
+                        - img [ref=e811]
+                        - generic [ref=e813]: Attach an image to your conversation with David Strucke
+                      - button "Attach a file to your conversation with David Strucke" [ref=e815] [cursor=pointer]:
+                        - img [ref=e816]
+                        - generic [ref=e818]: Attach a file to your conversation with David Strucke
+                      - button "Open GIF Keyboard" [ref=e820] [cursor=pointer]:
+                        - img [ref=e821]
+                        - generic [ref=e823]: Open GIF Keyboard
+                      - button "Open Emoji Keyboard" [ref=e826] [cursor=pointer]:
+                        - generic:
+                          - img
+                        - generic [ref=e827]: Open Emoji Keyboard
+                    - generic [ref=e828]:
+                      - button "Send" [disabled] [ref=e830]
+                      - button "Open send options" [ref=e833] [cursor=pointer]:
+                        - img [ref=e834]
+                        - generic [ref=e836]: Open send options
+        - complementary "AI-powered assistant to get help with your career, jobs etc"

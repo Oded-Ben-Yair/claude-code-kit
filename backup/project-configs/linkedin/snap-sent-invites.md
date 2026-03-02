@@ -1,0 +1,544 @@
+- generic [ref=e2]:
+  - heading "0 notifications" [level=2] [ref=e343]
+  - generic [ref=e344]:
+    - generic:
+      - button [ref=e345] [cursor=pointer]:
+        - generic [ref=e347]: Skip to main content
+      - button [ref=e348] [cursor=pointer]:
+        - img [ref=e350]
+    - generic [ref=e352]:
+      - banner [ref=e354]:
+        - generic [ref=e357]:
+          - button "LinkedIn" [ref=e358] [cursor=pointer]:
+            - img "LinkedIn" [ref=e359]
+          - search [ref=e362]:
+            - generic [ref=e363]:
+              - img [ref=e365]
+              - textbox "Search" [ref=e367]
+          - generic [ref=e369]:
+            - figure [ref=e374]
+            - navigation [ref=e377]:
+              - list [ref=e378]:
+                - listitem [ref=e379]:
+                  - button "Home, 1 new notification" [ref=e380] [cursor=pointer]:
+                    - img [ref=e382]
+                    - generic [ref=e386]: Home
+                - listitem [ref=e387]:
+                  - button "My Network, 4 new notifications" [ref=e388] [cursor=pointer]:
+                    - generic [ref=e389]:
+                      - img [ref=e390]
+                      - generic [ref=e392]: "4"
+                    - generic [ref=e394]: My Network
+                - listitem [ref=e395]:
+                  - button "Jobs, 0 new notifications" [ref=e396] [cursor=pointer]:
+                    - img [ref=e398]
+                    - generic [ref=e401]: Jobs
+                - listitem [ref=e402]:
+                  - link "Messaging, 0 new notifications" [ref=e403] [cursor=pointer]:
+                    - /url: https://www.linkedin.com/messaging/
+                    - img [ref=e405]
+                    - generic [ref=e408]: Messaging
+                - listitem [ref=e409]:
+                  - link "Notifications, 0 new notifications" [ref=e410] [cursor=pointer]:
+                    - /url: https://www.linkedin.com/notifications/
+                    - img [ref=e412]
+                    - generic [ref=e415]: Notifications
+                - listitem [ref=e416]:
+                  - button "Me" [ref=e417] [cursor=pointer]:
+                    - figure [ref=e419]
+                    - generic [ref=e421]:
+                      - text: Me
+                      - img [ref=e422]
+            - generic [ref=e425]:
+              - navigation [ref=e426]:
+                - list [ref=e427]:
+                  - listitem [ref=e428]:
+                    - button "For Business" [ref=e429] [cursor=pointer]:
+                      - img [ref=e431]
+                      - generic [ref=e434]:
+                        - text: For Business
+                        - img [ref=e435]
+              - 'link "Reactivate Premium: 50% Off" [ref=e439] [cursor=pointer]':
+                - /url: https://www.linkedin.com/premium/redeem/?_ed=0_bvLJH59RTSY-u5c6PMUa4IW0M54p9mxZpuVkfRvTl7r&upsellOrderOrigin=Tracking%3Av1%3Apremium_nav_upsell_text_winback%3ANav%3AIn-Product&referenceId=rNOLDwepSxWjSuHmADOiGA%3D%3D&customKey=wb_c&redeemTypeV2=DISCOUNT
+                - paragraph [ref=e441]:
+                  - 'link "Reactivate Premium: 50% Off" [ref=e442]':
+                    - /url: https://www.linkedin.com/premium/redeem/?_ed=0_bvLJH59RTSY-u5c6PMUa4IW0M54p9mxZpuVkfRvTl7r&upsellOrderOrigin=Tracking%3Av1%3Apremium_nav_upsell_text_winback%3ANav%3AIn-Product&referenceId=rNOLDwepSxWjSuHmADOiGA%3D%3D&customKey=wb_c&redeemTypeV2=DISCOUNT
+      - main [ref=e444]:
+        - generic [ref=e446]:
+          - generic [ref=e449]:
+            - generic [ref=e450]:
+              - generic [ref=e451]:
+                - paragraph [ref=e452]: Manage invitations
+                - button "Invitation settings" [ref=e453] [cursor=pointer]:
+                  - img "Invitation settings" [ref=e454]
+              - navigation [ref=e456]:
+                - list [ref=e457]:
+                  - listitem [ref=e458]:
+                    - button "Received" [ref=e459] [cursor=pointer]:
+                      - generic [ref=e461]: Received
+                  - listitem [ref=e462]:
+                    - button "Sent" [ref=e463] [cursor=pointer]:
+                      - generic [ref=e465]: Sent
+            - main [ref=e466]:
+              - generic [ref=e467]:
+                - navigation [ref=e468]:
+                  - list [ref=e469]:
+                    - listitem [ref=e470]:
+                      - button "People (106)" [ref=e471] [cursor=pointer]:
+                        - generic [ref=e473]: People (106)
+                - generic [ref=e474]:
+                  - listitem [ref=e475]:
+                    - generic [ref=e476]:
+                      - link "Nir Potasman’s profile picture" [ref=e477] [cursor=pointer]:
+                        - /url: https://www.linkedin.com/in/nir-potasman/
+                        - figure "Nir Potasman’s profile picture" [ref=e479]:
+                          - img "Nir Potasman’s profile picture" [ref=e480]
+                      - generic [ref=e482]:
+                        - paragraph [ref=e483]:
+                          - link "Nir Potasman" [ref=e484] [cursor=pointer]:
+                            - /url: https://www.linkedin.com/in/nir-potasman/
+                        - paragraph [ref=e486]: AI Engineer | Gen-AI | Data Science | Data Analytics
+                        - paragraph [ref=e488]: Sent today
+                      - button "Withdraw" [ref=e490] [cursor=pointer]:
+                        - generic [ref=e492]: Withdraw
+                  - listitem [ref=e493]:
+                    - generic [ref=e494]:
+                      - link "Or Goldberg’s profile picture" [ref=e495] [cursor=pointer]:
+                        - /url: https://www.linkedin.com/in/or-goldberg-a662a21a9/
+                        - figure "Or Goldberg’s profile picture" [ref=e497]:
+                          - img "Or Goldberg’s profile picture" [ref=e498]
+                      - generic [ref=e500]:
+                        - paragraph [ref=e501]:
+                          - link "Or Goldberg" [ref=e502] [cursor=pointer]:
+                            - /url: https://www.linkedin.com/in/or-goldberg-a662a21a9/
+                        - paragraph [ref=e504]: Generative AI Consulting | Crypto Enthusiast | Financial Planning | Pension Insurance Agent | LL.B. Laws & Economics
+                        - paragraph [ref=e506]: Sent today
+                      - button "Withdraw" [ref=e508] [cursor=pointer]:
+                        - generic [ref=e510]: Withdraw
+                  - listitem [ref=e511]:
+                    - generic [ref=e512]:
+                      - link "Omer Grinboim’s profile picture" [ref=e513] [cursor=pointer]:
+                        - /url: https://www.linkedin.com/in/omer-grinboim1/
+                        - figure "Omer Grinboim’s profile picture" [ref=e515]:
+                          - img "Omer Grinboim’s profile picture" [ref=e516]
+                      - generic [ref=e518]:
+                        - paragraph [ref=e519]:
+                          - link "Omer Grinboim" [ref=e520] [cursor=pointer]:
+                            - /url: https://www.linkedin.com/in/omer-grinboim1/
+                        - paragraph [ref=e522]: R&D Team Lead @ monday.com | Building AI agents | ex Microsoft
+                        - paragraph [ref=e524]: Sent 3 minutes ago
+                      - button "Withdraw" [ref=e526] [cursor=pointer]:
+                        - generic [ref=e528]: Withdraw
+                  - listitem [ref=e529]:
+                    - generic [ref=e530]:
+                      - link "Alaa Elias’ profile picture" [ref=e531] [cursor=pointer]:
+                        - /url: https://www.linkedin.com/in/alaa-elias/
+                        - figure "Alaa Elias’ profile picture" [ref=e533]:
+                          - img "Alaa Elias’ profile picture" [ref=e534]
+                      - generic [ref=e536]:
+                        - paragraph [ref=e537]:
+                          - link "Alaa Elias" [ref=e538] [cursor=pointer]:
+                            - /url: https://www.linkedin.com/in/alaa-elias/
+                        - paragraph [ref=e540]: Engineering Team Lead
+                        - paragraph [ref=e542]: Sent 4 minutes ago
+                      - button "Withdraw" [ref=e544] [cursor=pointer]:
+                        - generic [ref=e546]: Withdraw
+                  - listitem [ref=e547]:
+                    - generic [ref=e548]:
+                      - link "Muhammad Furqan’s profile picture" [ref=e549] [cursor=pointer]:
+                        - /url: https://www.linkedin.com/in/muhammad-furqan-0436a6355/
+                        - figure "Muhammad Furqan’s profile picture" [ref=e551]:
+                          - img "Muhammad Furqan’s profile picture" [ref=e552]
+                      - generic [ref=e554]:
+                        - paragraph [ref=e555]:
+                          - link "Muhammad Furqan" [ref=e556] [cursor=pointer]:
+                            - /url: https://www.linkedin.com/in/muhammad-furqan-0436a6355/
+                        - paragraph [ref=e558]: Agentic AI Engineer | LLM Systems, RAG & Multi-Agent Orchestrations | AI Automations, GenAI, NLP | Tech Creative Consultant | Content Writer
+                        - paragraph [ref=e560]: Sent 8 minutes ago
+                      - button "Withdraw" [ref=e562] [cursor=pointer]:
+                        - generic [ref=e564]: Withdraw
+                  - listitem [ref=e565]:
+                    - generic [ref=e566]:
+                      - link "Liran Sperling’s profile picture" [ref=e567] [cursor=pointer]:
+                        - /url: https://www.linkedin.com/in/liransperling/
+                        - figure "Liran Sperling’s profile picture" [ref=e569]:
+                          - img "Liran Sperling’s profile picture" [ref=e570]
+                      - generic [ref=e572]:
+                        - paragraph [ref=e573]:
+                          - link "Liran Sperling" [ref=e574] [cursor=pointer]:
+                            - /url: https://www.linkedin.com/in/liransperling/
+                        - paragraph [ref=e576]: GenAI Software Engineer at Check Point
+                        - paragraph [ref=e578]: Sent 23 hours ago
+                      - button "Withdraw" [ref=e580] [cursor=pointer]:
+                        - generic [ref=e582]: Withdraw
+                    - paragraph [ref=e587]:
+                      - generic [ref=e588]: Hey Liran, fellow IAF veteran here. Building multi-LLM routing and evaluation for a fintech. Your Co-pilot and AI agent work at Check Point overlaps with what we're doing. Coffee sometime?
+                  - listitem [ref=e589]:
+                    - generic [ref=e590]:
+                      - link "Or Halag’s profile picture" [ref=e591] [cursor=pointer]:
+                        - /url: https://www.linkedin.com/in/or-halag/
+                        - figure "Or Halag’s profile picture" [ref=e593]:
+                          - img "Or Halag’s profile picture" [ref=e594]
+                      - generic [ref=e596]:
+                        - paragraph [ref=e597]:
+                          - link "Or Halag" [ref=e598] [cursor=pointer]:
+                            - /url: https://www.linkedin.com/in/or-halag/
+                        - paragraph [ref=e600]: DevEx AI Engineer @ monday.com
+                        - paragraph [ref=e602]: Sent 23 hours ago
+                      - button "Withdraw" [ref=e604] [cursor=pointer]:
+                        - generic [ref=e606]: Withdraw
+                    - paragraph [ref=e611]:
+                      - generic [ref=e612]: Hey Or, saw you're building DevEx AI at monday with Claude and AI Agents. I'm doing multi-LLM routing and evaluation for a fintech. How's the AI agent tooling evolving at monday's scale?
+                  - listitem [ref=e613]:
+                    - generic [ref=e614]:
+                      - link "Tal Sagie’s profile picture" [ref=e615] [cursor=pointer]:
+                        - /url: https://www.linkedin.com/in/tal-sagie-92564756/
+                        - figure "Tal Sagie’s profile picture" [ref=e617]:
+                          - img "Tal Sagie’s profile picture" [ref=e618]
+                      - generic [ref=e620]:
+                        - paragraph [ref=e621]:
+                          - link "Tal Sagie" [ref=e622] [cursor=pointer]:
+                            - /url: https://www.linkedin.com/in/tal-sagie-92564756/
+                        - paragraph [ref=e624]: Software Engineer @ Gong
+                        - paragraph [ref=e626]: Sent 23 hours ago
+                      - button "Withdraw" [ref=e628] [cursor=pointer]:
+                        - generic [ref=e630]: Withdraw
+                    - paragraph [ref=e635]:
+                      - generic [ref=e636]: Hey Tal, saw you're building at Gong. I'm working on multi-LLM routing and evaluation for a fintech — similar scale challenges. How's the AI OS architecture evolving on the engineering side?
+                  - listitem [ref=e637]:
+                    - generic [ref=e638]:
+                      - link "Neta Zwebner’s profile picture" [ref=e639] [cursor=pointer]:
+                        - /url: https://www.linkedin.com/in/neta-zwebner-bb1351119/
+                        - figure "Neta Zwebner’s profile picture" [ref=e641]:
+                          - img "Neta Zwebner’s profile picture" [ref=e642]
+                      - generic [ref=e644]:
+                        - paragraph [ref=e645]:
+                          - link "Neta Zwebner" [ref=e646] [cursor=pointer]:
+                            - /url: https://www.linkedin.com/in/neta-zwebner-bb1351119/
+                        - paragraph [ref=e648]: Ex-Chief of Staff & Initiatives to the CEO, monday.com
+                        - paragraph [ref=e650]: Sent 2 months ago
+                      - button "Withdraw" [ref=e652] [cursor=pointer]:
+                        - generic [ref=e654]: Withdraw
+                  - listitem [ref=e655]:
+                    - generic [ref=e656]:
+                      - link "Elizabeta Dorman’s profile picture" [ref=e657] [cursor=pointer]:
+                        - /url: https://www.linkedin.com/in/elizabeta-dorman-365124385/
+                        - figure "Elizabeta Dorman’s profile picture" [ref=e659]:
+                          - img "Elizabeta Dorman’s profile picture" [ref=e660]
+                      - generic [ref=e662]:
+                        - paragraph [ref=e663]:
+                          - link "Elizabeta Dorman" [ref=e664] [cursor=pointer]:
+                            - /url: https://www.linkedin.com/in/elizabeta-dorman-365124385/
+                        - paragraph [ref=e666]: ", Customer Success & Process Optimization"
+                        - paragraph [ref=e668]: Sent 2 months ago
+                      - button "Withdraw" [ref=e670] [cursor=pointer]:
+                        - generic [ref=e672]: Withdraw
+                  - button "Load more" [ref=e674] [cursor=pointer]:
+                    - generic [ref=e676]: Load more
+          - generic [ref=e680]:
+            - iframe [ref=e683]:
+              - link "Advertise on LinkedIn" [ref=f405e3] [cursor=pointer]:
+                - /url: https://www.linkedin.com/jobs/?trk=li_FA_global_careers_jobsgtm_jsFA_v1&mcid=6899045044465016833
+                - img "Advertise on LinkedIn" [ref=f405e4]
+            - generic [ref=e684]:
+              - generic [ref=e685]:
+                - link "About" [ref=e686] [cursor=pointer]:
+                  - /url: https://about.linkedin.com/
+                  - paragraph [ref=e687]: About
+                - link "Accessibility" [ref=e688] [cursor=pointer]:
+                  - /url: https://www.linkedin.com/accessibility/
+                  - paragraph [ref=e689]: Accessibility
+                - link "Help Center" [ref=e690] [cursor=pointer]:
+                  - /url: https://www.linkedin.com/help/linkedin/
+                  - paragraph [ref=e691]: Help Center
+                - button "Privacy & Terms" [ref=e692] [cursor=pointer]:
+                  - generic [ref=e693]:
+                    - paragraph [ref=e694]: Privacy & Terms
+                    - img [ref=e695]
+                - link "Ad Choices" [ref=e697] [cursor=pointer]:
+                  - /url: https://www.linkedin.com/help/linkedin/answer/62931/
+                  - paragraph [ref=e698]: Ad Choices
+                - link "Advertising" [ref=e699] [cursor=pointer]:
+                  - /url: https://www.linkedin.com/ad/start/?trk=n_nav_ads_rr
+                  - paragraph [ref=e700]: Advertising
+                - button "Business Services" [ref=e701] [cursor=pointer]:
+                  - generic [ref=e702]:
+                    - paragraph [ref=e703]: Business Services
+                    - img [ref=e704]
+                - link "Get the LinkedIn app" [ref=e706] [cursor=pointer]:
+                  - /url: https://www.linkedin.com/mobile/
+                  - paragraph [ref=e707]: Get the LinkedIn app
+                - button "More" [ref=e708] [cursor=pointer]:
+                  - paragraph [ref=e709]: More
+              - generic [ref=e710]:
+                - img [ref=e711]
+                - paragraph [ref=e713]: LinkedIn Corporation © 2026
+  - generic [active]:
+    - generic:
+      - generic:
+        - generic:
+          - complementary:
+            - generic [ref=e715]:
+              - generic [ref=e717] [cursor=pointer]:
+                - generic [ref=e718]:
+                  - img "Oded Ben-Yair" [ref=e719]
+                  - generic [ref=e721]: Status is online
+                - button "You are on the messaging overlay. Press enter to open the list of conversations." [ref=e722]:
+                  - generic [ref=e723]:
+                    - generic [ref=e724]: Messaging
+                    - generic [ref=e725]: You are on the messaging overlay. Press enter to open the list of conversations.
+              - generic [ref=e726]:
+                - button "Open messenger dropdown menu" [ref=e728] [cursor=pointer]:
+                  - img "Open messenger dropdown menu" [ref=e729]
+                - button "Compose message" [ref=e732] [cursor=pointer]:
+                  - img [ref=e733]
+                  - generic [ref=e735]: Compose message
+                - button "You are on the messaging overlay. Press enter to open the list of conversations." [ref=e736] [cursor=pointer]:
+                  - img [ref=e737]
+                  - generic [ref=e739]: You are on the messaging overlay. Press enter to open the list of conversations.
+            - dialog "Messaging" [ref=e740]:
+              - generic [ref=e741]:
+                - generic [ref=e742] [cursor=pointer]:
+                  - generic [ref=e744]:
+                    - generic [ref=e746]:
+                      - img "David Strucke" [ref=e747]
+                      - generic [ref=e749]: Status is reachable
+                    - heading "David Strucke" [level=2] [ref=e751]
+                  - button "Close your conversation with David Strucke and Oded Ben-Yair" [ref=e753]:
+                    - img [ref=e754]
+                    - generic [ref=e756]: Close your conversation with David Strucke and Oded Ben-Yair
+                - generic [ref=e758]:
+                  - link "Visit my website" [ref=e761] [cursor=pointer]:
+                    - /url: https://datastreamer.io/
+                    - strong [ref=e762]: Visit my website
+                  - list [ref=e765]:
+                    - listitem
+                    - listitem [ref=e766]:
+                      - time [ref=e767]: Monday
+                      - generic [ref=e768]: David Strucke sent the following message at 1:43 PM
+                      - generic [ref=e769]:
+                        - link "View David’s profile David Strucke" [ref=e770] [cursor=pointer]:
+                          - /url: https://www.linkedin.com/in/ACoAAACpVzwBrVubV-bqhicRnlsrd_xHrMvxck8
+                          - generic [ref=e771]: View David’s profile
+                          - img "David Strucke" [ref=e772]
+                        - generic [ref=e773]:
+                          - generic [ref=e774]:
+                            - link "David Strucke" [ref=e775] [cursor=pointer]:
+                              - /url: https://www.linkedin.com/in/ACoAAACpVzwBrVubV-bqhicRnlsrd_xHrMvxck8
+                              - generic [ref=e776]: David Strucke
+                            - img "LinkedIn Verified" [ref=e777]
+                          - time [ref=e779]: • 1:43 PM
+                        - paragraph [ref=e783]:
+                          - text: Hi Oded, thanks for the connection!
+                          - text: Are you currently integrating and standardizing social and web data?
+                          - text: I'd love to hear how you're approaching it.
+                    - listitem [ref=e784]:
+                      - generic [ref=e785]: Oded Ben-Yair sent the following message at 3:54 PM
+                      - generic [ref=e786]:
+                        - link "View Oded’s profile Oded Ben-Yair" [ref=e787] [cursor=pointer]:
+                          - /url: https://www.linkedin.com/in/ACoAABEJXkIBpHRsj0zFy126tNlNuHKxpGElSpQ
+                          - generic [ref=e788]: View Oded’s profile
+                          - img "Oded Ben-Yair" [ref=e789]
+                        - generic [ref=e790]:
+                          - generic [ref=e791]:
+                            - link "Oded Ben-Yair" [ref=e792] [cursor=pointer]:
+                              - /url: https://www.linkedin.com/in/ACoAABEJXkIBpHRsj0zFy126tNlNuHKxpGElSpQ
+                              - generic [ref=e793]: Oded Ben-Yair
+                            - img "LinkedIn Verified" [ref=e794]
+                          - time [ref=e796]: • 3:54 PM
+                        - paragraph [ref=e800]: Hey David nice to meet you 🙂 not sure i fully grasp your question to be honest. I am actively running over 5 projects so you truly wish to have my piece you'll need to be a bit more clear
+                    - listitem [ref=e801]:
+                      - generic [ref=e802]: David Strucke sent the following message at 11:23 PM
+                      - generic [ref=e803]:
+                        - link "View David’s profile David Strucke" [ref=e804] [cursor=pointer]:
+                          - /url: https://www.linkedin.com/in/ACoAAACpVzwBrVubV-bqhicRnlsrd_xHrMvxck8
+                          - generic [ref=e805]: View David’s profile
+                          - img "David Strucke" [ref=e806]
+                        - generic [ref=e807]:
+                          - generic [ref=e808]:
+                            - link "David Strucke" [ref=e809] [cursor=pointer]:
+                              - /url: https://www.linkedin.com/in/ACoAAACpVzwBrVubV-bqhicRnlsrd_xHrMvxck8
+                              - generic [ref=e810]: David Strucke
+                            - img "LinkedIn Verified" [ref=e811]
+                          - time [ref=e813]: • 11:23 PM
+                        - paragraph [ref=e817]:
+                          - text: "Hi Oded, thanks for your reply! To clarify: our platform helps teams ingest, normalize, enrich, and move social and web data at scale. Datastreamer turns what can take weeks of engineering effort into minutes, letting your team focus on high-value product work instead of building and maintaining pipelines."
+                          - text: Given your projects, I’d suggest a short call to see if Datastreamer could simplify any of your workflows, or I can first send a quick video for more context.
+                    - listitem [ref=e818]:
+                      - time [ref=e819]: Tuesday
+                      - generic [ref=e820]: Oded Ben-Yair sent the following message at 4:47 AM
+                      - generic [ref=e821]:
+                        - link "View Oded’s profile Oded Ben-Yair" [ref=e822] [cursor=pointer]:
+                          - /url: https://www.linkedin.com/in/ACoAABEJXkIBpHRsj0zFy126tNlNuHKxpGElSpQ
+                          - generic [ref=e823]: View Oded’s profile
+                          - img "Oded Ben-Yair" [ref=e824]
+                        - generic [ref=e825]:
+                          - generic [ref=e826]:
+                            - link "Oded Ben-Yair" [ref=e827] [cursor=pointer]:
+                              - /url: https://www.linkedin.com/in/ACoAABEJXkIBpHRsj0zFy126tNlNuHKxpGElSpQ
+                              - generic [ref=e828]: Oded Ben-Yair
+                            - img "LinkedIn Verified" [ref=e829]
+                          - time [ref=e831]: • 4:47 AM
+                        - paragraph [ref=e835]: Quick video be great, tnx
+                    - listitem [ref=e836]:
+                      - time [ref=e837]: Thursday
+                      - generic [ref=e838]: David Strucke sent the following messages at 3:53 PM
+                      - generic [ref=e839]:
+                        - link "View David’s profile David Strucke" [ref=e840] [cursor=pointer]:
+                          - /url: https://www.linkedin.com/in/ACoAAACpVzwBrVubV-bqhicRnlsrd_xHrMvxck8
+                          - generic [ref=e841]: View David’s profile
+                          - img "David Strucke" [ref=e842]
+                        - generic [ref=e843]:
+                          - generic [ref=e844]:
+                            - link "David Strucke" [ref=e845] [cursor=pointer]:
+                              - /url: https://www.linkedin.com/in/ACoAAACpVzwBrVubV-bqhicRnlsrd_xHrMvxck8
+                              - generic [ref=e846]: David Strucke
+                            - img "LinkedIn Verified" [ref=e847]
+                          - time [ref=e849]: • 3:53 PM
+                        - paragraph [ref=e853]:
+                          - text: "Sure! Here is a quick video highlighting the latest updates to our platform and how it helps teams in your field accelerate social and web data workflows:"
+                          - link "https://www.youtube.com/watch?v=p5QrdEt2ptg" [ref=e854] [cursor=pointer]:
+                            - /url: https://www.youtube.com/watch?v=p5QrdEt2ptg
+                          - text: If you share any specific challenges or gaps you’ve noticed in your current workflow, I can either ask my team to record a 2-minute demo tailored to your needs, or we can jump on a quick call to walk through it together.
+                        - generic [ref=e859]:
+                          - generic [ref=e861]:
+                            - link "What's new in data pipelines (September 2025)":
+                              - /url: https://www.youtube.com/watch?v=p5QrdEt2ptg
+                              - generic "What's new in data pipelines (September 2025)" [ref=e863] [cursor=pointer]:
+                                - generic [ref=e864]: What's new in data pipelines (September 2025)
+                          - link [ref=e866] [cursor=pointer]:
+                            - /url: https://www.youtube.com/watch?v=p5QrdEt2ptg
+                            - article [ref=e867]:
+                              - generic [ref=e868]: What's new in data pipelines (September 2025)
+                              - generic [ref=e869]: youtube.com
+                      - img "Seen by David Strucke at 3:53 PM." [ref=e871]
+                    - listitem [ref=e872]
+                    - listitem [ref=e873]:
+                      - generic [ref=e874]:
+                        - button "Scroll quick replies left" [disabled] [ref=e875]:
+                          - img
+                          - generic: Scroll quick replies left
+                        - list [ref=e876]:
+                          - listitem [ref=e877]:
+                            - button "Reply to conversation with “No, thanks”" [ref=e878] [cursor=pointer]:
+                              - generic [ref=e879]: Reply to conversation with “No, thanks”
+                              - generic: No, thanks
+                          - listitem [ref=e880]:
+                            - button "Reply to conversation with “No, thank you”" [ref=e881] [cursor=pointer]:
+                              - generic [ref=e882]: Reply to conversation with “No, thank you”
+                              - generic: No, thank you
+                          - listitem [ref=e883]:
+                            - button "Reply to conversation with “Thanks”" [ref=e884] [cursor=pointer]:
+                              - generic [ref=e885]: Reply to conversation with “Thanks”
+                              - generic: Thanks
+                        - button "Scroll quick replies right" [ref=e886] [cursor=pointer]:
+                          - img [ref=e887]
+                          - generic [ref=e889]: Scroll quick replies right
+                    - listitem
+                  - generic [ref=e890]:
+                    - generic [ref=e891]:
+                      - generic [ref=e893]:
+                        - textbox "Write a message…" [ref=e894]:
+                          - paragraph [ref=e895]
+                        - text: Write a message…
+                      - button "Maximize compose field" [ref=e897] [cursor=pointer]:
+                        - img [ref=e898]
+                        - generic [ref=e900]: Maximize compose field
+                    - generic [ref=e901]:
+                      - generic [ref=e902]:
+                        - button "Attach an image to your conversation with David Strucke" [ref=e904] [cursor=pointer]:
+                          - img [ref=e905]
+                          - generic [ref=e907]: Attach an image to your conversation with David Strucke
+                        - button "Attach a file to your conversation with David Strucke" [ref=e909] [cursor=pointer]:
+                          - img [ref=e910]
+                          - generic [ref=e912]: Attach a file to your conversation with David Strucke
+                        - button "Open GIF Keyboard" [ref=e914] [cursor=pointer]:
+                          - img [ref=e915]
+                          - generic [ref=e917]: Open GIF Keyboard
+                        - button "Open Emoji Keyboard" [ref=e920] [cursor=pointer]:
+                          - generic:
+                            - img
+                          - generic [ref=e921]: Open Emoji Keyboard
+                      - generic [ref=e922]:
+                        - button "Send" [disabled] [ref=e924]
+                        - button "Open send options" [ref=e927] [cursor=pointer]:
+                          - img [ref=e928]
+                          - generic [ref=e930]: Open send options
+          - complementary "AI-powered assistant to get help with your career, jobs etc"
+  - iframe [ref=e931]:
+    - generic [active] [ref=f398e1]:
+      - generic:
+        - region "Toast message":
+          - heading "0 notifications total" [level=2] [ref=f398e3]
+          - alert
+      - region [ref=f398e4]
+      - generic [ref=f398e5]:
+        - generic [ref=f398e7]:
+          - button "Skip to search" [ref=f398e8] [cursor=pointer]:
+            - generic [ref=f398e9]: Skip to search
+          - button "Skip to main content" [ref=f398e10] [cursor=pointer]:
+            - generic [ref=f398e11]: Skip to main content
+          - button "Keyboard shortcuts" [ref=f398e12] [cursor=pointer]:
+            - generic [ref=f398e13]: Keyboard shortcuts
+          - button "Close jump menu" [ref=f398e14] [cursor=pointer]:
+            - img [ref=f398e15]
+            - generic [ref=f398e17]: Close jump menu
+        - banner "Global Navigation" [ref=f398e18]:
+          - generic [ref=f398e19]:
+            - link "LinkedIn" [ref=f398e20] [cursor=pointer]:
+              - /url: https://www.linkedin.com/feed/?nis=true
+              - img "LinkedIn" [ref=f398e23]:
+                - img [ref=f398e24]
+            - generic [ref=f398e28]:
+              - combobox "Search" [ref=f398e29]
+              - generic:
+                - img
+            - navigation "Primary Navigation" [ref=f398e30]:
+              - list [ref=f398e31]:
+                - listitem [ref=f398e32]:
+                  - link "new feed updates notifications Home" [ref=f398e33] [cursor=pointer]:
+                    - /url: https://www.linkedin.com/feed/
+                    - generic [ref=f398e34]:
+                      - generic [ref=f398e37]: new feed updates notifications
+                      - img [ref=f398e41]
+                    - generic "Home" [ref=f398e43]
+                - listitem [ref=f398e44]:
+                  - link "4 new network updates notifications My Network" [ref=f398e45] [cursor=pointer]:
+                    - /url: https://www.linkedin.com/mynetwork/?
+                    - generic [ref=f398e46]:
+                      - generic [ref=f398e47]:
+                        - generic [ref=f398e48]: "4"
+                        - generic [ref=f398e49]: 4 new network updates notifications
+                      - img [ref=f398e53]
+                    - generic "My Network" [ref=f398e55]
+                - listitem [ref=f398e56]:
+                  - link "Jobs" [ref=f398e57] [cursor=pointer]:
+                    - /url: https://www.linkedin.com/jobs/?
+                    - img [ref=f398e61]
+                    - generic "Jobs" [ref=f398e63]
+                - listitem [ref=f398e64]:
+                  - link "Messaging" [ref=f398e65] [cursor=pointer]:
+                    - /url: https://www.linkedin.com/messaging/?
+                    - img [ref=f398e69]
+                    - generic "Messaging" [ref=f398e71]
+                - listitem [ref=f398e72]:
+                  - link "Notifications" [ref=f398e73] [cursor=pointer]:
+                    - /url: https://www.linkedin.com/notifications/?
+                    - img [ref=f398e77]
+                    - generic "Notifications" [ref=f398e79]
+                - listitem [ref=f398e80]:
+                  - button "Oded Ben-Yair Me" [ref=f398e82] [cursor=pointer]:
+                    - img "Oded Ben-Yair" [ref=f398e83]
+                    - generic [ref=f398e84]:
+                      - text: Me
+                      - img [ref=f398e85]
+                - listitem [ref=f398e87]:
+                  - button "For Business" [ref=f398e89] [cursor=pointer]:
+                    - img [ref=f398e93]
+                    - generic "For Business" [ref=f398e95]:
+                      - text: For Business
+                      - img [ref=f398e96]
+                - listitem [ref=f398e98]:
+                  - 'link "Reactivate Premium: 50% Off" [ref=f398e100] [cursor=pointer]':
+                    - /url: http://www.linkedin.com/premium/redeem/?_ed=0_bvLJH59RTSY-u5c6PMUa4IW0M54p9mxZpuVkfRvTl7r&upsellOrderOrigin=Tracking%3Av1%3Apremium_nav_upsell_text_winback%3ANav%3AIn-Product&referenceId=NyGhDDPtQeaCf5Z2j3tM5g%3D%3D&customKey=wb_c&redeemTypeV2=DISCOUNT&destRedirectURL=https%3A%2F%2Fwww.linkedin.com%2Fmynetwork%2Finvitation-manager%2Fsent%2F
+                    - generic [ref=f398e102]: "Reactivate Premium: 50% Off"

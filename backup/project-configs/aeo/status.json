@@ -1,0 +1,97 @@
+{
+  "$schema": "Project status tracking for Claude Code sessions",
+  "version": "1.0",
+  "project": {
+    "name": "aeo",
+    "path": "/home/odedbe/projects/aeo",
+    "database": "Cosmos DB - aeo-seekapa-db / aeo_data",
+    "production": true,
+    "lastUpdated": "2026-02-06T11:47:00+00:00"
+  },
+  "architecture": {
+    "frontend": {
+      "type": "Azure Static Web Apps",
+      "appName": "aeo-dashboard-swa",
+      "resourceGroup": "AZAI_group",
+      "url": "https://aeo.corp-domain.com",
+      "defaultUrl": "https://thankful-rock-06e01f803.3.azurestaticapps.net",
+      "deployMethod": "swa deploy with build-time NEXT_PUBLIC_API_URL",
+      "deployCommand": "NEXT_PUBLIC_API_URL=https://aeob.corp-domain.com npm run build && npx @azure/static-web-apps-cli deploy ./out --deployment-token <TOKEN> --env production",
+      "notes": "NEXT_PUBLIC_* vars are BUILD TIME only. Must rebuild+redeploy if backend URL changes."
+    },
+    "backend": {
+      "type": "Azure Container Apps (Docker)",
+      "url": "https://aeob.corp-domain.com",
+      "acrImage": "sentimarkregistry.azurecr.io/aeodockerdeploy:main",
+      "deployMethod": "az acr build (no pipeline)",
+      "deployCommand": "az acr build --registry sentimarkregistry --image aeodockerdeploy:main --file Dockerfile .",
+      "notes": "Azure DevOps repo deleted Feb 6, 2026. No auto-pipeline. After ACR build, sysadmin restarts Container App."
+    },
+    "database": {
+      "type": "Cosmos DB",
+      "endpoint": "https://aeo-seekapa-db.documents.azure.com:443/",
+      "database": "aeo_data"
+    },
+    "threeWaySyncRule": {
+      "description": "These three values must always match when backend URL changes",
+      "apiUrl": "NEXT_PUBLIC_API_URL in build command → https://aeob.corp-domain.com",
+      "csp": "connect-src in dashboard/staticwebapp.config.json → https://aeob.corp-domain.com",
+      "cors": "CORS_ORIGINS in api/config.py → includes https://aeo.corp-domain.com"
+    },
+    "pipeline": {
+      "status": "INACTIVE",
+      "notes": "Azure DevOps repo deleted Feb 6, 2026. azure-pipelines.yml remains as template/reference only."
+    }
+  },
+  "currentState": {
+    "summary": "Production deployed and healthy. Frontend redeployed Feb 6 after 17 days stale. Architecture cleanup completed: SWA frontend + Docker backend, no pipeline.",
+    "branch": "feat/competitor-ux-animations",
+    "lastCommit": "edde6c6",
+    "testsPass": true,
+    "buildStatus": "production-healthy",
+    "healthChecks": {
+      "checkedAt": "2026-02-06T11:47:00Z",
+      "frontend": "200 OK - last-modified: Fri, 06 Feb 2026 08:09:59 GMT, CSP connect-src includes aeob.corp-domain.com",
+      "backend": "{\"status\":\"healthy\"}"
+    }
+  },
+  "blockers": [],
+  "inProgress": [],
+  "nextSteps": [
+    {
+      "priority": 1,
+      "description": "Competitor UX animations (current branch work)",
+      "estimatedComplexity": "medium",
+      "dependencies": []
+    },
+    {
+      "priority": 2,
+      "description": "Security hardening (Manus audit: 3.76/10 → target 8.0+)",
+      "estimatedComplexity": "high",
+      "dependencies": []
+    }
+  ],
+  "recentDecisions": [
+    "[2026-02-06] Frontend stays on Azure Static Web Apps, NOT Docker",
+    "[2026-02-06] Backend deploys via az acr build (no pipeline, DevOps repo deleted)",
+    "[2026-02-06] docker-compose.yml is backend-only, no frontend service",
+    "[2026-02-06] Frontend redeployed to SWA with correct API URL after 17 days stale"
+  ],
+  "patterns": {
+    "established": [
+      "Three-way sync: API URL + CSP connect-src + CORS_ORIGINS must match",
+      "NEXT_PUBLIC_* vars are build-time only - rebuild required on change",
+      "Backend deploy: az acr build then sysadmin restarts Container App"
+    ],
+    "toAvoid": [
+      "Do not assume Azure DevOps pipeline exists - it was deleted",
+      "Do not add frontend to docker-compose.yml - SWA only",
+      "Do not deploy frontend without setting NEXT_PUBLIC_API_URL"
+    ]
+  },
+  "sessionNotes": {
+    "lastSessionId": "8815",
+    "lastSessionDate": "2026-02-06",
+    "carryoverNotes": "Architecture cleanup complete. Both services healthy. See NEXT-SESSION.md for competitor UX enhancement plans."
+  }
+}

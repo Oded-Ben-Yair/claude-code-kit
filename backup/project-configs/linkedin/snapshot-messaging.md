@@ -1,0 +1,593 @@
+- generic [active] [ref=e1]:
+  - main [ref=e2]:
+    - generic [ref=e3]:
+      - link "Skip to main content" [ref=e4] [cursor=pointer]:
+        - /url: "#main-content"
+      - generic [ref=e6]:
+        - link "Sentimark home" [ref=e7] [cursor=pointer]:
+          - /url: /v2
+          - img "Sentimark - Intelligence Beyond Prediction" [ref=e8]
+        - generic [ref=e23]:
+          - generic [ref=e24]:
+            - generic [ref=e25]: Search assets
+            - img
+            - combobox "Search assets" [ref=e26]
+            - generic [ref=e27]: Press slash to focus. Type to search assets. Use arrow keys to navigate results.
+          - status [ref=e28]
+        - navigation "Main navigation" [ref=e29]:
+          - link "Home" [ref=e30] [cursor=pointer]:
+            - /url: /v2
+          - link "Assets" [ref=e31] [cursor=pointer]:
+            - /url: /v2/assets
+          - link "Portfolios" [ref=e32] [cursor=pointer]:
+            - /url: /v2/portfolios
+          - link "Track Record" [ref=e33] [cursor=pointer]:
+            - /url: /v2/accuracy
+          - link "Market Radar" [ref=e34] [cursor=pointer]:
+            - /url: /v2/regime
+          - link "Pricing" [ref=e35] [cursor=pointer]:
+            - /url: /v2/pricing
+          - button "More" [ref=e37] [cursor=pointer]:
+            - text: More
+            - img [ref=e38]
+        - generic [ref=e40]:
+          - button "Notifications" [ref=e43] [cursor=pointer]:
+            - img [ref=e44]
+          - generic [ref=e48]: Pro
+      - main "Main content" [ref=e49]:
+        - generic [ref=e51]:
+          - generic [ref=e52]:
+            - generic [ref=e53]:
+              - link "Home" [ref=e54] [cursor=pointer]:
+                - /url: /v2
+              - generic [ref=e55]: /
+              - generic [ref=e56]: Market Radar
+            - generic [ref=e58]:
+              - generic [ref=e59]:
+                - generic [ref=e60]:
+                  - generic [ref=e61]:
+                    - heading "Market Radar" [level=1] [ref=e62]
+                    - generic [ref=e63]: Crisis
+                  - paragraph [ref=e64]: Extreme market stress. Preserve capital immediately.
+                  - generic [ref=e65]:
+                    - generic [ref=e66]:
+                      - img [ref=e67]
+                      - generic [ref=e69]: Preserve capital — move to cash-heavy positions
+                    - generic [ref=e70]:
+                      - img [ref=e71]
+                      - generic [ref=e73]: Only forex TRADE signals may be actionable
+                    - generic [ref=e74]:
+                      - img [ref=e75]
+                      - generic [ref=e77]: Switch to Conservative Portfolio immediately
+                - generic [ref=e78]:
+                  - generic [ref=e79]:
+                    - paragraph [ref=e80]: Confidence
+                    - paragraph [ref=e81]: 82%
+                  - link "View Conservative Portfolio" [ref=e82] [cursor=pointer]:
+                    - /url: /v2/portfolios
+                    - text: View Conservative Portfolio
+                    - img [ref=e83]
+              - generic [ref=e85]:
+                - generic [ref=e86]: 33 TRADE signals active
+                - generic [ref=e88]: "Gate accuracy: 69% on Forex (n=303)"
+          - generic [ref=e89]:
+            - generic [ref=e91]:
+              - paragraph [ref=e92]: VIX
+              - paragraph [ref=e94]: "57.0"
+              - paragraph [ref=e95]: Extreme
+              - paragraph [ref=e96]: Extreme — wider stops, smaller positions
+            - generic [ref=e98]:
+              - paragraph [ref=e99]: Fear & Greed
+              - paragraph [ref=e101]: "57"
+              - paragraph [ref=e102]: Neutral
+              - paragraph [ref=e103]: Neutral — no strong sentiment signal
+            - generic [ref=e105]:
+              - paragraph [ref=e106]: Market Herding
+              - paragraph [ref=e108]: "--"
+            - generic [ref=e110]:
+              - paragraph [ref=e111]: Volatility Rank
+              - paragraph [ref=e113]: 67%
+              - paragraph [ref=e114]: vs last 12 months
+              - paragraph [ref=e115]: Normal range
+          - generic [ref=e116]:
+            - generic [ref=e117]:
+              - generic [ref=e119]:
+                - link "BTC ↔ flat Diverging" [ref=e120] [cursor=pointer]:
+                  - /url: /v2/assets/BTC
+                  - generic [ref=e121]:
+                    - generic [ref=e122]: BTC
+                    - generic [ref=e123]: ↔
+                    - generic [ref=e124]: flat
+                  - img [ref=e125]
+                  - generic [ref=e127]: Diverging
+                  - img [ref=e128]
+                - link "S&P 500 ↔ flat Diverging" [ref=e130] [cursor=pointer]:
+                  - /url: /v2/assets/SPX
+                  - generic [ref=e131]:
+                    - generic [ref=e132]: S&P 500
+                    - generic [ref=e133]: ↔
+                    - generic [ref=e134]: flat
+                  - img [ref=e135]
+                  - generic [ref=e137]: Diverging
+                  - img [ref=e138]
+              - generic [ref=e141]:
+                - heading "What's Driving This Regime" [level=3] [ref=e142]
+                - generic [ref=e144]:
+                  - generic [ref=e145]:
+                    - img [ref=e147]
+                    - paragraph [ref=e149]: vix=57.0>35_crisis
+                  - generic [ref=e150]:
+                    - img [ref=e152]
+                    - paragraph [ref=e154]: fgi=57_neutral
+                  - generic [ref=e155]:
+                    - img [ref=e157]
+                    - paragraph [ref=e159]: corr_unavailable
+              - generic [ref=e163]:
+                - generic [ref=e164]:
+                  - generic [ref=e165]:
+                    - img [ref=e166]
+                    - heading "Trade Alerts" [level=3] [ref=e168]
+                    - generic [ref=e169]: "15"
+                  - generic [ref=e170]: Last 24h
+                - generic [ref=e171]:
+                  - generic [ref=e172]:
+                    - generic [ref=e173]:
+                      - generic [ref=e174]:
+                        - generic [ref=e175]: SOL
+                        - button "TRADE" [ref=e177] [cursor=pointer]: TRADE
+                        - generic [ref=e179]: Shadow
+                      - generic [ref=e180]: 2m ago
+                    - generic [ref=e182]:
+                      - generic [ref=e183]: Gate Probability
+                      - generic [ref=e184]: 65.0%
+                    - generic [ref=e187]:
+                      - generic [ref=e188]: Pocket
+                      - generic [ref=e189]: crypto_neutral
+                    - paragraph [ref=e190]: prob=0.
+                    - button "Show full explanation" [ref=e191] [cursor=pointer]:
+                      - img [ref=e192]
+                      - text: Show full explanation
+                  - generic [ref=e194]:
+                    - generic [ref=e195]:
+                      - generic [ref=e196]:
+                        - generic [ref=e197]: SOL
+                        - button "TRADE" [ref=e199] [cursor=pointer]: TRADE
+                        - generic [ref=e201]: Shadow
+                      - generic [ref=e202]: 2m ago
+                    - generic [ref=e204]:
+                      - generic [ref=e205]: Gate Probability
+                      - generic [ref=e206]: 65.0%
+                    - generic [ref=e209]:
+                      - generic [ref=e210]: Pocket
+                      - generic [ref=e211]: crypto_neutral
+                    - paragraph [ref=e212]: prob=0.
+                    - button "Show full explanation" [ref=e213] [cursor=pointer]:
+                      - img [ref=e214]
+                      - text: Show full explanation
+                  - generic [ref=e216]:
+                    - generic [ref=e217]:
+                      - generic [ref=e218]:
+                        - generic [ref=e219]: SOL
+                        - button "TRADE" [ref=e221] [cursor=pointer]: TRADE
+                        - generic [ref=e223]: Shadow
+                      - generic [ref=e224]: 2m ago
+                    - generic [ref=e226]:
+                      - generic [ref=e227]: Gate Probability
+                      - generic [ref=e228]: 65.0%
+                    - generic [ref=e231]:
+                      - generic [ref=e232]: Pocket
+                      - generic [ref=e233]: crypto_neutral
+                    - paragraph [ref=e234]: prob=0.
+                    - button "Show full explanation" [ref=e235] [cursor=pointer]:
+                      - img [ref=e236]
+                      - text: Show full explanation
+                  - generic [ref=e238]:
+                    - generic [ref=e239]:
+                      - generic [ref=e240]:
+                        - generic [ref=e241]: ETH
+                        - button "TRADE" [ref=e243] [cursor=pointer]: TRADE
+                        - generic [ref=e245]: Shadow
+                      - generic [ref=e246]: 3m ago
+                    - generic [ref=e248]:
+                      - generic [ref=e249]: Gate Probability
+                      - generic [ref=e250]: 65.0%
+                    - generic [ref=e253]:
+                      - generic [ref=e254]: Pocket
+                      - generic [ref=e255]: crypto_neutral
+                    - paragraph [ref=e256]: prob=0.
+                    - button "Show full explanation" [ref=e257] [cursor=pointer]:
+                      - img [ref=e258]
+                      - text: Show full explanation
+                  - generic [ref=e260]:
+                    - generic [ref=e261]:
+                      - generic [ref=e262]:
+                        - generic [ref=e263]: EURUSD
+                        - button "TRADE" [ref=e265] [cursor=pointer]: TRADE
+                        - generic [ref=e267]: Shadow
+                      - generic [ref=e268]: 7m ago
+                    - generic [ref=e270]:
+                      - generic [ref=e271]: Gate Probability
+                      - generic [ref=e272]: 65.0%
+                    - generic [ref=e275]:
+                      - generic [ref=e276]: Pocket
+                      - generic [ref=e277]: forex_neutral
+                    - paragraph [ref=e278]: prob=0.
+                    - button "Show full explanation" [ref=e279] [cursor=pointer]:
+                      - img [ref=e280]
+                      - text: Show full explanation
+                  - generic [ref=e282]:
+                    - generic [ref=e283]:
+                      - generic [ref=e284]:
+                        - generic [ref=e285]: EURUSD
+                        - button "TRADE" [ref=e287] [cursor=pointer]: TRADE
+                        - generic [ref=e289]: Shadow
+                      - generic [ref=e290]: 7m ago
+                    - generic [ref=e292]:
+                      - generic [ref=e293]: Gate Probability
+                      - generic [ref=e294]: 65.0%
+                    - generic [ref=e297]:
+                      - generic [ref=e298]: Pocket
+                      - generic [ref=e299]: forex_neutral
+                    - paragraph [ref=e300]: prob=0.
+                    - button "Show full explanation" [ref=e301] [cursor=pointer]:
+                      - img [ref=e302]
+                      - text: Show full explanation
+                  - generic [ref=e304]:
+                    - generic [ref=e305]:
+                      - generic [ref=e306]:
+                        - generic [ref=e307]: EURUSD
+                        - button "TRADE" [ref=e309] [cursor=pointer]: TRADE
+                        - generic [ref=e311]: Shadow
+                      - generic [ref=e312]: 7m ago
+                    - generic [ref=e314]:
+                      - generic [ref=e315]: Gate Probability
+                      - generic [ref=e316]: 65.0%
+                    - generic [ref=e319]:
+                      - generic [ref=e320]: Pocket
+                      - generic [ref=e321]: forex_neutral
+                    - paragraph [ref=e322]: prob=0.
+                    - button "Show full explanation" [ref=e323] [cursor=pointer]:
+                      - img [ref=e324]
+                      - text: Show full explanation
+                  - generic [ref=e326]:
+                    - generic [ref=e327]:
+                      - generic [ref=e328]:
+                        - generic [ref=e329]: DOT
+                        - button "TRADE" [ref=e331] [cursor=pointer]: TRADE
+                        - generic [ref=e333]: Shadow
+                      - generic [ref=e334]: 9m ago
+                    - generic [ref=e336]:
+                      - generic [ref=e337]: Gate Probability
+                      - generic [ref=e338]: 59.2%
+                    - generic [ref=e341]:
+                      - generic [ref=e342]: Pocket
+                      - generic [ref=e343]: crypto_neutral
+                    - paragraph [ref=e344]: prob=0.
+                    - button "Show full explanation" [ref=e345] [cursor=pointer]:
+                      - img [ref=e346]
+                      - text: Show full explanation
+                  - generic [ref=e348]:
+                    - generic [ref=e349]:
+                      - generic [ref=e350]:
+                        - generic [ref=e351]: DOT
+                        - button "TRADE" [ref=e353] [cursor=pointer]: TRADE
+                        - generic [ref=e355]: Shadow
+                      - generic [ref=e356]: 9m ago
+                    - generic [ref=e358]:
+                      - generic [ref=e359]: Gate Probability
+                      - generic [ref=e360]: 65.0%
+                    - generic [ref=e363]:
+                      - generic [ref=e364]: Pocket
+                      - generic [ref=e365]: crypto_neutral
+                    - paragraph [ref=e366]: prob=0.
+                    - button "Show full explanation" [ref=e367] [cursor=pointer]:
+                      - img [ref=e368]
+                      - text: Show full explanation
+                  - generic [ref=e370]:
+                    - generic [ref=e371]:
+                      - generic [ref=e372]:
+                        - generic [ref=e373]: DOT
+                        - button "TRADE" [ref=e375] [cursor=pointer]: TRADE
+                        - generic [ref=e377]: Shadow
+                      - generic [ref=e378]: 9m ago
+                    - generic [ref=e380]:
+                      - generic [ref=e381]: Gate Probability
+                      - generic [ref=e382]: 65.0%
+                    - generic [ref=e385]:
+                      - generic [ref=e386]: Pocket
+                      - generic [ref=e387]: crypto_neutral
+                    - paragraph [ref=e388]: prob=0.
+                    - button "Show full explanation" [ref=e389] [cursor=pointer]:
+                      - img [ref=e390]
+                      - text: Show full explanation
+                  - generic [ref=e392]:
+                    - generic [ref=e393]:
+                      - generic [ref=e394]:
+                        - generic [ref=e395]: BNB
+                        - button "TRADE" [ref=e397] [cursor=pointer]: TRADE
+                        - generic [ref=e399]: Shadow
+                      - generic [ref=e400]: 10m ago
+                    - generic [ref=e402]:
+                      - generic [ref=e403]: Gate Probability
+                      - generic [ref=e404]: 65.0%
+                    - generic [ref=e407]:
+                      - generic [ref=e408]: Pocket
+                      - generic [ref=e409]: crypto_neutral
+                    - paragraph [ref=e410]: prob=0.
+                    - button "Show full explanation" [ref=e411] [cursor=pointer]:
+                      - img [ref=e412]
+                      - text: Show full explanation
+                  - generic [ref=e414]:
+                    - generic [ref=e415]:
+                      - generic [ref=e416]:
+                        - generic [ref=e417]: BNB
+                        - button "TRADE" [ref=e419] [cursor=pointer]: TRADE
+                        - generic [ref=e421]: Shadow
+                      - generic [ref=e422]: 10m ago
+                    - generic [ref=e424]:
+                      - generic [ref=e425]: Gate Probability
+                      - generic [ref=e426]: 65.0%
+                    - generic [ref=e429]:
+                      - generic [ref=e430]: Pocket
+                      - generic [ref=e431]: crypto_neutral
+                    - paragraph [ref=e432]: prob=0.
+                    - button "Show full explanation" [ref=e433] [cursor=pointer]:
+                      - img [ref=e434]
+                      - text: Show full explanation
+                  - generic [ref=e436]:
+                    - generic [ref=e437]:
+                      - generic [ref=e438]:
+                        - generic [ref=e439]: BNB
+                        - button "TRADE" [ref=e441] [cursor=pointer]: TRADE
+                        - generic [ref=e443]: Shadow
+                      - generic [ref=e444]: 10m ago
+                    - generic [ref=e446]:
+                      - generic [ref=e447]: Gate Probability
+                      - generic [ref=e448]: 65.0%
+                    - generic [ref=e451]:
+                      - generic [ref=e452]: Pocket
+                      - generic [ref=e453]: crypto_neutral
+                    - paragraph [ref=e454]: prob=0.
+                    - button "Show full explanation" [ref=e455] [cursor=pointer]:
+                      - img [ref=e456]
+                      - text: Show full explanation
+                  - generic [ref=e458]:
+                    - generic [ref=e459]:
+                      - generic [ref=e460]:
+                        - generic [ref=e461]: USDCAD=X
+                        - button "TRADE" [ref=e463] [cursor=pointer]: TRADE
+                        - generic [ref=e465]: Shadow
+                      - generic [ref=e466]: 11m ago
+                    - generic [ref=e468]:
+                      - generic [ref=e469]: Gate Probability
+                      - generic [ref=e470]: 65.0%
+                    - generic [ref=e473]:
+                      - generic [ref=e474]: Pocket
+                      - generic [ref=e475]: forex_neutral
+                    - paragraph [ref=e476]: prob=0.
+                    - button "Show full explanation" [ref=e477] [cursor=pointer]:
+                      - img [ref=e478]
+                      - text: Show full explanation
+                  - generic [ref=e480]:
+                    - generic [ref=e481]:
+                      - generic [ref=e482]:
+                        - generic [ref=e483]: USDCAD=X
+                        - button "TRADE" [ref=e485] [cursor=pointer]: TRADE
+                        - generic [ref=e487]: Shadow
+                      - generic [ref=e488]: 11m ago
+                    - generic [ref=e490]:
+                      - generic [ref=e491]: Gate Probability
+                      - generic [ref=e492]: 65.0%
+                    - generic [ref=e495]:
+                      - generic [ref=e496]: Pocket
+                      - generic [ref=e497]: forex_neutral
+                    - paragraph [ref=e498]: prob=0.
+                    - button "Show full explanation" [ref=e499] [cursor=pointer]:
+                      - img [ref=e500]
+                      - text: Show full explanation
+            - generic [ref=e502]:
+              - generic [ref=e504]:
+                - generic [ref=e505]:
+                  - heading "Your Edge Right Now" [level=3] [ref=e506]
+                  - generic [ref=e507]: 33 active
+                - generic [ref=e508]:
+                  - link "SOL TRADE crypto neutral 65%" [ref=e509] [cursor=pointer]:
+                    - /url: /v2/assets/SOL
+                    - generic [ref=e510]:
+                      - generic [ref=e511]: SOL
+                      - button "TRADE" [ref=e513]: TRADE
+                    - generic [ref=e515]:
+                      - generic [ref=e516]: crypto neutral
+                      - generic [ref=e517]: 65%
+                      - img [ref=e518]
+                  - link "SOL TRADE crypto neutral 65%" [ref=e520] [cursor=pointer]:
+                    - /url: /v2/assets/SOL
+                    - generic [ref=e521]:
+                      - generic [ref=e522]: SOL
+                      - button "TRADE" [ref=e524]: TRADE
+                    - generic [ref=e526]:
+                      - generic [ref=e527]: crypto neutral
+                      - generic [ref=e528]: 65%
+                      - img [ref=e529]
+                  - link "SOL TRADE crypto neutral 65%" [ref=e531] [cursor=pointer]:
+                    - /url: /v2/assets/SOL
+                    - generic [ref=e532]:
+                      - generic [ref=e533]: SOL
+                      - button "TRADE" [ref=e535]: TRADE
+                    - generic [ref=e537]:
+                      - generic [ref=e538]: crypto neutral
+                      - generic [ref=e539]: 65%
+                      - img [ref=e540]
+                  - link "ETH TRADE crypto neutral 65%" [ref=e542] [cursor=pointer]:
+                    - /url: /v2/assets/ETH
+                    - generic [ref=e543]:
+                      - generic [ref=e544]: ETH
+                      - button "TRADE" [ref=e546]: TRADE
+                    - generic [ref=e548]:
+                      - generic [ref=e549]: crypto neutral
+                      - generic [ref=e550]: 65%
+                      - img [ref=e551]
+                  - link "EURUSD TRADE forex neutral 65%" [ref=e553] [cursor=pointer]:
+                    - /url: /v2/assets/EURUSD
+                    - generic [ref=e554]:
+                      - generic [ref=e555]: EURUSD
+                      - button "TRADE" [ref=e557]: TRADE
+                    - generic [ref=e559]:
+                      - generic [ref=e560]: forex neutral
+                      - generic [ref=e561]: 65%
+                      - img [ref=e562]
+                  - link "EURUSD TRADE forex neutral 65%" [ref=e564] [cursor=pointer]:
+                    - /url: /v2/assets/EURUSD
+                    - generic [ref=e565]:
+                      - generic [ref=e566]: EURUSD
+                      - button "TRADE" [ref=e568]: TRADE
+                    - generic [ref=e570]:
+                      - generic [ref=e571]: forex neutral
+                      - generic [ref=e572]: 65%
+                      - img [ref=e573]
+                  - link "EURUSD TRADE forex neutral 65%" [ref=e575] [cursor=pointer]:
+                    - /url: /v2/assets/EURUSD
+                    - generic [ref=e576]:
+                      - generic [ref=e577]: EURUSD
+                      - button "TRADE" [ref=e579]: TRADE
+                    - generic [ref=e581]:
+                      - generic [ref=e582]: forex neutral
+                      - generic [ref=e583]: 65%
+                      - img [ref=e584]
+                  - link "DOT TRADE crypto neutral 59%" [ref=e586] [cursor=pointer]:
+                    - /url: /v2/assets/DOT
+                    - generic [ref=e587]:
+                      - generic [ref=e588]: DOT
+                      - button "TRADE" [ref=e590]: TRADE
+                    - generic [ref=e592]:
+                      - generic [ref=e593]: crypto neutral
+                      - generic [ref=e594]: 59%
+                      - img [ref=e595]
+                  - paragraph [ref=e597]: +25 more TRADE signals
+              - generic [ref=e601]:
+                - generic [ref=e602]:
+                  - heading "Category Snapshot" [level=3] [ref=e603]
+                  - generic [ref=e604]: 33/50 TRADE
+                - generic [ref=e605]:
+                  - generic [ref=e606]:
+                    - generic [ref=e607]:
+                      - generic [ref=e608]: Forex
+                      - generic [ref=e609]: 12/12 TRADE
+                    - generic [ref=e612]:
+                      - generic [ref=e613]:
+                        - generic [ref=e614]: EURUSD=X
+                        - button "TRADE" [ref=e616] [cursor=pointer]: TRADE
+                      - generic [ref=e618]: 66%
+                  - generic [ref=e619]:
+                    - generic [ref=e620]:
+                      - generic [ref=e621]: Crypto
+                      - generic [ref=e622]: 10/12 TRADE
+                    - generic [ref=e625]:
+                      - generic [ref=e626]:
+                        - generic [ref=e627]: SOL
+                        - button "TRADE" [ref=e629] [cursor=pointer]: TRADE
+                      - generic [ref=e631]: 65%
+                  - generic [ref=e632]:
+                    - generic [ref=e633]:
+                      - generic [ref=e634]: Stocks
+                      - generic [ref=e635]: 0/12 TRADE
+                    - paragraph [ref=e638]: All filtered out
+                  - generic [ref=e639]:
+                    - generic [ref=e640]:
+                      - generic [ref=e641]: Indices
+                      - generic [ref=e642]: 11/11 TRADE
+                    - generic [ref=e645]:
+                      - generic [ref=e646]:
+                        - generic [ref=e647]: ^FTSE
+                        - button "TRADE" [ref=e649] [cursor=pointer]: TRADE
+                      - generic [ref=e651]: 65%
+                  - generic [ref=e652]:
+                    - generic [ref=e653]:
+                      - generic [ref=e654]: Commodities
+                      - generic [ref=e655]: 0/3 TRADE
+                    - paragraph [ref=e658]: All filtered out
+              - paragraph [ref=e661]: Regime stable — no recent transitions detected
+          - generic [ref=e662]:
+            - generic [ref=e665]: Next Steps
+            - generic [ref=e667]:
+              - link "Conservative Portfolio Recommended for this regime" [ref=e668] [cursor=pointer]:
+                - /url: /v2/portfolios
+                - generic [ref=e669]:
+                  - paragraph [ref=e670]: Conservative Portfolio
+                  - paragraph [ref=e671]: Recommended for this regime
+                - img [ref=e672]
+              - link "Track Record Model accuracy & statistics" [ref=e674] [cursor=pointer]:
+                - /url: /v2/accuracy
+                - generic [ref=e675]:
+                  - paragraph [ref=e676]: Track Record
+                  - paragraph [ref=e677]: Model accuracy & statistics
+                - img [ref=e678]
+              - link "Active Predictions Browse all asset predictions 33" [ref=e680] [cursor=pointer]:
+                - /url: /v2/assets
+                - generic [ref=e681]:
+                  - generic [ref=e682]:
+                    - paragraph [ref=e683]: Active Predictions
+                    - paragraph [ref=e684]: Browse all asset predictions
+                  - generic [ref=e685]: "33"
+                - img [ref=e686]
+      - generic [ref=e689]:
+        - generic [ref=e690]:
+          - generic [ref=e691]:
+            - img "Sentimark - Intelligence Beyond Prediction" [ref=e692]
+            - paragraph [ref=e706]: AI-powered market intelligence platform. 8 data sources, 4 AI models, real-time insights.
+          - generic [ref=e707]:
+            - heading "Product" [level=3] [ref=e708]
+            - list [ref=e709]:
+              - listitem [ref=e710]:
+                - link "Assets" [ref=e711] [cursor=pointer]:
+                  - /url: /v2/assets
+              - listitem [ref=e712]:
+                - link "Portfolios" [ref=e713] [cursor=pointer]:
+                  - /url: /v2/portfolios
+              - listitem [ref=e714]:
+                - link "Pricing" [ref=e715] [cursor=pointer]:
+                  - /url: /v2/pricing
+          - generic [ref=e716]:
+            - heading "Resources" [level=3] [ref=e717]
+            - list [ref=e718]:
+              - listitem [ref=e719]:
+                - link "Documentation" [ref=e720] [cursor=pointer]:
+                  - /url: /v2/docs
+              - listitem [ref=e721]:
+                - link "API Reference" [ref=e722] [cursor=pointer]:
+                  - /url: /v2/docs#api
+              - listitem [ref=e723]:
+                - link "Status" [ref=e724] [cursor=pointer]:
+                  - /url: https://status.sentimark.io
+          - generic [ref=e725]:
+            - heading "Legal" [level=3] [ref=e726]
+            - list [ref=e727]:
+              - listitem [ref=e728]:
+                - link "Privacy & Terms" [ref=e729] [cursor=pointer]:
+                  - /url: /v2/legal
+        - generic [ref=e731]:
+          - paragraph [ref=e732]: © 2026 Sentimark. All rights reserved.
+          - generic [ref=e733]:
+            - link "Follow us on Twitter" [ref=e734] [cursor=pointer]:
+              - /url: https://twitter.com/sentimark
+              - generic [ref=e735]: Twitter
+            - link "Join our Discord" [ref=e736] [cursor=pointer]:
+              - /url: https://discord.gg/sentimark
+              - generic [ref=e737]: Discord
+            - link "View our GitHub" [ref=e738] [cursor=pointer]:
+              - /url: https://github.com/sentimark
+              - generic [ref=e739]: GitHub
+      - button "Open AI chat assistant" [ref=e741] [cursor=pointer]:
+        - img [ref=e742]
+  - alert [ref=e744]
+  - dialog "Asset Comparison" [ref=e745]:
+    - generic [ref=e746]:
+      - heading "Compare Assets(0/3)" [level=2] [ref=e747]:
+        - text: Compare Assets
+        - generic [ref=e748]: (0/3)
+      - button "Close comparison drawer" [ref=e749] [cursor=pointer]:
+        - img [ref=e750]
+    - generic [ref=e753]:
+      - img [ref=e755]
+      - heading "No Assets Selected" [level=3] [ref=e757]
+      - paragraph [ref=e758]: Visit asset pages and click "Add to Compare" to compare up to 3 assets side-by-side.

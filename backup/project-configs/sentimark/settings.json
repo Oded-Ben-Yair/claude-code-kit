@@ -1,0 +1,8 @@
+{
+  "model": "opus",
+  "_meta": {
+    "project": "Sentimark",
+    "type": "Next.js + Python Azure Functions",
+    "description": "Crowd wisdom sentiment analysis platform"
+  }
+}

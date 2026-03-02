@@ -1,0 +1,2489 @@
+- generic [ref=e2]:
+  - heading "0 notifications" [level=2] [ref=e243]
+  - generic [ref=e244]:
+    - generic:
+      - button [ref=e245] [cursor=pointer]:
+        - generic [ref=e247]: Skip to main content
+      - button [ref=e248] [cursor=pointer]:
+        - img [ref=e250]
+    - generic [ref=e252]:
+      - banner [ref=e254]:
+        - generic [ref=e257]:
+          - button "LinkedIn" [ref=e258] [cursor=pointer]:
+            - img "LinkedIn" [ref=e259]
+          - search [ref=e262]:
+            - generic [ref=e263]:
+              - img [ref=e265]
+              - textbox "Search" [ref=e267]
+          - generic [ref=e269]:
+            - figure [ref=e274]
+            - navigation [ref=e277]:
+              - list [ref=e278]:
+                - listitem [ref=e279]:
+                  - button "Home, 1 new notification" [ref=e280] [cursor=pointer]:
+                    - img [ref=e282]
+                    - generic [ref=e285]: Home
+                - listitem [ref=e286]:
+                  - button "My Network, 1 new notification" [ref=e287] [cursor=pointer]:
+                    - generic [ref=e288]:
+                      - img [ref=e289]
+                      - generic [ref=e291]: "1"
+                    - generic [ref=e293]: My Network
+                - listitem [ref=e294]:
+                  - button "Jobs, 0 new notifications" [ref=e295] [cursor=pointer]:
+                    - img [ref=e297]
+                    - generic [ref=e300]: Jobs
+                - listitem [ref=e301]:
+                  - link "Messaging, 0 new notifications" [ref=e302] [cursor=pointer]:
+                    - /url: https://www.linkedin.com/messaging/
+                    - img [ref=e304]
+                    - generic [ref=e307]: Messaging
+                - listitem [ref=e308]:
+                  - link "Notifications, 0 new notifications" [ref=e309] [cursor=pointer]:
+                    - /url: https://www.linkedin.com/notifications/
+                    - img [ref=e311]
+                    - generic [ref=e314]: Notifications
+                - listitem [ref=e315]:
+                  - button "Me" [ref=e316] [cursor=pointer]:
+                    - figure [ref=e318]
+                    - generic [ref=e320]:
+                      - text: Me
+                      - img [ref=e321]
+            - generic [ref=e324]:
+              - navigation [ref=e325]:
+                - list [ref=e326]:
+                  - listitem [ref=e327]:
+                    - button "For Business" [ref=e328] [cursor=pointer]:
+                      - img [ref=e330]
+                      - generic [ref=e333]:
+                        - text: For Business
+                        - img [ref=e334]
+              - 'link "Reactivate Premium: 50% Off" [ref=e338] [cursor=pointer]':
+                - /url: https://www.linkedin.com/premium/redeem/?_ed=0_bvLJH59RTSY-u5c6PMUa4IW0M54p9mxZpuVkfRvTl7r&upsellOrderOrigin=Tracking%3Av1%3Apremium_nav_upsell_text_winback%3ANav%3AIn-Product&referenceId=5QoplbecQMWgPt%2BN1eXDHA%3D%3D&customKey=wb_c&redeemTypeV2=DISCOUNT
+                - paragraph [ref=e340]:
+                  - 'link "Reactivate Premium: 50% Off" [ref=e341]':
+                    - /url: https://www.linkedin.com/premium/redeem/?_ed=0_bvLJH59RTSY-u5c6PMUa4IW0M54p9mxZpuVkfRvTl7r&upsellOrderOrigin=Tracking%3Av1%3Apremium_nav_upsell_text_winback%3ANav%3AIn-Product&referenceId=5QoplbecQMWgPt%2BN1eXDHA%3D%3D&customKey=wb_c&redeemTypeV2=DISCOUNT
+      - main [ref=e342]:
+        - main [ref=e344]:
+          - generic [ref=e346]:
+            - generic [ref=e350]:
+              - generic [ref=e354]:
+                - link [ref=e355] [cursor=pointer]:
+                  - /url: https://www.linkedin.com/in/oded-ben-yair-ai/
+                  - generic [ref=e356]:
+                    - figure [ref=e358]
+                    - figure [ref=e360]
+                - generic [ref=e361]:
+                  - link "Oded Ben-Yair Founding AI Engineer | Multi-LLM Routing & Evaluation in Production | Voice AI · RAG | Azure + Python Tel Aviv-Yafo, Tel Aviv District" [ref=e362] [cursor=pointer]:
+                    - /url: https://www.linkedin.com/in/oded-ben-yair-ai/
+                    - generic [ref=e363]:
+                      - generic [ref=e364]:
+                        - paragraph [ref=e366]: Oded Ben-Yair
+                        - img [ref=e367]
+                      - paragraph [ref=e370]: Founding AI Engineer | Multi-LLM Routing & Evaluation in Production | Voice AI · RAG | Azure + Python
+                      - paragraph [ref=e371]: Tel Aviv-Yafo, Tel Aviv District
+                  - link "Be Z Online" [ref=e372] [cursor=pointer]:
+                    - /url: https://www.linkedin.com/in/oded-ben-yair-ai/
+                    - generic [ref=e373]:
+                      - figure [ref=e374]
+                      - paragraph [ref=e375]: Be Z Online
+              - 'link "Achieve 4x more profile visits Reactivate Premium: 50% Off" [ref=e380] [cursor=pointer]':
+                - /url: https://www.linkedin.com/premium/redeem/?_ed=0_bvLJH59RTSY-u5c6PMUa4IW0M54p9mxZpuVkfRvTl7r&upsellOrderOrigin=Tracking%3Av1%3Apremium_homepage_identity_upsell_winback%3ANav%3AIn-Product&referenceId=xjdAQjNQTuC%2BlMwQJ0onvQ%3D%3D&customKey=wb_c&redeemTypeV2=DISCOUNT
+                - generic [ref=e381]:
+                  - paragraph [ref=e382]: Achieve 4x more profile visits
+                  - generic [ref=e384]:
+                    - img [ref=e385]
+                    - 'button "Reactivate Premium: 50% Off" [ref=e388]':
+                      - paragraph [ref=e389]: "Reactivate Premium: 50% Off"
+              - menu [ref=e392]:
+                - link "Profile viewers 154" [ref=e393] [cursor=pointer]:
+                  - /url: https://www.linkedin.com/me/profile-views/
+                  - generic "Profile viewers 154" [ref=e394]:
+                    - paragraph [ref=e396]: Profile viewers
+                    - paragraph [ref=e397]: "154"
+                - link "Post impressions 121" [ref=e398] [cursor=pointer]:
+                  - /url: https://www.linkedin.com/analytics/creator/content/
+                  - generic "Post impressions 121" [ref=e399]:
+                    - paragraph [ref=e401]: Post impressions
+                    - paragraph [ref=e402]: "121"
+              - menu [ref=e405]:
+                - link "Saved items" [ref=e406] [cursor=pointer]:
+                  - /url: https://www.linkedin.com/my-items/saved-posts/
+                  - generic [ref=e407]:
+                    - img [ref=e408]
+                    - paragraph [ref=e410]: Saved items
+                - link "Groups" [ref=e411] [cursor=pointer]:
+                  - /url: https://www.linkedin.com/groups/
+                  - generic [ref=e412]:
+                    - img [ref=e413]
+                    - paragraph [ref=e419]: Groups
+                - link "Newsletters" [ref=e420] [cursor=pointer]:
+                  - /url: https://www.linkedin.com/mynetwork/network-manager/newsletters/
+                  - generic [ref=e421]:
+                    - img [ref=e422]
+                    - paragraph [ref=e424]: Newsletters
+                - link "Events" [ref=e425] [cursor=pointer]:
+                  - /url: https://www.linkedin.com/events/
+                  - generic [ref=e426]:
+                    - img [ref=e427]
+                    - paragraph [ref=e429]: Events
+            - generic [ref=e431]:
+              - generic [ref=e433]:
+                - generic [ref=e434]:
+                  - link [ref=e435] [cursor=pointer]:
+                    - /url: https://www.linkedin.com/in/oded-ben-yair-ai/
+                    - figure [ref=e436]
+                  - button "Start a post" [ref=e438] [cursor=pointer]:
+                    - generic "Start a post" [ref=e439]:
+                      - generic [ref=e441]:
+                        - paragraph [ref=e442]: Start a post
+                        - generic:
+                          - paragraph
+                - generic [ref=e443]:
+                  - button "Video" [ref=e444] [cursor=pointer]:
+                    - generic [ref=e445]:
+                      - img [ref=e446]
+                      - paragraph [ref=e448]: Video
+                  - button "Photo" [ref=e449] [cursor=pointer]:
+                    - generic [ref=e450]:
+                      - img [ref=e451]
+                      - paragraph [ref=e453]: Photo
+                  - link "Write article" [ref=e454] [cursor=pointer]:
+                    - /url: /article/new/
+                    - generic [ref=e455]:
+                      - img [ref=e456]
+                      - paragraph [ref=e458]: Write article
+              - 'button "Sort by: Top" [ref=e460] [cursor=pointer]':
+                - generic [ref=e461]:
+                  - paragraph [ref=e462]:
+                    - text: "Sort by:"
+                    - strong [ref=e463]: Top
+                  - img [ref=e464]
+              - listitem [ref=e469]:
+                - generic [ref=e471]:
+                  - heading "Feed post" [level=2]:
+                    - generic [ref=e472]: Feed post
+                  - generic [ref=e473]:
+                    - generic [ref=e474]:
+                      - link [ref=e475] [cursor=pointer]:
+                        - /url: https://www.linkedin.com/in/victorialslocum/
+                        - figure [ref=e476]
+                      - paragraph [ref=e478]:
+                        - link "Victoria Slocum" [ref=e479] [cursor=pointer]:
+                          - /url: https://www.linkedin.com/in/victorialslocum/
+                          - strong [ref=e480]: Victoria Slocum
+                        - text: commented on this
+                    - button "View more options" [ref=e481] [cursor=pointer]:
+                      - img [ref=e483]
+                    - button "Hide Post" [ref=e485] [cursor=pointer]:
+                      - img [ref=e487]
+                  - generic [ref=e489]:
+                    - link "View Victoria Slocum’s profile" [ref=e490] [cursor=pointer]:
+                      - /url: https://www.linkedin.com/in/victorialslocum/
+                      - figure "View Victoria Slocum’s profile" [ref=e491]:
+                        - img "View Victoria Slocum’s profile" [ref=e492]
+                    - link "Victoria Slocum • 1st Machine Learning Engineer @ Weaviate 1w •" [ref=e493] [cursor=pointer]:
+                      - /url: https://www.linkedin.com/in/victorialslocum/
+                      - generic [ref=e494]:
+                        - paragraph [ref=e496]:
+                          - text: Victoria Slocum
+                          - img [ref=e498]
+                          - generic [ref=e500]: • 1st
+                        - paragraph [ref=e502]: Machine Learning Engineer @ Weaviate
+                        - paragraph [ref=e504]:
+                          - text: 1w •
+                          - img [ref=e505]
+                  - paragraph [ref=e507]:
+                    - generic [ref=e508]:
+                      - text: "𝗛𝗶𝗲𝗿𝗮𝗿𝗰𝗵𝗶𝗰𝗮𝗹 𝗡𝗮𝘃𝗶𝗴𝗮𝗯𝗹𝗲 𝗦𝗺𝗮𝗹𝗹 𝗪𝗼𝗿𝗹𝗱 (HNSW) is the algorithm that makes vector search actually fast at scale, letting us search through billions of vectors in milliseconds. The way it works is genuinely elegant - it's been one of my favorite things to learn about in the past few years. Here's how it works: HNSW builds a 𝗺𝘂𝗹𝘁𝗶-𝗹𝗮𝘆𝗲𝗿 𝗴𝗿𝗮𝗽𝗵 𝘀𝘁𝗿𝘂𝗰𝘁𝘂𝗿𝗲 where each layer has exponentially fewer nodes than the one below it. So every vector exists in the bottom layer (layer 0), which is super well-connected. But only some vectors appear in layer 1, even fewer in layer 2, and so on. The higher layers act as \"highways\" that let you skip over tons of irrelevant data. When you search, HNSW starts at the top layer, finds the closest node, then travels down to the next layer and repeats. By the time you reach the bottom layer, you've already narrowed down to the most relevant neighborhood - no need to search through everything. This is why HNSW is so memory efficient compared to other approaches. It's able to \"skip\" through large amounts of data without scoring it. The algorithm uses a few key parameters to balance speed vs quality: • 𝗲𝗳: size of the candidate list during search • 𝗺𝗮𝘅𝗖𝗼𝗻𝗻𝗲𝗰𝘁𝗶𝗼𝗻𝘀: how many connections each node can have • 𝗱𝗶𝘀𝘁𝗮𝗻𝗰𝗲: the metric used to compare vectors (cosine, dot product, etc.) Insertion works similarly - find the best location through a search, then create the connections. It's resource intensive to rebuild, but queries are super fast."
+                      - button:
+                        - generic [ref=e510] [cursor=pointer]: … more
+                  - button [ref=e512] [cursor=pointer]:
+                    - figure [ref=e513]
+                  - generic [ref=e514]:
+                    - button "722 reactions" [ref=e515] [cursor=pointer]:
+                      - generic [ref=e516]:
+                        - img [ref=e517]
+                        - img [ref=e523]
+                        - img [ref=e531]
+                        - paragraph [ref=e538]:
+                          - generic [ref=e539]: 722 reactions
+                          - text: "722"
+                    - generic [ref=e540]:
+                      - button "26 comments" [ref=e541] [cursor=pointer]:
+                        - paragraph [ref=e542]:
+                          - generic [ref=e543]: 26 comments
+                          - generic [ref=e544]: 26 comments
+                      - paragraph [ref=e545]: •
+                      - button "92 reposts" [ref=e546] [cursor=pointer]:
+                        - paragraph [ref=e547]:
+                          - generic [ref=e548]: 92 reposts
+                          - generic [ref=e549]: 92 reposts
+                  - generic [ref=e550]:
+                    - generic [ref=e552]:
+                      - 'button "Reaction button state: no reaction" [ref=e555] [cursor=pointer]':
+                        - generic [ref=e556]:
+                          - img [ref=e557]
+                          - generic [ref=e559]: Like
+                      - button "Open reactions menu":
+                        - img [ref=e561] [cursor=pointer]
+                    - button "Comment" [ref=e563] [cursor=pointer]:
+                      - generic [ref=e564]:
+                        - img [ref=e565]
+                        - generic [ref=e568]: Comment
+                    - button "Repost" [ref=e569] [cursor=pointer]:
+                      - generic [ref=e570]:
+                        - img [ref=e571]
+                        - generic [ref=e574]: Repost
+                    - button "Send" [ref=e575] [cursor=pointer]:
+                      - generic [ref=e576]:
+                        - img [ref=e577]
+                        - generic [ref=e580]: Send
+                - generic [ref=e581]:
+                  - generic [ref=e587]:
+                    - link "View Victoria Slocum’s profile" [ref=e589] [cursor=pointer]:
+                      - /url: https://www.linkedin.com/in/victorialslocum/
+                      - figure "View Victoria Slocum’s profile" [ref=e590]:
+                        - img "View Victoria Slocum’s profile" [ref=e591]
+                    - generic [ref=e592]:
+                      - generic [ref=e594]:
+                        - link "Victoria Slocum Author Machine Learning Engineer @ Weaviate" [ref=e595] [cursor=pointer]:
+                          - /url: https://www.linkedin.com/in/victorialslocum/
+                          - generic [ref=e596]:
+                            - generic [ref=e597]:
+                              - paragraph [ref=e599]: Victoria Slocum
+                              - paragraph [ref=e600]: Author
+                            - paragraph [ref=e602]: Machine Learning Engineer @ Weaviate
+                        - paragraph [ref=e604]: 1w
+                        - button "View more options" [ref=e605] [cursor=pointer]:
+                          - img [ref=e607]
+                      - paragraph [ref=e612]:
+                        - generic [ref=e613]:
+                          - text: "You can read more here:"
+                          - link "https://docs.weaviate.io/weaviate/concepts/vector-index" [ref=e614] [cursor=pointer]:
+                            - /url: https://www.linkedin.com/redir/redirect/?url=https%3A%2F%2Fdocs%2Eweaviate%2Eio%2Fweaviate%2Fconcepts%2Fvector-index&urlhash=Ef98&mt=4Fs5DnIUtzsCgaxyGGWzLod6xkORtCmM4f9Ya8qC8ypiuJNiz8K4yl0l5qLUHf3OU-qrZk6lj26U2oWGKVGm3Iw-uIUanJ17ruedXzw_BKgfb5bQCebUBB53vcMdOiu6O3GLoJqe-eP2AWo5luuikrUKG82fYns9pYY_pxqHwLg&isSdui=true
+                            - strong [ref=e616]: https://docs.weaviate.io/weaviate/concepts/vector-index
+                      - generic [ref=e618]:
+                        - generic [ref=e619]:
+                          - generic [ref=e621]:
+                            - 'button "Reaction button state: no reaction" [ref=e622] [cursor=pointer]':
+                              - 'button "Reaction button state: no reaction" [ref=e625]':
+                                - 'button "Reaction button state: no reaction" [ref=e627]':
+                                  - generic [ref=e628]: "Reaction button state: no reaction"
+                                  - text: Like
+                            - button "Open reactions menu":
+                              - img [ref=e630] [cursor=pointer]
+                          - button "5 reactions" [ref=e632] [cursor=pointer]:
+                            - generic [ref=e633]:
+                              - img [ref=e634]
+                              - img [ref=e640]
+                              - paragraph [ref=e652]:
+                                - generic [ref=e653]: 5 reactions
+                                - text: "5"
+                        - generic [ref=e654]:
+                          - button "Reply" [ref=e655] [cursor=pointer]:
+                            - generic [ref=e657]: Reply
+                          - paragraph [ref=e658]: "1"
+                  - button "Load more comments" [ref=e660] [cursor=pointer]:
+                    - generic [ref=e662]: Load more comments
+              - listitem [ref=e666]:
+                - generic [ref=e668]:
+                  - heading "Feed post" [level=2]:
+                    - generic [ref=e669]: Feed post
+                  - generic [ref=e670]:
+                    - generic [ref=e671]:
+                      - figure [ref=e672]
+                      - figure [ref=e673]
+                      - paragraph [ref=e675]:
+                        - link "Shimon Klebanov" [ref=e676] [cursor=pointer]:
+                          - /url: https://www.linkedin.com/in/shimonkle/
+                          - strong [ref=e677]: Shimon Klebanov
+                        - text: ","
+                        - link "Idan Benaun" [ref=e678] [cursor=pointer]:
+                          - /url: https://www.linkedin.com/in/idan-benaun-824a0759/
+                          - strong [ref=e679]: Idan Benaun
+                        - text: and 16 other connections follow
+                        - link "dbt Labs" [ref=e680] [cursor=pointer]:
+                          - /url: https://www.linkedin.com/company/dbtlabs/posts/
+                          - strong [ref=e681]: dbt Labs
+                    - button "View more options" [ref=e682] [cursor=pointer]:
+                      - img [ref=e684]
+                  - generic [ref=e686]:
+                    - 'link "View company: dbt Labs" [ref=e687] [cursor=pointer]':
+                      - /url: https://www.linkedin.com/company/dbtlabs/posts/
+                      - 'figure "View company: dbt Labs" [ref=e688]':
+                        - 'img "View company: dbt Labs" [ref=e689]'
+                    - link "dbt Labs 138,503 followers Promoted" [ref=e690] [cursor=pointer]:
+                      - /url: https://www.linkedin.com/company/dbtlabs/posts/
+                      - generic [ref=e691]:
+                        - paragraph [ref=e693]: dbt Labs
+                        - paragraph [ref=e695]: 138,503 followers
+                        - paragraph [ref=e697]: Promoted
+                  - generic [ref=e700]:
+                    - paragraph [ref=e701]:
+                      - generic [ref=e702]:
+                        - text: AI won’t reason with your data unless you give it structure. O’Reilly’s new report shows how conversational analytics relies on trusted metadata, lineage, and metrics powered by dbt.
+                        - button:
+                          - generic [ref=e704] [cursor=pointer]: … more
+                    - generic [ref=e705]:
+                      - button "Your AI Data Foundation Starts Here View Lead Gen Form" [ref=e707] [cursor=pointer]:
+                        - figure "Your AI Data Foundation Starts Here View Lead Gen Form" [ref=e708]:
+                          - img "Your AI Data Foundation Starts Here View Lead Gen Form" [ref=e709]
+                      - button "Your AI Data Foundation Starts Here getdbt.com" [ref=e710] [cursor=pointer]:
+                        - generic [ref=e712]:
+                          - paragraph [ref=e714]:
+                            - generic [ref=e715]: Your AI Data Foundation Starts Here
+                            - text: Your AI Data Foundation Starts Here
+                          - paragraph [ref=e717]: getdbt.com
+                    - button "Learn more" [ref=e719] [cursor=pointer]:
+                      - generic [ref=e721]: Learn more
+                  - generic [ref=e722]:
+                    - button "26 reactions" [ref=e723] [cursor=pointer]:
+                      - generic [ref=e724]:
+                        - img [ref=e725]
+                        - img [ref=e731]
+                        - paragraph [ref=e746]:
+                          - generic [ref=e747]: 26 reactions
+                          - text: "26"
+                    - generic [ref=e748]:
+                      - button:
+                        - paragraph
+                      - button:
+                        - paragraph
+                  - generic [ref=e751]:
+                    - generic [ref=e753]:
+                      - 'button "Reaction button state: no reaction" [ref=e756] [cursor=pointer]':
+                        - generic [ref=e757]:
+                          - img [ref=e758]
+                          - generic [ref=e760]: Like
+                      - button "Open reactions menu":
+                        - img [ref=e762] [cursor=pointer]
+                    - button "Comment" [ref=e764] [cursor=pointer]:
+                      - generic [ref=e765]:
+                        - img [ref=e766]
+                        - generic [ref=e769]: Comment
+                    - button "Repost" [ref=e770] [cursor=pointer]:
+                      - generic [ref=e771]:
+                        - img [ref=e772]
+                        - generic [ref=e775]: Repost
+                    - button "Send" [ref=e776] [cursor=pointer]:
+                      - generic [ref=e777]:
+                        - img [ref=e778]
+                        - generic [ref=e781]: Send
+              - listitem [ref=e785]:
+                - generic [ref=e787]:
+                  - heading "Feed post" [level=2]:
+                    - generic [ref=e788]: Feed post
+                  - generic [ref=e789]:
+                    - link "View Michal Lerner’s profile" [ref=e790] [cursor=pointer]:
+                      - /url: https://www.linkedin.com/in/michal-lerner/
+                      - figure "View Michal Lerner’s profile" [ref=e791]:
+                        - img "View Michal Lerner’s profile" [ref=e792]
+                    - link "Michal Lerner • 1st 15K+ Followers | Full-Stack Dev & AI Champion | Speaker | React • Node.js 3h •" [ref=e793] [cursor=pointer]:
+                      - /url: https://www.linkedin.com/in/michal-lerner/
+                      - generic [ref=e794]:
+                        - paragraph [ref=e796]:
+                          - text: Michal Lerner
+                          - img [ref=e798]
+                          - generic [ref=e800]: • 1st
+                        - paragraph [ref=e802]: 15K+ Followers | Full-Stack Dev & AI Champion | Speaker | React • Node.js
+                        - paragraph [ref=e804]:
+                          - text: 3h •
+                          - img [ref=e805]
+                    - button "View more options" [ref=e807] [cursor=pointer]:
+                      - img [ref=e809]
+                    - button "Hide Post" [ref=e811] [cursor=pointer]:
+                      - img [ref=e813]
+                  - paragraph [ref=e817]:
+                    - generic [ref=e818]:
+                      - text: אני לא גאה בזה, אבל השבוע ביקשתי להאריך את זמן הערות של סביבת הטסטינג שלנו מ-21:00 ל-22:00 בלילה. אחרי כמה ימים שהילדים היו בבית, מצאתי את עצמי משלימה פערים ועובדת בערב.🌙 מצד שני? אני תמיד שמחה שיש לי את הגמישות והיכולת לבחור מתי נכון לי לעבוד, כדי לסיים את המשימות שלי בראש שקט. שתפו אותי, איך אצלכם? 🌷
+                      - button:
+                        - generic [ref=e820] [cursor=pointer]: … more
+                  - button "Show translation" [ref=e822] [cursor=pointer]:
+                    - generic [ref=e824]: Show translation
+                  - generic [ref=e825]:
+                    - link "האם אתם מתחברים שוב לעבודה בשעות הערב?" [ref=e826] [cursor=pointer]:
+                      - /url: https://www.linkedin.com/feed/update/urn:li:activity:7427960001945706497/?originTrackingId=dF1P1HQ%2FAyQMSL5nmDJTvA%3D%3D
+                      - paragraph [ref=e827]: האם אתם מתחברים שוב לעבודה בשעות הערב?
+                    - generic [ref=e828]:
+                      - paragraph [ref=e829]: The author can see how you vote.
+                      - paragraph [ref=e830]:
+                        - link "Learn more" [ref=e831] [cursor=pointer]:
+                          - /url: https://www.linkedin.com/help/linkedin/answer/119171/
+                    - generic [ref=e832]:
+                      - button "ברור, זה הזמן הכי פרודוקטיבי" [ref=e833] [cursor=pointer]:
+                        - generic [ref=e836]: ברור, זה הזמן הכי פרודוקטיבי
+                      - button "רק אם יש משהו דחוף" [ref=e837] [cursor=pointer]:
+                        - generic [ref=e840]: רק אם יש משהו דחוף
+                      - button "אין מצב, זה זמן משפחה או מנוחה" [ref=e841] [cursor=pointer]:
+                        - generic [ref=e844]: אין מצב, זה זמן משפחה או מנוחה
+                      - button "מול המחשב, אבל לא לעבודה" [ref=e845] [cursor=pointer]:
+                        - generic [ref=e848]: מול המחשב, אבל לא לעבודה
+                    - generic [ref=e849]:
+                      - button "102 votes" [ref=e850] [cursor=pointer]:
+                        - paragraph [ref=e851]: 102 votes
+                      - paragraph [ref=e852]: •
+                      - paragraph [ref=e853]: 3d left
+                      - generic [ref=e854]:
+                        - paragraph [ref=e855]: •
+                        - button "Show results" [ref=e856] [cursor=pointer]:
+                          - paragraph [ref=e857]: Show results
+                  - generic [ref=e858]:
+                    - button "Naama Taler and 5 others reacted" [ref=e859] [cursor=pointer]:
+                      - generic [ref=e860]:
+                        - img [ref=e861]
+                        - paragraph [ref=e868]:
+                          - generic [ref=e869]: Naama Taler and 5 others reacted
+                          - generic [ref=e870]: Naama Taler and 5 others
+                    - generic [ref=e871]:
+                      - button "7 comments" [ref=e872] [cursor=pointer]:
+                        - paragraph [ref=e873]:
+                          - generic [ref=e874]: 7 comments
+                          - generic [ref=e875]: 7 comments
+                      - button:
+                        - paragraph
+                  - generic [ref=e877]:
+                    - generic [ref=e879]:
+                      - 'button "Reaction button state: no reaction" [ref=e882] [cursor=pointer]':
+                        - generic [ref=e883]:
+                          - img [ref=e884]
+                          - generic [ref=e886]: Like
+                      - button "Open reactions menu":
+                        - img [ref=e888] [cursor=pointer]
+                    - button "Comment" [ref=e890] [cursor=pointer]:
+                      - generic [ref=e891]:
+                        - img [ref=e892]
+                        - generic [ref=e895]: Comment
+                    - button "Repost" [ref=e896] [cursor=pointer]:
+                      - generic [ref=e897]:
+                        - img [ref=e898]
+                        - generic [ref=e901]: Repost
+                    - button "Send" [ref=e902] [cursor=pointer]:
+                      - generic [ref=e903]:
+                        - img [ref=e904]
+                        - generic [ref=e907]: Send
+              - listitem [ref=e911]:
+                - generic [ref=e913]:
+                  - heading "Feed post" [level=2]:
+                    - generic [ref=e914]: Feed post
+                  - generic [ref=e915]:
+                    - generic [ref=e916]:
+                      - link [ref=e917] [cursor=pointer]:
+                        - /url: https://www.linkedin.com/company/minimax-ai/posts/
+                        - figure [ref=e918]
+                      - paragraph [ref=e926]:
+                        - link "MiniMax" [ref=e927] [cursor=pointer]:
+                          - /url: https://www.linkedin.com/company/minimax-ai/posts/
+                          - strong [ref=e928]: MiniMax
+                        - text: commented on this
+                    - button "View more options" [ref=e929] [cursor=pointer]:
+                      - img [ref=e931]
+                    - button "Hide Post" [ref=e933] [cursor=pointer]:
+                      - img [ref=e935]
+                  - generic [ref=e937]:
+                    - 'link "View company: OpenHands" [ref=e938] [cursor=pointer]':
+                      - /url: https://www.linkedin.com/company/openhands-ai/posts/
+                      - 'figure "View company: OpenHands" [ref=e939]':
+                        - 'img "View company: OpenHands" [ref=e1870]'
+                    - link "OpenHands 16h •" [ref=e946] [cursor=pointer]:
+                      - /url: https://www.linkedin.com/company/openhands-ai/posts/
+                      - generic [ref=e947]:
+                        - paragraph [ref=e949]: OpenHands
+                        - paragraph [ref=e951]:
+                          - text: 16h •
+                          - img [ref=e952]
+                    - button "Follow OpenHands" [ref=e957] [cursor=pointer]:
+                      - generic [ref=e958]:
+                        - img [ref=e959]
+                        - generic [ref=e962]: Follow
+                  - paragraph [ref=e963]:
+                    - generic [ref=e964]:
+                      - text: Big news for open coding models!
+                      - link "MiniMax" [ref=e965] [cursor=pointer]:
+                        - /url: https://www.linkedin.com/company/minimax-ai/
+                        - strong [ref=e967]: MiniMax
+                      - text: "M2.5 is out and it’s an excellent+affordable coding model: 4th in our OpenHands Index benchmark, the first open model to beat Claude Sonnet. Only Claude Opus and GPT-5.2 Codex score higher."
+                      - text: "Check the benchmark details:"
+                      - link "https://lnkd.in/gWAjMFa2" [ref=e968] [cursor=pointer]:
+                        - /url: https://lnkd.in/gWAjMFa2
+                        - strong [ref=e970]: https://lnkd.in/gWAjMFa2
+                      - text: And read our summary limited-time free access below 🧵
+                      - text: "Notably, cost-performance tradeoff is remarkable. At ~13x cheaper than Opus, M2.5 opens up use cases that weren’t practical before. It’s essentially a two-horse race for API-available models at the moment: Opus for max capability, M2.5 for high capability at low cost."
+                      - text: M2.5 performed particularly well on long-running tasks like building apps from scratch, an area where smaller models have traditionally struggled. Also strong on issue resolution and software testing.
+                      - text: At 230B parameters (10B active), it’s also relatively lightweight for a frontier-class model. This is the size where local deployment is feasible as well.
+                      - text: "We also ran some vibe checks beyond benchmarks: GitHub PR reviews, assigning PRs via git blame, debugging frontend issues. It handled them all, sometimes with a bit of back-and-forth. Not perfect, it pushed to the wrong branch once, but very capable overall."
+                      - text: For a limited time, we’re partnering with MiniMax to offer M2.5 FREE on OpenHands Cloud.
+                      - text: "To try it: go to"
+                      - link "https://lnkd.in/gEGm5TN3" [ref=e971] [cursor=pointer]:
+                        - /url: https://lnkd.in/gEGm5TN3
+                        - strong [ref=e973]: https://lnkd.in/gEGm5TN3
+                      - text: ", select OpenHands as your provider and minimax-m2.5 as your model."
+                      - text: It works with the GUI, CLI, SDK, and our GitHub/Slack integrations.
+                      - text: "You can see a more full writeup on our blog:"
+                      - link "https://lnkd.in/gmvy_a5r" [ref=e974] [cursor=pointer]:
+                        - /url: https://lnkd.in/gmvy_a5r
+                        - strong [ref=e976]: https://lnkd.in/gmvy_a5r
+                      - text: OpenHands + MiniMax M2.5 = a fully open, capable stack for software engineering. Excited to see what you build with it.
+                      - button:
+                        - generic [ref=e978] [cursor=pointer]: … more
+                  - generic [ref=e981]:
+                    - button [ref=e982] [cursor=pointer]:
+                      - figure [ref=e983]
+                    - generic [ref=e984]:
+                      - button [ref=e986] [cursor=pointer]:
+                        - figure [ref=e987]
+                      - button [ref=e989] [cursor=pointer]:
+                        - figure [ref=e990]
+                      - generic [ref=e991]:
+                        - button [ref=e992] [cursor=pointer]:
+                          - figure [ref=e993]
+                        - button "+1" [ref=e994] [cursor=pointer]:
+                          - paragraph [ref=e996]: "+1"
+                  - generic [ref=e997]:
+                    - button "43 reactions" [ref=e998] [cursor=pointer]:
+                      - generic [ref=e999]:
+                        - img [ref=e1000]
+                        - img [ref=e1006]
+                        - img [ref=e1020]
+                        - paragraph [ref=e1027]:
+                          - generic [ref=e1028]: 43 reactions
+                          - text: "43"
+                    - generic [ref=e1029]:
+                      - button "1 comment" [ref=e1030] [cursor=pointer]:
+                        - paragraph [ref=e1031]:
+                          - generic [ref=e1032]: 1 comment
+                          - generic [ref=e1033]: 1 comment
+                      - paragraph [ref=e1034]: •
+                      - button "12 reposts" [ref=e1035] [cursor=pointer]:
+                        - paragraph [ref=e1036]:
+                          - generic [ref=e1037]: 12 reposts
+                          - generic [ref=e1038]: 12 reposts
+                  - generic [ref=e1039]:
+                    - generic [ref=e1041]:
+                      - 'button "Reaction button state: no reaction" [ref=e1044] [cursor=pointer]':
+                        - generic [ref=e1045]:
+                          - img [ref=e1046]
+                          - generic [ref=e1048]: Like
+                      - button "Open reactions menu":
+                        - img [ref=e1050] [cursor=pointer]
+                    - button "Comment" [ref=e1052] [cursor=pointer]:
+                      - generic [ref=e1053]:
+                        - img [ref=e1054]
+                        - generic [ref=e1057]: Comment
+                    - button "Repost" [ref=e1058] [cursor=pointer]:
+                      - generic [ref=e1059]:
+                        - img [ref=e1060]
+                        - generic [ref=e1063]: Repost
+                    - button "Send" [ref=e1064] [cursor=pointer]:
+                      - generic [ref=e1065]:
+                        - img [ref=e1066]
+                        - generic [ref=e1069]: Send
+                - generic [ref=e1076]:
+                  - 'link "View company: MiniMax" [ref=e1078] [cursor=pointer]':
+                    - /url: https://www.linkedin.com/company/minimax-ai/posts/
+                    - 'figure "View company: MiniMax" [ref=e1079]':
+                      - 'img "View company: MiniMax" [ref=e1871]'
+                  - generic [ref=e1086]:
+                    - generic [ref=e1088]:
+                      - link "MiniMax 15,670 followers" [ref=e1089] [cursor=pointer]:
+                        - /url: https://www.linkedin.com/company/minimax-ai/posts/
+                        - generic [ref=e1090]:
+                          - paragraph [ref=e1093]: MiniMax
+                          - paragraph [ref=e1095]: 15,670 followers
+                      - paragraph [ref=e1097]: 12h
+                      - button "View more options" [ref=e1098] [cursor=pointer]:
+                        - img [ref=e1100]
+                    - paragraph [ref=e1105]:
+                      - generic [ref=e1106]: Really appreciate the deep dive. Benchmarks are important, but long-running, real-world workflows are where models truly prove themselves. Cost-effective frontier performance opens up entirely new use cases, and that’s where we see the biggest impact.
+                    - generic [ref=e1108]:
+                      - generic [ref=e1109]:
+                        - generic [ref=e1111]:
+                          - 'button "Reaction button state: no reaction" [ref=e1112] [cursor=pointer]':
+                            - 'button "Reaction button state: no reaction" [ref=e1115]':
+                              - 'button "Reaction button state: no reaction" [ref=e1117]':
+                                - generic [ref=e1118]: "Reaction button state: no reaction"
+                                - text: Like
+                          - button "Open reactions menu":
+                            - img [ref=e1120] [cursor=pointer]
+                        - button "3 reactions" [ref=e1122] [cursor=pointer]:
+                          - generic [ref=e1123]:
+                            - img [ref=e1124]
+                            - img [ref=e1130]
+                            - paragraph [ref=e1137]:
+                              - generic [ref=e1138]: 3 reactions
+                              - text: "3"
+                      - button "Reply" [ref=e1140] [cursor=pointer]:
+                        - generic [ref=e1142]: Reply
+              - listitem [ref=e1146]:
+                - generic [ref=e1148]:
+                  - heading "Feed post" [level=2]:
+                    - generic [ref=e1149]: Feed post
+                  - generic [ref=e1150]:
+                    - paragraph [ref=e1153]: Popular course on LinkedIn Learning
+                    - button "View more options" [ref=e1154] [cursor=pointer]:
+                      - img [ref=e1156]
+                  - generic [ref=e1158]:
+                    - generic [ref=e1159]:
+                      - region "Video Player" [ref=e1872]:              
+                      - button "Play video" [ref=e1162] [cursor=pointer]:
+                        - img [ref=e1164]
+                    - 'link "Wireshark: Network Troubleshooting Learn how to analyze network problems with Wireshark, a free, open-source packet analysis tool that helps identify congestion issues, suspicious activity, and network intrusions. LinkedIn Learning logo Save" [ref=e1166] [cursor=pointer]':
+                      - /url: https://www.linkedin.com/learning/wireshark-network-troubleshooting/?trk=cymbii_course_title_learning&courseClaim=AgEkEecm-6Qz6QAAAZxWVM5D-znqU6Up142UGdtdZh6k9TK6fsLr8_ah_r_Qvv0S-BT9PhlS0E286dIU3Ne1-Kyeb7X6K4bC-UhLeJfg-ekYexYIzOInjlLTuCKt9rqwwywDQTTWZEt3Go5gmjv0lSDm_RTRQqkcm2hLXlSPIW4nOZST233VGR8o8Rn8UzNA6YmHdi_ft67t7TBmTb3I9Wwr2y0jmBrBLJ641mZLorbSEY8doKKDM0mkkUo3tkY6UOh0RqCYVB6WTMKZssvx2CFecw-Tvb6i8EoYXMPzUmoWTyGPswz7fEYxYaH53hqJqft_i7tZxC2X_S-pvrxLHwkCVEELMhYRLDD9FbrvBppPsFYyuEd5ocGfXmD37FKkitbG648LEiTRWqOl56OGq5en71NJovgGS2Mf5k8F80j-vmgXSF-nDSh1nDJMMXRJQGGL8m81zo5cX-uhicHt9iwpyIJwK4HeImMl--uoyt8zxN0-XgY-eSrBo7kAMknE99F5_-T1_qvsiOX8WZUXFvwATO6gp0A72MRaS24v8m5lhka0BBO6Fxu3Ho-2tCw0B5VMQxt_vBJ9N-e-xxr4UJt9O5f3RafKRJKMUeCpYhh1VZxQuVI1S-bowZLvT2hq5TWvaxPkCPsfk3AU8TEB-buicub5NosxDTeOrbkcRtNLz096HqkKVBynUo8eT8DPR5z_vk5QVZo6aq7PVSk6gaHEA9HG4heH-OObZ-_S15Z3KdBU2LTEB9vjAO-N20FzucP-SnnXfl7QhhSNIMWhhmbb-SnqwM_nGWHM6v9--veMjgw82IIGyAEDOw7z25wZsrnky4NN7HRmx-n5PPyNrAX1cFBwK7HRhfzfx1OBNE2mVKudN_8hejkSmSHUKT3QwrqU7yxkWmWnDgDj9cfun9Kw4snYL65gZOZ1EmtliRSwoRSh_EtP9tWeklKE5odSpEEWpcQ43bM&u=0
+                      - generic [ref=e1167]:
+                        - generic [ref=e1168]:
+                          - paragraph [ref=e1170]: "Wireshark: Network Troubleshooting"
+                          - paragraph [ref=e1172]: Learn how to analyze network problems with Wireshark, a free, open-source packet analysis tool that helps identify congestion issues, suspicious activity, and network intrusions.
+                          - generic "LinkedIn Learning logo" [ref=e1173]:
+                            - img [ref=e1174]
+                            - paragraph [ref=e1176]: Learning
+                        - button "Save" [ref=e1177]:
+                          - generic [ref=e1179]: Save
+                    - link "View course for free" [ref=e1180] [cursor=pointer]:
+                      - /url: https://www.linkedin.com/learning/wireshark-network-troubleshooting/?trk=cymbii_course_title_learning&courseClaim=AgEkEecm-6Qz6QAAAZxWVM5D-znqU6Up142UGdtdZh6k9TK6fsLr8_ah_r_Qvv0S-BT9PhlS0E286dIU3Ne1-Kyeb7X6K4bC-UhLeJfg-ekYexYIzOInjlLTuCKt9rqwwywDQTTWZEt3Go5gmjv0lSDm_RTRQqkcm2hLXlSPIW4nOZST233VGR8o8Rn8UzNA6YmHdi_ft67t7TBmTb3I9Wwr2y0jmBrBLJ641mZLorbSEY8doKKDM0mkkUo3tkY6UOh0RqCYVB6WTMKZssvx2CFecw-Tvb6i8EoYXMPzUmoWTyGPswz7fEYxYaH53hqJqft_i7tZxC2X_S-pvrxLHwkCVEELMhYRLDD9FbrvBppPsFYyuEd5ocGfXmD37FKkitbG648LEiTRWqOl56OGq5en71NJovgGS2Mf5k8F80j-vmgXSF-nDSh1nDJMMXRJQGGL8m81zo5cX-uhicHt9iwpyIJwK4HeImMl--uoyt8zxN0-XgY-eSrBo7kAMknE99F5_-T1_qvsiOX8WZUXFvwATO6gp0A72MRaS24v8m5lhka0BBO6Fxu3Ho-2tCw0B5VMQxt_vBJ9N-e-xxr4UJt9O5f3RafKRJKMUeCpYhh1VZxQuVI1S-bowZLvT2hq5TWvaxPkCPsfk3AU8TEB-buicub5NosxDTeOrbkcRtNLz096HqkKVBynUo8eT8DPR5z_vk5QVZo6aq7PVSk6gaHEA9HG4heH-OObZ-_S15Z3KdBU2LTEB9vjAO-N20FzucP-SnnXfl7QhhSNIMWhhmbb-SnqwM_nGWHM6v9--veMjgw82IIGyAEDOw7z25wZsrnky4NN7HRmx-n5PPyNrAX1cFBwK7HRhfzfx1OBNE2mVKudN_8hejkSmSHUKT3QwrqU7yxkWmWnDgDj9cfun9Kw4snYL65gZOZ1EmtliRSwoRSh_EtP9tWeklKE5odSpEEWpcQ43bM&u=0
+                      - paragraph [ref=e1181]: View course for free
+                  - generic [ref=e1182]:
+                    - button "9,452 reactions" [ref=e1183] [cursor=pointer]:
+                      - generic [ref=e1184]:
+                        - img [ref=e1185]
+                        - img [ref=e1191]
+                        - img [ref=e1197]
+                        - paragraph [ref=e1212]:
+                          - generic [ref=e1213]: 9,452 reactions
+                          - text: 9,452
+                    - generic [ref=e1214]:
+                      - button "75 comments" [ref=e1215] [cursor=pointer]:
+                        - paragraph [ref=e1216]:
+                          - generic [ref=e1217]: 75 comments
+                          - generic [ref=e1218]: 75 comments
+                      - button:
+                        - paragraph
+                  - generic [ref=e1220]:
+                    - generic [ref=e1222]:
+                      - 'button "Reaction button state: no reaction" [ref=e1225] [cursor=pointer]':
+                        - generic [ref=e1226]:
+                          - img [ref=e1227]
+                          - generic [ref=e1229]: Like
+                      - button "Open reactions menu":
+                        - img [ref=e1231] [cursor=pointer]
+                    - button "Comment" [ref=e1233] [cursor=pointer]:
+                      - generic [ref=e1234]:
+                        - img [ref=e1235]
+                        - generic [ref=e1238]: Comment
+                    - button "Repost" [ref=e1239] [cursor=pointer]:
+                      - generic [ref=e1240]:
+                        - img [ref=e1241]
+                        - generic [ref=e1244]: Repost
+                    - button "Send" [ref=e1245] [cursor=pointer]:
+                      - generic [ref=e1246]:
+                        - img [ref=e1247]
+                        - generic [ref=e1250]: Send
+              - listitem [ref=e1254]:
+                - generic [ref=e1256]:
+                  - heading "Feed post" [level=2]:
+                    - generic [ref=e1257]: Feed post
+                  - generic [ref=e1258]:
+                    - generic [ref=e1259]:
+                      - figure [ref=e1260]
+                      - figure [ref=e1267]
+                      - paragraph [ref=e1275]:
+                        - link "Dalit Paz" [ref=e1276] [cursor=pointer]:
+                          - /url: https://www.linkedin.com/in/dalitpazqa/
+                          - strong [ref=e1277]: Dalit Paz
+                        - text: and
+                        - link "Sharon Goldstein" [ref=e1278] [cursor=pointer]:
+                          - /url: https://www.linkedin.com/in/sharon-goldstein-31705026/
+                          - strong [ref=e1279]: Sharon Goldstein
+                        - text: follow
+                        - link "Advantive" [ref=e1280] [cursor=pointer]:
+                          - /url: https://www.linkedin.com/company/advantive-software/posts/
+                          - strong [ref=e1281]: Advantive
+                    - button "View more options" [ref=e1282] [cursor=pointer]:
+                      - img [ref=e1284]
+                  - generic [ref=e1286]:
+                    - 'link "View company: Advantive" [ref=e1287] [cursor=pointer]':
+                      - /url: https://www.linkedin.com/company/advantive-software/posts/
+                      - 'figure "View company: Advantive" [ref=e1288]':
+                        - 'img "View company: Advantive" [ref=e1876]'
+                    - link "Advantive 9,866 followers Promoted" [ref=e1295] [cursor=pointer]:
+                      - /url: https://www.linkedin.com/company/advantive-software/posts/
+                      - generic [ref=e1296]:
+                        - paragraph [ref=e1298]: Advantive
+                        - paragraph [ref=e1300]: 9,866 followers
+                        - paragraph [ref=e1302]: Promoted
+                  - generic [ref=e1303]:
+                    - paragraph [ref=e1304]:
+                      - generic [ref=e1305]: Stop wasting $1M+ on flawed Sales incentives. Learn how to fix 10 errors—like poor automation—that drive reps to competitors.
+                    - generic [ref=e1307]:
+                      - generic [ref=e1309]:
+                        - generic [ref=e1310]:
+                          - paragraph [ref=e1312]: Pepperi - 10 Costly Pitfalls to Avoid in Sales Rep Incentives PDF
+                          - paragraph [ref=e1314]: Preview 1 of 30 pages
+                        - generic [ref=e1316]:
+                          - button "Go to next page of document" [ref=e1317] [cursor=pointer]:
+                            - img [ref=e1319]
+                          - list [ref=e1321]:
+                            - listitem [ref=e1322]:
+                              - figure [ref=e1877]
+                            - listitem [ref=e1336]:
+                              - paragraph [ref=e1338]: Want to view more? Unlock the full document below.
+                        - generic [ref=e1339]:
+                          - paragraph [ref=e1340]: 1 / 2
+                          - generic "Slide to navigate to a page" [ref=e1341]:
+                            - generic [ref=e1343]:
+                              - slider "Slider, 0" [ref=e1344]: "0"
+                              - status: "0"
+                          - button "Full screen" [ref=e1345] [cursor=pointer]:
+                            - img [ref=e1347]
+                      - button "Unlock Full Document" [ref=e1350] [cursor=pointer]:
+                        - generic [ref=e1351]:
+                          - img [ref=e1352]
+                          - generic [ref=e1354]: Unlock Full Document
+                  - generic [ref=e1355]:
+                    - button "175 reactions" [ref=e1356] [cursor=pointer]:
+                      - generic [ref=e1357]:
+                        - img [ref=e1358]
+                        - img [ref=e1364]
+                        - img [ref=e1370]
+                        - paragraph [ref=e1385]:
+                          - generic [ref=e1386]: 175 reactions
+                          - text: "175"
+                    - generic [ref=e1387]:
+                      - button "3 comments" [ref=e1388] [cursor=pointer]:
+                        - paragraph [ref=e1389]:
+                          - generic [ref=e1390]: 3 comments
+                          - generic [ref=e1391]: 3 comments
+                      - paragraph [ref=e1392]: •
+                      - button "8 reposts" [ref=e1393] [cursor=pointer]:
+                        - paragraph [ref=e1394]:
+                          - generic [ref=e1395]: 8 reposts
+                          - generic [ref=e1396]: 8 reposts
+                  - generic [ref=e1397]:
+                    - generic [ref=e1399]:
+                      - 'button "Reaction button state: no reaction" [ref=e1402] [cursor=pointer]':
+                        - generic [ref=e1403]:
+                          - img [ref=e1404]
+                          - generic [ref=e1406]: Like
+                      - button "Open reactions menu":
+                        - img [ref=e1408] [cursor=pointer]
+                    - button "Comment" [ref=e1410] [cursor=pointer]:
+                      - generic [ref=e1411]:
+                        - img [ref=e1412]
+                        - generic [ref=e1415]: Comment
+                    - button "Repost" [ref=e1416] [cursor=pointer]:
+                      - generic [ref=e1417]:
+                        - img [ref=e1418]
+                        - generic [ref=e1421]: Repost
+                    - button "Send" [ref=e1422] [cursor=pointer]:
+                      - generic [ref=e1423]:
+                        - img [ref=e1424]
+                        - generic [ref=e1427]: Send
+              - listitem [ref=e1431]:
+                - generic [ref=e1433]:
+                  - heading "Feed post" [level=2]:
+                    - generic [ref=e1434]: Feed post
+                  - generic [ref=e1435]:
+                    - paragraph [ref=e1438]: Suggested
+                    - button "View more options" [ref=e1439] [cursor=pointer]:
+                      - img [ref=e1441]
+                    - button "Hide Post" [ref=e1443] [cursor=pointer]:
+                      - img [ref=e1445]
+                  - generic [ref=e1447]:
+                    - link "View Femke Plantinga’s profile" [ref=e1448] [cursor=pointer]:
+                      - /url: https://www.linkedin.com/in/femke-plantinga/
+                      - figure "View Femke Plantinga’s profile" [ref=e1449]:
+                        - img "View Femke Plantinga’s profile" [ref=e1878]
+                    - link "Femke Plantinga • 2nd Making AI simple and fun ✨ Growth at Weaviate 2d •" [ref=e1456] [cursor=pointer]:
+                      - /url: https://www.linkedin.com/in/femke-plantinga/
+                      - generic [ref=e1457]:
+                        - paragraph [ref=e1459]:
+                          - text: Femke Plantinga
+                          - img [ref=e1461]
+                          - generic [ref=e1463]: • 2nd
+                        - paragraph [ref=e1465]: Making AI simple and fun ✨ Growth at Weaviate
+                        - paragraph [ref=e1467]:
+                          - text: 2d •
+                          - img [ref=e1468]
+                    - button "Follow Femke Plantinga" [ref=e1473] [cursor=pointer]:
+                      - generic [ref=e1474]:
+                        - img [ref=e1475]
+                        - generic [ref=e1478]: Follow
+                  - paragraph [ref=e1479]:
+                    - generic [ref=e1480]:
+                      - text: Your RAG system isn’t hallucinating, it’s just lazy.
+                      - text: "Here’s what separates basic vector search from agentic retrieval:"
+                      - text: "Let’s say you want to find: “𝘢𝘧𝘧𝘰𝘳𝘥𝘢𝘣𝘭𝘦 𝘦𝘤𝘰-𝘧𝘳𝘪𝘦𝘯𝘥𝘭𝘺 𝘴𝘮𝘢𝘳𝘵𝘱𝘩𝘰𝘯𝘦𝘴 𝘶𝘯𝘥𝘦𝘳 $500 𝘸𝘪𝘵𝘩 𝘩𝘪𝘨𝘩 𝘳𝘢𝘵𝘪𝘯𝘨𝘴”"
+                      - text: you get not-so-relevant results that…
+                      - text: → mention “eco-friendly” somewhere
+                      - text: → cost $800
+                      - text: → and have terrible reviews
+                      - text: Because the RAG pipeline never filtered or reasoned about the constraints, it just nearest-neighbor'd its way to mediocre results.
+                      - text: "That’s the difference between naive and agentic retrieval:"
+                      - text: "- 𝗡𝗮𝗶𝘃𝗲 𝗿𝗲𝘁𝗿𝗶𝗲𝘃𝗮𝗹: encode query → top-k → dump into LLM → done."
+                      - text: "- 𝗔𝗴𝗲𝗻𝘁𝗶𝗰 𝗿𝗲𝘁𝗿𝗶𝗲𝘃𝗮𝗹: break down the query → apply filters → aggregate results → generate a grounded answer."
+                      - text: 𝗤𝘂𝗲𝗿𝘆 𝗔𝗴𝗲𝗻𝘁 does exactly that.
+                      - text: It understands your natural language query, knows your schema, figures out which searches to run (semantic, filtered, or aggregated), queries multiple collections in parallel, and then re-ranks and synthesizes results.
+                      - text: No manual filters. No orchestration headaches. Just accurate, constraint-aware answers, all automatically.
+                      - text: Want to try it out yourself?
+                      - text: 🧡 Query agent available in
+                      - link "Weaviate" [ref=e1482] [cursor=pointer]:
+                        - /url: https://www.linkedin.com/company/weaviate-io/
+                        - strong [ref=e1484]: Weaviate
+                      - text: "Cloud and can be set up in minutes with your data:"
+                      - link "https://lnkd.in/edx97_VW" [ref=e1485] [cursor=pointer]:
+                        - /url: https://lnkd.in/edx97_VW
+                        - strong [ref=e1487]: https://lnkd.in/edx97_VW
+                      - button:
+                        - generic [ref=e1489] [cursor=pointer]: … more
+                  - button [ref=e1491] [cursor=pointer]:
+                    - figure [ref=e1492]
+                  - generic [ref=e1493]:
+                    - button "You and 406 others reacted" [ref=e2197] [cursor=pointer]:
+                      - generic [ref=e1495]:
+                        - img [ref=e1496]
+                        - img [ref=e1502]
+                        - img [ref=e1510]
+                        - paragraph [ref=e1517]:
+                          - generic [ref=e1518]: You and 406 others reacted
+                          - generic [ref=e1519]: You and 406 others
+                    - generic [ref=e1520]:
+                      - button "25 comments" [ref=e1521] [cursor=pointer]:
+                        - paragraph [ref=e1522]:
+                          - generic [ref=e1523]: 25 comments
+                          - generic [ref=e1524]: 25 comments
+                      - paragraph [ref=e1525]: •
+                      - button "48 reposts" [ref=e1526] [cursor=pointer]:
+                        - paragraph [ref=e1527]:
+                          - generic [ref=e1528]: 48 reposts
+                          - generic [ref=e1529]: 48 reposts
+                  - generic [ref=e1530]:
+                    - generic [ref=e1532]:
+                      - 'button "Reaction button state: Like" [active] [ref=e2189] [cursor=pointer]':
+                        - generic [ref=e1536]:
+                          - img [ref=e2190]
+                          - generic [ref=e1542]: Like
+                      - button "Open reactions menu":
+                        - img [ref=e1544] [cursor=pointer]
+                    - button "Comment" [ref=e1546] [cursor=pointer]:
+                      - generic [ref=e1547]:
+                        - img [ref=e1548]
+                        - generic [ref=e1551]: Comment
+                    - button "Repost" [ref=e1552] [cursor=pointer]:
+                      - generic [ref=e1553]:
+                        - img [ref=e1554]
+                        - generic [ref=e1557]: Repost
+                    - button "Send" [ref=e1558] [cursor=pointer]:
+                      - generic [ref=e1559]:
+                        - img [ref=e1560]
+                        - generic [ref=e1563]: Send
+                - generic [ref=e2199]:
+                  - figure [ref=e2200]
+                  - generic "Text editor for creating comment" [ref=e2203]:
+                    - generic [ref=e2204]:
+                      - textbox [ref=e2209]:
+                        - paragraph [ref=e2210]: Add a comment...
+                      - generic [ref=e2211]:
+                        - button "Show Emoji Picker" [ref=e2212] [cursor=pointer]:
+                          - img [ref=e2214]
+                        - button "Share photo" [ref=e2216] [cursor=pointer]:
+                          - img [ref=e2218]
+                - generic [ref=e2220]:
+                  - button "Most relevant Most relevant" [ref=e2222] [cursor=pointer]:
+                    - generic [ref=e2225]:
+                      - paragraph [ref=e2226]: Most relevant
+                      - img "Most relevant" [ref=e2227]
+                  - generic [ref=e2229]:
+                    - generic [ref=e2234]:
+                      - link "View Gregor Palyan’s profile" [ref=e2236] [cursor=pointer]:
+                        - /url: https://www.linkedin.com/in/gregor-palyan/
+                        - figure "View Gregor Palyan’s profile" [ref=e2237]:
+                          - img "View Gregor Palyan’s profile" [ref=e2238]
+                      - generic [ref=e2239]:
+                        - generic [ref=e2241]:
+                          - link "Gregor Palyan • 2nd Ich baue KI- und Datensysteme, die im Tagesgeschäft bestehen | AI Strategy Consultant | Cloud-native" [ref=e2242] [cursor=pointer]:
+                            - /url: https://www.linkedin.com/in/gregor-palyan/
+                            - generic [ref=e2243]:
+                              - paragraph [ref=e2246]:
+                                - text: Gregor Palyan
+                                - img [ref=e2248]
+                                - generic [ref=e2250]: • 2nd
+                              - paragraph [ref=e2252]: Ich baue KI- und Datensysteme, die im Tagesgeschäft bestehen | AI Strategy Consultant | Cloud-native
+                          - paragraph [ref=e2254]: 1d
+                          - button "View more options" [ref=e2255] [cursor=pointer]:
+                            - img [ref=e2257]
+                        - paragraph [ref=e2262]:
+                          - generic [ref=e2263]: I implement a query agent as well but I see the downside of it being slower. But if the time of output is not critical it's a great solution. Hybrid Search is the next level in my opinion
+                        - generic [ref=e2265]:
+                          - generic [ref=e2266]:
+                            - generic [ref=e2268]:
+                              - 'button "Reaction button state: no reaction" [ref=e2269] [cursor=pointer]':
+                                - 'button "Reaction button state: no reaction" [ref=e2272]':
+                                  - 'button "Reaction button state: no reaction" [ref=e2274]':
+                                    - generic [ref=e2275]: "Reaction button state: no reaction"
+                                    - text: Like
+                              - button "Open reactions menu":
+                                - img [ref=e2277] [cursor=pointer]
+                            - button "3 reactions" [ref=e2279] [cursor=pointer]:
+                              - generic [ref=e2280]:
+                                - img [ref=e2281]
+                                - paragraph [ref=e2288]:
+                                  - generic [ref=e2289]: 3 reactions
+                                  - text: "3"
+                          - button "Reply" [ref=e2291] [cursor=pointer]:
+                            - generic [ref=e2293]: Reply
+                    - generic [ref=e2298]:
+                      - link "View Nadav Levy’s profile" [ref=e2300] [cursor=pointer]:
+                        - /url: https://www.linkedin.com/in/nadav-levi-entrepreneur/
+                        - figure "View Nadav Levy’s profile" [ref=e2301]:
+                          - img "View Nadav Levy’s profile" [ref=e2302]
+                      - generic [ref=e2303]:
+                        - generic [ref=e2305]:
+                          - link "Nadav Levy • 1st Entrepreneur and Co-Founder of Several Leading | Head of R&D for Electromagnetic Systems | M.Sc Technology Management & System Engineering | RF & Embedded Systems Expert" [ref=e2306] [cursor=pointer]:
+                            - /url: https://www.linkedin.com/in/nadav-levi-entrepreneur/
+                            - generic [ref=e2307]:
+                              - paragraph [ref=e2310]:
+                                - text: Nadav Levy
+                                - img [ref=e2312]
+                                - generic [ref=e2314]: • 1st
+                              - paragraph [ref=e2316]: Entrepreneur and Co-Founder of Several Leading | Head of R&D for Electromagnetic Systems | M.Sc Technology Management & System Engineering | RF & Embedded Systems Expert
+                          - paragraph [ref=e2318]: 1d
+                          - button "View more options" [ref=e2319] [cursor=pointer]:
+                            - img [ref=e2321]
+                        - paragraph [ref=e2326]:
+                          - generic [ref=e2327]:
+                            - text: "In 2026, blaming the LLM for ‘hallucinations’ within the RAG system is a bit like blaming the messenger for the letter being empty. This post touches on a critical point: Retrieval failure is the father and mother of most production problems. We tend to spend weeks optimizing the prompt, but neglect the ‘fuel’ that goes into it. When the retrieval system pulls out partial, irrelevant or irrelevant pieces of information, the model simply tries to ‘close the gap’ and that’s where the hallucination is born. To move from basic RAG to a production-grade system, the discussion must move to: Semantic Chunking - stop slicing text by number of characters and move to slicing by logical units of meaning. Advanced Re-ranking - add a layer of filtering that ensures that only the highest quality Context reaches the LLM. Metadata Enrichment - enrich the data at index time to give the model a better ‘roadmap’ for retrieval. When you analyze failures in RAG, how much of your time do you invest in improving data quality (Data Engineering) versus making changes to the model architecture or hyperparameters?"
+                            - button:
+                              - generic [ref=e2196] [cursor=pointer]: … more
+                        - generic [ref=e2329]:
+                          - generic [ref=e2332]:
+                            - 'button "Reaction button state: no reaction" [ref=e2333] [cursor=pointer]':
+                              - 'button "Reaction button state: no reaction" [ref=e2336]':
+                                - 'button "Reaction button state: no reaction" [ref=e2338]':
+                                  - generic [ref=e2339]: "Reaction button state: no reaction"
+                                  - text: Like
+                            - button "Open reactions menu":
+                              - img [ref=e2341] [cursor=pointer]
+                          - button "Reply" [ref=e2344] [cursor=pointer]:
+                            - generic [ref=e2346]: Reply
+                  - button "Load more comments" [ref=e2348] [cursor=pointer]:
+                    - generic [ref=e2350]: Load more comments
+              - listitem [ref=e1567]:
+                - generic [ref=e1569]:
+                  - heading "Feed post" [level=2]:
+                    - generic [ref=e1570]: Feed post
+                  - generic [ref=e1571]:
+                    - link "View Noa Zehavi Ben Netanel’s profile" [ref=e1572] [cursor=pointer]:
+                      - /url: https://www.linkedin.com/in/noa-zehavi-ben-netanel-681a84135/
+                      - figure "View Noa Zehavi Ben Netanel’s profile" [ref=e1573]:
+                        - img "View Noa Zehavi Ben Netanel’s profile" [ref=e1879]
+                    - link "Noa Zehavi Ben Netanel • 1st Product Director @ AI21 Labs, MBA magna cum laude 18h • Edited •" [ref=e1580] [cursor=pointer]:
+                      - /url: https://www.linkedin.com/in/noa-zehavi-ben-netanel-681a84135/
+                      - generic [ref=e1581]:
+                        - paragraph [ref=e1583]:
+                          - text: Noa Zehavi Ben Netanel
+                          - img [ref=e1585]
+                          - generic [ref=e1587]: • 1st
+                        - paragraph [ref=e1589]: Product Director @ AI21 Labs, MBA magna cum laude
+                        - paragraph [ref=e1591]:
+                          - text: 18h • Edited •
+                          - img [ref=e1592]
+                    - button "View more options" [ref=e1594] [cursor=pointer]:
+                      - img [ref=e1596]
+                    - button "Hide Post" [ref=e1598] [cursor=pointer]:
+                      - img [ref=e1600]
+                  - paragraph [ref=e1602]:
+                    - generic [ref=e1603]:
+                      - text: Scaling state-modifying agents with MCP workspaces; Architectural lessons from 200K SWE-bench runs; Orchestrated test-time compute for long-horizon agentic tasks; Novel Parsing trick reaching SOTA in underrepresented languages; Dynamic resource scheduling in online RL; Multi-resolution chunking method for retrieval; Model-agnostic padding minimization; Tokenization bugs in vLLM; Memory-efficient serving patterns... This is just a glimpse into
+                      - link "#LabsinFront" [ref=e1604] [cursor=pointer]:
+                        - /url: https://www.linkedin.com/search/results/all/?keywords=%23labsinfront&origin=HASH_TAG_FROM_FEED
+                        - strong [ref=e1606]: "#LabsinFront"
+                      - text: "- where we document the technical decisions behind"
+                      - link "AI21 Labs" [ref=e1607] [cursor=pointer]:
+                        - /url: https://www.linkedin.com/company/ai21/
+                        - strong [ref=e1609]: AI21 Labs
+                      - text: "'s LLM family and agentic orchestration systems."
+                      - text: Worth a read if you're building in the AI space -
+                      - link "https://bit.ly/3M3UtK4" [ref=e1610] [cursor=pointer]:
+                        - /url: https://www.linkedin.com/redir/redirect/?url=https%3A%2F%2Fbit%2Ely%2F3M3UtK4&urlhash=zJPS&mt=02AGK_pgLz407ZQ0WfXPZqBm2xh1a_PjxTzeYDs0auSu317Tu0C5jQYDqPWN-QEsGY802CrrmFR_Yp3VZl_HqGn4c_ieZxCStTrXPWWlx4Re4p91Ket-7lIZNQ&isSdui=true
+                        - strong [ref=e1612]: https://bit.ly/3M3UtK4
+                      - text: "Among the brilliant authors:"
+                      - link "Or Dagan" [ref=e1613] [cursor=pointer]:
+                        - /url: https://www.linkedin.com/in/or-dagan/
+                        - strong [ref=e1615]: Or Dagan
+                      - link "Yaron Sternbach" [ref=e1616] [cursor=pointer]:
+                        - /url: https://www.linkedin.com/in/yaron-sternbach-77145597/
+                        - strong [ref=e1618]: Yaron Sternbach
+                      - link "Eran Gat" [ref=e1619] [cursor=pointer]:
+                        - /url: https://www.linkedin.com/in/erangat/
+                        - strong [ref=e1621]: Eran Gat
+                      - link "Asaf Gardin" [ref=e1622] [cursor=pointer]:
+                        - /url: https://www.linkedin.com/in/joseph-asaf-gardin/
+                        - strong [ref=e1624]: Asaf Gardin
+                      - link "Ella Neiman" [ref=e1625] [cursor=pointer]:
+                        - /url: https://www.linkedin.com/in/ella-neiman/
+                        - strong [ref=e1627]: Ella Neiman
+                      - link "Yuval Peleg Levy" [ref=e1628] [cursor=pointer]:
+                        - /url: https://www.linkedin.com/in/yuval-peleg-levy-414a8561/
+                        - strong [ref=e1630]: Yuval Peleg Levy
+                      - link "Joanna K." [ref=e1631] [cursor=pointer]:
+                        - /url: https://www.linkedin.com/in/joanna-kramer/
+                        - strong [ref=e1633]: Joanna K.
+                      - link "Niv Granot" [ref=e1634] [cursor=pointer]:
+                        - /url: https://www.linkedin.com/in/niv-granot-2316a9213/
+                        - strong [ref=e1636]: Niv Granot
+                      - link "Yuval Belfer" [ref=e1637] [cursor=pointer]:
+                        - /url: https://www.linkedin.com/in/yuval-belfer/
+                        - strong [ref=e1639]: Yuval Belfer
+                      - link "Shaked Meirom" [ref=e1640] [cursor=pointer]:
+                        - /url: https://www.linkedin.com/in/shaked-meirom-012280125/
+                        - strong [ref=e1642]: Shaked Meirom
+                      - link "Roee H." [ref=e1643] [cursor=pointer]:
+                        - /url: https://www.linkedin.com/in/roeehendel/
+                        - strong [ref=e1645]: Roee H.
+                      - link "Daniel Gissin" [ref=e1646] [cursor=pointer]:
+                        - /url: https://www.linkedin.com/in/daniel-gissin-a9771a103/
+                        - strong [ref=e1648]: Daniel Gissin
+                      - link "Inbal Magar" [ref=e1649] [cursor=pointer]:
+                        - /url: https://www.linkedin.com/in/inbal-magar-116134195/
+                        - strong [ref=e1651]: Inbal Magar
+                      - link "Yuval Globerson" [ref=e1652] [cursor=pointer]:
+                        - /url: https://www.linkedin.com/in/yuval-globerson-099568146/
+                        - strong [ref=e1654]: Yuval Globerson
+                      - text: and the list goes on...
+                      - button:
+                        - generic [ref=e1656] [cursor=pointer]: … more
+                  - generic [ref=e1657]:
+                    - link [ref=e1658] [cursor=pointer]:
+                      - /url: https://www.linkedin.com/pulse/were-launching-labs-front-weekly-under-the-hood-series-ai21-engineers-mkshf/
+                      - figure [ref=e1659]
+                    - link "Yet Another AI Newsletter Subscribe We’re launching Labs in Front, a weekly under-the-hood series by AI21 engineers and researchers. AI21 Labs" [ref=e1660] [cursor=pointer]:
+                      - /url: https://www.linkedin.com/pulse/were-launching-labs-front-weekly-under-the-hood-series-ai21-engineers-mkshf/
+                      - generic [ref=e1661]:
+                        - link "Yet Another AI Newsletter Subscribe" [ref=e1662]:
+                          - /url: https://www.linkedin.com/newsletters/yet-another-ai-newsletter-7381639692884123648/
+                          - generic [ref=e1663]:
+                            - figure [ref=e1664]
+                            - paragraph [ref=e1666]: Yet Another AI Newsletter
+                            - button "Subscribe" [ref=e1668]:
+                              - generic [ref=e1669]:
+                                - img [ref=e1670]
+                                - generic [ref=e1672]: Subscribe
+                        - paragraph [ref=e1674]: We’re launching Labs in Front, a weekly under-the-hood series by AI21 engineers and researchers.
+                        - paragraph [ref=e1676]: AI21 Labs
+                  - generic [ref=e1677]:
+                    - button "Guy Stein and 23 others reacted" [ref=e1678] [cursor=pointer]:
+                      - generic [ref=e1679]:
+                        - img [ref=e1680]
+                        - img [ref=e1686]
+                        - img [ref=e1694]
+                        - paragraph [ref=e1709]:
+                          - generic [ref=e1710]: Guy Stein and 23 others reacted
+                          - generic [ref=e1711]: Guy Stein and 23 others
+                    - generic [ref=e1712]:
+                      - button "1 comment" [ref=e1713] [cursor=pointer]:
+                        - paragraph [ref=e1714]:
+                          - generic [ref=e1715]: 1 comment
+                          - generic [ref=e1716]: 1 comment
+                      - paragraph [ref=e1717]: •
+                      - button "4 reposts" [ref=e1718] [cursor=pointer]:
+                        - paragraph [ref=e1719]:
+                          - generic [ref=e1720]: 4 reposts
+                          - generic [ref=e1721]: 4 reposts
+                  - generic [ref=e1722]:
+                    - generic [ref=e1724]:
+                      - 'button "Reaction button state: no reaction" [ref=e1727] [cursor=pointer]':
+                        - generic [ref=e1728]:
+                          - img [ref=e1729]
+                          - generic [ref=e1731]: Like
+                      - button "Open reactions menu":
+                        - img [ref=e1733] [cursor=pointer]
+                    - button "Comment" [ref=e1735] [cursor=pointer]:
+                      - generic [ref=e1736]:
+                        - img [ref=e1737]
+                        - generic [ref=e1740]: Comment
+                    - button "Repost" [ref=e1741] [cursor=pointer]:
+                      - generic [ref=e1742]:
+                        - img [ref=e1743]
+                        - generic [ref=e1746]: Repost
+                    - button "Send" [ref=e1747] [cursor=pointer]:
+                      - generic [ref=e1748]:
+                        - img [ref=e1749]
+                        - generic [ref=e1752]: Send
+              - listitem [ref=e2354]:
+                - generic [ref=e2356]:
+                  - heading "Feed post" [level=2]:
+                    - generic [ref=e2357]: Feed post
+                  - generic [ref=e2358]:
+                    - paragraph [ref=e2362]: Jobs recommended for you
+                    - generic [ref=e2366]:
+                      - list [ref=e2367]:
+                        - listitem [ref=e2368]:
+                          - link "Artificial Intelligence Engineer HiOctave (HiO) Tel Aviv District, Israel (Hybrid) Actively reviewing applicants Posted on January 18, 2026, 10:06 AM · Easy Apply" [ref=e2370] [cursor=pointer]:
+                            - /url: https://www.linkedin.com/jobs/collections/recommended/?trackingId=mdIfW4kCrB4uakvpWN8DrQ%3D%3D&currentJobId=4353832486&originToLandingJobPostings=4353832486%2C4353560447%2C4370946466%2C4361775484%2C4370681657
+                            - generic [ref=e2371]:
+                              - generic [ref=e2372]:
+                                - figure [ref=e2373]
+                                - generic [ref=e2374]:
+                                  - generic [ref=e2377]:
+                                    - paragraph [ref=e2379]: Artificial Intelligence Engineer
+                                    - paragraph [ref=e2381]: HiOctave (HiO)
+                                    - paragraph [ref=e2383]: Tel Aviv District, Israel (Hybrid)
+                                  - generic [ref=e2385]:
+                                    - img [ref=e2386]
+                                    - paragraph [ref=e2390]: Actively reviewing applicants
+                              - generic [ref=e2391]:
+                                - paragraph [ref=e2392]:
+                                  - generic [ref=e2393]: Posted on January 18, 2026, 10:06 AM
+                                  - text: 3 weeks ago
+                                - paragraph [ref=e2394]: ·
+                                - paragraph [ref=e2395]:
+                                  - img [ref=e2397]
+                                  - text: Easy Apply
+                        - listitem [ref=e2399]:
+                          - link "Artificial Intelligence Engineer Horizon Trade Tel Aviv District, Israel (On-site) Actively reviewing applicants Posted on January 15, 2026, 5:46 PM · Easy Apply" [ref=e2401] [cursor=pointer]:
+                            - /url: https://www.linkedin.com/jobs/collections/recommended/?trackingId=KQF0%2Fo%2BgcL%2FcwDpEAcf2Eg%3D%3D&currentJobId=4353560447&originToLandingJobPostings=4353832486%2C4353560447%2C4370946466%2C4361775484%2C4370681657
+                            - generic [ref=e2402]:
+                              - generic [ref=e2403]:
+                                - figure [ref=e2404]
+                                - generic [ref=e2405]:
+                                  - generic [ref=e2408]:
+                                    - paragraph [ref=e2410]: Artificial Intelligence Engineer
+                                    - paragraph [ref=e2412]: Horizon Trade
+                                    - paragraph [ref=e2414]: Tel Aviv District, Israel (On-site)
+                                  - generic [ref=e2416]:
+                                    - img [ref=e2417]
+                                    - paragraph [ref=e2421]: Actively reviewing applicants
+                              - generic [ref=e2422]:
+                                - paragraph [ref=e2423]:
+                                  - generic [ref=e2424]: Posted on January 15, 2026, 5:46 PM
+                                  - text: 1 month ago
+                                - paragraph [ref=e2425]: ·
+                                - paragraph [ref=e2426]:
+                                  - img [ref=e2428]
+                                  - text: Easy Apply
+                        - listitem [ref=e2430]:
+                          - link "Incubation AI Software Tech Lead (Verified job) Monday.com Tel Aviv-Yafo 27 connections work here Posted on February 10, 2026, 8:19 AM" [ref=e2432] [cursor=pointer]:
+                            - /url: https://www.linkedin.com/jobs/collections/recommended/?trackingId=%2BgTOKqJNaml83G3jwzce2A%3D%3D&currentJobId=4370946466&originToLandingJobPostings=4353832486%2C4353560447%2C4370946466%2C4361775484%2C4370681657
+                            - generic [ref=e2433]:
+                              - generic [ref=e2434]:
+                                - figure [ref=e2435]
+                                - generic [ref=e2436]:
+                                  - generic [ref=e2439]:
+                                    - paragraph [ref=e2441]:
+                                      - generic [ref=e2442]: Incubation AI Software Tech Lead (Verified job)
+                                      - generic [ref=e2443]:
+                                        - text: Incubation AI Software Tech Lead
+                                        - img [ref=e2445]
+                                    - paragraph [ref=e2448]: Monday.com
+                                    - paragraph [ref=e2450]: Tel Aviv-Yafo
+                                  - generic [ref=e2452]:
+                                    - figure [ref=e2453]
+                                    - figure [ref=e2454]
+                                    - figure [ref=e2455]
+                                    - paragraph [ref=e2457]: 27 connections work here
+                              - paragraph [ref=e2459]:
+                                - generic [ref=e2460]: Posted on February 10, 2026, 8:19 AM
+                                - text: 3 days ago
+                        - listitem [ref=e2461]:
+                          - link "AI Engineer (Verified job) Gotfriends Tel Aviv District, Israel (Hybrid) Actively reviewing applicants Posted on February 10, 2026, 10:42 AM · Easy Apply" [ref=e2463] [cursor=pointer]:
+                            - /url: https://www.linkedin.com/jobs/collections/recommended/?trackingId=dUEiLG3%2FNO5QnWdv5%2F3EHw%3D%3D&currentJobId=4361775484&originToLandingJobPostings=4353832486%2C4353560447%2C4370946466%2C4361775484%2C4370681657
+                            - generic [ref=e2464]:
+                              - generic [ref=e2465]:
+                                - figure [ref=e2466]
+                                - generic [ref=e2467]:
+                                  - generic [ref=e2470]:
+                                    - paragraph [ref=e2472]:
+                                      - generic [ref=e2473]: AI Engineer (Verified job)
+                                      - generic [ref=e2474]:
+                                        - text: AI Engineer
+                                        - img [ref=e2476]
+                                    - paragraph [ref=e2479]: Gotfriends
+                                    - paragraph [ref=e2481]: Tel Aviv District, Israel (Hybrid)
+                                  - generic [ref=e2483]:
+                                    - img [ref=e2484]
+                                    - paragraph [ref=e2488]: Actively reviewing applicants
+                              - generic [ref=e2489]:
+                                - paragraph [ref=e2490]:
+                                  - generic [ref=e2491]: Posted on February 10, 2026, 10:42 AM
+                                  - text: 2 days ago
+                                - paragraph [ref=e2492]: ·
+                                - paragraph [ref=e2493]:
+                                  - img [ref=e2495]
+                                  - text: Easy Apply
+                        - listitem [ref=e2497]:
+                          - link "Wireless Systems AI/ML Engineer (Verified job) Apple Herzliya 11 connections work here Posted on February 10, 2026, 3:10 PM" [ref=e2499] [cursor=pointer]:
+                            - /url: https://www.linkedin.com/jobs/collections/recommended/?trackingId=seNKl1DpeTCPG%2Fs8QFQIGg%3D%3D&currentJobId=4370681657&originToLandingJobPostings=4353832486%2C4353560447%2C4370946466%2C4361775484%2C4370681657
+                            - generic [ref=e2500]:
+                              - generic [ref=e2501]:
+                                - figure [ref=e2502]
+                                - generic [ref=e2503]:
+                                  - generic [ref=e2506]:
+                                    - paragraph [ref=e2508]:
+                                      - generic [ref=e2509]: Wireless Systems AI/ML Engineer (Verified job)
+                                      - generic [ref=e2510]:
+                                        - text: Wireless Systems AI/ML Engineer
+                                        - img [ref=e2512]
+                                    - paragraph [ref=e2515]: Apple
+                                    - paragraph [ref=e2517]: Herzliya
+                                  - generic [ref=e2519]:
+                                    - figure [ref=e2520]
+                                    - figure [ref=e2521]
+                                    - figure [ref=e2522]
+                                    - paragraph [ref=e2524]: 11 connections work here
+                              - paragraph [ref=e2526]:
+                                - generic [ref=e2527]: Posted on February 10, 2026, 3:10 PM
+                                - text: 2 days ago
+                      - button "Next" [ref=e2528] [cursor=pointer]:
+                        - img [ref=e2530]
+                    - link "Show more" [ref=e2532] [cursor=pointer]:
+                      - /url: https://www.linkedin.com/jobs/collections/recommended/?discover=recommended&trackingId=mdIfW4kCrB4uakvpWN8DrQ%3D%3D&currentJobId=4353832486&discoveryOrigin=MAIN_FEED_JYMBII&originToLandingJobPostings=4353832486%2C4353560447%2C4370946466%2C4361775484%2C4370681657
+                      - generic [ref=e2533]:
+                        - img [ref=e2534]
+                        - generic [ref=e2536]: Show more
+              - listitem [ref=e2540]:
+                - generic [ref=e2542]:
+                  - heading "Feed post" [level=2]:
+                    - generic [ref=e2543]: Feed post
+                  - generic [ref=e2544]:
+                    - 'link "View company: Navina" [ref=e2545] [cursor=pointer]':
+                      - /url: https://www.linkedin.com/company/navina-ai/posts/
+                      - 'figure "View company: Navina" [ref=e2546]':
+                        - 'img "View company: Navina" [ref=e2547]'
+                    - link "Navina 37,497 followers Promoted" [ref=e2548] [cursor=pointer]:
+                      - /url: https://www.linkedin.com/company/navina-ai/posts/
+                      - generic [ref=e2549]:
+                        - paragraph [ref=e2551]: Navina
+                        - paragraph [ref=e2553]: 37,497 followers
+                        - paragraph [ref=e2555]: Promoted
+                    - button "View more options" [ref=e2556] [cursor=pointer]:
+                      - img [ref=e2558]
+                  - paragraph [ref=e2560]:
+                    - generic [ref=e2561]: We’re hiring R&D, Product, Data, and Medical all-stars to build AI that helps doctors deliver better care.
+                  - generic [ref=e2562]:
+                    - link "View Sponsored Content" [ref=e2564] [cursor=pointer]:
+                      - /url: https://www.navina.ai/careers?utm_campaign=NC_Prospecting_Prospecting-audience-and-video-engagers_Static&utm_source=linkedin&utm_medium=paid&hsa_acc=505534708&hsa_cam=805544043&hsa_grp=467322773&hsa_ad=1107485633&hsa_net=linkedin&hsa_ver=3&li_fat_id=34ecfcb1-cf0f-41a6-a049-e2743088b29e&utm_campaign=NC_EmployerBranding_Prospecting_Prospecting-audience-and-video-engagers_Static&utm_medium=paid_social&utm_content=NC_Prospecting_Static2&utm_source=linkedin
+                      - figure "View Sponsored Content" [ref=e2565]:
+                        - img "View Sponsored Content" [ref=e2566]
+                    - link "Check out our open positions and apply! navina.ai Apply" [ref=e2567] [cursor=pointer]:
+                      - /url: https://www.navina.ai/careers?utm_campaign=NC_Prospecting_Prospecting-audience-and-video-engagers_Static&utm_source=linkedin&utm_medium=paid&hsa_acc=505534708&hsa_cam=805544043&hsa_grp=467322773&hsa_ad=1107485633&hsa_net=linkedin&hsa_ver=3&li_fat_id=34ecfcb1-cf0f-41a6-a049-e2743088b29e&utm_campaign=NC_EmployerBranding_Prospecting_Prospecting-audience-and-video-engagers_Static&utm_medium=paid_social&utm_content=NC_Prospecting_Static2&utm_source=linkedin
+                      - generic [ref=e2568]:
+                        - generic [ref=e2569]:
+                          - paragraph [ref=e2571]:
+                            - generic [ref=e2572]: Check out our open positions and apply!
+                            - text: Check out our open positions and apply!
+                          - paragraph [ref=e2574]: navina.ai
+                        - link "Apply" [ref=e2575]:
+                          - /url: https://www.navina.ai/careers?utm_campaign=NC_Prospecting_Prospecting-audience-and-video-engagers_Static&utm_source=linkedin&utm_medium=paid&hsa_acc=505534708&hsa_cam=805544043&hsa_grp=467322773&hsa_ad=1107485633&hsa_net=linkedin&hsa_ver=3&li_fat_id=34ecfcb1-cf0f-41a6-a049-e2743088b29e&utm_campaign=NC_EmployerBranding_Prospecting_Prospecting-audience-and-video-engagers_Static&utm_medium=paid_social&utm_content=NC_Prospecting_Static2&utm_source=linkedin
+                          - generic [ref=e2577]: Apply
+                  - generic [ref=e2578]:
+                    - button "15 reactions" [ref=e2579] [cursor=pointer]:
+                      - generic [ref=e2580]:
+                        - img [ref=e2581]
+                        - img [ref=e2587]
+                        - paragraph [ref=e2602]:
+                          - generic [ref=e2603]: 15 reactions
+                          - text: "15"
+                    - generic [ref=e2604]:
+                      - button:
+                        - paragraph
+                      - button:
+                        - paragraph
+                  - generic [ref=e2607]:
+                    - generic [ref=e2609]:
+                      - 'button "Reaction button state: no reaction" [ref=e2612] [cursor=pointer]':
+                        - generic [ref=e2613]:
+                          - img [ref=e2614]
+                          - generic [ref=e2616]: Like
+                      - button "Open reactions menu":
+                        - img [ref=e2618] [cursor=pointer]
+                    - button "Comment" [ref=e2620] [cursor=pointer]:
+                      - generic [ref=e2621]:
+                        - img [ref=e2622]
+                        - generic [ref=e2625]: Comment
+                    - button "Repost" [ref=e2626] [cursor=pointer]:
+                      - generic [ref=e2627]:
+                        - img [ref=e2628]
+                        - generic [ref=e2631]: Repost
+                    - button "Send" [ref=e2632] [cursor=pointer]:
+                      - generic [ref=e2633]:
+                        - img [ref=e2634]
+                        - generic [ref=e2637]: Send
+              - listitem [ref=e2641]:
+                - generic [ref=e2643]:
+                  - heading "Feed post" [level=2]:
+                    - generic [ref=e2644]: Feed post
+                  - generic [ref=e2645]:
+                    - generic [ref=e2646]:
+                      - link [ref=e2647] [cursor=pointer]:
+                        - /url: https://www.linkedin.com/in/ari-kliger/
+                        - figure [ref=e2648]
+                      - paragraph [ref=e2650]:
+                        - link "Ari Kliger" [ref=e2651] [cursor=pointer]:
+                          - /url: https://www.linkedin.com/in/ari-kliger/
+                          - strong [ref=e2652]: Ari Kliger
+                        - text: likes this
+                    - button "View more options" [ref=e2653] [cursor=pointer]:
+                      - img [ref=e2655]
+                    - button "Hide Post" [ref=e2657] [cursor=pointer]:
+                      - img [ref=e2659]
+                  - generic [ref=e2661]:
+                    - link "View Elad Cohen’s profile" [ref=e2662] [cursor=pointer]:
+                      - /url: https://www.linkedin.com/in/eladgocode/
+                      - figure "View Elad Cohen’s profile" [ref=e2663]:
+                        - img "View Elad Cohen’s profile" [ref=e2664]
+                    - link "Elad Cohen • 2nd LLM + MCP = ❤️ | GoCode Founder | Hands-On Senior Fullstack Developer | Expert Mentor & Consultant | Bring Great AI Development Solutions & Courses for Companies 19h • Edited •" [ref=e2665] [cursor=pointer]:
+                      - /url: https://www.linkedin.com/in/eladgocode/
+                      - generic [ref=e2666]:
+                        - paragraph [ref=e2668]:
+                          - text: Elad Cohen
+                          - generic [ref=e2669]: • 2nd
+                        - paragraph [ref=e2671]: LLM + MCP = ❤️ | GoCode Founder | Hands-On Senior Fullstack Developer | Expert Mentor & Consultant | Bring Great AI Development Solutions & Courses for Companies
+                        - paragraph [ref=e2673]:
+                          - text: 19h • Edited •
+                          - img [ref=e2674]
+                    - button "Invite Elad Cohen to connect" [ref=e2679] [cursor=pointer]:
+                      - generic [ref=e2680]:
+                        - img [ref=e2681]
+                        - generic [ref=e2684]: Connect
+                  - paragraph [ref=e2687]:
+                    - generic [ref=e2688]:
+                      - text: הכירו את WebMCP - התקן החדש שגוגל שחררה, ומתכוון לשנות את הדרך שבה האינטרנט עובד.
+                      - text: נכון להיום, סוכני AI שצריכים לעשות משהו באתר — מצלמים screenshot, מנסים להבין איזה כפתור זה "חיפוש", לוחצים, מחכים לטעינה, מצלמים שוב. מודלים עם מיליארדי פרמטרים שמתחזים לבני אדם. פיקסל אחרי פיקסל.
+                      - text: התקן של WebMCP הופך את זה. במקום שהסוכן ינסה "לגלות" מה האתר עושה - האתר מספר לו בעצמו.
+                      - text: איך זה קורה טכנית?
+                      - text: "דרך API חדש בדפדפן `navigator.modelContext`. האתר חושף tools מובנים, והסוכן קורא להם ישירות. בלי scraping, בלי screenshots ובלי ניחושים."
+                      - text: "שני מסלולים אפשריים:"
+                      - text: ◾ **Declarative** — מוסיפים attributes לטפסי HTML קיימים. אפס JavaScript.
+                      - text: "◾ **Imperative** — רושמים tools דרך JS, חושפים פונקציות כמו `buyTicket(destination, date)` ישירות לסוכן."
+                      - text: ה-spec נכתב ביחד ע"י מהנדסים של Google ו-Microsoft, פורסם כ-W3C Draft, וזמין כ-Early Preview ב-Chrome 146 מאחורי flag.
+                      - text: בוטים משתמשים כבר ב 51% מהתעבורה באינטרנט.
+                      - text: אתרים שירצו להישאר רלוונטיים בעולם שבו משתמשים פועלים דרך סוכנים - יצטרכו שכבה שמדברת עם agents. WebMCP זה הניסיון הראשון להפוך את זה לתקן של הפלטפורמה עצמה.
+                      - text: קישור רלוונטי בתגובה הראשונה
+                      - link "#GoCode" [ref=e2690] [cursor=pointer]:
+                        - /url: https://www.linkedin.com/search/results/all/?keywords=%23gocode&origin=HASH_TAG_FROM_FEED
+                        - strong [ref=e2692]: "#GoCode"
+                      - link "#WebMCP" [ref=e2693] [cursor=pointer]:
+                        - /url: https://www.linkedin.com/search/results/all/?keywords=%23webmcp&origin=HASH_TAG_FROM_FEED
+                        - strong [ref=e2695]: "#WebMCP"
+                      - link "#AI" [ref=e2696] [cursor=pointer]:
+                        - /url: https://www.linkedin.com/search/results/all/?keywords=%23ai&origin=HASH_TAG_FROM_FEED
+                        - strong [ref=e2698]: "#AI"
+                      - link "#AgenticWeb" [ref=e2699] [cursor=pointer]:
+                        - /url: https://www.linkedin.com/search/results/all/?keywords=%23agenticweb&origin=HASH_TAG_FROM_FEED
+                        - strong [ref=e2701]: "#AgenticWeb"
+                      - link "#Chrome" [ref=e2702] [cursor=pointer]:
+                        - /url: https://www.linkedin.com/search/results/all/?keywords=%23chrome&origin=HASH_TAG_FROM_FEED
+                        - strong [ref=e2704]: "#Chrome"
+                      - link "#WebDevelopment" [ref=e2705] [cursor=pointer]:
+                        - /url: https://www.linkedin.com/search/results/all/?keywords=%23webdevelopment&origin=HASH_TAG_FROM_FEED
+                        - strong [ref=e2707]: "#WebDevelopment"
+                      - button:
+                        - generic [ref=e2101] [cursor=pointer]: … more
+                  - button "Show translation" [ref=e2709] [cursor=pointer]:
+                    - generic [ref=e2711]: Show translation
+                  - button [ref=e2713] [cursor=pointer]:
+                    - figure [ref=e2714]
+                  - generic [ref=e2715]:
+                    - button "Shai Lahav and 326 others reacted" [ref=e2716] [cursor=pointer]:
+                      - generic [ref=e2717]:
+                        - img [ref=e2718]
+                        - img [ref=e2724]
+                        - img [ref=e2732]
+                        - paragraph [ref=e2747]:
+                          - generic [ref=e2748]: Shai Lahav and 326 others reacted
+                          - generic [ref=e2749]: Shai Lahav and 326 others
+                    - generic [ref=e2750]:
+                      - button "23 comments" [ref=e2751] [cursor=pointer]:
+                        - paragraph [ref=e2752]:
+                          - generic [ref=e2753]: 23 comments
+                          - generic [ref=e2754]: 23 comments
+                      - paragraph [ref=e2755]: •
+                      - button "8 reposts" [ref=e2756] [cursor=pointer]:
+                        - paragraph [ref=e2757]:
+                          - generic [ref=e2758]: 8 reposts
+                          - generic [ref=e2759]: 8 reposts
+                  - generic [ref=e2760]:
+                    - generic [ref=e2762]:
+                      - 'button "Reaction button state: no reaction" [ref=e2765] [cursor=pointer]':
+                        - generic [ref=e2766]:
+                          - img [ref=e2767]
+                          - generic [ref=e2769]: Like
+                      - button "Open reactions menu":
+                        - img [ref=e2771] [cursor=pointer]
+                    - button "Comment" [ref=e2773] [cursor=pointer]:
+                      - generic [ref=e2774]:
+                        - img [ref=e2775]
+                        - generic [ref=e2778]: Comment
+                    - button "Repost" [ref=e2779] [cursor=pointer]:
+                      - generic [ref=e2780]:
+                        - img [ref=e2781]
+                        - generic [ref=e2784]: Repost
+                    - button "Send" [ref=e2785] [cursor=pointer]:
+                      - generic [ref=e2786]:
+                        - img [ref=e2787]
+                        - generic [ref=e2790]: Send
+              - listitem [ref=e2794]:
+                - generic [ref=e2796]:
+                  - heading "Feed post" [level=2]:
+                    - generic [ref=e2797]: Feed post
+                  - generic [ref=e2798]:
+                    - link "View Daniel Boaron’s profile" [ref=e2799] [cursor=pointer]:
+                      - /url: https://www.linkedin.com/in/danielboaronux/
+                      - figure "View Daniel Boaron’s profile" [ref=e2800]:
+                        - img "View Daniel Boaron’s profile" [ref=e2801]
+                    - link "Daniel Boaron • 1st Senior Product Designer | Driving AI Adoption in Design Teams | Leading Design AI 1d •" [ref=e2802] [cursor=pointer]:
+                      - /url: https://www.linkedin.com/in/danielboaronux/
+                      - generic [ref=e2803]:
+                        - paragraph [ref=e2805]:
+                          - text: Daniel Boaron
+                          - generic [ref=e2806]: • 1st
+                        - paragraph [ref=e2808]: Senior Product Designer | Driving AI Adoption in Design Teams | Leading Design AI
+                        - paragraph [ref=e2810]:
+                          - text: 1d •
+                          - img [ref=e2811]
+                    - button "View more options" [ref=e2813] [cursor=pointer]:
+                      - img [ref=e2815]
+                    - button "Hide Post" [ref=e2817] [cursor=pointer]:
+                      - img [ref=e2819]
+                  - paragraph [ref=e2823]:
+                    - generic [ref=e2824]:
+                      - text: אני כותב פה הרבה על AI וכלים. אבל הפוסט הזה? חובה.
+                      - text: כל מי שעובד על Design To Code תעצרו ותקראו. ללא קשר לתפקיד.
+                      - text: נתתי לקלוד קוד עיצוב מ-Figma. הוא לא שאל אותי שום שאלה. הוא פשוט ידע איפה לשים את זה בקוד בלי לשבור ולייצר קוד ספגטי. לעשות התאמות ולשחרר עדכון ל-Storybook.
+                      - text: "לקחתי עיצוב של קומפוננטה בודדת עם 4 רכיבי דאטה מ-Figma. הרצתי skill אחד: Implement Design. של vercel."
+                      - text: "מה שהוא עשה - לבד:"
+                      - text: "- זיהה את מבנה הקוד של הפרויקט"
+                      - text: "- הבין איזה framework וספריות אני משתמש"
+                      - text: "- מצא בדיוק איפה הקומפוננטה צריכה לשבת"
+                      - text: "- בנה קוד production-ready ב-1:1 לעיצוב"
+                      - text: "- לא שבר שום דבר במבנה הקיים"
+                      - text: בלי שהסברתי לו את הארכיטקטורה, בלי שהצבעתי על קובץ ובלי שנגעתי בשורה אחת. (למרות שאני תמיד אומר שקונטקסט זה מאוד מאוד חשוב אבל פה הייתי חייב לנסות את זה וזה היה פשוט מטורף!!!)
+                      - text: ואז? לקחתי את זה צעד קדימה.
+                      - text: חיברתי Storybook MCP ותיעדתי את הקומפוננטה אוטומטית.
+                      - text: מ-Figma → לקוד → ל-Storybook. בפקודות בלבד.
+                      - text: ה-handoff בין עיצוב לפיתוח, כמו שהכרנו אותו משתנה ואנחנו רואים את זה קורה.
+                      - text: "וזה הדבר הכי חשוב להבין:"
+                      - text: חיבור ל-Figma דרך MCP זה רק הצינור הוא נותן גישה ל-layout, טיפוגרפיה, צבעים ו-design tokens.
+                      - text: אבל בלי הskill? הagent לא יודע מה לעשות עם כל המידע הזה.
+                      - text: הImplement Design skill הוא מה שהופך את החיבור לתהליך עבודה חכם ומדויק הוא יודע לקרוא את העיצוב, להבין את הפרויקט שלך, ולתרגם בין שניהם בלי שתצטרך להסביר כלום.
+                      - text: MCP זה הכוח. ה-skill זה מה שמכוון אותו.
+                      - text: סדנת Design To Code לעצמאים בדרך אליכם אנחנו עובדים עליה ומדייקים אותה כמה שאפשר תכף פרטים אצלכם. בואו לכנס גם יהיה כיף :)
+                      - text: אני שם לינק להרשמה גם לסדנא מותאמת אישית לצוותים שרוצים לרוץ קדימה.
+                      - text: "הסקייל וכל המידע:"
+                      - link "https://lnkd.in/dF-984UB" [ref=e2826] [cursor=pointer]:
+                        - /url: https://lnkd.in/dF-984UB
+                        - strong [ref=e2828]: https://lnkd.in/dF-984UB
+                      - text: "התקנה בפקודה אחת:"
+                      - text: npx skills add figma/mcp-server-guide --skill implement-design
+                      - link "#FigmaToCode" [ref=e2829] [cursor=pointer]:
+                        - /url: https://www.linkedin.com/search/results/all/?keywords=%23figmatocode&origin=HASH_TAG_FROM_FEED
+                        - strong [ref=e2831]: "#FigmaToCode"
+                      - link "#AIDesign" [ref=e2832] [cursor=pointer]:
+                        - /url: https://www.linkedin.com/search/results/all/?keywords=%23aidesign&origin=HASH_TAG_FROM_FEED
+                        - strong [ref=e2834]: "#AIDesign"
+                      - link "#DesignSystems" [ref=e2835] [cursor=pointer]:
+                        - /url: https://www.linkedin.com/search/results/all/?keywords=%23designsystems&origin=HASH_TAG_FROM_FEED
+                        - strong [ref=e2837]: "#DesignSystems"
+                      - link "#ClaudeCode" [ref=e2838] [cursor=pointer]:
+                        - /url: https://www.linkedin.com/search/results/all/?keywords=%23claudecode&origin=HASH_TAG_FROM_FEED
+                        - strong [ref=e2840]: "#ClaudeCode"
+                      - link "#MCP" [ref=e2841] [cursor=pointer]:
+                        - /url: https://www.linkedin.com/search/results/all/?keywords=%23mcp&origin=HASH_TAG_FROM_FEED
+                        - strong [ref=e2843]: "#MCP"
+                      - button:
+                        - generic [ref=e2103] [cursor=pointer]: … more
+                  - button "Show translation" [ref=e2845] [cursor=pointer]:
+                    - generic [ref=e2847]: Show translation
+                  - region "Video Player" [ref=e2850]:              
+                  - generic [ref=e2852]:
+                    - button "Qusai Trabeh and 121 others reacted" [ref=e2853] [cursor=pointer]:
+                      - generic [ref=e2854]:
+                        - img [ref=e2855]
+                        - img [ref=e2861]
+                        - img [ref=e2869]
+                        - paragraph [ref=e2884]:
+                          - generic [ref=e2885]: Qusai Trabeh and 121 others reacted
+                          - generic [ref=e2886]: Qusai Trabeh and 121 others
+                    - generic [ref=e2887]:
+                      - button "18 comments" [ref=e2888] [cursor=pointer]:
+                        - paragraph [ref=e2889]:
+                          - generic [ref=e2890]: 18 comments
+                          - generic [ref=e2891]: 18 comments
+                      - paragraph [ref=e2892]: •
+                      - button "1 repost" [ref=e2893] [cursor=pointer]:
+                        - paragraph [ref=e2894]:
+                          - generic [ref=e2895]: 1 repost
+                          - generic [ref=e2896]: 1 repost
+                  - generic [ref=e2897]:
+                    - generic [ref=e2899]:
+                      - 'button "Reaction button state: no reaction" [ref=e2902] [cursor=pointer]':
+                        - generic [ref=e2903]:
+                          - img [ref=e2904]
+                          - generic [ref=e2906]: Like
+                      - button "Open reactions menu":
+                        - img [ref=e2908] [cursor=pointer]
+                    - button "Comment" [ref=e2910] [cursor=pointer]:
+                      - generic [ref=e2911]:
+                        - img [ref=e2912]
+                        - generic [ref=e2915]: Comment
+                    - button "Repost" [ref=e2916] [cursor=pointer]:
+                      - generic [ref=e2917]:
+                        - img [ref=e2918]
+                        - generic [ref=e2921]: Repost
+                    - button "Send" [ref=e2922] [cursor=pointer]:
+                      - generic [ref=e2923]:
+                        - img [ref=e2924]
+                        - generic [ref=e2927]: Send
+              - listitem [ref=e2931]:
+                - generic [ref=e2933]:
+                  - heading "Feed post" [level=2]:
+                    - generic [ref=e2934]: Feed post
+                  - generic [ref=e2935]:
+                    - 'link "View company: Ease Solutions" [ref=e2936] [cursor=pointer]':
+                      - /url: https://www.linkedin.com/company/easesolutions-pte-ltd/posts/
+                      - 'figure "View company: Ease Solutions" [ref=e2937]':
+                        - 'img "View company: Ease Solutions" [ref=e2938]'
+                    - link "Ease Solutions 7h •" [ref=e2939] [cursor=pointer]:
+                      - /url: https://www.linkedin.com/company/easesolutions-pte-ltd/posts/
+                      - generic [ref=e2940]:
+                        - paragraph [ref=e2942]: Ease Solutions
+                        - paragraph [ref=e2944]:
+                          - text: 7h •
+                          - img [ref=e2945]
+                    - button "View more options" [ref=e2947] [cursor=pointer]:
+                      - img [ref=e2949]
+                    - button "Hide Post" [ref=e2951] [cursor=pointer]:
+                      - img [ref=e2953]
+                  - paragraph [ref=e2955]:
+                    - generic [ref=e2956]:
+                      - text: 🚀 Projects growing.
+                      - text: Control shrinking.
+                      - text: Spreadsheets everywhere.
+                      - text: Status updates chasing people.
+                      - text: Leadership asking for visibility you cannot generate fast enough.
+                      - text: "Join us live:"
+                      - text: "Project Management at Scale: How Enterprise Teams Regain Control with"
+                      - link "monday.com" [ref=e2958] [cursor=pointer]:
+                        - /url: https://www.linkedin.com/redir/redirect/?url=http%3A%2F%2Fmonday%2Ecom&urlhash=gAJU&mt=1Fvk_eQeW-njidHSlsTNkcebUXR9fXBY4K3mzPokVbk5uCrUDQOzE3UgEiF0Z3Xbb427XS2W1NkA_Fnjo9i6ZwXRWohqAFtDRH6c3QllSbbZ7goMgmjlhLTEfQ&isSdui=true
+                        - strong [ref=e2960]: monday.com
+                      - text: 🗓 March 12, 2026
+                      - text: 🕒 2:30 to 3:30 PM SGT
+                      - text: Built for leaders responsible for delivery, governance, and scale.
+                      - text: "In 60 minutes, you will see:"
+                      - text: ✅ How
+                      - link "monday.com" [ref=e2961] [cursor=pointer]:
+                        - /url: https://www.linkedin.com/redir/redirect/?url=http%3A%2F%2Fmonday%2Ecom&urlhash=gAJU&mt=o3r_n9nB6ODxeowdxRvJg_Q1-Isw7eJQZcxd8kqKP07kw5WDtqXTgpGDOOt7Te10M5cdPggV0hhHID0KeexphHbu2DRwMeOrBmEnrSYbCadDJ9k_ofGAcvfdbw&isSdui=true
+                        - strong [ref=e2963]: monday.com
+                      - text: structures project delivery without adding admin
+                      - text: ✅ Practical PM setups you can replicate
+                      - text: ✅ Enterprise features that support governance, security, and portfolio oversight
+                      - text: ✅ Real tactics to improve adoption and reporting across departments
+                      - text: "This session is ideal if you are:"
+                      - text: • Standardizing workflows across teams
+                      - text: • Improving portfolio visibility for leadership
+                      - text: • Evaluating a modern PM platform with enterprise control
+                      - text: "Save your seat:"
+                      - text: 👉
+                      - link "https://buff.ly/RnwJzDT" [ref=e2964] [cursor=pointer]:
+                        - /url: https://www.linkedin.com/redir/redirect/?url=https%3A%2F%2Fbuff%2Ely%2FRnwJzDT&urlhash=TRHH&mt=Afc9t0Z1QUEF56B_J1xzTC--16QnWSdOhQ9K9zS6yZChvVkrmES9utKcKyNUvaSq8jxSPJfTCOx5l8Lek1xds2OCcc7Dg8v-_omIfDlkBhcTMTWbLmN1aZnSXg&isSdui=true
+                        - strong [ref=e2966]: https://buff.ly/RnwJzDT
+                      - link "#mondaydotcom" [ref=e2967] [cursor=pointer]:
+                        - /url: https://www.linkedin.com/search/results/all/?keywords=%23mondaydotcom&origin=HASH_TAG_FROM_FEED
+                        - strong [ref=e2969]: "#mondaydotcom"
+                      - link "#Webinar" [ref=e2970] [cursor=pointer]:
+                        - /url: https://www.linkedin.com/search/results/all/?keywords=%23webinar&origin=HASH_TAG_FROM_FEED
+                        - strong [ref=e2972]: "#Webinar"
+                      - link "#ProjectManagement" [ref=e2973] [cursor=pointer]:
+                        - /url: https://www.linkedin.com/search/results/all/?keywords=%23projectmanagement&origin=HASH_TAG_FROM_FEED
+                        - strong [ref=e2975]: "#ProjectManagement"
+                      - link "#EaseSolutions" [ref=e2976] [cursor=pointer]:
+                        - /url: https://www.linkedin.com/search/results/all/?keywords=%23easesolutions&origin=HASH_TAG_FROM_FEED
+                        - strong [ref=e2978]: "#EaseSolutions"
+                      - button:
+                        - generic [ref=e2105] [cursor=pointer]: … more
+                  - link [ref=e2979] [cursor=pointer]:
+                    - /url: https://www.linkedin.com/events/7427900979062362112/
+                    - figure [ref=e2980]
+                  - generic [ref=e2981]:
+                    - link "Thu, Mar 12, 6:30 AM - 7:30 AM Project Management at Scale with monday.com Enterprise Online 1 attendee" [ref=e2982] [cursor=pointer]:
+                      - /url: https://www.linkedin.com/events/7427900979062362112/
+                      - generic [ref=e2983]:
+                        - paragraph [ref=e2985]: Thu, Mar 12, 6:30 AM - 7:30 AM
+                        - paragraph [ref=e2987]: Project Management at Scale with monday.com Enterprise
+                        - paragraph [ref=e2988]:
+                          - img [ref=e2990]
+                          - text: Online
+                        - paragraph [ref=e2994]: 1 attendee
+                    - link "View event" [ref=e2995] [cursor=pointer]:
+                      - /url: https://www.linkedin.com/events/7427900979062362112/
+                      - generic [ref=e2997]: View event
+                  - generic [ref=e2998]:
+                    - button "0" [ref=e2999] [cursor=pointer]:
+                      - generic [ref=e3000]:
+                        - generic:
+                          - paragraph:
+                            - generic [ref=e3001]: "0"
+                    - generic [ref=e3002]:
+                      - button:
+                        - paragraph
+                      - button "2 reposts" [ref=e3004] [cursor=pointer]:
+                        - paragraph [ref=e3005]:
+                          - generic [ref=e3006]: 2 reposts
+                          - generic [ref=e3007]: 2 reposts
+                  - generic [ref=e3008]:
+                    - generic [ref=e3010]:
+                      - 'button "Reaction button state: no reaction" [ref=e3013] [cursor=pointer]':
+                        - generic [ref=e3014]:
+                          - img [ref=e3015]
+                          - generic [ref=e3017]: Like
+                      - button "Open reactions menu":
+                        - img [ref=e3019] [cursor=pointer]
+                    - button "Comment" [ref=e3021] [cursor=pointer]:
+                      - generic [ref=e3022]:
+                        - img [ref=e3023]
+                        - generic [ref=e3026]: Comment
+                    - button "Repost" [ref=e3027] [cursor=pointer]:
+                      - generic [ref=e3028]:
+                        - img [ref=e3029]
+                        - generic [ref=e3032]: Repost
+                    - button "Send" [ref=e3033] [cursor=pointer]:
+                      - generic [ref=e3034]:
+                        - img [ref=e3035]
+                        - generic [ref=e3038]: Send
+              - listitem [ref=e3042]:
+                - generic [ref=e3044]:
+                  - heading "Feed post" [level=2]:
+                    - generic [ref=e3045]: Feed post
+                  - generic [ref=e3046]:
+                    - generic [ref=e3047]:
+                      - figure [ref=e3048]
+                      - figure [ref=e3049]
+                      - paragraph [ref=e3051]:
+                        - link "May Bangy" [ref=e3052] [cursor=pointer]:
+                          - /url: https://www.linkedin.com/in/maybangy/
+                          - strong [ref=e3053]: May Bangy
+                        - text: ","
+                        - link "Ana Maria Gombos" [ref=e3054] [cursor=pointer]:
+                          - /url: https://www.linkedin.com/in/ana-maria-gombos-162389175/
+                          - strong [ref=e3055]: Ana Maria Gombos
+                        - text: and 245 other connections follow
+                        - link "AllCloud" [ref=e3056] [cursor=pointer]:
+                          - /url: https://www.linkedin.com/company/allcloud/posts/
+                          - strong [ref=e3057]: AllCloud
+                    - button "View more options" [ref=e3058] [cursor=pointer]:
+                      - img [ref=e3060]
+                  - generic [ref=e3062]:
+                    - 'link "View company: AllCloud" [ref=e3063] [cursor=pointer]':
+                      - /url: https://www.linkedin.com/company/allcloud/posts/
+                      - 'figure "View company: AllCloud" [ref=e3064]':
+                        - 'img "View company: AllCloud" [ref=e3065]'
+                    - link "AllCloud 92,731 followers Promoted" [ref=e3066] [cursor=pointer]:
+                      - /url: https://www.linkedin.com/company/allcloud/posts/
+                      - generic [ref=e3067]:
+                        - paragraph [ref=e3069]: AllCloud
+                        - paragraph [ref=e3071]: 92,731 followers
+                        - paragraph [ref=e3073]: Promoted
+                  - generic [ref=e3076]:
+                    - paragraph [ref=e3077]:
+                      - generic [ref=e3078]:
+                        - text: "🛡️ The Threat: Traditional firewalls don't stop AI threats. Is your AI model at risk of being poisoned, hacked, or manipulated to give bad answers? You need control over your models. AllCloud helps you build and manage your AI with Model Context Protocol (MCP), providing the essential governance layer. Learn how to monitor, validate, and protect the LLM layer against malicious input and output. Unlock the full security AI session now!"
+                        - button:
+                          - generic [ref=e3080] [cursor=pointer]: … more
+                    - generic [ref=e3081]:
+                      - button "Guard Your AI Models From Attack. View Lead Gen Form" [ref=e3083] [cursor=pointer]:
+                        - figure "Guard Your AI Models From Attack. View Lead Gen Form" [ref=e3084]:
+                          - img "Guard Your AI Models From Attack. View Lead Gen Form" [ref=e3085]
+                      - button "Guard Your AI Models From Attack. 70 submits" [ref=e3086] [cursor=pointer]:
+                        - generic [ref=e3088]:
+                          - paragraph [ref=e3090]:
+                            - generic [ref=e3091]: Guard Your AI Models From Attack.
+                            - text: Guard Your AI Models From Attack.
+                          - paragraph [ref=e3093]: 70 submits
+                    - button "Learn more" [ref=e3095] [cursor=pointer]:
+                      - generic [ref=e3097]: Learn more
+                  - generic [ref=e3098]:
+                    - button "16 reactions" [ref=e3099] [cursor=pointer]:
+                      - generic [ref=e3100]:
+                        - img [ref=e3101]
+                        - paragraph [ref=e3108]:
+                          - generic [ref=e3109]: 16 reactions
+                          - text: "16"
+                    - generic [ref=e3110]:
+                      - button:
+                        - paragraph
+                      - button:
+                        - paragraph
+                  - generic [ref=e3113]:
+                    - generic [ref=e3115]:
+                      - 'button "Reaction button state: no reaction" [ref=e3118] [cursor=pointer]':
+                        - generic [ref=e3119]:
+                          - img [ref=e3120]
+                          - generic [ref=e3122]: Like
+                      - button "Open reactions menu":
+                        - img [ref=e3124] [cursor=pointer]
+                    - button "Comment" [ref=e3126] [cursor=pointer]:
+                      - generic [ref=e3127]:
+                        - img [ref=e3128]
+                        - generic [ref=e3131]: Comment
+                    - button "Repost" [ref=e3132] [cursor=pointer]:
+                      - generic [ref=e3133]:
+                        - img [ref=e3134]
+                        - generic [ref=e3137]: Repost
+                    - button "Send" [ref=e3138] [cursor=pointer]:
+                      - generic [ref=e3139]:
+                        - img [ref=e3140]
+                        - generic [ref=e3143]: Send
+              - listitem [ref=e3147]:
+                - generic [ref=e3149]:
+                  - heading "Feed post" [level=2]:
+                    - generic [ref=e3150]: Feed post
+                  - generic [ref=e3151]:
+                    - generic [ref=e3152]:
+                      - link [ref=e3153] [cursor=pointer]:
+                        - /url: https://www.linkedin.com/company/minimax-ai/posts/
+                        - figure [ref=e3154]
+                      - paragraph [ref=e3156]:
+                        - link "MiniMax" [ref=e3157] [cursor=pointer]:
+                          - /url: https://www.linkedin.com/company/minimax-ai/posts/
+                          - strong [ref=e3158]: MiniMax
+                        - text: celebrates this
+                    - button "View more options" [ref=e3159] [cursor=pointer]:
+                      - img [ref=e3161]
+                    - button "Hide Post" [ref=e3163] [cursor=pointer]:
+                      - img [ref=e3165]
+                  - generic [ref=e3167]:
+                    - 'link "View company: Cline" [ref=e3168] [cursor=pointer]':
+                      - /url: https://www.linkedin.com/company/clinebot/posts/
+                      - 'figure "View company: Cline" [ref=e3169]':
+                        - 'img "View company: Cline" [ref=e3170]'
+                    - link "Cline 12h •" [ref=e3171] [cursor=pointer]:
+                      - /url: https://www.linkedin.com/company/clinebot/posts/
+                      - generic [ref=e3172]:
+                        - paragraph [ref=e3174]: Cline
+                        - paragraph [ref=e3176]:
+                          - text: 12h •
+                          - img [ref=e3177]
+                    - button "Follow Cline" [ref=e3182] [cursor=pointer]:
+                      - generic [ref=e3183]:
+                        - img [ref=e3184]
+                        - generic [ref=e3187]: Follow
+                  - paragraph [ref=e3188]:
+                    - generic [ref=e3189]:
+                      - link "MiniMax" [ref=e3190] [cursor=pointer]:
+                        - /url: https://www.linkedin.com/company/minimax-ai/
+                        - strong [ref=e3192]: MiniMax
+                      - text: "M2.5 is now in Cline:"
+                      - text: + 80.2% SWE-Bench Verified.
+                      - text: + 100 tps. $0.06/M blended cost.
+                      - text: + 10B activated parameters.
+                      - text: And it's free in Cine for a limited time!
+                      - text: "M2.5 benchmarks worth paying attention to:"
+                      - text: "> SWE-Bench Pro: 55.4 (Opus 4.6: 53.4)"
+                      - text: "> Multi-SWE-Bench: 51.3 (Opus 4.6: 50.3)"
+                      - text: "> SWE-Bench Verified: 80.2 (Opus 4.6: 80.8)"
+                      - text: Beats Opus on the harder engineering tasks. Nearly tied on the rest. At a fraction of the cost. Great performance for multi-agent work.
+                      - text: M2.5 runs at 100 tokens per second. That's 3x faster than Opus. At $0.06/M blended with caching, you can run subagents in the CLI and just leave them going.
+                      - text: Fast models exist. Cheap models exist. Both at SOTA performance is new.
+                      - text: "Read how to make the most out of MiniMax M2.5 with Cline in our blog:"
+                      - link "https://lnkd.in/g794i5mW" [ref=e3194] [cursor=pointer]:
+                        - /url: https://lnkd.in/g794i5mW
+                        - strong [ref=e3196]: https://lnkd.in/g794i5mW
+                      - button:
+                        - generic [ref=e3198] [cursor=pointer]: … more
+                  - button [ref=e3200] [cursor=pointer]:
+                    - figure [ref=e3201]
+                  - generic [ref=e3202]:
+                    - button "38 reactions" [ref=e3203] [cursor=pointer]:
+                      - generic [ref=e3204]:
+                        - img [ref=e3205]
+                        - img [ref=e3211]
+                        - img [ref=e3225]
+                        - paragraph [ref=e3234]:
+                          - generic [ref=e3235]: 38 reactions
+                          - text: "38"
+                    - generic [ref=e3236]:
+                      - button "1 comment" [ref=e3237] [cursor=pointer]:
+                        - paragraph [ref=e3238]:
+                          - generic [ref=e3239]: 1 comment
+                          - generic [ref=e3240]: 1 comment
+                      - paragraph [ref=e3241]: •
+                      - button "4 reposts" [ref=e3242] [cursor=pointer]:
+                        - paragraph [ref=e3243]:
+                          - generic [ref=e3244]: 4 reposts
+                          - generic [ref=e3245]: 4 reposts
+                  - generic [ref=e3246]:
+                    - generic [ref=e3248]:
+                      - 'button "Reaction button state: no reaction" [ref=e3251] [cursor=pointer]':
+                        - generic [ref=e3252]:
+                          - img [ref=e3253]
+                          - generic [ref=e3255]: Like
+                      - button "Open reactions menu":
+                        - img [ref=e3257] [cursor=pointer]
+                    - button "Comment" [ref=e3259] [cursor=pointer]:
+                      - generic [ref=e3260]:
+                        - img [ref=e3261]
+                        - generic [ref=e3264]: Comment
+                    - button "Repost" [ref=e3265] [cursor=pointer]:
+                      - generic [ref=e3266]:
+                        - img [ref=e3267]
+                        - generic [ref=e3270]: Repost
+                    - button "Send" [ref=e3271] [cursor=pointer]:
+                      - generic [ref=e3272]:
+                        - img [ref=e3273]
+                        - generic [ref=e3276]: Send
+              - listitem [ref=e3280]:
+                - generic [ref=e3282]:
+                  - heading "Feed post" [level=2]:
+                    - generic [ref=e3283]: Feed post
+                  - generic [ref=e3284]:
+                    - paragraph [ref=e3287]: Suggested
+                    - button "View more options" [ref=e3288] [cursor=pointer]:
+                      - img [ref=e3290]
+                    - button "Hide Post" [ref=e3292] [cursor=pointer]:
+                      - img [ref=e3294]
+                  - generic [ref=e3296]:
+                    - link "View Nicholas Nouri’s profile" [ref=e3297] [cursor=pointer]:
+                      - /url: https://www.linkedin.com/in/nicholasnouri/
+                      - figure "View Nicholas Nouri’s profile" [ref=e3298]:
+                        - img "View Nicholas Nouri’s profile" [ref=e3299]
+                    - link "Nicholas Nouri • 2nd Founder | Author 2d •" [ref=e3300] [cursor=pointer]:
+                      - /url: https://www.linkedin.com/in/nicholasnouri/
+                      - generic [ref=e3301]:
+                        - paragraph [ref=e3303]:
+                          - text: Nicholas Nouri
+                          - img [ref=e3305]
+                          - generic [ref=e3307]: • 2nd
+                        - paragraph [ref=e3309]: Founder | Author
+                        - paragraph [ref=e3311]:
+                          - text: 2d •
+                          - img [ref=e3312]
+                    - button "Follow Nicholas Nouri" [ref=e3317] [cursor=pointer]:
+                      - generic [ref=e3318]:
+                        - img [ref=e3319]
+                        - generic [ref=e3322]: Follow
+                  - paragraph [ref=e3323]:
+                    - generic [ref=e3324]:
+                      - text: There are many ways to build the architecture of an AI Agent that enables reasoning, decision-making, and independent action. Unlike traditional instruction following systems, agentic systems (agencies) use learning to plan, adapt to their environments, and achieve more complex objectives.
+                      - text: The agentic RAG system extends the traditional RAG system in addition to retrieving the relevant data to provide answers, by planning the search, evaluating which retrieved data is the most reliable, and integrating all of the retrieved data to create a single coherent answer.
+                      - text: "Patterns that affect the design of AI agent architectures include:"
+                      - text: "1️⃣ Code Act Agents: This type of agent uses large language models to generate and execute code, thereby combining both reasoning and true computation."
+                      - text: "2️⃣ Re Act Agents: These types of agents follow a \"think-act-observe\" model to analyze and refine their actions, based upon feedback from each iteration of the analysis."
+                      - text: "3️⃣ Agentic RAG: These types of agents dynamically plan and manage the retrieval of relevant information, based upon various data sources to improve contextual understanding."
+                      - text: "4️⃣ Tool Use with MCP (Model Context Protocol): MCP provides a standardized method for AI systems to access and utilize external tools."
+                      - text: "5️⃣ Self Reflective Agents: These types of agents evaluate their output as well as their strengths/weaknesses to continuously improve the accuracy of their responses."
+                      - text: "6️⃣ Multi-Agent Workflows: These types of workflows consist of coordinating multiple specialized agents to complete shared tasks and exchange information to address larger-scale issues."
+                      - text: What is the type of agentic architecture commonly used in your area of practice?
+                      - link "#innovation" [ref=e3325] [cursor=pointer]:
+                        - /url: https://www.linkedin.com/search/results/all/?keywords=%23innovation&origin=HASH_TAG_FROM_FEED
+                        - strong [ref=e3327]: "#innovation"
+                      - link "#technology" [ref=e3328] [cursor=pointer]:
+                        - /url: https://www.linkedin.com/search/results/all/?keywords=%23technology&origin=HASH_TAG_FROM_FEED
+                        - strong [ref=e3330]: "#technology"
+                      - link "#future" [ref=e3331] [cursor=pointer]:
+                        - /url: https://www.linkedin.com/search/results/all/?keywords=%23future&origin=HASH_TAG_FROM_FEED
+                        - strong [ref=e3333]: "#future"
+                      - link "#management" [ref=e3334] [cursor=pointer]:
+                        - /url: https://www.linkedin.com/search/results/all/?keywords=%23management&origin=HASH_TAG_FROM_FEED
+                        - strong [ref=e3336]: "#management"
+                      - link "#startups" [ref=e3337] [cursor=pointer]:
+                        - /url: https://www.linkedin.com/search/results/all/?keywords=%23startups&origin=HASH_TAG_FROM_FEED
+                        - strong [ref=e3339]: "#startups"
+                      - button:
+                        - generic [ref=e3341] [cursor=pointer]: … more
+                  - button [ref=e3343] [cursor=pointer]:
+                    - figure [ref=e3344]
+                  - generic [ref=e3345]:
+                    - button "305 reactions" [ref=e3346] [cursor=pointer]:
+                      - generic [ref=e3347]:
+                        - img [ref=e3348]
+                        - img [ref=e3354]
+                        - img [ref=e3362]
+                        - paragraph [ref=e3377]:
+                          - generic [ref=e3378]: 305 reactions
+                          - text: "305"
+                    - generic [ref=e3379]:
+                      - button "22 comments" [ref=e3380] [cursor=pointer]:
+                        - paragraph [ref=e3381]:
+                          - generic [ref=e3382]: 22 comments
+                          - generic [ref=e3383]: 22 comments
+                      - paragraph [ref=e3384]: •
+                      - button "44 reposts" [ref=e3385] [cursor=pointer]:
+                        - paragraph [ref=e3386]:
+                          - generic [ref=e3387]: 44 reposts
+                          - generic [ref=e3388]: 44 reposts
+                  - generic [ref=e3389]:
+                    - generic [ref=e3391]:
+                      - 'button "Reaction button state: no reaction" [ref=e3394] [cursor=pointer]':
+                        - generic [ref=e3395]:
+                          - img [ref=e3396]
+                          - generic [ref=e3398]: Like
+                      - button "Open reactions menu":
+                        - img [ref=e3400] [cursor=pointer]
+                    - button "Comment" [ref=e3402] [cursor=pointer]:
+                      - generic [ref=e3403]:
+                        - img [ref=e3404]
+                        - generic [ref=e3407]: Comment
+                    - button "Repost" [ref=e3408] [cursor=pointer]:
+                      - generic [ref=e3409]:
+                        - img [ref=e3410]
+                        - generic [ref=e3413]: Repost
+                    - button "Send" [ref=e3414] [cursor=pointer]:
+                      - generic [ref=e3415]:
+                        - img [ref=e3416]
+                        - generic [ref=e3419]: Send
+              - listitem [ref=e3423]:
+                - generic [ref=e3425]:
+                  - heading "Feed post" [level=2]:
+                    - generic [ref=e3426]: Feed post
+                  - generic [ref=e3427]:
+                    - generic [ref=e3428]:
+                      - link [ref=e3429] [cursor=pointer]:
+                        - /url: https://www.linkedin.com/in/elias-sayegh-685684201/
+                        - figure [ref=e3430]
+                      - paragraph [ref=e3432]:
+                        - link "Elias Sayegh" [ref=e3433] [cursor=pointer]:
+                          - /url: https://www.linkedin.com/in/elias-sayegh-685684201/
+                          - strong [ref=e3434]: Elias Sayegh
+                        - text: celebrates this
+                    - button "View more options" [ref=e3435] [cursor=pointer]:
+                      - img [ref=e3437]
+                    - button "Hide Post" [ref=e3439] [cursor=pointer]:
+                      - img [ref=e3441]
+                  - generic [ref=e3443]:
+                    - link "View Amit Rozen Yaker’s profile" [ref=e3444] [cursor=pointer]:
+                      - /url: https://www.linkedin.com/in/amit-rozen/
+                      - figure "View Amit Rozen Yaker’s profile" [ref=e3445]:
+                        - img "View Amit Rozen Yaker’s profile" [ref=e3446]
+                    - link "Amit Rozen Yaker • 1st Technical Project Management | BSc Computer Science 2d •" [ref=e3447] [cursor=pointer]:
+                      - /url: https://www.linkedin.com/in/amit-rozen/
+                      - generic [ref=e3448]:
+                        - paragraph [ref=e3450]:
+                          - text: Amit Rozen Yaker
+                          - img [ref=e3452]
+                          - generic [ref=e3454]: • 1st
+                        - paragraph [ref=e3456]: Technical Project Management | BSc Computer Science
+                        - paragraph [ref=e3458]:
+                          - text: 2d •
+                          - img [ref=e3459]
+                  - paragraph [ref=e3463]:
+                    - generic [ref=e3464]:
+                      - text: סיימתי קורס ניהול פרויקטים ✨🥳 (הפרויקט היחיד שבאמת נסגר בזמן) ידע שנצבר, כלים שנוספו, וצעד נוסף בדרך להיות מנהלת פרויקטים לומדת, חושבת ומובילה 🌌
+                      - button:
+                        - generic [ref=e3466] [cursor=pointer]: … more
+                  - button "Show translation" [ref=e3468] [cursor=pointer]:
+                    - generic [ref=e3470]: Show translation
+                  - button [ref=e3472] [cursor=pointer]:
+                    - figure [ref=e3473]
+                  - generic [ref=e3474]:
+                    - button "Daniel Levanto and 57 others reacted" [ref=e3475] [cursor=pointer]:
+                      - generic [ref=e3476]:
+                        - img [ref=e3477]
+                        - img [ref=e3483]
+                        - img [ref=e3497]
+                        - paragraph [ref=e3504]:
+                          - generic [ref=e3505]: Daniel Levanto and 57 others reacted
+                          - generic [ref=e3506]: Daniel Levanto and 57 others
+                    - generic [ref=e3507]:
+                      - button "9 comments" [ref=e3508] [cursor=pointer]:
+                        - paragraph [ref=e3509]:
+                          - generic [ref=e3510]: 9 comments
+                          - generic [ref=e3511]: 9 comments
+                      - button:
+                        - paragraph
+                  - generic [ref=e3513]:
+                    - generic [ref=e3515]:
+                      - 'button "Reaction button state: no reaction" [ref=e3518] [cursor=pointer]':
+                        - generic [ref=e3519]:
+                          - img [ref=e3520]
+                          - generic [ref=e3522]: Like
+                      - button "Open reactions menu":
+                        - img [ref=e3524] [cursor=pointer]
+                    - button "Comment" [ref=e3526] [cursor=pointer]:
+                      - generic [ref=e3527]:
+                        - img [ref=e3528]
+                        - generic [ref=e3531]: Comment
+                    - button "Repost" [ref=e3532] [cursor=pointer]:
+                      - generic [ref=e3533]:
+                        - img [ref=e3534]
+                        - generic [ref=e3537]: Repost
+                    - button "Send" [ref=e3538] [cursor=pointer]:
+                      - generic [ref=e3539]:
+                        - img [ref=e3540]
+                        - generic [ref=e3543]: Send
+              - listitem [ref=e3547]:
+                - generic [ref=e3549]:
+                  - heading "Feed post" [level=2]:
+                    - generic [ref=e3550]: Feed post
+                  - generic [ref=e3551]:
+                    - generic [ref=e3552]:
+                      - figure [ref=e3553]
+                      - figure [ref=e3554]
+                      - paragraph [ref=e3556]:
+                        - link "Sagi Barshai" [ref=e3557] [cursor=pointer]:
+                          - /url: https://www.linkedin.com/in/sagi-barshai/
+                          - strong [ref=e3558]: Sagi Barshai
+                        - text: ","
+                        - link "Gershon Avital" [ref=e3559] [cursor=pointer]:
+                          - /url: https://www.linkedin.com/in/gershon-avital/
+                          - strong [ref=e3560]: Gershon Avital
+                        - text: and 26 other connections follow
+                        - link "Modelyo" [ref=e3561] [cursor=pointer]:
+                          - /url: https://www.linkedin.com/company/modelyo/posts/
+                          - strong [ref=e3562]: Modelyo
+                    - button "View more options" [ref=e3563] [cursor=pointer]:
+                      - img [ref=e3565]
+                  - generic [ref=e3567]:
+                    - 'link "View company: Modelyo" [ref=e3568] [cursor=pointer]':
+                      - /url: https://www.linkedin.com/company/modelyo/posts/
+                      - 'figure "View company: Modelyo" [ref=e3569]':
+                        - 'img "View company: Modelyo" [ref=e3570]'
+                    - link "Modelyo 1,438 followers Promoted" [ref=e3571] [cursor=pointer]:
+                      - /url: https://www.linkedin.com/company/modelyo/posts/
+                      - generic [ref=e3572]:
+                        - paragraph [ref=e3574]: Modelyo
+                        - paragraph [ref=e3576]: 1,438 followers
+                        - paragraph [ref=e3578]: Promoted
+                    - button "Follow Modelyo" [ref=e3582] [cursor=pointer]:
+                      - generic [ref=e3583]:
+                        - img [ref=e3584]
+                        - generic [ref=e3587]: Follow
+                  - paragraph [ref=e3588]:
+                    - generic [ref=e3589]:
+                      - link "Artem Barger" [ref=e3590] [cursor=pointer]:
+                        - /url: https://www.linkedin.com/in/artem-barger-b318b618/
+                        - strong [ref=e3592]: Artem Barger
+                      - text: VP of R&D at
+                      - link "Modelyo" [ref=e3593] [cursor=pointer]:
+                        - /url: https://www.linkedin.com/company/modelyo/
+                        - strong [ref=e3595]: Modelyo
+                      - text: ", breaks down what the new IDC study signals about the market: Confidential Computing is no longer a niche. It is becoming the baseline for running sensitive AI and data collaboration workloads in environments you do not fully control."
+                      - text: The shift is clear. The question is not if you adopt CC. The question is how fast you operationalize it with real attestation, enforceable isolation, and open interoperability.
+                      - text: Read the report here >>
+                      - link "https://lnkd.in/eHv3Hv6w" [ref=e3596] [cursor=pointer]:
+                        - /url: https://lnkd.in/eHv3Hv6w
+                        - strong [ref=e3598]: https://lnkd.in/eHv3Hv6w
+                      - button:
+                        - generic [ref=e3600] [cursor=pointer]: … more
+                  - generic [ref=e3601]:
+                    - link [ref=e3602] [cursor=pointer]:
+                      - /url: https://www.linkedin.com/pulse/data-security-gap-closing-why-confidential-computing-has-become-mnlie/
+                      - figure [ref=e3603]
+                    - 'link "The Data Security Gap is Closing: Why Confidential Computing Has Become a Strategic Imperative Modelyo" [ref=e3604] [cursor=pointer]':
+                      - /url: https://www.linkedin.com/pulse/data-security-gap-closing-why-confidential-computing-has-become-mnlie/
+                      - generic [ref=e3605]:
+                        - paragraph [ref=e3607]: "The Data Security Gap is Closing: Why Confidential Computing Has Become a Strategic Imperative"
+                        - paragraph [ref=e3609]: Modelyo
+                  - generic [ref=e3610]:
+                    - button "20 reactions" [ref=e3611] [cursor=pointer]:
+                      - generic [ref=e3612]:
+                        - img [ref=e3613]
+                        - img [ref=e3619]
+                        - img [ref=e3625]
+                        - paragraph [ref=e3634]:
+                          - generic [ref=e3635]: 20 reactions
+                          - text: "20"
+                    - generic [ref=e3636]:
+                      - button:
+                        - paragraph
+                      - button "3 reposts" [ref=e3638] [cursor=pointer]:
+                        - paragraph [ref=e3639]:
+                          - generic [ref=e3640]: 3 reposts
+                          - generic [ref=e3641]: 3 reposts
+                  - generic [ref=e3642]:
+                    - generic [ref=e3644]:
+                      - 'button "Reaction button state: no reaction" [ref=e3647] [cursor=pointer]':
+                        - generic [ref=e3648]:
+                          - img [ref=e3649]
+                          - generic [ref=e3651]: Like
+                      - button "Open reactions menu":
+                        - img [ref=e3653] [cursor=pointer]
+                    - button "Comment" [ref=e3655] [cursor=pointer]:
+                      - generic [ref=e3656]:
+                        - img [ref=e3657]
+                        - generic [ref=e3660]: Comment
+                    - button "Repost" [ref=e3661] [cursor=pointer]:
+                      - generic [ref=e3662]:
+                        - img [ref=e3663]
+                        - generic [ref=e3666]: Repost
+                    - button "Send" [ref=e3667] [cursor=pointer]:
+                      - generic [ref=e3668]:
+                        - img [ref=e3669]
+                        - generic [ref=e3672]: Send
+              - button "Load more" [ref=e3674] [cursor=pointer]:
+                - generic [ref=e3676]: Load more
+            - generic [ref=e1758]:
+              - generic [ref=e1759]:
+                - generic [ref=e1762]:
+                  - paragraph [ref=e1763]: Today’s puzzles
+                  - link "Zip - a quick brain teaser Solve in 60s or less!" [ref=e1764] [cursor=pointer]:
+                    - /url: /games/zip/
+                    - generic [ref=e1765]:
+                      - figure [ref=e1766]
+                      - generic [ref=e1767]:
+                        - paragraph [ref=e1768]: Zip - a quick brain teaser
+                        - paragraph [ref=e1769]: Solve in 60s or less!
+                      - img [ref=e1770]
+                - generic [ref=e1773]:
+                  - paragraph [ref=e1774]: Add to your feed
+                  - link "View profile Lenny Rachitsky Deeply researched no-nonsense product, growth, and career advice Follow Lenny Rachitsky" [ref=e1775] [cursor=pointer]:
+                    - /url: https://www.linkedin.com/in/lennyrachitsky/
+                    - generic [ref=e1776]:
+                      - figure "View profile" [ref=e1777]:
+                        - img "View profile" [ref=e1778]
+                      - generic [ref=e1779]:
+                        - paragraph [ref=e1782]: Lenny Rachitsky
+                        - paragraph [ref=e1784]: Deeply researched no-nonsense product, growth, and career advice
+                        - button "Follow Lenny Rachitsky" [ref=e1787]:
+                          - generic [ref=e1788]:
+                            - img [ref=e1789]
+                            - generic [ref=e1792]: Follow
+                  - link "View company Qualcomm Company • Semiconductor Manufacturing Follow Qualcomm" [ref=e1793] [cursor=pointer]:
+                    - /url: https://www.linkedin.com/company/qualcomm/
+                    - generic [ref=e1794]:
+                      - figure "View company" [ref=e1795]:
+                        - img "View company" [ref=e1796]
+                      - generic [ref=e1797]:
+                        - paragraph [ref=e1800]: Qualcomm
+                        - paragraph [ref=e1802]: Company • Semiconductor Manufacturing
+                        - button "Follow Qualcomm" [ref=e1805]:
+                          - generic [ref=e1806]:
+                            - img [ref=e1807]
+                            - generic [ref=e1810]: Follow
+                  - link "View profile Noa Zilberman Future Summit, Odo Security (acq. by Check Point), Forbes30 Follow Noa Zilberman" [ref=e1811] [cursor=pointer]:
+                    - /url: https://www.linkedin.com/in/noa-zilberman/
+                    - generic [ref=e1812]:
+                      - figure "View profile" [ref=e1813]:
+                        - img "View profile" [ref=e1814]
+                      - generic [ref=e1815]:
+                        - paragraph [ref=e1818]: Noa Zilberman
+                        - paragraph [ref=e1820]: Future Summit, Odo Security (acq. by Check Point), Forbes30
+                        - button "Follow Noa Zilberman" [ref=e1823]:
+                          - generic [ref=e1824]:
+                            - img [ref=e1825]
+                            - generic [ref=e1828]: Follow
+                  - link "View all recommendations" [ref=e1829] [cursor=pointer]:
+                    - /url: /mynetwork/discover-hub/
+                    - generic [ref=e1830]:
+                      - img [ref=e1831]
+                      - generic [ref=e1833]: View all recommendations
+              - generic [ref=e1835]:
+                - iframe [ref=e3677]:
+                  - generic [ref=f494e2]:
+                    - generic [ref=f494e3]: Ad
+                    - img "overflow-web-small" [ref=f494e6] [cursor=pointer]
+                    - link "LinkedIn for Sales" [ref=f494e10] [cursor=pointer]:
+                      - /url: https://www.linkedin.com/li/tscp/sct?destinationUrl=https%3A%2F%2Fwww.linkedin.com%2Fpremium%2Fredeem-v3%2F%3F_ed%3DCwEAAAFvqlyO6M8Q8oNzsFrJnllsOwTEGqdDSfAhW7Ib5vG3e7kEqBnLM6TDzYIfB6J8I4WlA-U%26planType%3Dsales%26redeemType%3DWINBACK%26src%3Dli-dynamic%26trk%3Demea_EN_DA_V3_202507_Winback%26mcid%3D7386103185964277762&trackingEvent=%5B%7B%22eventInfo%22%3A%7B%22appId%22%3A%22com.linkedin.ads.rendering.d_web%22%2C%22eventName%22%3A%22SponsoredRightRailContentActionEvent%22%2C%22topicName%22%3A%22SponsoredRightRailContentActionEvent%22%7D%2C%22eventBody%22%3A%7B%22sponsoredEventHeader%22%3A%7B%22encryptedTrackingData%22%3A%22CwEAAAGcVlcpyWHEaKiVzlLxOLU7MoJ7naqtRDWjeN8ZPWWEI5wFKRa5eiBGZ40Bn4MLviMnnGxUsgVYwHxrKP5vbAjWgbmrOTZka-0s9yFXwGxD5DVRzZnWe8Af6DW6jf_tGQQC9WQve2_yzMsoT7BP5Q6eNpwh89INAkoXrV8T7ACgUodlT_iHcQ8zHYLtsgP1GJ3UwEBH9iDkyfxxnlfJyD4WoX_si7QoFDuh3rXwbr0X76ECmh_bFexPiJ_zSBn7TrcO9K1IUyV7FK_iA59npErpQMeh9rrjbrZCnmo1PkxMqEV5SK6Hgghsrsixs_pvf_4eEW7tf-7SM-06oMRf8JXVWaQk94kHjG_ijs6gYVZVzSreDP9Z6jfsttm7umB0Qza7yGnES8dIozSKQYa_Nsq6cbthdHXU1eqs1uvqYomXQX5DJ7uYNCKRa0U34IFV8lEm2ah0UcIZBlScvYWVoLDJ86bM30Vf9vy2PZeNRVn9emfTxPkf_5WYW1jrNIr6sWp2ZK7a1R3JWqDIs2ezp-Z4kroUaladNq-lD3BVg_2wg0Eej-BGzUifwaQ4w8wK_ay_unuG7EnAsQpYSyHFIgERllVGx39dmkmGI9R6sl0maXKc2UU32zDG9ATjbEc8bC3-khx002_Uw9OSkQliKlM-IIJC2Nj6yYzvtlqzVRz2WWO_VsnWBoHstV0Lz3urVaRGN1OLGXXlyCTIEDThcOy7jQRK2hCHUI2fFbje2SBAlUreWrV65Mowv0xJVLBDQru-pEeynP1bo5fYAjkoxa_dd1ynsffUOwzrJR_kkoorIlgjqVSqCOPWhhDY8_zQDRJE2cmQJvpNRuRk-rO-3vG50FWakSJsp5pk1FvRw-5y6RxkjcgHt_N0esW_DwnrLaPR7-lTkFZuD5yHlLIJowyZZe3baDEvyDXVYxjoQ4tJYDn30ppsW7NmbXBvXjVA5SVeYqwfz1MgNw_SVTda7dlosAMSOT9Hj0pBYooAnz3Ig-StxPvfe0skTsI9-64p-oH3EVk2kkn1x_Yi3afzghcuYVfnBzxR8n99jSmd8_vWNWBJA-Og7j_h3IlKN870cUSr-TQtiuv4NeIyzXNAim3u7pIr2_GMmbaT2lvOe8PjpmRQf8gz39LtNKx2PIk_xUqQuNlNG74ITmsqFqd2jTQbBVJbP7Mg4BD4AmjYmyCVFFbKryD2y2RB%22%7D%2C%22header%22%3A%7B%22pageInstance%22%3A%7B%22pageUrn%22%3A%22urn%3Ali%3Apage%3Ad_flagship3_feed%22%2C%22trackingId%22%3A%2236d576d5-fc14-4beb-9763-b22a5e79f058%22%7D%2C%22time%22%3A1770975078806%2C%22version%22%3A%220.0.0%22%7D%2C%22requestHeader%22%3A%7B%22pageKey%22%3A%22d_flagship3_feed%22%2C%22interfaceLocale%22%3A%22en-US%22%7D%7D%7D%5D&csrfToken=ajax%3A2872756275449100236
+                    - generic [ref=f494e11]:
+                      - heading "Oded, track buyer intent in real time." [level=2] [ref=f494e14]
+                      - generic [ref=f494e16]:
+                        - img "Oded" [ref=f494e17]
+                        - generic [ref=f494e18]:
+                          - link "LinkedIn for Sales" [ref=f494e19] [cursor=pointer]:
+                            - /url: https://www.linkedin.com/li/tscp/sct?destinationUrl=https%3A%2F%2Fwww.linkedin.com%2Fpremium%2Fredeem-v3%2F%3F_ed%3DCwEAAAFvqlyO6M8Q8oNzsFrJnllsOwTEGqdDSfAhW7Ib5vG3e7kEqBnLM6TDzYIfB6J8I4WlA-U%26planType%3Dsales%26redeemType%3DWINBACK%26src%3Dli-dynamic%26trk%3Demea_EN_DA_V3_202507_Winback%26mcid%3D7386103185964277762&trackingEvent=%5B%7B%22eventInfo%22%3A%7B%22appId%22%3A%22com.linkedin.ads.rendering.d_web%22%2C%22eventName%22%3A%22SponsoredRightRailContentActionEvent%22%2C%22topicName%22%3A%22SponsoredRightRailContentActionEvent%22%7D%2C%22eventBody%22%3A%7B%22sponsoredEventHeader%22%3A%7B%22encryptedTrackingData%22%3A%22CwEAAAGcVlcpyWHEaKiVzlLxOLU7MoJ7naqtRDWjeN8ZPWWEI5wFKRa5eiBGZ40Bn4MLviMnnGxUsgVYwHxrKP5vbAjWgbmrOTZka-0s9yFXwGxD5DVRzZnWe8Af6DW6jf_tGQQC9WQve2_yzMsoT7BP5Q6eNpwh89INAkoXrV8T7ACgUodlT_iHcQ8zHYLtsgP1GJ3UwEBH9iDkyfxxnlfJyD4WoX_si7QoFDuh3rXwbr0X76ECmh_bFexPiJ_zSBn7TrcO9K1IUyV7FK_iA59npErpQMeh9rrjbrZCnmo1PkxMqEV5SK6Hgghsrsixs_pvf_4eEW7tf-7SM-06oMRf8JXVWaQk94kHjG_ijs6gYVZVzSreDP9Z6jfsttm7umB0Qza7yGnES8dIozSKQYa_Nsq6cbthdHXU1eqs1uvqYomXQX5DJ7uYNCKRa0U34IFV8lEm2ah0UcIZBlScvYWVoLDJ86bM30Vf9vy2PZeNRVn9emfTxPkf_5WYW1jrNIr6sWp2ZK7a1R3JWqDIs2ezp-Z4kroUaladNq-lD3BVg_2wg0Eej-BGzUifwaQ4w8wK_ay_unuG7EnAsQpYSyHFIgERllVGx39dmkmGI9R6sl0maXKc2UU32zDG9ATjbEc8bC3-khx002_Uw9OSkQliKlM-IIJC2Nj6yYzvtlqzVRz2WWO_VsnWBoHstV0Lz3urVaRGN1OLGXXlyCTIEDThcOy7jQRK2hCHUI2fFbje2SBAlUreWrV65Mowv0xJVLBDQru-pEeynP1bo5fYAjkoxa_dd1ynsffUOwzrJR_kkoorIlgjqVSqCOPWhhDY8_zQDRJE2cmQJvpNRuRk-rO-3vG50FWakSJsp5pk1FvRw-5y6RxkjcgHt_N0esW_DwnrLaPR7-lTkFZuD5yHlLIJowyZZe3baDEvyDXVYxjoQ4tJYDn30ppsW7NmbXBvXjVA5SVeYqwfz1MgNw_SVTda7dlosAMSOT9Hj0pBYooAnz3Ig-StxPvfe0skTsI9-64p-oH3EVk2kkn1x_Yi3afzghcuYVfnBzxR8n99jSmd8_vWNWBJA-Og7j_h3IlKN870cUSr-TQtiuv4NeIyzXNAim3u7pIr2_GMmbaT2lvOe8PjpmRQf8gz39LtNKx2PIk_xUqQuNlNG74ITmsqFqd2jTQbBVJbP7Mg4BD4AmjYmyCVFFbKryD2y2RB%22%7D%2C%22header%22%3A%7B%22pageInstance%22%3A%7B%22pageUrn%22%3A%22urn%3Ali%3Apage%3Ad_flagship3_feed%22%2C%22trackingId%22%3A%2236d576d5-fc14-4beb-9763-b22a5e79f058%22%7D%2C%22time%22%3A1770975078806%2C%22version%22%3A%220.0.0%22%7D%2C%22requestHeader%22%3A%7B%22pageKey%22%3A%22d_flagship3_feed%22%2C%22interfaceLocale%22%3A%22en-US%22%7D%7D%7D%5D&csrfToken=ajax%3A2872756275449100236
+                            - img "LinkedIn for Sales" [ref=f494e20]
+                          - tooltip "LinkedIn for Sales" [ref=f494e21]
+                      - generic [ref=f494e22]:
+                        - heading "Enjoy 50% off 2 months of Sales Navigator!" [level=2] [ref=f494e25]
+                        - link "Get 50% off now" [ref=f494e27] [cursor=pointer]:
+                          - /url: https://www.linkedin.com/li/tscp/sct?destinationUrl=https%3A%2F%2Fwww.linkedin.com%2Fpremium%2Fredeem-v3%2F%3F_ed%3DCwEAAAFvqlyO6M8Q8oNzsFrJnllsOwTEGqdDSfAhW7Ib5vG3e7kEqBnLM6TDzYIfB6J8I4WlA-U%26planType%3Dsales%26redeemType%3DWINBACK%26src%3Dli-dynamic%26trk%3Demea_EN_DA_V3_202507_Winback%26mcid%3D7386103185964277762&trackingEvent=%5B%7B%22eventInfo%22%3A%7B%22appId%22%3A%22com.linkedin.ads.rendering.d_web%22%2C%22eventName%22%3A%22SponsoredRightRailContentActionEvent%22%2C%22topicName%22%3A%22SponsoredRightRailContentActionEvent%22%7D%2C%22eventBody%22%3A%7B%22sponsoredEventHeader%22%3A%7B%22encryptedTrackingData%22%3A%22CwEAAAGcVlcpyWHEaKiVzlLxOLU7MoJ7naqtRDWjeN8ZPWWEI5wFKRa5eiBGZ40Bn4MLviMnnGxUsgVYwHxrKP5vbAjWgbmrOTZka-0s9yFXwGxD5DVRzZnWe8Af6DW6jf_tGQQC9WQve2_yzMsoT7BP5Q6eNpwh89INAkoXrV8T7ACgUodlT_iHcQ8zHYLtsgP1GJ3UwEBH9iDkyfxxnlfJyD4WoX_si7QoFDuh3rXwbr0X76ECmh_bFexPiJ_zSBn7TrcO9K1IUyV7FK_iA59npErpQMeh9rrjbrZCnmo1PkxMqEV5SK6Hgghsrsixs_pvf_4eEW7tf-7SM-06oMRf8JXVWaQk94kHjG_ijs6gYVZVzSreDP9Z6jfsttm7umB0Qza7yGnES8dIozSKQYa_Nsq6cbthdHXU1eqs1uvqYomXQX5DJ7uYNCKRa0U34IFV8lEm2ah0UcIZBlScvYWVoLDJ86bM30Vf9vy2PZeNRVn9emfTxPkf_5WYW1jrNIr6sWp2ZK7a1R3JWqDIs2ezp-Z4kroUaladNq-lD3BVg_2wg0Eej-BGzUifwaQ4w8wK_ay_unuG7EnAsQpYSyHFIgERllVGx39dmkmGI9R6sl0maXKc2UU32zDG9ATjbEc8bC3-khx002_Uw9OSkQliKlM-IIJC2Nj6yYzvtlqzVRz2WWO_VsnWBoHstV0Lz3urVaRGN1OLGXXlyCTIEDThcOy7jQRK2hCHUI2fFbje2SBAlUreWrV65Mowv0xJVLBDQru-pEeynP1bo5fYAjkoxa_dd1ynsffUOwzrJR_kkoorIlgjqVSqCOPWhhDY8_zQDRJE2cmQJvpNRuRk-rO-3vG50FWakSJsp5pk1FvRw-5y6RxkjcgHt_N0esW_DwnrLaPR7-lTkFZuD5yHlLIJowyZZe3baDEvyDXVYxjoQ4tJYDn30ppsW7NmbXBvXjVA5SVeYqwfz1MgNw_SVTda7dlosAMSOT9Hj0pBYooAnz3Ig-StxPvfe0skTsI9-64p-oH3EVk2kkn1x_Yi3afzghcuYVfnBzxR8n99jSmd8_vWNWBJA-Og7j_h3IlKN870cUSr-TQtiuv4NeIyzXNAim3u7pIr2_GMmbaT2lvOe8PjpmRQf8gz39LtNKx2PIk_xUqQuNlNG74ITmsqFqd2jTQbBVJbP7Mg4BD4AmjYmyCVFFbKryD2y2RB%22%7D%2C%22header%22%3A%7B%22pageInstance%22%3A%7B%22pageUrn%22%3A%22urn%3Ali%3Apage%3Ad_flagship3_feed%22%2C%22trackingId%22%3A%2236d576d5-fc14-4beb-9763-b22a5e79f058%22%7D%2C%22time%22%3A1770975078806%2C%22version%22%3A%220.0.0%22%7D%2C%22requestHeader%22%3A%7B%22pageKey%22%3A%22d_flagship3_feed%22%2C%22interfaceLocale%22%3A%22en-US%22%7D%7D%7D%5D&csrfToken=ajax%3A2872756275449100236
+                - generic [ref=e1839]:
+                  - generic [ref=e1840]:
+                    - link "About" [ref=e1841] [cursor=pointer]:
+                      - /url: https://about.linkedin.com/
+                      - paragraph [ref=e1842]: About
+                    - link "Accessibility" [ref=e1843] [cursor=pointer]:
+                      - /url: https://www.linkedin.com/accessibility/
+                      - paragraph [ref=e1844]: Accessibility
+                    - link "Help Center" [ref=e1845] [cursor=pointer]:
+                      - /url: https://www.linkedin.com/help/linkedin/
+                      - paragraph [ref=e1846]: Help Center
+                    - button "Privacy & Terms" [ref=e1847] [cursor=pointer]:
+                      - generic [ref=e1848]:
+                        - paragraph [ref=e1849]: Privacy & Terms
+                        - img [ref=e1850]
+                    - link "Ad Choices" [ref=e1852] [cursor=pointer]:
+                      - /url: https://www.linkedin.com/help/linkedin/answer/62931/
+                      - paragraph [ref=e1853]: Ad Choices
+                    - link "Advertising" [ref=e1854] [cursor=pointer]:
+                      - /url: https://www.linkedin.com/ad/start/?trk=n_nav_ads_rr
+                      - paragraph [ref=e1855]: Advertising
+                    - button "Business Services" [ref=e1856] [cursor=pointer]:
+                      - generic [ref=e1857]:
+                        - paragraph [ref=e1858]: Business Services
+                        - img [ref=e1859]
+                    - link "Get the LinkedIn app" [ref=e1861] [cursor=pointer]:
+                      - /url: https://www.linkedin.com/mobile/
+                      - paragraph [ref=e1862]: Get the LinkedIn app
+                    - button "More" [ref=e1863] [cursor=pointer]:
+                      - paragraph [ref=e1864]: More
+                  - generic [ref=e1865]:
+                    - img [ref=e1866]
+                    - paragraph [ref=e1868]: LinkedIn Corporation © 2026
+  - generic:
+    - generic:
+      - generic:
+        - generic:
+          - complementary:
+            - generic [ref=e1881]:
+              - generic [ref=e1883] [cursor=pointer]:
+                - generic [ref=e1884]:
+                  - img "Oded Ben-Yair" [ref=e1885]
+                  - generic [ref=e1887]: Status is online
+                - button "You are on the messaging overlay. Press enter to open the list of conversations." [ref=e1888]:
+                  - generic [ref=e1889]:
+                    - generic [ref=e1890]: Messaging
+                    - generic [ref=e1891]: You are on the messaging overlay. Press enter to open the list of conversations.
+              - generic [ref=e1892]:
+                - button "Open messenger dropdown menu" [ref=e1894] [cursor=pointer]:
+                  - img "Open messenger dropdown menu" [ref=e1895]
+                - button "Compose message" [ref=e1898] [cursor=pointer]:
+                  - img [ref=e1899]
+                  - generic [ref=e1901]: Compose message
+                - button "You are on the messaging overlay. Press enter to open the list of conversations." [ref=e1902] [cursor=pointer]:
+                  - img [ref=e1903]
+                  - generic [ref=e1905]: You are on the messaging overlay. Press enter to open the list of conversations.
+            - dialog "Messaging" [ref=e1906]:
+              - generic [ref=e1907]:
+                - generic [ref=e1908] [cursor=pointer]:
+                  - generic [ref=e1910]:
+                    - generic [ref=e1912]:
+                      - img "David Strucke" [ref=e1913]
+                      - generic [ref=e1915]: Status is reachable
+                    - heading "David Strucke" [level=2] [ref=e1917]
+                  - button "Close your conversation with David Strucke and Oded Ben-Yair" [ref=e1919]:
+                    - img [ref=e1920]
+                    - generic [ref=e1922]: Close your conversation with David Strucke and Oded Ben-Yair
+                - generic [ref=e1924]:
+                  - link "Visit my website" [ref=e1927] [cursor=pointer]:
+                    - /url: https://datastreamer.io/
+                    - strong [ref=e1928]: Visit my website
+                  - list [ref=e1931]:
+                    - listitem
+                    - listitem [ref=e1932]:
+                      - time [ref=e1933]: Monday
+                      - generic [ref=e1934]: David Strucke sent the following message at 1:43 PM
+                      - generic [ref=e1935]:
+                        - link "View David’s profile David Strucke" [ref=e1936] [cursor=pointer]:
+                          - /url: https://www.linkedin.com/in/ACoAAACpVzwBrVubV-bqhicRnlsrd_xHrMvxck8
+                          - generic [ref=e1937]: View David’s profile
+                          - img "David Strucke" [ref=e1938]
+                        - generic [ref=e1939]:
+                          - generic [ref=e1940]:
+                            - link "David Strucke" [ref=e1941] [cursor=pointer]:
+                              - /url: https://www.linkedin.com/in/ACoAAACpVzwBrVubV-bqhicRnlsrd_xHrMvxck8
+                              - generic [ref=e1942]: David Strucke
+                            - img "LinkedIn Verified" [ref=e1943]
+                          - time [ref=e1945]: • 1:43 PM
+                        - paragraph [ref=e1949]:
+                          - text: Hi Oded, thanks for the connection!
+                          - text: Are you currently integrating and standardizing social and web data?
+                          - text: I'd love to hear how you're approaching it.
+                    - listitem [ref=e1950]:
+                      - generic [ref=e1951]: Oded Ben-Yair sent the following message at 3:54 PM
+                      - generic [ref=e1952]:
+                        - link "View Oded’s profile Oded Ben-Yair" [ref=e1953] [cursor=pointer]:
+                          - /url: https://www.linkedin.com/in/ACoAABEJXkIBpHRsj0zFy126tNlNuHKxpGElSpQ
+                          - generic [ref=e1954]: View Oded’s profile
+                          - img "Oded Ben-Yair" [ref=e1955]
+                        - generic [ref=e1956]:
+                          - generic [ref=e1957]:
+                            - link "Oded Ben-Yair" [ref=e1958] [cursor=pointer]:
+                              - /url: https://www.linkedin.com/in/ACoAABEJXkIBpHRsj0zFy126tNlNuHKxpGElSpQ
+                              - generic [ref=e1959]: Oded Ben-Yair
+                            - img "LinkedIn Verified" [ref=e1960]
+                          - time [ref=e1962]: • 3:54 PM
+                        - paragraph [ref=e1966]: Hey David nice to meet you 🙂 not sure i fully grasp your question to be honest. I am actively running over 5 projects so you truly wish to have my piece you'll need to be a bit more clear
+                    - listitem [ref=e1967]:
+                      - generic [ref=e1968]: David Strucke sent the following message at 11:23 PM
+                      - generic [ref=e1969]:
+                        - link "View David’s profile David Strucke" [ref=e1970] [cursor=pointer]:
+                          - /url: https://www.linkedin.com/in/ACoAAACpVzwBrVubV-bqhicRnlsrd_xHrMvxck8
+                          - generic [ref=e1971]: View David’s profile
+                          - img "David Strucke" [ref=e1972]
+                        - generic [ref=e1973]:
+                          - generic [ref=e1974]:
+                            - link "David Strucke" [ref=e1975] [cursor=pointer]:
+                              - /url: https://www.linkedin.com/in/ACoAAACpVzwBrVubV-bqhicRnlsrd_xHrMvxck8
+                              - generic [ref=e1976]: David Strucke
+                            - img "LinkedIn Verified" [ref=e1977]
+                          - time [ref=e1979]: • 11:23 PM
+                        - paragraph [ref=e1983]:
+                          - text: "Hi Oded, thanks for your reply! To clarify: our platform helps teams ingest, normalize, enrich, and move social and web data at scale. Datastreamer turns what can take weeks of engineering effort into minutes, letting your team focus on high-value product work instead of building and maintaining pipelines."
+                          - text: Given your projects, I’d suggest a short call to see if Datastreamer could simplify any of your workflows, or I can first send a quick video for more context.
+                    - listitem [ref=e1984]:
+                      - time [ref=e1985]: Tuesday
+                      - generic [ref=e1986]: Oded Ben-Yair sent the following message at 4:47 AM
+                      - generic [ref=e1987]:
+                        - link "View Oded’s profile Oded Ben-Yair" [ref=e1988] [cursor=pointer]:
+                          - /url: https://www.linkedin.com/in/ACoAABEJXkIBpHRsj0zFy126tNlNuHKxpGElSpQ
+                          - generic [ref=e1989]: View Oded’s profile
+                          - img "Oded Ben-Yair" [ref=e1990]
+                        - generic [ref=e1991]:
+                          - generic [ref=e1992]:
+                            - link "Oded Ben-Yair" [ref=e1993] [cursor=pointer]:
+                              - /url: https://www.linkedin.com/in/ACoAABEJXkIBpHRsj0zFy126tNlNuHKxpGElSpQ
+                              - generic [ref=e1994]: Oded Ben-Yair
+                            - img "LinkedIn Verified" [ref=e1995]
+                          - time [ref=e1997]: • 4:47 AM
+                        - paragraph [ref=e2001]: Quick video be great, tnx
+                    - listitem [ref=e2002]:
+                      - time [ref=e2003]: Thursday
+                      - generic [ref=e2004]: David Strucke sent the following messages at 3:53 PM
+                      - generic [ref=e2005]:
+                        - link "View David’s profile David Strucke" [ref=e2006] [cursor=pointer]:
+                          - /url: https://www.linkedin.com/in/ACoAAACpVzwBrVubV-bqhicRnlsrd_xHrMvxck8
+                          - generic [ref=e2007]: View David’s profile
+                          - img "David Strucke" [ref=e2008]
+                        - generic [ref=e2009]:
+                          - generic [ref=e2010]:
+                            - link "David Strucke" [ref=e2011] [cursor=pointer]:
+                              - /url: https://www.linkedin.com/in/ACoAAACpVzwBrVubV-bqhicRnlsrd_xHrMvxck8
+                              - generic [ref=e2012]: David Strucke
+                            - img "LinkedIn Verified" [ref=e2013]
+                          - time [ref=e2015]: • 3:53 PM
+                        - paragraph [ref=e2019]:
+                          - text: "Sure! Here is a quick video highlighting the latest updates to our platform and how it helps teams in your field accelerate social and web data workflows:"
+                          - link "https://www.youtube.com/watch?v=p5QrdEt2ptg" [ref=e2020] [cursor=pointer]:
+                            - /url: https://www.youtube.com/watch?v=p5QrdEt2ptg
+                          - text: If you share any specific challenges or gaps you’ve noticed in your current workflow, I can either ask my team to record a 2-minute demo tailored to your needs, or we can jump on a quick call to walk through it together.
+                        - generic [ref=e2025]:
+                          - generic [ref=e2027]:
+                            - link "What's new in data pipelines (September 2025)":
+                              - /url: https://www.youtube.com/watch?v=p5QrdEt2ptg
+                              - generic "What's new in data pipelines (September 2025)" [ref=e2029] [cursor=pointer]:
+                                - generic [ref=e2030]: What's new in data pipelines (September 2025)
+                          - link [ref=e2032] [cursor=pointer]:
+                            - /url: https://www.youtube.com/watch?v=p5QrdEt2ptg
+                            - article [ref=e2033]:
+                              - generic [ref=e2034]: What's new in data pipelines (September 2025)
+                              - generic [ref=e2035]: youtube.com
+                      - img "Seen by David Strucke at 3:53 PM." [ref=e2037]
+                    - listitem [ref=e2038]
+                    - listitem [ref=e2039]:
+                      - generic [ref=e2040]:
+                        - button "Scroll quick replies left" [disabled] [ref=e2041]:
+                          - img
+                          - generic: Scroll quick replies left
+                        - list [ref=e2042]:
+                          - listitem [ref=e2043]:
+                            - button "Reply to conversation with “No, thanks”" [ref=e2044] [cursor=pointer]:
+                              - generic [ref=e2045]: Reply to conversation with “No, thanks”
+                              - generic: No, thanks
+                          - listitem [ref=e2046]:
+                            - button "Reply to conversation with “No, thank you”" [ref=e2047] [cursor=pointer]:
+                              - generic [ref=e2048]: Reply to conversation with “No, thank you”
+                              - generic: No, thank you
+                          - listitem [ref=e2049]:
+                            - button "Reply to conversation with “Thanks”" [ref=e2050] [cursor=pointer]:
+                              - generic [ref=e2051]: Reply to conversation with “Thanks”
+                              - generic: Thanks
+                        - button "Scroll quick replies right" [ref=e2052] [cursor=pointer]:
+                          - img [ref=e2053]
+                          - generic [ref=e2055]: Scroll quick replies right
+                    - listitem
+                  - generic [ref=e2056]:
+                    - generic [ref=e2057]:
+                      - generic [ref=e2059]:
+                        - textbox "Write a message…" [ref=e2060]:
+                          - paragraph [ref=e2061]
+                        - text: Write a message…
+                      - button "Maximize compose field" [ref=e2063] [cursor=pointer]:
+                        - img [ref=e2064]
+                        - generic [ref=e2066]: Maximize compose field
+                    - generic [ref=e2067]:
+                      - generic [ref=e2068]:
+                        - button "Attach an image to your conversation with David Strucke" [ref=e2070] [cursor=pointer]:
+                          - img [ref=e2071]
+                          - generic [ref=e2073]: Attach an image to your conversation with David Strucke
+                        - button "Attach a file to your conversation with David Strucke" [ref=e2075] [cursor=pointer]:
+                          - img [ref=e2076]
+                          - generic [ref=e2078]: Attach a file to your conversation with David Strucke
+                        - button "Open GIF Keyboard" [ref=e2080] [cursor=pointer]:
+                          - img [ref=e2081]
+                          - generic [ref=e2083]: Open GIF Keyboard
+                        - button "Open Emoji Keyboard" [ref=e2086] [cursor=pointer]:
+                          - generic:
+                            - img
+                          - generic [ref=e2087]: Open Emoji Keyboard
+                      - generic [ref=e2088]:
+                        - button "Send" [disabled] [ref=e2090]
+                        - button "Open send options" [ref=e2093] [cursor=pointer]:
+                          - img [ref=e2094]
+                          - generic [ref=e2096]: Open send options
+          - complementary "AI-powered assistant to get help with your career, jobs etc"
+  - iframe [ref=e1869]:
+    - generic [active] [ref=f479e1]:
+      - generic:
+        - region "Toast message":
+          - heading "0 notifications total" [level=2] [ref=f479e3]
+          - alert
+      - region [ref=f479e4]
+      - generic [ref=f479e5]:
+        - generic [ref=f479e7]:
+          - button "Skip to search" [ref=f479e8] [cursor=pointer]:
+            - generic [ref=f479e9]: Skip to search
+          - button "Skip to main content" [ref=f479e10] [cursor=pointer]:
+            - generic [ref=f479e11]: Skip to main content
+          - button "Keyboard shortcuts" [ref=f479e12] [cursor=pointer]:
+            - generic [ref=f479e13]: Keyboard shortcuts
+          - button "Close jump menu" [ref=f479e14] [cursor=pointer]:
+            - img [ref=f479e15]
+            - generic [ref=f479e17]: Close jump menu
+        - banner "Global Navigation" [ref=f479e18]:
+          - generic [ref=f479e19]:
+            - link "LinkedIn" [ref=f479e20] [cursor=pointer]:
+              - /url: https://www.linkedin.com/feed/?nis=true
+              - img "LinkedIn" [ref=f479e23]:
+                - img [ref=f479e24]
+            - generic [ref=f479e28]:
+              - combobox "Search" [ref=f479e29]
+              - generic:
+                - img
+            - navigation "Primary Navigation" [ref=f479e30]:
+              - list [ref=f479e31]:
+                - listitem [ref=f479e32]:
+                  - link "new feed updates notifications Home" [ref=f479e33] [cursor=pointer]:
+                    - /url: https://www.linkedin.com/feed/
+                    - generic [ref=f479e34]:
+                      - generic [ref=f479e37]: new feed updates notifications
+                      - img [ref=f479e41]
+                    - generic "Home" [ref=f479e43]
+                - listitem [ref=f479e44]:
+                  - link "1 new network update notification My Network" [ref=f479e114] [cursor=pointer]:
+                    - /url: https://www.linkedin.com/mynetwork/?
+                    - generic [ref=f479e115]:
+                      - generic [ref=f479e116]:
+                        - generic [ref=f479e117]: "1"
+                        - generic [ref=f479e118]: 1 new network update notification
+                      - img [ref=f479e122]
+                    - generic "My Network" [ref=f479e51]
+                - listitem [ref=f479e52]:
+                  - link "Jobs" [ref=f479e53] [cursor=pointer]:
+                    - /url: https://www.linkedin.com/jobs/?
+                    - img [ref=f479e57]
+                    - generic "Jobs" [ref=f479e59]
+                - listitem [ref=f479e60]:
+                  - link "Messaging" [ref=f479e61] [cursor=pointer]:
+                    - /url: https://www.linkedin.com/messaging/?
+                    - img [ref=f479e65]
+                    - generic "Messaging" [ref=f479e67]
+                - listitem [ref=f479e68]:
+                  - link "Notifications" [ref=f479e69] [cursor=pointer]:
+                    - /url: https://www.linkedin.com/notifications/?
+                    - img [ref=f479e73]
+                    - generic "Notifications" [ref=f479e75]
+                - listitem [ref=f479e76]:
+                  - button "Oded Ben-Yair Me" [ref=f479e78] [cursor=pointer]:
+                    - img "Oded Ben-Yair" [ref=f479e79]
+                    - generic [ref=f479e80]:
+                      - text: Me
+                      - img [ref=f479e81]
+                - listitem [ref=f479e83]:
+                  - button "For Business" [ref=f479e85] [cursor=pointer]:
+                    - img [ref=f479e89]
+                    - generic "For Business" [ref=f479e91]:
+                      - text: For Business
+                      - img [ref=f479e92]
+                - listitem [ref=f479e94]:
+                  - 'link "Reactivate Premium: 50% Off" [ref=f479e96] [cursor=pointer]':
+                    - /url: http://www.linkedin.com/premium/redeem/?_ed=0_bvLJH59RTSY-u5c6PMUa4IW0M54p9mxZpuVkfRvTl7r&upsellOrderOrigin=Tracking%3Av1%3Apremium_nav_upsell_text_winback%3ANav%3AIn-Product&referenceId=r4i7k3oBR82HpcbJ3ZQA5w%3D%3D&customKey=wb_c&redeemTypeV2=DISCOUNT&destRedirectURL=https%3A%2F%2Fwww.linkedin.com%2Ffeed%2F
+                    - generic [ref=f479e98]: "Reactivate Premium: 50% Off"

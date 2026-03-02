@@ -1,0 +1,393 @@
+- generic [active] [ref=e1]:
+  - generic:
+    - region "Toast message":
+      - heading "0 notifications total" [level=2] [ref=e3]
+      - alert
+  - region [ref=e4]
+  - generic [ref=e5]:
+    - generic [ref=e7]:
+      - button "Skip to search" [ref=e8] [cursor=pointer]:
+        - generic [ref=e9]: Skip to search
+      - button "Skip to main content" [ref=e10] [cursor=pointer]:
+        - generic [ref=e11]: Skip to main content
+      - button "Keyboard shortcuts" [ref=e12] [cursor=pointer]:
+        - generic [ref=e13]: Keyboard shortcuts
+      - button "Close jump menu" [ref=e14] [cursor=pointer]:
+        - img [ref=e15]
+        - generic [ref=e17]: Close jump menu
+    - banner "Global Navigation" [ref=e18]:
+      - generic [ref=e19]:
+        - link "LinkedIn" [ref=e20] [cursor=pointer]:
+          - /url: https://www.linkedin.com/feed/?nis=true
+          - img "LinkedIn" [ref=e23]:
+            - img [ref=e24]
+        - generic [ref=e28]:
+          - combobox "Search" [ref=e29]
+          - generic:
+            - img
+        - navigation "Primary Navigation" [ref=e30]:
+          - list [ref=e31]:
+            - listitem [ref=e32]:
+              - link "new feed updates notifications Home" [ref=e33] [cursor=pointer]:
+                - /url: https://www.linkedin.com/feed/?nis=true&
+                - generic [ref=e34]:
+                  - generic [ref=e37]: new feed updates notifications
+                  - img [ref=e41]
+                - generic "Home" [ref=e43]
+            - listitem [ref=e44]:
+              - link "My Network" [ref=e45] [cursor=pointer]:
+                - /url: https://www.linkedin.com/mynetwork/?
+                - img [ref=e49]
+                - generic "My Network" [ref=e51]
+            - listitem [ref=e52]:
+              - link "Jobs" [ref=e53] [cursor=pointer]:
+                - /url: https://www.linkedin.com/jobs/?
+                - img [ref=e57]
+                - generic "Jobs" [ref=e59]
+            - listitem [ref=e60]:
+              - link "Messaging" [ref=e61] [cursor=pointer]:
+                - /url: https://www.linkedin.com/messaging/?
+                - img [ref=e65]
+                - generic "Messaging" [ref=e67]
+            - listitem [ref=e68]:
+              - link "Notifications" [ref=e69] [cursor=pointer]:
+                - /url: https://www.linkedin.com/notifications/?filter=all&refresh=true
+                - img [ref=e73]
+                - generic "Notifications" [ref=e75]
+            - listitem [ref=e76]:
+              - button "Oded Ben-Yair Me" [ref=e78] [cursor=pointer]:
+                - img "Oded Ben-Yair" [ref=e79]
+                - generic [ref=e80]:
+                  - text: Me
+                  - img [ref=e81]
+            - listitem [ref=e83]:
+              - button "For Business" [ref=e85] [cursor=pointer]:
+                - img [ref=e89]
+                - generic "For Business" [ref=e91]:
+                  - text: For Business
+                  - img [ref=e92]
+            - listitem [ref=e94]:
+              - 'link "Reactivate Premium: 50% Off" [ref=e96] [cursor=pointer]':
+                - /url: http://www.linkedin.com/premium/redeem/?_ed=0_bvLJH59RTSY-u5c6PMUa4IW0M54p9mxZpuVkfRvTl7r&upsellOrderOrigin=Tracking%3Av1%3Apremium_nav_upsell_text_winback%3ANav%3AIn-Product&referenceId=YCeRQnlVSemj5AxXm0MZFw%3D%3D&customKey=wb_c&redeemTypeV2=DISCOUNT&destRedirectURL=https%3A%2F%2Fwww.linkedin.com%2Fnotifications%2F
+                - generic [ref=e98]: "Reactivate Premium: 50% Off"
+    - generic [ref=e103]:
+      - complementary [ref=e104]:
+        - generic [ref=e106]:
+          - generic [ref=e107]:
+            - link "Background photo of Oded Ben-Yair" [ref=e108] [cursor=pointer]:
+              - /url: /in/oded-ben-yair-ai/
+            - link "Photo of Oded Ben-Yair" [ref=e110] [cursor=pointer]:
+              - /url: /in/oded-ben-yair-ai/
+              - img "Photo of Oded Ben-Yair" [ref=e111]
+            - generic [ref=e112]:
+              - link "Oded Ben-Yair Founding AI Engineer | Multi-LLM Routing & Evaluation in Production | Voice AI · RAG | Azure + Python Tel Aviv-Yafo, Tel Aviv District" [ref=e113] [cursor=pointer]:
+                - /url: /in/oded-ben-yair-ai/
+                - generic [ref=e114]:
+                  - heading "Oded Ben-Yair" [level=3] [ref=e115]
+                  - img [ref=e119]
+                - paragraph [ref=e121]: Founding AI Engineer | Multi-LLM Routing & Evaluation in Production | Voice AI · RAG | Azure + Python
+                - paragraph [ref=e122]: Tel Aviv-Yafo, Tel Aviv District
+              - link "Be Z Online" [ref=e123] [cursor=pointer]:
+                - /url: /in/oded-ben-yair-ai/
+                - paragraph [ref=e124]:
+                  - generic [ref=e125]: Be Z Online
+          - generic [ref=e126]:
+            - heading "Manage your notifications" [level=1] [ref=e127]
+            - link "View settings" [ref=e128] [cursor=pointer]:
+              - /url: /mypreferences/d/categories/notifications
+      - main [ref=e129]:
+        - generic [ref=e131]:
+          - radiogroup [ref=e133]:
+            - radio "All" [checked] [ref=e134] [cursor=pointer]
+            - radio "Jobs" [ref=e135] [cursor=pointer]
+            - radio "My posts" [ref=e136] [cursor=pointer]
+            - radio "Mentions" [ref=e137] [cursor=pointer]
+          - generic [ref=e139]:
+            - generic [ref=e141]:
+              - article "Unread notification." [ref=e143] [cursor=pointer]:
+                - generic [ref=e144]:
+                  - generic [ref=e145]:
+                    - figure [ref=e146]:
+                      - img [ref=e147]
+                    - generic [ref=e151]:
+                      - img "Kanchan Borade" [ref=e152]
+                      - generic [ref=e154]: Status is online
+                  - 'link "Unread notification. New from Kanchan Borade in Aerial Intelligence: When I First Saw a Farm Change Color" [ref=e156]':
+                    - /url: /pulse/when%2Di%2Dfirst%2Dsaw%2Dfarm%2Dchange%2Dcolor%2Dkanchan%2Dborade%2Dbrdkf
+                    - paragraph [ref=e157]: Unread notification.
+                    - generic [ref=e158]:
+                      - text: New from
+                      - strong [ref=e159]: Kanchan Borade
+                      - text: "in Aerial Intelligence: When I First Saw a Farm Change Color"
+                  - generic [ref=e160]:
+                    - paragraph [ref=e161]: 47s
+                    - button "Settings menu" [ref=e164]:
+                      - img [ref=e165]
+              - article "Unread notification." [ref=e168] [cursor=pointer]:
+                - generic [ref=e169]:
+                  - figure [ref=e171]:
+                    - img [ref=e172]
+                  - generic [ref=e177]:
+                    - 'link "Unread notification. 1 person viewed your profile: Stay anonymous and see who''s viewed your profile with Premium." [ref=e178]':
+                      - /url: /analytics/profile-views
+                      - paragraph [ref=e179]: Unread notification.
+                      - generic [ref=e180]:
+                        - strong [ref=e181]: 1 person
+                        - text: "viewed your profile: Stay anonymous and see who's viewed your profile with Premium."
+                    - link "Reactivate Premium" [ref=e184]:
+                      - generic [ref=e185]: Reactivate Premium
+                    - generic [ref=e186]: Cancel anytime. No hidden fees.
+                  - generic [ref=e187]:
+                    - paragraph [ref=e188]: 1m
+                    - button "Settings menu" [ref=e191]:
+                      - img [ref=e192]
+              - article "Unread notification." [ref=e195] [cursor=pointer]:
+                - generic [ref=e196]:
+                  - generic [ref=e197]:
+                    - figure [ref=e198]:
+                      - img [ref=e199]
+                    - img [ref=e203]:
+                      - img [ref=e204]
+                  - link "Unread notification. Your posts got 105 impressions last week. View your analytics." [ref=e207]:
+                    - /url: /analytics/creator/content?startDate=2026-02-09&endDate=2026-02-15&impressionsCount=105
+                    - paragraph [ref=e208]: Unread notification.
+                    - generic [ref=e209]:
+                      - generic [ref=e210]:
+                        - text: Your posts got
+                        - strong [ref=e211]: 105 impressions
+                        - text: last week. View your analytics.
+                      - generic [ref=e212]: Your posts got 105 impressions last week. View your analytics.
+                  - generic [ref=e213]:
+                    - paragraph [ref=e214]: 30m
+                    - button "Settings menu" [ref=e217]:
+                      - img [ref=e218]
+              - article "Unread notification." [ref=e221] [cursor=pointer]:
+                - generic [ref=e222]:
+                  - generic [ref=e223]:
+                    - figure [ref=e224]:
+                      - img [ref=e225]
+                    - link "View משרות הייטק בין חברים." [ref=e227]:
+                      - /url: /company/5130846
+                      - img "View משרות הייטק בין חברים." [ref=e230]
+                  - 'link "Unread notification. משרות הייטק בין חברים’s poll has closed: איך לדעתכם צריך לענות?" [ref=e232]':
+                    - /url: /feed/update/urn%3Ali%3Aactivity%3A7426932504827314176
+                    - paragraph [ref=e233]: Unread notification.
+                    - generic [ref=e234]:
+                      - strong [ref=e235]: משרות הייטק בין חברים’s
+                      - text: "poll has closed: איך לדעתכם צריך לענות?"
+                  - generic [ref=e236]:
+                    - paragraph [ref=e237]: 30m
+                    - button "Settings menu" [ref=e240]:
+                      - img [ref=e241]
+              - article "Unread notification." [ref=e244] [cursor=pointer]:
+                - generic [ref=e245]:
+                  - generic [ref=e246]:
+                    - figure [ref=e247]:
+                      - img [ref=e248]
+                    - img [ref=e252]:
+                      - img [ref=e253]
+                  - generic [ref=e255]:
+                    - link "Unread notification. Your comment has gained 526 impressions." [ref=e256]:
+                      - /url: /feed/update/urn%3Ali%3Aactivity%3A7429025319065403392?commentUrn=urn%3Ali%3Acomment%3A%28activity%3A7429025319065403392%2C7429054824933068800%29&dashCommentUrn=urn%3Ali%3Afsd%5Fcomment%3A%287429054824933068800%2Curn%3Ali%3Aactivity%3A7429025319065403392%29
+                      - paragraph [ref=e257]: Unread notification.
+                      - generic [ref=e258]:
+                        - generic [ref=e259]:
+                          - text: Your comment has gained
+                          - strong [ref=e260]: 526 impressions
+                          - text: .
+                        - generic [ref=e261]: Your comment has gained 526 impressions.
+                    - link [ref=e262]:
+                      - generic [ref=e263]: The skills directory idea is the part that could actually change how companies work with AI. Right now most enterprise AI usage is ad hoc, every person reinventing prompts for the same workflows. A curated library of validated skills that anyone can run, reviewed by domain experts who actually know the edge cases, that scales way better than training everyone individually.
+                      - separator [ref=e264]
+                      - generic [ref=e267]: Looking back, it is worth noting that the AI Labs have generally been right. Like, the stuff they hyped in 2022-2023 that many people dismissed as fiction turned out to be real and working today. That doesn't mean that the stuff they are predicting for 2028 will also be real, but it is probably worth noting those predictions and watching carefully. (2028 being, vividly, the year of "a nation of geniuses in a datacenter")
+                    - generic [ref=e269]: 12 reactions
+                  - generic [ref=e270]:
+                    - paragraph [ref=e271]: 30m
+                    - button "Settings menu" [ref=e274]:
+                      - img [ref=e275]
+              - article "Notification" [ref=e278] [cursor=pointer]:
+                - generic [ref=e279]:
+                  - link "View Matan Amir’s profile." [ref=e281]:
+                    - /url: /in/matan%2Damir%2D996a741b3
+                    - generic [ref=e284]:
+                      - img "Matan Amir is open to work" [ref=e285]
+                      - generic [ref=e287]: Status is reachable
+                  - generic [ref=e288]:
+                    - link "Matan Amir and 1 other reacted to your post." [ref=e289]:
+                      - /url: /feed/update/urn%3Ali%3Aactivity%3A7429438231991009280
+                      - generic [ref=e290]:
+                        - strong [ref=e291]: Matan Amir
+                        - text: and 1 other reacted to your post.
+                    - link [ref=e292]:
+                      - generic [ref=e295]: "months of shipping AI to production and the thing that surprised me most: the hard part isn't building the model. it's catching the 15% of cases where the model is confidently wrong. we built confidence scoring, threshold gates, fallback chains. half our architecture exists just to handle \"I don't know\" gracefully. everyone demos the 85% that works. nobody shows the engineering behind the 15% that doesn't."
+                    - generic [ref=e296]:
+                      - generic [ref=e297]: 2 reactions
+                      - generic [ref=e298]: • 1 comment
+                  - generic [ref=e299]:
+                    - paragraph [ref=e300]: 58m
+                    - button "Settings menu" [ref=e303]:
+                      - img [ref=e304]
+              - article "Notification" [ref=e307] [cursor=pointer]:
+                - generic [ref=e308]:
+                  - link "Profile image for several companies on LinkedIn" [ref=e310]:
+                    - /url: /jobs/search?savedSearchId=4016777281&originToLandingJobPostings=4364713538,4364753144,4372140106,4373554777,4373806192,4371848051&query=GenAi&alertAction=viewjobs&keywords=GenAi&distance=25&origin=JOB%5FALERT%5FIN%5FAPP%5FNOTIFICATION&geoId=101620260&sortBy=R&f_TPR=a1771230897%2D
+                    - generic [ref=e311]:
+                      - list [ref=e312]:
+                        - listitem [ref=e313]:
+                          - img "Profile image for several companies on LinkedIn" [ref=e315]
+                        - listitem [ref=e316]:
+                          - img "Profile image for several companies on LinkedIn" [ref=e318]
+                      - generic [ref=e319]: Profile image for several companies on LinkedIn
+                  - generic [ref=e320]:
+                    - 'link "GenAi: new opportunities in Israel." [ref=e321]':
+                      - /url: /jobs/search?savedSearchId=4016777281&originToLandingJobPostings=4364713538,4364753144,4372140106,4373554777,4373806192,4371848051&query=GenAi&alertAction=viewjobs&keywords=GenAi&distance=25&origin=JOB%5FALERT%5FIN%5FAPP%5FNOTIFICATION&geoId=101620260&sortBy=R&f_TPR=a1771230897%2D
+                      - generic [ref=e322]:
+                        - generic [ref=e323]:
+                          - strong [ref=e324]: GenAi
+                          - text: ": new opportunities in"
+                          - strong [ref=e325]: Israel
+                          - text: .
+                        - generic [ref=e326]: "GenAi: new opportunities in Israel."
+                    - link "View jobs" [ref=e329]:
+                      - generic [ref=e330]:
+                        - generic [ref=e331]: View jobs
+                        - generic [ref=e332]: View jobs
+                  - generic [ref=e333]:
+                    - paragraph [ref=e334]: 2h
+                    - button "Settings menu" [ref=e337]:
+                      - img [ref=e338]
+              - article "Notification" [ref=e341] [cursor=pointer]:
+                - generic [ref=e342]:
+                  - link "Andrey’s profile photo" [ref=e344]:
+                    - /url: /analytics/profile-views
+                    - img "Andrey Eidelman" [ref=e348]
+                  - generic [ref=e349]:
+                    - link "Andrey Eidelman and 3 other people viewed your profile. See the full list with Premium." [ref=e350]:
+                      - /url: /analytics/profile-views
+                      - generic [ref=e351]:
+                        - strong [ref=e352]: Andrey Eidelman
+                        - text: and
+                        - strong [ref=e353]: 3 other people
+                        - text: viewed your profile. See the full list with Premium.
+                    - link "Reactivate Premium" [ref=e356]:
+                      - generic [ref=e357]: Reactivate Premium
+                    - generic [ref=e358]: Cancel anytime. No hidden fees.
+                  - generic [ref=e359]:
+                    - paragraph [ref=e360]: 3h
+                    - button "Settings menu" [ref=e363]:
+                      - img [ref=e364]
+              - article "Notification" [ref=e367] [cursor=pointer]:
+                - generic [ref=e368]:
+                  - 'link "Develop skills related to your saved Artificial Intelligence Engineer job for free: Data Cleaning and Manipulating with Python in Excel." [ref=e374]':
+                    - /url: /feed/update/urn%3Ali%3AlyndaVideo%3A%28urn%3Ali%3AlyndaCourse%3A3811068%2C5972115%29?trk=flagship-ntf_learning_recs_for_job_seekers_by_stage_inapp
+                    - generic [ref=e375]:
+                      - generic [ref=e376]:
+                        - text: Develop skills related to your saved
+                        - strong [ref=e377]: Artificial Intelligence Engineer
+                        - text: "job for free: Data Cleaning and Manipulating with Python in Excel."
+                      - generic [ref=e378]: "Develop skills related to your saved Artificial Intelligence Engineer job for free: Data Cleaning and Manipulating with Python in Excel."
+                  - generic [ref=e379]:
+                    - paragraph [ref=e380]: 3h
+                    - button "Settings menu" [ref=e383]:
+                      - img [ref=e384]
+              - article "Notification" [ref=e387] [cursor=pointer]:
+                - generic [ref=e388]:
+                  - img [ref=e392]:
+                    - img [ref=e393]
+                  - generic [ref=e395]:
+                    - link "Your scheduled post is now live!" [ref=e396]:
+                      - /url: /feed/update/urn%3Ali%3Ashare%3A7429378144014475264
+                      - generic [ref=e397]: Your scheduled post is now live!
+                    - 'link "Related content: months of shipping AI to production and the thing that surprised me most: the hard part isn''t building the model. it''s catching the 15% of cases where the model is confidently wrong. we built confidence scoring, threshold gates, fallback chains. half our architecture exists just to handle \"I don''t know\" gracefully. everyone demos the 85% that works. nobody shows the engineering behind the 15% that doesn''t." [ref=e398]':
+                      - generic [ref=e401]: "months of shipping AI to production and the thing that surprised me most: the hard part isn't building the model. it's catching the 15% of cases where the model is confidently wrong. we built confidence scoring, threshold gates, fallback chains. half our architecture exists just to handle \"I don't know\" gracefully. everyone demos the 85% that works. nobody shows the engineering behind the 15% that doesn't."
+                  - generic [ref=e402]:
+                    - paragraph [ref=e403]: 3h
+                    - button "Settings menu" [ref=e406]:
+                      - img [ref=e407]
+            - button "Show more results" [ref=e411] [cursor=pointer]:
+              - generic [ref=e412]: Show more results
+      - complementary [ref=e413]:
+        - generic [ref=e415]:
+          - iframe [ref=e417]:
+            - main "Work With Us Container" [ref=f573e3]:
+              - generic [ref=f573e4]:
+                - img [ref=f573e6]
+                - img "Oded" [ref=f573e7]
+                - generic [ref=f573e8]:
+                  - paragraph [ref=f573e9]: Promoted
+                  - button "Ad Options" [ref=f573e10] [cursor=pointer]:
+                    - img [ref=f573e11]
+                    - generic [ref=f573e15]: Ad Options
+              - generic [ref=f573e16]:
+                - paragraph [ref=f573e18]: Oded, explore relevant opportunities with Wix
+                - link "Wix Wix Software Development" [ref=f573e19] [cursor=pointer]:
+                  - /url: https://www.linkedin.com/li/tscp/sct?destinationUrl=http%3A%2F%2Fwww.linkedin.com%2Fcompany%2F97250%2Flife&trackingEvent=%5B%7B%22eventInfo%22%3A%7B%22appId%22%3A%22com.linkedin.ads.rendering.d_web%22%2C%22eventName%22%3A%22SponsoredRightRailContentActionEvent%22%2C%22topicName%22%3A%22SponsoredRightRailContentActionEvent%22%7D%2C%22eventBody%22%3A%7B%22sponsoredEventHeader%22%3A%7B%22encryptedTrackingData%22%3A%22CwEAAAGca2IVHEtxOUfUOb1PUkqLeXl6o321dHlGg52ytgcDmDJjHm9ezw1t3O17KHT3GNXI5f36qL9TQt1TC-AS-A4DL_dHCjrPhZW1acl4dHwfmqASKLSiFuoSg2rxhDDWGDLviOAv-d8sPSiPRWXTx-TyaAFXmyCVM3KSB8PyS6PXsA_JtVeNrxTDrSn_mWX6h-3O9JFfwetd0hPTgjbwX2jOEDpWSP8ct0L3XAF9Sxz_T2lLEeqQEBZRbbXsMrwp3mkkIkkhnlV0DwkukQR_VPw2Aqnw_tvJB1NbeSG170Q5DDjzZkrNe81snckA_sYO-kOd2xha2bTu1xeSD73hXAT2BCAaRqzYbHWL-_TnZwpb56bd0EPEMi8tq5fwstj7Fhjd1JfV0rkPW4gM3zx9jx6x0zY2wx1W2bqxEtJndSAuKAwSXCc7NdSO5m0Wu22nQ9aDcDimx3xuDK2MKW9fNxbyzoGDye3es7zwvtoKSd1E11-xntBWYWELIEo6hf_63h0Q-HCS6wgz6EL_viva3oQCXyS9SqpaYTQPMRcESVLdtA8csHjlTY0GsFk4dS2hFkElQhkIgPFDmgjz3V6WgtkeU9gHzS51hv5pKsafpxNo1Zv-ywGVhYPEFz2khz3bjwsrSZehiLhLCmiLeKpmdx5U1zv1fdPNOny9oJMjaum-qOiv61HfyU1NRWrYD3iEZBsim6Lg9m7iONRP-vYv2Z_yYULbz2WKzDab_ZY8J4r9voxpksiRSmeHTuu5IH392Zx0yyb8EWv2oBfdql3lH7PQaCfvk_yh7q55eCkJVzJs-iYU1FVqW4qSpk0xabq2BmTBVRLxR0q-RzYOmoBv-7q67qhih7Fj-7suN0ibk2sE9VEN1IPe6Qk2TQ%22%7D%2C%22header%22%3A%7B%22pageInstance%22%3A%7B%22pageUrn%22%3A%22urn%3Ali%3Apage%3Ad_flagship3_notifications%22%2C%22trackingId%22%3A%22e8121469-05f6-4fff-b31d-8991fa515d93%22%7D%2C%22time%22%3A1771328115941%2C%22version%22%3A%220.0.0%22%7D%2C%22requestHeader%22%3A%7B%22pageKey%22%3A%22d_flagship3_notifications%22%2C%22interfaceLocale%22%3A%22en-US%22%7D%7D%7D%5D&csrfToken=ajax%3A2872756275449100236
+                  - img "Wix" [ref=f573e20]
+                  - generic [ref=f573e21]:
+                    - paragraph [ref=f573e22]: Wix
+                    - paragraph [ref=f573e23]: Software Development
+                - link "Visit Life" [ref=f573e24] [cursor=pointer]:
+                  - /url: https://www.linkedin.com/li/tscp/sct?destinationUrl=http%3A%2F%2Fwww.linkedin.com%2Fcompany%2F97250%2Flife&trackingEvent=%5B%7B%22eventInfo%22%3A%7B%22appId%22%3A%22com.linkedin.ads.rendering.d_web%22%2C%22eventName%22%3A%22SponsoredRightRailContentActionEvent%22%2C%22topicName%22%3A%22SponsoredRightRailContentActionEvent%22%7D%2C%22eventBody%22%3A%7B%22sponsoredEventHeader%22%3A%7B%22encryptedTrackingData%22%3A%22CwEAAAGca2IVHFv5tg1K-vfWZLMLdrNLvlCkkb400tViVtHkCFKHfMyGgoPy6hIkYqYN5xyFnIooKQUzBWsE0BSwdrWxZCLdkRVxHiJPuB9332-psw6XhQkjRGUKLB7BnaczVLKNCaHIBO1uIgJcyX4GthwJ6C1Ygd-c5hMxydnzC4qo410Si3KDjyTsosM1ay4Zc48CXXx624nYp0Nzk-B3N-4S8JB-2glmHQlrp7a2Hr-J11WFEIfdfcDjFAw4reOBqNx-CcNwZzSLbQOtaNut8BG4GgMYwe1B93e0thddYpbNrto7Lq20H38NYKaTALy1d9gizmv_Wl-cP4pFq9kab3oNN0HWLW8EXMexBtzGQdxCwjfKjJVZY_CrHVvBZCgnBNB7vWrfZ9n4hYIA5uKCABmmn75OJCgzkzVB3vsQInmYSiRfUe4hUYFPBlJU_9Wqqd1iagQtPVmSfPfGRhg5u054U7cFMhs70LnHc-icIf2ItDbFS6d3CkTVgrYYDIVw9YUI621f6BOiNqAEVaiibPjJV_WxOkIHEP64LLm8xFXsbYQHb4r-5gz86nEyQmi4Ny-rBrO3x3dbihmdB9vPhfaVrSwzXmp3rf5Uz6YrcaPwPBgGBJxKnTbJyUl3CqoCBTPzE5ScOSphGwyKWPeVdavBJhWf3mUyEmHtr6r3svQgSzx_zPtFWa-FoJZO-Ww0i-VeDspOhADfCHK2ZKYlZQbJN0r4rAaXnlUTvAbC-1NliA4lbpthTJ1pg9UKlTegCv3xnpQb1dlVpJQER_0q-oSanaMbkBsJdBDIyJXL6FJK3Mn3pkibOXHs-tjejLlCLRjTj25rF77Sh4us77OLlgWCzIG2l1RBr1WAj5wO4qx4wnR_niFaHfUPLw%22%7D%2C%22header%22%3A%7B%22pageInstance%22%3A%7B%22pageUrn%22%3A%22urn%3Ali%3Apage%3Ad_flagship3_notifications%22%2C%22trackingId%22%3A%22efe74741-e916-4b67-841d-099ea1ef68fd%22%7D%2C%22time%22%3A1771328115941%2C%22version%22%3A%220.0.0%22%7D%2C%22requestHeader%22%3A%7B%22pageKey%22%3A%22d_flagship3_notifications%22%2C%22interfaceLocale%22%3A%22en-US%22%7D%7D%7D%5D&csrfToken=ajax%3A2872756275449100236
+          - generic "LinkedIn Footer Content" [ref=e418]:
+            - generic [ref=e419]:
+              - list [ref=e420]:
+                - listitem [ref=e421]:
+                  - link "About" [ref=e422] [cursor=pointer]:
+                    - /url: https://about.linkedin.com/
+                    - generic [ref=e423]: About
+                - listitem [ref=e424]:
+                  - link "Accessibility" [ref=e425] [cursor=pointer]:
+                    - /url: https://www.linkedin.com/accessibility
+                    - generic [ref=e426]: Accessibility
+                - listitem [ref=e427]:
+                  - link "Help Center" [ref=e428] [cursor=pointer]:
+                    - /url: https://www.linkedin.com/help/linkedin?trk=footer_d_flagship3_notifications
+                    - generic [ref=e429]: Help Center
+                - listitem [ref=e430]:
+                  - button "Privacy & Terms" [ref=e432] [cursor=pointer]:
+                    - generic [ref=e434]:
+                      - text: Privacy & Terms
+                      - img [ref=e435]
+                - listitem [ref=e437]:
+                  - link "Ad Choices" [ref=e438] [cursor=pointer]:
+                    - /url: https://www.linkedin.com/help/linkedin/answer/62931
+                    - generic [ref=e439]: Ad Choices
+                - listitem [ref=e440]:
+                  - link "Advertising" [ref=e441] [cursor=pointer]:
+                    - /url: https://www.linkedin.com/ad/start?trk=n_nav_ads_rr
+                    - generic [ref=e442]: Advertising
+                - listitem [ref=e443]:
+                  - button "Business Services" [ref=e445] [cursor=pointer]:
+                    - generic [ref=e447]:
+                      - text: Business Services
+                      - img [ref=e448]
+                - listitem [ref=e450]:
+                  - button "Get the LinkedIn app" [ref=e453] [cursor=pointer]
+                - listitem [ref=e454]:
+                  - button "More options" [ref=e455] [cursor=pointer]: More
+              - generic [ref=e456]:
+                - img "LinkedIn" [ref=e457]:
+                  - img [ref=e458]
+                - text: LinkedIn Corporation © 2026
+    - generic:
+      - generic:
+        - complementary:
+          - generic [ref=e461]:
+            - generic [ref=e463] [cursor=pointer]:
+              - generic [ref=e464]:
+                - img "Oded Ben-Yair" [ref=e465]
+                - generic [ref=e467]: Status is online
+              - button "You are on the messaging overlay. Press enter to open the list of conversations." [ref=e468]:
+                - generic [ref=e469]:
+                  - generic [ref=e470]: Messaging
+                  - generic [ref=e471]: You are on the messaging overlay. Press enter to open the list of conversations.
+            - generic [ref=e472]:
+              - button "Open messenger dropdown menu" [ref=e474] [cursor=pointer]:
+                - img "Open messenger dropdown menu" [ref=e475]
+              - button "Compose message" [ref=e478] [cursor=pointer]:
+                - img [ref=e479]
+                - generic [ref=e481]: Compose message
+              - button "You are on the messaging overlay. Press enter to open the list of conversations." [ref=e482] [cursor=pointer]:
+                - img [ref=e483]
+                - generic [ref=e485]: You are on the messaging overlay. Press enter to open the list of conversations.
+        - complementary "AI-powered assistant to get help with your career, jobs etc"

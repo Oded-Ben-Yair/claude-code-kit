@@ -1,0 +1,76 @@
+{
+  "$schema": "Project status tracking for Claude Code sessions",
+  "version": "1.0",
+  "project": {
+    "name": "client-evaluation",
+    "path": "/home/odedbe/projects/client-evaluation",
+    "database": "",
+    "production": true,
+    "lastUpdated": "2026-01-29T11:30:00+00:00"
+  },
+  "currentState": {
+    "summary": "AI evaluation service fully operational. Multi-language support (EN/HE/AR/ES/PT) verified. Operations team testing.",
+    "branch": "main",
+    "lastCommit": "095494a",
+    "testsPass": true,
+    "buildStatus": "deployed"
+  },
+  "blockers": [],
+  "inProgress": [
+    {
+      "description": "Operations team E2E testing",
+      "owner": "operations"
+    }
+  ],
+  "nextSteps": [
+    {
+      "priority": 1,
+      "description": "Monitor operations team feedback",
+      "estimatedComplexity": "simple",
+      "dependencies": []
+    },
+    {
+      "priority": 2,
+      "description": "Add more language fallback templates if needed",
+      "estimatedComplexity": "simple",
+      "dependencies": ["operations feedback"]
+    }
+  ],
+  "recentDecisions": [
+    {
+      "date": "2026-01-29",
+      "decision": "Created AzureOpenAI-Endpoint and AzureOpenAI-Key secrets in Key Vault",
+      "rationale": "AI service was failing - secrets didn't exist"
+    },
+    {
+      "date": "2026-01-29",
+      "decision": "CustomerID normalized to string for comparison",
+      "rationale": "Mixed int/string types from API caused validation errors"
+    },
+    {
+      "date": "2026-01-29",
+      "decision": "Added unique evaluation_id per request",
+      "rationale": "Operations needs to track and verify different evaluations"
+    }
+  ],
+  "patterns": {
+    "established": [
+      "Infrastructure First for AI Failures - check secrets before code",
+      "Type normalization for external API data",
+      "Multi-language via system prompt + fallback templates"
+    ],
+    "toAvoid": [
+      "Assuming code is the problem when AI fails completely"
+    ]
+  },
+  "sessionNotes": {
+    "lastSessionId": "client-eval-20260129",
+    "lastSessionDate": "2026-01-29",
+    "carryoverNotes": "All 5 languages verified (EN/HE/AR/ES/PT). Operations team notified for testing."
+  },
+  "_instructions": {
+    "usage": "This file tracks project state across Claude Code sessions",
+    "update": "Update at session end using /end-of-session skill",
+    "read": "Automatically read at session start when entering project directory"
+  }
+}

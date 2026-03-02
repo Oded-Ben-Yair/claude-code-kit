@@ -1,0 +1,74 @@
+[2026-02-09] DECISION: Architecture = local audio agent + Python backend + React frontend (web app)
+  - Local agent captures system audio from VoiceSpin via WASAPI loopback
+  - Backend handles ElevenLabs Scribe 2 WebSocket, translation, AI evaluation
+  - Frontend displays real-time Hebrew transcription with speaker separation
+  - Rationale: Browser can't capture system audio natively; local agent is minimal
+
+[2026-02-09] DECISION: Transcription = ElevenLabs Scribe 2 real-time WebSocket API
+  - Endpoint: wss://api.elevenlabs.io/v1/speech-to-text/realtime
+  - Model: scribe_v2, language_code=ar, commit_strategy=vad
+  - IMPORTANT: Scribe v2 Realtime does NOT support speaker diarization
+  - v1 launches without diarization; investigate dual-channel audio from VoiceSpin for v1.1
+  - Rationale: Best Arabic WER, real-time streaming, already have API key
+
+[2026-02-09] DECISION: Deployment = Azure App Service (NOT Azure Functions)
+  - Azure Functions Consumption Plan has 10-min timeout — incompatible with 20+ min WebSocket calls
+  - App Service provides always-on persistent connections
+  - Frontend: Azure Static Web Apps
+
+[2026-02-09] DECISION: Translation primary = Gemini 2.5 Flash (via Azure AI Foundry), fallback = GPT-5.2
+  - Gemini Flash: 200-500ms latency, best real-time tradeoff
+  - GPT-5.2: 2-5s, higher quality, used when Gemini unavailable
+  - Context window: sliding 3 previous segments
+  - Safety: %%PLACEHOLDER%% delimiters, prompt injection mitigation
+
+[2026-02-09] DECISION: Audio capture = pyaudiowpatch (NOT sounddevice)
+  - pyaudiowpatch is the only maintained Python library with WASAPI loopback support
+  - soxr for high-quality streaming resampling (48kHz→16kHz)
+  - Investigate VoiceSpin stereo channels (L=rep, R=customer) before implementing mono downmix
+
+[2026-02-09] DECISION: v1 launches WITHOUT speaker diarization
+  - Latency without diarization: ~2.1-2.5s (acceptable)
+  - Latency with diart diarization: ~3.1-5.5s (too slow for v1)
+  - All text displayed as single stream in v1
+  - v1.1: add dual-channel (if VoiceSpin supports) or diart
+
+[2026-02-09] DECISION: One call at a time — no concurrent monitoring needed initially
+
+[2026-02-09] DECISION: ElevenLabs integration = raw WebSocket (NOT elevenlabs SDK)
+  - Raw websockets library gives full control over reconnection, buffering, VAD config
+  - SDK abstracts away low-level details we need for this real-time use case
+
+[2026-02-09] DECISION: Translation client = openai Python SDK with Azure AI Foundry endpoint
+  - Both Gemini and GPT-5.2 accessible through OpenAI-compatible API
+  - Single client, model switching for fallback
+  - Structured system/user message separation for prompt injection defense
+
+[2026-02-09] DECISION: JWT token refresh = in-band over active WebSocket
+  - JWT TTL: 15-30 min, calls can exceed 20 min
+  - Backend sends refresh token 2 min before expiry via WebSocket message
+  - 60-second grace period for expired JWTs
+  - Fallback: agent uses static API key to re-auth via POST /api/auth/token
+
+[2026-02-09] DECISION: Frontend auth = session cookie (NOT JWT Bearer on WebSocket)
+  - Browser WebSocket API cannot send custom HTTP headers
+  - Frontend uses POST /api/auth/login → HTTP-only Secure SameSite=Strict session cookie
+  - Cookie auto-sent by browser on same-origin WebSocket upgrade
+  - Local agent (Python) uses JWT Bearer header (websockets library supports custom headers)
+  - v1: single-user (sagiv), password hash in env var, 2h session expiry
+
+[2026-02-09] DECISION: 5-phase execution plan for architecture v2.2
+  - Phase 1: Audio pipeline (local agent + backend auth + audio WebSocket)
+  - Phase 2: ElevenLabs Scribe v2 integration (Arabic transcription)
+  - Phase 3: Translation pipeline (Gemini Flash + GPT-5.2 fallback)
+  - Phase 4: Frontend (React 19, RTL Hebrew, Zustand, react-virtuoso)
+  - Phase 5: Integration tests + Azure DevOps + deployment
+  - Each phase independently testable with acceptance criteria
+  - Phase 4 can parallelize with Phase 3 using mock data
+  - Code-judge hostile review required between phases
+  - Full plan: docs/execution-plan.md
+
+[2026-02-09] DECISION: 2-3 parallel code-workers per phase with file ownership boundaries
+  - No two workers edit the same file (prevents merge conflicts)
+  - Phase 1 split: Worker A (auth+config), Worker B (WS+logging), Worker C (local agent)
+  - Hostile code review after each phase before proceeding

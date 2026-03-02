@@ -1,0 +1,528 @@
+- generic [active] [ref=e15]:
+  - generic:
+    - region "Toast message":
+      - heading "0 notifications total" [level=2] [ref=e2]
+      - alert
+  - region [ref=e14]
+  - generic [ref=e16]:
+    - generic [ref=e18]:
+      - button "Skip to search" [ref=e19] [cursor=pointer]:
+        - generic [ref=e20]: Skip to search
+      - button "Skip to main content" [ref=e21] [cursor=pointer]:
+        - generic [ref=e22]: Skip to main content
+      - button "Keyboard shortcuts" [ref=e23] [cursor=pointer]:
+        - generic [ref=e24]: Keyboard shortcuts
+      - button "Close jump menu" [ref=e25] [cursor=pointer]:
+        - img [ref=e26]
+        - generic [ref=e28]: Close jump menu
+    - banner "Global Navigation" [ref=e29]:
+      - generic [ref=e30]:
+        - link "LinkedIn" [ref=e31] [cursor=pointer]:
+          - /url: https://www.linkedin.com/feed/?nis=true
+          - img "LinkedIn" [ref=e34]:
+            - img [ref=e35]
+        - generic [ref=e39]:
+          - combobox "Search" [ref=e40]
+          - generic:
+            - img
+        - navigation "Primary Navigation" [ref=e41]:
+          - list [ref=e42]:
+            - listitem [ref=e43]:
+              - link "new feed updates notifications Home" [ref=e44] [cursor=pointer]:
+                - /url: https://www.linkedin.com/feed/?nis=true&
+                - generic [ref=e45]:
+                  - generic [ref=e48]: new feed updates notifications
+                  - img [ref=e52]
+                - generic "Home" [ref=e54]
+            - listitem [ref=e55]:
+              - link "3 new network updates notifications My Network" [ref=e56] [cursor=pointer]:
+                - /url: https://www.linkedin.com/mynetwork/?
+                - generic [ref=e57]:
+                  - generic [ref=e58]:
+                    - generic [ref=e59]: "3"
+                    - generic [ref=e60]: 3 new network updates notifications
+                  - img [ref=e64]
+                - generic "My Network" [ref=e66]
+            - listitem [ref=e67]:
+              - link "Jobs" [ref=e68] [cursor=pointer]:
+                - /url: https://www.linkedin.com/jobs/?
+                - img [ref=e72]
+                - generic "Jobs" [ref=e74]
+            - listitem [ref=e75]:
+              - link "Messaging" [ref=e76] [cursor=pointer]:
+                - /url: https://www.linkedin.com/messaging/?
+                - img [ref=e80]
+                - generic "Messaging" [ref=e82]
+            - listitem [ref=e83]:
+              - link "Notifications" [ref=e84] [cursor=pointer]:
+                - /url: https://www.linkedin.com/notifications/?
+                - img [ref=e88]
+                - generic "Notifications" [ref=e90]
+            - listitem [ref=e91]:
+              - button "Oded Ben-Yair Me" [ref=e93] [cursor=pointer]:
+                - img "Oded Ben-Yair" [ref=e94]
+                - generic [ref=e95]:
+                  - text: Me
+                  - img [ref=e96]
+            - listitem [ref=e98]:
+              - button "For Business" [ref=e100] [cursor=pointer]:
+                - img [ref=e104]
+                - generic "For Business" [ref=e106]:
+                  - text: For Business
+                  - img [ref=e107]
+            - listitem [ref=e109]:
+              - 'link "Reactivate Premium: 50% Off" [ref=e111] [cursor=pointer]':
+                - /url: http://www.linkedin.com/premium/redeem/?_ed=0_bvLJH59RTSY-u5c6PMUa4IW0M54p9mxZpuVkfRvTl7r&upsellOrderOrigin=Tracking%3Av1%3Apremium_nav_upsell_text_winback%3ANav%3AIn-Product&referenceId=ew%2BvKOC2Sju8hQMBCBnY1Q%3D%3D&customKey=wb_c&redeemTypeV2=DISCOUNT&destRedirectURL=https%3A%2F%2Fwww.linkedin.com%2Fmessaging%2Fthread%2F2-YmViZTc1NDItZTgyMS00NWNlLWJhZGMtMzIwOWUzMGNkNDllXzEwMA%3D%3D%2F
+                - generic [ref=e113]: "Reactivate Premium: 50% Off"
+    - generic [ref=e117]:
+      - main [ref=e118]:
+        - generic [ref=e119]:
+          - generic [ref=e120]:
+            - generic [ref=e121]:
+              - generic [ref=e122]:
+                - heading "Messaging" [level=1] [ref=e123]
+                - generic [ref=e124]:
+                  - generic [ref=e125]: Search messages
+                  - searchbox "Search messages" [ref=e126]
+                  - img [ref=e128]
+              - button "See more messaging options" [ref=e131] [cursor=pointer]:
+                - img [ref=e132]
+              - button "Compose a new message" [ref=e135] [cursor=pointer]:
+                - img [ref=e136]
+                - generic [ref=e138]: Compose a new message
+            - generic [ref=e140]:
+              - button "Focused" [ref=e142] [cursor=pointer]:
+                - text: Focused
+                - img [ref=e143]
+              - radiogroup [ref=e146]:
+                - button "Jobs" [ref=e147] [cursor=pointer]
+                - button "Unread" [ref=e148] [cursor=pointer]
+                - button "Connections" [ref=e149] [cursor=pointer]
+                - button "InMail" [ref=e150] [cursor=pointer]
+                - button "Starred" [ref=e151] [cursor=pointer]
+          - generic [ref=e152]:
+            - generic [ref=e153]:
+              - generic:
+                - link "Jump to active conversation details" [ref=e154] [cursor=pointer]:
+                  - /url: "#thread-detail-jump-target"
+                  - generic [ref=e155]: Jump to active conversation details
+                - heading "Conversation List" [level=2] [ref=e156]
+                - generic [ref=e157]: Attention screen reader users, messaging items continuously update. Please use the tab and shift + tab keys instead of your up and down arrow keys to navigate between messaging items.
+              - list "Conversation List" [ref=e159]:
+                - listitem
+                - listitem [ref=e160]:
+                  - generic [ref=e161] [cursor=pointer]:
+                    - generic [ref=e163]:
+                      - generic [ref=e164]:
+                        - generic [ref=e165]:
+                          - img "Shai Shlomai" [ref=e166]
+                          - generic [ref=e168]: Status is reachable
+                        - generic [ref=e169]:
+                          - checkbox "Select conversation with Shai Shlomai"
+                          - generic "Select conversation with Shai Shlomai"
+                      - generic [ref=e173]:
+                        - generic [ref=e174]:
+                          - heading "Shai Shlomai" [level=3] [ref=e175]:
+                            - generic [ref=e177]: Shai Shlomai
+                          - time [ref=e178]: 8:19 AM
+                          - generic [ref=e179]: 8:19 AM
+                        - generic [ref=e180]:
+                          - paragraph [ref=e182]: "You: Hey Shai -- thanks for connecting. Your profile caught my eye: autonomous AI + LLM agents in production, plus the MSc. Good combo. I'm doing multi-LLM routing and evals at a regulated fintech here in Israel. What's been the hardest part for you -- latency, reliability, or evaluation? --Oded"
+                          - generic [ref=e183]:
+                            - img "Star conversation"
+                      - generic [ref=e184]: . Active conversation
+                      - generic [ref=e185]: . Press return to go to conversation details
+                    - button "Open the options list in your conversation with Oded Ben-Yair and Shai Shlomai" [ref=e188]:
+                      - img [ref=e189]
+                      - generic [ref=e191]: Open the options list in your conversation with Oded Ben-Yair and Shai Shlomai
+                - listitem [ref=e192]:
+                  - generic [ref=e193] [cursor=pointer]:
+                    - generic [ref=e195]:
+                      - generic [ref=e196]:
+                        - generic [ref=e197]:
+                          - img "David Azulay" [ref=e198]
+                          - generic [ref=e200]: Status is reachable
+                        - generic [ref=e201]:
+                          - checkbox "Select conversation with David Azulay"
+                          - generic "Select conversation with David Azulay"
+                      - generic [ref=e205]:
+                        - generic [ref=e206]:
+                          - heading "David Azulay" [level=3] [ref=e207]:
+                            - generic [ref=e209]: David Azulay
+                          - time [ref=e210]: 8:18 AM
+                          - generic [ref=e211]: 8:18 AM
+                        - generic [ref=e212]:
+                          - paragraph [ref=e214]: "You: Hey David -- thanks for accepting. InfinityLabs alumni, small world. Saw you're at Conifers.ai doing agentic AI. I'm shipping multi-agent flows in prod at a regulated fintech (routing, evals, the whole mess). Curious what's been your biggest headache with agents -- tool reliability or guardrails? --Oded"
+                          - generic [ref=e215]:
+                            - img "Star conversation"
+                      - generic [ref=e216]: . Press return to go to conversation details
+                    - button "Open the options list in your conversation with Oded Ben-Yair and David Azulay" [ref=e219]:
+                      - img [ref=e220]
+                      - generic [ref=e222]: Open the options list in your conversation with Oded Ben-Yair and David Azulay
+                - listitem [ref=e223]:
+                  - generic [ref=e224] [cursor=pointer]:
+                    - generic [ref=e226]:
+                      - generic [ref=e227]:
+                        - generic [ref=e228]:
+                          - img "David Strucke" [ref=e229]
+                          - generic [ref=e231]: Status is reachable
+                        - generic [ref=e232]:
+                          - checkbox "Select conversation with David Strucke"
+                          - generic "Select conversation with David Strucke"
+                      - generic [ref=e236]:
+                        - generic [ref=e237]:
+                          - heading "David Strucke" [level=3] [ref=e238]:
+                            - generic [ref=e240]: David Strucke
+                          - time [ref=e241]: Feb 12
+                          - generic [ref=e242]: Feb 12
+                        - generic [ref=e243]:
+                          - paragraph [ref=e245]: "David: Sure! Here is a quick video highlighting the latest updates to our platform and how it helps teams in your field accelerate social and web data workflows: https://www.youtube.com/watch?v=p5QrdEt2ptg If you share any specific challenges or gaps you’ve noticed in your current workflow, I can either ask my team to record a 2-minute demo tailored to your needs, or we can jump on a quick call to walk through it together."
+                          - generic [ref=e246]:
+                            - img "Star conversation"
+                      - generic [ref=e247]: . Press return to go to conversation details
+                    - button "Open the options list in your conversation with David Strucke and Oded Ben-Yair" [ref=e250]:
+                      - img [ref=e251]
+                      - generic [ref=e253]: Open the options list in your conversation with David Strucke and Oded Ben-Yair
+                - listitem [ref=e254]:
+                  - generic [ref=e255] [cursor=pointer]:
+                    - generic [ref=e257]:
+                      - generic [ref=e258]:
+                        - generic [ref=e259]:
+                          - img "Vladimir Gurevich" [ref=e260]
+                          - generic [ref=e262]: Status is reachable
+                        - generic [ref=e263]:
+                          - checkbox "Select conversation with Vladimir Gurevich"
+                          - generic "Select conversation with Vladimir Gurevich"
+                      - generic [ref=e267]:
+                        - generic [ref=e268]:
+                          - heading "Vladimir Gurevich" [level=3] [ref=e269]:
+                            - generic [ref=e271]: Vladimir Gurevich
+                          - time [ref=e272]: Feb 12
+                          - generic [ref=e273]: Feb 12
+                        - generic [ref=e274]:
+                          - paragraph [ref=e276]: "You: Hey Vladimir, thanks for connecting. Your work at Beaconcure on agentic LLM systems for clinical trials is interesting — building something similar for a fintech: multi-LLM routing, evaluation, Arabic/Hebrew voice AI. Noticed you contributed to IAHLT too. Would be great to trade notes on Hebrew NLP in production sometime."
+                          - generic [ref=e277]:
+                            - img "Star conversation"
+                      - generic [ref=e278]: . Press return to go to conversation details
+                    - button "Open the options list in your conversation with Oded Ben-Yair and Vladimir Gurevich" [ref=e281]:
+                      - img [ref=e282]
+                      - generic [ref=e284]: Open the options list in your conversation with Oded Ben-Yair and Vladimir Gurevich
+                - listitem [ref=e285]:
+                  - generic [ref=e286] [cursor=pointer]:
+                    - generic [ref=e288]:
+                      - generic [ref=e289]:
+                        - img "LinkedIn for Sales" [ref=e291]
+                        - generic [ref=e292]:
+                          - checkbox "Select conversation with LinkedIn for Sales"
+                          - generic "Select conversation with LinkedIn for Sales"
+                      - generic [ref=e296]:
+                        - generic [ref=e297]:
+                          - heading "LinkedIn for Sales" [level=3] [ref=e298]:
+                            - generic [ref=e300]: LinkedIn for Sales
+                          - time [ref=e301]: Feb 8
+                          - generic [ref=e302]: Feb 8
+                        - generic [ref=e303]:
+                          - paragraph [ref=e305]:
+                            - generic [ref=e306]: LinkedIn Offer
+                            - text: Oded, As a valued LinkedIn member, we'd like to invite you to try Sales Navigator with a special offer. Reactivate your subscription today to get 50% off your first two months and focus on accounts that matter most with real-time buying signals.
+                          - generic [ref=e307]:
+                            - img "Star conversation"
+                      - generic [ref=e308]: . Press return to go to conversation details
+                    - button "Open the options list in your conversation with LinkedIn for Sales" [ref=e311]:
+                      - img [ref=e312]
+                      - generic [ref=e314]: Open the options list in your conversation with LinkedIn for Sales
+                - listitem [ref=e315]:
+                  - generic [ref=e316] [cursor=pointer]:
+                    - generic [ref=e318]:
+                      - generic [ref=e319]:
+                        - img "Adam Rodan" [ref=e321]
+                        - generic [ref=e322]:
+                          - checkbox "Select conversation with Adam Rodan"
+                          - generic "Select conversation with Adam Rodan"
+                      - generic [ref=e326]:
+                        - generic [ref=e327]:
+                          - heading "Adam Rodan" [level=3] [ref=e328]:
+                            - generic [ref=e330]: Adam Rodan
+                          - time [ref=e331]: Feb 8
+                          - generic [ref=e332]: Feb 8
+                        - generic [ref=e333]:
+                          - paragraph [ref=e335]: מפתח וארכיטקט לתכנון מוצר מאפס
+                          - generic [ref=e336]:
+                            - img "Star conversation"
+                      - generic [ref=e337]: . Press return to go to conversation details
+                    - button "Open the options list in your conversation with Oded Ben-Yair and Adam Rodan" [ref=e340]:
+                      - img [ref=e341]
+                      - generic [ref=e343]: Open the options list in your conversation with Oded Ben-Yair and Adam Rodan
+                - listitem [ref=e344]:
+                  - generic [ref=e345] [cursor=pointer]:
+                    - generic [ref=e347]:
+                      - generic [ref=e348]:
+                        - img "Sapir Alfasa" [ref=e350]
+                        - generic [ref=e351]:
+                          - checkbox "Select conversation with Sapir Alfasa"
+                          - generic "Select conversation with Sapir Alfasa"
+                      - generic [ref=e355]:
+                        - generic [ref=e356]:
+                          - heading "Sapir Alfasa" [level=3] [ref=e357]:
+                            - generic [ref=e359]: Sapir Alfasa
+                          - time [ref=e360]: Feb 8
+                          - generic [ref=e361]: Feb 8
+                        - generic [ref=e362]:
+                          - paragraph [ref=e364]: AI Engineer
+                          - generic [ref=e365]:
+                            - img "Star conversation"
+                      - generic [ref=e366]: . Press return to go to conversation details
+                    - button "Open the options list in your conversation with Oded Ben-Yair and Sapir Alfasa" [ref=e369]:
+                      - img [ref=e370]
+                      - generic [ref=e372]: Open the options list in your conversation with Oded Ben-Yair and Sapir Alfasa
+                - listitem [ref=e373]:
+                  - generic [ref=e374] [cursor=pointer]:
+                    - generic [ref=e376]:
+                      - generic [ref=e377]:
+                        - generic [ref=e378]:
+                          - img "Martin H. Sabag" [ref=e379]
+                          - generic [ref=e381]: Status is online
+                        - generic [ref=e382]:
+                          - checkbox "Select conversation with Martin H. Sabag"
+                          - generic "Select conversation with Martin H. Sabag"
+                      - generic [ref=e386]:
+                        - generic [ref=e387]:
+                          - heading "Martin H. Sabag" [level=3] [ref=e388]:
+                            - generic [ref=e390]: Martin H. Sabag
+                          - time [ref=e391]: Feb 8
+                          - generic [ref=e392]: Feb 8
+                        - generic [ref=e393]:
+                          - paragraph [ref=e395]: "Martin H.: Congrats on starting your new role at Be Z Online!"
+                          - generic [ref=e396]:
+                            - img "Star conversation"
+                      - generic [ref=e397]: . Press return to go to conversation details
+                    - button "Open the options list in your conversation with Martin H. Sabag and Oded Ben-Yair" [ref=e400]:
+                      - img [ref=e401]
+                      - generic [ref=e403]: Open the options list in your conversation with Martin H. Sabag and Oded Ben-Yair
+                - listitem [ref=e404]:
+                  - generic [ref=e405] [cursor=pointer]:
+                    - generic [ref=e407]:
+                      - generic [ref=e408]:
+                        - button "Udi Tayar" [ref=e411]:
+                          - img "Udi Tayar" [ref=e412]
+                        - generic [ref=e413]:
+                          - checkbox "Select conversation with Udi Tayar"
+                          - generic "Select conversation with Udi Tayar"
+                      - generic [ref=e417]:
+                        - generic [ref=e418]:
+                          - heading "Udi Tayar" [level=3] [ref=e419]:
+                            - generic [ref=e421]: Udi Tayar
+                          - time [ref=e422]: Feb 5
+                          - generic [ref=e423]: Feb 5
+                        - generic [ref=e424]:
+                          - paragraph [ref=e426]:
+                            - generic [ref=e427]: Sponsored
+                            - text: ניהול תיק השקעות במקצועיות ובשקיפות
+                          - generic [ref=e428]:
+                            - img "Star conversation"
+                      - generic [ref=e429]: . Press return to go to conversation details
+                    - button "Open the options list in your conversation with Udi Tayar" [ref=e432]:
+                      - img [ref=e433]
+                      - generic [ref=e435]: Open the options list in your conversation with Udi Tayar
+                - listitem [ref=e436]:
+                  - generic [ref=e437] [cursor=pointer]:
+                    - generic [ref=e439]:
+                      - generic [ref=e440]:
+                        - img "Shani Borreda ★ I'm Hiring ★" [ref=e442]
+                        - generic [ref=e443]:
+                          - checkbox "Select conversation with Shani Borreda ★ I&#39;m Hiring ★"
+                          - generic "Select conversation with Shani Borreda ★ I&#39;m Hiring ★"
+                      - generic [ref=e447]:
+                        - generic [ref=e448]:
+                          - heading "Shani Borreda ★ I'm Hiring ★" [level=3] [ref=e449]:
+                            - generic [ref=e451]: Shani Borreda ★ I'm Hiring ★
+                          - time [ref=e452]: Jan 26
+                          - generic [ref=e453]: Jan 26
+                        - generic [ref=e454]:
+                          - paragraph [ref=e456]:
+                            - generic [ref=e457]: InMail
+                            - text: הצעת עבודה - קבוצת אמן
+                          - generic [ref=e458]:
+                            - img "Star conversation"
+                      - generic [ref=e459]: . Press return to go to conversation details
+                    - button "Open the options list in your conversation with Oded Ben-Yair and Shani Borreda ★ I'm Hiring ★" [ref=e462]:
+                      - img [ref=e463]
+                      - generic [ref=e465]: Open the options list in your conversation with Oded Ben-Yair and Shani Borreda ★ I'm Hiring ★
+                - listitem [ref=e466]
+                - listitem [ref=e467]
+                - listitem [ref=e468]
+                - listitem [ref=e469]
+                - listitem [ref=e470]
+                - listitem [ref=e471]
+                - listitem [ref=e472]:
+                  - button "Load more conversations" [ref=e473] [cursor=pointer]:
+                    - generic [ref=e474]: Load more conversations
+            - generic [ref=e477]:
+              - generic [ref=e479]:
+                - link "Shai Shlomai Status is reachable Mobile • 22h ago" [ref=e480] [cursor=pointer]:
+                  - /url: https://www.linkedin.com/in/ACoAABR-vs8BFR7dol1zqmLMPlszuaelwBcoYnQ
+                  - generic [ref=e482]:
+                    - term [ref=e483]:
+                      - heading "Shai Shlomai" [level=2] [ref=e484]
+                    - definition [ref=e485]:
+                      - generic [ref=e486]:
+                        - generic [ref=e488]: Status is reachable
+                        - text: Mobile
+                        - generic [ref=e489]: •
+                        - text: 22h ago
+                - button "Open the options list in your conversation with Oded Ben-Yair and Shai Shlomai" [ref=e491] [cursor=pointer]:
+                  - img [ref=e492]
+                  - generic [ref=e494]: Open the options list in your conversation with Oded Ben-Yair and Shai Shlomai
+                - button "Star conversation" [ref=e495] [cursor=pointer]:
+                  - img [ref=e496]
+              - list [ref=e502]:
+                - listitem
+                - listitem [ref=e503]:
+                  - generic [ref=e505]:
+                    - link "Shai Shlomai Profile Status is reachable" [ref=e506] [cursor=pointer]:
+                      - /url: https://www.linkedin.com/in/ACoAABR-vs8BFR7dol1zqmLMPlszuaelwBcoYnQ
+                      - generic [ref=e508]:
+                        - img "Shai Shlomai Profile" [ref=e509]
+                        - generic [ref=e511]: Status is reachable
+                    - generic [ref=e512]:
+                      - generic [ref=e513]:
+                        - link "Shai Shlomai LinkedIn Verified" [ref=e515] [cursor=pointer]:
+                          - /url: https://www.linkedin.com/in/ACoAABR-vs8BFR7dol1zqmLMPlszuaelwBcoYnQ
+                          - generic [ref=e516]: Shai Shlomai
+                          - img "LinkedIn Verified" [ref=e517]
+                        - generic [ref=e519]:
+                          - generic [ref=e520]: 1st degree connection
+                          - generic [ref=e521]: · 1st
+                      - generic "Senior Algorithm Engineer | Autonomous AI & LLM-based Agents | Production AI Systems | MS.c in Artificial Intelligence" [ref=e523]
+                - listitem [ref=e524]:
+                  - time [ref=e525]: Today
+                  - generic [ref=e526]: Oded Ben-Yair sent the following messages at 8:19 AM
+                  - generic [ref=e527]:
+                    - link "View Oded’s profile Oded Ben-Yair" [ref=e528] [cursor=pointer]:
+                      - /url: https://www.linkedin.com/in/ACoAABEJXkIBpHRsj0zFy126tNlNuHKxpGElSpQ
+                      - generic [ref=e529]: View Oded’s profile
+                      - img "Oded Ben-Yair" [ref=e530]
+                    - generic [ref=e531]:
+                      - generic [ref=e532]:
+                        - link "Oded Ben-Yair" [ref=e533] [cursor=pointer]:
+                          - /url: https://www.linkedin.com/in/ACoAABEJXkIBpHRsj0zFy126tNlNuHKxpGElSpQ
+                          - generic [ref=e534]: Oded Ben-Yair
+                        - img "LinkedIn Verified" [ref=e535]
+                      - time [ref=e537]: • 8:19 AM
+                    - generic [ref=e538]:
+                      - generic [ref=e539]:
+                        - menu [ref=e540]:
+                          - menuitem "React with clapping hands" [ref=e541] [cursor=pointer]:
+                            - generic: 👏
+                          - menuitem "React with thumbs up" [ref=e542] [cursor=pointer]:
+                            - generic: 👍
+                          - menuitem "React with smiling face with smiling eyes" [ref=e543] [cursor=pointer]:
+                            - generic: 😊
+                        - button "Open Emoji Keyboard" [ref=e546] [cursor=pointer]
+                        - button "Reply to this message" [ref=e547] [cursor=pointer]:
+                          - img [ref=e548]
+                        - 'generic "Options for the message from Oded: Hey Shai -- thanks for connecting. Your profile caught my eye: autonomous AI + LLM agents in production, plus the MSc. Good combo. I&#39;m doing multi-LLM routing and evals at a regulated fintech here in Israel. What&#39;s been the hardest part for you -- latency, reliability, or evaluation? --Oded" [ref=e550] [cursor=pointer]':
+                          - 'button "Options for the message from Oded: Hey Shai -- thanks for connecting. Your profile caught my eye: autonomous AI + LLM agents in production, plus the MSc. Good combo. I&#39;m doing multi-LLM routing and evals at a regulated fintech here in Israel. What&#39;s been the hardest part for you -- latency, reliability, or evaluation? --Oded" [ref=e551]':
+                            - 'img "Options for the message from Oded: Hey Shai -- thanks for connecting. Your profile caught my eye: autonomous AI + LLM agents in production, plus the MSc. Good combo. I&#39;m doing multi-LLM routing and evals at a regulated fintech here in Israel. What&#39;s been the hardest part for you -- latency, reliability, or evaluation? --Oded" [ref=e552]'
+                      - generic [ref=e554]:
+                        - paragraph [ref=e556]: "Hey Shai -- thanks for connecting. Your profile caught my eye: autonomous AI + LLM agents in production, plus the MSc. Good combo. I'm doing multi-LLM routing and evals at a regulated fintech here in Israel. What's been the hardest part for you -- latency, reliability, or evaluation? --Oded"
+                        - generic "Sent at 2/13/2026, 8:19 AM" [ref=e557]:
+                          - img [ref=e558]
+                - listitem [ref=e560]
+                - listitem
+              - generic [ref=e561]:
+                - generic [ref=e562]:
+                  - generic [ref=e564]:
+                    - textbox "Write a message…" [ref=e565]:
+                      - paragraph [ref=e566]
+                    - text: Write a message…
+                  - button "Maximize compose field" [ref=e568] [cursor=pointer]:
+                    - img [ref=e569]
+                    - generic [ref=e571]: Maximize compose field
+                - generic [ref=e572]:
+                  - generic [ref=e573]:
+                    - button "Attach an image to your conversation with Shai Shlomai" [ref=e575] [cursor=pointer]:
+                      - img [ref=e576]
+                      - generic [ref=e578]: Attach an image to your conversation with Shai Shlomai
+                    - button "Attach a file to your conversation with Shai Shlomai" [ref=e580] [cursor=pointer]:
+                      - img [ref=e581]
+                      - generic [ref=e583]: Attach a file to your conversation with Shai Shlomai
+                    - button "Open GIF Keyboard" [ref=e585] [cursor=pointer]:
+                      - img [ref=e586]
+                      - generic [ref=e588]: Open GIF Keyboard
+                    - button "Open Emoji Keyboard" [ref=e591] [cursor=pointer]:
+                      - img
+                      - generic [ref=e592]: Open Emoji Keyboard
+                  - generic [ref=e593]:
+                    - button "Send" [disabled] [ref=e595]
+                    - button "Open send options" [ref=e598] [cursor=pointer]:
+                      - img [ref=e599]
+                      - generic [ref=e601]: Open send options
+      - complementary [ref=e602]:
+        - iframe [ref=e604]:
+          - link "Advertise on LinkedIn" [ref=f56e3] [cursor=pointer]:
+            - /url: https://www.linkedin.com/jobs/?trk=li_FA_global_careers_jobsgtm_jsFA_v1&mcid=6899045044465016833
+            - img "Advertise on LinkedIn" [ref=f56e4]
+        - generic "LinkedIn Footer Content" [ref=e605]:
+          - generic [ref=e606]:
+            - list [ref=e607]:
+              - listitem [ref=e608]:
+                - link "About" [ref=e609] [cursor=pointer]:
+                  - /url: https://about.linkedin.com/
+                  - generic [ref=e610]: About
+              - listitem [ref=e611]:
+                - link "Accessibility" [ref=e612] [cursor=pointer]:
+                  - /url: https://www.linkedin.com/accessibility
+                  - generic [ref=e613]: Accessibility
+              - listitem [ref=e614]:
+                - link "Help Center" [ref=e615] [cursor=pointer]:
+                  - /url: https://www.linkedin.com/help/linkedin?trk=footer_d_flagship3_messaging_conversation_detail
+                  - generic [ref=e616]: Help Center
+              - listitem [ref=e617]:
+                - button "Privacy & Terms" [ref=e619] [cursor=pointer]:
+                  - generic [ref=e621]:
+                    - text: Privacy & Terms
+                    - img [ref=e622]
+              - listitem [ref=e624]:
+                - link "Ad Choices" [ref=e625] [cursor=pointer]:
+                  - /url: https://www.linkedin.com/help/linkedin/answer/62931
+                  - generic [ref=e626]: Ad Choices
+              - listitem [ref=e627]:
+                - link "Advertising" [ref=e628] [cursor=pointer]:
+                  - /url: https://www.linkedin.com/ad/start?trk=n_nav_ads_rr
+                  - generic [ref=e629]: Advertising
+              - listitem [ref=e630]:
+                - button "Business Services" [ref=e632] [cursor=pointer]:
+                  - generic [ref=e634]:
+                    - text: Business Services
+                    - img [ref=e635]
+              - listitem [ref=e637]:
+                - button "Get the LinkedIn app" [ref=e640] [cursor=pointer]
+              - listitem [ref=e641]:
+                - button "More options" [ref=e642] [cursor=pointer]: More
+            - generic [ref=e643]:
+              - img "LinkedIn" [ref=e644]:
+                - img [ref=e645]
+              - text: LinkedIn Corporation © 2026
+    - generic:
+      - generic:
+        - complementary:
+          - generic [ref=e648]:
+            - generic [ref=e650] [cursor=pointer]:
+              - generic [ref=e651]:
+                - img "Oded Ben-Yair" [ref=e652]
+                - generic [ref=e654]: Status is online
+              - button "You are on the messaging overlay. Press enter to open the list of conversations." [ref=e655]:
+                - generic [ref=e656]:
+                  - generic [ref=e657]: Messaging
+                  - generic [ref=e658]: You are on the messaging overlay. Press enter to open the list of conversations.
+            - generic [ref=e659]:
+              - button "Open messenger dropdown menu" [ref=e661] [cursor=pointer]:
+                - img "Open messenger dropdown menu" [ref=e662]
+              - button "Compose message" [ref=e665] [cursor=pointer]:
+                - img [ref=e666]
+                - generic [ref=e668]: Compose message
+              - button "You are on the messaging overlay. Press enter to open the list of conversations." [ref=e669] [cursor=pointer]:
+                - img [ref=e670]
+                - generic [ref=e672]: You are on the messaging overlay. Press enter to open the list of conversations.
+        - complementary "AI-powered assistant to get help with your career, jobs etc"

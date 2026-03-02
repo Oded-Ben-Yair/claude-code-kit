@@ -1,0 +1,724 @@
+- generic [active] [ref=e1]:
+  - generic:
+    - region "Toast message":
+      - heading "0 notifications total" [level=2] [ref=e3]
+      - alert
+  - region [ref=e4]
+  - generic [ref=e5]:
+    - generic [ref=e7]:
+      - button "Skip to search" [ref=e8] [cursor=pointer]:
+        - generic [ref=e9]: Skip to search
+      - button "Skip to main content" [ref=e10] [cursor=pointer]:
+        - generic [ref=e11]: Skip to main content
+      - button "Keyboard shortcuts" [ref=e12] [cursor=pointer]:
+        - generic [ref=e13]: Keyboard shortcuts
+      - button "Close jump menu" [ref=e14] [cursor=pointer]:
+        - img [ref=e15]
+        - generic [ref=e17]: Close jump menu
+    - banner "Global Navigation" [ref=e18]:
+      - generic [ref=e19]:
+        - link "LinkedIn" [ref=e20] [cursor=pointer]:
+          - /url: https://www.linkedin.com/feed/?nis=true
+          - img "LinkedIn" [ref=e23]:
+            - img [ref=e24]
+        - generic [ref=e28]:
+          - combobox "Search" [ref=e29]
+          - generic:
+            - img
+        - navigation "Primary Navigation" [ref=e30]:
+          - list [ref=e31]:
+            - listitem [ref=e32]:
+              - link "new feed updates notifications Home" [ref=e33] [cursor=pointer]:
+                - /url: https://www.linkedin.com/feed/?nis=true&
+                - generic [ref=e34]:
+                  - generic [ref=e37]: new feed updates notifications
+                  - img [ref=e41]
+                - generic "Home" [ref=e43]
+            - listitem [ref=e44]:
+              - link "My Network" [ref=e45] [cursor=pointer]:
+                - /url: https://www.linkedin.com/mynetwork/?
+                - img [ref=e49]
+                - generic "My Network" [ref=e51]
+            - listitem [ref=e52]:
+              - link "Jobs" [ref=e53] [cursor=pointer]:
+                - /url: https://www.linkedin.com/jobs/?
+                - img [ref=e57]
+                - generic "Jobs" [ref=e59]
+            - listitem [ref=e60]:
+              - link "Messaging" [ref=e61] [cursor=pointer]:
+                - /url: https://www.linkedin.com/messaging/?
+                - img [ref=e65]
+                - generic "Messaging" [ref=e67]
+            - listitem [ref=e68]:
+              - link "Notifications" [ref=e69] [cursor=pointer]:
+                - /url: https://www.linkedin.com/notifications/?filter=all&refresh=true
+                - img [ref=e73]
+                - generic "Notifications" [ref=e75]
+            - listitem [ref=e76]:
+              - button "Oded Ben-Yair Me" [ref=e78] [cursor=pointer]:
+                - img "Oded Ben-Yair" [ref=e79]
+                - generic [ref=e80]:
+                  - text: Me
+                  - img [ref=e81]
+            - listitem [ref=e83]:
+              - button "For Business" [ref=e85] [cursor=pointer]:
+                - img [ref=e89]
+                - generic "For Business" [ref=e91]:
+                  - text: For Business
+                  - img [ref=e92]
+            - listitem [ref=e94]:
+              - 'link "Reactivate Premium: 50% Off" [ref=e96] [cursor=pointer]':
+                - /url: http://www.linkedin.com/premium/redeem/?_ed=0_bvLJH59RTSY-u5c6PMUa4IW0M54p9mxZpuVkfRvTl7r&upsellOrderOrigin=Tracking%3Av1%3Apremium_nav_upsell_text_winback%3ANav%3AIn-Product&referenceId=aXYIn53pQaCjrDgO2Z41tQ%3D%3D&customKey=wb_c&redeemTypeV2=DISCOUNT&destRedirectURL=https%3A%2F%2Fwww.linkedin.com%2Fnotifications%2F
+                - generic [ref=e98]: "Reactivate Premium: 50% Off"
+    - generic [ref=e103]:
+      - complementary [ref=e104]:
+        - generic [ref=e106]:
+          - generic [ref=e107]:
+            - link "Background photo of Oded Ben-Yair" [ref=e108] [cursor=pointer]:
+              - /url: /in/oded-ben-yair-ai/
+            - link "Photo of Oded Ben-Yair" [ref=e110] [cursor=pointer]:
+              - /url: /in/oded-ben-yair-ai/
+              - img "Photo of Oded Ben-Yair" [ref=e111]
+            - generic [ref=e112]:
+              - link "Oded Ben-Yair Founding AI Engineer | Multi-LLM Routing & Evaluation in Production | Voice AI · RAG | Azure + Python Tel Aviv-Yafo, Tel Aviv District" [ref=e113] [cursor=pointer]:
+                - /url: /in/oded-ben-yair-ai/
+                - generic [ref=e114]:
+                  - heading "Oded Ben-Yair" [level=3] [ref=e115]
+                  - img [ref=e119]
+                - paragraph [ref=e121]: Founding AI Engineer | Multi-LLM Routing & Evaluation in Production | Voice AI · RAG | Azure + Python
+                - paragraph [ref=e122]: Tel Aviv-Yafo, Tel Aviv District
+              - link "Be Z Online" [ref=e123] [cursor=pointer]:
+                - /url: /in/oded-ben-yair-ai/
+                - paragraph [ref=e124]:
+                  - generic [ref=e125]: Be Z Online
+          - generic [ref=e126]:
+            - heading "Manage your notifications" [level=1] [ref=e127]
+            - link "View settings" [ref=e128] [cursor=pointer]:
+              - /url: /mypreferences/d/categories/notifications
+      - main [ref=e129]:
+        - generic [ref=e131]:
+          - radiogroup [ref=e133]:
+            - radio "All" [checked] [ref=e134] [cursor=pointer]
+            - radio "Jobs" [ref=e135] [cursor=pointer]
+            - radio "My posts" [ref=e136] [cursor=pointer]
+            - radio "Mentions" [ref=e137] [cursor=pointer]
+          - generic [ref=e139]:
+            - generic [ref=e141]:
+              - article "Unread notification." [ref=e143] [cursor=pointer]:
+                - generic [ref=e144]:
+                  - generic [ref=e145]:
+                    - figure [ref=e146]:
+                      - img [ref=e147]
+                    - link "View Nisan Ital’s profile." [ref=e149]:
+                      - /url: /in/nisan%2Dital
+                      - img "Nisan Ital is hiring" [ref=e153]
+                  - 'link "Unread notification. Nisan Ital posted: לא ציפיתי שקבוצת \"וידויים של מחפשי עבודה\" תהפוך למפעל ממים, אבל כנראה שצחוק זאת הדרך היחידה לשרוד את שוק העבודה של 2026. לינק לקבוצה בתגובה הראשונה" [ref=e155]':
+                    - /url: /feed/?highlightedUpdateUrn=urn%3Ali%3Aactivity%3A7428507806099488768&highlightedUpdateType=SHARED_BY_YOUR_NETWORK&origin=SHARED_BY_YOUR_NETWORK&showCommentBox=true
+                    - paragraph [ref=e156]: Unread notification.
+                    - generic [ref=e157]:
+                      - strong [ref=e158]: Nisan Ital
+                      - text: "posted: לא ציפיתי שקבוצת \"וידויים של מחפשי עבודה\" תהפוך למפעל ממים, אבל כנראה שצחוק זאת הדרך היחידה לשרוד את שוק העבודה של 2026. לינק לקבוצה בתגובה הראשונה"
+                  - generic [ref=e159]:
+                    - paragraph [ref=e160]: 8m
+                    - button "Settings menu" [ref=e163]:
+                      - img [ref=e164]
+              - article "Unread notification." [ref=e167] [cursor=pointer]:
+                - generic [ref=e168]:
+                  - generic [ref=e169]:
+                    - figure [ref=e170]:
+                      - img [ref=e171]
+                    - link "View Nisan Ital’s profile." [ref=e173]:
+                      - /url: /in/nisan%2Dital
+                      - img "Nisan Ital is hiring" [ref=e177]
+                  - link [ref=e179]:
+                    - /url: /feed/?highlightedUpdateUrn=urn%3Ali%3Aactivity%3A7428498805064572928&highlightedUpdateType=SHARED_BY_YOUR_NETWORK&origin=SHARED_BY_YOUR_NETWORK&showCommentBox=true
+                    - paragraph [ref=e180]: Unread notification.
+                    - generic [ref=e181]:
+                      - strong [ref=e182]: Nisan Ital
+                      - text: "posted: טיפ מטורף. בזמן שכולם שואלים אם תהיה או לא תהיה פצצה גרעינית הגיע הזמן להפיל אחת אחרת. בלינקדאין. אם אתם מחפשים עבודה ולא מצליחים לבלוט, שום עיגול ירוק לא באמת יעשה את זה. וגם לא פוסט שמספר שאתם “פתוחים להצעות”. למה? כי מגייסות לא רואות פוסטים. הן רואות טייטלים. הן משתמשות ב-LinkedIn Recruiter - מערכת שמסננת לפי התפקידים האחרונים שלכם. כלומר - אם לא כתוב בפרופיל שלכם את המשרה שאתם באמת רוצים, הן בכלל לא יגיעו אליכם. אז מה ניתן לעשות? חשוב לציין שזה נשק יום הדין אחרי שכבר ניסיתם הכל ולא הולך. כותבים תפקיד חדש בפרופיל, כאילו זו משרה אמיתית. שם החברה: Open to Work תיאור התפקיד: בדיוק המשרה שאתם רוצים. ובתוך הקוביה - לאן אתם מכוונים, מה אתם יודעים לעשות, ומה למדתם בתקופה האחרונה. כן, זו ״משרה פיקטיבית״ - אבל האימפקט אמיתי לגמרי ופתאום מגייסות ייחשפו לפרופיל שלכם. במקום לשחק לפי הכללים - תכתבו את הכללים מחדש. זה לא טריק. זה להבין איך לינקדאין באמת עובד - ולעשות עם זה משהו חכם. ככה פשוט."
+                  - generic [ref=e183]:
+                    - paragraph [ref=e184]: 38m
+                    - button "Settings menu" [ref=e187]:
+                      - img [ref=e188]
+              - article "Unread notification." [ref=e191] [cursor=pointer]:
+                - generic [ref=e192]:
+                  - generic [ref=e193]:
+                    - figure [ref=e194]:
+                      - img [ref=e195]
+                    - link "View Moav Gafni’s profile." [ref=e197]:
+                      - /url: /in/moav%2Dgafni
+                      - generic [ref=e200]:
+                        - img "Moav Gafni" [ref=e201]
+                        - generic [ref=e203]: Status is reachable
+                  - 'link "Unread notification. Moav Gafni commented on Matan Marudi''s post: בתוך מי שמשלם 300-400$ בחודש, אני אפתיע ואודה שאתה לגמרי צודק 😱 כדי לרוץ מהר, הרבה פעמים אני זורק על המודל מחשבות לא גמורות, מתחיל לבנות, ומסדר לעצמי את המחשבות תוך כדי תנועה. הרבה יותר יעיל לשבת עם עצמי שעה, לגבש תכנית פעולה מסודרת ורק אז להתחיל לבנות." [ref=e205]':
+                    - /url: /feed/?highlightedUpdateUrn=urn%3Ali%3Aactivity%3A7428493122147340288&highlightedUpdateType=COMMENTS_BY_YOUR_NETWORK&origin=COMMENTS_BY_YOUR_NETWORK&showCommentBox=true
+                    - paragraph [ref=e206]: Unread notification.
+                    - generic [ref=e207]:
+                      - strong [ref=e208]: Moav Gafni
+                      - text: commented on
+                      - strong [ref=e209]: Matan Marudi's
+                      - text: "post: בתוך מי שמשלם 300-400$ בחודש, אני אפתיע ואודה שאתה לגמרי צודק 😱 כדי לרוץ מהר, הרבה פעמים אני זורק על המודל מחשבות לא גמורות, מתחיל לבנות, ומסדר לעצמי את המחשבות תוך כדי תנועה. הרבה יותר יעיל לשבת עם עצמי שעה, לגבש תכנית פעולה מסודרת ורק אז להתחיל לבנות."
+                  - generic [ref=e210]:
+                    - paragraph [ref=e211]: 1h
+                    - button "Settings menu" [ref=e214]:
+                      - img [ref=e215]
+              - article "Unread notification." [ref=e218] [cursor=pointer]:
+                - generic [ref=e219]:
+                  - generic [ref=e220]:
+                    - figure [ref=e221]:
+                      - img [ref=e222]
+                    - link "View JFrog" [ref=e224]:
+                      - /url: /company/455737
+                      - img "View JFrog" [ref=e227]
+                  - link "Unread notification. Follow JFrog to see open roles and company insights." [ref=e229]:
+                    - /url: /company/455737/?followDrawer=true
+                    - paragraph [ref=e230]: Unread notification.
+                    - generic [ref=e231]:
+                      - text: Follow
+                      - strong [ref=e232]: JFrog
+                      - text: to see open roles and company insights.
+                  - generic [ref=e233]:
+                    - paragraph [ref=e234]: 1h
+                    - button "Settings menu" [ref=e237]:
+                      - img [ref=e238]
+              - article "Unread notification." [ref=e241] [cursor=pointer]:
+                - generic [ref=e242]:
+                  - generic [ref=e243]:
+                    - figure [ref=e244]:
+                      - img [ref=e245]
+                    - list [ref=e248]:
+                      - listitem [ref=e249]
+                      - listitem [ref=e251]
+                  - generic [ref=e253]:
+                    - link "Unread notification. Artificial Intelligence Engineer at HiO and 9 other recommendations for you." [ref=e254]:
+                      - /url: /jobs/collections/recommended?origin=JYMBII_IN_APP_NOTIFICATION&originToLandingJobPostings=4353832486,4372742505
+                      - paragraph [ref=e255]: Unread notification.
+                      - generic [ref=e256]:
+                        - generic [ref=e257]:
+                          - strong [ref=e258]: Artificial Intelligence Engineer
+                          - text: at
+                          - strong [ref=e259]: HiO
+                          - text: and
+                          - strong [ref=e260]: "9"
+                          - text: other recommendations for you.
+                        - generic [ref=e261]: Artificial Intelligence Engineer at HiO and 9 other recommendations for you.
+                    - link "View jobs" [ref=e264]:
+                      - generic [ref=e265]: View jobs
+                  - generic [ref=e266]:
+                    - paragraph [ref=e267]: 3h
+                    - button "Settings menu" [ref=e270]:
+                      - img [ref=e271]
+              - article "Notification" [ref=e274] [cursor=pointer]:
+                - generic [ref=e275]:
+                  - 'link "New from AI Central | ChatGPT & Generative AI Tutorials, Prompts & Use Cases for Gemini, DeepSeek, Claude in The Best AI Tutorials & Guides: 📚 Free Ebook - How to Build a Design Workflow with Gamma''s AI" [ref=e280]':
+                    - /url: /pulse/free%2Debook%2Dhow%2Dbuild%2Ddesign%2Dworkflow%2Dgammas%2Dai%2Dchat%2Dgpt%2Dcentral%2Ddgwpf
+                    - generic [ref=e281]:
+                      - text: New from
+                      - strong [ref=e282]: AI Central | ChatGPT & Generative AI Tutorials, Prompts & Use Cases for Gemini, DeepSeek, Claude
+                      - text: "in The Best AI Tutorials & Guides: 📚 Free Ebook - How to Build a Design Workflow with Gamma's AI"
+                  - generic [ref=e283]:
+                    - paragraph [ref=e284]: 4h
+                    - button "Settings menu" [ref=e287]:
+                      - img [ref=e288]
+              - article "Notification" [ref=e291] [cursor=pointer]:
+                - generic [ref=e292]:
+                  - link "View Shiran Leizerovich’s profile." [ref=e294]:
+                    - /url: /in/shiran%2Dleizerovich%2D4442071aa
+                    - generic [ref=e297]:
+                      - img "Shiran Leizerovich" [ref=e298]
+                      - generic [ref=e300]: Status is reachable
+                  - 'link "Shiran Leizerovich posted: מסתבר שחוסך זמן להיות נשואה לגיק AI. יצא אחלה של מוצר, תנסו ותכתבו לנו!" [ref=e302]':
+                    - /url: /feed/?highlightedUpdateUrn=urn%3Ali%3Aactivity%3A7428412659563163648&highlightedUpdateType=SHARED_BY_YOUR_NETWORK&origin=SHARED_BY_YOUR_NETWORK&showCommentBox=true
+                    - generic [ref=e303]:
+                      - strong [ref=e304]: Shiran Leizerovich
+                      - text: "posted: מסתבר שחוסך זמן להיות נשואה לגיק AI. יצא אחלה של מוצר, תנסו ותכתבו לנו!"
+                  - generic [ref=e305]:
+                    - paragraph [ref=e306]: 5h
+                    - button "Settings menu" [ref=e309]:
+                      - img [ref=e310]
+              - article "Notification" [ref=e313] [cursor=pointer]:
+                - generic [ref=e314]:
+                  - link "View Assaf Schwartz’s profile." [ref=e316]:
+                    - /url: /in/assafschwartz
+                    - img "Assaf Schwartz" [ref=e320]
+                  - link [ref=e322]:
+                    - /url: /feed/?highlightedUpdateUrn=urn%3Ali%3Aactivity%3A7428363627566370817&highlightedUpdateType=SHARED_BY_YOUR_NETWORK&origin=SHARED_BY_YOUR_NETWORK&showCommentBox=true
+                    - generic [ref=e323]:
+                      - strong [ref=e324]: Assaf Schwartz
+                      - text: "posted: ההיחלשות של הדולר היא חדשות לא טובות לעובד ההייטק. השער היום עומד על 3.09, הכי נמוך מאז 1996. מצד אחד, כיף לחזור מחו\"ל ולהגיד \"בואנה, קניתי מעיל Uniqlo ב-80 דולר! כולה 250 שקל!\" מצד שני, אנחנו נהיים יקרים למעסיק. כמה יקרים? נניח שאתם מרוויחים 30,000 בחודש. המעסיק משלם עליכם בערך 40,000 (כי הוא מפריש פנסיה, פיצויים, קרן השתלמות, סיבוס, הוצאות נסיעה ותקציבי fun ופיתוח). זה שווה ל-158 אלף דולר בשנה. ולפני שנה וקצת זה היה 128 אלף דולר. אז התייקרנו ב-30 אלף דולר! תכפילו נניח ב-100 עובדים וזה 3 מיליון ג׳ובות שהמעסיק מוריד משורת הרווח. זה המון! זה אומר שהמעסיק צריך לחשוב פעמיים על פתיחת משרה בישראל ולהיזהר יותר עם העלאות שכר 😥 טיפים לנו העובדים בתקופה הזו: 1. תחסכו כסף לחברה - בצמצום שירותי ענן למשל או אוטומציות שמייתרות צורך בגיוס נוסף. 2. תייצרו יותר כסף - יותר מכירות, שחרור מהיר יותר של פיצ׳רים. 3. אם אתם הכי יקרים בצוות, שימו לב שהערך שאתם מביאים מצדיק את זה. 4. תוודאו שיש לכם מדדים ברורים לתפקיד. מישהו מתישהו ישאל \"מה הבחור הזה בדיוק עושה פה?\" בהצלחה!"
+                  - generic [ref=e325]:
+                    - paragraph [ref=e326]: 5h
+                    - button "Settings menu" [ref=e329]:
+                      - img [ref=e330]
+              - article "Notification" [ref=e333] [cursor=pointer]:
+                - generic [ref=e334]:
+                  - generic [ref=e339]:
+                    - link "10 people viewed your profile. See the full list with Premium." [ref=e340]:
+                      - /url: /analytics/profile-views
+                      - generic [ref=e341]:
+                        - strong [ref=e342]: 10 people
+                        - text: viewed your profile. See the full list with Premium.
+                    - link "Reactivate Premium" [ref=e345]:
+                      - generic [ref=e346]: Reactivate Premium
+                    - generic [ref=e347]: Cancel anytime. No hidden fees.
+                  - generic [ref=e348]:
+                    - paragraph [ref=e349]: 7h
+                    - button "Settings menu" [ref=e352]:
+                      - img [ref=e353]
+              - article "Notification" [ref=e356] [cursor=pointer]:
+                - generic [ref=e357]:
+                  - img [ref=e361]:
+                    - img [ref=e362]
+                  - generic [ref=e364]:
+                    - link "Your comment has gained 290 impressions." [ref=e365]:
+                      - /url: /feed/update/urn%3Ali%3Aactivity%3A7427320523870629889?commentUrn=urn%3Ali%3Acomment%3A%28activity%3A7427320523870629889%2C7427992777537245184%29&dashCommentUrn=urn%3Ali%3Afsd%5Fcomment%3A%287427992777537245184%2Curn%3Ali%3Aactivity%3A7427320523870629889%29
+                      - generic [ref=e366]:
+                        - generic [ref=e367]:
+                          - text: Your comment has gained
+                          - strong [ref=e368]: 290 impressions
+                          - text: .
+                        - generic [ref=e369]: Your comment has gained 290 impressions.
+                    - link [ref=e370]:
+                      - generic [ref=e371]: Avi - does the "Opus plans, Sonnet executes" split actually hold up when the planning context gets complex? I've tried similar routing and found Sonnet misses edge cases that Opus catches mid-implementation, so you end up re-running with Opus anyway. Net savings were way less than the 6x on paper. What's been your experience with tasks that need mid-course corrections?
+                      - separator [ref=e372]
+                      - generic [ref=e375]:
+                        - text: "I got my first bill after switching to Claude Opus 4.6. $200/mo for Claude Max 20x. $20/mo for Codex Plus. So I spent a full day figuring out where my tokens actually go. The results kinda shocked me. 𝗧𝗵𝗲 𝗺𝗼𝗱𝗲𝗹𝘀 𝗴𝗼𝘁 𝘀𝗺𝗮𝗿𝘁𝗲𝗿 𝗶𝗻 𝟮𝟬𝟮𝟲. 𝗧𝗵𝗲𝘆 𝗮𝗹𝘀𝗼 𝗴𝗼𝘁 𝗵𝘂𝗻𝗴𝗿𝗶𝗲𝗿. Claude Opus 4.6: $5 input / $25 output per million tokens. GPT-5.3-Codex: $1.75 / $14. That's roughly 6x more expensive for the same work (higher prices + 2-3x more verbose). The developers who win aren't doing prompt engineering anymore. They're doing context engineering. And they know when to think vs when to just execute. Here's what I found after the full audit: ⸻ 𝗧𝗛𝗘 𝗦𝗜𝗟𝗘𝗡𝗧 𝗧𝗢𝗞𝗘𝗡 𝗞𝗜𝗟𝗟𝗘𝗥𝗦 (biggest savings, least obvious) 1/ My CLAUDE.md was 727 lines. It loads EVERY message. Moved reference"
+                        - link [ref=e376]:
+                          - /url: http://CLAUDE.md
+                          - text: material
+                        - text: "to on-demand files. Down to 128 lines. 82% gone. Same functionality. 2/ Found 81 MCP tool definitions loading silently on every message. Filesystem, Desktop Commander, PDF Tools, all redundant with built-ins. Three uninstalls, 56 definitions gone. 3/ Compressed a 262-line system doc to 127. Zero meaning lost. If it loads automatically, it's a tax. 4/ Every message re-sends full chat history. Longer chat = bigger bill per message. Compact often. ⸻ 𝗠𝗢𝗗𝗘𝗟 𝗦𝗧𝗥𝗔𝗧𝗘𝗚𝗬 5/ Opus plans, Sonnet executes. Architecture decisions get the big brain. Coding gets Sonnet at $3/$15. CLI calls this \"opusplan.\" 6/ Drop thinking mode to medium. High is overkill 80% of the time. Anthropic themselves recommend this. 7/ Match reasoning to the task. None for formatting. Low for tests. High for architecture only. 8/ Codex-Mini at $0.25/$2 for simple stuff. Save the big model for big problems. ⸻ 𝗣𝗟𝗔𝗧𝗙𝗢𝗥𝗠 𝗧𝗥𝗜𝗖𝗞𝗦 9/ Delegate noisy operations (tests, logs) to subagents. Only a summary returns to context. 10/ Disable unused MCPs in Extensions. Each one injects its full schema into every prompt. ⸻ 𝗪𝗵𝗮𝘁 𝗜 𝗮𝗰𝘁𝘂𝗮𝗹𝗹𝘆 𝗿𝘂𝗻: Planning → Opus 4.6 Daily coding → Sonnet 4.5 or Codex 5.3 Simple tasks → Codex-Mini or Haiku 4.5 All my reference docs live in separate .md files, not in CLAUDE.md. The CLAUDE.md just tells the model when to read them. Here's the part i keep circling back to th"
+                        - link [ref=e377]:
+                          - /url: http://CLAUDE.md
+                          - text: "ough: Opu"
+                        - text: s 4.6
+                        - link [ref=e378]:
+                          - /url: http://CLAUDE.md
+                          - text: is notice
+                        - text: ably smarter. The architecture decisions are better. The code reviews catch things Sonnet misses. Is that worth 6x the cost? Honestly? Still figuring that out.
+                    - generic [ref=e380]: 2 comments
+                  - generic [ref=e381]:
+                    - paragraph [ref=e382]: 7h
+                    - button "Settings menu" [ref=e385]:
+                      - img [ref=e386]
+              - article "Notification" [ref=e389] [cursor=pointer]:
+                - generic [ref=e390]:
+                  - link "Profile image for several companies on LinkedIn" [ref=e392]:
+                    - /url: /jobs/search?savedSearchId=4016777281&originToLandingJobPostings=4336938720,4337225033,4372790019,4261969880,4343047406,4372742505&query=GenAi&alertAction=viewjobs&keywords=GenAi&distance=25&origin=JOB%5FALERT%5FIN%5FAPP%5FNOTIFICATION&geoId=101620260&sortBy=R&f_TPR=a1770976572%2D
+                    - generic [ref=e393]:
+                      - list [ref=e394]:
+                        - listitem [ref=e395]:
+                          - img "Profile image for several companies on LinkedIn" [ref=e397]
+                        - listitem [ref=e398]:
+                          - img "Profile image for several companies on LinkedIn" [ref=e400]
+                      - generic [ref=e401]: Profile image for several companies on LinkedIn
+                  - generic [ref=e402]:
+                    - 'link "GenAi: new opportunities in Israel." [ref=e403]':
+                      - /url: /jobs/search?savedSearchId=4016777281&originToLandingJobPostings=4336938720,4337225033,4372790019,4261969880,4343047406,4372742505&query=GenAi&alertAction=viewjobs&keywords=GenAi&distance=25&origin=JOB%5FALERT%5FIN%5FAPP%5FNOTIFICATION&geoId=101620260&sortBy=R&f_TPR=a1770976572%2D
+                      - generic [ref=e404]:
+                        - generic [ref=e405]:
+                          - strong [ref=e406]: GenAi
+                          - text: ": new opportunities in"
+                          - strong [ref=e407]: Israel
+                          - text: .
+                        - generic [ref=e408]: "GenAi: new opportunities in Israel."
+                    - link "View jobs" [ref=e411]:
+                      - generic [ref=e412]:
+                        - generic [ref=e413]: View jobs
+                        - generic [ref=e414]: View jobs
+                  - generic [ref=e415]:
+                    - paragraph [ref=e416]: 9h
+                    - button "Settings menu" [ref=e419]:
+                      - img [ref=e420]
+              - article "Notification" [ref=e423] [cursor=pointer]:
+                - generic [ref=e424]:
+                  - link "Shira Aloni Keter" [ref=e426]:
+                    - /url: /in/shira%2Daloni%2Dketer%2D54b496297
+                    - img "Shira Aloni Keter" [ref=e430]
+                  - generic [ref=e431]:
+                    - link "You may know Shira Aloni Keter. Add to your network. Human Resources. Organizational Development. Maklot Vanille LTD." [ref=e432]:
+                      - /url: /in/shira%2Daloni%2Dketer%2D54b496297?isRecommended=true
+                      - generic [ref=e433]:
+                        - text: You may know
+                        - strong [ref=e434]: Shira Aloni Keter
+                        - text: . Add to your network.
+                      - generic [ref=e435]: Human Resources. Organizational Development. Maklot Vanille LTD.
+                    - generic [ref=e436]:
+                      - img [ref=e440]
+                      - button "40 mutual connections" [ref=e442]
+                  - generic [ref=e443]:
+                    - paragraph [ref=e444]: 12h
+                    - button "Settings menu" [ref=e447]:
+                      - img [ref=e448]
+              - article "Notification" [ref=e451] [cursor=pointer]:
+                - generic [ref=e452]:
+                  - link "View Deloitte" [ref=e454]:
+                    - /url: /company/deloitte
+                    - img "View Deloitte" [ref=e457]
+                  - generic [ref=e458]:
+                    - link "Deloitte hosted this event. Watch the recording." [ref=e459]:
+                      - /url: /events/7407406510479282176
+                      - generic [ref=e460]:
+                        - generic [ref=e461]:
+                          - strong [ref=e462]: Deloitte
+                          - text: hosted this event. Watch the recording.
+                        - generic [ref=e463]: Deloitte hosted this event. Watch the recording.
+                    - link [ref=e464]:
+                      - generic [ref=e465]:
+                        - img [ref=e470]
+                        - generic [ref=e473]:
+                          - strong [ref=e475]: Is your insurance firm ready for 2026 regulatory scrutiny and model laws?
+                          - generic [ref=e476]: Is your insurance firm ready for 2026 regulatory scrutiny and model laws?
+                    - generic [ref=e477]: 861 Attendees • 22 Comments
+                  - generic [ref=e478]:
+                    - paragraph [ref=e479]: 12h
+                    - button "Settings menu" [ref=e482]:
+                      - img [ref=e483]
+              - article "Notification" [ref=e486] [cursor=pointer]:
+                - generic [ref=e487]:
+                  - link "Profile image for several companies on LinkedIn" [ref=e489]:
+                    - /url: /jobs/search?savedSearchId=5004612057&originToLandingJobPostings=4372742505&query=machine%20learning%20engineer&alertAction=viewjobs&f_WT=2&keywords=machine%20learning%20engineer&distance=25&origin=JOB%5FALERT%5FIN%5FAPP%5FNOTIFICATION&geoId=101620260&sortBy=R&f_TPR=a1770946275%2D
+                    - img "Profile image for several companies on LinkedIn" [ref=e492]
+                  - generic [ref=e493]:
+                    - 'link "machine learning engineer: new opportunity in Israel." [ref=e494]':
+                      - /url: /jobs/search?savedSearchId=5004612057&originToLandingJobPostings=4372742505&query=machine%20learning%20engineer&alertAction=viewjobs&f_WT=2&keywords=machine%20learning%20engineer&distance=25&origin=JOB%5FALERT%5FIN%5FAPP%5FNOTIFICATION&geoId=101620260&sortBy=R&f_TPR=a1770946275%2D
+                      - generic [ref=e495]:
+                        - generic [ref=e496]:
+                          - strong [ref=e497]: machine learning engineer
+                          - text: ": new opportunity in"
+                          - strong [ref=e498]: Israel
+                          - text: .
+                        - generic [ref=e499]: "machine learning engineer: new opportunity in Israel."
+                    - link "View job" [ref=e502]:
+                      - generic [ref=e503]:
+                        - generic [ref=e504]: View job
+                        - generic [ref=e505]: View job
+                  - generic [ref=e506]:
+                    - paragraph [ref=e507]: 12h
+                    - button "Settings menu" [ref=e510]:
+                      - img [ref=e511]
+              - article "Notification" [ref=e514] [cursor=pointer]:
+                - generic [ref=e515]:
+                  - 'link "Don''t forget to apply for the job you saved 2 days ago: Senior Software Engineer, AI Assisted Engineering Support at Navan." [ref=e520]':
+                    - /url: /jobs/view/4371846216
+                    - generic [ref=e521]:
+                      - generic [ref=e522]:
+                        - text: "Don't forget to apply for the job you saved 2 days ago:"
+                        - strong [ref=e523]: Senior Software Engineer, AI Assisted Engineering Support
+                        - text: at
+                        - strong [ref=e524]: Navan
+                        - text: .
+                      - generic [ref=e525]: "Don't forget to apply for the job you saved 2 days ago: Senior Software Engineer, AI Assisted Engineering Support at Navan."
+                  - generic [ref=e526]:
+                    - paragraph [ref=e527]: 1d
+                    - button "Settings menu" [ref=e530]:
+                      - img [ref=e531]
+              - article "Unread notification." [ref=e534] [cursor=pointer]:
+                - generic [ref=e535]:
+                  - generic [ref=e536]:
+                    - figure [ref=e537]:
+                      - img [ref=e538]
+                    - img [ref=e542]:
+                      - img [ref=e543]
+                  - generic [ref=e545]:
+                    - link "Unread notification. Your comment has gained 1,543 impressions." [ref=e546]:
+                      - /url: /feed/update/urn%3Ali%3Aactivity%3A7427683278926729217?commentUrn=urn%3Ali%3Acomment%3A%28activity%3A7427683278926729217%2C7427723124197986304%29&dashCommentUrn=urn%3Ali%3Afsd%5Fcomment%3A%287427723124197986304%2Curn%3Ali%3Aactivity%3A7427683278926729217%29
+                      - paragraph [ref=e547]: Unread notification.
+                      - generic [ref=e548]:
+                        - generic [ref=e549]:
+                          - text: Your comment has gained
+                          - strong [ref=e550]: 1,543 impressions
+                          - text: .
+                        - generic [ref=e551]: Your comment has gained 1,543 impressions.
+                    - link [ref=e552]:
+                      - generic [ref=e553]: "I've been experimenting w/ agentic retrieval in our RAG pipelines and the latency overhead is no joke – especially with query decomposition and reranking. The +17% Success@1 is impressive though. Makes me wonder if there's a sweet spot where you can prune some steps without sacrificing too much accuracy. (We saw something similar: using a lightweight model for expansion but falling back to hybrid if time budget exceeded.) Have you looked into adaptive strategies where the agent decides whether to decompose based on query complexity?"
+                      - separator [ref=e554]
+                      - generic [ref=e557]:
+                        - text: "Agentic Retrieval ≠ RAG Agents aren't just useful for the generation part of RAG. So what happens when you use them for retrieval? In traditional vector or hybrid search: • You get one shot at formulating the query • No automatic filtering based on intent • Results come back in a fixed ranking • No query decomposition for complex questions (unless you build it in yourself) 𝗔𝗴𝗲𝗻𝘁𝗶𝗰 𝗿𝗲𝘁𝗿𝗶𝗲𝘃𝗮𝗹 applies a lot of these advanced and effective retrieval techniques out of the box: 𝗤𝘂𝗲𝗿𝘆 𝗲𝘅𝗽𝗮𝗻𝘀𝗶𝗼𝗻 - enriching queries with semantically related terms 𝗤𝘂𝗲𝗿𝘆 𝗱𝗲𝗰𝗼𝗺𝗽𝗼𝘀𝗶𝘁𝗶𝗼𝗻 - breaking complex questions into sub-queries 𝗦𝗰𝗵𝗲𝗺𝗮 𝗶𝗻𝘁𝗿𝗼𝘀𝗽𝗲𝗰𝘁𝗶𝗼𝗻 - understanding your data structure to build better queries 𝗙𝗶𝗹𝘁𝗲𝗿 𝗰𝗼𝗻𝘀𝘁𝗿𝘂𝗰𝘁𝗶𝗼𝗻 - extracting and applying filters from natural language 𝗜𝗻𝘁𝗲𝗹𝗹𝗶𝗴𝗲𝗻𝘁 𝗿𝗲𝗿𝗮𝗻𝗸𝗶𝗻𝗴 - reordering results based on the original intent We benchmarked Weaviate's Search Mode (agentic retrieval) against standard Hybrid Search across 12 IR benchmarks - BEIR, LoTTe, BRIGHT, EnronQA, and WixQA, and this 𝗱𝗼𝗲𝘀 actually work: - +17% improvement on Success@1 (getting the right document first) • +11% improvement on Recall@5 • Gains ranged from +5% (minimum) to +24% (maximum) • Particularly strong on reasoning-intensive queries (BRIGHT dataset) benchmarks: https://lnkd.in/dG3FqtGw The biggest wins came on complex, long-form queries where the agent could decompose"
+                        - link [ref=e558]:
+                          - /url: https://lnkd.in/dG3FqtGw
+                          - text: the question and reason
+                        - text: about which retrieval strategy to use. 𝗧𝗵𝗲 𝗺𝗮𝗶𝗻 𝘁𝗿𝗮𝗱𝗲-𝗼𝗳𝗳 𝗶𝘀 (𝗻𝗼𝘁 𝘀𝘂𝗿𝗽𝗿𝗶𝘀𝗶𝗻𝗴𝗹𝘆) 𝗹𝗮𝘁𝗲𝗻𝗰𝘆. Those additional model inferences for query expansion, decomposition, and reranking take time. So this isn't universally better - it's about matching the approach to your use case. If you need highly accurate search results and can tolerate some extra latency → agentic retrieval If you're latency-sensitive and basic hybrid search is good enough → stick with traditional approaches
+                    - generic [ref=e559]:
+                      - generic [ref=e560]: 2 reactions
+                      - generic [ref=e561]: • 2 comments
+                  - generic [ref=e562]:
+                    - paragraph [ref=e563]: 1d
+                    - button "Settings menu" [ref=e566]:
+                      - img [ref=e567]
+              - article "Unread notification." [ref=e570] [cursor=pointer]:
+                - generic [ref=e571]:
+                  - generic [ref=e572]:
+                    - figure [ref=e573]:
+                      - img [ref=e574]
+                    - link "View Tal Cordova’s profile." [ref=e576]:
+                      - /url: /in/tal%2Dcordova
+                      - img "Tal Cordova" [ref=e580]
+                  - generic [ref=e581]:
+                    - link "Unread notification. Tal Cordova liked your comment." [ref=e582]:
+                      - /url: /feed/update/urn%3Ali%3Aactivity%3A7427706397989146624?commentUrn=urn%3Ali%3Acomment%3A%28activity%3A7427706397989146624%2C7427992267727982593%29&dashCommentUrn=urn%3Ali%3Afsd%5Fcomment%3A%287427992267727982593%2Curn%3Ali%3Aactivity%3A7427706397989146624%29&replyUrn=urn%3Ali%3Acomment%3A%28activity%3A7427706397989146624%2C7428006565242171392%29&dashReplyUrn=urn%3Ali%3Afsd%5Fcomment%3A%287428006565242171392%2Curn%3Ali%3Aactivity%3A7427706397989146624%29
+                      - paragraph [ref=e583]: Unread notification.
+                      - generic [ref=e584]:
+                        - strong [ref=e585]: Tal Cordova
+                        - text: liked your comment.
+                    - link [ref=e586]:
+                      - generic [ref=e587]: Good to know, thanks. The scale-up focus is what caught my eye. Might reach out closer to March.
+                      - separator [ref=e588]
+                      - generic [ref=e594]:
+                        - text: 𝗪𝗮𝗻𝘁 𝘁𝗼 𝗯𝘂𝗶𝗹𝗱 𝗮𝗻 𝗔𝗜-𝗽𝗼𝘄𝗲𝗿𝗲𝗱 𝗠𝗩𝗣? 🚀 Registration is now open for the AI System Design course by DataNights (a Datahack ini
+                        - strong [ref=e595]: tiative).
+                        - text: Thi
+                        - strong [ref=e596]: s isn't
+                        - text: "a theoretical course. Over 6 weeks, 𝘀𝘁𝗮𝗿𝘁𝗶𝗻𝗴 𝗠𝗮𝗿𝗰𝗵 𝟰𝘁𝗵, you’ll work in small groups to build a real AI-powered feature or MVP. 𝗪𝗵𝗮𝘁 𝘄𝗲’𝗿𝗲 𝗯𝘂𝗶𝗹𝗱𝗶𝗻𝗴 𝘄𝗶𝘁𝗵: Agents, tools & function calling RAG & data pipelines MCP & multi-step workflows Model serving & inference Prompt engineering Evaluation, cost & production considerations 𝗪𝗵𝗼 𝘄𝗶𝗹𝗹 𝘁𝗲𝗮𝗰𝗵 𝘆𝗼𝘂? We have a great lineup of lecturers leading the sessions: Or Levi | Israel Sofer | Almog Baku (vi/vim) | Gilad Rubin | Yael Oshri Balla"
+                        - strong [ref=e597]: "| Dani"
+                        - text: el
+                        - strong [ref=e598]: Marcous 𝗪𝗵𝗼
+                        - text: 𝘀𝗵
+                        - strong [ref=e599]: 𝗼𝘂𝗹𝗱 𝗮𝗽𝗽𝗹𝘆? Data S
+                        - text: cie
+                        - strong [ref=e600]: ntists, Sof
+                        - text: twa
+                        - strong [ref=e601]: re Engineers, an
+                        - text: d M
+                        - strong [ref=e602]: L Engineers wh
+                        - text: "o have a specific AI product idea and are ready to get their hands dirty. The course is part of DataNights, a program by DataHack. We are a nonprofit dedicated to advancing women, diversity, and knowledge-sharing within Israel’s AI and Data Science ecosystem 👉 Secure your spot here: https://lnkd.in/d_sRYP9Y 💬 Questions? Feel free to reach out to me directly!"
+                    - generic [ref=e603]:
+                      - generic [ref=e604]: 16 reactions
+                      - generic [ref=e605]: • 4 comments
+                  - generic [ref=e606]:
+                    - paragraph [ref=e607]: 1d
+                    - button "Settings menu" [ref=e610]:
+                      - img [ref=e611]
+              - article "Unread notification." [ref=e614] [cursor=pointer]:
+                - generic [ref=e615]:
+                  - figure [ref=e617]:
+                    - img [ref=e618]
+                  - 'link "Unread notification. New from Confidential Careers in Jobs Alert: Latest Jobs in India- Job Alert - 13th February 2026" [ref=e623]':
+                    - /url: /pulse/latest%2Djobs%2Dindia%2Djob%2Dalert%2D13th%2Dfebruary%2D2026%2D5p42c
+                    - paragraph [ref=e624]: Unread notification.
+                    - generic [ref=e625]:
+                      - text: New from
+                      - strong [ref=e626]: Confidential Careers
+                      - text: "in Jobs Alert: Latest Jobs in India- Job Alert - 13th February 2026"
+                  - generic [ref=e627]:
+                    - paragraph [ref=e628]: 1d
+                    - button "Settings menu" [ref=e631]:
+                      - img [ref=e632]
+              - article "Unread notification." [ref=e635] [cursor=pointer]:
+                - generic [ref=e636]:
+                  - figure [ref=e638]:
+                    - img [ref=e639]
+                  - 'link "Unread notification. New from Confidential Careers in Jobs Alert: Latest Jobs in Germany - Job Alert - 13th February 2026" [ref=e644]':
+                    - /url: /pulse/latest%2Djobs%2Dgermany%2Djob%2Dalert%2D13th%2Dfebruary%2D2026%2D2pbvc
+                    - paragraph [ref=e645]: Unread notification.
+                    - generic [ref=e646]:
+                      - text: New from
+                      - strong [ref=e647]: Confidential Careers
+                      - text: "in Jobs Alert: Latest Jobs in Germany - Job Alert - 13th February 2026"
+                  - generic [ref=e648]:
+                    - paragraph [ref=e649]: 1d
+                    - button "Settings menu" [ref=e652]:
+                      - img [ref=e653]
+              - article "Unread notification." [ref=e656] [cursor=pointer]:
+                - generic [ref=e657]:
+                  - generic [ref=e658]:
+                    - figure [ref=e659]:
+                      - img [ref=e660]
+                    - img [ref=e664]:
+                      - img [ref=e665]
+                  - generic [ref=e667]:
+                    - link "Unread notification. Your comment has gained 1,513 impressions." [ref=e668]:
+                      - /url: /feed/update/urn%3Ali%3AugcPost%3A7427629856433102848?commentUrn=urn%3Ali%3Acomment%3A%28ugcPost%3A7427629856433102848%2C7427670483791183872%29&dashCommentUrn=urn%3Ali%3Afsd%5Fcomment%3A%287427670483791183872%2Curn%3Ali%3AugcPost%3A7427629856433102848%29
+                      - paragraph [ref=e669]: Unread notification.
+                      - generic [ref=e670]:
+                        - generic [ref=e671]:
+                          - text: Your comment has gained
+                          - strong [ref=e672]: 1,513 impressions
+                          - text: .
+                        - generic [ref=e673]: Your comment has gained 1,513 impressions.
+                    - link [ref=e674]:
+                      - generic [ref=e675]: The RTS-to-agent-orchestration parallel is spot on. Been running multi-agent workflows on production systems — the hard part isn't launching agents, it's keeping them from stepping on each other's changes. Curious if AgentCraft handles file-level locking or if it relies on the git layer for conflict resolution.
+                      - separator [ref=e676]
+                      - generic [ref=e679]: "אני מצטער, אבל יש סיכוי סביר שאני הולך להרוס לכם יום עבודה. 🙂 אז סוף סוף Ido Salomon שחרר אתמול, אחרי הרבה הבטחות, את הגרסה הראשונה של AgentCraft: כלי לשליטה בסוכנים של Claude Code… דמוי וורקראפט. למי שלא מכיר: זה היוצר של gitmcp והסטנדרט החדש של MCP Apps ואיכשהו הוא עדיין מצא זמן לשחרר משהו חדש שעלול לפגוע בפרודקטיביות של המשק הישראלי. 🙃 אז לפני שאתם פותחים: תעשו קומיט. תסגרו PRים. אל תשאירו שום דבר פתוח ליום חמישי. הרעיון? אורקסטרציה של סוכנים באמצעות משחק. וזה יושב על תיאוריה שאני מת עליה: מי שגדל על משחקי Craft (אני אגב טים סטארקראפט) כבר מאומן בניהול משימות מורכבות. RTS זה פשוט ניהול כמה גורמים, במקביל, לאותה מטרה. שיחקתי קצת. זה כיף. האם זה ישפר פרודקטיביות? כנראה שלא. האם תהנו? סיכוי סביר שכן. אגב—לפי עידו זה עובד גם עם פיצ׳ר Teams החדש של קלוד. אם בא לכם לנסות: תעברו את המדריך הראשוני ותצללו ישר למשחק. עדיף על פרויקט ריק/שולי. להתקנה מהירה: npx @idosal/agentcraft הקרב על עתיד האורקסטרציה של סוכנים כבר כאן. ואנחנו כנראה נדבר על זה הרבה בזמן הקרוב. אז בברכת: work work או אולי כבר הגיע הזמן ל—prompt prompt 😄"
+                    - generic [ref=e681]: 3 reactions
+                  - generic [ref=e682]:
+                    - paragraph [ref=e683]: 1d
+                    - button "Settings menu" [ref=e686]:
+                      - img [ref=e687]
+              - article "Unread notification." [ref=e690] [cursor=pointer]:
+                - generic [ref=e691]:
+                  - generic [ref=e692]:
+                    - figure [ref=e693]:
+                      - img [ref=e694]
+                    - link "View Omri Cohen 👨🏼‍💻’s profile." [ref=e696]:
+                      - /url: /in/omri%2Dcohen%2Ddev
+                      - img "Omri Cohen 👨🏼‍💻" [ref=e700]
+                  - generic [ref=e701]:
+                    - 'link "Unread notification. Omri Cohen 👨🏼‍💻 and Alon Wolenitz reacted to a post: עוד סיבה להיות לקוח Cloudflare, שתענה, מהיום, לכל סוכן או מישהו שמבקש דף אינטרנט, בפורמט החסכוני markdown ולא html. תעבורת markdown מהווה היום 0.1% מהאינטרנט ויכולה לחסוך עד 80% בטוקנים. שירות אופטימיזציה כזה שמסופק כמעט בחינם לכל אייג׳נט באשר הוא זה חדשות מעולות. https://lnkd.in/dVmTbU4t ואם פספסתם, אז יש עליהם פרק: https://lnkd.in/e4GNBsbV" [ref=e702]':
+                      - /url: /feed/?highlightedUpdateUrn=urn%3Ali%3Aactivity%3A7427783709678002176&highlightedUpdateType=REACTIONS_BY_YOUR_NETWORK&origin=REACTIONS_BY_YOUR_NETWORK&showCommentBox=true
+                      - paragraph [ref=e703]: Unread notification.
+                      - generic [ref=e704]:
+                        - strong [ref=e705]: Omri Cohen 👨🏼‍💻
+                        - text: and
+                        - strong [ref=e706]: Alon Wolenitz
+                        - text: "reacted to a post: עוד סיבה להיות לקוח Cloudflare, שתענה, מהיום, לכל סוכן או מישהו שמבקש דף אינטרנט, בפורמט החסכוני markdown ולא html. תעבורת markdown מהווה היום 0.1% מהאינטרנט ויכולה לחסוך עד 80% בטוקנים. שירות אופטימיזציה כזה שמסופק כמעט בחינם לכל אייג׳נט באשר הוא זה חדשות מעולות. https://lnkd.in/dVmTbU4t ואם פספסתם, אז יש עליהם פרק: https://lnkd.in/e4GNBsbV"
+                    - generic [ref=e707]:
+                      - generic [ref=e708]: 46 reactions
+                      - generic [ref=e709]: • 2 comments
+                  - generic [ref=e710]:
+                    - paragraph [ref=e711]: 1d
+                    - button "Settings menu" [ref=e714]:
+                      - img [ref=e715]
+              - article "Unread notification." [ref=e718] [cursor=pointer]:
+                - generic [ref=e719]:
+                  - generic [ref=e720]:
+                    - figure [ref=e721]:
+                      - img [ref=e722]
+                    - link "View Sai Teja P’s profile." [ref=e724]:
+                      - /url: /in/saiteja94
+                      - img "Sai Teja P is open to work" [ref=e728]
+                  - generic [ref=e729]:
+                    - link "Unread notification. Sai Teja P and 1 other liked your comment." [ref=e730]:
+                      - /url: /feed/update/urn%3Ali%3Aactivity%3A7427683278926729217?commentUrn=urn%3Ali%3Acomment%3A%28activity%3A7427683278926729217%2C7427723124197986304%29&dashCommentUrn=urn%3Ali%3Afsd%5Fcomment%3A%287427723124197986304%2Curn%3Ali%3Aactivity%3A7427683278926729217%29
+                      - paragraph [ref=e731]: Unread notification.
+                      - generic [ref=e732]:
+                        - strong [ref=e733]: Sai Teja P
+                        - text: and 1 other liked your comment.
+                    - link [ref=e734]:
+                      - generic [ref=e735]: "I've been experimenting w/ agentic retrieval in our RAG pipelines and the latency overhead is no joke – especially with query decomposition and reranking. The +17% Success@1 is impressive though. Makes me wonder if there's a sweet spot where you can prune some steps without sacrificing too much accuracy. (We saw something similar: using a lightweight model for expansion but falling back to hybrid if time budget exceeded.) Have you looked into adaptive strategies where the agent decides whether to decompose based on query complexity?"
+                      - separator [ref=e736]
+                      - generic [ref=e742]:
+                        - text: "Agentic Retrieval ≠ RAG Agents aren't just useful for the generation part of RAG. So what happens when you use them for retrieval? In traditional vector or hybrid search: • You get one shot at formulating the query • No automatic filtering based on intent • Results come back in a fixed ranking • No query decomposition for complex questions (unless you build it in yourself) 𝗔𝗴𝗲𝗻𝘁𝗶𝗰 𝗿𝗲𝘁𝗿𝗶𝗲𝘃𝗮𝗹 applies a lot of these advanced and effective retrieval techniques out of the box: 𝗤𝘂𝗲𝗿𝘆 𝗲𝘅𝗽𝗮𝗻𝘀𝗶𝗼𝗻 - enriching queries with semantically related terms 𝗤𝘂𝗲𝗿𝘆 𝗱𝗲𝗰𝗼𝗺𝗽𝗼𝘀𝗶𝘁𝗶𝗼𝗻 - breaking complex questions into sub-queries 𝗦𝗰𝗵𝗲𝗺𝗮 𝗶𝗻𝘁𝗿𝗼𝘀𝗽𝗲𝗰𝘁𝗶𝗼𝗻 - understanding your data structure to build better queries 𝗙𝗶𝗹𝘁𝗲𝗿 𝗰𝗼𝗻𝘀𝘁𝗿𝘂𝗰𝘁𝗶𝗼𝗻 - extracting and applying filters from natural language 𝗜𝗻𝘁𝗲𝗹𝗹𝗶𝗴𝗲𝗻𝘁 𝗿𝗲𝗿𝗮𝗻𝗸𝗶𝗻𝗴 - reordering results based on the original intent We benchmarked Weaviate's Search Mode (agentic retrieval) against standard Hybrid Search across 12 IR benchmarks - BEIR,"
+                        - strong [ref=e743]: LoTTe,
+                        - text: "BRIGHT, EnronQA, and WixQA, and this 𝗱𝗼𝗲𝘀 actually work: - +17% improvement on Success@1 (getting the right document first) • +11% improvement on Recall@5 • Gains ranged from +5% (minimum) to +24% (maximum) • Particularly strong on reasoning-intensive queries (BRIGHT dataset) benchmarks: https://lnkd.in/dG3FqtGw The biggest wins came on complex, long-form queries where the agent could decompose"
+                        - link [ref=e744]:
+                          - /url: https://lnkd.in/dG3FqtGw
+                          - text: the question and reason
+                        - text: about which retrieval strategy to use. 𝗧𝗵𝗲 𝗺𝗮𝗶𝗻 𝘁𝗿𝗮𝗱𝗲-𝗼𝗳𝗳 𝗶𝘀 (𝗻𝗼𝘁 𝘀𝘂𝗿𝗽𝗿𝗶𝘀𝗶𝗻𝗴𝗹𝘆) 𝗹𝗮𝘁𝗲𝗻𝗰𝘆. Those additional model inferences for query expansion, decomposition, and reranking take time. So this isn't universally better - it's about matching the approach to your use case. If you need highly accurate search results and can tolerate some extra latency → agentic retrieval If you're latency-sensitive and basic hybrid search is good enough → stick with traditional approaches
+                    - generic [ref=e745]:
+                      - generic [ref=e746]: 452 reactions
+                      - generic [ref=e747]: • 16 comments
+                  - generic [ref=e748]:
+                    - paragraph [ref=e749]: 1d
+                    - button "Settings menu" [ref=e752]:
+                      - img [ref=e753]
+              - article "Unread notification." [ref=e756] [cursor=pointer]:
+                - generic [ref=e757]:
+                  - generic [ref=e758]:
+                    - figure [ref=e759]:
+                      - img [ref=e760]
+                    - link "View Moshe Zini’s profile." [ref=e762]:
+                      - /url: /in/moshe%2Dzini%2Dlfh
+                      - generic [ref=e765]:
+                        - img "Moshe Zini" [ref=e766]
+                        - generic [ref=e768]: Status is reachable
+                  - 'link "Unread notification. Moshe Zini posted: באיחור רב 😅" [ref=e770]':
+                    - /url: /feed/?highlightedUpdateUrn=urn%3Ali%3Aactivity%3A7428055241012645888&highlightedUpdateType=SHARED_BY_YOUR_NETWORK&origin=SHARED_BY_YOUR_NETWORK&showCommentBox=true
+                    - paragraph [ref=e771]: Unread notification.
+                    - generic [ref=e772]:
+                      - strong [ref=e773]: Moshe Zini
+                      - text: "posted: באיחור רב 😅"
+                  - generic [ref=e774]:
+                    - paragraph [ref=e775]: 1d
+                    - button "Settings menu" [ref=e778]:
+                      - img [ref=e779]
+              - article "Unread notification." [ref=e782] [cursor=pointer]:
+                - generic [ref=e783]:
+                  - figure [ref=e785]:
+                    - img [ref=e786]
+                  - 'link "Unread notification. New from Confidential Careers in Jobs Alert: Latest jobs in UK - Job Alert - 13th February, 2026" [ref=e791]':
+                    - /url: /pulse/latest%2Djobs%2Duk%2Djob%2Dalert%2D13th%2Dfebruary%2D2026%2Dconfidentialcareers%2Ddcn4c
+                    - paragraph [ref=e792]: Unread notification.
+                    - generic [ref=e793]:
+                      - text: New from
+                      - strong [ref=e794]: Confidential Careers
+                      - text: "in Jobs Alert: Latest jobs in UK - Job Alert - 13th February, 2026"
+                  - generic [ref=e795]:
+                    - paragraph [ref=e796]: 1d
+                    - button "Settings menu" [ref=e799]:
+                      - img [ref=e800]
+            - button "Show more results" [ref=e804] [cursor=pointer]:
+              - generic [ref=e805]: Show more results
+      - complementary [ref=e806]:
+        - generic [ref=e808]:
+          - iframe [ref=e810]:
+            - generic [ref=f399e2]:
+              - generic [ref=f399e3]: Ad
+              - img "overflow-web-small" [ref=f399e6] [cursor=pointer]
+              - link "LinkedIn Premium" [ref=f399e10] [cursor=pointer]:
+                - /url: https://www.linkedin.com/li/tscp/sct?destinationUrl=https%3A%2F%2Fwww.linkedin.com%2Fpremium%2Fredeem%2Fpromo%3F_ed%3DCwEAAAF114596ur6D_C644yaOCckjiuPmlSNohBRLZWzwWabZZHafL3X39_vkIP4OF8-NIE8HlM%26customKey%3Dwb_c%26redeemTypeV2%3DDISCOUNT%26type%3Dpremium%26src%3Dli-dynamic%26trk%3Dbnr_mktg_btn_gsub_wb_PREMIUM_GS_CONV_DA_GLOBAL_EN_202510_NFT_WinbackBusinessWVMP_1420_WV_Jan26_V1%26upsellOrderOrigin%3DTracking%3Av1%3Abnr_mktg_btn_gsub_wb_PREMIUM_GS_CONV_DA_GLOBAL_EN_202510_NFT_WinbackBusinessWVMP_1420_WV_Jan26_V1%3ADynamic%2520Ads%2520Winback%3AMarketing%26mcid%3D7384368313499398145&trackingEvent=%5B%7B%22eventInfo%22%3A%7B%22appId%22%3A%22com.linkedin.ads.rendering.d_web%22%2C%22eventName%22%3A%22SponsoredRightRailContentActionEvent%22%2C%22topicName%22%3A%22SponsoredRightRailContentActionEvent%22%7D%2C%22eventBody%22%3A%7B%22sponsoredEventHeader%22%3A%7B%22encryptedTrackingData%22%3A%22CwEAAAGcXZICv4JcVV8A-cJavQWeHVFkpRezltqpAjVQQBu8NIrGQJZtngdb-uEx1bjQm3cDuG-UDGoqfYnSYNieCClxptNBcjKOaL5TyaLwNXS1auZprOY5j7ryqWrP13_1EHNGcYHLyy4Lqv2XLjLMAoHkUgdRilXxmmjzdOpke7dkhJi43nsevj6fs2VtpDMuce3Y3jsO2iXUe-NuMNEiNlYtHM64DcoKYXwZUN3BVXMdSfd1xf-Icpu19zj8DZY-vpHsQ16knAr3_4AMKbRf8kkXg0XNWyyviRjGtVifJG5SQz1XDgAVpp-4XtC2ukLcamnPa-EPWputrdz3l8PX2MA9QrmnJR6ltp_dMHhY_YUN2alGdMIH8Opr8l9l9vMMDoH_1yvXR7TtJnzTCscGHcdoBgyRb0Qv8cFuZONnj-8huWLOqyO_W0OrtNS_nqeFbajgvG_dhgpuCZInSNF0PiXQ-OkpfECP8sbGNqJXtTCe6r7bG4Zy9UIt4ePKRJYxUZenlGnf6KbQkpQwLOTY44VaSD-T-aYCE8QE381XBR3Rpbp-r7zPA7EavPvzljEAVjTArNUrk7JWyIC5kRj6sapWKsSr-a_Luqq6RlGerZ-1kRMUlXQdBMYsf53zndsMgD1nKzdYCjFUTJQXDHl96bcCZxzHpvQ4vVyY4XnXOUeizXfvzgpjI37uOIKTXGFaKWCy-cCmBWo0qH4udP0NrMBrlghC1ATGv9brvfFxn6KAgLIaJh_-aLGi5I-aSRNkaK485oIPAD86c0yLRWCd4z6haVpHBZ9V9AGpZGKeTkKp0aFwrpfyJs2aGOAua7X-8_ghxfd__lDRT7WY3QrFhTKDvprRORYobnV03w4UIklUUYm9vPdyTUlsK9q4vgTUzabDkhZhFKFDqPnp6rkDVHOUKSS_4xHlxxut_qU28FuXVRqO7wPuksXqoxH7LrvlzAMpT_sGUFxpIto4yIJNnHWuLFLX0Xf0rejtIdy79-GwiQn2vKPgMJhRLJc7PyOu5SZu0DHLvmvPc6FSzMPR5wvD25s9gOoY896XdIBycSwE9SHQ9vgMYMDUjcSwVyUabn8EIGYg30ahFBwDm0kn4duP_ic3yGbkYJ_P2u5ELxsGFdmZHcuRtafeDGrVzWYPvMhp-Gfvt2G_9T-JNLayXiQPL9VSkMcbds0O4FZNRdGBeEfW35fsqCAAXQs%22%7D%2C%22header%22%3A%7B%22pageInstance%22%3A%7B%22pageUrn%22%3A%22urn%3Ali%3Apage%3Ad_flagship3_notifications%22%2C%22trackingId%22%3A%229bec2227-e32a-48d0-a0b3-a91bf92c2683%22%7D%2C%22time%22%3A1771096375945%2C%22version%22%3A%220.0.0%22%7D%2C%22requestHeader%22%3A%7B%22pageKey%22%3A%22d_flagship3_notifications%22%2C%22interfaceLocale%22%3A%22en-US%22%7D%7D%7D%5D&csrfToken=ajax%3A2872756275449100236
+              - generic [ref=f399e11]:
+                - heading "Oded, enjoy 50% off 2 months of LinkedIn Premium!" [level=2] [ref=f399e14]
+                - generic [ref=f399e16]:
+                  - img "Oded" [ref=f399e17]
+                  - generic [ref=f399e18]:
+                    - link "LinkedIn Premium" [ref=f399e19] [cursor=pointer]:
+                      - /url: https://www.linkedin.com/li/tscp/sct?destinationUrl=https%3A%2F%2Fwww.linkedin.com%2Fpremium%2Fredeem%2Fpromo%3F_ed%3DCwEAAAF114596ur6D_C644yaOCckjiuPmlSNohBRLZWzwWabZZHafL3X39_vkIP4OF8-NIE8HlM%26customKey%3Dwb_c%26redeemTypeV2%3DDISCOUNT%26type%3Dpremium%26src%3Dli-dynamic%26trk%3Dbnr_mktg_btn_gsub_wb_PREMIUM_GS_CONV_DA_GLOBAL_EN_202510_NFT_WinbackBusinessWVMP_1420_WV_Jan26_V1%26upsellOrderOrigin%3DTracking%3Av1%3Abnr_mktg_btn_gsub_wb_PREMIUM_GS_CONV_DA_GLOBAL_EN_202510_NFT_WinbackBusinessWVMP_1420_WV_Jan26_V1%3ADynamic%2520Ads%2520Winback%3AMarketing%26mcid%3D7384368313499398145&trackingEvent=%5B%7B%22eventInfo%22%3A%7B%22appId%22%3A%22com.linkedin.ads.rendering.d_web%22%2C%22eventName%22%3A%22SponsoredRightRailContentActionEvent%22%2C%22topicName%22%3A%22SponsoredRightRailContentActionEvent%22%7D%2C%22eventBody%22%3A%7B%22sponsoredEventHeader%22%3A%7B%22encryptedTrackingData%22%3A%22CwEAAAGcXZICv4JcVV8A-cJavQWeHVFkpRezltqpAjVQQBu8NIrGQJZtngdb-uEx1bjQm3cDuG-UDGoqfYnSYNieCClxptNBcjKOaL5TyaLwNXS1auZprOY5j7ryqWrP13_1EHNGcYHLyy4Lqv2XLjLMAoHkUgdRilXxmmjzdOpke7dkhJi43nsevj6fs2VtpDMuce3Y3jsO2iXUe-NuMNEiNlYtHM64DcoKYXwZUN3BVXMdSfd1xf-Icpu19zj8DZY-vpHsQ16knAr3_4AMKbRf8kkXg0XNWyyviRjGtVifJG5SQz1XDgAVpp-4XtC2ukLcamnPa-EPWputrdz3l8PX2MA9QrmnJR6ltp_dMHhY_YUN2alGdMIH8Opr8l9l9vMMDoH_1yvXR7TtJnzTCscGHcdoBgyRb0Qv8cFuZONnj-8huWLOqyO_W0OrtNS_nqeFbajgvG_dhgpuCZInSNF0PiXQ-OkpfECP8sbGNqJXtTCe6r7bG4Zy9UIt4ePKRJYxUZenlGnf6KbQkpQwLOTY44VaSD-T-aYCE8QE381XBR3Rpbp-r7zPA7EavPvzljEAVjTArNUrk7JWyIC5kRj6sapWKsSr-a_Luqq6RlGerZ-1kRMUlXQdBMYsf53zndsMgD1nKzdYCjFUTJQXDHl96bcCZxzHpvQ4vVyY4XnXOUeizXfvzgpjI37uOIKTXGFaKWCy-cCmBWo0qH4udP0NrMBrlghC1ATGv9brvfFxn6KAgLIaJh_-aLGi5I-aSRNkaK485oIPAD86c0yLRWCd4z6haVpHBZ9V9AGpZGKeTkKp0aFwrpfyJs2aGOAua7X-8_ghxfd__lDRT7WY3QrFhTKDvprRORYobnV03w4UIklUUYm9vPdyTUlsK9q4vgTUzabDkhZhFKFDqPnp6rkDVHOUKSS_4xHlxxut_qU28FuXVRqO7wPuksXqoxH7LrvlzAMpT_sGUFxpIto4yIJNnHWuLFLX0Xf0rejtIdy79-GwiQn2vKPgMJhRLJc7PyOu5SZu0DHLvmvPc6FSzMPR5wvD25s9gOoY896XdIBycSwE9SHQ9vgMYMDUjcSwVyUabn8EIGYg30ahFBwDm0kn4duP_ic3yGbkYJ_P2u5ELxsGFdmZHcuRtafeDGrVzWYPvMhp-Gfvt2G_9T-JNLayXiQPL9VSkMcbds0O4FZNRdGBeEfW35fsqCAAXQs%22%7D%2C%22header%22%3A%7B%22pageInstance%22%3A%7B%22pageUrn%22%3A%22urn%3Ali%3Apage%3Ad_flagship3_notifications%22%2C%22trackingId%22%3A%229bec2227-e32a-48d0-a0b3-a91bf92c2683%22%7D%2C%22time%22%3A1771096375945%2C%22version%22%3A%220.0.0%22%7D%2C%22requestHeader%22%3A%7B%22pageKey%22%3A%22d_flagship3_notifications%22%2C%22interfaceLocale%22%3A%22en-US%22%7D%7D%7D%5D&csrfToken=ajax%3A2872756275449100236
+                      - img "LinkedIn Premium" [ref=f399e20]
+                    - tooltip "LinkedIn Premium" [ref=f399e21]
+                - generic [ref=f399e22]:
+                  - heading "Get a boost with this exclusive offer." [level=2] [ref=f399e25]
+                  - link "Get 50% off today" [ref=f399e27] [cursor=pointer]:
+                    - /url: https://www.linkedin.com/li/tscp/sct?destinationUrl=https%3A%2F%2Fwww.linkedin.com%2Fpremium%2Fredeem%2Fpromo%3F_ed%3DCwEAAAF114596ur6D_C644yaOCckjiuPmlSNohBRLZWzwWabZZHafL3X39_vkIP4OF8-NIE8HlM%26customKey%3Dwb_c%26redeemTypeV2%3DDISCOUNT%26type%3Dpremium%26src%3Dli-dynamic%26trk%3Dbnr_mktg_btn_gsub_wb_PREMIUM_GS_CONV_DA_GLOBAL_EN_202510_NFT_WinbackBusinessWVMP_1420_WV_Jan26_V1%26upsellOrderOrigin%3DTracking%3Av1%3Abnr_mktg_btn_gsub_wb_PREMIUM_GS_CONV_DA_GLOBAL_EN_202510_NFT_WinbackBusinessWVMP_1420_WV_Jan26_V1%3ADynamic%2520Ads%2520Winback%3AMarketing%26mcid%3D7384368313499398145&trackingEvent=%5B%7B%22eventInfo%22%3A%7B%22appId%22%3A%22com.linkedin.ads.rendering.d_web%22%2C%22eventName%22%3A%22SponsoredRightRailContentActionEvent%22%2C%22topicName%22%3A%22SponsoredRightRailContentActionEvent%22%7D%2C%22eventBody%22%3A%7B%22sponsoredEventHeader%22%3A%7B%22encryptedTrackingData%22%3A%22CwEAAAGcXZICv4JcVV8A-cJavQWeHVFkpRezltqpAjVQQBu8NIrGQJZtngdb-uEx1bjQm3cDuG-UDGoqfYnSYNieCClxptNBcjKOaL5TyaLwNXS1auZprOY5j7ryqWrP13_1EHNGcYHLyy4Lqv2XLjLMAoHkUgdRilXxmmjzdOpke7dkhJi43nsevj6fs2VtpDMuce3Y3jsO2iXUe-NuMNEiNlYtHM64DcoKYXwZUN3BVXMdSfd1xf-Icpu19zj8DZY-vpHsQ16knAr3_4AMKbRf8kkXg0XNWyyviRjGtVifJG5SQz1XDgAVpp-4XtC2ukLcamnPa-EPWputrdz3l8PX2MA9QrmnJR6ltp_dMHhY_YUN2alGdMIH8Opr8l9l9vMMDoH_1yvXR7TtJnzTCscGHcdoBgyRb0Qv8cFuZONnj-8huWLOqyO_W0OrtNS_nqeFbajgvG_dhgpuCZInSNF0PiXQ-OkpfECP8sbGNqJXtTCe6r7bG4Zy9UIt4ePKRJYxUZenlGnf6KbQkpQwLOTY44VaSD-T-aYCE8QE381XBR3Rpbp-r7zPA7EavPvzljEAVjTArNUrk7JWyIC5kRj6sapWKsSr-a_Luqq6RlGerZ-1kRMUlXQdBMYsf53zndsMgD1nKzdYCjFUTJQXDHl96bcCZxzHpvQ4vVyY4XnXOUeizXfvzgpjI37uOIKTXGFaKWCy-cCmBWo0qH4udP0NrMBrlghC1ATGv9brvfFxn6KAgLIaJh_-aLGi5I-aSRNkaK485oIPAD86c0yLRWCd4z6haVpHBZ9V9AGpZGKeTkKp0aFwrpfyJs2aGOAua7X-8_ghxfd__lDRT7WY3QrFhTKDvprRORYobnV03w4UIklUUYm9vPdyTUlsK9q4vgTUzabDkhZhFKFDqPnp6rkDVHOUKSS_4xHlxxut_qU28FuXVRqO7wPuksXqoxH7LrvlzAMpT_sGUFxpIto4yIJNnHWuLFLX0Xf0rejtIdy79-GwiQn2vKPgMJhRLJc7PyOu5SZu0DHLvmvPc6FSzMPR5wvD25s9gOoY896XdIBycSwE9SHQ9vgMYMDUjcSwVyUabn8EIGYg30ahFBwDm0kn4duP_ic3yGbkYJ_P2u5ELxsGFdmZHcuRtafeDGrVzWYPvMhp-Gfvt2G_9T-JNLayXiQPL9VSkMcbds0O4FZNRdGBeEfW35fsqCAAXQs%22%7D%2C%22header%22%3A%7B%22pageInstance%22%3A%7B%22pageUrn%22%3A%22urn%3Ali%3Apage%3Ad_flagship3_notifications%22%2C%22trackingId%22%3A%229bec2227-e32a-48d0-a0b3-a91bf92c2683%22%7D%2C%22time%22%3A1771096375945%2C%22version%22%3A%220.0.0%22%7D%2C%22requestHeader%22%3A%7B%22pageKey%22%3A%22d_flagship3_notifications%22%2C%22interfaceLocale%22%3A%22en-US%22%7D%7D%7D%5D&csrfToken=ajax%3A2872756275449100236
+          - generic "LinkedIn Footer Content" [ref=e811]:
+            - generic [ref=e812]:
+              - list [ref=e813]:
+                - listitem [ref=e814]:
+                  - link "About" [ref=e815] [cursor=pointer]:
+                    - /url: https://about.linkedin.com/
+                    - generic [ref=e816]: About
+                - listitem [ref=e817]:
+                  - link "Accessibility" [ref=e818] [cursor=pointer]:
+                    - /url: https://www.linkedin.com/accessibility
+                    - generic [ref=e819]: Accessibility
+                - listitem [ref=e820]:
+                  - link "Help Center" [ref=e821] [cursor=pointer]:
+                    - /url: https://www.linkedin.com/help/linkedin?trk=footer_d_flagship3_notifications
+                    - generic [ref=e822]: Help Center
+                - listitem [ref=e823]:
+                  - button "Privacy & Terms" [ref=e825] [cursor=pointer]:
+                    - generic [ref=e827]:
+                      - text: Privacy & Terms
+                      - img [ref=e828]
+                - listitem [ref=e830]:
+                  - link "Ad Choices" [ref=e831] [cursor=pointer]:
+                    - /url: https://www.linkedin.com/help/linkedin/answer/62931
+                    - generic [ref=e832]: Ad Choices
+                - listitem [ref=e833]:
+                  - link "Advertising" [ref=e834] [cursor=pointer]:
+                    - /url: https://www.linkedin.com/ad/start?trk=n_nav_ads_rr
+                    - generic [ref=e835]: Advertising
+                - listitem [ref=e836]:
+                  - button "Business Services" [ref=e838] [cursor=pointer]:
+                    - generic [ref=e840]:
+                      - text: Business Services
+                      - img [ref=e841]
+                - listitem [ref=e843]:
+                  - button "Get the LinkedIn app" [ref=e846] [cursor=pointer]
+                - listitem [ref=e847]:
+                  - button "More options" [ref=e848] [cursor=pointer]: More
+              - generic [ref=e849]:
+                - img "LinkedIn" [ref=e850]:
+                  - img [ref=e851]
+                - text: LinkedIn Corporation © 2026
+    - generic:
+      - generic:
+        - complementary:
+          - generic [ref=e854]:
+            - generic [ref=e856] [cursor=pointer]:
+              - generic [ref=e857]:
+                - img "Oded Ben-Yair" [ref=e858]
+                - generic [ref=e860]: Status is online
+              - button "You are on the messaging overlay. Press enter to open the list of conversations." [ref=e861]:
+                - generic [ref=e862]:
+                  - generic [ref=e863]: Messaging
+                  - generic [ref=e864]: You are on the messaging overlay. Press enter to open the list of conversations.
+            - generic [ref=e865]:
+              - button "Open messenger dropdown menu" [ref=e867] [cursor=pointer]:
+                - img "Open messenger dropdown menu" [ref=e868]
+              - button "Compose message" [ref=e871] [cursor=pointer]:
+                - img [ref=e872]
+                - generic [ref=e874]: Compose message
+              - button "You are on the messaging overlay. Press enter to open the list of conversations." [ref=e875] [cursor=pointer]:
+                - img [ref=e876]
+                - generic [ref=e878]: You are on the messaging overlay. Press enter to open the list of conversations.
+        - complementary "AI-powered assistant to get help with your career, jobs etc"

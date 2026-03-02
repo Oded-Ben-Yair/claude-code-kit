@@ -1,0 +1,611 @@
+- generic [ref=e1]:
+  - generic:
+    - region "Toast message":
+      - heading "0 notifications total" [level=2] [ref=e3]
+      - alert
+  - region [ref=e4]
+  - generic [ref=e5]:
+    - generic [ref=e7]:
+      - button "Skip to search" [ref=e8] [cursor=pointer]:
+        - generic [ref=e9]: Skip to search
+      - button "Skip to main content" [ref=e10] [cursor=pointer]:
+        - generic [ref=e11]: Skip to main content
+      - button "Keyboard shortcuts" [ref=e12] [cursor=pointer]:
+        - generic [ref=e13]: Keyboard shortcuts
+      - button "Close jump menu" [ref=e14] [cursor=pointer]:
+        - img [ref=e15]
+        - generic [ref=e17]: Close jump menu
+    - banner "Global Navigation" [ref=e18]:
+      - generic [ref=e19]:
+        - link "LinkedIn" [ref=e20] [cursor=pointer]:
+          - /url: https://www.linkedin.com/feed/?nis=true
+          - img "LinkedIn" [ref=e23]:
+            - img [ref=e24]
+        - generic [ref=e28]:
+          - combobox "Search" [ref=e29]
+          - generic:
+            - img
+        - navigation "Primary Navigation" [ref=e30]:
+          - list [ref=e31]:
+            - listitem [ref=e32]:
+              - link "new feed updates notifications Home" [ref=e33] [cursor=pointer]:
+                - /url: https://www.linkedin.com/feed/?nis=true&
+                - generic [ref=e34]:
+                  - generic [ref=e37]: new feed updates notifications
+                  - img [ref=e41]
+                - generic "Home" [ref=e43]
+            - listitem [ref=e44]:
+              - link "4 new network updates notifications My Network" [ref=e45] [cursor=pointer]:
+                - /url: https://www.linkedin.com/mynetwork/?
+                - generic [ref=e46]:
+                  - generic [ref=e47]:
+                    - generic [ref=e48]: "4"
+                    - generic [ref=e49]: 4 new network updates notifications
+                  - img [ref=e53]
+                - generic "My Network" [ref=e55]
+            - listitem [ref=e56]:
+              - link "Jobs" [ref=e57] [cursor=pointer]:
+                - /url: https://www.linkedin.com/jobs/?
+                - img [ref=e61]
+                - generic "Jobs" [ref=e63]
+            - listitem [ref=e64]:
+              - link "Messaging" [ref=e65] [cursor=pointer]:
+                - /url: https://www.linkedin.com/messaging/?
+                - img [ref=e69]
+                - generic "Messaging" [ref=e71]
+            - listitem [ref=e72]:
+              - link "Notifications" [ref=e73] [cursor=pointer]:
+                - /url: https://www.linkedin.com/notifications/?
+                - img [ref=e77]
+                - generic "Notifications" [ref=e79]
+            - listitem [ref=e80]:
+              - button "Oded Ben-Yair Me" [ref=e82] [cursor=pointer]:
+                - img "Oded Ben-Yair" [ref=e83]
+                - generic [ref=e84]:
+                  - text: Me
+                  - img [ref=e85]
+            - listitem [ref=e87]:
+              - button "For Business" [ref=e89] [cursor=pointer]:
+                - img [ref=e93]
+                - generic "For Business" [ref=e95]:
+                  - text: For Business
+                  - img [ref=e96]
+            - listitem [ref=e98]:
+              - 'link "Reactivate Premium: 50% Off" [ref=e100] [cursor=pointer]':
+                - /url: http://www.linkedin.com/premium/redeem/?_ed=0_bvLJH59RTSY-u5c6PMUa4IW0M54p9mxZpuVkfRvTl7r&upsellOrderOrigin=Tracking%3Av1%3Apremium_nav_upsell_text_winback%3ANav%3AIn-Product&referenceId=2ZKuU2PkSHemuFgneVgtxA%3D%3D&customKey=wb_c&redeemTypeV2=DISCOUNT&destRedirectURL=https%3A%2F%2Fwww.linkedin.com%2Fcompany%2Fmonday-com%2Fpeople%2F
+                - generic [ref=e102]: "Reactivate Premium: 50% Off"
+    - generic [ref=e107]:
+      - main "Organization page for monday.com" [ref=e108]:
+        - generic [ref=e111]:
+          - button [ref=e114]
+          - generic [ref=e116]:
+            - generic [ref=e118]:
+              - generic [ref=e119]:
+                - img "monday.com logo" [ref=e120]
+                - generic [ref=e122]:
+                  - heading "monday.com" [level=1] [ref=e123]
+                  - generic [ref=e126]: · 30 followers
+              - generic [ref=e128]:
+                - region [ref=e130]:
+                  - button "Follow" [ref=e131] [cursor=pointer]:
+                    - img [ref=e132]
+                    - generic [ref=e134]: Follow
+                  - button "Message monday.com" [ref=e135] [cursor=pointer]:
+                    - img [ref=e136]
+                    - generic [ref=e138]: Message
+                - button "Overflow Actions" [ref=e142] [cursor=pointer]:
+                  - img "Overflow Actions" [ref=e143]
+            - navigation "Organization’s page navigation" [ref=e146]:
+              - list [ref=e147]:
+                - listitem [ref=e148]:
+                  - link "Home" [ref=e149] [cursor=pointer]:
+                    - /url: /company/monday-com/
+                - listitem [ref=e150]:
+                  - link "About" [ref=e151] [cursor=pointer]:
+                    - /url: /company/monday-com/about/
+                - listitem [ref=e152]:
+                  - link "Posts" [ref=e153] [cursor=pointer]:
+                    - /url: /company/monday-com/posts/
+                - listitem [ref=e154]:
+                  - link "Jobs" [ref=e155] [cursor=pointer]:
+                    - /url: /company/monday-com/jobs/
+                - listitem [ref=e156]:
+                  - link "People" [ref=e157] [cursor=pointer]:
+                    - /url: /company/monday-com/people/
+        - generic [ref=e160]:
+          - generic [ref=e164]:
+            - generic [ref=e165]:
+              - generic [ref=e166]:
+                - generic [ref=e168]:
+                  - heading "0 associated members" [level=2] [ref=e169]
+                  - button "More information" [ref=e171] [cursor=pointer]:
+                    - img [ref=e172]
+                - generic [ref=e175]:
+                  - textbox "Search employees by title, keyword or school" [ref=e176]
+                  - generic [ref=e177]: Search employees by title, keyword or school
+              - generic [ref=e179]:
+                - generic [ref=e180]: Page 1 of 6
+                - button "Previous" [disabled] [ref=e181]:
+                  - img
+                  - generic: Previous
+                - button "Next" [ref=e182] [cursor=pointer]:
+                  - img [ref=e183]
+                  - generic [ref=e185]: Next
+            - list [ref=e187]:
+              - listitem [ref=e188]:
+                - generic [ref=e191]:
+                  - generic [ref=e192]:
+                    - heading "Where they live" [level=3] [ref=e193]
+                    - button "Add any location" [ref=e194] [cursor=pointer]:
+                      - img [ref=e195]
+                      - generic [ref=e197]: Add
+                  - button "1 |Saudi Arabia toggle off" [ref=e198] [cursor=pointer]:
+                    - generic [ref=e199]:
+                      - strong [ref=e200]: "1"
+                      - text: "|Saudi Arabia"
+                      - generic [ref=e201]: toggle off
+                    - img [ref=e202]
+                  - button "1 |Jizan, Saudi Arabia toggle off" [ref=e205] [cursor=pointer]:
+                    - generic [ref=e206]:
+                      - strong [ref=e207]: "1"
+                      - text: "|Jizan, Saudi Arabia"
+                      - generic [ref=e208]: toggle off
+                    - img [ref=e209]
+                  - button "1 |Gauteng, South Africa toggle off" [ref=e212] [cursor=pointer]:
+                    - generic [ref=e213]:
+                      - strong [ref=e214]: "1"
+                      - text: "|Gauteng, South Africa"
+                      - generic [ref=e215]: toggle off
+                    - img [ref=e216]
+                  - button "1 |South Africa toggle off" [ref=e219] [cursor=pointer]:
+                    - generic [ref=e220]:
+                      - strong [ref=e221]: "1"
+                      - text: "|South Africa"
+                      - generic [ref=e222]: toggle off
+                    - img [ref=e223]
+                  - button "1 |Johannesburg toggle off" [ref=e226] [cursor=pointer]:
+                    - generic [ref=e227]:
+                      - strong [ref=e228]: "1"
+                      - text: "|Johannesburg"
+                      - generic [ref=e229]: toggle off
+                    - img [ref=e230]
+              - listitem [ref=e233]:
+                - generic [ref=e237]:
+                  - heading "Where they studied" [level=3] [ref=e238]
+                  - button "Add any school" [ref=e239] [cursor=pointer]:
+                    - img [ref=e240]
+                    - generic [ref=e242]: Add
+              - listitem [ref=e243]:
+                - generic [ref=e246]:
+                  - heading "What they do" [level=3] [ref=e248]
+                  - button [ref=e249] [cursor=pointer]:
+                    - generic [ref=e250]:
+                      - strong [ref=e251]: "1"
+                      - text: "|Business Development"
+                      - generic [ref=e252]: toggle off
+                    - img [ref=e253]
+                  - button [ref=e256] [cursor=pointer]:
+                    - generic [ref=e257]:
+                      - strong [ref=e258]: "1"
+                      - text: "|Engineering"
+                      - generic [ref=e259]: toggle off
+                    - img [ref=e260]
+              - listitem [ref=e263]
+              - listitem [ref=e264]
+              - listitem [ref=e265]
+            - list [ref=e268]:
+              - listitem [ref=e269]:
+                - button "Page 1" [ref=e270] [cursor=pointer]:
+                  - generic [ref=e271]: "1"
+              - listitem [ref=e272]:
+                - button "Page 2" [ref=e273] [cursor=pointer]:
+                  - generic [ref=e274]: "2"
+              - listitem [ref=e275]:
+                - button "Page 3" [ref=e276] [cursor=pointer]:
+                  - generic [ref=e277]: "3"
+              - listitem [ref=e278]:
+                - button "Page 4" [ref=e279] [cursor=pointer]:
+                  - generic [ref=e280]: "4"
+              - listitem [ref=e281]:
+                - button "Page 5" [ref=e282] [cursor=pointer]:
+                  - generic [ref=e283]: "5"
+              - listitem [ref=e284]:
+                - button "Page 6" [ref=e285] [cursor=pointer]:
+                  - generic [ref=e286]: "6"
+          - generic [ref=e288]:
+            - heading "People you may know" [level=2] [ref=e289]
+            - list [ref=e292]:
+              - listitem [ref=e293]:
+                - generic [ref=e297]:
+                  - img [ref=e299]
+                  - generic [ref=e300]:
+                    - generic [ref=e302]: LinkedIn Member
+                    - generic [ref=e305]: Technician at monday.com
+              - listitem [ref=e308]:
+                - generic [ref=e312]:
+                  - img [ref=e314]
+                  - generic [ref=e315]:
+                    - generic [ref=e317]: LinkedIn Member
+                    - generic [ref=e320]: Cleaning Company Owner at monday.com
+      - complementary "Advertisement" [ref=e323]:
+        - iframe [ref=e325]:
+          - link "Advertise on LinkedIn" [ref=f351e3] [cursor=pointer]:
+            - /url: https://www.linkedin.com/jobs/?trk=li_FA_global_careers_jobsgtm_jsFA_v1&mcid=6899045044465016833
+            - img "Advertise on LinkedIn" [ref=f351e4]
+        - generic [ref=e328]:
+          - generic [ref=e332]:
+            - generic [ref=e333]:
+              - heading "Pages people also viewed" [level=3] [ref=e335]
+              - list [ref=e337]:
+                - listitem [ref=e338]:
+                  - generic [ref=e339]:
+                    - generic [ref=e340]:
+                      - link "Asana page logo" [ref=e342] [cursor=pointer]:
+                        - /url: https://www.linkedin.com/company/asana/
+                        - generic "Asana page logo" [ref=e344]:
+                          - img "Asana page logo" [ref=e346]
+                      - generic [ref=e347]:
+                        - link "Asana Software Development 617,117 followers" [ref=e349] [cursor=pointer]:
+                          - /url: https://www.linkedin.com/company/asana/
+                          - generic [ref=e350]:
+                            - generic [ref=e352]: Asana
+                            - generic [ref=e354]: Software Development
+                            - generic [ref=e356]: 617,117 followers
+                        - link "Muhammad Azeem Muhammad & 58 other connections follow this page" [ref=e358] [cursor=pointer]:
+                          - /url: http://www.linkedin.com/company/asana/?showInNetworkFollowers=true
+                          - img "Muhammad Azeem" [ref=e361]
+                          - generic [ref=e362]: Muhammad & 58 other connections follow this page
+                    - button "Follow Asana" [ref=e364] [cursor=pointer]:
+                      - img [ref=e365]
+                      - generic [ref=e367]: Follow
+                - listitem [ref=e368]:
+                  - generic [ref=e369]:
+                    - generic [ref=e370]:
+                      - link "HubSpot page logo" [ref=e372] [cursor=pointer]:
+                        - /url: https://www.linkedin.com/company/hubspot/
+                        - generic "HubSpot page logo" [ref=e374]:
+                          - img "HubSpot page logo" [ref=e376]
+                      - generic [ref=e377]:
+                        - link "HubSpot Software Development 1,626,322 followers" [ref=e379] [cursor=pointer]:
+                          - /url: https://www.linkedin.com/company/hubspot/
+                          - generic [ref=e380]:
+                            - generic [ref=e382]: HubSpot
+                            - generic [ref=e384]: Software Development
+                            - generic [ref=e386]: 1,626,322 followers
+                        - link "Hannah Voss Hannah works here" [ref=e388] [cursor=pointer]:
+                          - /url: http://www.linkedin.com/in/hannahelizabethkayvoss
+                          - img "Hannah Voss" [ref=e391]
+                          - generic [ref=e392]: Hannah works here
+                    - button "Follow HubSpot" [ref=e394] [cursor=pointer]:
+                      - img [ref=e395]
+                      - generic [ref=e397]: Follow
+                - listitem [ref=e398]:
+                  - generic [ref=e399]:
+                    - generic [ref=e400]:
+                      - link "Notion page logo" [ref=e402] [cursor=pointer]:
+                        - /url: https://www.linkedin.com/company/notionhq/
+                        - generic "Notion page logo" [ref=e404]:
+                          - img "Notion page logo" [ref=e406]
+                      - generic [ref=e407]:
+                        - link "Notion Software Development 963,325 followers" [ref=e409] [cursor=pointer]:
+                          - /url: https://www.linkedin.com/company/notionhq/
+                          - generic [ref=e410]:
+                            - generic [ref=e412]: Notion
+                            - generic [ref=e414]: Software Development
+                            - generic [ref=e416]: 963,325 followers
+                        - link "Michael Broner Michael & 102 other connections follow this page" [ref=e418] [cursor=pointer]:
+                          - /url: http://www.linkedin.com/company/notionhq/?showInNetworkFollowers=true
+                          - img "Michael Broner" [ref=e421]
+                          - generic [ref=e422]: Michael & 102 other connections follow this page
+                    - button "Follow Notion" [ref=e424] [cursor=pointer]:
+                      - img [ref=e425]
+                      - generic [ref=e427]: Follow
+            - button "Show all similar pages" [ref=e429] [cursor=pointer]:
+              - img [ref=e430]
+              - generic [ref=e432]: Show all
+          - generic [ref=e438]:
+            - generic [ref=e439]:
+              - heading "People also follow" [level=3] [ref=e441]
+              - list [ref=e443]:
+                - listitem [ref=e444]:
+                  - generic [ref=e445]:
+                    - generic [ref=e446]:
+                      - link "Qualcomm page logo" [ref=e448] [cursor=pointer]:
+                        - /url: https://www.linkedin.com/company/qualcomm/
+                        - generic "Qualcomm page logo" [ref=e450]:
+                          - img "Qualcomm page logo" [ref=e452]
+                      - generic [ref=e453]:
+                        - link "Qualcomm Semiconductor Manufacturing 2,073,317 followers" [ref=e455] [cursor=pointer]:
+                          - /url: https://www.linkedin.com/company/qualcomm/
+                          - generic [ref=e456]:
+                            - generic [ref=e458]: Qualcomm
+                            - generic [ref=e460]: Semiconductor Manufacturing
+                            - generic [ref=e462]: 2,073,317 followers
+                        - link "Lee Elyashiv Lee & 1 other connection work here" [ref=e464] [cursor=pointer]:
+                          - /url: http://www.linkedin.com/search/results/people/?origin=COMPANY_PAGE_CANNED_SEARCH&network=%5B%22F%22%5D&currentCompany=%5B%222017%22%5D
+                          - img "Lee Elyashiv" [ref=e467]
+                          - generic [ref=e468]: Lee & 1 other connection work here
+                    - button "Follow Qualcomm" [ref=e470] [cursor=pointer]:
+                      - img [ref=e471]
+                      - generic [ref=e473]: Follow
+                - listitem [ref=e474]:
+                  - generic [ref=e475]:
+                    - generic [ref=e476]:
+                      - link "The Kind Leader page logo" [ref=e478] [cursor=pointer]:
+                        - /url: https://www.linkedin.com/company/kind-leader/
+                        - generic "The Kind Leader page logo" [ref=e480]:
+                          - img "The Kind Leader page logo" [ref=e482]
+                      - generic [ref=e483]:
+                        - link "The Kind Leader Technology, Information and Media 42,777 followers" [ref=e485] [cursor=pointer]:
+                          - /url: https://www.linkedin.com/company/kind-leader/
+                          - generic [ref=e486]:
+                            - generic [ref=e488]: The Kind Leader
+                            - generic [ref=e490]: Technology, Information and Media
+                            - generic [ref=e492]: 42,777 followers
+                        - link "Avital Sher- Fialkow is hiring Avital & 3 other connections follow this page" [ref=e494] [cursor=pointer]:
+                          - /url: http://www.linkedin.com/company/kind-leader/?showInNetworkFollowers=true
+                          - img "Avital Sher- Fialkow is hiring" [ref=e497]
+                          - generic [ref=e498]: Avital & 3 other connections follow this page
+                    - button "Follow The Kind Leader" [ref=e500] [cursor=pointer]:
+                      - img [ref=e501]
+                      - generic [ref=e503]: Follow
+                - listitem [ref=e504]:
+                  - generic [ref=e505]:
+                    - generic [ref=e506]:
+                      - link "Google Cloud page logo" [ref=e508] [cursor=pointer]:
+                        - /url: https://www.linkedin.com/showcase/google-cloud/
+                        - generic "Google Cloud page logo" [ref=e510]:
+                          - img "Google Cloud page logo" [ref=e512]
+                      - generic [ref=e513]:
+                        - link "Google Cloud Software Development 3,153,928 followers" [ref=e515] [cursor=pointer]:
+                          - /url: https://www.linkedin.com/showcase/google-cloud/
+                          - generic [ref=e516]:
+                            - generic [ref=e518]: Google Cloud
+                            - generic [ref=e520]: Software Development
+                            - generic [ref=e522]: 3,153,928 followers
+                        - link "Aleg Malinovsky Aleg & 272 other connections follow this page" [ref=e524] [cursor=pointer]:
+                          - /url: http://www.linkedin.com/showcase/google-cloud/?showInNetworkFollowers=true
+                          - img "Aleg Malinovsky" [ref=e527]
+                          - generic [ref=e528]: Aleg & 272 other connections follow this page
+                    - button "Follow Google Cloud" [ref=e530] [cursor=pointer]:
+                      - img [ref=e531]
+                      - generic [ref=e533]: Follow
+            - button "Show all recommended pages" [ref=e535] [cursor=pointer]:
+              - img [ref=e536]
+              - generic [ref=e538]: Show all
+        - generic [ref=e540]:
+          - iframe [ref=e542]:
+            - link "Advertise on LinkedIn" [ref=f352e3] [cursor=pointer]:
+              - /url: https://www.linkedin.com/jobs/?trk=li_FA_global_careers_jobsgtm_jsFA_v1&mcid=6899045044465016833
+              - img "Advertise on LinkedIn" [ref=f352e4]
+          - generic "LinkedIn Footer Content" [ref=e543]:
+            - generic [ref=e544]:
+              - list [ref=e545]:
+                - listitem [ref=e546]:
+                  - link "About" [ref=e547] [cursor=pointer]:
+                    - /url: https://about.linkedin.com/
+                    - generic [ref=e548]: About
+                - listitem [ref=e549]:
+                  - link "Accessibility" [ref=e550] [cursor=pointer]:
+                    - /url: https://www.linkedin.com/accessibility
+                    - generic [ref=e551]: Accessibility
+                - listitem [ref=e552]:
+                  - link "Help Center" [ref=e553] [cursor=pointer]:
+                    - /url: https://www.linkedin.com/help/linkedin?trk=footer_d_flagship3_company
+                    - generic [ref=e554]: Help Center
+                - listitem [ref=e555]:
+                  - button "Privacy & Terms" [ref=e557] [cursor=pointer]:
+                    - generic [ref=e559]:
+                      - text: Privacy & Terms
+                      - img [ref=e560]
+                - listitem [ref=e562]:
+                  - link "Ad Choices" [ref=e563] [cursor=pointer]:
+                    - /url: https://www.linkedin.com/help/linkedin/answer/62931
+                    - generic [ref=e564]: Ad Choices
+                - listitem [ref=e565]:
+                  - link "Advertising" [ref=e566] [cursor=pointer]:
+                    - /url: https://www.linkedin.com/ad/start?trk=n_nav_ads_rr
+                    - generic [ref=e567]: Advertising
+                - listitem [ref=e568]:
+                  - button "Business Services" [ref=e570] [cursor=pointer]:
+                    - generic [ref=e572]:
+                      - text: Business Services
+                      - img [ref=e573]
+                - listitem [ref=e575]:
+                  - button "Get the LinkedIn app" [ref=e578] [cursor=pointer]
+                - listitem [ref=e579]:
+                  - button "More options" [ref=e580] [cursor=pointer]: More
+              - generic [ref=e581]:
+                - img "LinkedIn" [ref=e582]:
+                  - img [ref=e583]
+                - text: LinkedIn Corporation © 2026
+    - generic:
+      - generic:
+        - complementary:
+          - generic [ref=e586]:
+            - generic [ref=e588] [cursor=pointer]:
+              - generic [ref=e589]:
+                - img "Oded Ben-Yair" [ref=e590]
+                - generic [ref=e592]: Status is online
+              - button "You are on the messaging overlay. Press enter to open the list of conversations." [ref=e593]:
+                - generic [ref=e594]:
+                  - generic [ref=e595]: Messaging
+                  - generic [ref=e596]: You are on the messaging overlay. Press enter to open the list of conversations.
+            - generic [ref=e597]:
+              - button "Open messenger dropdown menu" [ref=e599] [cursor=pointer]:
+                - img "Open messenger dropdown menu" [ref=e600]
+              - button "Compose message" [ref=e603] [cursor=pointer]:
+                - img [ref=e604]
+                - generic [ref=e606]: Compose message
+              - button "You are on the messaging overlay. Press enter to open the list of conversations." [ref=e607] [cursor=pointer]:
+                - img [ref=e608]
+                - generic [ref=e610]: You are on the messaging overlay. Press enter to open the list of conversations.
+          - dialog "Messaging" [ref=e611]:
+            - generic [ref=e612]:
+              - generic [ref=e613] [cursor=pointer]:
+                - generic [ref=e615]:
+                  - generic [ref=e617]:
+                    - img "David Strucke" [ref=e618]
+                    - generic [ref=e620]: Status is reachable
+                  - heading "David Strucke" [active] [level=2] [ref=e622]
+                - button "Close your conversation with David Strucke and Oded Ben-Yair" [ref=e624]:
+                  - img [ref=e625]
+                  - generic [ref=e627]: Close your conversation with David Strucke and Oded Ben-Yair
+              - generic [ref=e629]:
+                - link "Visit my website" [ref=e632] [cursor=pointer]:
+                  - /url: https://datastreamer.io/
+                  - strong [ref=e633]: Visit my website
+                - list [ref=e636]:
+                  - listitem
+                  - listitem [ref=e637]:
+                    - time [ref=e638]: Monday
+                    - generic [ref=e639]: David Strucke sent the following message at 1:43 PM
+                    - generic [ref=e640]:
+                      - link "View David’s profile David Strucke" [ref=e641] [cursor=pointer]:
+                        - /url: https://www.linkedin.com/in/ACoAAACpVzwBrVubV-bqhicRnlsrd_xHrMvxck8
+                        - generic [ref=e642]: View David’s profile
+                        - img "David Strucke" [ref=e643]
+                      - generic [ref=e644]:
+                        - generic [ref=e645]:
+                          - link "David Strucke" [ref=e646] [cursor=pointer]:
+                            - /url: https://www.linkedin.com/in/ACoAAACpVzwBrVubV-bqhicRnlsrd_xHrMvxck8
+                            - generic [ref=e647]: David Strucke
+                          - img "LinkedIn Verified" [ref=e648]
+                        - time [ref=e650]: • 1:43 PM
+                      - paragraph [ref=e654]:
+                        - text: Hi Oded, thanks for the connection!
+                        - text: Are you currently integrating and standardizing social and web data?
+                        - text: I'd love to hear how you're approaching it.
+                  - listitem [ref=e655]:
+                    - generic [ref=e656]: Oded Ben-Yair sent the following message at 3:54 PM
+                    - generic [ref=e657]:
+                      - link "View Oded’s profile Oded Ben-Yair" [ref=e658] [cursor=pointer]:
+                        - /url: https://www.linkedin.com/in/ACoAABEJXkIBpHRsj0zFy126tNlNuHKxpGElSpQ
+                        - generic [ref=e659]: View Oded’s profile
+                        - img "Oded Ben-Yair" [ref=e660]
+                      - generic [ref=e661]:
+                        - generic [ref=e662]:
+                          - link "Oded Ben-Yair" [ref=e663] [cursor=pointer]:
+                            - /url: https://www.linkedin.com/in/ACoAABEJXkIBpHRsj0zFy126tNlNuHKxpGElSpQ
+                            - generic [ref=e664]: Oded Ben-Yair
+                          - img "LinkedIn Verified" [ref=e665]
+                        - time [ref=e667]: • 3:54 PM
+                      - paragraph [ref=e671]: Hey David nice to meet you 🙂 not sure i fully grasp your question to be honest. I am actively running over 5 projects so you truly wish to have my piece you'll need to be a bit more clear
+                  - listitem [ref=e672]:
+                    - generic [ref=e673]: David Strucke sent the following message at 11:23 PM
+                    - generic [ref=e674]:
+                      - link "View David’s profile David Strucke" [ref=e675] [cursor=pointer]:
+                        - /url: https://www.linkedin.com/in/ACoAAACpVzwBrVubV-bqhicRnlsrd_xHrMvxck8
+                        - generic [ref=e676]: View David’s profile
+                        - img "David Strucke" [ref=e677]
+                      - generic [ref=e678]:
+                        - generic [ref=e679]:
+                          - link "David Strucke" [ref=e680] [cursor=pointer]:
+                            - /url: https://www.linkedin.com/in/ACoAAACpVzwBrVubV-bqhicRnlsrd_xHrMvxck8
+                            - generic [ref=e681]: David Strucke
+                          - img "LinkedIn Verified" [ref=e682]
+                        - time [ref=e684]: • 11:23 PM
+                      - paragraph [ref=e688]:
+                        - text: "Hi Oded, thanks for your reply! To clarify: our platform helps teams ingest, normalize, enrich, and move social and web data at scale. Datastreamer turns what can take weeks of engineering effort into minutes, letting your team focus on high-value product work instead of building and maintaining pipelines."
+                        - text: Given your projects, I’d suggest a short call to see if Datastreamer could simplify any of your workflows, or I can first send a quick video for more context.
+                  - listitem [ref=e689]:
+                    - time [ref=e690]: Tuesday
+                    - generic [ref=e691]: Oded Ben-Yair sent the following message at 4:47 AM
+                    - generic [ref=e692]:
+                      - link "View Oded’s profile Oded Ben-Yair" [ref=e693] [cursor=pointer]:
+                        - /url: https://www.linkedin.com/in/ACoAABEJXkIBpHRsj0zFy126tNlNuHKxpGElSpQ
+                        - generic [ref=e694]: View Oded’s profile
+                        - img "Oded Ben-Yair" [ref=e695]
+                      - generic [ref=e696]:
+                        - generic [ref=e697]:
+                          - link "Oded Ben-Yair" [ref=e698] [cursor=pointer]:
+                            - /url: https://www.linkedin.com/in/ACoAABEJXkIBpHRsj0zFy126tNlNuHKxpGElSpQ
+                            - generic [ref=e699]: Oded Ben-Yair
+                          - img "LinkedIn Verified" [ref=e700]
+                        - time [ref=e702]: • 4:47 AM
+                      - paragraph [ref=e706]: Quick video be great, tnx
+                  - listitem [ref=e707]:
+                    - time [ref=e708]: Thursday
+                    - generic [ref=e709]: David Strucke sent the following messages at 3:53 PM
+                    - generic [ref=e710]:
+                      - link "View David’s profile David Strucke" [ref=e711] [cursor=pointer]:
+                        - /url: https://www.linkedin.com/in/ACoAAACpVzwBrVubV-bqhicRnlsrd_xHrMvxck8
+                        - generic [ref=e712]: View David’s profile
+                        - img "David Strucke" [ref=e713]
+                      - generic [ref=e714]:
+                        - generic [ref=e715]:
+                          - link "David Strucke" [ref=e716] [cursor=pointer]:
+                            - /url: https://www.linkedin.com/in/ACoAAACpVzwBrVubV-bqhicRnlsrd_xHrMvxck8
+                            - generic [ref=e717]: David Strucke
+                          - img "LinkedIn Verified" [ref=e718]
+                        - time [ref=e720]: • 3:53 PM
+                      - paragraph [ref=e724]:
+                        - text: "Sure! Here is a quick video highlighting the latest updates to our platform and how it helps teams in your field accelerate social and web data workflows:"
+                        - link "https://www.youtube.com/watch?v=p5QrdEt2ptg" [ref=e725] [cursor=pointer]:
+                          - /url: https://www.youtube.com/watch?v=p5QrdEt2ptg
+                        - text: If you share any specific challenges or gaps you’ve noticed in your current workflow, I can either ask my team to record a 2-minute demo tailored to your needs, or we can jump on a quick call to walk through it together.
+                      - generic [ref=e730]:
+                        - generic [ref=e732]:
+                          - link "What's new in data pipelines (September 2025)":
+                            - /url: https://www.youtube.com/watch?v=p5QrdEt2ptg
+                            - generic "What's new in data pipelines (September 2025)" [ref=e734] [cursor=pointer]:
+                              - generic [ref=e735]: What's new in data pipelines (September 2025)
+                        - link [ref=e737] [cursor=pointer]:
+                          - /url: https://www.youtube.com/watch?v=p5QrdEt2ptg
+                          - article [ref=e738]:
+                            - generic [ref=e739]: What's new in data pipelines (September 2025)
+                            - generic [ref=e740]: youtube.com
+                    - img "Seen by David Strucke at 3:53 PM." [ref=e742]
+                  - listitem [ref=e743]
+                  - listitem [ref=e744]:
+                    - generic [ref=e745]:
+                      - button "Scroll quick replies left" [disabled] [ref=e746]:
+                        - img
+                        - generic: Scroll quick replies left
+                      - list [ref=e747]:
+                        - listitem [ref=e748]:
+                          - button "Reply to conversation with “No, thanks”" [ref=e749] [cursor=pointer]:
+                            - generic [ref=e750]: Reply to conversation with “No, thanks”
+                            - generic: No, thanks
+                        - listitem [ref=e751]:
+                          - button "Reply to conversation with “No, thank you”" [ref=e752] [cursor=pointer]:
+                            - generic [ref=e753]: Reply to conversation with “No, thank you”
+                            - generic: No, thank you
+                        - listitem [ref=e754]:
+                          - button "Reply to conversation with “Thanks”" [ref=e755] [cursor=pointer]:
+                            - generic [ref=e756]: Reply to conversation with “Thanks”
+                            - generic: Thanks
+                      - button "Scroll quick replies right" [ref=e757] [cursor=pointer]:
+                        - img [ref=e758]
+                        - generic [ref=e760]: Scroll quick replies right
+                  - listitem
+                - generic [ref=e761]:
+                  - generic [ref=e762]:
+                    - generic [ref=e764]:
+                      - textbox "Write a message…" [ref=e765]:
+                        - paragraph [ref=e766]
+                      - text: Write a message…
+                    - button "Maximize compose field" [ref=e768] [cursor=pointer]:
+                      - img [ref=e769]
+                      - generic [ref=e771]: Maximize compose field
+                  - generic [ref=e772]:
+                    - generic [ref=e773]:
+                      - button "Attach an image to your conversation with David Strucke" [ref=e775] [cursor=pointer]:
+                        - img [ref=e776]
+                        - generic [ref=e778]: Attach an image to your conversation with David Strucke
+                      - button "Attach a file to your conversation with David Strucke" [ref=e780] [cursor=pointer]:
+                        - img [ref=e781]
+                        - generic [ref=e783]: Attach a file to your conversation with David Strucke
+                      - button "Open GIF Keyboard" [ref=e785] [cursor=pointer]:
+                        - img [ref=e786]
+                        - generic [ref=e788]: Open GIF Keyboard
+                      - button "Open Emoji Keyboard" [ref=e791] [cursor=pointer]:
+                        - generic:
+                          - img
+                        - generic [ref=e792]: Open Emoji Keyboard
+                    - generic [ref=e793]:
+                      - button "Send" [disabled] [ref=e795]
+                      - button "Open send options" [ref=e798] [cursor=pointer]:
+                        - img [ref=e799]
+                        - generic [ref=e801]: Open send options
+        - complementary "AI-powered assistant to get help with your career, jobs etc"

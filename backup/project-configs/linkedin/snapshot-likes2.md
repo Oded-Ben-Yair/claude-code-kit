@@ -1,0 +1,3290 @@
+- generic:
+  - generic:
+    - generic:
+      - heading "0 notifications" [level=2]
+    - generic:
+      - generic:
+        - button:
+          - generic:
+            - generic: Skip to main content
+        - button:
+          - generic:
+            - img
+      - generic:
+        - generic:
+          - banner:
+            - generic:
+              - generic:
+                - generic:
+                  - button "LinkedIn":
+                    - img "LinkedIn"
+                  - generic:
+                    - search:
+                      - generic:
+                        - generic:
+                          - img
+                        - textbox "Search"
+                  - generic:
+                    - generic:
+                      - generic:
+                        - generic:
+                          - generic:
+                            - generic:
+                              - generic:
+                                - figure
+                      - generic:
+                        - generic:
+                          - navigation:
+                            - list:
+                              - listitem:
+                                - button "Home, 1 new notification":
+                                  - generic:
+                                    - img
+                                  - generic:
+                                    - generic: Home
+                              - listitem:
+                                - button "My Network, 2 new notifications":
+                                  - generic:
+                                    - img
+                                    - generic: "2"
+                                  - generic:
+                                    - generic: My Network
+                              - listitem:
+                                - button "Jobs, 0 new notifications":
+                                  - generic:
+                                    - img
+                                  - generic:
+                                    - generic: Jobs
+                              - listitem:
+                                - link "Messaging, 4 new notifications":
+                                  - /url: https://www.linkedin.com/messaging/
+                                  - generic:
+                                    - img
+                                    - generic: "4"
+                                  - generic:
+                                    - generic: Messaging
+                              - listitem:
+                                - link "Notifications, 11 new notifications":
+                                  - /url: https://www.linkedin.com/notifications/
+                                  - generic:
+                                    - img
+                                    - generic: "11"
+                                  - generic:
+                                    - generic: Notifications
+                              - listitem:
+                                - button "Me":
+                                  - generic:
+                                    - figure
+                                  - generic:
+                                    - generic:
+                                      - text: Me
+                                      - img
+                      - generic:
+                        - generic:
+                          - navigation:
+                            - list:
+                              - listitem:
+                                - button "For Business":
+                                  - generic:
+                                    - img
+                                  - generic:
+                                    - generic:
+                                      - text: For Business
+                                      - img
+                          - generic:
+                            - generic:
+                              - 'link "Reactivate Premium: 50% Off"':
+                                - /url: https://www.linkedin.com/premium/redeem/?_ed=0_bvLJH59RTSY-u5c6PMUa4I-DG9vGhJ1MqkIEQp20lT9&upsellOrderOrigin=Tracking%3Av1%3Apremium_nav_upsell_text_winback%3ANav%3AIn-Product&referenceId=%2BV9mLX%2BHRUurBds%2F1GKjog%3D%3D&customKey=wb_b&redeemTypeV2=DISCOUNT
+                                - generic:
+                                  - paragraph:
+                                    - 'link "Reactivate Premium: 50% Off"':
+                                      - /url: https://www.linkedin.com/premium/redeem/?_ed=0_bvLJH59RTSY-u5c6PMUa4I-DG9vGhJ1MqkIEQp20lT9&upsellOrderOrigin=Tracking%3Av1%3Apremium_nav_upsell_text_winback%3ANav%3AIn-Product&referenceId=%2BV9mLX%2BHRUurBds%2F1GKjog%3D%3D&customKey=wb_b&redeemTypeV2=DISCOUNT
+        - main:
+          - generic:
+            - main:
+              - generic:
+                - generic:
+                  - generic:
+                    - generic:
+                      - generic:
+                        - generic:
+                          - generic:
+                            - generic:
+                              - generic:
+                                - generic:
+                                  - link:
+                                    - /url: https://www.linkedin.com/in/oded-ben-yair-ai/
+                                    - generic:
+                                      - generic:
+                                        - figure
+                                      - generic:
+                                        - figure
+                                  - generic:
+                                    - link "Oded Ben-Yair Founding AI Engineer | Multi-LLM Routing & Evaluation in Production | Voice AI · RAG | Azure + Python Tel Aviv-Yafo, Tel Aviv District":
+                                      - /url: https://www.linkedin.com/in/oded-ben-yair-ai/
+                                      - generic:
+                                        - generic:
+                                          - generic:
+                                            - paragraph: Oded Ben-Yair
+                                          - img
+                                        - generic:
+                                          - paragraph: Founding AI Engineer | Multi-LLM Routing & Evaluation in Production | Voice AI · RAG | Azure + Python
+                                        - paragraph: Tel Aviv-Yafo, Tel Aviv District
+                                    - link "Be Z Online":
+                                      - /url: https://www.linkedin.com/in/oded-ben-yair-ai/
+                                      - generic:
+                                        - figure
+                                        - paragraph: Be Z Online
+                          - generic:
+                            - generic:
+                              - generic:
+                                - generic:
+                                  - 'link "Get 4x more profile views with Premium Reactivate Premium: 50% Off"':
+                                    - /url: https://www.linkedin.com/premium/redeem/?_ed=0_bvLJH59RTSY-u5c6PMUa4I-DG9vGhJ1MqkIEQp20lT9&upsellOrderOrigin=Tracking%3Av1%3Apremium_homepage_identity_upsell_winback%3ANav%3AIn-Product&referenceId=B0Se9KbVQVmljoR%2Bh7LoAQ%3D%3D&customKey=wb_b&redeemTypeV2=DISCOUNT
+                                    - generic:
+                                      - paragraph: Get 4x more profile views with Premium
+                                      - generic:
+                                        - generic:
+                                          - img
+                                          - 'button "Reactivate Premium: 50% Off"':
+                                            - paragraph: "Reactivate Premium: 50% Off"
+                          - generic:
+                            - generic:
+                              - menu:
+                                - link "Profile viewers 175":
+                                  - /url: https://www.linkedin.com/me/profile-views/
+                                  - generic "Profile viewers 175":
+                                    - generic:
+                                      - paragraph: Profile viewers
+                                    - paragraph: "175"
+                                - link "Post impressions 387":
+                                  - /url: https://www.linkedin.com/analytics/creator/content/
+                                  - generic "Post impressions 387":
+                                    - generic:
+                                      - paragraph: Post impressions
+                                    - paragraph: "387"
+                          - generic:
+                            - generic:
+                              - menu:
+                                - link "Saved items":
+                                  - /url: https://www.linkedin.com/my-items/saved-posts/
+                                  - generic:
+                                    - img
+                                    - paragraph: Saved items
+                                - link "Groups":
+                                  - /url: https://www.linkedin.com/groups/
+                                  - generic:
+                                    - img
+                                    - paragraph: Groups
+                                - link "Newsletters":
+                                  - /url: https://www.linkedin.com/mynetwork/network-manager/newsletters/
+                                  - generic:
+                                    - img
+                                    - paragraph: Newsletters
+                                - link "Events":
+                                  - /url: https://www.linkedin.com/events/
+                                  - generic:
+                                    - img
+                                    - paragraph: Events
+                  - generic:
+                    - generic:
+                      - generic:
+                        - generic:
+                          - generic:
+                            - link:
+                              - /url: https://www.linkedin.com/in/oded-ben-yair-ai/
+                              - figure
+                            - generic:
+                              - button "Start a post":
+                                - generic "Start a post":
+                                  - generic:
+                                    - generic:
+                                      - paragraph: Start a post
+                                      - generic:
+                                        - paragraph
+                          - generic:
+                            - button "Video":
+                              - generic:
+                                - img
+                                - paragraph: Video
+                            - button "Photo":
+                              - generic:
+                                - img
+                                - paragraph: Photo
+                            - link "Write article":
+                              - /url: /article/new/
+                              - generic:
+                                - img
+                                - paragraph: Write article
+                      - generic:
+                        - 'button "Sort by: Top"':
+                          - generic:
+                            - paragraph:
+                              - text: "Sort by:"
+                              - strong: Top
+                            - img
+                      - generic:
+                        - generic:
+                          - button "New posts":
+                            - generic:
+                              - img
+                              - generic: New posts
+                      - generic:
+                        - generic:
+                          - generic:
+                            - listitem:
+                              - generic:
+                                - generic:
+                                  - heading "Feed post" [level=2]:
+                                    - generic: Feed post
+                                  - generic:
+                                    - 'link "View company: PassportCard"':
+                                      - /url: https://www.linkedin.com/company/passportcard/posts/
+                                      - 'figure "View company: PassportCard"':
+                                        - 'img "View company: PassportCard"'
+                                    - 'link "PassportCard 5d • Edited • Visibility: Global"':
+                                      - /url: https://www.linkedin.com/company/passportcard/posts/
+                                      - generic:
+                                        - generic:
+                                          - paragraph: PassportCard
+                                        - generic:
+                                          - paragraph:
+                                            - text: 5d • Edited •
+                                            - 'img "Visibility: Global"'
+                                    - button "View more options":
+                                      - generic:
+                                        - img
+                                    - button "Hide Post":
+                                      - generic:
+                                        - img
+                                  - paragraph:
+                                    - generic:
+                                      - text: When the reality of a "code-only" era is over, how does an organization maintain its right to exist?
+                                      - text: We recently welcomed the
+                                      - link "Ximus":
+                                        - /url: https://www.linkedin.com/company/ximusforum/
+                                        - generic:
+                                          - strong: Ximus
+                                      - text: forum to our offices for an enrichment day to answer exactly that. We focused on what it actually takes to be "Future Ready." We took them behind the scenes of our operations, from the Labs to our emergency response centers, to see the way we manage global emergencies in real-time.
+                                      - text: In a world obsessed with what AI can do for the bottom line, the conversation led by
+                                      - link "Alon Ketzef":
+                                        - /url: https://www.linkedin.com/in/alon-ketzef/
+                                        - generic:
+                                          - strong: Alon Ketzef
+                                      - text: "took a different turn: To survive, organizations must stop asking what technology can do for them and start asking how it serves the people who rely on them."
+                                      - text: Algorithms have become a commodity, and software-only organizations are now highly vulnerable. Survival now depends on navigating the complex regulations and multidisciplinary operations that code cannot solve alone.
+                                      - text: We view AI as the infrastructure for human judgment, not a replacement for it. Whether managing a crisis in Amsterdam or a medical emergency in Thailand, our tech is there to empower our people, not replace them.
+                                      - text: Ultimately, the future belongs to those who use technology to be more human, not less.
+                                      - button:
+                                        - generic [ref=e505] [cursor=pointer]: … more
+                                  - generic:
+                                    - button "View image":
+                                      - figure "View image":
+                                        - img "View image"
+                                  - generic:
+                                    - button "21 reactions":
+                                      - generic:
+                                        - img
+                                        - img
+                                        - generic:
+                                          - paragraph:
+                                            - generic: 21 reactions
+                                            - text: "21"
+                                    - generic:
+                                      - button:
+                                        - paragraph
+                                      - button:
+                                        - paragraph
+                                  - generic:
+                                    - generic:
+                                      - generic:
+                                        - generic:
+                                          - generic:
+                                            - 'button "Reaction button state: no reaction"':
+                                              - generic:
+                                                - img
+                                                - generic: Like
+                                        - button "Open reactions menu":
+                                          - generic:
+                                            - img
+                                    - button "Comment":
+                                      - generic:
+                                        - img
+                                        - generic:
+                                          - generic: Comment
+                                    - button "Repost":
+                                      - generic:
+                                        - img
+                                        - generic:
+                                          - generic: Repost
+                                    - button "Send":
+                                      - generic:
+                                        - img
+                                        - generic:
+                                          - generic: Send
+                      - generic:
+                        - generic:
+                          - generic:
+                            - listitem:
+                              - generic:
+                                - generic:
+                                  - heading "Feed post" [level=2]:
+                                    - generic: Feed post
+                                  - generic:
+                                    - generic:
+                                      - figure
+                                      - figure
+                                      - generic:
+                                        - paragraph:
+                                          - link "Noam Lapid":
+                                            - /url: https://www.linkedin.com/in/noamlapid/
+                                            - strong: Noam Lapid
+                                          - text: ","
+                                          - link "Luca Martini":
+                                            - /url: https://www.linkedin.com/in/luca-martini-4a9950227/
+                                            - strong: Luca Martini
+                                          - text: and 8 other connections follow
+                                          - link "Qdrant":
+                                            - /url: https://www.linkedin.com/company/qdrant/posts/
+                                            - strong: Qdrant
+                                    - button "View more options":
+                                      - generic:
+                                        - img
+                                  - generic:
+                                    - 'link "View company: Qdrant"':
+                                      - /url: https://www.linkedin.com/company/qdrant/posts/
+                                      - 'figure "View company: Qdrant"':
+                                        - 'img "View company: Qdrant"'
+                                    - link "Qdrant 51,988 followers Promoted":
+                                      - /url: https://www.linkedin.com/company/qdrant/posts/
+                                      - generic:
+                                        - generic:
+                                          - paragraph: Qdrant
+                                        - generic:
+                                          - paragraph: 51,988 followers
+                                        - generic:
+                                          - paragraph: Promoted
+                                  - generic:
+                                    - generic:
+                                      - generic:
+                                        - paragraph:
+                                          - generic:
+                                            - text: Are you a Artificial Intelligence Engineer looking to enhance your RAG methods? Learn how to evaluate your RAG system for both accuracy and quality, and identify common problems before they arise. Download Qdrant's "Best practices for RAG evaluation" guide today.
+                                            - button:
+                                              - generic [ref=e611] [cursor=pointer]: … more
+                                        - generic:
+                                          - generic:
+                                            - button "Keep your GenAI applications reliable, relevant, and high-performing. View Lead Gen Form":
+                                              - figure "Keep your GenAI applications reliable, relevant, and high-performing. View Lead Gen Form":
+                                                - img "Keep your GenAI applications reliable, relevant, and high-performing. View Lead Gen Form"
+                                          - button "Keep your GenAI applications reliable, relevant, and high-performing. 467 submits":
+                                            - generic:
+                                              - generic:
+                                                - generic:
+                                                  - paragraph:
+                                                    - generic: Keep your GenAI applications reliable, relevant, and high-performing.
+                                                    - text: Keep your GenAI applications reliable, relevant, and high-performing.
+                                                - generic:
+                                                  - paragraph: 467 submits
+                                        - generic:
+                                          - button "Download":
+                                            - generic:
+                                              - img
+                                              - generic: Download
+                                  - generic:
+                                    - button "24 reactions":
+                                      - generic:
+                                        - img
+                                        - img
+                                        - generic:
+                                          - paragraph:
+                                            - generic: 24 reactions
+                                            - text: "24"
+                                    - generic:
+                                      - button "1 comment":
+                                        - paragraph:
+                                          - generic: 1 comment
+                                          - generic: 1 comment
+                                      - button:
+                                        - paragraph
+                                  - generic:
+                                    - generic:
+                                      - generic:
+                                        - generic:
+                                          - generic:
+                                            - 'button "Reaction button state: no reaction"':
+                                              - generic:
+                                                - img
+                                                - generic: Like
+                                        - button "Open reactions menu":
+                                          - generic:
+                                            - img
+                                    - button "Comment":
+                                      - generic:
+                                        - img
+                                        - generic:
+                                          - generic: Comment
+                                    - button "Repost":
+                                      - generic:
+                                        - img
+                                        - generic:
+                                          - generic: Repost
+                                    - button "Send":
+                                      - generic:
+                                        - img
+                                        - generic:
+                                          - generic: Send
+                      - generic:
+                        - generic:
+                          - generic:
+                            - listitem:
+                              - generic:
+                                - generic:
+                                  - heading "Feed post" [level=2]:
+                                    - generic: Feed post
+                                  - generic:
+                                    - link "View Uriel Ofir 🦕 🐧’s profile":
+                                      - /url: https://www.linkedin.com/in/uriel-ofir/
+                                      - figure "View Uriel Ofir 🦕 🐧’s profile":
+                                        - img "View Uriel Ofir 🦕 🐧’s profile"
+                                    - 'link "Uriel Ofir 🦕 🐧 Verified Profile 1st COBOL? Open Source? Community? Talk to me! 15h • Visibility: Global"':
+                                      - /url: https://www.linkedin.com/in/uriel-ofir/
+                                      - generic:
+                                        - generic:
+                                          - paragraph:
+                                            - generic: Uriel Ofir 🦕 🐧 Verified Profile 1st
+                                            - generic:
+                                              - text: Uriel Ofir 🦕 🐧
+                                              - generic:
+                                                - img
+                                              - generic: • 1st
+                                        - generic:
+                                          - paragraph: COBOL? Open Source? Community? Talk to me!
+                                        - generic:
+                                          - paragraph:
+                                            - text: 15h •
+                                            - 'img "Visibility: Global"'
+                                    - button "View more options":
+                                      - generic:
+                                        - img
+                                    - button "Hide Post":
+                                      - generic:
+                                        - img
+                                  - generic:
+                                    - generic:
+                                      - paragraph:
+                                        - generic:
+                                          - text: האם בוגרי מדמח באוניברסיטה מוצאים עבודה במצב השוק הנוכחי?
+                                          - text: אני טוען שכן.
+                                          - link "Niv Itzhaky ★":
+                                            - /url: https://www.linkedin.com/in/nivitzhaky/
+                                            - generic:
+                                              - strong: Niv Itzhaky ★
+                                          - text: טוען שלא.
+                                          - text: אני לא מכיר את הסטודנטים בשנים האחרונות באוניברסיטאות.
+                                          - text: אני מקווה שיש בין קוראי הפוסט הזה שמכירים.
+                                          - text: אז אשמח שתענו על הסקר בתקווה שייתן קצת בסיס עובדתי לויכוח שלי עם ניב.
+                                          - button:
+                                            - generic [ref=e730] [cursor=pointer]: … more
+                                  - generic:
+                                    - button "Show translation":
+                                      - generic:
+                                        - generic: Show translation
+                                  - generic:
+                                    - link "אני מכיר בוגרי אוניברסיטאות מהשנים האחרונות":
+                                      - /url: https://www.linkedin.com/feed/update/urn:li:activity:7431026280998969344/?originTrackingId=7qZmCrAXDvXnHSvQD6gNdg%3D%3D
+                                      - paragraph: אני מכיר בוגרי אוניברסיטאות מהשנים האחרונות
+                                    - generic:
+                                      - paragraph: The author can see how you vote.
+                                      - paragraph:
+                                        - link "Learn more":
+                                          - /url: https://www.linkedin.com/help/linkedin/answer/119171/
+                                    - generic:
+                                      - button "רובם מצאו עבודה תוך שנה.":
+                                        - generic:
+                                          - generic:
+                                            - generic: רובם מצאו עבודה תוך שנה.
+                                      - button "רובם לא מצאו עבודה תוך שנה.":
+                                        - generic:
+                                          - generic:
+                                            - generic: רובם לא מצאו עבודה תוך שנה.
+                                      - button "סקרן":
+                                        - generic:
+                                          - generic:
+                                            - generic: סקרן
+                                    - generic:
+                                      - button "331 votes":
+                                        - paragraph: 331 votes
+                                      - paragraph: •
+                                      - paragraph: 2w left
+                                      - generic:
+                                        - paragraph: •
+                                        - button "Show results":
+                                          - paragraph: Show results
+                                  - generic:
+                                    - button "5 reactions":
+                                      - generic:
+                                        - img
+                                        - img
+                                        - generic:
+                                          - paragraph:
+                                            - generic: 5 reactions
+                                            - text: "5"
+                                    - generic:
+                                      - button "28 comments":
+                                        - paragraph:
+                                          - generic: 28 comments
+                                          - generic: 28 comments
+                                      - button:
+                                        - paragraph
+                                  - generic:
+                                    - generic:
+                                      - generic:
+                                        - 'button "Reaction button state: Like" [active] [ref=e3713] [cursor=pointer]':
+                                          - generic [ref=e799]:
+                                            - img [ref=e3714]
+                                            - generic [ref=e802]: Like
+                                        - button "Open reactions menu":
+                                          - generic:
+                                            - img
+                                    - button "Comment":
+                                      - generic:
+                                        - img
+                                        - generic:
+                                          - generic: Comment
+                                    - button "Repost":
+                                      - generic:
+                                        - img
+                                        - generic:
+                                          - generic: Repost
+                                    - button "Send":
+                                      - generic:
+                                        - img
+                                        - generic:
+                                          - generic: Send
+                              - generic:
+                                - generic:
+                                  - figure
+                                  - generic:
+                                    - generic:
+                                      - generic "Text editor for creating comment":
+                                        - generic:
+                                          - generic:
+                                            - generic:
+                                              - generic:
+                                                - generic:
+                                                  - textbox:
+                                                    - paragraph: Add a comment...
+                                          - generic:
+                                            - button "Show Emoji Picker":
+                                              - generic:
+                                                - img
+                                            - button "Share photo":
+                                              - generic:
+                                                - img
+                              - generic:
+                                - generic:
+                                  - button "Most relevant Most relevant":
+                                    - generic:
+                                      - generic:
+                                        - generic:
+                                          - paragraph: Most relevant
+                                          - img "Most relevant"
+                                - generic:
+                                  - generic:
+                                    - generic:
+                                      - generic:
+                                        - generic:
+                                          - generic:
+                                            - generic:
+                                              - link "View Oded Ben-Yair’s profile":
+                                                - /url: https://www.linkedin.com/in/oded-ben-yair-ai/
+                                                - figure "View Oded Ben-Yair’s profile":
+                                                  - img "View Oded Ben-Yair’s profile"
+                                            - generic:
+                                              - generic:
+                                                - generic:
+                                                  - link "Oded Ben-Yair Verified Profile You Founding AI Engineer | Multi-LLM Routing & Evaluation in Production | Voice AI · RAG | Azure + Python":
+                                                    - /url: https://www.linkedin.com/in/oded-ben-yair-ai/
+                                                    - generic:
+                                                      - generic:
+                                                        - generic:
+                                                          - paragraph:
+                                                            - generic: Oded Ben-Yair Verified Profile You
+                                                            - generic:
+                                                              - text: Oded Ben-Yair
+                                                              - generic:
+                                                                - img
+                                                              - generic: • You
+                                                      - generic:
+                                                        - paragraph: Founding AI Engineer | Multi-LLM Routing & Evaluation in Production | Voice AI · RAG | Azure + Python
+                                                  - generic:
+                                                    - paragraph: now
+                                                  - button "View more options for Oded Ben-Yair’s comment.":
+                                                    - generic:
+                                                      - img
+                                              - generic:
+                                                - generic:
+                                                  - generic:
+                                                    - paragraph:
+                                                      - generic: אני רואה את זה מהצד של ההייטק. חברות שמגייסות עכשיו מחפשות מישהו שיודע לכתוב קוד וגם להפעיל מודלי שפה ביחד. בוגרים שלמדו גם ML בצד יש להם יתרון ברור על פני מי שלמד רק CS קלאסי.
+                                              - generic:
+                                                - generic:
+                                                  - generic:
+                                                    - generic:
+                                                      - generic:
+                                                        - 'button "Reaction button state: no reaction"':
+                                                          - generic:
+                                                            - generic:
+                                                              - 'button "Reaction button state: no reaction"':
+                                                                - generic:
+                                                                  - 'button "Reaction button state: no reaction"':
+                                                                    - generic: "Reaction button state: no reaction"
+                                                                    - text: Like
+                                                        - button "Open reactions menu":
+                                                          - generic:
+                                                            - img
+                                                  - generic:
+                                                    - button "Reply":
+                                                      - generic:
+                                                        - generic: Reply
+                                  - generic:
+                                    - generic:
+                                      - generic:
+                                        - generic:
+                                          - generic:
+                                            - generic:
+                                              - link "View Uriel Ofir 🦕 🐧’s profile":
+                                                - /url: https://www.linkedin.com/in/uriel-ofir/
+                                                - figure "View Uriel Ofir 🦕 🐧’s profile":
+                                                  - img "View Uriel Ofir 🦕 🐧’s profile"
+                                            - generic:
+                                              - generic:
+                                                - generic:
+                                                  - link "Uriel Ofir 🦕 🐧 Author COBOL? Open Source? Community? Talk to me!":
+                                                    - /url: https://www.linkedin.com/in/uriel-ofir/
+                                                    - generic:
+                                                      - generic:
+                                                        - generic:
+                                                          - paragraph: Uriel Ofir 🦕 🐧
+                                                        - paragraph: Author
+                                                      - generic:
+                                                        - paragraph: COBOL? Open Source? Community? Talk to me!
+                                                  - generic:
+                                                    - paragraph: 14h
+                                                  - button "View more options for Uriel Ofir 🦕 🐧’s comment.":
+                                                    - generic:
+                                                      - img
+                                              - generic:
+                                                - generic:
+                                                  - generic:
+                                                    - generic:
+                                                      - paragraph:
+                                                        - generic: מה שבטוח שרוב קוראי הפוסט הם סקרנים שלא מכירים בוגרי אוניברסיטאות :)
+                                                  - generic:
+                                                    - button "Show translation":
+                                                      - generic:
+                                                        - generic: Show translation
+                                              - generic:
+                                                - generic:
+                                                  - generic:
+                                                    - generic:
+                                                      - generic:
+                                                        - 'button "Reaction button state: no reaction"':
+                                                          - generic:
+                                                            - generic:
+                                                              - 'button "Reaction button state: no reaction"':
+                                                                - generic:
+                                                                  - 'button "Reaction button state: no reaction"':
+                                                                    - generic: "Reaction button state: no reaction"
+                                                                    - text: Like
+                                                        - button "Open reactions menu":
+                                                          - generic:
+                                                            - img
+                                                  - generic:
+                                                    - button "Reply":
+                                                      - generic:
+                                                        - generic: Reply
+                                                    - paragraph: "1"
+                                  - generic:
+                                    - generic:
+                                      - generic:
+                                        - generic:
+                                          - generic:
+                                            - generic:
+                                              - link "View Niv Itzhaky ★’s profile":
+                                                - /url: https://www.linkedin.com/in/nivitzhaky/
+                                                - figure "View Niv Itzhaky ★’s profile":
+                                                  - img "View Niv Itzhaky ★’s profile"
+                                            - generic:
+                                              - generic:
+                                                - generic:
+                                                  - link "Niv Itzhaky ★ Verified Profile Following Senior Backend & AI Architect | Python • Java • Big Data | Mentor | 1M+ Impressions/ month":
+                                                    - /url: https://www.linkedin.com/in/nivitzhaky/
+                                                    - generic:
+                                                      - generic:
+                                                        - generic:
+                                                          - paragraph:
+                                                            - generic: Niv Itzhaky ★ Verified Profile Following
+                                                            - generic:
+                                                              - text: Niv Itzhaky ★
+                                                              - generic:
+                                                                - img
+                                                              - generic: • Following
+                                                      - generic:
+                                                        - paragraph: Senior Backend & AI Architect | Python • Java • Big Data | Mentor | 1M+ Impressions/ month
+                                                  - generic:
+                                                    - paragraph: 14h
+                                                  - button "View more options for Niv Itzhaky ★’s comment.":
+                                                    - generic:
+                                                      - img
+                                              - generic:
+                                                - generic:
+                                                  - generic:
+                                                    - generic:
+                                                      - paragraph:
+                                                        - generic: או שהם סקרנים שמכירים בוגרי אוניברסיטאות מיואשים
+                                                  - generic:
+                                                    - button "Show translation":
+                                                      - generic:
+                                                        - generic: Show translation
+                                              - generic:
+                                                - generic:
+                                                  - generic:
+                                                    - generic:
+                                                      - generic:
+                                                        - 'button "Reaction button state: no reaction"':
+                                                          - generic:
+                                                            - generic:
+                                                              - 'button "Reaction button state: no reaction"':
+                                                                - generic:
+                                                                  - 'button "Reaction button state: no reaction"':
+                                                                    - generic: "Reaction button state: no reaction"
+                                                                    - text: Like
+                                                        - button "Open reactions menu":
+                                                          - generic:
+                                                            - img
+                                                  - generic:
+                                                    - button "Reply":
+                                                      - generic:
+                                                        - generic: Reply
+                                  - generic:
+                                    - generic:
+                                      - generic:
+                                        - generic:
+                                          - generic:
+                                            - generic:
+                                              - link "View Itai Zigdon’s profile":
+                                                - /url: https://www.linkedin.com/in/itaizigdon/
+                                                - figure "View Itai Zigdon’s profile":
+                                                  - img "View Itai Zigdon’s profile"
+                                            - generic:
+                                              - generic:
+                                                - generic:
+                                                  - link "Itai Zigdon Verified Profile 2nd Backend Engineer at RAD":
+                                                    - /url: https://www.linkedin.com/in/itaizigdon/
+                                                    - generic:
+                                                      - generic:
+                                                        - generic:
+                                                          - paragraph:
+                                                            - generic: Itai Zigdon Verified Profile 2nd
+                                                            - generic:
+                                                              - text: Itai Zigdon
+                                                              - generic:
+                                                                - img
+                                                              - generic: • 2nd
+                                                      - generic:
+                                                        - paragraph: Backend Engineer at RAD
+                                                  - generic:
+                                                    - paragraph: 15h
+                                                  - button "View more options for Itai Zigdon’s comment.":
+                                                    - generic:
+                                                      - img
+                                              - generic:
+                                                - generic:
+                                                  - generic:
+                                                    - generic:
+                                                      - paragraph:
+                                                        - generic: אני לא מכיר אדם אחד מהמחזור שלי שלא מצא עבודה, ורובם המוחלט מצא תוך שנה או במהלך הלימודים. כן יש משבר ג'וניורים, כן רבים מהם לא מוצאים עבודה, במיוחד כשלא מדובר בוגרי אוניברסיטאות, אבל פחות סביר שתראה את אלו שכן מוצאים זועקים את זה ברשתות החברתיות.
+                                                  - generic:
+                                                    - button "Show translation":
+                                                      - generic:
+                                                        - generic: Show translation
+                                              - generic:
+                                                - generic:
+                                                  - generic:
+                                                    - generic:
+                                                      - generic:
+                                                        - 'button "Reaction button state: no reaction"':
+                                                          - generic:
+                                                            - generic:
+                                                              - 'button "Reaction button state: no reaction"':
+                                                                - generic:
+                                                                  - 'button "Reaction button state: no reaction"':
+                                                                    - generic: "Reaction button state: no reaction"
+                                                                    - text: Like
+                                                        - button "Open reactions menu":
+                                                          - generic:
+                                                            - img
+                                                    - button "4 reactions":
+                                                      - generic:
+                                                        - img
+                                                        - img
+                                                        - generic:
+                                                          - paragraph:
+                                                            - generic: 4 reactions
+                                                            - text: "4"
+                                                  - generic:
+                                                    - button "Reply":
+                                                      - generic:
+                                                        - generic: Reply
+                                                    - paragraph: "4"
+                                  - generic:
+                                    - generic:
+                                      - generic:
+                                        - generic:
+                                          - button "See previous replies":
+                                            - paragraph: See previous replies
+                                  - generic:
+                                    - generic:
+                                      - generic:
+                                        - generic:
+                                          - generic:
+                                            - generic:
+                                              - link "View Niv Itzhaky ★’s profile":
+                                                - /url: https://www.linkedin.com/in/nivitzhaky/
+                                                - figure "View Niv Itzhaky ★’s profile":
+                                                  - img "View Niv Itzhaky ★’s profile"
+                                            - generic:
+                                              - generic:
+                                                - generic:
+                                                  - link "Niv Itzhaky ★ Verified Profile Following Senior Backend & AI Architect | Python • Java • Big Data | Mentor | 1M+ Impressions/ month":
+                                                    - /url: https://www.linkedin.com/in/nivitzhaky/
+                                                    - generic:
+                                                      - generic:
+                                                        - generic:
+                                                          - paragraph:
+                                                            - generic: Niv Itzhaky ★ Verified Profile Following
+                                                            - generic:
+                                                              - text: Niv Itzhaky ★
+                                                              - generic:
+                                                                - img
+                                                              - generic: • Following
+                                                      - generic:
+                                                        - paragraph: Senior Backend & AI Architect | Python • Java • Big Data | Mentor | 1M+ Impressions/ month
+                                                  - generic:
+                                                    - paragraph: 14h
+                                                  - button "View more options for Niv Itzhaky ★’s comment.":
+                                                    - generic:
+                                                      - img
+                                              - generic:
+                                                - generic:
+                                                  - generic:
+                                                    - paragraph:
+                                                      - generic: ‏‏‏Uriel Ofir 🦕 🐧‏‏‏
+                                                  - generic:
+                                                    - button "Image in comment shared by Niv Itzhaky ★":
+                                                      - figure "Image in comment shared by Niv Itzhaky ★":
+                                                        - img "Image in comment shared by Niv Itzhaky ★"
+                                              - generic:
+                                                - generic:
+                                                  - generic:
+                                                    - generic:
+                                                      - generic:
+                                                        - 'button "Reaction button state: no reaction"':
+                                                          - generic:
+                                                            - generic:
+                                                              - 'button "Reaction button state: no reaction"':
+                                                                - generic:
+                                                                  - 'button "Reaction button state: no reaction"':
+                                                                    - generic: "Reaction button state: no reaction"
+                                                                    - text: Like
+                                                        - button "Open reactions menu":
+                                                          - generic:
+                                                            - img
+                                                  - generic:
+                                                    - button "Reply":
+                                                      - generic:
+                                                        - generic: Reply
+                                - generic:
+                                  - button "Load more comments":
+                                    - generic:
+                                      - generic: Load more comments
+                      - generic:
+                        - generic:
+                          - generic:
+                            - listitem:
+                              - generic:
+                                - generic:
+                                  - heading "Feed post" [level=2]:
+                                    - generic: Feed post
+                                  - generic:
+                                    - generic:
+                                      - generic:
+                                        - paragraph: Suggested
+                                    - button "View more options":
+                                      - generic:
+                                        - img
+                                    - button "Hide Post":
+                                      - generic:
+                                        - img
+                                  - generic:
+                                    - link "View Alex Razvant’s profile":
+                                      - /url: https://www.linkedin.com/in/arazvant/
+                                      - figure "View Alex Razvant’s profile":
+                                        - img "View Alex Razvant’s profile"
+                                    - 'link "Alex Razvant Verified Profile 2nd Senior AI Engineer | Writing The AI Merge Newsletter | Helping Engineers Build AI Beyond Demos 1d • Visibility: Global"':
+                                      - /url: https://www.linkedin.com/in/arazvant/
+                                      - generic:
+                                        - generic:
+                                          - paragraph:
+                                            - generic: Alex Razvant Verified Profile 2nd
+                                            - generic:
+                                              - text: Alex Razvant
+                                              - generic:
+                                                - img
+                                              - generic: • 2nd
+                                        - generic:
+                                          - paragraph: Senior AI Engineer | Writing The AI Merge Newsletter | Helping Engineers Build AI Beyond Demos
+                                        - generic:
+                                          - paragraph:
+                                            - text: 1d •
+                                            - 'img "Visibility: Global"'
+                                    - generic:
+                                      - generic:
+                                        - generic:
+                                          - button "Follow Alex Razvant":
+                                            - generic:
+                                              - img
+                                              - generic:
+                                                - generic: Follow
+                                  - paragraph:
+                                    - generic:
+                                      - text: The 5 layers of any LLM Model.
+                                      - text: (Understand these, and you'll understand every OSS model on HF)
+                                      - text: With each open-source LLM released, you'll find the model weights on Hugging Face.
+                                      - text: "When you go to the Files section, you won't find a `"
+                                      - link "model.xyz":
+                                        - /url: https://www.linkedin.com/redir/redirect/?url=http%3A%2F%2Fmodel%2Exyz&urlhash=R5d7&mt=UIS5Furh_4Vw7gJsD6amoLdrKviaDbp4yoI9vLVBrce-VsEtaD5k6k8DIpYt2WOsCZ4MwrIp-Nh5Z-ZlqMgZRrFDk9HNImoJ0OZyfLWXpm5h3pTXljit6V03Vg&isSdui=true
+                                        - generic:
+                                          - strong: model.xyz
+                                      - text: "` file, but multiple files, usually 10-15 that compose the entire LLM."
+                                      - text: "Here's the blueprint to understand them:"
+                                      - text: 1️⃣ 𝘼𝙧𝙘𝙝𝙞𝙩𝙚𝙘𝙩𝙪𝙧𝙚 𝘾𝙤𝙣𝙛𝙞𝙜𝙪𝙧𝙖𝙩𝙞𝙤𝙣 (config.json)
+                                      - text: This one contains metadata on model architecture, layer activations, sizes, vocabulary size, number of attention heads, model precision, and more.
+                                      - text: The transformers library knows how to parse this config and build the model architecture.
+                                      - text: 2️⃣ 𝙈𝙤𝙙𝙚𝙡 𝙒𝙚𝙞𝙜𝙝𝙩𝙨 (the .safetensors splits)
+                                      - text: LLMs have B (billions) of parameters.
+                                      - text: For safer download, model weights are split into chunks/shards.
+                                      - text: The formats used for weights are either Binary or Safetensors.
+                                      - text: Safetensors format is an alternative to the default Pickle serializer that PyTorch (pt) uses, as it’s vulnerable to code injection.
+                                      - text: 3️⃣ 𝙇𝙖𝙮𝙚𝙧 𝙈𝙖𝙥𝙥𝙞𝙣𝙜 (the *.index.json)
+                                      - text: Since the models are large and weights come as part files (e.g., 0001-of-0006, 0002-of-0006, etc.), this file stores a sequential map of the model architecture.
+                                      - text: This specifies what layers are part of what model chunk.
+                                      - text: 4️⃣ 𝙏𝙤𝙠𝙚𝙣𝙞𝙯𝙚𝙧 𝘾𝙤𝙣𝙛𝙞𝙜 (tokenizer.json)
+                                      - text: The tokenizer config file contains metadata about the tokenizer used to train this model.
+                                      - text: It contains the class name used to instantiate the tokenizer, the layer names, the structure of how the inputs are processed before passing through the model, and special tokens.
+                                      - text: The LLM generally uses 𝘴𝘱𝘦𝘤𝘪𝘢𝘭_𝘵𝘰𝘬𝘦𝘯𝘴 as markers to stop generation.
+                                      - text: 5️⃣ 𝙂𝙚𝙣𝙚𝙧𝙖𝙩𝙞𝙤𝙣 𝘾𝙤𝙣𝙛𝙞𝙜 (generation_config.json)
+                                      - text: These configuration files contain metadata for Inference, such as Temperature and TopP/TopK thresholds or context window size, with which the model was trained.
+                                      - text: When you load your model using Transformers.from_pretrained(), all these files are processed to set up everything you need to actually use that model.
+                                      - text: "---"
+                                      - text: Learn AI going through Fundamentals, Engineering and Systems.
+                                      - text: "Join here (free):"
+                                      - link "https://buff.ly/DnpHEXD":
+                                        - /url: https://www.linkedin.com/redir/redirect/?url=https%3A%2F%2Fbuff%2Ely%2FDnpHEXD&urlhash=sLQC&mt=L2CbiJ6ApSzgPq2BvEO4-2OUFajjCzJ7VR2wnsOrL-_X1IRj5KIajqqOJTjD8nlfqaxcr7DzGtkws2WfF1ajbtlmMapzMffxSkFpIIXk1WZmXRwUmfjZtCSVug&isSdui=true
+                                        - generic:
+                                          - strong: https://buff.ly/DnpHEXD
+                                      - button:
+                                        - generic [ref=e882] [cursor=pointer]: … more
+                                  - generic:
+                                    - button "View image":
+                                      - figure "View image":
+                                        - img "View image"
+                                  - generic:
+                                    - button "238 reactions":
+                                      - generic:
+                                        - img
+                                        - img
+                                        - img
+                                        - generic:
+                                          - paragraph:
+                                            - generic: 238 reactions
+                                            - text: "238"
+                                    - generic:
+                                      - button "12 comments":
+                                        - paragraph:
+                                          - generic: 12 comments
+                                          - generic: 12 comments
+                                      - paragraph: •
+                                      - button "35 reposts":
+                                        - paragraph:
+                                          - generic: 35 reposts
+                                          - generic: 35 reposts
+                                  - generic:
+                                    - generic:
+                                      - generic:
+                                        - generic:
+                                          - generic:
+                                            - 'button "Reaction button state: no reaction"':
+                                              - generic:
+                                                - img
+                                                - generic: Like
+                                        - button "Open reactions menu":
+                                          - generic:
+                                            - img
+                                    - button "Comment":
+                                      - generic:
+                                        - img
+                                        - generic:
+                                          - generic: Comment
+                                    - button "Repost":
+                                      - generic:
+                                        - img
+                                        - generic:
+                                          - generic: Repost
+                                    - button "Send":
+                                      - generic:
+                                        - img
+                                        - generic:
+                                          - generic: Send
+                              - generic:
+                                - generic:
+                                  - figure
+                                  - generic:
+                                    - generic:
+                                      - generic "Text editor for creating comment":
+                                        - generic:
+                                          - generic:
+                                            - generic:
+                                              - generic:
+                                                - generic:
+                                                  - textbox:
+                                                    - paragraph: Add a comment...
+                                          - generic:
+                                            - button "Show Emoji Picker":
+                                              - generic:
+                                                - img
+                                            - button "Share photo":
+                                              - generic:
+                                                - img
+                              - generic:
+                                - generic:
+                                  - button "Most relevant Most relevant":
+                                    - generic:
+                                      - generic:
+                                        - generic:
+                                          - paragraph: Most relevant
+                                          - img "Most relevant"
+                                - generic:
+                                  - generic:
+                                    - generic:
+                                      - generic:
+                                        - generic:
+                                          - generic:
+                                            - generic:
+                                              - link "View Oded Ben-Yair’s profile":
+                                                - /url: https://www.linkedin.com/in/oded-ben-yair-ai/
+                                                - figure "View Oded Ben-Yair’s profile":
+                                                  - img "View Oded Ben-Yair’s profile"
+                                            - generic:
+                                              - generic:
+                                                - generic:
+                                                  - link "Oded Ben-Yair Verified Profile You Founding AI Engineer | Multi-LLM Routing & Evaluation in Production | Voice AI · RAG | Azure + Python":
+                                                    - /url: https://www.linkedin.com/in/oded-ben-yair-ai/
+                                                    - generic:
+                                                      - generic:
+                                                        - generic:
+                                                          - paragraph:
+                                                            - generic: Oded Ben-Yair Verified Profile You
+                                                            - generic:
+                                                              - text: Oded Ben-Yair
+                                                              - generic:
+                                                                - img
+                                                              - generic: • You
+                                                      - generic:
+                                                        - paragraph: Founding AI Engineer | Multi-LLM Routing & Evaluation in Production | Voice AI · RAG | Azure + Python
+                                                  - generic:
+                                                    - paragraph: now
+                                                  - button "View more options for Oded Ben-Yair’s comment.":
+                                                    - generic:
+                                                      - img
+                                              - generic:
+                                                - generic:
+                                                  - generic:
+                                                    - paragraph:
+                                                      - generic: The safetensors vs pickle distinction matters more than most people think about. Have you noticed whether the bigger models (70B+) are still shipping with pickle weights, or has safetensors basically won across the board on HF at this point?
+                                              - generic:
+                                                - generic:
+                                                  - generic:
+                                                    - generic:
+                                                      - generic:
+                                                        - 'button "Reaction button state: no reaction"':
+                                                          - generic:
+                                                            - generic:
+                                                              - 'button "Reaction button state: no reaction"':
+                                                                - generic:
+                                                                  - 'button "Reaction button state: no reaction"':
+                                                                    - generic: "Reaction button state: no reaction"
+                                                                    - text: Like
+                                                        - button "Open reactions menu":
+                                                          - generic:
+                                                            - img
+                                                  - generic:
+                                                    - button "Reply":
+                                                      - generic:
+                                                        - generic: Reply
+                                  - generic:
+                                    - generic:
+                                      - generic:
+                                        - generic:
+                                          - generic:
+                                            - generic:
+                                              - link "View Memona Hafeez’s profile":
+                                                - /url: https://www.linkedin.com/in/memona-hafeez/
+                                                - figure "View Memona Hafeez’s profile":
+                                                  - img "View Memona Hafeez’s profile"
+                                            - generic:
+                                              - generic:
+                                                - generic:
+                                                  - link "Memona Hafeez 3rd+ I help founders & agencies to build and scale their businesses with AI automation that eliminates manual work.":
+                                                    - /url: https://www.linkedin.com/in/memona-hafeez/
+                                                    - generic:
+                                                      - generic:
+                                                        - generic:
+                                                          - paragraph:
+                                                            - generic: Memona Hafeez 3rd+
+                                                            - generic:
+                                                              - text: Memona Hafeez
+                                                              - generic: • 3rd+
+                                                      - generic:
+                                                        - paragraph: I help founders & agencies to build and scale their businesses with AI automation that eliminates manual work.
+                                                  - generic:
+                                                    - paragraph: 1d
+                                                  - button "View more options for Memona Hafeez’s comment.":
+                                                    - generic:
+                                                      - img
+                                              - generic:
+                                                - generic:
+                                                  - generic:
+                                                    - paragraph:
+                                                      - generic: The safetensors point is underrated. Moving away from pickle-based loading is critical for production systems where supply-chain security actually matters.
+                                              - generic:
+                                                - generic:
+                                                  - generic:
+                                                    - generic:
+                                                      - generic:
+                                                        - 'button "Reaction button state: no reaction"':
+                                                          - generic:
+                                                            - generic:
+                                                              - 'button "Reaction button state: no reaction"':
+                                                                - generic:
+                                                                  - 'button "Reaction button state: no reaction"':
+                                                                    - generic: "Reaction button state: no reaction"
+                                                                    - text: Like
+                                                        - button "Open reactions menu":
+                                                          - generic:
+                                                            - img
+                                                    - button "3 reactions":
+                                                      - generic:
+                                                        - img
+                                                        - img
+                                                        - generic:
+                                                          - paragraph:
+                                                            - generic: 3 reactions
+                                                            - text: "3"
+                                                  - generic:
+                                                    - button "Reply":
+                                                      - generic:
+                                                        - generic: Reply
+                                  - generic:
+                                    - generic:
+                                      - generic:
+                                        - generic:
+                                          - generic:
+                                            - generic:
+                                              - link "View Swamy Talam’s profile":
+                                                - /url: https://www.linkedin.com/in/swamytalam/
+                                                - figure "View Swamy Talam’s profile":
+                                                  - img "View Swamy Talam’s profile"
+                                            - generic:
+                                              - generic:
+                                                - generic:
+                                                  - link "Swamy Talam Verified Profile 2nd Technologist | Enterprise GenAI Platforms | Multi-Agent Orchestration | Azure, AWS, Bedrock | Built 1,200+ AI Assistants at Scale":
+                                                    - /url: https://www.linkedin.com/in/swamytalam/
+                                                    - generic:
+                                                      - generic:
+                                                        - generic:
+                                                          - paragraph:
+                                                            - generic: Swamy Talam Verified Profile 2nd
+                                                            - generic:
+                                                              - text: Swamy Talam
+                                                              - generic:
+                                                                - img
+                                                              - generic: • 2nd
+                                                      - generic:
+                                                        - paragraph: Technologist | Enterprise GenAI Platforms | Multi-Agent Orchestration | Azure, AWS, Bedrock | Built 1,200+ AI Assistants at Scale
+                                                  - generic:
+                                                    - paragraph: 13h
+                                                  - button "View more options for Swamy Talam’s comment.":
+                                                    - generic:
+                                                      - img
+                                              - generic:
+                                                - generic:
+                                                  - generic:
+                                                    - paragraph:
+                                                      - generic:
+                                                        - text: "Good breakdown. In enterprise terms, this maps cleanly to how we operationalize OSS models: 1. config.json → defines the architecture contract the runtime builds from 2. safetensors shards → actual learned intelligence, split for scale and safe loading 3. index.json → routing map telling the loader which shard serves which layer 4. tokenizer config → input normalization + special tokens that control reasoning boundaries 5. generation config → inference behavior (temperature, top-k/p, context limits) Once you see these five, any HF model is just: architecture + weights + loader map + tokenizer + runtime policy."
+                                                        - button:
+                                                          - generic [ref=e1996] [cursor=pointer]: … more
+                                              - generic:
+                                                - generic:
+                                                  - generic:
+                                                    - generic:
+                                                      - generic:
+                                                        - 'button "Reaction button state: no reaction"':
+                                                          - generic:
+                                                            - generic:
+                                                              - 'button "Reaction button state: no reaction"':
+                                                                - generic:
+                                                                  - 'button "Reaction button state: no reaction"':
+                                                                    - generic: "Reaction button state: no reaction"
+                                                                    - text: Like
+                                                        - button "Open reactions menu":
+                                                          - generic:
+                                                            - img
+                                                    - button "1 reaction":
+                                                      - generic:
+                                                        - img
+                                                        - generic:
+                                                          - paragraph:
+                                                            - generic: 1 reaction
+                                                            - text: "1"
+                                                  - generic:
+                                                    - button "Reply":
+                                                      - generic:
+                                                        - generic: Reply
+                                - generic:
+                                  - button "Load more comments":
+                                    - generic:
+                                      - generic: Load more comments
+                      - generic:
+                        - generic:
+                          - generic:
+                            - listitem:
+                              - generic:
+                                - generic:
+                                  - heading "Feed post" [level=2]:
+                                    - generic: Feed post
+                                  - generic:
+                                    - generic:
+                                      - paragraph: Try the new Premium AI tools
+                                      - paragraph: Oded, reactivate LinkedIn Premium and get a discount for 2 months
+                                      - generic:
+                                        - figure
+                                        - figure
+                                        - figure
+                                        - generic:
+                                          - paragraph: Reut and millions more use Premium
+                                      - link "Claim offer now":
+                                        - /url: https://www.linkedin.com/premium/redeem/promo/?_ed=CwEAAAF114596ur6D_C644yaOCckjiuPmlSNohBRLZWzwWabZZHafL3X39_vkIP4OF8-NIE8HlM&customKey=wb_c&redeemTypeV2=DISCOUNT&type=premium&src=li-ghom&trk=li-gal_PREMIUM_C_JSS_ACQ_GAL_GH_GLOBAL_EN_Winback_Career_Broad_1662_Visits_ACCN_Sep2024_V1&upsellOrderOrigin=li-gal_PREMIUM_C_JSS_ACQ_GAL_GH_GLOBAL_EN_Winback_Career_Broad_1662_Visits_ACCN_Sep2024_V1&mcid=7242872393344401409
+                                        - generic:
+                                          - generic: Claim offer now
+                                    - link "Claim offer now":
+                                      - /url: https://www.linkedin.com/premium/redeem/promo/?_ed=CwEAAAF114596ur6D_C644yaOCckjiuPmlSNohBRLZWzwWabZZHafL3X39_vkIP4OF8-NIE8HlM&customKey=wb_c&redeemTypeV2=DISCOUNT&type=premium&src=li-ghom&trk=li-gal_PREMIUM_C_JSS_ACQ_GAL_GH_GLOBAL_EN_Winback_Career_Broad_1662_Visits_ACCN_Sep2024_V1&upsellOrderOrigin=li-gal_PREMIUM_C_JSS_ACQ_GAL_GH_GLOBAL_EN_Winback_Career_Broad_1662_Visits_ACCN_Sep2024_V1&mcid=7242872393344401409
+                                      - figure "Claim offer now":
+                                        - img "Claim offer now"
+                                    - button "View more options":
+                                      - generic:
+                                        - img
+                      - generic:
+                        - generic:
+                          - generic:
+                            - listitem:
+                              - generic:
+                                - generic:
+                                  - heading "Feed post" [level=2]:
+                                    - generic: Feed post
+                                  - generic:
+                                    - 'link "View company: Grammarly"':
+                                      - /url: https://www.linkedin.com/company/grammarly/posts/
+                                      - 'figure "View company: Grammarly"':
+                                        - 'img "View company: Grammarly"'
+                                    - link "Grammarly 255,343 followers Promoted":
+                                      - /url: https://www.linkedin.com/company/grammarly/posts/
+                                      - generic:
+                                        - generic:
+                                          - paragraph: Grammarly
+                                        - generic:
+                                          - paragraph: 255,343 followers
+                                        - generic:
+                                          - paragraph: Promoted
+                                    - button "View more options":
+                                      - generic:
+                                        - img
+                                  - paragraph:
+                                    - generic: Grammarly’s blue sidebar rewrites are perfect for an instant cleanup of shorthand notes or scrambled ideas. And it’s free.
+                                  - generic:
+                                    - generic:
+                                      - link "View Sponsored Content":
+                                        - /url: https://www.grammarly.com/features?utm_source=linkedin&utm_medium=cpc&utm_campaign=sc-broad-t2-image&utm_content=694717454&li_fat_id=34ecfcb1-cf0f-41a6-a049-e2743088b29e
+                                        - figure "View Sponsored Content":
+                                          - img "View Sponsored Content"
+                                    - link "Try Grammarly Now—It's Free! grammarly.com Download":
+                                      - /url: https://www.grammarly.com/features?utm_source=linkedin&utm_medium=cpc&utm_campaign=sc-broad-t2-image&utm_content=694717454&li_fat_id=34ecfcb1-cf0f-41a6-a049-e2743088b29e
+                                      - generic:
+                                        - generic:
+                                          - generic:
+                                            - paragraph:
+                                              - generic: Try Grammarly Now—It's Free!
+                                              - text: Try Grammarly Now—It's Free!
+                                          - generic:
+                                            - paragraph: grammarly.com
+                                        - link "Download":
+                                          - /url: https://www.grammarly.com/features?utm_source=linkedin&utm_medium=cpc&utm_campaign=sc-broad-t2-image&utm_content=694717454&li_fat_id=34ecfcb1-cf0f-41a6-a049-e2743088b29e
+                                          - generic:
+                                            - generic: Download
+                                  - generic:
+                                    - button "130 reactions":
+                                      - generic:
+                                        - img
+                                        - img
+                                        - img
+                                        - generic:
+                                          - paragraph:
+                                            - generic: 130 reactions
+                                            - text: "130"
+                                    - generic:
+                                      - button "2 comments":
+                                        - paragraph:
+                                          - generic: 2 comments
+                                          - generic: 2 comments
+                                      - button:
+                                        - paragraph
+                                  - generic:
+                                    - generic:
+                                      - generic:
+                                        - generic:
+                                          - generic:
+                                            - 'button "Reaction button state: no reaction"':
+                                              - generic:
+                                                - img
+                                                - generic: Like
+                                        - button "Open reactions menu":
+                                          - generic:
+                                            - img
+                                    - button "Comment":
+                                      - generic:
+                                        - img
+                                        - generic:
+                                          - generic: Comment
+                                    - button "Repost":
+                                      - generic:
+                                        - img
+                                        - generic:
+                                          - generic: Repost
+                                    - button "Send":
+                                      - generic:
+                                        - img
+                                        - generic:
+                                          - generic: Send
+                      - generic:
+                        - generic:
+                          - generic:
+                            - listitem:
+                              - generic:
+                                - generic:
+                                  - heading "Feed post" [level=2]:
+                                    - generic: Feed post
+                                  - generic:
+                                    - generic:
+                                      - link "View Guy Leitersdorf’s profile":
+                                        - /url: https://www.linkedin.com/in/guy-leitersdorf-21b10891/
+                                        - figure "View Guy Leitersdorf’s profile":
+                                          - img "View Guy Leitersdorf’s profile"
+                                      - generic:
+                                        - paragraph:
+                                          - link "Guy Leitersdorf":
+                                            - /url: https://www.linkedin.com/in/guy-leitersdorf-21b10891/
+                                            - strong: Guy Leitersdorf
+                                          - text: commented on this
+                                    - button "View more options":
+                                      - generic:
+                                        - img
+                                    - button "Hide Post":
+                                      - generic:
+                                        - img
+                                  - generic:
+                                    - link "View Hadar Berkman’s profile":
+                                      - /url: https://www.linkedin.com/in/hadar-berkman/
+                                      - figure "View Hadar Berkman’s profile":
+                                        - img "View Hadar Berkman’s profile"
+                                    - 'link "Hadar Berkman Verified Profile 1st Chief Revenue Officer | Longevity AI 1d • Visibility: Global"':
+                                      - /url: https://www.linkedin.com/in/hadar-berkman/
+                                      - generic:
+                                        - generic:
+                                          - paragraph:
+                                            - generic: Hadar Berkman Verified Profile 1st
+                                            - generic:
+                                              - text: Hadar Berkman
+                                              - generic:
+                                                - img
+                                              - generic: • 1st
+                                        - generic:
+                                          - paragraph: Chief Revenue Officer | Longevity AI
+                                        - generic:
+                                          - paragraph:
+                                            - text: 1d •
+                                            - 'img "Visibility: Global"'
+                                  - paragraph:
+                                    - generic:
+                                      - text: Big moment for me.
+                                      - text: I started at
+                                      - link "Longevity AI":
+                                        - /url: https://www.linkedin.com/company/longevity-ai/
+                                        - generic:
+                                          - strong: Longevity AI
+                                      - text: two years ago in biz dev, when healthcare AI and longevity were starting to pick up. It felt like we were stepping into something important.
+                                      - text: From there I moved into product, taking the company's vision and turning it into something doctors and admin teams actually use every single day. That happened because of the partnerships we built and the feedback we got along the way. That feedback is what pushed us to this level of market fit and accuracy.
+                                      - text: Then I stepped into growth, marketing became a big focus, and I had the chance to help bring in incredible people to build out a truly passionate and talented team.
+                                      - text: Over the past few years I’ve picked up whatever was around me and asked, how do we make this better? How do we optimize? How do we move faster? I’ve had my hands in a bit of everything.
+                                      - text: This official change to Chief revenue honestly feels like validation of what I was already doing. It comes with responsibility and ownership across teams to make sure we stay aligned and keep building the right way.
+                                      - text: Our goal is simple. To become the trusted healthcare AI.
+                                      - text: Not by saying it. By doing it.
+                                      - text: I’m proud of the team. Proud of the progress.
+                                      - text: And genuinely excited for what’s next.
+                                      - button:
+                                        - generic [ref=e1146] [cursor=pointer]: … more
+                                  - generic:
+                                    - button "View celebration image":
+                                      - figure "View celebration image":
+                                        - img "View celebration image"
+                                    - link "Starting a new position":
+                                      - /url: https://www.linkedin.com/feed/update/urn:li:activity:7430736606862647296/?dashCommentUrn=urn%3Ali%3Afsd_comment%3A%287430736558208675840%2Curn%3Ali%3AugcPost%3A7430703925634195456%29&originTrackingId=4oq79AN7YUOt3YzDTPNdow%3D%3D
+                                      - paragraph: Starting a new position
+                                  - generic:
+                                    - button "Guy Leitersdorf and 79 others reacted":
+                                      - generic:
+                                        - img
+                                        - img
+                                        - img
+                                        - generic:
+                                          - paragraph:
+                                            - generic: Guy Leitersdorf and 79 others reacted
+                                            - generic: Guy Leitersdorf and 79 others
+                                    - generic:
+                                      - button "14 comments":
+                                        - paragraph:
+                                          - generic: 14 comments
+                                          - generic: 14 comments
+                                      - button:
+                                        - paragraph
+                                  - generic:
+                                    - generic:
+                                      - generic:
+                                        - generic:
+                                          - generic:
+                                            - 'button "Reaction button state: no reaction"':
+                                              - generic:
+                                                - img
+                                                - generic: Like
+                                        - button "Open reactions menu":
+                                          - generic:
+                                            - img
+                                    - button "Comment":
+                                      - generic:
+                                        - img
+                                        - generic:
+                                          - generic: Comment
+                                    - button "Repost":
+                                      - generic:
+                                        - img
+                                        - generic:
+                                          - generic: Repost
+                                    - button "Send":
+                                      - generic:
+                                        - img
+                                        - generic:
+                                          - generic: Send
+                              - generic:
+                                - generic:
+                                  - generic:
+                                    - generic:
+                                      - list:
+                                        - listitem:
+                                          - generic:
+                                            - button "Congratulations! 🎉":
+                                              - generic:
+                                                - checkbox "Congratulations! 🎉"
+                                                - generic: Congratulations! 🎉
+                                        - listitem:
+                                          - generic:
+                                            - button "🎉 Excited for you":
+                                              - generic:
+                                                - checkbox "🎉 Excited for you"
+                                                - generic: 🎉 Excited for you
+                                        - listitem:
+                                          - generic:
+                                            - button "🎉🎉🎉":
+                                              - generic:
+                                                - checkbox "🎉🎉🎉"
+                                                - generic: 🎉🎉🎉
+                                        - listitem:
+                                          - generic:
+                                            - button "Wishing you the best":
+                                              - generic:
+                                                - checkbox "Wishing you the best"
+                                                - generic: Wishing you the best
+                                        - listitem:
+                                          - generic:
+                                            - button "👏 Well deserved, Hadar":
+                                              - generic:
+                                                - checkbox "👏 Well deserved, Hadar"
+                                                - generic: 👏 Well deserved, Hadar
+                                    - generic:
+                                      - button "Next":
+                                        - generic:
+                                          - img
+                              - generic:
+                                - generic:
+                                  - generic:
+                                    - generic:
+                                      - generic:
+                                        - generic:
+                                          - generic:
+                                            - generic:
+                                              - link "View Guy Leitersdorf’s profile":
+                                                - /url: https://www.linkedin.com/in/guy-leitersdorf-21b10891/
+                                                - figure "View Guy Leitersdorf’s profile":
+                                                  - img "View Guy Leitersdorf’s profile"
+                                            - generic:
+                                              - generic:
+                                                - generic:
+                                                  - link "Guy Leitersdorf Premium Profile 1st CEO Longevity AI":
+                                                    - /url: https://www.linkedin.com/in/guy-leitersdorf-21b10891/
+                                                    - generic:
+                                                      - generic:
+                                                        - generic:
+                                                          - paragraph:
+                                                            - generic: Guy Leitersdorf Premium Profile 1st
+                                                            - generic:
+                                                              - text: Guy Leitersdorf
+                                                              - generic:
+                                                                - img
+                                                              - generic: • 1st
+                                                      - generic:
+                                                        - paragraph: CEO Longevity AI
+                                                  - generic:
+                                                    - paragraph: 1d
+                                                  - button "View more options for Guy Leitersdorf’s comment.":
+                                                    - generic:
+                                                      - img
+                                              - generic:
+                                                - generic:
+                                                  - generic:
+                                                    - paragraph:
+                                                      - generic: A key part of our success. Onwards and upwards!
+                                              - generic:
+                                                - generic:
+                                                  - generic:
+                                                    - generic:
+                                                      - generic:
+                                                        - 'button "Reaction button state: no reaction"':
+                                                          - generic:
+                                                            - generic:
+                                                              - 'button "Reaction button state: no reaction"':
+                                                                - generic:
+                                                                  - 'button "Reaction button state: no reaction"':
+                                                                    - generic: "Reaction button state: no reaction"
+                                                                    - text: Like
+                                                        - button "Open reactions menu":
+                                                          - generic:
+                                                            - img
+                                                    - button "2 reactions":
+                                                      - generic:
+                                                        - img
+                                                        - generic:
+                                                          - paragraph:
+                                                            - generic: 2 reactions
+                                                            - text: "2"
+                                                  - generic:
+                                                    - button "Reply":
+                                                      - generic:
+                                                        - generic: Reply
+                                - generic:
+                                  - button "Load more comments":
+                                    - generic:
+                                      - generic: Load more comments
+                      - generic:
+                        - generic:
+                          - generic:
+                            - listitem:
+                              - generic:
+                                - generic:
+                                  - heading "Feed post" [level=2]:
+                                    - generic: Feed post
+                                  - generic:
+                                    - generic:
+                                      - generic:
+                                        - paragraph: Suggested
+                                    - button "View more options":
+                                      - generic:
+                                        - img
+                                    - button "Hide Post":
+                                      - generic:
+                                        - img
+                                  - generic:
+                                    - link "View John Wester’s profile":
+                                      - /url: https://www.linkedin.com/in/john-wester-4248465/
+                                      - figure "View John Wester’s profile":
+                                        - img "View John Wester’s profile"
+                                    - 'link "John Wester Premium Profile 3rd+ Veteran | Architecture Leader | Strategic Thinker | Helping the business understand and prioritize their strategy. Assessing objectives and delivering Reality. 1d • Visibility: Global"':
+                                      - /url: https://www.linkedin.com/in/john-wester-4248465/
+                                      - generic:
+                                        - generic:
+                                          - paragraph:
+                                            - generic: John Wester Premium Profile 3rd+
+                                            - generic:
+                                              - text: John Wester
+                                              - generic:
+                                                - img
+                                              - generic: • 3rd+
+                                        - generic:
+                                          - paragraph: Veteran | Architecture Leader | Strategic Thinker | Helping the business understand and prioritize their strategy. Assessing objectives and delivering Reality.
+                                        - generic:
+                                          - paragraph:
+                                            - text: 1d •
+                                            - 'img "Visibility: Global"'
+                                    - generic:
+                                      - generic:
+                                        - generic:
+                                          - button "Follow John Wester":
+                                            - generic:
+                                              - img
+                                              - generic:
+                                                - generic: Follow
+                                  - paragraph:
+                                    - generic:
+                                      - text: AI can generate code. AI cannot validate architecture. AI can suggest patterns. AI cannot replace engineering judgment. I saw this as part of someone else's post (wonder if it was AI generated... LOL). There is something to be said for a full-stack developer. AI can be a tool, but not a replacement. If you don't know what to ask for, if you don't know how to make something be efficient, you will get what you get. Architects with real experience cannot be replaced by AI.
+                                      - button:
+                                        - generic [ref=e1381] [cursor=pointer]: … more
+                                  - generic:
+                                    - button "13 reactions":
+                                      - generic:
+                                        - img
+                                        - img
+                                        - generic:
+                                          - paragraph:
+                                            - generic: 13 reactions
+                                            - text: "13"
+                                    - generic:
+                                      - button "40 comments":
+                                        - paragraph:
+                                          - generic: 40 comments
+                                          - generic: 40 comments
+                                      - button:
+                                        - paragraph
+                                  - generic:
+                                    - generic:
+                                      - generic:
+                                        - generic:
+                                          - generic:
+                                            - 'button "Reaction button state: no reaction"':
+                                              - generic:
+                                                - img
+                                                - generic: Like
+                                        - button "Open reactions menu":
+                                          - generic:
+                                            - img
+                                    - button "Comment":
+                                      - generic:
+                                        - img
+                                        - generic:
+                                          - generic: Comment
+                                    - button "Repost":
+                                      - generic:
+                                        - img
+                                        - generic:
+                                          - generic: Repost
+                                    - button "Send":
+                                      - generic:
+                                        - img
+                                        - generic:
+                                          - generic: Send
+                              - generic:
+                                - generic:
+                                  - figure
+                                  - generic:
+                                    - generic:
+                                      - generic "Text editor for creating comment":
+                                        - generic:
+                                          - generic:
+                                            - generic:
+                                              - generic:
+                                                - generic:
+                                                  - textbox:
+                                                    - paragraph: Add a comment...
+                                          - generic:
+                                            - button "Show Emoji Picker":
+                                              - generic:
+                                                - img
+                                            - button "Share photo":
+                                              - generic:
+                                                - img
+                              - generic:
+                                - generic:
+                                  - button "Most relevant Most relevant":
+                                    - generic:
+                                      - generic:
+                                        - generic:
+                                          - paragraph: Most relevant
+                                          - img "Most relevant"
+                                - generic:
+                                  - generic:
+                                    - generic:
+                                      - generic:
+                                        - generic:
+                                          - generic:
+                                            - generic:
+                                              - link "View Oded Ben-Yair’s profile":
+                                                - /url: https://www.linkedin.com/in/oded-ben-yair-ai/
+                                                - figure "View Oded Ben-Yair’s profile":
+                                                  - img "View Oded Ben-Yair’s profile"
+                                            - generic:
+                                              - generic:
+                                                - generic:
+                                                  - link "Oded Ben-Yair Verified Profile You Founding AI Engineer | Multi-LLM Routing & Evaluation in Production | Voice AI · RAG | Azure + Python":
+                                                    - /url: https://www.linkedin.com/in/oded-ben-yair-ai/
+                                                    - generic:
+                                                      - generic:
+                                                        - generic:
+                                                          - paragraph:
+                                                            - generic: Oded Ben-Yair Verified Profile You
+                                                            - generic:
+                                                              - text: Oded Ben-Yair
+                                                              - generic:
+                                                                - img
+                                                              - generic: • You
+                                                      - generic:
+                                                        - paragraph: Founding AI Engineer | Multi-LLM Routing & Evaluation in Production | Voice AI · RAG | Azure + Python
+                                                  - generic:
+                                                    - paragraph: now
+                                                  - button "View more options for Oded Ben-Yair’s comment.":
+                                                    - generic:
+                                                      - img
+                                              - generic:
+                                                - generic:
+                                                  - generic:
+                                                    - paragraph:
+                                                      - generic: This matches what I see in production. You can use AI to generate a working endpoint in minutes, but then you spend hours debugging the edge cases it didn't anticipate. The architecture decisions, like which failures to retry vs which to surface immediately, still need someone who has broken things before.
+                                              - generic:
+                                                - generic:
+                                                  - generic:
+                                                    - generic:
+                                                      - generic:
+                                                        - 'button "Reaction button state: no reaction"':
+                                                          - generic:
+                                                            - generic:
+                                                              - 'button "Reaction button state: no reaction"':
+                                                                - generic:
+                                                                  - 'button "Reaction button state: no reaction"':
+                                                                    - generic: "Reaction button state: no reaction"
+                                                                    - text: Like
+                                                        - button "Open reactions menu":
+                                                          - generic:
+                                                            - img
+                                                  - generic:
+                                                    - button "Reply":
+                                                      - generic:
+                                                        - generic: Reply
+                                  - generic:
+                                    - generic:
+                                      - generic:
+                                        - generic:
+                                          - generic:
+                                            - generic:
+                                              - link "View Stefan Nolde’s profile":
+                                                - /url: https://www.linkedin.com/in/snolde/
+                                                - figure "View Stefan Nolde’s profile":
+                                                  - img "View Stefan Nolde’s profile"
+                                            - generic:
+                                              - generic:
+                                                - generic:
+                                                  - link "Stefan Nolde 3rd+ Ethical Engineering | CSaaS Expert | Pro-Tech-Luddite | NAL/NAF":
+                                                    - /url: https://www.linkedin.com/in/snolde/
+                                                    - generic:
+                                                      - generic:
+                                                        - generic:
+                                                          - paragraph:
+                                                            - generic: Stefan Nolde 3rd+
+                                                            - generic:
+                                                              - text: Stefan Nolde
+                                                              - generic: • 3rd+
+                                                      - generic:
+                                                        - paragraph: Ethical Engineering | CSaaS Expert | Pro-Tech-Luddite | NAL/NAF
+                                                  - generic:
+                                                    - paragraph: (edited) 1d
+                                                  - button "View more options for Stefan Nolde’s comment.":
+                                                    - generic:
+                                                      - img
+                                              - generic:
+                                                - generic:
+                                                  - generic:
+                                                    - paragraph:
+                                                      - generic:
+                                                        - text: Actually no one can be replaced by AI so far. We are not past narrow AI. But on a completely different angle, why are these X replaces Y predictions so popular lately? Was it ever the goal, something beneficial or a threat that someone gets replaced? I mean, we could have replaced hair stylists by pocket ventilators. Also quite a feat to make work, unreliable outcome and a thrilling risk potential. Can't remember though that it was ever a popular topic.
+                                                        - button:
+                                                          - generic [ref=e2550] [cursor=pointer]: … more
+                                              - generic:
+                                                - generic:
+                                                  - generic:
+                                                    - generic:
+                                                      - generic:
+                                                        - 'button "Reaction button state: no reaction"':
+                                                          - generic:
+                                                            - generic:
+                                                              - 'button "Reaction button state: no reaction"':
+                                                                - generic:
+                                                                  - 'button "Reaction button state: no reaction"':
+                                                                    - generic: "Reaction button state: no reaction"
+                                                                    - text: Like
+                                                        - button "Open reactions menu":
+                                                          - generic:
+                                                            - img
+                                                  - generic:
+                                                    - button "Reply":
+                                                      - generic:
+                                                        - generic: Reply
+                                                    - paragraph: "13"
+                                  - generic:
+                                    - generic:
+                                      - generic:
+                                        - generic:
+                                          - button "See previous replies":
+                                            - paragraph: See previous replies
+                                  - generic:
+                                    - generic:
+                                      - generic:
+                                        - generic:
+                                          - generic:
+                                            - generic:
+                                              - link "View Martyn Riley’s profile":
+                                                - /url: https://www.linkedin.com/in/martyn-riley-819a76/
+                                                - figure "View Martyn Riley’s profile":
+                                                  - img "View Martyn Riley’s profile"
+                                            - generic:
+                                              - generic:
+                                                - generic:
+                                                  - link "Martyn Riley Verified Profile 3rd+ Founder/Director at Riley Betts Ltd":
+                                                    - /url: https://www.linkedin.com/in/martyn-riley-819a76/
+                                                    - generic:
+                                                      - generic:
+                                                        - generic:
+                                                          - paragraph:
+                                                            - generic: Martyn Riley Verified Profile 3rd+
+                                                            - generic:
+                                                              - text: Martyn Riley
+                                                              - generic:
+                                                                - img
+                                                              - generic: • 3rd+
+                                                      - generic:
+                                                        - paragraph: Founder/Director at Riley Betts Ltd
+                                                  - generic:
+                                                    - paragraph: 11h
+                                                  - button "View more options for Martyn Riley’s comment.":
+                                                    - generic:
+                                                      - img
+                                              - generic:
+                                                - generic:
+                                                  - generic:
+                                                    - paragraph:
+                                                      - generic:
+                                                        - link "Stefan Nolde":
+                                                          - /url: https://www.linkedin.com/in/snolde/
+                                                          - generic:
+                                                            - strong: Stefan Nolde
+                                                        - text: Anyhow for now I have a bidirectional compiler that can reliably go from specs at any level of abstraction to code in any language.
+                                              - generic:
+                                                - generic:
+                                                  - generic:
+                                                    - generic:
+                                                      - generic:
+                                                        - 'button "Reaction button state: no reaction"':
+                                                          - generic:
+                                                            - generic:
+                                                              - 'button "Reaction button state: no reaction"':
+                                                                - generic:
+                                                                  - 'button "Reaction button state: no reaction"':
+                                                                    - generic: "Reaction button state: no reaction"
+                                                                    - text: Like
+                                                        - button "Open reactions menu":
+                                                          - generic:
+                                                            - img
+                                                  - generic:
+                                                    - button "Reply":
+                                                      - generic:
+                                                        - generic: Reply
+                                  - generic:
+                                    - generic:
+                                      - generic:
+                                        - generic:
+                                          - generic:
+                                            - generic:
+                                              - link "View Timothy Gough’s profile":
+                                                - /url: https://www.linkedin.com/in/timothy-gough-60170b372/
+                                                - figure "View Timothy Gough’s profile":
+                                                  - img "View Timothy Gough’s profile"
+                                            - generic:
+                                              - generic:
+                                                - generic:
+                                                  - link "Timothy Gough Premium Profile 2nd Founder | IAMMOGO | MurderCo | Systems Engineer | Architect of Determinism | Author of the Deterministic Ethical Constraint Transition Law (DECTL) | Entertainment Producer | Public Relations":
+                                                    - /url: https://www.linkedin.com/in/timothy-gough-60170b372/
+                                                    - generic:
+                                                      - generic:
+                                                        - generic:
+                                                          - paragraph:
+                                                            - generic: Timothy Gough Premium Profile 2nd
+                                                            - generic:
+                                                              - text: Timothy Gough
+                                                              - generic:
+                                                                - img
+                                                              - generic: • 2nd
+                                                      - generic:
+                                                        - paragraph: Founder | IAMMOGO | MurderCo | Systems Engineer | Architect of Determinism | Author of the Deterministic Ethical Constraint Transition Law (DECTL) | Entertainment Producer | Public Relations
+                                                  - generic:
+                                                    - paragraph: 1d
+                                                  - button "View more options for Timothy Gough’s comment.":
+                                                    - generic:
+                                                      - img
+                                              - generic:
+                                                - generic:
+                                                  - generic:
+                                                    - paragraph:
+                                                      - generic:
+                                                        - text: AI can’t validate architecture today because it doesn’t own execution. If the system can generate states it cannot prove, then of course you need human judgment to clean it up. That’s not a feature, it’s an architectural gap. The moment validation is embedded at the state-transition level, “suggest vs decide” disappears. You don’t review outcomes, you prevent invalid ones from ever existing. So the real question isn’t whether AI can replace architects. It’s whether we’re still building systems that require one to babysit them.
+                                                        - button:
+                                                          - generic [ref=e2672] [cursor=pointer]: … more
+                                              - generic:
+                                                - generic:
+                                                  - generic:
+                                                    - generic:
+                                                      - generic:
+                                                        - 'button "Reaction button state: no reaction"':
+                                                          - generic:
+                                                            - generic:
+                                                              - 'button "Reaction button state: no reaction"':
+                                                                - generic:
+                                                                  - 'button "Reaction button state: no reaction"':
+                                                                    - generic: "Reaction button state: no reaction"
+                                                                    - text: Like
+                                                        - button "Open reactions menu":
+                                                          - generic:
+                                                            - img
+                                                    - button "1 reaction":
+                                                      - generic:
+                                                        - img
+                                                        - generic:
+                                                          - paragraph:
+                                                            - generic: 1 reaction
+                                                            - text: "1"
+                                                  - generic:
+                                                    - button "Reply":
+                                                      - generic:
+                                                        - generic: Reply
+                                                    - paragraph: "4"
+                                  - generic:
+                                    - generic:
+                                      - generic:
+                                        - generic:
+                                          - button "See previous replies":
+                                            - paragraph: See previous replies
+                                  - generic:
+                                    - generic:
+                                      - generic:
+                                        - generic:
+                                          - generic:
+                                            - generic:
+                                              - link "View Timothy Gough’s profile":
+                                                - /url: https://www.linkedin.com/in/timothy-gough-60170b372/
+                                                - figure "View Timothy Gough’s profile":
+                                                  - img "View Timothy Gough’s profile"
+                                            - generic:
+                                              - generic:
+                                                - generic:
+                                                  - link "Timothy Gough Premium Profile 2nd Founder | IAMMOGO | MurderCo | Systems Engineer | Architect of Determinism | Author of the Deterministic Ethical Constraint Transition Law (DECTL) | Entertainment Producer | Public Relations":
+                                                    - /url: https://www.linkedin.com/in/timothy-gough-60170b372/
+                                                    - generic:
+                                                      - generic:
+                                                        - generic:
+                                                          - paragraph:
+                                                            - generic: Timothy Gough Premium Profile 2nd
+                                                            - generic:
+                                                              - text: Timothy Gough
+                                                              - generic:
+                                                                - img
+                                                              - generic: • 2nd
+                                                      - generic:
+                                                        - paragraph: Founder | IAMMOGO | MurderCo | Systems Engineer | Architect of Determinism | Author of the Deterministic Ethical Constraint Transition Law (DECTL) | Entertainment Producer | Public Relations
+                                                  - generic:
+                                                    - paragraph: 1d
+                                                  - button "View more options for Timothy Gough’s comment.":
+                                                    - generic:
+                                                      - img
+                                              - generic:
+                                                - generic:
+                                                  - generic:
+                                                    - paragraph:
+                                                      - generic:
+                                                        - link "Jessie Dommert":
+                                                          - /url: https://www.linkedin.com/in/dommert/
+                                                          - generic:
+                                                            - strong: Jessie Dommert
+                                                        - text: Engineering marvel?
+                                                        - text: Yes.
+                                                        - text: Intelligence?
+                                                        - text: Not without authority over execution.
+                                              - generic:
+                                                - generic:
+                                                  - generic:
+                                                    - generic:
+                                                      - generic:
+                                                        - 'button "Reaction button state: no reaction"':
+                                                          - generic:
+                                                            - generic:
+                                                              - 'button "Reaction button state: no reaction"':
+                                                                - generic:
+                                                                  - 'button "Reaction button state: no reaction"':
+                                                                    - generic: "Reaction button state: no reaction"
+                                                                    - text: Like
+                                                        - button "Open reactions menu":
+                                                          - generic:
+                                                            - img
+                                                  - generic:
+                                                    - button "Reply":
+                                                      - generic:
+                                                        - generic: Reply
+                                - generic:
+                                  - button "Load more comments":
+                                    - generic:
+                                      - generic: Load more comments
+                      - generic:
+                        - generic:
+                          - generic:
+                            - listitem:
+                              - generic:
+                                - generic:
+                                  - heading "Feed post" [level=2]:
+                                    - generic: Feed post
+                                  - generic:
+                                    - generic:
+                                      - generic:
+                                        - generic:
+                                          - paragraph: Jobs recommended for you
+                                    - generic:
+                                      - generic:
+                                        - generic:
+                                          - generic:
+                                            - generic:
+                                              - list:
+                                                - listitem:
+                                                  - generic:
+                                                    - link "Artificial Intelligence Engineer HiOctave (HiO) Tel Aviv District, Israel (Hybrid) Actively reviewing applicants":
+                                                      - /url: https://www.linkedin.com/jobs/collections/recommended/?trackingId=2cYK%2BqYtDhoVnZ8rB2pbQg%3D%3D&currentJobId=4371973140&originToLandingJobPostings=4371973140%2C4364742828%2C4373766351%2C4373977669%2C4375136385
+                                                      - generic:
+                                                        - generic:
+                                                          - figure
+                                                          - generic:
+                                                            - generic:
+                                                              - generic:
+                                                                - generic:
+                                                                  - generic:
+                                                                    - paragraph: Artificial Intelligence Engineer
+                                                                  - generic:
+                                                                    - paragraph: HiOctave (HiO)
+                                                                  - generic:
+                                                                    - paragraph: Tel Aviv District, Israel (Hybrid)
+                                                            - generic:
+                                                              - generic:
+                                                                - img
+                                                                - generic:
+                                                                  - paragraph: Actively reviewing applicants
+                                                - listitem:
+                                                  - generic:
+                                                    - link "AI Engineer (Verified job) Gotfriends Tel Aviv District, Israel (Hybrid) Actively reviewing applicants":
+                                                      - /url: https://www.linkedin.com/jobs/collections/recommended/?trackingId=AsnfjkNeuNRyPqboyk59Kg%3D%3D&currentJobId=4364742828&originToLandingJobPostings=4371973140%2C4364742828%2C4373766351%2C4373977669%2C4375136385
+                                                      - generic:
+                                                        - generic:
+                                                          - figure
+                                                          - generic:
+                                                            - generic:
+                                                              - generic:
+                                                                - generic:
+                                                                  - generic:
+                                                                    - paragraph:
+                                                                      - generic: AI Engineer (Verified job)
+                                                                      - generic:
+                                                                        - text: AI Engineer
+                                                                        - generic:
+                                                                          - img
+                                                                  - generic:
+                                                                    - paragraph: Gotfriends
+                                                                  - generic:
+                                                                    - paragraph: Tel Aviv District, Israel (Hybrid)
+                                                            - generic:
+                                                              - generic:
+                                                                - img
+                                                                - generic:
+                                                                  - paragraph: Actively reviewing applicants
+                                                - listitem:
+                                                  - generic:
+                                                    - link "AI Engineer (Verified job) Trax Retail - Shopkick Tel Aviv-Yafo":
+                                                      - /url: https://www.linkedin.com/jobs/collections/recommended/?trackingId=oowbqxDsTp8w27yjzfhuqA%3D%3D&currentJobId=4373766351&originToLandingJobPostings=4371973140%2C4364742828%2C4373766351%2C4373977669%2C4375136385
+                                                      - generic:
+                                                        - generic:
+                                                          - figure
+                                                          - generic:
+                                                            - generic:
+                                                              - generic:
+                                                                - generic:
+                                                                  - generic:
+                                                                    - paragraph:
+                                                                      - generic: AI Engineer (Verified job)
+                                                                      - generic:
+                                                                        - text: AI Engineer
+                                                                        - generic:
+                                                                          - img
+                                                                  - generic:
+                                                                    - paragraph: Trax Retail - Shopkick
+                                                                  - generic:
+                                                                    - paragraph: Tel Aviv-Yafo
+                                                - listitem:
+                                                  - generic:
+                                                    - link "Artificial Intelligence Engineer (Verified job) Radley James Tel Aviv District, Israel (Hybrid) Actively reviewing applicants":
+                                                      - /url: https://www.linkedin.com/jobs/collections/recommended/?trackingId=EoxCAWLlp1r3gqX5e65DUA%3D%3D&currentJobId=4373977669&originToLandingJobPostings=4371973140%2C4364742828%2C4373766351%2C4373977669%2C4375136385
+                                                      - generic:
+                                                        - generic:
+                                                          - figure
+                                                          - generic:
+                                                            - generic:
+                                                              - generic:
+                                                                - generic:
+                                                                  - generic:
+                                                                    - paragraph:
+                                                                      - generic: Artificial Intelligence Engineer (Verified job)
+                                                                      - generic:
+                                                                        - text: Artificial Intelligence Engineer
+                                                                        - generic:
+                                                                          - img
+                                                                  - generic:
+                                                                    - paragraph: Radley James
+                                                                  - generic:
+                                                                    - paragraph: Tel Aviv District, Israel (Hybrid)
+                                                            - generic:
+                                                              - generic:
+                                                                - img
+                                                                - generic:
+                                                                  - paragraph: Actively reviewing applicants
+                                                - listitem:
+                                                  - generic:
+                                                    - link "Senior AI Engineer WINN.AI Tel Aviv District, Israel (Hybrid)":
+                                                      - /url: https://www.linkedin.com/jobs/collections/recommended/?trackingId=2DZW0Gb7ZeITWtwH5zBg9Q%3D%3D&currentJobId=4375136385&originToLandingJobPostings=4371973140%2C4364742828%2C4373766351%2C4373977669%2C4375136385
+                                                      - generic:
+                                                        - generic:
+                                                          - figure
+                                                          - generic:
+                                                            - generic:
+                                                              - generic:
+                                                                - generic:
+                                                                  - generic:
+                                                                    - paragraph: Senior AI Engineer
+                                                                  - generic:
+                                                                    - paragraph: WINN.AI
+                                                                  - generic:
+                                                                    - paragraph: Tel Aviv District, Israel (Hybrid)
+                                            - button "Next":
+                                              - generic:
+                                                - img
+                                    - link "Show more":
+                                      - /url: https://www.linkedin.com/jobs/collections/recommended/?discover=recommended&trackingId=2cYK%2BqYtDhoVnZ8rB2pbQg%3D%3D&currentJobId=4371973140&discoveryOrigin=MAIN_FEED_JYMBII&originToLandingJobPostings=4371973140%2C4364742828%2C4373766351%2C4373977669%2C4375136385
+                                      - generic:
+                                        - img
+                                        - generic: Show more
+                      - generic:
+                        - generic:
+                          - generic:
+                            - listitem:
+                              - generic:
+                                - generic:
+                                  - heading "Feed post" [level=2]:
+                                    - generic: Feed post
+                                  - generic:
+                                    - link "View Lior Kerbis’ profile":
+                                      - /url: https://www.linkedin.com/in/liorkerbis/
+                                      - figure "View Lior Kerbis’ profile":
+                                        - img "View Lior Kerbis’ profile"
+                                    - link "Lior Kerbis Premium Profile 1st Head of Marketing Promoted by Cover":
+                                      - /url: https://www.linkedin.com/in/liorkerbis/
+                                      - generic:
+                                        - generic:
+                                          - paragraph:
+                                            - generic: Lior Kerbis Premium Profile 1st
+                                            - generic:
+                                              - text: Lior Kerbis
+                                              - generic:
+                                                - img
+                                              - generic: • 1st
+                                        - generic:
+                                          - paragraph: Head of Marketing
+                                        - generic:
+                                          - paragraph:
+                                            - text: Promoted by
+                                            - link "Cover":
+                                              - /url: https://www.linkedin.com/company/cover-il/posts/
+                                              - strong: Cover
+                                    - button "View more options":
+                                      - generic:
+                                        - img
+                                  - paragraph:
+                                    - generic:
+                                      - text: 1000 ימי מילואים מצטברים ישבו אצלי השבוע במשרד.
+                                      - text: אירחתי את איתי (סמ"פ ביחידה מיוחדת), גפן (רס"פ בגבעתי) ושמעון (לוחם בפלס"ר גולני).
+                                      - text: שעשו בשנתיים האחרונות יותר מ-1000 ימי מילואים יחד!
+                                      - text: "הם הגיעו כדי לקבל את מה שהבטחתי להם כבר לפני שלושה חודשים: מענקים בגובה 5,000 ש״ח לכל אחת מהפלוגות שלהם – נטו לפינוק ות\"ש ללוחמים :)."
+                                      - text: זה מתווסף ל-8,000 ש״ח שכבר הענקנו לפלוגות שלהם מתחילת המלחמה, אבל הסיפור האמיתי הוא לא רק הכסף.
+                                      - text: איך הכל התחיל?
+                                      - text: לפני חצי שנה איתי פנה אליי כאן בלינקדאין. הוא סיפר שהוא משתמש ב Cover ומאוד מרוצה, אבל היו לו כמה הערות לשיפור.
+                                      - text: קבעתי איתו זום קצר, וכשהוא עלה ראיתי שהוא מדבר איתי על מדים בתוך ג׳יפ.. כנראה הבנתם שבאותו הרגע השיחה כולה הלכה לכיוון המילואים.. עד שאיתי היה צריך לנתק וקבענו להמשיך על קפה כשיחזור.
+                                      - text: (קפה תל אביבי רגיל של אזרחות, לא שחור בחד״פ..)
+                                      - text: לונג סטורי שורט, ישבנו לקפה וגיליתי בן אדם מדהים, סטארטאפיסט בתחילת דרכו שאני אישית צופה לו עתיד מזהיר מאוד ברגע שהוא יצא מ-Stealth mode 🥷🏿
+                                      - text: דיברנו על האיכות הגבוהה של האנשים שיש במילואים, בפרט בפלוגות קרביות ויחידות קצה … וסיפרתי לו שרוב הצוות בקאבר הוא כזה ושאני מתחיל לסנן אנשים לפני פרופיל ופק״ל כדי שלפחות נהיה אורגניים :)
+                                      - text: "השיחה ההיא עם איתי הולידה שני דברים:"
+                                      - text: גייסנו עובדים מהפלוגה של איתי, 2 מפתחים ועוד 3 SDR מהפלוגות של שמעון וגפן. האיכות של האנשים האלו היא פשוט משהו אחר.
+                                      - text: "תוכנית \"קאבר למילואימניקים\": החלטנו להוציא לפועל תוכנית תמיכה קבועה."
+                                      - text: אז מה זה אומר בתכלס?
+                                      - text: "• הטבה אישית: נרשמים ל COVER , מצרפים חבר מהצוות - וכל אחד מכם מקבל 100 ש״ח בתלושים (לינק בתגובה הראשונה)."
+                                      - text: "• עזרה למפקדים (סמג\"דים/מ\"פים/רס\"פים): אנחנו רוצים לעזור לכם להרים את הערב הפלוגתי הבא. אנחנו נסייע בגיוס הכסף, נפיק את הארוחה ונגיע עד אליכם עם הרצאות פיננסיות (השקעות והתנהלות כלכלית) מטובי המרצים בארץ."
+                                      - text: "• קדימות בגיוס: אנשי מילואים יקבלו אצלנו עדיפות ויהיו הראשונים לשמוע על כל תפקיד חדש שנפתח בחברה."
+                                      - text: אז אם אתם מילואימניקים, או מכירים מילואימניק או מפקד/ת שזה יכול לעזור להם אשמח אם תייגו אותם בתגובות או שתשפו את הפוסט כדי שיגיע לכמה שיותר יחידות.
+                                      - text: "פתחתי מייל ייעודי לפעילות הזו שמגיע ישירות אליי:"
+                                      - link "miluim@cover.co.il":
+                                        - /url: mailto:miluim@cover.co.il
+                                        - generic:
+                                          - strong: miluim@cover.co.il
+                                      - text: ואפשר כמובן גם כאן חופשי
+                                      - button:
+                                        - generic [ref=e2955] [cursor=pointer]: … more
+                                  - generic:
+                                    - button "View image":
+                                      - figure "View image":
+                                        - img "View image"
+                                  - generic:
+                                    - button "Adi Barkai and 299 others reacted":
+                                      - generic:
+                                        - img
+                                        - img
+                                        - img
+                                        - generic:
+                                          - paragraph:
+                                            - generic: Adi Barkai and 299 others reacted
+                                            - generic: Adi Barkai and 299 others
+                                    - generic:
+                                      - button "23 comments":
+                                        - paragraph:
+                                          - generic: 23 comments
+                                          - generic: 23 comments
+                                      - paragraph: •
+                                      - button "6 reposts":
+                                        - paragraph:
+                                          - generic: 6 reposts
+                                          - generic: 6 reposts
+                                  - generic:
+                                    - generic:
+                                      - generic:
+                                        - generic:
+                                          - generic:
+                                            - 'button "Reaction button state: no reaction"':
+                                              - generic:
+                                                - img
+                                                - generic: Like
+                                        - button "Open reactions menu":
+                                          - generic:
+                                            - img
+                                    - button "Comment":
+                                      - generic:
+                                        - img
+                                        - generic:
+                                          - generic: Comment
+                                    - button "Repost":
+                                      - generic:
+                                        - img
+                                        - generic:
+                                          - generic: Repost
+                                    - button "Send":
+                                      - generic:
+                                        - img
+                                        - generic:
+                                          - generic: Send
+                      - generic:
+                        - generic:
+                          - generic:
+                            - listitem:
+                              - generic:
+                                - generic:
+                                  - heading "Feed post" [level=2]:
+                                    - generic: Feed post
+                                  - generic:
+                                    - link "View Sahar Carmel (סהר כרמל)’s profile":
+                                      - /url: https://www.linkedin.com/in/saharcarmel/
+                                      - figure "View Sahar Carmel (סהר כרמל)’s profile":
+                                        - img "View Sahar Carmel (סהר כרמל)’s profile"
+                                    - 'link "Sahar Carmel (סהר כרמל) 1st Director AI enablement | squid-club.com 1h • Visibility: Global"':
+                                      - /url: https://www.linkedin.com/in/saharcarmel/
+                                      - generic:
+                                        - generic:
+                                          - paragraph:
+                                            - generic: Sahar Carmel (סהר כרמל) 1st
+                                            - generic:
+                                              - text: Sahar Carmel (סהר כרמל)
+                                              - generic: • 1st
+                                        - generic:
+                                          - paragraph: Director AI enablement | squid-club.com
+                                        - generic:
+                                          - paragraph:
+                                            - text: 1h •
+                                            - 'img "Visibility: Global"'
+                                    - button "View more options":
+                                      - generic:
+                                        - img
+                                    - button "Hide Post":
+                                      - generic:
+                                        - img
+                                  - generic:
+                                    - generic:
+                                      - paragraph:
+                                        - generic:
+                                          - text: לפני שלושה שבועות עשיתי סדנת Claude Code לכל האנליסטים אצלנו בחברה.
+                                          - text: הגעתי מוכן. הכנתי סטאפ מסודר — agents, roles, skills על ה-BigQuery וה-DBT שלהם. חשבתי שזה יהיה נחמד, שיתנסו, שיגידו "כיף". ציפיתי לאימוץ מתון.
+                                          - text: מה שקרה היה הפוך. הם עקרו את זה ברצינות. אנליסטים שמעולם לא נגעו בטרמינל פתאום יושבים עם Claude Code, כותבים קוואריז, בונים דשבורדים, עושים אנליזות מורכבות. תוך שבועיים עברו ממצב של "מה זה CLI" לעבודה שוטפת עם agent.
+                                          - text: במקביל בניתי כלי על אותו סטאק — agent SDK מעל BigQuery ו-DBT — עם UI מסודר. להריץ אנליזות, להמיר קוורי לטבלה או גרף, לבנות דשבורדים עם פילטרים. לקחתי את מה שלמדו בסדנה ועטפתי בממשק נוח.
+                                          - text: "הוצאתי את הכלי. הם הסתכלו עליו. ואז אמרו: \"זה מעכב אותנו.\""
+                                          - text: רגע. בניתי ממשק נוח במקום טרמינל שחור, וזה מעכב אותם?
+                                          - text: אבל ברגע שעצרתי להקשיב, הבנתי שהם צודקים. זה בדיוק מה שקורה לי עם מהנדסים — אחרי שלמדתי לעבוד ישירות עם Claude Code, כל UI מרגיש מגביל. כשאתה מדבר ישירות עם המודל, אתה יכול לבקש כל דבר, לשנות כיוון באמצע, לחקור. UI הוא תמיד תת-קבוצה של מה שאתה יכול לעשות.
+                                          - text: ברגע שאנליסט יודע לדבר עם Claude Code, הוא לא רוצה לחזור לכפתורים ותפריטים.
+                                          - text: "ואז הגיע הרגע המעניין. האנליסטים היו עם בעיה אמיתית: עבודה מעולה לוקלית עם Claude Code, אבל אין איך להציג תוצאות. פעם היה Tableau, כלי BI. עכשיו יושבים עם אנליזות מדהימות על המחשב ואין דרך להנגיש לפרודקט, למרקטינג, לפיננסים."
+                                          - text: הבנתי שבניתי את הכלי הנכון לקהל הלא-נכון. הוא לא בשביל האנליסטים. הוא בשביל כל השאר.
+                                          - text: והאנליסטים הבינו את זה לפניי. "הכלי לא בשבילנו. הוא בשביל כל השאר. ואנחנו נבנה אותו — דרך Claude Code."
+                                          - text: עכשיו האנליסטים בונים UIs ודשבורדים על הכלי דרך Claude Code — דברים שלפני חודש לא היו חולמים לגעת בהם. כשמישהו מפרודקט רץ אנליזה דרך הכלי, היא מגיעה לאנליסט שמוודא לוקלית, מתקן אם צריך, ומחזיר תוצאה מאומתת.
+                                          - text: האנליסטים לא רוצים להיות כופי SQL. הם רוצים לחקור דאטה, למצוא תובנות, לעשות עבודה מורכבת. הכלי משחרר אותם מהעבודה הטקטית.
+                                          - text: ויש פה תובנה שהרבה מפספסים. גל של סטארטאפים בונים כלים "למתכנתים" או "לאנליסטים" — כלים שכותבים קוד, SQL, מייצרים דשבורדים. אבל המתכנתים הטובים והאנליסטים הטובים לא צריכים אותם. הם עובדים ישירות עם AI.
+                                          - text: "הכלים צריכים לכוון לקהל אחר: כל מי בארגון שצריך תוצאה אבל לא רוצה ללמוד את הכלי."
+                                          - text: תפקיד המומחים? לא להשתמש בכלי. לבנות אותו, לוודא איכות, ולעשות את מה שהכלי עדיין לא יודע.
+                                          - text: "העתיד הקרוב: לא כלים שמחליפים מומחים, אלא כלים שמנגישים את עבודתם לכולם. המומחים עולים שכבת הפשטה למעלה — ובונים את השכבה הבאה."
+                                          - text: אגב, אחד הדברים שהכי עזרו לי בתהליך הזה הוא לתת ל-agents גישה לידע מספרים אמיתיים, לא רק זיכרון מהאימון. בניתי בשביל זה את Candlekeep —
+                                          - link "www.getcandlekeep.com":
+                                            - /url: https://www.linkedin.com/redir/redirect/?url=http%3A%2F%2Fwww%2Egetcandlekeep%2Ecom&urlhash=oGeO&mt=utt95445_14vCnOBLaB26QzRyRSid2OngONGrNByME6g7wnq1aKPpOYGRf8os-eGIYRZAicO3CtxsnG-sXN1XSiGXxczxXSSdhCM7gtbbJgDGrRBcsAvDwS5Ow&isSdui=true
+                                            - generic:
+                                              - strong: www.getcandlekeep.com
+                                          - text: — ספרייה שנותנת ל-agents לקרוא ולהשתמש בידע אמיתי.
+                                          - button:
+                                            - generic [ref=e3074] [cursor=pointer]: … more
+                                  - generic:
+                                    - button "Show translation":
+                                      - generic:
+                                        - generic: Show translation
+                                  - link "CandleKeep - Turn Any AI Agent Into a Domain Expert getcandlekeep.com":
+                                    - /url: https://www.linkedin.com/redir/redirect/?url=http%3A%2F%2Fwww%2Egetcandlekeep%2Ecom&urlhash=oGeO&mt=fyhEVlSKDDzwJq9glXdrET2XDSoI3m6-QAnuedNsRsk_HEYenML3-csVFF9xUqf_yw_l10QTudwgkNRvJNSS1trlTAntJVRxzBWh_S4ruOmMTFUlYXXJlg34EA&isSdui=true
+                                    - generic:
+                                      - figure
+                                      - generic:
+                                        - generic:
+                                          - paragraph:
+                                            - generic: CandleKeep - Turn Any AI Agent Into a Domain Expert
+                                            - text: CandleKeep - Turn Any AI Agent Into a Domain Expert
+                                        - generic:
+                                          - paragraph: getcandlekeep.com
+                                  - generic:
+                                    - button "Elad Laor and 24 others reacted":
+                                      - generic:
+                                        - img
+                                        - img
+                                        - img
+                                        - generic:
+                                          - paragraph:
+                                            - generic: Elad Laor and 24 others reacted
+                                            - generic: Elad Laor and 24 others
+                                    - generic:
+                                      - button "5 comments":
+                                        - paragraph:
+                                          - generic: 5 comments
+                                          - generic: 5 comments
+                                      - button:
+                                        - paragraph
+                                  - generic:
+                                    - generic:
+                                      - generic:
+                                        - generic:
+                                          - generic:
+                                            - 'button "Reaction button state: no reaction"':
+                                              - generic:
+                                                - img
+                                                - generic: Like
+                                        - button "Open reactions menu":
+                                          - generic:
+                                            - img
+                                    - button "Comment":
+                                      - generic:
+                                        - img
+                                        - generic:
+                                          - generic: Comment
+                                    - button "Repost":
+                                      - generic:
+                                        - img
+                                        - generic:
+                                          - generic: Repost
+                                    - button "Send":
+                                      - generic:
+                                        - img
+                                        - generic:
+                                          - generic: Send
+                      - generic:
+                        - generic:
+                          - generic:
+                            - listitem:
+                              - generic:
+                                - generic:
+                                  - heading "Feed post" [level=2]:
+                                    - generic: Feed post
+                                  - generic:
+                                    - generic:
+                                      - 'link "View company: PassportCard"':
+                                        - /url: https://www.linkedin.com/company/passportcard/posts/
+                                        - 'figure "View company: PassportCard"':
+                                          - 'img "View company: PassportCard"'
+                                      - generic:
+                                        - paragraph:
+                                          - link "PassportCard":
+                                            - /url: https://www.linkedin.com/company/passportcard/posts/
+                                            - strong: PassportCard
+                                          - text: commented on this
+                                    - button "View more options":
+                                      - generic:
+                                        - img
+                                    - button "Hide Post":
+                                      - generic:
+                                        - img
+                                  - generic:
+                                    - link "View Max Conway’s profile":
+                                      - /url: https://www.linkedin.com/in/max-conway-a07b7427a/
+                                      - figure "View Max Conway’s profile":
+                                        - img "View Max Conway’s profile"
+                                    - 'link "Max Conway Verified Profile 2nd Sales representative at PassportCard 6d • Edited • Visibility: Global"':
+                                      - /url: https://www.linkedin.com/in/max-conway-a07b7427a/
+                                      - generic:
+                                        - generic:
+                                          - paragraph:
+                                            - generic: Max Conway Verified Profile 2nd
+                                            - generic:
+                                              - text: Max Conway
+                                              - generic:
+                                                - img
+                                              - generic: • 2nd
+                                        - generic:
+                                          - paragraph: Sales representative at PassportCard
+                                        - generic:
+                                          - paragraph:
+                                            - text: 6d • Edited •
+                                            - 'img "Visibility: Global"'
+                                    - generic:
+                                      - generic:
+                                        - generic:
+                                          - button "Follow Max Conway":
+                                            - generic:
+                                              - img
+                                              - generic:
+                                                - generic: Follow
+                                  - paragraph:
+                                    - generic:
+                                      - text: I’m happy to share that I’ve started a new position as a Sales Representative at
+                                      - link "PassportCard":
+                                        - /url: https://www.linkedin.com/company/passportcard/
+                                        - generic:
+                                          - strong: PassportCard
+                                      - text: Australia!
+                                  - generic:
+                                    - button "View celebration image":
+                                      - figure "View celebration image":
+                                        - img "View celebration image"
+                                    - link "Starting a new position":
+                                      - /url: https://www.linkedin.com/feed/update/urn:li:activity:7429528268984381441/?dashCommentUrn=urn%3Ali%3Afsd_comment%3A%287429528249178669056%2Curn%3Ali%3AugcPost%3A7428968039540490240%29&originTrackingId=2mr12t%2B9%2BF8%2FENlVvOLgmQ%3D%3D
+                                      - paragraph: Starting a new position
+                                  - generic:
+                                    - button "45 reactions":
+                                      - generic:
+                                        - img
+                                        - img
+                                        - img
+                                        - generic:
+                                          - paragraph:
+                                            - generic: 45 reactions
+                                            - text: "45"
+                                    - generic:
+                                      - button "21 comments":
+                                        - paragraph:
+                                          - generic: 21 comments
+                                          - generic: 21 comments
+                                      - button:
+                                        - paragraph
+                                  - generic:
+                                    - generic:
+                                      - generic:
+                                        - generic:
+                                          - generic:
+                                            - 'button "Reaction button state: no reaction"':
+                                              - generic:
+                                                - img
+                                                - generic: Like
+                                        - button "Open reactions menu":
+                                          - generic:
+                                            - img
+                                    - button "Comment":
+                                      - generic:
+                                        - img
+                                        - generic:
+                                          - generic: Comment
+                                    - button "Repost":
+                                      - generic:
+                                        - img
+                                        - generic:
+                                          - generic: Repost
+                                    - button "Send":
+                                      - generic:
+                                        - img
+                                        - generic:
+                                          - generic: Send
+                              - generic:
+                                - generic:
+                                  - generic:
+                                    - generic:
+                                      - generic:
+                                        - generic:
+                                          - generic:
+                                            - generic:
+                                              - 'link "View company: PassportCard"':
+                                                - /url: https://www.linkedin.com/company/passportcard/posts/
+                                                - 'figure "View company: PassportCard"':
+                                                  - 'img "View company: PassportCard"'
+                                            - generic:
+                                              - generic:
+                                                - generic:
+                                                  - link "PassportCard 14,875 followers":
+                                                    - /url: https://www.linkedin.com/company/passportcard/posts/
+                                                    - generic:
+                                                      - generic:
+                                                        - generic:
+                                                          - paragraph: PassportCard
+                                                      - generic:
+                                                        - paragraph: 14,875 followers
+                                                  - generic:
+                                                    - paragraph: 4d
+                                                  - button "View more options for PassportCard’s comment.":
+                                                    - generic:
+                                                      - img
+                                              - generic:
+                                                - generic:
+                                                  - generic:
+                                                    - paragraph:
+                                                      - generic:
+                                                        - text: Well deserved,
+                                                        - link "Max Conway":
+                                                          - /url: https://www.linkedin.com/in/max-conway-a07b7427a/
+                                                          - generic:
+                                                            - strong: Max Conway
+                                                        - text: 👏
+                                                        - text: Welcome to the Australian team. Wishing you great success as a sales representative!
+                                              - generic:
+                                                - generic:
+                                                  - generic:
+                                                    - generic:
+                                                      - generic:
+                                                        - 'button "Reaction button state: no reaction"':
+                                                          - generic:
+                                                            - generic:
+                                                              - 'button "Reaction button state: no reaction"':
+                                                                - generic:
+                                                                  - 'button "Reaction button state: no reaction"':
+                                                                    - generic: "Reaction button state: no reaction"
+                                                                    - text: Like
+                                                        - button "Open reactions menu":
+                                                          - generic:
+                                                            - img
+                                                    - button "1 reaction":
+                                                      - generic:
+                                                        - img
+                                                        - generic:
+                                                          - paragraph:
+                                                            - generic: 1 reaction
+                                                            - text: "1"
+                                                  - generic:
+                                                    - button "Reply":
+                                                      - generic:
+                                                        - generic: Reply
+                                - generic:
+                                  - button "Load more comments":
+                                    - generic:
+                                      - generic: Load more comments
+                      - generic:
+                        - generic:
+                          - generic:
+                            - listitem:
+                              - generic:
+                                - generic:
+                                  - heading "Feed post" [level=2]:
+                                    - generic: Feed post
+                                  - generic:
+                                    - generic:
+                                      - link "View Dor Farjun’s profile":
+                                        - /url: https://www.linkedin.com/in/farjundor/
+                                        - figure "View Dor Farjun’s profile":
+                                          - img "View Dor Farjun’s profile"
+                                      - generic:
+                                        - paragraph:
+                                          - link "Dor Farjun":
+                                            - /url: https://www.linkedin.com/in/farjundor/
+                                            - strong: Dor Farjun
+                                          - text: commented on this
+                                    - button "View more options":
+                                      - generic:
+                                        - img
+                                    - button "Hide Post":
+                                      - generic:
+                                        - img
+                                  - generic:
+                                    - link "View Jacob Jan’s profile":
+                                      - /url: https://www.linkedin.com/in/jvcob/
+                                      - figure "View Jacob Jan’s profile":
+                                        - img "View Jacob Jan’s profile"
+                                    - 'link "Jacob Jan 3rd+ AMZ CRO + AI SYSTEMS | founder → SCALABLE + SPOTLIGHTED 1w • Visibility: Global"':
+                                      - /url: https://www.linkedin.com/in/jvcob/
+                                      - generic:
+                                        - generic:
+                                          - paragraph:
+                                            - generic: Jacob Jan 3rd+
+                                            - generic:
+                                              - text: Jacob Jan
+                                              - generic: • 3rd+
+                                        - generic:
+                                          - paragraph: AMZ CRO + AI SYSTEMS | founder → SCALABLE + SPOTLIGHTED
+                                        - generic:
+                                          - paragraph:
+                                            - text: 1w •
+                                            - 'img "Visibility: Global"'
+                                    - generic:
+                                      - generic:
+                                        - generic:
+                                          - button "Follow Jacob Jan":
+                                            - generic:
+                                              - img
+                                              - generic:
+                                                - generic: Follow
+                                  - paragraph:
+                                    - generic:
+                                      - text: "10 products × $3k per Amazon A+ = $30k. or: 10 products × 12 minutes = one afternoon. here's the workflow — it's free. here's what it does: → generates on-brand A+ premium content → mobile + desktop — fully responsive → built on real customer data → 100% AI. 12 minutes. no design skills. no prompting. no complexity. everything is laid out. you just pick the best and upload. what's inside the guide: → the full workflow (step by step) → how to get on-brand results every time → how to go from strategy to finished A+ in 12 min → the only human step left: pick your favorites i'll share it with you: 1/ connect 2/ comment \"A+\" it's yours. — jacob"
+                                      - button:
+                                        - generic [ref=e3413] [cursor=pointer]: … more
+                                  - generic:
+                                    - button "View image":
+                                      - figure "View image":
+                                        - img "View image"
+                                  - generic:
+                                    - button "779 reactions":
+                                      - generic:
+                                        - img
+                                        - img
+                                        - img
+                                        - generic:
+                                          - paragraph:
+                                            - generic: 779 reactions
+                                            - text: "779"
+                                    - generic:
+                                      - button "4,486 comments":
+                                        - paragraph:
+                                          - generic: 4,486 comments
+                                          - generic: 4,486 comments
+                                      - paragraph: •
+                                      - button "15 reposts":
+                                        - paragraph:
+                                          - generic: 15 reposts
+                                          - generic: 15 reposts
+                                  - generic:
+                                    - generic:
+                                      - generic:
+                                        - generic:
+                                          - generic:
+                                            - 'button "Reaction button state: no reaction"':
+                                              - generic:
+                                                - img
+                                                - generic: Like
+                                        - button "Open reactions menu":
+                                          - generic:
+                                            - img
+                                    - button "Comment":
+                                      - generic:
+                                        - img
+                                        - generic:
+                                          - generic: Comment
+                                    - button "Repost":
+                                      - generic:
+                                        - img
+                                        - generic:
+                                          - generic: Repost
+                                    - button "Send":
+                                      - generic:
+                                        - img
+                                        - generic:
+                                          - generic: Send
+                              - generic:
+                                - generic:
+                                  - generic:
+                                    - generic:
+                                      - generic:
+                                        - generic:
+                                          - generic:
+                                            - generic:
+                                              - link "View Dor Farjun’s profile":
+                                                - /url: https://www.linkedin.com/in/farjundor/
+                                                - figure "View Dor Farjun’s profile":
+                                                  - img "View Dor Farjun’s profile"
+                                            - generic:
+                                              - generic:
+                                                - generic:
+                                                  - link "Dor Farjun Verified Profile 1st Lead AI Products | Building the future @ GenieLabs AI | Curious about everything":
+                                                    - /url: https://www.linkedin.com/in/farjundor/
+                                                    - generic:
+                                                      - generic:
+                                                        - generic:
+                                                          - paragraph:
+                                                            - generic: Dor Farjun Verified Profile 1st
+                                                            - generic:
+                                                              - text: Dor Farjun
+                                                              - generic:
+                                                                - img
+                                                              - generic: • 1st
+                                                      - generic:
+                                                        - paragraph: Lead AI Products | Building the future @ GenieLabs AI | Curious about everything
+                                                  - generic:
+                                                    - paragraph: 1w
+                                                  - button "View more options for Dor Farjun’s comment.":
+                                                    - generic:
+                                                      - img
+                                              - generic:
+                                                - generic:
+                                                  - generic:
+                                                    - paragraph:
+                                                      - generic: A+
+                                              - generic:
+                                                - generic:
+                                                  - generic:
+                                                    - generic:
+                                                      - generic:
+                                                        - 'button "Reaction button state: no reaction"':
+                                                          - generic:
+                                                            - generic:
+                                                              - 'button "Reaction button state: no reaction"':
+                                                                - generic:
+                                                                  - 'button "Reaction button state: no reaction"':
+                                                                    - generic: "Reaction button state: no reaction"
+                                                                    - text: Like
+                                                        - button "Open reactions menu":
+                                                          - generic:
+                                                            - img
+                                                  - generic:
+                                                    - button "Reply":
+                                                      - generic:
+                                                        - generic: Reply
+                                                    - paragraph: "1"
+                                - generic:
+                                  - button "Load more comments":
+                                    - generic:
+                                      - generic: Load more comments
+                      - generic:
+                        - button "Load more":
+                          - generic:
+                            - generic: Load more
+                  - generic:
+                    - generic:
+                      - generic:
+                        - generic:
+                          - generic:
+                            - generic:
+                              - paragraph: Today’s puzzles
+                              - link "Zip - a quick brain teaser Solve in 60s or less!":
+                                - /url: /games/zip/
+                                - generic:
+                                  - figure
+                                  - generic:
+                                    - paragraph: Zip - a quick brain teaser
+                                    - paragraph: Solve in 60s or less!
+                                  - img
+                        - generic:
+                          - generic:
+                            - paragraph: Add to your feed
+                            - link "View profile Noa Zilberman Future Summit, Odo Security (acq. by Check Point), Forbes30 Follow Noa Zilberman":
+                              - /url: https://www.linkedin.com/in/noa-zilberman/
+                              - generic:
+                                - figure "View profile":
+                                  - img "View profile"
+                                - generic:
+                                  - generic:
+                                    - generic:
+                                      - paragraph: Noa Zilberman
+                                  - generic:
+                                    - paragraph: Future Summit, Odo Security (acq. by Check Point), Forbes30
+                                  - generic:
+                                    - generic:
+                                      - button "Follow Noa Zilberman":
+                                        - generic:
+                                          - img
+                                          - generic:
+                                            - generic: Follow
+                            - link "View profile Sundar Pichai CEO at Google Follow Sundar Pichai":
+                              - /url: https://www.linkedin.com/in/sundarpichai/
+                              - generic:
+                                - figure "View profile":
+                                  - img "View profile"
+                                - generic:
+                                  - generic:
+                                    - generic:
+                                      - paragraph: Sundar Pichai
+                                  - generic:
+                                    - paragraph: CEO at Google
+                                  - generic:
+                                    - generic:
+                                      - button "Follow Sundar Pichai":
+                                        - generic:
+                                          - img
+                                          - generic:
+                                            - generic: Follow
+                            - link "View profile Lenny Rachitsky Deeply researched no-nonsense product, growth, and career advice Follow Lenny Rachitsky":
+                              - /url: https://www.linkedin.com/in/lennyrachitsky/
+                              - generic:
+                                - figure "View profile":
+                                  - img "View profile"
+                                - generic:
+                                  - generic:
+                                    - generic:
+                                      - paragraph: Lenny Rachitsky
+                                  - generic:
+                                    - paragraph: Deeply researched no-nonsense product, growth, and career advice
+                                  - generic:
+                                    - generic:
+                                      - button "Follow Lenny Rachitsky":
+                                        - generic:
+                                          - img
+                                          - generic:
+                                            - generic: Follow
+                            - link "View all recommendations":
+                              - /url: /mynetwork/discover-hub/
+                              - generic:
+                                - img
+                                - generic: View all recommendations
+                      - generic:
+                        - generic:
+                          - iframe [ref=e1522]:
+                            - main "Work With Us Container" [ref=f30e3]:
+                              - generic [ref=f30e4]:
+                                - img [ref=f30e6]
+                                - generic [ref=f30e7]:
+                                  - img "Oded" [ref=f30e8]
+                                  - link "DraftKings Inc." [ref=f30e9] [cursor=pointer]:
+                                    - /url: https://www.linkedin.com/li/tscp/sct?destinationUrl=http%3A%2F%2Fwww.linkedin.com%2Fcompany%2F2507852%2Flife&trackingEvent=%5B%7B%22eventInfo%22%3A%7B%22appId%22%3A%22com.linkedin.ads.rendering.d_web%22%2C%22eventName%22%3A%22SponsoredRightRailContentActionEvent%22%2C%22topicName%22%3A%22SponsoredRightRailContentActionEvent%22%7D%2C%22eventBody%22%3A%7B%22sponsoredEventHeader%22%3A%7B%22encryptedTrackingData%22%3A%22CwEAAAGchJFoNh_xucmT-dWb8SarZmB4lqhMyo2P5WTCRGAlP7c13ejD5n4ax7rnFgBkh89m83bUGlriufnZqW1oRIIeFWm7npPkfQLsOaAZkHdvK4gCk0w2PiZzgK1sfmpWo3imQVIQ8Xrj5Eo5M5QrkhRSUCRZUXfYB1Ch4hojgjp1P-uQoAzTyVcF1gD5zjerRifdpIWesjeB2VD08cIq51yaoVpwsP_jckcbyDll94hvF9VRmj8vQEoIDbE9aEf4RjQofjtsT7mr3UTPBov62oE2EOj9En1EAtkPwzqBFpO-x8IfD2q4ZuPdxe3bLdkoXN79H9pszS3snjDu7WGbn3Ww_c1LRr1eQzNpZ_q6DddeHvwwk2fQTtzNB1uxPHcUvMpe8nbuc1piqgTVmpc0iRv1r7IlieCZQFRCw48xvyg3wy6_5Q2hQ37n4RpUvh6boBviuuhU5yNtqDUgMS_Hne-rkq9bx7-mNVt7yKsKCTdqm1wddnczpQn_J3oavRHf3KC5fHIQRt5OlJ-VC2YMWr_ASbD0Fyzg_Rl_-VRvWpV3Fd0VA8ITcJN_zA2ngPVq5vacJVVGMNaskfwNNFQtNPHBpbEGLY3USGEmj6YBaxpzNrWbkuuiMtfskPmd7uf-cwHKmx_kMTlmj9dRJra5Ml9qB6U3bpwKgrNHX1etrGLNbKq1sU3LyvWol3-j7JpycXkYhiYff4KFdDHMKd1QgmK-4yrC80lP9dJmB17R2A5TH4gwN0WzelDDRgZNoLKGdkUFefRN3gGHyJaLXlT4T0OJr_AnY_fFrzn0-PKRUUrIfSbbtjGidRFAbdxuVJXFJyX-_IVd7AIyiUhwCJ1_vQla_lin-jTGgKjyGleToerTFVHI-aiPIR7o_0ewIRXRPyAIgF-EAx3_IY2l-tM4F9dDMZkN7LOvJPcv_E49yn4L7SOvisURpIxfq4cGhX1-a8m8Md1p2ykhbNFEH6Lhy93OQJrsqJmYexMw4aSounLPeMnm63cq3mDU0mV0dIphR7FjLvguZ7C0cy6qdiehLlUwcmqzmHFdh1zrJHhJtDHQreXQaSwVCbixH7UFFua0p2Sc0y1-xjvC%22%7D%2C%22header%22%3A%7B%22pageInstance%22%3A%7B%22pageUrn%22%3A%22urn%3Ali%3Apage%3Ad_flagship3_feed%22%2C%22trackingId%22%3A%2227700490-ae01-45a7-9bb5-e70f726cf756%22%7D%2C%22time%22%3A1771750647812%2C%22version%22%3A%220.0.0%22%7D%2C%22requestHeader%22%3A%7B%22pageKey%22%3A%22d_flagship3_feed%22%2C%22interfaceLocale%22%3A%22en-US%22%7D%7D%7D%5D&csrfToken=ajax%3A2872756275449100236
+                                    - img "DraftKings Inc." [ref=f30e10]
+                              - generic [ref=f30e11]:
+                                - generic [ref=f30e12]:
+                                  - paragraph [ref=f30e13]: Oded, explore relevant opportunities with DraftKings Inc.
+                                  - paragraph [ref=f30e14]: Get the latest jobs and industry news
+                                - link "Follow" [ref=f30e15] [cursor=pointer]:
+                                  - /url: https://www.linkedin.com/li/tscp/sct?destinationUrl=http%3A%2F%2Fwww.linkedin.com%2Fcompany%2F2507852%2Flife%3FisFollowingPage%3Dtrue&trackingEvent=%5B%7B%22eventInfo%22%3A%7B%22appId%22%3A%22com.linkedin.ads.rendering.d_web%22%2C%22eventName%22%3A%22SponsoredRightRailContentActionEvent%22%2C%22topicName%22%3A%22SponsoredRightRailContentActionEvent%22%7D%2C%22eventBody%22%3A%7B%22sponsoredEventHeader%22%3A%7B%22encryptedTrackingData%22%3A%22CwEAAAGchJFoNghTIZaP_dazjY14lR_RDftVMQF1sf4-30lQ__GoZ4IeAMlE1YYtEI7QxSAhwjjL-LJGJQEmwuPWYn82QrTpdMJJgQWVLBlR4HQIfdlIblZk4LsSF2RTxXHXZDFcUa7g_GKhHWoPvpeRnIXvIOkq0WXFme-c3Ceu7Cd7no71h7aO6k5A3Y2_ywVehfWruKh_qxsrwuwytV-7p9yNXWj47LqgtZc46Nm-q1vodIdj-mrZtEZWQLFZel9-0YJknIhX3zCY27CrNqESkZGWOpNeVyaDD6cC_itTrKXmsv0YNdX85Rjmz2sWWO75O8XBFOgu4Re8m847P0z9ShVloTp1mGXaJhf5eIN2iYMt2ppzhUgMrCbI6LXcDxAqexZ4vHobnXrc9bsIKE2HlSpBzJTvWB1wC4b4aTT9yNW7fM4lEgfXIvfxK5ICEhvOCHaNM8Wm5FwgJTM--brmlw6_XHQtUrlfEgrTTM-3aXgb-1E-G3XLnErl6lV2eihNgMQltf2e-P0paq14lvpv-XAV3NTKGIXZuDFXlRv3ZmiKnsQyZ0cM-QqoBN0X9eU3eW3lIXWsRChEEPQiuQsgCAIYctfpI7GrlgffzrTJg1StsIdG7YDOMRU_nwTgUsY6sxNNMRZBPS5E1IeoanKE5xpqQvikXKT_R-ucuUWqGf9a-9LSvYuzkkSUw7rj6SFxXcQa44q4NgdvbuVMn3lPgYEpsIKU0mXd9M-FZDT_XDCZP56lA-rQS3AI45hg_F4QgV6LXc18UiSdvFcWYpKkTJYYs-gTY8piFpLTKMRTe4rBE8cjyujDLH6hAPdosmBBiCDWDGQQMUlEAL8v8nVlq9__cqogzMZIjAha40xQoxJZeuNNd9ajPZtAR381mY9t8reZnuee2b5boyGbpwP4FYG4K8bbyJdm8zH0Wtt_ifJNJziUsIpim7vO8HCdBQsOfha5_g3Bcv1LWUSDOztB54BLwustnwhxt9l7mTr4Jli_2fi1eTPCLDFpuSZ_zn-Uhj3m35qMy2YYVJbj37qqQBXbOPdvT9wp2sb_f4bPrM5VXc4yLnbvjVgvbGekZeZUBgcVAX6lLlcX6f-E5vpL0tM1LV74JAnWuBv6zM1-Jw3VW8aP7IiHflc%22%7D%2C%22header%22%3A%7B%22pageInstance%22%3A%7B%22pageUrn%22%3A%22urn%3Ali%3Apage%3Ad_flagship3_feed%22%2C%22trackingId%22%3A%226dcdd024-6545-45cb-9f6b-53d90b57789f%22%7D%2C%22time%22%3A1771750647812%2C%22version%22%3A%220.0.0%22%7D%2C%22requestHeader%22%3A%7B%22pageKey%22%3A%22d_flagship3_feed%22%2C%22interfaceLocale%22%3A%22en-US%22%7D%7D%7D%5D&csrfToken=ajax%3A2872756275449100236
+                              - generic [ref=f30e16]:
+                                - paragraph [ref=f30e17]: Promoted
+                                - button "Ad Options" [ref=f30e18] [cursor=pointer]:
+                                  - img [ref=f30e19]
+                                  - generic [ref=f30e23]: Ad Options
+                          - generic:
+                            - generic:
+                              - link "About":
+                                - /url: https://about.linkedin.com/
+                                - paragraph: About
+                              - link "Accessibility":
+                                - /url: https://www.linkedin.com/accessibility/
+                                - paragraph: Accessibility
+                              - link "Help Center":
+                                - /url: https://www.linkedin.com/help/linkedin/
+                                - paragraph: Help Center
+                              - button "Privacy & Terms":
+                                - generic:
+                                  - paragraph: Privacy & Terms
+                                  - img
+                              - link "Ad Choices":
+                                - /url: https://www.linkedin.com/help/linkedin/answer/62931/
+                                - paragraph: Ad Choices
+                              - link "Advertising":
+                                - /url: https://www.linkedin.com/ad/start/?trk=n_nav_ads_rr
+                                - paragraph: Advertising
+                              - button "Business Services":
+                                - generic:
+                                  - paragraph: Business Services
+                                  - img
+                              - link "Get the LinkedIn app":
+                                - /url: https://www.linkedin.com/mobile/
+                                - paragraph: Get the LinkedIn app
+                              - button "More":
+                                - paragraph: More
+                            - generic:
+                              - img
+                              - paragraph: LinkedIn Corporation © 2026
+    - generic:
+      - generic:
+        - generic:
+          - generic:
+            - complementary:
+              - generic [ref=e1554]:
+                - generic [ref=e1556] [cursor=pointer]:
+                  - generic [ref=e1557]:
+                    - img "Oded Ben-Yair" [ref=e1558]
+                    - generic [ref=e1560]: Status is online
+                  - button "You are on the messaging overlay. Press enter to open the list of conversations." [ref=e1561]:
+                    - generic [ref=e1562]:
+                      - generic [ref=e1563]: Messaging
+                      - generic [ref=e1564]: You are on the messaging overlay. Press enter to open the list of conversations.
+                  - mark [ref=e1565]:
+                    - generic [ref=e1566]: "4"
+                - generic [ref=e1567]:
+                  - button "Open messenger dropdown menu" [ref=e1569] [cursor=pointer]:
+                    - img "Open messenger dropdown menu" [ref=e1570]
+                  - button "Compose message" [ref=e1573] [cursor=pointer]:
+                    - img [ref=e1574]
+                    - generic [ref=e1576]: Compose message
+                  - button "You are on the messaging overlay. Press enter to open the list of conversations." [ref=e1577] [cursor=pointer]:
+                    - img [ref=e1578]
+                    - generic [ref=e1580]: You are on the messaging overlay. Press enter to open the list of conversations.
+              - dialog "Messaging" [ref=e1581]:
+                - generic [ref=e1582]:
+                  - generic [ref=e1583] [cursor=pointer]:
+                    - generic [ref=e1585]:
+                      - img "Dennis Nerush" [ref=e1588]
+                      - heading "Dennis Nerush" [level=2] [ref=e1592]
+                    - button "Close your conversation with Dennis Nerush and Oded Ben-Yair" [ref=e1594]:
+                      - img [ref=e1595]
+                      - generic [ref=e1597]: Close your conversation with Dennis Nerush and Oded Ben-Yair
+                  - generic [ref=e1599]:
+                    - list [ref=e1604]:
+                      - listitem
+                      - listitem [ref=e1605]:
+                        - time [ref=e1606]: Jan 17, 2025
+                        - generic [ref=e1607]: Oded Ben-Yair sent the following message at 2:58 PM
+                        - generic [ref=e1608]:
+                          - link "View Oded’s profile Oded Ben-Yair" [ref=e1609] [cursor=pointer]:
+                            - /url: https://www.linkedin.com/in/ACoAABEJXkIBpHRsj0zFy126tNlNuHKxpGElSpQ
+                            - generic [ref=e1610]: View Oded’s profile
+                            - img "Oded Ben-Yair" [ref=e1611]
+                          - generic [ref=e1612]:
+                            - generic [ref=e1613]:
+                              - link "Oded Ben-Yair" [ref=e1614] [cursor=pointer]:
+                                - /url: https://www.linkedin.com/in/ACoAABEJXkIBpHRsj0zFy126tNlNuHKxpGElSpQ
+                                - generic [ref=e1615]: Oded Ben-Yair
+                              - img "LinkedIn Verified" [ref=e1616]
+                            - time [ref=e1618]: • 2:58 PM
+                          - paragraph [ref=e1622]:
+                            - text: היי דניס נעים מאוד, שמי עודד.
+                            - text: בהמשך לפוסט שלך בנוגע לגיוס משרות אצלכם, אשמח לדעת אם יש משרות GenAi / prompt engineer רלוונטיות.
+                            - text: "מעט עליי: מפתח תכנה שביצע הסבה מנטורופתיה והקמה וניהול של מתחם הביו-האקינג הראשון בישראל (EverLab בהרצליה אם יצא לך להכיר)."
+                            - text: ארגז הכלים שלי רחב ואני עושה את המקסימום להגדיל אותו ולשפר אותו כל יום. אשמח כמובן להעביר קורות חיים ולשוחח במידה ורלוונטי!
+                            - text: שבת שלום:)!
+                      - listitem [ref=e1623]:
+                        - generic [ref=e1624]: Dennis Nerush sent the following message at 4:23 PM
+                        - generic [ref=e1625]:
+                          - link "View Dennis’ profile Dennis Nerush" [ref=e1626] [cursor=pointer]:
+                            - /url: https://www.linkedin.com/in/ACoAAAmm-vcBa5oKsergXDkln-_z53CVu63RI7M
+                            - generic [ref=e1627]: View Dennis’ profile
+                            - img "Dennis Nerush" [ref=e1628]
+                          - generic [ref=e1629]:
+                            - generic [ref=e1630]:
+                              - link "Dennis Nerush" [ref=e1631] [cursor=pointer]:
+                                - /url: https://www.linkedin.com/in/ACoAAAmm-vcBa5oKsergXDkln-_z53CVu63RI7M
+                                - generic [ref=e1632]: Dennis Nerush
+                              - img "LinkedIn Premium" [ref=e1633]:
+                                - img [ref=e1634]
+                            - time [ref=e1636]: • 4:23 PM
+                          - paragraph [ref=e1640]:
+                            - text: היי עודד. נעים מאוד.
+                            - text: תשלח קו"ח ואומר לך אם רלוונטי
+                      - listitem [ref=e1641]:
+                        - generic [ref=e1642]: Oded Ben-Yair sent the following messages at 5:05 PM
+                        - generic [ref=e1643]:
+                          - link "View Oded’s profile Oded Ben-Yair" [ref=e1644] [cursor=pointer]:
+                            - /url: https://www.linkedin.com/in/ACoAABEJXkIBpHRsj0zFy126tNlNuHKxpGElSpQ
+                            - generic [ref=e1645]: View Oded’s profile
+                            - img "Oded Ben-Yair" [ref=e1646]
+                          - generic [ref=e1647]:
+                            - generic [ref=e1648]:
+                              - link "Oded Ben-Yair" [ref=e1649] [cursor=pointer]:
+                                - /url: https://www.linkedin.com/in/ACoAABEJXkIBpHRsj0zFy126tNlNuHKxpGElSpQ
+                                - generic [ref=e1650]: Oded Ben-Yair
+                              - img "LinkedIn Verified" [ref=e1651]
+                            - time [ref=e1653]: • 5:05 PM
+                          - button "PDF Oded Ben-Yair_ Generative AI Specialist CV.pdf 131 KB Download" [ref=e1657] [cursor=pointer]:
+                            - generic [ref=e1658]:
+                              - text: PDF
+                              - generic [ref=e1659]:
+                                - paragraph [ref=e1660]: Oded Ben-Yair_ Generative AI Specialist CV.pdf
+                                - paragraph [ref=e1661]: 131 KB
+                              - generic [ref=e1662]:
+                                - img [ref=e1663]
+                                - paragraph [ref=e1665]: Download
+                      - listitem [ref=e1666]:
+                        - paragraph [ref=e1671]: תודה!
+                      - listitem [ref=e1672]:
+                        - generic [ref=e1673]: Dennis Nerush sent the following message at 5:58 PM
+                        - generic [ref=e1674]:
+                          - link "View Dennis’ profile Dennis Nerush" [ref=e1675] [cursor=pointer]:
+                            - /url: https://www.linkedin.com/in/ACoAAAmm-vcBa5oKsergXDkln-_z53CVu63RI7M
+                            - generic [ref=e1676]: View Dennis’ profile
+                            - img "Dennis Nerush" [ref=e1677]
+                          - generic [ref=e1678]:
+                            - generic [ref=e1679]:
+                              - link "Dennis Nerush" [ref=e1680] [cursor=pointer]:
+                                - /url: https://www.linkedin.com/in/ACoAAAmm-vcBa5oKsergXDkln-_z53CVu63RI7M
+                                - generic [ref=e1681]: Dennis Nerush
+                              - img "LinkedIn Premium" [ref=e1682]:
+                                - img [ref=e1683]
+                            - time [ref=e1685]: • 5:58 PM
+                          - paragraph [ref=e1689]:
+                            - text: תודה עודד. לצערי אנחנו מחפשים ניסיון גדול יותר בעולמות הפיתוח. אנחנו מחפשים 5+ שנים.
+                            - text: בהצלחה! ותשמור על קשר
+                      - listitem [ref=e1690]:
+                        - generic [ref=e1691]: Oded Ben-Yair sent the following message at 6:23 PM
+                        - generic [ref=e1692]:
+                          - link "View Oded’s profile Oded Ben-Yair" [ref=e1693] [cursor=pointer]:
+                            - /url: https://www.linkedin.com/in/ACoAABEJXkIBpHRsj0zFy126tNlNuHKxpGElSpQ
+                            - generic [ref=e1694]: View Oded’s profile
+                            - img "Oded Ben-Yair" [ref=e1695]
+                          - generic [ref=e1696]:
+                            - generic [ref=e1697]:
+                              - link "Oded Ben-Yair" [ref=e1698] [cursor=pointer]:
+                                - /url: https://www.linkedin.com/in/ACoAABEJXkIBpHRsj0zFy126tNlNuHKxpGElSpQ
+                                - generic [ref=e1699]: Oded Ben-Yair
+                              - img "LinkedIn Verified" [ref=e1700]
+                            - time [ref=e1702]: • 6:23 PM
+                          - paragraph [ref=e1706]: תודה:) אמשיך לעקוב, הלוואי תמשיכו להתרחב ותצטרכו אנטרי לבל
+                      - listitem [ref=e1707]:
+                        - generic [ref=e1708]: Dennis Nerush sent the following messages at 6:29 PM
+                        - generic [ref=e1709]:
+                          - link "View Dennis’ profile Dennis Nerush" [ref=e1710] [cursor=pointer]:
+                            - /url: https://www.linkedin.com/in/ACoAAAmm-vcBa5oKsergXDkln-_z53CVu63RI7M
+                            - generic [ref=e1711]: View Dennis’ profile
+                            - img "Dennis Nerush" [ref=e1712]
+                          - generic [ref=e1713]:
+                            - generic [ref=e1714]:
+                              - link "Dennis Nerush" [ref=e1715] [cursor=pointer]:
+                                - /url: https://www.linkedin.com/in/ACoAAAmm-vcBa5oKsergXDkln-_z53CVu63RI7M
+                                - generic [ref=e1716]: Dennis Nerush
+                              - img "LinkedIn Premium" [ref=e1717]:
+                                - img [ref=e1718]
+                            - time [ref=e1720]: • 6:29 PM
+                          - paragraph [ref=e1724]: הלוואי!
+                      - listitem [ref=e1725]:
+                        - time [ref=e1726]: Saturday
+                        - generic [ref=e1727]:
+                          - link "View Dennis’ profile Dennis Nerush" [ref=e1728] [cursor=pointer]:
+                            - /url: https://www.linkedin.com/in/ACoAAAmm-vcBa5oKsergXDkln-_z53CVu63RI7M
+                            - generic [ref=e1729]: View Dennis’ profile
+                            - img "Dennis Nerush" [ref=e1730]
+                          - generic [ref=e1731]:
+                            - generic [ref=e1732]:
+                              - link "Dennis Nerush" [ref=e1733] [cursor=pointer]:
+                                - /url: https://www.linkedin.com/in/ACoAAAmm-vcBa5oKsergXDkln-_z53CVu63RI7M
+                                - generic [ref=e1734]: Dennis Nerush
+                              - img "LinkedIn Premium" [ref=e1735]:
+                                - img [ref=e1736]
+                            - time [ref=e1738]: • 7:41 AM
+                          - paragraph [ref=e1742]:
+                            - text: היי עודד, מה נשמע?
+                            - text: ראיתי שהגבת על הסקר וסימנת ״מתקדם מאוד״!
+                            - text: זה ממש מרשים כי רוב התעשייה שלנו עדיין רחוקה משם.
+                            - text: אני אשמח לשמוע, אם תרצה לשתף, אילו מיומנויות AI אתה בודק כשאתה מראיין, ואיך? לחילופין, כיצד בדקו אותן כשהתראיינת?
+                            - text: תודה!
+                      - listitem [ref=e1743]:
+                        - generic [ref=e1744]: Oded Ben-Yair sent the following message at 6:01 PM
+                        - generic [ref=e1745]:
+                          - link "View Oded’s profile Oded Ben-Yair" [ref=e1746] [cursor=pointer]:
+                            - /url: https://www.linkedin.com/in/ACoAABEJXkIBpHRsj0zFy126tNlNuHKxpGElSpQ
+                            - generic [ref=e1747]: View Oded’s profile
+                            - img "Oded Ben-Yair" [ref=e1748]
+                          - generic [ref=e1749]:
+                            - generic [ref=e1750]:
+                              - link "Oded Ben-Yair" [ref=e1751] [cursor=pointer]:
+                                - /url: https://www.linkedin.com/in/ACoAABEJXkIBpHRsj0zFy126tNlNuHKxpGElSpQ
+                                - generic [ref=e1752]: Oded Ben-Yair
+                              - img "LinkedIn Verified" [ref=e1753]
+                            - time [ref=e1755]: • 6:01 PM
+                          - paragraph [ref=e1759]:
+                            - text: היי דניס מה קורה
+                            - text: אוף, נגעת בנקודה שמטרידה אותי. מהניסיון שלי (לא בתור מראיין רשמי, יותר כשעבדתי עם אנשים חדשים בצוות), הדבר שהכי חשוב הוא האם מישהו יודע לבחור כלי. מתי RAG, מתי fine tuning, מתי פרומפט פשוט מספיק. רוב האנשים שפגשתי חושבים ש"AI" זה לכתוב פרומפט טוב. בפועל הפרומפט הוא אולי 10% מהסיפור.
+                            - text: כשהתראיינתי בדרך כלל שאלו אותי לתאר מערכת שלמה. מה לקח הכי הרבה זמן, מה נשבר, איך מדדת הצלחה. שאלות שאי אפשר לענות עליהן מתיאוריה.
+                            - text: מה שהפתיע אותי הוא שהרבה חברות עדיין לא יודעות מה לשאול. "someone who knows AI" בלי להגדיר מה זה אומר בכלל אצלהם.
+                            - text: אגב מאז שדיברנו (ינואר 25?) השתנה הרבה אצלי, בניתי כמה מערכות production על Azure, routing בין מודלים, voice AI בערבית, framework הערכה עם 300+ טסטים. עולם אחר ממה שהיה.
+                            - text: מה המצב אצלכם עם AI בצוות?
+                      - listitem [ref=e1760]:
+                        - time [ref=e1761]: NEW
+                        - generic [ref=e1762]: Dennis Nerush sent the following messages at 6:24 PM
+                        - generic [ref=e1763]:
+                          - link "View Dennis’ profile Dennis Nerush" [ref=e1764] [cursor=pointer]:
+                            - /url: https://www.linkedin.com/in/ACoAAAmm-vcBa5oKsergXDkln-_z53CVu63RI7M
+                            - generic [ref=e1765]: View Dennis’ profile
+                            - img "Dennis Nerush" [ref=e1766]
+                          - generic [ref=e1767]:
+                            - generic [ref=e1768]:
+                              - link "Dennis Nerush" [ref=e1769] [cursor=pointer]:
+                                - /url: https://www.linkedin.com/in/ACoAAAmm-vcBa5oKsergXDkln-_z53CVu63RI7M
+                                - generic [ref=e1770]: Dennis Nerush
+                              - img "LinkedIn Premium" [ref=e1771]:
+                                - img [ref=e1772]
+                            - time [ref=e1774]: • 6:24 PM
+                          - paragraph [ref=e1778]: אשכרה עברה לה שנה :)
+                      - listitem [ref=e1779]:
+                        - paragraph [ref=e1784]: לגמרי לא יודעים מה לשאול.. משם כל הרעיון לסקר
+                      - listitem [ref=e1785]:
+                        - paragraph [ref=e1790]: הרוב תתפלא פשוט לא שואלים בכלל
+                      - listitem [ref=e1791]:
+                        - paragraph [ref=e1796]: ואז מופתעים שהמפתחים שלהן לא מתקדמים
+                        - img "Seen by Dennis Nerush at 6:24 PM." [ref=e1798]
+                      - listitem [ref=e1799]
+                      - listitem
+                    - generic [ref=e1800]:
+                      - generic [ref=e1801]:
+                        - generic [ref=e1803]:
+                          - textbox "Write a message…" [ref=e1804]:
+                            - paragraph [ref=e1805]
+                          - text: Write a message…
+                        - button "Maximize compose field" [ref=e1807] [cursor=pointer]:
+                          - img [ref=e1808]
+                          - generic [ref=e1810]: Maximize compose field
+                      - generic [ref=e1811]:
+                        - generic [ref=e1812]:
+                          - button "Attach an image to your conversation with Dennis Nerush" [ref=e1814] [cursor=pointer]:
+                            - img [ref=e1815]
+                            - generic [ref=e1817]: Attach an image to your conversation with Dennis Nerush
+                          - button "Attach a file to your conversation with Dennis Nerush" [ref=e1819] [cursor=pointer]:
+                            - img [ref=e1820]
+                            - generic [ref=e1822]: Attach a file to your conversation with Dennis Nerush
+                          - button "Open GIF Keyboard" [ref=e1824] [cursor=pointer]:
+                            - img [ref=e1825]
+                            - generic [ref=e1827]: Open GIF Keyboard
+                          - button "Open Emoji Keyboard" [ref=e1830] [cursor=pointer]:
+                            - generic:
+                              - img
+                            - generic [ref=e1831]: Open Emoji Keyboard
+                        - generic [ref=e1832]:
+                          - button "Send" [disabled] [ref=e1834]
+                          - button "Open send options" [ref=e1837] [cursor=pointer]:
+                            - img [ref=e1838]
+                            - generic [ref=e1840]: Open send options
+            - complementary "AI-powered assistant to get help with your career, jobs etc"
+    - iframe [ref=e1841]:
+      - generic [active] [ref=f31e1]:
+        - generic:
+          - region "Toast message":
+            - heading "0 notifications total" [level=2] [ref=f31e3]
+            - alert
+        - region [ref=f31e4]
+        - generic [ref=f31e5]:
+          - generic [ref=f31e7]:
+            - button "Skip to search" [ref=f31e8] [cursor=pointer]:
+              - generic [ref=f31e9]: Skip to search
+            - button "Skip to main content" [ref=f31e10] [cursor=pointer]:
+              - generic [ref=f31e11]: Skip to main content
+            - button "Keyboard shortcuts" [ref=f31e12] [cursor=pointer]:
+              - generic [ref=f31e13]: Keyboard shortcuts
+            - button "Close jump menu" [ref=f31e14] [cursor=pointer]:
+              - img [ref=f31e15]
+              - generic [ref=f31e17]: Close jump menu
+          - banner "Global Navigation" [ref=f31e18]:
+            - generic [ref=f31e19]:
+              - link "LinkedIn" [ref=f31e20] [cursor=pointer]:
+                - /url: https://www.linkedin.com/feed/?nis=true
+                - img "LinkedIn" [ref=f31e23]:
+                  - img [ref=f31e24]
+              - generic [ref=f31e28]:
+                - combobox "Search" [ref=f31e29]
+                - generic:
+                  - img
+              - navigation "Primary Navigation" [ref=f31e30]:
+                - list [ref=f31e31]:
+                  - listitem [ref=f31e32]:
+                    - link "new feed updates notifications Home" [ref=f31e33] [cursor=pointer]:
+                      - /url: https://www.linkedin.com/feed/
+                      - generic [ref=f31e34]:
+                        - generic [ref=f31e37]: new feed updates notifications
+                        - img [ref=f31e41]
+                      - generic "Home" [ref=f31e43]
+                  - listitem [ref=f31e44]:
+                    - link "2 new network updates notifications My Network" [ref=f31e45] [cursor=pointer]:
+                      - /url: https://www.linkedin.com/mynetwork/?
+                      - generic [ref=f31e46]:
+                        - generic [ref=f31e47]:
+                          - generic [ref=f31e48]: "2"
+                          - generic [ref=f31e49]: 2 new network updates notifications
+                        - img [ref=f31e53]
+                      - generic "My Network" [ref=f31e55]
+                  - listitem [ref=f31e56]:
+                    - link "Jobs" [ref=f31e57] [cursor=pointer]:
+                      - /url: https://www.linkedin.com/jobs/?
+                      - img [ref=f31e61]
+                      - generic "Jobs" [ref=f31e63]
+                  - listitem [ref=f31e64]:
+                    - link "4 new messages notifications Messaging" [ref=f31e65] [cursor=pointer]:
+                      - /url: https://www.linkedin.com/messaging/?
+                      - generic [ref=f31e66]:
+                        - generic [ref=f31e67]:
+                          - generic [ref=f31e68]: "4"
+                          - generic [ref=f31e69]: 4 new messages notifications
+                        - img [ref=f31e73]
+                      - generic "Messaging" [ref=f31e75]
+                  - listitem [ref=f31e76]:
+                    - link "11 new notifications Notifications" [ref=f31e77] [cursor=pointer]:
+                      - /url: https://www.linkedin.com/notifications/?
+                      - generic [ref=f31e78]:
+                        - generic [ref=f31e79]:
+                          - generic [ref=f31e80]: "11"
+                          - generic [ref=f31e81]: 11 new notifications
+                        - img [ref=f31e85]
+                      - generic "Notifications" [ref=f31e87]
+                  - listitem [ref=f31e88]:
+                    - button "Oded Ben-Yair Me" [ref=f31e90] [cursor=pointer]:
+                      - img "Oded Ben-Yair" [ref=f31e91]
+                      - generic [ref=f31e92]:
+                        - text: Me
+                        - img [ref=f31e93]
+                  - listitem [ref=f31e95]:
+                    - button "For Business" [ref=f31e97] [cursor=pointer]:
+                      - img [ref=f31e101]
+                      - generic "For Business" [ref=f31e103]:
+                        - text: For Business
+                        - img [ref=f31e104]
+                  - listitem [ref=f31e106]:
+                    - 'link "Reactivate Premium: 50% Off" [ref=f31e108] [cursor=pointer]':
+                      - /url: http://www.linkedin.com/premium/redeem/?_ed=0_bvLJH59RTSY-u5c6PMUa4I-DG9vGhJ1MqkIEQp20lT9&upsellOrderOrigin=Tracking%3Av1%3Apremium_nav_upsell_text_winback%3ANav%3AIn-Product&referenceId=QquIeS2iTtSOY0sVi3vZJQ%3D%3D&customKey=wb_b&redeemTypeV2=DISCOUNT&destRedirectURL=https%3A%2F%2Fwww.linkedin.com%2Ffeed%2F
+                      - generic [ref=f31e110]: "Reactivate Premium: 50% Off"
+  - list [ref=e3630]:
+    - button "Like" [ref=e3631] [cursor=pointer]:
+      - img [ref=e3635]
+    - button "Celebrate" [ref=e3641] [cursor=pointer]:
+      - img [ref=e3645]
+    - button "Support" [ref=e3661] [cursor=pointer]:
+      - img [ref=e3665]
+    - button "Love" [ref=e3676] [cursor=pointer]:
+      - img [ref=e3680]
+    - button "Insightful" [ref=e3687] [cursor=pointer]:
+      - img [ref=e3691]
+    - button "Funny" [ref=e3701] [cursor=pointer]:
+      - img [ref=e3705]

@@ -1,0 +1,113 @@
+{
+  "$schema": "Project status tracking for Claude Code sessions",
+  "version": "1.0",
+  "project": {
+    "name": "Sentimark",
+    "path": "/home/odedbe/projects/sentimark",
+    "database": "polymarket_analyzer",
+    "production": false,
+    "lastUpdated": "2026-03-02T06:00:00Z"
+  },
+  "currentState": {
+    "summary": "Consensus Algorithm Redesign Phase 1+2 DEPLOYED (Mar 2). Phase 1: fixed conf² double penalty, neutral dilution, MIN_LLMS=2, diversified context. Phase 2: per-LLM accuracy tracker + category router deployed in shadow. Migration 068 pending (DB unreachable from home).",
+    "branch": "master",
+    "featureBranch": null,
+    "lastCommit": "d02470b feat(consensus): add per-LLM accuracy tracker + category-aware router (Phase 2)",
+    "testsPass": true,
+    "testCount": 98,
+    "buildStatus": "deployed",
+    "pipelineRun": "manual deploy via az CLI (2026-03-02 05:50 UTC)",
+    "consensusVersion": "v2 (production)",
+    "v3ShadowMode": true,
+    "enableClaude": true,
+    "diversifiedContext": true,
+    "consensusV2Fixed": true,
+    "enableCategoryRouter": false,
+    "overallAccuracy": "monitoring — Phase 1 deployed ~11h ago",
+    "postDeployPredictionHealth": {
+      "totalPredictions": 153,
+      "neutralPct": 66.0,
+      "bullishPct": 28.1,
+      "bearishPct": 5.9,
+      "avgConfidence": 0.433,
+      "note": "Improvement from ~70% neutral baseline. Some warm instances still on old code. 04:00 UTC hour showed 50% neutral (target). Full evaluation needs 24h+."
+    },
+    "neutralRate": "66.0% (post-deploy, ~11h, n=153 — down from 70% baseline)",
+    "bullishRate": "28.1% (up from 25.8%)",
+    "bearishRate": "5.9%",
+    "grokCalibration": {
+      "globalFactor": 0.6,
+      "commoditiesFactor": 1.0,
+      "forexFactor": 1.0,
+      "status": "DEPLOYED"
+    },
+    "consensusFixes": {
+      "phase1": {
+        "confSquaredRemoved": true,
+        "neutralDilutionFixed": true,
+        "minLlms": 2,
+        "diversifiedContext": true,
+        "featureFlag": "CONSENSUS_V2_FIXED=true",
+        "deployCommit": "9f608ab",
+        "deployDate": "2026-03-01T18:05:00Z"
+      },
+      "phase2": {
+        "accuracyTracker": "DEPLOYED — shared/ml/llm_accuracy_tracker.py",
+        "categoryRouter": "DEPLOYED (shadow) — shared/ml/category_router.py",
+        "routerWired": "DEPLOYED — llm_prediction.py line 967",
+        "migration068": "PENDING — llm_accuracy_stats table (DB unreachable from home)",
+        "deployCommit": "d02470b",
+        "deployDate": "2026-03-02T05:50:00Z"
+      }
+    },
+    "weekendSkip": "VERIFIED",
+    "perplexityFailureRate": "Fixed",
+    "confidenceCalibrated": true,
+    "activeSymbols": 111,
+    "llmEnsemble": "GPT-5 Pro (20%), Grok (40%), Claude (25%), Perplexity (15%)"
+  },
+  "blockers": [
+    {
+      "description": "Migration 068 needs DB access (unreachable from home — office/VPN required)",
+      "severity": "medium",
+      "workaround": "Router runs in shadow mode without the table — no production impact"
+    }
+  ],
+  "nextSteps": [
+    {
+      "priority": 0,
+      "description": "Apply migration 068 (llm_accuracy_stats table) from office. Run: psql -h postgres-seekapatraining-prod... -f migrations/068_llm_accuracy_stats.sql",
+      "estimatedComplexity": "low"
+    },
+    {
+      "priority": 0,
+      "description": "Run initial accuracy computation: python3 -c 'from shared.ml.llm_accuracy_tracker import compute_llm_accuracy; from shared.database import get_connection, return_connection; conn = get_connection(); stats = compute_llm_accuracy(conn); print(len(stats)); return_connection(conn)'",
+      "estimatedComplexity": "low"
+    },
+    {
+      "priority": 1,
+      "description": "Check Phase 1 neutral rate at T+24h (expect <55% after warm instances rotate). Run monitoring SQL from CLAUDE.md.",
+      "estimatedComplexity": "low"
+    },
+    {
+      "priority": 2,
+      "description": "Enable category router: az functionapp config appsettings set -g AZAI_group -n func-sentimark-prod --settings ENABLE_CATEGORY_ROUTER=true",
+      "estimatedComplexity": "low"
+    },
+    {
+      "priority": 3,
+      "description": "Phase 2-B: Per-LLM isotonic calibration — extend shared/calibration/isotonic.py with llm_name dimension",
+      "estimatedComplexity": "moderate"
+    },
+    {
+      "priority": 4,
+      "description": "Phase 3: Stacker meta-learner (LightGBM) — needs Phase 2 accuracy data accumulating first",
+      "estimatedComplexity": "high"
+    }
+  ],
+  "sessionNotes": {
+    "lastSessionId": "sentimark-session-20260302-consensus-redesign",
+    "lastSessionDate": "2026-03-02",
+    "carryoverNotes": "Mar 1-2 session: CONSENSUS ALGORITHM REDESIGN Phase 1+2. (1) Phase 1 DEPLOYED: removed conf² double penalty (score=0.6 not 0.6*conf), removed neutral dilution (directional-only avg), MIN_LLMS=2, DIVERSIFIED_CONTEXT=true. Feature flag CONSENSUS_V2_FIXED=true. (2) Phase 2 DEPLOYED: per-LLM accuracy tracker (llm_accuracy_tracker.py), category router (category_router.py) in shadow mode, wired into consensus flow. (3) Migration 068 PENDING — DB unreachable from home. Router falls back to base weights safely. (4) Early results: neutral 66% (down from 70%), 04:00 UTC hour hit 50% target. Need 24h+ for full warm-instance rotation. (5) 98 tests pass. (6) GPT-5.3 Codex reviewed algorithmic changes — confirmed sound."
+  }
+}

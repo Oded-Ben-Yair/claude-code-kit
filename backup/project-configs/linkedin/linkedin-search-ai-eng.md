@@ -1,0 +1,681 @@
+- generic [ref=e1]:
+  - generic:
+    - region "Toast message":
+      - heading "0 notifications total" [level=2] [ref=e3]
+      - alert
+  - region [ref=e15]
+  - generic [ref=e16]:
+    - generic [ref=e116]:
+      - button "Skip to search" [ref=e117] [cursor=pointer]:
+        - generic [ref=e118]: Skip to search
+      - button "Skip to main content" [ref=e119] [cursor=pointer]:
+        - generic [ref=e120]: Skip to main content
+      - button "Keyboard shortcuts" [ref=e121] [cursor=pointer]:
+        - generic [ref=e122]: Keyboard shortcuts
+      - button "Close jump menu" [ref=e123] [cursor=pointer]:
+        - img [ref=e124]
+        - generic [ref=e126]: Close jump menu
+    - banner "Global Navigation" [ref=e127]:
+      - generic [ref=e128]:
+        - link "LinkedIn" [ref=e129] [cursor=pointer]:
+          - /url: https://www.linkedin.com/feed/?nis=true
+          - img "LinkedIn" [ref=e132]:
+            - img [ref=e133]
+        - generic [ref=e137]:
+          - combobox "Search" [ref=e138]: "\"production AI\" OR \"LLM evaluation\""
+          - generic:
+            - img
+        - navigation "Primary Navigation" [ref=e139]:
+          - list [ref=e140]:
+            - listitem [ref=e141]:
+              - link "new feed updates notifications Home" [ref=e142] [cursor=pointer]:
+                - /url: https://www.linkedin.com/feed/?nis=true&
+                - generic [ref=e143]:
+                  - generic [ref=e146]: new feed updates notifications
+                  - img [ref=e150]
+                - generic "Home" [ref=e152]
+            - listitem [ref=e153]:
+              - link "3 new network updates notifications My Network" [ref=e154] [cursor=pointer]:
+                - /url: https://www.linkedin.com/mynetwork/?
+                - generic [ref=e155]:
+                  - generic [ref=e156]:
+                    - generic [ref=e157]: "3"
+                    - generic [ref=e158]: 3 new network updates notifications
+                  - img [ref=e162]
+                - generic "My Network" [ref=e164]
+            - listitem [ref=e165]:
+              - link "Jobs" [ref=e166] [cursor=pointer]:
+                - /url: https://www.linkedin.com/jobs/?
+                - img [ref=e170]
+                - generic "Jobs" [ref=e172]
+            - listitem [ref=e173]:
+              - link "Messaging" [ref=e174] [cursor=pointer]:
+                - /url: https://www.linkedin.com/messaging/?
+                - img [ref=e178]
+                - generic "Messaging" [ref=e180]
+            - listitem [ref=e181]:
+              - link "Notifications" [ref=e182] [cursor=pointer]:
+                - /url: https://www.linkedin.com/notifications/?
+                - img [ref=e186]
+                - generic "Notifications" [ref=e188]
+            - listitem [ref=e189]:
+              - button "Oded Ben-Yair Me" [ref=e191] [cursor=pointer]:
+                - img "Oded Ben-Yair" [ref=e192]
+                - generic [ref=e193]:
+                  - text: Me
+                  - img [ref=e194]
+            - listitem [ref=e196]:
+              - button "For Business" [ref=e198] [cursor=pointer]:
+                - img [ref=e202]
+                - generic "For Business" [ref=e204]:
+                  - text: For Business
+                  - img [ref=e205]
+            - listitem [ref=e207]:
+              - 'link "Reactivate Premium: 50% Off" [ref=e209] [cursor=pointer]':
+                - /url: http://www.linkedin.com/premium/redeem/?_ed=0_bvLJH59RTSY-u5c6PMUa4IW0M54p9mxZpuVkfRvTl7r&upsellOrderOrigin=Tracking%3Av1%3Apremium_nav_upsell_text_winback%3ANav%3AIn-Product&referenceId=WT9ZnlJ9RgG0HUQsLlZbOg%3D%3D&customKey=wb_c&redeemTypeV2=DISCOUNT&destRedirectURL=https%3A%2F%2Fwww.linkedin.com%2Fsearch%2Fresults%2Fcontent%2F%3Fkeywords%3D%2522production%2520AI%2522%2520OR%2520%2522LLM%2520evaluation%2522%26datePosted%3D%2522past-24h%2522%26sortBy%3D%2522date_posted%2522
+                - generic [ref=e211]: "Reactivate Premium: 50% Off"
+    - generic [ref=e212]:
+      - navigation "Search filters" [ref=e215]:
+        - generic [ref=e216]:
+          - list [ref=e217]:
+            - listitem [ref=e218]:
+              - 'button "Filter by: Posts" [ref=e220] [cursor=pointer]':
+                - text: Posts
+                - img [ref=e221]
+            - listitem [ref=e223]
+            - listitem [ref=e224]:
+              - button "Sort by filter. Latest filter is currently applied. Clicking this button displays all Sort by filter options." [ref=e227] [cursor=pointer]:
+                - text: Latest
+                - img [ref=e228]
+            - listitem [ref=e230]:
+              - button "Date posted filter. Past 24 hours filter is currently applied. Clicking this button displays all Date posted filter options." [ref=e233] [cursor=pointer]:
+                - text: Past 24 hours
+                - img [ref=e234]
+            - listitem [ref=e236]:
+              - button "Content type filter. Clicking this button displays all Content type filter options." [ref=e239] [cursor=pointer]:
+                - text: Content type
+                - img [ref=e240]
+            - listitem [ref=e242]:
+              - button "From member filter. Clicking this button displays all From member filter options." [ref=e245] [cursor=pointer]:
+                - text: From member
+                - img [ref=e246]
+          - generic [ref=e248]:
+            - button "Show all filters. Clicking this button displays all available filter options." [ref=e251] [cursor=pointer]: All filters
+            - button "Reset applied filters" [ref=e252] [cursor=pointer]:
+              - generic [ref=e253]: Reset
+      - generic [ref=e255]:
+        - main [ref=e256]:
+          - heading "Search results for \"production AI\" OR \"LLM evaluation\". There are 3 results. Currently on the page 2 of 83 search result pages." [active] [level=1] [ref=e257]
+          - generic [ref=e260]:
+            - generic [ref=e261]:
+              - list [ref=e264]:
+                - listitem [ref=e265]:
+                  - article [ref=e269]:
+                    - generic [ref=e271]:
+                      - heading "Feed post" [level=2] [ref=e272]
+                      - generic [ref=e273]:
+                        - generic [ref=e274]:
+                          - generic [ref=e275]:
+                            - generic [ref=e276]:
+                              - link "Dataconomy Media, graphic." [ref=e277] [cursor=pointer]:
+                                - /url: https://www.linkedin.com/company/dataconomy-media/posts
+                              - generic [ref=e281]:
+                                - 'link "View: Dataconomy Media 3,491 followers" [ref=e282] [cursor=pointer]':
+                                  - /url: https://www.linkedin.com/company/dataconomy-media/posts
+                                  - generic [ref=e285]:
+                                    - generic [ref=e287]: Dataconomy Media
+                                    - generic [ref=e289]: Dataconomy Media
+                                  - generic [ref=e290]:
+                                    - generic [ref=e291]: 3,491 followers
+                                    - generic [ref=e292]: 3,491 followers
+                                - generic [ref=e293]:
+                                  - generic [ref=e294]:
+                                    - text: 1m •
+                                    - img [ref=e297]
+                                  - generic [ref=e299]: 1 minute ago • Visible to anyone on or off LinkedIn
+                            - button "Follow Dataconomy Media" [ref=e300] [cursor=pointer]:
+                              - img [ref=e301]
+                              - generic [ref=e303]: Follow
+                          - button "Open control menu for post by Dataconomy Media" [ref=e306] [cursor=pointer]:
+                            - img [ref=e307]
+                        - generic [ref=e310]:
+                          - generic [ref=e313]:
+                            - text: "🔷 Canva's CTO Brendan Humphreys shares a transformative shift in software engineering: AI agents now handle code-writing tasks overnight, allowing engineers to rest while drafting instructions beforehand. Senior engineers' roles have evolved into primarily reviewing AI outputs, steering agents, and ensuring precision in a codebase spanning 70 million lines."
+                            - text: This mirrors broader industry trends. Spotify's senior developers haven't written code since December, focusing instead on supervising internal AI systems. Anthropic reports AI in 60% of dev work, but full delegation is limited to 0-20% of tasks, with human oversight essential. Sonar's survey reveals 96% of developers distrust AI code fully, yet only 48% always verify it—coining "verification debt" as noted by AWS CTO Werner Vogels.
+                            - text: "AI-generated code often introduces higher complexity, duplicates, and inconsistencies, amplifying technical debt at scale. The real value now lies in senior engineers' domain mastery for architecture and integrity. As Sonar CEO Tariq Shaukat observes, the workload pivots from creation to verification and debugging. For businesses, this means rethinking talent strategies: prioritize verification skills, invest in AI oversight tools, and leverage AI to accelerate development without compromising quality. This evolution promises efficiency gains but demands robust processes to mitigate risks in production environments."
+                            - link "hashtag AI" [ref=e314] [cursor=pointer]:
+                              - /url: https://www.linkedin.com/search/results/all/?keywords=%23ai&origin=HASH_TAG_FROM_FEED
+                              - generic [ref=e315]: hashtag
+                              - generic [ref=e316]: "#AI"
+                            - text: ","
+                            - link "hashtag SoftwareEngineering" [ref=e317] [cursor=pointer]:
+                              - /url: https://www.linkedin.com/search/results/all/?keywords=%23softwareengineering&origin=HASH_TAG_FROM_FEED
+                              - generic [ref=e318]: hashtag
+                              - generic [ref=e319]: "#SoftwareEngineering"
+                            - text: ","
+                            - link "hashtag MachineLearning" [ref=e320] [cursor=pointer]:
+                              - /url: https://www.linkedin.com/search/results/all/?keywords=%23machinelearning&origin=HASH_TAG_FROM_FEED
+                              - generic [ref=e321]: hashtag
+                              - generic [ref=e322]: "#MachineLearning"
+                            - text: ","
+                            - link "hashtag TechTrends" [ref=e323] [cursor=pointer]:
+                              - /url: https://www.linkedin.com/search/results/all/?keywords=%23techtrends&origin=HASH_TAG_FROM_FEED
+                              - generic [ref=e324]: hashtag
+                              - generic [ref=e325]: "#TechTrends"
+                          - button "see more, visually reveals content which is already detected by screen readers" [ref=e326] [cursor=pointer]:
+                            - generic [ref=e327]: …more
+                        - generic [ref=e328]:
+                          - 'link "Open article: AI Agents Revolutionizing Overnight Coding by dataconomy.com, graphic" [ref=e330] [cursor=pointer]':
+                            - /url: https://dataconomy.com/2026/02/17/canva-cto-reveals-ai-agents-write-code-overnight-while-engineers-sleep/
+                          - link "AI Agents Revolutionizing Overnight Coding" [ref=e335] [cursor=pointer]:
+                            - /url: https://dataconomy.com/2026/02/17/canva-cto-reveals-ai-agents-write-code-overnight-while-engineers-sleep/
+                            - generic [ref=e338]:
+                              - generic [ref=e340]: AI Agents Revolutionizing Overnight Coding
+                              - generic [ref=e341]: dataconomy.com
+                        - generic [ref=e343]:
+                          - generic [ref=e344]:
+                            - button "React Like" [ref=e345] [cursor=pointer]:
+                              - generic [ref=e347]:
+                                - img [ref=e348]
+                                - generic [ref=e350]: Like
+                            - button "Open reactions menu":
+                              - img [ref=e352] [cursor=pointer]
+                          - button "Comment" [ref=e356] [cursor=pointer]:
+                            - img [ref=e357]
+                            - generic [ref=e359]: Comment
+                          - button "Repost" [ref=e362] [cursor=pointer]:
+                            - img [ref=e363]
+                            - generic [ref=e365]: Repost
+                          - button "Send in a private message" [ref=e368] [cursor=pointer]:
+                            - img [ref=e369]
+                            - generic [ref=e372]: Send
+                - listitem [ref=e373]:
+                  - article [ref=e377]:
+                    - generic [ref=e379]:
+                      - heading "Feed post" [level=2] [ref=e380]
+                      - generic [ref=e381]:
+                        - generic [ref=e382]:
+                          - generic [ref=e383]:
+                            - generic [ref=e384]:
+                              - link "View Attilio Petrini’s graphic link" [ref=e385] [cursor=pointer]:
+                                - /url: https://www.linkedin.com/in/attiliopetrini?miniProfileUrn=urn%3Ali%3Afsd_profile%3AACoAAAL0O6MBBO8oxf5jV-XoeWw6h0xkWq5RfvQ
+                                - img "View Attilio Petrini’s graphic link" [ref=e389]
+                              - generic [ref=e390]:
+                                - 'link "View: Attilio Petrini Premium • 3rd+ Advocating for joined-up Information Management and Content Intelligence for the Irish Enterprise market" [ref=e391] [cursor=pointer]':
+                                  - /url: https://www.linkedin.com/in/attiliopetrini?miniProfileUrn=urn%3Ali%3Afsd_profile%3AACoAAAL0O6MBBO8oxf5jV-XoeWw6h0xkWq5RfvQ
+                                  - generic [ref=e392]:
+                                    - generic [ref=e394]:
+                                      - generic [ref=e395]: Attilio Petrini
+                                      - generic [ref=e396]: Attilio Petrini
+                                    - generic [ref=e397]:
+                                      - generic [ref=e398]:
+                                        - img [ref=e399]:
+                                          - img [ref=e400]
+                                        - text: • 3rd+
+                                      - generic [ref=e402]: Premium • 3rd+
+                                  - generic [ref=e403]:
+                                    - generic [ref=e404]: Advocating for joined-up Information Management and Content Intelligence for the Irish Enterprise market
+                                    - generic [ref=e405]: Advocating for joined-up Information Management and Content Intelligence for the Irish Enterprise market
+                                - generic [ref=e406]:
+                                  - generic [ref=e407]:
+                                    - text: 1m •
+                                    - img [ref=e410]
+                                  - generic [ref=e412]: 1 minute ago • Visible to anyone on or off LinkedIn
+                            - button "Follow Attilio Petrini" [ref=e413] [cursor=pointer]:
+                              - img [ref=e414]
+                              - generic [ref=e416]: Follow
+                          - button "Open control menu for post by Attilio Petrini" [ref=e419] [cursor=pointer]:
+                            - img [ref=e420]
+                        - generic [ref=e423]:
+                          - generic [ref=e426]:
+                            - text: → Moving from AI experiments to workflow orchestration ←
+                            - text: The hype of 2025 is beginning to cool and is being replaced by a much more useful form of realism. While the last year was defined by choosing the smartest AI model, 2026 is becoming the year of orchestration.
+                            - text: The smartest model in the world provides zero value if it cannot trigger an action. We are moving past the era of standalone chatbots and into the era of agentic workflows. The real competitive edge is no longer found in the algorithm itself. It is found in how that algorithm is woven into your existing business processes.
+                            - text: Most organisations are discovering that their AI agents are currently stranded. They can think, but they cannot do. To move from a pilot to a production environment, an AI must be able to securely access cross-application data and trigger specific steps in a governed workflow.
+                            - text: As a recent analysis in CustomerThink pointed out, whoever controls your workflows eventually controls your AI strategy. This means that integration is now more than a technical task. It is a strategic necessity. If your workflows are siloed and your data is disconnected, your AI agents will remain little more than expensive experiments.
+                            - text: The goal for 2026 is to build a bouncer at the door. We need a layer that governs how digital assistants interact with our core systems. We are moving from the era of intent to the era of delivery.
+                            - text: Is your organisation still focused on finding the right model, or are you starting to look at how to orchestrate the work itself?
+                            - text: "I have included the full article from CustomerThink in the comments for those looking at the 2026 battleground for enterprise software. You can find the full analysis here:"
+                            - link "https://lnkd.in/dPn5s5Xw" [ref=e427] [cursor=pointer]:
+                              - /url: https://lnkd.in/dPn5s5Xw
+                            - link "hashtag WorkflowAutomation" [ref=e428] [cursor=pointer]:
+                              - /url: https://www.linkedin.com/search/results/all/?keywords=%23workflowautomation&origin=HASH_TAG_FROM_FEED
+                              - generic [ref=e429]: hashtag
+                              - generic [ref=e430]: "#WorkflowAutomation"
+                            - link "hashtag AI2026" [ref=e431] [cursor=pointer]:
+                              - /url: https://www.linkedin.com/search/results/all/?keywords=%23ai2026&origin=HASH_TAG_FROM_FEED
+                              - generic [ref=e432]: hashtag
+                              - generic [ref=e433]: "#AI2026"
+                            - link "hashtag BusinessProcess" [ref=e434] [cursor=pointer]:
+                              - /url: https://www.linkedin.com/search/results/all/?keywords=%23businessprocess&origin=HASH_TAG_FROM_FEED
+                              - generic [ref=e435]: hashtag
+                              - generic [ref=e436]: "#BusinessProcess"
+                            - link "hashtag DigitalTransformation" [ref=e437] [cursor=pointer]:
+                              - /url: https://www.linkedin.com/search/results/all/?keywords=%23digitaltransformation&origin=HASH_TAG_FROM_FEED
+                              - generic [ref=e438]: hashtag
+                              - generic [ref=e439]: "#DigitalTransformation"
+                            - link "hashtag IrishBusiness" [ref=e440] [cursor=pointer]:
+                              - /url: https://www.linkedin.com/search/results/all/?keywords=%23irishbusiness&origin=HASH_TAG_FROM_FEED
+                              - generic [ref=e441]: hashtag
+                              - generic [ref=e442]: "#IrishBusiness"
+                            - link "hashtag Governance" [ref=e443] [cursor=pointer]:
+                              - /url: https://www.linkedin.com/search/results/all/?keywords=%23governance&origin=HASH_TAG_FROM_FEED
+                              - generic [ref=e444]: hashtag
+                              - generic [ref=e445]: "#Governance"
+                            - link "hashtag OpenText" [ref=e446] [cursor=pointer]:
+                              - /url: https://www.linkedin.com/search/results/all/?keywords=%23opentext&origin=HASH_TAG_FROM_FEED
+                              - generic [ref=e447]: hashtag
+                              - generic [ref=e448]: "#OpenText"
+                          - button "see more, visually reveals content which is already detected by screen readers" [ref=e449] [cursor=pointer]:
+                            - generic [ref=e450]: …more
+                        - generic [ref=e451]:
+                          - 'link "Open article: 2026: The Year AI Gets Real, and Workflow Orchestration Takes Center Stage by customerthink.com, graphic" [ref=e453] [cursor=pointer]':
+                            - /url: https://customerthink.com/2026-the-year-ai-gets-real-and-workflow-orchestration-takes-center-stage/
+                          - 'link "2026: The Year AI Gets Real, and Workflow Orchestration Takes Center Stage" [ref=e458] [cursor=pointer]':
+                            - /url: https://customerthink.com/2026-the-year-ai-gets-real-and-workflow-orchestration-takes-center-stage/
+                            - generic [ref=e461]:
+                              - generic [ref=e463]: "2026: The Year AI Gets Real, and Workflow Orchestration Takes Center Stage"
+                              - generic [ref=e464]: customerthink.com
+                        - generic [ref=e466]:
+                          - generic [ref=e467]:
+                            - button "React Like" [ref=e468] [cursor=pointer]:
+                              - generic [ref=e470]:
+                                - img [ref=e471]
+                                - generic [ref=e473]: Like
+                            - button "Open reactions menu":
+                              - img [ref=e475] [cursor=pointer]
+                          - button "Comment" [ref=e479] [cursor=pointer]:
+                            - img [ref=e480]
+                            - generic [ref=e482]: Comment
+                          - button "Repost" [ref=e485] [cursor=pointer]:
+                            - img [ref=e486]
+                            - generic [ref=e488]: Repost
+                          - button "Send in a private message" [ref=e491] [cursor=pointer]:
+                            - img [ref=e492]
+                            - generic [ref=e495]: Send
+                - listitem [ref=e496]:
+                  - article [ref=e500]:
+                    - generic [ref=e502]:
+                      - heading "Feed post" [level=2] [ref=e503]
+                      - generic [ref=e504]:
+                        - generic [ref=e505]:
+                          - generic [ref=e506]:
+                            - generic [ref=e507]:
+                              - link "AI Brief, graphic." [ref=e508] [cursor=pointer]:
+                                - /url: https://www.linkedin.com/company/ai-brief/posts
+                              - generic [ref=e512]:
+                                - 'link "View: AI Brief 10,615 followers" [ref=e513] [cursor=pointer]':
+                                  - /url: https://www.linkedin.com/company/ai-brief/posts
+                                  - generic [ref=e516]:
+                                    - generic [ref=e518]: AI Brief
+                                    - generic [ref=e520]: AI Brief
+                                  - generic [ref=e521]:
+                                    - generic [ref=e522]: 10,615 followers
+                                    - generic [ref=e523]: 10,615 followers
+                                - link "Visit website" [ref=e524] [cursor=pointer]:
+                                  - /url: https://dailyaibrief.com/?utm_source=linkedin&utm_medium=social&utm_campaign=ai-brief-profile-button
+                                  - generic [ref=e525]: Visit website
+                                - generic [ref=e526]:
+                                  - generic [ref=e527]:
+                                    - text: 1m •
+                                    - img [ref=e530]
+                                  - generic [ref=e532]: 1 minute ago • Visible to anyone on or off LinkedIn
+                            - button "Follow AI Brief" [ref=e533] [cursor=pointer]:
+                              - img [ref=e534]
+                              - generic [ref=e536]: Follow
+                          - button "Open control menu for post by AI Brief" [ref=e539] [cursor=pointer]:
+                            - img [ref=e540]
+                        - generic [ref=e543]:
+                          - generic [ref=e546]:
+                            - link "UPTIQ" [ref=e547] [cursor=pointer]:
+                              - /url: https://www.linkedin.com/company/uptiqai/
+                              - generic [ref=e549]: UPTIQ
+                            - text: has raised $25 million in Series B funding to expand its AI solutions for financial services.
+                            - text: The funding round was led by
+                            - link "Curql" [ref=e550] [cursor=pointer]:
+                              - /url: https://www.linkedin.com/company/curql/
+                              - generic [ref=e552]: Curql
+                            - text: ", with participation from"
+                            - link "Silverton Partners" [ref=e553] [cursor=pointer]:
+                              - /url: https://www.linkedin.com/company/silverton-partners/
+                              - generic [ref=e555]: Silverton Partners
+                            - text: ","
+                            - link "645 Ventures" [ref=e556] [cursor=pointer]:
+                              - /url: https://www.linkedin.com/company/645-ventures/
+                              - generic [ref=e558]: 645 Ventures
+                            - text: ", and others."
+                            - text: Uptiq's platform, Qore, offers production-ready AI applications specifically designed for financial institutions, aiming to simplify integration and compliance.
+                            - text: The company plans to make Qore a self-serve platform for developers, enabling faster deployment of financial AI applications.
+                            - text: "Read more:"
+                            - link "https://lnkd.in/g48GcA83" [ref=e559] [cursor=pointer]:
+                              - /url: https://lnkd.in/g48GcA83
+                            - text: "📰 Subscribe to the Daily AI Brief:"
+                            - link "https://lnkd.in/epHYTU3i" [ref=e560] [cursor=pointer]:
+                              - /url: https://lnkd.in/epHYTU3i
+                            - link "hashtag ai" [ref=e561] [cursor=pointer]:
+                              - /url: https://www.linkedin.com/search/results/all/?keywords=%23ai&origin=HASH_TAG_FROM_FEED
+                              - generic [ref=e562]: hashtag
+                              - generic [ref=e563]: "#ai"
+                            - link "hashtag artificialintelligence" [ref=e564] [cursor=pointer]:
+                              - /url: https://www.linkedin.com/search/results/all/?keywords=%23artificialintelligence&origin=HASH_TAG_FROM_FEED
+                              - generic [ref=e565]: hashtag
+                              - generic [ref=e566]: "#artificialintelligence"
+                            - link "hashtag ainews" [ref=e567] [cursor=pointer]:
+                              - /url: https://www.linkedin.com/search/results/all/?keywords=%23ainews&origin=HASH_TAG_FROM_FEED
+                              - generic [ref=e568]: hashtag
+                              - generic [ref=e569]: "#ainews"
+                            - link "hashtag aifunding" [ref=e570] [cursor=pointer]:
+                              - /url: https://www.linkedin.com/search/results/all/?keywords=%23aifunding&origin=HASH_TAG_FROM_FEED
+                              - generic [ref=e571]: hashtag
+                              - generic [ref=e572]: "#aifunding"
+                          - button "see more, visually reveals content which is already detected by screen readers" [ref=e573] [cursor=pointer]:
+                            - generic [ref=e574]: …more
+                        - generic [ref=e576]:
+                          - button "Activate to view larger image, logo, company name" [ref=e578] [cursor=pointer]:
+                            - generic [ref=e579]: Activate to view larger image,
+                            - img "logo, company name" [ref=e582]
+                          - generic [ref=e583]: Activate to view larger image,
+                        - generic [ref=e585]:
+                          - generic [ref=e586]:
+                            - button "React Like" [ref=e587] [cursor=pointer]:
+                              - generic [ref=e589]:
+                                - img [ref=e590]
+                                - generic [ref=e592]: Like
+                            - button "Open reactions menu":
+                              - img [ref=e594] [cursor=pointer]
+                          - button "Comment" [ref=e598] [cursor=pointer]:
+                            - img [ref=e599]
+                            - generic [ref=e601]: Comment
+                          - button "Repost" [ref=e604] [cursor=pointer]:
+                            - img [ref=e605]
+                            - generic [ref=e607]: Repost
+                          - button "Send in a private message" [ref=e610] [cursor=pointer]:
+                            - img [ref=e611]
+                            - generic [ref=e614]: Send
+              - list [ref=e617]:
+                - listitem [ref=e618]:
+                  - generic [ref=e619]:
+                    - generic [ref=e620]:
+                      - paragraph [ref=e621]: Are these results helpful?
+                      - paragraph [ref=e622]: Your feedback helps us improve search results
+                    - generic [ref=e623]:
+                      - button "Are these results helpful? Yes, these search results are helpful" [ref=e624] [cursor=pointer]:
+                        - img [ref=e625]
+                      - button "Are these results helpful? No, these search results are not helpful" [ref=e628] [cursor=pointer]:
+                        - img [ref=e629]
+              - list [ref=e634]:
+                - listitem [ref=e635]:
+                  - article [ref=e639]:
+                    - generic [ref=e641]:
+                      - heading "Feed post" [level=2] [ref=e642]
+                      - generic [ref=e643]:
+                        - generic [ref=e644]:
+                          - generic [ref=e645]:
+                            - generic [ref=e646]:
+                              - link "View THIN PHYU PWINT’s graphic link" [ref=e647] [cursor=pointer]:
+                                - /url: https://www.linkedin.com/in/thin-phyu-pwint-78033194?miniProfileUrn=urn%3Ali%3Afsd_profile%3AACoAABP7YhABBRCykpd27V2JV9KHUeLUKg8v1ic
+                                - img "View THIN PHYU PWINT’s graphic link" [ref=e651]
+                              - generic [ref=e652]:
+                                - 'link "View: THIN PHYU PWINT 3rd+ Video Editor | Social Media Assistant | Content Creator | Event Organizer" [ref=e653] [cursor=pointer]':
+                                  - /url: https://www.linkedin.com/in/thin-phyu-pwint-78033194?miniProfileUrn=urn%3Ali%3Afsd_profile%3AACoAABP7YhABBRCykpd27V2JV9KHUeLUKg8v1ic
+                                  - generic [ref=e654]:
+                                    - generic [ref=e656]:
+                                      - generic [ref=e657]: THIN PHYU PWINT
+                                      - generic [ref=e658]: THIN PHYU PWINT
+                                    - generic [ref=e659]:
+                                      - generic [ref=e660]: • 3rd+
+                                      - generic [ref=e661]: 3rd+
+                                  - generic [ref=e662]:
+                                    - generic [ref=e663]: Video Editor | Social Media Assistant | Content Creator | Event Organizer
+                                    - generic [ref=e664]: Video Editor | Social Media Assistant | Content Creator | Event Organizer
+                                - generic [ref=e665]:
+                                  - generic [ref=e666]:
+                                    - text: 3m •
+                                    - img [ref=e669]
+                                  - generic [ref=e671]: 3 minutes ago • Visible to anyone on or off LinkedIn
+                            - button "Follow THIN PHYU PWINT" [ref=e672] [cursor=pointer]:
+                              - img [ref=e673]
+                              - generic [ref=e675]: Follow
+                          - button "Open control menu for post by THIN PHYU PWINT" [ref=e678] [cursor=pointer]:
+                            - img [ref=e679]
+                        - generic [ref=e682]:
+                          - generic [ref=e685]:
+                            - text: People see the final video.Few see the timeline, revisions, and decisions behind it.
+                            - text: This is where stories are shaped — frame by frame. 🎬
+                            - text: From broadcast and event production to modern AI-assisted workflows, editing has always been about precision, storytelling, and purpose.
+                            - link "hashtag EditorLife" [ref=e686] [cursor=pointer]:
+                              - /url: https://www.linkedin.com/search/results/all/?keywords=%23editorlife&origin=HASH_TAG_FROM_FEED
+                              - generic [ref=e687]: hashtag
+                              - generic [ref=e688]: "#EditorLife"
+                            - link "hashtag VideoEditor" [ref=e689] [cursor=pointer]:
+                              - /url: https://www.linkedin.com/search/results/all/?keywords=%23videoeditor&origin=HASH_TAG_FROM_FEED
+                              - generic [ref=e690]: hashtag
+                              - generic [ref=e691]: "#VideoEditor"
+                            - link "hashtag PostProduction" [ref=e692] [cursor=pointer]:
+                              - /url: https://www.linkedin.com/search/results/all/?keywords=%23postproduction&origin=HASH_TAG_FROM_FEED
+                              - generic [ref=e693]: hashtag
+                              - generic [ref=e694]: "#PostProduction"
+                            - link "hashtag CreativeProcess" [ref=e695] [cursor=pointer]:
+                              - /url: https://www.linkedin.com/search/results/all/?keywords=%23creativeprocess&origin=HASH_TAG_FROM_FEED
+                              - generic [ref=e696]: hashtag
+                              - generic [ref=e697]: "#CreativeProcess"
+                            - link "hashtag BehindTheScenes" [ref=e698] [cursor=pointer]:
+                              - /url: https://www.linkedin.com/search/results/all/?keywords=%23behindthescenes&origin=HASH_TAG_FROM_FEED
+                              - generic [ref=e699]: hashtag
+                              - generic [ref=e700]: "#BehindTheScenes"
+                            - link "hashtag ContentCreation" [ref=e701] [cursor=pointer]:
+                              - /url: https://www.linkedin.com/search/results/all/?keywords=%23contentcreation&origin=HASH_TAG_FROM_FEED
+                              - generic [ref=e702]: hashtag
+                              - generic [ref=e703]: "#ContentCreation"
+                          - button "see more, visually reveals content which is already detected by screen readers" [ref=e704] [cursor=pointer]:
+                            - generic [ref=e705]: …more
+                        - generic [ref=e707]:
+                          - button "Activate to view larger image, No alternative text description for this image" [ref=e709] [cursor=pointer]:
+                            - generic [ref=e710]: Activate to view larger image,
+                            - img "No alternative text description for this image" [ref=e713]
+                          - generic [ref=e714]: Activate to view larger image,
+                        - generic [ref=e716]:
+                          - generic [ref=e717]:
+                            - button "React Like" [ref=e718] [cursor=pointer]:
+                              - generic [ref=e720]:
+                                - img [ref=e721]
+                                - generic [ref=e723]: Like
+                            - button "Open reactions menu":
+                              - img [ref=e725] [cursor=pointer]
+                          - button "Comment" [ref=e729] [cursor=pointer]:
+                            - img [ref=e730]
+                            - generic [ref=e732]: Comment
+                          - button "Repost" [ref=e735] [cursor=pointer]:
+                            - img [ref=e736]
+                            - generic [ref=e738]: Repost
+                          - button "Send in a private message" [ref=e741] [cursor=pointer]:
+                            - img [ref=e742]
+                            - generic [ref=e745]: Send
+                - listitem [ref=e746]:
+                  - article [ref=e750]:
+                    - generic [ref=e752]:
+                      - heading "Feed post" [level=2] [ref=e753]
+                      - generic [ref=e754]:
+                        - generic [ref=e755]:
+                          - generic [ref=e758]:
+                            - text: New post in
+                            - generic [ref=e759]: Artificial Intelligence 🟥
+                          - button "Open control menu for post by Stephanie Nyarko PMP, CSPO, ACP" [ref=e762] [cursor=pointer]:
+                            - img [ref=e763]
+                          - generic [ref=e765]:
+                            - generic [ref=e766]:
+                              - link "View Stephanie Nyarko PMP, CSPO, ACP’s graphic link" [ref=e767] [cursor=pointer]:
+                                - /url: https://www.linkedin.com/in/stephanie-nyarko?miniProfileUrn=urn%3Ali%3Afsd_profile%3AACoAAAdXB-8BxBtRqJJxF2ErnqykSobro9_TtZo
+                                - img "View Stephanie Nyarko PMP, CSPO, ACP’s graphic link" [ref=e771]
+                              - generic [ref=e772]:
+                                - 'link "View: Stephanie Nyarko PMP, CSPO, ACP Premium • 2nd AI Consultant &amp; Educator | Product Leader | Helping Organizations Implement Practical AI Systems That Generate Real ROI | LinkedIn Learning Instructor" [ref=e773] [cursor=pointer]':
+                                  - /url: https://www.linkedin.com/in/stephanie-nyarko?miniProfileUrn=urn%3Ali%3Afsd_profile%3AACoAAAdXB-8BxBtRqJJxF2ErnqykSobro9_TtZo
+                                  - generic [ref=e774]:
+                                    - generic [ref=e776]:
+                                      - generic [ref=e777]: Stephanie Nyarko PMP, CSPO, ACP
+                                      - generic [ref=e778]: Stephanie Nyarko PMP, CSPO, ACP
+                                    - generic [ref=e779]:
+                                      - generic [ref=e780]:
+                                        - img [ref=e781]:
+                                          - img [ref=e782]
+                                        - text: • 2nd
+                                      - generic [ref=e784]: Premium • 2nd
+                                  - generic [ref=e785]:
+                                    - generic [ref=e786]: AI Consultant & Educator | Product Leader | Helping Organizations Implement Practical AI Systems That Generate Real ROI | LinkedIn Learning Instructor
+                                    - generic [ref=e787]: AI Consultant & Educator | Product Leader | Helping Organizations Implement Practical AI Systems That Generate Real ROI | LinkedIn Learning Instructor
+                                - link "Visit my website" [ref=e788] [cursor=pointer]:
+                                  - /url: https://thisaitooldoesthat.com/
+                                  - generic [ref=e789]: Visit my website
+                                - generic [ref=e790]:
+                                  - generic [ref=e791]:
+                                    - text: 3m •
+                                    - img [ref=e794]
+                                  - generic [ref=e796]: 3 minutes ago • Visible to anyone on or off LinkedIn
+                            - button "Follow Stephanie Nyarko PMP, CSPO, ACP" [ref=e797] [cursor=pointer]:
+                              - img [ref=e798]
+                              - generic [ref=e800]: Follow
+                        - generic [ref=e802]:
+                          - generic [ref=e805]:
+                            - text: I really didn’t see this coming.
+                            - text: I’ve been testing OpenClaw the past few weeks, spinning up multiple AI agents, comparing it to Claude Code agent teams, trying to understand where this multi-agent thing is actually going.
+                            - text: "Then I see the news:"
+                            - text: OpenClaw’s founder just joined OpenAI.
+                            - text: And just like that… the AI race gets a lot more interesting.
+                            - text: Because this isn’t just about better models anymore.
+                            - text: "It’s about:"
+                            - text: Who owns the agent layer?
+                            - text: Who controls orchestration?
+                            - text: Who becomes the default platform for personal AI teams?
+                            - text: A few months ago, it was all about who wrote the best prompts.
+                            - text: Now we’re watching serious players position themselves around multi-agent systems open source on one side, platform giants on the other.
+                            - text: The pieces are moving fast.
+                            - text: "As a builder actually using these tools, you can feel it:"
+                            - text: This isn’t hype energy.
+                            - text: This is competitive energy.
+                            - text: The AI race just shifted gears.
+                            - text: And I don’t think we’ve seen the real moves yet.
+                            - link "https://lnkd.in/eFbCcxab" [ref=e806] [cursor=pointer]:
+                              - /url: https://lnkd.in/eFbCcxab
+                            - text: "?"
+                            - text: "--------------------------------------------------------"
+                            - text: Build and deploy a production-ready AI automation in just 3 days. Join our February cohort for 3 live sessions where we go from blank canvas to a scalable n8n workflow you can actually sell.https://
+                            - link "lnkd.in/efdXzK9i" [ref=e807] [cursor=pointer]:
+                              - /url: http://lnkd.in/efdXzK9i
+                          - button "see more, visually reveals content which is already detected by screen readers" [ref=e808] [cursor=pointer]:
+                            - generic [ref=e809]: …more
+                        - generic [ref=e811]:
+                          - button "Activate to view larger image, text" [ref=e813] [cursor=pointer]:
+                            - generic [ref=e814]: Activate to view larger image,
+                            - img "text" [ref=e817]
+                          - generic [ref=e818]: Activate to view larger image,
+                        - generic [ref=e819]:
+                          - list [ref=e823]:
+                            - listitem [ref=e824]:
+                              - button "1 reaction" [ref=e825] [cursor=pointer]:
+                                - img "like" [ref=e826]
+                                - generic [ref=e827]: "1"
+                          - generic [ref=e828]:
+                            - generic [ref=e829]:
+                              - button "React Like" [ref=e830] [cursor=pointer]:
+                                - generic [ref=e832]:
+                                  - img [ref=e833]
+                                  - generic [ref=e835]: Like
+                              - button "Open reactions menu":
+                                - img [ref=e837] [cursor=pointer]
+                            - button "Comment" [disabled] [ref=e841]:
+                              - img
+                              - generic: Comment
+                            - button "Repost" [ref=e844] [cursor=pointer]:
+                              - img [ref=e845]
+                              - generic [ref=e847]: Repost
+                            - button "Send in a private message" [ref=e850] [cursor=pointer]:
+                              - img [ref=e851]
+                              - generic [ref=e854]: Send
+                      - generic [ref=e857]:
+                        - img [ref=e858]
+                        - paragraph [ref=e859]: Only group members can comment on this post. You can still react or repost it.
+                - listitem [ref=e860]
+            - button "Show more results" [ref=e864] [cursor=pointer]:
+              - generic [ref=e865]: Show more results
+        - complementary "Search suggestions" [ref=e866]:
+          - generic [ref=e868]:
+            - iframe [ref=e871]:
+              - generic [ref=f183e2]:
+                - generic [ref=f183e3]: Ad
+                - img "overflow-web-small" [ref=f183e6] [cursor=pointer]
+                - link "LinkedIn Premium" [ref=f183e10] [cursor=pointer]:
+                  - /url: https://www.linkedin.com/li/tscp/sct?destinationUrl=https%3A%2F%2Fwww.linkedin.com%2Fpremium%2Fredeem%2Fpromo%3F_ed%3DCwEAAAF114596ur6D_C644yaOCckjiuPmlSNohBRLZWzwWabZZHafL3X39_vkIP4OF8-NIE8HlM%26customKey%3Dwb_c%26redeemTypeV2%3DDISCOUNT%26type%3Dpremium%26src%3Dli-dynamic%26trk%3Dbnr_mktg_btn_jss_wb_PREMIUM_JSS_CONV_DA_GLOBAL_EN_202510_NFT_WinbackJobApp_562_WV_Jan26_V2%26upsellOrderOrigin%3DTracking%3Av1%3Abnr_mktg_btn_jss_wb_PREMIUM_JSS_CONV_DA_GLOBAL_EN_202510_NFT_WinbackJobApp_562_WV_Jan26_V2%3ADynamic%2520Ads%2520Winback%3AMarketing%26mcid%3D7384368240388382720&trackingEvent=%5B%7B%22eventInfo%22%3A%7B%22appId%22%3A%22com.linkedin.ads.rendering.d_web%22%2C%22eventName%22%3A%22SponsoredRightRailContentActionEvent%22%2C%22topicName%22%3A%22SponsoredRightRailContentActionEvent%22%7D%2C%22eventBody%22%3A%7B%22sponsoredEventHeader%22%3A%7B%22encryptedTrackingData%22%3A%22CwEAAAGcaxod8nsHwLN7ML5J1X2TXryCOevmP2zxQXBmFpxpU4-F7yTXXtJVSad5rcqnkqmqCN3lFF67w_03fBQBGF-jyqNJJNnAZJ0RzsA0twSJ8K5s6xuQA62Sk9Q-LGzUQvS91FrhRzXpY4YVQLEC3PjySL-dgkzh4NAqs2RffwtetFcu-o_g3jTQE4ScpyPiIFhgZb9tAj3OCpwv1KlTshIDZp2PaLuILDkSpZezsBEeawvvEJPFHX9CKiydSKaky6wx6Odu32JEIyZ6Yqvg6eOroKpFaziEPGEef5Rdm9jK8uBYXWlp3tSepWifrztvtsyge3GztDGJV4KMN52pFeL3m5JA6sk_J_BHZjssPl6S42M7v0CkAz71w76dldSHMYTujDTFiYXXZVkO8699rWAruxIX2Y8TbZYbO9O_3OxjYAlNu9ZpL8Ob_5bxFboAn4zIvIX2P7tPIC4JndV7VpbhIz-d3lSnb-8-DXkkb1yh9kdtoy9IH5rMzgatrk0Ix4x0xOGTUxogP8bu_rGX_cnMWFsY1HxATngtQgAwSImnWVxGNpqA1URe0KoLafPwq1Ekn2n-VCekv950cDIPOk0w0SPridIMYH6LbrAkYK9mPZwjgY7QTNDf63yeOAF47HozEZnpZMLJv6v5V5iyJdyyoG7L1-QYTyLipebd8eWuuSS6qaHd1p7nRgKHRTKCZq6cspsnXRaio59iZ_Q6JyD0ENjWRjnBPrgR5W2g1RYrvPxYYVXDvWe3pVYrGjAb2TjVsAsFklC5g-HvywlZ3566UDbxkkkYvKaNYdsHkWLGWLaTackR5L-1IWFPE99EfMQQWUAWP6ctyPOhfQFMJ8eBDl_eDxPfEV0ZlbnqTespcvqa275_jrY1xeHrzWwJ_cJ3O8flqm02k_gebQoaCd5rf6cVGQZley-m53aT61vo1urWYaYDUMWmWWK_4okjd_6QPFCCHQPXEKqwC6GgzcNxWArTkcquw6HbSAW4onHVmSv49Uz8cXoZwKFtB5W3J6dcqO-I1QLhxS5x3ed_K3xVO5SL1qiO_KNEfjIgTloDnr7xRu8fiAHVg0xzqV23bIesfLq8ypMos4MgTT_M2T1Nxo4jY01EQSinf8lVUI9IVyzRRmuQe0XX775psLKjrXFAFqfadfSEneE%22%7D%2C%22header%22%3A%7B%22pageInstance%22%3A%7B%22pageUrn%22%3A%22urn%3Ali%3Apage%3Ad_flagship3_search_srp_content%22%2C%22trackingId%22%3A%2218e9ede9-2b16-45c7-95b7-b7938a5b76c1%22%7D%2C%22time%22%3A1771323399616%2C%22version%22%3A%220.0.0%22%7D%2C%22requestHeader%22%3A%7B%22pageKey%22%3A%22d_flagship3_search_srp_content%22%2C%22interfaceLocale%22%3A%22en-US%22%7D%7D%7D%5D&csrfToken=ajax%3A2872756275449100236
+                - generic [ref=f183e11]:
+                  - heading "Oded, invest in your future with this exclusive offer." [level=2] [ref=f183e14]
+                  - generic [ref=f183e16]:
+                    - img "Oded" [ref=f183e17]
+                    - generic [ref=f183e18]:
+                      - link "LinkedIn Premium" [ref=f183e19] [cursor=pointer]:
+                        - /url: https://www.linkedin.com/li/tscp/sct?destinationUrl=https%3A%2F%2Fwww.linkedin.com%2Fpremium%2Fredeem%2Fpromo%3F_ed%3DCwEAAAF114596ur6D_C644yaOCckjiuPmlSNohBRLZWzwWabZZHafL3X39_vkIP4OF8-NIE8HlM%26customKey%3Dwb_c%26redeemTypeV2%3DDISCOUNT%26type%3Dpremium%26src%3Dli-dynamic%26trk%3Dbnr_mktg_btn_jss_wb_PREMIUM_JSS_CONV_DA_GLOBAL_EN_202510_NFT_WinbackJobApp_562_WV_Jan26_V2%26upsellOrderOrigin%3DTracking%3Av1%3Abnr_mktg_btn_jss_wb_PREMIUM_JSS_CONV_DA_GLOBAL_EN_202510_NFT_WinbackJobApp_562_WV_Jan26_V2%3ADynamic%2520Ads%2520Winback%3AMarketing%26mcid%3D7384368240388382720&trackingEvent=%5B%7B%22eventInfo%22%3A%7B%22appId%22%3A%22com.linkedin.ads.rendering.d_web%22%2C%22eventName%22%3A%22SponsoredRightRailContentActionEvent%22%2C%22topicName%22%3A%22SponsoredRightRailContentActionEvent%22%7D%2C%22eventBody%22%3A%7B%22sponsoredEventHeader%22%3A%7B%22encryptedTrackingData%22%3A%22CwEAAAGcaxod8nsHwLN7ML5J1X2TXryCOevmP2zxQXBmFpxpU4-F7yTXXtJVSad5rcqnkqmqCN3lFF67w_03fBQBGF-jyqNJJNnAZJ0RzsA0twSJ8K5s6xuQA62Sk9Q-LGzUQvS91FrhRzXpY4YVQLEC3PjySL-dgkzh4NAqs2RffwtetFcu-o_g3jTQE4ScpyPiIFhgZb9tAj3OCpwv1KlTshIDZp2PaLuILDkSpZezsBEeawvvEJPFHX9CKiydSKaky6wx6Odu32JEIyZ6Yqvg6eOroKpFaziEPGEef5Rdm9jK8uBYXWlp3tSepWifrztvtsyge3GztDGJV4KMN52pFeL3m5JA6sk_J_BHZjssPl6S42M7v0CkAz71w76dldSHMYTujDTFiYXXZVkO8699rWAruxIX2Y8TbZYbO9O_3OxjYAlNu9ZpL8Ob_5bxFboAn4zIvIX2P7tPIC4JndV7VpbhIz-d3lSnb-8-DXkkb1yh9kdtoy9IH5rMzgatrk0Ix4x0xOGTUxogP8bu_rGX_cnMWFsY1HxATngtQgAwSImnWVxGNpqA1URe0KoLafPwq1Ekn2n-VCekv950cDIPOk0w0SPridIMYH6LbrAkYK9mPZwjgY7QTNDf63yeOAF47HozEZnpZMLJv6v5V5iyJdyyoG7L1-QYTyLipebd8eWuuSS6qaHd1p7nRgKHRTKCZq6cspsnXRaio59iZ_Q6JyD0ENjWRjnBPrgR5W2g1RYrvPxYYVXDvWe3pVYrGjAb2TjVsAsFklC5g-HvywlZ3566UDbxkkkYvKaNYdsHkWLGWLaTackR5L-1IWFPE99EfMQQWUAWP6ctyPOhfQFMJ8eBDl_eDxPfEV0ZlbnqTespcvqa275_jrY1xeHrzWwJ_cJ3O8flqm02k_gebQoaCd5rf6cVGQZley-m53aT61vo1urWYaYDUMWmWWK_4okjd_6QPFCCHQPXEKqwC6GgzcNxWArTkcquw6HbSAW4onHVmSv49Uz8cXoZwKFtB5W3J6dcqO-I1QLhxS5x3ed_K3xVO5SL1qiO_KNEfjIgTloDnr7xRu8fiAHVg0xzqV23bIesfLq8ypMos4MgTT_M2T1Nxo4jY01EQSinf8lVUI9IVyzRRmuQe0XX775psLKjrXFAFqfadfSEneE%22%7D%2C%22header%22%3A%7B%22pageInstance%22%3A%7B%22pageUrn%22%3A%22urn%3Ali%3Apage%3Ad_flagship3_search_srp_content%22%2C%22trackingId%22%3A%2218e9ede9-2b16-45c7-95b7-b7938a5b76c1%22%7D%2C%22time%22%3A1771323399616%2C%22version%22%3A%220.0.0%22%7D%2C%22requestHeader%22%3A%7B%22pageKey%22%3A%22d_flagship3_search_srp_content%22%2C%22interfaceLocale%22%3A%22en-US%22%7D%7D%7D%5D&csrfToken=ajax%3A2872756275449100236
+                        - img "LinkedIn Premium" [ref=f183e20]
+                      - tooltip "LinkedIn Premium" [ref=f183e21]
+                  - generic [ref=f183e22]:
+                    - heading "Enjoy 50% off 2 months of LinkedIn Premium!" [level=2] [ref=f183e25]
+                    - link "Get 50% off today" [ref=f183e27] [cursor=pointer]:
+                      - /url: https://www.linkedin.com/li/tscp/sct?destinationUrl=https%3A%2F%2Fwww.linkedin.com%2Fpremium%2Fredeem%2Fpromo%3F_ed%3DCwEAAAF114596ur6D_C644yaOCckjiuPmlSNohBRLZWzwWabZZHafL3X39_vkIP4OF8-NIE8HlM%26customKey%3Dwb_c%26redeemTypeV2%3DDISCOUNT%26type%3Dpremium%26src%3Dli-dynamic%26trk%3Dbnr_mktg_btn_jss_wb_PREMIUM_JSS_CONV_DA_GLOBAL_EN_202510_NFT_WinbackJobApp_562_WV_Jan26_V2%26upsellOrderOrigin%3DTracking%3Av1%3Abnr_mktg_btn_jss_wb_PREMIUM_JSS_CONV_DA_GLOBAL_EN_202510_NFT_WinbackJobApp_562_WV_Jan26_V2%3ADynamic%2520Ads%2520Winback%3AMarketing%26mcid%3D7384368240388382720&trackingEvent=%5B%7B%22eventInfo%22%3A%7B%22appId%22%3A%22com.linkedin.ads.rendering.d_web%22%2C%22eventName%22%3A%22SponsoredRightRailContentActionEvent%22%2C%22topicName%22%3A%22SponsoredRightRailContentActionEvent%22%7D%2C%22eventBody%22%3A%7B%22sponsoredEventHeader%22%3A%7B%22encryptedTrackingData%22%3A%22CwEAAAGcaxod8nsHwLN7ML5J1X2TXryCOevmP2zxQXBmFpxpU4-F7yTXXtJVSad5rcqnkqmqCN3lFF67w_03fBQBGF-jyqNJJNnAZJ0RzsA0twSJ8K5s6xuQA62Sk9Q-LGzUQvS91FrhRzXpY4YVQLEC3PjySL-dgkzh4NAqs2RffwtetFcu-o_g3jTQE4ScpyPiIFhgZb9tAj3OCpwv1KlTshIDZp2PaLuILDkSpZezsBEeawvvEJPFHX9CKiydSKaky6wx6Odu32JEIyZ6Yqvg6eOroKpFaziEPGEef5Rdm9jK8uBYXWlp3tSepWifrztvtsyge3GztDGJV4KMN52pFeL3m5JA6sk_J_BHZjssPl6S42M7v0CkAz71w76dldSHMYTujDTFiYXXZVkO8699rWAruxIX2Y8TbZYbO9O_3OxjYAlNu9ZpL8Ob_5bxFboAn4zIvIX2P7tPIC4JndV7VpbhIz-d3lSnb-8-DXkkb1yh9kdtoy9IH5rMzgatrk0Ix4x0xOGTUxogP8bu_rGX_cnMWFsY1HxATngtQgAwSImnWVxGNpqA1URe0KoLafPwq1Ekn2n-VCekv950cDIPOk0w0SPridIMYH6LbrAkYK9mPZwjgY7QTNDf63yeOAF47HozEZnpZMLJv6v5V5iyJdyyoG7L1-QYTyLipebd8eWuuSS6qaHd1p7nRgKHRTKCZq6cspsnXRaio59iZ_Q6JyD0ENjWRjnBPrgR5W2g1RYrvPxYYVXDvWe3pVYrGjAb2TjVsAsFklC5g-HvywlZ3566UDbxkkkYvKaNYdsHkWLGWLaTackR5L-1IWFPE99EfMQQWUAWP6ctyPOhfQFMJ8eBDl_eDxPfEV0ZlbnqTespcvqa275_jrY1xeHrzWwJ_cJ3O8flqm02k_gebQoaCd5rf6cVGQZley-m53aT61vo1urWYaYDUMWmWWK_4okjd_6QPFCCHQPXEKqwC6GgzcNxWArTkcquw6HbSAW4onHVmSv49Uz8cXoZwKFtB5W3J6dcqO-I1QLhxS5x3ed_K3xVO5SL1qiO_KNEfjIgTloDnr7xRu8fiAHVg0xzqV23bIesfLq8ypMos4MgTT_M2T1Nxo4jY01EQSinf8lVUI9IVyzRRmuQe0XX775psLKjrXFAFqfadfSEneE%22%7D%2C%22header%22%3A%7B%22pageInstance%22%3A%7B%22pageUrn%22%3A%22urn%3Ali%3Apage%3Ad_flagship3_search_srp_content%22%2C%22trackingId%22%3A%2218e9ede9-2b16-45c7-95b7-b7938a5b76c1%22%7D%2C%22time%22%3A1771323399616%2C%22version%22%3A%220.0.0%22%7D%2C%22requestHeader%22%3A%7B%22pageKey%22%3A%22d_flagship3_search_srp_content%22%2C%22interfaceLocale%22%3A%22en-US%22%7D%7D%7D%5D&csrfToken=ajax%3A2872756275449100236
+            - generic "LinkedIn Footer Content" [ref=e872]:
+              - generic [ref=e873]:
+                - list [ref=e874]:
+                  - listitem [ref=e875]:
+                    - link "About" [ref=e876] [cursor=pointer]:
+                      - /url: https://about.linkedin.com/
+                      - generic [ref=e877]: About
+                  - listitem [ref=e878]:
+                    - link "Accessibility" [ref=e879] [cursor=pointer]:
+                      - /url: https://www.linkedin.com/accessibility
+                      - generic [ref=e880]: Accessibility
+                  - listitem [ref=e881]:
+                    - link "Help Center" [ref=e882] [cursor=pointer]:
+                      - /url: https://www.linkedin.com/help/linkedin?trk=footer_d_flagship3_search_srp_content
+                      - generic [ref=e883]: Help Center
+                  - listitem [ref=e884]:
+                    - button "Privacy & Terms" [ref=e886] [cursor=pointer]:
+                      - generic [ref=e888]:
+                        - text: Privacy & Terms
+                        - img [ref=e889]
+                  - listitem [ref=e891]:
+                    - link "Ad Choices" [ref=e892] [cursor=pointer]:
+                      - /url: https://www.linkedin.com/help/linkedin/answer/62931
+                      - generic [ref=e893]: Ad Choices
+                  - listitem [ref=e894]:
+                    - link "Advertising" [ref=e895] [cursor=pointer]:
+                      - /url: https://www.linkedin.com/ad/start?trk=n_nav_ads_rr
+                      - generic [ref=e896]: Advertising
+                  - listitem [ref=e897]:
+                    - button "Business Services" [ref=e899] [cursor=pointer]:
+                      - generic [ref=e901]:
+                        - text: Business Services
+                        - img [ref=e902]
+                  - listitem [ref=e904]:
+                    - button "Get the LinkedIn app" [ref=e907] [cursor=pointer]
+                  - listitem [ref=e908]:
+                    - button "More options" [ref=e909] [cursor=pointer]: More
+                - generic [ref=e910]:
+                  - img "LinkedIn" [ref=e911]:
+                    - img [ref=e912]
+                  - text: LinkedIn Corporation © 2026
+    - generic:
+      - generic:
+        - complementary:
+          - generic [ref=e915]:
+            - generic [ref=e917] [cursor=pointer]:
+              - img "Oded Ben-Yair" [ref=e919]
+              - button "You are on the messaging overlay. Press enter to open the list of conversations." [ref=e920]:
+                - generic [ref=e921]:
+                  - generic [ref=e922]: Messaging
+                  - generic [ref=e923]: You are on the messaging overlay. Press enter to open the list of conversations.
+            - generic [ref=e924]:
+              - button "Open messenger dropdown menu" [ref=e926] [cursor=pointer]:
+                - img "Open messenger dropdown menu" [ref=e927]
+              - button "Compose message" [ref=e930] [cursor=pointer]:
+                - img [ref=e931]
+                - generic [ref=e933]: Compose message
+              - button "You are on the messaging overlay. Press enter to open the list of conversations." [ref=e934] [cursor=pointer]:
+                - img [ref=e935]
+                - generic [ref=e937]: You are on the messaging overlay. Press enter to open the list of conversations.
+        - complementary "AI-powered assistant to get help with your career, jobs etc"

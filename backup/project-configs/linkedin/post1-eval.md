@@ -1,0 +1,11 @@
+- generic [active] [ref=e1]:
+  - generic:
+    - region "Toast message":
+      - heading "0 notifications total" [level=2] [ref=e3]
+      - alert
+  - region [ref=e4]
+  - generic [ref=e6]:
+    - heading "Something went wrong" [level=2] [ref=e7]
+    - paragraph [ref=e8]: Refresh the page
+    - button "Try again" [ref=e9] [cursor=pointer]:
+      - generic [ref=e10]: Try again

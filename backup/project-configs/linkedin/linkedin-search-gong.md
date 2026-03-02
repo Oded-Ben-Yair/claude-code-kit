@@ -1,0 +1,481 @@
+- generic [ref=e1]:
+  - generic:
+    - region "Toast message":
+      - heading "0 notifications total" [level=2] [ref=e3]
+      - alert
+  - region [ref=e15]
+  - generic [ref=e16]:
+    - generic [ref=e116]:
+      - button "Skip to search" [ref=e117] [cursor=pointer]:
+        - generic [ref=e118]: Skip to search
+      - button "Skip to main content" [ref=e119] [cursor=pointer]:
+        - generic [ref=e120]: Skip to main content
+      - button "Keyboard shortcuts" [ref=e121] [cursor=pointer]:
+        - generic [ref=e122]: Keyboard shortcuts
+      - button "Close jump menu" [ref=e123] [cursor=pointer]:
+        - img [ref=e124]
+        - generic [ref=e126]: Close jump menu
+    - banner "Global Navigation" [ref=e127]:
+      - generic [ref=e128]:
+        - link "LinkedIn" [ref=e129] [cursor=pointer]:
+          - /url: https://www.linkedin.com/feed/?nis=true
+          - img "LinkedIn" [ref=e132]:
+            - img [ref=e133]
+        - generic [ref=e137]:
+          - combobox "Search" [ref=e138]: gong ai
+          - generic:
+            - img
+        - navigation "Primary Navigation" [ref=e139]:
+          - list [ref=e140]:
+            - listitem [ref=e141]:
+              - link "new feed updates notifications Home" [ref=e142] [cursor=pointer]:
+                - /url: https://www.linkedin.com/feed/?nis=true&
+                - generic [ref=e143]:
+                  - generic [ref=e146]: new feed updates notifications
+                  - img [ref=e150]
+                - generic "Home" [ref=e152]
+            - listitem [ref=e153]:
+              - link "3 new network updates notifications My Network" [ref=e154] [cursor=pointer]:
+                - /url: https://www.linkedin.com/mynetwork/?
+                - generic [ref=e155]:
+                  - generic [ref=e156]:
+                    - generic [ref=e157]: "3"
+                    - generic [ref=e158]: 3 new network updates notifications
+                  - img [ref=e162]
+                - generic "My Network" [ref=e164]
+            - listitem [ref=e165]:
+              - link "Jobs" [ref=e166] [cursor=pointer]:
+                - /url: https://www.linkedin.com/jobs/?
+                - img [ref=e170]
+                - generic "Jobs" [ref=e172]
+            - listitem [ref=e173]:
+              - link "Messaging" [ref=e174] [cursor=pointer]:
+                - /url: https://www.linkedin.com/messaging/?
+                - img [ref=e178]
+                - generic "Messaging" [ref=e180]
+            - listitem [ref=e181]:
+              - link "Notifications" [ref=e182] [cursor=pointer]:
+                - /url: https://www.linkedin.com/notifications/?
+                - img [ref=e186]
+                - generic "Notifications" [ref=e188]
+            - listitem [ref=e189]:
+              - button "Oded Ben-Yair Me" [ref=e191] [cursor=pointer]:
+                - img "Oded Ben-Yair" [ref=e192]
+                - generic [ref=e193]:
+                  - text: Me
+                  - img [ref=e194]
+            - listitem [ref=e196]:
+              - button "For Business" [ref=e198] [cursor=pointer]:
+                - img [ref=e202]
+                - generic "For Business" [ref=e204]:
+                  - text: For Business
+                  - img [ref=e205]
+            - listitem [ref=e207]:
+              - 'link "Reactivate Premium: 50% Off" [ref=e209] [cursor=pointer]':
+                - /url: http://www.linkedin.com/premium/redeem/?_ed=0_bvLJH59RTSY-u5c6PMUa4IW0M54p9mxZpuVkfRvTl7r&upsellOrderOrigin=Tracking%3Av1%3Apremium_nav_upsell_text_winback%3ANav%3AIn-Product&referenceId=LEBhFBRrTfmvQIne1aLNRQ%3D%3D&customKey=wb_c&redeemTypeV2=DISCOUNT&destRedirectURL=https%3A%2F%2Fwww.linkedin.com%2Fsearch%2Fresults%2Fcontent%2F%3Fkeywords%3Dgong%2520ai%26origin%3DGLOBAL_SEARCH_HEADER%26datePosted%3D%2522past-24h%2522%26sortBy%3D%2522date_posted%2522
+                - generic [ref=e211]: "Reactivate Premium: 50% Off"
+    - generic [ref=e212]:
+      - navigation "Search filters" [ref=e215]:
+        - generic [ref=e216]:
+          - list [ref=e217]:
+            - listitem [ref=e218]:
+              - 'button "Filter by: Posts" [ref=e220] [cursor=pointer]':
+                - text: Posts
+                - img [ref=e221]
+            - listitem [ref=e223]
+            - listitem [ref=e224]:
+              - button "Sort by filter. Latest filter is currently applied. Clicking this button displays all Sort by filter options." [ref=e227] [cursor=pointer]:
+                - text: Latest
+                - img [ref=e228]
+            - listitem [ref=e230]:
+              - button "Date posted filter. Past 24 hours filter is currently applied. Clicking this button displays all Date posted filter options." [ref=e233] [cursor=pointer]:
+                - text: Past 24 hours
+                - img [ref=e234]
+            - listitem [ref=e236]:
+              - button "Content type filter. Clicking this button displays all Content type filter options." [ref=e239] [cursor=pointer]:
+                - text: Content type
+                - img [ref=e240]
+            - listitem [ref=e242]:
+              - button "From member filter. Clicking this button displays all From member filter options." [ref=e245] [cursor=pointer]:
+                - text: From member
+                - img [ref=e246]
+          - generic [ref=e248]:
+            - button "Show all filters. Clicking this button displays all available filter options." [ref=e251] [cursor=pointer]: All filters
+            - button "Reset applied filters" [ref=e252] [cursor=pointer]:
+              - generic [ref=e253]: Reset
+      - generic [ref=e255]:
+        - main [ref=e256]:
+          - heading "Search results for gong ai. There are 3 results. Currently on the page 2 of 84 search result pages." [active] [level=1] [ref=e257]
+          - generic [ref=e260]:
+            - generic [ref=e261]:
+              - list [ref=e264]:
+                - listitem [ref=e265]:
+                  - article [ref=e269]:
+                    - generic [ref=e271]:
+                      - heading "Feed post" [level=2] [ref=e272]
+                      - generic [ref=e273]:
+                        - generic [ref=e274]:
+                          - generic [ref=e275]:
+                            - generic [ref=e276]:
+                              - link "View Geoff Soon’s hiring graphic link" [ref=e277] [cursor=pointer]:
+                                - /url: https://www.linkedin.com/in/geoffsoon?miniProfileUrn=urn%3Ali%3Afsd_profile%3AACoAAAANsTYB3Hk5o4ivj73KCzknazlexG2CmZg
+                                - img "View Geoff Soon’s hiring graphic link" [ref=e281]
+                              - generic [ref=e282]:
+                                - 'link "View: Geoff Soon Verified • 2nd VP Revenue APAC" [ref=e283] [cursor=pointer]':
+                                  - /url: https://www.linkedin.com/in/geoffsoon?miniProfileUrn=urn%3Ali%3Afsd_profile%3AACoAAAANsTYB3Hk5o4ivj73KCzknazlexG2CmZg
+                                  - generic [ref=e284]:
+                                    - generic [ref=e286]:
+                                      - generic [ref=e287]: Geoff Soon
+                                      - generic [ref=e288]: Geoff Soon
+                                    - generic [ref=e289]:
+                                      - generic [ref=e290]:
+                                        - img [ref=e291]
+                                        - text: • 2nd
+                                      - generic [ref=e293]: Verified • 2nd
+                                  - generic [ref=e294]:
+                                    - generic [ref=e295]: VP Revenue APAC
+                                    - generic [ref=e296]: VP Revenue APAC
+                                - generic [ref=e297]:
+                                  - generic [ref=e298]:
+                                    - text: 4m •
+                                    - img [ref=e301]
+                                  - generic [ref=e303]: 4 minutes ago • Visible to anyone on or off LinkedIn
+                            - button "Follow Geoff Soon" [ref=e304] [cursor=pointer]:
+                              - img [ref=e305]
+                              - generic [ref=e307]: Follow
+                          - button "Open control menu for post by Geoff Soon" [ref=e310] [cursor=pointer]:
+                            - img [ref=e311]
+                        - generic [ref=e314]:
+                          - generic [ref=e317]:
+                            - text: As we welcome the Year of the Horse, I want to take a moment to thank our customers, partners and the broader ecosystem across APAC and beyond.
+                            - text: This past year has been defined by bold ideas, deep collaboration and a shared commitment to building meaningful impact with AI. None of it happens in isolation, it takes trust, execution and long-term partnership.
+                            - text: May the year ahead bring renewed energy, strong momentum and the courage to pursue big opportunities. Wishing you and your teams good health, prosperity and continued success.
+                            - text: Gong Xi Fa Cai!
+                            - link "Wil Le" [ref=e319] [cursor=pointer]:
+                              - /url: /in/wilburle/
+                            - link "Wei Cheng Wilson Tan" [ref=e321] [cursor=pointer]:
+                              - /url: /in/wei-cheng-wilson-tan-92a33756/
+                            - link "Alvin Pang" [ref=e323] [cursor=pointer]:
+                              - /url: /in/alvinpangsg/
+                            - link "David E." [ref=e325] [cursor=pointer]:
+                              - /url: /in/david-e-9b519b29/
+                            - link "Ashen Wagachchi" [ref=e327] [cursor=pointer]:
+                              - /url: /in/ashenwagachchi/
+                            - link "Jae Heo" [ref=e329] [cursor=pointer]:
+                              - /url: /in/jaeheo/
+                            - link "Justin Gardiner" [ref=e331] [cursor=pointer]:
+                              - /url: /in/justingardiner/
+                            - link "Jia Sin Loh" [ref=e333] [cursor=pointer]:
+                              - /url: /in/lohjiasin/
+                            - link "Tommy Yong" [ref=e335] [cursor=pointer]:
+                              - /url: /in/yongyct/
+                            - link "Vincent Maladière" [ref=e337] [cursor=pointer]:
+                              - /url: /in/vincent-maladiere/
+                            - link "Kilian Tep" [ref=e339] [cursor=pointer]:
+                              - /url: /in/kilian-tep-285bb384/
+                            - link "Wendy Aw" [ref=e341] [cursor=pointer]:
+                              - /url: /in/wendyaw/
+                            - link "Siddhant Waghjale" [ref=e343] [cursor=pointer]:
+                              - /url: /in/siddhant-waghjale/
+                            - link "Martin Paesold, PhD" [ref=e345] [cursor=pointer]:
+                              - /url: /in/martin-paesold/
+                            - link "Swarnima Korde" [ref=e347] [cursor=pointer]:
+                              - /url: /in/swarnima-korde/
+                            - link "Adrien Sadé" [ref=e349] [cursor=pointer]:
+                              - /url: /in/adrien-sade/
+                            - link "William El Sayed" [ref=e351] [cursor=pointer]:
+                              - /url: /in/letsgomistral/
+                            - link "Nicolas Schuhl" [ref=e353] [cursor=pointer]:
+                              - /url: /in/nicolasschuhl/
+                            - link "Corentin Petit" [ref=e355] [cursor=pointer]:
+                              - /url: /in/corentin-petit-94113571/
+                            - link "Marjorie Janiewicz" [ref=e357] [cursor=pointer]:
+                              - /url: /in/marjorietoucas/
+                          - button "see more, visually reveals content which is already detected by screen readers" [ref=e358] [cursor=pointer]:
+                            - generic [ref=e359]: …more
+                        - generic [ref=e361]:
+                          - button "Activate to view larger image, No alternative text description for this image" [ref=e363] [cursor=pointer]:
+                            - generic [ref=e364]: Activate to view larger image,
+                            - img "No alternative text description for this image" [ref=e367]
+                          - generic [ref=e368]: Activate to view larger image,
+                        - generic [ref=e370]:
+                          - generic [ref=e371]:
+                            - button "React Like" [ref=e372] [cursor=pointer]:
+                              - generic [ref=e374]:
+                                - img [ref=e375]
+                                - generic [ref=e377]: Like
+                            - button "Open reactions menu":
+                              - img [ref=e379] [cursor=pointer]
+                          - button "Comment" [ref=e383] [cursor=pointer]:
+                            - img [ref=e384]
+                            - generic [ref=e386]: Comment
+                          - button "Repost" [ref=e389] [cursor=pointer]:
+                            - img [ref=e390]
+                            - generic [ref=e392]: Repost
+                          - button "Send in a private message" [ref=e395] [cursor=pointer]:
+                            - img [ref=e396]
+                            - generic [ref=e399]: Send
+                - listitem [ref=e400]:
+                  - article [ref=e404]:
+                    - generic [ref=e406]:
+                      - heading "Feed post" [level=2] [ref=e407]
+                      - generic [ref=e408]:
+                        - generic [ref=e409]:
+                          - generic [ref=e410]:
+                            - generic [ref=e411]:
+                              - link "View Yesh Gunewardena’s graphic link" [ref=e412] [cursor=pointer]:
+                                - /url: https://www.linkedin.com/in/yeshanth?miniProfileUrn=urn%3Ali%3Afsd_profile%3AACoAAAEa2KUBrUc2Y2iEdvjxOLuvMhjCl3gy1Fk
+                                - img "View Yesh Gunewardena’s graphic link" [ref=e416]
+                              - generic [ref=e417]:
+                                - 'link "View: Yesh Gunewardena Premium • 3rd+ Director Fintech Products | Consumer &amp; SME Lending | Product Strategy &amp; AI Enablement | Digital Banking" [ref=e418] [cursor=pointer]':
+                                  - /url: https://www.linkedin.com/in/yeshanth?miniProfileUrn=urn%3Ali%3Afsd_profile%3AACoAAAEa2KUBrUc2Y2iEdvjxOLuvMhjCl3gy1Fk
+                                  - generic [ref=e419]:
+                                    - generic [ref=e421]:
+                                      - generic [ref=e422]: Yesh Gunewardena
+                                      - generic [ref=e423]: Yesh Gunewardena
+                                    - generic [ref=e424]:
+                                      - generic [ref=e425]:
+                                        - img [ref=e426]:
+                                          - img [ref=e427]
+                                        - text: • 3rd+
+                                      - generic [ref=e429]: Premium • 3rd+
+                                  - generic [ref=e430]:
+                                    - generic [ref=e431]: Director Fintech Products | Consumer & SME Lending | Product Strategy & AI Enablement | Digital Banking
+                                    - generic [ref=e432]: Director Fintech Products | Consumer & SME Lending | Product Strategy & AI Enablement | Digital Banking
+                                - generic [ref=e433]:
+                                  - generic [ref=e434]:
+                                    - text: 5m •
+                                    - img [ref=e437]
+                                  - generic [ref=e439]: 5 minutes ago • Visible to anyone on or off LinkedIn
+                            - button "Follow Yesh Gunewardena" [ref=e440] [cursor=pointer]:
+                              - img [ref=e441]
+                              - generic [ref=e443]: Follow
+                          - button "Open control menu for post by Yesh Gunewardena" [ref=e446] [cursor=pointer]:
+                            - img [ref=e447]
+                        - generic [ref=e450]:
+                          - generic [ref=e453]:
+                            - text: The year of the fire horse is historically associated with significant change and disruption.
+                            - text: OpenClaw and Cowork started the year with a glimpse of agentic AI becoming native to our digital life. Stablecoins and tokenised deposits signal a future of cross-border finance.
+                            - text: Change is no longer a 3-year project. It's autonomous while we sleep! For any organisation and team, 2026 must be a year of intensity and speed!
+                            - text: Wishing everyone a happy and successful New Year. May 2026 bring new opportunities, growth, and achievements. I look forward to connecting and collaborating in the year ahead. Gong xi fa cai!
+                            - text: "For some historical context (including England & FIFA) see:"
+                            - link "https://lnkd.in/gMFvFrPr" [ref=e454] [cursor=pointer]:
+                              - /url: https://lnkd.in/gMFvFrPr
+                          - button "see more, visually reveals content which is already detected by screen readers" [ref=e455] [cursor=pointer]:
+                            - generic [ref=e456]: …more
+                        - generic [ref=e458]:
+                          - generic [ref=e459]:
+                            - button "Activate to view larger image, No alternative text description for this image" [ref=e460] [cursor=pointer]:
+                              - generic [ref=e461]: Activate to view larger image,
+                              - img "No alternative text description for this image" [ref=e464]
+                            - generic [ref=e466] [cursor=pointer]:
+                              - button "This image has content credentials." [ref=e467]:
+                                - img [ref=e468]:
+                                  - img [ref=e469]
+                              - generic [ref=e471]: See content credentials
+                          - generic [ref=e472]: Activate to view larger image,
+                        - generic [ref=e474]:
+                          - generic [ref=e475]:
+                            - button "React Like" [ref=e476] [cursor=pointer]:
+                              - generic [ref=e478]:
+                                - img [ref=e479]
+                                - generic [ref=e481]: Like
+                            - button "Open reactions menu":
+                              - img [ref=e483] [cursor=pointer]
+                          - button "Comment" [ref=e487] [cursor=pointer]:
+                            - img [ref=e488]
+                            - generic [ref=e490]: Comment
+                          - button "Repost" [ref=e493] [cursor=pointer]:
+                            - img [ref=e494]
+                            - generic [ref=e496]: Repost
+                          - button "Send in a private message" [ref=e499] [cursor=pointer]:
+                            - img [ref=e500]
+                            - generic [ref=e503]: Send
+                - listitem [ref=e504]:
+                  - article [ref=e508]:
+                    - generic [ref=e510]:
+                      - heading "Feed post" [level=2] [ref=e511]
+                      - generic [ref=e512]:
+                        - generic [ref=e513]:
+                          - generic [ref=e514]:
+                            - generic [ref=e515]:
+                              - link "Addlly AI, graphic." [ref=e516] [cursor=pointer]:
+                                - /url: https://www.linkedin.com/company/addllyai/posts
+                              - generic [ref=e520]:
+                                - 'link "View: Addlly AI 1,352 followers" [ref=e521] [cursor=pointer]':
+                                  - /url: https://www.linkedin.com/company/addllyai/posts
+                                  - generic [ref=e524]:
+                                    - generic [ref=e526]: Addlly AI
+                                    - generic [ref=e528]: Addlly AI
+                                  - generic [ref=e529]:
+                                    - generic [ref=e530]: 1,352 followers
+                                    - generic [ref=e531]: 1,352 followers
+                                - generic [ref=e532]:
+                                  - generic [ref=e533]:
+                                    - text: 13m •
+                                    - img [ref=e536]
+                                  - generic [ref=e538]: 13 minutes ago • Visible to anyone on or off LinkedIn
+                            - button "Follow Addlly AI" [ref=e539] [cursor=pointer]:
+                              - img [ref=e540]
+                              - generic [ref=e542]: Follow
+                          - button "Open control menu for post by Addlly AI" [ref=e545] [cursor=pointer]:
+                            - img [ref=e546]
+                        - generic [ref=e549]:
+                          - generic [ref=e552]:
+                            - text: As we welcome the Year of the Horse, we celebrate momentum, resilience, and bold progress.
+                            - text: May this Lunar New Year bring prosperity and measurable growth to your brand.
+                            - text: From all of us at Addlly AI, Happy Chinese New Year.
+                            - text: Gong Xi Fa Cai 🧧✨
+                            - link "hashtag ChineseNewYear" [ref=e553] [cursor=pointer]:
+                              - /url: https://www.linkedin.com/search/results/all/?keywords=%23chinesenewyear&origin=HASH_TAG_FROM_FEED
+                              - generic [ref=e554]: hashtag
+                              - generic [ref=e555]: "#ChineseNewYear"
+                            - link "hashtag LunarNewYear" [ref=e556] [cursor=pointer]:
+                              - /url: https://www.linkedin.com/search/results/all/?keywords=%23lunarnewyear&origin=HASH_TAG_FROM_FEED
+                              - generic [ref=e557]: hashtag
+                              - generic [ref=e558]: "#LunarNewYear"
+                            - link "hashtag CNY2026" [ref=e559] [cursor=pointer]:
+                              - /url: https://www.linkedin.com/search/results/all/?keywords=%23cny2026&origin=HASH_TAG_FROM_FEED
+                              - generic [ref=e560]: hashtag
+                              - generic [ref=e561]: "#CNY2026"
+                            - link "hashtag HappyChineseNewYear" [ref=e562] [cursor=pointer]:
+                              - /url: https://www.linkedin.com/search/results/all/?keywords=%23happychinesenewyear&origin=HASH_TAG_FROM_FEED
+                              - generic [ref=e563]: hashtag
+                              - generic [ref=e564]: "#HappyChineseNewYear"
+                            - link "hashtag GongXiFaCai" [ref=e565] [cursor=pointer]:
+                              - /url: https://www.linkedin.com/search/results/all/?keywords=%23gongxifacai&origin=HASH_TAG_FROM_FEED
+                              - generic [ref=e566]: hashtag
+                              - generic [ref=e567]: "#GongXiFaCai"
+                            - link "hashtag YearOfTheHorse" [ref=e568] [cursor=pointer]:
+                              - /url: https://www.linkedin.com/search/results/all/?keywords=%23yearofthehorse&origin=HASH_TAG_FROM_FEED
+                              - generic [ref=e569]: hashtag
+                              - generic [ref=e570]: "#YearOfTheHorse"
+                            - link "hashtag LunarNewYear2026" [ref=e571] [cursor=pointer]:
+                              - /url: https://www.linkedin.com/search/results/all/?keywords=%23lunarnewyear2026&origin=HASH_TAG_FROM_FEED
+                              - generic [ref=e572]: hashtag
+                              - generic [ref=e573]: "#LunarNewYear2026"
+                          - button "see more, visually reveals content which is already detected by screen readers" [ref=e574] [cursor=pointer]:
+                            - generic [ref=e575]: …more
+                        - generic [ref=e577]:
+                          - button "Activate to view larger image, Happy Chinese New Year from Addlly AI" [ref=e579] [cursor=pointer]:
+                            - generic [ref=e580]: Activate to view larger image,
+                            - img "Happy Chinese New Year from Addlly AI" [ref=e583]
+                          - generic [ref=e584]: Activate to view larger image,
+                        - generic [ref=e586]:
+                          - generic [ref=e587]:
+                            - button "React Like" [ref=e588] [cursor=pointer]:
+                              - generic [ref=e590]:
+                                - img [ref=e591]
+                                - generic [ref=e593]: Like
+                            - button "Open reactions menu":
+                              - img [ref=e595] [cursor=pointer]
+                          - button "Comment" [ref=e599] [cursor=pointer]:
+                            - img [ref=e600]
+                            - generic [ref=e602]: Comment
+                          - button "Repost" [ref=e605] [cursor=pointer]:
+                            - img [ref=e606]
+                            - generic [ref=e608]: Repost
+                          - button "Send in a private message" [ref=e611] [cursor=pointer]:
+                            - img [ref=e612]
+                            - generic [ref=e615]: Send
+              - list [ref=e618]:
+                - listitem [ref=e619]:
+                  - generic [ref=e620]:
+                    - generic [ref=e621]:
+                      - paragraph [ref=e622]: Are these results helpful?
+                      - paragraph [ref=e623]: Your feedback helps us improve search results
+                    - generic [ref=e624]:
+                      - button "Are these results helpful? Yes, these search results are helpful" [ref=e625] [cursor=pointer]:
+                        - img [ref=e626]
+                      - button "Are these results helpful? No, these search results are not helpful" [ref=e629] [cursor=pointer]:
+                        - img [ref=e630]
+              - list [ref=e635]:
+                - listitem [ref=e636]
+                - listitem [ref=e638]
+                - listitem [ref=e640]
+            - button "Show more results" [ref=e644] [cursor=pointer]:
+              - generic [ref=e645]: Show more results
+        - complementary "Search suggestions" [ref=e646]:
+          - generic [ref=e648]:
+            - iframe [ref=e651]:
+              - generic [ref=f124e2]:
+                - generic [ref=f124e3]: Ad
+                - img "overflow-web-small" [ref=f124e6] [cursor=pointer]
+                - link "LinkedIn for Sales" [ref=f124e10] [cursor=pointer]:
+                  - /url: https://www.linkedin.com/li/tscp/sct?destinationUrl=https%3A%2F%2Fwww.linkedin.com%2Fpremium%2Fredeem-v3%2F%3F_ed%3DCwEAAAFvqlyO6M8Q8oNzsFrJnllsOwTEGqdDSfAhW7Ib5vG3e7kEqBnLM6TDzYIfB6J8I4WlA-U%26planType%3Dsales%26redeemType%3DWINBACK%26src%3Dli-dynamic%26trk%3Demea_EN_DA_V2_202507_Winback%26mcid%3D7386103191538618368&trackingEvent=%5B%7B%22eventInfo%22%3A%7B%22appId%22%3A%22com.linkedin.ads.rendering.d_web%22%2C%22eventName%22%3A%22SponsoredRightRailContentActionEvent%22%2C%22topicName%22%3A%22SponsoredRightRailContentActionEvent%22%7D%2C%22eventBody%22%3A%7B%22sponsoredEventHeader%22%3A%7B%22encryptedTrackingData%22%3A%22CwEAAAGcaxhoD0rBQFturD2f8Qn2Urq9MjMm04Gg-DhvGJVxrGunU7pKBx38qAL_4vX37Z5i1IqRXbXTmSSp_XfmQjDZvtyjLK7CCHb2C1f57sAm_sj6csP110dmiD-aX7vBVdAsiOwh0aINEs4WBAo0HD1NhIr10EFohgheFdip1Hcn0Ef4qX_9JTB4wmSBJof8RwaiUp_E87SnnNGlLh-s6n5y2JpdGr7u-dEtJWbAdYy1QmP2EEJz8EhuSqOxMdQ4dYcj3oWoiMMqnsCjfW4faT40zTLohZ3AwweoeCfNyyqQOpOhxmCC7yeit4kb5sXlygfu-cvvIc8-82NHGNo4ZRVpCUtUg3_Ns4srr7gZgvx7YxnwdQi3KhxGc12YkhTJgEtUFWnvicuk5EDaj5p2emsA9lwerOq9_aAzWg4tBTQFg1zxrV8pcDZ154WsxVuii0D5iBSbJD2KvHRjiPzCgcM5_vwhAuFN91qhikNzKsUB7oS4lLix-DFWJMdz49CKha-Q5V4X_ebho889aXmEH7E53HFYgx73XEyrrQAbOg6hvLujt_sdLIHQF3aMtgzLOriRwGH0s-OkPBw1ijr16EsFblYy8jdh6a-ubmcXhxiKkqqUWUd_yy_WMl5tJa2Kr5-_1qp-hiq9m99VgYoD6WoNwP3MDsTaZWs6eLXS35o5hS4hXV0lNEc8o3gHg9Q2R3_DAimaRVsqOSzloR2pmKrzs9pVSgdXsxRsUo_T41fiD1KqoNmCoQCp4SDxTGUGKJSjXuTqxakhZj9gseVtordDezloV-8pSqSOkveYJUVblht1_ExkhCROjsGjGRHRTbgPVOIP2BYMix929F01vcaUyc8IrG1_etQrTHXchCRr8iABY91WHrCfxNylGIJ0tHas84T_-iibzXX-VOkMuQFYH_rewf0TtEDTybrpHOqoRjeK0lp0CTILOs8PbIuR0mnsj_PXes4NG4LcQpk_7FsQ7Ld9EYWr4VaXT5LH2PLzQVzBrImbX0d6akk_AedHxot0DSzQraug3mCmhh93G1eKKi6ehwhBCcUciuyecQ3CFpJ2n8jH_4LM7M3Xfi1GaKswkEhXVkfcFX4qsAjuffAW20bMi1Z1wdext6-SKY-cMCGRR1JaABfVbIM4BhklAjesFO6RY9y5vPkdZc7L-_u_kpZry6CIDW99txDXvhmKg3TO0wjhiPyWyg%22%7D%2C%22header%22%3A%7B%22pageInstance%22%3A%7B%22pageUrn%22%3A%22urn%3Ali%3Apage%3Ad_flagship3_search_srp_content%22%2C%22trackingId%22%3A%22c349a4e1-b332-4f78-8ea9-6e203475c2b6%22%7D%2C%22time%22%3A1771323287515%2C%22version%22%3A%220.0.0%22%7D%2C%22requestHeader%22%3A%7B%22pageKey%22%3A%22d_flagship3_search_srp_content%22%2C%22interfaceLocale%22%3A%22en-US%22%7D%7D%7D%5D&csrfToken=ajax%3A2872756275449100236
+                - generic [ref=f124e11]:
+                  - heading "Oded, enjoy 50% off 2 months of Sales Navigator!" [level=2] [ref=f124e14]
+                  - generic [ref=f124e16]:
+                    - img "Oded" [ref=f124e17]
+                    - generic [ref=f124e18]:
+                      - link "LinkedIn for Sales" [ref=f124e19] [cursor=pointer]:
+                        - /url: https://www.linkedin.com/li/tscp/sct?destinationUrl=https%3A%2F%2Fwww.linkedin.com%2Fpremium%2Fredeem-v3%2F%3F_ed%3DCwEAAAFvqlyO6M8Q8oNzsFrJnllsOwTEGqdDSfAhW7Ib5vG3e7kEqBnLM6TDzYIfB6J8I4WlA-U%26planType%3Dsales%26redeemType%3DWINBACK%26src%3Dli-dynamic%26trk%3Demea_EN_DA_V2_202507_Winback%26mcid%3D7386103191538618368&trackingEvent=%5B%7B%22eventInfo%22%3A%7B%22appId%22%3A%22com.linkedin.ads.rendering.d_web%22%2C%22eventName%22%3A%22SponsoredRightRailContentActionEvent%22%2C%22topicName%22%3A%22SponsoredRightRailContentActionEvent%22%7D%2C%22eventBody%22%3A%7B%22sponsoredEventHeader%22%3A%7B%22encryptedTrackingData%22%3A%22CwEAAAGcaxhoD0rBQFturD2f8Qn2Urq9MjMm04Gg-DhvGJVxrGunU7pKBx38qAL_4vX37Z5i1IqRXbXTmSSp_XfmQjDZvtyjLK7CCHb2C1f57sAm_sj6csP110dmiD-aX7vBVdAsiOwh0aINEs4WBAo0HD1NhIr10EFohgheFdip1Hcn0Ef4qX_9JTB4wmSBJof8RwaiUp_E87SnnNGlLh-s6n5y2JpdGr7u-dEtJWbAdYy1QmP2EEJz8EhuSqOxMdQ4dYcj3oWoiMMqnsCjfW4faT40zTLohZ3AwweoeCfNyyqQOpOhxmCC7yeit4kb5sXlygfu-cvvIc8-82NHGNo4ZRVpCUtUg3_Ns4srr7gZgvx7YxnwdQi3KhxGc12YkhTJgEtUFWnvicuk5EDaj5p2emsA9lwerOq9_aAzWg4tBTQFg1zxrV8pcDZ154WsxVuii0D5iBSbJD2KvHRjiPzCgcM5_vwhAuFN91qhikNzKsUB7oS4lLix-DFWJMdz49CKha-Q5V4X_ebho889aXmEH7E53HFYgx73XEyrrQAbOg6hvLujt_sdLIHQF3aMtgzLOriRwGH0s-OkPBw1ijr16EsFblYy8jdh6a-ubmcXhxiKkqqUWUd_yy_WMl5tJa2Kr5-_1qp-hiq9m99VgYoD6WoNwP3MDsTaZWs6eLXS35o5hS4hXV0lNEc8o3gHg9Q2R3_DAimaRVsqOSzloR2pmKrzs9pVSgdXsxRsUo_T41fiD1KqoNmCoQCp4SDxTGUGKJSjXuTqxakhZj9gseVtordDezloV-8pSqSOkveYJUVblht1_ExkhCROjsGjGRHRTbgPVOIP2BYMix929F01vcaUyc8IrG1_etQrTHXchCRr8iABY91WHrCfxNylGIJ0tHas84T_-iibzXX-VOkMuQFYH_rewf0TtEDTybrpHOqoRjeK0lp0CTILOs8PbIuR0mnsj_PXes4NG4LcQpk_7FsQ7Ld9EYWr4VaXT5LH2PLzQVzBrImbX0d6akk_AedHxot0DSzQraug3mCmhh93G1eKKi6ehwhBCcUciuyecQ3CFpJ2n8jH_4LM7M3Xfi1GaKswkEhXVkfcFX4qsAjuffAW20bMi1Z1wdext6-SKY-cMCGRR1JaABfVbIM4BhklAjesFO6RY9y5vPkdZc7L-_u_kpZry6CIDW99txDXvhmKg3TO0wjhiPyWyg%22%7D%2C%22header%22%3A%7B%22pageInstance%22%3A%7B%22pageUrn%22%3A%22urn%3Ali%3Apage%3Ad_flagship3_search_srp_content%22%2C%22trackingId%22%3A%22c349a4e1-b332-4f78-8ea9-6e203475c2b6%22%7D%2C%22time%22%3A1771323287515%2C%22version%22%3A%220.0.0%22%7D%2C%22requestHeader%22%3A%7B%22pageKey%22%3A%22d_flagship3_search_srp_content%22%2C%22interfaceLocale%22%3A%22en-US%22%7D%7D%7D%5D&csrfToken=ajax%3A2872756275449100236
+                        - img "LinkedIn for Sales" [ref=f124e20]
+                      - tooltip "LinkedIn for Sales" [ref=f124e21]
+                  - generic [ref=f124e22]:
+                    - heading "Use advanced filters to target decision-makers." [level=2] [ref=f124e25]
+                    - link "Get 50% off today" [ref=f124e27] [cursor=pointer]:
+                      - /url: https://www.linkedin.com/li/tscp/sct?destinationUrl=https%3A%2F%2Fwww.linkedin.com%2Fpremium%2Fredeem-v3%2F%3F_ed%3DCwEAAAFvqlyO6M8Q8oNzsFrJnllsOwTEGqdDSfAhW7Ib5vG3e7kEqBnLM6TDzYIfB6J8I4WlA-U%26planType%3Dsales%26redeemType%3DWINBACK%26src%3Dli-dynamic%26trk%3Demea_EN_DA_V2_202507_Winback%26mcid%3D7386103191538618368&trackingEvent=%5B%7B%22eventInfo%22%3A%7B%22appId%22%3A%22com.linkedin.ads.rendering.d_web%22%2C%22eventName%22%3A%22SponsoredRightRailContentActionEvent%22%2C%22topicName%22%3A%22SponsoredRightRailContentActionEvent%22%7D%2C%22eventBody%22%3A%7B%22sponsoredEventHeader%22%3A%7B%22encryptedTrackingData%22%3A%22CwEAAAGcaxhoD0rBQFturD2f8Qn2Urq9MjMm04Gg-DhvGJVxrGunU7pKBx38qAL_4vX37Z5i1IqRXbXTmSSp_XfmQjDZvtyjLK7CCHb2C1f57sAm_sj6csP110dmiD-aX7vBVdAsiOwh0aINEs4WBAo0HD1NhIr10EFohgheFdip1Hcn0Ef4qX_9JTB4wmSBJof8RwaiUp_E87SnnNGlLh-s6n5y2JpdGr7u-dEtJWbAdYy1QmP2EEJz8EhuSqOxMdQ4dYcj3oWoiMMqnsCjfW4faT40zTLohZ3AwweoeCfNyyqQOpOhxmCC7yeit4kb5sXlygfu-cvvIc8-82NHGNo4ZRVpCUtUg3_Ns4srr7gZgvx7YxnwdQi3KhxGc12YkhTJgEtUFWnvicuk5EDaj5p2emsA9lwerOq9_aAzWg4tBTQFg1zxrV8pcDZ154WsxVuii0D5iBSbJD2KvHRjiPzCgcM5_vwhAuFN91qhikNzKsUB7oS4lLix-DFWJMdz49CKha-Q5V4X_ebho889aXmEH7E53HFYgx73XEyrrQAbOg6hvLujt_sdLIHQF3aMtgzLOriRwGH0s-OkPBw1ijr16EsFblYy8jdh6a-ubmcXhxiKkqqUWUd_yy_WMl5tJa2Kr5-_1qp-hiq9m99VgYoD6WoNwP3MDsTaZWs6eLXS35o5hS4hXV0lNEc8o3gHg9Q2R3_DAimaRVsqOSzloR2pmKrzs9pVSgdXsxRsUo_T41fiD1KqoNmCoQCp4SDxTGUGKJSjXuTqxakhZj9gseVtordDezloV-8pSqSOkveYJUVblht1_ExkhCROjsGjGRHRTbgPVOIP2BYMix929F01vcaUyc8IrG1_etQrTHXchCRr8iABY91WHrCfxNylGIJ0tHas84T_-iibzXX-VOkMuQFYH_rewf0TtEDTybrpHOqoRjeK0lp0CTILOs8PbIuR0mnsj_PXes4NG4LcQpk_7FsQ7Ld9EYWr4VaXT5LH2PLzQVzBrImbX0d6akk_AedHxot0DSzQraug3mCmhh93G1eKKi6ehwhBCcUciuyecQ3CFpJ2n8jH_4LM7M3Xfi1GaKswkEhXVkfcFX4qsAjuffAW20bMi1Z1wdext6-SKY-cMCGRR1JaABfVbIM4BhklAjesFO6RY9y5vPkdZc7L-_u_kpZry6CIDW99txDXvhmKg3TO0wjhiPyWyg%22%7D%2C%22header%22%3A%7B%22pageInstance%22%3A%7B%22pageUrn%22%3A%22urn%3Ali%3Apage%3Ad_flagship3_search_srp_content%22%2C%22trackingId%22%3A%22c349a4e1-b332-4f78-8ea9-6e203475c2b6%22%7D%2C%22time%22%3A1771323287515%2C%22version%22%3A%220.0.0%22%7D%2C%22requestHeader%22%3A%7B%22pageKey%22%3A%22d_flagship3_search_srp_content%22%2C%22interfaceLocale%22%3A%22en-US%22%7D%7D%7D%5D&csrfToken=ajax%3A2872756275449100236
+            - generic "LinkedIn Footer Content" [ref=e652]:
+              - generic [ref=e653]:
+                - list [ref=e654]:
+                  - listitem [ref=e655]:
+                    - link "About" [ref=e656] [cursor=pointer]:
+                      - /url: https://about.linkedin.com/
+                      - generic [ref=e657]: About
+                  - listitem [ref=e658]:
+                    - link "Accessibility" [ref=e659] [cursor=pointer]:
+                      - /url: https://www.linkedin.com/accessibility
+                      - generic [ref=e660]: Accessibility
+                  - listitem [ref=e661]:
+                    - link "Help Center" [ref=e662] [cursor=pointer]:
+                      - /url: https://www.linkedin.com/help/linkedin?trk=footer_d_flagship3_search_srp_content
+                      - generic [ref=e663]: Help Center
+                  - listitem [ref=e664]:
+                    - button "Privacy & Terms" [ref=e666] [cursor=pointer]:
+                      - generic [ref=e668]:
+                        - text: Privacy & Terms
+                        - img [ref=e669]
+                  - listitem [ref=e671]:
+                    - link "Ad Choices" [ref=e672] [cursor=pointer]:
+                      - /url: https://www.linkedin.com/help/linkedin/answer/62931
+                      - generic [ref=e673]: Ad Choices
+                  - listitem [ref=e674]:
+                    - link "Advertising" [ref=e675] [cursor=pointer]:
+                      - /url: https://www.linkedin.com/ad/start?trk=n_nav_ads_rr
+                      - generic [ref=e676]: Advertising
+                  - listitem [ref=e677]:
+                    - button "Business Services" [ref=e679] [cursor=pointer]:
+                      - generic [ref=e681]:
+                        - text: Business Services
+                        - img [ref=e682]
+                  - listitem [ref=e684]:
+                    - button "Get the LinkedIn app" [ref=e687] [cursor=pointer]
+                  - listitem [ref=e688]:
+                    - button "More options" [ref=e689] [cursor=pointer]: More
+                - generic [ref=e690]:
+                  - img "LinkedIn" [ref=e691]:
+                    - img [ref=e692]
+                  - text: LinkedIn Corporation © 2026
+    - generic:
+      - generic:
+        - complementary:
+          - generic [ref=e695]:
+            - generic [ref=e697] [cursor=pointer]:
+              - generic [ref=e698]:
+                - img "Oded Ben-Yair" [ref=e699]
+                - generic [ref=e701]: Status is online
+              - button "You are on the messaging overlay. Press enter to open the list of conversations." [ref=e702]:
+                - generic [ref=e703]:
+                  - generic [ref=e704]: Messaging
+                  - generic [ref=e705]: You are on the messaging overlay. Press enter to open the list of conversations.
+            - generic [ref=e706]:
+              - button "Open messenger dropdown menu" [ref=e708] [cursor=pointer]:
+                - img "Open messenger dropdown menu" [ref=e709]
+              - button "Compose message" [ref=e712] [cursor=pointer]:
+                - img [ref=e713]
+                - generic [ref=e715]: Compose message
+              - button "You are on the messaging overlay. Press enter to open the list of conversations." [ref=e716] [cursor=pointer]:
+                - img [ref=e717]
+                - generic [ref=e719]: You are on the messaging overlay. Press enter to open the list of conversations.
+        - complementary "AI-powered assistant to get help with your career, jobs etc"

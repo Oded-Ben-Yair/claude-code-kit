@@ -1,0 +1,518 @@
+- generic [ref=e1]:
+  - generic:
+    - region "Toast message":
+      - heading "0 notifications total" [level=2] [ref=e3]
+      - alert
+  - region [ref=e15]
+  - generic [ref=e16]:
+    - generic [ref=e116]:
+      - button "Skip to search" [ref=e117] [cursor=pointer]:
+        - generic [ref=e118]: Skip to search
+      - button "Skip to main content" [ref=e119] [cursor=pointer]:
+        - generic [ref=e120]: Skip to main content
+      - button "Keyboard shortcuts" [ref=e121] [cursor=pointer]:
+        - generic [ref=e122]: Keyboard shortcuts
+      - button "Close jump menu" [ref=e123] [cursor=pointer]:
+        - img [ref=e124]
+        - generic [ref=e126]: Close jump menu
+    - banner "Global Navigation" [ref=e127]:
+      - generic [ref=e128]:
+        - link "LinkedIn" [ref=e129] [cursor=pointer]:
+          - /url: https://www.linkedin.com/feed/?nis=true
+          - img "LinkedIn" [ref=e132]:
+            - img [ref=e133]
+        - generic [ref=e137]:
+          - combobox "Search" [ref=e138]: gong.io AI engineering
+          - generic:
+            - img
+        - navigation "Primary Navigation" [ref=e139]:
+          - list [ref=e140]:
+            - listitem [ref=e141]:
+              - link "new feed updates notifications Home" [ref=e142] [cursor=pointer]:
+                - /url: https://www.linkedin.com/feed/?nis=true&
+                - generic [ref=e143]:
+                  - generic [ref=e146]: new feed updates notifications
+                  - img [ref=e150]
+                - generic "Home" [ref=e152]
+            - listitem [ref=e153]:
+              - link "3 new network updates notifications My Network" [ref=e154] [cursor=pointer]:
+                - /url: https://www.linkedin.com/mynetwork/?
+                - generic [ref=e155]:
+                  - generic [ref=e156]:
+                    - generic [ref=e157]: "3"
+                    - generic [ref=e158]: 3 new network updates notifications
+                  - img [ref=e162]
+                - generic "My Network" [ref=e164]
+            - listitem [ref=e165]:
+              - link "Jobs" [ref=e166] [cursor=pointer]:
+                - /url: https://www.linkedin.com/jobs/?
+                - img [ref=e170]
+                - generic "Jobs" [ref=e172]
+            - listitem [ref=e173]:
+              - link "Messaging" [ref=e174] [cursor=pointer]:
+                - /url: https://www.linkedin.com/messaging/?
+                - img [ref=e178]
+                - generic "Messaging" [ref=e180]
+            - listitem [ref=e181]:
+              - link "Notifications" [ref=e182] [cursor=pointer]:
+                - /url: https://www.linkedin.com/notifications/?
+                - img [ref=e186]
+                - generic "Notifications" [ref=e188]
+            - listitem [ref=e189]:
+              - button "Oded Ben-Yair Me" [ref=e191] [cursor=pointer]:
+                - img "Oded Ben-Yair" [ref=e192]
+                - generic [ref=e193]:
+                  - text: Me
+                  - img [ref=e194]
+            - listitem [ref=e196]:
+              - button "For Business" [ref=e198] [cursor=pointer]:
+                - img [ref=e202]
+                - generic "For Business" [ref=e204]:
+                  - text: For Business
+                  - img [ref=e205]
+            - listitem [ref=e207]:
+              - 'link "Reactivate Premium: 50% Off" [ref=e209] [cursor=pointer]':
+                - /url: http://www.linkedin.com/premium/redeem/?_ed=0_bvLJH59RTSY-u5c6PMUa4IW0M54p9mxZpuVkfRvTl7r&upsellOrderOrigin=Tracking%3Av1%3Apremium_nav_upsell_text_winback%3ANav%3AIn-Product&referenceId=D4tsbzt6RK6HucS1sTVVGg%3D%3D&customKey=wb_c&redeemTypeV2=DISCOUNT&destRedirectURL=https%3A%2F%2Fwww.linkedin.com%2Fsearch%2Fresults%2Fcontent%2F%3Fkeywords%3Dgong.io%2520AI%2520engineering%26datePosted%3D%2522past-24h%2522%26origin%3DFACETED_SEARCH
+                - generic [ref=e211]: "Reactivate Premium: 50% Off"
+    - generic [ref=e212]:
+      - navigation "Search filters" [ref=e215]:
+        - generic [ref=e216]:
+          - list [ref=e217]:
+            - listitem [ref=e218]:
+              - 'button "Filter by: Posts" [ref=e220] [cursor=pointer]':
+                - text: Posts
+                - img [ref=e221]
+            - listitem [ref=e223]
+            - listitem [ref=e224]:
+              - button "Date posted filter. Past 24 hours filter is currently applied. Clicking this button displays all Date posted filter options." [ref=e227] [cursor=pointer]:
+                - text: Past 24 hours
+                - img [ref=e228]
+            - listitem [ref=e230]:
+              - button "Sort by filter. Clicking this button displays all Sort by filter options." [ref=e233] [cursor=pointer]:
+                - text: Sort by
+                - img [ref=e234]
+            - listitem [ref=e236]:
+              - button "Content type filter. Clicking this button displays all Content type filter options." [ref=e239] [cursor=pointer]:
+                - text: Content type
+                - img [ref=e240]
+            - listitem [ref=e242]:
+              - button "From member filter. Clicking this button displays all From member filter options." [ref=e245] [cursor=pointer]:
+                - text: From member
+                - img [ref=e246]
+          - generic [ref=e248]:
+            - button "Show all filters. Clicking this button displays all available filter options." [ref=e251] [cursor=pointer]: All filters
+            - button "Reset applied filters" [ref=e252] [cursor=pointer]:
+              - generic [ref=e253]: Reset
+      - generic [ref=e255]:
+        - main [ref=e256]:
+          - heading "Search results for gong.io AI engineering. There are 3 results. Currently on the page 2 of 82 search result pages." [active] [level=1] [ref=e257]
+          - generic [ref=e260]:
+            - generic [ref=e261]:
+              - list [ref=e264]:
+                - listitem [ref=e265]:
+                  - article [ref=e269]:
+                    - generic [ref=e271]:
+                      - heading "Feed post" [level=2] [ref=e272]
+                      - generic [ref=e273]:
+                        - generic [ref=e274]:
+                          - generic [ref=e275]:
+                            - generic [ref=e276]:
+                              - link "View Andrey Trubetskoy’s graphic link" [ref=e277] [cursor=pointer]:
+                                - /url: https://www.linkedin.com/in/andrey-trubetskoy?miniProfileUrn=urn%3Ali%3Afsd_profile%3AACoAAAV86VkBrFpaMpAAWZx7d_l9Kb8x1QUnnyQ
+                                - img "View Andrey Trubetskoy’s graphic link" [ref=e281]
+                              - generic [ref=e282]:
+                                - 'link "View: Andrey Trubetskoy 3rd+ CEO | Co-founder" [ref=e283] [cursor=pointer]':
+                                  - /url: https://www.linkedin.com/in/andrey-trubetskoy?miniProfileUrn=urn%3Ali%3Afsd_profile%3AACoAAAV86VkBrFpaMpAAWZx7d_l9Kb8x1QUnnyQ
+                                  - generic [ref=e284]:
+                                    - generic [ref=e286]:
+                                      - generic [ref=e287]: Andrey Trubetskoy
+                                      - generic [ref=e288]: Andrey Trubetskoy
+                                    - generic [ref=e289]:
+                                      - generic [ref=e290]: • 3rd+
+                                      - generic [ref=e291]: 3rd+
+                                  - generic [ref=e292]:
+                                    - generic [ref=e293]: CEO | Co-founder
+                                    - generic [ref=e294]: CEO | Co-founder
+                                - generic [ref=e295]:
+                                  - generic [ref=e296]:
+                                    - text: 4h •
+                                    - img [ref=e299]
+                                  - generic [ref=e301]: 4 hours ago • Visible to anyone on or off LinkedIn
+                            - button "Follow Andrey Trubetskoy" [ref=e302] [cursor=pointer]:
+                              - img [ref=e303]
+                              - generic [ref=e305]: Follow
+                          - button "Open control menu for post by Andrey Trubetskoy" [ref=e308] [cursor=pointer]:
+                            - img [ref=e309]
+                        - generic [ref=e312]:
+                          - generic [ref=e315]:
+                            - link "Google" [ref=e316] [cursor=pointer]:
+                              - /url: https://www.linkedin.com/company/google/
+                              - generic [ref=e318]: Google
+                            - text: Launches an AI That Creates Virtual Worlds
+                            - text: Google has unveiled Project Genie, an experimental AI powered by the Genie 3 model. It generates interactive virtual worlds from text or images and lets users control a character in real time.
+                            - text: The reaction was instant. Markets shook. Unity shares dropped nearly 30%, with other game companies like
+                            - link "Take-Two Interactive" [ref=e319] [cursor=pointer]:
+                              - /url: https://www.linkedin.com/company/take-2-interactive-software-inc-/
+                              - generic [ref=e321]: Take-Two Interactive
+                            - text: ","
+                            - link "CD PROJEKT RED" [ref=e322] [cursor=pointer]:
+                              - /url: https://www.linkedin.com/company/cd-projekt-red/
+                              - generic [ref=e324]: CD PROJEKT RED
+                            - text: ","
+                            - link "Roblox" [ref=e325] [cursor=pointer]:
+                              - /url: https://www.linkedin.com/company/roblox/
+                              - generic [ref=e327]: Roblox
+                            - text: ", and"
+                            - link "Tencent Games" [ref=e328] [cursor=pointer]:
+                              - /url: https://www.linkedin.com/company/tencent-games/
+                              - generic [ref=e330]: Tencent Games
+                            - text: also feeling the pressure.
+                            - text: Early days for the tech, but the signal is loud. Creation tools are changing faster than the industry expected.
+                            - link "hashtag ai" [ref=e331] [cursor=pointer]:
+                              - /url: https://www.linkedin.com/search/results/all/?keywords=%23ai&origin=HASH_TAG_FROM_FEED
+                              - generic [ref=e332]: hashtag
+                              - generic [ref=e333]: "#ai"
+                            - link "hashtag gaming" [ref=e334] [cursor=pointer]:
+                              - /url: https://www.linkedin.com/search/results/all/?keywords=%23gaming&origin=HASH_TAG_FROM_FEED
+                              - generic [ref=e335]: hashtag
+                              - generic [ref=e336]: "#gaming"
+                            - link "hashtag technology" [ref=e337] [cursor=pointer]:
+                              - /url: https://www.linkedin.com/search/results/all/?keywords=%23technology&origin=HASH_TAG_FROM_FEED
+                              - generic [ref=e338]: hashtag
+                              - generic [ref=e339]: "#technology"
+                            - link "hashtag innovation" [ref=e340] [cursor=pointer]:
+                              - /url: https://www.linkedin.com/search/results/all/?keywords=%23innovation&origin=HASH_TAG_FROM_FEED
+                              - generic [ref=e341]: hashtag
+                              - generic [ref=e342]: "#innovation"
+                            - link "hashtag digitalfuture" [ref=e343] [cursor=pointer]:
+                              - /url: https://www.linkedin.com/search/results/all/?keywords=%23digitalfuture&origin=HASH_TAG_FROM_FEED
+                              - generic [ref=e344]: hashtag
+                              - generic [ref=e345]: "#digitalfuture"
+                          - button "see more, visually reveals content which is already detected by screen readers" [ref=e346] [cursor=pointer]:
+                            - generic [ref=e347]: …more
+                        - region "Video player" [ref=e352]:
+                          - generic [ref=e356]:
+                            - button "Pause" [ref=e357] [cursor=pointer]:
+                              - generic [ref=e358]: Pause
+                            - slider "Playback progress" [ref=e359] [cursor=pointer]:
+                              - generic [ref=e361]: "Loaded: 100.00%"
+                            - generic [ref=e363]:
+                              - text: Remaining time
+                              - generic [ref=e364]: 0:16
+                            - generic [ref=e365]:
+                              - generic: 1x
+                              - button "Playback speed" [ref=e366] [cursor=pointer]:
+                                - generic [ref=e367]: Playback speed
+                            - generic [ref=e368]:
+                              - button "Unmute" [ref=e369] [cursor=pointer]:
+                                - generic [ref=e370]: Unmute
+                              - generic:
+                                - slider "Volume"
+                            - button "Turn fullscreen on" [ref=e372] [cursor=pointer]:
+                              - generic [ref=e373]: Turn fullscreen on
+                        - generic [ref=e374]:
+                          - list [ref=e378]:
+                            - listitem [ref=e379]:
+                              - button "3 reactions" [ref=e380] [cursor=pointer]:
+                                - img "like" [ref=e381]
+                                - generic [ref=e382]: "3"
+                          - generic [ref=e383]:
+                            - generic [ref=e384]:
+                              - button "React Like" [ref=e385] [cursor=pointer]:
+                                - generic [ref=e387]:
+                                  - img [ref=e388]
+                                  - generic [ref=e390]: Like
+                              - button "Open reactions menu":
+                                - img [ref=e392] [cursor=pointer]
+                            - button "Comment" [ref=e396] [cursor=pointer]:
+                              - img [ref=e397]
+                              - generic [ref=e399]: Comment
+                            - button "Repost" [ref=e402] [cursor=pointer]:
+                              - img [ref=e403]
+                              - generic [ref=e405]: Repost
+                            - button "Send in a private message" [ref=e408] [cursor=pointer]:
+                              - img [ref=e409]
+                              - generic [ref=e412]: Send
+                - listitem [ref=e413]:
+                  - article [ref=e417]:
+                    - generic [ref=e419]:
+                      - heading "Feed post" [level=2] [ref=e420]
+                      - generic [ref=e421]:
+                        - generic [ref=e422]:
+                          - generic [ref=e423]:
+                            - generic [ref=e424]:
+                              - link "View Confidence Mukovhe Tshilande PrEng. MEng.’s graphic link" [ref=e425] [cursor=pointer]:
+                                - /url: https://www.linkedin.com/in/confidence-tshilande?miniProfileUrn=urn%3Ali%3Afsd_profile%3AACoAAAfKabkB_Ps-DA8XD1Un4TBS0lgyzBMx030
+                                - img "View Confidence Mukovhe Tshilande PrEng. MEng.’s graphic link" [ref=e429]
+                              - generic [ref=e430]:
+                                - 'link "View: Confidence Mukovhe Tshilande PrEng. MEng. Verified • 3rd+ Senior Geotechnical Engineer | Prestiio App Founder | M&amp;G Top 200 Young | CESA Young Engineer of the Year | Former Uj &amp; SHRA Council" [ref=e431] [cursor=pointer]':
+                                  - /url: https://www.linkedin.com/in/confidence-tshilande?miniProfileUrn=urn%3Ali%3Afsd_profile%3AACoAAAfKabkB_Ps-DA8XD1Un4TBS0lgyzBMx030
+                                  - generic [ref=e432]:
+                                    - generic [ref=e434]:
+                                      - generic [ref=e435]: Confidence Mukovhe Tshilande PrEng. MEng.
+                                      - generic [ref=e436]: Confidence Mukovhe Tshilande PrEng. MEng.
+                                    - generic [ref=e437]:
+                                      - generic [ref=e438]:
+                                        - img [ref=e439]
+                                        - text: • 3rd+
+                                      - generic [ref=e441]: Verified • 3rd+
+                                  - generic [ref=e442]:
+                                    - generic [ref=e443]: Senior Geotechnical Engineer | Prestiio App Founder | M&G Top 200 Young | CESA Young Engineer of the Year | Former Uj & SHRA Council
+                                    - generic [ref=e444]: Senior Geotechnical Engineer | Prestiio App Founder | M&G Top 200 Young | CESA Young Engineer of the Year | Former Uj & SHRA Council
+                                - generic [ref=e445]:
+                                  - generic [ref=e446]:
+                                    - text: 18h •
+                                    - img [ref=e449]
+                                  - generic [ref=e451]: 18 hours ago • Visible to anyone on or off LinkedIn
+                            - button "Follow Confidence Mukovhe Tshilande PrEng. MEng." [ref=e452] [cursor=pointer]:
+                              - img [ref=e453]
+                              - generic [ref=e455]: Follow
+                          - button "Open control menu for post by Confidence Mukovhe Tshilande PrEng. MEng." [ref=e458] [cursor=pointer]:
+                            - img [ref=e459]
+                        - generic [ref=e462]:
+                          - generic [ref=e465]:
+                            - text: "POV: You gave AI a chance weeks ago😅 and it illustrated what you are best know for.. Geotchnical Engineer specialising in Tailings, Mining infrastructure foundation designs,"
+                            - link "Prestiio App" [ref=e467] [cursor=pointer]:
+                              - /url: /in/prestiio-app-7a39b2206/
+                            - text: for women and Innovation Leader!
+                            - link "hashtag GeotechnicalEngineering" [ref=e468] [cursor=pointer]:
+                              - /url: https://www.linkedin.com/search/results/all/?keywords=%23geotechnicalengineering&origin=HASH_TAG_FROM_FEED
+                              - generic [ref=e469]: hashtag
+                              - generic [ref=e470]: "#GeotechnicalEngineering"
+                            - link "hashtag WomeninEngineering" [ref=e471] [cursor=pointer]:
+                              - /url: https://www.linkedin.com/search/results/all/?keywords=%23womeninengineering&origin=HASH_TAG_FROM_FEED
+                              - generic [ref=e472]: hashtag
+                              - generic [ref=e473]: "#WomeninEngineering"
+                            - link "hashtag PrestiioApp" [ref=e474] [cursor=pointer]:
+                              - /url: https://www.linkedin.com/search/results/all/?keywords=%23prestiioapp&origin=HASH_TAG_FROM_FEED
+                              - generic [ref=e475]: hashtag
+                              - generic [ref=e476]: "#PrestiioApp"
+                            - link "hashtag TailingsEngineer" [ref=e477] [cursor=pointer]:
+                              - /url: https://www.linkedin.com/search/results/all/?keywords=%23tailingsengineer&origin=HASH_TAG_FROM_FEED
+                              - generic [ref=e478]: hashtag
+                              - generic [ref=e479]: "#TailingsEngineer"
+                            - link "hashtag Mining" [ref=e480] [cursor=pointer]:
+                              - /url: https://www.linkedin.com/search/results/all/?keywords=%23mining&origin=HASH_TAG_FROM_FEED
+                              - generic [ref=e481]: hashtag
+                              - generic [ref=e482]: "#Mining"
+                            - link "hashtag Innovation" [ref=e483] [cursor=pointer]:
+                              - /url: https://www.linkedin.com/search/results/all/?keywords=%23innovation&origin=HASH_TAG_FROM_FEED
+                              - generic [ref=e484]: hashtag
+                              - generic [ref=e485]: "#Innovation"
+                          - button "see more, visually reveals content which is already detected by screen readers" [ref=e486] [cursor=pointer]:
+                            - generic [ref=e487]: …more
+                        - generic [ref=e489]:
+                          - generic [ref=e490]:
+                            - button "Activate to view larger image, No alternative text description for this image" [ref=e491] [cursor=pointer]:
+                              - generic [ref=e492]: Activate to view larger image,
+                              - img "No alternative text description for this image" [ref=e495]
+                            - generic [ref=e497] [cursor=pointer]:
+                              - button "This image has content credentials." [ref=e498]:
+                                - img [ref=e499]:
+                                  - img [ref=e500]
+                              - generic [ref=e502]: See content credentials
+                          - generic [ref=e503]: Activate to view larger image,
+                        - generic [ref=e504]:
+                          - list [ref=e508]:
+                            - listitem [ref=e509]:
+                              - button "57 reactions" [ref=e510] [cursor=pointer]:
+                                - img "like" [ref=e511]
+                                - img "love" [ref=e512]
+                                - img "celebrate" [ref=e513]
+                                - generic [ref=e514]: "57"
+                          - generic [ref=e515]:
+                            - generic [ref=e516]:
+                              - button "React Like" [ref=e517] [cursor=pointer]:
+                                - generic [ref=e519]:
+                                  - img [ref=e520]
+                                  - generic [ref=e522]: Like
+                              - button "Open reactions menu":
+                                - img [ref=e524] [cursor=pointer]
+                            - button "Comment" [ref=e528] [cursor=pointer]:
+                              - img [ref=e529]
+                              - generic [ref=e531]: Comment
+                            - button "Repost" [ref=e534] [cursor=pointer]:
+                              - img [ref=e535]
+                              - generic [ref=e537]: Repost
+                            - button "Send in a private message" [ref=e540] [cursor=pointer]:
+                              - img [ref=e541]
+                              - generic [ref=e544]: Send
+                - listitem [ref=e545]:
+                  - article [ref=e549]:
+                    - generic [ref=e551]:
+                      - heading "Feed post" [level=2] [ref=e552]
+                      - generic [ref=e553]:
+                        - generic [ref=e554]:
+                          - generic [ref=e555]:
+                            - generic [ref=e556]:
+                              - link "View Ion Danvers’ graphic link" [ref=e557] [cursor=pointer]:
+                                - /url: https://www.linkedin.com/in/ion-danvers-7b6667aa?miniProfileUrn=urn%3Ali%3Afsd_profile%3AACoAABc8AboBIXzlfsWzBCrPOH8l7qmaPz9x7GA
+                                - img "View Ion Danvers’ graphic link" [ref=e561]
+                              - generic [ref=e562]:
+                                - 'link "View: Ion Danvers 3rd+ Artificial Intelligence and Robot Engineer at OSIRIS ROBOTICS" [ref=e563] [cursor=pointer]':
+                                  - /url: https://www.linkedin.com/in/ion-danvers-7b6667aa?miniProfileUrn=urn%3Ali%3Afsd_profile%3AACoAABc8AboBIXzlfsWzBCrPOH8l7qmaPz9x7GA
+                                  - generic [ref=e564]:
+                                    - generic [ref=e566]:
+                                      - generic [ref=e567]: Ion Danvers
+                                      - generic [ref=e568]: Ion Danvers
+                                    - generic [ref=e569]:
+                                      - generic [ref=e570]: • 3rd+
+                                      - generic [ref=e571]: 3rd+
+                                  - generic [ref=e572]:
+                                    - generic [ref=e573]: Artificial Intelligence and Robot Engineer at OSIRIS ROBOTICS
+                                    - generic [ref=e574]: Artificial Intelligence and Robot Engineer at OSIRIS ROBOTICS
+                                - generic [ref=e575]:
+                                  - generic [ref=e576]:
+                                    - text: 17h •
+                                    - img [ref=e579]
+                                  - generic [ref=e581]: 17 hours ago • Visible to anyone on or off LinkedIn
+                            - button "Follow Ion Danvers" [ref=e582] [cursor=pointer]:
+                              - img [ref=e583]
+                              - generic [ref=e585]: Follow
+                          - button "Open control menu for post by Ion Danvers" [ref=e588] [cursor=pointer]:
+                            - img [ref=e589]
+                        - generic [ref=e592]:
+                          - generic [ref=e595]:
+                            - text: AI-Assisted Real-Time 3D Asset and Motion Generation for Games and Film introduces a structured, constraint-guided framework for building production-ready generative 3D systems. Unlike conventional text-to-3D approaches that prioritize visual plausibility, this work addresses the deeper structural challenges of real-time engines and animation pipelines.
+                            - text: The article proposes a five-signal training architecture that explicitly separates geometry, appearance, material properties, multi-view stability, and motion priors. By decoupling these components and enforcing convergence through both learned priors and user-defined constraints, the framework transforms generative AI from a one-shot synthesis tool into an interactive, controllable 3D engine.
+                            - text: Beyond static asset generation, the system integrates deformation intelligence and motion learning, enabling characters and objects to adapt naturally under inverse kinematics, collision constraints, and environmental interaction. Human-in-the-loop convergence ensures that AI outputs remain structurally valid while preserving artistic control.
+                            - text: Designed with real-time game engines and virtual production workflows in mind, this approach moves generative AI closer to production readiness—bridging the gap between visual plausibility and physically grounded, animation-ready 3D assets.
+                            - text: Rather than replacing artists, the framework positions AI as a cooperative structural partner in the creation of interactive digital worlds.
+                          - button "see more, visually reveals content which is already detected by screen readers" [ref=e596] [cursor=pointer]:
+                            - generic [ref=e597]: …more
+                        - article [ref=e598]:
+                          - generic [ref=e599]:
+                            - region "Video player" [ref=e603]:
+                              - button "Play" [ref=e608] [cursor=pointer]:
+                                - generic [ref=e609]: Play
+                            - 'link "Open article: AI-Assisted Real-Time 3D Asset and Motion Generation for Games and Film by Ion Danvers • 7 min read" [ref=e610] [cursor=pointer]':
+                              - /url: https://www.linkedin.com/pulse/ai-assisted-real-time-3d-asset-motion-generation-games-ion-danvers-lwwgf?trackingId=bJHXver1RE6Wqmxoq0U0eg%3D%3D
+                              - generic [ref=e612]:
+                                - generic [ref=e614]: AI-Assisted Real-Time 3D Asset and Motion Generation for Games and Film
+                                - generic [ref=e615]: Ion Danvers
+                        - generic [ref=e616]:
+                          - list [ref=e620]:
+                            - listitem [ref=e621]:
+                              - button "2 reactions" [ref=e622] [cursor=pointer]:
+                                - img "like" [ref=e623]
+                                - img "support" [ref=e624]
+                                - generic [ref=e625]: "2"
+                          - generic [ref=e626]:
+                            - generic [ref=e627]:
+                              - button "React Like" [ref=e628] [cursor=pointer]:
+                                - generic [ref=e630]:
+                                  - img [ref=e631]
+                                  - generic [ref=e633]: Like
+                              - button "Open reactions menu":
+                                - img [ref=e635] [cursor=pointer]
+                            - button "Comment" [ref=e639] [cursor=pointer]:
+                              - img [ref=e640]
+                              - generic [ref=e642]: Comment
+                            - button "Repost" [ref=e645] [cursor=pointer]:
+                              - img [ref=e646]
+                              - generic [ref=e648]: Repost
+                            - button "Send in a private message" [ref=e651] [cursor=pointer]:
+                              - img [ref=e652]
+                              - generic [ref=e655]: Send
+              - list [ref=e658]:
+                - listitem [ref=e659]:
+                  - generic [ref=e660]:
+                    - generic [ref=e661]:
+                      - paragraph [ref=e662]: Are these results helpful?
+                      - paragraph [ref=e663]: Your feedback helps us improve search results
+                    - generic [ref=e664]:
+                      - button "Are these results helpful? Yes, these search results are helpful" [ref=e665] [cursor=pointer]:
+                        - img [ref=e666]
+                      - button "Are these results helpful? No, these search results are not helpful" [ref=e669] [cursor=pointer]:
+                        - img [ref=e670]
+              - list [ref=e675]:
+                - listitem [ref=e676]
+                - listitem [ref=e678]
+                - listitem [ref=e680]
+            - button "Show more results" [ref=e684] [cursor=pointer]:
+              - generic [ref=e685]: Show more results
+        - complementary "Search suggestions" [ref=e686]:
+          - generic [ref=e688]:
+            - iframe [ref=e691]:
+              - main "Work With Us Container" [ref=f288e3]:
+                - generic [ref=f288e4]:
+                  - img [ref=f288e6]
+                  - generic [ref=f288e7]:
+                    - img "Oded" [ref=f288e8]
+                    - link "Darrow AI" [ref=f288e9] [cursor=pointer]:
+                      - /url: https://www.linkedin.com/li/tscp/sct?destinationUrl=http%3A%2F%2Fwww.linkedin.com%2Fcompany%2F67191532%2Flife&trackingEvent=%5B%7B%22eventInfo%22%3A%7B%22appId%22%3A%22com.linkedin.ads.rendering.d_web%22%2C%22eventName%22%3A%22SponsoredRightRailContentActionEvent%22%2C%22topicName%22%3A%22SponsoredRightRailContentActionEvent%22%7D%2C%22eventBody%22%3A%7B%22sponsoredEventHeader%22%3A%7B%22encryptedTrackingData%22%3A%22CwEAAAGcayFjzs12SV2Mdlqke_79fxUxSvgv8hzwZmuXiYX7UlTMjUDdz07MwZpuwpLu8tJoLISk_zhEjxarW2olzQGxhQtA0f4NfuM3EH1D9l5EXbfKQkXUanCw5l4c6W_zqZj2fq0txxV9EElD_7IcQKVVqvEqWcyp0JiIaGUaV3a8ATBtB5S_0EbaKodGncfBm26Xb7Gud9bs3BobofhXcqpBj5JUV0Iv6MtSHOjSjucz6M3KOrqFKV8Kq40MH30uhLoAJS0e0yzVGyv9gApo-eZhORj8COjEYP_d64DjeiAy_PwO2Is4t207E74o4dU7N2YlZTEYZ-2zDla7JEyy5TzistyM7fXG3ZEdxH303tg6eyu6plXcVzXriVkebePdhkavZ4Qm79lDR7FhGhFxjpEZdjpxHZrzGsWCht8HuplvxkglrKYA3NIX-wqPl7sjaZEDsNzcjSRF6pE1P21Om8e879gP-SoLmX8md-HrAv_a9hMIMaEhwk9iHaRfli8hI1c0yADxyIb8GqPRJVfKSjxp-jI0OAzD4Gy8bktsBHZYVbpoL04gI1lA0TPzstLMfmEJGV_yC44yE7MAu_m_B7wediXuU8VsBzDZJs91qxPofvB2b0BQcPJYavTpw-6LgxtdI8MxhfAW6XeFzaM-Zzk5Js3Gtxf4J90symg-SuYN4rXHLU_AkC5uCr4taHQ21rdm8_4GjPw9XWXIucR8bfzXrLve6JRJYAtvtn86kvLGeLTC4OQ9LEiSKPtWHIi_LrANP0BYK6SJTvxKDOiPyPf4zddK5VGMqwe-ZGvaJ9GZ3y1N8evcUqui3GR-OnyEFpTu0B79vn2vAkXs9wBilYFleCnLmG7lnVu3OA_UGKQz6axyTGi-Ihm4d3njqaAsgHs8GaD2aus3X3oHaSjQOO6oNFiw6wz1avSM3f46-G2svZdRqftW5l9ccuUuzNyRYOEZlO1iksarAYlAAjMq_H36xhHZYLWhsPBHeDCdsGnY0Ze59HOCTh3LnbGvqnbfga3un0Gcs87Ue7KUYXxYzGC1f26vVr8qcwcsNrmfKa2ME26Q3o6B6EOIzdcL023wJc2eDNtcOxYW%22%7D%2C%22header%22%3A%7B%22pageInstance%22%3A%7B%22pageUrn%22%3A%22urn%3Ali%3Apage%3Ad_flagship3_search_srp_content%22%2C%22trackingId%22%3A%22eab7a7b9-689e-4a6e-aa70-08d0345b0d40%22%7D%2C%22time%22%3A1771323876251%2C%22version%22%3A%220.0.0%22%7D%2C%22requestHeader%22%3A%7B%22pageKey%22%3A%22d_flagship3_search_srp_content%22%2C%22interfaceLocale%22%3A%22en-US%22%7D%7D%7D%5D&csrfToken=ajax%3A2872756275449100236
+                      - img "Darrow AI" [ref=f288e10]
+                - generic [ref=f288e11]:
+                  - generic [ref=f288e12]:
+                    - paragraph [ref=f288e13]: Oded, explore relevant opportunities with Darrow AI
+                    - paragraph [ref=f288e14]: Get the latest jobs and industry news
+                  - link "Follow" [ref=f288e15] [cursor=pointer]:
+                    - /url: https://www.linkedin.com/li/tscp/sct?destinationUrl=http%3A%2F%2Fwww.linkedin.com%2Fcompany%2F67191532%2Flife%3FisFollowingPage%3Dtrue&trackingEvent=%5B%7B%22eventInfo%22%3A%7B%22appId%22%3A%22com.linkedin.ads.rendering.d_web%22%2C%22eventName%22%3A%22SponsoredRightRailContentActionEvent%22%2C%22topicName%22%3A%22SponsoredRightRailContentActionEvent%22%7D%2C%22eventBody%22%3A%7B%22sponsoredEventHeader%22%3A%7B%22encryptedTrackingData%22%3A%22CwEAAAGcayFjzjbdI5qWKM0YvYKlN7itelIUawcNL_tcT5RwX8bE8azNVBRakiw3WJo2SGxZbDeQuA9Mf309UHPx7K_3slL1BntfGvC4fUOdhfOBmJeRkd-_Hor7Kb_0VuErrhgTvUlPV4410mHotNEIkYVTyj3NDrOhmz5bWQHvN8Bhs70GLrb0gSYBUwDMiSS_b4lmnshftO8T9LYYxdyeNFN3ZmfS_jwYvd9tU6NmS0s6Cxht-V6jcENIWk-gUpsP0YtHUpjrWtUsbmQfNluYYbNsmYK0We_Rr0Q4Ama1VmqvKvGmMMXd4ExxwhXtR41VvDwuoFa8Q_ovPGV9B92gTexOWb-0VxIPWdLYJR9jQLXmKDiBixtVhIi5nFanpkV3q0XjNpq1xVYeV0DXrnlgDGElexnoYos79BWKnSM4U88QV9UVE68SbwG-30zWtAh1pKGiqJu6D3Zo74f9o0zgQqGC_zyEWmReF2C_thmB8T3SpPsTos-Mg09TYGdRke3FPLVgDm52G5er4gmkjA399iflrNrrR9QW51K91ViNJPr9uVHNj4GYAoEp1SI6oRzVJPj7Ibq-K3rwaIjWtXMfGFgjq3ymSWwyEPRT6iheOzIqKVtsL5v6olzQ0jJyfm_fArkvtOvQUN8y9RhsN8i0sDvC4P_6iYowK30-kdZfd3Y8EEXtK2w8yOfxYgD2C9Bt158ydQN2qAJOzrYjiTp8Wc3kOm47_gsUYlmeoAaWBBJF7JTA8xV9LdNUf-u5Q1M0aeeyHuc0XK7R5jmAQaED7ZI5rk7_HkxWONDHXmuOwi4dy6gLhS1kcXFZpEBNf9EWDEOHOdyrzMmDl5R_aIIf3ZteUiBpmpS9Kuq-JEOOsNFnQzrfbhFlld78dQtNvMuFm6YwGNb2W7s1iIt_Gu3sqJznuaz8E5u6XCDc4rrT4wiU1vSW0Co0uuhI8wsZBXCRlSILj2OWu_3X4481Vmlx9BvasQ0-_hPgfUeCQTpMlXqofvlxeRHrREG_nR-qrIgQUr0B9ejYqvPwPTmwbIObF8tbpo6E5WjX45aOJeO8Zh9Z8QeCdHMrVK_fRQF3CMxc9RmJHRjAuqdb4bDJOFR5NZP_2TjculfzT2fI8aflD-fKK4-UAr8BM5tu%22%7D%2C%22header%22%3A%7B%22pageInstance%22%3A%7B%22pageUrn%22%3A%22urn%3Ali%3Apage%3Ad_flagship3_search_srp_content%22%2C%22trackingId%22%3A%22a1f6ea17-ede9-4249-8709-cd0009b48c3c%22%7D%2C%22time%22%3A1771323876251%2C%22version%22%3A%220.0.0%22%7D%2C%22requestHeader%22%3A%7B%22pageKey%22%3A%22d_flagship3_search_srp_content%22%2C%22interfaceLocale%22%3A%22en-US%22%7D%7D%7D%5D&csrfToken=ajax%3A2872756275449100236
+                - generic [ref=f288e16]:
+                  - paragraph [ref=f288e17]: Promoted
+                  - button "Ad Options" [ref=f288e18] [cursor=pointer]:
+                    - img [ref=f288e19]
+                    - generic [ref=f288e23]: Ad Options
+            - generic "LinkedIn Footer Content" [ref=e692]:
+              - generic [ref=e693]:
+                - list [ref=e694]:
+                  - listitem [ref=e695]:
+                    - link "About" [ref=e696] [cursor=pointer]:
+                      - /url: https://about.linkedin.com/
+                      - generic [ref=e697]: About
+                  - listitem [ref=e698]:
+                    - link "Accessibility" [ref=e699] [cursor=pointer]:
+                      - /url: https://www.linkedin.com/accessibility
+                      - generic [ref=e700]: Accessibility
+                  - listitem [ref=e701]:
+                    - link "Help Center" [ref=e702] [cursor=pointer]:
+                      - /url: https://www.linkedin.com/help/linkedin?trk=footer_d_flagship3_search_srp_content
+                      - generic [ref=e703]: Help Center
+                  - listitem [ref=e704]:
+                    - button "Privacy & Terms" [ref=e706] [cursor=pointer]:
+                      - generic [ref=e708]:
+                        - text: Privacy & Terms
+                        - img [ref=e709]
+                  - listitem [ref=e711]:
+                    - link "Ad Choices" [ref=e712] [cursor=pointer]:
+                      - /url: https://www.linkedin.com/help/linkedin/answer/62931
+                      - generic [ref=e713]: Ad Choices
+                  - listitem [ref=e714]:
+                    - link "Advertising" [ref=e715] [cursor=pointer]:
+                      - /url: https://www.linkedin.com/ad/start?trk=n_nav_ads_rr
+                      - generic [ref=e716]: Advertising
+                  - listitem [ref=e717]:
+                    - button "Business Services" [ref=e719] [cursor=pointer]:
+                      - generic [ref=e721]:
+                        - text: Business Services
+                        - img [ref=e722]
+                  - listitem [ref=e724]:
+                    - button "Get the LinkedIn app" [ref=e727] [cursor=pointer]
+                  - listitem [ref=e728]:
+                    - button "More options" [ref=e729] [cursor=pointer]: More
+                - generic [ref=e730]:
+                  - img "LinkedIn" [ref=e731]:
+                    - img [ref=e732]
+                  - text: LinkedIn Corporation © 2026
+    - generic:
+      - generic:
+        - complementary:
+          - generic [ref=e735]:
+            - generic [ref=e737] [cursor=pointer]:
+              - generic [ref=e738]:
+                - img "Oded Ben-Yair" [ref=e739]
+                - generic [ref=e741]: Status is online
+              - button "You are on the messaging overlay. Press enter to open the list of conversations." [ref=e742]:
+                - generic [ref=e743]:
+                  - generic [ref=e744]: Messaging
+                  - generic [ref=e745]: You are on the messaging overlay. Press enter to open the list of conversations.
+            - generic [ref=e746]:
+              - button "Open messenger dropdown menu" [ref=e748] [cursor=pointer]:
+                - img "Open messenger dropdown menu" [ref=e749]
+              - button "Compose message" [ref=e752] [cursor=pointer]:
+                - img [ref=e753]
+                - generic [ref=e755]: Compose message
+              - button "You are on the messaging overlay. Press enter to open the list of conversations." [ref=e756] [cursor=pointer]:
+                - img [ref=e757]
+                - generic [ref=e759]: You are on the messaging overlay. Press enter to open the list of conversations.
+        - complementary "AI-powered assistant to get help with your career, jobs etc"

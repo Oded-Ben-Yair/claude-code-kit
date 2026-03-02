@@ -1,0 +1,593 @@
+- generic [ref=e1]:
+  - generic:
+    - region "Toast message":
+      - heading "0 notifications total" [level=2] [ref=e3]
+      - alert
+  - generic [ref=e4]:
+    - generic [ref=e6]:
+      - button "Skip to search" [ref=e7] [cursor=pointer]:
+        - generic [ref=e8]: Skip to search
+      - button "Skip to main content" [ref=e9] [cursor=pointer]:
+        - generic [ref=e10]: Skip to main content
+      - button "Keyboard shortcuts" [ref=e11] [cursor=pointer]:
+        - generic [ref=e12]: Keyboard shortcuts
+      - button "Close jump menu" [ref=e13] [cursor=pointer]:
+        - img [ref=e14]
+        - generic [ref=e16]: Close jump menu
+    - banner "Global Navigation" [ref=e17]:
+      - generic [ref=e18]:
+        - link "LinkedIn" [ref=e19] [cursor=pointer]:
+          - /url: https://www.linkedin.com/feed/?nis=true
+          - img "LinkedIn" [ref=e22]:
+            - img [ref=e23]
+        - generic [ref=e27]:
+          - combobox "Search" [ref=e28]
+          - generic:
+            - img
+        - navigation "Primary Navigation" [ref=e29]:
+          - list [ref=e30]:
+            - listitem [ref=e31]:
+              - link "new feed updates notifications Home" [ref=e32] [cursor=pointer]:
+                - /url: https://www.linkedin.com/feed/?nis=true&
+                - generic [ref=e33]:
+                  - generic [ref=e36]: new feed updates notifications
+                  - img [ref=e40]
+                - generic "Home" [ref=e42]
+            - listitem [ref=e43]:
+              - link "4 new network updates notifications My Network" [ref=e44] [cursor=pointer]:
+                - /url: https://www.linkedin.com/mynetwork/?
+                - generic [ref=e45]:
+                  - generic [ref=e46]:
+                    - generic [ref=e47]: "4"
+                    - generic [ref=e48]: 4 new network updates notifications
+                  - img [ref=e52]
+                - generic "My Network" [ref=e54]
+            - listitem [ref=e55]:
+              - link "Jobs" [ref=e56] [cursor=pointer]:
+                - /url: https://www.linkedin.com/jobs/?
+                - img [ref=e60]
+                - generic "Jobs" [ref=e62]
+            - listitem [ref=e63]:
+              - link "Messaging" [ref=e64] [cursor=pointer]:
+                - /url: https://www.linkedin.com/messaging/?
+                - img [ref=e68]
+                - generic "Messaging" [ref=e70]
+            - listitem [ref=e71]:
+              - link "Notifications" [ref=e72] [cursor=pointer]:
+                - /url: https://www.linkedin.com/notifications/?filter=all&refresh=true
+                - img [ref=e76]
+                - generic "Notifications" [ref=e78]
+            - listitem [ref=e79]:
+              - button "Oded Ben-Yair Me" [ref=e81] [cursor=pointer]:
+                - img "Oded Ben-Yair" [ref=e82]
+                - generic [ref=e83]:
+                  - text: Me
+                  - img [ref=e84]
+            - listitem [ref=e86]:
+              - button "For Business" [ref=e88] [cursor=pointer]:
+                - img [ref=e92]
+                - generic "For Business" [ref=e94]:
+                  - text: For Business
+                  - img [ref=e95]
+            - listitem [ref=e97]:
+              - 'link "Reactivate Premium: 50% Off" [ref=e99] [cursor=pointer]':
+                - /url: http://www.linkedin.com/premium/redeem/?_ed=0_bvLJH59RTSY-u5c6PMUa4IW0M54p9mxZpuVkfRvTl7r&upsellOrderOrigin=Tracking%3Av1%3Apremium_nav_upsell_text_winback%3ANav%3AIn-Product&referenceId=xXIze5RpQGKYRIiII626ZQ%3D%3D&customKey=wb_c&redeemTypeV2=DISCOUNT&destRedirectURL=https%3A%2F%2Fwww.linkedin.com%2Fnotifications%2F
+                - generic [ref=e101]: "Reactivate Premium: 50% Off"
+    - generic [ref=e106]:
+      - complementary [ref=e107]:
+        - generic [ref=e109]:
+          - generic [ref=e110]:
+            - link "Background photo of Oded Ben-Yair" [ref=e111] [cursor=pointer]:
+              - /url: /in/oded-ben-yair-ai/
+            - link "Photo of Oded Ben-Yair" [ref=e113] [cursor=pointer]:
+              - /url: /in/oded-ben-yair-ai/
+              - img "Photo of Oded Ben-Yair" [ref=e114]
+            - generic [ref=e115]:
+              - link "Oded Ben-Yair Founding AI Engineer | Multi-LLM Routing & Evaluation in Production | Voice AI · RAG | Azure + Python Tel Aviv-Yafo, Tel Aviv District" [ref=e116] [cursor=pointer]:
+                - /url: /in/oded-ben-yair-ai/
+                - generic [ref=e117]:
+                  - heading "Oded Ben-Yair" [level=3] [ref=e118]
+                  - img [ref=e122]
+                - paragraph [ref=e124]: Founding AI Engineer | Multi-LLM Routing & Evaluation in Production | Voice AI · RAG | Azure + Python
+                - paragraph [ref=e125]: Tel Aviv-Yafo, Tel Aviv District
+              - link "Be Z Online" [ref=e126] [cursor=pointer]:
+                - /url: /in/oded-ben-yair-ai/
+                - paragraph [ref=e127]:
+                  - generic [ref=e128]: Be Z Online
+          - generic [ref=e129]:
+            - heading "Manage your notifications" [level=1] [ref=e130]
+            - link "View settings" [ref=e131] [cursor=pointer]:
+              - /url: /mypreferences/d/categories/notifications
+      - main [ref=e132]:
+        - generic [ref=e134]:
+          - radiogroup [ref=e136]:
+            - radio "All" [checked] [ref=e137] [cursor=pointer]
+            - radio "Jobs" [ref=e138] [cursor=pointer]
+            - radio "My posts" [ref=e139] [cursor=pointer]
+            - radio "Mentions" [ref=e140] [cursor=pointer]
+          - generic [ref=e142]:
+            - generic [ref=e144]:
+              - article "Unread notification." [ref=e146] [cursor=pointer]:
+                - generic [ref=e147]:
+                  - generic [ref=e148]:
+                    - figure [ref=e149]:
+                      - img [ref=e150]
+                    - link "View Tal Cordova’s profile." [ref=e152]:
+                      - /url: /in/tal%2Dcordova
+                      - img "Tal Cordova" [ref=e156]
+                  - generic [ref=e157]:
+                    - link "Unread notification. Tal Cordova replied to your comment." [ref=e158]:
+                      - /url: /feed/update/urn%3Ali%3Aactivity%3A7427706397989146624?commentUrn=urn%3Ali%3Acomment%3A%28activity%3A7427706397989146624%2C7427992267727982593%29&dashCommentUrn=urn%3Ali%3Afsd%5Fcomment%3A%287427992267727982593%2Curn%3Ali%3Aactivity%3A7427706397989146624%29&replyUrn=urn%3Ali%3Acomment%3A%28activity%3A7427706397989146624%2C7427996667716653056%29&dashReplyUrn=urn%3Ali%3Afsd%5Fcomment%3A%287427996667716653056%2Curn%3Ali%3Aactivity%3A7427706397989146624%29
+                      - paragraph [ref=e159]: Unread notification.
+                      - generic [ref=e160]:
+                        - strong [ref=e161]: Tal Cordova
+                        - text: replied to your comment.
+                    - link [ref=e162]:
+                      - generic [ref=e163]:
+                        - strong [ref=e164]: Oded Ben-Yair
+                        - text: כן, אנחנו מכסים את זה בהרצאה החמישית והשישית ואחת המטרות מהקורס היא גם לצאת עם צעדים להמשך ואיך להגדיל את הMVP הזה לסקייל אם תרצה לשמוע עוד, אפשר לקבוע שיחה
+                      - separator [ref=e165]
+                      - generic [ref=e171]:
+                        - text: 𝗪𝗮𝗻𝘁 𝘁𝗼 𝗯𝘂𝗶𝗹𝗱 𝗮𝗻 𝗔𝗜-𝗽𝗼𝘄𝗲𝗿𝗲𝗱 𝗠𝗩𝗣? 🚀 Registration is now open for the AI System Design course by DataNights (a Datahack ini
+                        - strong [ref=e172]: tiative).
+                        - text: Thi
+                        - strong [ref=e173]: s isn't
+                        - text: "a theoretical course. Over 6 weeks, 𝘀𝘁𝗮𝗿𝘁𝗶𝗻𝗴 𝗠𝗮𝗿𝗰𝗵 𝟰𝘁𝗵, you’ll work in small groups to build a real AI-powered feature or MVP. 𝗪𝗵𝗮𝘁 𝘄𝗲’𝗿𝗲 𝗯𝘂𝗶𝗹𝗱𝗶𝗻𝗴 𝘄𝗶𝘁𝗵: Agents, tools & function calling RAG & data pipelines MCP & multi-step workflows Model serving & inference Prompt engineering Evaluation, cost & production considerations 𝗪𝗵𝗼 𝘄𝗶𝗹𝗹 𝘁𝗲𝗮𝗰𝗵 𝘆𝗼𝘂? We have a great lineup of lecturers leading the sessions: Or Levi | Israel Sofer | Almog Baku (vi/vim) | Gilad Rubin | Yael Oshri Balla"
+                        - strong [ref=e174]: "| Dani"
+                        - text: el
+                        - strong [ref=e175]: Marcous 𝗪𝗵𝗼
+                        - text: 𝘀𝗵
+                        - strong [ref=e176]: 𝗼𝘂𝗹𝗱 𝗮𝗽𝗽𝗹𝘆? Data S
+                        - text: cie
+                        - strong [ref=e177]: ntists, Sof
+                        - text: twa
+                        - strong [ref=e178]: re Engineers, an
+                        - text: d M
+                        - strong [ref=e179]: L Engineers wh
+                        - text: "o have a specific AI product idea and are ready to get their hands dirty. The course is part of DataNights, a program by DataHack. We are a nonprofit dedicated to advancing women, diversity, and knowledge-sharing within Israel’s AI and Data Science ecosystem 👉 Secure your spot here: https://lnkd.in/d_sRYP9Y 💬 Questions? Feel free to reach out to me directly!"
+                    - generic [ref=e180]:
+                      - generic [ref=e181]: 12 reactions
+                      - generic [ref=e182]: • 3 comments
+                  - generic [ref=e183]:
+                    - paragraph [ref=e184]: 33m
+                    - button "Settings menu" [ref=e187]:
+                      - img [ref=e188]
+              - article "Notification" [ref=e191] [cursor=pointer]:
+                - generic [ref=e192]:
+                  - link "View Guy Stein’s profile." [ref=e194]:
+                    - /url: /in/guy%2Dstein
+                    - img "Guy Stein" [ref=e198]
+                  - generic [ref=e199]:
+                    - link [ref=e200]:
+                      - /url: /feed/?highlightedUpdateUrn=urn%3Ali%3Aactivity%3A7427727461091725313&highlightedUpdateType=REACTIONS_BY_YOUR_NETWORK&origin=REACTIONS_BY_YOUR_NETWORK&showCommentBox=true
+                      - generic [ref=e201]:
+                        - strong [ref=e202]: Guy Stein
+                        - text: reacted to
+                        - strong [ref=e203]: Noa Zehavi Ben Netanel
+                        - text: "'s post: Scaling state-modifying agents with MCP workspaces; Architectural lessons from 200K SWE-bench runs; Orchestrated test-time compute for long-horizon agentic tasks; Novel Parsing trick reaching SOTA in underrepresented languages; Dynamic resource scheduling in online RL; Multi-resolution chunking method for retrieval; Model-agnostic padding minimization; Tokenization bugs in vLLM; Memory-efficient serving patterns... This is just a glimpse into #LabsinFront - where we document the technical decisions behind AI21 Labs's LLM family and agentic orchestration systems. Worth a read if you're building in the AI space - https://bit.ly/3M3UtK4 Among the brilliant authors: Or Dagan Yaron Sternbach Eran Gat Asaf Gardin Ella Neiman Yuval Peleg Levy Joanna K. Niv Granot Yuval Belfer Shaked Meirom Roee H.Daniel Gissin Inbal Magar Yuval Globerson and the list goes on..."
+                    - generic [ref=e204]:
+                      - generic [ref=e205]: 24 reactions
+                      - generic [ref=e206]: • 1 comment
+                  - generic [ref=e207]:
+                    - paragraph [ref=e208]: 1h
+                    - button "Settings menu" [ref=e211]:
+                      - img [ref=e212]
+              - article "Notification" [ref=e215] [cursor=pointer]:
+                - generic [ref=e216]:
+                  - link "View Udi Menkes’ profile." [ref=e218]:
+                    - /url: /in/udimenkes
+                    - generic [ref=e221]:
+                      - img "Udi Menkes" [ref=e222]
+                      - generic [ref=e224]: Status is reachable
+                  - link [ref=e226]:
+                    - /url: /feed/?highlightedUpdateUrn=urn%3Ali%3Aactivity%3A7427959622822469632&highlightedUpdateType=SHARED_BY_YOUR_NETWORK&origin=SHARED_BY_YOUR_NETWORK&showCommentBox=true
+                    - generic [ref=e227]:
+                      - strong [ref=e228]: Udi Menkes
+                      - text: "posted: מחשבות שישי בבוקר - הגעתי לנקודה שאני כל היום או בCursor או בClaude Code בתור מנהל מוצר. זה די מטורף שחושבים על זה. אם פעם היינו מוגבלים בידע, בסינטוז וביכולות ביצוע - היום ההגבלה הכי חזקה שאני מרגיש זה פשוט - זמן. זמן לשבת, לחשוב ביחד עם המודלים ואז ליצור ערך. ככל שיש לי מקבצים של שעות רצף ככה אני מגיע לערך יותר משמעותי. אני יודע שאני יכול לעשות כמעט כל דבר בהינתן זה שאחליט להשקיע בזה. זה רק עניין של זמן ואיטרציות. זה די mind blowing שחושבים על זה. ולכן השלב הכי קריטי הוא במה אני משקיע את השעה הקרובה והטוקנים הבאים לפני שקלוד מודיע לי שאני צריך לחכות חלון או שאני מגיע למגבלה החודשים בעבודה. וזה לא קל להחליט. תיעדוף נכון ולסדר את המחשבות לרמת בהירות שסוכן יוכל לבצע זה הskill שאני עובד עליו. הקפיצה הבאה היא ביכולת לזקק ערך ליחידת זמן עם הכלים האלו. ובדיוק בגלל זה הפכתי לאחרונה את הGenAI PM להיות כזה שנותן סיגנל אמיתי לProduct Builders. מספיק איזה סקיל חדש או דרך למנף מודל מסויים והצלחתם להפיק פי 10 ערך. וזה משתנה ברמה יומית ושעתית אפילו. חוצה מדיות. ולכן אני יודע שאני יכול לסמוך על הבריף היומי שלי. יהיה תמיד דבר או שניים שיביאו לי ערך. במצטבר זה מעל 1000 כאלו בשנה וככה משתפרים. Compound knowledge. בתמונה הזיכרון החדש שהוספתי שעל בסיסו הסוכן משתפר ברמה יומית במציאת סיגנלים חזקים אם אתם פרודקט בילדרים מוזמנים להצטרף בgenaipm. Com Follow Udi Menkes for more insights into AI Product Management"
+                  - generic [ref=e229]:
+                    - paragraph [ref=e230]: 1h
+                    - button "Settings menu" [ref=e233]:
+                      - img [ref=e234]
+              - article "Notification" [ref=e237] [cursor=pointer]:
+                - generic [ref=e238]:
+                  - img "Bernard Marr" [ref=e243]
+                  - 'link "New from Bernard Marr in AI & Future Tech Trends: The Growing AI Backlash: Is The Revolution Over Before It’s Even Begun?" [ref=e245]':
+                    - /url: /pulse/growing%2Dai%2Dbacklash%2Drevolution%2Dover%2Dbefore%2Dits%2Deven%2Dbegun%2Dmarr%2Di89cc
+                    - generic [ref=e246]:
+                      - text: New from
+                      - strong [ref=e247]: Bernard Marr
+                      - text: "in AI & Future Tech Trends: The Growing AI Backlash: Is The Revolution Over Before It’s Even Begun?"
+                  - generic [ref=e248]:
+                    - paragraph [ref=e249]: 2h
+                    - button "Settings menu" [ref=e252]:
+                      - img [ref=e253]
+              - article "Notification" [ref=e256] [cursor=pointer]:
+                - generic [ref=e257]:
+                  - link "View Asaf's profile" [ref=e259]:
+                    - /url: /in/yaffeasaf
+                    - img "Asaf Yaffe is hiring" [ref=e263]
+                  - generic [ref=e264]:
+                    - 'link "Asaf Yaffe is hiring. Help Asaf by sharing this job with your network: Staff Product Manager, Fraud Prevention." [ref=e265]':
+                      - /url: /jobs/view/4371125782
+                      - generic [ref=e266]:
+                        - generic [ref=e267]:
+                          - strong [ref=e268]: Asaf Yaffe
+                          - text: "is hiring. Help Asaf by sharing this job with your network: Staff Product Manager, Fraud Prevention."
+                        - generic [ref=e269]: "Asaf Yaffe is hiring. Help Asaf by sharing this job with your network: Staff Product Manager, Fraud Prevention."
+                    - button "Share job" [ref=e273]:
+                      - generic [ref=e274]: Share job
+                  - generic [ref=e275]:
+                    - paragraph [ref=e276]: 2h
+                    - button "Settings menu" [ref=e279]:
+                      - img [ref=e280]
+              - article "Notification" [ref=e283] [cursor=pointer]:
+                - generic [ref=e284]:
+                  - link "View Ana-Maria Vintila’s profile" [ref=e286]:
+                    - /url: /in/ana%2Dmaria%2Dvintila%2D7a525776
+                    - img "Ana-Maria Vintila" [ref=e290]
+                  - link "Ana-Maria Vintila followed you." [ref=e292]:
+                    - /url: /in/ana%2Dmaria%2Dvintila%2D7a525776
+                    - generic [ref=e293]:
+                      - generic [ref=e294]:
+                        - strong [ref=e295]: Ana-Maria Vintila
+                        - text: followed you.
+                      - generic [ref=e296]: Ana-Maria Vintila followed you.
+                  - generic [ref=e297]:
+                    - paragraph [ref=e298]: 3h
+                    - button "Settings menu" [ref=e301]:
+                      - img [ref=e302]
+              - article "Notification" [ref=e305] [cursor=pointer]:
+                - generic [ref=e306]:
+                  - link "Maoz’s profile photo" [ref=e308]:
+                    - /url: /analytics/profile-views
+                    - generic [ref=e311]:
+                      - img "Maoz Roytman" [ref=e312]
+                      - generic [ref=e314]: Status is reachable
+                  - generic [ref=e315]:
+                    - link "Maoz Roytman and 9 other people viewed your profile. See the full list with Premium." [ref=e316]:
+                      - /url: /analytics/profile-views
+                      - generic [ref=e317]:
+                        - strong [ref=e318]: Maoz Roytman
+                        - text: and
+                        - strong [ref=e319]: 9 other people
+                        - text: viewed your profile. See the full list with Premium.
+                    - link "Reactivate Premium" [ref=e322]:
+                      - generic [ref=e323]: Reactivate Premium
+                    - generic [ref=e324]: Cancel anytime. No hidden fees.
+                  - generic [ref=e325]:
+                    - paragraph [ref=e326]: 3h
+                    - button "Settings menu" [ref=e329]:
+                      - img [ref=e330]
+              - article "Notification" [ref=e333] [cursor=pointer]:
+                - generic [ref=e334]:
+                  - link "View Muhammad Furqan’s profile." [ref=e336]:
+                    - /url: /in/muhammad%2Dfurqan%2D0436a6355
+                    - img "Muhammad Furqan" [ref=e340]
+                  - generic [ref=e341]:
+                    - link "Muhammad Furqan replied to your comment." [ref=e342]:
+                      - /url: /feed/update/urn%3Ali%3Aactivity%3A7427683278926729217?commentUrn=urn%3Ali%3Acomment%3A%28activity%3A7427683278926729217%2C7427723124197986304%29&dashCommentUrn=urn%3Ali%3Afsd%5Fcomment%3A%287427723124197986304%2Curn%3Ali%3Aactivity%3A7427683278926729217%29&replyUrn=urn%3Ali%3Acomment%3A%28activity%3A7427683278926729217%2C7427946198256369664%29&dashReplyUrn=urn%3Ali%3Afsd%5Fcomment%3A%287427946198256369664%2Curn%3Ali%3Aactivity%3A7427683278926729217%29
+                      - generic [ref=e343]:
+                        - strong [ref=e344]: Muhammad Furqan
+                        - text: replied to your comment.
+                    - link [ref=e345]:
+                      - generic [ref=e346]:
+                        - strong [ref=e347]: Oded Ben-Yair
+                        - text: "Love this — the latency tradeoff is where agentic RAG gets real. +17% Success@1 is meaningful, but if you’re doubling tail latency, it becomes a product decision, not just a retrieval decision. We’ve been thinking about something similar: instead of always decomposing, let the agent run a cheap complexity heuristic first — e.g., intent ambiguity score, entity count, or embedding dispersion — and only trigger decomposition when the query crosses a threshold. Almost like a retrieval router rather than a fixed pipeline. Your fallback idea (lightweight expansion → hybrid if time budget exceeded) is interesting because it introduces time-aware orchestration, not just accuracy-aware orchestration. That feels like the right direction for production systems. Curious — are you measuring complexity heuristics explicitly, or inferring it implicitly from model confidence?"
+                      - separator [ref=e348]
+                      - generic [ref=e354]:
+                        - text: "Agentic Retrieval ≠ RAG Agents aren't just useful for the generation part of RAG. So what happens when you use them for retrieval? In traditional vector or hybrid search: • You get one shot at formulating the query • No automatic filtering based on intent • Results come back in a fixed ranking • No query decomposition for complex questions (unless you build it in yourself) 𝗔𝗴𝗲𝗻𝘁𝗶𝗰 𝗿𝗲𝘁𝗿𝗶𝗲𝘃𝗮𝗹 applies a lot of these advanced and effective retrieval techniques out of the box: 𝗤𝘂𝗲𝗿𝘆 𝗲𝘅𝗽𝗮𝗻𝘀𝗶𝗼𝗻 - enriching queries with semantically related terms 𝗤𝘂𝗲𝗿𝘆 𝗱𝗲𝗰𝗼𝗺𝗽𝗼𝘀𝗶𝘁𝗶𝗼𝗻 - breaking complex questions into sub-queries 𝗦𝗰𝗵𝗲𝗺𝗮 𝗶𝗻𝘁𝗿𝗼𝘀𝗽𝗲𝗰𝘁𝗶𝗼𝗻 - understanding your data structure to build better queries 𝗙𝗶𝗹𝘁𝗲𝗿 𝗰𝗼𝗻𝘀𝘁𝗿𝘂𝗰𝘁𝗶𝗼𝗻 - extracting and applying filters from natural language 𝗜𝗻𝘁𝗲𝗹𝗹𝗶𝗴𝗲𝗻𝘁 𝗿𝗲𝗿𝗮𝗻𝗸𝗶𝗻𝗴 - reordering results based on the original intent We benchmarked Weaviate's Search Mode (agentic retrieval) against standard Hybrid Search across 12 IR benchmarks - BEIR,"
+                        - strong [ref=e355]: LoTTe,
+                        - text: "BRIGHT, EnronQA, and WixQA, and this 𝗱𝗼𝗲𝘀 actually work: - +17% improvement on Success@1 (getting the right document first) • +11% improvement on Recall@5 • Gains ranged from +5% (minimum) to +24% (maximum) • Particularly strong on reasoning-intensive queries (BRIGHT dataset) benchmarks: https://lnkd.in/dG3FqtGw The biggest wins came on complex, long-form queries where the agent could decompose"
+                        - link [ref=e356]:
+                          - /url: https://lnkd.in/dG3FqtGw
+                          - text: the question and reason
+                        - text: about which retrieval strategy to use. 𝗧𝗵𝗲 𝗺𝗮𝗶𝗻 𝘁𝗿𝗮𝗱𝗲-𝗼𝗳𝗳 𝗶𝘀 (𝗻𝗼𝘁 𝘀𝘂𝗿𝗽𝗿𝗶𝘀𝗶𝗻𝗴𝗹𝘆) 𝗹𝗮𝘁𝗲𝗻𝗰𝘆. Those additional model inferences for query expansion, decomposition, and reranking take time. So this isn't universally better - it's about matching the approach to your use case. If you need highly accurate search results and can tolerate some extra latency → agentic retrieval If you're latency-sensitive and basic hybrid search is good enough → stick with traditional approaches
+                    - generic [ref=e357]:
+                      - generic [ref=e358]: 259 reactions
+                      - generic [ref=e359]: • 11 comments
+                  - generic [ref=e360]:
+                    - paragraph [ref=e361]: 3h
+                    - button "Settings menu" [ref=e364]:
+                      - img [ref=e365]
+              - article "Notification" [ref=e368] [cursor=pointer]:
+                - generic [ref=e369]:
+                  - link "View Hnan A Gadban’s profile." [ref=e371]:
+                    - /url: /in/hnan%2Da%2Dgadban%2D0972482a7
+                    - generic [ref=e374]:
+                      - img "Hnan A Gadban" [ref=e375]
+                      - generic [ref=e377]: Status is reachable
+                  - 'link "Hnan A Gadban reposted Be Z Online''s post: Celebrating Love In BE-Z ❤️" [ref=e379]':
+                    - /url: /feed/?highlightedUpdateUrn=urn%3Ali%3Aactivity%3A7427842435063574529&highlightedUpdateType=SHARED_BY_YOUR_NETWORK&origin=SHARED_BY_YOUR_NETWORK&showCommentBox=true
+                    - generic [ref=e380]:
+                      - strong [ref=e381]: Hnan A Gadban
+                      - text: reposted
+                      - strong [ref=e382]: Be Z Online's
+                      - text: "post: Celebrating Love In BE-Z ❤️"
+                  - generic [ref=e383]:
+                    - paragraph [ref=e384]: 5h
+                    - button "Settings menu" [ref=e387]:
+                      - img [ref=e388]
+              - article "Notification" [ref=e391] [cursor=pointer]:
+                - generic [ref=e392]:
+                  - link "View Ana-Maria Vintila’s profile." [ref=e394]:
+                    - /url: /in/ana%2Dmaria%2Dvintila%2D7a525776
+                    - img "Ana-Maria Vintila" [ref=e398]
+                  - generic [ref=e399]:
+                    - link "Ana-Maria Vintila liked your comment." [ref=e400]:
+                      - /url: /feed/update/urn%3Ali%3Aactivity%3A7427683278926729217?commentUrn=urn%3Ali%3Acomment%3A%28activity%3A7427683278926729217%2C7427723124197986304%29&dashCommentUrn=urn%3Ali%3Afsd%5Fcomment%3A%287427723124197986304%2Curn%3Ali%3Aactivity%3A7427683278926729217%29
+                      - generic [ref=e401]:
+                        - strong [ref=e402]: Ana-Maria Vintila
+                        - text: liked your comment.
+                    - link [ref=e403]:
+                      - generic [ref=e404]: "I've been experimenting w/ agentic retrieval in our RAG pipelines and the latency overhead is no joke – especially with query decomposition and reranking. The +17% Success@1 is impressive though. Makes me wonder if there's a sweet spot where you can prune some steps without sacrificing too much accuracy. (We saw something similar: using a lightweight model for expansion but falling back to hybrid if time budget exceeded.) Have you looked into adaptive strategies where the agent decides whether to decompose based on query complexity?"
+                      - separator [ref=e405]
+                      - generic [ref=e411]:
+                        - text: "Agentic Retrieval ≠ RAG Agents aren't just useful for the generation part of RAG. So what happens when you use them for retrieval? In traditional vector or hybrid search: • You get one shot at formulating the query • No automatic filtering based on intent • Results come back in a fixed ranking • No query decomposition for complex questions (unless you build it in yourself) 𝗔𝗴𝗲𝗻𝘁𝗶𝗰 𝗿𝗲𝘁𝗿𝗶𝗲𝘃𝗮𝗹 applies a lot of these advanced and effective retrieval techniques out of the box: 𝗤𝘂𝗲𝗿𝘆 𝗲𝘅𝗽𝗮𝗻𝘀𝗶𝗼𝗻 - enriching queries with semantically related terms 𝗤𝘂𝗲𝗿𝘆 𝗱𝗲𝗰𝗼𝗺𝗽𝗼𝘀𝗶𝘁𝗶𝗼𝗻 - breaking complex questions into sub-queries 𝗦𝗰𝗵𝗲𝗺𝗮 𝗶𝗻𝘁𝗿𝗼𝘀𝗽𝗲𝗰𝘁𝗶𝗼𝗻 - understanding your data structure to build better queries 𝗙𝗶𝗹𝘁𝗲𝗿 𝗰𝗼𝗻𝘀𝘁𝗿𝘂𝗰𝘁𝗶𝗼𝗻 - extracting and applying filters from natural language 𝗜𝗻𝘁𝗲𝗹𝗹𝗶𝗴𝗲𝗻𝘁 𝗿𝗲𝗿𝗮𝗻𝗸𝗶𝗻𝗴 - reordering results based on the original intent We benchmarked Weaviate's Search Mode (agentic retrieval) against standard Hybrid Search across 12 IR benchmarks - BEIR,"
+                        - strong [ref=e412]: LoTTe,
+                        - text: "BRIGHT, EnronQA, and WixQA, and this 𝗱𝗼𝗲𝘀 actually work: - +17% improvement on Success@1 (getting the right document first) • +11% improvement on Recall@5 • Gains ranged from +5% (minimum) to +24% (maximum) • Particularly strong on reasoning-intensive queries (BRIGHT dataset) benchmarks: https://lnkd.in/dG3FqtGw The biggest wins came on complex, long-form queries where the agent could decompose"
+                        - link [ref=e413]:
+                          - /url: https://lnkd.in/dG3FqtGw
+                          - text: the question and reason
+                        - text: about which retrieval strategy to use. 𝗧𝗵𝗲 𝗺𝗮𝗶𝗻 𝘁𝗿𝗮𝗱𝗲-𝗼𝗳𝗳 𝗶𝘀 (𝗻𝗼𝘁 𝘀𝘂𝗿𝗽𝗿𝗶𝘀𝗶𝗻𝗴𝗹𝘆) 𝗹𝗮𝘁𝗲𝗻𝗰𝘆. Those additional model inferences for query expansion, decomposition, and reranking take time. So this isn't universally better - it's about matching the approach to your use case. If you need highly accurate search results and can tolerate some extra latency → agentic retrieval If you're latency-sensitive and basic hybrid search is good enough → stick with traditional approaches
+                    - generic [ref=e414]:
+                      - generic [ref=e415]: 259 reactions
+                      - generic [ref=e416]: • 11 comments
+                  - generic [ref=e417]:
+                    - paragraph [ref=e418]: 9h
+                    - button "Settings menu" [ref=e421]:
+                      - img [ref=e422]
+            - button "Show more results" [ref=e426] [cursor=pointer]:
+              - generic [ref=e427]: Show more results
+      - complementary [ref=e428]:
+        - generic [ref=e430]:
+          - iframe [ref=e432]:
+            - generic [ref=f412e2]:
+              - generic [ref=f412e3]: Ad
+              - img "overflow-web-small" [ref=f412e6] [cursor=pointer]
+              - link "LinkedIn" [ref=f412e10] [cursor=pointer]:
+                - /url: https://www.linkedin.com/li/tscp/sct?destinationUrl=https%3A%2F%2Fwww.linkedin.com%2Fpremium%2Fredeem%2Fpromo%3F_ed%3DCwEAAAF114596ur6D_C644yaOCckjiuPmlSNohBRLZWzwWabZZHafL3X39_vkIP4OF8-NIE8HlM%26customKey%3Dwb_c%26redeemTypeV2%3DDISCOUNT%26type%3Dpremium%26src%3Dli-dynamic%26trk%3Dbnr_mktg_btn_jss_wb_PREMIUM_C_JSS_DA_GLOBAL_EN_Winback_1320_Jun25_V4%26upsellOrderOrigin%3DTracking%3Av1%3Abnr_mktg_btn_jss_wb_PREMIUM_C_JSS_DA_GLOBAL_EN_Winback_1320_Jun25_V4%3ADynamic%2520Ads%2520Winback%3AMarketing%26mcid%3D7384368281454952449&trackingEvent=%5B%7B%22eventInfo%22%3A%7B%22appId%22%3A%22com.linkedin.ads.rendering.d_web%22%2C%22eventName%22%3A%22SponsoredRightRailContentActionEvent%22%2C%22topicName%22%3A%22SponsoredRightRailContentActionEvent%22%7D%2C%22eventBody%22%3A%7B%22sponsoredEventHeader%22%3A%7B%22encryptedTrackingData%22%3A%22CwEAAAGcVk3JdVBQHYVaIe0bDtKZSlBCAmA2562Xlzyu9l5lQk03_3ssBFhscnsceYVpY_iThc1VMcElUXxE59NFzyv2i_Hnx9M8TrD6d-juo51G0U_jG3X5ZDlXE8DwUjJrEAti7JZhVu4-nkqoBMdwtt6T5Bv67AuIWAH5QelYXOVr73DEI9N9-g4ACND0wkILFuL9Kq0Q12PRPiTJ-wbHm9f16NxAWK3p7rTu0YWUPonDfeshGkIvViKPmM9nTTCECx5gOy_DuSwdsedF8Ino6ky-IQrov9AHzZEpLDj3cEn-RYZtiT-7JEC67aAgb04bI8AUMVl6220AWmihRbUw4wqBj4CYDwTQ7XbHawBGpNfrssS8fNd3fvbBmjJLlA55KJxT53MD1dwcjJ-rue9KAcPZviQ4nUwyhVDf43pcHw3W99gUd4TfDXeGHzmRRg4Af2pLdL4mocAp2ZCVVx4PnhiiFSSNaFLHjMyENJjlqTohFjLsyPiLHQEg2ysKU7AfSkj9Mc_FnifZ5foTAFsErZC0muKrKEoCI-ELxPHJYxBuPLul-SIgBReBJf0QZfk_kFeovl9vHlBwITtkLyg_YCRI-OUMWp7TAEkK3VPMKQ_T0a2lNrAeUFqM926YH5qP1PCbORRvtQRAcRdZfpyZzVYxRuaO1w8lOvzoo8CVwDPL7sFYuQ0Q9HOv20CsfuaPifiI9yoXKMnf8NkHPfK_gPJbAFu1AtlXNs1ii3f8wdR7NZFuphiSNuXI_uTx3oZYf3yRzZ_V1baPMsS6lcLrZQrxcvLEDdl63EUQFCckoaEibkyskk7pubjc0a1Jem8mYs3lkmLGG_LjaCoO0OT2EUVRKdi1E8mSXC-QvkCeV0FfhLif82Z8amof-TkXgwj8OS0pP-K8SFDdhm19iUK-1DS9tWBkuvVz1jaY-XoGabDoNE0x19__kWTLwxigE0cAg_WicZmmxsOOE7oKg9bJ-WDiZGJsZDrfNTw77AmZi_QMSBZKMfTj0aeWuC5OCkaD6o8zBt4_zQJ83Kbg-tHSgGwVMZ_0u8HU5WvqYIOQ_XI6gIBu8GOz7e8sJrT8kwbigy63hFUxKaNG3DIguVKTUeqD-Mlxe7_C2hxGWm9Z4TwQHxI9Wqzk8Lt9Wg4hQwx5SrSb3bSb1WH0rxwggQ%22%7D%2C%22header%22%3A%7B%22pageInstance%22%3A%7B%22pageUrn%22%3A%22urn%3Ali%3Apage%3Ad_flagship3_notifications%22%2C%22trackingId%22%3A%22d687c159-3357-4d4c-a192-af58f240e8ae%22%7D%2C%22time%22%3A1770974464322%2C%22version%22%3A%220.0.0%22%7D%2C%22requestHeader%22%3A%7B%22pageKey%22%3A%22d_flagship3_notifications%22%2C%22interfaceLocale%22%3A%22en-US%22%7D%7D%7D%5D&csrfToken=ajax%3A2872756275449100236
+              - generic [ref=f412e11]:
+                - heading "Oded, enjoy 50% off 2 months of LinkedIn Premium" [level=2] [ref=f412e14]
+                - generic [ref=f412e16]:
+                  - img "Oded" [ref=f412e17]
+                  - generic [ref=f412e18]:
+                    - link "LinkedIn" [ref=f412e19] [cursor=pointer]:
+                      - /url: https://www.linkedin.com/li/tscp/sct?destinationUrl=https%3A%2F%2Fwww.linkedin.com%2Fpremium%2Fredeem%2Fpromo%3F_ed%3DCwEAAAF114596ur6D_C644yaOCckjiuPmlSNohBRLZWzwWabZZHafL3X39_vkIP4OF8-NIE8HlM%26customKey%3Dwb_c%26redeemTypeV2%3DDISCOUNT%26type%3Dpremium%26src%3Dli-dynamic%26trk%3Dbnr_mktg_btn_jss_wb_PREMIUM_C_JSS_DA_GLOBAL_EN_Winback_1320_Jun25_V4%26upsellOrderOrigin%3DTracking%3Av1%3Abnr_mktg_btn_jss_wb_PREMIUM_C_JSS_DA_GLOBAL_EN_Winback_1320_Jun25_V4%3ADynamic%2520Ads%2520Winback%3AMarketing%26mcid%3D7384368281454952449&trackingEvent=%5B%7B%22eventInfo%22%3A%7B%22appId%22%3A%22com.linkedin.ads.rendering.d_web%22%2C%22eventName%22%3A%22SponsoredRightRailContentActionEvent%22%2C%22topicName%22%3A%22SponsoredRightRailContentActionEvent%22%7D%2C%22eventBody%22%3A%7B%22sponsoredEventHeader%22%3A%7B%22encryptedTrackingData%22%3A%22CwEAAAGcVk3JdVBQHYVaIe0bDtKZSlBCAmA2562Xlzyu9l5lQk03_3ssBFhscnsceYVpY_iThc1VMcElUXxE59NFzyv2i_Hnx9M8TrD6d-juo51G0U_jG3X5ZDlXE8DwUjJrEAti7JZhVu4-nkqoBMdwtt6T5Bv67AuIWAH5QelYXOVr73DEI9N9-g4ACND0wkILFuL9Kq0Q12PRPiTJ-wbHm9f16NxAWK3p7rTu0YWUPonDfeshGkIvViKPmM9nTTCECx5gOy_DuSwdsedF8Ino6ky-IQrov9AHzZEpLDj3cEn-RYZtiT-7JEC67aAgb04bI8AUMVl6220AWmihRbUw4wqBj4CYDwTQ7XbHawBGpNfrssS8fNd3fvbBmjJLlA55KJxT53MD1dwcjJ-rue9KAcPZviQ4nUwyhVDf43pcHw3W99gUd4TfDXeGHzmRRg4Af2pLdL4mocAp2ZCVVx4PnhiiFSSNaFLHjMyENJjlqTohFjLsyPiLHQEg2ysKU7AfSkj9Mc_FnifZ5foTAFsErZC0muKrKEoCI-ELxPHJYxBuPLul-SIgBReBJf0QZfk_kFeovl9vHlBwITtkLyg_YCRI-OUMWp7TAEkK3VPMKQ_T0a2lNrAeUFqM926YH5qP1PCbORRvtQRAcRdZfpyZzVYxRuaO1w8lOvzoo8CVwDPL7sFYuQ0Q9HOv20CsfuaPifiI9yoXKMnf8NkHPfK_gPJbAFu1AtlXNs1ii3f8wdR7NZFuphiSNuXI_uTx3oZYf3yRzZ_V1baPMsS6lcLrZQrxcvLEDdl63EUQFCckoaEibkyskk7pubjc0a1Jem8mYs3lkmLGG_LjaCoO0OT2EUVRKdi1E8mSXC-QvkCeV0FfhLif82Z8amof-TkXgwj8OS0pP-K8SFDdhm19iUK-1DS9tWBkuvVz1jaY-XoGabDoNE0x19__kWTLwxigE0cAg_WicZmmxsOOE7oKg9bJ-WDiZGJsZDrfNTw77AmZi_QMSBZKMfTj0aeWuC5OCkaD6o8zBt4_zQJ83Kbg-tHSgGwVMZ_0u8HU5WvqYIOQ_XI6gIBu8GOz7e8sJrT8kwbigy63hFUxKaNG3DIguVKTUeqD-Mlxe7_C2hxGWm9Z4TwQHxI9Wqzk8Lt9Wg4hQwx5SrSb3bSb1WH0rxwggQ%22%7D%2C%22header%22%3A%7B%22pageInstance%22%3A%7B%22pageUrn%22%3A%22urn%3Ali%3Apage%3Ad_flagship3_notifications%22%2C%22trackingId%22%3A%22d687c159-3357-4d4c-a192-af58f240e8ae%22%7D%2C%22time%22%3A1770974464322%2C%22version%22%3A%220.0.0%22%7D%2C%22requestHeader%22%3A%7B%22pageKey%22%3A%22d_flagship3_notifications%22%2C%22interfaceLocale%22%3A%22en-US%22%7D%7D%7D%5D&csrfToken=ajax%3A2872756275449100236
+                      - img "LinkedIn" [ref=f412e20]
+                    - tooltip "LinkedIn" [ref=f412e21]
+                - generic [ref=f412e22]:
+                  - heading "Stand out and get ahead in your job search" [level=2] [ref=f412e25]
+                  - link "Redeem offer" [ref=f412e27] [cursor=pointer]:
+                    - /url: https://www.linkedin.com/li/tscp/sct?destinationUrl=https%3A%2F%2Fwww.linkedin.com%2Fpremium%2Fredeem%2Fpromo%3F_ed%3DCwEAAAF114596ur6D_C644yaOCckjiuPmlSNohBRLZWzwWabZZHafL3X39_vkIP4OF8-NIE8HlM%26customKey%3Dwb_c%26redeemTypeV2%3DDISCOUNT%26type%3Dpremium%26src%3Dli-dynamic%26trk%3Dbnr_mktg_btn_jss_wb_PREMIUM_C_JSS_DA_GLOBAL_EN_Winback_1320_Jun25_V4%26upsellOrderOrigin%3DTracking%3Av1%3Abnr_mktg_btn_jss_wb_PREMIUM_C_JSS_DA_GLOBAL_EN_Winback_1320_Jun25_V4%3ADynamic%2520Ads%2520Winback%3AMarketing%26mcid%3D7384368281454952449&trackingEvent=%5B%7B%22eventInfo%22%3A%7B%22appId%22%3A%22com.linkedin.ads.rendering.d_web%22%2C%22eventName%22%3A%22SponsoredRightRailContentActionEvent%22%2C%22topicName%22%3A%22SponsoredRightRailContentActionEvent%22%7D%2C%22eventBody%22%3A%7B%22sponsoredEventHeader%22%3A%7B%22encryptedTrackingData%22%3A%22CwEAAAGcVk3JdVBQHYVaIe0bDtKZSlBCAmA2562Xlzyu9l5lQk03_3ssBFhscnsceYVpY_iThc1VMcElUXxE59NFzyv2i_Hnx9M8TrD6d-juo51G0U_jG3X5ZDlXE8DwUjJrEAti7JZhVu4-nkqoBMdwtt6T5Bv67AuIWAH5QelYXOVr73DEI9N9-g4ACND0wkILFuL9Kq0Q12PRPiTJ-wbHm9f16NxAWK3p7rTu0YWUPonDfeshGkIvViKPmM9nTTCECx5gOy_DuSwdsedF8Ino6ky-IQrov9AHzZEpLDj3cEn-RYZtiT-7JEC67aAgb04bI8AUMVl6220AWmihRbUw4wqBj4CYDwTQ7XbHawBGpNfrssS8fNd3fvbBmjJLlA55KJxT53MD1dwcjJ-rue9KAcPZviQ4nUwyhVDf43pcHw3W99gUd4TfDXeGHzmRRg4Af2pLdL4mocAp2ZCVVx4PnhiiFSSNaFLHjMyENJjlqTohFjLsyPiLHQEg2ysKU7AfSkj9Mc_FnifZ5foTAFsErZC0muKrKEoCI-ELxPHJYxBuPLul-SIgBReBJf0QZfk_kFeovl9vHlBwITtkLyg_YCRI-OUMWp7TAEkK3VPMKQ_T0a2lNrAeUFqM926YH5qP1PCbORRvtQRAcRdZfpyZzVYxRuaO1w8lOvzoo8CVwDPL7sFYuQ0Q9HOv20CsfuaPifiI9yoXKMnf8NkHPfK_gPJbAFu1AtlXNs1ii3f8wdR7NZFuphiSNuXI_uTx3oZYf3yRzZ_V1baPMsS6lcLrZQrxcvLEDdl63EUQFCckoaEibkyskk7pubjc0a1Jem8mYs3lkmLGG_LjaCoO0OT2EUVRKdi1E8mSXC-QvkCeV0FfhLif82Z8amof-TkXgwj8OS0pP-K8SFDdhm19iUK-1DS9tWBkuvVz1jaY-XoGabDoNE0x19__kWTLwxigE0cAg_WicZmmxsOOE7oKg9bJ-WDiZGJsZDrfNTw77AmZi_QMSBZKMfTj0aeWuC5OCkaD6o8zBt4_zQJ83Kbg-tHSgGwVMZ_0u8HU5WvqYIOQ_XI6gIBu8GOz7e8sJrT8kwbigy63hFUxKaNG3DIguVKTUeqD-Mlxe7_C2hxGWm9Z4TwQHxI9Wqzk8Lt9Wg4hQwx5SrSb3bSb1WH0rxwggQ%22%7D%2C%22header%22%3A%7B%22pageInstance%22%3A%7B%22pageUrn%22%3A%22urn%3Ali%3Apage%3Ad_flagship3_notifications%22%2C%22trackingId%22%3A%22d687c159-3357-4d4c-a192-af58f240e8ae%22%7D%2C%22time%22%3A1770974464322%2C%22version%22%3A%220.0.0%22%7D%2C%22requestHeader%22%3A%7B%22pageKey%22%3A%22d_flagship3_notifications%22%2C%22interfaceLocale%22%3A%22en-US%22%7D%7D%7D%5D&csrfToken=ajax%3A2872756275449100236
+          - generic "LinkedIn Footer Content" [ref=e433]:
+            - generic [ref=e434]:
+              - list [ref=e435]:
+                - listitem [ref=e436]:
+                  - link "About" [ref=e437] [cursor=pointer]:
+                    - /url: https://about.linkedin.com/
+                    - generic [ref=e438]: About
+                - listitem [ref=e439]:
+                  - link "Accessibility" [ref=e440] [cursor=pointer]:
+                    - /url: https://www.linkedin.com/accessibility
+                    - generic [ref=e441]: Accessibility
+                - listitem [ref=e442]:
+                  - link "Help Center" [ref=e443] [cursor=pointer]:
+                    - /url: https://www.linkedin.com/help/linkedin?trk=footer_d_flagship3_notifications
+                    - generic [ref=e444]: Help Center
+                - listitem [ref=e445]:
+                  - button "Privacy & Terms" [ref=e447] [cursor=pointer]:
+                    - generic [ref=e449]:
+                      - text: Privacy & Terms
+                      - img [ref=e450]
+                - listitem [ref=e452]:
+                  - link "Ad Choices" [ref=e453] [cursor=pointer]:
+                    - /url: https://www.linkedin.com/help/linkedin/answer/62931
+                    - generic [ref=e454]: Ad Choices
+                - listitem [ref=e455]:
+                  - link "Advertising" [ref=e456] [cursor=pointer]:
+                    - /url: https://www.linkedin.com/ad/start?trk=n_nav_ads_rr
+                    - generic [ref=e457]: Advertising
+                - listitem [ref=e458]:
+                  - button "Business Services" [ref=e460] [cursor=pointer]:
+                    - generic [ref=e462]:
+                      - text: Business Services
+                      - img [ref=e463]
+                - listitem [ref=e465]:
+                  - button "Get the LinkedIn app" [ref=e468] [cursor=pointer]
+                - listitem [ref=e469]:
+                  - button "More options" [ref=e470] [cursor=pointer]: More
+              - generic [ref=e471]:
+                - img "LinkedIn" [ref=e472]:
+                  - img [ref=e473]
+                - text: LinkedIn Corporation © 2026
+    - generic:
+      - generic:
+        - complementary:
+          - generic [ref=e476]:
+            - generic [ref=e478] [cursor=pointer]:
+              - generic [ref=e479]:
+                - img "Oded Ben-Yair" [ref=e480]
+                - generic [ref=e482]: Status is online
+              - button "You are on the messaging overlay. Press enter to open the list of conversations." [ref=e483]:
+                - generic [ref=e484]:
+                  - generic [ref=e485]: Messaging
+                  - generic [ref=e486]: You are on the messaging overlay. Press enter to open the list of conversations.
+            - generic [ref=e487]:
+              - button "Open messenger dropdown menu" [ref=e489] [cursor=pointer]:
+                - img "Open messenger dropdown menu" [ref=e490]
+              - button "Compose message" [ref=e493] [cursor=pointer]:
+                - img [ref=e494]
+                - generic [ref=e496]: Compose message
+              - button "You are on the messaging overlay. Press enter to open the list of conversations." [ref=e497] [cursor=pointer]:
+                - img [ref=e498]
+                - generic [ref=e500]: You are on the messaging overlay. Press enter to open the list of conversations.
+          - dialog "Messaging" [ref=e501]:
+            - generic [ref=e502]:
+              - generic [ref=e503] [cursor=pointer]:
+                - generic [ref=e505]:
+                  - generic [ref=e507]:
+                    - img "David Strucke" [ref=e508]
+                    - generic [ref=e510]: Status is reachable
+                  - heading "David Strucke" [active] [level=2] [ref=e512]
+                - button "Close your conversation with David Strucke and Oded Ben-Yair" [ref=e514]:
+                  - img [ref=e515]
+                  - generic [ref=e517]: Close your conversation with David Strucke and Oded Ben-Yair
+              - generic [ref=e519]:
+                - link "Visit my website" [ref=e522] [cursor=pointer]:
+                  - /url: https://datastreamer.io/
+                  - strong [ref=e523]: Visit my website
+                - list [ref=e526]:
+                  - listitem
+                  - listitem [ref=e527]:
+                    - time [ref=e528]: Monday
+                    - generic [ref=e529]: David Strucke sent the following message at 1:43 PM
+                    - generic [ref=e530]:
+                      - link "View David’s profile David Strucke" [ref=e531] [cursor=pointer]:
+                        - /url: https://www.linkedin.com/in/ACoAAACpVzwBrVubV-bqhicRnlsrd_xHrMvxck8
+                        - generic [ref=e532]: View David’s profile
+                        - img "David Strucke" [ref=e533]
+                      - generic [ref=e534]:
+                        - generic [ref=e535]:
+                          - link "David Strucke" [ref=e536] [cursor=pointer]:
+                            - /url: https://www.linkedin.com/in/ACoAAACpVzwBrVubV-bqhicRnlsrd_xHrMvxck8
+                            - generic [ref=e537]: David Strucke
+                          - img "LinkedIn Verified" [ref=e538]
+                        - time [ref=e540]: • 1:43 PM
+                      - paragraph [ref=e544]:
+                        - text: Hi Oded, thanks for the connection!
+                        - text: Are you currently integrating and standardizing social and web data?
+                        - text: I'd love to hear how you're approaching it.
+                  - listitem [ref=e545]:
+                    - generic [ref=e546]: Oded Ben-Yair sent the following message at 3:54 PM
+                    - generic [ref=e547]:
+                      - link "View Oded’s profile Oded Ben-Yair" [ref=e548] [cursor=pointer]:
+                        - /url: https://www.linkedin.com/in/ACoAABEJXkIBpHRsj0zFy126tNlNuHKxpGElSpQ
+                        - generic [ref=e549]: View Oded’s profile
+                        - img "Oded Ben-Yair" [ref=e550]
+                      - generic [ref=e551]:
+                        - generic [ref=e552]:
+                          - link "Oded Ben-Yair" [ref=e553] [cursor=pointer]:
+                            - /url: https://www.linkedin.com/in/ACoAABEJXkIBpHRsj0zFy126tNlNuHKxpGElSpQ
+                            - generic [ref=e554]: Oded Ben-Yair
+                          - img "LinkedIn Verified" [ref=e555]
+                        - time [ref=e557]: • 3:54 PM
+                      - paragraph [ref=e561]: Hey David nice to meet you 🙂 not sure i fully grasp your question to be honest. I am actively running over 5 projects so you truly wish to have my piece you'll need to be a bit more clear
+                  - listitem [ref=e562]:
+                    - generic [ref=e563]: David Strucke sent the following message at 11:23 PM
+                    - generic [ref=e564]:
+                      - link "View David’s profile David Strucke" [ref=e565] [cursor=pointer]:
+                        - /url: https://www.linkedin.com/in/ACoAAACpVzwBrVubV-bqhicRnlsrd_xHrMvxck8
+                        - generic [ref=e566]: View David’s profile
+                        - img "David Strucke" [ref=e567]
+                      - generic [ref=e568]:
+                        - generic [ref=e569]:
+                          - link "David Strucke" [ref=e570] [cursor=pointer]:
+                            - /url: https://www.linkedin.com/in/ACoAAACpVzwBrVubV-bqhicRnlsrd_xHrMvxck8
+                            - generic [ref=e571]: David Strucke
+                          - img "LinkedIn Verified" [ref=e572]
+                        - time [ref=e574]: • 11:23 PM
+                      - paragraph [ref=e578]:
+                        - text: "Hi Oded, thanks for your reply! To clarify: our platform helps teams ingest, normalize, enrich, and move social and web data at scale. Datastreamer turns what can take weeks of engineering effort into minutes, letting your team focus on high-value product work instead of building and maintaining pipelines."
+                        - text: Given your projects, I’d suggest a short call to see if Datastreamer could simplify any of your workflows, or I can first send a quick video for more context.
+                  - listitem [ref=e579]:
+                    - time [ref=e580]: Tuesday
+                    - generic [ref=e581]: Oded Ben-Yair sent the following message at 4:47 AM
+                    - generic [ref=e582]:
+                      - link "View Oded’s profile Oded Ben-Yair" [ref=e583] [cursor=pointer]:
+                        - /url: https://www.linkedin.com/in/ACoAABEJXkIBpHRsj0zFy126tNlNuHKxpGElSpQ
+                        - generic [ref=e584]: View Oded’s profile
+                        - img "Oded Ben-Yair" [ref=e585]
+                      - generic [ref=e586]:
+                        - generic [ref=e587]:
+                          - link "Oded Ben-Yair" [ref=e588] [cursor=pointer]:
+                            - /url: https://www.linkedin.com/in/ACoAABEJXkIBpHRsj0zFy126tNlNuHKxpGElSpQ
+                            - generic [ref=e589]: Oded Ben-Yair
+                          - img "LinkedIn Verified" [ref=e590]
+                        - time [ref=e592]: • 4:47 AM
+                      - paragraph [ref=e596]: Quick video be great, tnx
+                  - listitem [ref=e597]:
+                    - time [ref=e598]: Thursday
+                    - generic [ref=e599]: David Strucke sent the following messages at 3:53 PM
+                    - generic [ref=e600]:
+                      - link "View David’s profile David Strucke" [ref=e601] [cursor=pointer]:
+                        - /url: https://www.linkedin.com/in/ACoAAACpVzwBrVubV-bqhicRnlsrd_xHrMvxck8
+                        - generic [ref=e602]: View David’s profile
+                        - img "David Strucke" [ref=e603]
+                      - generic [ref=e604]:
+                        - generic [ref=e605]:
+                          - link "David Strucke" [ref=e606] [cursor=pointer]:
+                            - /url: https://www.linkedin.com/in/ACoAAACpVzwBrVubV-bqhicRnlsrd_xHrMvxck8
+                            - generic [ref=e607]: David Strucke
+                          - img "LinkedIn Verified" [ref=e608]
+                        - time [ref=e610]: • 3:53 PM
+                      - paragraph [ref=e614]:
+                        - text: "Sure! Here is a quick video highlighting the latest updates to our platform and how it helps teams in your field accelerate social and web data workflows:"
+                        - link "https://www.youtube.com/watch?v=p5QrdEt2ptg" [ref=e615] [cursor=pointer]:
+                          - /url: https://www.youtube.com/watch?v=p5QrdEt2ptg
+                        - text: If you share any specific challenges or gaps you’ve noticed in your current workflow, I can either ask my team to record a 2-minute demo tailored to your needs, or we can jump on a quick call to walk through it together.
+                      - generic [ref=e620]:
+                        - generic [ref=e622]:
+                          - link "What's new in data pipelines (September 2025)":
+                            - /url: https://www.youtube.com/watch?v=p5QrdEt2ptg
+                            - generic "What's new in data pipelines (September 2025)" [ref=e624] [cursor=pointer]:
+                              - generic [ref=e625]: What's new in data pipelines (September 2025)
+                        - link [ref=e627] [cursor=pointer]:
+                          - /url: https://www.youtube.com/watch?v=p5QrdEt2ptg
+                          - article [ref=e628]:
+                            - generic [ref=e629]: What's new in data pipelines (September 2025)
+                            - generic [ref=e630]: youtube.com
+                    - img "Seen by David Strucke at 3:53 PM." [ref=e632]
+                  - listitem [ref=e633]
+                  - listitem [ref=e634]:
+                    - generic [ref=e635]:
+                      - button "Scroll quick replies left" [disabled] [ref=e636]:
+                        - img
+                        - generic: Scroll quick replies left
+                      - list [ref=e637]:
+                        - listitem [ref=e638]:
+                          - button "Reply to conversation with “No, thanks”" [ref=e639] [cursor=pointer]:
+                            - generic [ref=e640]: Reply to conversation with “No, thanks”
+                            - generic: No, thanks
+                        - listitem [ref=e641]:
+                          - button "Reply to conversation with “No, thank you”" [ref=e642] [cursor=pointer]:
+                            - generic [ref=e643]: Reply to conversation with “No, thank you”
+                            - generic: No, thank you
+                        - listitem [ref=e644]:
+                          - button "Reply to conversation with “Thanks”" [ref=e645] [cursor=pointer]:
+                            - generic [ref=e646]: Reply to conversation with “Thanks”
+                            - generic: Thanks
+                      - button "Scroll quick replies right" [ref=e647] [cursor=pointer]:
+                        - img [ref=e648]
+                        - generic [ref=e650]: Scroll quick replies right
+                  - listitem
+                - generic [ref=e651]:
+                  - generic [ref=e652]:
+                    - generic [ref=e654]:
+                      - textbox "Write a message…" [ref=e655]:
+                        - paragraph [ref=e656]
+                      - text: Write a message…
+                    - button "Maximize compose field" [ref=e658] [cursor=pointer]:
+                      - img [ref=e659]
+                      - generic [ref=e661]: Maximize compose field
+                  - generic [ref=e662]:
+                    - generic [ref=e663]:
+                      - button "Attach an image to your conversation with David Strucke" [ref=e665] [cursor=pointer]:
+                        - img [ref=e666]
+                        - generic [ref=e668]: Attach an image to your conversation with David Strucke
+                      - button "Attach a file to your conversation with David Strucke" [ref=e670] [cursor=pointer]:
+                        - img [ref=e671]
+                        - generic [ref=e673]: Attach a file to your conversation with David Strucke
+                      - button "Open GIF Keyboard" [ref=e675] [cursor=pointer]:
+                        - img [ref=e676]
+                        - generic [ref=e678]: Open GIF Keyboard
+                      - button "Open Emoji Keyboard" [ref=e681] [cursor=pointer]:
+                        - generic:
+                          - img
+                        - generic [ref=e682]: Open Emoji Keyboard
+                    - generic [ref=e683]:
+                      - button "Send" [disabled] [ref=e685]
+                      - button "Open send options" [ref=e688] [cursor=pointer]:
+                        - img [ref=e689]
+                        - generic [ref=e691]: Open send options
+        - complementary "AI-powered assistant to get help with your career, jobs etc"
+  - region [ref=e692]

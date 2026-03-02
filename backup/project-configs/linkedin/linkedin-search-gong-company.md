@@ -1,0 +1,280 @@
+- generic [ref=e1]:
+  - generic:
+    - region "Toast message":
+      - heading "0 notifications total" [level=2] [ref=e3]
+      - alert
+  - region [ref=e15]
+  - generic [ref=e16]:
+    - generic [ref=e116]:
+      - button "Skip to search" [ref=e117] [cursor=pointer]:
+        - generic [ref=e118]: Skip to search
+      - button "Skip to main content" [ref=e119] [cursor=pointer]:
+        - generic [ref=e120]: Skip to main content
+      - button "Keyboard shortcuts" [ref=e121] [cursor=pointer]:
+        - generic [ref=e122]: Keyboard shortcuts
+      - button "Close jump menu" [ref=e123] [cursor=pointer]:
+        - img [ref=e124]
+        - generic [ref=e126]: Close jump menu
+    - banner "Global Navigation" [ref=e127]:
+      - generic [ref=e128]:
+        - link "LinkedIn" [ref=e129] [cursor=pointer]:
+          - /url: https://www.linkedin.com/feed/?nis=true
+          - img "LinkedIn" [ref=e132]:
+            - img [ref=e133]
+        - generic [ref=e137]:
+          - combobox "Search" [ref=e138]: gong.io
+          - generic:
+            - img
+        - navigation "Primary Navigation" [ref=e139]:
+          - list [ref=e140]:
+            - listitem [ref=e141]:
+              - link "new feed updates notifications Home" [ref=e142] [cursor=pointer]:
+                - /url: https://www.linkedin.com/feed/?nis=true&
+                - generic [ref=e143]:
+                  - generic [ref=e146]: new feed updates notifications
+                  - img [ref=e150]
+                - generic "Home" [ref=e152]
+            - listitem [ref=e153]:
+              - link "3 new network updates notifications My Network" [ref=e154] [cursor=pointer]:
+                - /url: https://www.linkedin.com/mynetwork/?
+                - generic [ref=e155]:
+                  - generic [ref=e156]:
+                    - generic [ref=e157]: "3"
+                    - generic [ref=e158]: 3 new network updates notifications
+                  - img [ref=e162]
+                - generic "My Network" [ref=e164]
+            - listitem [ref=e165]:
+              - link "Jobs" [ref=e166] [cursor=pointer]:
+                - /url: https://www.linkedin.com/jobs/?
+                - img [ref=e170]
+                - generic "Jobs" [ref=e172]
+            - listitem [ref=e173]:
+              - link "Messaging" [ref=e174] [cursor=pointer]:
+                - /url: https://www.linkedin.com/messaging/?
+                - img [ref=e178]
+                - generic "Messaging" [ref=e180]
+            - listitem [ref=e181]:
+              - link "Notifications" [ref=e182] [cursor=pointer]:
+                - /url: https://www.linkedin.com/notifications/?
+                - img [ref=e186]
+                - generic "Notifications" [ref=e188]
+            - listitem [ref=e189]:
+              - button "Oded Ben-Yair Me" [ref=e191] [cursor=pointer]:
+                - img "Oded Ben-Yair" [ref=e192]
+                - generic [ref=e193]:
+                  - text: Me
+                  - img [ref=e194]
+            - listitem [ref=e196]:
+              - button "For Business" [ref=e198] [cursor=pointer]:
+                - img [ref=e202]
+                - generic "For Business" [ref=e204]:
+                  - text: For Business
+                  - img [ref=e205]
+            - listitem [ref=e207]:
+              - 'link "Reactivate Premium: 50% Off" [ref=e209] [cursor=pointer]':
+                - /url: http://www.linkedin.com/premium/redeem/?_ed=0_bvLJH59RTSY-u5c6PMUa4IW0M54p9mxZpuVkfRvTl7r&upsellOrderOrigin=Tracking%3Av1%3Apremium_nav_upsell_text_winback%3ANav%3AIn-Product&referenceId=c3xUPiuhQ5%2BRLHm5MIHxsw%3D%3D&customKey=wb_c&redeemTypeV2=DISCOUNT&destRedirectURL=https%3A%2F%2Fwww.linkedin.com%2Fsearch%2Fresults%2Fcompanies%2F%3Fkeywords%3Dgong.io%26origin%3DGLOBAL_SEARCH_HEADER
+                - generic [ref=e211]: "Reactivate Premium: 50% Off"
+    - generic [ref=e212]:
+      - navigation "Search filters" [ref=e215]:
+        - generic [ref=e216]:
+          - list [ref=e217]:
+            - listitem [ref=e218]:
+              - 'button "Filter by: Companies" [ref=e220] [cursor=pointer]':
+                - text: Companies
+                - img [ref=e221]
+            - listitem [ref=e223]
+            - listitem [ref=e224]:
+              - button "Locations filter. Clicking this button displays all Locations filter options." [ref=e227] [cursor=pointer]:
+                - text: Locations
+                - img [ref=e228]
+            - listitem [ref=e230]:
+              - button "Industry filter. Clicking this button displays all Industry filter options." [ref=e233] [cursor=pointer]:
+                - text: Industry
+                - img [ref=e234]
+            - listitem [ref=e236]:
+              - button "Company size filter. Clicking this button displays all Company size filter options." [ref=e239] [cursor=pointer]:
+                - text: Company size
+                - img [ref=e240]
+          - button "Show all filters. Clicking this button displays all available filter options." [ref=e245] [cursor=pointer]: All filters
+      - generic [ref=e246]:
+        - generic [ref=e247]:
+          - main [ref=e248]:
+            - heading "Search results for gong.io. There are 10 results. Currently on the page 1 of 1 search result page." [active] [level=1] [ref=e249]
+            - generic [ref=e251]:
+              - heading "1 result" [level=2] [ref=e253]:
+                - generic [ref=e254]: 1 result
+              - list [ref=e257]:
+                - listitem [ref=e258]:
+                  - generic [ref=e261] [cursor=pointer]:
+                    - link [ref=e264]:
+                      - /url: https://www.linkedin.com/company/ondigo/
+                      - img [ref=e267]
+                    - generic [ref=e269]:
+                      - link "ONDiGO (acquired by Gong.io)" [ref=e274]:
+                        - /url: https://www.linkedin.com/company/ondigo/
+                      - generic [ref=e275]: IT Services and IT Consulting • Palo Alto, CA
+                      - generic [ref=e276]: 829 followers
+                    - button "Follow ONDiGO (acquired by Gong.io)" [ref=e279]:
+                      - generic [ref=e280]: Follow
+              - list [ref=e283]:
+                - listitem [ref=e284]:
+                  - generic [ref=e285]:
+                    - generic [ref=e286]:
+                      - paragraph [ref=e287]: Are these results helpful?
+                      - paragraph [ref=e288]: Your feedback helps us improve search results
+                    - generic [ref=e289]:
+                      - button "Are these results helpful? Yes, these search results are helpful" [ref=e290] [cursor=pointer]:
+                        - img [ref=e291]
+                      - button "Are these results helpful? No, these search results are not helpful" [ref=e294] [cursor=pointer]:
+                        - img [ref=e295]
+          - complementary "Search suggestions" [ref=e298]:
+            - iframe [ref=e303]:
+              - generic [ref=f171e2]:
+                - generic [ref=f171e3]: Ad
+                - img "overflow-web-small" [ref=f171e6] [cursor=pointer]
+                - link "LinkedIn for Sales" [ref=f171e10] [cursor=pointer]:
+                  - /url: https://www.linkedin.com/li/tscp/sct?destinationUrl=https%3A%2F%2Fwww.linkedin.com%2Fpremium%2Fredeem-v3%2F%3F_ed%3DCwEAAAFvqlyO6M8Q8oNzsFrJnllsOwTEGqdDSfAhW7Ib5vG3e7kEqBnLM6TDzYIfB6J8I4WlA-U%26planType%3Dsales%26redeemType%3DWINBACK%26src%3Dli-dynamic%26trk%3Demea_EN_DA_V2_202507_Winback%26mcid%3D7386103191538618368&trackingEvent=%5B%7B%22eventInfo%22%3A%7B%22appId%22%3A%22com.linkedin.ads.rendering.d_web%22%2C%22eventName%22%3A%22SponsoredRightRailContentActionEvent%22%2C%22topicName%22%3A%22SponsoredRightRailContentActionEvent%22%7D%2C%22eventBody%22%3A%7B%22sponsoredEventHeader%22%3A%7B%22encryptedTrackingData%22%3A%22CwEAAAGcaxmwm2hN4a1UGhVyLmr9Wr5PO4yJjinguDAGGed8py7yR9uckWUGcDJaR8EwPzTAVtgO8pvWI1tVTM4NwT_puJKF4jWqDDGUU2Bi0ZEvJwF2sxwmcJv2uOUK-beSAQUw8Jsa707iTz8DCe16GMUMJIXgBI4AfrTAeXx-hdFspWrMYxmCHCbisr5AK5znsxbhO-fDMMB3GpU8OmbweGfU1CdEyrOmjYaIVu-Rf7WUC9KrhEg-Uh0qfZUkrHQNeHx9TFOnAqjMCousf_xopH_dJ3sazZ15Mg7sWN-dcpWbj0PeMODWyqq0dh0mc7TuyRSVVHrKVJbYWzRmGhLGdyaEoYbI0QvxWWi5H8_k1yLOpyMZEbDqRUWKGlxEkGJ8heAFZQJNa5aJ7rHgDTQj_bJsfb1otgFwaY93JObMh-eu-OfRWJ6yJtW_Ip-PyYbh1sRrurJ6Zc_T_52WDgaEhkArYIKFiPQoOSvNTtNI3_QQXOBNXuXwAwlq9ywIjb1hmRoMk93p-BbYsvICbvpVjKEH74ruAj32Z5sKk19FufzYfFV8p8JPZ3ZPFyj18FiTo56dzcNeUoHK0UiUqJOrp9GeALI79eo6wr4p_XpMY5j0Lyaw72LLNr_qRIRskcked0PrxldgDd4dLr8rEpV_SdV5v2O9x3duFUXOOPe2m2J5BNMcVs38Z-UnuTXoD0jrESZCqJBnwR21YpkxCEY-VaQYp8R9RCc5SEwSIThWJD1knRYfl0YCw-rBR6cqnQ2GP5P7yWJuWd-sUK8vimzYGlMhh079ulYqmXZrjNKWlM0inNSVbjc0drieo8fC--PxIpcY7ZMVB1CY2DFDB0W7aRpEKbe9xKAVyKJL04vwgom1CHYG8yLNWMAbdIxojiNc4oGyvve3MSCVdsdPfYR_CFSNuLT7iAKZurgbDBoHL68VQHOZE1ne2z4D8LVOoSeDoJkJYyg-YeFqUOk5fuIsuvMw4XF2TBFBpFjGW4obpWxUAPERVdBomzMCSwSUum8eNFbSHR1bOt4BJ9eGXrT5GvzpRiHFSJLA7aj84FA4up_t6ByMb5hhR-BV28GwrdstpCEIOHpehaOp1KRSkb__bLxCvF6Wi6FXiQkR3xeYH7e8LDkiQvhPdr5j-1C4VjwLKFDB61AwqzAe2ktWtr1js6Fx1X4ZPDgW0gUm4FwsOgPYXuCSFCkLnDDESQ%22%7D%2C%22header%22%3A%7B%22pageInstance%22%3A%7B%22pageUrn%22%3A%22urn%3Ali%3Apage%3Ad_flagship3_search_srp_companies%22%2C%22trackingId%22%3A%229484fe02-93ad-41ec-a0ed-4ad17318abeb%22%7D%2C%22time%22%3A1771323371603%2C%22version%22%3A%220.0.0%22%7D%2C%22requestHeader%22%3A%7B%22pageKey%22%3A%22d_flagship3_search_srp_companies%22%2C%22interfaceLocale%22%3A%22en-US%22%7D%7D%7D%5D&csrfToken=ajax%3A2872756275449100236
+                - generic [ref=f171e11]:
+                  - heading "Oded, enjoy 50% off 2 months of Sales Navigator!" [level=2] [ref=f171e14]
+                  - generic [ref=f171e16]:
+                    - img "Oded" [ref=f171e17]
+                    - generic [ref=f171e18]:
+                      - link "LinkedIn for Sales" [ref=f171e19] [cursor=pointer]:
+                        - /url: https://www.linkedin.com/li/tscp/sct?destinationUrl=https%3A%2F%2Fwww.linkedin.com%2Fpremium%2Fredeem-v3%2F%3F_ed%3DCwEAAAFvqlyO6M8Q8oNzsFrJnllsOwTEGqdDSfAhW7Ib5vG3e7kEqBnLM6TDzYIfB6J8I4WlA-U%26planType%3Dsales%26redeemType%3DWINBACK%26src%3Dli-dynamic%26trk%3Demea_EN_DA_V2_202507_Winback%26mcid%3D7386103191538618368&trackingEvent=%5B%7B%22eventInfo%22%3A%7B%22appId%22%3A%22com.linkedin.ads.rendering.d_web%22%2C%22eventName%22%3A%22SponsoredRightRailContentActionEvent%22%2C%22topicName%22%3A%22SponsoredRightRailContentActionEvent%22%7D%2C%22eventBody%22%3A%7B%22sponsoredEventHeader%22%3A%7B%22encryptedTrackingData%22%3A%22CwEAAAGcaxmwm2hN4a1UGhVyLmr9Wr5PO4yJjinguDAGGed8py7yR9uckWUGcDJaR8EwPzTAVtgO8pvWI1tVTM4NwT_puJKF4jWqDDGUU2Bi0ZEvJwF2sxwmcJv2uOUK-beSAQUw8Jsa707iTz8DCe16GMUMJIXgBI4AfrTAeXx-hdFspWrMYxmCHCbisr5AK5znsxbhO-fDMMB3GpU8OmbweGfU1CdEyrOmjYaIVu-Rf7WUC9KrhEg-Uh0qfZUkrHQNeHx9TFOnAqjMCousf_xopH_dJ3sazZ15Mg7sWN-dcpWbj0PeMODWyqq0dh0mc7TuyRSVVHrKVJbYWzRmGhLGdyaEoYbI0QvxWWi5H8_k1yLOpyMZEbDqRUWKGlxEkGJ8heAFZQJNa5aJ7rHgDTQj_bJsfb1otgFwaY93JObMh-eu-OfRWJ6yJtW_Ip-PyYbh1sRrurJ6Zc_T_52WDgaEhkArYIKFiPQoOSvNTtNI3_QQXOBNXuXwAwlq9ywIjb1hmRoMk93p-BbYsvICbvpVjKEH74ruAj32Z5sKk19FufzYfFV8p8JPZ3ZPFyj18FiTo56dzcNeUoHK0UiUqJOrp9GeALI79eo6wr4p_XpMY5j0Lyaw72LLNr_qRIRskcked0PrxldgDd4dLr8rEpV_SdV5v2O9x3duFUXOOPe2m2J5BNMcVs38Z-UnuTXoD0jrESZCqJBnwR21YpkxCEY-VaQYp8R9RCc5SEwSIThWJD1knRYfl0YCw-rBR6cqnQ2GP5P7yWJuWd-sUK8vimzYGlMhh079ulYqmXZrjNKWlM0inNSVbjc0drieo8fC--PxIpcY7ZMVB1CY2DFDB0W7aRpEKbe9xKAVyKJL04vwgom1CHYG8yLNWMAbdIxojiNc4oGyvve3MSCVdsdPfYR_CFSNuLT7iAKZurgbDBoHL68VQHOZE1ne2z4D8LVOoSeDoJkJYyg-YeFqUOk5fuIsuvMw4XF2TBFBpFjGW4obpWxUAPERVdBomzMCSwSUum8eNFbSHR1bOt4BJ9eGXrT5GvzpRiHFSJLA7aj84FA4up_t6ByMb5hhR-BV28GwrdstpCEIOHpehaOp1KRSkb__bLxCvF6Wi6FXiQkR3xeYH7e8LDkiQvhPdr5j-1C4VjwLKFDB61AwqzAe2ktWtr1js6Fx1X4ZPDgW0gUm4FwsOgPYXuCSFCkLnDDESQ%22%7D%2C%22header%22%3A%7B%22pageInstance%22%3A%7B%22pageUrn%22%3A%22urn%3Ali%3Apage%3Ad_flagship3_search_srp_companies%22%2C%22trackingId%22%3A%229484fe02-93ad-41ec-a0ed-4ad17318abeb%22%7D%2C%22time%22%3A1771323371603%2C%22version%22%3A%220.0.0%22%7D%2C%22requestHeader%22%3A%7B%22pageKey%22%3A%22d_flagship3_search_srp_companies%22%2C%22interfaceLocale%22%3A%22en-US%22%7D%7D%7D%5D&csrfToken=ajax%3A2872756275449100236
+                        - img "LinkedIn for Sales" [ref=f171e20]
+                      - tooltip "LinkedIn for Sales" [ref=f171e21]
+                  - generic [ref=f171e22]:
+                    - heading "Use advanced filters to target decision-makers." [level=2] [ref=f171e25]
+                    - link "Get 50% off today" [ref=f171e27] [cursor=pointer]:
+                      - /url: https://www.linkedin.com/li/tscp/sct?destinationUrl=https%3A%2F%2Fwww.linkedin.com%2Fpremium%2Fredeem-v3%2F%3F_ed%3DCwEAAAFvqlyO6M8Q8oNzsFrJnllsOwTEGqdDSfAhW7Ib5vG3e7kEqBnLM6TDzYIfB6J8I4WlA-U%26planType%3Dsales%26redeemType%3DWINBACK%26src%3Dli-dynamic%26trk%3Demea_EN_DA_V2_202507_Winback%26mcid%3D7386103191538618368&trackingEvent=%5B%7B%22eventInfo%22%3A%7B%22appId%22%3A%22com.linkedin.ads.rendering.d_web%22%2C%22eventName%22%3A%22SponsoredRightRailContentActionEvent%22%2C%22topicName%22%3A%22SponsoredRightRailContentActionEvent%22%7D%2C%22eventBody%22%3A%7B%22sponsoredEventHeader%22%3A%7B%22encryptedTrackingData%22%3A%22CwEAAAGcaxmwm2hN4a1UGhVyLmr9Wr5PO4yJjinguDAGGed8py7yR9uckWUGcDJaR8EwPzTAVtgO8pvWI1tVTM4NwT_puJKF4jWqDDGUU2Bi0ZEvJwF2sxwmcJv2uOUK-beSAQUw8Jsa707iTz8DCe16GMUMJIXgBI4AfrTAeXx-hdFspWrMYxmCHCbisr5AK5znsxbhO-fDMMB3GpU8OmbweGfU1CdEyrOmjYaIVu-Rf7WUC9KrhEg-Uh0qfZUkrHQNeHx9TFOnAqjMCousf_xopH_dJ3sazZ15Mg7sWN-dcpWbj0PeMODWyqq0dh0mc7TuyRSVVHrKVJbYWzRmGhLGdyaEoYbI0QvxWWi5H8_k1yLOpyMZEbDqRUWKGlxEkGJ8heAFZQJNa5aJ7rHgDTQj_bJsfb1otgFwaY93JObMh-eu-OfRWJ6yJtW_Ip-PyYbh1sRrurJ6Zc_T_52WDgaEhkArYIKFiPQoOSvNTtNI3_QQXOBNXuXwAwlq9ywIjb1hmRoMk93p-BbYsvICbvpVjKEH74ruAj32Z5sKk19FufzYfFV8p8JPZ3ZPFyj18FiTo56dzcNeUoHK0UiUqJOrp9GeALI79eo6wr4p_XpMY5j0Lyaw72LLNr_qRIRskcked0PrxldgDd4dLr8rEpV_SdV5v2O9x3duFUXOOPe2m2J5BNMcVs38Z-UnuTXoD0jrESZCqJBnwR21YpkxCEY-VaQYp8R9RCc5SEwSIThWJD1knRYfl0YCw-rBR6cqnQ2GP5P7yWJuWd-sUK8vimzYGlMhh079ulYqmXZrjNKWlM0inNSVbjc0drieo8fC--PxIpcY7ZMVB1CY2DFDB0W7aRpEKbe9xKAVyKJL04vwgom1CHYG8yLNWMAbdIxojiNc4oGyvve3MSCVdsdPfYR_CFSNuLT7iAKZurgbDBoHL68VQHOZE1ne2z4D8LVOoSeDoJkJYyg-YeFqUOk5fuIsuvMw4XF2TBFBpFjGW4obpWxUAPERVdBomzMCSwSUum8eNFbSHR1bOt4BJ9eGXrT5GvzpRiHFSJLA7aj84FA4up_t6ByMb5hhR-BV28GwrdstpCEIOHpehaOp1KRSkb__bLxCvF6Wi6FXiQkR3xeYH7e8LDkiQvhPdr5j-1C4VjwLKFDB61AwqzAe2ktWtr1js6Fx1X4ZPDgW0gUm4FwsOgPYXuCSFCkLnDDESQ%22%7D%2C%22header%22%3A%7B%22pageInstance%22%3A%7B%22pageUrn%22%3A%22urn%3Ali%3Apage%3Ad_flagship3_search_srp_companies%22%2C%22trackingId%22%3A%229484fe02-93ad-41ec-a0ed-4ad17318abeb%22%7D%2C%22time%22%3A1771323371603%2C%22version%22%3A%220.0.0%22%7D%2C%22requestHeader%22%3A%7B%22pageKey%22%3A%22d_flagship3_search_srp_companies%22%2C%22interfaceLocale%22%3A%22en-US%22%7D%7D%7D%5D&csrfToken=ajax%3A2872756275449100236
+        - contentinfo [ref=e305]:
+          - generic [ref=e307]:
+            - generic [ref=e308]:
+              - navigation [ref=e309]:
+                - list [ref=e310]:
+                  - listitem [ref=e311]:
+                    - link "About" [ref=e312] [cursor=pointer]:
+                      - /url: https://about.linkedin.com/
+                  - listitem [ref=e313]:
+                    - link "Accessibility" [ref=e314] [cursor=pointer]:
+                      - /url: https://www.linkedin.com/accessibility
+                  - listitem [ref=e315]:
+                    - link "Talent Solutions" [ref=e316] [cursor=pointer]:
+                      - /url: https://business.linkedin.com/talent-solutions?trk=flagship_nav&veh=li-footer-lts-control&src=li-footer
+                  - listitem [ref=e317]:
+                    - link "Professional Community Policies" [ref=e318] [cursor=pointer]:
+                      - /url: https://www.linkedin.com/legal/professional-community-policies
+                  - listitem [ref=e319]:
+                    - link "Careers" [ref=e320] [cursor=pointer]:
+                      - /url: https://careers.linkedin.com/
+                  - listitem [ref=e321]:
+                    - link "Marketing Solutions" [ref=e322] [cursor=pointer]:
+                      - /url: https://business.linkedin.com/marketing-solutions?trk=n_nav_lms_f&src=li-footer
+                  - listitem [ref=e323]:
+                    - button "Privacy & Terms" [ref=e325] [cursor=pointer]:
+                      - generic [ref=e327]:
+                        - text: Privacy & Terms
+                        - img [ref=e328]
+                  - listitem [ref=e330]:
+                    - link "Ad Choices" [ref=e331] [cursor=pointer]:
+                      - /url: https://www.linkedin.com/help/linkedin/answer/62931
+                  - listitem [ref=e332]:
+                    - link "Advertising" [ref=e333] [cursor=pointer]:
+                      - /url: https://business.linkedin.com/marketing-solutions/ads?trk=n_nav_ads_f
+                  - listitem [ref=e334]:
+                    - link "Sales Solutions" [ref=e335] [cursor=pointer]:
+                      - /url: https://business.linkedin.com/sales-solutions?trk=flagship_nav&veh=li-footer-lss-control&src=li-footer
+                  - listitem [ref=e336]:
+                    - link "Mobile" [ref=e337] [cursor=pointer]:
+                      - /url: https://mobile.linkedin.com/
+                  - listitem [ref=e338]:
+                    - link "Small Business" [ref=e339] [cursor=pointer]:
+                      - /url: https://smallbusiness.linkedin.com?&src=li-footer
+                  - listitem [ref=e340]:
+                    - link "Safety Center" [ref=e341] [cursor=pointer]:
+                      - /url: https://safety.linkedin.com
+              - generic [ref=e343]:
+                - list [ref=e344]:
+                  - listitem [ref=e345]:
+                    - img [ref=e346]
+                    - generic [ref=e348]:
+                      - link "Questions? Visit our Help Center." [ref=e349] [cursor=pointer]:
+                        - /url: https://www.linkedin.com/help/linkedin?trk=d_flagship3_search_srp_companies
+                        - text: Questions?
+                      - paragraph [ref=e350]: Visit our Help Center.
+                  - listitem [ref=e351]:
+                    - img [ref=e352]
+                    - generic [ref=e354]:
+                      - link "Manage your account and privacy Go to your Settings." [ref=e355] [cursor=pointer]:
+                        - /url: https://www.linkedin.com/psettings/
+                        - text: Manage your account and privacy
+                      - paragraph [ref=e356]: Go to your Settings.
+                  - listitem [ref=e357]:
+                    - img [ref=e358]
+                    - generic [ref=e360]:
+                      - link "Recommendation transparency Learn more about Recommended Content." [ref=e361] [cursor=pointer]:
+                        - /url: https://www.linkedin.com/help/linkedin/answer/a1339724
+                        - text: Recommendation transparency
+                      - paragraph [ref=e362]: Learn more about Recommended Content.
+                - generic [ref=e363]:
+                  - generic [ref=e364]: Select Language
+                  - combobox "Select Language" [ref=e365]:
+                    - option "العربية (Arabic)"
+                    - option "বাংলা (Bangla)"
+                    - option "Čeština (Czech)"
+                    - option "Dansk (Danish)"
+                    - option "Deutsch (German)"
+                    - option "Ελληνικά (Greek)"
+                    - option "English (English)" [selected]
+                    - option "Español (Spanish)"
+                    - option "فارسی (Persian)"
+                    - option "Suomi (Finnish)"
+                    - option "Français (French)"
+                    - option "हिंदी (Hindi)"
+                    - option "Magyar (Hungarian)"
+                    - option "Bahasa Indonesia (Indonesian)"
+                    - option "Italiano (Italian)"
+                    - option "עברית (Hebrew)"
+                    - option "日本語 (Japanese)"
+                    - option "한국어 (Korean)"
+                    - option "मराठी (Marathi)"
+                    - option "Bahasa Malaysia (Malay)"
+                    - option "Nederlands (Dutch)"
+                    - option "Norsk (Norwegian)"
+                    - option "ਪੰਜਾਬੀ (Punjabi)"
+                    - option "Polski (Polish)"
+                    - option "Português (Portuguese)"
+                    - option "Română (Romanian)"
+                    - option "Русский (Russian)"
+                    - option "Svenska (Swedish)"
+                    - option "తెలుగు (Telugu)"
+                    - option "ภาษาไทย (Thai)"
+                    - option "Tagalog (Tagalog)"
+                    - option "Türkçe (Turkish)"
+                    - option "Українська (Ukrainian)"
+                    - option "Tiếng Việt (Vietnamese)"
+                    - option "简体中文 (Chinese (Simplified))"
+                    - option "正體中文 (Chinese (Traditional))"
+            - paragraph [ref=e366]: LinkedIn Corporation © 2026
+    - generic:
+      - generic:
+        - complementary:
+          - generic [ref=e368]:
+            - generic [ref=e370] [cursor=pointer]:
+              - generic [ref=e371]:
+                - img "Oded Ben-Yair" [ref=e372]
+                - generic [ref=e374]: Status is online
+              - button "You are on the messaging overlay. Press enter to open the list of conversations." [ref=e375]:
+                - generic [ref=e376]:
+                  - generic [ref=e377]: Messaging
+                  - generic [ref=e378]: You are on the messaging overlay. Press enter to open the list of conversations.
+            - generic [ref=e379]:
+              - button "Open messenger dropdown menu" [ref=e381] [cursor=pointer]:
+                - img "Open messenger dropdown menu" [ref=e382]
+              - button "Compose message" [ref=e385] [cursor=pointer]:
+                - img [ref=e386]
+                - generic [ref=e388]: Compose message
+              - button "You are on the messaging overlay. Press enter to open the list of conversations." [ref=e389] [cursor=pointer]:
+                - img [ref=e390]
+                - generic [ref=e392]: You are on the messaging overlay. Press enter to open the list of conversations.
+        - complementary "AI-powered assistant to get help with your career, jobs etc"

@@ -1,0 +1,121 @@
+{
+  "project": "llm-conv-router",
+  "currentState": {
+    "summary": "PROJECT COMPLETE + POLISHED. All P0/P1 bugs fixed from validation report (reroute card HTML rendering, Bandit KPIs, gauge clipping, cost chart margin). 24 screenshots captured. Score: 8.5→9.5/10. Ready for GitHub push.",
+    "lastModified": "2026-02-07T11:20:00Z",
+    "branch": "master",
+    "commitHash": "64d8a9b"
+  },
+  "blockers": [],
+  "nextSteps": [
+    {
+      "priority": 1,
+      "description": "Docker Compose e2e: run 'docker compose up --build' when Docker Desktop available to verify containerized deployment",
+      "estimatedComplexity": "simple",
+      "dependencies": ["Docker daemon running"]
+    }
+  ],
+  "completedSteps": [
+    "Day 1: API backend — models, database, intelligence, router, providers, safety, main.py (17 Python files)",
+    "Day 2: Dashboard — 4 pages, 5 components, design system, demo data generator, README (15 Python files)",
+    "Demo data: 20 conversations, 116 turns, 4 reroutes, 3 providers, $0.21 cost",
+    "Visual validation: all 4 pages scored 90+ on Gemini vision (avg 94.5/100)",
+    "Docker fixes: API_BASE env var in all pages, Docker Compose config validated",
+    "Git commit: 47 files, 12,610 lines, commit 64d8a9b",
+    "Validation fixes: P0 reroute card HTML comments→Python comments, P1-1 Bandit KPIs from arm_stats, P1-2 gauge height+margin, P2-2 cost chart right margin"
+  ],
+  "recentDecisions": [
+    {
+      "date": "2026-02-06",
+      "decision": "Epsilon-greedy bandit (NOT Thompson Sampling)",
+      "rationale": "Simpler, sufficient for portfolio demo, validated by 4-model council"
+    },
+    {
+      "date": "2026-02-06",
+      "decision": "Synchronous judge on critical path (NOT async fire-and-forget)",
+      "rationale": "Judge must score BEFORE response reaches user to enable reroute"
+    },
+    {
+      "date": "2026-02-06",
+      "decision": "SQLite WAL mode (NOT PostgreSQL)",
+      "rationale": "Zero-config, Docker-portable, per-connection PRAGMAs via event listener"
+    },
+    {
+      "date": "2026-02-06",
+      "decision": "Safe string substitution %%PLACEHOLDER%% (NOT .format())",
+      "rationale": "User text with {} crashes .format() with KeyError"
+    },
+    {
+      "date": "2026-02-06",
+      "decision": "Module structure: api/router/ + api/intelligence/ + api/providers/ (NOT flat)",
+      "rationale": "Clean separation matching architecture doc logical boundaries"
+    },
+    {
+      "date": "2026-02-06",
+      "decision": "VADER fallback in judge when Gemini 3 Pro times out",
+      "rationale": "3-second timeout prevents blocking; VADER maps compound to 0.3-0.9 range"
+    },
+    {
+      "date": "2026-02-07",
+      "decision": "sys.path.insert pattern for Streamlit page imports",
+      "rationale": "Streamlit pages run in isolation — project root must be on sys.path for dashboard.components imports"
+    },
+    {
+      "date": "2026-02-07",
+      "decision": "API_BASE from os.environ.get('API_BASE_URL') for Docker compatibility",
+      "rationale": "Docker Compose sets API_BASE_URL=http://api:8000; localhost fallback for local dev"
+    }
+  ],
+  "patterns": {
+    "established": [
+      "LiteLLM model strings: gemini/gemini-2.5-flash, anthropic/claude-opus-4-6, xai/grok-4-1-fast-non-reasoning, gemini/gemini-3-pro-preview",
+      "Per-connection SQLite PRAGMAs via @event.listens_for(engine, 'connect')",
+      "%%PLACEHOLDER%% + .replace() for all prompt templates",
+      "ConversationState dataclass bridges DB -> routing logic",
+      "Circuit breaker: 3 failures opens, 60s timeout, half-open retry",
+      "Reward formula: 0.4*quality + 0.3*latency_sigmoid + 0.3*cost_hyperbolic",
+      "API keys from .env via os.environ (Azure Key Vault in production)",
+      "Dashboard page sys.path: _project_root = str(Path(__file__).resolve().parent.parent.parent)",
+      "API_BASE = os.environ.get('API_BASE_URL', 'http://localhost:8000') in all dashboard pages",
+      "Design system tokens in dashboard/components/design_system.py (COLORS, PROVIDER_COLORS, CHART_HEIGHTS)"
+    ],
+    "toAvoid": [
+      ".format() on user text (crashes on curly braces)",
+      "Mock data or fake responses (HARD RULE: real API calls only)",
+      "Thompson Sampling (epsilon-greedy is the validated choice)",
+      "Async judge (must be synchronous for reroute gating)",
+      "Pure black #000000 or pure white #FFFFFF in dashboard",
+      "Importing dashboard.components without sys.path setup in pages"
+    ]
+  },
+  "sessionNotes": {
+    "lastSessionId": "24750",
+    "lastSessionDate": "2026-02-07",
+    "carryoverNotes": "All tasks complete. Demo data generated (20 convos, 116 turns). Visual validation passed (94.5/100 avg). Docker Compose config valid but daemon not available for container test. Initial commit 64d8a9b with 47 files, 12,610 lines."
+  },
+  "liveTestResults": {
+    "date": "2026-02-07",
+    "endpoints": {
+      "/health": "3/3 providers up, database connected",
+      "/chat (billing)": "Gemini 2.5 Flash, 4.5s latency, $0.000062, appropriateness 0.721"
+    },
+    "dashboardPages": {
+      "Live Demo": "93/100 — dark theme, chat input, provider panel, quick-start buttons",
+      "Routing Analytics": "95/100 — metric cards, donut/bar/gauge charts, provider colors",
+      "Conversation Detail": "96/100 — dropdown, empty state, clean design",
+      "Bandit Learning": "94/100 — metric cards, stacked bar, donut, heatmap, formula"
+    },
+    "demoData": {
+      "conversations": 20,
+      "turns": 116,
+      "totalCost": "$0.2124",
+      "reroutes": "4 (20%)",
+      "providers": ["balanced", "empathetic", "fast_cheap"]
+    }
+  },
+  "fileInventory": {
+    "totalFiles": 47,
+    "totalLines": 12610,
+    "commitHash": "64d8a9b"
+  }
+}

@@ -1,0 +1,10 @@
+[2026-02-06] DECISION: Epsilon-greedy bandit (NOT Thompson Sampling) — simpler, sufficient for portfolio demo
+[2026-02-06] DECISION: Synchronous judge on critical path — must score BEFORE response reaches user for reroute
+[2026-02-06] DECISION: SQLite WAL mode — zero-config, Docker-portable, per-connection PRAGMAs via event listener
+[2026-02-06] DECISION: Safe string substitution %%PLACEHOLDER%% — .format() crashes on user text with {}
+[2026-02-06] DECISION: Module structure api/router/ + api/intelligence/ + api/providers/ — clean separation
+[2026-02-06] DECISION: VADER fallback in judge — 3s timeout, maps compound to 0.3-0.9 range
+[2026-02-06] DECISION: Provider mapping override per SESSION-B-INSTRUCTIONS.md — Gemini 2.5 Flash (fast_cheap), Claude Opus 4.6 (empathetic), Grok 4.1 Fast (balanced), Gemini 3 Pro (judge)
+[2026-02-06] DECISION: Profile size cap 2KB with eviction chain key_facts → preferences → topics
+[2026-02-06] DECISION: Sentiment thresholds: <-0.5=critical, <-0.1=negative, <0.3=neutral, >=0.3=positive
+[2026-02-06] DECISION: Conversation budget $0.50, daily budget $10.00, max 3 reroutes per conversation

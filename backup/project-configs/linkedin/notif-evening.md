@@ -1,0 +1,529 @@
+- generic [ref=e1]:
+  - generic:
+    - region "Toast message":
+      - heading "0 notifications total" [level=2] [ref=e3]
+      - alert
+  - region [ref=e4]
+  - generic [ref=e5]:
+    - generic [ref=e7]:
+      - button "Skip to search" [ref=e8] [cursor=pointer]:
+        - generic [ref=e9]: Skip to search
+      - button "Skip to main content" [ref=e10] [cursor=pointer]:
+        - generic [ref=e11]: Skip to main content
+      - button "Keyboard shortcuts" [ref=e12] [cursor=pointer]:
+        - generic [ref=e13]: Keyboard shortcuts
+      - button "Close jump menu" [ref=e14] [cursor=pointer]:
+        - img [ref=e15]
+        - generic [ref=e17]: Close jump menu
+    - banner "Global Navigation" [ref=e18]:
+      - generic [ref=e19]:
+        - link "LinkedIn" [ref=e20] [cursor=pointer]:
+          - /url: https://www.linkedin.com/feed/?nis=true
+          - img "LinkedIn" [ref=e23]:
+            - img [ref=e24]
+        - generic [ref=e28]:
+          - combobox "Search" [ref=e29]
+          - generic:
+            - img
+        - navigation "Primary Navigation" [ref=e30]:
+          - list [ref=e31]:
+            - listitem [ref=e32]:
+              - link "new feed updates notifications Home" [ref=e33] [cursor=pointer]:
+                - /url: https://www.linkedin.com/feed/?nis=true&
+                - generic [ref=e34]:
+                  - generic [ref=e37]: new feed updates notifications
+                  - img [ref=e41]
+                - generic "Home" [ref=e43]
+            - listitem [ref=e44]:
+              - link "My Network" [ref=e45] [cursor=pointer]:
+                - /url: https://www.linkedin.com/mynetwork/?
+                - img [ref=e49]
+                - generic "My Network" [ref=e51]
+            - listitem [ref=e52]:
+              - link "Jobs" [ref=e53] [cursor=pointer]:
+                - /url: https://www.linkedin.com/jobs/?
+                - img [ref=e57]
+                - generic "Jobs" [ref=e59]
+            - listitem [ref=e60]:
+              - link "Messaging" [ref=e61] [cursor=pointer]:
+                - /url: https://www.linkedin.com/messaging/?
+                - img [ref=e65]
+                - generic "Messaging" [ref=e67]
+            - listitem [ref=e68]:
+              - link "Notifications" [ref=e69] [cursor=pointer]:
+                - /url: https://www.linkedin.com/notifications/?filter=all&refresh=true
+                - img [ref=e73]
+                - generic "Notifications" [ref=e75]
+            - listitem [ref=e76]:
+              - button "Oded Ben-Yair Me" [ref=e78] [cursor=pointer]:
+                - img "Oded Ben-Yair" [ref=e79]
+                - generic [ref=e80]:
+                  - text: Me
+                  - img [ref=e81]
+            - listitem [ref=e83]:
+              - button "For Business" [ref=e85] [cursor=pointer]:
+                - img [ref=e89]
+                - generic "For Business" [ref=e91]:
+                  - text: For Business
+                  - img [ref=e92]
+            - listitem [ref=e94]:
+              - 'link "Reactivate Premium: 50% Off" [ref=e96] [cursor=pointer]':
+                - /url: http://www.linkedin.com/premium/redeem/?_ed=0_bvLJH59RTSY-u5c6PMUa4IW0M54p9mxZpuVkfRvTl7r&upsellOrderOrigin=Tracking%3Av1%3Apremium_nav_upsell_text_winback%3ANav%3AIn-Product&referenceId=NT4qkqg4R6Wxvr1KdTU3Wg%3D%3D&customKey=wb_c&redeemTypeV2=DISCOUNT&destRedirectURL=https%3A%2F%2Fwww.linkedin.com%2Fnotifications%2F
+                - generic [ref=e98]: "Reactivate Premium: 50% Off"
+    - generic [ref=e103]:
+      - complementary [ref=e104]:
+        - generic [ref=e106]:
+          - generic [ref=e107]:
+            - link "Background photo of Oded Ben-Yair" [ref=e108] [cursor=pointer]:
+              - /url: /in/oded-ben-yair-ai/
+            - link "Photo of Oded Ben-Yair" [ref=e110] [cursor=pointer]:
+              - /url: /in/oded-ben-yair-ai/
+              - img "Photo of Oded Ben-Yair" [ref=e111]
+            - generic [ref=e112]:
+              - link "Oded Ben-Yair Founding AI Engineer | Multi-LLM Routing & Evaluation in Production | Voice AI · RAG | Azure + Python Tel Aviv-Yafo, Tel Aviv District" [ref=e113] [cursor=pointer]:
+                - /url: /in/oded-ben-yair-ai/
+                - generic [ref=e114]:
+                  - heading "Oded Ben-Yair" [level=3] [ref=e115]
+                  - img [ref=e119]
+                - paragraph [ref=e121]: Founding AI Engineer | Multi-LLM Routing & Evaluation in Production | Voice AI · RAG | Azure + Python
+                - paragraph [ref=e122]: Tel Aviv-Yafo, Tel Aviv District
+              - link "Be Z Online" [ref=e123] [cursor=pointer]:
+                - /url: /in/oded-ben-yair-ai/
+                - paragraph [ref=e124]:
+                  - generic [ref=e125]: Be Z Online
+          - generic [ref=e126]:
+            - heading "Manage your notifications" [level=1] [ref=e127]
+            - link "View settings" [ref=e128] [cursor=pointer]:
+              - /url: /mypreferences/d/categories/notifications
+      - main [ref=e129]:
+        - generic [ref=e131]:
+          - radiogroup [ref=e133]:
+            - radio "All" [checked] [ref=e134] [cursor=pointer]
+            - radio "Jobs" [ref=e135] [cursor=pointer]
+            - radio "My posts" [ref=e136] [cursor=pointer]
+            - radio "Mentions" [ref=e137] [cursor=pointer]
+          - generic [ref=e139]:
+            - generic [ref=e141]:
+              - article "Unread notification." [ref=e143] [cursor=pointer]:
+                - generic [ref=e144]:
+                  - generic [ref=e145]:
+                    - figure [ref=e146]:
+                      - img [ref=e147]
+                    - link "View Daniel Nehemia’s profile." [ref=e149]:
+                      - /url: /in/daniel%2Dnehemia%2D42442436
+                      - img "Daniel Nehemia" [ref=e153]
+                  - generic [ref=e154]:
+                    - link "Unread notification. Daniel Nehemia replied to your comment." [ref=e155]:
+                      - /url: /feed/update/urn%3Ali%3Aactivity%3A7429225932806209536?commentUrn=urn%3Ali%3Acomment%3A%28activity%3A7429225932806209536%2C7429468274565890048%29&dashCommentUrn=urn%3Ali%3Afsd%5Fcomment%3A%287429468274565890048%2Curn%3Ali%3Aactivity%3A7429225932806209536%29&replyUrn=urn%3Ali%3Acomment%3A%28activity%3A7429225932806209536%2C7429536293879136257%29&dashReplyUrn=urn%3Ali%3Afsd%5Fcomment%3A%287429536293879136257%2Curn%3Ali%3Aactivity%3A7429225932806209536%29
+                      - paragraph [ref=e156]: Unread notification.
+                      - generic [ref=e157]:
+                        - strong [ref=e158]: Daniel Nehemia
+                        - text: replied to your comment.
+                    - link [ref=e159]:
+                      - generic [ref=e160]: ‏‏‏Oded Ben-Yair‏‏‏ תודה רבה!
+                      - separator [ref=e161]
+                      - generic [ref=e167]:
+                        - text: "פודקלוד: הפחד מה\"מסך השחור\" (Terminal) עולה לכם כסף. אם אתם עדיין מתייחסים ל-AI כאל \"צ'אט\" שנותן עצות בדפדפן, אתם מפספסים את המהפכה השנייה שמתרחשת ממש עכשיו. השבועות האחרונים מסמנים מעבר חד: מעידן ה-Chatbots לעידן ה-Agents. ההבדל הוא תהומי. צ'אטבוט אומר לכם מה לעשות. Agent עושה את זה במקומכם. בפרק 154 של הפודקאסט המושלם \"AI פשוט\", הוזמנתי באישון לילה ע\"י הנסיך"
+                        - strong [ref=e168]: Benny Farber
+                        - text: "לשיחה צפופה על Claude Code - הכלי העתידני של Anthropic שמשנה את כללי המשחק לחלוטין - ה-AI שחיכינו לו. דיברנו על הנקודות שכואבות לכולם: חסם הכניסה הטכני: למה הרוב חוששים להתקין כלי שרץ בטרמינל, ואיך (והאם) אפשר לעקוף את זה. הביצוע: איך השתמשתי בכלי כדי לבצע מיגרציה מלאה של אתר מ-Wix ל-WordPress, כולל עיצוב ותוכן, בלי לכתוב שורת קוד אחת בעצמי. איזה כלים נוספים יצרתי, כאלו שנתנו פתרונות לארגונים וחסכו להם המון! כסף. ומה בני יצר ככה בקלות? המחיר: האם שווה לשלם לפי טוקנים (Usage based) ואיך זה יוצא זול יותר משעת עבודה של מתכנת זוטר. אבטחת מידע: מה קורה כנותנים ל-AI גישה למערכת הקבצים המקומית (וכן, יש ממה להיזהר). זה לא עוד כלי לכתיבת מיילים. זה כלי לבניית מוצרים, אוטומציות ותהליכי עבודה שחוסכים עשרות שעות בחודש. אם אתם מנהלי מוצר, יזמים, או אנשי דיגיטל שרוצים להבין לאן השוק הולך - הפודקסט הזה (שהגיע לעשרות אלפי צפיות בכל הפלטפורמות) חובה. 🎧 להאזנה לפרק המלא הקישור בתגובות בסוף הפודקסט וגם בדסקריפשן - מחכה לכם בונוס סופר שווה! מוזמנים לתת סימנים לחיזוק האלגוריתם - אם הפרק הזה נתן לכם ערך וידע :)"
+                    - generic [ref=e169]:
+                      - generic [ref=e170]: 9 reactions
+                      - generic [ref=e171]: • 5 comments
+                  - generic [ref=e172]:
+                    - paragraph [ref=e173]: 36m
+                    - button "Settings menu" [ref=e176]:
+                      - img [ref=e177]
+              - article "Unread notification." [ref=e180] [cursor=pointer]:
+                - generic [ref=e181]:
+                  - generic [ref=e182]:
+                    - figure [ref=e183]:
+                      - img [ref=e184]
+                    - link "View Daniel Nehemia’s profile." [ref=e186]:
+                      - /url: /in/daniel%2Dnehemia%2D42442436
+                      - img "Daniel Nehemia" [ref=e190]
+                  - generic [ref=e191]:
+                    - link "Unread notification. Daniel Nehemia loved your comment." [ref=e192]:
+                      - /url: /feed/update/urn%3Ali%3Aactivity%3A7429225932806209536?commentUrn=urn%3Ali%3Acomment%3A%28activity%3A7429225932806209536%2C7429468274565890048%29&dashCommentUrn=urn%3Ali%3Afsd%5Fcomment%3A%287429468274565890048%2Curn%3Ali%3Aactivity%3A7429225932806209536%29
+                      - paragraph [ref=e193]: Unread notification.
+                      - generic [ref=e194]:
+                        - strong [ref=e195]: Daniel Nehemia
+                        - text: loved your comment.
+                    - link [ref=e196]:
+                      - generic [ref=e197]: "הנקודה על ההבדל בין צ'אטבוט לאייג'נט מדויקת. עובד עם Claude Code כל יום ומה שמפתיע: הקושי האמיתי הוא לא לכתוב קוד, אלא ללמד אותו מתי לעצור ולשאול שאלות במקום להניח הנחות לבד. פרק חובה."
+                      - separator [ref=e198]
+                      - generic [ref=e204]:
+                        - text: "פודקלוד: הפחד מה\"מסך השחור\" (Terminal) עולה לכם כסף. אם אתם עדיין מתייחסים ל-AI כאל \"צ'אט\" שנותן עצות בדפדפן, אתם מפספסים את המהפכה השנייה שמתרחשת ממש עכשיו. השבועות האחרונים מסמנים מעבר חד: מעידן ה-Chatbots לעידן ה-Agents. ההבדל הוא תהומי. צ'אטבוט אומר לכם מה לעשות. Agent עושה את זה במקומכם. בפרק 154 של הפודקאסט המושלם \"AI פשוט\", הוזמנתי באישון לילה ע\"י הנסיך"
+                        - strong [ref=e205]: Benny Farber
+                        - text: "לשיחה צפופה על Claude Code - הכלי העתידני של Anthropic שמשנה את כללי המשחק לחלוטין - ה-AI שחיכינו לו. דיברנו על הנקודות שכואבות לכולם: חסם הכניסה הטכני: למה הרוב חוששים להתקין כלי שרץ בטרמינל, ואיך (והאם) אפשר לעקוף את זה. הביצוע: איך השתמשתי בכלי כדי לבצע מיגרציה מלאה של אתר מ-Wix ל-WordPress, כולל עיצוב ותוכן, בלי לכתוב שורת קוד אחת בעצמי. איזה כלים נוספים יצרתי, כאלו שנתנו פתרונות לארגונים וחסכו להם המון! כסף. ומה בני יצר ככה בקלות? המחיר: האם שווה לשלם לפי טוקנים (Usage based) ואיך זה יוצא זול יותר משעת עבודה של מתכנת זוטר. אבטחת מידע: מה קורה כנותנים ל-AI גישה למערכת הקבצים המקומית (וכן, יש ממה להיזהר). זה לא עוד כלי לכתיבת מיילים. זה כלי לבניית מוצרים, אוטומציות ותהליכי עבודה שחוסכים עשרות שעות בחודש. אם אתם מנהלי מוצר, יזמים, או אנשי דיגיטל שרוצים להבין לאן השוק הולך - הפודקסט הזה (שהגיע לעשרות אלפי צפיות בכל הפלטפורמות) חובה. 🎧 להאזנה לפרק המלא הקישור בתגובות בסוף הפודקסט וגם בדסקריפשן - מחכה לכם בונוס סופר שווה! מוזמנים לתת סימנים לחיזוק האלגוריתם - אם הפרק הזה נתן לכם ערך וידע :)"
+                    - generic [ref=e206]:
+                      - generic [ref=e207]: 9 reactions
+                      - generic [ref=e208]: • 5 comments
+                  - generic [ref=e209]:
+                    - paragraph [ref=e210]: 36m
+                    - button "Settings menu" [ref=e213]:
+                      - img [ref=e214]
+              - article "Unread notification." [ref=e217] [cursor=pointer]:
+                - generic [ref=e218]:
+                  - figure [ref=e220]:
+                    - img [ref=e221]
+                  - 'link "Unread notification. New from Confidential Careers in Jobs Alert: Latest Jobs in Germany - Job Alert - 17th February 2026" [ref=e226]':
+                    - /url: /pulse/latest%2Djobs%2Dgermany%2Djob%2Dalert%2D17th%2Dfebruary%2D2026%2D2hjcc
+                    - paragraph [ref=e227]: Unread notification.
+                    - generic [ref=e228]:
+                      - text: New from
+                      - strong [ref=e229]: Confidential Careers
+                      - text: "in Jobs Alert: Latest Jobs in Germany - Job Alert - 17th February 2026"
+                  - generic [ref=e230]:
+                    - paragraph [ref=e231]: 42m
+                    - button "Settings menu" [ref=e234]:
+                      - img [ref=e235]
+              - article "Unread notification." [ref=e238] [cursor=pointer]:
+                - generic [ref=e239]:
+                  - generic [ref=e240]:
+                    - figure [ref=e241]:
+                      - img [ref=e242]
+                    - generic [ref=e246]:
+                      - img "Omri Marcus" [ref=e247]
+                      - generic [ref=e249]: Status is online
+                  - 'link "Unread notification. New from Omri Marcus in The Storyshower: Tourism in the Age of AI: It was the best of trips, it was the worst of trips. Some thoughts after a week in London." [ref=e251]':
+                    - /url: /pulse/tourism%2Dage%2Dai%2Dbest%2Dtrips%2Dworst%2Dsome%2Dthoughts%2Dafter%2Dweek%2Domri%2Dmarcus%2Dtnacf
+                    - paragraph [ref=e252]: Unread notification.
+                    - generic [ref=e253]:
+                      - text: New from
+                      - strong [ref=e254]: Omri Marcus
+                      - text: "in The Storyshower: Tourism in the Age of AI: It was the best of trips, it was the worst of trips. Some thoughts after a week in London."
+                  - generic [ref=e255]:
+                    - paragraph [ref=e256]: 47m
+                    - button "Settings menu" [ref=e259]:
+                      - img [ref=e260]
+              - article "Unread notification." [ref=e263] [cursor=pointer]:
+                - generic [ref=e264]:
+                  - figure [ref=e266]:
+                    - img [ref=e267]
+                  - generic [ref=e272]:
+                    - 'link "Unread notification. 2 people viewed your profile: Stay anonymous and see who''s viewed your profile with Premium." [ref=e273]':
+                      - /url: /analytics/profile-views
+                      - paragraph [ref=e274]: Unread notification.
+                      - generic [ref=e275]:
+                        - strong [ref=e276]: 2 people
+                        - text: "viewed your profile: Stay anonymous and see who's viewed your profile with Premium."
+                    - link "Reactivate Premium" [ref=e279]:
+                      - generic [ref=e280]: Reactivate Premium
+                    - generic [ref=e281]: Cancel anytime. No hidden fees.
+                  - generic [ref=e282]:
+                    - paragraph [ref=e283]: 53m
+                    - button "Settings menu" [ref=e286]:
+                      - img [ref=e287]
+              - article "Unread notification." [ref=e290] [cursor=pointer]:
+                - generic [ref=e291]:
+                  - figure [ref=e293]:
+                    - img [ref=e294]
+                  - link "Unread notification. Your application was viewed for Senior AI / Backend Engineer at Hey Seven" [ref=e300]:
+                    - /url: /jobs/view/4362223944?refId=e3b093da-f43d-33fb-9043-73ffba7171aa
+                    - paragraph [ref=e301]: Unread notification.
+                    - generic [ref=e302]:
+                      - text: Your
+                      - strong [ref=e303]: application was viewed
+                      - text: for Senior AI / Backend Engineer at Hey Seven
+                  - generic [ref=e304]:
+                    - paragraph [ref=e305]: 56m
+                    - button "Settings menu" [ref=e308]:
+                      - img [ref=e309]
+              - article "Unread notification." [ref=e312] [cursor=pointer]:
+                - generic [ref=e313]:
+                  - generic [ref=e314]:
+                    - figure [ref=e315]:
+                      - img [ref=e316]
+                    - link "View Gal Samsanovich’s profile." [ref=e318]:
+                      - /url: /in/galsamsanovichab2ba4174
+                      - generic [ref=e321]:
+                        - img "Gal Samsanovich" [ref=e322]
+                        - generic [ref=e324]: Status is online
+                  - generic [ref=e325]:
+                    - link "Unread notification. Gal Samsanovich liked your comment." [ref=e326]:
+                      - /url: /feed/update/urn%3Ali%3Aactivity%3A7428726602873651200?commentUrn=urn%3Ali%3Acomment%3A%28ugcPost%3A7428726602215227392%2C7428858363595214848%29&dashCommentUrn=urn%3Ali%3Afsd%5Fcomment%3A%287428858363595214848%2Curn%3Ali%3AugcPost%3A7428726602215227392%29
+                      - paragraph [ref=e327]: Unread notification.
+                      - generic [ref=e328]:
+                        - strong [ref=e329]: Gal Samsanovich
+                        - text: liked your comment.
+                    - link [ref=e330]:
+                      - generic [ref=e331]: מזל טוב! בהצלחה בתפקיד 🎉
+                      - separator [ref=e332]
+                      - generic [ref=e335]:
+                        - text: ✨What’s yours will always be yours ✨ I’m happy to share that I’m starting a new position as Employee Experience Specialist at
+                        - strong [ref=e336]: WSC Sports
+                        - text: "!"
+                    - generic [ref=e337]:
+                      - generic [ref=e338]: 127 reactions
+                      - generic [ref=e339]: • 57 comments
+                  - generic [ref=e340]:
+                    - paragraph [ref=e341]: 1h
+                    - button "Settings menu" [ref=e344]:
+                      - img [ref=e345]
+              - article "Unread notification." [ref=e348] [cursor=pointer]:
+                - generic [ref=e349]:
+                  - generic [ref=e350]:
+                    - figure [ref=e351]:
+                      - img [ref=e352]
+                    - link "View Tzlil Eini’s profile." [ref=e354]:
+                      - /url: /in/tzlil%2Deini%2D85b685246
+                      - img "Tzlil Eini is hiring" [ref=e358]
+                  - 'link "Unread notification. Tzlil Eini posted: אני #hiring. מכירים מישהו שעשוי להתעניין?" [ref=e360]':
+                    - /url: /feed/?highlightedUpdateUrn=urn%3Ali%3Aactivity%3A7429514729406111745&highlightedUpdateType=SHARED_BY_YOUR_NETWORK&origin=SHARED_BY_YOUR_NETWORK&showCommentBox=true
+                    - paragraph [ref=e361]: Unread notification.
+                    - generic [ref=e362]:
+                      - strong [ref=e363]: Tzlil Eini
+                      - text: "posted: אני #hiring. מכירים מישהו שעשוי להתעניין?"
+                  - generic [ref=e364]:
+                    - paragraph [ref=e365]: 1h
+                    - button "Settings menu" [ref=e368]:
+                      - img [ref=e369]
+              - article "Unread notification." [ref=e372] [cursor=pointer]:
+                - generic [ref=e373]:
+                  - figure [ref=e375]:
+                    - img [ref=e376]
+                  - 'link "Unread notification. New from Confidential Careers in Jobs Alert: Latest jobs in UK - Job Alert - 17th February, 2026" [ref=e381]':
+                    - /url: /pulse/latest%2Djobs%2Duk%2Djob%2Dalert%2D17th%2Dfebruary%2D2026%2Dconfidentialcareers%2Dkllzc
+                    - paragraph [ref=e382]: Unread notification.
+                    - generic [ref=e383]:
+                      - text: New from
+                      - strong [ref=e384]: Confidential Careers
+                      - text: "in Jobs Alert: Latest jobs in UK - Job Alert - 17th February, 2026"
+                  - generic [ref=e385]:
+                    - paragraph [ref=e386]: 1h
+                    - button "Settings menu" [ref=e389]:
+                      - img [ref=e390]
+              - article "Unread notification." [ref=e393] [cursor=pointer]:
+                - generic [ref=e394]:
+                  - generic [ref=e395]:
+                    - figure [ref=e396]:
+                      - img [ref=e397]
+                    - link "View Mantas Vaitukaitis’ profile." [ref=e399]:
+                      - /url: /in/mantasvaitukaitis
+                      - img "Mantas Vaitukaitis" [ref=e403]
+                  - generic [ref=e404]:
+                    - link "Unread notification. Mantas Vaitukaitis replied to your comment." [ref=e405]:
+                      - /url: /feed/update/urn%3Ali%3Aactivity%3A7429509893008666624?commentUrn=urn%3Ali%3Acomment%3A%28ugcPost%3A7429509816034844672%2C7429515146655494144%29&dashCommentUrn=urn%3Ali%3Afsd%5Fcomment%3A%287429515146655494144%2Curn%3Ali%3AugcPost%3A7429509816034844672%29&replyUrn=urn%3Ali%3Acomment%3A%28ugcPost%3A7429509816034844672%2C7429517721689747456%29&dashReplyUrn=urn%3Ali%3Afsd%5Fcomment%3A%287429517721689747456%2Curn%3Ali%3AugcPost%3A7429509816034844672%29
+                      - paragraph [ref=e406]: Unread notification.
+                      - generic [ref=e407]:
+                        - strong [ref=e408]: Mantas Vaitukaitis
+                        - text: replied to your comment.
+                    - link [ref=e409]:
+                      - generic [ref=e410]:
+                        - strong [ref=e411]: Oded Ben-Yair
+                        - text: both, honestly. and more. A/B testing at scale is the obvious starting point. swap layout variants programmatically, let the data decide. but visitor behavior personalization is the more interesting direction. different entry points, different contexts, different copy. why serve everyone the same page? still early on figuring out what makes sense to build vs. what's just clever for its own sake.
+                      - separator [ref=e412]
+                      - generic [ref=e413]:
+                        - img [ref=e418]
+                        - generic [ref=e421]: "I'm migrating Skematika off no-code and onto a custom code stack. With AI-native development, there's no longer a reason to accept its ceiling. Complex custom logic // physics-based interactions // deep functionality // generative UI used to require a full engineering team. Now it's a Tuesday. That changes what a design studio can actually deliver. This is the new hero section. One of many possible designs. Still WIP. The stack: - Next.js for performance - Framer Motion for the physics - Sanity for content - AI Agents for the heavy lifting What's left: - The rest of the landing page - Responsive polish - Image conversion and optimization - CMS hookup - Intelligence layer – generative UI/copy variants, still figuring out what makes sense The goal isn't just a website. It's digital infrastructure. No rented land. No vibe-coded bs. Intention and ownership."
+                    - generic [ref=e422]:
+                      - generic [ref=e423]: 4 reactions
+                      - generic [ref=e424]: • 2 comments
+                  - generic [ref=e425]:
+                    - paragraph [ref=e426]: 1h
+                    - button "Settings menu" [ref=e429]:
+                      - img [ref=e430]
+            - button "Show more results" [ref=e434] [cursor=pointer]:
+              - generic [ref=e435]: Show more results
+      - complementary [ref=e436]:
+        - generic [ref=e438]:
+          - iframe [ref=e440]:
+            - generic [ref=f883e2]:
+              - generic [ref=f883e3]: Ad
+              - img "overflow-web-small" [ref=f883e6] [cursor=pointer]
+              - link "LinkedIn" [ref=f883e10] [cursor=pointer]:
+                - /url: https://www.linkedin.com/li/tscp/sct?destinationUrl=https%3A%2F%2Fwww.linkedin.com%2Fpremium%2Fredeem%2Fpromo%3F_ed%3DCwEAAAF114596ur6D_C644yaOCckjiuPmlSNohBRLZWzwWabZZHafL3X39_vkIP4OF8-NIE8HlM%26customKey%3Dwb_c%26redeemTypeV2%3DDISCOUNT%26type%3Dpremium%26src%3Dli-dynamic%26trk%3Dbnr_mktg_btn_jss_wb_PREMIUM_C_JSS_DA_GLOBAL_EN_Winback_1320_Jun25_V3%26upsellOrderOrigin%3DTracking%3Av1%3Abnr_mktg_btn_jss_wb_PREMIUM_C_JSS_DA_GLOBAL_EN_Winback_1320_Jun25_V3%3ADynamic%2520Ads%2520Winback%3AMarketing%26mcid%3D7384368285238349825&trackingEvent=%5B%7B%22eventInfo%22%3A%7B%22appId%22%3A%22com.linkedin.ads.rendering.d_web%22%2C%22eventName%22%3A%22SponsoredRightRailContentActionEvent%22%2C%22topicName%22%3A%22SponsoredRightRailContentActionEvent%22%7D%2C%22eventBody%22%3A%7B%22sponsoredEventHeader%22%3A%7B%22encryptedTrackingData%22%3A%22CwEAAAGcbDFYAeOzFOYK6VrUWgIunuSOiEED-nYTUt8cW9zMH_P8jK1aNfyELf2lOjVnn-Z8HTBDy94jN2ecDVFDP4QoqXd7UtJhVjD-eQ8zhtO85Qhg1FMC8vu00GSuX2YXb2K3jOrpgF_QfgSCKT3VCk6TGII8GKbPETMpLGKfmXNUnZjcTtRuJeKsRS_hBym_3T4Io0hTQJOLbewVd5TJ-rahT4_Ic4msYzGsjA34yZHmDwQITT3Y6MmN8gsiiqSFkxMsrtAbU5R_vNztrQ3vzVl06BzMUxjpKs3WpqEGcpZTs6Cr_tU_BbUwrABo-CoAu1pkRu9ibt72sVd2f0m2Rl2gxYfCbf_A6mC7QVEptY-T2w3_2hZUkxjkeidvaFdtUoEARvNPzQH_EiC5XqAI8BUTPSEfpkLz4tU6088bzi_bzb0jW7phxbAVK5_fFE2W9G15ozkCGhgLpHVdVffwMBrSB0AgzAuLpxcdCY2buM21huaBgvkszIOfU1U_u4wwdADRcxwIbsScBZ31h2Vij_HmH6xTvhJyWDNgljXE5mROObHkX1fK3VDJ58FuY3K6RH6-1GB0m0381chb5AUS7ZmbiiNN_L0tXB8nF4KFZtct4Ta5Awag71ETnkZryge-705E3ZPC-06tLuh8F2e2m5sDsh0sLhJkLCj8npluJt-FA8k_6AsDDIL1MwOFE1ZUt7SgZQm7zfLzkHD-11Nqbp0O8tPAy07dbcuymn75j-tzbx8xm6YWPz7lMuQiK2_K-fryRdFYXkWVWdVxqSw6jXxlHruCQSUE-lexidiffne2GsysmAvvoq0bch6xsA-rOys_5cuaC3Y3frDV-4FBOmC3JM8hxoalDs3smRD0mD-saEzO_nMQ95zHmoXnl-JssClxBjj8uc4q3Js1ok-7HIyRAnceZzDLJgG2FdCXUtvHWob0P9qWMp_tEetqmWmUSjkeXYwCIt2fYGvTXO8G4cAS_dZBZS0givk3jdXrl0uxe6KPZiMyAAZjiou7mj0Fas1SZNvM3CTfOar4x_eg4xeV9SZ52wcOG-8hXHOMOVwVoqzmkI-V05qbPJXUocIcSH33z7Ei7LTM01isoVWZr9ncQ8Zb4gs1PAj9DdnRy1nItvdlSsNdygnV96Z4H6czuEgMo3cRQWJieKbD70Zh%22%7D%2C%22header%22%3A%7B%22pageInstance%22%3A%7B%22pageUrn%22%3A%22urn%3Ali%3Apage%3Ad_flagship3_notifications%22%2C%22trackingId%22%3A%22c0b713a9-dfb0-4e7c-b9b8-41ca27f94a9e%22%7D%2C%22time%22%3A1771341699022%2C%22version%22%3A%220.0.0%22%7D%2C%22requestHeader%22%3A%7B%22pageKey%22%3A%22d_flagship3_notifications%22%2C%22interfaceLocale%22%3A%22en-US%22%7D%7D%7D%5D&csrfToken=ajax%3A2872756275449100236
+              - generic [ref=f883e11]:
+                - heading "Oded, enjoy 50% off 2 months of LinkedIn Premium" [level=2] [ref=f883e14]
+                - generic [ref=f883e15]:
+                  - generic [ref=f883e16]:
+                    - img "Oded" [ref=f883e17]
+                    - generic [ref=f883e18]:
+                      - link "LinkedIn" [ref=f883e19] [cursor=pointer]:
+                        - /url: https://www.linkedin.com/li/tscp/sct?destinationUrl=https%3A%2F%2Fwww.linkedin.com%2Fpremium%2Fredeem%2Fpromo%3F_ed%3DCwEAAAF114596ur6D_C644yaOCckjiuPmlSNohBRLZWzwWabZZHafL3X39_vkIP4OF8-NIE8HlM%26customKey%3Dwb_c%26redeemTypeV2%3DDISCOUNT%26type%3Dpremium%26src%3Dli-dynamic%26trk%3Dbnr_mktg_btn_jss_wb_PREMIUM_C_JSS_DA_GLOBAL_EN_Winback_1320_Jun25_V3%26upsellOrderOrigin%3DTracking%3Av1%3Abnr_mktg_btn_jss_wb_PREMIUM_C_JSS_DA_GLOBAL_EN_Winback_1320_Jun25_V3%3ADynamic%2520Ads%2520Winback%3AMarketing%26mcid%3D7384368285238349825&trackingEvent=%5B%7B%22eventInfo%22%3A%7B%22appId%22%3A%22com.linkedin.ads.rendering.d_web%22%2C%22eventName%22%3A%22SponsoredRightRailContentActionEvent%22%2C%22topicName%22%3A%22SponsoredRightRailContentActionEvent%22%7D%2C%22eventBody%22%3A%7B%22sponsoredEventHeader%22%3A%7B%22encryptedTrackingData%22%3A%22CwEAAAGcbDFYAeOzFOYK6VrUWgIunuSOiEED-nYTUt8cW9zMH_P8jK1aNfyELf2lOjVnn-Z8HTBDy94jN2ecDVFDP4QoqXd7UtJhVjD-eQ8zhtO85Qhg1FMC8vu00GSuX2YXb2K3jOrpgF_QfgSCKT3VCk6TGII8GKbPETMpLGKfmXNUnZjcTtRuJeKsRS_hBym_3T4Io0hTQJOLbewVd5TJ-rahT4_Ic4msYzGsjA34yZHmDwQITT3Y6MmN8gsiiqSFkxMsrtAbU5R_vNztrQ3vzVl06BzMUxjpKs3WpqEGcpZTs6Cr_tU_BbUwrABo-CoAu1pkRu9ibt72sVd2f0m2Rl2gxYfCbf_A6mC7QVEptY-T2w3_2hZUkxjkeidvaFdtUoEARvNPzQH_EiC5XqAI8BUTPSEfpkLz4tU6088bzi_bzb0jW7phxbAVK5_fFE2W9G15ozkCGhgLpHVdVffwMBrSB0AgzAuLpxcdCY2buM21huaBgvkszIOfU1U_u4wwdADRcxwIbsScBZ31h2Vij_HmH6xTvhJyWDNgljXE5mROObHkX1fK3VDJ58FuY3K6RH6-1GB0m0381chb5AUS7ZmbiiNN_L0tXB8nF4KFZtct4Ta5Awag71ETnkZryge-705E3ZPC-06tLuh8F2e2m5sDsh0sLhJkLCj8npluJt-FA8k_6AsDDIL1MwOFE1ZUt7SgZQm7zfLzkHD-11Nqbp0O8tPAy07dbcuymn75j-tzbx8xm6YWPz7lMuQiK2_K-fryRdFYXkWVWdVxqSw6jXxlHruCQSUE-lexidiffne2GsysmAvvoq0bch6xsA-rOys_5cuaC3Y3frDV-4FBOmC3JM8hxoalDs3smRD0mD-saEzO_nMQ95zHmoXnl-JssClxBjj8uc4q3Js1ok-7HIyRAnceZzDLJgG2FdCXUtvHWob0P9qWMp_tEetqmWmUSjkeXYwCIt2fYGvTXO8G4cAS_dZBZS0givk3jdXrl0uxe6KPZiMyAAZjiou7mj0Fas1SZNvM3CTfOar4x_eg4xeV9SZ52wcOG-8hXHOMOVwVoqzmkI-V05qbPJXUocIcSH33z7Ei7LTM01isoVWZr9ncQ8Zb4gs1PAj9DdnRy1nItvdlSsNdygnV96Z4H6czuEgMo3cRQWJieKbD70Zh%22%7D%2C%22header%22%3A%7B%22pageInstance%22%3A%7B%22pageUrn%22%3A%22urn%3Ali%3Apage%3Ad_flagship3_notifications%22%2C%22trackingId%22%3A%22c0b713a9-dfb0-4e7c-b9b8-41ca27f94a9e%22%7D%2C%22time%22%3A1771341699022%2C%22version%22%3A%220.0.0%22%7D%2C%22requestHeader%22%3A%7B%22pageKey%22%3A%22d_flagship3_notifications%22%2C%22interfaceLocale%22%3A%22en-US%22%7D%7D%7D%5D&csrfToken=ajax%3A2872756275449100236
+                        - img "LinkedIn" [ref=f883e20]
+                      - tooltip "LinkedIn" [ref=f883e21]
+                  - img [ref=f883e22]
+                - generic [ref=f883e23]:
+                  - heading "Boost your job search with AI-powered insights" [level=2] [ref=f883e26]
+                  - link "Redeem offer" [ref=f883e28] [cursor=pointer]:
+                    - /url: https://www.linkedin.com/li/tscp/sct?destinationUrl=https%3A%2F%2Fwww.linkedin.com%2Fpremium%2Fredeem%2Fpromo%3F_ed%3DCwEAAAF114596ur6D_C644yaOCckjiuPmlSNohBRLZWzwWabZZHafL3X39_vkIP4OF8-NIE8HlM%26customKey%3Dwb_c%26redeemTypeV2%3DDISCOUNT%26type%3Dpremium%26src%3Dli-dynamic%26trk%3Dbnr_mktg_btn_jss_wb_PREMIUM_C_JSS_DA_GLOBAL_EN_Winback_1320_Jun25_V3%26upsellOrderOrigin%3DTracking%3Av1%3Abnr_mktg_btn_jss_wb_PREMIUM_C_JSS_DA_GLOBAL_EN_Winback_1320_Jun25_V3%3ADynamic%2520Ads%2520Winback%3AMarketing%26mcid%3D7384368285238349825&trackingEvent=%5B%7B%22eventInfo%22%3A%7B%22appId%22%3A%22com.linkedin.ads.rendering.d_web%22%2C%22eventName%22%3A%22SponsoredRightRailContentActionEvent%22%2C%22topicName%22%3A%22SponsoredRightRailContentActionEvent%22%7D%2C%22eventBody%22%3A%7B%22sponsoredEventHeader%22%3A%7B%22encryptedTrackingData%22%3A%22CwEAAAGcbDFYAeOzFOYK6VrUWgIunuSOiEED-nYTUt8cW9zMH_P8jK1aNfyELf2lOjVnn-Z8HTBDy94jN2ecDVFDP4QoqXd7UtJhVjD-eQ8zhtO85Qhg1FMC8vu00GSuX2YXb2K3jOrpgF_QfgSCKT3VCk6TGII8GKbPETMpLGKfmXNUnZjcTtRuJeKsRS_hBym_3T4Io0hTQJOLbewVd5TJ-rahT4_Ic4msYzGsjA34yZHmDwQITT3Y6MmN8gsiiqSFkxMsrtAbU5R_vNztrQ3vzVl06BzMUxjpKs3WpqEGcpZTs6Cr_tU_BbUwrABo-CoAu1pkRu9ibt72sVd2f0m2Rl2gxYfCbf_A6mC7QVEptY-T2w3_2hZUkxjkeidvaFdtUoEARvNPzQH_EiC5XqAI8BUTPSEfpkLz4tU6088bzi_bzb0jW7phxbAVK5_fFE2W9G15ozkCGhgLpHVdVffwMBrSB0AgzAuLpxcdCY2buM21huaBgvkszIOfU1U_u4wwdADRcxwIbsScBZ31h2Vij_HmH6xTvhJyWDNgljXE5mROObHkX1fK3VDJ58FuY3K6RH6-1GB0m0381chb5AUS7ZmbiiNN_L0tXB8nF4KFZtct4Ta5Awag71ETnkZryge-705E3ZPC-06tLuh8F2e2m5sDsh0sLhJkLCj8npluJt-FA8k_6AsDDIL1MwOFE1ZUt7SgZQm7zfLzkHD-11Nqbp0O8tPAy07dbcuymn75j-tzbx8xm6YWPz7lMuQiK2_K-fryRdFYXkWVWdVxqSw6jXxlHruCQSUE-lexidiffne2GsysmAvvoq0bch6xsA-rOys_5cuaC3Y3frDV-4FBOmC3JM8hxoalDs3smRD0mD-saEzO_nMQ95zHmoXnl-JssClxBjj8uc4q3Js1ok-7HIyRAnceZzDLJgG2FdCXUtvHWob0P9qWMp_tEetqmWmUSjkeXYwCIt2fYGvTXO8G4cAS_dZBZS0givk3jdXrl0uxe6KPZiMyAAZjiou7mj0Fas1SZNvM3CTfOar4x_eg4xeV9SZ52wcOG-8hXHOMOVwVoqzmkI-V05qbPJXUocIcSH33z7Ei7LTM01isoVWZr9ncQ8Zb4gs1PAj9DdnRy1nItvdlSsNdygnV96Z4H6czuEgMo3cRQWJieKbD70Zh%22%7D%2C%22header%22%3A%7B%22pageInstance%22%3A%7B%22pageUrn%22%3A%22urn%3Ali%3Apage%3Ad_flagship3_notifications%22%2C%22trackingId%22%3A%22c0b713a9-dfb0-4e7c-b9b8-41ca27f94a9e%22%7D%2C%22time%22%3A1771341699022%2C%22version%22%3A%220.0.0%22%7D%2C%22requestHeader%22%3A%7B%22pageKey%22%3A%22d_flagship3_notifications%22%2C%22interfaceLocale%22%3A%22en-US%22%7D%7D%7D%5D&csrfToken=ajax%3A2872756275449100236
+          - generic "LinkedIn Footer Content" [ref=e441]:
+            - generic [ref=e442]:
+              - list [ref=e443]:
+                - listitem [ref=e444]:
+                  - link "About" [ref=e445] [cursor=pointer]:
+                    - /url: https://about.linkedin.com/
+                    - generic [ref=e446]: About
+                - listitem [ref=e447]:
+                  - link "Accessibility" [ref=e448] [cursor=pointer]:
+                    - /url: https://www.linkedin.com/accessibility
+                    - generic [ref=e449]: Accessibility
+                - listitem [ref=e450]:
+                  - link "Help Center" [ref=e451] [cursor=pointer]:
+                    - /url: https://www.linkedin.com/help/linkedin?trk=footer_d_flagship3_notifications
+                    - generic [ref=e452]: Help Center
+                - listitem [ref=e453]:
+                  - button "Privacy & Terms" [ref=e455] [cursor=pointer]:
+                    - generic [ref=e457]:
+                      - text: Privacy & Terms
+                      - img [ref=e458]
+                - listitem [ref=e460]:
+                  - link "Ad Choices" [ref=e461] [cursor=pointer]:
+                    - /url: https://www.linkedin.com/help/linkedin/answer/62931
+                    - generic [ref=e462]: Ad Choices
+                - listitem [ref=e463]:
+                  - link "Advertising" [ref=e464] [cursor=pointer]:
+                    - /url: https://www.linkedin.com/ad/start?trk=n_nav_ads_rr
+                    - generic [ref=e465]: Advertising
+                - listitem [ref=e466]:
+                  - button "Business Services" [ref=e468] [cursor=pointer]:
+                    - generic [ref=e470]:
+                      - text: Business Services
+                      - img [ref=e471]
+                - listitem [ref=e473]:
+                  - button "Get the LinkedIn app" [ref=e476] [cursor=pointer]
+                - listitem [ref=e477]:
+                  - button "More options" [ref=e478] [cursor=pointer]: More
+              - generic [ref=e479]:
+                - img "LinkedIn" [ref=e480]:
+                  - img [ref=e481]
+                - text: LinkedIn Corporation © 2026
+    - generic:
+      - generic:
+        - complementary:
+          - generic [ref=e484]:
+            - generic [ref=e486] [cursor=pointer]:
+              - generic [ref=e487]:
+                - img "Oded Ben-Yair" [ref=e488]
+                - generic [ref=e490]: Status is online
+              - button "You are on the messaging overlay. Press enter to open the list of conversations." [ref=e491]:
+                - generic [ref=e492]:
+                  - generic [ref=e493]: Messaging
+                  - generic [ref=e494]: You are on the messaging overlay. Press enter to open the list of conversations.
+            - generic [ref=e495]:
+              - button "Open messenger dropdown menu" [ref=e497] [cursor=pointer]:
+                - img "Open messenger dropdown menu" [ref=e498]
+              - button "Compose message" [ref=e501] [cursor=pointer]:
+                - img [ref=e502]
+                - generic [ref=e504]: Compose message
+              - button "You are on the messaging overlay. Press enter to open the list of conversations." [ref=e505] [cursor=pointer]:
+                - img [ref=e506]
+                - generic [ref=e508]: You are on the messaging overlay. Press enter to open the list of conversations.
+          - dialog "Messaging" [ref=e509]:
+            - generic [ref=e510]:
+              - generic [ref=e511] [cursor=pointer]:
+                - generic [ref=e513]:
+                  - img "Ahtisham Shafique" [ref=e517]
+                  - heading "Ahtisham Shafique" [active] [level=2] [ref=e519]
+                - button "Close your conversation with Oded Ben-Yair and Ahtisham Shafique" [ref=e521]:
+                  - img [ref=e522]
+                  - generic [ref=e524]: Close your conversation with Oded Ben-Yair and Ahtisham Shafique
+              - generic [ref=e526]:
+                - link "View my portfolio" [ref=e529] [cursor=pointer]:
+                  - /url: https://www.upwork.com/freelancers/~0119c7d6915aeba607
+                  - strong [ref=e530]: View my portfolio
+                - list [ref=e533]:
+                  - listitem
+                  - listitem [ref=e534]:
+                    - time [ref=e535]: Today
+                    - generic [ref=e536]: Ahtisham Shafique sent the following message at 2:10 PM
+                    - generic [ref=e537]:
+                      - link "View Ahtisham’s profile Ahtisham Shafique" [ref=e538] [cursor=pointer]:
+                        - /url: https://www.linkedin.com/in/ACoAADf8xlcBlcd-d63Z3y6JwP7bDFE7Vdiyd1Y
+                        - generic [ref=e539]: View Ahtisham’s profile
+                        - img "Ahtisham Shafique" [ref=e540]
+                      - generic [ref=e541]:
+                        - generic [ref=e542]:
+                          - link "Ahtisham Shafique" [ref=e543] [cursor=pointer]:
+                            - /url: https://www.linkedin.com/in/ACoAADf8xlcBlcd-d63Z3y6JwP7bDFE7Vdiyd1Y
+                            - generic [ref=e544]: Ahtisham Shafique
+                          - img "LinkedIn Premium" [ref=e545]:
+                            - img [ref=e546]
+                        - time [ref=e548]: • 2:10 PM
+                      - generic [ref=e549]:
+                        - heading "Opportunity AI Founding Engineer" [level=3] [ref=e550]
+                        - paragraph [ref=e553]:
+                          - strong [ref=e554]: Hi Oded,
+                          - text: We are extending an exclusive opportunity for a
+                          - strong [ref=e555]: AI Founding Engineer
+                          - text: to join our remote team and play a pivotal role in building the next generation of AI-driven SEO & GEO technologies.
+                          - text: This is a full-time position operating
+                          - strong [ref=e556]: Monday–Friday, 9 AM–7 PM (Amsterdam Time)
+                          - text: .
+                          - strong [ref=e557]: Why This Role Stands Out
+                          - text: You will be leading high-impact initiatives that directly influence how AI interprets, generates, and optimizes global content. This role is ideal for someone who thrives at the intersection of advanced AI research, real-world product engineering, and next-level content optimization.
+                          - strong [ref=e558]: Your Key Responsibilities
+                          - list [ref=e559]:
+                            - listitem [ref=e560]: Fine-tune and optimize world-class LLMs (GPT-4, Claude, Llama, Mistral) to deliver authentic, human-seamless, SEO-optimized output
+                            - listitem [ref=e561]: Architect scalable backends, APIs, and microservices built on Python (FastAPI/Django) and Node.js
+                            - listitem [ref=e562]: Design sophisticated prompt-engineering and humanization frameworks to elevate content quality and naturalness
+                            - listitem [ref=e563]: Build advanced algorithms for Generative Engine Optimization (GEO), semantic analysis, and AI/SERP-ranking enhancement
+                            - listitem [ref=e564]: Develop RAG systems, vector databases, and knowledge graph pipelines to power high-performance SEO operations
+                          - strong [ref=e565]: What You Bring
+                          - list [ref=e566]:
+                            - listitem [ref=e567]: 5+ years of backend engineering experience with production-grade AI infrastructures
+                            - listitem [ref=e568]: Deep expertise in transformer models, LLM fine-tuning, and humanization techniques
+                            - listitem [ref=e569]: Strong command of SEO fundamentals, structured data, and GEO methodologies
+                            - listitem [ref=e570]: Hands-on proficiency with Python, Node.js, GCP (preferred), vector DBs, and MLOps tooling
+                          - strong [ref=e571]: 📩 How to Apply
+                          - text: JD link is attached, Please review it.
+                          - link "https://drive.google.com/file/d/1A9KK2enhC1qKfhkCeEOzQax5eGDSB6HN/view?usp=sharing" [ref=e572] [cursor=pointer]:
+                            - /url: https://drive.google.com/file/d/1A9KK2enhC1qKfhkCeEOzQax5eGDSB6HN/view?usp=sharing
+                          - text: "Please Provide:"
+                          - list [ref=e573]:
+                            - listitem [ref=e574]:
+                              - text: An updated resume showcasing your
+                              - strong [ref=e575]: AI/ML, SEO/GEO.
+                            - listitem [ref=e576]: GitHub or portfolio links highlighting LLM fine-tuning, humanization workflows, or backend systems
+                            - listitem [ref=e577]: A Cover Letter
+                          - strong [ref=e578]: Best regards,
+                          - text: Ahtisham Shafique
+                          - text: Talent Acquisition Specialist
+                  - listitem [ref=e579]:
+                    - generic [ref=e580]: Oded Ben-Yair sent the following messages at 3:21 PM
+                    - generic [ref=e581]:
+                      - link "View Oded’s profile Oded Ben-Yair" [ref=e582] [cursor=pointer]:
+                        - /url: https://www.linkedin.com/in/ACoAABEJXkIBpHRsj0zFy126tNlNuHKxpGElSpQ
+                        - generic [ref=e583]: View Oded’s profile
+                        - img "Oded Ben-Yair" [ref=e584]
+                      - generic [ref=e585]:
+                        - generic [ref=e586]:
+                          - link "Oded Ben-Yair" [ref=e587] [cursor=pointer]:
+                            - /url: https://www.linkedin.com/in/ACoAABEJXkIBpHRsj0zFy126tNlNuHKxpGElSpQ
+                            - generic [ref=e588]: Oded Ben-Yair
+                          - img "LinkedIn Verified" [ref=e589]
+                        - time [ref=e591]: • 3:21 PM
+                      - generic [ref=e593]:
+                        - paragraph [ref=e595]: Hi Ahtisham, thank you for reaching out and for considering me for the AI Founding Engineer role. The position sounds like a really iHi Ahtisham, thank you for reaching out and for considering me for the AI Founding Engineer role. The position sounds like a really interesting challenge, especially the LLM optimization and RAG pipeline work. At this point though, I'm focusing my search on hybrid or on site positions rather than fully remote setups. I appreciate the opportunity and wish you the best in finding the right fit for the team. Best, Odednteresting challenge, especially the LLM optimization and RAG pipeline work. At this point though, I'm focusing my search on hybrid
+                        - generic "Sent at 2/17/2026, 3:21 PM" [ref=e596]:
+                          - img [ref=e597]
+                  - listitem [ref=e599]
+                  - listitem
+                - generic [ref=e600]:
+                  - generic [ref=e601]:
+                    - generic [ref=e603]:
+                      - textbox "Write a message…" [ref=e604]:
+                        - paragraph [ref=e605]
+                      - text: Write a message…
+                    - button "Maximize compose field" [ref=e607] [cursor=pointer]:
+                      - img [ref=e608]
+                      - generic [ref=e610]: Maximize compose field
+                  - generic [ref=e611]:
+                    - generic [ref=e612]:
+                      - button "Attach an image to your conversation with Ahtisham Shafique" [ref=e614] [cursor=pointer]:
+                        - img [ref=e615]
+                        - generic [ref=e617]: Attach an image to your conversation with Ahtisham Shafique
+                      - button "Attach a file to your conversation with Ahtisham Shafique" [ref=e619] [cursor=pointer]:
+                        - img [ref=e620]
+                        - generic [ref=e622]: Attach a file to your conversation with Ahtisham Shafique
+                      - button "Open Emoji Keyboard" [ref=e625] [cursor=pointer]:
+                        - generic:
+                          - img
+                        - generic [ref=e626]: Open Emoji Keyboard
+                    - generic [ref=e627]:
+                      - button "Send" [disabled] [ref=e629]
+                      - button "Open send options" [ref=e632] [cursor=pointer]:
+                        - img [ref=e633]
+                        - generic [ref=e635]: Open send options
+        - complementary "AI-powered assistant to get help with your career, jobs etc"

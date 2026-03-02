@@ -1,0 +1,363 @@
+- generic [ref=e1]:
+  - generic:
+    - region "Toast message":
+      - heading "0 notifications total" [level=2] [ref=e3]
+      - alert
+  - region [ref=e15]
+  - generic [ref=e16]:
+    - generic [ref=e116]:
+      - button "Skip to search" [ref=e117] [cursor=pointer]:
+        - generic [ref=e118]: Skip to search
+      - button "Skip to main content" [ref=e119] [cursor=pointer]:
+        - generic [ref=e120]: Skip to main content
+      - button "Keyboard shortcuts" [ref=e121] [cursor=pointer]:
+        - generic [ref=e122]: Keyboard shortcuts
+      - button "Close jump menu" [ref=e123] [cursor=pointer]:
+        - img [ref=e124]
+        - generic [ref=e126]: Close jump menu
+    - banner "Global Navigation" [ref=e127]:
+      - generic [ref=e128]:
+        - link "LinkedIn" [ref=e129] [cursor=pointer]:
+          - /url: https://www.linkedin.com/feed/?nis=true
+          - img "LinkedIn" [ref=e132]:
+            - img [ref=e133]
+        - generic [ref=e137]:
+          - combobox "Search" [ref=e138]: AI agent production Israel
+          - generic:
+            - img
+        - navigation "Primary Navigation" [ref=e139]:
+          - list [ref=e140]:
+            - listitem [ref=e141]:
+              - link "new feed updates notifications Home" [ref=e142] [cursor=pointer]:
+                - /url: https://www.linkedin.com/feed/?nis=true&
+                - generic [ref=e143]:
+                  - generic [ref=e146]: new feed updates notifications
+                  - img [ref=e150]
+                - generic "Home" [ref=e152]
+            - listitem [ref=e153]:
+              - link "My Network" [ref=e154] [cursor=pointer]:
+                - /url: https://www.linkedin.com/mynetwork/?
+                - img [ref=e158]
+                - generic "My Network" [ref=e160]
+            - listitem [ref=e161]:
+              - link "Jobs" [ref=e162] [cursor=pointer]:
+                - /url: https://www.linkedin.com/jobs/?
+                - img [ref=e166]
+                - generic "Jobs" [ref=e168]
+            - listitem [ref=e169]:
+              - link "Messaging" [ref=e170] [cursor=pointer]:
+                - /url: https://www.linkedin.com/messaging/?
+                - img [ref=e174]
+                - generic "Messaging" [ref=e176]
+            - listitem [ref=e177]:
+              - link "Notifications" [ref=e178] [cursor=pointer]:
+                - /url: https://www.linkedin.com/notifications/?
+                - img [ref=e182]
+                - generic "Notifications" [ref=e184]
+            - listitem [ref=e185]:
+              - button "Oded Ben-Yair Me" [ref=e187] [cursor=pointer]:
+                - img "Oded Ben-Yair" [ref=e188]
+                - generic [ref=e189]:
+                  - text: Me
+                  - img [ref=e190]
+            - listitem [ref=e192]:
+              - button "For Business" [ref=e194] [cursor=pointer]:
+                - img [ref=e198]
+                - generic "For Business" [ref=e200]:
+                  - text: For Business
+                  - img [ref=e201]
+            - listitem [ref=e203]:
+              - 'link "Reactivate Premium: 50% Off" [ref=e205] [cursor=pointer]':
+                - /url: http://www.linkedin.com/premium/redeem/?_ed=0_bvLJH59RTSY-u5c6PMUa4IW0M54p9mxZpuVkfRvTl7r&upsellOrderOrigin=Tracking%3Av1%3Apremium_nav_upsell_text_winback%3ANav%3AIn-Product&referenceId=l4exesgVTw%2BmZX7XpTWCiw%3D%3D&customKey=wb_c&redeemTypeV2=DISCOUNT&destRedirectURL=https%3A%2F%2Fwww.linkedin.com%2Fsearch%2Fresults%2Fcontent%2F%3Fkeywords%3DAI%2520agent%2520production%2520Israel%26datePosted%3D%2522past-24h%2522%26sortBy%3D%2522date_posted%2522
+                - generic [ref=e207]: "Reactivate Premium: 50% Off"
+    - generic [ref=e208]:
+      - navigation "Search filters" [ref=e211]:
+        - list [ref=e212]:
+          - listitem [ref=e213]
+          - listitem [ref=e214]
+          - listitem [ref=e215]
+          - listitem [ref=e216]
+          - listitem [ref=e217]
+          - listitem [ref=e218]
+          - listitem [ref=e219]
+      - generic [ref=e221]:
+        - main [ref=e222]:
+          - heading "Search results for AI agent production Israel. There are 3 results. Currently on the page 1 of 1 search result page." [active] [level=1] [ref=e223]
+          - generic [ref=e227]:
+            - list [ref=e230]:
+              - listitem [ref=e231]:
+                - article [ref=e235]:
+                  - generic [ref=e237]:
+                    - heading "Feed post" [level=2] [ref=e238]
+                    - generic [ref=e239]:
+                      - generic [ref=e240]:
+                        - generic [ref=e241]:
+                          - generic [ref=e242]:
+                            - link "View Tal Cordova’s graphic link" [ref=e243] [cursor=pointer]:
+                              - /url: https://www.linkedin.com/in/tal-cordova?miniProfileUrn=urn%3Ali%3Afsd_profile%3AACoAAC3-POQBceZz0WZT1TSZi3VgpcJ3Fl15Ryo
+                              - img "View Tal Cordova’s graphic link" [ref=e247]
+                            - generic [ref=e248]:
+                              - 'link "View: Tal Cordova Verified • 2nd Data Scientist" [ref=e249] [cursor=pointer]':
+                                - /url: https://www.linkedin.com/in/tal-cordova?miniProfileUrn=urn%3Ali%3Afsd_profile%3AACoAAC3-POQBceZz0WZT1TSZi3VgpcJ3Fl15Ryo
+                                - generic [ref=e250]:
+                                  - generic [ref=e252]:
+                                    - generic [ref=e253]: Tal Cordova
+                                    - generic [ref=e254]: Tal Cordova
+                                  - generic [ref=e255]:
+                                    - generic [ref=e256]:
+                                      - img [ref=e257]
+                                      - text: • 2nd
+                                    - generic [ref=e258]: Verified • 2nd
+                                - generic [ref=e259]:
+                                  - generic [ref=e260]: Data Scientist
+                                  - generic [ref=e261]: Data Scientist
+                              - generic [ref=e262]:
+                                - generic [ref=e263]:
+                                  - text: 18h • Edited •
+                                  - img [ref=e266]
+                                - generic [ref=e268]: 18 hours ago • Edited • Visible to anyone on or off LinkedIn
+                          - button "Follow Tal Cordova" [ref=e269] [cursor=pointer]:
+                            - img [ref=e270]
+                            - generic [ref=e271]: Follow
+                        - button "Open control menu for post by Tal Cordova" [ref=e274] [cursor=pointer]:
+                          - img [ref=e275]
+                      - generic [ref=e278]:
+                        - generic [ref=e281]:
+                          - text: 𝗪𝗮𝗻𝘁 𝘁𝗼 𝗯𝘂𝗶𝗹𝗱 𝗮𝗻 𝗔𝗜-𝗽𝗼𝘄𝗲𝗿𝗲𝗱 𝗠𝗩𝗣? 🚀
+                          - text: Registration is now open for the AI System Design course by
+                          - link "DataNights" [ref=e282] [cursor=pointer]:
+                            - /url: https://www.linkedin.com/company/datanights/
+                            - generic [ref=e284]: DataNights
+                          - text: (a
+                          - link "Datahack" [ref=e285] [cursor=pointer]:
+                            - /url: https://www.linkedin.com/company/datahack/
+                            - generic [ref=e287]: Datahack
+                          - text: initiative).
+                          - text: This isn't a theoretical course. Over 6 weeks, 𝘀𝘁𝗮𝗿𝘁𝗶𝗻𝗴 𝗠𝗮𝗿𝗰𝗵 𝟰𝘁𝗵, you’ll work in small groups to build a real AI-powered feature or MVP.
+                          - text: "𝗪𝗵𝗮𝘁 𝘄𝗲’𝗿𝗲 𝗯𝘂𝗶𝗹𝗱𝗶𝗻𝗴 𝘄𝗶𝘁𝗵:"
+                          - text: Agents, tools & function calling
+                          - text: RAG & data pipelines
+                          - text: MCP & multi-step workflows
+                          - text: Model serving & inference
+                          - text: Prompt engineering
+                          - text: Evaluation, cost & production considerations
+                          - text: 𝗪𝗵𝗼 𝘄𝗶𝗹𝗹 𝘁𝗲𝗮𝗰𝗵 𝘆𝗼𝘂?
+                          - text: "We have a great lineup of lecturers leading the sessions:"
+                          - link "Or Levi" [ref=e289] [cursor=pointer]:
+                            - /url: /in/orlevi/
+                          - text: "|"
+                          - link "Israel Sofer" [ref=e291] [cursor=pointer]:
+                            - /url: /in/israelsofer/
+                          - text: "|"
+                          - link "Almog Baku (vi/vim)" [ref=e293] [cursor=pointer]:
+                            - /url: /in/almogbaku/
+                          - text: "|"
+                          - link "Gilad Rubin" [ref=e295] [cursor=pointer]:
+                            - /url: /in/gilad-rubin-2b72b3218/
+                          - text: "|"
+                          - link "Yael Oshri Balla" [ref=e297] [cursor=pointer]:
+                            - /url: /in/yael-oshri-balla-6b56686/
+                          - text: "|"
+                          - link "Daniel Marcous" [ref=e299] [cursor=pointer]:
+                            - /url: /in/dmarcous/
+                          - text: 𝗪𝗵𝗼 𝘀𝗵𝗼𝘂𝗹𝗱 𝗮𝗽𝗽𝗹𝘆?
+                          - text: Data Scientists, Software Engineers, and ML Engineers who have a specific AI product idea and are ready to get their hands dirty.
+                          - text: The course is part of DataNights, a program by DataHack. We are a nonprofit dedicated to advancing women, diversity, and knowledge-sharing within Israel’s AI and Data Science ecosystem
+                          - text: "👉 Secure your spot here:"
+                          - link "https://lnkd.in/d_sRYP9Y" [ref=e300] [cursor=pointer]:
+                            - /url: https://lnkd.in/d_sRYP9Y
+                          - text: 💬 Questions? Feel free to reach out to me directly!
+                        - button "see more, visually reveals content which is already detected by screen readers" [ref=e301] [cursor=pointer]:
+                          - generic [ref=e302]: …more
+                      - generic [ref=e304]:
+                        - button "Activate to view larger image, No alternative text description for this image" [ref=e306] [cursor=pointer]:
+                          - generic [ref=e307]: Activate to view larger image,
+                          - img "No alternative text description for this image" [ref=e310]
+                        - generic [ref=e311]: Activate to view larger image,
+                      - generic [ref=e312]:
+                        - list [ref=e316]:
+                          - listitem [ref=e317]:
+                            - button "11 reactions" [ref=e318] [cursor=pointer]:
+                              - img "like" [ref=e319]
+                              - img "celebrate" [ref=e320]
+                              - generic [ref=e321]: "11"
+                          - listitem [ref=e322]:
+                            - list [ref=e323]:
+                              - listitem [ref=e324]:
+                                - button "1 comment on Tal Cordova’s post" [ref=e325] [cursor=pointer]:
+                                  - generic [ref=e326]: 1 comment
+                                - text: ·
+                              - listitem [ref=e327]:
+                                - button "2 reposts of Tal Cordova’s post" [ref=e328] [cursor=pointer]:
+                                  - generic [ref=e329]: 2 reposts
+                        - generic [ref=e330]:
+                          - generic [ref=e331]:
+                            - button "React Like" [ref=e332] [cursor=pointer]:
+                              - generic [ref=e334]:
+                                - img [ref=e335]
+                                - generic [ref=e336]: Like
+                            - button "Open reactions menu":
+                              - img [ref=e338] [cursor=pointer]
+                          - button "Comment" [ref=e342] [cursor=pointer]:
+                            - img [ref=e343]
+                            - generic [ref=e344]: Comment
+                          - button "Repost" [ref=e347] [cursor=pointer]:
+                            - img [ref=e348]
+                            - generic [ref=e349]: Repost
+                          - button "Send in a private message" [ref=e352] [cursor=pointer]:
+                            - img [ref=e353]
+                            - generic [ref=e355]: Send
+              - listitem [ref=e356]:
+                - article [ref=e360]:
+                  - generic [ref=e362]:
+                    - heading "Feed post" [level=2] [ref=e363]
+                    - generic [ref=e364]:
+                      - generic [ref=e365]:
+                        - generic [ref=e366]:
+                          - generic [ref=e367]:
+                            - link "Datahack, graphic." [ref=e368] [cursor=pointer]:
+                              - /url: https://www.linkedin.com/company/datahack/posts
+                            - generic [ref=e372]:
+                              - 'link "View: Datahack 1,728 followers" [ref=e373] [cursor=pointer]':
+                                - /url: https://www.linkedin.com/company/datahack/posts
+                                - generic [ref=e376]:
+                                  - generic [ref=e378]: Datahack
+                                  - generic [ref=e380]: Datahack
+                                - generic [ref=e381]:
+                                  - generic [ref=e382]: 1,728 followers
+                                  - generic [ref=e383]: 1,728 followers
+                              - generic [ref=e384]:
+                                - generic [ref=e385]:
+                                  - text: 21h •
+                                  - img [ref=e388]
+                                - generic [ref=e390]: 21 hours ago • Visible to anyone on or off LinkedIn
+                          - button "Follow Datahack" [ref=e391] [cursor=pointer]:
+                            - img [ref=e392]
+                            - generic [ref=e393]: Follow
+                        - button "Open control menu for post by Datahack" [ref=e396] [cursor=pointer]:
+                          - img [ref=e397]
+                      - generic [ref=e400]:
+                        - generic [ref=e403]:
+                          - text: AI System Design Course | DataNights
+                          - text: Want to turn an AI-based idea into a real, working system?
+                          - text: Registration is now open for the AI System Design course by DataNights.
+                          - text: This is a 6-week, 𝘀𝘁𝗮𝗿𝘁𝗶𝗻𝗴 𝟰.𝟯.𝟮𝟲, hands-on program focused on building a real AI-powered feature or MVP - not a demo. Participants work in small groups with close industry mentorship, combining expert-led lectures and practical implementation.
+                          - text: "What you’ll work with:"
+                          - text: Agents, tools & function calling
+                          - text: RAG & data pipelines
+                          - text: MCP & multi-step workflows
+                          - text: Model serving & inference
+                          - text: Prompt engineering
+                          - text: Evaluation, cost & production considerations
+                          - text: Who is it for?
+                          - text: Data Scientists, Data / Software Engineers, AI / ML Engineers
+                          - text: Participants should come with an AI-based product or feature idea and commit to building it throughout the program.
+                          - text: Who are the lecturers?
+                          - link "Or Levi" [ref=e405] [cursor=pointer]:
+                            - /url: /in/orlevi/
+                          - link "Israel Sofer" [ref=e407] [cursor=pointer]:
+                            - /url: /in/israelsofer/
+                          - link "Almog Baku (vi/vim)" [ref=e409] [cursor=pointer]:
+                            - /url: /in/almogbaku/
+                          - link "Gilad Rubin" [ref=e411] [cursor=pointer]:
+                            - /url: /in/gilad-rubin-2b72b3218/
+                          - link "Yael Oshri Balla" [ref=e413] [cursor=pointer]:
+                            - /url: /in/yael-oshri-balla-6b56686/
+                          - link "Daniel Marcous" [ref=e415] [cursor=pointer]:
+                            - /url: /in/dmarcous/
+                          - text: The course is part of DataNights, a program by DataHack, a nonprofit dedicated to advancing women, diversity, and knowledge-sharing in Israel’s AI and Data Science ecosystem.
+                          - text: "👉 Registration form:"
+                          - link "https://lnkd.in/d8z_icv8" [ref=e416] [cursor=pointer]:
+                            - /url: https://lnkd.in/d8z_icv8
+                          - text: "💬 Questions? Reach out:"
+                          - link "Tal Cordova" [ref=e418] [cursor=pointer]:
+                            - /url: /in/tal-cordova/
+                          - text: ","
+                          - link "Sharon Cooper" [ref=e420] [cursor=pointer]:
+                            - /url: /in/coopersh/
+                          - text: "*This course is paid for by the participants' employers —please ensure that your employers are willing to do so. The purpose of the payment is to support the organization's other activities. For further information regarding payment, please refer to the Q&A file"
+                          - link "https://lnkd.in/dNUEW9qK" [ref=e421] [cursor=pointer]:
+                            - /url: https://lnkd.in/dNUEW9qK
+                          - text: .
+                        - button "see more, visually reveals content which is already detected by screen readers" [ref=e422] [cursor=pointer]:
+                          - generic [ref=e423]: …more
+                      - generic [ref=e424]:
+                        - 'link "Open article: DataNights AI System Design FAQ by docs.google.com, graphic" [ref=e426] [cursor=pointer]':
+                          - /url: https://docs.google.com/document/d/1TH6gvq_NLMPEevklizCvZM_T8XR71FHG6BC2mjfi9VY/edit?tab=t.0#heading=h.ch8jisv1e69
+                        - link "DataNights AI System Design FAQ" [ref=e431] [cursor=pointer]:
+                          - /url: https://docs.google.com/document/d/1TH6gvq_NLMPEevklizCvZM_T8XR71FHG6BC2mjfi9VY/edit?tab=t.0#heading=h.ch8jisv1e69
+                          - generic [ref=e434]:
+                            - generic [ref=e436]: DataNights AI System Design FAQ
+                            - generic [ref=e437]: docs.google.com
+                      - generic [ref=e438]:
+                        - list [ref=e442]:
+                          - listitem [ref=e443]:
+                            - button "14 reactions" [ref=e444] [cursor=pointer]:
+                              - img "like" [ref=e445]
+                              - img "celebrate" [ref=e446]
+                              - generic [ref=e447]: "14"
+                          - listitem [ref=e448]:
+                            - list [ref=e449]:
+                              - listitem [ref=e450]:
+                                - button "3 comments on Datahack’s post" [ref=e451] [cursor=pointer]:
+                                  - generic [ref=e452]: 3 comments
+                                - text: ·
+                              - listitem [ref=e453]:
+                                - button "3 reposts of Datahack’s post" [ref=e454] [cursor=pointer]:
+                                  - generic [ref=e455]: 3 reposts
+                        - generic [ref=e456]:
+                          - generic [ref=e457]:
+                            - button "React Like" [ref=e458] [cursor=pointer]:
+                              - generic [ref=e460]:
+                                - img [ref=e461]
+                                - generic [ref=e462]: Like
+                            - button "Open reactions menu":
+                              - img [ref=e464] [cursor=pointer]
+                          - button "Comment" [ref=e468] [cursor=pointer]:
+                            - img [ref=e469]
+                            - generic [ref=e470]: Comment
+                          - button "Repost" [ref=e473] [cursor=pointer]:
+                            - img [ref=e474]
+                            - generic [ref=e475]: Repost
+                          - button "Send in a private message" [ref=e478] [cursor=pointer]:
+                            - img [ref=e479]
+                            - generic [ref=e481]: Send
+            - list [ref=e484]:
+              - listitem [ref=e485]:
+                - generic [ref=e486]:
+                  - generic [ref=e487]:
+                    - paragraph [ref=e488]: Are these results helpful?
+                    - paragraph [ref=e489]: Your feedback helps us improve search results
+                  - generic [ref=e490]:
+                    - button "Are these results helpful? Yes, these search results are helpful" [ref=e491] [cursor=pointer]:
+                      - img [ref=e492]
+                    - button "Are these results helpful? No, these search results are not helpful" [ref=e495] [cursor=pointer]:
+                      - img [ref=e496]
+        - complementary "Search suggestions" [ref=e499]:
+          - generic "LinkedIn Footer Content" [ref=e502]:
+            - generic [ref=e503]:
+              - list
+              - generic [ref=e504]:
+                - img "LinkedIn" [ref=e505]:
+                  - img [ref=e506]
+                - text: LinkedIn Corporation © 2026
+    - generic:
+      - generic:
+        - complementary:
+          - generic [ref=e509]:
+            - generic [ref=e511] [cursor=pointer]:
+              - img "Oded Ben-Yair" [ref=e513]
+              - button "You are on the messaging overlay. Press enter to open the list of conversations." [ref=e514]:
+                - generic [ref=e515]:
+                  - generic [ref=e516]: Messaging
+                  - generic [ref=e517]: You are on the messaging overlay. Press enter to open the list of conversations.
+            - generic [ref=e518]:
+              - button "Open messenger dropdown menu" [ref=e520] [cursor=pointer]:
+                - img "Open messenger dropdown menu" [ref=e521]
+              - button "Compose message" [ref=e523] [cursor=pointer]:
+                - img [ref=e524]
+                - generic [ref=e525]: Compose message
+              - button "You are on the messaging overlay. Press enter to open the list of conversations." [ref=e526] [cursor=pointer]:
+                - img [ref=e527]
+                - generic [ref=e528]: You are on the messaging overlay. Press enter to open the list of conversations.
+        - complementary "AI-powered assistant to get help with your career, jobs etc"

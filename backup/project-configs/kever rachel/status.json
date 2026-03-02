@@ -1,0 +1,43 @@
+{
+  "$schema": "Project status tracking for Claude Code sessions",
+  "version": "1.0",
+  "project": {
+    "name": "kever rachel",
+    "path": "/home/odedbe/projects/kever rachel",
+    "database": "",
+    "production": false,
+    "lastUpdated": "2026-01-25T06:56:41+00:00"
+  },
+  "currentState": {
+    "summary": "Status tracking initialized. Update with current project state.",
+    "branch": "unknown",
+    "lastCommit": "unknown",
+    "testsPass": true,
+    "buildStatus": "unknown"
+  },
+  "blockers": [],
+  "inProgress": [],
+  "nextSteps": [
+    {
+      "priority": 1,
+      "description": "Review project and update status.json with current state",
+      "estimatedComplexity": "simple",
+      "dependencies": []
+    }
+  ],
+  "recentDecisions": [],
+  "patterns": {
+    "established": [],
+    "toAvoid": []
+  },
+  "sessionNotes": {
+    "lastSessionId": "initial-setup",
+    "lastSessionDate": "2026-01-25",
+    "carryoverNotes": "Status tracking initialized by Silent Kernel v7.0 deployment"
+  },
+  "_instructions": {
+    "usage": "This file tracks project state across Claude Code sessions",
+    "update": "Update at session end using /end-of-session skill",
+    "read": "Automatically read at session start when entering project directory"
+  }
+}

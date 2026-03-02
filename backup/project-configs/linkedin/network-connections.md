@@ -1,0 +1,1040 @@
+- generic [ref=e2]:
+  - heading "0 notifications" [level=2] [ref=e350]
+  - generic [ref=e351]:
+    - generic:
+      - button [ref=e352] [cursor=pointer]:
+        - generic [ref=e354]: Skip to main content
+      - button [ref=e355] [cursor=pointer]:
+        - img [ref=e357]
+    - generic [ref=e359]:
+      - banner [ref=e361]:
+        - generic [ref=e364]:
+          - button "LinkedIn" [ref=e365] [cursor=pointer]:
+            - img "LinkedIn" [ref=e366]
+          - search [ref=e369]:
+            - generic [ref=e370]:
+              - img [ref=e372]
+              - textbox "I'm looking for…" [ref=e374]
+          - generic [ref=e376]:
+            - figure [ref=e381]
+            - navigation [ref=e384]:
+              - list [ref=e385]:
+                - listitem [ref=e386]:
+                  - button "Home, 1 new notification" [ref=e387] [cursor=pointer]:
+                    - img [ref=e389]
+                    - generic [ref=e393]: Home
+                - listitem [ref=e394]:
+                  - button "My Network, 3 new notifications" [ref=e395] [cursor=pointer]:
+                    - generic [ref=e396]:
+                      - img [ref=e397]
+                      - generic [ref=e399]: "3"
+                    - generic [ref=e401]: My Network
+                - listitem [ref=e402]:
+                  - button "Jobs, 0 new notifications" [ref=e403] [cursor=pointer]:
+                    - img [ref=e405]
+                    - generic [ref=e408]: Jobs
+                - listitem [ref=e409]:
+                  - link "Messaging, 0 new notifications" [ref=e410] [cursor=pointer]:
+                    - /url: https://www.linkedin.com/messaging/
+                    - img [ref=e412]
+                    - generic [ref=e415]: Messaging
+                - listitem [ref=e416]:
+                  - link "Notifications, 0 new notifications" [ref=e417] [cursor=pointer]:
+                    - /url: https://www.linkedin.com/notifications/
+                    - img [ref=e419]
+                    - generic [ref=e422]: Notifications
+                - listitem [ref=e423]:
+                  - button "Me" [ref=e424] [cursor=pointer]:
+                    - figure [ref=e426]
+                    - generic [ref=e428]:
+                      - text: Me
+                      - img [ref=e429]
+            - generic [ref=e432]:
+              - navigation [ref=e433]:
+                - list [ref=e434]:
+                  - listitem [ref=e435]:
+                    - button "For Business" [ref=e436] [cursor=pointer]:
+                      - img [ref=e438]
+                      - generic [ref=e441]:
+                        - text: For Business
+                        - img [ref=e442]
+              - 'link "Reactivate Premium: 50% Off" [ref=e446] [cursor=pointer]':
+                - /url: https://www.linkedin.com/premium/redeem/?_ed=0_bvLJH59RTSY-u5c6PMUa4IW0M54p9mxZpuVkfRvTl7r&upsellOrderOrigin=Tracking%3Av1%3Apremium_nav_upsell_text_winback%3ANav%3AIn-Product&referenceId=T8jHRTVTRpOKcwHiHEpNOg%3D%3D&customKey=wb_c&redeemTypeV2=DISCOUNT
+                - paragraph [ref=e448]:
+                  - 'link "Reactivate Premium: 50% Off" [ref=e449]':
+                    - /url: https://www.linkedin.com/premium/redeem/?_ed=0_bvLJH59RTSY-u5c6PMUa4IW0M54p9mxZpuVkfRvTl7r&upsellOrderOrigin=Tracking%3Av1%3Apremium_nav_upsell_text_winback%3ANav%3AIn-Product&referenceId=T8jHRTVTRpOKcwHiHEpNOg%3D%3D&customKey=wb_c&redeemTypeV2=DISCOUNT
+      - main [ref=e451]:
+        - generic [ref=e453]:
+          - generic [ref=e457]:
+            - generic [ref=e459]:
+              - paragraph [ref=e460]: Manage my network
+              - navigation [ref=e461]:
+                - list [ref=e462]:
+                  - listitem [ref=e463]:
+                    - button "Show 5,165 connections" [ref=e464] [cursor=pointer]:
+                      - img [ref=e466]
+                      - generic [ref=e469]: Connections
+                      - generic [ref=e471]: 5,165
+                  - listitem [ref=e472]:
+                    - link "Show people you follow and who follow you" [ref=e473] [cursor=pointer]:
+                      - /url: https://www.linkedin.com/mynetwork/network-manager/people-follow/?filterType=member
+                      - img [ref=e475]
+                      - generic [ref=e478]: Following & followers
+                  - listitem [ref=e479]:
+                    - link "Show 7 groups" [ref=e480] [cursor=pointer]:
+                      - /url: https://www.linkedin.com/groups/my-groups/
+                      - img [ref=e482]
+                      - generic [ref=e485]: Groups
+                      - generic [ref=e487]: "7"
+                  - listitem [ref=e488]:
+                    - link "Show 4 events you are attending" [ref=e489] [cursor=pointer]:
+                      - /url: https://www.linkedin.com/events/
+                      - img [ref=e491]
+                      - generic [ref=e494]: Events
+                      - generic [ref=e496]: "4"
+                  - listitem [ref=e497]:
+                    - link "Show 594 pages you follow" [ref=e498] [cursor=pointer]:
+                      - /url: https://www.linkedin.com/mynetwork/network-manager/company/
+                      - img [ref=e500]
+                      - generic [ref=e503]: Pages
+                      - generic [ref=e505]: "594"
+                  - listitem [ref=e506]:
+                    - link "Show 66 newsletters you subscribe to" [ref=e507] [cursor=pointer]:
+                      - /url: https://www.linkedin.com/mynetwork/network-manager/newsletters/
+                      - img [ref=e509]
+                      - generic [ref=e512]: Newsletters
+                      - generic [ref=e514]: "66"
+            - iframe [ref=e517]:
+              - main "Work With Us Container" [ref=f324e3]:
+                - generic [ref=f324e4]:
+                  - img [ref=f324e6]
+                  - generic [ref=f324e7]:
+                    - img "Oded" [ref=f324e8]
+                    - link "Port.io" [ref=f324e9] [cursor=pointer]:
+                      - /url: https://www.linkedin.com/li/tscp/sct?destinationUrl=http%3A%2F%2Fwww.linkedin.com%2Fcompany%2F81296713%2Flife&trackingEvent=%5B%7B%22eventInfo%22%3A%7B%22appId%22%3A%22com.linkedin.ads.rendering.d_web%22%2C%22eventName%22%3A%22SponsoredRightRailContentActionEvent%22%2C%22topicName%22%3A%22SponsoredRightRailContentActionEvent%22%7D%2C%22eventBody%22%3A%7B%22sponsoredEventHeader%22%3A%7B%22encryptedTrackingData%22%3A%22CwEAAAGcayMorBvJMvMKzYQb9xLRo2_jmTWjp6mUszj7k-64lM8hV5xILWO8Ek_sx-lxdXxCHL8T1ddxnuoc041rJTqKqVbclju-URrrPB4aKV9pDC-9Ej_YhnAfbBZHmkaeNmTbnLU8qTGBjBew0o7lj3tE4H59ghnJYeZVAPLV3jUZ5V7Zaf8lQoUApzEU6XRjV3dcFFttsS1TxcozTs121kULoAm23Wnv-NnHKQohY4OV_6oKh9aAFmSqurn00MK4Bcu4ELB_Pz6LTjRY5-6Cn5898tI0NpSlRgZVxmIsLTulWtGhKnBSksCmHhc1BIRBkntbjv_Sp_lyzTcIyroCtxuJIGkSamWZP2_UQ_r_avDE0dm5uFOUWGWdjOSoB_3PAm6A07BK3_yYfWmre90VNwI5hqyIekXKhaXJsQtYWJjQQQsNc2G9jjGioK4SVOCjUArGuVcUW26XGok2lNNfrHn1sD02JnVmlObeW2cGLz3JEfMS2P43Vqa6xBmmLq8QevLx07gJJhS6DwI_ppLMo8gCWO33K6t6ij24XQrK2FMdVAkUofgENgt7a-vhtLvar1IZB4HTheo5_mJ9I1Y_oAguRrhYznJfDt5FWOp7cwQP3PiaClYaGTy85dfNqbcADQc8cJ4c2-1VT3ctkULNeRXXLXclmrtJzrOorIXJsuH6ozpjLIGHuj_11n_KAaf9kNSHJc_16Ha0t1qKVs-81CFsuMFVyqpVuKXE-9NVYOYjLl3zCQJjRmM8Jx2fB72Pg4aV8XWzvx2F6ZDFHZxMlEfDdSeQH4NzG8vlwy50DUKdTZ33L4SenBtfwwuVwKt6g85Pb6Yo2szSZWf3NNfBaYaASciEBAPTlrHPKXY8zM7WZctvY63CUgWz9wPdhRpxYpncbgPZityXs23ZdlIrYqdbW57-NqVlXmlNFpm6cJhRlsU-JRRcCcXV7hr7sZtyGLbv6ksgBxhXQT728IYjMC47VZKm5_xITF4GUF2q0xZmVNzXQlXEVFJ7TrN5jfV56DHt5hJD1rY20b0NFmDFfWIgOyBAm0NFjAZo1BUdzJiTLQpMreBtW4FxmpnFq0fKjaMYGg%22%7D%2C%22header%22%3A%7B%22pageInstance%22%3A%7B%22pageUrn%22%3A%22urn%3Ali%3Apage%3Ad_flagship3_people%22%2C%22trackingId%22%3A%22e4494954-c85c-4a7f-b86b-5369e2c2ac87%22%7D%2C%22time%22%3A1771323992187%2C%22version%22%3A%220.0.0%22%7D%2C%22requestHeader%22%3A%7B%22pageKey%22%3A%22d_flagship3_people%22%2C%22interfaceLocale%22%3A%22en-US%22%7D%7D%7D%5D&csrfToken=ajax%3A2872756275449100236
+                      - img "Port.io" [ref=f324e10]
+                - generic [ref=f324e11]:
+                  - generic [ref=f324e12]:
+                    - paragraph [ref=f324e13]: Oded, explore relevant opportunities with Port.io
+                    - paragraph [ref=f324e14]: Get the latest jobs and industry news
+                  - link "Follow" [ref=f324e15] [cursor=pointer]:
+                    - /url: https://www.linkedin.com/li/tscp/sct?destinationUrl=http%3A%2F%2Fwww.linkedin.com%2Fcompany%2F81296713%2Flife%3FisFollowingPage%3Dtrue&trackingEvent=%5B%7B%22eventInfo%22%3A%7B%22appId%22%3A%22com.linkedin.ads.rendering.d_web%22%2C%22eventName%22%3A%22SponsoredRightRailContentActionEvent%22%2C%22topicName%22%3A%22SponsoredRightRailContentActionEvent%22%7D%2C%22eventBody%22%3A%7B%22sponsoredEventHeader%22%3A%7B%22encryptedTrackingData%22%3A%22CwEAAAGcayMorGvixxSyquHstgqbInDTigwLCLSsYiDgRQRv0g4u4ZYJcAL5un0QEWcOmHLbS31mcN20EngKKO46dqJZA9m7Y_k_kEBg_6091NQ5vJDlaJUw6zAqNA1AKfOMoSpIpCIKIFxt5-AcFrHOslmtvI7BluqRPTlcqZ9a_yvKARPYJZtSSi1gzdRZp46caf8D0EAgVrBtdAUDp3rwO3Jb5RE0F7FG1dS9Y3EYRH2zmP7qwr5ULcWbb7GufhBKUA4lLT-_FN0I8Dqoe5ubMWATDXBU_EAq62ETS-0lFKLKu8PKKPPxlpgpOxKmIn8jBosEte3d9B-3IlJ8OtGKR0wKltYrKl0kjHg0Ia8KUB4f_NOPU3_0ycmwc2N7namInoX7qJyJgNe_7Xzjd9GtZJcMocbzn6A1Jkpq2LWqh9N_jzlx4wNlz16FPbhSHfwK7f1MSpxb3DY7jPhHcZLaVuqmICXg80v4yghwSw_r2dzgGa_8fMPFm3HhpxHWQzyCT-VLCrGbIhdHUUSwstmjNV64bhvZA1U32D5miZKSIZOdiPEBRHdk-nPOr0MZdBmg4Z5JySn70etySfaBwiXsj3TXPh5KrqCsNXWoQv-_suqoTapV1EiEOIWvt2KZb0cX87JbLHzg8OYXQh64uaP4eiZn-LRSMmby9ygUYqDGtVCWAxEZB6gD2WTrRbMxIF3hTNqxjC2w8cOlSLHkTlxwZgTAtDGCol1WsUZ5e5nlp_Srfr81SsREs3YrtnWCB2GVFjwfEeHPK0qSmyxsFSMhUmqVNAaZORJmCTgrSZNMTh-JObnFAK4hGzxqBpJPfq55hdmyxSG34HNJPd46j07R075X18KPz0wUuK2N_NJ5u7rnUXgxkV1HyTT6s0PIHX8w8OHlLhJN4_0n8TQ1nVgP8Y3YQ90OPGGoh3bmLFAMOoXgDh_G9144s0EITXh4_3TDTeOj0GxHXM0R2uvRaErwGTSSedMarPISYgLZY_f-Y9gEMxKp_GDPT0CjYh4fwtXyRxDEl-cFobzWAgWsDL6_dlsJABlZ9awZLlLjnVEl_sS14VhNfjDLhchpJ4eIhm8YmIpZ28lltryRfsruC5a9mTbcVjk4Iq00Mjdo7nmU4MCuDCOMyA%22%7D%2C%22header%22%3A%7B%22pageInstance%22%3A%7B%22pageUrn%22%3A%22urn%3Ali%3Apage%3Ad_flagship3_people%22%2C%22trackingId%22%3A%22d1624ed9-d6a9-42cf-902f-4dcae78783f7%22%7D%2C%22time%22%3A1771323992187%2C%22version%22%3A%220.0.0%22%7D%2C%22requestHeader%22%3A%7B%22pageKey%22%3A%22d_flagship3_people%22%2C%22interfaceLocale%22%3A%22en-US%22%7D%7D%7D%5D&csrfToken=ajax%3A2872756275449100236
+                - generic [ref=f324e16]:
+                  - paragraph [ref=f324e17]: Promoted
+                  - button "Ad Options" [ref=f324e18] [cursor=pointer]:
+                    - img [ref=f324e19]
+                    - generic [ref=f324e23]: Ad Options
+            - generic [ref=e518]:
+              - generic [ref=e519]:
+                - link "About" [ref=e520] [cursor=pointer]:
+                  - /url: https://about.linkedin.com/
+                  - paragraph [ref=e521]: About
+                - link "Accessibility" [ref=e522] [cursor=pointer]:
+                  - /url: https://www.linkedin.com/accessibility/
+                  - paragraph [ref=e523]: Accessibility
+                - link "Help Center" [ref=e524] [cursor=pointer]:
+                  - /url: https://www.linkedin.com/help/linkedin/
+                  - paragraph [ref=e525]: Help Center
+                - button "Privacy & Terms" [ref=e526] [cursor=pointer]:
+                  - generic [ref=e527]:
+                    - paragraph [ref=e528]: Privacy & Terms
+                    - img [ref=e529]
+                - link "Ad Choices" [ref=e531] [cursor=pointer]:
+                  - /url: https://www.linkedin.com/help/linkedin/answer/62931/
+                  - paragraph [ref=e532]: Ad Choices
+                - link "Advertising" [ref=e533] [cursor=pointer]:
+                  - /url: https://www.linkedin.com/ad/start/?trk=n_nav_ads_rr
+                  - paragraph [ref=e534]: Advertising
+                - button "Business Services" [ref=e535] [cursor=pointer]:
+                  - generic [ref=e536]:
+                    - paragraph [ref=e537]: Business Services
+                    - img [ref=e538]
+                - link "Get the LinkedIn app" [ref=e540] [cursor=pointer]:
+                  - /url: https://www.linkedin.com/mobile/
+                  - paragraph [ref=e541]: Get the LinkedIn app
+                - button "More" [ref=e542] [cursor=pointer]:
+                  - paragraph [ref=e543]: More
+              - generic [ref=e544]:
+                - img [ref=e545]
+                - paragraph [ref=e547]: LinkedIn Corporation © 2026
+          - generic [ref=e549]:
+            - navigation [ref=e553]:
+              - list [ref=e554]:
+                - listitem [ref=e555]:
+                  - button "3 new grow notifications" [ref=e556] [cursor=pointer]:
+                    - generic [ref=e558]: Grow
+                - listitem [ref=e559]:
+                  - button "Catch up, 0 new catch up notifications" [ref=e560] [cursor=pointer]:
+                    - generic [ref=e562]: Catch up
+            - main [ref=e563]:
+              - generic [ref=e565]:
+                - generic [ref=e570]:
+                  - generic [ref=e571]:
+                    - heading "Invitations (5)" [level=2] [ref=e572]
+                    - button "Show all invitations" [ref=e573] [cursor=pointer]:
+                      - generic [ref=e575]: Show all
+                  - list [ref=e576]:
+                    - listitem "unread notification" [ref=e578]:
+                      - generic [ref=e579]:
+                        - link "Eden Vera Razilov’s profile picture" [ref=e580] [cursor=pointer]:
+                          - /url: https://www.linkedin.com/in/eden-vera-razilov-1639093a8/
+                          - figure "Eden Vera Razilov’s profile picture" [ref=e582]:
+                            - img "Eden Vera Razilov’s profile picture" [ref=e583]
+                        - generic [ref=e585]:
+                          - paragraph [ref=e586]:
+                            - link "Eden Vera Razilov" [ref=e588] [cursor=pointer]:
+                              - /url: https://www.linkedin.com/in/eden-vera-razilov-1639093a8/
+                              - strong [ref=e589]: Eden Vera Razilov
+                            - link [ref=e591] [cursor=pointer]:
+                              - /url: https://www.linkedin.com/in/eden-vera-razilov-1639093a8/
+                              - strong [ref=e592]: Eden Vera Razilov
+                          - paragraph [ref=e594]: ‏Recruitment Specialist‏ ב-‏Electra‏
+                          - generic [ref=e595]:
+                            - img [ref=e596]
+                            - paragraph [ref=e599]: Shirley Ginesin (Hanhart) and 43 other mutual connections
+                        - generic [ref=e600]:
+                          - button "Ignore an invitation to connect from Eden Vera Razilov" [ref=e602] [cursor=pointer]:
+                            - generic [ref=e604]: Ignore
+                          - button "Accept Eden Vera Razilov’s invitation" [ref=e606] [cursor=pointer]:
+                            - generic [ref=e608]: Accept
+                    - listitem "unread notification" [ref=e610]:
+                      - generic [ref=e611]:
+                        - link "Assaf Rosenkrantz’s profile picture" [ref=e612] [cursor=pointer]:
+                          - /url: https://www.linkedin.com/in/assaf-rosenkrantz-5984ba1a2/
+                          - figure "Assaf Rosenkrantz’s profile picture" [ref=e614]:
+                            - img "Assaf Rosenkrantz’s profile picture" [ref=e615]
+                        - generic [ref=e617]:
+                          - paragraph [ref=e618]:
+                            - link "Assaf Rosenkrantz" [ref=e620] [cursor=pointer]:
+                              - /url: https://www.linkedin.com/in/assaf-rosenkrantz-5984ba1a2/
+                              - strong [ref=e621]: Assaf Rosenkrantz
+                            - link [ref=e623] [cursor=pointer]:
+                              - /url: https://www.linkedin.com/in/assaf-rosenkrantz-5984ba1a2/
+                              - strong [ref=e624]: Assaf Rosenkrantz
+                          - paragraph [ref=e626]: "--"
+                          - generic [ref=e627]:
+                            - img [ref=e628]
+                            - paragraph [ref=e631]: Yaniv Eytani and 93 other mutual connections
+                        - generic [ref=e632]:
+                          - button "Ignore an invitation to connect from Assaf Rosenkrantz" [ref=e634] [cursor=pointer]:
+                            - generic [ref=e636]: Ignore
+                          - button "Accept Assaf Rosenkrantz’s invitation" [ref=e638] [cursor=pointer]:
+                            - generic [ref=e640]: Accept
+                    - listitem "unread notification" [ref=e642]:
+                      - generic [ref=e643]:
+                        - link "Edson Porto’s profile picture" [ref=e644] [cursor=pointer]:
+                          - /url: https://www.linkedin.com/in/edson-porto/
+                          - figure "Edson Porto’s profile picture" [ref=e646]:
+                            - img "Edson Porto’s profile picture" [ref=e647]
+                        - generic [ref=e649]:
+                          - paragraph [ref=e650]:
+                            - generic [ref=e651]: Edson Porto, premium
+                            - generic [ref=e652]:
+                              - link [ref=e653] [cursor=pointer]:
+                                - /url: https://www.linkedin.com/in/edson-porto/
+                                - strong [ref=e654]: Edson Porto
+                              - img [ref=e656]
+                          - paragraph [ref=e659]: Combining human expertise and AI to help your brand connect with the right audience and manage its reputation.
+                        - generic [ref=e660]:
+                          - button "Ignore an invitation to connect from Edson Porto" [ref=e662] [cursor=pointer]:
+                            - generic [ref=e664]: Ignore
+                          - button "Accept Edson Porto’s invitation" [ref=e666] [cursor=pointer]:
+                            - generic [ref=e668]: Accept
+                - generic [ref=e671]:
+                  - paragraph [ref=e673]: Need a 30 second break? 🪫
+                  - link "You’ve earned it! Zip is LinkedIn’s daily logic puzzle Solve now" [ref=e674] [cursor=pointer]:
+                    - /url: /games/zip/
+                    - generic [ref=e675]:
+                      - figure [ref=e676]
+                      - generic [ref=e677]:
+                        - paragraph [ref=e678]: You’ve earned it!
+                        - paragraph [ref=e679]: Zip is LinkedIn’s daily logic puzzle
+                      - link "Solve now" [ref=e680]:
+                        - /url: /games/zip/
+                        - generic [ref=e682]: Solve now
+                - generic [ref=e686]:
+                  - generic [ref=e687]:
+                    - generic [ref=e688]:
+                      - img "Premium" [ref=e689]
+                      - paragraph [ref=e694]: People who are hiring for your role
+                    - generic [ref=e695]:
+                      - button "Previous" [disabled] [ref=e696]:
+                        - generic:
+                          - img
+                      - button "Next" [ref=e697] [cursor=pointer]:
+                        - img [ref=e699]
+                      - button "Dismiss" [ref=e701] [cursor=pointer]:
+                        - img [ref=e703]
+                  - list [ref=e706]:
+                    - list [ref=e707]:
+                      - listitem [ref=e708]:
+                        - generic [ref=e710]:
+                          - generic [ref=e711]:
+                            - figure "Member blurred profile picture" [ref=e712]:
+                              - img "Member blurred profile picture" [ref=e713]
+                            - generic [ref=e714]:
+                              - paragraph [ref=e716]: LinkedIn Member
+                              - paragraph [ref=e718]: R&D Group Manager, Collaborative Security, Events & AI @ Check Point
+                          - button "View profile" [ref=e720] [cursor=pointer]:
+                            - generic [ref=e722]: View profile
+                      - listitem [ref=e723]:
+                        - generic [ref=e725]:
+                          - generic [ref=e726]:
+                            - figure "Member blurred profile picture" [ref=e727]:
+                              - img "Member blurred profile picture" [ref=e728]
+                            - generic [ref=e729]:
+                              - paragraph [ref=e731]: LinkedIn Member
+                              - paragraph [ref=e733]: Senior Frontend Developer | Angular Expert | I Build Products, Not Just UIs
+                          - button "View profile" [ref=e735] [cursor=pointer]:
+                            - generic [ref=e737]: View profile
+                      - listitem [ref=e738]:
+                        - generic [ref=e740]:
+                          - generic [ref=e741]:
+                            - figure "Member blurred profile picture" [ref=e742]:
+                              - img "Member blurred profile picture" [ref=e743]
+                            - generic [ref=e744]:
+                              - paragraph [ref=e746]: LinkedIn Member
+                              - paragraph [ref=e748]: Executive Office Manager| |AI division- hiring
+                          - button "View profile" [ref=e750] [cursor=pointer]:
+                            - generic [ref=e752]: View profile
+                      - listitem [ref=e753]:
+                        - generic [ref=e756]:
+                          - generic [ref=e757]:
+                            - img "Member blurred profile picture" [ref=e758]
+                            - paragraph [ref=e763]: Unlock all with Premium
+                          - link "Reactivate Premium" [ref=e764] [cursor=pointer]:
+                            - /url: https://www.linkedin.com/premium/products/?upsellOrderOrigin=Tracking%3Av1%3Amy_network_actively_hiring_cohort_card%3AMy+Network%3AIn-Product&utype=job&referenceId=gWTtO2cWTpCI12hCp%2FneZg%3D%3D&isSS=false
+                            - generic [ref=e766]: Reactivate Premium
+                - generic [ref=e769]:
+                  - generic [ref=e771]:
+                    - heading "People you may know based on your recent activity" [level=3] [ref=e772]
+                    - button "Show all suggestions for People you may know based on your recent activity" [ref=e773] [cursor=pointer]:
+                      - generic [ref=e775]: Show all
+                  - list [ref=e776]:
+                    - listitem [ref=e778]:
+                      - generic [ref=e779]:
+                        - generic [ref=e780]:
+                          - link "Snir Shechter, Premium AI Team Lead @ Coralogix AI" [ref=e781] [cursor=pointer]:
+                            - /url: https://www.linkedin.com/in/snir/
+                            - generic [ref=e782]:
+                              - generic [ref=e783]:
+                                - figure [ref=e784]:
+                                  - img [ref=e785]
+                                - figure [ref=e791]
+                              - generic [ref=e792]:
+                                - paragraph [ref=e794]:
+                                  - generic [ref=e795]: Snir Shechter, Premium
+                                  - generic [ref=e796]:
+                                    - text: Snir Shechter
+                                    - img [ref=e798]
+                                - paragraph [ref=e801]: AI Team Lead @ Coralogix AI
+                          - generic [ref=e802]:
+                            - generic [ref=e804]:
+                              - figure [ref=e805]
+                              - paragraph [ref=e807]: Ziv and 98 other mutual connections
+                            - button "Invite Snir Shechter to connect" [ref=e809] [cursor=pointer]:
+                              - generic [ref=e810]:
+                                - img [ref=e811]
+                                - generic [ref=e814]: Connect
+                        - button "Remove Snir Shechter as a suggestion" [ref=e816] [cursor=pointer]:
+                          - img [ref=e818]
+                    - listitem [ref=e821]:
+                      - generic [ref=e822]:
+                        - generic [ref=e823]:
+                          - link "Hanan Malka, Verified DevEx & AI Testing Tech Lead at monday.com | Playwright Expert" [ref=e824] [cursor=pointer]:
+                            - /url: https://www.linkedin.com/in/hanan-malka/
+                            - generic [ref=e825]:
+                              - generic [ref=e826]:
+                                - figure [ref=e827]
+                                - figure [ref=e828]
+                              - generic [ref=e829]:
+                                - paragraph [ref=e831]:
+                                  - generic [ref=e832]: Hanan Malka, Verified
+                                  - generic [ref=e833]:
+                                    - text: Hanan Malka
+                                    - img [ref=e835]
+                                - paragraph [ref=e838]: DevEx & AI Testing Tech Lead at monday.com | Playwright Expert
+                          - generic [ref=e839]:
+                            - generic [ref=e841]:
+                              - figure [ref=e842]
+                              - paragraph [ref=e844]: Jack and 40 other mutual connections
+                            - button "Invite Hanan Malka to connect" [ref=e846] [cursor=pointer]:
+                              - generic [ref=e847]:
+                                - img [ref=e848]
+                                - generic [ref=e851]: Connect
+                        - button "Remove Hanan Malka as a suggestion" [ref=e853] [cursor=pointer]:
+                          - img [ref=e855]
+                    - listitem [ref=e858]:
+                      - generic [ref=e859]:
+                        - generic [ref=e860]:
+                          - link "Assaf Admi, Verified Software Engineer at Coralogix" [ref=e861] [cursor=pointer]:
+                            - /url: https://www.linkedin.com/in/assaf-admi-4362b21b2/
+                            - generic [ref=e862]:
+                              - generic [ref=e863]:
+                                - figure [ref=e864]:
+                                  - img [ref=e865]
+                                - figure [ref=e871]
+                              - generic [ref=e872]:
+                                - paragraph [ref=e874]:
+                                  - generic [ref=e875]: Assaf Admi, Verified
+                                  - generic [ref=e876]:
+                                    - text: Assaf Admi
+                                    - img [ref=e878]
+                                - paragraph [ref=e881]: Software Engineer at Coralogix
+                          - generic [ref=e882]:
+                            - generic [ref=e884]:
+                              - figure [ref=e885]
+                              - paragraph [ref=e887]: Guy and 96 other mutual connections
+                            - button "Invite Assaf Admi to connect" [ref=e889] [cursor=pointer]:
+                              - generic [ref=e890]:
+                                - img [ref=e891]
+                                - generic [ref=e894]: Connect
+                        - button "Remove Assaf Admi as a suggestion" [ref=e896] [cursor=pointer]:
+                          - img [ref=e898]
+                    - listitem [ref=e901]:
+                      - generic [ref=e902]:
+                        - generic [ref=e903]:
+                          - link "Ziv Halsband, Verified Fullstack engineer at monday.com" [ref=e904] [cursor=pointer]:
+                            - /url: https://www.linkedin.com/in/ziv-halsband-282a40177/
+                            - generic [ref=e905]:
+                              - generic [ref=e906]:
+                                - figure [ref=e907]
+                                - figure [ref=e908]
+                              - generic [ref=e909]:
+                                - paragraph [ref=e911]:
+                                  - generic [ref=e912]: Ziv Halsband, Verified
+                                  - generic [ref=e913]:
+                                    - text: Ziv Halsband
+                                    - img [ref=e915]
+                                - paragraph [ref=e918]: Fullstack engineer at monday.com
+                          - generic [ref=e919]:
+                            - generic [ref=e921]:
+                              - figure [ref=e922]
+                              - paragraph [ref=e924]: Guy and 143 other mutual connections
+                            - button "Invite Ziv Halsband to connect" [ref=e926] [cursor=pointer]:
+                              - generic [ref=e927]:
+                                - img [ref=e928]
+                                - generic [ref=e931]: Connect
+                        - button "Remove Ziv Halsband as a suggestion" [ref=e933] [cursor=pointer]:
+                          - img [ref=e935]
+                    - listitem [ref=e938]:
+                      - generic [ref=e939]:
+                        - generic [ref=e940]:
+                          - link "Lior Yogev, Verified Product Manager at Coralogix" [ref=e941] [cursor=pointer]:
+                            - /url: https://www.linkedin.com/in/lior-yogev/
+                            - generic [ref=e942]:
+                              - generic [ref=e943]:
+                                - figure [ref=e944]
+                                - figure [ref=e945]
+                              - generic [ref=e946]:
+                                - paragraph [ref=e948]:
+                                  - generic [ref=e949]: Lior Yogev, Verified
+                                  - generic [ref=e950]:
+                                    - text: Lior Yogev
+                                    - img [ref=e952]
+                                - paragraph [ref=e955]: Product Manager at Coralogix
+                          - generic [ref=e956]:
+                            - generic [ref=e958]:
+                              - figure [ref=e959]
+                              - paragraph [ref=e961]: Guy and 62 other mutual connections
+                            - button "Invite Lior Yogev to connect" [ref=e963] [cursor=pointer]:
+                              - generic [ref=e964]:
+                                - img [ref=e965]
+                                - generic [ref=e968]: Connect
+                        - button "Remove Lior Yogev as a suggestion" [ref=e970] [cursor=pointer]:
+                          - img [ref=e972]
+                    - listitem [ref=e975]:
+                      - generic [ref=e976]:
+                        - generic [ref=e977]:
+                          - link "Or Fisher, Verified Technical Project Manager @ LabOS | SQL & Oracle | Data-Driven Problem Solver" [ref=e978] [cursor=pointer]:
+                            - /url: https://www.linkedin.com/in/orfisher1/
+                            - generic [ref=e979]:
+                              - generic [ref=e980]:
+                                - figure [ref=e981]:
+                                  - img [ref=e982]
+                                - figure [ref=e988]
+                              - generic [ref=e989]:
+                                - paragraph [ref=e991]:
+                                  - generic [ref=e992]: Or Fisher, Verified
+                                  - generic [ref=e993]:
+                                    - text: Or Fisher
+                                    - img [ref=e995]
+                                - paragraph [ref=e998]: Technical Project Manager @ LabOS | SQL & Oracle | Data-Driven Problem Solver
+                          - generic [ref=e999]:
+                            - generic [ref=e1001]:
+                              - figure [ref=e1002]
+                              - paragraph [ref=e1004]: Lior Pollack and 49 other mutual connections
+                            - button "Invite Or Fisher to connect" [ref=e1006] [cursor=pointer]:
+                              - generic [ref=e1007]:
+                                - img [ref=e1008]
+                                - generic [ref=e1011]: Connect
+                        - button "Remove Or Fisher as a suggestion" [ref=e1013] [cursor=pointer]:
+                          - img [ref=e1015]
+                    - listitem [ref=e1018]:
+                      - generic [ref=e1019]:
+                        - generic [ref=e1020]:
+                          - link "Yaarit Rosentzvig - Soussan HR Professional | Recruiting | Employee experience | Creativity | HR Operations | Well-being management | HR Polices" [ref=e1021] [cursor=pointer]:
+                            - /url: https://www.linkedin.com/in/yaarit-rosentzvig-soussan/
+                            - generic [ref=e1022]:
+                              - generic [ref=e1023]:
+                                - figure [ref=e1024]
+                                - figure [ref=e1025]:
+                                  - img [ref=e1026]
+                              - generic [ref=e1032]:
+                                - paragraph [ref=e1034]:
+                                  - generic [ref=e1035]: Yaarit Rosentzvig - Soussan
+                                  - text: Yaarit Rosentzvig - Soussan
+                                - paragraph [ref=e1037]: HR Professional | Recruiting | Employee experience | Creativity | HR Operations | Well-being management | HR Polices
+                          - generic [ref=e1038]:
+                            - generic [ref=e1040]:
+                              - figure [ref=e1041]
+                              - paragraph [ref=e1043]: Hadar and 152 other mutual connections
+                            - button "Invite Yaarit Rosentzvig - Soussan to connect" [ref=e1045] [cursor=pointer]:
+                              - generic [ref=e1046]:
+                                - img [ref=e1047]
+                                - generic [ref=e1050]: Connect
+                        - button "Remove Yaarit Rosentzvig - Soussan as a suggestion" [ref=e1052] [cursor=pointer]:
+                          - img [ref=e1054]
+                    - listitem [ref=e1057]:
+                      - generic [ref=e1058]:
+                        - generic [ref=e1059]:
+                          - link "Inbar Segal, Premium Technical Recruiter" [ref=e1060] [cursor=pointer]:
+                            - /url: https://www.linkedin.com/in/inbar-segal-recruiter/
+                            - generic [ref=e1061]:
+                              - generic [ref=e1062]:
+                                - figure [ref=e1063]
+                                - figure [ref=e1064]
+                              - generic [ref=e1065]:
+                                - paragraph [ref=e1067]:
+                                  - generic [ref=e1068]: Inbar Segal, Premium
+                                  - generic [ref=e1069]:
+                                    - text: Inbar Segal
+                                    - img [ref=e1071]
+                                - paragraph [ref=e1074]: Technical Recruiter
+                          - generic [ref=e1075]:
+                            - generic [ref=e1077]:
+                              - figure [ref=e1078]
+                              - paragraph [ref=e1080]: Michael and 135 other mutual connections
+                            - button "Invite Inbar Segal to connect" [ref=e1082] [cursor=pointer]:
+                              - generic [ref=e1083]:
+                                - img [ref=e1084]
+                                - generic [ref=e1087]: Connect
+                        - button "Remove Inbar Segal as a suggestion" [ref=e1089] [cursor=pointer]:
+                          - img [ref=e1091]
+                - generic [ref=e1095]:
+                  - generic [ref=e1097]:
+                    - heading "People you may know from InfinityLabs R&D" [level=3] [ref=e1098]
+                    - button "Show all suggestions for People you may know from InfinityLabs R&D" [ref=e1099] [cursor=pointer]:
+                      - generic [ref=e1101]: Show all
+                  - list [ref=e1102]:
+                    - listitem [ref=e1104]:
+                      - generic [ref=e1105]:
+                        - generic [ref=e1106]:
+                          - link "Meital Cooper, Verified Software Engineer" [ref=e1107] [cursor=pointer]:
+                            - /url: https://www.linkedin.com/in/meital-cooper-614b68153/
+                            - generic [ref=e1108]:
+                              - generic [ref=e1109]:
+                                - figure [ref=e1110]:
+                                  - img [ref=e1111]
+                                - figure [ref=e1117]
+                              - generic [ref=e1118]:
+                                - paragraph [ref=e1120]:
+                                  - generic [ref=e1121]: Meital Cooper, Verified
+                                  - generic [ref=e1122]:
+                                    - text: Meital Cooper
+                                    - img [ref=e1124]
+                                - paragraph [ref=e1127]: Software Engineer
+                          - generic [ref=e1128]:
+                            - generic [ref=e1130]:
+                              - figure [ref=e1131]
+                              - paragraph [ref=e1133]: Erez and 138 other mutual connections
+                            - button "Invite Meital Cooper to connect" [ref=e1135] [cursor=pointer]:
+                              - generic [ref=e1136]:
+                                - img [ref=e1137]
+                                - generic [ref=e1140]: Connect
+                        - button "Remove Meital Cooper as a suggestion" [ref=e1142] [cursor=pointer]:
+                          - img [ref=e1144]
+                    - listitem [ref=e1147]:
+                      - generic [ref=e1148]:
+                        - generic [ref=e1149]:
+                          - link "Nisan Ohana, Verified Software Engineer at Cognyte" [ref=e1150] [cursor=pointer]:
+                            - /url: https://www.linkedin.com/in/nisan-ohana/
+                            - generic [ref=e1151]:
+                              - generic [ref=e1152]:
+                                - figure [ref=e1153]
+                                - figure [ref=e1154]
+                              - generic [ref=e1155]:
+                                - paragraph [ref=e1157]:
+                                  - generic [ref=e1158]: Nisan Ohana, Verified
+                                  - generic [ref=e1159]:
+                                    - text: Nisan Ohana
+                                    - img [ref=e1161]
+                                - paragraph [ref=e1164]: Software Engineer at Cognyte
+                          - generic [ref=e1165]:
+                            - generic [ref=e1167]:
+                              - figure [ref=e1168]
+                              - paragraph [ref=e1170]: Golan and 241 other mutual connections
+                            - button "Invite Nisan Ohana to connect" [ref=e1172] [cursor=pointer]:
+                              - generic [ref=e1173]:
+                                - img [ref=e1174]
+                                - generic [ref=e1177]: Connect
+                        - button "Remove Nisan Ohana as a suggestion" [ref=e1179] [cursor=pointer]:
+                          - img [ref=e1181]
+                    - listitem [ref=e1184]:
+                      - generic [ref=e1185]:
+                        - generic [ref=e1186]:
+                          - link "Ofer Lis, Verified Software Developer @ BioCatch | Open-source enthusiast 🚀 | Python TS" [ref=e1187] [cursor=pointer]:
+                            - /url: https://www.linkedin.com/in/ofer-lis/
+                            - generic [ref=e1188]:
+                              - generic [ref=e1189]:
+                                - figure [ref=e1190]
+                                - figure [ref=e1191]
+                              - generic [ref=e1192]:
+                                - paragraph [ref=e1194]:
+                                  - generic [ref=e1195]: Ofer Lis, Verified
+                                  - generic [ref=e1196]:
+                                    - text: Ofer Lis
+                                    - img [ref=e1198]
+                                - paragraph [ref=e1201]: Software Developer @ BioCatch | Open-source enthusiast 🚀 | Python TS
+                          - generic [ref=e1202]:
+                            - generic [ref=e1204]:
+                              - figure [ref=e1205]
+                              - paragraph [ref=e1207]: Rotem and 182 other mutual connections
+                            - button "Invite Ofer Lis to connect" [ref=e1209] [cursor=pointer]:
+                              - generic [ref=e1210]:
+                                - img [ref=e1211]
+                                - generic [ref=e1214]: Connect
+                        - button "Remove Ofer Lis as a suggestion" [ref=e1216] [cursor=pointer]:
+                          - img [ref=e1218]
+                    - listitem [ref=e1221]:
+                      - generic [ref=e1222]:
+                        - generic [ref=e1223]:
+                          - link "Dor Tambour, Verified Software Engineer at Jfrog 🐸" [ref=e1224] [cursor=pointer]:
+                            - /url: https://www.linkedin.com/in/dor-tambour-65243b134/
+                            - generic [ref=e1225]:
+                              - generic [ref=e1226]:
+                                - figure [ref=e1227]:
+                                  - img [ref=e1228]
+                                - figure [ref=e1234]
+                              - generic [ref=e1235]:
+                                - paragraph [ref=e1237]:
+                                  - generic [ref=e1238]: Dor Tambour, Verified
+                                  - generic [ref=e1239]:
+                                    - text: Dor Tambour
+                                    - img [ref=e1241]
+                                - paragraph [ref=e1244]: Software Engineer at Jfrog 🐸
+                          - generic [ref=e1245]:
+                            - generic [ref=e1247]:
+                              - figure [ref=e1248]
+                              - paragraph [ref=e1250]: Guy and 106 other mutual connections
+                            - button "Invite Dor Tambour to connect" [ref=e1252] [cursor=pointer]:
+                              - generic [ref=e1253]:
+                                - img [ref=e1254]
+                                - generic [ref=e1257]: Connect
+                        - button "Remove Dor Tambour as a suggestion" [ref=e1259] [cursor=pointer]:
+                          - img [ref=e1261]
+                    - listitem [ref=e1264]:
+                      - generic [ref=e1265]:
+                        - generic [ref=e1266]:
+                          - link "David Schwarzer, Verified Software Engineer" [ref=e1267] [cursor=pointer]:
+                            - /url: https://www.linkedin.com/in/david-schwarzer-2a508a61/
+                            - generic [ref=e1268]:
+                              - generic [ref=e1269]:
+                                - figure [ref=e1270]:
+                                  - img [ref=e1271]
+                                - figure [ref=e1277]
+                              - generic [ref=e1278]:
+                                - paragraph [ref=e1280]:
+                                  - generic [ref=e1281]: David Schwarzer, Verified
+                                  - generic [ref=e1282]:
+                                    - text: David Schwarzer
+                                    - img [ref=e1284]
+                                - paragraph [ref=e1287]: Software Engineer
+                          - generic [ref=e1288]:
+                            - generic [ref=e1290]:
+                              - figure [ref=e1291]
+                              - paragraph [ref=e1293]: Rotem and 106 other mutual connections
+                            - button "Invite David Schwarzer to connect" [ref=e1295] [cursor=pointer]:
+                              - generic [ref=e1296]:
+                                - img [ref=e1297]
+                                - generic [ref=e1300]: Connect
+                        - button "Remove David Schwarzer as a suggestion" [ref=e1302] [cursor=pointer]:
+                          - img [ref=e1304]
+                    - listitem [ref=e1307]:
+                      - generic [ref=e1308]:
+                        - generic [ref=e1309]:
+                          - link "Tuval Kohl, Verified Senior Software Engineer @ CyberArk" [ref=e1310] [cursor=pointer]:
+                            - /url: https://www.linkedin.com/in/tuval-kohl-b76235132/
+                            - generic [ref=e1311]:
+                              - generic [ref=e1312]:
+                                - figure [ref=e1313]
+                                - figure [ref=e1314]
+                              - generic [ref=e1315]:
+                                - paragraph [ref=e1317]:
+                                  - generic [ref=e1318]: Tuval Kohl, Verified
+                                  - generic [ref=e1319]:
+                                    - text: Tuval Kohl
+                                    - img [ref=e1321]
+                                - paragraph [ref=e1324]: Senior Software Engineer @ CyberArk
+                          - generic [ref=e1325]:
+                            - generic [ref=e1327]:
+                              - figure [ref=e1328]
+                              - paragraph [ref=e1330]: Golan and 95 other mutual connections
+                            - button "Invite Tuval Kohl to connect" [ref=e1332] [cursor=pointer]:
+                              - generic [ref=e1333]:
+                                - img [ref=e1334]
+                                - generic [ref=e1337]: Connect
+                        - button "Remove Tuval Kohl as a suggestion" [ref=e1339] [cursor=pointer]:
+                          - img [ref=e1341]
+                    - listitem [ref=e1344]:
+                      - generic [ref=e1345]:
+                        - generic [ref=e1346]:
+                          - link "Ofir Wijsboom Software Engineer @ Zero Networks" [ref=e1347] [cursor=pointer]:
+                            - /url: https://www.linkedin.com/in/ofirwysboom/
+                            - generic [ref=e1348]:
+                              - generic [ref=e1349]:
+                                - figure [ref=e1350]
+                                - figure [ref=e1351]
+                              - generic [ref=e1352]:
+                                - paragraph [ref=e1354]:
+                                  - generic [ref=e1355]: Ofir Wijsboom
+                                  - text: Ofir Wijsboom
+                                - paragraph [ref=e1357]: Software Engineer @ Zero Networks
+                          - generic [ref=e1358]:
+                            - generic [ref=e1360]:
+                              - figure [ref=e1361]
+                              - paragraph [ref=e1363]: Elad and 190 other mutual connections
+                            - button "Invite Ofir Wijsboom to connect" [ref=e1365] [cursor=pointer]:
+                              - generic [ref=e1366]:
+                                - img [ref=e1367]
+                                - generic [ref=e1370]: Connect
+                        - button "Remove Ofir Wijsboom as a suggestion" [ref=e1372] [cursor=pointer]:
+                          - img [ref=e1374]
+                    - listitem [ref=e1377]:
+                      - generic [ref=e1378]:
+                        - generic [ref=e1379]:
+                          - link "Sarai Roiz, Verified Front-end developer | 🔆 We're Hiring 🔅" [ref=e1380] [cursor=pointer]:
+                            - /url: https://www.linkedin.com/in/sarai-roiz/
+                            - generic [ref=e1381]:
+                              - generic [ref=e1382]:
+                                - figure [ref=e1383]
+                                - figure [ref=e1384]
+                              - generic [ref=e1385]:
+                                - paragraph [ref=e1387]:
+                                  - generic [ref=e1388]: Sarai Roiz, Verified
+                                  - generic [ref=e1389]:
+                                    - text: Sarai Roiz
+                                    - img [ref=e1391]
+                                - paragraph [ref=e1394]: Front-end developer | 🔆 We're Hiring 🔅
+                          - generic [ref=e1395]:
+                            - generic [ref=e1397]:
+                              - figure [ref=e1398]
+                              - paragraph [ref=e1400]: Rotem and 132 other mutual connections
+                            - button "Invite Sarai Roiz to connect" [ref=e1402] [cursor=pointer]:
+                              - generic [ref=e1403]:
+                                - img [ref=e1404]
+                                - generic [ref=e1407]: Connect
+                        - button "Remove Sarai Roiz as a suggestion" [ref=e1409] [cursor=pointer]:
+                          - img [ref=e1411]
+                - generic [ref=e1415]:
+                  - generic [ref=e1417]:
+                    - heading "People you may know from Be Z Online" [level=3] [ref=e1418]
+                    - button "Show all suggestions for People you may know from Be Z Online" [ref=e1419] [cursor=pointer]:
+                      - generic [ref=e1421]: Show all
+                  - list [ref=e1422]:
+                    - listitem [ref=e1424]:
+                      - generic [ref=e1425]:
+                        - generic [ref=e1426]:
+                          - link "Sabina is open to work Sabina Shapiro, Premium Senior Operations Manager | Payments, Risk & Fintech Operations" [ref=e1427] [cursor=pointer]:
+                            - /url: https://www.linkedin.com/in/sabinashapiro/
+                            - generic [ref=e1428]:
+                              - generic "Sabina is open to work" [ref=e1429]:
+                                - figure [ref=e1430]:
+                                  - img [ref=e1431]
+                                - figure [ref=e1437]
+                              - generic [ref=e1438]:
+                                - paragraph [ref=e1440]:
+                                  - generic [ref=e1441]: Sabina Shapiro, Premium
+                                  - generic [ref=e1442]:
+                                    - text: Sabina Shapiro
+                                    - img [ref=e1444]
+                                - paragraph [ref=e1447]: Senior Operations Manager | Payments, Risk & Fintech Operations
+                          - generic [ref=e1448]:
+                            - generic [ref=e1450]:
+                              - figure [ref=e1451]
+                              - paragraph [ref=e1453]: Hnan and 3 other mutual connections
+                            - button "Invite Sabina Shapiro to connect" [ref=e1455] [cursor=pointer]:
+                              - generic [ref=e1456]:
+                                - img [ref=e1457]
+                                - generic [ref=e1460]: Connect
+                        - button "Remove Sabina Shapiro as a suggestion" [ref=e1462] [cursor=pointer]:
+                          - img [ref=e1464]
+                    - listitem [ref=e1467]:
+                      - generic [ref=e1468]:
+                        - generic [ref=e1469]:
+                          - link "Mariam Ammash --" [ref=e1470] [cursor=pointer]:
+                            - /url: https://www.linkedin.com/in/mariam-ammash-1506802b0/
+                            - generic [ref=e1471]:
+                              - generic [ref=e1472]:
+                                - figure [ref=e1473]
+                                - figure [ref=e1474]
+                              - generic [ref=e1475]:
+                                - paragraph [ref=e1477]:
+                                  - generic [ref=e1478]: Mariam Ammash
+                                  - text: Mariam Ammash
+                                - paragraph [ref=e1480]: "--"
+                          - generic [ref=e1481]:
+                            - generic [ref=e1483]:
+                              - figure [ref=e1484]
+                              - paragraph [ref=e1486]: Walaa and 14 other mutual connections
+                            - button "Invite Mariam Ammash to connect" [ref=e1488] [cursor=pointer]:
+                              - generic [ref=e1489]:
+                                - img [ref=e1490]
+                                - generic [ref=e1493]: Connect
+                        - button "Remove Mariam Ammash as a suggestion" [ref=e1495] [cursor=pointer]:
+                          - img [ref=e1497]
+                    - listitem [ref=e1500]:
+                      - generic [ref=e1501]:
+                        - generic [ref=e1502]:
+                          - link "Yara Aweidah Bachelor's degree at Jerusalem College of Engineering" [ref=e1503] [cursor=pointer]:
+                            - /url: https://www.linkedin.com/in/yara-aweidah-04a1a6116/
+                            - generic [ref=e1504]:
+                              - generic [ref=e1505]:
+                                - figure [ref=e1506]
+                                - figure [ref=e1507]
+                              - generic [ref=e1508]:
+                                - paragraph [ref=e1510]:
+                                  - generic [ref=e1511]: Yara Aweidah
+                                  - text: Yara Aweidah
+                                - paragraph [ref=e1513]: Bachelor's degree at Jerusalem College of Engineering
+                          - generic [ref=e1514]:
+                            - generic [ref=e1516]:
+                              - figure [ref=e1517]
+                              - paragraph [ref=e1519]: Hnan and 8 other mutual connections
+                            - button "Invite Yara Aweidah to connect" [ref=e1521] [cursor=pointer]:
+                              - generic [ref=e1522]:
+                                - img [ref=e1523]
+                                - generic [ref=e1526]: Connect
+                        - button "Remove Yara Aweidah as a suggestion" [ref=e1528] [cursor=pointer]:
+                          - img [ref=e1530]
+                    - listitem [ref=e1533]:
+                      - generic [ref=e1534]:
+                        - generic [ref=e1535]:
+                          - link "Amir Shahwan Senior Marketing Automation Specialist" [ref=e1536] [cursor=pointer]:
+                            - /url: https://www.linkedin.com/in/amir-shahwan-6aa6a3147/
+                            - generic [ref=e1537]:
+                              - generic [ref=e1538]:
+                                - figure [ref=e1539]:
+                                  - img [ref=e1540]
+                                - figure [ref=e1546]
+                              - generic [ref=e1547]:
+                                - paragraph [ref=e1549]:
+                                  - generic [ref=e1550]: Amir Shahwan
+                                  - text: Amir Shahwan
+                                - paragraph [ref=e1552]: Senior Marketing Automation Specialist
+                          - generic [ref=e1553]:
+                            - generic [ref=e1555]:
+                              - figure [ref=e1556]
+                              - paragraph [ref=e1558]: Walaa and 26 other mutual connections
+                            - button "Invite Amir Shahwan to connect" [ref=e1560] [cursor=pointer]:
+                              - generic [ref=e1561]:
+                                - img [ref=e1562]
+                                - generic [ref=e1565]: Connect
+                        - button "Remove Amir Shahwan as a suggestion" [ref=e1567] [cursor=pointer]:
+                          - img [ref=e1569]
+                    - listitem [ref=e1572]:
+                      - generic [ref=e1573]:
+                        - generic [ref=e1574]:
+                          - link "Alon Goldstein Content | Analytics | Emotional connection" [ref=e1575] [cursor=pointer]:
+                            - /url: https://www.linkedin.com/in/alon-goldstein-8b5230186/
+                            - generic [ref=e1576]:
+                              - generic [ref=e1577]:
+                                - figure [ref=e1578]
+                                - figure [ref=e1579]
+                              - generic [ref=e1580]:
+                                - paragraph [ref=e1582]:
+                                  - generic [ref=e1583]: Alon Goldstein
+                                  - text: Alon Goldstein
+                                - paragraph [ref=e1585]: Content | Analytics | Emotional connection
+                          - generic [ref=e1586]:
+                            - generic [ref=e1588]:
+                              - figure [ref=e1589]
+                              - paragraph [ref=e1591]: Walaa and 25 other mutual connections
+                            - button "Invite Alon Goldstein to connect" [ref=e1593] [cursor=pointer]:
+                              - generic [ref=e1594]:
+                                - img [ref=e1595]
+                                - generic [ref=e1598]: Connect
+                        - button "Remove Alon Goldstein as a suggestion" [ref=e1600] [cursor=pointer]:
+                          - img [ref=e1602]
+                    - listitem [ref=e1605]:
+                      - generic [ref=e1606]:
+                        - generic [ref=e1607]:
+                          - link "Itamar Amoyal CFO at Be zed online" [ref=e1608] [cursor=pointer]:
+                            - /url: https://www.linkedin.com/in/itamaramoyal3773b124/
+                            - generic [ref=e1609]:
+                              - generic [ref=e1610]:
+                                - figure [ref=e1611]:
+                                  - img [ref=e1612]
+                                - figure [ref=e1618]
+                              - generic [ref=e1619]:
+                                - paragraph [ref=e1621]:
+                                  - generic [ref=e1622]: Itamar Amoyal
+                                  - text: Itamar Amoyal
+                                - paragraph [ref=e1624]: CFO at Be zed online
+                          - generic [ref=e1625]:
+                            - generic [ref=e1627]:
+                              - figure [ref=e1628]
+                              - paragraph [ref=e1630]: Daniel and 24 other mutual connections
+                            - button "Invite Itamar Amoyal to connect" [ref=e1632] [cursor=pointer]:
+                              - generic [ref=e1633]:
+                                - img [ref=e1634]
+                                - generic [ref=e1637]: Connect
+                        - button "Remove Itamar Amoyal as a suggestion" [ref=e1639] [cursor=pointer]:
+                          - img [ref=e1641]
+                    - listitem [ref=e1644]:
+                      - generic [ref=e1645]:
+                        - generic [ref=e1646]:
+                          - link "Ben Levinshtein VP HR @B-E-Z -" [ref=e1647] [cursor=pointer]:
+                            - /url: https://www.linkedin.com/in/ben-levinshtein/
+                            - generic [ref=e1648]:
+                              - generic [ref=e1649]:
+                                - figure [ref=e1650]
+                                - figure [ref=e1651]
+                              - generic [ref=e1652]:
+                                - paragraph [ref=e1654]:
+                                  - generic [ref=e1655]: Ben Levinshtein
+                                  - text: Ben Levinshtein
+                                - paragraph [ref=e1657]: VP HR @B-E-Z -
+                          - generic [ref=e1658]:
+                            - generic [ref=e1660]:
+                              - figure [ref=e1661]
+                              - paragraph [ref=e1663]: Walaa and 190 other mutual connections
+                            - button "Invite Ben Levinshtein to connect" [ref=e1665] [cursor=pointer]:
+                              - generic [ref=e1666]:
+                                - img [ref=e1667]
+                                - generic [ref=e1670]: Connect
+                        - button "Remove Ben Levinshtein as a suggestion" [ref=e1672] [cursor=pointer]:
+                          - img [ref=e1674]
+                    - listitem [ref=e1677]:
+                      - generic [ref=e1678]:
+                        - generic [ref=e1679]:
+                          - link "Kirill Liadov System Administrator" [ref=e1680] [cursor=pointer]:
+                            - /url: https://www.linkedin.com/in/kirill-liadov-928146273/
+                            - generic [ref=e1681]:
+                              - generic [ref=e1682]:
+                                - figure [ref=e1683]
+                                - figure [ref=e1684]
+                              - generic [ref=e1685]:
+                                - paragraph [ref=e1687]:
+                                  - generic [ref=e1688]: Kirill Liadov
+                                  - text: Kirill Liadov
+                                - paragraph [ref=e1690]: System Administrator
+                          - generic [ref=e1691]:
+                            - generic [ref=e1693]:
+                              - figure [ref=e1694]
+                              - paragraph [ref=e1696]: Daniel and 41 other mutual connections
+                            - button "Invite Kirill Liadov to connect" [ref=e1698] [cursor=pointer]:
+                              - generic [ref=e1699]:
+                                - img [ref=e1700]
+                                - generic [ref=e1703]: Connect
+                        - button "Remove Kirill Liadov as a suggestion" [ref=e1705] [cursor=pointer]:
+                          - img [ref=e1707]
+                - button "Load more" [ref=e1710] [cursor=pointer]:
+                  - generic [ref=e1712]: Load more
+  - generic:
+    - generic:
+      - generic:
+        - generic:
+          - complementary:
+            - generic [ref=e1714]:
+              - generic [ref=e1716] [cursor=pointer]:
+                - generic [ref=e1717]:
+                  - img "Oded Ben-Yair" [ref=e1718]
+                  - generic [ref=e1720]: Status is online
+                - button "You are on the messaging overlay. Press enter to open the list of conversations." [ref=e1721]:
+                  - generic [ref=e1722]:
+                    - generic [ref=e1723]: Messaging
+                    - generic [ref=e1724]: You are on the messaging overlay. Press enter to open the list of conversations.
+              - generic [ref=e1725]:
+                - button "Open messenger dropdown menu" [ref=e1727] [cursor=pointer]:
+                  - img "Open messenger dropdown menu" [ref=e1728]
+                - button "Compose message" [ref=e1731] [cursor=pointer]:
+                  - img [ref=e1732]
+                  - generic [ref=e1734]: Compose message
+                - button "You are on the messaging overlay. Press enter to open the list of conversations." [ref=e1735] [cursor=pointer]:
+                  - img [ref=e1736]
+                  - generic [ref=e1738]: You are on the messaging overlay. Press enter to open the list of conversations.
+          - complementary "AI-powered assistant to get help with your career, jobs etc"
+  - iframe [ref=e1739]:
+    - generic [active] [ref=f323e1]:
+      - generic:
+        - region "Toast message":
+          - heading "0 notifications total" [level=2] [ref=f323e3]
+          - alert
+      - region [ref=f323e4]
+      - generic [ref=f323e5]:
+        - generic [ref=f323e7]:
+          - button "Skip to search" [ref=f323e8] [cursor=pointer]:
+            - generic [ref=f323e9]: Skip to search
+          - button "Skip to main content" [ref=f323e10] [cursor=pointer]:
+            - generic [ref=f323e11]: Skip to main content
+          - button "Keyboard shortcuts" [ref=f323e12] [cursor=pointer]:
+            - generic [ref=f323e13]: Keyboard shortcuts
+          - button "Close jump menu" [ref=f323e14] [cursor=pointer]:
+            - img [ref=f323e15]
+            - generic [ref=f323e17]: Close jump menu
+        - banner "Global Navigation" [ref=f323e18]:
+          - generic [ref=f323e19]:
+            - link "LinkedIn" [ref=f323e20] [cursor=pointer]:
+              - /url: https://www.linkedin.com/feed/?nis=true
+              - img "LinkedIn" [ref=f323e23]:
+                - img [ref=f323e24]
+            - generic [ref=f323e28]:
+              - combobox "Search" [ref=f323e29]
+              - generic:
+                - img
+            - navigation "Primary Navigation" [ref=f323e30]:
+              - list [ref=f323e31]:
+                - listitem [ref=f323e32]:
+                  - link "new feed updates notifications Home" [ref=f323e33] [cursor=pointer]:
+                    - /url: https://www.linkedin.com/feed/
+                    - generic [ref=f323e34]:
+                      - generic [ref=f323e37]: new feed updates notifications
+                      - img [ref=f323e41]
+                    - generic "Home" [ref=f323e43]
+                - listitem [ref=f323e44]:
+                  - link "My Network" [ref=f323e45] [cursor=pointer]:
+                    - /url: https://www.linkedin.com/mynetwork/?
+                    - img [ref=f323e49]
+                    - generic "My Network" [ref=f323e51]
+                - listitem [ref=f323e52]:
+                  - link "Jobs" [ref=f323e53] [cursor=pointer]:
+                    - /url: https://www.linkedin.com/jobs/?
+                    - img [ref=f323e57]
+                    - generic "Jobs" [ref=f323e59]
+                - listitem [ref=f323e60]:
+                  - link "Messaging" [ref=f323e61] [cursor=pointer]:
+                    - /url: https://www.linkedin.com/messaging/?
+                    - img [ref=f323e65]
+                    - generic "Messaging" [ref=f323e67]
+                - listitem [ref=f323e68]:
+                  - link "Notifications" [ref=f323e69] [cursor=pointer]:
+                    - /url: https://www.linkedin.com/notifications/?
+                    - img [ref=f323e73]
+                    - generic "Notifications" [ref=f323e75]
+                - listitem [ref=f323e76]:
+                  - button "Oded Ben-Yair Me" [ref=f323e78] [cursor=pointer]:
+                    - img "Oded Ben-Yair" [ref=f323e79]
+                    - generic [ref=f323e80]:
+                      - text: Me
+                      - img [ref=f323e81]
+                - listitem [ref=f323e83]:
+                  - button "For Business" [ref=f323e85] [cursor=pointer]:
+                    - img [ref=f323e89]
+                    - generic "For Business" [ref=f323e91]:
+                      - text: For Business
+                      - img [ref=f323e92]
+                - listitem [ref=f323e94]:
+                  - 'link "Reactivate Premium: 50% Off" [ref=f323e96] [cursor=pointer]':
+                    - /url: http://www.linkedin.com/premium/redeem/?_ed=0_bvLJH59RTSY-u5c6PMUa4IW0M54p9mxZpuVkfRvTl7r&upsellOrderOrigin=Tracking%3Av1%3Apremium_nav_upsell_text_winback%3ANav%3AIn-Product&referenceId=PsR0p8LbS9mcl7YeBXHrEw%3D%3D&customKey=wb_c&redeemTypeV2=DISCOUNT&destRedirectURL=https%3A%2F%2Fwww.linkedin.com%2Fmynetwork%2Fgrow%2F
+                    - generic [ref=f323e98]: "Reactivate Premium: 50% Off"
