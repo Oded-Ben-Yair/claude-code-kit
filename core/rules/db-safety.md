@@ -18,6 +18,10 @@
 | CRM | `seekapa_workspace` | `crm_app_user` | `CRM-DbConnectionString` |
 | Compliance Exam | `compliance_exam` | `compliance_app_user` | `ComplianceExam-DbConnectionString` |
 | Phone Spam Checker | `phone_spam_checker` | `spam_checker_app_user` | `PhoneSpamChecker-DbConnectionString` |
+| AnyChat | `anychat` | `anychat_app_user` | `AnyChat-DbConnectionString` |
+| Telegram Trading | `telegram_trading` | (unknown user) | (unknown secret) |
+
+> **NOTE**: Telegram Trading DB is only on the OLD PostgreSQL server (`postgres-seekapatraining-prod`). It has NOT been migrated to the new shared server. Telegram Trading project directory was deleted (2026-03-02) — Azure resources may still exist.
 
 ## Pre-Query Checklist (MANDATORY)
 
@@ -91,3 +95,35 @@ When data appears stale, trace BOTH the write path (what updates the data) AND t
 5. Add SQL comment: `-- reads from X, updated by Y() every Z min`
 
 Origin: Sentimark Feb 2026 — stored function updated vpp.current_price every 5 min, API read from ap.current_price (different table, different cadence). 30-second diagnosis once both paths traced.
+
+## GCP Database Mapping
+
+| Project | Database | Instance | Secret |
+|---------|----------|----------|--------|
+| Hey Seven | `hey_seven` | `cloud-sql-hey-seven` | `HaySeven-DbConnectionString` |
+
+## GCP Connection Pattern
+
+```bash
+# Interactive
+gcloud sql connect cloud-sql-hey-seven --user=hey_seven_app_user --database=hey_seven
+```
+
+```python
+# Python: LangGraph checkpointer via Cloud SQL
+from langchain_google_cloud_sql_pg import PostgresCheckpoint
+
+checkpoint = PostgresCheckpoint(
+    project_id="hey-seven",
+    region="us-central1",
+    instance="cloud-sql-hey-seven",
+    database="hey_seven",
+    user="hey_seven_app_user",
+)
+```
+
+```python
+# Cloud Run: connect via Unix socket (no proxy needed)
+UNIX_SOCKET = "/cloudsql/hey-seven:us-central1:cloud-sql-hey-seven"
+DATABASE_URL = f"postgresql+asyncpg://USER:PASS@/hey_seven?host={UNIX_SOCKET}"
+```

@@ -1,0 +1,281 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://claude.ai/schemas/agent-handoff.json",
+  "title": "Agent Handoff Protocol",
+  "description": "Structured data contract for agent-to-agent task handoffs in Silent Kernel orchestration",
+  "version": "1.0.0",
+  "lastUpdated": "2026-01-29",
+
+  "type": "object",
+  "required": ["handoff_id", "source_agent", "target_agent", "task_context", "execution_state", "timestamp"],
+
+  "properties": {
+    "handoff_id": {
+      "type": "string",
+      "description": "Unique identifier for this handoff (format: handoff-{timestamp}-{random})",
+      "pattern": "^handoff-[0-9]{8}T[0-9]{6}-[a-z0-9]{6}$"
+    },
+
+    "source_agent": {
+      "type": "string",
+      "enum": ["architect-planner", "code-worker", "code-judge", "orchestrator", "user"],
+      "description": "Agent initiating the handoff"
+    },
+
+    "target_agent": {
+      "type": "string",
+      "enum": ["architect-planner", "code-worker", "code-judge", "orchestrator", "user", "escalation"],
+      "description": "Agent receiving the handoff"
+    },
+
+    "handoff_type": {
+      "type": "string",
+      "enum": ["plan_to_implement", "implement_to_review", "review_to_implement", "review_to_plan", "escalation"],
+      "description": "Type of handoff in the orchestration flow"
+    },
+
+    "task_context": {
+      "type": "object",
+      "required": ["task_id", "description", "original_request"],
+      "properties": {
+        "task_id": {
+          "type": "string",
+          "description": "Unique task identifier (from TodoList or plan)"
+        },
+        "description": {
+          "type": "string",
+          "description": "Clear description of what needs to be done"
+        },
+        "original_request": {
+          "type": "string",
+          "description": "The user's original request (preserved for context)"
+        },
+        "files_read": {
+          "type": "array",
+          "items": { "type": "string" },
+          "description": "Files that were read to understand context"
+        },
+        "files_to_modify": {
+          "type": "array",
+          "items": { "type": "string" },
+          "description": "Files that should be modified (from plan)"
+        },
+        "patterns_discovered": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "pattern_name": { "type": "string" },
+              "source_file": { "type": "string" },
+              "description": { "type": "string" }
+            }
+          },
+          "description": "Code patterns found during exploration"
+        },
+        "decisions_made": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": ["decision", "rationale"],
+            "properties": {
+              "decision": { "type": "string" },
+              "rationale": { "type": "string" },
+              "alternatives_considered": {
+                "type": "array",
+                "items": { "type": "string" }
+              }
+            }
+          },
+          "description": "Architectural decisions made during this phase"
+        },
+        "acceptance_criteria": {
+          "type": "array",
+          "items": { "type": "string" },
+          "description": "Criteria for success (from plan)"
+        }
+      }
+    },
+
+    "execution_state": {
+      "type": "object",
+      "required": ["phase", "step_number", "total_steps"],
+      "properties": {
+        "phase": {
+          "type": "string",
+          "enum": ["planning", "implementing", "reviewing", "complete", "failed", "escalated"],
+          "description": "Current orchestration phase"
+        },
+        "step_number": {
+          "type": "integer",
+          "minimum": 0,
+          "description": "Current step in the plan"
+        },
+        "total_steps": {
+          "type": "integer",
+          "minimum": 1,
+          "description": "Total steps in the plan"
+        },
+        "retry_count": {
+          "type": "integer",
+          "default": 0,
+          "maximum": 3,
+          "description": "Number of retries attempted for current step"
+        },
+        "blockers": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "type": {
+                "type": "string",
+                "enum": ["clarification_needed", "dependency_missing", "test_failure", "review_rejection", "external_service"]
+              },
+              "description": { "type": "string" },
+              "blocking_since": { "type": "string", "format": "date-time" }
+            }
+          },
+          "description": "Current blockers preventing progress"
+        }
+      }
+    },
+
+    "artifacts": {
+      "type": "object",
+      "description": "Outputs produced during the phase",
+      "properties": {
+        "plan_document": {
+          "type": "string",
+          "description": "Path to plan document (if planner output)"
+        },
+        "code_changes": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "file": { "type": "string" },
+              "change_type": {
+                "type": "string",
+                "enum": ["created", "modified", "deleted"]
+              },
+              "lines_changed": { "type": "integer" },
+              "summary": { "type": "string" }
+            }
+          },
+          "description": "Code changes made (if implementer output)"
+        },
+        "test_results": {
+          "type": "object",
+          "properties": {
+            "passed": { "type": "integer" },
+            "failed": { "type": "integer" },
+            "skipped": { "type": "integer" },
+            "coverage_percent": { "type": "number" },
+            "failure_details": {
+              "type": "array",
+              "items": { "type": "string" }
+            }
+          },
+          "description": "Test execution results"
+        },
+        "review_verdict": {
+          "type": "object",
+          "properties": {
+            "verdict": {
+              "type": "string",
+              "enum": ["APPROVE", "REVISE", "REJECT"]
+            },
+            "issues": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "severity": {
+                    "type": "string",
+                    "enum": ["critical", "major", "minor", "suggestion"]
+                  },
+                  "location": { "type": "string" },
+                  "description": { "type": "string" },
+                  "fix_suggestion": { "type": "string" }
+                }
+              }
+            },
+            "security_checklist_passed": { "type": "boolean" },
+            "pattern_compliance": { "type": "boolean" }
+          },
+          "description": "Code review verdict (if judge output)"
+        }
+      }
+    },
+
+    "prior_context_summary": {
+      "type": "string",
+      "description": "CRITICAL: Summary formatted as '[For context]: ...' to prevent self-attribution hallucination"
+    },
+
+    "idempotency_token": {
+      "type": "string",
+      "description": "Token for deduplication if handoff is retried"
+    },
+
+    "timestamp": {
+      "type": "string",
+      "format": "date-time",
+      "description": "When the handoff was created"
+    },
+
+    "timeout_at": {
+      "type": "string",
+      "format": "date-time",
+      "description": "When this handoff should be considered stale"
+    }
+  },
+
+  "examples": [
+    {
+      "handoff_id": "handoff-20260129T120000-abc123",
+      "source_agent": "architect-planner",
+      "target_agent": "code-worker",
+      "handoff_type": "plan_to_implement",
+      "task_context": {
+        "task_id": "task-001",
+        "description": "Implement user authentication middleware",
+        "original_request": "Add user authentication to the API",
+        "files_read": ["src/middleware/auth.ts", "src/routes/user.ts"],
+        "files_to_modify": ["src/middleware/auth.ts", "src/utils/jwt.ts"],
+        "patterns_discovered": [
+          {
+            "pattern_name": "Express middleware pattern",
+            "source_file": "src/middleware/logging.ts",
+            "description": "Uses (req, res, next) signature with error handling"
+          }
+        ],
+        "decisions_made": [
+          {
+            "decision": "Use JWT for token-based auth",
+            "rationale": "Stateless, scalable, matches existing patterns",
+            "alternatives_considered": ["Session-based auth", "OAuth only"]
+          }
+        ],
+        "acceptance_criteria": [
+          "JWT tokens generated on login",
+          "Protected routes require valid token",
+          "Token expiry handled gracefully"
+        ]
+      },
+      "execution_state": {
+        "phase": "implementing",
+        "step_number": 1,
+        "total_steps": 5,
+        "retry_count": 0,
+        "blockers": []
+      },
+      "artifacts": {
+        "plan_document": ".claude/plans/auth-implementation-plan.md"
+      },
+      "prior_context_summary": "[For context]: Planner analyzed the codebase and found Express middleware patterns in logging.ts. Decided on JWT-based authentication for scalability.",
+      "idempotency_token": "idem-20260129T120000-xyz789",
+      "timestamp": "2026-01-29T12:00:00Z",
+      "timeout_at": "2026-01-29T14:00:00Z"
+    }
+  ]
+}

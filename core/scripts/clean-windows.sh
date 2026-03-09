@@ -1,9 +1,10 @@
 #!/usr/bin/env bash
-# clean-windows.sh — Windows cleanup via cmd.exe (NOT PowerShell)
+# clean-windows.sh v2.0 — Windows cleanup via cmd.exe (NOT PowerShell)
 # Usage: bash ~/.claude/scripts/clean-windows.sh [--dry-run]
+#
+# v2.0: Replaced trap 'exit 0' ERR with set +e, removed sed -i self-modification
 
-trap 'exit 0' ERR
-sed -i 's/\r$//' "$0" 2>/dev/null || true
+set +e  # Continue on errors — handle them inline with || true
 
 DRY_RUN=false
 for arg in "$@"; do

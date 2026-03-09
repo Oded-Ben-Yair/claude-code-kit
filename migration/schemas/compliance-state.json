@@ -1,0 +1,153 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "compliance-state",
+  "title": "Azure Compliance State",
+  "version": "1.0.0",
+  "description": "Tracks per-project compliance audit results, rename operations, and migration state",
+  "type": "object",
+  "properties": {
+    "version": {
+      "type": "string",
+      "const": "1.0.0"
+    },
+    "lastUpdated": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "overallStatus": {
+      "type": "string",
+      "enum": ["not_started", "auditing", "planning", "executing", "validating", "complete"]
+    },
+    "projects": {
+      "type": "object",
+      "additionalProperties": {
+        "type": "object",
+        "properties": {
+          "status": {
+            "type": "string",
+            "enum": ["not_audited", "audited", "plan_created", "plan_approved", "executing", "validating", "complete", "failed"]
+          },
+          "lastAuditDate": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "rules": {
+            "type": "object",
+            "additionalProperties": {
+              "type": "object",
+              "properties": {
+                "status": {
+                  "type": "string",
+                  "enum": ["pass", "fail", "not_applicable", "not_checked"]
+                },
+                "details": {
+                  "type": "string"
+                },
+                "fixedDate": {
+                  "type": "string",
+                  "format": "date-time"
+                }
+              }
+            }
+          },
+          "renameOperations": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "resourceType": {
+                  "type": "string"
+                },
+                "currentName": {
+                  "type": "string"
+                },
+                "targetName": {
+                  "type": "string"
+                },
+                "status": {
+                  "type": "string",
+                  "enum": ["planned", "approved", "new_created", "settings_migrated", "traffic_swapped", "old_decommissioned", "rollback_needed", "complete"]
+                },
+                "rollbackInfo": {
+                  "type": "object",
+                  "properties": {
+                    "oldResourceId": {
+                      "type": "string"
+                    },
+                    "settingsBackup": {
+                      "type": "string"
+                    },
+                    "pipelineRefs": {
+                      "type": "array",
+                      "items": {
+                        "type": "string"
+                      }
+                    },
+                    "codeRefs": {
+                      "type": "array",
+                      "items": {
+                        "type": "string"
+                      }
+                    },
+                    "keyVaultSecrets": {
+                      "type": "array",
+                      "items": {
+                        "type": "string"
+                      }
+                    }
+                  }
+                },
+                "startedDate": {
+                  "type": "string",
+                  "format": "date-time"
+                },
+                "completedDate": {
+                  "type": "string",
+                  "format": "date-time"
+                },
+                "gracePeriodEnd": {
+                  "type": "string",
+                  "format": "date-time"
+                }
+              },
+              "required": ["resourceType", "currentName", "targetName", "status"]
+            }
+          }
+        }
+      }
+    },
+    "sessionLog": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "sessionId": {
+            "type": "string"
+          },
+          "date": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "action": {
+            "type": "string",
+            "enum": ["audit", "plan", "execute", "validate", "report"]
+          },
+          "projectsTouched": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "outcome": {
+            "type": "string"
+          },
+          "notes": {
+            "type": "string"
+          }
+        },
+        "required": ["sessionId", "date", "action", "outcome"]
+      }
+    }
+  },
+  "required": ["version", "lastUpdated", "overallStatus", "projects", "sessionLog"]
+}

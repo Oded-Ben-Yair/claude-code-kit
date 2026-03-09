@@ -1,10 +1,11 @@
 #!/usr/bin/env bash
 # Hook: dead-code-check.sh
-# Removed set -euo pipefail — internal failures must never crash Claude Code UI.
-trap 'exit 0' ERR
 # Event: PreToolUse (Bash tools containing "git commit")
 # Purpose: Block commits that include new Python files with zero imports from other files.
 # Exit 2 = BLOCK, Exit 0 = PASS
+# Input: stdin JSON from Claude Code hooks API
+
+trap 'exit 0' ERR
 
 TELEMETRY_DIR="${CLAUDE_HOME:-$HOME/.claude}/telemetry"
 VIOLATIONS_LOG="${TELEMETRY_DIR}/violations.jsonl"
@@ -24,20 +25,22 @@ log_violation() {
         >> "${VIOLATIONS_LOG}"
 }
 
-# Only process Bash tool calls
-tool_name="${CLAUDE_TOOL_USE_NAME:-}"
+# Read stdin JSON (Claude Code hooks API)
+_STDIN=""
+[[ ! -t 0 ]] && _STDIN="$(cat)" || true
+
+tool_name="$(echo "$_STDIN" | jq -r '.tool_name // empty' 2>/dev/null)"
 if [[ "${tool_name}" != "Bash" ]]; then
     exit 0
 fi
 
-# Read tool input
-input="${CLAUDE_TOOL_USE_INPUT:-}"
-if [[ -z "${input}" ]]; then
+command_text="$(echo "$_STDIN" | jq -r '.tool_input.command // empty' 2>/dev/null)"
+if [[ -z "${command_text}" ]]; then
     exit 0
 fi
 
 # Check if command contains git commit
-if ! echo "${input}" | grep -qi 'git commit'; then
+if ! echo "${command_text}" | grep -qi 'git commit'; then
     exit 0
 fi
 
@@ -101,9 +104,9 @@ done <<< "${new_py_files}"
 if [[ -n "${orphan_files}" ]]; then
     error_msg="BLOCKED: New Python files with zero imports detected (dead code). Wire them into production code before committing:${orphan_files}"
 
-    log_violation "dead-code-check" "orphan_python_file" "$(echo -e "${error_msg}")" "${input}"
+    log_violation "dead-code-check" "orphan_python_file" "$(echo -e "${error_msg}")" "${command_text}"
 
-    echo -e '{"error":"orphan_python_files","message":"'"${error_msg}"'"}' >&2
+    echo -e "${error_msg}" >&2
     exit 2
 fi
 

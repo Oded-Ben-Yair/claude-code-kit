@@ -1,0 +1,80 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "session-summary",
+  "title": "Session Summary Entity Schema",
+  "description": "Schema for Memory MCP SessionSummary entities created by end-of-session skill",
+  "type": "object",
+  "properties": {
+    "entityType": {
+      "const": "SessionSummary",
+      "description": "Entity type identifier"
+    },
+    "name": {
+      "type": "string",
+      "pattern": "^[a-z0-9-]+-session-[0-9]{8}-[a-f0-9]{6}$",
+      "description": "Session ID in format: [project]-session-[YYYYMMDD]-[hash]",
+      "examples": [
+        "automation-fabric-session-20260115-a1b2c3",
+        "sentimark-session-20260114-def456"
+      ]
+    },
+    "observations": {
+      "type": "array",
+      "description": "Array of observation strings containing session data",
+      "items": {
+        "type": "string"
+      },
+      "contains": {
+        "pattern": "^Session Date:"
+      },
+      "minItems": 5,
+      "examples": [
+        [
+          "Session Date: 2026-01-15T16:30:00Z",
+          "Project: automation-fabric",
+          "Project Path: /home/odedbe/projects/automation-fabric",
+          "Duration: 145 minutes",
+          "Health Score: 85/100 (Good)",
+          "Goal 1: Implement Grok integration - COMPLETE",
+          "Goal 2: Deploy to Azure - BLOCKED",
+          "Files Modified: src/grok_client.py, tests/test_grok.py",
+          "Blocker: Key Vault access needed for deployment",
+          "Learning: Grok needs explicit timeout handling for long operations",
+          "Decision: Use wrapper pattern for Grok (linked: automation-fabric-decision-grok-wrapper)",
+          "P0 Next: Get Key Vault access from admin",
+          "P1 Next: Complete Azure deployment after access granted",
+          "Handover: .claude/handover-20260115-a1b2c3.md"
+        ]
+      ]
+    }
+  },
+  "required": ["entityType", "name", "observations"],
+  "observationFields": {
+    "description": "Standard observation field patterns for SessionSummary entities",
+    "required": [
+      "Session Date: [ISO timestamp]",
+      "Project: [project_name]",
+      "Health Score: [0-100]/100 ([level])",
+      "P0 Next: [task]"
+    ],
+    "optional": [
+      "Project Path: [path]",
+      "Duration: [N] minutes",
+      "Goal N: [description] - [COMPLETE|PARTIAL|BLOCKED]",
+      "Files Modified: [file1], [file2], ...",
+      "Blocker: [description]",
+      "Learning: [insight]",
+      "Decision: [summary] (linked: [entity-name])",
+      "P1 Next: [task]",
+      "P2 Next: [task]",
+      "Handover: [path]"
+    ]
+  },
+  "healthScoreLevels": {
+    "90-100": "Excellent",
+    "75-89": "Good",
+    "60-74": "Acceptable",
+    "40-59": "Needs Attention",
+    "0-39": "Critical"
+  }
+}

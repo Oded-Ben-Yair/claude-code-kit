@@ -21,7 +21,7 @@ import { dirname } from 'node:path';
 const MODELS = {
   reasoning: 'gemini-3.1-pro-preview',
   flash:     'gemini-3-flash-preview',
-  image:     'gemini-3-pro-image-preview',
+  image:     'gemini-3.1-flash-image-preview', // Nano Banana 2 — Pro quality, Flash speed
   imagen:    'imagen-4.0-generate-001',
   video:     'veo-3.1-generate-preview',
 };

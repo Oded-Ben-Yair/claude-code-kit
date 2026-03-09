@@ -275,6 +275,7 @@ After shutdown, the lead must:
 | `/go` | Previous team findings available via team-memory.md |
 | `status.json` | Updated with team results at shutdown |
 | `decisions.log` | Architectural decisions from team appended |
+| `google-developer-knowledge` | GCP/Firebase docs for research teammates |
 
 ---
 

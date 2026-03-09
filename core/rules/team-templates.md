@@ -22,7 +22,7 @@ Project-specific team compositions for common workflows. These are starting poin
 
 | Teammate | Role | Owns | MCP Tools |
 |----------|------|------|-----------|
-| data-researcher | Market research, API investigation | Research docs, data sources | `perplexity_research`, `grok_search` |
+| data-researcher | Market research, API investigation | Research docs, data sources | `perplexity_research`, `grok_search`, `google-developer-knowledge` |
 | algorithm-dev | Prediction algorithms, ML models | `services/prediction/`, model code | `vertex_deepseek_reason`, `vertex_chat` |
 | visualization-dev | Dashboard, charts, frontend | `frontend/`, visualization components | `gemini-query` (vision validation) |
 
@@ -52,7 +52,7 @@ Project-specific team compositions for common workflows. These are starting poin
 
 | Teammate | Role | Owns | MCP Tools |
 |----------|------|------|-----------|
-| design-analyst | Design research, mockup analysis | Design specs, reference screenshots | `gemini-query` (vision), `perplexity_research` |
+| design-analyst | Design research, mockup analysis | Design specs, reference screenshots | `gemini-query` (vision), `perplexity_research`, `google-developer-knowledge` |
 | component-builder | React/TS implementation | Component files, styles | `grok_code`, `vertex_chat` |
 | visual-verifier | Screenshot validation, accessibility | Test screenshots, validation reports | `playwright`, `gemini-analyze-image` |
 
@@ -69,7 +69,7 @@ Project-specific team compositions for common workflows. These are starting poin
 |----------|------|------|-----------|
 | hypothesis-a | Test approach A | Branch/files for approach A | Varies by task |
 | hypothesis-b | Test approach B | Branch/files for approach B | Varies by task |
-| evidence-gatherer | Research & data collection | Research notes | `perplexity_research`, `grok_search` |
+| evidence-gatherer | Research & data collection | Research notes | `perplexity_research`, `grok_search`, `google-developer-knowledge` |
 
 **When**: Competing implementation approaches, debugging with multiple hypotheses, architecture exploration.
 
@@ -82,7 +82,7 @@ Project-specific team compositions for common workflows. These are starting poin
 
 | Teammate | Role | Owns | MCP Tools |
 |----------|------|------|-----------|
-| agent-architect | LangGraph core, tools, RAG | src/agent/, src/rag/ | `gemini-query`, `vertex_chat` |
+| agent-architect | LangGraph core, tools, RAG | src/agent/, src/rag/ | `gemini-query`, `vertex_chat`, `google-developer-knowledge` |
 | api-builder | FastAPI, deployment | src/api/, Docker, CI/CD | `vertex_chat`, `grok_code` |
 | ui-designer | Frontend with branding | src/frontend/, static/ | `gemini-query` (vision) |
 
@@ -106,6 +106,49 @@ Project-specific team compositions for common workflows. These are starting poin
 8. **Wave-based parallelism** — for multi-dimension improvement sprints, organize into waves with strict file ownership. No two waves edit the same file. Code waves before doc waves when they share data (pattern counts, helpline numbers). Each wave that adds new behavior MUST include tests.
 
 Origin: Hey Seven R18 (2026-02-22) — code-judge reviewers completed analysis but couldn't write output files. Re-launched as general-purpose agents. R68 (2026-02-26) — 6-wave parallel sprint (5 code + 1 review) completed in ~2 hours using strict file ownership per wave.
+
+## Multi-Terminal Orchestration (Preferred for 4+ hour tasks)
+
+When one session isn't enough parallelism, use multiple Claude Code terminals with human as message bus.
+
+### When to Use Multi-Terminal over Swarm Teams
+
+| Signal | Use Multi-Terminal | Use Swarm Teams |
+|--------|-------------------|-----------------|
+| Each worker needs full MCP access | Yes | Swarm has limited MCP |
+| Workers need full Opus context window | Yes | Swarm shares context budget |
+| Task has 3+ truly independent workstreams | Yes | Swarm for 2 workers max |
+| Workers need to modify same file | No — use Swarm | Yes (with coordination) |
+| Quick focused subtask (<30 min) | No — use subagent | Subagent is faster |
+
+### Multi-Terminal Protocol
+
+1. **T1 (lead session)** creates coordination directory: `.claude/teams/{task-name}/`
+2. **status.md** — file ownership matrix, terminal status, merge protocol
+3. **Per-terminal prompt files** — T2-prompt.md, T3-prompt.md, etc. Self-contained instructions.
+4. **PASTE-INTO-TERMINALS.md** — short prompts for user to copy-paste into each `claude` session
+5. **Execute mode, not plan mode** — prompts are specific enough, no approval gate needed
+
+### Critical Rules
+
+1. **Strict file ownership** — file ownership matrix in status.md. No two terminals touch the same file. Lead can fix cross-terminal issues.
+2. **Interface-spec-in-prompt** — when T2 depends on T1's output, include the FULL interface spec (function signatures, return types) in T2's prompt. T2 codes against the contract, imports resolve when T1 delivers.
+3. **Prompt must say "read an existing example first"** — for new files (scenarios, tests), always instruct the terminal to read existing files for format conventions.
+4. **Independent work starts first** — launch research/eval/prep terminals immediately. Code-dependent terminals can scaffold but may need to wait.
+5. **User = message bus** — terminals can't talk to each other. User relays "T1 is done" to T2.
+6. **Lead does merge validation** — after all terminals complete, T1 runs full test suite and reviews changes before commit.
+7. **Max 4 terminals** — beyond 4, coordination overhead exceeds parallelism benefit. Rate limits also become a factor.
+
+### Results (R106 baseline)
+
+4 terminals completed in ~2 hours what would have been ~6 hours sequential:
+- T1 (tool architecture): 4 tools + binding + flags + 46 tests
+- T2 (integration): _base.py tool-call loop + 33 tests
+- T3 (eval + judge): P9 re-eval + 3-model judge upgrade
+- T4 (research + prep): 51 gold traces + 15 scenarios + tuning research
+- **0 merge conflicts, 922 critical tests pass**
+
+Origin: Hey Seven R106 (2026-03-09) — 4-terminal parallel implementation. T4 finished first (fully independent). T2 coded against T1's interface spec before T1 delivered files. Zero merge conflicts due to strict file ownership.
 
 ## Agent Teams Known Limitations
 

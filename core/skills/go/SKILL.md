@@ -1,10 +1,10 @@
 ---
 name: go
 description: Resume from last session with full context recovery, status briefing, and auto-planned action plan. Triggers on "go", "let's go", "where were we", "continue", "/go".
-argument-hint: [project-name] [--skip-plan] [--session-id=ID]
+argument-hint: [project-name] [--skip-plan] [--skip-alignment] [--session-id=ID]
 allowed-tools: Read, Write, Edit, Glob, Grep, Bash(git:*), Bash(ls:*), Bash(jq:*), Bash(basename:*), Bash(date:*), Bash(wc:*), mcp__memory__*
 metadata:
-  version: "1.1.0"
+  version: "1.2.0"
   author: odedbe
 ---
 
@@ -12,7 +12,7 @@ metadata:
 
 **The counterpart to `/end-of-session`.** This skill recovers ALL context from the previous session and auto-generates an orchestrated action plan for the next steps.
 
-**Flow**: Recover Context -> Briefing -> Auto-Plan -> User Gate -> Document
+**Flow**: Recover Context -> Alignment Check -> Briefing -> Auto-Plan -> User Gate -> Document
 
 ---
 
@@ -24,6 +24,7 @@ metadata:
 | `--skip-plan` | Phases 1-5 only (briefing, no plan) | Just want status, will direct manually |
 | `--session-id=ID` | Resume specific session | Not the most recent one |
 | `[project-name]` | Resume specific project | Working across multiple projects |
+| `--skip-alignment` | Skip Phase 4.5 alignment check | No handover artifacts to check |
 
 ---
 
@@ -80,6 +81,43 @@ Read `references/recovery-phases.md` for the full details of:
 - **Phase 2**: Context Recovery [10 seconds] -- Read handover, Memory MCP, project status, active plans, git state
 - **Phase 3**: Learning Review [10 seconds] -- Review success/failure patterns, routing calibration, extract learnings
 - **Phase 4**: Health Assessment [3 seconds] -- Previous session health, current environment health, overall readiness
+- **Phase 4.5**: Handover Alignment Check [10 seconds] -- Detect stale handover artifacts from previous sessions
+
+---
+
+## Phase 4.5: Handover Alignment Check [10 seconds] - NEW
+
+**Skip if:** `--skip-alignment`, not in a project directory, or project not in mapping table.
+
+Check whether handover artifacts (wiki KBs, deploy repos, architecture diagrams) drifted since the last session. Uses the same mapping from `/end-of-session` — see `~/.claude/skills/end-of-session/references/handover-alignment.md`.
+
+**Key difference from `/end-of-session` Phase 3.7**: This looks *backwards* at what already happened. `/end-of-session` checks what the *current* session changed. `/go` checks what *all sessions since last handover update* changed — catching drift from sessions that crashed, used `--mode=quick`, or skipped `/end-of-session`.
+
+**Actions:**
+
+1. **Detect project** from `pwd` against `~/projects/<slug>/`
+2. **Get commits since last handover**:
+```bash
+# Find most recent handover file date
+LAST_HANDOVER=$(ls -t "$(pwd)/.claude/handover-"*.md 2>/dev/null | head -1)
+if [ -n "$LAST_HANDOVER" ]; then
+    # Get date from filename (handover-YYYYMMDD-hash.md)
+    HANDOVER_DATE=$(basename "$LAST_HANDOVER" | grep -oP '\d{8}')
+    # Commits since that date
+    git log --since="${HANDOVER_DATE:0:4}-${HANDOVER_DATE:4:2}-${HANDOVER_DATE:6:2}" \
+        --name-only --pretty=format: 2>/dev/null | sort -u | grep -v '^$'
+else
+    # No handover found — check last 10 commits
+    git diff --name-only HEAD~10 2>/dev/null
+fi
+```
+3. **Classify accumulated changes** using same rules as `/end-of-session` Phase 3.7
+4. **Check each artifact** — only the ones relevant to the classification
+5. **Include results in Phase 5 briefing** (see updated template below)
+
+**Output**: Feeds into the `--- HANDOVER ALIGNMENT ---` section of Phase 5.
+
+**FAIL MODE:** Log "Alignment check unavailable", skip section in briefing.
 
 ---
 
@@ -108,6 +146,12 @@ Project: {project_name} ({project_path})
 Git: {branch} | {uncommitted} uncommitted | Last push: {status}
 Tests: {pass}/{total} | Build: {status}
 Blockers: {count} active
+
+--- HANDOVER ALIGNMENT ---
+  [OK] Wiki KB — No drift detected
+  [!!] Deploy repo — NEEDS UPDATE (new deps in requirements.txt)
+  [--] Diagram — Skipped (no structural changes)
+  Alignment: 1 GAP — fix before starting new work or add to plan
 
 --- WHAT'S NEXT (from handover) ---
 P0: {highest priority task}
@@ -145,6 +189,8 @@ Read `references/auto-plan.md` for the full details of:
 | Phase 2 | No project status | Skip, note in briefing |
 | Phase 3 | No pattern files | Skip learning review |
 | Phase 4 | Not a git repo | Skip git checks |
+| Phase 4.5 | Alignment check fails | Skip section in briefing |
+| Phase 4.5 | Not a project directory | Skip silently |
 | Phase 6 | Task too vague | Present options instead of plan |
 | Phase 7 | status.json missing | Create it |
 
@@ -154,7 +200,7 @@ Read `references/auto-plan.md` for the full details of:
 
 | Skill | How It Connects |
 |-------|----------------|
-| `/end-of-session` | **Produces** the handover, memory entity, and session index that this skill **consumes** |
+| `/end-of-session` | **Produces** the handover, memory entity, and session index that this skill **consumes**. Both skills share `references/handover-alignment.md` for artifact mapping. |
 | `/learning-loop` | **Produces** the pattern files that Phase 3 reviews |
 | `/session-prime` | This skill REPLACES session-prime for returning users. Use session-prime only for first-time project onboarding |
 | `/pre-mortem` | Auto-triggered in Phase 6 if risk is High |
@@ -185,4 +231,4 @@ This skill enforces ALL rules from CLAUDE.md:
 
 ---
 
-*Counterpart to `/end-of-session` v2. Together they form the session lifecycle.*
+*Counterpart to `/end-of-session` v1.1.0. Together they form the session lifecycle with bidirectional alignment checks.*

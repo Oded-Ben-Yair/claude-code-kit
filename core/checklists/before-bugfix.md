@@ -50,6 +50,7 @@ Surface when: fixing bugs, errors, failures.
 - [ ] **State field count test**: if adding/removing a state field, update the parity assertion test (R73: test_property_qa_state_has_N_fields)
 - [ ] **LLM structured output live test**: if modifying a Pydantic model used with `with_structured_output()`, run at least 1 live API call to verify the schema is accepted by the target LLM (R76: 3 schemas broken in production, all 3236 mock tests passed)
 - [ ] **Cross-node state overwrite check**: if modifying a state field set by multiple nodes, verify no downstream node silently overwrites the upstream value (R76: VADER overwrote grief sentiment)
+- [ ] **Keyword matching boundary check**: if using `word in string` for keyword detection, verify it uses word boundaries (R101: `set(string.split()) & keywords`), not substring matching (matches "comp" in "comparison")
 
 ## Skip Conditions
 

@@ -29,7 +29,6 @@
       "WebFetch",
       "Task",
       "TodoWrite",
-      "AskUserQuestion",
       "Skill",
       "SlashCommand",
       "mcp__*",
@@ -126,7 +125,7 @@
           },
           {
             "type": "command",
-            "command": "{CLAUDE_HOME}/hooks/quality-validation.sh \"$TOOL_NAME\" \"$TOOL_INPUT\"",
+            "command": "{CLAUDE_HOME}/hooks/quality-validation.sh",
             "timeout": 5
           },
           {
@@ -156,7 +155,7 @@
         "hooks": [
           {
             "type": "command",
-            "command": "{CLAUDE_HOME}/hooks/quality-validation.sh \"$TOOL_NAME\" \"$TOOL_INPUT\"",
+            "command": "{CLAUDE_HOME}/hooks/quality-validation.sh",
             "timeout": 5
           },
           {
@@ -347,5 +346,6 @@
       "args": [],
       "_comment": "Multi-provider AI MCP \u2014 configure API keys in .env"
     }
-  }
+  },
+  "effortLevel": "high"
 }

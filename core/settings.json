@@ -31,7 +31,6 @@
       "WebFetch",
       "Task",
       "TodoWrite",
-      "AskUserQuestion",
       "Skill",
       "SlashCommand",
       "mcp__*"
@@ -126,7 +125,7 @@
           },
           {
             "type": "command",
-            "command": "${CLAUDE_HOME:-$HOME/.claude}/hooks/quality-validation.sh \"$TOOL_NAME\" \"$TOOL_INPUT\"",
+            "command": "${CLAUDE_HOME:-$HOME/.claude}/hooks/quality-validation.sh",
             "timeout": 5
           },
           {
@@ -156,7 +155,7 @@
         "hooks": [
           {
             "type": "command",
-            "command": "${CLAUDE_HOME:-$HOME/.claude}/hooks/quality-validation.sh \"$TOOL_NAME\" \"$TOOL_INPUT\"",
+            "command": "${CLAUDE_HOME:-$HOME/.claude}/hooks/quality-validation.sh",
             "timeout": 5
           },
           {
@@ -357,5 +356,6 @@
         "claude-mermaid"
       ]
     }
-  }
+  },
+  "effortLevel": "high"
 }

@@ -53,6 +53,7 @@ Origin: Hey Seven Phase 5 (2026-02-22) — LLM-as-judge with nested Pydantic mod
 | Azure AI Foundry | ~4k | Gemini | ~4k |
 | Grok | ~4k | Context7 | ~2k |
 | | | Playwright | ~14k |
+| | | Google Dev Knowledge | ~2k |
 
 ## Core Agents (Plan -> Implement -> Verify)
 

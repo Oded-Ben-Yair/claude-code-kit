@@ -48,6 +48,13 @@ Surface when: refactoring, restructuring, reorganizing, deleting files, moving c
 - [ ] If the helper returns values used later, update ALL references from direct access to return-value access
 - [ ] Run syntax check (`python3 -c "import ast; ast.parse(open('file').read())"`) before running tests
 
+## Policy/Authority/Prompt Language Refactor
+
+- [ ] After changing any prompt rule, `grep -r "OLD_PHRASE" src/` to find ALL prompt surfaces
+- [ ] Check: main system prompt, specialist agent prompts, validation criteria, few-shot examples, gold traces
+- [ ] Check: system instructions in training data (JSONL)
+- [ ] If authority model changed: update eval rubric criteria to match new authority language
+
 ## Post-Refactor
 
 - [ ] Production Wiring Check: trace entry point to your changed code

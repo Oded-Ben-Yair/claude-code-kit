@@ -1,18 +1,23 @@
 #!/usr/bin/env bash
-# clean-wsl.sh v3.0 — WSL cleanup: stale sessions, Edge, zombies, caches, memory
+# clean-wsl.sh v4.0 — WSL cleanup: stale sessions, Edge, zombies, caches, memory
 # Usage: bash ~/.claude/scripts/clean-wsl.sh [--dry-run] [--aggressive]
 #
-# What it cleans (v3 additions marked with *):
+# What it cleans:
 #   Phase 1: Orphaned Claude processes (ppid=1)
-#   Phase 2: *Stale Claude sessions (all MCPs from non-current sessions)
-#   Phase 3: *Edge/Playwright browser processes
-#   Phase 4: *Zombie processes
+#   Phase 2: Stale Claude sessions (all MCPs from non-current sessions)
+#   Phase 3: Edge/Playwright browser processes
+#   Phase 4: Zombie processes
 #   Phase 5: Caches (npm, pip, yarn, debug logs, .next, __pycache__, .pytest_cache)
 #   Phase 6: Temp files (/tmp/claude-*, old .tmp, telemetry)
 #   Phase 7: Memory recovery (drop caches, fstrim)
+#
+# v4.0 changes:
+#   - Replaced trap 'exit 0' ERR with set +e (was causing silent exit)
+#   - Removed sed -i self-modification (was triggering ERR trap)
+#   - sudo uses echo "1" | sudo -S consistently
+#   - Aggressive mode: debug logs >6h (was >48h), telemetry >7d (was >30d)
 
-trap 'exit 0' ERR
-sed -i 's/\r$//' "$0" 2>/dev/null || true
+set +e  # Continue on errors — handle them inline with || true
 
 DRY_RUN=false
 AGGRESSIVE=false
@@ -34,12 +39,12 @@ MY_PID=$$
 MY_PPID=$(ps -o ppid= -p $$ 2>/dev/null | tr -d ' ')
 
 # Find the Claude process that owns THIS session
-# Walk up the process tree to find the claude process
 find_my_claude_pid() {
     local pid=$MY_PPID
     local depth=0
-    while [ "$pid" != "1" ] && [ "$pid" != "0" ] && [ "$depth" -lt 10 ]; do
-        local cmd=$(ps -o comm= -p "$pid" 2>/dev/null || true)
+    while [ "$pid" != "1" ] && [ "$pid" != "0" ] && [ -n "$pid" ] && [ "$depth" -lt 10 ]; do
+        local cmd
+        cmd=$(ps -o comm= -p "$pid" 2>/dev/null || true)
         if [ "$cmd" = "claude" ]; then
             echo "$pid"
             return
@@ -118,7 +123,6 @@ echo ""
 # ============================================================
 echo "=== PHASE 2: Stale Claude Sessions ==="
 
-# Find ALL claude processes (not just orphans)
 ALL_CLAUDE=$(ps -eo pid,tty,rss,command 2>/dev/null | grep '[c]laude.*--dangerously-skip-permissions' | grep -v "grep" || true)
 CLAUDE_COUNT=$(echo "$ALL_CLAUDE" | grep -c "claude" 2>/dev/null) || CLAUDE_COUNT=0
 
@@ -132,7 +136,6 @@ if [ "$CLAUDE_COUNT" -gt 1 ] && [ -n "$MY_CLAUDE_PID" ]; then
         if [ "$PID" = "$MY_CLAUDE_PID" ]; then
             echo "  [KEEP] PID $PID ($TTY, ${RSS}MB) — current session"
         else
-            # Count children (MCP servers)
             CHILD_COUNT=$(pgrep -P "$PID" 2>/dev/null | wc -l || echo "0")
             CHILD_RSS=$(pgrep -P "$PID" 2>/dev/null | xargs -I{} ps -o rss= -p {} 2>/dev/null | awk '{sum += $1} END {printf "%.0f", sum/1024}' || echo "0")
 
@@ -140,7 +143,6 @@ if [ "$CLAUDE_COUNT" -gt 1 ] && [ -n "$MY_CLAUDE_PID" ]; then
                 echo "  [DRY] Would kill PID $PID ($TTY, ${RSS}MB) + $CHILD_COUNT children (~${CHILD_RSS}MB)"
             else
                 echo "  Killing stale session PID $PID ($TTY, ${RSS}MB) + $CHILD_COUNT children (~${CHILD_RSS}MB)"
-                # Kill children first (MCP servers)
                 for CHILD in $(pgrep -P "$PID" 2>/dev/null || true); do
                     kill -TERM "$CHILD" 2>/dev/null || true
                 done
@@ -152,7 +154,6 @@ if [ "$CLAUDE_COUNT" -gt 1 ] && [ -n "$MY_CLAUDE_PID" ]; then
 
     if [ "$DRY_RUN" = false ]; then
         sleep 2
-        # Force kill survivors
         echo "$ALL_CLAUDE" | while read -r line; do
             PID=$(echo "$line" | awk '{print $1}')
             [ "$PID" = "$MY_CLAUDE_PID" ] && continue
@@ -176,8 +177,12 @@ echo ""
 # ============================================================
 echo "=== PHASE 3: Edge/Playwright Browser Cleanup ==="
 
-EDGE_PIDS=$(pgrep -f "microsoft-edge" 2>/dev/null || true)
-EDGE_COUNT=$(echo "$EDGE_PIDS" | grep -c "[0-9]" 2>/dev/null) || EDGE_COUNT=0
+# IMPORTANT: Use `pgrep msedge` (binary name match), NOT `pgrep -f "microsoft-edge"`
+# pgrep -f matches against /proc/pid/cmdline which includes this script's source text,
+# causing pkill to kill the script itself (exit code 144 = SIGTERM self-kill).
+EDGE_PIDS=$(pgrep msedge 2>/dev/null || true)
+EDGE_COUNT=0
+[ -n "$EDGE_PIDS" ] && EDGE_COUNT=$(echo "$EDGE_PIDS" | wc -w)
 
 if [ "$EDGE_COUNT" -gt 0 ]; then
     EDGE_RSS=$(echo "$EDGE_PIDS" | xargs -I{} ps -o rss= -p {} 2>/dev/null | awk '{sum += $1} END {printf "%.0f", sum/1024}' || echo "0")
@@ -186,9 +191,13 @@ if [ "$EDGE_COUNT" -gt 0 ]; then
         echo "[DRY] Would kill $EDGE_COUNT Edge browser processes (~${EDGE_RSS}MB)"
     else
         echo "Killing $EDGE_COUNT Edge browser processes (~${EDGE_RSS}MB)..."
-        pkill -TERM -f "microsoft-edge" 2>/dev/null || true
+        for _ep in $EDGE_PIDS; do
+            kill -TERM "$_ep" 2>/dev/null || true
+        done
         sleep 2
-        pkill -9 -f "microsoft-edge" 2>/dev/null || true
+        for _ep in $EDGE_PIDS; do
+            kill -0 "$_ep" 2>/dev/null && kill -9 "$_ep" 2>/dev/null || true
+        done
         TOTAL_FREED=$((TOTAL_FREED + ${EDGE_RSS:-0}))
         echo "  Freed ~${EDGE_RSS}MB"
     fi
@@ -208,6 +217,8 @@ if [ "$AGGRESSIVE" = true ]; then
             rm -rf ~/.config/microsoft-edge-playwright/Default/Code\ Cache 2>/dev/null || true
             TOTAL_FREED=$((TOTAL_FREED + PW_CACHE))
         fi
+    else
+        echo "Playwright browser cache: ${PW_CACHE:-0}MB (below threshold)"
     fi
 fi
 echo ""
@@ -231,12 +242,9 @@ if [ "$ZOMBIE_COUNT" -gt 0 ]; then
             echo "  [DRY] Would reap zombie PID $ZPID (parent $ZPPID): $ZCMD"
         else
             echo "  Reaping zombie PID $ZPID (parent $ZPPID): $ZCMD"
-            # Send SIGCHLD to parent to reap the zombie
             kill -SIGCHLD "$ZPPID" 2>/dev/null || true
-            # If still zombie after SIGCHLD, try killing parent's wait
             sleep 1
             if ps -p "$ZPID" -o stat= 2>/dev/null | grep -q "Z"; then
-                # Can't kill zombies directly — they're already dead
                 echo "    Zombie persists (parent must reap it)"
             fi
         fi
@@ -253,7 +261,7 @@ echo "=== PHASE 5: Clean Caches ==="
 
 # npm cache
 NPM_BEFORE=$(du -sm ~/.npm 2>/dev/null | awk '{print $1}' || echo "0")
-if [ "$NPM_BEFORE" -gt 0 ] 2>/dev/null; then
+if [ "${NPM_BEFORE:-0}" -gt 0 ] 2>/dev/null; then
     if [ "$DRY_RUN" = true ]; then
         echo "[DRY] Would clean npm cache (~${NPM_BEFORE}MB)"
     else
@@ -261,6 +269,7 @@ if [ "$NPM_BEFORE" -gt 0 ] 2>/dev/null; then
         npm cache clean --force 2>/dev/null || true
         NPM_AFTER=$(du -sm ~/.npm 2>/dev/null | awk '{print $1}' || echo "0")
         SAVED=$((NPM_BEFORE - NPM_AFTER))
+        [ "$SAVED" -lt 0 ] && SAVED=0
         TOTAL_FREED=$((TOTAL_FREED + SAVED))
         echo "  Freed ${SAVED}MB"
     fi
@@ -268,7 +277,7 @@ fi
 
 # pip cache
 PIP_BEFORE=$(du -sm ~/.cache/pip 2>/dev/null | awk '{print $1}' || echo "0")
-if [ "$PIP_BEFORE" -gt 0 ] 2>/dev/null; then
+if [ "${PIP_BEFORE:-0}" -gt 0 ] 2>/dev/null; then
     if [ "$DRY_RUN" = true ]; then
         echo "[DRY] Would clean pip cache (~${PIP_BEFORE}MB)"
     else
@@ -276,6 +285,7 @@ if [ "$PIP_BEFORE" -gt 0 ] 2>/dev/null; then
         pip cache purge 2>/dev/null || true
         PIP_AFTER=$(du -sm ~/.cache/pip 2>/dev/null | awk '{print $1}' || echo "0")
         SAVED=$((PIP_BEFORE - PIP_AFTER))
+        [ "$SAVED" -lt 0 ] && SAVED=0
         TOTAL_FREED=$((TOTAL_FREED + SAVED))
         echo "  Freed ${SAVED}MB"
     fi
@@ -283,7 +293,7 @@ fi
 
 # yarn cache
 YARN_BEFORE=$(du -sm ~/.cache/yarn 2>/dev/null | awk '{print $1}' || echo "0")
-if [ "$YARN_BEFORE" -gt 0 ] 2>/dev/null; then
+if [ "${YARN_BEFORE:-0}" -gt 0 ] 2>/dev/null; then
     if [ "$DRY_RUN" = true ]; then
         echo "[DRY] Would clean yarn cache (~${YARN_BEFORE}MB)"
     else
@@ -291,23 +301,32 @@ if [ "$YARN_BEFORE" -gt 0 ] 2>/dev/null; then
         yarn cache clean 2>/dev/null || true
         YARN_AFTER=$(du -sm ~/.cache/yarn 2>/dev/null | awk '{print $1}' || echo "0")
         SAVED=$((YARN_BEFORE - YARN_AFTER))
+        [ "$SAVED" -lt 0 ] && SAVED=0
         TOTAL_FREED=$((TOTAL_FREED + SAVED))
         echo "  Freed ${SAVED}MB"
     fi
 fi
 
-# Claude debug logs
+# Claude debug logs — aggressive: >6 hours, normal: >48 hours
 DEBUG_BEFORE=$(du -sm ~/.claude/debug 2>/dev/null | awk '{print $1}' || echo "0")
 if [ "${DEBUG_BEFORE:-0}" -gt 1 ] 2>/dev/null; then
-    if [ "$DRY_RUN" = true ]; then
-        echo "[DRY] Would clean Claude debug logs (~${DEBUG_BEFORE}MB)"
+    if [ "$AGGRESSIVE" = true ]; then
+        DEBUG_THRESHOLD="-mmin +360"
+        DEBUG_LABEL="6 hours"
     else
-        echo "Cleaning Claude debug logs (~${DEBUG_BEFORE}MB)..."
-        find ${CLAUDE_HOME:-$HOME/.claude}/debug -type f -mtime +1 -print0 2>/dev/null | xargs -0 -r rm -f 2>/dev/null || true
+        DEBUG_THRESHOLD="-mtime +1"
+        DEBUG_LABEL="48 hours"
+    fi
+    if [ "$DRY_RUN" = true ]; then
+        echo "[DRY] Would clean Claude debug logs older than $DEBUG_LABEL (~${DEBUG_BEFORE}MB total)"
+    else
+        echo "Cleaning Claude debug logs older than $DEBUG_LABEL (~${DEBUG_BEFORE}MB total)..."
+        find ${CLAUDE_HOME:-$HOME/.claude}/debug -type f $DEBUG_THRESHOLD -delete 2>/dev/null || true
         DEBUG_AFTER=$(du -sm ~/.claude/debug 2>/dev/null | awk '{print $1}' || echo "0")
         SAVED=$((DEBUG_BEFORE - DEBUG_AFTER))
+        [ "$SAVED" -lt 0 ] && SAVED=0
         TOTAL_FREED=$((TOTAL_FREED + SAVED))
-        echo "  Freed ${SAVED}MB (kept files <1 day old)"
+        echo "  Freed ${SAVED}MB (kept files <$DEBUG_LABEL old)"
     fi
 fi
 
@@ -357,8 +376,10 @@ done
 if [ "$AGGRESSIVE" = true ]; then
     echo ""
     echo "--- AGGRESSIVE: node_modules ---"
+    NM_FOUND=false
     for proj_dir in $HOME/projects/*/; do
         if [ -d "${proj_dir}node_modules" ]; then
+            NM_FOUND=true
             NM_SIZE=$(du -sm "${proj_dir}node_modules" 2>/dev/null | awk '{print $1}' || echo "0")
             proj_name=$(basename "$proj_dir")
             if [ "$DRY_RUN" = true ]; then
@@ -370,6 +391,9 @@ if [ "$AGGRESSIVE" = true ]; then
             fi
         fi
     done
+    if [ "$NM_FOUND" = false ]; then
+        echo "No node_modules directories found"
+    fi
 fi
 
 echo ""
@@ -405,19 +429,28 @@ if [ -n "$OLD_TMP" ]; then
     fi
 fi
 
-# Old telemetry JSONL files (>30 days)
+# Old telemetry JSONL files — aggressive: >7 days, normal: >30 days
 if [ -d ${CLAUDE_HOME:-$HOME/.claude}/telemetry ]; then
-    OLD_TELEM=$(find ${CLAUDE_HOME:-$HOME/.claude}/telemetry -name "*.jsonl" -type f -mtime +30 2>/dev/null || true)
+    if [ "$AGGRESSIVE" = true ]; then
+        TELEM_THRESHOLD="-mtime +7"
+        TELEM_LABEL="7 days"
+    else
+        TELEM_THRESHOLD="-mtime +30"
+        TELEM_LABEL="30 days"
+    fi
+    OLD_TELEM=$(find ${CLAUDE_HOME:-$HOME/.claude}/telemetry -name "*.jsonl" -type f $TELEM_THRESHOLD 2>/dev/null || true)
     if [ -n "$OLD_TELEM" ]; then
         TELEM_COUNT=$(echo "$OLD_TELEM" | wc -l)
         TELEM_SIZE=$(echo "$OLD_TELEM" | xargs -r du -sm 2>/dev/null | awk '{sum += $1} END {print sum+0}' || echo "0")
         if [ "$DRY_RUN" = true ]; then
-            echo "[DRY] Would remove $TELEM_COUNT old telemetry files (~${TELEM_SIZE}MB)"
+            echo "[DRY] Would remove $TELEM_COUNT telemetry files older than $TELEM_LABEL (~${TELEM_SIZE}MB)"
         else
-            echo "Removing $TELEM_COUNT old telemetry files (~${TELEM_SIZE}MB)..."
+            echo "Removing $TELEM_COUNT telemetry files older than $TELEM_LABEL (~${TELEM_SIZE}MB)..."
             echo "$OLD_TELEM" | xargs -r rm -f 2>/dev/null || true
             TOTAL_FREED=$((TOTAL_FREED + TELEM_SIZE))
         fi
+    else
+        echo "No telemetry files older than $TELEM_LABEL"
     fi
 fi
 
@@ -431,6 +464,8 @@ if [ -n "$CLAUDE_TMP" ]; then
         echo "Removing $CTMP_COUNT Claude temp files/dirs from /tmp..."
         echo "$CLAUDE_TMP" | xargs -r rm -rf 2>/dev/null || true
     fi
+else
+    echo "No Claude temp files in /tmp"
 fi
 
 echo ""
@@ -446,10 +481,10 @@ if [ "$DRY_RUN" = true ]; then
 else
     echo "Dropping filesystem caches..."
     sync
-    echo "1" | sudo -S tee /proc/sys/vm/drop_caches > /dev/null 2>&1 || true
+    echo "1" | sudo -S sh -c 'echo 3 > /proc/sys/vm/drop_caches' 2>/dev/null || echo "  (sudo unavailable — skipped)"
 
     echo "Running fstrim for VHD compaction..."
-    echo "1" | sudo -S fstrim / 2>/dev/null || true
+    echo "1" | sudo -S fstrim / 2>/dev/null || echo "  (sudo unavailable — skipped)"
 
     MEM_AFTER=$(free -m 2>/dev/null | awk '/Mem:/ {print $7}' || echo "?")
     SWAP_AFTER=$(free -m 2>/dev/null | awk '/Swap:/ {print $3}' || echo "?")
@@ -463,10 +498,13 @@ echo ""
 # ============================================================
 echo "=== HEALTH CHECK ==="
 
-# Memory pressure assessment
 MEM_TOTAL=$(free -m 2>/dev/null | awk '/Mem:/ {print $2}')
 MEM_AVAIL=$(free -m 2>/dev/null | awk '/Mem:/ {print $7}')
-MEM_PCT=$((MEM_AVAIL * 100 / MEM_TOTAL))
+if [ -n "$MEM_TOTAL" ] && [ "$MEM_TOTAL" -gt 0 ] 2>/dev/null; then
+    MEM_PCT=$((MEM_AVAIL * 100 / MEM_TOTAL))
+else
+    MEM_PCT=0
+fi
 SWAP_USED=$(free -m 2>/dev/null | awk '/Swap:/ {print $3}')
 
 if [ "$MEM_PCT" -lt 20 ]; then
@@ -478,17 +516,14 @@ else
     echo "Memory: Healthy (${MEM_PCT}% available, ${SWAP_USED}MB swap used)"
 fi
 
-# Process count
-PROC_COUNT=$(ps aux | grep -E "node|claude" | grep -v grep | wc -l)
+PROC_COUNT=$(ps aux 2>/dev/null | grep -E "node|claude" | grep -v grep | wc -l)
 echo "Claude/Node processes: $PROC_COUNT"
 
-# Check for multiple sessions
 CLAUDE_SESSIONS=$(ps -eo command 2>/dev/null | grep -c '[c]laude.*--dangerously-skip-permissions') || CLAUDE_SESSIONS=0
 if [ "$CLAUDE_SESSIONS" -gt 1 ]; then
     echo "WARNING: $CLAUDE_SESSIONS Claude sessions still running — duplicates waste ~1GB each"
 fi
 
-# Check for Edge
 EDGE_RUNNING=$(pgrep -c -f "microsoft-edge" 2>/dev/null) || EDGE_RUNNING=0
 if [ "$EDGE_RUNNING" -gt 0 ]; then
     echo "Note: $EDGE_RUNNING Edge processes running (Playwright)"
@@ -509,8 +544,7 @@ else
     free -h 2>/dev/null | head -2 || true
 fi
 
-# WSL config check
-WSL_MEM=$(cat /proc/meminfo 2>/dev/null | awk '/MemTotal/ {printf "%.0f", $2/1024/1024}')
+WSL_MEM=$(awk '/MemTotal/ {printf "%.0f", $2/1024/1024}' /proc/meminfo 2>/dev/null)
 if [ "${WSL_MEM:-0}" -lt 8 ]; then
     echo ""
     echo "TIP: WSL is limited to ${WSL_MEM}GB RAM. Edit %USERPROFILE%\\.wslconfig to increase."

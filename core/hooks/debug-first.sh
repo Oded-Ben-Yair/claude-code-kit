@@ -1,10 +1,11 @@
 #!/usr/bin/env bash
 # Hook: debug-first.sh
-# Removed set -euo pipefail — internal failures must never crash Claude Code UI.
-trap 'exit 0' ERR
 # Event: PreToolUse (Bash tools containing "git commit")
 # Purpose: If tests were recently failing, ensure debug steps happened before commit.
 # Exit 2 = BLOCK, Exit 0 = PASS
+# Input: stdin JSON from Claude Code hooks API
+
+trap 'exit 0' ERR
 
 TELEMETRY_DIR="${CLAUDE_HOME:-$HOME/.claude}/telemetry"
 VIOLATIONS_LOG="${TELEMETRY_DIR}/violations.jsonl"
@@ -30,33 +31,30 @@ log_violation() {
         >> "${VIOLATIONS_LOG}"
 }
 
-# Only process Bash tool calls
-tool_name="${CLAUDE_TOOL_USE_NAME:-}"
+# Read stdin JSON (Claude Code hooks API)
+_STDIN=""
+[[ ! -t 0 ]] && _STDIN="$(cat)" || true
+
+tool_name="$(echo "$_STDIN" | jq -r '.tool_name // empty' 2>/dev/null)"
 if [[ "${tool_name}" != "Bash" ]]; then
     exit 0
 fi
 
-# Read tool input
-input="${CLAUDE_TOOL_USE_INPUT:-}"
-if [[ -z "${input}" ]]; then
+command_text="$(echo "$_STDIN" | jq -r '.tool_input.command // empty' 2>/dev/null)"
+if [[ -z "${command_text}" ]]; then
     exit 0
 fi
 
 # Detect test runner commands and set failure flag if tests fail
-# This section handles BOTH detecting test commands and checking commit gates
-input_lower="$(echo "${input}" | tr '[:upper:]' '[:lower:]')"
+command_lower="$(echo "${command_text}" | tr '[:upper:]' '[:lower:]')"
 
-# If command is a test runner, set up to track failures
-# (The actual flag setting happens outside this hook via test runner exit codes,
-#  but we also detect test commands here for awareness)
-if echo "${input_lower}" | grep -qP '(pytest|jest|npm\s+test|cargo\s+test|go\s+test|python\s+-m\s+unittest|dotnet\s+test|mvn\s+test|rspec|phpunit)'; then
-    # This is a test command - mark that tests were attempted
-    # The flag file is managed externally; this hook only reads it
+# If command is a test runner, mark that tests were attempted
+if echo "${command_lower}" | grep -qP '(pytest|jest|npm\s+test|cargo\s+test|go\s+test|python\s+-m\s+unittest|dotnet\s+test|mvn\s+test|rspec|phpunit)'; then
     :
 fi
 
 # Check if this is a git commit command
-if ! echo "${input}" | grep -qi 'git commit'; then
+if ! echo "${command_text}" | grep -qi 'git commit'; then
     exit 0
 fi
 
@@ -97,9 +95,9 @@ done
 if [[ -z "${active_debug_flag}" ]]; then
     error_msg="BLOCKED: Tests were failing. Debug first - read error logs, investigate root cause, and fix the issue before committing a bypass."
 
-    log_violation "debug-first" "commit_without_debug" "${error_msg}" "${input}"
+    log_violation "debug-first" "commit_without_debug" "${error_msg}" "${command_text}"
 
-    echo '{"error":"commit_without_debug","message":"'"${error_msg}"'"}' >&2
+    echo "${error_msg}" >&2
     exit 2
 fi
 
@@ -110,9 +108,9 @@ failure_time="$(stat -c %Y "${active_failure_flag}" 2>/dev/null || echo "0")"
 if [[ "${debug_time}" -lt "${failure_time}" ]]; then
     error_msg="BLOCKED: Debug trace is older than test failure. Re-investigate the failing tests before committing."
 
-    log_violation "debug-first" "stale_debug_trace" "${error_msg}" "${input}"
+    log_violation "debug-first" "stale_debug_trace" "${error_msg}" "${command_text}"
 
-    echo '{"error":"stale_debug_trace","message":"'"${error_msg}"'"}' >&2
+    echo "${error_msg}" >&2
     exit 2
 fi
 

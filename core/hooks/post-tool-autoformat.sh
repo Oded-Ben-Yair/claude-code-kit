@@ -2,35 +2,28 @@
 #
 # PostToolUse Hook: Auto-Format
 # Automatically formats code after Claude writes/edits files
-#
-# Returns JSON response:
-#   {"decision": "allow", "reason": "..."}
-#   {"decision": "modify", "value": "..."}  # For content modification
-#
-# Hook receives tool context via environment variables:
-#   CLAUDE_TOOL_NAME - Name of tool that was invoked
-#   CLAUDE_TOOL_INPUT - JSON input that was used
-#   CLAUDE_TOOL_OUTPUT - Output from the tool (if applicable)
+# Exit 0 = success, Exit 2 = block (feedback to Claude)
+# Input: stdin JSON from Claude Code hooks API
 #
 
 # SAFETY: internal failures must never crash Claude Code UI.
 trap 'exit 0' ERR
 
-# Extract tool info
-TOOL_NAME="${CLAUDE_TOOL_NAME:-}"
-TOOL_INPUT="${CLAUDE_TOOL_INPUT:-}"
+# Read stdin JSON (Claude Code hooks API)
+_STDIN=""
+[[ ! -t 0 ]] && _STDIN="$(cat)" || true
+
+TOOL_NAME="$(echo "$_STDIN" | jq -r '.tool_name // empty' 2>/dev/null)"
 
 # Only process Write and Edit tools
 if [[ "$TOOL_NAME" != "Write" && "$TOOL_NAME" != "Edit" ]]; then
-    echo '{"decision": "allow", "reason": "Not a file modification tool"}'
     exit 0
 fi
 
 # Extract file path
-FILE_PATH=$(echo "$TOOL_INPUT" | jq -r '.file_path // .path // ""' 2>/dev/null || echo "")
+FILE_PATH="$(echo "$_STDIN" | jq -r '.tool_input.file_path // .tool_input.path // empty' 2>/dev/null)"
 
 if [[ -z "$FILE_PATH" || ! -f "$FILE_PATH" ]]; then
-    echo '{"decision": "allow", "reason": "No valid file path"}'
     exit 0
 fi
 
@@ -98,12 +91,8 @@ fi
 
 if [[ "$EXT" == "yaml" || "$EXT" == "yml" ]]; then
     if command -v python3 &>/dev/null; then
-        if python3 -c "import yaml; yaml.safe_load(open('$FILE_PATH'))" 2>/dev/null; then
-            # YAML is valid, no formatting needed
-            FORMATTED=false
-        else
-            echo "{\"decision\": \"allow\", \"reason\": \"YAML syntax warning - may have issues\"}"
-            exit 0
+        if ! python3 -c "import yaml; yaml.safe_load(open('$FILE_PATH'))" 2>/dev/null; then
+            echo "YAML syntax warning - file may have issues" >&2
         fi
     fi
 fi
@@ -113,7 +102,6 @@ fi
 # =============================================================================
 
 if [[ "$EXT" == "md" ]]; then
-    echo '{"decision": "allow", "reason": "Markdown files not auto-formatted"}'
     exit 0
 fi
 
@@ -158,11 +146,7 @@ fi
 # =============================================================================
 
 if [[ "$SYNTAX_OK" == false ]]; then
-    echo "{\"decision\": \"allow\", \"reason\": \"WARNING: Syntax error after formatting with $FORMAT_TOOL: $SYNTAX_ERROR\"}"
-elif [[ "$FORMATTED" == true ]]; then
-    echo "{\"decision\": \"allow\", \"reason\": \"Auto-formatted with $FORMAT_TOOL, syntax OK\"}"
-else
-    echo '{"decision": "allow", "reason": "No formatter applied"}'
+    echo "WARNING: Syntax error after formatting with $FORMAT_TOOL: $SYNTAX_ERROR" >&2
 fi
 
 exit 0

@@ -1,9 +1,10 @@
 #!/usr/bin/env bash
-# clean-assess.sh — Environment health assessment (read-only, no changes)
+# clean-assess.sh v2.0 — Environment health assessment (read-only, no changes)
 # Usage: bash ~/.claude/scripts/clean-assess.sh
+#
+# v2.0: Replaced trap 'exit 0' ERR with set +e, removed sed -i self-modification
 
-trap 'exit 0' ERR
-sed -i 's/\r$//' "$0" 2>/dev/null || true
+set +e  # Continue on errors — handle them inline with || true
 
 echo "============================================"
 echo "  Environment Health Assessment"
@@ -16,7 +17,6 @@ echo "=== MEMORY ==="
 free -h 2>/dev/null || echo "free command not available"
 echo ""
 
-# Swap details
 SWAP_USED=$(free -m 2>/dev/null | awk '/Swap:/ {print $3}')
 SWAP_TOTAL=$(free -m 2>/dev/null | awk '/Swap:/ {print $2}')
 MEM_AVAIL=$(free -m 2>/dev/null | awk '/Mem:/ {print $7}')
@@ -34,6 +34,8 @@ if [ -n "$ORPHANS" ]; then
     echo "PID     RSS(MB)  ELAPSED   COMMAND"
     echo "$ORPHANS" | awk '{printf "%-7s %-8.0f %-9s %s\n", $1, $3/1024, $4, substr($0, index($0,$5))}' || true
 else
+    ORPHAN_COUNT=0
+    ORPHAN_RSS=0
     echo "No orphaned Claude processes found"
 fi
 echo ""
@@ -64,27 +66,21 @@ echo "=== CACHE SIZES ==="
 printf "%-40s %s\n" "Location" "Size"
 printf "%-40s %s\n" "--------" "----"
 
-# npm cache
 NPM_CACHE=$(du -sh ~/.npm 2>/dev/null | awk '{print $1}' || echo "0")
 printf "%-40s %s\n" "npm cache (~/.npm)" "$NPM_CACHE"
 
-# pip cache
 PIP_CACHE=$(du -sh ~/.cache/pip 2>/dev/null | awk '{print $1}' || echo "0")
 printf "%-40s %s\n" "pip cache (~/.cache/pip)" "$PIP_CACHE"
 
-# yarn cache
 YARN_CACHE=$(du -sh ~/.cache/yarn 2>/dev/null | awk '{print $1}' || echo "0")
 printf "%-40s %s\n" "yarn cache (~/.cache/yarn)" "$YARN_CACHE"
 
-# Claude debug
 CLAUDE_DEBUG=$(du -sh ~/.claude/debug 2>/dev/null | awk '{print $1}' || echo "0")
 printf "%-40s %s\n" "Claude debug (~/.claude/debug)" "$CLAUDE_DEBUG"
 
-# Claude telemetry
 CLAUDE_TELEM=$(du -sh ~/.claude/telemetry 2>/dev/null | awk '{print $1}' || echo "0")
 printf "%-40s %s\n" "Claude telemetry (~/.claude/telemetry)" "$CLAUDE_TELEM"
 
-# /tmp
 TMP_SIZE=$(du -sh /tmp 2>/dev/null | awk '{print $1}' || echo "0")
 TMP_OLD=$(find /tmp -maxdepth 1 -type f -mtime +1 2>/dev/null | wc -l || echo "0")
 printf "%-40s %s (%s files >1 day old)\n" "/tmp" "$TMP_SIZE" "$TMP_OLD"
@@ -96,26 +92,22 @@ echo "=== PROJECT BUILD CACHES (>1MB) ==="
 printf "%-50s %s\n" "Location" "Size"
 printf "%-50s %s\n" "--------" "----"
 
-# .next dirs (usually large)
 for d in $HOME/projects/*/.next; do
     [ -d "$d" ] || continue
     SIZE=$(du -sm "$d" 2>/dev/null | awk '{print $1}')
     [ "${SIZE:-0}" -gt 1 ] 2>/dev/null && printf "%-50s %sMB\n" "$(basename "$(dirname "$d")")/.next" "$SIZE"
 done
 
-# node_modules (top-level only, usually large)
 for d in $HOME/projects/*/node_modules; do
     [ -d "$d" ] || continue
     SIZE=$(du -sm "$d" 2>/dev/null | awk '{print $1}')
     [ "${SIZE:-0}" -gt 1 ] 2>/dev/null && printf "%-50s %sMB\n" "$(basename "$(dirname "$d")")/node_modules" "$SIZE"
 done
 
-# __pycache__ total across all projects (single find, fast)
 PYCACHE_TOTAL=$(find $HOME/projects -maxdepth 4 -name "__pycache__" -type d -print0 2>/dev/null | xargs -0 -r du -sm 2>/dev/null | awk '{sum += $1} END {print sum+0}')
 echo ""
 echo "Total __pycache__ across all projects: ${PYCACHE_TOTAL:-0}MB"
 
-# .pytest_cache total
 PYTEST_TOTAL=$(find $HOME/projects -maxdepth 2 -name ".pytest_cache" -type d -print0 2>/dev/null | xargs -0 -r du -sm 2>/dev/null | awk '{sum += $1} END {print sum+0}')
 echo "Total .pytest_cache across all projects: ${PYTEST_TOTAL:-0}MB"
 

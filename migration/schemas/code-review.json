@@ -1,0 +1,271 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Code Review Report",
+  "description": "Schema for Codex Max code review outputs",
+  "type": "object",
+  "required": ["summary", "files_reviewed", "issues", "verdict"],
+  "properties": {
+    "summary": {
+      "type": "object",
+      "required": ["total_files", "total_lines", "overall_quality"],
+      "properties": {
+        "total_files": { "type": "integer" },
+        "total_lines": { "type": "integer" },
+        "languages": {
+          "type": "array",
+          "items": { "type": "string" }
+        },
+        "overall_quality": {
+          "type": "string",
+          "enum": ["excellent", "good", "acceptable", "needs_improvement", "poor"]
+        },
+        "quality_score": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 100
+        },
+        "review_focus": {
+          "type": "string",
+          "enum": ["security", "performance", "quality", "bugs", "general"]
+        }
+      }
+    },
+    "files_reviewed": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "path": { "type": "string" },
+          "lines": { "type": "integer" },
+          "language": { "type": "string" },
+          "issues_count": { "type": "integer" },
+          "quality_score": { "type": "integer" }
+        }
+      }
+    },
+    "issues": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["id", "severity", "category", "title", "location"],
+        "properties": {
+          "id": {
+            "type": "string",
+            "description": "Unique issue identifier (e.g., SEC-001, PERF-002)"
+          },
+          "severity": {
+            "type": "string",
+            "enum": ["critical", "high", "medium", "low", "info"]
+          },
+          "category": {
+            "type": "string",
+            "enum": ["security", "performance", "bug", "code_quality", "maintainability", "accessibility", "documentation"]
+          },
+          "title": { "type": "string" },
+          "description": { "type": "string" },
+          "location": {
+            "type": "object",
+            "properties": {
+              "file": { "type": "string" },
+              "line_start": { "type": "integer" },
+              "line_end": { "type": "integer" },
+              "column_start": { "type": "integer" },
+              "column_end": { "type": "integer" }
+            }
+          },
+          "code_snippet": {
+            "type": "object",
+            "properties": {
+              "before": { "type": "string", "description": "Problematic code" },
+              "after": { "type": "string", "description": "Suggested fix" }
+            }
+          },
+          "cwe_id": {
+            "type": "string",
+            "description": "Common Weakness Enumeration ID for security issues"
+          },
+          "owasp_category": {
+            "type": "string",
+            "description": "OWASP Top 10 category if applicable"
+          },
+          "effort": {
+            "type": "string",
+            "enum": ["trivial", "easy", "moderate", "complex"],
+            "description": "Effort to fix"
+          },
+          "auto_fixable": { "type": "boolean" }
+        }
+      }
+    },
+    "issue_summary": {
+      "type": "object",
+      "properties": {
+        "critical": { "type": "integer" },
+        "high": { "type": "integer" },
+        "medium": { "type": "integer" },
+        "low": { "type": "integer" },
+        "info": { "type": "integer" },
+        "by_category": {
+          "type": "object",
+          "additionalProperties": { "type": "integer" }
+        }
+      }
+    },
+    "security_analysis": {
+      "type": "object",
+      "properties": {
+        "vulnerabilities_found": { "type": "integer" },
+        "owasp_coverage": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "category": { "type": "string" },
+              "status": {
+                "type": "string",
+                "enum": ["pass", "fail", "warning", "not_applicable"]
+              },
+              "issues": {
+                "type": "array",
+                "items": { "type": "string" }
+              }
+            }
+          }
+        },
+        "secrets_detected": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "type": { "type": "string" },
+              "file": { "type": "string" },
+              "line": { "type": "integer" }
+            }
+          }
+        }
+      }
+    },
+    "performance_analysis": {
+      "type": "object",
+      "properties": {
+        "potential_bottlenecks": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "location": { "type": "string" },
+              "issue": { "type": "string" },
+              "impact": {
+                "type": "string",
+                "enum": ["high", "medium", "low"]
+              },
+              "suggestion": { "type": "string" }
+            }
+          }
+        },
+        "complexity_hotspots": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "file": { "type": "string" },
+              "function": { "type": "string" },
+              "cyclomatic_complexity": { "type": "integer" },
+              "recommendation": { "type": "string" }
+            }
+          }
+        }
+      }
+    },
+    "test_coverage": {
+      "type": "object",
+      "properties": {
+        "estimated_coverage": { "type": "number" },
+        "untested_areas": {
+          "type": "array",
+          "items": { "type": "string" }
+        },
+        "test_recommendations": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "area": { "type": "string" },
+              "test_type": { "type": "string" },
+              "priority": {
+                "type": "string",
+                "enum": ["high", "medium", "low"]
+              }
+            }
+          }
+        }
+      }
+    },
+    "dependencies": {
+      "type": "object",
+      "properties": {
+        "total": { "type": "integer" },
+        "outdated": { "type": "integer" },
+        "vulnerable": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "package": { "type": "string" },
+              "current_version": { "type": "string" },
+              "vulnerability": { "type": "string" },
+              "fixed_version": { "type": "string" }
+            }
+          }
+        }
+      }
+    },
+    "positive_patterns": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "pattern": { "type": "string" },
+          "location": { "type": "string" },
+          "comment": { "type": "string" }
+        }
+      },
+      "description": "Good practices observed in the code"
+    },
+    "recommendations": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "priority": {
+            "type": "string",
+            "enum": ["immediate", "short_term", "long_term"]
+          },
+          "category": { "type": "string" },
+          "recommendation": { "type": "string" },
+          "rationale": { "type": "string" },
+          "effort": {
+            "type": "string",
+            "enum": ["trivial", "easy", "moderate", "complex"]
+          }
+        }
+      }
+    },
+    "verdict": {
+      "type": "object",
+      "required": ["decision", "summary"],
+      "properties": {
+        "decision": {
+          "type": "string",
+          "enum": ["approve", "approve_with_comments", "request_changes", "reject"]
+        },
+        "summary": { "type": "string" },
+        "blocking_issues": {
+          "type": "array",
+          "items": { "type": "string" }
+        },
+        "merge_ready": { "type": "boolean" }
+      }
+    }
+  }
+}

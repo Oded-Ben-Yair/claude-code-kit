@@ -2,9 +2,15 @@
 # Claude Code Quality Validation PreToolUse Hook
 # Validates tool usage for security and quality patterns
 # Exit code 2 blocks the action, exit code 0 allows it
+# Input: stdin JSON from Claude Code hooks API
 
-TOOL_NAME="$1"
-TOOL_INPUT="$2"
+trap 'exit 0' ERR
+
+# Read stdin JSON (Claude Code hooks API)
+_STDIN=""
+[[ ! -t 0 ]] && _STDIN="$(cat)" || true
+
+TOOL_NAME="$(echo "$_STDIN" | jq -r '.tool_name // empty' 2>/dev/null)"
 
 # Function to block with error message
 block_action() {
@@ -21,7 +27,7 @@ warn_action() {
 case "$TOOL_NAME" in
     "Bash")
         # Check for dangerous patterns in bash commands
-        COMMAND=$(echo "$TOOL_INPUT" | jq -r '.command // empty' 2>/dev/null)
+        COMMAND="$(echo "$_STDIN" | jq -r '.tool_input.command // empty' 2>/dev/null)"
 
         if [ -n "$COMMAND" ]; then
             # Block: rm -rf without explicit path or with dangerous paths
@@ -68,8 +74,8 @@ case "$TOOL_NAME" in
 
     "Write"|"Edit")
         # Check for writing to sensitive files
-        FILE_PATH=$(echo "$TOOL_INPUT" | jq -r '.file_path // .path // empty' 2>/dev/null)
-        NEW_CONTENT=$(echo "$TOOL_INPUT" | jq -r '.content // .new_string // empty' 2>/dev/null)
+        FILE_PATH="$(echo "$_STDIN" | jq -r '.tool_input.file_path // .tool_input.path // empty' 2>/dev/null)"
+        NEW_CONTENT="$(echo "$_STDIN" | jq -r '.tool_input.content // .tool_input.new_string // empty' 2>/dev/null)"
 
         # Warn: .format() on Python files handling user text
         if echo "$FILE_PATH" | grep -qE '\.py$'; then

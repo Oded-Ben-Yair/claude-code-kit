@@ -5,7 +5,7 @@
       "repo": "anthropics/skills"
     },
     "installLocation": "${CLAUDE_HOME:-$HOME/.claude}/plugins/marketplaces/anthropic-agent-skills",
-    "lastUpdated": "2026-03-01T12:24:22.680Z",
+    "lastUpdated": "2026-03-09T16:23:34.953Z",
     "autoUpdate": true
   },
   "superpowers-marketplace": {
@@ -22,7 +22,7 @@
       "repo": "anthropics/claude-plugins-official"
     },
     "installLocation": "${CLAUDE_HOME:-$HOME/.claude}/plugins/marketplaces/claude-plugins-official",
-    "lastUpdated": "2026-03-02T07:57:07.606Z"
+    "lastUpdated": "2026-03-09T16:09:19.915Z"
   },
   "wshobson-agents": {
     "source": {
@@ -30,7 +30,7 @@
       "repo": "wshobson/agents"
     },
     "installLocation": "${CLAUDE_HOME:-$HOME/.claude}/plugins/marketplaces/wshobson-agents",
-    "lastUpdated": "2026-03-02T07:54:32.799Z",
+    "lastUpdated": "2026-03-09T16:21:40.093Z",
     "autoUpdate": false
   },
   "claude-code-plugins-plus": {
@@ -48,6 +48,6 @@
       "repo": "anthropics/claude-code"
     },
     "installLocation": "${CLAUDE_HOME:-$HOME/.claude}/plugins/marketplaces/claude-code-plugins",
-    "lastUpdated": "2026-03-01T12:21:54.183Z"
+    "lastUpdated": "2026-03-09T14:14:49.495Z"
   }
 }

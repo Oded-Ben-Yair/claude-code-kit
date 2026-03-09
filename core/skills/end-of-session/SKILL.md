@@ -1,10 +1,10 @@
 ---
 name: end-of-session
 description: Perfect session continuation - Memory MCP persistence, session index, validation gate, and bulletproof handover. Ensures next session can resume with 100% context. Triggers on "end session", "close session", "wrap up", "done for today", "/end-of-session".
-argument-hint: [--mode=quick|full|force] [--skip-git] [--skip-validation]
+argument-hint: [--mode=quick|full|force] [--skip-git] [--skip-validation] [--skip-alignment]
 allowed-tools: Bash(git:*), Bash(ls:*), Bash(az:*), Bash(jq:*), Read, Write, Glob, Grep, mcp__memory__*
 metadata:
-  version: "1.0.0"
+  version: "1.1.0"
   author: odedbe
 ---
 
@@ -27,6 +27,7 @@ This skill ensures the next session can resume with **100% context** by:
 | `--mode=force` | Skip validation gate | "Just close, skip validation" |
 | `--skip-git` | Skip Phase 5 | Known git issues |
 | `--skip-validation` | Skip Phase 7 | Known MCP issues |
+| `--skip-alignment` | Skip Phase 3.7 | No handover artifacts to check |
 
 ---
 
@@ -196,6 +197,74 @@ Based on session learnings, I recommend:
 ```
 
 **FAIL MODE:** Skip pattern updates, continue with Memory MCP persistence.
+
+---
+
+### Phase 3.7: Handover Alignment Check [15 seconds] - NEW
+
+Detect whether session changes caused drift between code and handover artifacts (wiki KBs, deploy repos, architecture diagrams). See `references/handover-alignment.md` for full mapping and classification rules.
+
+**Skip entirely if:** `--mode=quick`, `--skip-alignment`, not in a project directory, or project not in mapping table.
+
+**Actions:**
+
+1. **Detect project** from `pwd` against `~/projects/<slug>/`:
+```bash
+PROJECT_DIR=$(pwd)
+PROJECT_SLUG=$(basename "$PROJECT_DIR" | tr '[:upper:]' '[:lower:]')
+# Verify it's a known project under ~/projects/
+if [[ "$PROJECT_DIR" != "$HOME/projects/"* ]]; then
+    echo "Phase 3.7: SKIPPED (not in a project directory)"
+    # Skip to Phase 4
+fi
+```
+
+2. **Get changed files** (reuse Phase 2 data if available):
+```bash
+CHANGED_FILES=$(git diff --name-only HEAD~5 2>/dev/null)
+CHANGE_STAT=$(git diff --stat HEAD~5 2>/dev/null)
+NEW_FILES=$(git diff --name-only --diff-filter=A HEAD~5 2>/dev/null)
+```
+
+3. **Classify changes** — apply signals from reference mapping:
+   - `src/` or `shared/` new files → `structural`
+   - `requirements.txt`, `Dockerfile`, `host.json` → `deploy`
+   - `function_app.py` route changes → `api`
+   - New cron/schedule/timer → `operations`
+   - Only docs/tests → skip check (no artifact drift)
+   - Small diffs on existing files only → `bugfix` (check status.json only)
+
+4. **Check each artifact** using project-to-artifact mapping:
+   - **Wiki KB**: If `structural`/`api`/`operations` — check for new modules/scripts/endpoints not documented
+   - **Deploy repo**: If `deploy`/`operations` — check for new deps, scripts, env vars
+   - **Architecture diagram**: If `structural` with new modules/services only
+   - **CEO report / Portfolio diagram**: Skip (status changes only on explicit request)
+   - **status.json**: Always flag for update (handled by Phase 3.5)
+
+5. **Output alignment report**:
+```
+=== Handover Alignment Check ===
+Project: {project-name}
+Changes: {N} files ({M} modified, {K} new)
+Classification: {classification}
+
+  [OK] Wiki KB — No drift detected
+  [OK] Deploy repo — No drift detected
+  [--] Diagram — Skipped (bug fix, no new modules)
+  [--] CEO report — Skipped
+  [OK] status.json — Updated
+
+Alignment: CLEAN (0 gaps)
+```
+
+If gaps found, output specific actions:
+```
+  [!!] Wiki KB — NEEDS UPDATE
+       -> New email_health.sh not documented in Operations section
+       -> Action: Add email pipeline health check to wiki
+```
+
+**FAIL MODE:** Log "Alignment check failed — skipping", continue to Phase 4.
 
 ---
 
@@ -422,6 +491,7 @@ Calculate session health score (0-100):
 | Phase 2 | Git unavailable | Note "Not a git repo", continue |
 | Phase 3 | Can't extract goals | Ask user for manual summary |
 | Phase 3.5 | Pattern update fails | Skip learning loop, continue |
+| Phase 3.7 | Alignment check fails | Log and skip, continue to Phase 4 |
 | Phase 4 | Memory MCP down | Save to local pending file |
 | Phase 5 | Git push fails | Log and continue, note in handover |
 | Phase 6 | File write fails | Output to console |

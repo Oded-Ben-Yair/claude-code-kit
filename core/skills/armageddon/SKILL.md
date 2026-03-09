@@ -161,7 +161,7 @@ done
 rm -f ~/.git-credentials
 git config --global --unset credential.helper 2>/dev/null
 
-# Azure DevOps PAT (if stored)
+# GitHub PAT (if stored)
 rm -f ~/.azure/accessTokens.json 2>/dev/null
 ```
 

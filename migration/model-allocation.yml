@@ -1,0 +1,70 @@
+# Claude Code Model Allocation Configuration
+# Last Updated: February 8, 2026
+#
+# POLICY: ALL subagents use Opus 4.6. No exceptions.
+# This overrides any system default that says "prefer haiku for quick tasks".
+# Enforced by Rule 13 in CLAUDE.md.
+#
+# NOTE: This file is reference documentation only. The ACTUAL enforcement
+# is via CLAUDE.md Rule 13, which instructs Claude to always pass
+# model: "opus" in every Task tool call. Config files like this one
+# do NOT control the Task tool's model parameter — that's a runtime
+# behavioral choice made by the orchestrating Claude.
+
+models:
+  available:
+    opus: "claude-opus-4-6"
+    sonnet: "claude-sonnet-4-5-20250929"
+    haiku: "claude-haiku-4-5-20251001"
+
+  policy: "ALL agents use opus. No sonnet. No haiku."
+
+# Claude Code agents - ALL use opus
+agent_allocation:
+  Plan:
+    model: "opus"
+  Explore:
+    model: "opus"
+  code-reviewer:
+    model: "opus"
+  code-worker:
+    model: "opus"
+  code-judge:
+    model: "opus"
+  general-purpose:
+    model: "opus"
+  architect-planner:
+    model: "opus"
+  research-specialist:
+    model: "opus"
+  realtime-specialist:
+    model: "opus"
+  reasoning-specialist:
+    model: "opus"
+  gemini-specialist:
+    model: "opus"
+  azure-devops-specialist:
+    model: "opus"
+  cleanup-specialist:
+    model: "opus"
+  worktree-specialist:
+    model: "opus"
+  Bash:
+    model: "opus"
+
+# Environment variables (all opus)
+environment_variables:
+  CLAUDE_MODEL_PLANNING: "opus"
+  CLAUDE_MODEL_BUILDING: "opus"
+  CLAUDE_MODEL_VERIFICATION: "opus"
+  CLAUDE_AGENT_PLAN: "opus"
+  CLAUDE_AGENT_EXPLORE: "opus"
+  CLAUDE_AGENT_CODEREVIEW: "opus"
+  CLAUDE_AGENT_GENERAL: "opus"
+  CLAUDE_AGENT_QUICK: "opus"
+
+# Lesson learned (Feb 2026):
+# - model-allocation.yml does NOT control Task tool model selection
+# - Capabilities-registry.json does NOT control it either
+# - ONLY CLAUDE.md Rule 13 controls it (behavioral instruction to Claude)
+# - Previous fix updated config files = false fix at wrong layer

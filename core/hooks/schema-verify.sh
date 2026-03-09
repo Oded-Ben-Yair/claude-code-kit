@@ -1,10 +1,11 @@
 #!/usr/bin/env bash
 # Hook: schema-verify.sh
-# Removed set -euo pipefail — internal failures must never crash Claude Code UI.
-trap 'exit 0' ERR
 # Event: PreToolUse (Bash tools with SQL-like commands)
 # Purpose: Warn when SQL queries reference tables without prior schema verification.
 # Exit 2 = BLOCK, Exit 0 = PASS
+# Input: stdin JSON from Claude Code hooks API
+
+trap 'exit 0' ERR
 
 TELEMETRY_DIR="${CLAUDE_HOME:-$HOME/.claude}/telemetry"
 VIOLATIONS_LOG="${TELEMETRY_DIR}/violations.jsonl"
@@ -25,25 +26,18 @@ log_violation() {
         >> "${VIOLATIONS_LOG}"
 }
 
-# Only process Bash tool calls
-tool_name="${CLAUDE_TOOL_USE_NAME:-}"
+# Read stdin JSON (Claude Code hooks API)
+_STDIN=""
+[[ ! -t 0 ]] && _STDIN="$(cat)" || true
+
+tool_name="$(echo "$_STDIN" | jq -r '.tool_name // empty' 2>/dev/null)"
 if [[ "${tool_name}" != "Bash" ]]; then
     exit 0
 fi
 
-# Read tool input
-input="${CLAUDE_TOOL_USE_INPUT:-}"
-if [[ -z "${input}" ]]; then
+command_text="$(echo "$_STDIN" | jq -r '.tool_input.command // empty' 2>/dev/null)"
+if [[ -z "${command_text}" ]]; then
     exit 0
-fi
-
-# Extract command from JSON input (handle both raw string and JSON object)
-command_text="${input}"
-if echo "${input}" | grep -q '"command"'; then
-    command_text="$(echo "${input}" | sed -n 's/.*"command"\s*:\s*"\(.*\)".*/\1/p' | head -1)"
-    if [[ -z "${command_text}" ]]; then
-        command_text="${input}"
-    fi
 fi
 
 command_upper="$(echo "${command_text}" | tr '[:lower:]' '[:upper:]')"
@@ -108,7 +102,7 @@ if [[ -n "${unverified_tables}" ]]; then
 
     log_violation "schema-verify" "unverified_table" "${error_msg}" "${command_text}"
 
-    echo '{"error":"unverified_table","tables":"'"${unverified_tables}"'","message":"'"${error_msg}"'"}' >&2
+    echo "${error_msg}" >&2
     exit 2
 fi
 

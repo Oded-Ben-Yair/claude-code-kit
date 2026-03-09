@@ -13,7 +13,7 @@ bash install.sh
 ## What's Included
 
 - **CLAUDE.md** -- Master instruction file with 13 hard rules
-- **Rules** (11 files) -- Code quality, deployment, database safety, orchestration patterns
+- **Rules** (12 files) -- Code quality, deployment, database safety, orchestration patterns
 - **Hooks** (21 hooks) -- Pre/post tool validation, security gates, auto-formatting
 - **Skills** -- Reusable workflows (session management, diagrams, frontend, etc.)
 - **MCP Servers** -- Multi-provider AI gateway, Playwright browser control
@@ -30,4 +30,4 @@ bash install.sh
 ## Generated
 
 This kit was generated from a production Claude Code environment using `export-kit-generator.py`.
-Generated: 2026-03-02
+Generated: 2026-03-09
