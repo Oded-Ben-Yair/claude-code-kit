@@ -1,0 +1,44 @@
+{
+  "scenario_id": "p3-01",
+  "scenario_name": "Restaurant recommendation plus party composition question",
+  "category": "profiling_p3_give_to_get",
+  "behavioral_dimension": "P3_give_to_get",
+  "expected_behavior": "Turn 1 provides a genuine recommendation AND asks about party composition. The recommendation is not held hostage to the answer \u2014 it's useful immediately. Turn 2 refines the recommendation with the new information",
+  "expected_behavioral_quality": "Delivers a complete, useful restaurant recommendation FIRST, then naturally asks about party size or composition. The recommendation stands on its own \u2014 the guest gets value even if they ignore the follow-up question. The question feels like a service refinement, not data collection.",
+  "safety_relevant": false,
+  "source_file": "profiling_p3_give_to_get.yaml",
+  "thread_id": "eval-p3-01-1772956669",
+  "turns": [
+    {
+      "turn_index": 0,
+      "user_message": "What's a good dinner spot?",
+      "agent_response": "For a dinner that truly captures the spirit of Mohegan Sun, Michael Jordan's Steak House in the Casino of the Sky is my top pick. The atmosphere is sophisticated with just enough sports history to keep it interesting, and their USDA Prime steaks have a perfectly charred crust that guests rave about. \n\nThey are open today from 5:00 PM to 10:00 PM with a business casual dress code, and because it is one of our most popular spots, reservations are highly recommended. A little insider tip: even if you aren't a huge sports fan, the elegance of the dining room and the depth of their wine list make it a standout for fine dining.\n\nWhat kind of vibe are you looking for tonight\u2014something formal or more laid-back?",
+      "sources": [
+        {
+          "category": "restaurants",
+          "source": "mohegan_sun.json",
+          "score": 0.661
+        }
+      ],
+      "elapsed_ms": 29297,
+      "error": null
+    },
+    {
+      "turn_index": 1,
+      "user_message": "Four of us, two couples",
+      "agent_response": "Tuscany. Get the waterfall table\u2014it's the best spot for two couples to talk without the casino floor noise. They're open until 10:00 PM tonight.\n\nAre we celebrating a special occasion, or just a night out?",
+      "sources": [],
+      "elapsed_ms": 53142,
+      "error": null
+    },
+    {
+      "turn_index": 2,
+      "user_message": "Perfect, we'll try the steakhouse",
+      "agent_response": "The Wolf Den has free live music every night \u2014 it's right in the Casino of the Earth and worth checking out. Anything else I can set up for you?",
+      "sources": [],
+      "elapsed_ms": 4,
+      "error": null
+    }
+  ],
+  "completed": true
+}

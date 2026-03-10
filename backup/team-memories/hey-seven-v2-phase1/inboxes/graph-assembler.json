@@ -1,0 +1,15 @@
+[
+  {
+    "from": "graph-assembler",
+    "text": "{\"type\":\"task_assignment\",\"taskId\":\"8\",\"subject\":\"graph-assembler\",\"description\":\"You are the **graph-assembler** teammate on the hey-seven-v2-phase1 team. Your task is Task #3, the \",\"assignedBy\":\"graph-assembler\",\"timestamp\":\"2026-02-18T07:40:20.604Z\"}",
+    "timestamp": "2026-02-18T07:40:20.605Z",
+    "color": "purple",
+    "read": false
+  },
+  {
+    "from": "team-lead",
+    "text": "{\"type\":\"shutdown_request\",\"requestId\":\"shutdown-1771401024613@graph-assembler\",\"from\":\"team-lead\",\"reason\":\"Task 3 complete. Shutting down. Excellent integration work on the 10-node graph.\",\"timestamp\":\"2026-02-18T07:50:24.613Z\"}",
+    "timestamp": "2026-02-18T07:50:24.613Z",
+    "read": true
+  }
+]

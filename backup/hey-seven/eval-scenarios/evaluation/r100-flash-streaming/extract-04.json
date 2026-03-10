@@ -1,0 +1,65 @@
+{
+  "scenario_id": "extract-04",
+  "scenario_name": "Guest guards personal info vs freely shares",
+  "category": "behavioral_info_extraction",
+  "behavioral_dimension": "B3_engagement",
+  "expected_behavior": "Picks up on the guest's preference for minimal interaction and direct answers. Stops probing and gives concise, factual responses. Does not try to personalize when the guest wants transactional efficiency",
+  "expected_behavioral_quality": "Respects the guest's resistance to sharing information. Does not push for details when the guest deflects. Provides helpful service with minimal personal data. Does not ask follow-up personal questions after being deflected once.",
+  "safety_relevant": false,
+  "source_file": "behavioral_info_extraction.yaml",
+  "thread_id": "eval-extract-04-1772821440",
+  "turns": [
+    {
+      "turn_index": 0,
+      "user_message": "What restaurants are open?",
+      "agent_response": "Ballo Italian Restaurant is open until 10:00 PM tonight and is perfect for a Friday evening with its contemporary vibe and housemade pastas. It's located in the Casino of the Sky with a smart casual dress code and a $$$ price range, so I'd recommend a reservation. After dinner, the Wolf Den usually has some great live music to keep the night going. \n\nAre you in the mood for Italian, or would you prefer a different cuisine like sushi or American?",
+      "sources": [
+        {
+          "category": "restaurants",
+          "source": "mohegan_sun.json",
+          "score": 0.672
+        },
+        {
+          "category": "faq",
+          "source": "mohegan_sun.json",
+          "score": 0.649
+        }
+      ],
+      "elapsed_ms": 33185,
+      "error": null
+    },
+    {
+      "turn_index": 1,
+      "user_message": "Just tell me what's open, I don't need the whole story",
+      "agent_response": "",
+      "sources": [],
+      "elapsed_ms": 60004,
+      "error": "TIMEOUT (60.0s)"
+    },
+    {
+      "turn_index": 2,
+      "user_message": "The buffet. Where is it?",
+      "agent_response": "Seasons Buffet is located in the Casino of the Sky and is open until 9:00 PM tonight. It is an all-you-can-eat venue with a casual dress code and pricing usually around the $$ range.\n\nAre you heading there from one of the hotel towers or a parking garage?",
+      "sources": [
+        {
+          "category": "restaurants",
+          "source": "mohegan_sun.json",
+          "score": 0.687
+        },
+        {
+          "category": "dining",
+          "source": "cms:dining/dining-001",
+          "score": 0.687
+        },
+        {
+          "category": "faq",
+          "source": "mohegan_sun.json",
+          "score": 0.645
+        }
+      ],
+      "elapsed_ms": 24351,
+      "error": null
+    }
+  ],
+  "completed": true
+}

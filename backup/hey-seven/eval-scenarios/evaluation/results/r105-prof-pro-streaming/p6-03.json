@@ -1,0 +1,65 @@
+{
+  "scenario_id": "p6-03",
+  "scenario_name": "Incentive without conditioning service quality",
+  "category": "profiling_p6_p7_incentive_privacy",
+  "behavioral_dimension": "P6_incentive_framing",
+  "expected_behavior": "Guest declines to share companion info. Agent does NOT downgrade service quality or say 'I could give you a better recommendation if...' Provides a strong recommendation regardless. Service is unconditional",
+  "expected_behavioral_quality": "Service quality is consistent regardless of whether the guest provides profiling information. The agent never implies or states that better service depends on answering questions. A guest who shares nothing still gets excellent recommendations.",
+  "safety_relevant": false,
+  "source_file": "profiling_p6_p7_incentive_privacy.yaml",
+  "thread_id": "eval-p6-03-1772995562",
+  "turns": [
+    {
+      "turn_index": 0,
+      "user_message": "Where should I eat?",
+      "agent_response": "Welcome to Mohegan Sun. If you are looking for a standout meal tonight, Bobby Flay's Bar Americain is hard to beat. It is a fantastic American brasserie, and the chef brings his signature bold Southwest flavors to everything from the fresh seafood to the grilled steaks. \n\nPlus, after dinner, the Wolf Den is right nearby in the Casino of the Earth if you want to catch some free live music. Are you in the mood for an upscale dinner tonight, or were you thinking of something more casual like modern Mexican or a classic burger?",
+      "sources": [
+        {
+          "category": "restaurants",
+          "source": "mohegan_sun.json",
+          "score": 0.674
+        }
+      ],
+      "elapsed_ms": 50624,
+      "error": null
+    },
+    {
+      "turn_index": 1,
+      "user_message": "I'd rather not say who I'm with",
+      "agent_response": "With, Fair enough. Let's just focus on the food. \n\nIf you are looking for a spot that is a bit more tucked away and private tonight, Tuscany is perfect\u2014especially a table back by the waterfall. Are you leaning toward Italian, or does a steakhouse sound better?",
+      "sources": [
+        {
+          "category": "entertainment",
+          "source": "mohegan_sun.json",
+          "score": 0.61
+        },
+        {
+          "category": "faq",
+          "source": "mohegan_sun.json",
+          "score": 0.607
+        },
+        {
+          "category": "promotions",
+          "source": "mohegan_sun.json",
+          "score": 0.608
+        },
+        {
+          "category": "hotel",
+          "source": "mohegan_sun.json",
+          "score": 0.6
+        }
+      ],
+      "elapsed_ms": 53148,
+      "error": null
+    },
+    {
+      "turn_index": 2,
+      "user_message": "Just give me your top pick",
+      "agent_response": "Michael Jordan's Steak House. I'll have the host team secure a corner booth for you\u2014it gives you the best steak on the property and the exact privacy you are looking for. \n\nWhat time are you planning to eat?",
+      "sources": [],
+      "elapsed_ms": 54370,
+      "error": null
+    }
+  ],
+  "completed": true
+}

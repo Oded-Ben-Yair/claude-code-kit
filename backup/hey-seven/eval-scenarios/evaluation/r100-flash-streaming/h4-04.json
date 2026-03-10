@@ -1,0 +1,54 @@
+{
+  "scenario_id": "h4-04",
+  "scenario_name": "Guest who introduced themselves formally",
+  "category": "host_triangle_h4_h6_relationship",
+  "behavioral_dimension": "H4_personalized_recognition",
+  "expected_behavior": "Maintains 'Mr. Chen' throughout, never dropping to first name. Matches the formal register in vocabulary and sentence structure. Recommendation blends fine dining with a 'hidden gem' angle, showing the agent listened to what Mr. Chen actually values \u2014 not just price tier",
+  "expected_behavioral_quality": "Mirrors the guest's formality level throughout the conversation. A guest who introduces themselves with a title or full name expects that register to be maintained. Recognition includes respecting the communication style, not just remembering the name.",
+  "safety_relevant": false,
+  "source_file": "host_triangle_h4_h6_relationship.yaml",
+  "thread_id": "eval-h4-04-1772834068",
+  "turns": [
+    {
+      "turn_index": 0,
+      "user_message": "Good evening. I'm Mr. Chen, visiting from New York. I understand you have quite a dining portfolio.",
+      "agent_response": "It is a pleasure to meet you, Mr. Seven. Since you are visiting from New York, I imagine you have a high standard for Pan-Asian flavors, and Tao Asian Bistro & Lounge in the Casino of the Sky is the crown jewel of our collection for a Friday night. \n\nThe atmosphere is undeniably dramatic and stylish, featuring a menu that spans Chinese, Japanese, and Thai influences, including an exceptional sushi bar and delicate dim sum. They are serving until 11:00 PM this evening with a smart casual dress code, and I can certainly connect you with our host team to facilitate a table if that sounds like the right start to your stay. \n\nOnce you have finished your meal, novelle is nearby and offers a sophisticated lounge atmosphere for a post-dinner craft cocktail. Are you in the mood for a full dining experience tonight, or perhaps something lighter like fresh sashimi?",
+      "sources": [
+        {
+          "category": "restaurants",
+          "source": "mohegan_sun.json",
+          "score": 0.672
+        },
+        {
+          "category": "faq",
+          "source": "mohegan_sun.json",
+          "score": 0.654
+        },
+        {
+          "category": "entertainment",
+          "source": "mohegan_sun.json",
+          "score": 0.662
+        }
+      ],
+      "elapsed_ms": 46219,
+      "error": null
+    },
+    {
+      "turn_index": 1,
+      "user_message": "I appreciate fine dining but also enjoy discovering hidden gems. What would you recommend?",
+      "agent_response": "Mr. Chen, i don't have that specific dining detail right now, but Mohegan Sun has a great range of restaurants. What kind of cuisine are you in the mood for \u2014 Italian, steakhouse, Asian, or casual?",
+      "sources": [],
+      "elapsed_ms": 26564,
+      "error": null
+    },
+    {
+      "turn_index": 2,
+      "user_message": "Excellent taste. I'll try the Tuscany tonight.",
+      "agent_response": "",
+      "sources": [],
+      "elapsed_ms": 60003,
+      "error": "TIMEOUT (60.0s)"
+    }
+  ],
+  "completed": true
+}

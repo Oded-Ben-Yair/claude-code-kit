@@ -1,0 +1,33 @@
+{
+  "name": "r101-paradigm-shift",
+  "description": "R101 Phase 0: Root cause investigation for Hey Seven behavioral score plateau. 4 parallel tracks: domain research, failure taxonomy, gold traces, code cleanup.",
+  "createdAt": 1772884829985,
+  "leadAgentId": "team-lead@r101-paradigm-shift",
+  "leadSessionId": "a5c1d20e-754e-439b-b3e3-4b4b421a4d56",
+  "members": [
+    {
+      "agentId": "team-lead@r101-paradigm-shift",
+      "name": "team-lead",
+      "agentType": "orchestrator",
+      "model": "claude-opus-4-6[1m]",
+      "joinedAt": 1772884829985,
+      "tmuxPaneId": "",
+      "cwd": "/home/odedbe/projects/hey-seven",
+      "subscriptions": []
+    },
+    {
+      "agentId": "code-cleaner@r101-paradigm-shift",
+      "name": "code-cleaner",
+      "agentType": "code-worker",
+      "model": "inherit",
+      "prompt": "You are code-cleaner on team r101-paradigm-shift. Use Opus 4.6 for all work.\n\nRead the team context: ~/.claude/teams/r101-paradigm-shift/team-context.md\n\nYOUR TASK (Task #4): Fix exactly 4 verified bugs. NO other changes. EXPERIMENT FREEZE in effect.\n\nBUG 1: Word-boundary comp matching (src/agent/dispatch.py around line 245)\nCurrent code: `any(word in query_lower for word in _COMP_INTENT_WORDS)`\nProblem: \"comp\" matches \"comparison\", \"complete\", \"accomplish\", \"uncompromising\"\nFix: Use word-boundary matching. Split query into word tokens and check membership:\n```python\nquery_words = set(re.findall(r'\\b\\w+\\b', query_lower))\nif query_words & _COMP_INTENT_WORDS:\n```\nYou'll need to import `re` at the top of dispatch.py if not already imported.\n\nBUG 2: Remove dead code (src/agent/nodes.py around line 274)\nFunction `_get_routed_llm` is defined but never called anywhere in the codebase.\nRemove the entire function definition. Verify with grep first that it has zero callers.\n\nBUG 3: Fix log message (src/agent/graph.py line 321)\nCurrent: `logger.info(\"Custom 12-node StateGraph compiled successfully.\")`\nFix: Change \"12-node\" to \"13-node\" (the graph has 13 nodes as documented in line 1 and 166)\n\nBUG 4: Remove stale field reference (src/agent/profiling.py around line 251)\nThe tuple `relationship_fields` at line 249-254 still includes \"companion_names\".\nLine 182 documents that companion_names was removed from the schema in R76.\nRemove \"companion_names\" from the tuple.\n\nAFTER ALL FIXES, verify:\n1. grep -rn \"_get_routed_llm\" src/ (should return 0 hits)\n2. grep -n \"companion_names\" src/agent/profiling.py (should only be comment at ~182)\n3. Run: cd /home/odedbe/projects/hey-seven && python -m pytest tests/test_nodes.py tests/test_graph_v2.py tests/test_profiling.py -x -q --timeout=30\n\nUpdate your section in ~/.claude/teams/r101-paradigm-shift/team-memory.md when done.\n\nOUTPUT CONTRACT:\n- Return to parent ONLY: (1) Status, (2) Files modified (4 files), (3) Test results, (4) Blockers, (5) Verification grep results",
+      "color": "purple",
+      "planModeRequired": false,
+      "joinedAt": 1772884934044,
+      "tmuxPaneId": "in-process",
+      "cwd": "/home/odedbe/projects/hey-seven",
+      "subscriptions": [],
+      "backendType": "in-process"
+    }
+  ]
+}

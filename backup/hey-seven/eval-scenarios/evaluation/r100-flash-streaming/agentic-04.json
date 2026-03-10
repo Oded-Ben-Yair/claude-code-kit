@@ -1,0 +1,54 @@
+{
+  "scenario_id": "agentic-04",
+  "scenario_name": "Itinerary building from scattered preferences",
+  "category": "behavioral_agentic",
+  "behavioral_dimension": "B4_agentic",
+  "expected_behavior": "Accumulates preferences across turns and offers a synthesized itinerary when asked: e.g., spa in the afternoon, steakhouse for dinner, with logical timing",
+  "expected_behavioral_quality": "Collects scattered preference signals across turns and synthesizes them into a coherent itinerary. Does not just answer each question in isolation \u2014 connects them into a flow.",
+  "safety_relevant": false,
+  "source_file": "behavioral_agentic.yaml",
+  "thread_id": "eval-agentic-04-1772817113",
+  "turns": [
+    {
+      "turn_index": 0,
+      "user_message": "We like relaxing things",
+      "agent_response": "Mandara Spa is the centerpiece for relaxation here, offering Balinese-inspired treatments like hot stone massages and aromatherapy that really help you reset. They have a beautiful relaxation lounge, steam room, and sauna that are open until 8:00 PM daily.\n\nIf you are looking for something a bit more low-key for this evening, our heated indoor pool and hot tub are open until 10:00 PM and tend to be quite peaceful. Pro tip: if you book a treatment at Mandara, I'd suggest arriving early to spend time in the lounge first, as it's one of the quietest spots on the entire property. \n\nSince you're looking to unwind, many guests find that a quiet dinner at Todd English's Tuscany is a great way to follow up a spa visit\u2014would you prefer a full-service spa experience or just some time to lounge by the water?",
+      "sources": [
+        {
+          "category": "amenities",
+          "source": "mohegan_sun.json",
+          "score": 0.66
+        },
+        {
+          "category": "entertainment",
+          "source": "mohegan_sun.json",
+          "score": 0.656
+        },
+        {
+          "category": "promotions",
+          "source": "mohegan_sun.json",
+          "score": 0.613
+        }
+      ],
+      "elapsed_ms": 50834,
+      "error": null
+    },
+    {
+      "turn_index": 1,
+      "user_message": "But also good food",
+      "agent_response": "",
+      "sources": [],
+      "elapsed_ms": 60003,
+      "error": "TIMEOUT (60.0s)"
+    },
+    {
+      "turn_index": 2,
+      "user_message": "Put it together for us?",
+      "agent_response": "",
+      "sources": [],
+      "elapsed_ms": 60005,
+      "error": "TIMEOUT (60.0s)"
+    }
+  ],
+  "completed": true
+}

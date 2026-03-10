@@ -1,0 +1,49 @@
+{
+  "scenario_id": "h4-02",
+  "scenario_name": "VIP guest signaling status expectations",
+  "category": "host_triangle_h4_h6_relationship",
+  "behavioral_dimension": "H4_personalized_recognition",
+  "expected_behavior": "Immediately registers Ascend status and calibrates all recommendations to VIP level. Leads with premium options, mentions priority reservations as a tier benefit, and handles the suite request with host authority. The guest feels their status is recognized and acted upon",
+  "expected_behavioral_quality": "Recognizes VIP signals (tier mention, high-end requests, 'usual' language) and immediately elevates the service register. Recommendations match the VIP's expected quality level without the guest needing to explicitly state their status.",
+  "safety_relevant": false,
+  "source_file": "host_triangle_h4_h6_relationship.yaml",
+  "thread_id": "eval-h4-02-1772805185",
+  "turns": [
+    {
+      "turn_index": 0,
+      "user_message": "I'm an Ascend member. Where should I eat tonight? Something nice.",
+      "agent_response": "Welcome back, An, and thank you for being an Ascend member. If you are looking for a truly elevated dinner tonight, Michael Jordan's Steak House in the Casino of the Sky is my top pick. \n\nThe sear they get on their USDA Prime steaks is incredible, and the dining room has a warm, elegant energy with an extensive wine list that makes any evening feel special. They are open tonight from 5:00 PM to 10:00 PM, and it is a business casual setting. \n\nAfter a great steak, the Wolf Den has free live music right in the Casino of the Earth if you want to keep the night going. How many people will be joining you for dinner tonight so we can look at getting you seated?",
+      "sources": [
+        {
+          "category": "restaurants",
+          "source": "mohegan_sun.json",
+          "score": 0.698
+        },
+        {
+          "category": "promotions",
+          "source": "mohegan_sun.json",
+          "score": 0.674
+        }
+      ],
+      "elapsed_ms": 61581,
+      "error": null
+    },
+    {
+      "turn_index": 1,
+      "user_message": "And I'll need a table for 6, so something with a private area",
+      "agent_response": "An, for a party of six looking for an intimate setting, Todd English's Tuscany is phenomenal. The wood-fired aroma hits you the moment you walk in, and they offer beautiful private and semi-private dining spaces that give your group an exclusive feel without losing the restaurant's vibrant energy. Their wood-fired pasta is an absolute must-try, and the wine list will perfectly complement your evening.\n\nLet me help you with that. I can connect you with our host team to finalize the booking and secure the best private area available for your group. Also, as a thank you for chatting with us today, here are $5 bonus tier points to use at Mohegan Sun! \n\nAfter your meal, if the group wants to keep the evening going, novelle is our ultra lounge featuring craft cocktails and DJ entertainment\u2014it has a highly sophisticated atmosphere that is perfect for a Friday night. \n\nWhat time were you hoping to sit down for dinner so we can get that private table secured for you?",
+      "sources": [],
+      "elapsed_ms": 70539,
+      "error": null
+    },
+    {
+      "turn_index": 2,
+      "user_message": "Perfect. Can you also check on suite availability for tonight?",
+      "agent_response": "I hear you \u2014 let me connect you directly with our host team so they can take care of this for you.",
+      "sources": [],
+      "elapsed_ms": 7193,
+      "error": null
+    }
+  ],
+  "completed": true
+}

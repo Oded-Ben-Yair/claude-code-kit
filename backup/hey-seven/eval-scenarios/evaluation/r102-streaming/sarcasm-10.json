@@ -1,0 +1,91 @@
+{
+  "scenario_id": "sarcasm-10",
+  "scenario_name": "Eye-roll emoji and dismissive language",
+  "category": "behavioral_sarcasm",
+  "behavioral_dimension": "B1_sarcasm",
+  "expected_behavior": "Ignores the dismissive opener without being defensive. Provides useful information that earns gradual engagement. Matches the casual register shift as the guest warms up",
+  "expected_behavioral_quality": "Reads emoji signals and abbreviated dismissive language as disengagement. Does not use emojis back or try to match the casual register. Stays professional but not stiff. Proves value through substance.",
+  "safety_relevant": false,
+  "source_file": "behavioral_sarcasm.yaml",
+  "thread_id": "eval-sarcasm-10-1772921191",
+  "turns": [
+    {
+      "turn_index": 0,
+      "user_message": "lol a chatbot for a casino. sure why not",
+      "agent_response": "I'm Seven. I might be AI, but I know this property inside out and I'm here 24/7 to make sure you have what you need. What brings you to Mohegan Sun today?",
+      "sources": [
+        {
+          "category": "faq",
+          "source": "mohegan_sun.json",
+          "score": 0.704
+        },
+        {
+          "category": "gaming",
+          "source": "mohegan_sun.json",
+          "score": 0.679
+        },
+        {
+          "category": "property",
+          "source": "mohegan_sun.json",
+          "score": 0.67
+        }
+      ],
+      "elapsed_ms": 24959,
+      "error": null
+    },
+    {
+      "turn_index": 1,
+      "user_message": "ok fine whats there to do",
+      "agent_response": "I've got you \u2014 since it is Saturday night, Avalon Nightclub is currently the spot for high-energy music and dancing. If you prefer live music, the Wolf Den is right in the center of the action and is known for its electric atmosphere on the weekends. To recharge tomorrow, a treatment at Elemis Spa is a legendary way to reset after a late night out. Are you looking for a high-energy evening or something more relaxed?",
+      "sources": [
+        {
+          "category": "entertainment",
+          "source": "mohegan_sun.json",
+          "score": 0.654
+        },
+        {
+          "category": "amenities",
+          "source": "mohegan_sun.json",
+          "score": 0.653
+        },
+        {
+          "category": "faq",
+          "source": "mohegan_sun.json",
+          "score": 0.655
+        }
+      ],
+      "elapsed_ms": 55075,
+      "error": null
+    },
+    {
+      "turn_index": 2,
+      "user_message": "ok the spa thing sounds kinda nice actually",
+      "agent_response": "I've got you. Mandara Spa is a legendary reset, using Balinese traditions and a tranquil relaxation lounge to help you truly disconnect. It opens tomorrow morning at 9:00 AM, and the early slots are the best if you want to enjoy the steam room and sauna while it's still quiet. After that, a light brunch at Todd English's Tuscany is just a short walk away to keep the relaxed energy going. Are you thinking of a deep tissue massage or more of a skincare treatment like a facial?",
+      "sources": [
+        {
+          "category": "amenities",
+          "source": "mohegan_sun.json",
+          "score": 0.671
+        },
+        {
+          "category": "promotions",
+          "source": "mohegan_sun.json",
+          "score": 0.651
+        },
+        {
+          "category": "property",
+          "source": "mohegan_sun.json",
+          "score": 0.649
+        },
+        {
+          "category": "faq",
+          "source": "mohegan_sun.json",
+          "score": 0.632
+        }
+      ],
+      "elapsed_ms": 67905,
+      "error": null
+    }
+  ],
+  "completed": true
+}

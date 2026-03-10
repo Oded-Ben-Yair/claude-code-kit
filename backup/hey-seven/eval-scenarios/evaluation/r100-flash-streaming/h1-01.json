@@ -1,0 +1,76 @@
+{
+  "scenario_id": "h1-01",
+  "scenario_name": "First-time guest exploring the property",
+  "category": "host_triangle_h1_h3_development",
+  "behavioral_dimension": "H1_proactive_value_discovery",
+  "expected_behavior": "Recognizes first-time visit, asks about interests to shape recommendations, and plants at least one natural return-visit hook (Wolf Den weekly shows, upcoming Arena concert, Momentum sign-up). The conversation feels like an insider sharing favorites, not a brochure",
+  "expected_behavioral_quality": "Identifies the first-time visit signal and tailors recommendations to create anchor memories. Plants at least one natural return-visit hook (upcoming event, seasonal offering, loyalty sign-up) without making it feel like a pitch. Asks what brought them in to discover what would make them come back.",
+  "safety_relevant": false,
+  "source_file": "host_triangle_h1_h3_development.yaml",
+  "thread_id": "eval-h1-01-1772832529",
+  "turns": [
+    {
+      "turn_index": 0,
+      "user_message": "Hey, first time here at Mohegan Sun. What should we check out?",
+      "agent_response": "Welcome to Mohegan Sun. Since it's your first visit, a great place to start is the Casino of the Sky. It features a stunning planetarium-style domed ceiling and a 7-story crystal mountain that serves as a central landmark for the property.\n\nFor a memorable meal, Todd English's Tuscany is a guest favorite for its terrace seating that overlooks a waterfall. If you're looking for entertainment, the Wolf Den is located right in the center of the gaming floor and offers free live music most nights. You're in great hands\u2014while the resort is large, it\u2019s designed to be explored at your own pace.\n\nWe also have a world-class arena and over 40 retail shops if you're looking for something away from the casino floor. Are you planning to focus more on dining and shows, or are you here primarily for the gaming?",
+      "sources": [
+        {
+          "category": "amenities",
+          "source": "mohegan_sun.json",
+          "score": 0.769
+        },
+        {
+          "category": "faq",
+          "source": "mohegan_sun.json",
+          "score": 0.746
+        },
+        {
+          "category": "entertainment",
+          "source": "mohegan_sun.json",
+          "score": 0.737
+        }
+      ],
+      "elapsed_ms": 42656,
+      "error": null
+    },
+    {
+      "turn_index": 1,
+      "user_message": "We're mostly into live music and good food",
+      "agent_response": "You've come at the perfect time because Friday nights here are electric. For live music right now, the Wolf Den is the heart of the property\u2014it's an intimate venue right on the gaming floor where you're close to the performers, and the shows are always complimentary.\n\nSince you're also looking for good food, you might enjoy Novelle. It's an upscale ultra-lounge that combines a sophisticated atmosphere with craft cocktails and DJ entertainment on Friday nights, making it a great spot to transition from dinner to a night out. If you prefer something more casual with a side of laughs, Comix Roadhouse has a full menu and hosts nationally touring comedians throughout the weekend.\n\nFor a first-timer tip, the acoustics in the Wolf Den are specifically designed so you get a clear, powerful sound without it being overwhelming to the rest of the floor. Are you more into a seated concert experience or a high-energy lounge atmosphere where you can move around?\n\nAfter a night of music and great food, a visit to Elemis Spa tomorrow could be the perfect reset\u2014their signature treatments are a great way to recharge before another round of fun.",
+      "sources": [
+        {
+          "category": "entertainment",
+          "source": "mohegan_sun.json",
+          "score": 0.662
+        }
+      ],
+      "elapsed_ms": 34280,
+      "error": null
+    },
+    {
+      "turn_index": 2,
+      "user_message": "That sounds great, we'll definitely check those out",
+      "agent_response": "You're going to have a fantastic night. Since it's currently 9:30 PM, Avalon Nightclub is just about to open its doors at 10:00 PM for the Friday night crowd. It's our high-energy spot with a massive sound system and state-of-the-art lighting that really brings the party to life. \n\nPro tip\u2014if you want to keep the night going with a more sophisticated vibe, Novelle stays lively late into the evening with craft cocktails and a DJ, and it's a great spot to see and be seen. If you're looking for a late-night bite after the music, Johnny Rockets in the Casino of the Earth is open until 11:00 PM for a classic burger and shake. Have you already settled on a dinner spot, or would you like a recommendation for somewhere that stays open a bit later?",
+      "sources": [
+        {
+          "category": "entertainment",
+          "source": "mohegan_sun.json",
+          "score": 0.654
+        },
+        {
+          "category": "faq",
+          "source": "mohegan_sun.json",
+          "score": 0.636
+        },
+        {
+          "category": "restaurants",
+          "source": "mohegan_sun.json",
+          "score": 0.642
+        }
+      ],
+      "elapsed_ms": 34498,
+      "error": null
+    }
+  ],
+  "completed": true
+}

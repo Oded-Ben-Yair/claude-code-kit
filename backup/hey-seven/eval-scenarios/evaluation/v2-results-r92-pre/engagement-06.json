@@ -1,0 +1,72 @@
+{
+  "id": "engagement-06",
+  "name": "Clarification repair after misunderstood question",
+  "source_file": "behavioral_engagement.yaml",
+  "category": "behavioral_engagement",
+  "behavioral_dimension": "B3_engagement",
+  "expected_behavior": "Recovers from initial misunderstanding by narrowing the scope. When corrected, does not repeat the same broad answer but focuses specifically on what the guest clarified they want",
+  "expected_behavioral_quality": "When the guest says the answer wasn't what they meant, immediately asks a clarifying question rather than guessing again. Acknowledges the misunderstanding without being defensive. Uses a narrowing question to zero in on intent.",
+  "safety_relevant": false,
+  "turns": [
+    {
+      "turn_index": 0,
+      "user_message": "What's happening tonight?",
+      "agent_response": "Since it is Thursday, March 5th, you have some great options to start the weekend early. Novelle is open tonight, offering an upscale lounge atmosphere with craft cocktails and DJ entertainment that is perfect for a sophisticated night out. Comix Roadhouse also begins its weekly comedy schedule tonight if you are looking for a few laughs in a high-energy setting. \n\nThe Wolf Den is another fantastic choice for free live music, providing an electric environment where you are just feet away from the stage. Before the entertainment starts, you might enjoy a wood-fired dinner at Todd English's Tuscany nearby as their dishes pair perfectly with a night of music. Are you leaning more toward live music or a comedy show for your evening?",
+      "sources": [
+        {
+          "category": "entertainment",
+          "source": "mohegan_sun.json",
+          "score": 0.671
+        },
+        {
+          "category": "faq",
+          "source": "mohegan_sun.json",
+          "score": 0.662
+        }
+      ],
+      "elapsed_ms": 48951,
+      "error": null
+    },
+    {
+      "turn_index": 1,
+      "user_message": "No I meant like events, shows, that kind of thing",
+      "agent_response": "Tonight, the Wolf Den is the place to be for an intimate live performance starting at 8:00 PM. Since these shows are free, the energy is always electric and there's no ticket required to see national touring acts or top-tier tribute bands. For a higher-energy nightlife vibe, Novelle opens its doors tonight as well, featuring a DJ and craft cocktails in a very upscale lounge setting. \n\nBefore the show, Todd English\u2019s Tuscany is a short walk from the Wolf Den and their wood-fired dishes are a great way to start the night. Are you more interested in catching a live band or checking out the lounge scene?",
+      "sources": [
+        {
+          "category": "entertainment",
+          "source": "mohegan_sun.json",
+          "score": 0.659
+        },
+        {
+          "category": "promotions",
+          "source": "mohegan_sun.json",
+          "score": 0.644
+        }
+      ],
+      "elapsed_ms": 38522,
+      "error": null
+    },
+    {
+      "turn_index": 2,
+      "user_message": "Yes, what shows are on tonight?",
+      "agent_response": "Tonight at 8:00 PM, the Wolf Den is featuring free live music, which is the perfect spot if you want to be right in the heart of the action without needing a ticket. For a more sophisticated evening, Novelle is open tonight with DJ entertainment and craft cocktails in an upscale lounge setting. While the specific headliners for tonight aren't listed in my current schedule, the Wolf Den always hosts high-quality national touring acts or tribute bands. \n\nAfter the show, Todd English's Tuscany is a short walk from the Wolf Den and their wood-fired dishes are a great way to cap off the night. Do you prefer a seat close to the stage at the Wolf Den or a lounge with a dance floor at Novelle?",
+      "sources": [
+        {
+          "category": "entertainment",
+          "source": "mohegan_sun.json",
+          "score": 0.662
+        },
+        {
+          "category": "faq",
+          "source": "mohegan_sun.json",
+          "score": 0.677
+        }
+      ],
+      "elapsed_ms": 27273,
+      "error": null
+    }
+  ],
+  "elapsed_ms": 114747,
+  "error": null,
+  "completed": true
+}

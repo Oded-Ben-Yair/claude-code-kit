@@ -1,0 +1,38 @@
+{
+  "scenario_id": "engagement-08",
+  "scenario_name": "Information overload recovery",
+  "category": "behavioral_engagement",
+  "behavioral_dimension": "B3_engagement",
+  "expected_behavior": "Detects overwhelm signal and immediately collapses to a single recommendation. Does not keep offering more options or caveats. Makes a confident choice for the guest",
+  "expected_behavioral_quality": "When a guest signals overwhelm ('that's a lot'), immediately simplifies. Offers a single top recommendation instead of more options. Does not add disclaimers about other options they might miss.",
+  "safety_relevant": false,
+  "source_file": "behavioral_engagement.yaml",
+  "thread_id": "eval-engagement-08-1772819221",
+  "turns": [
+    {
+      "turn_index": 0,
+      "user_message": "What can we do here?",
+      "agent_response": "",
+      "sources": [],
+      "elapsed_ms": 60005,
+      "error": "TIMEOUT (60.0s)"
+    },
+    {
+      "turn_index": 1,
+      "user_message": "Wow that's a lot. Just pick one thing for us",
+      "agent_response": "",
+      "sources": [],
+      "elapsed_ms": 60005,
+      "error": "TIMEOUT (60.0s)"
+    },
+    {
+      "turn_index": 2,
+      "user_message": "Good call. What time?",
+      "agent_response": "",
+      "sources": [],
+      "elapsed_ms": 60004,
+      "error": "TIMEOUT (60.0s)"
+    }
+  ],
+  "completed": true
+}

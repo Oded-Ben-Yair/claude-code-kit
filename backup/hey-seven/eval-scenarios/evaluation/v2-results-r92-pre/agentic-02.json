@@ -1,0 +1,87 @@
+{
+  "id": "agentic-02",
+  "name": "Proactive timing awareness for property hours",
+  "source_file": "behavioral_agentic.yaml",
+  "category": "behavioral_agentic",
+  "behavioral_dimension": "B4_agentic",
+  "expected_behavior": "When the guest mentions a late time, proactively flags which restaurants may be closing soon and suggests options that will definitely still be open",
+  "expected_behavioral_quality": "When recommending a venue, proactively mentions closing time or last seating if it's approaching. Does not wait for the guest to ask 'is it still open?' Anticipates the practical concern.",
+  "safety_relevant": false,
+  "turns": [
+    {
+      "turn_index": 0,
+      "user_message": "What restaurants are good?",
+      "agent_response": "Hash House A Go Go in the Casino of the Earth is a must-visit for their \"twisted farm food,\" especially if you appreciate portions that are as impressive as they are delicious. The sight of their famous sage fried chicken and waffles\u2014towering high with a signature sprig of rosemary and a steak knife holding it all together\u2014is a staple of the Mohegan Sun experience. They are open daily from 8:00 AM to 2:00 PM, making it the perfect casual spot for a hearty mid-morning meal with prices typically in the $$ range and no reservations required.\n\nAfter a meal that size, many of our guests find that a long walk through the Shops at Mohegan Sun is the best way to digest. Are you in the mood for a massive, oversized brunch like that, or were you thinking of a more formal sit-down dinner for later tonight?",
+      "sources": [
+        {
+          "category": "restaurants",
+          "source": "mohegan_sun.json",
+          "score": 0.669
+        }
+      ],
+      "elapsed_ms": 31209,
+      "error": null
+    },
+    {
+      "turn_index": 1,
+      "user_message": "We're thinking around 9:30 PM",
+      "agent_response": "Ballo Italian Restaurant is a great choice for that time tonight, as they serve their contemporary Italian menu until 10:00 PM in the Casino of the Sky. For a more high-energy atmosphere, novelle is an upscale ultra lounge featuring craft cocktails and a DJ that is perfect for a 9:30 PM start on a Thursday. Since you'll be out late, would you like to know about the Elemis Spa's morning availability for a recovery treatment tomorrow?",
+      "sources": [
+        {
+          "category": "entertainment",
+          "source": "mohegan_sun.json",
+          "score": 0.666
+        },
+        {
+          "category": "faq",
+          "source": "mohegan_sun.json",
+          "score": 0.628
+        },
+        {
+          "category": "restaurants",
+          "source": "mohegan_sun.json",
+          "score": 0.615
+        }
+      ],
+      "elapsed_ms": 52198,
+      "error": null
+    },
+    {
+      "turn_index": 2,
+      "user_message": "Good to know. We'll hurry",
+      "agent_response": "Ballo is located right in the Casino of the Sky, making it a quick walk from the hotel elevators if you're staying on-property. After dinner, novelle is nearby and stays open late with craft cocktails and a DJ for a more high-energy end to your night. Are you staying in the Sky Tower or the Earth Tower tonight?",
+      "sources": [
+        {
+          "category": "promotions",
+          "source": "mohegan_sun.json",
+          "score": 0.635
+        },
+        {
+          "category": "entertainment",
+          "source": "mohegan_sun.json",
+          "score": 0.639
+        },
+        {
+          "category": "hotel",
+          "source": "mohegan_sun.json",
+          "score": 0.622
+        },
+        {
+          "category": "gaming",
+          "source": "mohegan_sun.json",
+          "score": 0.606
+        },
+        {
+          "category": "restaurants",
+          "source": "mohegan_sun.json",
+          "score": 0.631
+        }
+      ],
+      "elapsed_ms": 42757,
+      "error": null
+    }
+  ],
+  "elapsed_ms": 126165,
+  "error": null,
+  "completed": true
+}

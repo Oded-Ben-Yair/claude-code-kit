@@ -1,0 +1,50 @@
+{
+  "scenario_id": "p9-02",
+  "scenario_name": "Handoff includes confidence levels for extracted data",
+  "category": "profiling_p8_p9_p10_completeness",
+  "behavioral_dimension": "P9_handoff_quality",
+  "expected_behavior": "Handoff summary separates stated facts (party of 4, kids present, wants pizza and a show) from inferences (family group, kids likely younger based on pizza preference). The host receives a nuanced profile, not raw assertions",
+  "expected_behavioral_quality": "The handoff distinguishes between information the guest explicitly stated (high confidence) and information inferred by the agent (lower confidence). 'Guest stated: party of 4. Inferred: likely family group (mentioned kids).' This prevents the receiving host from treating inferences as facts.",
+  "safety_relevant": false,
+  "source_file": "profiling_p8_p9_p10_completeness.yaml",
+  "thread_id": "eval-p9-02-1772960996",
+  "turns": [
+    {
+      "turn_index": 0,
+      "user_message": "Need dinner for 4 tonight. The kids want pizza.",
+      "agent_response": "Frank Pepe's Pizzeria Napoletana in the Casino of the Earth is the definitive choice for a family of four when the kids have a craving for pizza. This is a legendary Connecticut institution known for its coal-fired thin-crust \"apizza,\" which has a signature char and a crispness that is truly unique.\n\nThey are open from 11:00 AM until 10:00 PM tonight and provide a relaxed, casual setting where you do not need to worry about a reservation. While the kids will likely love a classic tomato pie, a local insider tip is to try their world-famous white clam pie if you are feeling adventurous.\n\nHow old are the kids in your party?\n\nAfter you have had your fill of pizza, you might enjoy walking over to the Shops at Mohegan Sun for some window shopping or a stop for a sweet treat.",
+      "sources": [
+        {
+          "category": "restaurants",
+          "source": "mohegan_sun.json",
+          "score": 0.669
+        }
+      ],
+      "elapsed_ms": 29344,
+      "error": null
+    },
+    {
+      "turn_index": 1,
+      "user_message": "We also want to see a show after",
+      "agent_response": "It has an electric energy because the venue is so intimate and you're right there with the performers, though keep in mind guests must be 21 or older to enter that specific area. \n\nFor an all-ages experience for the whole family, the Mohegan Sun Arena is a world-class venue for major concerts and events, and Comix Roadhouse also hosts comedy sets on Sunday nights. Since schedules and ticket availability can change, I'd suggest checking the nightly lineup at the box office or the property website when you arrive. What kind of music or entertainment does your family usually enjoy most?\n\nPro tip \u2014 if the Wolf Den is at capacity, you can still catch the energy and the music from the concourse nearby. After a high-energy show, a visit to Elemis Spa tomorrow morning is the perfect way to reset.",
+      "sources": [
+        {
+          "category": "entertainment",
+          "source": "mohegan_sun.json",
+          "score": 0.645
+        }
+      ],
+      "elapsed_ms": 50991,
+      "error": null
+    },
+    {
+      "turn_index": 2,
+      "user_message": "Actually, can a host put together a whole plan for us?",
+      "agent_response": "I've got you. Here is the plan for tonight:\n\nHead to Frank Pepe's in Casino of the Earth at 5:30 PM for dinner. Getting there early avoids the wait and keeps the kids happy. At 7:00 PM, take the family to Cyber Quest\u2014it is our flagship arcade and is perfect for all ages. For the show, the 8:00 PM window at the Arena is your best bet for a family-friendly experience.\n\nI will flag this itinerary for the host team so they can assist you with the specifics when you arrive. Are you staying overnight with us or just visiting for the evening?",
+      "sources": [],
+      "elapsed_ms": 54433,
+      "error": null
+    }
+  ],
+  "completed": true
+}

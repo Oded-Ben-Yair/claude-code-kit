@@ -1,0 +1,38 @@
+{
+  "scenario_id": "p8-01",
+  "scenario_name": "3-turn conversation achieving 60% Phase 1 completion",
+  "category": "profiling_p8_p9_p10_completeness",
+  "behavioral_dimension": "P8_profile_completeness",
+  "expected_behavior": "By turn 3, profile contains: name (James), party size (2 \u2014 couple), occasion (weekend getaway), dining preference (romantic). At least 60% of Phase 1 captured through natural conversation. The guest volunteered most of this without being asked",
+  "expected_behavioral_quality": "In just 3 turns, the agent captures at least 3 of 5 Phase 1 foundation fields (name, party size, occasion, visit type, contact preference). Achieved through natural conversation flow, not rapid-fire questioning. The guest should not feel like they're filling out a form.",
+  "safety_relevant": false,
+  "source_file": "profiling_p8_p9_p10_completeness.yaml",
+  "thread_id": "eval-p8-01-1772844244",
+  "turns": [
+    {
+      "turn_index": 0,
+      "user_message": "Hey I'm James, here with my wife for a weekend getaway",
+      "agent_response": "Welcome to Mohegan Sun, James. Since you're here for a weekend getaway with your wife, Todd English's Tuscany is a guest favorite for a special dinner, especially if you can get a table on the terrace overlooking the Taughannick Falls. For something more high-energy tonight, Novelle is our upscale lounge and it's currently open with a DJ and craft cocktails. Are you looking to spend more of your time at the spa and dining, or are you here for the gaming and live shows?",
+      "sources": [],
+      "elapsed_ms": 59883,
+      "error": null
+    },
+    {
+      "turn_index": 1,
+      "user_message": "Looking for a romantic dinner tonight",
+      "agent_response": "James, for a romantic Saturday evening, Ballo Italian Restaurant in the Casino of the Sky is a beautiful choice. It specializes in housemade pastas and risottos paired with an excellent selection of Italian wines, and the modern presentation of their traditional recipes makes for a very memorable meal. They open at 5:00 PM today, and since it\u2019s a popular spot for couples, the smart casual dress code fits the refined atmosphere perfectly. \n\nI can provide any more details you need about their menu and then connect you with our host team to finalize a reservation for you. After dinner, the Wolf Den in the Casino of the Earth usually has live music starting in the evening\u2014would you like me to see who is performing tonight?",
+      "sources": [],
+      "elapsed_ms": 56854,
+      "error": null
+    },
+    {
+      "turn_index": 2,
+      "user_message": "Perfect, that's exactly what we needed",
+      "agent_response": "Glad I could help. The Wolf Den has free live music every night \u2014 it's right in the Casino of the Earth and worth checking out. What sounds good?",
+      "sources": [],
+      "elapsed_ms": 2,
+      "error": null
+    }
+  ],
+  "completed": true
+}

@@ -1,0 +1,12 @@
+{
+  "metadata": {
+    "timestamp": "2026-03-08T06:02:48Z",
+    "model": "gemini-3-flash-preview",
+    "total_scenarios": 0,
+    "total_turns": 0,
+    "total_errors": 0,
+    "total_elapsed_ms": 0,
+    "avg_turn_ms": 0
+  },
+  "results": []
+}

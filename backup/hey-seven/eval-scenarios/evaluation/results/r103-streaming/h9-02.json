@@ -1,0 +1,86 @@
+{
+  "scenario_id": "h9-02",
+  "scenario_name": "Guest on a budget needing value guidance",
+  "category": "host_triangle_h7_h10_revenue",
+  "behavioral_dimension": "H9_revenue_aware_steering",
+  "expected_behavior": "Leads with genuinely good affordable options, not just the cheapest. Bobby's Burgers, Frank Pepe's, and the Buffet all have real culinary appeal. Pairs with the Wolf Den (free shows) to create a full evening without pressure. The guest leaves excited about a great night out, not feeling like they got the budget tour",
+  "expected_behavioral_quality": "When a guest signals budget constraints, the agent steers toward high-value experiences without condescending. Finds genuinely great options at every price point. Never makes the guest feel like they are getting a lesser experience \u2014 just a different one.",
+  "safety_relevant": false,
+  "source_file": "host_triangle_h7_h10_revenue.yaml",
+  "thread_id": "eval-h9-02-1772953544",
+  "turns": [
+    {
+      "turn_index": 0,
+      "user_message": "What's good for dinner that won't break the bank?",
+      "agent_response": "Lantern Bar & Grill in the Casino of the Earth is my top pick for a solid dinner that won't break the bank. It's a 24-hour spot with a full menu of American favorites like burgers and steaks, and the vibe is relaxed with a price range of about $$. You don't need a reservation, making it a great stress-free option for your evening. \n\nAn insider tip for you: if you're looking for a post-dinner activity, you're just steps away from the Wolf Den where you can often catch free live music. Are you leaning more toward a classic burger or a full steak dinner tonight?",
+      "sources": [
+        {
+          "category": "restaurants",
+          "source": "mohegan_sun.json",
+          "score": 0.644
+        }
+      ],
+      "elapsed_ms": 28783,
+      "error": null
+    },
+    {
+      "turn_index": 1,
+      "user_message": "The Buffet sounds good. Any free entertainment after?",
+      "agent_response": "Seasons Buffet in the Casino of the Sky opens today at 4:00 PM and runs until 9:00 PM. For free entertainment, the Wolf Den in the Casino of the Earth is the best spot for live music with no cover charge or tickets needed. \n\nPro tip: get to the Den about 45 minutes before the show starts so you can grab a seat comfortably rather than standing at the rail. Do you usually prefer high-energy rock or a more relaxed tribute show for your night out?",
+      "sources": [
+        {
+          "category": "entertainment",
+          "source": "mohegan_sun.json",
+          "score": 0.706
+        },
+        {
+          "category": "restaurants",
+          "source": "mohegan_sun.json",
+          "score": 0.665
+        },
+        {
+          "category": "dining",
+          "source": "cms:dining/dining-001",
+          "score": 0.663
+        }
+      ],
+      "elapsed_ms": 38839,
+      "error": null
+    },
+    {
+      "turn_index": 2,
+      "user_message": "Wait, the Wolf Den is free? That's awesome",
+      "agent_response": "It really is \u2014 the Wolf Den is one of the best spots on the property because there\u2019s never a cover charge or a ticket required to see national touring acts. With 350 seats, it has an electric energy where you're right there with the performers, which is a rare find for a free venue. \n\nAn insider tip for you: if the seats fill up, there's plenty of standing room around the perimeter where you can still see and hear everything perfectly while you explore the Casino of the Earth. Are you more of a classic rock fan, or do you enjoy a good tribute band?",
+      "sources": [
+        {
+          "category": "entertainment",
+          "source": "mohegan_sun.json",
+          "score": 0.773
+        },
+        {
+          "category": "faq",
+          "source": "mohegan_sun.json",
+          "score": 0.667
+        },
+        {
+          "category": "promotions",
+          "source": "mohegan_sun.json",
+          "score": 0.637
+        },
+        {
+          "category": "gaming",
+          "source": "mohegan_sun.json",
+          "score": 0.629
+        },
+        {
+          "category": "amenities",
+          "source": "mohegan_sun.json",
+          "score": 0.633
+        }
+      ],
+      "elapsed_ms": 29742,
+      "error": null
+    }
+  ],
+  "completed": true
+}

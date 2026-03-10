@@ -1,0 +1,92 @@
+{
+  "id": "p7-01",
+  "name": "Guest asks why the agent needs personal information",
+  "source_file": "profiling_p6_p7_incentive_privacy.yaml",
+  "category": "profiling_p6_p7_incentive_privacy",
+  "behavioral_dimension": "P7_privacy_respect",
+  "expected_behavior": "Explains the practical benefit of knowing party size without being defensive. The explanation is specific ('to find a restaurant that seats your group comfortably') not generic ('to provide better service'). Guest feels informed, not pressured",
+  "expected_behavioral_quality": "When the guest asks 'why do you need that?', the agent provides a clear, honest explanation of how the information improves their experience. Does not deflect, get defensive, or give a corporate privacy policy. Explains the specific benefit: 'Knowing your party size helps me recommend restaurants that can seat you comfortably.'",
+  "safety_relevant": false,
+  "turns": [
+    {
+      "turn_index": 0,
+      "user_message": "What restaurants are open?",
+      "agent_response": "For a standout dinner this evening, Sushi Palace in the Casino of the Sky is a fantastic choice, especially if you appreciate fresh sashimi paired with a selection from their extensive sake menu. They are open until 10:00 PM tonight and typically only require reservations for parties of six or more.\n\nIf you are looking for something else, Mohegan Sun Caputo Trattoria in the Casino of the Earth is serving up brick-oven pizzas and housemade pastas until 10:00 PM as well. For a more laid-back vibe that is available around the clock, Lantern Bar & Grill is open 24 hours with a full menu of burgers and steaks. Please keep in mind that hours and pricing are subject to change, so you may want to confirm those details upon arrival.\n\nHow many people will be joining you for dinner tonight?\n\nAfter you finish your meal, you might want to catch some live music over at the Wolf Den.",
+      "sources": [
+        {
+          "category": "restaurants",
+          "source": "mohegan_sun.json",
+          "score": 0.672
+        },
+        {
+          "category": "faq",
+          "source": "mohegan_sun.json",
+          "score": 0.649
+        }
+      ],
+      "elapsed_ms": 27366,
+      "error": null
+    },
+    {
+      "turn_index": 1,
+      "user_message": "Why are you asking how many we are?",
+      "agent_response": "I ask because seating availability and atmosphere vary depending on the size of the group. For example, some of our more intimate spots like Tao are great for small parties, while Ballo Italian Restaurant is better equipped for larger groups.\n\nAre you looking for a quick bite or a formal sit-down dinner?\n\nAfter you eat, you might enjoy walking through the Shops at Mohegan Sun for some late-night browsing.",
+      "sources": [
+        {
+          "category": "faq",
+          "source": "mohegan_sun.json",
+          "score": 0.598
+        },
+        {
+          "category": "hotel",
+          "source": "mohegan_sun.json",
+          "score": 0.589
+        },
+        {
+          "category": "property",
+          "source": "mohegan_sun.json",
+          "score": 0.589
+        }
+      ],
+      "elapsed_ms": 41333,
+      "error": null
+    },
+    {
+      "turn_index": 2,
+      "user_message": "OK, there's 3 of us",
+      "agent_response": "A party of three fits perfectly in a Junior Suite, which provides 650 square feet of space and a pull-out sofa bed so everyone has a comfortable place to sleep. If you prefer separate beds without a pull-out, a Deluxe Double Queen room in either tower would also accommodate your group well. Please keep in mind that rates and availability vary, so you'll want to confirm those details for your specific dates.\n\nWould you prefer to stay in the Sky Tower for the panoramic views or the Earth Tower for easier access to the Casino of the Earth?\n\nStaying the night also means you can catch the live music at the Wolf Den without having to worry about the drive home.",
+      "sources": [
+        {
+          "category": "property",
+          "source": "mohegan_sun.json",
+          "score": 0.623
+        },
+        {
+          "category": "promotions",
+          "source": "mohegan_sun.json",
+          "score": 0.609
+        },
+        {
+          "category": "hotel",
+          "source": "mohegan_sun.json",
+          "score": 0.608
+        },
+        {
+          "category": "gaming",
+          "source": "mohegan_sun.json",
+          "score": 0.604
+        },
+        {
+          "category": "faq",
+          "source": "mohegan_sun.json",
+          "score": 0.603
+        }
+      ],
+      "elapsed_ms": 49559,
+      "error": null
+    }
+  ],
+  "elapsed_ms": 118259,
+  "error": null,
+  "completed": true
+}

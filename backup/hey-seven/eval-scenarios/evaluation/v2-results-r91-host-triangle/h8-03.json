@@ -1,0 +1,55 @@
+{
+  "id": "h8-03",
+  "name": "Guest receiving a promotional offer",
+  "source_file": "host_triangle_h7_h10_revenue.yaml",
+  "category": "host_triangle_h7_h10_revenue",
+  "behavioral_dimension": "H8_strategic_offer_framing",
+  "expected_behavior": "Validates that the double points weekend is worthwhile by connecting it to the guest's tier progression and earning potential. Frames the promotion as an accelerator for benefits the guest already cares about. Makes coming in this weekend feel like a strategic decision, not a marketing response",
+  "expected_behavioral_quality": "When presenting a promotion, the agent frames it as something special rather than mass-distributed. Uses personal language and connects the offer to the guest's known preferences. The promotion should feel selected for them, not blasted to an email list.",
+  "safety_relevant": false,
+  "turns": [
+    {
+      "turn_index": 0,
+      "user_message": "I got an email about double Momentum Points this weekend. Is that worth coming in for?",
+      "agent_response": "Double Momentum Points effectively doubles your earning rate for rewards that can be spent on dining, retail, and free play. While this promotion increases your spendable balance, Tier Credits\u2014which determine your status level\u2014typically earn at the standard rate unless the offer specifies otherwise. \n\nReaching the Ignite tier at 2,500 Tier Credits would provide a permanent 10% bonus on your point earning and access to priority restaurant seating. You can verify the specific terms and eligible games for your offer at any Momentum Desk or via the Mohegan Sun app. Since you're coming in this weekend, do you usually prefer slots or table games for earning your points?",
+      "sources": [],
+      "elapsed_ms": 50948,
+      "error": null
+    },
+    {
+      "turn_index": 1,
+      "user_message": "How much faster does that add up?",
+      "agent_response": "A double point promotion allows you to earn spendable Momentum Points at twice the standard rate. These points function as a dollar-for-dollar currency redeemable for dining, hotel stays, and retail purchases throughout the resort. Note that Tier Credits, which determine your loyalty level, typically accumulate at the standard rate during these promotions unless specifically noted otherwise.\n\nAdvancing to the Ignite tier at 2,500 Tier Credits provides a permanent 10% point earning bonus and priority restaurant seating. You can monitor your specific point balance and tier progress at any Momentum Desk or on the Mohegan Sun mobile app. After earning your points this weekend, would you like a recommendation for a dining venue where you can redeem them?",
+      "sources": [],
+      "elapsed_ms": 46618,
+      "error": null
+    },
+    {
+      "turn_index": 2,
+      "user_message": "Alright, I'm in. Coming this Saturday",
+      "agent_response": "Saturday is going to be electric. If you're looking for high-energy nightlife, Avalon Nightclub features top DJs and an incredible sound system starting at 10:00 PM, while novelle offers a more sophisticated ultra-lounge atmosphere for craft cocktails and pre-show gatherings. Please keep in mind that venue schedules and availability can change, so I'd suggest confirming specific times when you arrive",
+      "sources": [
+        {
+          "category": "entertainment",
+          "source": "mohegan_sun.json",
+          "score": 0.639
+        },
+        {
+          "category": "promotions",
+          "source": "mohegan_sun.json",
+          "score": 0.621
+        },
+        {
+          "category": "faq",
+          "source": "mohegan_sun.json",
+          "score": 0.624
+        }
+      ],
+      "elapsed_ms": 30905,
+      "error": null
+    }
+  ],
+  "elapsed_ms": 128472,
+  "error": null,
+  "completed": true
+}

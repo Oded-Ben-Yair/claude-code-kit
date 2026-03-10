@@ -1,0 +1,70 @@
+{
+  "scenario_id": "p4-08",
+  "scenario_name": "Group of friends \u2014 assumption about nightlife correct",
+  "category": "profiling_p4_assumptive_bridge",
+  "behavioral_dimension": "P4_assumptive_bridging",
+  "expected_behavior": "Correctly bridges from 'group of friends + weekend' to nightlife and party-oriented options. When confirmed, builds a full evening progression: dinner to drinks to entertainment. The assumption felt natural and was validated",
+  "expected_behavioral_quality": "When a group of friends mentions a weekend trip, assumes nightlife and entertainment are priorities. Leads with bars, shows, and high-energy dining options. The assumption is tested softly ('I imagine you're looking for some nightlife?') and confirmed.",
+  "safety_relevant": false,
+  "source_file": "profiling_p4_assumptive_bridge.yaml",
+  "thread_id": "eval-p4-08-1772842032",
+  "turns": [
+    {
+      "turn_index": 0,
+      "user_message": "Group of 6 friends here for the weekend",
+      "agent_response": "Welcome to Mohegan Sun. For a group of six, Tao Asian Bistro & Lounge in the Casino of the Sky is an excellent choice for a high-energy dinner with shareable plates, though it won't open until 5:00 PM today. Since it is currently late Friday night, the Birdcage Bar is still open until 2:00 AM and offers a great atmosphere for a group to grab a round of craft cocktails.\n\nInsider tip: If you head to Hash House A Go Go for brunch tomorrow morning, keep in mind their portions are famously massive. For a group of six, you can usually order a few different \"twisted farm food\" dishes to share and still have plenty left over. Are you planning on spending most of your weekend exploring the gaming floors, or are you looking to catch a show at the Arena?",
+      "sources": [
+        {
+          "category": "entertainment",
+          "source": "mohegan_sun.json",
+          "score": 0.669
+        },
+        {
+          "category": "restaurants",
+          "source": "mohegan_sun.json",
+          "score": 0.641
+        }
+      ],
+      "elapsed_ms": 33705,
+      "error": null
+    },
+    {
+      "turn_index": 1,
+      "user_message": "Absolutely, we want the full party experience",
+      "agent_response": "Avalon Nightclub is the pulse of the property right now, and the energy on that dance floor is incredible! Since it is just past midnight, the party is in full swing and stays high-energy until 2:00 AM. With a group of six, securing a VIP table there is the best way to keep your crew together while being in the heart of the action.\n\nInsider tip: The sound and lighting system at Avalon is actually one of the most advanced in the region, creating an immersive atmosphere that shifts with every track the DJ drops. If you want something slightly more upscale but still vibrant, novelle is an incredible ultra-lounge alternative where the atmosphere is sophisticated and the cocktails are top-tier. To help you recover tomorrow, Mandara Spa offers excellent treatments to help you reset after a late night. Are you more interested in a high-energy dance floor or a lounge with more of a cocktail focus?",
+      "sources": [
+        {
+          "category": "entertainment",
+          "source": "mohegan_sun.json",
+          "score": 0.659
+        },
+        {
+          "category": "promotions",
+          "source": "mohegan_sun.json",
+          "score": 0.628
+        },
+        {
+          "category": "gaming",
+          "source": "mohegan_sun.json",
+          "score": 0.641
+        },
+        {
+          "category": "faq",
+          "source": "mohegan_sun.json",
+          "score": 0.628
+        }
+      ],
+      "elapsed_ms": 50360,
+      "error": null
+    },
+    {
+      "turn_index": 2,
+      "user_message": "Start with dinner then go from there",
+      "agent_response": "",
+      "sources": [],
+      "elapsed_ms": 60004,
+      "error": "TIMEOUT (60.0s)"
+    }
+  ],
+  "completed": true
+}

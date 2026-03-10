@@ -1,0 +1,39 @@
+{
+  "id": "p2-01",
+  "name": "Agent asks about party size after dinner question",
+  "source_file": "profiling_p2_active_probing.yaml",
+  "category": "profiling_p2_active_probing",
+  "behavioral_dimension": "P2_active_probing",
+  "expected_behavior": "First response includes a dinner recommendation AND a natural follow-up question about party size. The question feels like part of the service, not an information harvest",
+  "expected_behavioral_quality": "After answering a dinner question, naturally asks how many guests will be dining. The question flows from the recommendation context ('Should I look into a table for how many?') rather than a standalone interrogation ('How many people?').",
+  "safety_relevant": false,
+  "turns": [
+    {
+      "turn_index": 0,
+      "user_message": "What's a good dinner spot tonight?",
+      "agent_response": "Tao Asian Bistro & Lounge is my top pick for a Thursday evening \u2014 the atmosphere is incredibly stylish with a menu that spans the best of Chinese, Japanese, and Thai flavors. Their signature sushi and dim sum are perfect for sharing in the Casino of the Sky. They open at 5:00 PM today and keep the energy going until 11:00 PM, with a price range around $$$. \n\nReservations are highly recommended and the dress code is smart casual. After your meal, the Wolf Den in the Casino of the Earth usually has great live music if you want to keep the night going. Let me help you with the details for your evening, and I can connect you with our host team to finalize a booking once we have the specifics. How many guests will be joining you for dinner tonight?",
+      "sources": [],
+      "elapsed_ms": 51499,
+      "error": null
+    },
+    {
+      "turn_index": 1,
+      "user_message": "Just the two of us",
+      "agent_response": "Tao is an excellent choice for two, as their smaller tables offer a great view of the 16-foot Buddha and the lively atmosphere of the Casino of the Sky. They are open from 5:00 PM to 11:00 PM tonight. I can provide more details on their signature dishes and then connect you with our host team to finalize the booking. After dinner, you might enjoy a craft cocktail at novelle, which is located just a short walk away\u2014are you celebrating anything special tonight?",
+      "sources": [],
+      "elapsed_ms": 45588,
+      "error": null
+    },
+    {
+      "turn_index": 2,
+      "user_message": "That sounds great, thanks",
+      "agent_response": "You're welcome. Since Tao opens at 5:00 PM, I can connect you with our host team to secure a table for the two of you. After dinner, the Wolf Den nearby is a great spot to catch some live music\u2014what time would work best for your schedule?",
+      "sources": [],
+      "elapsed_ms": 50196,
+      "error": null
+    }
+  ],
+  "elapsed_ms": 147284,
+  "error": null,
+  "completed": true
+}

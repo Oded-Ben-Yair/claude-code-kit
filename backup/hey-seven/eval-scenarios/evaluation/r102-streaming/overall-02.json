@@ -1,0 +1,101 @@
+{
+  "scenario_id": "overall-02",
+  "scenario_name": "Mixed signals requiring adaptation",
+  "category": "behavioral_overall_quality",
+  "behavioral_dimension": "B10_overall",
+  "expected_behavior": "Turn 1: Matches excitement without over-enthusiasm. Turn 2: Does not take offense or over-apologize \u2014 adjusts recommendations based on implicit 'I want something more interesting/upscale'. Turn 3: Smoothly provides spa details without commenting on the mood shift. Coherent adaptation across tones",
+  "expected_behavioral_quality": "Guest sends mixed signals \u2014 starts enthusiastic, becomes critical, then re-engages. Tests the agent's ability to adapt tone, maintain coherence, and not overreact to mood shifts.",
+  "safety_relevant": false,
+  "source_file": "behavioral_overall_quality.yaml",
+  "thread_id": "eval-overall-02-1772917972",
+  "turns": [
+    {
+      "turn_index": 0,
+      "user_message": "Hey! First time here, super excited. What should we check out?",
+      "agent_response": "Welcome to Mohegan Sun, you're in great hands for your first visit. Since it's Saturday night and just after 9:00 PM, the property is really coming alive.\n\nThe Wolf Den is a fantastic place to start because it's right in the heart of the action with free live music nightly, and since you don't need a ticket, you can just walk in and soak up the atmosphere. If you're looking for something with a bit more energy, Avalon Nightclub opens its doors at 10:00 PM and features incredible sound and lighting for dancing. An insider tip for a first-timer: the Wolf Den is actually designed with a massive rock structure that reflects the heritage of the Mohegan Tribe, making it a great central meeting point if you get turned around. Take your time exploring the different vibes.\n\nAre you looking for a high-energy night out or something a bit more relaxed?",
+      "sources": [
+        {
+          "category": "entertainment",
+          "source": "mohegan_sun.json",
+          "score": 0.676
+        },
+        {
+          "category": "restaurants",
+          "source": "mohegan_sun.json",
+          "score": 0.643
+        },
+        {
+          "category": "amenities",
+          "source": "mohegan_sun.json",
+          "score": 0.673
+        }
+      ],
+      "elapsed_ms": 34936,
+      "error": null
+    },
+    {
+      "turn_index": 1,
+      "user_message": "Hmm, those options sound kind of basic honestly",
+      "agent_response": "Fair point. Let's step it up to novelle. It's our upscale ultra-lounge that feels more like a private club, with craft cocktails and a much more sophisticated vibe than the main floor. It's perfect for a Saturday night when you want to skip the standard casino crowds. \n\nSince you're looking for something beyond the basics, are you more of a craft cocktail person or do you prefer a great wine list?",
+      "sources": [
+        {
+          "category": "faq",
+          "source": "mohegan_sun.json",
+          "score": 0.627
+        },
+        {
+          "category": "entertainment",
+          "source": "mohegan_sun.json",
+          "score": 0.632
+        },
+        {
+          "category": "promotions",
+          "source": "mohegan_sun.json",
+          "score": 0.624
+        },
+        {
+          "category": "gaming",
+          "source": "mohegan_sun.json",
+          "score": 0.619
+        },
+        {
+          "category": "hotel",
+          "source": "mohegan_sun.json",
+          "score": 0.621
+        }
+      ],
+      "elapsed_ms": 40061,
+      "error": null
+    },
+    {
+      "turn_index": 2,
+      "user_message": "Wait actually the spa thing sounds pretty good. Tell me more",
+      "agent_response": "Since it\u2019s already late evening, planning a spa session is the perfect way to kick off your Sunday morning. Mandara Spa is our flagship and draws on Balinese healing traditions, featuring a tranquil relaxation lounge, steam room, and sauna that are ideal for clearing your head. If you\u2019re staying over in the Earth Tower, the Elemis Spa is right there and specializes in high-end skincare and express services if you\u2019re looking to get back to the action quickly. \n\nBoth spas open at 9:00 AM tomorrow, and I\u2019d suggest getting in early so you have the rest of the day to explore. An insider tip for you: the Mandara\u2019s hot stone massage is legendary for resetting your system after a long drive or flight. Once you're finished, you'll be just steps away from a great brunch at Hash House A Go Go to keep the good vibes going!\n\nAre you looking for a deep tissue massage to work out some tension or more of a relaxing facial?",
+      "sources": [
+        {
+          "category": "amenities",
+          "source": "mohegan_sun.json",
+          "score": 0.681
+        },
+        {
+          "category": "promotions",
+          "source": "mohegan_sun.json",
+          "score": 0.652
+        },
+        {
+          "category": "entertainment",
+          "source": "mohegan_sun.json",
+          "score": 0.636
+        },
+        {
+          "category": "property",
+          "source": "mohegan_sun.json",
+          "score": 0.643
+        }
+      ],
+      "elapsed_ms": 41035,
+      "error": null
+    }
+  ],
+  "completed": true
+}

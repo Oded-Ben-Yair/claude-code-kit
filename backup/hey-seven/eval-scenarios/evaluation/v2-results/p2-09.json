@@ -1,0 +1,71 @@
+{
+  "id": "p2-09",
+  "name": "Agent probes gaming level for comp eligibility",
+  "source_file": "profiling_p2_active_probing.yaml",
+  "category": "profiling_p2_active_probing",
+  "behavioral_dimension": "P2_active_probing",
+  "expected_behavior": "Explains the Momentum program and naturally asks about the guest's current tier. Frames the tier question as enabling better guidance. When they say 'base level', provides actionable path to the next tier",
+  "expected_behavioral_quality": "When a guest asks about comps or the loyalty program, the agent asks about their Momentum tier or gaming level in a way that feels like helping them get better value, not assessing their worth. Frames as 'So I can check what's available for you'.",
+  "safety_relevant": false,
+  "turns": [
+    {
+      "turn_index": 0,
+      "user_message": "How do I earn free stuff here?",
+      "agent_response": "The primary way to earn rewards is through the Momentum program, which is free to join at any Momentum Desk, on our website, or via the Mohegan Sun app. You earn Momentum Points and Tier Credits through gaming, dining, and hotel stays that can be redeemed for meals, shopping, or free play.\n\nFor immediate free value, the Wolf Den in Casino of the Earth hosts national and local musical acts nightly with no cover charge or ticket required. I would be happy to check who is performing on stage tonight if you can share your name with me.",
+      "sources": [
+        {
+          "category": "faq",
+          "source": "mohegan_sun.json",
+          "score": 0.681
+        },
+        {
+          "category": "promotions",
+          "source": "mohegan_sun.json",
+          "score": 0.666
+        },
+        {
+          "category": "entertainment",
+          "source": "mohegan_sun.json",
+          "score": 0.651
+        }
+      ],
+      "elapsed_ms": 27468,
+      "error": null
+    },
+    {
+      "turn_index": 1,
+      "user_message": "I think I'm at the base level",
+      "agent_response": "The entry-level tier for the Momentum program is the Core tier. As a Core member, you earn Momentum Points and Tier Credits through gaming, dining, and retail purchases, which can be redeemed for meals, hotel stays, and shopping.\n\nMoving to the next tier, Ignite, requires earning 2,500 Tier Credits. You can check your current progress and point balance at any Momentum Desk or by logging into the Mohegan Sun app. For budget-friendly dining, the food court and casual spots like the Bean and Vine Cafe allow you to use your earned points directly for meals. Do you typically spend more time at the slot machines or the table games during your visits?",
+      "sources": [],
+      "elapsed_ms": 48876,
+      "error": null
+    },
+    {
+      "turn_index": 2,
+      "user_message": "How do I move up?",
+      "agent_response": "Tier progression is based on earning Tier Credits through slot play, table games, and resort spending including dining and hotel stays. To move from the Core tier to the Ignite tier, you must earn 2,500 Tier Credits. The Leap tier requires 10,000 Tier Credits, and the Ascend tier requires 25,000 Tier Credits.\n\nYou can check your current progress by swiping your Momentum card at any kiosk on the casino floor or by logging into the Mohegan Sun mobile app. For budget-conscious guests, the food court and casual spots like the Bean and Vine Cafe allow you to earn credits on every dollar spent. Do you prefer slot play or table games when you are on the floor?",
+      "sources": [
+        {
+          "category": "promotions",
+          "source": "mohegan_sun.json",
+          "score": 0.679
+        },
+        {
+          "category": "faq",
+          "source": "mohegan_sun.json",
+          "score": 0.637
+        },
+        {
+          "category": "hotel",
+          "source": "mohegan_sun.json",
+          "score": 0.611
+        }
+      ],
+      "elapsed_ms": 49007,
+      "error": null
+    }
+  ],
+  "elapsed_ms": 125353,
+  "error": null,
+  "completed": true
+}

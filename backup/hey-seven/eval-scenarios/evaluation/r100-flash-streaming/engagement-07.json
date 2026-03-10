@@ -1,0 +1,60 @@
+{
+  "scenario_id": "engagement-07",
+  "scenario_name": "Topic pivot mid-conversation",
+  "category": "behavioral_engagement",
+  "behavioral_dimension": "B3_engagement",
+  "expected_behavior": "Handles rapid topic pivots without friction. Does not anchor to the restaurant discussion or try to bring it back. Follows the guest's attention cleanly",
+  "expected_behavioral_quality": "Cleanly handles a topic change without forcing the previous topic to completion. Does not say 'going back to what we discussed earlier' unless the guest brings it up. Treats each new topic as a fresh request.",
+  "safety_relevant": false,
+  "source_file": "behavioral_engagement.yaml",
+  "thread_id": "eval-engagement-07-1772819087",
+  "turns": [
+    {
+      "turn_index": 0,
+      "user_message": "What restaurants are here?",
+      "agent_response": "Welcome to Mohegan Sun. Since it is Friday evening, SolToro Taqueria & Tequila Bar in the Casino of the Earth is a fantastic choice for a lively start to your night. The atmosphere is vibrant with modern Mexican decor, and their authentic tacos and extensive tequila selection make it a guest favorite. \n\nThey are open until 11:00 PM tonight, fall into a moderate price range ($$), and typically do not require reservations. Please keep in mind that hours and prices may vary, so it is always a good idea to confirm with the property upon arrival. \n\nIf your night ends up running late, the Lantern Bar & Grill is also in the Casino of the Earth and serves a full American menu 24 hours a day. After you finish your meal, you might want to stop by the Wolf Den for some free live music. What brings you to the property today?",
+      "sources": [
+        {
+          "category": "restaurants",
+          "source": "mohegan_sun.json",
+          "score": 0.694
+        }
+      ],
+      "elapsed_ms": 52266,
+      "error": null
+    },
+    {
+      "turn_index": 1,
+      "user_message": "Actually forget food, where's the spa?",
+      "agent_response": "We have two primary locations for relaxation. Mandara Spa is our award-winning full-service retreat inspired by Balinese traditions and is open until 8:00 PM, while Elemis Spa in the Earth Tower offers premium skincare and express services until 7:00 PM.\n\nMandara is the perfect choice if you want to utilize the steam room or sauna to decompress from your day. I can connect you with our host team to finalize a booking if you'd like to see if they have any remaining massage slots for this evening. After a session there, you'll be perfectly refreshed for a show at the Wolf Den \u2014 do you prefer a full-body treatment or something quick like a facial?",
+      "sources": [],
+      "elapsed_ms": 51037,
+      "error": null
+    },
+    {
+      "turn_index": 2,
+      "user_message": "And what about the pool?",
+      "agent_response": "Our heated indoor pool and hot tub are open to hotel guests daily from 6:00 AM until 10:00 PM. It features poolside lounge chairs and full towel service, making it a great spot to reset before a night out. \n\nPro tip \u2014 the pool area is usually the quietest right at 6:00 AM if you want the water to yourself. I can connect you with our host team to finalize a booking for a room so you have full access to these amenities. Are you staying overnight with us, or are you just here for the day?",
+      "sources": [
+        {
+          "category": "faq",
+          "source": "mohegan_sun.json",
+          "score": 0.68
+        },
+        {
+          "category": "amenities",
+          "source": "mohegan_sun.json",
+          "score": 0.653
+        },
+        {
+          "category": "entertainment",
+          "source": "mohegan_sun.json",
+          "score": 0.606
+        }
+      ],
+      "elapsed_ms": 30290,
+      "error": null
+    }
+  ],
+  "completed": true
+}

@@ -1,0 +1,87 @@
+{
+  "id": "p5-02",
+  "name": "Agent avoids Phase 3 questions in first interaction",
+  "source_file": "profiling_p5_progressive_sequence.yaml",
+  "category": "profiling_p5_progressive_sequence",
+  "behavioral_dimension": "P5_progressive_sequencing",
+  "expected_behavior": "Agent asks about party size, occasion, preferences \u2014 all Phase 1 and 2 topics. Does NOT ask about gaming budget, comp expectations, loyalty status, or how much they typically spend. Those questions are too early for a first-time guest",
+  "expected_behavioral_quality": "In a first interaction, the agent NEVER asks Phase 3 questions (relationship-level: gaming budget, comp history, host relationship, personal financial signals). These feel invasive before trust is established. The agent stays in Phase 1 (foundation) and Phase 2 (preferences) only.",
+  "safety_relevant": false,
+  "turns": [
+    {
+      "turn_index": 0,
+      "user_message": "First time here, what do you recommend?",
+      "agent_response": "Welcome to Mohegan Sun. You're in great hands, and since the property is quite large, I'd suggest taking your time to explore the two main areas, Casino of the Earth and Casino of the Sky. \n\nSince it's early morning, a perfect way to start your first visit is with breakfast at Hash House A Go Go in the Casino of the Earth. They open at 8:00 AM and are famous for their massive \"twisted farm food\" portions, like their giant flapjacks and Sage Fried Chicken. For entertainment later tonight, the Wolf Den in the center of the Casino of the Sky offers free live music in an intimate setting.\n\nTo help me give you the best suggestions for your stay, what is your name and what brings you to the resort today?",
+      "sources": [
+        {
+          "category": "restaurants",
+          "source": "mohegan_sun.json",
+          "score": 0.675
+        },
+        {
+          "category": "entertainment",
+          "source": "mohegan_sun.json",
+          "score": 0.67
+        },
+        {
+          "category": "faq",
+          "source": "mohegan_sun.json",
+          "score": 0.685
+        }
+      ],
+      "elapsed_ms": 44744,
+      "error": null
+    },
+    {
+      "turn_index": 1,
+      "user_message": "What's fun to do?",
+      "agent_response": "Since it\u2019s Thursday, **novelle** is a great choice for a sophisticated evening with craft cocktails and DJ entertainment starting later tonight. For something active during the day, the **Wombi Rock Climbing Wall** near Kids Quest offers a unique indoor challenge for all skill levels. If you're staying through the weekend, the 1,500-capacity **Avalon Nightclub** kicks off its high-energy parties on Friday night. Are you more interested in a high-energy night out or something more relaxing like a spa treatment?",
+      "sources": [
+        {
+          "category": "entertainment",
+          "source": "mohegan_sun.json",
+          "score": 0.671
+        },
+        {
+          "category": "faq",
+          "source": "mohegan_sun.json",
+          "score": 0.661
+        },
+        {
+          "category": "amenities",
+          "source": "mohegan_sun.json",
+          "score": 0.65
+        }
+      ],
+      "elapsed_ms": 27195,
+      "error": null
+    },
+    {
+      "turn_index": 2,
+      "user_message": "We like trying new restaurants",
+      "agent_response": "Ballo Italian Restaurant in the Casino of the Sky is a standout choice for anyone who appreciates modern presentation paired with traditional Italian flavors. They specialize in housemade pastas and seasonal risottos, and the dramatic stone architecture creates a truly unique dining atmosphere. They open at 5:00 PM tonight, and I'd suggest a reservation since it is a guest favorite. After dinner, you might enjoy the free live music at the Wolf Den just a few steps away. Do you prefer a fine-dining atmosphere or are you looking for a more casual spot for lunch today?",
+      "sources": [
+        {
+          "category": "entertainment",
+          "source": "mohegan_sun.json",
+          "score": 0.648
+        },
+        {
+          "category": "restaurants",
+          "source": "mohegan_sun.json",
+          "score": 0.643
+        },
+        {
+          "category": "promotions",
+          "source": "mohegan_sun.json",
+          "score": 0.634
+        }
+      ],
+      "elapsed_ms": 49574,
+      "error": null
+    }
+  ],
+  "elapsed_ms": 121514,
+  "error": null,
+  "completed": true
+}

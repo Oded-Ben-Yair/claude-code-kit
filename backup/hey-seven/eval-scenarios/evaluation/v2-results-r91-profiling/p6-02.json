@@ -1,0 +1,66 @@
+{
+  "id": "p6-02",
+  "name": "Profile completeness incentive framing",
+  "source_file": "profiling_p6_p7_incentive_privacy.yaml",
+  "category": "profiling_p6_p7_incentive_privacy",
+  "behavioral_dimension": "P6_incentive_framing",
+  "expected_behavior": "Turn 1 answers with general promotions and frames a gaming preference question in terms of finding targeted offers. Turn 2 uses the gaming preference to provide relevant promotion info. Turn 3 explains the Momentum path. The profiling was incentivized by tangible benefit",
+  "expected_behavioral_quality": "When the agent needs more info to provide better service, frames the ask in terms of benefit to the guest. 'If you tell me what games you enjoy, I can check if there are any targeted offers for you' rather than 'What games do you play?' The value proposition is explicit.",
+  "safety_relevant": false,
+  "turns": [
+    {
+      "turn_index": 0,
+      "user_message": "What promotions are running right now?",
+      "agent_response": "Congratulations on your celebration. Current promotions include seasonal hotel packages that bundle room stays with dining or spa credits, and Momentum members earn points on all dining purchases at participating restaurants today. \n\nThe Mohegan Sun app provides the most accurate list of active floor promotions and personalized offers based on your play. For specific mid-week offers or to check your eligibility for current room packages, the Momentum Desk near the main entrance can provide your account status. Are you looking for a dining-specific promotion or something related to entertainment for your visit?",
+      "sources": [
+        {
+          "category": "promotions",
+          "source": "mohegan_sun.json",
+          "score": 0.682
+        },
+        {
+          "category": "entertainment",
+          "source": "mohegan_sun.json",
+          "score": 0.655
+        }
+      ],
+      "elapsed_ms": 30383,
+      "error": null
+    },
+    {
+      "turn_index": 1,
+      "user_message": "Mostly slots, sometimes blackjack",
+      "agent_response": "You earn Momentum Points and Tier Credits on all 6,500 slot machines and 370 table games, including blackjack, across the property. Reaching the Ignite tier at 2,500 Tier Credits provides a 10% bonus on your point earn rate and priority seating at restaurants. \n\nTo see if you have any personalized Free Slot Play or table Match Play for your celebration, visit a Momentum kiosk or the rewards desk. After your session, the Wolf Den in Casino of the Earth features live music with no cover charge\u2014would you like the performance schedule for this evening?",
+      "sources": [],
+      "elapsed_ms": 46385,
+      "error": null
+    },
+    {
+      "turn_index": 2,
+      "user_message": "How do I earn more comps?",
+      "agent_response": "Comps are earned as Momentum Points and Tier Credits through all gaming play, dining, hotel stays, and retail purchases. To maximize earnings, ensure your Momentum card is used during every transaction and inserted into every slot machine or presented to the dealer at blackjack tables.\n\nTier status directly impacts your earning speed; reaching Ignite at 2,500 Tier Credits grants a 10% bonus on your Momentum Point earn rate. You also earn points at over 30 on-site retail shops and restaurants like TAO or Michael Jordan\u2019s Steak House. Since you are here for a celebration, would you like to know which of our fine dining restaurants allow you to earn and redeem points during your meal?",
+      "sources": [
+        {
+          "category": "promotions",
+          "source": "mohegan_sun.json",
+          "score": 0.653
+        },
+        {
+          "category": "faq",
+          "source": "mohegan_sun.json",
+          "score": 0.664
+        },
+        {
+          "category": "gaming",
+          "source": "mohegan_sun.json",
+          "score": 0.649
+        }
+      ],
+      "elapsed_ms": 41537,
+      "error": null
+    }
+  ],
+  "elapsed_ms": 118306,
+  "error": null,
+  "completed": true
+}

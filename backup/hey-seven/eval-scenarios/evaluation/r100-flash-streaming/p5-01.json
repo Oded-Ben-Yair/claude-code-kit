@@ -1,0 +1,77 @@
+{
+  "scenario_id": "p5-01",
+  "scenario_name": "5-turn golden path \u2014 foundation to relationship",
+  "category": "profiling_p5_progressive_sequence",
+  "behavioral_dimension": "P5_progressive_sequencing",
+  "expected_behavior": "Profiling progresses naturally: Turn 1 captures name. Turn 2 captures party composition. Turn 3 captures dining preference. Turn 4 captures visit frequency. Turn 5 captures loyalty tier. Each profiling question follows logically from the conversation, never feels like a form.",
+  "expected_behavioral_quality": "Over 5 turns, the agent naturally progresses through profiling phases: (1) Foundation \u2014 name, party size, occasion; (2) Preference \u2014 dining, entertainment, gaming; (3) Relationship \u2014 visit frequency, loyalty tier, host relationship. Each phase builds on the previous. No phase-skipping.",
+  "safety_relevant": false,
+  "source_file": "profiling_p5_progressive_sequence.yaml",
+  "thread_id": "eval-p5-01-1772842176",
+  "turns": [
+    {
+      "turn_index": 0,
+      "user_message": "Hi, I'm Dave. Looking for dinner recommendations.",
+      "agent_response": "Welcome to Mohegan Sun, Dave. Since it is just past midnight, I'd suggest heading over to **Lantern Bar & Grill** in the Casino of the Earth. \n\nIt is open 24 hours and the aroma of the wood-fired grill makes it a standout spot for a late-night meal. They serve a full menu ranging from juicy burgers to steaks, which is a rare find at this hour when most other kitchens have closed. If you are staying through tomorrow and want something more formal, the housemade pasta and dramatic stone arches at Ballo Italian Restaurant create an incredible atmosphere for a Saturday night dinner. \n\nAre you looking to grab a bite to eat right now, or would you like to plan a more upscale reservation for later this evening?",
+      "sources": [
+        {
+          "category": "restaurants",
+          "source": "mohegan_sun.json",
+          "score": 0.638
+        }
+      ],
+      "elapsed_ms": 27219,
+      "error": null
+    },
+    {
+      "turn_index": 1,
+      "user_message": "It's just me and my girlfriend, nothing too formal",
+      "agent_response": "Dave, for a relaxed dinner with your girlfriend later today, **SolToro Taqueria & Tequila Bar** is a fantastic choice. \n\nThe atmosphere is vibrant and filled with the scent of fresh lime and sizzling peppers, making it perfect for a fun, casual date night in the Casino of the Earth. Their authentic street tacos are excellent, but the real star is the table-side guacamole made exactly to your spice preference right at your table. They are open from 11:30 AM until 11:00 PM this Saturday, and since the vibe is strictly casual, you won't need to worry about a dress code or reservations. \n\nAfter your meal, the Wolf Den is just around the corner and features free live music that\u2019s a great way to keep the night going. Do either of you have any specific dietary needs or a favorite style of taco?",
+      "sources": [
+        {
+          "category": "entertainment",
+          "source": "mohegan_sun.json",
+          "score": 0.63
+        },
+        {
+          "category": "restaurants",
+          "source": "mohegan_sun.json",
+          "score": 0.62
+        }
+      ],
+      "elapsed_ms": 44025,
+      "error": null
+    },
+    {
+      "turn_index": 2,
+      "user_message": "We love Italian food",
+      "agent_response": "Dave, for a great Italian meal that doesn't feel overly formal, **Caputo Trattoria** in the Casino of the Earth is the perfect spot for you and your girlfriend today. \n\nThe scent of fresh basil and garlic from their brick oven is incredible, and they serve up some of the most comforting pastas and calzones on the property. It is a very approachable environment where you can just walk in between 11:00 AM and 10:00 PM without needing a reservation or worrying about a strict dress code. After dinner, the Wolf Den has free live music every night right in the center of the casino, and the energy there is always high. \n\nAre you more in the mood for a classic pasta dish or were you thinking about sharing a brick-oven pizza?",
+      "sources": [
+        {
+          "category": "restaurants",
+          "source": "mohegan_sun.json",
+          "score": 0.662
+        }
+      ],
+      "elapsed_ms": 35956,
+      "error": null
+    },
+    {
+      "turn_index": 3,
+      "user_message": "We come here a few times a year",
+      "agent_response": "It is great to have you back, Dave. Since you visit Mohegan Sun often, you might already be familiar with **Frank Pepe's Pizzeria Napoletana** in the Casino of the Earth. \n\nIt is a Connecticut legend for coal-fired, thin-crust pizza\u2014especially their famous white clam pie\u2014and the casual atmosphere makes it easy to just drop in between 11:00 AM and 11:00 PM today. If you're looking for an Italian dinner later tonight that is a bit more relaxed than a full seated course, their counter service is both quick and consistently high quality. Next time you're planning a visit, feel free to reach out ahead of time so I can let you know about any seasonal Italian specials running across the property. \n\nDo you usually spend more of your time in the Casino of the Earth, or do you prefer the atmosphere over in the Casino of the Sky?",
+      "sources": [],
+      "elapsed_ms": 59678,
+      "error": null
+    },
+    {
+      "turn_index": 4,
+      "user_message": "Yeah I have a Momentum card, Ignite level I think",
+      "agent_response": "",
+      "sources": [],
+      "elapsed_ms": 60002,
+      "error": "TIMEOUT (60.0s)"
+    }
+  ],
+  "completed": true
+}

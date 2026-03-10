@@ -1,0 +1,38 @@
+{
+  "scenario_id": "h5-01",
+  "scenario_name": "Guest celebrating a milestone birthday",
+  "category": "host_triangle_h4_h6_relationship",
+  "behavioral_dimension": "H5_emotional_loyalty_building",
+  "expected_behavior": "Builds a full birthday celebration vision: group dinner at a venue that can handle 8 with a celebratory atmosphere, entertainment afterward, and birthday touches like a special dessert or recognition. Makes the guest feel like Mohegan Sun is the perfect place for milestone moments",
+  "expected_behavioral_quality": "Elevates the birthday from a data point to an experience. Creates an emotional moment by building a celebration vision across multiple property domains. The guest should feel like the property is celebrating WITH them, not just acknowledging them.",
+  "safety_relevant": false,
+  "source_file": "host_triangle_h4_h6_relationship.yaml",
+  "thread_id": "eval-h5-01-1772951593",
+  "turns": [
+    {
+      "turn_index": 0,
+      "user_message": "It's my 50th birthday this weekend! I'm bringing a group of 8 friends",
+      "agent_response": "Happy 50th birthday\u2014what an incredible milestone to celebrate with a group of eight. For a dinner this significant, Michael Jordan's Steak House in the Casino of the Sky is the standout choice for a refined and memorable evening. The atmosphere is sophisticated with its business casual dress code, and their USDA Prime steaks are some of the most flavorful cuts you'll find on the property. They are open from 5:00 PM to 10:00 PM tonight, and since you have a larger party, I recommend securing a reservation as soon as possible to ensure your group is seated together.\n\nSince your birthday is coming up, Mohegan Sun would love to treat you to a $25 dining credit at any of our restaurants! After you finish your meal, the Wolf Den in the Casino of the Earth is a great next stop, as they have free live music every night and the energy there is always fantastic for a celebration.\n\nWould your friends prefer a table near the sports memorabilia, or are you looking for a quieter corner for the birthday toasts?",
+      "sources": [],
+      "elapsed_ms": 59640,
+      "error": null
+    },
+    {
+      "turn_index": 1,
+      "user_message": "We want to do it up big. Dinner, drinks, maybe a show",
+      "agent_response": "Fifty is the big one\u2014let's make it count, bringing.\n\nFor a group of eight that wants to go big, Michael Jordan\u2019s Steak House is the anchor for your night. It has the prestige for a milestone birthday and the space to handle a celebration like yours properly. After dinner, head to novelle for cocktails; it\u2019s our premier ultra-lounge with a DJ and a sophisticated vibe that keeps the energy high. I\u2019ll flag your plans for the host team so they can ensure your group is well-attended to as you move through the property.\n\nSince your birthday is coming up, Mohegan Sun would love to treat you to a $25 dining credit at any of our restaurants!\n\nFor the show, the Mohegan Sun Arena is where we host our biggest headliners\u2014are you looking for a major concert, or is your group more the type for a comedy show at Comix Roadhouse?",
+      "sources": [],
+      "elapsed_ms": 68447,
+      "error": null
+    },
+    {
+      "turn_index": 2,
+      "user_message": "Can the restaurant do anything special for the birthday?",
+      "agent_response": "Bringing, our premier restaurants like Michael Jordan\u2019s Steak House are masters at making a 50th birthday feel monumental. I've got you covered\u2014they can often arrange for personalized menus or their famous 23-layer chocolate cake, which is practically a requirement for a celebration of this scale. \n\nTo get those specific touches locked in for your group of eight, I can provide the direct contact information for their management team so you can walk them through your vision for the evening. By the way, thanks for chatting with us; I\u2019ve added $5 bonus tier points to your profile to use here at Mohegan Sun. \n\nDo you think the birthday guest would prefer a high-energy table near the center of the room or something a bit more tucked away for the group's toasts?",
+      "sources": [],
+      "elapsed_ms": 48274,
+      "error": null
+    }
+  ],
+  "completed": true
+}

@@ -1,0 +1,61 @@
+{
+  "id": "coherence-03",
+  "name": "Forgetting dietary preference across domain shift",
+  "source_file": "behavioral_multiturn_coherence.yaml",
+  "category": "behavioral_multiturn_coherence",
+  "behavioral_dimension": "B7_coherence",
+  "expected_behavior": "Turn 3 dining recommendation must account for the vegetarian preference stated in turn 1, even though turn 2 was about the spa. Agent should NOT recommend the steakhouse as the primary option. The dietary extraction should persist via the state reducer",
+  "expected_behavioral_quality": "Guest mentions a dietary restriction in turn 1. After a topic shift to spa/entertainment, when dining comes up again, the dietary preference must still be applied. The extracted_fields reducer should persist this across turns.",
+  "safety_relevant": false,
+  "turns": [
+    {
+      "turn_index": 0,
+      "user_message": "I'm vegetarian. What are my dinner options?",
+      "agent_response": "For a refined vegetarian dinner tonight, Todd English's Tuscany is a standout choice where the vegetable-forward dishes truly shine. The wood-fired aroma hits you the moment you walk in, and their handmade pastas and artisanal pizzas offer rich, complex flavors that make for a sophisticated meal in a warm, Tuscan-inspired setting. \n\nThey are located in the Casino of the Sky and are open tonight until 10:00 PM. The dress code is business casual, and because it is one of our premier venues, reservations are highly recommended for this $$$$ experience. If you are looking for something more casual, Mohegan Sun Caputo Trattoria in the Casino of the Earth serves excellent brick-oven pizzas and classic pasta dishes in a relaxed environment until 10:00 PM. \n\nPlease keep in mind that hours and prices may vary, so it is always a good idea to confirm with the venue directly. After dinner, you might enjoy catching some live music at the Wolf Den, which is right in the heart of the Casino of the Earth. \n\nHow many people will be in your party this evening?",
+      "sources": [
+        {
+          "category": "restaurants",
+          "source": "mohegan_sun.json",
+          "score": 0.673
+        }
+      ],
+      "elapsed_ms": 27602,
+      "error": null
+    },
+    {
+      "turn_index": 1,
+      "user_message": "Actually tell me about the spa first",
+      "agent_response": "If you are looking to unwind before dinner, you have two excellent options right here on the property. Mandara Spa is a full-service sanctuary that draws on Balinese healing traditions, featuring a tranquil relaxation lounge and steam rooms that are perfect for a complete reset. They are open until 8:00 PM tonight, which gives you some time if you head over soon.\n\nFor something more focused on premium skincare and modern treatments, the Elemis Spa at Earth Tower is a great choice. They offer signature couples experiences and express services if you are on a tighter schedule, though they do close at 7:00 PM this evening. \n\nSince it is currently 6:36 PM, Mandara Spa might be your best bet for a relaxing evening session before they close. Please note that hours and treatment availability are subject to change, so it is always a good idea to confirm with the spa directly. After you have had some time to recharge, the live music at the Wolf Den is a great way to transition into the evening.\n\nAre you looking for a specific type of treatment, like a massage or a facial?",
+      "sources": [
+        {
+          "category": "amenities",
+          "source": "mohegan_sun.json",
+          "score": 0.678
+        },
+        {
+          "category": "property",
+          "source": "mohegan_sun.json",
+          "score": 0.653
+        },
+        {
+          "category": "hotel",
+          "source": "mohegan_sun.json",
+          "score": 0.633
+        }
+      ],
+      "elapsed_ms": 28245,
+      "error": null
+    },
+    {
+      "turn_index": 2,
+      "user_message": "Ok back to dinner \u2014 where should I go?",
+      "agent_response": "For tonight, SolToro Taqueria & Tequila Bar is an excellent choice \u2014 their modern Mexican menu features authentic tacos and fresh flavors that work beautifully for a vegetarian meal. The atmosphere is high-energy with colorful decor, making it a great spot to transition from a relaxing spa session into a fun evening.\n\nThey are located in the Casino of the Earth and are open until 1",
+      "sources": [],
+      "elapsed_ms": 57410,
+      "error": null
+    }
+  ],
+  "elapsed_ms": 113258,
+  "error": null,
+  "completed": true
+}

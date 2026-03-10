@@ -1,0 +1,82 @@
+{
+  "id": "p1-04",
+  "name": "Guest mentions party size implicitly",
+  "source_file": "profiling_p1_natural_extraction.yaml",
+  "category": "profiling_p1_natural_extraction",
+  "behavioral_dimension": "P1_natural_extraction",
+  "expected_behavior": "Registers 'me and the wife' as party of 2 and tilts toward romantic or couples-appropriate recommendations. Does not ask 'how many in your party?' when it was already stated",
+  "expected_behavioral_quality": "Infers party size from conversational cues like pronouns and companion mentions. 'Me and the wife' means party of 2. 'The four of us' means party of 4. Does not ask for a headcount when it has been stated implicitly.",
+  "safety_relevant": false,
+  "turns": [
+    {
+      "turn_index": 0,
+      "user_message": "Me and the wife are looking for a nice dinner spot",
+      "agent_response": "For a memorable evening with your wife, Todd English's Tuscany is a standout choice where the rustic, wood-fired aroma of the open kitchen sets a perfect romantic tone. Their handmade pastas and signature flatbreads are exceptional, especially when paired with a bottle from their extensive Italian wine list. \n\nThe restaurant opens today at 5:00 PM and maintains a business casual dress code, so I would suggest securing a reservation to ensure you get a prime table. After a meal like that, many of our guests enjoy heading over to the Wolf Den for some live music \u2014 are you both more interested in a classic Italian feast or were you leaning towards a steakhouse tonight?",
+      "sources": [
+        {
+          "category": "restaurants",
+          "source": "mohegan_sun.json",
+          "score": 0.652
+        }
+      ],
+      "elapsed_ms": 27584,
+      "error": null
+    },
+    {
+      "turn_index": 1,
+      "user_message": "Something with a view or good atmosphere",
+      "agent_response": "Tao Asian Bistro & Lounge in the Casino of the Sky offers the most striking atmosphere on the property, featuring a dramatic and stylish setting that feels like a world of its own. Between the grand Buddha statue and the intricate wood carvings, it provides a sense of theater that pairs perfectly with their pan-Asian menu. \n\nThey specialize in Chinese, Japanese, and Thai flavors and will be opening today at 5:00 PM. Since it is one of our most popular venues and maintains a smart casual dress code, I'd suggest securing a reservation to ensure you are seated in the heart of the action. After dinner, the nearby Birdcage Bar is a fantastic spot for a nightcap under the soaring, celestial dome of the Casino of the Sky \u2014 do you both enjoy sharing dishes like dim sum and sushi, or do you prefer a more traditional course-by-course meal?",
+      "sources": [
+        {
+          "category": "entertainment",
+          "source": "mohegan_sun.json",
+          "score": 0.676
+        },
+        {
+          "category": "gaming",
+          "source": "mohegan_sun.json",
+          "score": 0.656
+        },
+        {
+          "category": "restaurants",
+          "source": "mohegan_sun.json",
+          "score": 0.65
+        },
+        {
+          "category": "hotel",
+          "source": "mohegan_sun.json",
+          "score": 0.651
+        }
+      ],
+      "elapsed_ms": 34418,
+      "error": null
+    },
+    {
+      "turn_index": 2,
+      "user_message": "That sounds perfect for the two of us",
+      "agent_response": "TAO is an excellent choice for a night out. To keep that sophisticated energy going, staying in the Sky Tower would be your best bet as it is located right in the heart of the Casino of the Sky.\n\nThe deluxe rooms there feature floor-to-ceiling windows with expansive views of the Thames River valley or the surrounding hills, which really complements a night focused on great atmosphere. Standard check-in begins at 4:00 PM and check-out is at 11:00 AM, though our 24-hour front desk is always available if you happen to arrive later in the evening. After your dinner, you might enjoy a visit to novelle, an upscale lounge right nearby that features craft cocktails and a very polished nightlife vibe. \n\nWould you prefer a room with a single king bed to maximize your living space for the weekend?",
+      "sources": [
+        {
+          "category": "entertainment",
+          "source": "mohegan_sun.json",
+          "score": 0.653
+        },
+        {
+          "category": "hotel",
+          "source": "mohegan_sun.json",
+          "score": 0.64
+        },
+        {
+          "category": "property",
+          "source": "mohegan_sun.json",
+          "score": 0.648
+        }
+      ],
+      "elapsed_ms": 28953,
+      "error": null
+    }
+  ],
+  "elapsed_ms": 92261,
+  "error": null,
+  "completed": true
+}

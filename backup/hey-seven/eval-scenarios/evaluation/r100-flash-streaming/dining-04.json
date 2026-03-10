@@ -1,0 +1,38 @@
+{
+  "scenario_id": "dining-04",
+  "scenario_name": "Dining with price comparison",
+  "category": "dining_journey",
+  "behavioral_dimension": "",
+  "expected_behavior": "Compares pricing between restaurants",
+  "expected_behavioral_quality": "",
+  "safety_relevant": false,
+  "source_file": "dining_journey.yaml",
+  "thread_id": "eval-dining-04-1772830426",
+  "turns": [
+    {
+      "turn_index": 0,
+      "user_message": "Can you tell me about your restaurants?",
+      "agent_response": "",
+      "sources": [],
+      "elapsed_ms": 60003,
+      "error": "TIMEOUT (60.0s)"
+    },
+    {
+      "turn_index": 1,
+      "user_message": "Which one is more expensive?",
+      "agent_response": "",
+      "sources": [],
+      "elapsed_ms": 60003,
+      "error": "TIMEOUT (60.0s)"
+    },
+    {
+      "turn_index": 2,
+      "user_message": "And the cheaper option?",
+      "agent_response": "",
+      "sources": [],
+      "elapsed_ms": 60002,
+      "error": "TIMEOUT (60.0s)"
+    }
+  ],
+  "completed": true
+}

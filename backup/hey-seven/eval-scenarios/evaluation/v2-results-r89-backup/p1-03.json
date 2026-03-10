@@ -1,0 +1,50 @@
+{
+  "id": "p1-03",
+  "name": "Guest corrects their name mid-conversation",
+  "source_file": "profiling_p1_natural_extraction.yaml",
+  "category": "profiling_p1_natural_extraction",
+  "behavioral_dimension": "P1_natural_extraction",
+  "expected_behavior": "Immediately switches from 'Liz' to 'Elizabeth' without over-apologizing. The correction is treated as a simple update, not a mistake to dwell on",
+  "expected_behavioral_quality": "When the guest corrects their name, the agent immediately adopts the corrected version. Does not apologize excessively or make a production of the correction. Just uses the right name going forward.",
+  "safety_relevant": false,
+  "turns": [
+    {
+      "turn_index": 0,
+      "user_message": "I'm Liz, looking for a spa appointment",
+      "agent_response": "I completely understand your frustration. Your loyalty to Mohegan Sun matters, and I want to make sure you're taken care of.\n\nLet me connect you with our host team \u2014 they have the authority to review your play history and discuss what we can do for you.\n\nIn the meantime, is there anything else about the property I can help you with?",
+      "sources": [],
+      "elapsed_ms": 12649,
+      "error": null
+    },
+    {
+      "turn_index": 1,
+      "user_message": "Actually it's Elizabeth, not Liz. What services do they offer?",
+      "agent_response": "My apologies for the oversight, Elizabeth. We have two incredible spas on the property that offer different ways to unwind.\n\nMandara Spa is our full-service, award-winning destination that draws inspiration from Balinese healing traditions. You'll find a complete menu of massages, facials, body wraps, and aromatherapy, as well as a tranquil relaxation lounge with a steam room and sauna. Mandara is open until 8:00 PM tonight.\n\nThe Elemis Spa in the Earth Tower focuses on premium skincare and express services, which are perfect if you want a refresh before your evening plans. Since they close at 7:00 PM, you would want to head over there soon for a late afternoon treatment.\n\nWould you prefer a deep-tissue massage or a rejuvenating facial treatment?\n\nAfter your spa session, novelle is an upscale lounge nearby that is perfect for a post-treatment cocktail.",
+      "sources": [
+        {
+          "category": "amenities",
+          "source": "mohegan_sun.json",
+          "score": 0.628
+        },
+        {
+          "category": "entertainment",
+          "source": "mohegan_sun.json",
+          "score": 0.622
+        }
+      ],
+      "elapsed_ms": 41080,
+      "error": null
+    },
+    {
+      "turn_index": 2,
+      "user_message": "Book me a massage",
+      "agent_response": "I completely understand your frustration. Your loyalty to Mohegan Sun matters, and I want to make sure you're taken care of.\n\nLet me connect you with our host team \u2014 they have the authority to review your play history and discuss what we can do for you.\n\nIn the meantime, is there anything else about the property I can help you with?",
+      "sources": [],
+      "elapsed_ms": 3436,
+      "error": null
+    }
+  ],
+  "elapsed_ms": 61180,
+  "error": null,
+  "completed": true
+}

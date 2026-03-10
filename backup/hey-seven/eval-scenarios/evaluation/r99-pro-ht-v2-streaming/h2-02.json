@@ -1,0 +1,38 @@
+{
+  "scenario_id": "h2-02",
+  "scenario_name": "Guest references a bad past experience",
+  "category": "host_triangle_h1_h3_development",
+  "behavioral_dimension": "H2_reactivation_win_back",
+  "expected_behavior": "Takes the complaint seriously without being defensive. Apologizes specifically for the wait time. Offers a concrete alternative for this visit and suggests mentioning the issue to the Momentum Desk for follow-up. Turns the complaint into a chance to demonstrate that things are different now",
+  "expected_behavioral_quality": "When a guest references a negative experience, the agent acknowledges it specifically, investigates without being defensive, and reframes the next visit as a fresh start. Does not minimize the complaint or rush past it.",
+  "safety_relevant": false,
+  "source_file": "host_triangle_h1_h3_development.yaml",
+  "thread_id": "eval-h2-02-1772804087",
+  "turns": [
+    {
+      "turn_index": 0,
+      "user_message": "Last time I was here the service at the steakhouse was awful. Took forever to get seated",
+      "agent_response": "I am so sorry to hear about your last visit. I completely understand how frustrating it is to deal with long waits, especially when you are just looking forward to a great steak dinner. That is absolutely not the standard we want for our guests. \n\nI would love to help make your experience much better this time around. If you are open to dining with us again, I can arrange a complimentary appetizer or dessert for your table. Would you like to give Michael Jordan's Steak House another try with a firm reservation, or would you prefer to explore a completely different culinary vibe for this trip?",
+      "sources": [],
+      "elapsed_ms": 61370,
+      "error": null
+    },
+    {
+      "turn_index": 1,
+      "user_message": "Yeah it kind of ruined the whole evening honestly",
+      "agent_response": "I completely understand. When the start of your night gets derailed like that, it really does throw off the entire experience. Let's make sure this visit is a complete 180.\n\nSince that last visit left such a bad taste, I can arrange a complimentary appetizer or dessert at one of our restaurants to help make up for it. But as your entertainment concierge, my main goal is to make sure the rest of your evening is absolutely flawless. \n\nIf you want to reset and have a genuinely great time tonight, novelle is an incredible spot. Pro tip \u2014 because it is our upscale ultra-lounge, it has a sophisticated, intimate atmosphere with craft cocktails and DJ entertainment, making it the perfect place to enjoy the night without dealing with massive crowds. I can connect you with our host team to finalize a VIP table for you there. \n\nAre you looking for a more relaxed lounge vibe tonight, or were you hoping to catch some live music?",
+      "sources": [],
+      "elapsed_ms": 80929,
+      "error": null
+    },
+    {
+      "turn_index": 2,
+      "user_message": "So what would you actually recommend instead?",
+      "agent_response": "To completely flip the script from your last visit, let's skip the traditional sit-down dinner rush entirely. \n\nI highly recommend **novelle**. It is our upscale ultra-lounge and the perfect destination if you want a sophisticated, VIP-level evening. You get incredible craft cocktails, DJ entertainment, and a highly attentive atmosphere without the rigid restaurant constraints. Let me help you with that \u2014 I can connect you with our host team to finalize a VIP table booking so you walk right in and receive the premium service you deserve. \n\nPro tip \u2014 since today is Friday, novelle really comes alive in the evening, making it the absolute best spot to enjoy the nightlife without dealing with massive crowds. And to help make up for your past experience, I can arrange a complimentary appetizer or dessert at one of our casual spots if you want a quick, easy bite before heading to the lounge!\n\nAre you thinking of making it a late night with the DJ, or would you prefer to start earlier and maybe catch some live acoustic music at the Wolf Den beforehand?",
+      "sources": [],
+      "elapsed_ms": 66069,
+      "error": null
+    }
+  ],
+  "completed": true
+}

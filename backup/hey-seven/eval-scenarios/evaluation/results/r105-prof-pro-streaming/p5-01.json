@@ -1,0 +1,71 @@
+{
+  "scenario_id": "p5-01",
+  "scenario_name": "5-turn golden path \u2014 foundation to relationship",
+  "category": "profiling_p5_progressive_sequence",
+  "behavioral_dimension": "P5_progressive_sequencing",
+  "expected_behavior": "Profiling progresses naturally: Turn 1 captures name. Turn 2 captures party composition. Turn 3 captures dining preference. Turn 4 captures visit frequency. Turn 5 captures loyalty tier. Each profiling question follows logically from the conversation, never feels like a form.",
+  "expected_behavioral_quality": "Over 5 turns, the agent naturally progresses through profiling phases: (1) Foundation \u2014 name, party size, occasion; (2) Preference \u2014 dining, entertainment, gaming; (3) Relationship \u2014 visit frequency, loyalty tier, host relationship. Each phase builds on the previous. No phase-skipping.",
+  "safety_relevant": false,
+  "source_file": "profiling_p5_progressive_sequence.yaml",
+  "thread_id": "eval-p5-01-1772994300",
+  "turns": [
+    {
+      "turn_index": 0,
+      "user_message": "Hi, I'm Dave. Looking for dinner recommendations.",
+      "agent_response": "It's great to meet you, Dave. For a Sunday night, Tao Asian Bistro & Lounge in the Casino of the Sky is the place to be\u2014the dim sum and signature cocktails are spectacular, and the stylish, dramatic decor really sets the mood for a great evening. \n\nThey are open until 11:00 PM tonight with a smart casual dress code, and since it's a popular spot with a price range around $$$, I would recommend securing a reservation to get the best experience. After you finish dinner, the Wolf Den is just a short walk away and usually has some fantastic live music if you want to keep the night going. \n\nAre you in the mood for a full Pan-Asian feast, or were you looking for something a bit more casual like tacos or burgers?",
+      "sources": [
+        {
+          "category": "restaurants",
+          "source": "mohegan_sun.json",
+          "score": 0.638
+        }
+      ],
+      "elapsed_ms": 30132,
+      "error": null
+    },
+    {
+      "turn_index": 1,
+      "user_message": "It's just me and my girlfriend, nothing too formal",
+      "agent_response": "SolToro Taqueria & Tequila Bar in the Casino of the Earth is a fantastic choice for something more relaxed, Dave. It has a high-energy vibe with colorful decor and some of the best street-style tacos and fresh ceviche on the property. \n\nThey're open until 10:00 PM tonight, and since they don't require reservations, you can just walk right in and enjoy their massive tequila and mezcal selection. It's a solid mid-range spot ($$) with a casual dress code that works perfectly for a low-key Sunday evening. If you're feeling like a nightcap afterward, the Vista Lounge at Wombi Rock is right nearby in the Casino of the Sky for some great views and drinks.\n\nSince it's just the two of you, are you guys big fans of tableside guacamole, or do you usually prefer to jump straight into the main course?",
+      "sources": [
+        {
+          "category": "entertainment",
+          "source": "mohegan_sun.json",
+          "score": 0.63
+        },
+        {
+          "category": "restaurants",
+          "source": "mohegan_sun.json",
+          "score": 0.62
+        }
+      ],
+      "elapsed_ms": 28510,
+      "error": null
+    },
+    {
+      "turn_index": 2,
+      "user_message": "We love Italian food",
+      "agent_response": "That's outside what I can help with, but I'm happy to assist with anything about Mohegan Sun \u2014 dining, entertainment, hotel, spa, or gaming. What can I help you find?",
+      "sources": [],
+      "elapsed_ms": 5011,
+      "error": null
+    },
+    {
+      "turn_index": 3,
+      "user_message": "We come here a few times a year",
+      "agent_response": "Always great to have you back, Dave. For casual Italian, Frank Pepe's Pizzeria in Casino of the Earth is the perfect move. It's legendary New Haven-style coal-fired pizza, no dress code, and you don't need to worry about a reservation. \n\nSince you know the property well, have you two already tried their famous white clam pie, or were you craving more of a sit-down pasta dinner tonight?",
+      "sources": [],
+      "elapsed_ms": 83679,
+      "error": null
+    },
+    {
+      "turn_index": 4,
+      "user_message": "Yeah I have a Momentum card, Ignite level I think",
+      "agent_response": "That's outside what I can help with, but I'm happy to assist with anything about Mohegan Sun \u2014 dining, entertainment, hotel, spa, or gaming. What can I help you find?",
+      "sources": [],
+      "elapsed_ms": 5011,
+      "error": null
+    }
+  ],
+  "completed": true
+}

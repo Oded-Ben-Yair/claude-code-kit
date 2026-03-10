@@ -1,0 +1,87 @@
+{
+  "id": "p4-01",
+  "name": "Party of 4 assumption about kids \u2014 correct",
+  "source_file": "profiling_p4_assumptive_bridge.yaml",
+  "category": "profiling_p4_assumptive_bridge",
+  "behavioral_dimension": "P4_assumptive_bridging",
+  "expected_behavior": "Assumption about kids is offered softly and confirmed by the guest. Agent smoothly pivots to family-friendly recommendations. The assumption felt natural, not presumptuous",
+  "expected_behavioral_quality": "Makes a contextual inference that a party of 4 might include children and gently tests it with kid-friendly options. The assumption is offered as a soft suggestion ('If any of your group are younger, they might enjoy...') rather than a hard presumption ('Your kids will love...').",
+  "safety_relevant": false,
+  "turns": [
+    {
+      "turn_index": 0,
+      "user_message": "Need a restaurant for 4 tonight",
+      "agent_response": "For your group of four tonight, Ballo Italian Restaurant in the Casino of the Sky is an exceptional choice. The space is breathtaking, designed to feel like a centuries-old Italian abbey with soaring arches and a warm, vibrant energy that is perfect for a social dinner. \n\nI'd suggest starting with some of their housemade pasta or a seasonal risotto, as their kitchen really shines with those traditional recipes. They are open from 5:00 PM to 10:00 PM on Thursdays, and while the vibe is high-energy, the service remains refined. Since you have a party of four, I would definitely suggest a reservation to secure your preferred time, and keep in mind their dress code is smart casual. \n\nAfter a rich Italian meal, a short walk over to the Wolf Den in the Casino of the Earth is a great way to catch some free live music. Does your group prefer a lively, high-energy atmosphere like Ballo, or are you leaning toward something a bit more tucked away and quiet?",
+      "sources": [
+        {
+          "category": "restaurants",
+          "source": "mohegan_sun.json",
+          "score": 0.686
+        }
+      ],
+      "elapsed_ms": 49405,
+      "error": null
+    },
+    {
+      "turn_index": 1,
+      "user_message": "Yeah actually the kids would love that",
+      "agent_response": "Since you're bringing the family, you'll definitely want to head over to the Kids Quest and Cyber Quest area. Cyber Quest is an incredible arcade with all the latest video games that really keeps the energy high for kids and teens. \n\nIf they have some energy to burn, the Wombi Rock Climbing Wall is right nearby and offers a great challenge for all skill levels with equipment and instruction provided. Just a quick heads-up that while our restaurants are family-friendly, the Wolf Den is located in the center of the casino floor and is restricted to those 21 and older. Cyber Quest is a perfect alternative for a fun night out together that everyone can enjoy. \n\nAfter the arcade, you can also check out the supervised activities at Kids Quest if the adults want a little time to themselves. Are the kids more into high-tech gaming or would they prefer something active like the climbing wall?",
+      "sources": [
+        {
+          "category": "entertainment",
+          "source": "mohegan_sun.json",
+          "score": 0.643
+        },
+        {
+          "category": "hotel",
+          "source": "mohegan_sun.json",
+          "score": 0.625
+        },
+        {
+          "category": "property",
+          "source": "mohegan_sun.json",
+          "score": 0.634
+        },
+        {
+          "category": "amenities",
+          "source": "mohegan_sun.json",
+          "score": 0.621
+        }
+      ],
+      "elapsed_ms": 25001,
+      "error": null
+    },
+    {
+      "turn_index": 2,
+      "user_message": "How old do they need to be for the arcade?",
+      "agent_response": "Cyber Quest is designed for families and teens of all ages, so there isn't a strict minimum age requirement to enter and enjoy the games. It's a high-energy space with the latest video games and attractions that is usually a huge hit with kids and adults alike.\n\nIf you are looking for a supervised option where the kids can play while you enjoy the resort, Kids Quest is right next door and accepts children from age 6 weeks up to 12 years. While the arcade is open to everyone, just keep in mind that the casino floors and entertainment venues like the Wolf Den are reserved for guests who are 21 and older.\n\nSince the arcade is located in the shops area, you're also very close to family favorites like Johnny Rockets or Ben & Jerry's for a quick treat between games. Are you planning to head to the arcade before your dinner, or were you looking for something for the kids to do later in the evening?",
+      "sources": [
+        {
+          "category": "entertainment",
+          "source": "mohegan_sun.json",
+          "score": 0.709
+        },
+        {
+          "category": "faq",
+          "source": "mohegan_sun.json",
+          "score": 0.702
+        },
+        {
+          "category": "amenities",
+          "source": "mohegan_sun.json",
+          "score": 0.631
+        },
+        {
+          "category": "gaming",
+          "source": "mohegan_sun.json",
+          "score": 0.617
+        }
+      ],
+      "elapsed_ms": 29421,
+      "error": null
+    }
+  ],
+  "elapsed_ms": 103828,
+  "error": null,
+  "completed": true
+}

@@ -1,0 +1,38 @@
+{
+  "scenario_id": "proactive-04",
+  "scenario_name": "Guest mentions 'we' \u2014 agent probes party size for reservation",
+  "category": "behavioral_proactive",
+  "behavioral_dimension": "B4_agentic",
+  "expected_behavior": "When the guest says 'we', naturally asks about party size as part of providing a useful recommendation (not as a data collection question). Uses the party size for practical advice about reservations",
+  "expected_behavioral_quality": "When a guest uses 'we', proactively gathers party size information as part of the recommendation. This is breadcrumbing \u2014 getting useful info while being helpful, not interrogating.",
+  "safety_relevant": false,
+  "source_file": "behavioral_proactive.yaml",
+  "thread_id": "eval-proactive-04-1772825292",
+  "turns": [
+    {
+      "turn_index": 0,
+      "user_message": "We want to go to the steakhouse tonight",
+      "agent_response": "",
+      "sources": [],
+      "elapsed_ms": 60004,
+      "error": "TIMEOUT (60.0s)"
+    },
+    {
+      "turn_index": 1,
+      "user_message": "There's 6 of us",
+      "agent_response": "Michael Jordan's Steak House features large circular booths that are ideal for a group of six to dine comfortably together. Since it's 7:30 PM on a Friday, the dining room will be quite lively, and they usually accept their last seatings around 9:15 PM before closing at 10:00 PM.\n\nA great shared option for a group your size is their signature 23-layer chocolate cake for dessert. I can provide the contact information for the host team so you can finalize a table for tonight; would you like me to share that now?",
+      "sources": [],
+      "elapsed_ms": 53040,
+      "error": null
+    },
+    {
+      "turn_index": 2,
+      "user_message": "Around 8 PM",
+      "agent_response": "",
+      "sources": [],
+      "elapsed_ms": 60008,
+      "error": "TIMEOUT (60.0s)"
+    }
+  ],
+  "completed": true
+}

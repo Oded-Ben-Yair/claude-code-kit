@@ -1,0 +1,86 @@
+{
+  "scenario_id": "h9-02",
+  "scenario_name": "Guest on a budget needing value guidance",
+  "category": "host_triangle_h7_h10_revenue",
+  "behavioral_dimension": "H9_revenue_aware_steering",
+  "expected_behavior": "Leads with genuinely good affordable options, not just the cheapest. Bobby's Burgers, Frank Pepe's, and the Buffet all have real culinary appeal. Pairs with the Wolf Den (free shows) to create a full evening without pressure. The guest leaves excited about a great night out, not feeling like they got the budget tour",
+  "expected_behavioral_quality": "When a guest signals budget constraints, the agent steers toward high-value experiences without condescending. Finds genuinely great options at every price point. Never makes the guest feel like they are getting a lesser experience \u2014 just a different one.",
+  "safety_relevant": false,
+  "source_file": "host_triangle_h7_h10_revenue.yaml",
+  "thread_id": "eval-h9-02-1772993355",
+  "turns": [
+    {
+      "turn_index": 0,
+      "user_message": "What's good for dinner that won't break the bank?",
+      "agent_response": "Lantern Bar & Grill in the Casino of the Earth is my top pick for a satisfying dinner that's easy on the wallet. It has the warm, welcoming hum of a classic American pub and is open 24 hours, making it perfect for a relaxed Sunday evening meal. You'll find everything from juicy burgers and crisp salads to full steak dinners at a mid-range price point, all without the need for a reservation or a formal dress code. \n\nAn insider detail I often share is that while it\u2019s a casual spot, their kitchen is known for incredible consistency\u2014it's a reliable favorite for locals who want a quality meal without the fine-dining price tag. After you've had your fill, you're just a short walk away from the Wolf Den if you're in the mood for some live music to round out your night. Are you looking for a quick bite so you can get back to the action, or do you have time to settle in for a full sit-down dinner?",
+      "sources": [
+        {
+          "category": "restaurants",
+          "source": "mohegan_sun.json",
+          "score": 0.644
+        }
+      ],
+      "elapsed_ms": 41271,
+      "error": null
+    },
+    {
+      "turn_index": 1,
+      "user_message": "The Buffet sounds good. Any free entertainment after?",
+      "agent_response": "Seasons Buffet is a fantastic choice for tonight\u2014it's open until 9:00 PM and offers a huge variety from seafood to international stations, so you definitely won't leave hungry. \n\nFor free entertainment afterward, you absolutely have to check out the Wolf Den in the Casino of the Earth. It's an intimate venue that hosts nightly shows from national touring acts and local favorites at no cost to you. The energy there is electric because the 350-seat layout puts you right in the middle of the performance. Since shows typically start at 8:00 PM or 9:00 PM, you'll have plenty of time to enjoy your dinner first.\n\nAn insider detail you might find helpful is that the Wolf Den is first-come, first-served, so if there's a specific act you're excited about, heading over about 30 minutes early is a smart move to grab a good seat. I've got you covered if you need directions between the two casinos once you're finished eating. What kind of music usually gets you on your feet, or are you more into a relaxed acoustic vibe?",
+      "sources": [
+        {
+          "category": "entertainment",
+          "source": "mohegan_sun.json",
+          "score": 0.706
+        },
+        {
+          "category": "restaurants",
+          "source": "mohegan_sun.json",
+          "score": 0.665
+        },
+        {
+          "category": "dining",
+          "source": "cms:dining/dining-001",
+          "score": 0.663
+        }
+      ],
+      "elapsed_ms": 37319,
+      "error": null
+    },
+    {
+      "turn_index": 2,
+      "user_message": "Wait, the Wolf Den is free? That's awesome",
+      "agent_response": "It really is one of the best perks at the resort. You get that front-row energy with 350 seats surrounding the center stage, and there's never a cover charge or a ticket required. It's a great way to catch national touring acts or high-energy tribute bands without spending a dime.\n\nAn insider tip for your visit is that the Wolf Den is located right in the heart of the Casino of the Earth, so you can often hear the music drifting through the floor even before you step inside. If you find yourself needing a quiet reset tomorrow after a late night of music, the Elemis Spa is the perfect place to recharge. \n\nTo help me point you toward the best spots for the rest of your trip, what's your name and are you here with a large group or just a few friends?",
+      "sources": [
+        {
+          "category": "entertainment",
+          "source": "mohegan_sun.json",
+          "score": 0.773
+        },
+        {
+          "category": "faq",
+          "source": "mohegan_sun.json",
+          "score": 0.667
+        },
+        {
+          "category": "promotions",
+          "source": "mohegan_sun.json",
+          "score": 0.637
+        },
+        {
+          "category": "gaming",
+          "source": "mohegan_sun.json",
+          "score": 0.629
+        },
+        {
+          "category": "amenities",
+          "source": "mohegan_sun.json",
+          "score": 0.633
+        }
+      ],
+      "elapsed_ms": 31806,
+      "error": null
+    }
+  ],
+  "completed": true
+}

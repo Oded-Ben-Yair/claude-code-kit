@@ -1,0 +1,75 @@
+{
+  "scenario_id": "sarcasm-07",
+  "scenario_name": "Hostile praise testing agent gullibility",
+  "category": "behavioral_sarcasm",
+  "behavioral_dimension": "B1_sarcasm",
+  "expected_behavior": "Reads sarcastic praise as frustration signal. Focuses on resolving the room key issue rather than engaging with the sarcasm. Directs to appropriate human help",
+  "expected_behavioral_quality": "Detects that 'amazing job' following a complaint is sarcastic praise, not genuine compliment. Does not thank the guest for the compliment. Stays focused on solving the problem underneath.",
+  "safety_relevant": false,
+  "source_file": "behavioral_sarcasm.yaml",
+  "thread_id": "eval-sarcasm-07-1772826986",
+  "turns": [
+    {
+      "turn_index": 0,
+      "user_message": "My room key doesn't work. Amazing job so far.",
+      "agent_response": "I am very sorry for the frustration. Having your room key fail is the last thing you want to deal with when you are ready to settle in. \n\nOur front desk teams in both the Sky and Earth Towers are available 24 hours a day and will issue you a new set of keys immediately once they verify your photo ID. If you see a guest service phone near the elevators, you can pick it up to speak with the front desk right away so they can have everything ready for you. \n\nWhich tower are you staying in so I can point you toward the nearest service desk?",
+      "sources": [
+        {
+          "category": "hotel",
+          "source": "mohegan_sun.json",
+          "score": 0.658
+        },
+        {
+          "category": "property",
+          "source": "mohegan_sun.json",
+          "score": 0.642
+        },
+        {
+          "category": "faq",
+          "source": "mohegan_sun.json",
+          "score": 0.619
+        }
+      ],
+      "elapsed_ms": 36033,
+      "error": null
+    },
+    {
+      "turn_index": 1,
+      "user_message": "Yeah this is really the premium experience I was promised",
+      "agent_response": "It's clear that this is a frustrating start to your stay. To get you back into your room, the front desk at either the Sky or Earth Tower can issue a new set of keys immediately once they verify your photo ID. \n\nAs a tip for the new set, keeping the cards away from your cell phone helps prevent the magnetic strip from being deactivated. Which tower are you in so I can give you the quickest directions to the desk?",
+      "sources": [],
+      "elapsed_ms": 48196,
+      "error": null
+    },
+    {
+      "turn_index": 2,
+      "user_message": "Can someone actually fix this?",
+      "agent_response": "I am an AI assistant, so I cannot physically reset your key or remotely unlock your door. To fix this immediately, a member of our front desk team needs to re-code your card at a terminal in the Sky or Earth Tower lobby.\n\nIf you are already at your room and would prefer not to walk back to the lobby, pick up a house phone near the elevators and dial \"0\" for the operator. You can request that a front office supervisor meet you at your door with a replacement key. \n\nWhich tower are you currently in so I can provide the quickest path to a service desk?",
+      "sources": [
+        {
+          "category": "hotel",
+          "source": "mohegan_sun.json",
+          "score": 0.609
+        },
+        {
+          "category": "promotions",
+          "source": "mohegan_sun.json",
+          "score": 0.608
+        },
+        {
+          "category": "property",
+          "source": "mohegan_sun.json",
+          "score": 0.621
+        },
+        {
+          "category": "faq",
+          "source": "mohegan_sun.json",
+          "score": 0.586
+        }
+      ],
+      "elapsed_ms": 53723,
+      "error": null
+    }
+  ],
+  "completed": true
+}

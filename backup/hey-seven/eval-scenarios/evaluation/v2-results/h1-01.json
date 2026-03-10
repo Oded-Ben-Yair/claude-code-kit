@@ -1,0 +1,77 @@
+{
+  "id": "h1-01",
+  "name": "First-time guest exploring the property",
+  "source_file": "host_triangle_h1_h3_development.yaml",
+  "category": "host_triangle_h1_h3_development",
+  "behavioral_dimension": "H1_proactive_value_discovery",
+  "expected_behavior": "Recognizes first-time visit, asks about interests to shape recommendations, and plants at least one natural return-visit hook (Wolf Den weekly shows, upcoming Arena concert, Momentum sign-up). The conversation feels like an insider sharing favorites, not a brochure",
+  "expected_behavioral_quality": "Identifies the first-time visit signal and tailors recommendations to create anchor memories. Plants at least one natural return-visit hook (upcoming event, seasonal offering, loyalty sign-up) without making it feel like a pitch. Asks what brought them in to discover what would make them come back.",
+  "safety_relevant": false,
+  "turns": [
+    {
+      "turn_index": 0,
+      "user_message": "Hey, first time here at Mohegan Sun. What should we check out?",
+      "agent_response": "Welcome to Mohegan Sun. Since it's your first visit, I'd suggest heading toward the Casino of the Sky to see the planetarium dome and the Wolf Den, which hosts free live music right in the center of the action.\n\nFor a memorable meal, Todd English's Tuscany is a standout choice because of the indoor waterfall and great atmosphere. Our retail shops are also open until 9:00 PM tonight if you want to explore the property. What brings you in today\u2014are you here for a specific event or just exploring the resort?",
+      "sources": [
+        {
+          "category": "amenities",
+          "source": "mohegan_sun.json",
+          "score": 0.769
+        },
+        {
+          "category": "faq",
+          "source": "mohegan_sun.json",
+          "score": 0.746
+        },
+        {
+          "category": "entertainment",
+          "source": "mohegan_sun.json",
+          "score": 0.737
+        }
+      ],
+      "elapsed_ms": 37597,
+      "error": null
+    },
+    {
+      "turn_index": 1,
+      "user_message": "We're mostly into live music and good food",
+      "agent_response": "The Wolf Den is the heart of the music scene here, offering free nightly shows where you're right in the middle of the performance. Tonight's show kicks off at 8:00 PM, and it is a great way to experience the energy of the resort without needing a ticket. \n\nFor a meal that pairs with your entertainment, Comix Roadhouse serves a full dinner menu right inside the venue during their comedy and live music sets. If you are looking for a more high-energy vibe later in the evening, novelle is an upscale lounge that features DJ entertainment and craft cocktails. I can help you with more specific show times or even a recommendation for a relaxing spa treatment for tomorrow morning once you've settled in. Do you have a specific genre of music you usually prefer, or are you open to anything?",
+      "sources": [
+        {
+          "category": "entertainment",
+          "source": "mohegan_sun.json",
+          "score": 0.662
+        }
+      ],
+      "elapsed_ms": 31826,
+      "error": null
+    },
+    {
+      "turn_index": 2,
+      "user_message": "That sounds great, we'll definitely check those out",
+      "agent_response": "The Wolf Den has an electric energy where you're right there with the performer\u2014it's an experience you shouldn't miss on your first trip. Since it is Thursday, novelle also opens this evening for craft cocktails and a sophisticated lounge atmosphere if you want to keep the night going after the live music. \n\nTo balance out the high energy, our Elemis Spa is the perfect reset for tomorrow morning; their hot stone massage is legendary for guests who have been out on the floor. I can connect you with our host team to help finalize any table plans at novelle or a spa session for tomorrow. Since you enjoy good food, are you looking for a casual spot or something more upscale for your dinner before the music starts?",
+      "sources": [
+        {
+          "category": "entertainment",
+          "source": "mohegan_sun.json",
+          "score": 0.654
+        },
+        {
+          "category": "faq",
+          "source": "mohegan_sun.json",
+          "score": 0.636
+        },
+        {
+          "category": "restaurants",
+          "source": "mohegan_sun.json",
+          "score": 0.642
+        }
+      ],
+      "elapsed_ms": 33373,
+      "error": null
+    }
+  ],
+  "elapsed_ms": 102796,
+  "error": null,
+  "completed": true
+}

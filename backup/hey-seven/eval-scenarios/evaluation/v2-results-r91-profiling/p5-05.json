@@ -1,0 +1,90 @@
+{
+  "id": "p5-05",
+  "name": "Agent recovers from tangent back to profiling",
+  "source_file": "profiling_p5_progressive_sequence.yaml",
+  "category": "profiling_p5_progressive_sequence",
+  "behavioral_dimension": "P5_progressive_sequencing",
+  "expected_behavior": "Wi-Fi complaint is handled empathetically in turn 1. When the guest pivots to dinner, the agent smoothly enters profiling mode: party size in turn 3, dietary needs in turn 4. The transition from complaint to concierge feels seamless",
+  "expected_behavioral_quality": "After a tangent (complaint, off-topic question, general chat), the agent naturally returns to the profiling sequence by connecting the tangent resolution to a profiling-relevant question. The bridge feels organic ('Now that that's sorted, were you looking for...') not forced.",
+  "safety_relevant": false,
+  "turns": [
+    {
+      "turn_index": 0,
+      "user_message": "The Wi-Fi in my room isn't working",
+      "agent_response": "I'm sorry to hear your Wi-Fi isn't working. Complimentary high-speed Wi-Fi is an amenity we provide in all of our rooms and suites, and I want to make sure it's functioning for you. \n\nSometimes a quick restart of your device or manually navigating to a website in your browser will force the login page to appear. If that doesn't resolve it, our 24-hour front desk team is always available to help troubleshoot or coordinate with our technical staff to check the signal strength specifically for your room. If you need to stay connected while we look into this, the lobby areas and nearby restaurants like SolToro or Tuscany also have reliable coverage. \n\nAre you seeing the Mohegan Sun network name appear in your device's settings?",
+      "sources": [
+        {
+          "category": "hotel",
+          "source": "mohegan_sun.json",
+          "score": 0.644
+        },
+        {
+          "category": "promotions",
+          "source": "mohegan_sun.json",
+          "score": 0.595
+        },
+        {
+          "category": "property",
+          "source": "mohegan_sun.json",
+          "score": 0.615
+        }
+      ],
+      "elapsed_ms": 51441,
+      "error": null
+    },
+    {
+      "turn_index": 1,
+      "user_message": "OK I'll call them. Anyway, what's for dinner?",
+      "agent_response": "Since it is quite early in the morning, the **Lantern Bar & Grill** is your best option as it is open 24 hours a day. \n\nLocated in the Casino of the Earth, this spot serves up a full menu of American comfort food including savory steaks and juicy burgers that hit the spot no matter the hour. It has a very relaxed, casual vibe with mid-range pricing, and you do not need to worry about making a reservation. If you are planning ahead for a more formal dinner this evening, our signature fine-dining venues like Ballo Italian Restaurant or Todd English's Tuscany typically open their doors at 5:00 PM. \n\nSince you are already settled into your room, would you like to know which of our lounges are best for a nightcap after your meal tonight?",
+      "sources": [
+        {
+          "category": "faq",
+          "source": "mohegan_sun.json",
+          "score": 0.613
+        },
+        {
+          "category": "restaurants",
+          "source": "mohegan_sun.json",
+          "score": 0.61
+        }
+      ],
+      "elapsed_ms": 24473,
+      "error": null
+    },
+    {
+      "turn_index": 2,
+      "user_message": "Something for the family, 5 of us",
+      "agent_response": "Caputo Trattoria in the Casino of the Earth is a great fit for a group of five. It's a casual Italian spot that specializes in brick-oven pizzas, calzones, and pasta dishes, making it easy to share plates among the family. The atmosphere is very welcoming for all ages and the service is quick, which is helpful when you are traveling with a larger party. \n\nOnce you have had your fill of pizza, you might want to head over to Cyber Quest where the kids can play the latest video games in a supervised arcade environment. Does anyone in your group have a favorite type of Italian dish they always look for on the menu?",
+      "sources": [
+        {
+          "category": "entertainment",
+          "source": "mohegan_sun.json",
+          "score": 0.641
+        },
+        {
+          "category": "hotel",
+          "source": "mohegan_sun.json",
+          "score": 0.651
+        },
+        {
+          "category": "restaurants",
+          "source": "mohegan_sun.json",
+          "score": 0.619
+        }
+      ],
+      "elapsed_ms": 54935,
+      "error": null
+    },
+    {
+      "turn_index": 3,
+      "user_message": "The kids are picky eaters",
+      "agent_response": "For a family dinner with picky eaters, Caputo Trattoria is a fantastic choice because their brick-oven pizzas and simple pasta dishes are almost universally loved by kids. The atmosphere in the Casino of the Earth is casual and welcoming, so you can relax with your group of five without the pressure of a formal dress code. It opens daily at 11:00 AM and stays open until ",
+      "sources": [],
+      "elapsed_ms": 50059,
+      "error": null
+    }
+  ],
+  "elapsed_ms": 180910,
+  "error": null,
+  "completed": true
+}

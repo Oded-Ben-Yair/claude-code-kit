@@ -1,0 +1,22 @@
+{
+  "scenario_id": "edge-02",
+  "scenario_name": "Very long message",
+  "category": "edge_cases",
+  "behavioral_dimension": "",
+  "expected_behavior": "Handles very long input without error",
+  "expected_behavioral_quality": "",
+  "safety_relevant": false,
+  "source_file": "edge_cases.yaml",
+  "thread_id": "eval-edge-02-1772830823",
+  "turns": [
+    {
+      "turn_index": 0,
+      "user_message": "I have been planning this trip for months and months and I have been looking at all the reviews and everything everyone has said about the casino and the restaurants and the hotel rooms and the entertainment and the spa and the pool and I really want to make sure I get the most out of my visit because this is a special occasion for me and my family and we are so excited to come and visit and we want to know absolutely everything about what you offer at the property including all the dining options and entertainment options and hotel rooms and amenities and promotions and loyalty programs and basically everything you can tell us",
+      "agent_response": "I'm not able to share information about other guests, including whether someone is a member, their presence at the property, or any personal details. Guest privacy is a top priority.\n\nIf you need to reach someone, I'd suggest contacting them directly or calling Mohegan Sun at 1-888-226-7711.\n\nIs there anything else about the resort I can help with?",
+      "sources": [],
+      "elapsed_ms": 7,
+      "error": null
+    }
+  ],
+  "completed": true
+}

@@ -1,0 +1,41 @@
+{
+  "scenario_id": "sentiment-02",
+  "scenario_name": "Neutral to enthusiastic progression",
+  "category": "sentiment_shifts",
+  "behavioral_dimension": "",
+  "expected_behavior": "Responds neutrally then matches guest enthusiasm",
+  "expected_behavioral_quality": "",
+  "safety_relevant": false,
+  "source_file": "sentiment_shifts.yaml",
+  "thread_id": "eval-sentiment-02-1772845897",
+  "turns": [
+    {
+      "turn_index": 0,
+      "user_message": "What amenities do you have?",
+      "agent_response": "We offer a heated indoor pool and hot tub, a 24-hour fitness center, and even an indoor rock climbing wall near Kids Quest. Pro tip: the pool opens at 6:00 AM and is the perfect way to reset before a busy Saturday. Are you planning a relaxing morning, or would you like to hear about the live music at the Wolf Den tonight? The energy there is always electric!",
+      "sources": [
+        {
+          "category": "hotel",
+          "source": "mohegan_sun.json",
+          "score": 0.685
+        },
+        {
+          "category": "amenities",
+          "source": "mohegan_sun.json",
+          "score": 0.68
+        }
+      ],
+      "elapsed_ms": 41758,
+      "error": null
+    },
+    {
+      "turn_index": 1,
+      "user_message": "Oh wow, the spa sounds perfect! Tell me more about Elemis Spa",
+      "agent_response": "You're going to love the vibe at Elemis Spa\u2014it's located in the Earth Tower and has such a sleek, modern feel. They are known for their premium Elemis skincare treatments and even offer express services if you're looking for a quick glow-up before heading to the Arena later. \n\nThey open at 9:00 AM today, so it is the perfect time to grab a morning slot before the weekend crowd arrives. I can help you look at their specific services or connect you with our host team to finalize a booking. After a relaxing treatment, a visit to the nearby Bean and Vine Terrace for a quiet coffee is a great way to keep that calm energy going. Would you prefer to start your day with a rejuvenating facial or one of their signature body treatments?",
+      "sources": [],
+      "elapsed_ms": 44949,
+      "error": null
+    }
+  ],
+  "completed": true
+}

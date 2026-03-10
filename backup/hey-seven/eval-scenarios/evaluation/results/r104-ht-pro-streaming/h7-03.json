@@ -1,0 +1,76 @@
+{
+  "scenario_id": "h7-03",
+  "scenario_name": "Entertainment guest exploring other domains",
+  "category": "host_triangle_h7_h10_revenue",
+  "behavioral_dimension": "H7_cross_selling_wallet_share",
+  "expected_behavior": "Builds a full evening around the Arena anchor: pre-show dinner at a nearby restaurant, the show itself, and post-show options (Wolf Den late show, Comix, casino floor). The guest leaves with a plan for an entire evening, not just a concert ticket",
+  "expected_behavioral_quality": "When a guest comes for entertainment, the agent expands the visit into dining and other experiences. The cross-sell turns a one-activity visit into a full resort evening where the show is the anchor but not the only experience.",
+  "safety_relevant": false,
+  "source_file": "host_triangle_h7_h10_revenue.yaml",
+  "thread_id": "eval-h7-03-1772975392",
+  "turns": [
+    {
+      "turn_index": 0,
+      "user_message": "We have Arena tickets for Saturday. What else should we do that night?",
+      "agent_response": "I've got you covered for your Saturday night. Since you're already headed to the Arena, I'd suggest starting your evening at novelle\u2014it's an upscale ultra lounge right nearby that's perfect for a pre-show cocktail in a sophisticated atmosphere. \n\nPro tip: novelle is specifically designed to handle the pre- and post-show crowd, so you can enjoy the music and drinks without worrying about being far from your seats. If you want to keep the energy high after the concert, Avalon Nightclub opens at 10:00 PM and features a massive sound and lighting system that keeps the room electric until 2:00 AM. After all that excitement, if you find yourself needing a late-night bite, Lantern Bar & Grill is open 24 hours right in Casino of the Earth. \n\nAre you coming in with a large group or is it just the two of you?",
+      "sources": [
+        {
+          "category": "entertainment",
+          "source": "mohegan_sun.json",
+          "score": 0.67
+        },
+        {
+          "category": "restaurants",
+          "source": "mohegan_sun.json",
+          "score": 0.65
+        }
+      ],
+      "elapsed_ms": 47806,
+      "error": null
+    },
+    {
+      "turn_index": 1,
+      "user_message": "A pre-show dinner sounds great. Where?",
+      "agent_response": "The aroma of seared USDA Prime steaks and the sophisticated atmosphere make Michael Jordan's Steak House the perfect pre-show destination. Located in Casino of the Sky, this upscale steakhouse offers fresh seafood and an extensive wine list in an elegant setting filled with sports memorabilia. \n\nThey open at 5:00 PM on Saturdays, which allows for a relaxed meal before you head over to your seats. Since it is a premier choice for guests with Arena tickets, I'd suggest securing a reservation in advance. The dress code is business casual, and you can expect a price range of $$$$. After your meal, it is just a short walk through the casino to get to the show.\n\nWhat kind of event are you seeing at the Arena\u2014is it a big concert or a sporting event?",
+      "sources": [
+        {
+          "category": "restaurants",
+          "source": "mohegan_sun.json",
+          "score": 0.692
+        },
+        {
+          "category": "entertainment",
+          "source": "mohegan_sun.json",
+          "score": 0.675
+        },
+        {
+          "category": "faq",
+          "source": "mohegan_sun.json",
+          "score": 0.639
+        }
+      ],
+      "elapsed_ms": 57228,
+      "error": null
+    },
+    {
+      "turn_index": 2,
+      "user_message": "And after the show? We don't want the night to end",
+      "agent_response": "If you want to keep the energy high after the final encore, Avalon Nightclub is exactly what you are looking for. It opens at 10:00 PM on Saturdays and stays electric until 2:00 AM with top DJs, huge dance floors, and a state-of-the-art sound system. \n\nIf you would rather have a place where you can still enjoy great music but actually hear each other talk about the show, novelle is an amazing ultra-lounge with craft cocktails and its own DJ. \n\nPro tip: If you end up dancing until the nightclub closes, the Lantern Bar & Grill down in Casino of the Earth is open 24 hours and is the absolute best spot for late-night burgers to cap off the night. \n\nBy the way, the Mohegan Sun Arena has some incredible shows coming up later this year\u2014I can always share what is on the calendar when you plan your next visit. \n\nFor this Saturday, are you leaning more toward a high-energy dance club, or a chic lounge setting for craft cocktails?",
+      "sources": [
+        {
+          "category": "entertainment",
+          "source": "mohegan_sun.json",
+          "score": 0.713
+        },
+        {
+          "category": "restaurants",
+          "source": "mohegan_sun.json",
+          "score": 0.688
+        }
+      ],
+      "elapsed_ms": 71486,
+      "error": null
+    }
+  ],
+  "completed": true
+}

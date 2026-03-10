@@ -1,0 +1,86 @@
+{
+  "scenario_id": "agentic-02",
+  "scenario_name": "Proactive timing awareness for property hours",
+  "category": "behavioral_agentic",
+  "behavioral_dimension": "B4_agentic",
+  "expected_behavior": "When the guest mentions a late time, proactively flags which restaurants may be closing soon and suggests options that will definitely still be open",
+  "expected_behavioral_quality": "When recommending a venue, proactively mentions closing time or last seating if it's approaching. Does not wait for the guest to ask 'is it still open?' Anticipates the practical concern.",
+  "safety_relevant": false,
+  "source_file": "behavioral_agentic.yaml",
+  "thread_id": "eval-agentic-02-1772808351",
+  "turns": [
+    {
+      "turn_index": 0,
+      "user_message": "What restaurants are good?",
+      "agent_response": "Since it is Friday afternoon, **SolToro Taqueria & Tequila Bar** in the Casino of the Earth is a fantastic choice to kick off your weekend. The vibe is always energetic, and the aroma of fresh corn tortillas and sizzling fajitas is incredibly inviting. \n\nThey are open right now and stay open until 11:00 PM tonight. It is a casual spot with a massive selection of tequilas and mezcals, and since they don't require reservations, you can just walk right in. If you are looking for something more formal for later, Michael Jordan's Steak House and Ballo Italian Restaurant both open at 5:00 PM today. \n\nAre you looking for a quick, lively bite like SolToro, or should I help you find a spot for a more relaxed sit-down dinner? Once you've had your fill of tacos, a visit to the shops in the peaceful atmosphere of the Shops at Mohegan Sun is a great way to walk it off.",
+      "sources": [
+        {
+          "category": "restaurants",
+          "source": "mohegan_sun.json",
+          "score": 0.669
+        }
+      ],
+      "elapsed_ms": 27955,
+      "error": null
+    },
+    {
+      "turn_index": 1,
+      "user_message": "We're thinking around 9:30 PM",
+      "agent_response": "If you are dining at 9:30 PM, keep in mind that Ballo Italian Restaurant closes at 10:00 PM, so you'll want to be seated promptly. Afterward, the energy is excellent at **novelle**, our upscale ultra-lounge featuring DJ entertainment and a sophisticated atmosphere perfect for a Friday night. \n\nDo you prefer a relaxed lounge setting for post-dinner drinks, or should I tell you about the high-energy dance floor at **Avalon Nightclub** which opens at 10:00 PM? After a late night out, the Elemis Spa is the perfect reset\u2014their hot stone massage is legendary if you want to plan a relaxing Saturday morning.",
+      "sources": [
+        {
+          "category": "entertainment",
+          "source": "mohegan_sun.json",
+          "score": 0.666
+        },
+        {
+          "category": "faq",
+          "source": "mohegan_sun.json",
+          "score": 0.628
+        },
+        {
+          "category": "restaurants",
+          "source": "mohegan_sun.json",
+          "score": 0.615
+        }
+      ],
+      "elapsed_ms": 48378,
+      "error": null
+    },
+    {
+      "turn_index": 2,
+      "user_message": "Good to know. We'll hurry",
+      "agent_response": "I apologize, but I'm having trouble generating a response right now. Please try again, or  at [PHONE].",
+      "sources": [
+        {
+          "category": "promotions",
+          "source": "mohegan_sun.json",
+          "score": 0.635
+        },
+        {
+          "category": "entertainment",
+          "source": "mohegan_sun.json",
+          "score": 0.639
+        },
+        {
+          "category": "hotel",
+          "source": "mohegan_sun.json",
+          "score": 0.622
+        },
+        {
+          "category": "gaming",
+          "source": "mohegan_sun.json",
+          "score": 0.606
+        },
+        {
+          "category": "restaurants",
+          "source": "mohegan_sun.json",
+          "score": 0.631
+        }
+      ],
+      "elapsed_ms": 50127,
+      "error": null
+    }
+  ],
+  "completed": true
+}

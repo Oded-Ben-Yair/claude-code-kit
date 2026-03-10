@@ -1,0 +1,55 @@
+{
+  "scenario_id": "p2-08",
+  "scenario_name": "Agent asks about entertainment interests",
+  "category": "profiling_p2_active_probing",
+  "behavioral_dimension": "P2_active_probing",
+  "expected_behavior": "First response provides a broad overview and asks a narrowing question about entertainment type. When 'live music' is volunteered, immediately narrows to music venues and upcoming acts",
+  "expected_behavioral_quality": "When the guest asks a generic question about things to do, the agent provides options AND asks a narrowing question about entertainment preferences. The question is specific enough to be useful ('More into music or comedy?') rather than vague ('What do you like?').",
+  "safety_relevant": false,
+  "source_file": "profiling_p2_active_probing.yaml",
+  "thread_id": "eval-p2-08-1772991817",
+  "turns": [
+    {
+      "turn_index": 0,
+      "user_message": "What's there to do here besides gambling?",
+      "agent_response": "I don't have that specific show info right now. Are you interested in live music, comedy, or maybe the spa at Mohegan Sun?",
+      "sources": [],
+      "elapsed_ms": 16973,
+      "error": null
+    },
+    {
+      "turn_index": 1,
+      "user_message": "We love live music",
+      "agent_response": "The Wolf Den is our staple for live music with free shows every night, usually starting at 8:00 PM or 9:00 PM. It's a 350-seat venue right in the center of the casino, so the energy is always high. Since you're heading to a show, Todd English's Tuscany is right nearby and great for a wood-fired dinner beforehand. Are you here with a group tonight, or is it just the two of you?",
+      "sources": [
+        {
+          "category": "entertainment",
+          "source": "mohegan_sun.json",
+          "score": 0.646
+        },
+        {
+          "category": "property",
+          "source": "mohegan_sun.json",
+          "score": 0.637
+        }
+      ],
+      "elapsed_ms": 30582,
+      "error": null
+    },
+    {
+      "turn_index": 2,
+      "user_message": "What's playing this weekend?",
+      "agent_response": "The Wolf Den has free live music every night at 8:00 PM, but you'll want to arrive early since seating is first-come, first-served. What kind of music do you usually listen to?",
+      "sources": [
+        {
+          "category": "entertainment",
+          "source": "mohegan_sun.json",
+          "score": 0.658
+        }
+      ],
+      "elapsed_ms": 39767,
+      "error": null
+    }
+  ],
+  "completed": true
+}

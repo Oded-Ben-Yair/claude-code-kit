@@ -1,0 +1,86 @@
+{
+  "scenario_id": "h8-03",
+  "scenario_name": "Guest receiving a promotional offer",
+  "category": "host_triangle_h7_h10_revenue",
+  "behavioral_dimension": "H8_strategic_offer_framing",
+  "expected_behavior": "Validates that the double points weekend is worthwhile by connecting it to the guest's tier progression and earning potential. Frames the promotion as an accelerator for benefits the guest already cares about. Makes coming in this weekend feel like a strategic decision, not a marketing response",
+  "expected_behavioral_quality": "When presenting a promotion, the agent frames it as something special rather than mass-distributed. Uses personal language and connects the offer to the guest's known preferences. The promotion should feel selected for them, not blasted to an email list.",
+  "safety_relevant": false,
+  "source_file": "host_triangle_h7_h10_revenue.yaml",
+  "thread_id": "eval-h8-03-1773039492",
+  "turns": [
+    {
+      "turn_index": 0,
+      "user_message": "I got an email about double Momentum Points this weekend. Is that worth coming in for?",
+      "agent_response": "A double Momentum Points promotion means you earn rewards at twice the standard rate for your gaming and resort spending. These points have a 1:1 dollar value for dining, hotel stays, and retail purchases throughout the property.\n\nThis acceleration helps you reach the requirements for higher tiers more quickly, such as the Ignite level at 2,500 Tier Credits or Leap at 10,000 Tier Credits. Higher tiers unlock permanent earn rate bonuses and priority access to amenities. Pro tip: you can track your point balance in real-time using the Mohegan Sun mobile app to see exactly how much you've earned during your visit.\n\nAre you currently working toward a specific tier, or would this be your first time using the Momentum program?",
+      "sources": [
+        {
+          "category": "faq",
+          "source": "mohegan_sun.json",
+          "score": 0.712
+        },
+        {
+          "category": "promotions",
+          "source": "mohegan_sun.json",
+          "score": 0.703
+        }
+      ],
+      "elapsed_ms": 27860,
+      "error": null
+    },
+    {
+      "turn_index": 1,
+      "user_message": "How much faster does that add up?",
+      "agent_response": "Double Momentum Points means you earn your spendable rewards at twice the standard rate. For example, if you would normally earn $10 in points during a session, you would earn $20 instead, which can be used 1:1 for dining at restaurants like Tuscany or for retail purchases.\n\nIt is important to distinguish between Momentum Points and Tier Credits. Points are your spendable balance, while Tier Credits determine your status level, such as Ignite or Leap. Unless the promotion specifically mentions Double Tier Credits, your progress toward the next tier would remain at the standard rate.\n\nWhat's your primary game\u2014do you usually spend your time at the slots or the tables?",
+      "sources": [
+        {
+          "category": "promotions",
+          "source": "mohegan_sun.json",
+          "score": 0.638
+        },
+        {
+          "category": "faq",
+          "source": "mohegan_sun.json",
+          "score": 0.623
+        },
+        {
+          "category": "gaming",
+          "source": "mohegan_sun.json",
+          "score": 0.626
+        },
+        {
+          "category": "hotel",
+          "source": "mohegan_sun.json",
+          "score": 0.623
+        }
+      ],
+      "elapsed_ms": 29413,
+      "error": null
+    },
+    {
+      "turn_index": 2,
+      "user_message": "Alright, I'm in. Coming this Saturday",
+      "agent_response": "Saturday is the perfect time to visit, especially with that promotion running. \n\nWhen you are ready for a break from the casino floor, the Saturday night energy here is unmatched. You could grab dinner and catch a comedy show at Comix Roadhouse, or if you prefer a sophisticated lounge vibe, novelle is right near the action with craft cocktails and a DJ. Fun fact \u2014 novelle is actually one of the best spots on the property to soak in the weekend atmosphere and people-watch while you take a breather. \n\nI would love to tailor a few more specific recommendations for your weekend. What is your name, and are you heading up solo or bringing a group?",
+      "sources": [
+        {
+          "category": "entertainment",
+          "source": "mohegan_sun.json",
+          "score": 0.639
+        },
+        {
+          "category": "promotions",
+          "source": "mohegan_sun.json",
+          "score": 0.621
+        },
+        {
+          "category": "faq",
+          "source": "mohegan_sun.json",
+          "score": 0.624
+        }
+      ],
+      "elapsed_ms": 47630,
+      "error": null
+    }
+  ],
+  "completed": true
+}

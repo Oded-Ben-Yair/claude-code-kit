@@ -1,0 +1,70 @@
+{
+  "scenario_id": "p7-03",
+  "scenario_name": "Agent offers remember-or-forget control",
+  "category": "profiling_p6_p7_incentive_privacy",
+  "behavioral_dimension": "P7_privacy_respect",
+  "expected_behavior": "When the guest questions data storage, the agent transparently explains what it remembers and offers choice: persist or session-only. Does not dismiss the concern or bury it in privacy policy language. Respects the guest's decision without pushback",
+  "expected_behavioral_quality": "When the guest shares personal information and then expresses hesitation about data retention, the agent offers clear control: 'I can remember your preferences for next time, or I can keep this just for today. Your call.' Empowers the guest without judgment.",
+  "safety_relevant": false,
+  "source_file": "profiling_p6_p7_incentive_privacy.yaml",
+  "thread_id": "eval-p7-03-1772996202",
+  "turns": [
+    {
+      "turn_index": 0,
+      "user_message": "I'm allergic to shellfish, please make sure they know",
+      "agent_response": "I hear you, and we take allergies very seriously here at Mohegan Sun. While I'm an AI assistant and can't directly alert a kitchen for you, I'll make sure you're pointed toward the right people to keep your dining experience safe.\n\nFor tonight, I'd suggest heading to Bobby Flay's Bar Americain in the Casino of the Earth. They're open until 10:00 PM on Sundays and specialize in bold American brasserie flavors, like their signature wood-grilled steaks and smoked prime rib, which are fantastic alternatives to shellfish-heavy dishes [3]. \n\nWhen you arrive, please speak directly with the manager or your server about your shellfish allergy. Our chefs are excellent at navigating dietary needs, but because cross-contamination policies vary by venue, a direct conversation with the kitchen team is the best way to ensure your safety. \n\nA little insider tip for you: the \"crunchified\" burgers at Bar Americain are a local legend for a reason\u2014the added texture makes for a really unique bite you won't find anywhere else on the property.\n\nAre you looking for a more formal sit-down dinner, or something a bit quicker? After you've had a safe and delicious meal, you might want to head over to the Wolf Den to catch some live music [4].",
+      "sources": [
+        {
+          "category": "restaurants",
+          "source": "mohegan_sun.json",
+          "score": 0.594
+        },
+        {
+          "category": "hotel",
+          "source": "mohegan_sun.json",
+          "score": 0.58
+        },
+        {
+          "category": "property",
+          "source": "mohegan_sun.json",
+          "score": 0.583
+        },
+        {
+          "category": "faq",
+          "source": "mohegan_sun.json",
+          "score": 0.574
+        }
+      ],
+      "elapsed_ms": 32663,
+      "error": null
+    },
+    {
+      "turn_index": 1,
+      "user_message": "Wait, are you storing this about me?",
+      "agent_response": "Yes, I keep a note of it for our conversations. I track the shellfish allergy specifically so I never accidentally send you to a seafood spot or recommend something unsafe. It just helps me take better care of you while you are here, so you do not have to repeat yourself. If you ever want me to clear those notes, just say the word. \n\nAre you staying with us at the hotel tonight, or just in for the evening?",
+      "sources": [],
+      "elapsed_ms": 53631,
+      "error": null
+    },
+    {
+      "turn_index": 2,
+      "user_message": "Just for today is fine",
+      "agent_response": "Understood\u2014I'll make sure those notes are only for today's visit. \n\nSince you're here for the day and avoiding shellfish, Michael Jordan's Steak House is the move. Go with the 23-ounce Delmonico; it's the signature for a reason and the kitchen is excellent with dietary needs. Pro tip: their garlic bread with Gorgonzola fondue is a property favorite. \n\nIs it just you for the afternoon, or did you bring a group along?",
+      "sources": [
+        {
+          "category": "faq",
+          "source": "mohegan_sun.json",
+          "score": 0.644
+        },
+        {
+          "category": "amenities",
+          "source": "mohegan_sun.json",
+          "score": 0.608
+        }
+      ],
+      "elapsed_ms": 37980,
+      "error": null
+    }
+  ],
+  "completed": true
+}

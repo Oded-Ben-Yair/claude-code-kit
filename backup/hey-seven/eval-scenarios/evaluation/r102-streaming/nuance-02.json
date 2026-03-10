@@ -1,0 +1,76 @@
+{
+  "scenario_id": "nuance-02",
+  "scenario_name": "First-time casino visitor with anxiety",
+  "category": "behavioral_nuance",
+  "behavioral_dimension": "B5_emotional",
+  "expected_behavior": "Validates the anxiety as completely normal. Provides gentle orientation without overwhelming. When the guest self-selects dining as a comfortable first step, supports that choice warmly",
+  "expected_behavioral_quality": "Validates the nervousness without dismissing it. Orients them gently with manageable next steps rather than an overwhelming property overview. Suggests low-pressure activities first. Does not say 'don't worry' or 'there's nothing to be nervous about'.",
+  "safety_relevant": false,
+  "source_file": "behavioral_nuance.yaml",
+  "thread_id": "eval-nuance-02-1772916389",
+  "turns": [
+    {
+      "turn_index": 0,
+      "user_message": "First time at a casino, kind of nervous honestly",
+      "agent_response": "Welcome to Mohegan Sun. You're in great hands, and there's no need to rush into anything. I suggest starting your night at Casino of the Earth. It has a warm, relaxed atmosphere and some of the friendliest dealers on the property who are happy to help you learn the ropes at your own pace. What brought you out to see us tonight?",
+      "sources": [
+        {
+          "category": "gaming",
+          "source": "mohegan_sun.json",
+          "score": 0.662
+        },
+        {
+          "category": "faq",
+          "source": "mohegan_sun.json",
+          "score": 0.651
+        }
+      ],
+      "elapsed_ms": 25175,
+      "error": null
+    },
+    {
+      "turn_index": 1,
+      "user_message": "It's just a lot bigger than I expected",
+      "agent_response": "It is massive\u2014over 3 million square feet\u2014so that feeling is completely normal. I've got you. Head straight for the Taughannick Falls in Casino of the Earth; it\u2019s a 55-foot indoor waterfall that makes for a perfect home base while you get your bearings. It's a great spot to just sit for a moment and watch the room without any pressure to play. Are you staying with us overnight, or just visiting for the evening?",
+      "sources": [
+        {
+          "category": "property",
+          "source": "mohegan_sun.json",
+          "score": 0.651
+        },
+        {
+          "category": "gaming",
+          "source": "mohegan_sun.json",
+          "score": 0.637
+        },
+        {
+          "category": "hotel",
+          "source": "mohegan_sun.json",
+          "score": 0.629
+        },
+        {
+          "category": "restaurants",
+          "source": "mohegan_sun.json",
+          "score": 0.633
+        }
+      ],
+      "elapsed_ms": 31438,
+      "error": null
+    },
+    {
+      "turn_index": 2,
+      "user_message": "Maybe we should just get something to eat first",
+      "agent_response": "Lantern Bar & Grill is the perfect spot to settle in\u2014the smell of grilled steaks and burgers is immediately welcoming, and the atmosphere is very laid-back. It is located right in the Casino of the Earth and stays open 24 hours, so you can take as much time as you need to relax and adjust to the energy without any rush. It is casual, mid-range in price, and you do not need a reservation. Once you are finished, you might enjoy wandering over to the Wolf Den nearby for some live music. What kind of food do you usually crave when you are looking for something comforting?",
+      "sources": [
+        {
+          "category": "restaurants",
+          "source": "mohegan_sun.json",
+          "score": 0.649
+        }
+      ],
+      "elapsed_ms": 36014,
+      "error": null
+    }
+  ],
+  "completed": true
+}

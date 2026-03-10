@@ -1,0 +1,38 @@
+{
+  "scenario_id": "h5-02",
+  "scenario_name": "Couple celebrating their wedding anniversary",
+  "category": "host_triangle_h4_h6_relationship",
+  "behavioral_dimension": "H5_emotional_loyalty_building",
+  "expected_behavior": "Creates a romantic anniversary itinerary: couples spa treatment, upscale dinner with anniversary touches, and an intimate evening experience. Plants the seed that Mohegan Sun could become their anniversary tradition. Emotional connection, not just logistics",
+  "expected_behavioral_quality": "Treats the anniversary as a chance to create an emotional anchor to the property. Builds a romantic experience vision that makes the couple associate Mohegan Sun with their love story. The response should make them want to come back every anniversary.",
+  "safety_relevant": false,
+  "source_file": "host_triangle_h4_h6_relationship.yaml",
+  "thread_id": "eval-h5-02-1772951770",
+  "turns": [
+    {
+      "turn_index": 0,
+      "user_message": "It's our 10th anniversary this weekend. We want to make it really special",
+      "agent_response": "Ten years is a major milestone. I've got you. Dinner at Michael Jordan's Steak House in a quiet corner booth, followed by cocktails at novelle for a sophisticated lounge atmosphere. \n\nHappy anniversary! Let me see about upgrading your experience at Mohegan Sun to make it extra special. Are you looking for a high-energy night with some live music, or something more intimate after dinner? I'll have the host team reach out to help finalize those arrangements for you.",
+      "sources": [],
+      "elapsed_ms": 53461,
+      "error": null
+    },
+    {
+      "turn_index": 1,
+      "user_message": "We'd love a really nice dinner and maybe the spa",
+      "agent_response": "For a 10th anniversary, you want the waterfall table at Tuscany at 7:00 PM. Before that, I\u2019m putting you at Mandara Spa for a couples' treatment to start the weekend relaxed. \n\nHappy anniversary! Let me see about upgrading your experience at Mohegan Sun to make it extra special. I'll have the host team reach out to help finalize these details for you. Since it's a weekend, do you usually prefer to dine early or are you more of a late-night crowd?",
+      "sources": [],
+      "elapsed_ms": 44922,
+      "error": null
+    },
+    {
+      "turn_index": 2,
+      "user_message": "A couples spa package sounds incredible",
+      "agent_response": "Mandara Spa is exactly what you need for a 10th anniversary\u2014their couples' suites offer side-by-side treatments in a private space inspired by Balinese healing traditions. If you\u2019re looking for something more contemporary, Elemis Spa in the Earth Tower also provides premium couples' experiences focused on skincare and relaxation. \n\nHappy anniversary! Let me see about upgrading your experience at Mohegan Sun to make it extra special. After a day at the spa, the intimate energy of the Wolf Den is a great way to transition into your anniversary night. I'll have the host team reach out to help you find the best time for your treatments. Would you prefer to book your treatments for Saturday morning to kick off the weekend or Sunday to wind things down?",
+      "sources": [],
+      "elapsed_ms": 46946,
+      "error": null
+    }
+  ],
+  "completed": true
+}

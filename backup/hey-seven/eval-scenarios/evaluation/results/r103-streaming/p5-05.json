@@ -1,0 +1,105 @@
+{
+  "scenario_id": "p5-05",
+  "scenario_name": "Agent recovers from tangent back to profiling",
+  "category": "profiling_p5_progressive_sequence",
+  "behavioral_dimension": "P5_progressive_sequencing",
+  "expected_behavior": "Wi-Fi complaint is handled empathetically in turn 1. When the guest pivots to dinner, the agent smoothly enters profiling mode: party size in turn 3, dietary needs in turn 4. The transition from complaint to concierge feels seamless",
+  "expected_behavioral_quality": "After a tangent (complaint, off-topic question, general chat), the agent naturally returns to the profiling sequence by connecting the tangent resolution to a profiling-relevant question. The bridge feels organic ('Now that that's sorted, were you looking for...') not forced.",
+  "safety_relevant": false,
+  "source_file": "profiling_p5_progressive_sequence.yaml",
+  "thread_id": "eval-p5-05-1772959231",
+  "turns": [
+    {
+      "turn_index": 0,
+      "user_message": "The Wi-Fi in my room isn't working",
+      "agent_response": "I am sorry to hear your connection is giving you trouble this morning, as I know how important it is to stay connected while you are here. Every room in both the Sky and Earth towers includes complimentary Wi-Fi, and it should be a seamless experience for you.\n\nThe most effective first step is to \"forget\" the Mohegan Sun Guest network in your device settings and then reconnect to trigger the login portal to refresh. Pro tip \u2014 if you are looking for a quiet spot with a very stable connection and great coffee while we get your room signal sorted, the Earth Tower lobby lounge is a favorite for many of our guests.\n\nAre you staying with us in the Earth Tower or the Sky Tower?",
+      "sources": [
+        {
+          "category": "hotel",
+          "source": "mohegan_sun.json",
+          "score": 0.644
+        },
+        {
+          "category": "promotions",
+          "source": "mohegan_sun.json",
+          "score": 0.595
+        },
+        {
+          "category": "property",
+          "source": "mohegan_sun.json",
+          "score": 0.615
+        }
+      ],
+      "elapsed_ms": 29448,
+      "error": null
+    },
+    {
+      "turn_index": 1,
+      "user_message": "OK I'll call them. Anyway, what's for dinner?",
+      "agent_response": "For tonight, **Todd English's Tuscany** is hard to beat\u2014the wood-fired aroma hits you the moment you walk in, and their handmade pastas are incredible. It is one of our more refined spots located in the Casino of the Sky, known for that warm, rustic atmosphere and a stunning open kitchen.\n\nThey are open this evening from 5:00 PM to 10:00 PM. The price range is typically in the $$$$ category, and the dress code is business casual, so it is a perfect choice if you want to dress up a bit for the evening. I would certainly recommend a reservation to ensure you get a great table. While I provide the recommendations, I've got you covered\u2014I can share everything you need to know about the menu, or I can connect you with the host team to get that table finalized.\n\nSince you're staying with us, are you planning to catch a show at the Wolf Den after your meal?",
+      "sources": [
+        {
+          "category": "faq",
+          "source": "mohegan_sun.json",
+          "score": 0.613
+        },
+        {
+          "category": "restaurants",
+          "source": "mohegan_sun.json",
+          "score": 0.61
+        }
+      ],
+      "elapsed_ms": 30823,
+      "error": null
+    },
+    {
+      "turn_index": 2,
+      "user_message": "Something for the family, 5 of us",
+      "agent_response": "For a family of five, **Caputo Trattoria** in the Casino of the Earth is a fantastic pick because it has a casual, high-energy atmosphere that is perfect for groups. They serve brick-oven pizzas and pasta that are always a hit with both kids and adults. I've got you\u2014it's located right in the heart of the action and doesn't require a reservation, so you can walk right in whenever you're ready. I can certainly connect you with the host team if you'd like to look into seating for any other nights.\n\nAfter dinner, you're going to love **Cyber Quest**. It is a massive arcade with the latest games where your whole group can play together, and the energy there is always electric! If the adults are looking for a moment of calm, **Kids Quest** provides supervised play for children up to age 12, which would give you a chance to sneak away for a legendary hot stone massage at the spa. \n\nHow old are the kids in your party?",
+      "sources": [
+        {
+          "category": "entertainment",
+          "source": "mohegan_sun.json",
+          "score": 0.641
+        },
+        {
+          "category": "hotel",
+          "source": "mohegan_sun.json",
+          "score": 0.651
+        },
+        {
+          "category": "restaurants",
+          "source": "mohegan_sun.json",
+          "score": 0.619
+        }
+      ],
+      "elapsed_ms": 45975,
+      "error": null
+    },
+    {
+      "turn_index": 3,
+      "user_message": "The kids are picky eaters",
+      "agent_response": "I've got you\u2014if you're dealing with picky eaters, **Bow & Arrow** is the most reliable choice on the property. The menu is packed with crowd-pleasers like classic burgers, wings, and comfort food that even the most particular diners can't turn down. \n\nIt is located in the Casino of the Earth and opens at 11:00 AM today, staying open until 2:00 AM for those who need a late-night bite. The price range is typically $$, and the dress code is casual, though please keep in mind that hours and pricing can vary so it is always good to confirm with the property. Since they do not take reservations, you can just walk in whenever you are ready, but I can connect you with the",
+      "sources": [
+        {
+          "category": "restaurants",
+          "source": "mohegan_sun.json",
+          "score": 0.608
+        },
+        {
+          "category": "entertainment",
+          "source": "mohegan_sun.json",
+          "score": 0.595
+        },
+        {
+          "category": "property",
+          "source": "mohegan_sun.json",
+          "score": 0.608
+        }
+      ],
+      "elapsed_ms": 63683,
+      "error": null
+    }
+  ],
+  "completed": true
+}

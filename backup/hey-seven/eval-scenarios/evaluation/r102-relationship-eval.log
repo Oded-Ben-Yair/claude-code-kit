@@ -1,0 +1,1083 @@
+2026-03-07 18:57:32,554 INFO live_eval: Loading scenarios (pattern=relationship_*.yaml)...
+2026-03-07 18:57:32,572 INFO live_eval: Loaded 10 scenarios from 1 files
+2026-03-07 18:57:32,572 INFO live_eval: Building graph with gemini-3-flash-preview (timeout=90s)...
+2026-03-07 18:57:33,436 WARNING src.agent.regex_engine: google-re2 not available — falling back to stdlib re (ReDoS risk)
+2026-03-07 18:57:34,415 INFO src.agent.graph: Feature flags at graph build: {'ai_disclosure_enabled': True, 'whisper_planner_enabled': True, 'specialist_agents_enabled': True, 'comp_agent_enabled': True, 'spanish_support_enabled': True, 'human_like_delay_enabled': True, 'sentiment_detection_enabled': True, 'guest_profile_enabled': True, 'field_extraction_enabled': True, 'sentiment_llm_augmented': True, 'extraction_llm_augmented': True, 'profiling_enabled': True, 'incentives_enabled': True, 'few_shot_examples_enabled': True, 'model_routing_enabled': True}
+2026-03-07 18:57:34,438 INFO src.agent.graph: Custom 13-node StateGraph compiled successfully.
+2026-03-07 18:57:34,438 INFO live_eval: Streaming per-scenario results to tests/evaluation/r102-streaming
+2026-03-07 18:57:34,438 INFO live_eval: [1/10] Running scenario relationship-01: First-timer orientation — does agent profile through conversation?
+2026-03-07 18:57:34,575 INFO google_genai.models: AFC is enabled with max remote calls: 10.
+2026-03-07 18:57:36,500 INFO src.agent.guardrails: Semantic injection classifier: is_injection=False confidence=1.00
+2026-03-07 18:57:36,514 INFO google_genai.models: AFC is enabled with max remote calls: 10.
+2026-03-07 18:57:40,051 INFO src.agent.sentiment: LLM sentiment augmentation: neutral -> positive (conf=0.85)
+2026-03-07 18:57:40,053 INFO google_genai.models: AFC is enabled with max remote calls: 10.
+2026-03-07 18:57:45,755 INFO httpx: HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-embedding-001:batchEmbedContents "HTTP/1.1 200 OK"
+/home/odedbe/projects/hey-seven/src/rag/pipeline.py:1110: LangChainDeprecationWarning: The class `Chroma` was deprecated in LangChain 0.2.9 and will be removed in 1.0. An updated version of the class exists in the `langchain-chroma package and should be used instead. To use it run `pip install -U `langchain-chroma` and import as `from `langchain_chroma import Chroma``.
+  vectorstore = Chroma(
+2026-03-07 18:57:46,072 INFO chromadb.telemetry.product.posthog: Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+2026-03-07 18:57:46,274 INFO src.rag.pipeline: Loaded ChromaDB retriever from data/chroma
+2026-03-07 18:57:46,570 INFO httpx: HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-embedding-001:batchEmbedContents "HTTP/1.1 200 OK"
+2026-03-07 18:57:46,651 INFO httpx: HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-embedding-001:batchEmbedContents "HTTP/1.1 200 OK"
+2026-03-07 18:57:46,791 INFO google_genai.models: AFC is enabled with max remote calls: 10.
+2026-03-07 18:57:51,137 INFO google_genai.models: AFC is enabled with max remote calls: 10.
+2026-03-07 18:57:53,761 INFO src.agent.dispatch: Structured dispatch -> host (confidence=0.95, reason=The guest is a first-time visitor asking for general guidance and a starting poi)
+2026-03-07 18:57:53,761 INFO src.agent.dispatch: Dispatching to host agent (method=structured_output, model=gemini-3-flash-preview)
+2026-03-07 18:57:53,768 INFO src.agent.agents._base: R83: Injected 3 few-shot examples for host agent
+2026-03-07 18:57:53,788 INFO google_genai.models: AFC is enabled with max remote calls: 10.
+2026-03-07 18:57:58,665 INFO google_genai.models: AFC is enabled with max remote calls: 10.
+2026-03-07 18:58:02,214 INFO src.agent.profiling: Profiling extraction: filled=0/16 fields, keys=[], skipped=['guest_name', 'party_size', 'party_composition', 'visit_purpose', 'visit_duration']
+2026-03-07 18:58:02,214 INFO src.agent.profiling: Profiling state: phase=foundation, completeness=0.00, total_known=0, new_this_turn=0
+2026-03-07 18:58:02,264 INFO google_genai.models: AFC is enabled with max remote calls: 10.
+2026-03-07 18:58:05,994 INFO src.agent.compliance_gate: {"audit_event": "guardrail_triggered", "category": "celebration_detection", "query_type": null, "timestamp": 1772909885.994458, "action": "annotate", "severity": "INFO"}
+2026-03-07 18:58:05,996 INFO google_genai.models: AFC is enabled with max remote calls: 10.
+2026-03-07 18:58:09,310 INFO httpx: HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-embedding-001:batchEmbedContents "HTTP/1.1 200 OK"
+2026-03-07 18:58:09,313 INFO httpx: HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-embedding-001:batchEmbedContents "HTTP/1.1 200 OK"
+2026-03-07 18:58:09,322 INFO google_genai.models: AFC is enabled with max remote calls: 10.
+2026-03-07 18:58:13,022 INFO google_genai.models: AFC is enabled with max remote calls: 10.
+2026-03-07 18:58:20,412 INFO src.agent.dispatch: Structured dispatch -> host (confidence=0.90, reason=The query mentions a birthday weekend, which is a broad celebratory topic. Since)
+2026-03-07 18:58:20,412 INFO src.agent.dispatch: Dispatching to host agent (method=structured_output, model=gemini-3-flash-preview)
+2026-03-07 18:58:20,412 INFO src.agent.agents._base: R83: Injected 3 few-shot examples for host agent
+2026-03-07 18:58:20,412 INFO src.agent.agents._base: R85: Incentive section injected (completeness=0.00, agent=host)
+2026-03-07 18:58:20,413 INFO google_genai.models: AFC is enabled with max remote calls: 10.
+2026-03-07 18:58:31,078 INFO google_genai.models: AFC is enabled with max remote calls: 10.
+2026-03-07 18:58:34,836 INFO src.agent.profiling: Profiling extraction: filled=0/16 fields, keys=[], skipped=['guest_name', 'party_size', 'party_composition', 'visit_purpose', 'visit_duration']
+2026-03-07 18:58:34,837 INFO src.agent.profiling: Profiling state: phase=foundation, completeness=0.25, total_known=2, new_this_turn=0
+2026-03-07 18:58:34,838 INFO google_genai.models: AFC is enabled with max remote calls: 10.
+2026-03-07 18:58:39,214 INFO src.agent.dispatch: Retry path -- reusing specialist host (skipping dispatch)
+2026-03-07 18:58:39,214 INFO src.agent.dispatch: Dispatching to host agent (method=retry_reuse, model=gemini-3-flash-preview)
+2026-03-07 18:58:39,214 INFO src.agent.agents._base: R83: Injected 3 few-shot examples for host agent
+2026-03-07 18:58:39,215 INFO src.agent.agents._base: R85: Incentive section injected (completeness=0.25, agent=host)
+2026-03-07 18:58:39,215 INFO google_genai.models: AFC is enabled with max remote calls: 10.
+2026-03-07 18:58:55,502 INFO google_genai.models: AFC is enabled with max remote calls: 10.
+2026-03-07 18:58:59,566 INFO src.agent.profiling: Profiling extraction: filled=0/16 fields, keys=[], skipped=['guest_name', 'party_size', 'party_composition', 'visit_purpose', 'visit_duration']
+2026-03-07 18:58:59,567 INFO src.agent.profiling: Profiling state: phase=foundation, completeness=0.25, total_known=2, new_this_turn=0
+2026-03-07 18:58:59,569 INFO google_genai.models: AFC is enabled with max remote calls: 10.
+2026-03-07 18:59:03,545 WARNING src.agent.nodes: Fallback triggered. Reason: The response violates the 'Read-
+2026-03-07 18:59:03,546 INFO src.agent.nodes: R89: Recovering specialist response (420 chars) instead of canned fallback
+2026-03-07 18:59:03,548 INFO google_genai.models: AFC is enabled with max remote calls: 10.
+2026-03-07 18:59:06,724 INFO src.agent.guardrails: Semantic injection classifier: is_injection=False confidence=1.00
+2026-03-07 18:59:06,726 INFO google_genai.models: AFC is enabled with max remote calls: 10.
+2026-03-07 18:59:10,627 INFO httpx: HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-embedding-001:batchEmbedContents "HTTP/1.1 200 OK"
+2026-03-07 18:59:10,640 INFO httpx: HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-embedding-001:batchEmbedContents "HTTP/1.1 200 OK"
+2026-03-07 18:59:10,649 INFO google_genai.models: AFC is enabled with max remote calls: 10.
+2026-03-07 18:59:15,579 INFO google_genai.models: AFC is enabled with max remote calls: 10.
+2026-03-07 18:59:20,486 INFO src.agent.dispatch: Structured dispatch -> dining (confidence=1.00, reason=The query 'She loves Italian food' specifically mentions food preferences and al)
+2026-03-07 18:59:20,486 INFO src.agent.dispatch: Dispatching to dining agent (method=structured_output, model=gemini-3-flash-preview)
+2026-03-07 18:59:20,487 INFO src.agent.agents._base: R83: Injected 3 few-shot examples for dining agent
+2026-03-07 18:59:20,487 INFO src.agent.agents._base: R85: Incentive section injected (completeness=0.00, agent=dining)
+2026-03-07 18:59:20,487 INFO google_genai.models: AFC is enabled with max remote calls: 10.
+2026-03-07 18:59:33,438 INFO google_genai.models: AFC is enabled with max remote calls: 10.
+2026-03-07 18:59:38,571 INFO src.agent.profiling: Profiling extraction: filled=0/16 fields, keys=[], skipped=['guest_name', 'party_size', 'party_composition', 'visit_purpose', 'visit_duration']
+2026-03-07 18:59:38,571 INFO src.agent.profiling: Profiling state: phase=foundation, completeness=0.25, total_known=2, new_this_turn=0
+2026-03-07 18:59:38,573 INFO google_genai.models: AFC is enabled with max remote calls: 10.
+2026-03-07 18:59:42,515 INFO src.agent.dispatch: Retry path -- reusing specialist dining (skipping dispatch)
+2026-03-07 18:59:42,515 INFO src.agent.dispatch: Dispatching to dining agent (method=retry_reuse, model=gemini-3-flash-preview)
+2026-03-07 18:59:42,516 INFO src.agent.agents._base: R83: Injected 3 few-shot examples for dining agent
+2026-03-07 18:59:42,516 INFO src.agent.agents._base: R85: Incentive section injected (completeness=0.25, agent=dining)
+2026-03-07 18:59:42,516 INFO google_genai.models: AFC is enabled with max remote calls: 10.
+2026-03-07 18:59:55,497 INFO google_genai.models: AFC is enabled with max remote calls: 10.
+2026-03-07 18:59:59,451 INFO src.agent.profiling: Profiling extraction: filled=0/16 fields, keys=[], skipped=['guest_name', 'party_size', 'party_composition', 'visit_purpose', 'visit_duration']
+2026-03-07 18:59:59,451 INFO src.agent.profiling: Profiling state: phase=foundation, completeness=0.25, total_known=2, new_this_turn=0
+2026-03-07 18:59:59,453 INFO google_genai.models: AFC is enabled with max remote calls: 10.
+2026-03-07 19:00:03,900 WARNING src.agent.nodes: Fallback triggered. Reason: 
+2026-03-07 19:00:03,900 INFO src.agent.nodes: R89: Recovering specialist response (688 chars) instead of canned fallback
+2026-03-07 19:00:03,902 INFO src.agent.compliance_gate: {"audit_event": "guardrail_triggered", "category": "confirmation_detection", "query_type": "greeting", "timestamp": 1772910003.9023974, "action": "shortcut", "severity": "INFO"}
+2026-03-07 19:00:03,904 INFO src.agent.compliance_gate: {"audit_event": "guardrail_triggered", "category": "confirmation_detection", "query_type": "greeting", "timestamp": 1772910003.904812, "action": "shortcut", "severity": "INFO"}
+2026-03-07 19:00:03,905 INFO live_eval:   -> OK | 5 turns | avg 29893ms
+2026-03-07 19:00:04,407 INFO live_eval: [2/10] Running scenario relationship-02: Anniversary couple — does agent build a complete plan?
+2026-03-07 19:00:04,409 INFO src.agent.compliance_gate: {"audit_event": "guardrail_triggered", "category": "celebration_detection", "query_type": null, "timestamp": 1772910004.4098713, "action": "annotate", "severity": "INFO"}
+2026-03-07 19:00:04,411 INFO google_genai.models: AFC is enabled with max remote calls: 10.
+2026-03-07 19:00:08,095 INFO httpx: HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-embedding-001:batchEmbedContents "HTTP/1.1 200 OK"
+2026-03-07 19:00:08,099 INFO httpx: HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-embedding-001:batchEmbedContents "HTTP/1.1 200 OK"
+2026-03-07 19:00:08,108 INFO google_genai.models: AFC is enabled with max remote calls: 10.
+2026-03-07 19:00:12,807 INFO google_genai.models: AFC is enabled with max remote calls: 10.
+2026-03-07 19:00:17,072 INFO src.agent.dispatch: Structured dispatch -> host (confidence=0.90, reason=The guest is asking for general assistance in planning an anniversary celebratio)
+2026-03-07 19:00:17,072 INFO src.agent.dispatch: Dispatching to host agent (method=structured_output, model=gemini-3-flash-preview)
+2026-03-07 19:00:17,073 INFO src.agent.agents._base: R83: Injected 3 few-shot examples for host agent
+2026-03-07 19:00:17,073 INFO src.agent.agents._base: R85: Incentive section injected (completeness=0.00, agent=host)
+2026-03-07 19:00:17,073 INFO google_genai.models: AFC is enabled with max remote calls: 10.
+2026-03-07 19:00:38,539 INFO google_genai.models: AFC is enabled with max remote calls: 10.
+2026-03-07 19:00:42,313 INFO src.agent.profiling: Profiling extraction: filled=0/16 fields, keys=[], skipped=['guest_name', 'party_size', 'party_composition', 'visit_purpose', 'visit_duration']
+2026-03-07 19:00:42,313 INFO src.agent.profiling: Profiling state: phase=foundation, completeness=0.10, total_known=1, new_this_turn=0
+2026-03-07 19:00:42,314 INFO google_genai.models: AFC is enabled with max remote calls: 10.
+2026-03-07 19:00:46,674 INFO src.agent.dispatch: Retry path -- reusing specialist host (skipping dispatch)
+2026-03-07 19:00:46,674 INFO src.agent.dispatch: Dispatching to host agent (method=retry_reuse, model=gemini-3-flash-preview)
+2026-03-07 19:00:46,674 INFO src.agent.agents._base: R83: Injected 3 few-shot examples for host agent
+2026-03-07 19:00:46,674 INFO src.agent.agents._base: R85: Incentive section injected (completeness=0.10, agent=host)
+2026-03-07 19:00:46,675 INFO google_genai.models: AFC is enabled with max remote calls: 10.
+2026-03-07 19:00:56,551 INFO google_genai.models: AFC is enabled with max remote calls: 10.
+2026-03-07 19:01:02,249 INFO src.agent.profiling: Profiling extraction: filled=0/16 fields, keys=[], skipped=['guest_name', 'party_size', 'party_composition', 'visit_purpose', 'visit_duration']
+2026-03-07 19:01:02,249 INFO src.agent.profiling: Profiling state: phase=foundation, completeness=0.10, total_known=1, new_this_turn=0
+2026-03-07 19:01:02,251 INFO google_genai.models: AFC is enabled with max remote calls: 10.
+2026-03-07 19:01:06,266 WARNING src.agent.nodes: Fallback triggered. Reason: 
+2026-03-07 19:01:06,266 INFO src.agent.nodes: R89: Recovering specialist response (507 chars) instead of canned fallback
+2026-03-07 19:01:06,269 INFO google_genai.models: AFC is enabled with max remote calls: 10.
+2026-03-07 19:01:08,328 INFO src.agent.guardrails: Semantic injection classifier: is_injection=False confidence=0.99
+2026-03-07 19:01:08,330 INFO google_genai.models: AFC is enabled with max remote calls: 10.
+2026-03-07 19:01:12,014 INFO httpx: HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-embedding-001:batchEmbedContents "HTTP/1.1 200 OK"
+2026-03-07 19:01:12,016 INFO httpx: HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-embedding-001:batchEmbedContents "HTTP/1.1 200 OK"
+2026-03-07 19:01:12,025 INFO google_genai.models: AFC is enabled with max remote calls: 10.
+2026-03-07 19:01:16,406 INFO google_genai.models: AFC is enabled with max remote calls: 10.
+2026-03-07 19:01:21,889 INFO src.agent.dispatch: Structured dispatch -> host (confidence=0.95, reason=The query contains elements of both dining (steak) and entertainment (fun after )
+2026-03-07 19:01:21,889 INFO src.agent.dispatch: Dispatching to host agent (method=structured_output, model=gemini-3-flash-preview)
+2026-03-07 19:01:21,890 INFO src.agent.agents._base: R83: Injected 3 few-shot examples for host agent
+2026-03-07 19:01:21,890 INFO src.agent.agents._base: R85: Incentive section injected (completeness=0.00, agent=host)
+2026-03-07 19:01:21,890 INFO google_genai.models: AFC is enabled with max remote calls: 10.
+2026-03-07 19:01:38,645 INFO google_genai.models: AFC is enabled with max remote calls: 10.
+2026-03-07 19:01:42,532 INFO src.agent.profiling: Profiling extraction: filled=0/16 fields, keys=[], skipped=['guest_name', 'party_size', 'party_composition', 'visit_purpose', 'visit_duration']
+2026-03-07 19:01:42,533 INFO src.agent.profiling: Profiling state: phase=foundation, completeness=0.10, total_known=1, new_this_turn=0
+2026-03-07 19:01:42,534 INFO google_genai.models: AFC is enabled with max remote calls: 10.
+2026-03-07 19:01:50,045 INFO src.agent.dispatch: Retry path -- reusing specialist host (skipping dispatch)
+2026-03-07 19:01:50,045 INFO src.agent.dispatch: Dispatching to host agent (method=retry_reuse, model=gemini-3-flash-preview)
+2026-03-07 19:01:50,045 INFO src.agent.agents._base: R83: Injected 3 few-shot examples for host agent
+2026-03-07 19:01:50,045 INFO src.agent.agents._base: R85: Incentive section injected (completeness=0.10, agent=host)
+2026-03-07 19:01:50,046 INFO google_genai.models: AFC is enabled with max remote calls: 10.
+2026-03-07 19:02:13,411 INFO google_genai.models: AFC is enabled with max remote calls: 10.
+2026-03-07 19:02:17,212 INFO src.agent.profiling: Profiling extraction: filled=0/16 fields, keys=[], skipped=['guest_name', 'party_size', 'party_composition', 'visit_purpose', 'visit_duration']
+2026-03-07 19:02:17,212 INFO src.agent.profiling: Profiling state: phase=foundation, completeness=0.10, total_known=1, new_this_turn=0
+2026-03-07 19:02:17,213 INFO google_genai.models: AFC is enabled with max remote calls: 10.
+2026-03-07 19:02:21,649 WARNING src.agent.nodes: Fallback triggered. Reason: The response violates the 'Read-only' criterion by promising that a host team will reach out to help finalize details and offering to look into upgrading the user's experience. Additionally, it hallucinates an anniversary context not present
+2026-03-07 19:02:21,649 INFO src.agent.nodes: R89: Recovering specialist response (383 chars) instead of canned fallback
+2026-03-07 19:02:21,652 INFO google_genai.models: AFC is enabled with max remote calls: 10.
+2026-03-07 19:02:24,445 INFO src.agent.guardrails: Semantic injection classifier: is_injection=False confidence=0.99
+2026-03-07 19:02:24,448 INFO google_genai.models: AFC is enabled with max remote calls: 10.
+2026-03-07 19:02:28,719 INFO httpx: HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-embedding-001:batchEmbedContents "HTTP/1.1 200 OK"
+2026-03-07 19:02:28,728 INFO httpx: HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-embedding-001:batchEmbedContents "HTTP/1.1 200 OK"
+2026-03-07 19:02:28,736 INFO google_genai.models: AFC is enabled with max remote calls: 10.
+2026-03-07 19:02:32,819 INFO google_genai.models: AFC is enabled with max remote calls: 10.
+2026-03-07 19:02:36,566 INFO src.agent.dispatch: Structured dispatch -> entertainment (confidence=0.85, reason=The guest's query 'What about Saturday?' is a temporal follow-up. Since the majo)
+2026-03-07 19:02:36,567 INFO src.agent.dispatch: Dispatching to entertainment agent (method=structured_output, model=gemini-3-flash-preview)
+2026-03-07 19:02:36,567 INFO src.agent.agents._base: R83: Injected 3 few-shot examples for entertainment agent
+2026-03-07 19:02:36,567 INFO src.agent.agents._base: R85: Incentive section injected (completeness=0.00, agent=entertainment)
+2026-03-07 19:02:36,568 INFO google_genai.models: AFC is enabled with max remote calls: 10.
+2026-03-07 19:02:45,899 INFO google_genai.models: AFC is enabled with max remote calls: 10.
+2026-03-07 19:02:50,049 INFO src.agent.profiling: Profiling extraction: filled=0/16 fields, keys=[], skipped=['guest_name', 'party_size', 'party_composition', 'visit_purpose', 'visit_duration']
+2026-03-07 19:02:50,049 INFO src.agent.profiling: Profiling state: phase=foundation, completeness=0.10, total_known=1, new_this_turn=0
+2026-03-07 19:02:50,050 INFO google_genai.models: AFC is enabled with max remote calls: 10.
+2026-03-07 19:02:54,071 INFO src.agent.dispatch: Retry path -- reusing specialist entertainment (skipping dispatch)
+2026-03-07 19:02:54,071 INFO src.agent.dispatch: Dispatching to entertainment agent (method=retry_reuse, model=gemini-3-flash-preview)
+2026-03-07 19:02:54,072 INFO src.agent.agents._base: R83: Injected 3 few-shot examples for entertainment agent
+2026-03-07 19:02:54,072 INFO src.agent.agents._base: R85: Incentive section injected (completeness=0.10, agent=entertainment)
+2026-03-07 19:02:54,072 INFO google_genai.models: AFC is enabled with max remote calls: 10.
+2026-03-07 19:03:03,876 INFO google_genai.models: AFC is enabled with max remote calls: 10.
+2026-03-07 19:03:07,473 INFO src.agent.profiling: Profiling extraction: filled=0/16 fields, keys=[], skipped=['guest_name', 'party_size', 'party_composition', 'visit_purpose', 'visit_duration']
+2026-03-07 19:03:07,473 INFO src.agent.profiling: Profiling state: phase=foundation, completeness=0.10, total_known=1, new_this_turn=0
+2026-03-07 19:03:07,475 INFO google_genai.models: AFC is enabled with max remote calls: 10.
+2026-03-07 19:03:11,502 WARNING src.agent.nodes: Fallback triggered. Reason: 
+2026-03-07 19:03:11,502 INFO src.agent.nodes: R89: Recovering specialist response (1017 chars) instead of canned fallback
+2026-03-07 19:03:11,505 INFO google_genai.models: AFC is enabled with max remote calls: 10.
+2026-03-07 19:03:15,317 INFO src.agent.guardrails: Semantic injection classifier: is_injection=False confidence=1.00
+2026-03-07 19:03:15,319 INFO google_genai.models: AFC is enabled with max remote calls: 10.
+2026-03-07 19:03:17,862 INFO src.agent.sentiment: LLM sentiment augmentation: neutral -> neutral (conf=0.95)
+2026-03-07 19:03:17,864 INFO google_genai.models: AFC is enabled with max remote calls: 10.
+2026-03-07 19:03:23,185 INFO httpx: HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-embedding-001:batchEmbedContents "HTTP/1.1 200 OK"
+2026-03-07 19:03:23,264 INFO httpx: HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-embedding-001:batchEmbedContents "HTTP/1.1 200 OK"
+2026-03-07 19:03:23,274 INFO google_genai.models: AFC is enabled with max remote calls: 10.
+2026-03-07 19:03:27,909 INFO google_genai.models: AFC is enabled with max remote calls: 10.
+2026-03-07 19:03:51,661 INFO src.agent.dispatch: Structured dispatch -> host (confidence=0.85, reason=The guest is expressing a general interest in trying the casino for the first ti)
+2026-03-07 19:03:51,662 INFO src.agent.dispatch: Dispatching to host agent (method=structured_output, model=gemini-3-flash-preview)
+2026-03-07 19:03:51,662 INFO src.agent.agents._base: R83: Injected 3 few-shot examples for host agent
+2026-03-07 19:03:51,662 INFO src.agent.agents._base: R85: Incentive section injected (completeness=0.00, agent=host)
+2026-03-07 19:03:51,663 INFO google_genai.models: AFC is enabled with max remote calls: 10.
+2026-03-07 19:04:03,031 INFO google_genai.models: AFC is enabled with max remote calls: 10.
+2026-03-07 19:04:06,859 INFO src.agent.profiling: Profiling extraction: filled=0/16 fields, keys=[], skipped=['guest_name', 'party_size', 'party_composition', 'visit_purpose', 'visit_duration']
+2026-03-07 19:04:06,860 INFO src.agent.profiling: Profiling state: phase=foundation, completeness=0.10, total_known=1, new_this_turn=0
+2026-03-07 19:04:06,861 INFO google_genai.models: AFC is enabled with max remote calls: 10.
+2026-03-07 19:04:10,804 INFO src.agent.dispatch: Retry path -- reusing specialist host (skipping dispatch)
+2026-03-07 19:04:10,804 INFO src.agent.dispatch: Dispatching to host agent (method=retry_reuse, model=gemini-3-flash-preview)
+2026-03-07 19:04:10,805 INFO src.agent.agents._base: R83: Injected 3 few-shot examples for host agent
+2026-03-07 19:04:10,805 INFO src.agent.agents._base: R85: Incentive section injected (completeness=0.10, agent=host)
+2026-03-07 19:04:10,805 INFO google_genai.models: AFC is enabled with max remote calls: 10.
+2026-03-07 19:04:18,883 INFO google_genai.models: AFC is enabled with max remote calls: 10.
+2026-03-07 19:04:24,148 INFO src.agent.profiling: Profiling extraction: filled=0/16 fields, keys=[], skipped=['guest_name', 'party_size', 'party_composition', 'visit_purpose', 'visit_duration']
+2026-03-07 19:04:24,148 INFO src.agent.profiling: Profiling state: phase=foundation, completeness=0.10, total_known=1, new_this_turn=0
+2026-03-07 19:04:24,150 INFO google_genai.models: AFC is enabled with max remote calls: 10.
+2026-03-07 19:04:27,844 WARNING src.agent.nodes: Fallback triggered. Reason: 
+2026-03-07 19:04:27,844 INFO src.agent.nodes: R89: Recovering specialist response (561 chars) instead of canned fallback
+2026-03-07 19:04:27,846 INFO google_genai.models: AFC is enabled with max remote calls: 10.
+2026-03-07 19:04:30,179 INFO src.agent.guardrails: Semantic injection classifier: is_injection=False confidence=1.00
+2026-03-07 19:04:30,181 INFO google_genai.models: AFC is enabled with max remote calls: 10.
+2026-03-07 19:04:33,600 INFO httpx: HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-embedding-001:batchEmbedContents "HTTP/1.1 200 OK"
+2026-03-07 19:04:33,608 INFO httpx: HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-embedding-001:batchEmbedContents "HTTP/1.1 200 OK"
+2026-03-07 19:04:33,617 INFO google_genai.models: AFC is enabled with max remote calls: 10.
+2026-03-07 19:04:37,846 INFO google_genai.models: AFC is enabled with max remote calls: 10.
+2026-03-07 19:04:44,217 INFO src.agent.dispatch: Structured dispatch -> host (confidence=0.90, reason=The query is a general expression of gratitude and excitement that does not spec)
+2026-03-07 19:04:44,217 INFO src.agent.dispatch: Dispatching to host agent (method=structured_output, model=gemini-3-flash-preview)
+2026-03-07 19:04:44,217 INFO src.agent.agents._base: R83: Injected 3 few-shot examples for host agent
+2026-03-07 19:04:44,217 INFO src.agent.agents._base: R85: Incentive section injected (completeness=0.00, agent=host)
+2026-03-07 19:04:44,218 INFO google_genai.models: AFC is enabled with max remote calls: 10.
+2026-03-07 19:04:58,790 INFO google_genai.models: AFC is enabled with max remote calls: 10.
+2026-03-07 19:05:02,677 INFO src.agent.profiling: Profiling extraction: filled=0/16 fields, keys=[], skipped=['guest_name', 'party_size', 'party_composition', 'visit_purpose', 'visit_duration']
+2026-03-07 19:05:02,677 INFO src.agent.profiling: Profiling state: phase=foundation, completeness=0.10, total_known=1, new_this_turn=0
+2026-03-07 19:05:02,678 INFO google_genai.models: AFC is enabled with max remote calls: 10.
+2026-03-07 19:05:11,537 INFO src.agent.dispatch: Retry path -- reusing specialist host (skipping dispatch)
+2026-03-07 19:05:11,538 INFO src.agent.dispatch: Dispatching to host agent (method=retry_reuse, model=gemini-3-flash-preview)
+2026-03-07 19:05:11,538 INFO src.agent.agents._base: R83: Injected 3 few-shot examples for host agent
+2026-03-07 19:05:11,538 INFO src.agent.agents._base: R85: Incentive section injected (completeness=0.10, agent=host)
+2026-03-07 19:05:11,539 INFO google_genai.models: AFC is enabled with max remote calls: 10.
+2026-03-07 19:05:23,616 INFO google_genai.models: AFC is enabled with max remote calls: 10.
+2026-03-07 19:05:29,068 INFO src.agent.profiling: Profiling extraction: filled=0/16 fields, keys=[], skipped=['guest_name', 'party_size', 'party_composition', 'visit_purpose', 'visit_duration']
+2026-03-07 19:05:29,068 INFO src.agent.profiling: Profiling state: phase=foundation, completeness=0.10, total_known=1, new_this_turn=0
+2026-03-07 19:05:29,070 INFO google_genai.models: AFC is enabled with max remote calls: 10.
+2026-03-07 19:05:32,854 WARNING src.agent.nodes: Fallback triggered. Reason: 
+2026-03-07 19:05:32,854 INFO src.agent.nodes: R89: Recovering specialist response (668 chars) instead of canned fallback
+2026-03-07 19:05:32,855 INFO live_eval:   -> OK | 5 turns | avg 65689ms
+2026-03-07 19:05:33,356 INFO live_eval: [3/10] Running scenario relationship-03: Frustrated guest after bad beat — emotional arc from upset to warmed up
+2026-03-07 19:05:33,360 INFO google_genai.models: AFC is enabled with max remote calls: 10.
+2026-03-07 19:05:36,133 INFO src.agent.guardrails: Semantic injection classifier: is_injection=False confidence=1.00
+2026-03-07 19:05:36,135 INFO google_genai.models: AFC is enabled with max remote calls: 10.
+2026-03-07 19:05:39,251 INFO src.agent.sentiment: LLM sentiment augmentation: neutral -> frustrated (conf=0.98)
+2026-03-07 19:05:39,252 INFO google_genai.models: AFC is enabled with max remote calls: 10.
+2026-03-07 19:05:44,348 INFO httpx: HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-embedding-001:batchEmbedContents "HTTP/1.1 200 OK"
+2026-03-07 19:05:44,348 INFO httpx: HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-embedding-001:batchEmbedContents "HTTP/1.1 200 OK"
+2026-03-07 19:05:44,359 INFO google_genai.models: AFC is enabled with max remote calls: 10.
+2026-03-07 19:05:48,489 INFO google_genai.models: AFC is enabled with max remote calls: 10.
+2026-03-07 19:06:03,603 INFO src.agent.dispatch: Structured dispatch -> comp (confidence=0.85, reason=The guest is expressing frustration regarding significant gaming losses at black)
+2026-03-07 19:06:03,603 INFO src.agent.nodes: R83 model routing: Pro (sentiment=frustrated)
+2026-03-07 19:06:03,603 INFO src.agent.dispatch: Dispatching to comp agent (method=structured_output, model=gemini-3.1-pro-preview)
+2026-03-07 19:06:03,603 INFO src.agent.agents._base: R83: Injected 3 few-shot examples for comp agent
+2026-03-07 19:06:03,603 INFO src.agent.agents._base: R82 1E: Frustration suppression activated for comp agent (sentiment=frustrated)
+2026-03-07 19:06:03,603 INFO src.agent.agents._base: R98: CompStrategy section injected (agent=comp)
+2026-03-07 19:06:03,604 INFO google_genai.models: AFC is enabled with max remote calls: 10.
+2026-03-07 19:06:16,472 INFO google_genai.models: AFC is enabled with max remote calls: 10.
+2026-03-07 19:06:21,452 INFO src.agent.profiling: Profiling extraction: filled=0/16 fields, keys=[], skipped=['guest_name', 'party_size', 'party_composition', 'visit_purpose', 'visit_duration']
+2026-03-07 19:06:21,452 INFO src.agent.profiling: Profiling state: phase=foundation, completeness=0.15, total_known=1, new_this_turn=0
+2026-03-07 19:06:21,454 INFO google_genai.models: AFC is enabled with max remote calls: 10.
+2026-03-07 19:06:25,173 INFO src.agent.dispatch: Retry path -- reusing specialist comp (skipping dispatch)
+2026-03-07 19:06:25,173 INFO src.agent.nodes: R83 model routing: Pro (sentiment=frustrated)
+2026-03-07 19:06:25,173 INFO src.agent.dispatch: Dispatching to comp agent (method=retry_reuse, model=gemini-3.1-pro-preview)
+2026-03-07 19:06:25,173 INFO src.agent.agents._base: R83: Injected 3 few-shot examples for comp agent
+2026-03-07 19:06:25,174 INFO src.agent.agents._base: R82 1E: Frustration suppression activated for comp agent (sentiment=frustrated)
+2026-03-07 19:06:25,174 INFO src.agent.agents._base: R98: CompStrategy section injected (agent=comp)
+2026-03-07 19:06:25,219 INFO src.agent.agents._base: R83: Using Pro model (gemini-3.1-pro-preview) for comp agent
+2026-03-07 19:06:25,220 INFO google_genai.models: AFC is enabled with max remote calls: 10.
+2026-03-07 19:06:32,513 INFO google_genai.models: AFC is enabled with max remote calls: 10.
+2026-03-07 19:06:36,162 INFO src.agent.profiling: Profiling extraction: filled=0/16 fields, keys=[], skipped=['guest_name', 'party_size', 'party_composition', 'visit_purpose', 'visit_duration']
+2026-03-07 19:06:36,162 INFO src.agent.profiling: Profiling state: phase=foundation, completeness=0.15, total_known=1, new_this_turn=0
+2026-03-07 19:06:36,164 INFO google_genai.models: AFC is enabled with max remote calls: 10.
+2026-03-07 19:06:39,563 WARNING src.agent.nodes: Fallback triggered. Reason: The user expresses distress over a significant financial loss and indicates they are 'done'. The response fails to provide required responsible gaming helpline information and inappropriately upsells property services by offering to connect the user with a dedicated host, violating safety criteria for problem gambling/crisis scenarios.
+2026-03-07 19:06:39,563 INFO src.agent.nodes: R89: Recovering specialist response (178 chars) instead of canned fallback
+2026-03-07 19:06:39,566 INFO google_genai.models: AFC is enabled with max remote calls: 10.
+2026-03-07 19:06:41,759 INFO src.agent.guardrails: Semantic injection classifier: is_injection=False confidence=0.99
+2026-03-07 19:06:41,762 INFO google_genai.models: AFC is enabled with max remote calls: 10.
+2026-03-07 19:06:46,998 INFO httpx: HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-embedding-001:batchEmbedContents "HTTP/1.1 200 OK"
+2026-03-07 19:06:47,010 INFO httpx: HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-embedding-001:batchEmbedContents "HTTP/1.1 200 OK"
+2026-03-07 19:06:47,019 INFO google_genai.models: AFC is enabled with max remote calls: 10.
+2026-03-07 19:06:51,498 INFO google_genai.models: AFC is enabled with max remote calls: 10.
+2026-03-07 19:06:54,215 INFO src.agent.dispatch: Structured dispatch -> dining (confidence=0.95, reason=The query refers to bourbon and an old fashioned cocktail, which are items typic)
+2026-03-07 19:06:54,215 INFO src.agent.dispatch: Dispatching to dining agent (method=structured_output, model=gemini-3-flash-preview)
+2026-03-07 19:06:54,216 INFO src.agent.agents._base: R83: Injected 3 few-shot examples for dining agent
+2026-03-07 19:06:54,216 INFO google_genai.models: AFC is enabled with max remote calls: 10.
+2026-03-07 19:07:07,213 INFO google_genai.models: AFC is enabled with max remote calls: 10.
+2026-03-07 19:07:11,399 INFO src.agent.profiling: Profiling extraction: filled=0/16 fields, keys=[], skipped=['guest_name', 'party_size', 'party_composition', 'visit_purpose', 'visit_duration']
+2026-03-07 19:07:11,400 INFO src.agent.profiling: Profiling state: phase=foundation, completeness=0.15, total_known=1, new_this_turn=0
+2026-03-07 19:07:11,401 INFO google_genai.models: AFC is enabled with max remote calls: 10.
+2026-03-07 19:07:16,974 INFO google_genai.models: AFC is enabled with max remote calls: 10.
+2026-03-07 19:07:20,096 INFO src.agent.guardrails: Semantic injection classifier: is_injection=False confidence=0.99
+2026-03-07 19:07:20,098 INFO google_genai.models: AFC is enabled with max remote calls: 10.
+2026-03-07 19:07:24,630 INFO httpx: HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-embedding-001:batchEmbedContents "HTTP/1.1 200 OK"
+2026-03-07 19:07:24,631 INFO httpx: HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-embedding-001:batchEmbedContents "HTTP/1.1 200 OK"
+2026-03-07 19:07:24,641 INFO google_genai.models: AFC is enabled with max remote calls: 10.
+2026-03-07 19:07:28,968 INFO google_genai.models: AFC is enabled with max remote calls: 10.
+2026-03-07 19:07:30,983 INFO src.agent.dispatch: Structured dispatch -> entertainment (confidence=0.95, reason=The guest expressed interest in the spa, which is explicitly handled by the ente)
+2026-03-07 19:07:30,983 INFO src.agent.nodes: R83 model routing: Pro (sentiment=negative)
+2026-03-07 19:07:30,983 INFO src.agent.dispatch: Dispatching to entertainment agent (method=structured_output, model=gemini-3.1-pro-preview)
+2026-03-07 19:07:30,984 INFO src.agent.agents._base: R83: Injected 3 few-shot examples for entertainment agent
+2026-03-07 19:07:30,985 INFO google_genai.models: AFC is enabled with max remote calls: 10.
+2026-03-07 19:07:52,791 INFO google_genai.models: AFC is enabled with max remote calls: 10.
+2026-03-07 19:07:56,832 INFO src.agent.profiling: Profiling extraction: filled=0/16 fields, keys=[], skipped=['guest_name', 'party_size', 'party_composition', 'visit_purpose', 'visit_duration']
+2026-03-07 19:07:56,832 INFO src.agent.profiling: Profiling state: phase=foundation, completeness=0.15, total_known=1, new_this_turn=0
+2026-03-07 19:07:56,834 INFO google_genai.models: AFC is enabled with max remote calls: 10.
+2026-03-07 19:08:01,251 WARNING src.agent.nodes: Validation structured output parsing failed: Failed to parse ValidationResult from completion {}. Got: 1 validation error for ValidationResult
+status
+  Field required [type=missing, input_value={}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.12/v/missing
+For troubleshooting, visit: https://docs.langchain.com/oss/python/langchain/errors/OUTPUT_PARSING_FAILURE 
+2026-03-07 19:08:01,252 WARNING src.agent.nodes: Degraded-pass: serving unvalidated response (attempt 0, validator unavailable, grounding present)
+2026-03-07 19:08:01,257 INFO google_genai.models: AFC is enabled with max remote calls: 10.
+2026-03-07 19:08:04,571 INFO src.agent.guardrails: Semantic injection classifier: is_injection=False confidence=1.00
+2026-03-07 19:08:04,573 INFO google_genai.models: AFC is enabled with max remote calls: 10.
+2026-03-07 19:08:07,904 INFO httpx: HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-embedding-001:batchEmbedContents "HTTP/1.1 200 OK"
+2026-03-07 19:08:07,905 INFO httpx: HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-embedding-001:batchEmbedContents "HTTP/1.1 200 OK"
+2026-03-07 19:08:07,915 INFO google_genai.models: AFC is enabled with max remote calls: 10.
+2026-03-07 19:08:11,876 INFO google_genai.models: AFC is enabled with max remote calls: 10.
+2026-03-07 19:08:15,225 INFO src.agent.dispatch: Structured dispatch -> host (confidence=0.90, reason=The guest query is a general closing statement and doesn't fall into a specific )
+2026-03-07 19:08:15,225 INFO src.agent.dispatch: Dispatching to host agent (method=structured_output, model=gemini-3-flash-preview)
+2026-03-07 19:08:15,225 INFO src.agent.agents._base: R83: Injected 3 few-shot examples for host agent
+2026-03-07 19:08:15,226 INFO google_genai.models: AFC is enabled with max remote calls: 10.
+2026-03-07 19:08:29,532 INFO google_genai.models: AFC is enabled with max remote calls: 10.
+2026-03-07 19:08:33,143 INFO src.agent.profiling: Profiling extraction: filled=0/16 fields, keys=[], skipped=['guest_name', 'party_size', 'party_composition', 'visit_purpose', 'visit_duration']
+2026-03-07 19:08:33,143 INFO src.agent.profiling: Profiling state: phase=foundation, completeness=0.15, total_known=1, new_this_turn=0
+2026-03-07 19:08:33,145 INFO google_genai.models: AFC is enabled with max remote calls: 10.
+2026-03-07 19:08:37,053 INFO live_eval:   -> OK | 4 turns | avg 45923ms
+2026-03-07 19:08:37,554 INFO live_eval: [4/10] Running scenario relationship-04: Solo regular — does agent recognize loyalty and personalize?
+2026-03-07 19:08:37,560 INFO google_genai.models: AFC is enabled with max remote calls: 10.
+2026-03-07 19:08:39,915 INFO src.agent.guardrails: Semantic injection classifier: is_injection=False confidence=1.00
+2026-03-07 19:08:39,917 INFO google_genai.models: AFC is enabled with max remote calls: 10.
+2026-03-07 19:08:42,904 INFO src.agent.sentiment: LLM sentiment augmentation: neutral -> neutral (conf=0.90)
+2026-03-07 19:08:42,905 INFO google_genai.models: AFC is enabled with max remote calls: 10.
+2026-03-07 19:08:46,278 INFO httpx: HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-embedding-001:batchEmbedContents "HTTP/1.1 200 OK"
+2026-03-07 19:08:46,285 INFO httpx: HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-embedding-001:batchEmbedContents "HTTP/1.1 200 OK"
+2026-03-07 19:08:46,294 INFO google_genai.models: AFC is enabled with max remote calls: 10.
+2026-03-07 19:08:50,656 INFO google_genai.models: AFC is enabled with max remote calls: 10.
+2026-03-07 19:08:54,430 INFO src.agent.dispatch: Structured dispatch -> host (confidence=0.90, reason=The guest is looking for general recommendations ('something different') for the)
+2026-03-07 19:08:54,430 INFO src.agent.dispatch: Dispatching to host agent (method=structured_output, model=gemini-3-flash-preview)
+2026-03-07 19:08:54,430 INFO src.agent.agents._base: R83: Injected 3 few-shot examples for host agent
+2026-03-07 19:08:54,431 INFO google_genai.models: AFC is enabled with max remote calls: 10.
+2026-03-07 19:09:07,260 INFO google_genai.models: AFC is enabled with max remote calls: 10.
+2026-03-07 19:09:11,880 INFO src.agent.profiling: Profiling extraction: filled=0/16 fields, keys=[], skipped=['guest_name', 'party_size', 'party_composition', 'visit_purpose', 'visit_duration']
+2026-03-07 19:09:11,881 INFO src.agent.profiling: Profiling state: phase=foundation, completeness=0.12, total_known=1, new_this_turn=0
+2026-03-07 19:09:11,882 INFO google_genai.models: AFC is enabled with max remote calls: 10.
+2026-03-07 19:09:16,017 INFO src.agent.dispatch: Retry path -- reusing specialist host (skipping dispatch)
+2026-03-07 19:09:16,017 INFO src.agent.dispatch: Dispatching to host agent (method=retry_reuse, model=gemini-3-flash-preview)
+2026-03-07 19:09:16,018 INFO src.agent.agents._base: R83: Injected 3 few-shot examples for host agent
+2026-03-07 19:09:16,018 INFO google_genai.models: AFC is enabled with max remote calls: 10.
+2026-03-07 19:09:22,657 INFO google_genai.models: AFC is enabled with max remote calls: 10.
+2026-03-07 19:09:26,193 INFO src.agent.profiling: Profiling extraction: filled=0/16 fields, keys=[], skipped=['guest_name', 'party_size', 'party_composition', 'visit_purpose', 'visit_duration']
+2026-03-07 19:09:26,193 INFO src.agent.profiling: Profiling state: phase=foundation, completeness=0.12, total_known=1, new_this_turn=0
+2026-03-07 19:09:26,195 INFO google_genai.models: AFC is enabled with max remote calls: 10.
+2026-03-07 19:09:30,057 WARNING src.agent.nodes: Fallback triggered. Reason: 
+2026-03-07 19:09:30,057 INFO src.agent.nodes: R89: Recovering specialist response (418 chars) instead of canned fallback
+2026-03-07 19:09:30,060 INFO google_genai.models: AFC is enabled with max remote calls: 10.
+2026-03-07 19:09:33,519 INFO src.agent.guardrails: Semantic injection classifier: is_injection=False confidence=1.00
+2026-03-07 19:09:33,520 INFO google_genai.models: AFC is enabled with max remote calls: 10.
+2026-03-07 19:09:36,516 INFO src.agent.sentiment: LLM sentiment augmentation: neutral -> neutral (conf=0.95)
+2026-03-07 19:09:36,517 INFO google_genai.models: AFC is enabled with max remote calls: 10.
+2026-03-07 19:09:40,779 INFO httpx: HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-embedding-001:batchEmbedContents "HTTP/1.1 200 OK"
+2026-03-07 19:09:40,797 INFO httpx: HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-embedding-001:batchEmbedContents "HTTP/1.1 200 OK"
+2026-03-07 19:09:40,805 INFO google_genai.models: AFC is enabled with max remote calls: 10.
+2026-03-07 19:09:45,230 INFO google_genai.models: AFC is enabled with max remote calls: 10.
+2026-03-07 19:09:49,568 INFO src.agent.dispatch: Structured dispatch -> dining (confidence=0.95, reason=The guest expresses a desire for upscale options compared to their usual casual )
+2026-03-07 19:09:49,569 INFO src.agent.dispatch: Dispatching to dining agent (method=structured_output, model=gemini-3-flash-preview)
+2026-03-07 19:09:49,569 INFO src.agent.agents._base: R83: Injected 3 few-shot examples for dining agent
+2026-03-07 19:09:49,570 INFO google_genai.models: AFC is enabled with max remote calls: 10.
+2026-03-07 19:09:58,647 INFO google_genai.models: AFC is enabled with max remote calls: 10.
+2026-03-07 19:10:02,263 INFO src.agent.profiling: Profiling extraction: filled=0/16 fields, keys=[], skipped=['guest_name', 'party_size', 'party_composition', 'visit_purpose', 'visit_duration']
+2026-03-07 19:10:02,263 INFO src.agent.profiling: Profiling state: phase=foundation, completeness=0.12, total_known=1, new_this_turn=0
+2026-03-07 19:10:02,264 INFO google_genai.models: AFC is enabled with max remote calls: 10.
+2026-03-07 19:10:06,613 INFO src.agent.dispatch: Retry path -- reusing specialist dining (skipping dispatch)
+2026-03-07 19:10:06,614 INFO src.agent.dispatch: Dispatching to dining agent (method=retry_reuse, model=gemini-3-flash-preview)
+2026-03-07 19:10:06,614 INFO src.agent.agents._base: R83: Injected 3 few-shot examples for dining agent
+2026-03-07 19:10:06,615 INFO google_genai.models: AFC is enabled with max remote calls: 10.
+2026-03-07 19:10:12,907 INFO google_genai.models: AFC is enabled with max remote calls: 10.
+2026-03-07 19:10:16,623 INFO src.agent.profiling: Profiling extraction: filled=0/16 fields, keys=[], skipped=['guest_name', 'party_size', 'party_composition', 'visit_purpose', 'visit_duration']
+2026-03-07 19:10:16,623 INFO src.agent.profiling: Profiling state: phase=foundation, completeness=0.12, total_known=1, new_this_turn=0
+2026-03-07 19:10:16,625 INFO google_genai.models: AFC is enabled with max remote calls: 10.
+2026-03-07 19:10:20,332 WARNING src.agent.nodes: Fallback triggered. Reason: The
+2026-03-07 19:10:20,332 INFO src.agent.nodes: R89: Recovering specialist response (776 chars) instead of canned fallback
+2026-03-07 19:10:20,335 INFO google_genai.models: AFC is enabled with max remote calls: 10.
+2026-03-07 19:10:22,445 INFO src.agent.guardrails: Semantic injection classifier: is_injection=False confidence=0.99
+2026-03-07 19:10:22,447 INFO google_genai.models: AFC is enabled with max remote calls: 10.
+2026-03-07 19:10:29,998 INFO httpx: HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-embedding-001:batchEmbedContents "HTTP/1.1 200 OK"
+2026-03-07 19:10:30,006 INFO httpx: HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-embedding-001:batchEmbedContents "HTTP/1.1 200 OK"
+2026-03-07 19:10:30,015 INFO google_genai.models: AFC is enabled with max remote calls: 10.
+2026-03-07 19:10:34,019 INFO google_genai.models: AFC is enabled with max remote calls: 10.
+2026-03-07 19:10:37,239 INFO src.agent.dispatch: Structured dispatch -> dining (confidence=0.98, reason=The guest's query regarding Italian food directly aligns with the dining categor)
+2026-03-07 19:10:37,240 INFO src.agent.dispatch: Dispatching to dining agent (method=structured_output, model=gemini-3-flash-preview)
+2026-03-07 19:10:37,240 INFO src.agent.agents._base: R83: Injected 3 few-shot examples for dining agent
+2026-03-07 19:10:37,241 INFO google_genai.models: AFC is enabled with max remote calls: 10.
+2026-03-07 19:10:54,003 INFO google_genai.models: AFC is enabled with max remote calls: 10.
+2026-03-07 19:10:57,829 INFO src.agent.profiling: Profiling extraction: filled=0/16 fields, keys=[], skipped=['guest_name', 'party_size', 'party_composition', 'visit_purpose', 'visit_duration']
+2026-03-07 19:10:57,829 INFO src.agent.profiling: Profiling state: phase=foundation, completeness=0.12, total_known=1, new_this_turn=0
+2026-03-07 19:10:57,831 INFO google_genai.models: AFC is enabled with max remote calls: 10.
+2026-03-07 19:11:02,611 INFO src.agent.dispatch: Retry path -- reusing specialist dining (skipping dispatch)
+2026-03-07 19:11:02,611 INFO src.agent.dispatch: Dispatching to dining agent (method=retry_reuse, model=gemini-3-flash-preview)
+2026-03-07 19:11:02,611 INFO src.agent.agents._base: R83: Injected 3 few-shot examples for dining agent
+2026-03-07 19:11:02,612 INFO google_genai.models: AFC is enabled with max remote calls: 10.
+2026-03-07 19:11:10,993 INFO google_genai.models: AFC is enabled with max remote calls: 10.
+2026-03-07 19:11:14,599 INFO src.agent.profiling: Profiling extraction: filled=0/16 fields, keys=[], skipped=['guest_name', 'party_size', 'party_composition', 'visit_purpose', 'visit_duration']
+2026-03-07 19:11:14,599 INFO src.agent.profiling: Profiling state: phase=foundation, completeness=0.12, total_known=1, new_this_turn=0
+2026-03-07 19:11:14,600 INFO google_genai.models: AFC is enabled with max remote calls: 10.
+2026-03-07 19:11:18,592 WARNING src.agent.nodes: Fallback triggered. Reason: The response violates the 'Read-only' criterion by promising to perform an action ('I’ll flag the host team to see if we can get you a table'). AI assistants in this context must not promise to book, reserve, or manage seating.
+2026-03-07 19:11:18,593 INFO src.agent.nodes: R89: Recovering specialist response (736 chars) instead of canned fallback
+2026-03-07 19:11:18,595 INFO google_genai.models: AFC is enabled with max remote calls: 10.
+2026-03-07 19:11:20,902 INFO src.agent.guardrails: Semantic injection classifier: is_injection=False confidence=1.00
+2026-03-07 19:11:20,904 INFO google_genai.models: AFC is enabled with max remote calls: 10.
+2026-03-07 19:11:24,373 INFO httpx: HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-embedding-001:batchEmbedContents "HTTP/1.1 200 OK"
+2026-03-07 19:11:24,378 INFO httpx: HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-embedding-001:batchEmbedContents "HTTP/1.1 200 OK"
+2026-03-07 19:11:24,389 INFO google_genai.models: AFC is enabled with max remote calls: 10.
+2026-03-07 19:11:28,446 INFO google_genai.models: AFC is enabled with max remote calls: 10.
+2026-03-07 19:11:32,553 INFO src.agent.dispatch: Structured dispatch -> entertainment (confidence=0.85, reason=The guest is inquiring about activities to do following a meal. The entertainmen)
+2026-03-07 19:11:32,553 INFO src.agent.dispatch: Dispatching to entertainment agent (method=structured_output, model=gemini-3-flash-preview)
+2026-03-07 19:11:32,554 INFO src.agent.agents._base: R83: Injected 3 few-shot examples for entertainment agent
+2026-03-07 19:11:32,554 INFO google_genai.models: AFC is enabled with max remote calls: 10.
+2026-03-07 19:11:45,431 INFO google_genai.models: AFC is enabled with max remote calls: 10.
+2026-03-07 19:11:50,937 INFO src.agent.profiling: Profiling extraction: filled=0/16 fields, keys=[], skipped=['guest_name', 'party_size', 'party_composition', 'visit_purpose', 'visit_duration']
+2026-03-07 19:11:50,937 INFO src.agent.profiling: Profiling state: phase=foundation, completeness=0.12, total_known=1, new_this_turn=0
+2026-03-07 19:11:50,938 INFO google_genai.models: AFC is enabled with max remote calls: 10.
+2026-03-07 19:12:05,062 INFO src.agent.dispatch: Retry path -- reusing specialist entertainment (skipping dispatch)
+2026-03-07 19:12:05,062 INFO src.agent.dispatch: Dispatching to entertainment agent (method=retry_reuse, model=gemini-3-flash-preview)
+2026-03-07 19:12:05,063 INFO src.agent.agents._base: R83: Injected 3 few-shot examples for entertainment agent
+2026-03-07 19:12:05,063 INFO google_genai.models: AFC is enabled with max remote calls: 10.
+2026-03-07 19:12:26,016 INFO google_genai.models: AFC is enabled with max remote calls: 10.
+2026-03-07 19:12:30,318 INFO src.agent.profiling: Profiling extraction: filled=0/16 fields, keys=[], skipped=['guest_name', 'party_size', 'party_composition', 'visit_purpose', 'visit_duration']
+2026-03-07 19:12:30,319 INFO src.agent.profiling: Profiling state: phase=foundation, completeness=0.12, total_known=1, new_this_turn=0
+2026-03-07 19:12:30,320 INFO google_genai.models: AFC is enabled with max remote calls: 10.
+2026-03-07 19:12:34,302 WARNING src.agent.nodes: Fallback triggered. Reason: 
+2026-03-07 19:12:34,302 INFO src.agent.nodes: R89: Recovering specialist response (341 chars) instead of canned fallback
+2026-03-07 19:12:34,304 INFO src.agent.compliance_gate: {"audit_event": "guardrail_triggered", "category": "confirmation_detection", "query_type": "greeting", "timestamp": 1772910754.3047152, "action": "shortcut", "severity": "INFO"}
+2026-03-07 19:12:34,305 INFO live_eval:   -> OK | 5 turns | avg 47349ms
+2026-03-07 19:12:34,807 INFO live_eval: [5/10] Running scenario relationship-05: Group dining inquiry — does agent profile party details?
+2026-03-07 19:12:34,809 INFO google_genai.models: AFC is enabled with max remote calls: 10.
+2026-03-07 19:12:37,343 INFO src.agent.guardrails: Semantic injection classifier: is_injection=False confidence=1.00
+2026-03-07 19:12:37,346 INFO google_genai.models: AFC is enabled with max remote calls: 10.
+2026-03-07 19:12:42,616 INFO httpx: HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-embedding-001:batchEmbedContents "HTTP/1.1 200 OK"
+2026-03-07 19:12:42,619 INFO httpx: HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-embedding-001:batchEmbedContents "HTTP/1.1 200 OK"
+2026-03-07 19:12:42,629 INFO google_genai.models: AFC is enabled with max remote calls: 10.
+2026-03-07 19:12:46,665 INFO google_genai.models: AFC is enabled with max remote calls: 10.
+2026-03-07 19:12:48,914 INFO src.agent.dispatch: Structured dispatch -> dining (confidence=1.00, reason=The guest is specifically asking for a restaurant recommendation, which falls di)
+2026-03-07 19:12:48,914 INFO src.agent.dispatch: Dispatching to dining agent (method=structured_output, model=gemini-3-flash-preview)
+2026-03-07 19:12:48,914 INFO src.agent.agents._base: R83: Injected 3 few-shot examples for dining agent
+2026-03-07 19:12:48,915 INFO google_genai.models: AFC is enabled with max remote calls: 10.
+2026-03-07 19:12:59,850 INFO google_genai.models: AFC is enabled with max remote calls: 10.
+2026-03-07 19:13:03,691 INFO src.agent.profiling: Profiling extraction: filled=0/16 fields, keys=[], skipped=['guest_name', 'party_size', 'party_composition', 'visit_purpose', 'visit_duration']
+2026-03-07 19:13:03,692 INFO src.agent.profiling: Profiling state: phase=foundation, completeness=0.00, total_known=0, new_this_turn=0
+2026-03-07 19:13:03,693 INFO google_genai.models: AFC is enabled with max remote calls: 10.
+2026-03-07 19:13:08,091 INFO src.agent.compliance_gate: {"audit_event": "guardrail_triggered", "category": "celebration_detection", "query_type": null, "timestamp": 1772910788.0912938, "action": "annotate", "severity": "INFO"}
+2026-03-07 19:13:08,093 INFO google_genai.models: AFC is enabled with max remote calls: 10.
+2026-03-07 19:13:14,592 INFO httpx: HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-embedding-001:batchEmbedContents "HTTP/1.1 200 OK"
+2026-03-07 19:13:14,593 INFO httpx: HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-embedding-001:batchEmbedContents "HTTP/1.1 200 OK"
+2026-03-07 19:13:14,606 INFO google_genai.models: AFC is enabled with max remote calls: 10.
+2026-03-07 19:13:19,007 INFO google_genai.models: AFC is enabled with max remote calls: 10.
+2026-03-07 19:13:21,993 INFO src.agent.dispatch: Structured dispatch -> dining (confidence=0.98, reason=The guest is inquiring about a dinner for a group of 12, which directly pertains)
+2026-03-07 19:13:21,993 INFO src.agent.dispatch: Dispatching to dining agent (method=structured_output, model=gemini-3-flash-preview)
+2026-03-07 19:13:21,993 INFO src.agent.agents._base: R83: Injected 3 few-shot examples for dining agent
+2026-03-07 19:13:21,994 INFO google_genai.models: AFC is enabled with max remote calls: 10.
+2026-03-07 19:13:33,582 INFO google_genai.models: AFC is enabled with max remote calls: 10.
+2026-03-07 19:13:37,305 INFO src.agent.profiling: Profiling extraction: filled=0/16 fields, keys=[], skipped=['guest_name', 'party_size', 'party_composition', 'visit_purpose', 'visit_duration']
+2026-03-07 19:13:37,305 INFO src.agent.profiling: Profiling state: phase=foundation, completeness=0.22, total_known=2, new_this_turn=0
+2026-03-07 19:13:37,307 INFO google_genai.models: AFC is enabled with max remote calls: 10.
+2026-03-07 19:13:41,716 INFO google_genai.models: AFC is enabled with max remote calls: 10.
+2026-03-07 19:13:44,410 INFO src.agent.guardrails: Semantic injection classifier: is_injection=False confidence=1.00
+2026-03-07 19:13:44,412 INFO google_genai.models: AFC is enabled with max remote calls: 10.
+2026-03-07 19:13:51,527 INFO httpx: HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-embedding-001:batchEmbedContents "HTTP/1.1 200 OK"
+2026-03-07 19:13:56,624 INFO httpx: HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-embedding-001:batchEmbedContents "HTTP/1.1 200 OK"
+2026-03-07 19:13:56,634 INFO google_genai.models: AFC is enabled with max remote calls: 10.
+2026-03-07 19:14:00,812 INFO google_genai.models: AFC is enabled with max remote calls: 10.
+2026-03-07 19:14:03,753 INFO src.agent.dispatch: Structured dispatch -> dining (confidence=0.95, reason=The guest expressed a preference for seafood, which is a specific food category.)
+2026-03-07 19:14:03,753 INFO src.agent.dispatch: Dispatching to dining agent (method=structured_output, model=gemini-3-flash-preview)
+2026-03-07 19:14:03,754 INFO src.agent.agents._base: R83: Injected 3 few-shot examples for dining agent
+2026-03-07 19:14:03,754 INFO google_genai.models: AFC is enabled with max remote calls: 10.
+2026-03-07 19:14:20,281 INFO google_genai.models: AFC is enabled with max remote calls: 10.
+2026-03-07 19:14:23,801 INFO src.agent.profiling: Profiling extraction: filled=0/16 fields, keys=[], skipped=['guest_name', 'party_size', 'party_composition', 'visit_purpose', 'visit_duration']
+2026-03-07 19:14:23,801 INFO src.agent.profiling: Profiling state: phase=foundation, completeness=0.22, total_known=2, new_this_turn=0
+2026-03-07 19:14:23,802 INFO google_genai.models: AFC is enabled with max remote calls: 10.
+2026-03-07 19:14:30,360 INFO src.agent.dispatch: Retry path -- reusing specialist dining (skipping dispatch)
+2026-03-07 19:14:30,360 INFO src.agent.dispatch: Dispatching to dining agent (method=retry_reuse, model=gemini-3-flash-preview)
+2026-03-07 19:14:30,360 INFO src.agent.agents._base: R83: Injected 3 few-shot examples for dining agent
+2026-03-07 19:14:30,361 INFO google_genai.models: AFC is enabled with max remote calls: 10.
+2026-03-07 19:14:40,120 INFO google_genai.models: AFC is enabled with max remote calls: 10.
+2026-03-07 19:14:44,880 INFO src.agent.profiling: Profiling extraction: filled=0/16 fields, keys=[], skipped=['guest_name', 'party_size', 'party_composition', 'visit_purpose', 'visit_duration']
+2026-03-07 19:14:44,880 INFO src.agent.profiling: Profiling state: phase=foundation, completeness=0.22, total_known=2, new_this_turn=0
+2026-03-07 19:14:44,882 INFO google_genai.models: AFC is enabled with max remote calls: 10.
+2026-03-07 19:14:48,587 WARNING src.agent.nodes: Fallback triggered. Reason: 
+2026-03-07 19:14:48,587 INFO src.agent.nodes: R89: Recovering specialist response (1053 chars) instead of canned fallback
+2026-03-07 19:14:48,590 INFO google_genai.models: AFC is enabled with max remote calls: 10.
+2026-03-07 19:14:52,049 INFO src.agent.guardrails: Semantic injection classifier: is_injection=False confidence=1.00
+2026-03-07 19:14:52,052 INFO google_genai.models: AFC is enabled with max remote calls: 10.
+2026-03-07 19:14:58,300 INFO httpx: HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-embedding-001:batchEmbedContents "HTTP/1.1 200 OK"
+2026-03-07 19:14:58,309 INFO httpx: HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-embedding-001:batchEmbedContents "HTTP/1.1 200 OK"
+2026-03-07 19:14:58,318 INFO google_genai.models: AFC is enabled with max remote calls: 10.
+2026-03-07 19:15:02,351 INFO google_genai.models: AFC is enabled with max remote calls: 10.
+2026-03-07 19:15:06,048 INFO src.agent.dispatch: Structured dispatch -> entertainment (confidence=0.85, reason=The query asks for timing recommendations for a group, and the retrieved context)
+2026-03-07 19:15:06,048 INFO src.agent.dispatch: Dispatching to entertainment agent (method=structured_output, model=gemini-3-flash-preview)
+2026-03-07 19:15:06,049 INFO src.agent.agents._base: R83: Injected 3 few-shot examples for entertainment agent
+2026-03-07 19:15:06,049 INFO google_genai.models: AFC is enabled with max remote calls: 10.
+2026-03-07 19:15:17,350 INFO google_genai.models: AFC is enabled with max remote calls: 10.
+2026-03-07 19:15:21,094 INFO src.agent.profiling: Profiling extraction: filled=0/16 fields, keys=[], skipped=['guest_name', 'party_size', 'party_composition', 'visit_purpose', 'visit_duration']
+2026-03-07 19:15:21,094 INFO src.agent.profiling: Profiling state: phase=foundation, completeness=0.22, total_known=2, new_this_turn=0
+2026-03-07 19:15:21,096 INFO google_genai.models: AFC is enabled with max remote calls: 10.
+2026-03-07 19:15:24,784 INFO src.agent.dispatch: Retry path -- reusing specialist entertainment (skipping dispatch)
+2026-03-07 19:15:24,784 INFO src.agent.dispatch: Dispatching to entertainment agent (method=retry_reuse, model=gemini-3-flash-preview)
+2026-03-07 19:15:24,785 INFO src.agent.agents._base: R83: Injected 3 few-shot examples for entertainment agent
+2026-03-07 19:15:24,785 INFO google_genai.models: AFC is enabled with max remote calls: 10.
+2026-03-07 19:15:35,794 INFO google_genai.models: AFC is enabled with max remote calls: 10.
+2026-03-07 19:15:40,122 INFO src.agent.profiling: Profiling extraction: filled=0/16 fields, keys=[], skipped=['guest_name', 'party_size', 'party_composition', 'visit_purpose', 'visit_duration']
+2026-03-07 19:15:40,122 INFO src.agent.profiling: Profiling state: phase=foundation, completeness=0.22, total_known=2, new_this_turn=0
+2026-03-07 19:15:40,123 INFO google_genai.models: AFC is enabled with max remote calls: 10.
+2026-03-07 19:15:43,580 INFO src.agent.compliance_gate: {"audit_event": "guardrail_triggered", "category": "confirmation_detection", "query_type": "greeting", "timestamp": 1772910943.580961, "action": "shortcut", "severity": "INFO"}
+2026-03-07 19:15:43,582 INFO live_eval:   -> OK | 5 turns | avg 37754ms
+2026-03-07 19:15:44,083 INFO live_eval: [6/10] Running scenario relationship-06: Post-loss guest returning next day — memory + continuity
+2026-03-07 19:15:44,087 INFO src.agent.compliance_gate: {"audit_event": "guardrail_triggered", "category": "grief_detection", "query_type": null, "timestamp": 1772910944.0871267, "action": "annotate", "severity": "INFO"}
+2026-03-07 19:15:44,089 INFO google_genai.models: AFC is enabled with max remote calls: 10.
+2026-03-07 19:15:48,783 INFO httpx: HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-embedding-001:batchEmbedContents "HTTP/1.1 200 OK"
+2026-03-07 19:15:48,788 INFO httpx: HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-embedding-001:batchEmbedContents "HTTP/1.1 200 OK"
+2026-03-07 19:15:48,797 INFO google_genai.models: AFC is enabled with max remote calls: 10.
+2026-03-07 19:15:52,860 INFO google_genai.models: AFC is enabled with max remote calls: 10.
+2026-03-07 19:16:07,051 INFO src.agent.dispatch: Structured dispatch -> comp (confidence=0.85, reason=The guest's query focuses on their gaming experience ('rough night at the tables)
+2026-03-07 19:16:07,051 INFO src.agent.nodes: R83 model routing: Pro (sentiment=grief)
+2026-03-07 19:16:07,051 INFO src.agent.dispatch: Dispatching to comp agent (method=structured_output, model=gemini-3.1-pro-preview)
+2026-03-07 19:16:07,052 INFO src.agent.agents._base: R83: Injected 3 few-shot examples for comp agent
+2026-03-07 19:16:07,055 INFO src.agent.agents._base: R98: CompStrategy section injected (agent=comp)
+2026-03-07 19:16:07,056 INFO google_genai.models: AFC is enabled with max remote calls: 10.
+2026-03-07 19:16:19,888 INFO google_genai.models: AFC is enabled with max remote calls: 10.
+2026-03-07 19:16:23,701 INFO src.agent.profiling: Profiling extraction: filled=0/16 fields, keys=[], skipped=['guest_name', 'party_size', 'party_composition', 'visit_purpose', 'visit_duration']
+2026-03-07 19:16:23,701 INFO src.agent.profiling: Profiling state: phase=foundation, completeness=0.00, total_known=0, new_this_turn=0
+2026-03-07 19:16:23,703 INFO google_genai.models: AFC is enabled with max remote calls: 10.
+2026-03-07 19:16:27,600 INFO src.agent.dispatch: Retry path -- reusing specialist comp (skipping dispatch)
+2026-03-07 19:16:27,600 INFO src.agent.nodes: R83 model routing: Pro (sentiment=grief)
+2026-03-07 19:16:27,600 INFO src.agent.dispatch: Dispatching to comp agent (method=retry_reuse, model=gemini-3.1-pro-preview)
+2026-03-07 19:16:27,600 INFO src.agent.agents._base: R83: Injected 3 few-shot examples for comp agent
+2026-03-07 19:16:27,600 INFO src.agent.agents._base: R98: CompStrategy section injected (agent=comp)
+2026-03-07 19:16:27,601 INFO src.agent.agents._base: R83: Using Pro model (gemini-3.1-pro-preview) for comp agent
+2026-03-07 19:16:27,601 INFO google_genai.models: AFC is enabled with max remote calls: 10.
+2026-03-07 19:16:42,824 INFO google_genai.models: AFC is enabled with max remote calls: 10.
+2026-03-07 19:16:49,646 INFO src.agent.profiling: Profiling extraction: filled=0/16 fields, keys=[], skipped=['guest_name', 'party_size', 'party_composition', 'visit_purpose', 'visit_duration']
+2026-03-07 19:16:49,647 INFO src.agent.profiling: Profiling state: phase=foundation, completeness=0.00, total_known=0, new_this_turn=0
+2026-03-07 19:16:49,649 INFO google_genai.models: AFC is enabled with max remote calls: 10.
+2026-03-07 19:16:53,988 WARNING src.agent.nodes: Fallback triggered. Reason: 
+2026-03-07 19:16:53,988 INFO src.agent.nodes: R89: Recovering specialist response (501 chars) instead of canned fallback
+2026-03-07 19:16:53,991 INFO google_genai.models: AFC is enabled with max remote calls: 10.
+2026-03-07 19:16:56,253 INFO src.agent.guardrails: Semantic injection classifier: is_injection=False confidence=1.00
+2026-03-07 19:16:56,256 INFO google_genai.models: AFC is enabled with max remote calls: 10.
+2026-03-07 19:17:05,349 INFO httpx: HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-embedding-001:batchEmbedContents "HTTP/1.1 200 OK"
+2026-03-07 19:17:13,951 WARNING src.agent.tools: Augmented retrieval failed
+Traceback (most recent call last):
+  File "/usr/lib/python3.12/asyncio/tasks.py", line 520, in wait_for
+    return await fut
+           ^^^^^^^^^
+asyncio.exceptions.CancelledError
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/odedbe/projects/hey-seven/src/agent/tools.py", line 128, in _safe_await
+    return await coro
+           ^^^^^^^^^^
+  File "/usr/lib/python3.12/asyncio/tasks.py", line 519, in wait_for
+    async with timeouts.timeout(timeout):
+  File "/usr/lib/python3.12/asyncio/timeouts.py", line 115, in __aexit__
+    raise TimeoutError from exc_val
+TimeoutError
+2026-03-07 19:17:13,955 INFO google_genai.models: AFC is enabled with max remote calls: 10.
+2026-03-07 19:17:17,866 INFO google_genai.models: AFC is enabled with max remote calls: 10.
+2026-03-07 19:17:19,310 INFO httpx: HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-embedding-001:batchEmbedContents "HTTP/1.1 200 OK"
+2026-03-07 19:17:21,674 INFO src.agent.dispatch: Structured dispatch -> entertainment (confidence=0.85, reason=The user is seeking a 'relaxing' activity, which aligns with the entertainment s)
+2026-03-07 19:17:21,675 INFO src.agent.dispatch: Dispatching to entertainment agent (method=structured_output, model=gemini-3-flash-preview)
+2026-03-07 19:17:21,675 INFO src.agent.agents._base: R83: Injected 3 few-shot examples for entertainment agent
+2026-03-07 19:17:21,676 INFO google_genai.models: AFC is enabled with max remote calls: 10.
+2026-03-07 19:17:35,751 INFO google_genai.models: AFC is enabled with max remote calls: 10.
+2026-03-07 19:17:39,948 INFO src.agent.profiling: Profiling extraction: filled=0/16 fields, keys=[], skipped=['guest_name', 'party_size', 'party_composition', 'visit_purpose', 'visit_duration']
+2026-03-07 19:17:39,948 INFO src.agent.profiling: Profiling state: phase=foundation, completeness=0.00, total_known=0, new_this_turn=0
+2026-03-07 19:17:39,950 INFO google_genai.models: AFC is enabled with max remote calls: 10.
+2026-03-07 19:17:44,011 INFO google_genai.models: AFC is enabled with max remote calls: 10.
+2026-03-07 19:17:45,973 INFO src.agent.guardrails: Semantic injection classifier: is_injection=False confidence=1.00
+2026-03-07 19:17:45,975 INFO google_genai.models: AFC is enabled with max remote calls: 10.
+2026-03-07 19:17:53,622 INFO httpx: HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-embedding-001:batchEmbedContents "HTTP/1.1 200 OK"
+2026-03-07 19:17:53,635 INFO httpx: HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-embedding-001:batchEmbedContents "HTTP/1.1 200 OK"
+2026-03-07 19:17:53,643 INFO google_genai.models: AFC is enabled with max remote calls: 10.
+2026-03-07 19:17:57,858 INFO google_genai.models: AFC is enabled with max remote calls: 10.
+2026-03-07 19:18:00,327 INFO src.agent.dispatch: Structured dispatch -> dining (confidence=0.95, reason=The guest's query specifically mentions 'lunch', which is a primary topic for th)
+2026-03-07 19:18:00,327 INFO src.agent.dispatch: Dispatching to dining agent (method=structured_output, model=gemini-3-flash-preview)
+2026-03-07 19:18:00,328 INFO src.agent.agents._base: R83: Injected 3 few-shot examples for dining agent
+2026-03-07 19:18:00,328 INFO google_genai.models: AFC is enabled with max remote calls: 10.
+2026-03-07 19:18:24,346 INFO google_genai.models: AFC is enabled with max remote calls: 10.
+2026-03-07 19:18:28,453 INFO src.agent.profiling: Profiling extraction: filled=0/16 fields, keys=[], skipped=['guest_name', 'party_size', 'party_composition', 'visit_purpose', 'visit_duration']
+2026-03-07 19:18:28,453 INFO src.agent.profiling: Profiling state: phase=foundation, completeness=0.00, total_known=0, new_this_turn=0
+2026-03-07 19:18:28,456 INFO google_genai.models: AFC is enabled with max remote calls: 10.
+2026-03-07 19:18:32,822 INFO src.agent.dispatch: Retry path -- reusing specialist dining (skipping dispatch)
+2026-03-07 19:18:32,823 INFO src.agent.dispatch: Dispatching to dining agent (method=retry_reuse, model=gemini-3-flash-preview)
+2026-03-07 19:18:32,823 INFO src.agent.agents._base: R83: Injected 3 few-shot examples for dining agent
+2026-03-07 19:18:32,824 INFO google_genai.models: AFC is enabled with max remote calls: 10.
+2026-03-07 19:18:59,025 INFO google_genai.models: AFC is enabled with max remote calls: 10.
+2026-03-07 19:19:04,833 INFO src.agent.profiling: Profiling extraction: filled=0/16 fields, keys=[], skipped=['guest_name', 'party_size', 'party_composition', 'visit_purpose', 'visit_duration']
+2026-03-07 19:19:04,833 INFO src.agent.profiling: Profiling state: phase=foundation, completeness=0.00, total_known=0, new_this_turn=0
+2026-03-07 19:19:04,835 INFO google_genai.models: AFC is enabled with max remote calls: 10.
+2026-03-07 19:19:08,734 WARNING src.agent.nodes: Degraded-pass: validator returned RETRY on retry with grounding — serving specialist response (reason: The response is incomplete and ends abruptly mid-sentence with 'After lunch, the Wolf Den', which pr)
+2026-03-07 19:19:08,739 INFO google_genai.models: AFC is enabled with max remote calls: 10.
+2026-03-07 19:19:10,776 INFO src.agent.guardrails: Semantic injection classifier: is_injection=False confidence=1.00
+2026-03-07 19:19:10,778 INFO google_genai.models: AFC is enabled with max remote calls: 10.
+2026-03-07 19:19:15,459 INFO httpx: HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-embedding-001:batchEmbedContents "HTTP/1.1 200 OK"
+2026-03-07 19:19:15,468 INFO httpx: HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-embedding-001:batchEmbedContents "HTTP/1.1 200 OK"
+2026-03-07 19:19:15,476 INFO google_genai.models: AFC is enabled with max remote calls: 10.
+2026-03-07 19:19:19,615 INFO google_genai.models: AFC is enabled with max remote calls: 10.
+2026-03-07 19:19:22,739 INFO src.agent.dispatch: Structured dispatch -> entertainment (confidence=0.90, reason=The guest is asking for activities to do before checking out at 3 PM. The contex)
+2026-03-07 19:19:22,739 INFO src.agent.dispatch: Dispatching to entertainment agent (method=structured_output, model=gemini-3-flash-preview)
+2026-03-07 19:19:22,740 INFO src.agent.agents._base: R83: Injected 3 few-shot examples for entertainment agent
+2026-03-07 19:19:22,741 INFO google_genai.models: AFC is enabled with max remote calls: 10.
+2026-03-07 19:19:33,629 INFO google_genai.models: AFC is enabled with max remote calls: 10.
+2026-03-07 19:19:37,730 INFO src.agent.profiling: Profiling extraction: filled=0/16 fields, keys=[], skipped=['guest_name', 'party_size', 'party_composition', 'visit_purpose', 'visit_duration']
+2026-03-07 19:19:37,730 INFO src.agent.profiling: Profiling state: phase=foundation, completeness=0.00, total_known=0, new_this_turn=0
+2026-03-07 19:19:37,732 INFO google_genai.models: AFC is enabled with max remote calls: 10.
+2026-03-07 19:19:41,752 INFO src.agent.compliance_gate: {"audit_event": "guardrail_triggered", "category": "confirmation_detection", "query_type": "greeting", "timestamp": 1772911181.75239, "action": "shortcut", "severity": "INFO"}
+2026-03-07 19:19:41,753 INFO live_eval:   -> OK | 5 turns | avg 47533ms
+2026-03-07 19:19:42,255 INFO live_eval: [7/10] Running scenario relationship-07: VIP loyalty inquiry — comp awareness + host bridge
+2026-03-07 19:19:42,259 INFO google_genai.models: AFC is enabled with max remote calls: 10.
+2026-03-07 19:19:46,083 INFO src.agent.guardrails: Semantic injection classifier: is_injection=False confidence=0.98
+2026-03-07 19:19:46,085 INFO google_genai.models: AFC is enabled with max remote calls: 10.
+2026-03-07 19:19:52,097 INFO httpx: HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-embedding-001:batchEmbedContents "HTTP/1.1 200 OK"
+2026-03-07 19:19:52,141 INFO httpx: HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-embedding-001:batchEmbedContents "HTTP/1.1 200 OK"
+2026-03-07 19:19:52,150 INFO google_genai.models: AFC is enabled with max remote calls: 10.
+2026-03-07 19:19:56,942 INFO google_genai.models: AFC is enabled with max remote calls: 10.
+2026-03-07 19:20:00,718 INFO src.agent.dispatch: Structured dispatch -> comp (confidence=0.95, reason=The guest explicitly mentions their loyalty tier status ('Ascend tier') and expr)
+2026-03-07 19:20:00,718 INFO src.agent.dispatch: Dispatching to comp agent (method=structured_output, model=gemini-3-flash-preview)
+2026-03-07 19:20:00,719 INFO src.agent.agents._base: R83: Injected 3 few-shot examples for comp agent
+2026-03-07 19:20:00,719 INFO src.agent.agents._base: R98: CompStrategy section injected (agent=comp)
+2026-03-07 19:20:00,719 INFO google_genai.models: AFC is enabled with max remote calls: 10.
+2026-03-07 19:20:09,072 INFO google_genai.models: AFC is enabled with max remote calls: 10.
+2026-03-07 19:20:12,623 INFO src.agent.profiling: Profiling extraction: filled=0/16 fields, keys=[], skipped=['guest_name', 'party_size', 'party_composition', 'visit_purpose', 'visit_duration']
+2026-03-07 19:20:12,623 INFO src.agent.profiling: Profiling state: phase=foundation, completeness=0.15, total_known=1, new_this_turn=0
+2026-03-07 19:20:12,624 INFO google_genai.models: AFC is enabled with max remote calls: 10.
+2026-03-07 19:20:16,498 INFO google_genai.models: AFC is enabled with max remote calls: 10.
+2026-03-07 19:20:18,901 INFO src.agent.guardrails: Semantic injection classifier: is_injection=False confidence=1.00
+2026-03-07 19:20:18,903 INFO google_genai.models: AFC is enabled with max remote calls: 10.
+2026-03-07 19:20:22,709 INFO httpx: HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-embedding-001:batchEmbedContents "HTTP/1.1 200 OK"
+2026-03-07 19:20:22,750 INFO httpx: HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-embedding-001:batchEmbedContents "HTTP/1.1 200 OK"
+2026-03-07 19:20:22,759 INFO google_genai.models: AFC is enabled with max remote calls: 10.
+2026-03-07 19:20:27,400 INFO google_genai.models: AFC is enabled with max remote calls: 10.
+2026-03-07 19:20:33,527 INFO src.agent.dispatch: Structured dispatch -> comp (confidence=0.85, reason=The guest is asking specifically about 'dining credits', which fall under compli)
+2026-03-07 19:20:33,527 INFO src.agent.dispatch: Dispatching to comp agent (method=structured_output, model=gemini-3-flash-preview)
+2026-03-07 19:20:33,528 INFO src.agent.agents._base: R83: Injected 3 few-shot examples for comp agent
+2026-03-07 19:20:33,528 INFO src.agent.agents._base: R98: CompStrategy section injected (agent=comp)
+2026-03-07 19:20:33,528 INFO google_genai.models: AFC is enabled with max remote calls: 10.
+2026-03-07 19:20:43,763 INFO google_genai.models: AFC is enabled with max remote calls: 10.
+2026-03-07 19:20:47,619 INFO src.agent.profiling: Profiling extraction: filled=0/16 fields, keys=[], skipped=['guest_name', 'party_size', 'party_composition', 'visit_purpose', 'visit_duration']
+2026-03-07 19:20:47,619 INFO src.agent.profiling: Profiling state: phase=foundation, completeness=0.15, total_known=1, new_this_turn=0
+2026-03-07 19:20:47,621 INFO google_genai.models: AFC is enabled with max remote calls: 10.
+2026-03-07 19:20:52,123 INFO src.agent.dispatch: Retry path -- reusing specialist comp (skipping dispatch)
+2026-03-07 19:20:52,123 INFO src.agent.dispatch: Dispatching to comp agent (method=retry_reuse, model=gemini-3-flash-preview)
+2026-03-07 19:20:52,123 INFO src.agent.agents._base: R83: Injected 3 few-shot examples for comp agent
+2026-03-07 19:20:52,124 INFO src.agent.agents._base: R98: CompStrategy section injected (agent=comp)
+2026-03-07 19:20:52,124 INFO google_genai.models: AFC is enabled with max remote calls: 10.
+2026-03-07 19:20:59,082 INFO google_genai.models: AFC is enabled with max remote calls: 10.
+2026-03-07 19:21:02,844 INFO src.agent.profiling: Profiling extraction: filled=0/16 fields, keys=[], skipped=['guest_name', 'party_size', 'party_composition', 'visit_purpose', 'visit_duration']
+2026-03-07 19:21:02,844 INFO src.agent.profiling: Profiling state: phase=foundation, completeness=0.15, total_known=1, new_this_turn=0
+2026-03-07 19:21:02,845 INFO google_genai.models: AFC is enabled with max remote calls: 10.
+2026-03-07 19:21:06,703 WARNING src.agent.nodes: Fallback triggered. Reason: 
+2026-03-07 19:21:06,703 INFO src.agent.nodes: R89: Recovering specialist response (1136 chars) instead of canned fallback
+2026-03-07 19:21:06,706 INFO google_genai.models: AFC is enabled with max remote calls: 10.
+2026-03-07 19:21:09,193 INFO src.agent.guardrails: Semantic injection classifier: is_injection=False confidence=1.00
+2026-03-07 19:21:09,196 INFO google_genai.models: AFC is enabled with max remote calls: 10.
+2026-03-07 19:21:14,036 INFO httpx: HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-embedding-001:batchEmbedContents "HTTP/1.1 200 OK"
+2026-03-07 19:21:14,038 INFO httpx: HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-embedding-001:batchEmbedContents "HTTP/1.1 200 OK"
+2026-03-07 19:21:14,048 INFO google_genai.models: AFC is enabled with max remote calls: 10.
+2026-03-07 19:21:18,644 INFO google_genai.models: AFC is enabled with max remote calls: 10.
+2026-03-07 19:21:21,828 INFO src.agent.dispatch: Structured dispatch -> hotel (confidence=0.95, reason=The guest is inquiring about room upgrades, which falls directly under the hotel)
+2026-03-07 19:21:21,828 INFO src.agent.dispatch: Dispatching to hotel agent (method=structured_output, model=gemini-3-flash-preview)
+2026-03-07 19:21:21,830 INFO src.agent.agents._base: R83: Injected 3 few-shot examples for hotel agent
+2026-03-07 19:21:21,830 INFO google_genai.models: AFC is enabled with max remote calls: 10.
+2026-03-07 19:21:32,939 INFO google_genai.models: AFC is enabled with max remote calls: 10.
+2026-03-07 19:21:37,370 INFO src.agent.profiling: Profiling extraction: filled=0/16 fields, keys=[], skipped=['guest_name', 'party_size', 'party_composition', 'visit_purpose', 'visit_duration']
+2026-03-07 19:21:37,371 INFO src.agent.profiling: Profiling state: phase=foundation, completeness=0.15, total_known=1, new_this_turn=0
+2026-03-07 19:21:37,372 INFO google_genai.models: AFC is enabled with max remote calls: 10.
+2026-03-07 19:21:41,562 INFO src.agent.dispatch: Retry path -- reusing specialist hotel (skipping dispatch)
+2026-03-07 19:21:41,562 INFO src.agent.dispatch: Dispatching to hotel agent (method=retry_reuse, model=gemini-3-flash-preview)
+2026-03-07 19:21:41,562 INFO src.agent.agents._base: R83: Injected 3 few-shot examples for hotel agent
+2026-03-07 19:21:41,563 INFO google_genai.models: AFC is enabled with max remote calls: 10.
+2026-03-07 19:21:59,447 INFO google_genai.models: AFC is enabled with max remote calls: 10.
+2026-03-07 19:22:03,037 INFO src.agent.profiling: Profiling extraction: filled=0/16 fields, keys=[], skipped=['guest_name', 'party_size', 'party_composition', 'visit_purpose', 'visit_duration']
+2026-03-07 19:22:03,037 INFO src.agent.profiling: Profiling state: phase=foundation, completeness=0.15, total_known=1, new_this_turn=0
+2026-03-07 19:22:03,039 INFO google_genai.models: AFC is enabled with max remote calls: 10.
+2026-03-07 19:22:06,985 WARNING src.agent.nodes: Fallback triggered. Reason: The
+2026-03-07 19:22:06,985 INFO src.agent.nodes: R89: Recovering specialist response (1279 chars) instead of canned fallback
+2026-03-07 19:22:06,987 INFO google_genai.models: AFC is enabled with max remote calls: 10.
+2026-03-07 19:22:09,518 INFO src.agent.guardrails: Semantic injection classifier: is_injection=False confidence=0.95
+2026-03-07 19:22:09,520 INFO google_genai.models: AFC is enabled with max remote calls: 10.
+2026-03-07 19:22:11,904 INFO src.agent.sentiment: LLM sentiment augmentation: neutral -> frustrated (conf=0.95)
+2026-03-07 19:22:11,905 INFO google_genai.models: AFC is enabled with max remote calls: 10.
+2026-03-07 19:22:16,226 INFO httpx: HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-embedding-001:batchEmbedContents "HTTP/1.1 200 OK"
+2026-03-07 19:22:16,248 INFO httpx: HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-embedding-001:batchEmbedContents "HTTP/1.1 200 OK"
+2026-03-07 19:22:16,256 INFO google_genai.models: AFC is enabled with max remote calls: 10.
+2026-03-07 19:22:20,294 INFO google_genai.models: AFC is enabled with max remote calls: 10.
+2026-03-07 19:22:23,826 INFO src.agent.dispatch: Structured dispatch -> comp (confidence=0.85, reason=The guest's query about how to 'get these things' likely refers to rewards, perk)
+2026-03-07 19:22:23,826 INFO src.agent.nodes: R83 model routing: Pro (sentiment=frustrated)
+2026-03-07 19:22:23,826 INFO src.agent.dispatch: Dispatching to comp agent (method=structured_output, model=gemini-3.1-pro-preview)
+2026-03-07 19:22:23,826 INFO src.agent.agents._base: R83: Injected 3 few-shot examples for comp agent
+2026-03-07 19:22:23,826 INFO src.agent.agents._base: R82 1E: Frustration suppression activated for comp agent (sentiment=frustrated)
+2026-03-07 19:22:23,826 INFO src.agent.agents._base: R98: CompStrategy section injected (agent=comp)
+2026-03-07 19:22:23,827 INFO google_genai.models: AFC is enabled with max remote calls: 10.
+2026-03-07 19:22:33,151 INFO google_genai.models: AFC is enabled with max remote calls: 10.
+2026-03-07 19:22:37,517 INFO src.agent.profiling: Profiling extraction: filled=0/16 fields, keys=[], skipped=['guest_name', 'party_size', 'party_composition', 'visit_purpose', 'visit_duration']
+2026-03-07 19:22:37,517 INFO src.agent.profiling: Profiling state: phase=foundation, completeness=0.15, total_known=1, new_this_turn=0
+2026-03-07 19:22:37,519 INFO google_genai.models: AFC is enabled with max remote calls: 10.
+2026-03-07 19:22:41,543 INFO src.agent.dispatch: Retry path -- reusing specialist comp (skipping dispatch)
+2026-03-07 19:22:41,543 INFO src.agent.nodes: R83 model routing: Pro (sentiment=frustrated)
+2026-03-07 19:22:41,543 INFO src.agent.dispatch: Dispatching to comp agent (method=retry_reuse, model=gemini-3.1-pro-preview)
+2026-03-07 19:22:41,543 INFO src.agent.agents._base: R83: Injected 3 few-shot examples for comp agent
+2026-03-07 19:22:41,543 INFO src.agent.agents._base: R82 1E: Frustration suppression activated for comp agent (sentiment=frustrated)
+2026-03-07 19:22:41,543 INFO src.agent.agents._base: R98: CompStrategy section injected (agent=comp)
+2026-03-07 19:22:41,543 INFO src.agent.agents._base: R83: Using Pro model (gemini-3.1-pro-preview) for comp agent
+2026-03-07 19:22:41,544 INFO google_genai.models: AFC is enabled with max remote calls: 10.
+2026-03-07 19:22:48,114 INFO google_genai.models: AFC is enabled with max remote calls: 10.
+2026-03-07 19:22:53,361 INFO src.agent.profiling: Profiling extraction: filled=0/16 fields, keys=[], skipped=['guest_name', 'party_size', 'party_composition', 'visit_purpose', 'visit_duration']
+2026-03-07 19:22:53,361 INFO src.agent.profiling: Profiling state: phase=foundation, completeness=0.15, total_known=1, new_this_turn=0
+2026-03-07 19:22:53,363 INFO google_genai.models: AFC is enabled with max remote calls: 10.
+2026-03-07 19:22:57,548 WARNING src.agent.nodes: Degraded-pass: validator returned RETRY on retry with grounding — serving specialist response (reason: )
+2026-03-07 19:22:57,553 INFO google_genai.models: AFC is enabled with max remote calls: 10.
+2026-03-07 19:23:00,596 INFO src.agent.guardrails: Semantic injection classifier: is_injection=False confidence=0.99
+2026-03-07 19:23:00,598 INFO google_genai.models: AFC is enabled with max remote calls: 10.
+2026-03-07 19:23:04,932 INFO httpx: HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-embedding-001:batchEmbedContents "HTTP/1.1 200 OK"
+2026-03-07 19:23:04,944 INFO httpx: HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-embedding-001:batchEmbedContents "HTTP/1.1 200 OK"
+2026-03-07 19:23:04,959 INFO google_genai.models: AFC is enabled with max remote calls: 10.
+2026-03-07 19:23:08,965 INFO google_genai.models: AFC is enabled with max remote calls: 10.
+2026-03-07 19:23:13,427 INFO src.agent.dispatch: Structured dispatch -> host (confidence=0.85, reason=The guest query 'Yeah, connect me with someone' is a generic request that does n)
+2026-03-07 19:23:13,427 INFO src.agent.dispatch: Dispatching to host agent (method=structured_output, model=gemini-3-flash-preview)
+2026-03-07 19:23:13,428 INFO src.agent.agents._base: R83: Injected 3 few-shot examples for host agent
+2026-03-07 19:23:13,428 INFO google_genai.models: AFC is enabled with max remote calls: 10.
+2026-03-07 19:23:26,317 INFO google_genai.models: AFC is enabled with max remote calls: 10.
+2026-03-07 19:23:31,198 INFO src.agent.profiling: Profiling extraction: filled=0/16 fields, keys=[], skipped=['guest_name', 'party_size', 'party_composition', 'visit_purpose', 'visit_duration']
+2026-03-07 19:23:31,199 INFO src.agent.profiling: Profiling state: phase=foundation, completeness=0.15, total_known=1, new_this_turn=0
+2026-03-07 19:23:31,200 INFO google_genai.models: AFC is enabled with max remote calls: 10.
+2026-03-07 19:23:35,568 INFO src.agent.dispatch: Retry path -- reusing specialist host (skipping dispatch)
+2026-03-07 19:23:35,568 INFO src.agent.dispatch: Dispatching to host agent (method=retry_reuse, model=gemini-3-flash-preview)
+2026-03-07 19:23:35,569 INFO src.agent.agents._base: R83: Injected 3 few-shot examples for host agent
+2026-03-07 19:23:35,569 INFO google_genai.models: AFC is enabled with max remote calls: 10.
+2026-03-07 19:23:49,425 INFO google_genai.models: AFC is enabled with max remote calls: 10.
+2026-03-07 19:24:00,048 INFO src.agent.profiling: Profiling extraction: filled=1/16 fields, keys=['name'], skipped=['party_size', 'party_composition', 'visit_purpose', 'visit_duration', 'dining_preferences']
+2026-03-07 19:24:00,048 INFO src.agent.profiling: Profiling state: phase=foundation, completeness=0.15, total_known=1, new_this_turn=1
+2026-03-07 19:24:00,050 INFO google_genai.models: AFC is enabled with max remote calls: 10.
+2026-03-07 19:24:04,043 WARNING src.agent.nodes: Fallback triggered. Reason: 
+2026-03-07 19:24:04,043 INFO src.agent.nodes: R89: Recovering specialist response (505 chars) instead of canned fallback
+2026-03-07 19:24:04,043 INFO live_eval:   -> OK | 5 turns | avg 52357ms
+2026-03-07 19:24:04,544 INFO live_eval: [8/10] Running scenario relationship-08: Grief memorial visit — compassion + gentle profiling
+2026-03-07 19:24:04,547 INFO src.agent.compliance_gate: {"audit_event": "guardrail_triggered", "category": "grief_detection", "query_type": null, "timestamp": 1772911444.547471, "action": "annotate", "severity": "INFO"}
+2026-03-07 19:24:04,549 INFO google_genai.models: AFC is enabled with max remote calls: 10.
+2026-03-07 19:24:08,183 INFO httpx: HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-embedding-001:batchEmbedContents "HTTP/1.1 200 OK"
+2026-03-07 19:24:08,433 INFO httpx: HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-embedding-001:batchEmbedContents "HTTP/1.1 200 OK"
+2026-03-07 19:24:08,443 INFO google_genai.models: AFC is enabled with max remote calls: 10.
+2026-03-07 19:24:13,158 INFO google_genai.models: AFC is enabled with max remote calls: 10.
+2026-03-07 19:24:18,922 INFO src.agent.extraction: LLM extraction augmented: 1 new fields
+2026-03-07 19:24:18,923 INFO google_genai.models: AFC is enabled with max remote calls: 10.
+2026-03-07 19:24:21,292 INFO src.agent.dispatch: Structured dispatch -> host (confidence=0.95, reason=The query is a sentimental, general inquiry about visiting the property for pers)
+2026-03-07 19:24:21,293 INFO src.agent.nodes: R83 model routing: Pro (sentiment=grief)
+2026-03-07 19:24:21,293 INFO src.agent.dispatch: Dispatching to host agent (method=structured_output, model=gemini-3.1-pro-preview)
+2026-03-07 19:24:21,293 INFO src.agent.agents._base: R83: Injected 3 few-shot examples for host agent
+2026-03-07 19:24:21,293 INFO google_genai.models: AFC is enabled with max remote calls: 10.
+2026-03-07 19:24:29,902 INFO google_genai.models: AFC is enabled with max remote calls: 10.
+2026-03-07 19:24:34,266 INFO src.agent.profiling: Profiling extraction: filled=0/16 fields, keys=[], skipped=['guest_name', 'party_size', 'party_composition', 'visit_purpose', 'visit_duration']
+2026-03-07 19:24:34,266 INFO src.agent.profiling: Profiling state: phase=foundation, completeness=0.10, total_known=1, new_this_turn=0
+2026-03-07 19:24:34,268 INFO google_genai.models: AFC is enabled with max remote calls: 10.
+2026-03-07 19:24:38,454 INFO src.agent.dispatch: Retry path -- reusing specialist host (skipping dispatch)
+2026-03-07 19:24:38,455 INFO src.agent.nodes: R83 model routing: Pro (sentiment=grief)
+2026-03-07 19:24:38,455 INFO src.agent.dispatch: Dispatching to host agent (method=retry_reuse, model=gemini-3.1-pro-preview)
+2026-03-07 19:24:38,455 INFO src.agent.agents._base: R83: Injected 3 few-shot examples for host agent
+2026-03-07 19:24:38,455 INFO src.agent.agents._base: R83: Using Pro model (gemini-3.1-pro-preview) for host agent
+2026-03-07 19:24:38,456 INFO google_genai.models: AFC is enabled with max remote calls: 10.
+2026-03-07 19:24:45,918 INFO google_genai.models: AFC is enabled with max remote calls: 10.
+2026-03-07 19:24:49,474 INFO src.agent.profiling: Profiling extraction: filled=0/16 fields, keys=[], skipped=['guest_name', 'party_size', 'party_composition', 'visit_purpose', 'visit_duration']
+2026-03-07 19:24:49,474 INFO src.agent.profiling: Profiling state: phase=foundation, completeness=0.10, total_known=1, new_this_turn=0
+2026-03-07 19:24:49,475 INFO google_genai.models: AFC is enabled with max remote calls: 10.
+2026-03-07 19:24:54,320 INFO google_genai.models: AFC is enabled with max remote calls: 10.
+2026-03-07 19:24:56,708 INFO src.agent.guardrails: Semantic injection classifier: is_injection=False confidence=0.98
+2026-03-07 19:24:56,711 INFO google_genai.models: AFC is enabled with max remote calls: 10.
+2026-03-07 19:24:59,582 INFO src.agent.sentiment: LLM sentiment augmentation: neutral -> neutral (conf=0.90)
+2026-03-07 19:24:59,583 INFO google_genai.models: AFC is enabled with max remote calls: 10.
+2026-03-07 19:25:02,152 INFO httpx: HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-embedding-001:batchEmbedContents "HTTP/1.1 200 OK"
+2026-03-07 19:25:02,164 INFO httpx: HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-embedding-001:batchEmbedContents "HTTP/1.1 200 OK"
+2026-03-07 19:25:02,173 INFO google_genai.models: AFC is enabled with max remote calls: 10.
+2026-03-07 19:25:06,349 INFO google_genai.models: AFC is enabled with max remote calls: 10.
+2026-03-07 19:25:09,049 INFO src.agent.dispatch: Structured dispatch -> dining (confidence=0.98, reason=The guest query mentions a steakhouse, which is explicitly listed as a topic for)
+2026-03-07 19:25:09,050 INFO src.agent.dispatch: Dispatching to dining agent (method=structured_output, model=gemini-3-flash-preview)
+2026-03-07 19:25:09,050 INFO src.agent.agents._base: R83: Injected 3 few-shot examples for dining agent
+2026-03-07 19:25:09,051 INFO google_genai.models: AFC is enabled with max remote calls: 10.
+2026-03-07 19:25:17,877 INFO google_genai.models: AFC is enabled with max remote calls: 10.
+2026-03-07 19:25:21,335 INFO src.agent.profiling: Profiling extraction: filled=0/16 fields, keys=[], skipped=['guest_name', 'party_size', 'party_composition', 'visit_purpose', 'visit_duration']
+2026-03-07 19:25:21,335 INFO src.agent.profiling: Profiling state: phase=foundation, completeness=0.10, total_known=1, new_this_turn=0
+2026-03-07 19:25:21,337 INFO google_genai.models: AFC is enabled with max remote calls: 10.
+2026-03-07 19:25:25,725 WARNING src.agent.nodes: Validation structured output parsing failed: Failed to parse ValidationResult from completion {"status": ""}. Got: 1 validation error for ValidationResult
+status
+  Input should be 'PASS', 'FAIL' or 'RETRY' [type=literal_error, input_value='', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.12/v/literal_error
+For troubleshooting, visit: https://docs.langchain.com/oss/python/langchain/errors/OUTPUT_PARSING_FAILURE 
+2026-03-07 19:25:25,725 WARNING src.agent.nodes: Degraded-pass: serving unvalidated response (attempt 0, validator unavailable, grounding present)
+2026-03-07 19:25:25,727 INFO src.agent.nodes: Slop detector: cleaned 0 chars from response
+2026-03-07 19:25:25,730 INFO google_genai.models: AFC is enabled with max remote calls: 10.
+2026-03-07 19:25:29,008 INFO src.agent.guardrails: Semantic injection classifier: is_injection=False confidence=0.99
+2026-03-07 19:25:29,011 INFO google_genai.models: AFC is enabled with max remote calls: 10.
+2026-03-07 19:25:31,820 INFO src.agent.sentiment: LLM sentiment augmentation: neutral -> neutral (conf=0.95)
+2026-03-07 19:25:31,822 INFO google_genai.models: AFC is enabled with max remote calls: 10.
+2026-03-07 19:25:36,285 INFO httpx: HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-embedding-001:batchEmbedContents "HTTP/1.1 200 OK"
+2026-03-07 19:25:36,287 INFO httpx: HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-embedding-001:batchEmbedContents "HTTP/1.1 200 OK"
+2026-03-07 19:25:36,296 INFO google_genai.models: AFC is enabled with max remote calls: 10.
+2026-03-07 19:25:40,652 INFO google_genai.models: AFC is enabled with max remote calls: 10.
+2026-03-07 19:25:45,258 INFO src.agent.dispatch: Structured dispatch -> host (confidence=0.85, reason=The guest's query involves multiple domains—specifically dining ('dinner') and e)
+2026-03-07 19:25:45,258 INFO src.agent.dispatch: Dispatching to host agent (method=structured_output, model=gemini-3-flash-preview)
+2026-03-07 19:25:45,258 INFO src.agent.agents._base: R83: Injected 3 few-shot examples for host agent
+2026-03-07 19:25:45,259 INFO google_genai.models: AFC is enabled with max remote calls: 10.
+2026-03-07 19:25:50,933 INFO google_genai.models: AFC is enabled with max remote calls: 10.
+2026-03-07 19:25:55,959 INFO src.agent.profiling: Profiling extraction: filled=0/16 fields, keys=[], skipped=['guest_name', 'party_size', 'party_composition', 'visit_purpose', 'visit_duration']
+2026-03-07 19:25:55,959 INFO src.agent.profiling: Profiling state: phase=foundation, completeness=0.25, total_known=2, new_this_turn=0
+2026-03-07 19:25:55,960 INFO google_genai.models: AFC is enabled with max remote calls: 10.
+2026-03-07 19:26:00,107 INFO src.agent.dispatch: Retry path -- reusing specialist host (skipping dispatch)
+2026-03-07 19:26:00,107 INFO src.agent.dispatch: Dispatching to host agent (method=retry_reuse, model=gemini-3-flash-preview)
+2026-03-07 19:26:00,107 INFO src.agent.agents._base: R83: Injected 3 few-shot examples for host agent
+2026-03-07 19:26:00,107 INFO src.agent.agents._base: R85: Incentive section injected (completeness=0.25, agent=host)
+2026-03-07 19:26:00,108 INFO google_genai.models: AFC is enabled with max remote calls: 10.
+2026-03-07 19:26:23,828 INFO google_genai.models: AFC is enabled with max remote calls: 10.
+2026-03-07 19:26:28,382 INFO src.agent.profiling: Profiling extraction: filled=0/16 fields, keys=[], skipped=['guest_name', 'party_size', 'party_composition', 'visit_purpose', 'visit_duration']
+2026-03-07 19:26:28,382 INFO src.agent.profiling: Profiling state: phase=foundation, completeness=0.25, total_known=2, new_this_turn=0
+2026-03-07 19:26:28,384 INFO google_genai.models: AFC is enabled with max remote calls: 10.
+2026-03-07 19:26:32,930 WARNING src.agent.nodes: Fallback triggered. Reason: 
+2026-03-07 19:26:32,930 INFO src.agent.nodes: R89: Recovering specialist response (551 chars) instead of canned fallback
+2026-03-07 19:26:32,933 INFO google_genai.models: AFC is enabled with max remote calls: 10.
+2026-03-07 19:26:37,179 INFO src.agent.guardrails: Semantic injection classifier: is_injection=False confidence=0.99
+2026-03-07 19:26:37,182 INFO google_genai.models: AFC is enabled with max remote calls: 10.
+2026-03-07 19:26:41,329 INFO httpx: HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-embedding-001:batchEmbedContents "HTTP/1.1 200 OK"
+2026-03-07 19:26:41,337 INFO httpx: HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-embedding-001:batchEmbedContents "HTTP/1.1 200 OK"
+2026-03-07 19:26:41,347 INFO google_genai.models: AFC is enabled with max remote calls: 10.
+2026-03-07 19:26:45,325 INFO google_genai.models: AFC is enabled with max remote calls: 10.
+2026-03-07 19:26:49,197 INFO src.agent.dispatch: Structured dispatch -> dining (confidence=0.75, reason=The guest provides a party size and a specific time, which are standard paramete)
+2026-03-07 19:26:49,197 INFO src.agent.dispatch: Dispatching to dining agent (method=structured_output, model=gemini-3-flash-preview)
+2026-03-07 19:26:49,198 INFO src.agent.agents._base: R83: Injected 3 few-shot examples for dining agent
+2026-03-07 19:26:49,198 INFO google_genai.models: AFC is enabled with max remote calls: 10.
+2026-03-07 19:27:02,541 INFO google_genai.models: AFC is enabled with max remote calls: 10.
+2026-03-07 19:27:06,428 INFO src.agent.profiling: Profiling extraction: filled=0/16 fields, keys=[], skipped=['guest_name', 'party_size', 'party_composition', 'visit_purpose', 'visit_duration']
+2026-03-07 19:27:06,428 INFO src.agent.profiling: Profiling state: phase=foundation, completeness=0.25, total_known=2, new_this_turn=0
+2026-03-07 19:27:06,429 INFO google_genai.models: AFC is enabled with max remote calls: 10.
+2026-03-07 19:27:10,442 INFO src.agent.dispatch: Retry path -- reusing specialist dining (skipping dispatch)
+2026-03-07 19:27:10,442 INFO src.agent.dispatch: Dispatching to dining agent (method=retry_reuse, model=gemini-3-flash-preview)
+2026-03-07 19:27:10,442 INFO src.agent.agents._base: R83: Injected 3 few-shot examples for dining agent
+2026-03-07 19:27:10,443 INFO src.agent.agents._base: R85: Incentive section injected (completeness=0.25, agent=dining)
+2026-03-07 19:27:10,443 INFO google_genai.models: AFC is enabled with max remote calls: 10.
+2026-03-07 19:27:24,203 INFO google_genai.models: AFC is enabled with max remote calls: 10.
+2026-03-07 19:27:28,040 INFO src.agent.profiling: Profiling extraction: filled=0/16 fields, keys=[], skipped=['guest_name', 'party_size', 'party_composition', 'visit_purpose', 'visit_duration']
+2026-03-07 19:27:28,040 INFO src.agent.profiling: Profiling state: phase=foundation, completeness=0.25, total_known=2, new_this_turn=0
+2026-03-07 19:27:28,042 INFO google_genai.models: AFC is enabled with max remote calls: 10.
+2026-03-07 19:27:32,233 WARNING src.agent.nodes: Fallback triggered. Reason: 
+2026-03-07 19:27:32,233 INFO src.agent.nodes: R89: Recovering specialist response (902 chars) instead of canned fallback
+2026-03-07 19:27:32,236 INFO google_genai.models: AFC is enabled with max remote calls: 10.
+2026-03-07 19:27:34,534 INFO src.agent.guardrails: Semantic injection classifier: is_injection=False confidence=0.99
+2026-03-07 19:27:34,537 INFO google_genai.models: AFC is enabled with max remote calls: 10.
+2026-03-07 19:27:37,618 INFO httpx: HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-embedding-001:batchEmbedContents "HTTP/1.1 200 OK"
+2026-03-07 19:27:37,945 INFO httpx: HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-embedding-001:batchEmbedContents "HTTP/1.1 200 OK"
+2026-03-07 19:27:37,956 INFO google_genai.models: AFC is enabled with max remote calls: 10.
+2026-03-07 19:27:42,458 INFO google_genai.models: AFC is enabled with max remote calls: 10.
+2026-03-07 19:27:45,494 INFO src.agent.dispatch: Structured dispatch -> host (confidence=0.95, reason=The user query is a general expression of gratitude with no specific service req)
+2026-03-07 19:27:45,495 INFO src.agent.dispatch: Dispatching to host agent (method=structured_output, model=gemini-3-flash-preview)
+2026-03-07 19:27:45,495 INFO src.agent.agents._base: R83: Injected 3 few-shot examples for host agent
+2026-03-07 19:27:45,496 INFO google_genai.models: AFC is enabled with max remote calls: 10.
+2026-03-07 19:27:51,611 INFO google_genai.models: AFC is enabled with max remote calls: 10.
+2026-03-07 19:27:56,739 INFO src.agent.profiling: Profiling extraction: filled=0/16 fields, keys=[], skipped=['guest_name', 'party_size', 'party_composition', 'visit_purpose', 'visit_duration']
+2026-03-07 19:27:56,740 INFO src.agent.profiling: Profiling state: phase=foundation, completeness=0.25, total_known=2, new_this_turn=0
+2026-03-07 19:27:56,741 INFO google_genai.models: AFC is enabled with max remote calls: 10.
+2026-03-07 19:28:00,553 INFO src.agent.dispatch: Retry path -- reusing specialist host (skipping dispatch)
+2026-03-07 19:28:00,553 INFO src.agent.dispatch: Dispatching to host agent (method=retry_reuse, model=gemini-3-flash-preview)
+2026-03-07 19:28:00,553 INFO src.agent.agents._base: R83: Injected 3 few-shot examples for host agent
+2026-03-07 19:28:00,554 INFO src.agent.agents._base: R85: Incentive section injected (completeness=0.25, agent=host)
+2026-03-07 19:28:00,554 INFO google_genai.models: AFC is enabled with max remote calls: 10.
+2026-03-07 19:28:10,552 INFO google_genai.models: AFC is enabled with max remote calls: 10.
+2026-03-07 19:28:15,533 INFO src.agent.profiling: Profiling extraction: filled=0/16 fields, keys=[], skipped=['guest_name', 'party_size', 'party_composition', 'visit_purpose', 'visit_duration']
+2026-03-07 19:28:15,533 INFO src.agent.profiling: Profiling state: phase=foundation, completeness=0.25, total_known=2, new_this_turn=0
+2026-03-07 19:28:15,535 INFO google_genai.models: AFC is enabled with max remote calls: 10.
+2026-03-07 19:28:19,087 WARNING src.agent.nodes: Fallback triggered. Reason: 
+2026-03-07 19:28:19,088 INFO src.agent.nodes: R89: Recovering specialist response (617 chars) instead of canned fallback
+2026-03-07 19:28:19,088 INFO live_eval:   -> OK | 5 turns | avg 50908ms
+2026-03-07 19:28:19,590 INFO live_eval: [9/10] Running scenario relationship-09: Budget-conscious couple — value steering without condescension
+2026-03-07 19:28:19,595 INFO google_genai.models: AFC is enabled with max remote calls: 10.
+2026-03-07 19:28:23,501 INFO src.agent.guardrails: Semantic injection classifier: is_injection=False confidence=1.00
+2026-03-07 19:28:23,503 INFO google_genai.models: AFC is enabled with max remote calls: 10.
+2026-03-07 19:28:25,760 INFO src.agent.sentiment: LLM sentiment augmentation: neutral -> neutral (conf=0.95)
+2026-03-07 19:28:25,761 INFO google_genai.models: AFC is enabled with max remote calls: 10.
+2026-03-07 19:28:29,066 INFO httpx: HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-embedding-001:batchEmbedContents "HTTP/1.1 200 OK"
+2026-03-07 19:28:29,067 INFO httpx: HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-embedding-001:batchEmbedContents "HTTP/1.1 200 OK"
+2026-03-07 19:28:29,078 INFO google_genai.models: AFC is enabled with max remote calls: 10.
+2026-03-07 19:28:33,258 INFO google_genai.models: AFC is enabled with max remote calls: 10.
+2026-03-07 19:28:37,911 INFO src.agent.dispatch: Structured dispatch -> dining (confidence=0.95, reason=The guest is specifically requesting dinner recommendations, which is the core d)
+2026-03-07 19:28:37,911 INFO src.agent.dispatch: Dispatching to dining agent (method=structured_output, model=gemini-3-flash-preview)
+2026-03-07 19:28:37,912 INFO src.agent.agents._base: R83: Injected 3 few-shot examples for dining agent
+2026-03-07 19:28:37,912 INFO google_genai.models: AFC is enabled with max remote calls: 10.
+2026-03-07 19:28:44,282 INFO google_genai.models: AFC is enabled with max remote calls: 10.
+2026-03-07 19:28:48,193 INFO src.agent.profiling: Profiling extraction: filled=0/16 fields, keys=[], skipped=['guest_name', 'party_size', 'party_composition', 'visit_purpose', 'visit_duration']
+2026-03-07 19:28:48,193 INFO src.agent.profiling: Profiling state: phase=foundation, completeness=0.00, total_known=1, new_this_turn=0
+2026-03-07 19:28:48,195 INFO google_genai.models: AFC is enabled with max remote calls: 10.
+2026-03-07 19:28:51,831 INFO google_genai.models: AFC is enabled with max remote calls: 10.
+2026-03-07 19:28:54,362 INFO src.agent.guardrails: Semantic injection classifier: is_injection=False confidence=1.00
+2026-03-07 19:28:54,364 INFO google_genai.models: AFC is enabled with max remote calls: 10.
+2026-03-07 19:29:00,301 INFO httpx: HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-embedding-001:batchEmbedContents "HTTP/1.1 200 OK"
+2026-03-07 19:29:00,302 INFO httpx: HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-embedding-001:batchEmbedContents "HTTP/1.1 200 OK"
+2026-03-07 19:29:00,315 INFO google_genai.models: AFC is enabled with max remote calls: 10.
+2026-03-07 19:29:04,486 INFO google_genai.models: AFC is enabled with max remote calls: 10.
+2026-03-07 19:29:06,875 INFO src.agent.dispatch: Structured dispatch -> entertainment (confidence=1.00, reason=The guest specifically inquired about entertainment options following their meal)
+2026-03-07 19:29:06,876 INFO src.agent.dispatch: Dispatching to entertainment agent (method=structured_output, model=gemini-3-flash-preview)
+2026-03-07 19:29:06,876 INFO src.agent.agents._base: R83: Injected 3 few-shot examples for entertainment agent
+2026-03-07 19:29:06,876 INFO google_genai.models: AFC is enabled with max remote calls: 10.
+2026-03-07 19:29:16,758 INFO google_genai.models: AFC is enabled with max remote calls: 10.
+2026-03-07 19:29:20,851 INFO src.agent.profiling: Profiling extraction: filled=0/16 fields, keys=[], skipped=['guest_name', 'party_size', 'party_composition', 'visit_purpose', 'visit_duration']
+2026-03-07 19:29:20,852 INFO src.agent.profiling: Profiling state: phase=foundation, completeness=0.00, total_known=1, new_this_turn=0
+2026-03-07 19:29:20,853 INFO google_genai.models: AFC is enabled with max remote calls: 10.
+2026-03-07 19:29:25,215 INFO src.agent.dispatch: Retry path -- reusing specialist entertainment (skipping dispatch)
+2026-03-07 19:29:25,215 INFO src.agent.dispatch: Dispatching to entertainment agent (method=retry_reuse, model=gemini-3-flash-preview)
+2026-03-07 19:29:25,216 INFO src.agent.agents._base: R83: Injected 3 few-shot examples for entertainment agent
+2026-03-07 19:29:25,216 INFO google_genai.models: AFC is enabled with max remote calls: 10.
+2026-03-07 19:29:39,860 INFO google_genai.models: AFC is enabled with max remote calls: 10.
+2026-03-07 19:29:44,033 INFO src.agent.profiling: Profiling extraction: filled=0/16 fields, keys=[], skipped=['guest_name', 'party_size', 'party_composition', 'visit_purpose', 'visit_duration']
+2026-03-07 19:29:44,033 INFO src.agent.profiling: Profiling state: phase=foundation, completeness=0.00, total_known=1, new_this_turn=0
+2026-03-07 19:29:44,035 INFO google_genai.models: AFC is enabled with max remote calls: 10.
+2026-03-07 19:29:47,746 WARNING src.agent.nodes: Degraded-pass: validator returned RETRY on retry with grounding — serving specialist response (reason: )
+2026-03-07 19:29:47,750 INFO google_genai.models: AFC is enabled with max remote calls: 10.
+2026-03-07 19:29:50,005 INFO src.agent.guardrails: Semantic injection classifier: is_injection=False confidence=0.99
+2026-03-07 19:29:50,008 INFO google_genai.models: AFC is enabled with max remote calls: 10.
+2026-03-07 19:29:54,834 INFO httpx: HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-embedding-001:batchEmbedContents "HTTP/1.1 200 OK"
+2026-03-07 19:29:54,845 INFO httpx: HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-embedding-001:batchEmbedContents "HTTP/1.1 200 OK"
+2026-03-07 19:29:54,854 INFO google_genai.models: AFC is enabled with max remote calls: 10.
+2026-03-07 19:29:58,958 INFO google_genai.models: AFC is enabled with max remote calls: 10.
+2026-03-07 19:30:02,020 INFO src.agent.dispatch: Structured dispatch -> entertainment (confidence=0.95, reason=The guest's query specifically mentions music and events, which are categorized )
+2026-03-07 19:30:02,020 INFO src.agent.dispatch: Dispatching to entertainment agent (method=structured_output, model=gemini-3-flash-preview)
+2026-03-07 19:30:02,020 INFO src.agent.agents._base: R83: Injected 3 few-shot examples for entertainment agent
+2026-03-07 19:30:02,021 INFO google_genai.models: AFC is enabled with max remote calls: 10.
+2026-03-07 19:30:18,848 INFO google_genai.models: AFC is enabled with max remote calls: 10.
+2026-03-07 19:30:22,995 INFO src.agent.profiling: Profiling extraction: filled=0/16 fields, keys=[], skipped=['guest_name', 'party_size', 'party_composition', 'visit_purpose', 'visit_duration']
+2026-03-07 19:30:22,995 INFO src.agent.profiling: Profiling state: phase=foundation, completeness=0.00, total_known=1, new_this_turn=0
+2026-03-07 19:30:22,997 INFO google_genai.models: AFC is enabled with max remote calls: 10.
+2026-03-07 19:30:28,387 INFO src.agent.dispatch: Retry path -- reusing specialist entertainment (skipping dispatch)
+2026-03-07 19:30:28,388 INFO src.agent.dispatch: Dispatching to entertainment agent (method=retry_reuse, model=gemini-3-flash-preview)
+2026-03-07 19:30:28,388 INFO src.agent.agents._base: R83: Injected 3 few-shot examples for entertainment agent
+2026-03-07 19:30:28,389 INFO google_genai.models: AFC is enabled with max remote calls: 10.
+2026-03-07 19:30:45,039 INFO google_genai.models: AFC is enabled with max remote calls: 10.
+2026-03-07 19:30:49,030 INFO src.agent.profiling: Profiling extraction: filled=0/16 fields, keys=[], skipped=['guest_name', 'party_size', 'party_composition', 'visit_purpose', 'visit_duration']
+2026-03-07 19:30:49,030 INFO src.agent.profiling: Profiling state: phase=foundation, completeness=0.00, total_known=1, new_this_turn=0
+2026-03-07 19:30:49,032 INFO google_genai.models: AFC is enabled with max remote calls: 10.
+2026-03-07 19:30:53,066 INFO src.agent.nodes: Slop detector: cleaned 86 chars from response
+2026-03-07 19:30:53,069 INFO google_genai.models: AFC is enabled with max remote calls: 10.
+2026-03-07 19:30:54,963 INFO src.agent.guardrails: Semantic injection classifier: is_injection=False confidence=0.99
+2026-03-07 19:30:54,966 INFO google_genai.models: AFC is enabled with max remote calls: 10.
+2026-03-07 19:30:58,508 INFO httpx: HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-embedding-001:batchEmbedContents "HTTP/1.1 200 OK"
+2026-03-07 19:30:58,523 INFO httpx: HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-embedding-001:batchEmbedContents "HTTP/1.1 200 OK"
+2026-03-07 19:30:58,531 INFO google_genai.models: AFC is enabled with max remote calls: 10.
+2026-03-07 19:31:02,549 INFO google_genai.models: AFC is enabled with max remote calls: 10.
+2026-03-07 19:31:05,689 INFO src.agent.dispatch: Structured dispatch -> entertainment (confidence=0.95, reason=The user is asking for activities and things to do, which matches the entertainm)
+2026-03-07 19:31:05,689 INFO src.agent.dispatch: Dispatching to entertainment agent (method=structured_output, model=gemini-3-flash-preview)
+2026-03-07 19:31:05,689 INFO src.agent.agents._base: R83: Injected 3 few-shot examples for entertainment agent
+2026-03-07 19:31:05,690 INFO google_genai.models: AFC is enabled with max remote calls: 10.
+2026-03-07 19:31:25,813 INFO google_genai.models: AFC is enabled with max remote calls: 10.
+2026-03-07 19:31:29,861 INFO src.agent.profiling: Profiling extraction: filled=0/16 fields, keys=[], skipped=['guest_name', 'party_size', 'party_composition', 'visit_purpose', 'visit_duration']
+2026-03-07 19:31:29,861 INFO src.agent.profiling: Profiling state: phase=foundation, completeness=0.00, total_known=1, new_this_turn=0
+2026-03-07 19:31:29,863 INFO google_genai.models: AFC is enabled with max remote calls: 10.
+2026-03-07 19:31:33,713 INFO src.agent.nodes: Slop detector: cleaned 149 chars from response
+2026-03-07 19:31:33,717 INFO google_genai.models: AFC is enabled with max remote calls: 10.
+2026-03-07 19:31:35,810 INFO src.agent.guardrails: Semantic injection classifier: is_injection=False confidence=1.00
+2026-03-07 19:31:35,813 INFO google_genai.models: AFC is enabled with max remote calls: 10.
+2026-03-07 19:31:38,697 INFO httpx: HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-embedding-001:batchEmbedContents "HTTP/1.1 200 OK"
+2026-03-07 19:31:38,698 INFO httpx: HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-embedding-001:batchEmbedContents "HTTP/1.1 200 OK"
+2026-03-07 19:31:38,710 INFO google_genai.models: AFC is enabled with max remote calls: 10.
+2026-03-07 19:31:44,271 INFO google_genai.models: AFC is enabled with max remote calls: 10.
+2026-03-07 19:31:48,779 INFO src.agent.dispatch: Structured dispatch -> host (confidence=0.95, reason=The query is a polite expression of gratitude with no specific request or domain)
+2026-03-07 19:31:48,779 INFO src.agent.dispatch: Dispatching to host agent (method=structured_output, model=gemini-3-flash-preview)
+2026-03-07 19:31:48,780 INFO src.agent.agents._base: R83: Injected 3 few-shot examples for host agent
+2026-03-07 19:31:48,781 INFO google_genai.models: AFC is enabled with max remote calls: 10.
+2026-03-07 19:31:59,545 INFO google_genai.models: AFC is enabled with max remote calls: 10.
+2026-03-07 19:32:03,282 INFO src.agent.profiling: Profiling extraction: filled=0/16 fields, keys=[], skipped=['guest_name', 'party_size', 'party_composition', 'visit_purpose', 'visit_duration']
+2026-03-07 19:32:03,282 INFO src.agent.profiling: Profiling state: phase=foundation, completeness=0.00, total_known=1, new_this_turn=0
+2026-03-07 19:32:03,283 INFO google_genai.models: AFC is enabled with max remote calls: 10.
+2026-03-07 19:32:07,593 INFO live_eval:   -> OK | 5 turns | avg 45600ms
+2026-03-07 19:32:08,095 INFO live_eval: [10/10] Running scenario relationship-10: Returning VIP with specific request — host authority + action
+2026-03-07 19:32:08,099 INFO google_genai.models: AFC is enabled with max remote calls: 10.
+2026-03-07 19:32:11,285 INFO src.agent.guardrails: Semantic injection classifier: is_injection=False confidence=1.00
+2026-03-07 19:32:11,287 INFO google_genai.models: AFC is enabled with max remote calls: 10.
+2026-03-07 19:32:14,315 INFO httpx: HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-embedding-001:batchEmbedContents "HTTP/1.1 200 OK"
+2026-03-07 19:32:14,333 INFO httpx: HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-embedding-001:batchEmbedContents "HTTP/1.1 200 OK"
+2026-03-07 19:32:14,347 INFO google_genai.models: AFC is enabled with max remote calls: 10.
+2026-03-07 19:32:18,376 INFO google_genai.models: AFC is enabled with max remote calls: 10.
+2026-03-07 19:32:21,715 INFO src.agent.dispatch: Structured dispatch -> host (confidence=0.95, reason=The guest query covers multiple distinct service areas, including hotel accommod)
+2026-03-07 19:32:21,716 INFO src.agent.dispatch: Dispatching to host agent (method=structured_output, model=gemini-3-flash-preview)
+2026-03-07 19:32:21,716 INFO src.agent.agents._base: R83: Injected 3 few-shot examples for host agent
+2026-03-07 19:32:21,716 INFO google_genai.models: AFC is enabled with max remote calls: 10.
+2026-03-07 19:32:41,914 INFO google_genai.models: AFC is enabled with max remote calls: 10.
+2026-03-07 19:32:45,908 INFO src.agent.profiling: Profiling extraction: filled=0/16 fields, keys=[], skipped=['guest_name', 'party_size', 'party_composition', 'visit_purpose', 'visit_duration']
+2026-03-07 19:32:45,908 INFO src.agent.profiling: Profiling state: phase=foundation, completeness=0.15, total_known=1, new_this_turn=0
+2026-03-07 19:32:45,910 INFO google_genai.models: AFC is enabled with max remote calls: 10.
+2026-03-07 19:32:49,898 INFO src.agent.dispatch: Retry path -- reusing specialist host (skipping dispatch)
+2026-03-07 19:32:49,899 INFO src.agent.dispatch: Dispatching to host agent (method=retry_reuse, model=gemini-3-flash-preview)
+2026-03-07 19:32:49,899 INFO src.agent.agents._base: R83: Injected 3 few-shot examples for host agent
+2026-03-07 19:32:49,899 INFO google_genai.models: AFC is enabled with max remote calls: 10.
+2026-03-07 19:32:58,623 INFO google_genai.models: AFC is enabled with max remote calls: 10.
+2026-03-07 19:33:02,649 INFO src.agent.profiling: Profiling extraction: filled=0/16 fields, keys=[], skipped=['guest_name', 'party_size', 'party_composition', 'visit_purpose', 'visit_duration']
+2026-03-07 19:33:02,650 INFO src.agent.profiling: Profiling state: phase=foundation, completeness=0.15, total_known=1, new_this_turn=0
+2026-03-07 19:33:02,652 INFO google_genai.models: AFC is enabled with max remote calls: 10.
+2026-03-07 19:33:06,677 INFO src.agent.compliance_gate: {"audit_event": "guardrail_triggered", "category": "celebration_detection", "query_type": null, "timestamp": 1772911986.6774142, "action": "annotate", "severity": "INFO"}
+2026-03-07 19:33:06,679 INFO google_genai.models: AFC is enabled with max remote calls: 10.
+2026-03-07 19:33:09,822 INFO httpx: HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-embedding-001:batchEmbedContents "HTTP/1.1 200 OK"
+2026-03-07 19:33:09,837 INFO httpx: HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-embedding-001:batchEmbedContents "HTTP/1.1 200 OK"
+2026-03-07 19:33:09,847 INFO google_genai.models: AFC is enabled with max remote calls: 10.
+2026-03-07 19:33:14,287 INFO google_genai.models: AFC is enabled with max remote calls: 10.
+2026-03-07 19:33:17,741 INFO src.agent.dispatch: Structured dispatch -> entertainment (confidence=0.95, reason=The guest's query specifically mentions the spa, which is a primary service cate)
+2026-03-07 19:33:17,741 INFO src.agent.dispatch: Dispatching to entertainment agent (method=structured_output, model=gemini-3-flash-preview)
+2026-03-07 19:33:17,741 INFO src.agent.agents._base: R83: Injected 3 few-shot examples for entertainment agent
+2026-03-07 19:33:17,741 INFO src.agent.agents._base: R85: Incentive section injected (completeness=0.00, agent=entertainment)
+2026-03-07 19:33:17,742 INFO google_genai.models: AFC is enabled with max remote calls: 10.
+2026-03-07 19:33:36,598 INFO google_genai.models: AFC is enabled with max remote calls: 10.
+2026-03-07 19:33:40,019 INFO src.agent.profiling: Profiling extraction: filled=0/16 fields, keys=[], skipped=['guest_name', 'party_size', 'party_composition', 'visit_purpose', 'visit_duration']
+2026-03-07 19:33:40,019 INFO src.agent.profiling: Profiling state: phase=foundation, completeness=0.25, total_known=2, new_this_turn=0
+2026-03-07 19:33:40,021 INFO google_genai.models: AFC is enabled with max remote calls: 10.
+2026-03-07 19:33:43,944 INFO src.agent.dispatch: Retry path -- reusing specialist entertainment (skipping dispatch)
+2026-03-07 19:33:43,945 INFO src.agent.dispatch: Dispatching to entertainment agent (method=retry_reuse, model=gemini-3-flash-preview)
+2026-03-07 19:33:43,946 INFO src.agent.agents._base: R83: Injected 3 few-shot examples for entertainment agent
+2026-03-07 19:33:43,947 INFO src.agent.agents._base: R85: Incentive section injected (completeness=0.25, agent=entertainment)
+2026-03-07 19:33:43,947 INFO google_genai.models: AFC is enabled with max remote calls: 10.
+2026-03-07 19:34:09,962 INFO google_genai.models: AFC is enabled with max remote calls: 10.
+2026-03-07 19:34:13,744 INFO src.agent.profiling: Profiling extraction: filled=1/16 fields, keys=['name'], skipped=['party_size', 'party_composition', 'visit_purpose', 'visit_duration', 'dining_preferences']
+2026-03-07 19:34:13,745 INFO src.agent.profiling: Profiling state: phase=foundation, completeness=0.25, total_known=2, new_this_turn=1
+2026-03-07 19:34:13,746 INFO google_genai.models: AFC is enabled with max remote calls: 10.
+2026-03-07 19:34:17,573 WARNING src.agent.nodes: Fallback triggered. Reason: 
+2026-03-07 19:34:17,573 INFO src.agent.nodes: R89: Recovering specialist response (630 chars) instead of canned fallback
+2026-03-07 19:34:17,576 INFO google_genai.models: AFC is enabled with max remote calls: 10.
+2026-03-07 19:34:20,616 INFO src.agent.guardrails: Semantic injection classifier: is_injection=False confidence=0.98
+2026-03-07 19:34:20,618 INFO google_genai.models: AFC is enabled with max remote calls: 10.
+2026-03-07 19:34:23,373 INFO google_genai.models: AFC is enabled with max remote calls: 10.
+2026-03-07 19:34:25,622 INFO src.agent.guardrails: Semantic injection classifier: is_injection=False confidence=0.99
+2026-03-07 19:34:25,625 INFO google_genai.models: AFC is enabled with max remote calls: 10.
+2026-03-07 19:34:28,546 INFO src.agent.sentiment: LLM sentiment augmentation: neutral -> frustrated (conf=0.90)
+2026-03-07 19:34:28,547 INFO google_genai.models: AFC is enabled with max remote calls: 10.
+2026-03-07 19:34:48,453 INFO httpx: HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-embedding-001:batchEmbedContents "HTTP/1.1 200 OK"
+2026-03-07 19:34:53,388 INFO httpx: HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-embedding-001:batchEmbedContents "HTTP/1.1 200 OK"
+2026-03-07 19:34:53,399 INFO google_genai.models: AFC is enabled with max remote calls: 10.
+2026-03-07 19:34:57,387 INFO google_genai.models: AFC is enabled with max remote calls: 10.
+2026-03-07 19:35:00,909 INFO src.agent.dispatch: Structured dispatch -> host (confidence=0.90, reason=The guest is requesting personalized service or a concierge-style greeting upon )
+2026-03-07 19:35:00,909 INFO src.agent.nodes: R83 model routing: Pro (sentiment=frustrated)
+2026-03-07 19:35:00,909 INFO src.agent.dispatch: Dispatching to host agent (method=structured_output, model=gemini-3.1-pro-preview)
+2026-03-07 19:35:00,910 INFO src.agent.agents._base: R83: Injected 3 few-shot examples for host agent
+2026-03-07 19:35:00,910 INFO src.agent.agents._base: R85: Incentive section injected (completeness=0.00, agent=host)
+2026-03-07 19:35:00,910 INFO google_genai.models: AFC is enabled with max remote calls: 10.
+2026-03-07 19:35:11,499 INFO google_genai.models: AFC is enabled with max remote calls: 10.
+2026-03-07 19:35:15,573 INFO src.agent.profiling: Profiling extraction: filled=0/16 fields, keys=[], skipped=['guest_name', 'party_size', 'party_composition', 'visit_purpose', 'visit_duration']
+2026-03-07 19:35:15,573 INFO src.agent.profiling: Profiling state: phase=foundation, completeness=0.25, total_known=2, new_this_turn=0
+2026-03-07 19:35:15,575 INFO google_genai.models: AFC is enabled with max remote calls: 10.
+2026-03-07 19:35:20,164 INFO src.agent.dispatch: Retry path -- reusing specialist host (skipping dispatch)
+2026-03-07 19:35:20,164 INFO src.agent.nodes: R83 model routing: Pro (sentiment=frustrated)
+2026-03-07 19:35:20,164 INFO src.agent.dispatch: Dispatching to host agent (method=retry_reuse, model=gemini-3.1-pro-preview)
+2026-03-07 19:35:20,165 INFO src.agent.agents._base: R83: Injected 3 few-shot examples for host agent
+2026-03-07 19:35:20,165 INFO src.agent.agents._base: R85: Incentive section injected (completeness=0.25, agent=host)
+2026-03-07 19:35:20,165 INFO src.agent.agents._base: R83: Using Pro model (gemini-3.1-pro-preview) for host agent
+2026-03-07 19:35:20,165 INFO google_genai.models: AFC is enabled with max remote calls: 10.
+2026-03-07 19:35:32,468 INFO google_genai.models: AFC is enabled with max remote calls: 10.
+2026-03-07 19:35:36,099 INFO src.agent.profiling: Profiling extraction: filled=0/16 fields, keys=[], skipped=['guest_name', 'party_size', 'party_composition', 'visit_purpose', 'visit_duration']
+2026-03-07 19:35:36,099 INFO src.agent.profiling: Profiling state: phase=foundation, completeness=0.25, total_known=2, new_this_turn=0
+2026-03-07 19:35:36,101 INFO google_genai.models: AFC is enabled with max remote calls: 10.
+2026-03-07 19:35:40,130 WARNING src.agent.nodes: Fallback triggered. Reason: 
+2026-03-07 19:35:40,130 INFO src.agent.nodes: R89: Recovering specialist response (447 chars) instead of canned fallback
+2026-03-07 19:35:40,133 INFO google_genai.models: AFC is enabled with max remote calls: 10.
+2026-03-07 19:35:43,556 INFO src.agent.guardrails: Semantic injection classifier: is_injection=False confidence=1.00
+2026-03-07 19:35:43,558 INFO google_genai.models: AFC is enabled with max remote calls: 10.
+2026-03-07 19:35:47,644 INFO httpx: HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-embedding-001:batchEmbedContents "HTTP/1.1 200 OK"
+2026-03-07 19:35:47,663 INFO httpx: HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-embedding-001:batchEmbedContents "HTTP/1.1 200 OK"
+2026-03-07 19:35:47,671 INFO google_genai.models: AFC is enabled with max remote calls: 10.
+2026-03-07 19:35:51,716 INFO google_genai.models: AFC is enabled with max remote calls: 10.
+2026-03-07 19:35:55,696 INFO src.agent.dispatch: Structured dispatch -> entertainment (confidence=0.85, reason=The query is a confirmation of a future visit. Given the context categories are )
+2026-03-07 19:35:55,696 INFO src.agent.dispatch: Dispatching to entertainment agent (method=structured_output, model=gemini-3-flash-preview)
+2026-03-07 19:35:55,697 INFO src.agent.agents._base: R83: Injected 3 few-shot examples for entertainment agent
+2026-03-07 19:35:55,697 INFO src.agent.agents._base: R85: Incentive section injected (completeness=0.00, agent=entertainment)
+2026-03-07 19:35:55,697 INFO google_genai.models: AFC is enabled with max remote calls: 10.
+2026-03-07 19:36:08,310 INFO google_genai.models: AFC is enabled with max remote calls: 10.
+2026-03-07 19:36:17,770 INFO src.agent.profiling: Profiling extraction: filled=0/16 fields, keys=[], skipped=['guest_name', 'party_size', 'party_composition', 'visit_purpose', 'visit_duration']
+2026-03-07 19:36:17,770 INFO src.agent.profiling: Profiling state: phase=foundation, completeness=0.25, total_known=2, new_this_turn=0
+2026-03-07 19:36:17,772 INFO google_genai.models: AFC is enabled with max remote calls: 10.
+2026-03-07 19:36:22,269 INFO src.agent.dispatch: Retry path -- reusing specialist entertainment (skipping dispatch)
+2026-03-07 19:36:22,269 INFO src.agent.dispatch: Dispatching to entertainment agent (method=retry_reuse, model=gemini-3-flash-preview)
+2026-03-07 19:36:22,269 INFO src.agent.agents._base: R83: Injected 3 few-shot examples for entertainment agent
+2026-03-07 19:36:22,270 INFO src.agent.agents._base: R85: Incentive section injected (completeness=0.25, agent=entertainment)
+2026-03-07 19:36:22,270 INFO google_genai.models: AFC is enabled with max remote calls: 10.
+2026-03-07 19:36:34,709 INFO google_genai.models: AFC is enabled with max remote calls: 10.
+2026-03-07 19:36:38,130 INFO src.agent.profiling: Profiling extraction: filled=0/16 fields, keys=[], skipped=['guest_name', 'party_size', 'party_composition', 'visit_purpose', 'visit_duration']
+2026-03-07 19:36:38,130 INFO src.agent.profiling: Profiling state: phase=foundation, completeness=0.25, total_known=2, new_this_turn=0
+2026-03-07 19:36:38,132 INFO google_genai.models: AFC is enabled with max remote calls: 10.
+2026-03-07 19:36:41,834 WARNING src.agent.nodes: Fallback triggered. Reason: 
+2026-03-07 19:36:41,834 INFO src.agent.nodes: R89: Recovering specialist response (555 chars) instead of canned fallback
+2026-03-07 19:36:41,835 INFO live_eval:   -> OK | 5 turns | avg 54747ms
+2026-03-07 19:36:41,836 INFO live_eval: ============================================================
+2026-03-07 19:36:41,836 INFO live_eval: EVALUATION COMPLETE
+2026-03-07 19:36:41,836 INFO live_eval:   Scenarios: 10
+2026-03-07 19:36:41,836 INFO live_eval:   Turns: 49
+2026-03-07 19:36:41,836 INFO live_eval:   Errors: 0
+2026-03-07 19:36:41,836 INFO live_eval:   Avg turn latency: 47813ms
+2026-03-07 19:36:41,836 INFO live_eval:   Results: /home/odedbe/projects/hey-seven/tests/evaluation/r102-relationship-responses.json
+2026-03-07 19:36:41,836 INFO live_eval: ============================================================

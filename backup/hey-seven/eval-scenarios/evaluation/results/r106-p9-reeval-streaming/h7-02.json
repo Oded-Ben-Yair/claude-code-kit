@@ -1,0 +1,81 @@
+{
+  "scenario_id": "h7-02",
+  "scenario_name": "Hotel guest looking for daytime activities",
+  "category": "host_triangle_h7_h10_revenue",
+  "behavioral_dimension": "H7_cross_selling_wallet_share",
+  "expected_behavior": "Builds a full day arc: morning at the pool, afternoon spa, shopping at The Shops, then dinner and evening entertainment. Each suggestion flows naturally from the previous one. The guest feels like the property has a full day's worth of experiences, not just a casino with a hotel attached",
+  "expected_behavioral_quality": "When a hotel guest asks about daytime activities, the agent introduces spa, dining, and entertainment as a full-day experience. The cross-sell creates a vision of a resort day, not just a list of things to do.",
+  "safety_relevant": false,
+  "source_file": "host_triangle_h7_h10_revenue.yaml",
+  "thread_id": "eval-h7-02-1773039006",
+  "turns": [
+    {
+      "turn_index": 0,
+      "user_message": "We're staying at the Sky Tower tonight. What should we do during the day?",
+      "agent_response": "Sky Tower rooms offer panoramic views of the Thames River valley. Since you have the day ahead of you, head over to the Elemis Spa in the Earth Tower\u2014it's open until 7:00 PM and is the quietest spot to recharge before the night begins. \n\nWhat brings you to Mohegan Sun today?",
+      "sources": [
+        {
+          "category": "hotel",
+          "source": "mohegan_sun.json",
+          "score": 0.692
+        },
+        {
+          "category": "amenities",
+          "source": "mohegan_sun.json",
+          "score": 0.675
+        },
+        {
+          "category": "restaurants",
+          "source": "mohegan_sun.json",
+          "score": 0.673
+        }
+      ],
+      "elapsed_ms": 38675,
+      "error": null
+    },
+    {
+      "turn_index": 1,
+      "user_message": "The spa sounds nice. Anything else before dinner?",
+      "agent_response": "Walking through The Shops at Mohegan Sun is a great way to spend a few hours before your meal. There are over 40 retail options to browse, and it's a nice way to see the property without any pressure. \n\nInsider tip: Keep an eye out for the crystal mountain in the Casino of the Sky while you're shopping; it's a pretty incredible sight. If you're in the mood for something more laid-back, the Mandara Spa has a Balinese-inspired relaxation lounge that is perfect for a quiet moment. \n\nAre you celebrating anything special tonight, or is this more of a spontaneous getaway?",
+      "sources": [
+        {
+          "category": "amenities",
+          "source": "mohegan_sun.json",
+          "score": 0.689
+        },
+        {
+          "category": "entertainment",
+          "source": "mohegan_sun.json",
+          "score": 0.671
+        },
+        {
+          "category": "faq",
+          "source": "mohegan_sun.json",
+          "score": 0.65
+        }
+      ],
+      "elapsed_ms": 32435,
+      "error": null
+    },
+    {
+      "turn_index": 2,
+      "user_message": "Great, and where should we eat for dinner?",
+      "agent_response": "Ballo Italian Restaurant is the spot I'd suggest since you're already staying in the Casino of the Sky. The space is modeled after a Gothic abbey in Tuscany, and the Roman-style arches and candlelight create an incredibly intimate atmosphere for a night out. They open tonight at 5:00 PM and serve until 10:00 PM. It is a smart casual environment with prices around $$$, and I'd suggest a reservation to ensure you get a table to enjoy their housemade pastas and risottos.\n\nHow many people will be joining you for dinner tonight?",
+      "sources": [
+        {
+          "category": "restaurants",
+          "source": "mohegan_sun.json",
+          "score": 0.642
+        },
+        {
+          "category": "faq",
+          "source": "mohegan_sun.json",
+          "score": 0.653
+        }
+      ],
+      "elapsed_ms": 29020,
+      "error": null
+    }
+  ],
+  "completed": true
+}

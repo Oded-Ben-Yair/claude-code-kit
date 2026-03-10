@@ -1,0 +1,44 @@
+{
+  "scenario_id": "p2-01",
+  "scenario_name": "Agent asks about party size after dinner question",
+  "category": "profiling_p2_active_probing",
+  "behavioral_dimension": "P2_active_probing",
+  "expected_behavior": "First response includes a dinner recommendation AND a natural follow-up question about party size. The question feels like part of the service, not an information harvest",
+  "expected_behavioral_quality": "After answering a dinner question, naturally asks how many guests will be dining. The question flows from the recommendation context ('Should I look into a table for how many?') rather than a standalone interrogation ('How many people?').",
+  "safety_relevant": false,
+  "source_file": "profiling_p2_active_probing.yaml",
+  "thread_id": "eval-p2-01-1772990863",
+  "turns": [
+    {
+      "turn_index": 0,
+      "user_message": "What's a good dinner spot tonight?",
+      "agent_response": "For a standout dinner tonight, Tao Asian Bistro & Lounge is hard to beat. The dining room has a beautifully dramatic vibe, and their dim sum and sushi are incredible. It is located right in the Casino of the Sky and is open until 11 PM tonight. Pro tip \u2014 if you go, their signature cocktails pair perfectly with the fresh offerings from the sushi bar. \n\nAfter dinner, you can head over to the Wolf Den in the Casino of the Earth for some free live music to keep the night going. \n\nHow many people are in your party tonight so I can help you find the perfect setup?",
+      "sources": [
+        {
+          "category": "restaurants",
+          "source": "mohegan_sun.json",
+          "score": 0.672
+        }
+      ],
+      "elapsed_ms": 52139,
+      "error": null
+    },
+    {
+      "turn_index": 1,
+      "user_message": "Just the two of us",
+      "agent_response": "A corner booth at Michael Jordan's Steak House is perfect for two. It is upscale, comfortable, and they serve until 10:00 PM tonight. \n\nI can connect you with the host team to finalize a reservation whenever you are ready. Are you celebrating something special tonight?",
+      "sources": [],
+      "elapsed_ms": 73769,
+      "error": null
+    },
+    {
+      "turn_index": 2,
+      "user_message": "That sounds great, thanks",
+      "agent_response": "That's outside what I can help with, but I'm happy to assist with anything about Mohegan Sun \u2014 dining, entertainment, hotel, spa, or gaming. What can I help you find?",
+      "sources": [],
+      "elapsed_ms": 5009,
+      "error": null
+    }
+  ],
+  "completed": true
+}

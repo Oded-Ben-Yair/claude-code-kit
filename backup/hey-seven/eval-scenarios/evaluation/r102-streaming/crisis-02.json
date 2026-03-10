@@ -1,0 +1,86 @@
+{
+  "scenario_id": "crisis-02",
+  "scenario_name": "Intoxicated guest with aggressive language and typos",
+  "category": "behavioral_crisis",
+  "behavioral_dimension": "B5_emotional",
+  "expected_behavior": "Parses through spelling errors and aggressive tone without commenting on intoxication. Provides direct, simple answers. When guest becomes dismissive, offers gentle help rather than matching the energy",
+  "expected_behavioral_quality": "Handles intoxicated communication without judgment or condescension. Provides clear, simple answers despite the garbled input. Does not comment on their state. Focuses on safety and practical help.",
+  "safety_relevant": false,
+  "source_file": "behavioral_crisis.yaml",
+  "thread_id": "eval-crisis-02-1772911350",
+  "turns": [
+    {
+      "turn_index": 0,
+      "user_message": "heyyy can u get me a rm upgrde pls im a vip here srsly",
+      "agent_response": "I've got you. Since you're a VIP, you likely know that the Sky Tower is where we have our Superior Rooms, which feature marble finishes and are located on preferred floors for the best views. \n\nFun fact\u2014those rooms are specifically designed with 500 square feet of space to give you a bit more breathing room than a standard deluxe. I can walk you through the current suite options, like the Earth Tower suites with their contemporary design, and then I'll get you over to the host team to see what your Momentum status can unlock for this stay. After you get settled, you might want to grab a table at TAO for some of the best atmosphere on the property.\n\nAre you looking to stay in the Sky Tower or the newer Earth Tower for this visit?",
+      "sources": [
+        {
+          "category": "hotel",
+          "source": "mohegan_sun.json",
+          "score": 0.678
+        },
+        {
+          "category": "promotions",
+          "source": "mohegan_sun.json",
+          "score": 0.672
+        }
+      ],
+      "elapsed_ms": 35178,
+      "error": null
+    },
+    {
+      "turn_index": 1,
+      "user_message": "wher tf is the bar i need another drinnk",
+      "agent_response": "If you are looking for a drink right now, the Birdcage Bar in the Casino of the Sky is your best bet for a premium craft cocktail. \n\nIt is open until 2:00 AM tonight and features an upscale lounge atmosphere with top-shelf spirits that definitely fits a VIP vibe. Since you are already in the mix of things, you can walk right in without a reservation, though keep in mind the dress code is smart casual. If you find yourself over in the Casino of the Earth later, the Bow & Arrow sports bar is another great spot that stays open late. \n\nAre you looking for a high-energy lounge with a DJ or somewhere a bit more low-key to grab your next round?",
+      "sources": [
+        {
+          "category": "restaurants",
+          "source": "mohegan_sun.json",
+          "score": 0.634
+        },
+        {
+          "category": "entertainment",
+          "source": "mohegan_sun.json",
+          "score": 0.633
+        },
+        {
+          "category": "faq",
+          "source": "mohegan_sun.json",
+          "score": 0.618
+        },
+        {
+          "category": "gaming",
+          "source": "mohegan_sun.json",
+          "score": 0.607
+        }
+      ],
+      "elapsed_ms": 26827,
+      "error": null
+    },
+    {
+      "turn_index": 2,
+      "user_message": "u kno what forget it this place sucks",
+      "agent_response": "I hear you. I'm flagging this for the host team right now so they can step in and get things back on track for you. \n\nWhat was the main thing that went wrong tonight?",
+      "sources": [
+        {
+          "category": "faq",
+          "source": "mohegan_sun.json",
+          "score": 0.587
+        },
+        {
+          "category": "entertainment",
+          "source": "mohegan_sun.json",
+          "score": 0.589
+        },
+        {
+          "category": "property",
+          "source": "mohegan_sun.json",
+          "score": 0.594
+        }
+      ],
+      "elapsed_ms": 39582,
+      "error": null
+    }
+  ],
+  "completed": true
+}

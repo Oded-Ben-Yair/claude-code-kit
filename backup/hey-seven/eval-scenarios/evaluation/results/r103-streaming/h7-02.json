@@ -1,0 +1,81 @@
+{
+  "scenario_id": "h7-02",
+  "scenario_name": "Hotel guest looking for daytime activities",
+  "category": "host_triangle_h7_h10_revenue",
+  "behavioral_dimension": "H7_cross_selling_wallet_share",
+  "expected_behavior": "Builds a full day arc: morning at the pool, afternoon spa, shopping at The Shops, then dinner and evening entertainment. Each suggestion flows naturally from the previous one. The guest feels like the property has a full day's worth of experiences, not just a casino with a hotel attached",
+  "expected_behavioral_quality": "When a hotel guest asks about daytime activities, the agent introduces spa, dining, and entertainment as a full-day experience. The cross-sell creates a vision of a resort day, not just a list of things to do.",
+  "safety_relevant": false,
+  "source_file": "host_triangle_h7_h10_revenue.yaml",
+  "thread_id": "eval-h7-02-1772952671",
+  "turns": [
+    {
+      "turn_index": 0,
+      "user_message": "We're staying at the Sky Tower tonight. What should we do during the day?",
+      "agent_response": "The Sky Tower offers the most panoramic views of the Connecticut countryside, so make sure you take a moment to look out the window before you head down. For your afternoon, I'd suggest the Elemis Spa at the Earth Tower; their signature skincare treatments are the best way to get into a vacation headspace. \n\nWhat brings you out to see us today?",
+      "sources": [
+        {
+          "category": "hotel",
+          "source": "mohegan_sun.json",
+          "score": 0.692
+        },
+        {
+          "category": "amenities",
+          "source": "mohegan_sun.json",
+          "score": 0.675
+        },
+        {
+          "category": "restaurants",
+          "source": "mohegan_sun.json",
+          "score": 0.673
+        }
+      ],
+      "elapsed_ms": 36539,
+      "error": null
+    },
+    {
+      "turn_index": 1,
+      "user_message": "The spa sounds nice. Anything else before dinner?",
+      "agent_response": "The Shops at Mohegan Sun are a great call for a pre-dinner stroll, especially with over 40 stores to explore. If you really want to lean into the relaxation, Mandara Spa has a Balinese-inspired lounge and steam room that is a perfect reset before your evening. Pro tip\u2014their relaxation lounge is the best place on the property to truly disconnect for a bit.\n\nAre you planning on a formal dinner tonight, or are you looking for something more low-key?",
+      "sources": [
+        {
+          "category": "amenities",
+          "source": "mohegan_sun.json",
+          "score": 0.689
+        },
+        {
+          "category": "entertainment",
+          "source": "mohegan_sun.json",
+          "score": 0.671
+        },
+        {
+          "category": "faq",
+          "source": "mohegan_sun.json",
+          "score": 0.65
+        }
+      ],
+      "elapsed_ms": 35619,
+      "error": null
+    },
+    {
+      "turn_index": 2,
+      "user_message": "Great, and where should we eat for dinner?",
+      "agent_response": "Since you are staying in the Sky Tower, Ballo Italian Restaurant is the standout choice for tonight. The dining room feels like a modern Tuscan cathedral with its high arches, and the scent of housemade pasta hitting the table is something you won't forget. It's open from 5:00 PM until 10:00 PM tonight, and since it\u2019s an upscale spot with a smart casual dress code, I definitely recommend a reservation. I can give you all the details you need and connect you with our host team to help finalize a time that works for you.\n\nDo you usually lean toward classic red sauces or are you more of a risotto fan? After dinner, you're just a short walk from the Wolf Den if you're in the mood for some live music.",
+      "sources": [
+        {
+          "category": "restaurants",
+          "source": "mohegan_sun.json",
+          "score": 0.642
+        },
+        {
+          "category": "faq",
+          "source": "mohegan_sun.json",
+          "score": 0.653
+        }
+      ],
+      "elapsed_ms": 33752,
+      "error": null
+    }
+  ],
+  "completed": true
+}

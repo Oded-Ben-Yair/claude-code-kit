@@ -1,0 +1,71 @@
+{
+  "scenario_id": "h7-01",
+  "scenario_name": "Dining guest open to entertainment",
+  "category": "host_triangle_h7_h10_revenue",
+  "behavioral_dimension": "H7_cross_selling_wallet_share",
+  "expected_behavior": "Confirms the dinner choice and immediately paints the after-dinner picture: Wolf Den show, Comix comedy, or casino floor. The cross-sell feels like a natural 'and then...' suggestion from someone who wants the guest to have a full evening, not a checklist of amenities",
+  "expected_behavioral_quality": "When a guest engages with dining, the agent naturally introduces entertainment and nightlife as the next part of the evening. The cross-sell creates a seamless 'full evening' vision where dinner flows into the next experience \u2014 not a list of unrelated amenities.",
+  "safety_relevant": false,
+  "source_file": "host_triangle_h7_h10_revenue.yaml",
+  "thread_id": "eval-h7-01-1772835110",
+  "turns": [
+    {
+      "turn_index": 0,
+      "user_message": "Where should we eat tonight? We're thinking Italian",
+      "agent_response": "Since it is currently 10:11 PM, Frank Pepe's Pizzeria Napoletana in the Casino of the Earth is your best choice for Italian flavors tonight as they remain open until 11:00 PM. \n\nThey serve a legendary New Haven-style coal-fired pizza that has been a Connecticut staple since 1925, and their signature white clam pie is a must-try for anyone visiting the property. It is a casual setting with prices in the $$ range, and since they do not require reservations, you can head straight over and likely be seated quickly. Please keep in mind that hours and prices may vary, so it is always wise to confirm upon arrival. \n\nIf you find yourself wanting a cocktail or a local craft beer after your meal, the Lantern Bar & Grill is nearby and stays open 24 hours. How many guests are in your party this evening?",
+      "sources": [
+        {
+          "category": "restaurants",
+          "source": "mohegan_sun.json",
+          "score": 0.695
+        }
+      ],
+      "elapsed_ms": 33276,
+      "error": null
+    },
+    {
+      "turn_index": 1,
+      "user_message": "Tuscany sounds great. We'll do that",
+      "agent_response": "I apologize, but I'm having trouble generating a response right now. Please try again, or  at [PHONE].",
+      "sources": [
+        {
+          "category": "restaurants",
+          "source": "mohegan_sun.json",
+          "score": 0.672
+        },
+        {
+          "category": "promotions",
+          "source": "mohegan_sun.json",
+          "score": 0.615
+        },
+        {
+          "category": "property",
+          "source": "mohegan_sun.json",
+          "score": 0.627
+        }
+      ],
+      "elapsed_ms": 49371,
+      "error": null
+    },
+    {
+      "turn_index": 2,
+      "user_message": "Oh there's a show tonight? What's playing?",
+      "agent_response": "The show at the Wolf Den should be in full swing right now, as they feature free live music every night typically starting at 8:00 PM or 9:00 PM. It is a fantastic intimate venue in the center of the Casino of the Earth where you are right there with the performer, and since it is complimentary, you can just walk right up. \n\nIf you are looking for a different vibe later tonight, Novelle features DJ entertainment on Friday nights in a sophisticated lounge setting, and Comix Roadhouse has comedy shows running throughout the weekend. After a late night of entertainment, the Elemis Spa is the perfect way to reset tomorrow\u2014their hot stone massage is legendary. Are you looking to head over to the Wolf Den now, or does a comedy show sound more like your speed?",
+      "sources": [
+        {
+          "category": "entertainment",
+          "source": "mohegan_sun.json",
+          "score": 0.67
+        },
+        {
+          "category": "faq",
+          "source": "mohegan_sun.json",
+          "score": 0.666
+        }
+      ],
+      "elapsed_ms": 42735,
+      "error": null
+    }
+  ],
+  "completed": true
+}

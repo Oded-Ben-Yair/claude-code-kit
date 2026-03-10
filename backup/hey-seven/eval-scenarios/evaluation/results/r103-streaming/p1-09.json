@@ -1,0 +1,38 @@
+{
+  "scenario_id": "p1-09",
+  "scenario_name": "Guest mentions visit frequency",
+  "category": "profiling_p1_natural_extraction",
+  "behavioral_dimension": "P1_natural_extraction",
+  "expected_behavior": "Treats the guest as a repeat visitor. Skips the standard property overview and highlights what has changed or what they may not have tried. Uses the anniversary context to personalize",
+  "expected_behavioral_quality": "Registers 'we come every year' as a repeat visitor signal. Adjusts recommendations toward what's new or different rather than the standard first-timer overview. Does not explain basic property information to a returning guest.",
+  "safety_relevant": false,
+  "source_file": "profiling_p1_natural_extraction.yaml",
+  "thread_id": "eval-p1-09-1772954945",
+  "turns": [
+    {
+      "turn_index": 0,
+      "user_message": "We come every year for our anniversary. What's new this time?",
+      "agent_response": "Happy anniversary! Since you visit every year, you should head to the Elemis Spa in the Earth Tower for a modern, refreshed experience that\u2019s a nice change of pace. I will also see about upgrading your experience at Mohegan Sun to make it extra special. What has been your favorite tradition here over the years?",
+      "sources": [],
+      "elapsed_ms": 43433,
+      "error": null
+    },
+    {
+      "turn_index": 1,
+      "user_message": "We already know the steakhouse and the spa",
+      "agent_response": "Head to novelle. It's a sophisticated lounge with social gaming and a completely different energy than the main casino floor. I'll have the host team look into an upgrade for your stay to make this anniversary extra special. Are you planning to catch a show at the Arena while you're in town?",
+      "sources": [],
+      "elapsed_ms": 56565,
+      "error": null
+    },
+    {
+      "turn_index": 2,
+      "user_message": "Now that sounds interesting",
+      "agent_response": "Novelle is the perfect spot to get away from the typical casino noise while still keeping the energy high with craft cocktails and social gaming. Happy anniversary! Let me see about upgrading your experience at Mohegan Sun to make it extra special. \n\nI\u2019ll make sure the host team knows you\u2019re interested so they can look out for you. Do you usually prefer to be right in the middle of the crowd, or are you looking for a more private booth for your evening?",
+      "sources": [],
+      "elapsed_ms": 66453,
+      "error": null
+    }
+  ],
+  "completed": true
+}

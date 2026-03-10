@@ -1,0 +1,66 @@
+{
+  "scenario_id": "p9-02",
+  "scenario_name": "Handoff includes confidence levels for extracted data",
+  "category": "profiling_p8_p9_p10_completeness",
+  "behavioral_dimension": "P9_handoff_quality",
+  "expected_behavior": "Handoff summary separates stated facts (party of 4, kids present, wants pizza and a show) from inferences (family group, kids likely younger based on pizza preference). The host receives a nuanced profile, not raw assertions",
+  "expected_behavioral_quality": "The handoff distinguishes between information the guest explicitly stated (high confidence) and information inferred by the agent (lower confidence). 'Guest stated: party of 4. Inferred: likely family group (mentioned kids).' This prevents the receiving host from treating inferences as facts.",
+  "safety_relevant": false,
+  "source_file": "profiling_p8_p9_p10_completeness.yaml",
+  "thread_id": "eval-p9-02-1772844676",
+  "turns": [
+    {
+      "turn_index": 0,
+      "user_message": "Need dinner for 4 tonight. The kids want pizza.",
+      "agent_response": "Frank Pepe's Pizzeria Napoletana in the Casino of the Earth is the definitive choice for a family pizza night. This is a legendary Connecticut institution famous for its New Haven-style \"apizza,\" which is baked in a coal-fired oven to create a thin, crisp crust with a signature char that adds a wonderful smoky depth. \n\nFor a party of four, their large pies are perfect for sharing in their casual, high-energy dining room. They are currently closed but will reopen today, Saturday, at 11:00 AM and serve until 11:00 PM. No reservations are required, so you can simply walk in whenever the kids are ready to eat. While they are world-renowned for their white clam pie, their classic tomato pie with mozzarella is a hit with even the pickiest eaters. After you've had your fill of pizza, the Wolf Den often has live music nearby that provides a great atmosphere for the rest of your evening. \n\nWould you like me to check the menu details for any specific toppings the kids are looking for?",
+      "sources": [
+        {
+          "category": "restaurants",
+          "source": "mohegan_sun.json",
+          "score": 0.669
+        }
+      ],
+      "elapsed_ms": 42018,
+      "error": null
+    },
+    {
+      "turn_index": 1,
+      "user_message": "We also want to see a show after",
+      "agent_response": "Since you're traveling with the kids, the Mohegan Sun Arena is usually your best bet for all-ages entertainment, whether it's a major concert or a touring production. The atmosphere in there is massive, seating up to 10,000 people, and it's located just a short walk from where you'll be eating pizza.\n\nFor something a bit more intimate, the Cabaret Theatre often hosts tribute acts and specialty shows that have a really cool, old-school vibe with cocktail service right at your seats. Just a heads-up if the kids are under 21: the Wolf Den has incredible free live music every single night at 8:00 PM or 9:00 PM, but because it's right in the center of the Casino of the Earth, you have to be 21 to sit inside the venue. \n\nPro tip \u2014 if there is a big show at the Arena, the concourses get very busy right before the start time, so I'd recommend finishing up at Pepe's about an hour early to beat the crowd. Once you have a show in mind, the Elemis Spa is the perfect place to book a treatment for tomorrow morning to help everyone recharge after a late night.\n\nAre you looking for a big concert experience or something a bit more low-key like a tribute show?",
+      "sources": [
+        {
+          "category": "entertainment",
+          "source": "mohegan_sun.json",
+          "score": 0.645
+        }
+      ],
+      "elapsed_ms": 37336,
+      "error": null
+    },
+    {
+      "turn_index": 2,
+      "user_message": "Actually, can a host put together a whole plan for us?",
+      "agent_response": "Let me help you with that. While our dedicated host team typically focuses on our Momentum loyalty members or those planning large private events, I can map out a full plan for your family of four right now to ensure your night is seamless.\n\nHere is a recommended itinerary for your Saturday evening:\n\n*   **5:45 PM**: Head to Frank Pepe\u2019s Pizzeria in the Casino of the Earth. Starting early is best since they don't take reservations, and it ensures you have plenty of time to enjoy your meal without rushing.\n*   **7:15 PM**: Begin the 10-minute walk from the Casino of the Earth through the Shops at Mohegan Sun toward the Arena. This gives you a comfortable buffer for security and finding your seats before a 7:30 or 8:00 PM showtime.\n*   **Post-Show**: On your way back to the hotel towers, stop by Krispy Kreme or Ben & Jerry\u2019s in the Shops for a late-night dessert.\n\nIf you'd like a human host to manage specific VIP bookings or if you have Momentum status that provides a dedicated representative, you can speak with the front desk or a Momentum desk upon arrival. If the kids still have energy after the show, the Cyber Quest arcade is right in the Casino of the Sky \u2014 would you like me to check their closing time for you tonight?",
+      "sources": [
+        {
+          "category": "promotions",
+          "source": "mohegan_sun.json",
+          "score": 0.653
+        },
+        {
+          "category": "faq",
+          "source": "mohegan_sun.json",
+          "score": 0.64
+        },
+        {
+          "category": "entertainment",
+          "source": "mohegan_sun.json",
+          "score": 0.644
+        }
+      ],
+      "elapsed_ms": 50042,
+      "error": null
+    }
+  ],
+  "completed": true
+}

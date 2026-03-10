@@ -1,0 +1,71 @@
+{
+  "scenario_id": "profile-04",
+  "scenario_name": "First-time visitor orientation",
+  "category": "profile_building",
+  "behavioral_dimension": "",
+  "expected_behavior": "Welcomes first-timers and provides property highlights",
+  "expected_behavioral_quality": "",
+  "safety_relevant": false,
+  "source_file": "profile_building.yaml",
+  "thread_id": "eval-profile-04-1772837348",
+  "turns": [
+    {
+      "turn_index": 0,
+      "user_message": "This is our first time visiting, what should we know?",
+      "agent_response": "Welcome to Mohegan Sun. It is a large property, but you're in great hands, and there is no rush to see it all at once.\n\nA good way to orient yourselves is to know we are split into two main sections: Casino of the Earth and Casino of the Sky. The Earth side has a more traditional atmosphere and is home to casual favorites like Hash House A Go Go, which is famous for its massive breakfast portions. The Sky side is where you'll find the planetarium-like domed ceiling, our luxury shopping mall, and the Mohegan Sun Arena. \n\nParking in our garages is free, so you can take your time exploring without any pressure. To help me narrow things down for you, what brings you both in today \u2014 are you here for a specific show, a nice dinner, or just to see the sights?",
+      "sources": [
+        {
+          "category": "restaurants",
+          "source": "mohegan_sun.json",
+          "score": 0.659
+        },
+        {
+          "category": "faq",
+          "source": "mohegan_sun.json",
+          "score": 0.649
+        },
+        {
+          "category": "amenities",
+          "source": "mohegan_sun.json",
+          "score": 0.667
+        }
+      ],
+      "elapsed_ms": 34288,
+      "error": null
+    },
+    {
+      "turn_index": 1,
+      "user_message": "What's the best restaurant here?",
+      "agent_response": "For your very first night, our, **Frank Pepe's Pizzeria Napoletana** is the most legendary spot to experience. It is a Connecticut institution known for New Haven-style \"apizza,\" featuring a thin, coal-fired crust that has a signature char and a satisfying crunch. \n\nThey are open until 11:00 PM tonight in the Casino of the Earth, so you will want to head over soon to grab a table for their famous White Clam Pie. Since it is a casual spot in the $$ price range and no reservations are required, it is perfect for a high-quality bite before wandering over to the nearby Wolf Den to see who is performing on stage. Are you looking for a casual meal like this to start your trip, or were you hoping for a more formal dining experience tomorrow?",
+      "sources": [
+        {
+          "category": "restaurants",
+          "source": "mohegan_sun.json",
+          "score": 0.654
+        }
+      ],
+      "elapsed_ms": 37516,
+      "error": null
+    },
+    {
+      "turn_index": 2,
+      "user_message": "And what about entertainment?",
+      "agent_response": "Since it is Friday night, the resort is really coming to life, our. \n\nFor a classic Mohegan Sun experience right now, the Wolf Den in the Casino of the Earth features free live music in an intimate setting right in the center of the gaming floor. If you are looking for a higher energy vibe, Avalon Nightclub is open until 2:00 AM and features top DJs with a state-of-the-art sound system. For your visit tomorrow, we often have world-class headliners at the 10,000-seat Mohegan Sun Arena or specialty acts at the 400-seat Cabaret Theatre. \n\nAfter a late night enjoying the music, many of our guests find that a session at Mandara Spa or Elemis Spa is the perfect way to reset. Since you are here for the first time, are you in the mood for a high-energy dance floor tonight or would you prefer to sit back and enjoy a live band?",
+      "sources": [
+        {
+          "category": "entertainment",
+          "source": "mohegan_sun.json",
+          "score": 0.68
+        },
+        {
+          "category": "faq",
+          "source": "mohegan_sun.json",
+          "score": 0.669
+        }
+      ],
+      "elapsed_ms": 28617,
+      "error": null
+    }
+  ],
+  "completed": true
+}

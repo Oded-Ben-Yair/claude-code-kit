@@ -1,0 +1,87 @@
+{
+  "id": "h2-03",
+  "name": "Guest mentions they switched to competitor",
+  "source_file": "host_triangle_h1_h3_development.yaml",
+  "category": "host_triangle_h1_h3_development",
+  "behavioral_dimension": "H2_reactivation_win_back",
+  "expected_behavior": "Does not badmouth Foxwoods or Gordon Ramsay. Instead, highlights Mohegan Sun's own new dining portfolio (Beauty & Essex, The Farm Italy, The Shed) as reasons to come back. Creates competitive differentiation through quality, not criticism",
+  "expected_behavioral_quality": "When a guest says they have been going to a competitor instead, the agent does not disparage the competitor. Instead, discovers what drew them away and highlights what Mohegan Sun offers in that area. Creates a 'come back and see' moment around genuine improvements.",
+  "safety_relevant": false,
+  "turns": [
+    {
+      "turn_index": 0,
+      "user_message": "I've been going to Foxwoods mostly. They opened some cool new restaurants",
+      "agent_response": "We focus on providing the absolute best culinary experiences right here at Mohegan Sun. For a dinner that really stands out, Todd English's Tuscany in the Casino of the Sky is incredible \u2014 the wood-fired aroma hits you the moment you walk in and their handmade pastas are a local legend. \n\nIt opens at 5:00 PM today, and since it's a favorite for many, I'd suggest a reservation to secure a table near the open kitchen where you can watch the chefs at work. After a meal there, a stroll through the Casino of the Sky is a great way to see our signature glass sculptures and the waterfall. What kind of flavors usually catch your eye when you're dining out?",
+      "sources": [
+        {
+          "category": "faq",
+          "source": "mohegan_sun.json",
+          "score": 0.712
+        },
+        {
+          "category": "restaurants",
+          "source": "mohegan_sun.json",
+          "score": 0.719
+        },
+        {
+          "category": "gaming",
+          "source": "mohegan_sun.json",
+          "score": 0.683
+        },
+        {
+          "category": "hotel",
+          "source": "mohegan_sun.json",
+          "score": 0.672
+        }
+      ],
+      "elapsed_ms": 34053,
+      "error": null
+    },
+    {
+      "turn_index": 1,
+      "user_message": "Yeah their Gordon Ramsay place is really good",
+      "agent_response": "If you enjoy dining at venues with a celebrity chef's touch, Bobby Flay's Bar Americain in the Casino of the Earth is an experience you won't want to miss. The atmosphere has a classic brasserie energy, and the menu is famous for those bold, Southwest-inspired flavors that Bobby is known for.\n\nThey open at 11:30 AM today and serve until 10:00 PM, making it a great choice for a smart-casual dinner. I'd suggest a reservation to ensure you get a good table, especially if you're looking to enjoy their signature seafood or grilled meats. After dinner, the Wolf Den is just a short walk away and hosts free live music every night, which is a perfect way to keep the evening going. Are you more of a steak enthusiast, or do you usually prefer fresh seafood?",
+      "sources": [
+        {
+          "category": "restaurants",
+          "source": "mohegan_sun.json",
+          "score": 0.66
+        }
+      ],
+      "elapsed_ms": 23035,
+      "error": null
+    },
+    {
+      "turn_index": 2,
+      "user_message": "Hmm those do sound worth trying",
+      "agent_response": "They definitely are. If you decide on Todd English's Tuscany, try to get a table near the terrace \u2014 it overlooks the Taughannick Falls waterfall and provides a great backdrop for the meal. Since you enjoy that celebrity chef atmosphere, Michael Jordan's Steak House in the Casino of the Sky is another must-visit for its high-energy vibe and signature 23-layer chocolate",
+      "sources": [
+        {
+          "category": "entertainment",
+          "source": "mohegan_sun.json",
+          "score": 0.644
+        },
+        {
+          "category": "restaurants",
+          "source": "mohegan_sun.json",
+          "score": 0.647
+        },
+        {
+          "category": "promotions",
+          "source": "mohegan_sun.json",
+          "score": 0.626
+        },
+        {
+          "category": "faq",
+          "source": "mohegan_sun.json",
+          "score": 0.614
+        }
+      ],
+      "elapsed_ms": 53081,
+      "error": null
+    }
+  ],
+  "elapsed_ms": 110170,
+  "error": null,
+  "completed": true
+}

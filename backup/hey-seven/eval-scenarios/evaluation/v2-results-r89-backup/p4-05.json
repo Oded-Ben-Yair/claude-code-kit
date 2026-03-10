@@ -1,0 +1,66 @@
+{
+  "id": "p4-05",
+  "name": "Budget signal \u2014 assumption about casual dining correct",
+  "source_file": "profiling_p4_assumptive_bridge.yaml",
+  "category": "profiling_p4_assumptive_bridge",
+  "behavioral_dimension": "P4_assumptive_bridging",
+  "expected_behavior": "Leads with casual and affordable options. When pizza is confirmed, does not try to upsell. Provides practical information (location, hours) without marketing language",
+  "expected_behavioral_quality": "When the guest signals budget consciousness ('nothing fancy'), assumes they want casual, affordable options and leads with those. Does not include a disclaimer like 'If you change your mind about budget...' The assumption respects the signal.",
+  "safety_relevant": false,
+  "turns": [
+    {
+      "turn_index": 0,
+      "user_message": "Just looking for something simple, nothing fancy",
+      "agent_response": "For a straightforward, reliable meal, Johnny Rockets in the Casino of the Earth is your best bet. It\u2019s a classic 1950s-style diner where you can grab a great burger and a hand-spun shake without any fuss. They are open until 11:00 PM tonight, and the atmosphere is entirely casual with no reservations needed.\n\nAre you looking for a quick bite before heading to a show?\n\nAfter you finish your meal, you might enjoy catching some live music over at the Wolf Den.",
+      "sources": [
+        {
+          "category": "entertainment",
+          "source": "mohegan_sun.json",
+          "score": 0.644
+        },
+        {
+          "category": "restaurants",
+          "source": "mohegan_sun.json",
+          "score": 0.641
+        },
+        {
+          "category": "hotel",
+          "source": "mohegan_sun.json",
+          "score": 0.629
+        }
+      ],
+      "elapsed_ms": 33012,
+      "error": null
+    },
+    {
+      "turn_index": 1,
+      "user_message": "Pizza sounds great actually",
+      "agent_response": "Frank Pepe's Pizzeria Napoletana is the local favorite for a simple but legendary coal-fired thin crust. The crust has a perfect char and a chewy bite that has made it a Connecticut institution for nearly a century. They are located in the Casino of the Earth and are open until 10:00 PM tonight with no reservations required.\n\nDo you have a favorite pizza topping you usually go for?\n\nAfter your pizza, you might enjoy walking over to the Wolf Den in the Casino of the Earth to catch some of the live music tonight.",
+      "sources": [
+        {
+          "category": "restaurants",
+          "source": "mohegan_sun.json",
+          "score": 0.655
+        },
+        {
+          "category": "property",
+          "source": "mohegan_sun.json",
+          "score": 0.621
+        }
+      ],
+      "elapsed_ms": 24734,
+      "error": null
+    },
+    {
+      "turn_index": 2,
+      "user_message": "Where is it?",
+      "agent_response": "Frank Pepe's is in the Casino of the Earth, right near the Earth Tower entrance and the Shops at Mohegan Sun. Are you staying in one of our hotel towers tonight?",
+      "sources": [],
+      "elapsed_ms": 53248,
+      "error": null
+    }
+  ],
+  "elapsed_ms": 110995,
+  "error": null,
+  "completed": true
+}

@@ -1,0 +1,86 @@
+{
+  "scenario_id": "agentic-10",
+  "scenario_name": "Domain tracking across conversation turns",
+  "category": "behavioral_agentic",
+  "behavioral_dimension": "B4_agentic",
+  "expected_behavior": "Tracks that spa and dining are already done. Suggests entertainment, gaming, and other uncovered domains. When asked for more, covers the remaining property categories",
+  "expected_behavioral_quality": "Tracks what domains have been discussed and what hasn't. When the guest asks 'what else?', suggests categories not yet covered rather than repeating dining or spa. Shows awareness of the full property scope.",
+  "safety_relevant": false,
+  "source_file": "behavioral_agentic.yaml",
+  "thread_id": "eval-agentic-10-1772911191",
+  "turns": [
+    {
+      "turn_index": 0,
+      "user_message": "We've already been to the spa and had dinner. What else is there?",
+      "agent_response": "The night is just getting started here, and the Wolf Den is the heart of the Saturday night energy with free live music right in the center of the Casino of the Earth. It has an electric vibe where you're right there with the performers, and since it's open seating, you can just walk in and enjoy the show without needing tickets! \n\nPro tip: the Wolf Den is designed so there isn't a bad seat in the house, but getting there a few minutes before a set starts helps if you want to be right against the stage. If you'd prefer to walk off dinner first, the Shops at Mohegan Sun are open until 9:00 PM tonight for some retail therapy.\n\nAre you in the mood for a high-energy show or something more low-key to wrap up your evening?",
+      "sources": [
+        {
+          "category": "amenities",
+          "source": "mohegan_sun.json",
+          "score": 0.702
+        },
+        {
+          "category": "faq",
+          "source": "mohegan_sun.json",
+          "score": 0.678
+        },
+        {
+          "category": "entertainment",
+          "source": "mohegan_sun.json",
+          "score": 0.669
+        }
+      ],
+      "elapsed_ms": 37604,
+      "error": null
+    },
+    {
+      "turn_index": 1,
+      "user_message": "Any events happening?",
+      "agent_response": "Since it's Saturday night, the Wolf Den usually has a free live show starting at 8:00 PM, which is perfect timing for you. Fun fact: the Wolf Den was designed as the centerpiece of the Casino of the Earth and is one of the few places you can see national touring acts without needing a ticket or a reservation. If you want to keep the energy going even later, Avalon Nightclub opens at 10:00 PM tonight and is the best spot on the property for high-energy dancing.\n\nFor a more sophisticated post-dinner atmosphere, novelle is open right now and offers a great ultra-lounge vibe with craft cocktails and a DJ. Are you in the mood for the high-energy atmosphere of a live band at the Wolf Den or would you prefer a more low-key lounge like novelle for the rest of your evening?",
+      "sources": [
+        {
+          "category": "entertainment",
+          "source": "mohegan_sun.json",
+          "score": 0.646
+        },
+        {
+          "category": "faq",
+          "source": "mohegan_sun.json",
+          "score": 0.632
+        }
+      ],
+      "elapsed_ms": 56317,
+      "error": null
+    },
+    {
+      "turn_index": 2,
+      "user_message": "Good ideas. Anything else we're missing?",
+      "agent_response": "Head to the Vista Lounge at Wombi Rock. You\u2019ll be sitting under a massive planetarium dome that changes throughout the night\u2014it\u2019s the best spot on the property to grab a drink and just people-watch. \n\nPro tip: if you look closely at the rock formation the lounge is built on, it\u2019s actually made of alabaster and onyx. Since you\u2019ve already done the spa and dinner, it\u2019s the perfect place to settle in without having to rush anywhere. Is this your first time visiting us, or have you been here before?",
+      "sources": [
+        {
+          "category": "entertainment",
+          "source": "mohegan_sun.json",
+          "score": 0.656
+        },
+        {
+          "category": "faq",
+          "source": "mohegan_sun.json",
+          "score": 0.646
+        },
+        {
+          "category": "promotions",
+          "source": "mohegan_sun.json",
+          "score": 0.635
+        },
+        {
+          "category": "gaming",
+          "source": "mohegan_sun.json",
+          "score": 0.621
+        }
+      ],
+      "elapsed_ms": 64410,
+      "error": null
+    }
+  ],
+  "completed": true
+}

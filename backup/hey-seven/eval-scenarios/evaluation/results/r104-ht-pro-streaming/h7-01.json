@@ -1,0 +1,71 @@
+{
+  "scenario_id": "h7-01",
+  "scenario_name": "Dining guest open to entertainment",
+  "category": "host_triangle_h7_h10_revenue",
+  "behavioral_dimension": "H7_cross_selling_wallet_share",
+  "expected_behavior": "Confirms the dinner choice and immediately paints the after-dinner picture: Wolf Den show, Comix comedy, or casino floor. The cross-sell feels like a natural 'and then...' suggestion from someone who wants the guest to have a full evening, not a checklist of amenities",
+  "expected_behavioral_quality": "When a guest engages with dining, the agent naturally introduces entertainment and nightlife as the next part of the evening. The cross-sell creates a seamless 'full evening' vision where dinner flows into the next experience \u2014 not a list of unrelated amenities.",
+  "safety_relevant": false,
+  "source_file": "host_triangle_h7_h10_revenue.yaml",
+  "thread_id": "eval-h7-01-1772975185",
+  "turns": [
+    {
+      "turn_index": 0,
+      "user_message": "Where should we eat tonight? We're thinking Italian",
+      "agent_response": "For an authentic Italian evening, Todd English's Tuscany in the Casino of the Sky is a standout where you can enjoy handmade pasta right near our signature indoor waterfall. The wood-fired aroma from the open kitchen hits you immediately, creating a rustic vibe that is perfect for a slow Sunday dinner. \n\nThey open at 5:00 PM tonight and run until 10:00 PM with a business casual dress code, though I would definitely suggest a reservation to secure the best view of the falls. After dinner, the Wolf Den is just steps away and usually has great live music to cap off the night. How many people will be joining you for dinner tonight?",
+      "sources": [
+        {
+          "category": "restaurants",
+          "source": "mohegan_sun.json",
+          "score": 0.695
+        }
+      ],
+      "elapsed_ms": 33789,
+      "error": null
+    },
+    {
+      "turn_index": 1,
+      "user_message": "Tuscany sounds great. We'll do that",
+      "agent_response": "Tuscany is a fantastic choice, especially with the way the wood-fired grill flavors their signature flatbreads. They open right at 5:00 PM tonight, giving you plenty of time for a leisurely meal before they close at 10:00 PM. \n\nJust a reminder that the dress code is business casual, and while I'd suggest their handmade pastas, it is always worth checking the daily specials when you arrive as prices and menus can vary. I've got you\u2014if you'd like to secure a table, I can provide the information to connect with the host team to make that happen. Are you celebrating anything special tonight, or is this just a well-deserved night out?",
+      "sources": [
+        {
+          "category": "restaurants",
+          "source": "mohegan_sun.json",
+          "score": 0.672
+        },
+        {
+          "category": "promotions",
+          "source": "mohegan_sun.json",
+          "score": 0.615
+        },
+        {
+          "category": "property",
+          "source": "mohegan_sun.json",
+          "score": 0.627
+        }
+      ],
+      "elapsed_ms": 32007,
+      "error": null
+    },
+    {
+      "turn_index": 2,
+      "user_message": "Oh there's a show tonight? What's playing?",
+      "agent_response": "The Wolf Den features free live music every single night, usually starting at 8:00 PM or 9:00 PM, and it has this intimate energy where you're right there with the performer\u2014it's electric! Since it's Sunday, Comix Roadhouse also has comedy shows scheduled, which is a great way to keep the energy going after a nice Italian dinner. \n\nFor the biggest events, the Mohegan Sun Arena hosts major headliners, though the specific lineup varies each week and can be confirmed at the box office or on the property website. Pro tip: the Wolf Den is first-come, first-served, so if you see a crowd forming after your dinner at Tuscany, that's your cue to head over and grab a seat. Are you more in the mood for a live concert vibe or a night of stand-up comedy?",
+      "sources": [
+        {
+          "category": "entertainment",
+          "source": "mohegan_sun.json",
+          "score": 0.67
+        },
+        {
+          "category": "faq",
+          "source": "mohegan_sun.json",
+          "score": 0.666
+        }
+      ],
+      "elapsed_ms": 37115,
+      "error": null
+    }
+  ],
+  "completed": true
+}

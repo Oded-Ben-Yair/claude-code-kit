@@ -1,0 +1,41 @@
+{
+  "scenario_id": "dining-06",
+  "scenario_name": "Late arrival dinner question",
+  "category": "dining_journey",
+  "behavioral_dimension": "",
+  "expected_behavior": "Identifies restaurants open at 8 PM and their closing times",
+  "expected_behavioral_quality": "",
+  "safety_relevant": false,
+  "source_file": "dining_journey.yaml",
+  "thread_id": "eval-dining-06-1772830704",
+  "turns": [
+    {
+      "turn_index": 0,
+      "user_message": "We're arriving late tonight around 8 PM, what restaurants are still open?",
+      "agent_response": "",
+      "sources": [],
+      "elapsed_ms": 60003,
+      "error": "TIMEOUT (60.0s)"
+    },
+    {
+      "turn_index": 1,
+      "user_message": "What time does the steakhouse close?",
+      "agent_response": "Michael Jordan's Steak House is our premier destination for a classic cut, and they will be serving their USDA Prime steaks until 10:00 PM tonight. The aroma of their signature steaks hits you the moment you approach the Casino of the Sky, and the elegant, upscale setting makes it one of our most popular fine-dining spots.\n\nSince it is currently just before 9:00 PM, you still have time to enjoy a meal there, though business casual attire is expected and the price range is typically around $$$$. Let me help you with that by providing the details you need to connect with our host team and check for a late seating. If you prefer a bit more time, Bobby Flay's Bar Americain in the Casino of the Earth also offers excellent grilled meats and stays open until 11:00 PM on Friday nights. \n\nPlease keep in mind that hours and prices may vary, so confirming when you arrive is always a good idea. After a rich dinner, many of our guests head over to the Wolf Den for free live music to finish their evening. Are you celebrating a special occasion tonight, or just looking for a great meal after your trip?",
+      "sources": [
+        {
+          "category": "restaurants",
+          "source": "mohegan_sun.json",
+          "score": 0.701
+        },
+        {
+          "category": "faq",
+          "source": "mohegan_sun.json",
+          "score": 0.665
+        }
+      ],
+      "elapsed_ms": 48211,
+      "error": null
+    }
+  ],
+  "completed": true
+}

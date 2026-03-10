@@ -1,0 +1,81 @@
+{
+  "scenario_id": "sarcasm-05",
+  "scenario_name": "Passive resignation and disengagement",
+  "category": "behavioral_sarcasm",
+  "behavioral_dimension": "B1_sarcasm",
+  "expected_behavior": "Recognizes 'whatever' as disengagement, not agreement. Gently asks a narrowing question rather than celebrating the 'choice'. When guest reveals preference for low-key, adjusts recommendations away from high-energy options",
+  "expected_behavioral_quality": "Detects passive resignation as disengagement rather than agreement. Makes one gentle re-engagement attempt without being pushy. Offers a concrete alternative or asks a focused question. Does not ignore the tone and barrel ahead.",
+  "safety_relevant": false,
+  "source_file": "behavioral_sarcasm.yaml",
+  "thread_id": "eval-sarcasm-05-1772826787",
+  "turns": [
+    {
+      "turn_index": 0,
+      "user_message": "What should we do tonight?",
+      "agent_response": "It's a Friday night, so the energy across the property is really starting to pick up. For a high-energy experience, Avalon Nightclub opens at 10:00 PM with top DJs and an incredible sound system, while Novelle offers a more sophisticated lounge atmosphere with craft cocktails if you prefer a chic nightlife vibe. If you're in the mood for something different, Comix Roadhouse has live comedy shows tonight that are always a hit. \n\nA little insider tip for you\u2014Novelle is actually the perfect place to start your evening with a drink before the main event at the nightclub since it's just steps away and has a great upscale feel. After the entertainment wraps up, Lantern Bar & Grill is open 24 hours right in the Casino of the Earth for a late-night bite. Are you leaning more toward a high-energy dance floor or a comedy show for your Friday night?",
+      "sources": [
+        {
+          "category": "entertainment",
+          "source": "mohegan_sun.json",
+          "score": 0.668
+        },
+        {
+          "category": "restaurants",
+          "source": "mohegan_sun.json",
+          "score": 0.648
+        },
+        {
+          "category": "faq",
+          "source": "mohegan_sun.json",
+          "score": 0.667
+        }
+      ],
+      "elapsed_ms": 36371,
+      "error": null
+    },
+    {
+      "turn_index": 1,
+      "user_message": "Sure, that works. Whatever.",
+      "agent_response": "I understand if those suggestions didn't hit the mark. For a reliable meal in a more relaxed atmosphere, Todd English\u2019s Tuscany is open until 11:00 PM tonight and has a great view of the indoor waterfall. Would a sit-down dinner be more your speed?",
+      "sources": [
+        {
+          "category": "entertainment",
+          "source": "mohegan_sun.json",
+          "score": 0.641
+        },
+        {
+          "category": "hotel",
+          "source": "mohegan_sun.json",
+          "score": 0.627
+        },
+        {
+          "category": "promotions",
+          "source": "mohegan_sun.json",
+          "score": 0.622
+        }
+      ],
+      "elapsed_ms": 29668,
+      "error": null
+    },
+    {
+      "turn_index": 2,
+      "user_message": "I don't know, maybe something low-key",
+      "agent_response": "The Taughannick Falls bar is a great spot for a quiet drink right next to our 55-foot indoor waterfall. For a casual meal, SolToro in the Casino of the Earth is very low-pressure and open until 11:00 PM tonight. Are you looking for a spot for just yourself or a small group?",
+      "sources": [
+        {
+          "category": "entertainment",
+          "source": "mohegan_sun.json",
+          "score": 0.669
+        },
+        {
+          "category": "restaurants",
+          "source": "mohegan_sun.json",
+          "score": 0.629
+        }
+      ],
+      "elapsed_ms": 39166,
+      "error": null
+    }
+  ],
+  "completed": true
+}

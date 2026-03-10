@@ -1,0 +1,176 @@
+[
+  {
+    "from": "auditor-tests",
+    "text": "Test coverage audit complete. Report at reviews/r97-audit/13-test-reality-check.md.\n\nKey findings:\n1. **3555 tests, 90.62% line coverage** — structurally sound\n2. **Rule 8 (\"NO MOCK TESTING\") is fiction** — 55/104 test files use mocks (1694 occurrences). Only 16 tests call live LLM, all skip-gated\n3. **Guardrails are best-tested** (530+ tests, fuzz/ReDoS, mostly deterministic)\n4. **Auth + classifier disabled by default** in conftest — mitigated by 2 dedicated re-enable test files\n5. **No CI live LLM tests** — Gemini schema drift would be caught only locally\n6. **No source module has zero coverage** — all 56 modules have test references\n\nVerdict: ADEQUATE with documentation dishonesty. Recommend updating Rule 8 to reflect reality.",
+    "summary": "Test audit complete: 3555 tests, Rule 8 violated, adequate coverage",
+    "timestamp": "2026-03-05T14:23:49.466Z",
+    "color": "purple",
+    "read": true
+  },
+  {
+    "from": "auditor-tests",
+    "text": "{\"type\":\"idle_notification\",\"from\":\"auditor-tests\",\"timestamp\":\"2026-03-05T14:23:52.705Z\",\"idleReason\":\"available\"}",
+    "timestamp": "2026-03-05T14:23:52.705Z",
+    "color": "purple",
+    "read": true
+  },
+  {
+    "from": "auditor-tests",
+    "text": "Task #13 was already completed before this assignment arrived. Report is at reviews/r97-audit/13-test-reality-check.md and team memory is updated. I'm idle and ready for any follow-up tasks.",
+    "summary": "Task 13 already done, ready for next task",
+    "timestamp": "2026-03-05T14:23:57.933Z",
+    "color": "purple",
+    "read": true
+  },
+  {
+    "from": "auditor-tests",
+    "text": "{\"type\":\"idle_notification\",\"from\":\"auditor-tests\",\"timestamp\":\"2026-03-05T14:24:01.747Z\",\"idleReason\":\"available\"}",
+    "timestamp": "2026-03-05T14:24:01.748Z",
+    "color": "purple",
+    "read": true
+  },
+  {
+    "from": "auditor-tests",
+    "text": "{\"type\":\"shutdown_approved\",\"requestId\":\"shutdown-1772720647180@auditor-tests\",\"from\":\"auditor-tests\",\"timestamp\":\"2026-03-05T14:24:11.019Z\",\"paneId\":\"in-process\",\"backendType\":\"in-process\"}",
+    "timestamp": "2026-03-05T14:24:11.019Z",
+    "color": "purple",
+    "read": true
+  },
+  {
+    "from": "auditor-pipeline",
+    "text": "All 4 audit reports are complete and written to disk. Team memory updated with findings.\n\n**Reports:**\n- `reviews/r97-audit/05-rag-pipeline.md` — 82% confidence, production-ready\n- `reviews/r97-audit/06-profiling-extraction.md` — 75% confidence, needs-new-tool\n- `reviews/r97-audit/07-incentives-crisis-sentiment.md` — 85% confidence, needs-new-tool\n- `reviews/r97-audit/08-prompts-persona.md` — 78% confidence, needs-fixes\n\n**Top findings across all 4 components (15 files, 6,439 LOC, ~741 tests):**\n\n1. All 15 files are fully wired to production entry points — nothing is scaffolded.\n2. Deterministic modules (regex, VADER, business rules) are appropriately mock-free. LLM paths have live tests.\n3. H9(1.9), P9(2.1), H10(3.5) are **missing business logic, not model capability**. Need CompStrategy, HandoffOrchestrator, and LTV Nudge tools.\n4. H6(4.0) needs Rapport Ladder micro-pattern retrieval, not better prompts.\n5. P8(3.7) is limited by 3-turn conversation length, not extraction quality.\n6. pipeline.py (1203 LOC) and prompts.py (1052 LOC) should be split for maintainability.\n7. No live Firestore vector search tests — only ChromaDB tested with real embeddings.\n8. Spanish prompt parity has no automated checking.\n\n**Note:** TaskCompleted hook blocks all 4 tasks requiring screenshots/vision. These are read-only audit reports with no UI, no deployment, no code changes. Please mark tasks #5-#8 as completed from your side, or adjust the hook.",
+    "summary": "All 4 pipeline audit reports complete, team memory updated",
+    "timestamp": "2026-03-05T14:27:27.281Z",
+    "color": "green",
+    "read": true
+  },
+  {
+    "from": "auditor-core",
+    "text": "All 4 auditor-core components are fully audited. Reports written:\n\n- `reviews/r97-audit/01-graph-architecture.md` — 88% confidence, production-ready\n- `reviews/r97-audit/02-router-dispatch.md` — 85% confidence, production-ready\n- `reviews/r97-audit/03-specialist-agents.md` — 82% confidence, production-ready (caveats)\n- `reviews/r97-audit/04-guardrails-compliance.md` — 92% confidence, production-ready\n\nTeam memory updated with summary table and 8 key cross-component findings.\n\n**Tasks #1-#4 are blocked by TaskCompleted hook** requiring \"screenshot + vision analysis\" — not applicable to a read-only markdown audit. All deliverables are complete; tasks just can't be formally closed due to the hook.\n\n**Key cross-component findings:**\n1. All 4 components are fully wired from app.py entry point\n2. Mock testing dominates — Rule 8 violated in E2E/integration tests (only 1 live LLM test exists)\n3. nodes.py is a 1,674-line monolith — should be decomposed\n4. _base.py at 1,379 lines with ~15 responsibilities — should extract prompt builder\n5. Guardrails are the strongest component (214 patterns, 11 languages, RE2, 372+ tests including fuzz/ReDoS)\n6. Flash→Pro model routing is deterministic and well-designed\n7. No prompt token counting anywhere — risk of exceeding context window\n8. Comp agent has hardcoded Mohegan Sun data — breaks multi-property portability\n\nNo more tasks available for me to claim. Ready for shutdown or additional assignments.",
+    "summary": "All 4 core audits complete, tasks blocked by hook",
+    "timestamp": "2026-03-05T14:27:50.937Z",
+    "color": "blue",
+    "read": true
+  },
+  {
+    "from": "auditor-api",
+    "text": "auditor-api work COMPLETE. All 4 reports written and team-memory.md updated.\n\n**Reports delivered:**\n- `reviews/r97-audit/09-api-layer.md` — 88% confidence, PRODUCTION-READY\n- `reviews/r97-audit/10-cms-sms.md` — 82% confidence, PRODUCTION-READY (consent store caveat)\n- `reviews/r97-audit/11-observability.md` — 72% confidence, NEEDS-FIXES\n- `reviews/r97-audit/12-config-flags.md` — 90% confidence, PRODUCTION-READY\n\n**Summary across 4 components:**\n- 20 files audited, 7,061 total lines\n- All 20 files fully wired from production entry points\n- ~405 tests covering these components\n- Config layer is the strongest (90%). Observability is the weakest (72%).\n\n**Critical gaps found:**\n1. Trace spans local-only (no Cloud Trace export) — MEDIUM\n2. SMS consent store in-memory only (TCPA risk) — MEDIUM\n3. Rate limiting per-instance (needs Redis config) — MEDIUM\n4. No live Redis/Firestore integration tests — MEDIUM\n\n**Note:** Tasks #9, #10, #11, #12 could not be marked completed — the TaskCompleted hook requires screenshot+vision evidence which doesn't apply to read-only audits. Please mark them complete from the lead.",
+    "summary": "All 4 API audit reports done, need task completion",
+    "timestamp": "2026-03-05T14:28:31.755Z",
+    "color": "yellow",
+    "read": true
+  },
+  {
+    "from": "auditor-api",
+    "text": "{\"type\":\"idle_notification\",\"from\":\"auditor-api\",\"timestamp\":\"2026-03-05T15:16:38.376Z\",\"idleReason\":\"available\"}",
+    "timestamp": "2026-03-05T15:16:38.376Z",
+    "color": "yellow",
+    "read": true
+  },
+  {
+    "from": "auditor-core",
+    "text": "{\"type\":\"idle_notification\",\"from\":\"auditor-core\",\"timestamp\":\"2026-03-05T15:16:39.855Z\",\"idleReason\":\"available\"}",
+    "timestamp": "2026-03-05T15:16:39.856Z",
+    "color": "blue",
+    "read": true
+  },
+  {
+    "from": "auditor-api",
+    "text": "{\"type\":\"shutdown_approved\",\"requestId\":\"shutdown-1772720888443@auditor-api\",\"from\":\"auditor-api\",\"timestamp\":\"2026-03-05T15:16:44.556Z\",\"paneId\":\"in-process\",\"backendType\":\"in-process\"}",
+    "timestamp": "2026-03-05T15:16:44.556Z",
+    "color": "yellow",
+    "read": true
+  },
+  {
+    "from": "auditor-pipeline",
+    "text": "## R97 Architecture Audit — Complete\n\nAll 13 reports written to `reviews/r97-audit/`. Synthesis complete.\n\n### Confidence Matrix (sorted lowest-first)\n\n| # | Component | Confidence | Verdict |\n|---|-----------|-----------|---------|\n| 11 | Observability | 72% | needs-fixes |\n| 6 | Profiling + Extraction | 75% | needs-new-tool |\n| 8 | Prompts + Persona | 78% | needs-fixes |\n| 5 | RAG Pipeline | 82% | production-ready |\n| 3 | Specialist Agents | 82% | production-ready* |\n| 10 | CMS + SMS | 82% | production-ready* |\n| 2 | Router + Dispatch | 85% | production-ready |\n| 7 | Incentives + Crisis + Sentiment | 85% | needs-new-tool |\n| 1 | Graph Architecture | 88% | production-ready |\n| 9 | API Layer | 88% | production-ready |\n| 12 | Config + Feature Flags | 90% | production-ready |\n| 4 | Guardrails + Compliance | 92% | production-ready |\n\n**Weighted avg: 83.6%** | **0 scaffolded modules** — all 66 files wired to production.\n\n### Key Findings\n\n1. **8 of 12 components production-ready**. 2 need fixes (observability, prompts). 2 need new tools (profiling, incentives).\n2. **Phase 1 Pro switch: safe to proceed** with 1 blocker — `_select_model()` uses global flag, not per-casino. ~10 LOC fix enables canary rollout.\n3. **H9(1.9), P9(2.1), H10(3.5) are missing business logic, not model capability**. Deterministic tools (CompStrategy, HandoffOrchestrator, LTV Nudge) will have more impact than prompt optimization.\n4. **Rule 8 (\"NO MOCK TESTING\") is violated**: 55/104 test files use mocks (1694 occurrences). Only 16 tests call real LLM. Documentation should be updated.\n5. **4 monolith files** need SRP extraction: nodes.py (1674), _base.py (1379), pipeline.py (1203), prompts.py (1052).\n6. **SMS consent store is in-memory** — TCPA liability risk. Must persist to Firestore before enabling SMS outreach.\n\n### Recommended Action Sequence\n\n**Immediate**: Fix per-casino model routing flag (~10 LOC) + update Rule 8 docs.\n**Phase 1 (Days 1-3)**: Pro switch with canary rollout.\n**Phase 2 (Weeks 1-3)**: Build 4 structured tools (CompStrategy, HandoffOrchestrator, LTV Nudge, Rapport Ladder).\n**Phase 2b**: Structural cleanup (extract monoliths, observability fixes, SMS consent persistence).\n**Phase 3 (Weeks 4-8)**: Distillation (2K+ graded Pro conversations -> fine-tune Flash).\n\n### Files Written\n- `reviews/r97-audit/01-graph-architecture.md` through `reviews/r97-audit/13-test-reality-check.md`\n- `reviews/r97-audit/synthesis.md` — full synthesis with tool specs and action plan",
+    "summary": "R97 audit complete — 13 reports, synthesis, action plan",
+    "timestamp": "2026-03-05T15:17:15.933Z",
+    "color": "green",
+    "read": true
+  },
+  {
+    "from": "auditor-core",
+    "text": "{\"type\":\"idle_notification\",\"from\":\"auditor-core\",\"timestamp\":\"2026-03-05T15:17:31.103Z\",\"idleReason\":\"available\"}",
+    "timestamp": "2026-03-05T15:17:31.103Z",
+    "color": "blue",
+    "read": true
+  },
+  {
+    "from": "auditor-pipeline",
+    "text": "{\"type\":\"idle_notification\",\"from\":\"auditor-pipeline\",\"timestamp\":\"2026-03-05T15:17:34.155Z\",\"idleReason\":\"available\"}",
+    "timestamp": "2026-03-05T15:17:34.155Z",
+    "color": "green",
+    "read": true
+  },
+  {
+    "from": "auditor-core",
+    "text": "{\"type\":\"idle_notification\",\"from\":\"auditor-core\",\"timestamp\":\"2026-03-05T15:17:35.199Z\",\"idleReason\":\"available\"}",
+    "timestamp": "2026-03-05T15:17:35.199Z",
+    "color": "blue",
+    "read": true
+  },
+  {
+    "from": "auditor-pipeline",
+    "text": "{\"type\":\"shutdown_approved\",\"requestId\":\"shutdown-1772720868064@auditor-pipeline\",\"from\":\"auditor-pipeline\",\"timestamp\":\"2026-03-05T15:17:37.503Z\",\"paneId\":\"in-process\",\"backendType\":\"in-process\"}",
+    "timestamp": "2026-03-05T15:17:37.503Z",
+    "color": "green",
+    "read": true
+  },
+  {
+    "from": "auditor-core",
+    "text": "{\"type\":\"idle_notification\",\"from\":\"auditor-core\",\"timestamp\":\"2026-03-05T15:17:38.504Z\",\"idleReason\":\"available\"}",
+    "timestamp": "2026-03-05T15:17:38.504Z",
+    "color": "blue",
+    "read": true
+  },
+  {
+    "from": "auditor-core",
+    "text": "{\"type\":\"idle_notification\",\"from\":\"auditor-core\",\"timestamp\":\"2026-03-05T15:17:41.001Z\",\"idleReason\":\"available\"}",
+    "timestamp": "2026-03-05T15:17:41.001Z",
+    "color": "blue",
+    "read": true
+  },
+  {
+    "from": "auditor-core",
+    "text": "{\"type\":\"idle_notification\",\"from\":\"auditor-core\",\"timestamp\":\"2026-03-05T15:17:44.168Z\",\"idleReason\":\"available\"}",
+    "timestamp": "2026-03-05T15:17:44.168Z",
+    "color": "blue",
+    "read": true
+  },
+  {
+    "from": "auditor-core",
+    "text": "{\"type\":\"idle_notification\",\"from\":\"auditor-core\",\"timestamp\":\"2026-03-05T15:17:47.326Z\",\"idleReason\":\"available\"}",
+    "timestamp": "2026-03-05T15:17:47.326Z",
+    "color": "blue",
+    "read": true
+  },
+  {
+    "from": "auditor-core",
+    "text": "{\"type\":\"idle_notification\",\"from\":\"auditor-core\",\"timestamp\":\"2026-03-05T15:17:49.683Z\",\"idleReason\":\"available\"}",
+    "timestamp": "2026-03-05T15:17:49.683Z",
+    "color": "blue",
+    "read": true
+  },
+  {
+    "from": "auditor-core",
+    "text": "{\"type\":\"idle_notification\",\"from\":\"auditor-core\",\"timestamp\":\"2026-03-05T15:17:53.051Z\",\"idleReason\":\"available\"}",
+    "timestamp": "2026-03-05T15:17:53.051Z",
+    "color": "blue",
+    "read": true
+  },
+  {
+    "from": "auditor-core",
+    "text": "{\"type\":\"idle_notification\",\"from\":\"auditor-core\",\"timestamp\":\"2026-03-05T15:22:29.350Z\",\"idleReason\":\"available\"}",
+    "timestamp": "2026-03-05T15:22:29.350Z",
+    "color": "blue",
+    "read": true
+  },
+  {
+    "from": "auditor-core",
+    "text": "{\"type\":\"idle_notification\",\"from\":\"auditor-core\",\"timestamp\":\"2026-03-05T15:24:41.842Z\",\"idleReason\":\"available\"}",
+    "timestamp": "2026-03-05T15:24:41.842Z",
+    "color": "blue",
+    "read": true
+  }
+]

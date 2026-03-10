@@ -1,0 +1,71 @@
+{
+  "scenario_id": "agentic-08",
+  "scenario_name": "Budget awareness without being asked",
+  "category": "behavioral_agentic",
+  "behavioral_dimension": "B4_agentic",
+  "expected_behavior": "Picks up budget signal from turn 1 and carries it through all recommendations. Leads with free or affordable options. Does not suggest the premium steakhouse after a budget signal",
+  "expected_behavioral_quality": "When the guest signals budget consciousness (e.g., 'nothing too expensive'), adjusts all subsequent recommendations without requiring a reminder each turn. Maintains budget awareness throughout the conversation.",
+  "safety_relevant": false,
+  "source_file": "behavioral_agentic.yaml",
+  "thread_id": "eval-agentic-08-1772817729",
+  "turns": [
+    {
+      "turn_index": 0,
+      "user_message": "What's good for dinner? Nothing too expensive",
+      "agent_response": "Lantern Bar & Grill in the Casino of the Earth is a fantastic choice for a high-quality dinner that stays within a reasonable budget. It is open 24 hours and serves a full menu of American favorites, though I personally recommend their burgers for that classic, flame-grilled flavor. The vibe is casual and welcoming, making it a great spot to relax without needing a reservation.\n\nPro tip: while the steaks are excellent, the portions are generous across the board, so it is quite easy to find a satisfying meal for a great price. Prices and hours can vary, so it is always a good idea to confirm when you arrive at the podium. Since you are looking for a value-conscious evening, you might enjoy the free live music at the Wolf Den just a short walk away after you eat. Are you in the mood for a hearty burger, or were you thinking more along the lines of a sandwich or salad!",
+      "sources": [
+        {
+          "category": "restaurants",
+          "source": "mohegan_sun.json",
+          "score": 0.633
+        }
+      ],
+      "elapsed_ms": 29919,
+      "error": null
+    },
+    {
+      "turn_index": 1,
+      "user_message": "That works. What else can we do tonight?",
+      "agent_response": "The Wolf Den is your best bet for a fantastic night out that does not require a ticket or a cover charge, as they host free live music every single night. The venue is located right in the heart of the Casino of the Earth, and the intimate seating makes you feel like you are part of the performance. If you want to ramp up the energy later, Avalon Nightclub opens at 10:00 PM tonight for a high-energy dance floor experience with a live DJ.\n\nThe casino itself is open 24 hours a day, so there is never a rush to finish your evening if you feel like exploring the different gaming floors or the shops. Pro tip: if you head over to the Wolf Den a bit early, you can usually snag a seat closer to the stage before the show starts. After a late night, a morning visit to the Elemis Spa for a signature massage is a great way to recharge. Do you prefer a relaxed atmosphere where you can sit and listen to a band, or are you looking for a more high-energy club environment?",
+      "sources": [
+        {
+          "category": "entertainment",
+          "source": "mohegan_sun.json",
+          "score": 0.662
+        },
+        {
+          "category": "faq",
+          "source": "mohegan_sun.json",
+          "score": 0.641
+        }
+      ],
+      "elapsed_ms": 51475,
+      "error": null
+    },
+    {
+      "turn_index": 2,
+      "user_message": "Are any shows free?",
+      "agent_response": "The Wolf Den is your go-to spot for free entertainment because it offers nightly live performances from national touring acts, tribute bands, and comedians with no ticket or cover charge required. It has an incredible, intimate energy where you are right there with the performer \u2014 it's electric!\n\nPro tip: Since seating is first-come, first-served and it is a Friday night, the line often starts forming about an hour before the show starts, so heading over early is the best way to secure a prime spot. After the music, you might enjoy a visit to the Elemis Spa tomorrow morning to reset with a signature massage or facial. By the way, the Mohegan Sun Arena has some major headliners coming up later this season\u2014I can share that calendar if you are planning a return trip. Since I have the schedule here, would you like to know which band is playing at the Wolf Den tonight?",
+      "sources": [
+        {
+          "category": "entertainment",
+          "source": "mohegan_sun.json",
+          "score": 0.725
+        },
+        {
+          "category": "faq",
+          "source": "mohegan_sun.json",
+          "score": 0.673
+        },
+        {
+          "category": "promotions",
+          "source": "mohegan_sun.json",
+          "score": 0.651
+        }
+      ],
+      "elapsed_ms": 40174,
+      "error": null
+    }
+  ],
+  "completed": true
+}

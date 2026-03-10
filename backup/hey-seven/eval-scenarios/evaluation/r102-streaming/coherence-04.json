@@ -1,0 +1,70 @@
+{
+  "scenario_id": "coherence-04",
+  "scenario_name": "Profile persistence across specialist domains",
+  "category": "behavioral_multiturn_coherence",
+  "behavioral_dimension": "B7_coherence",
+  "expected_behavior": "Party of 6 stated in turn 1 carries to entertainment (turn 2 recommends group-friendly options) and hotel (turn 3 acknowledges the group size). The agent does not ask 'How many people?' in turn 2 or 3",
+  "expected_behavioral_quality": "Information gathered in one specialist domain (dining) should be available to other specialists (entertainment, hotel). Party size mentioned for dinner should carry over to show recommendations and room suggestions.",
+  "safety_relevant": false,
+  "source_file": "behavioral_multiturn_coherence.yaml",
+  "thread_id": "eval-coherence-04-1772915983",
+  "turns": [
+    {
+      "turn_index": 0,
+      "user_message": "Table for 6 at the steakhouse please",
+      "agent_response": "I've got you \u2014 Michael Jordan's Steak House is the standout choice for a party of six looking for a serious steak tonight. The richness of their USDA Prime cuts and the elegant atmosphere in the Casino of the Sky is exactly how a Saturday night should feel. They are typically open until 10:00 PM with a price range of $$$$, though hours can vary so I will help you confirm everything. Insider tip: the walls are lined with sports memorabilia, which makes for a great conversation starter while you browse their extensive wine list.\n\nSince reservations are highly recommended and you have a group of six, I suggest business casual attire for the evening. Are you looking to sit down around 9:00 PM, and is there a special occasion or any dietary needs I should note for the kitchen? Once I have those details, I\u2019ll connect you with our host team to finalize the booking.\n\nAfter your meal, catching a show at Comix Roadhouse is a great way to keep the energy high for the rest of the night!",
+      "sources": [
+        {
+          "category": "restaurants",
+          "source": "mohegan_sun.json",
+          "score": 0.661
+        },
+        {
+          "category": "property",
+          "source": "mohegan_sun.json",
+          "score": 0.631
+        },
+        {
+          "category": "entertainment",
+          "source": "mohegan_sun.json",
+          "score": 0.622
+        }
+      ],
+      "elapsed_ms": 64843,
+      "error": null
+    },
+    {
+      "turn_index": 1,
+      "user_message": "We also need something fun for the group tonight",
+      "agent_response": "I've got you. Since you will be finishing up dinner at the steakhouse, you are perfectly positioned for some of the best nightlife on the property.\n\nIf your group wants to keep things sophisticated, Novelle is an incredible ultra lounge right here in the Casino of the Sky. It features a DJ and a stellar craft cocktail menu, making it a perfect spot for a party of six to relax and talk in an upscale setting. If you want to ramp up the energy, Avalon Nightclub opens at 10:00 PM tonight and it is the place to be on a Saturday if you want to dance!\n\nFor a more casual but high-energy vibe, the Wolf Den in the center of the Casino of the Earth features free live music every Saturday night. It is right in the heart of the action, so you can soak in the atmosphere of the gaming floor while enjoying the show. \n\nAre you looking for a spot where you can sit and catch up, or is the group ready to hit the dance floor?",
+      "sources": [
+        {
+          "category": "entertainment",
+          "source": "mohegan_sun.json",
+          "score": 0.684
+        },
+        {
+          "category": "amenities",
+          "source": "mohegan_sun.json",
+          "score": 0.645
+        },
+        {
+          "category": "faq",
+          "source": "mohegan_sun.json",
+          "score": 0.669
+        }
+      ],
+      "elapsed_ms": 38686,
+      "error": null
+    },
+    {
+      "turn_index": 2,
+      "user_message": "Any room deals for a big group like ours?",
+      "agent_response": "I've got you. For a group of six, the best way to keep everyone together while having your own sanctuary is to look at connecting rooms in our Sky Tower. You could pair a room with two queen beds with another queen room, which gives everyone a comfortable place to recharge after your night at the steakhouse.\n\nIf you want to treat yourselves, we offer seasonal hotel packages that often bundle your stay with dining credits or show tickets, which would be perfect given your plans for tonight. Rates for our Deluxe rooms typically start around $169, while Junior Suites offer more breathing room at 650 square feet and include a sofa bed, starting around $299. Since it is currently 8:41 PM on a Saturday, our 24-hour front desk will be ready for your arrival whenever you finish up your evening plans. Standard check-in begins between 3:00 PM and 4:00 PM, and check-out is at 11:00 AM.\n\nWould you prefer to have the group spread across a few rooms near each other, or are you interested in a larger suite where everyone can gather in one living area? After you've had a chance to rest, you might enjoy a morning visit to Mandara Spa to start your Sunday on a relaxing note.",
+      "sources": [],
+      "elapsed_ms": 78565,
+      "error": null
+    }
+  ],
+  "completed": true
+}

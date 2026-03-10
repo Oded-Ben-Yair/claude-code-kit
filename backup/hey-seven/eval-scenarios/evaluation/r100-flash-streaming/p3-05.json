@@ -1,0 +1,86 @@
+{
+  "scenario_id": "p3-05",
+  "scenario_name": "Hotel room info plus visit purpose question",
+  "category": "profiling_p3_give_to_get",
+  "behavioral_dimension": "P3_give_to_get",
+  "expected_behavior": "Hotel comparison is complete and useful before the purpose question. When 'work trip with one free evening' is revealed, recommendations focus on efficient enjoyment \u2014 one great dinner and one nearby activity rather than an all-day itinerary",
+  "expected_behavioral_quality": "Describes room options and hotel amenities first, then asks about the visit purpose to refine the recommendation. The hotel information is useful regardless of purpose. The purpose question is framed as customizing their stay experience.",
+  "safety_relevant": false,
+  "source_file": "profiling_p3_give_to_get.yaml",
+  "thread_id": "eval-p3-05-1772840834",
+  "turns": [
+    {
+      "turn_index": 0,
+      "user_message": "What's the difference between Sky Tower and Earth Tower?",
+      "agent_response": "Welcome to Mohegan Sun. The main difference between the two lies in the atmosphere and the views. \n\nThe Sky Tower is our original hotel tower, featuring modern luxury rooms with panoramic views of the Thames River valley and the surrounding Connecticut countryside. Your Sky Tower room will feel like a private retreat after a thrilling day at the resort. In contrast, the Earth Tower is our newest addition, offering a contemporary design with cutting-edge amenities for a fresh take on luxury hospitality.\n\nStandard check-in is at 4:00 PM and check-out is at 11:00 AM. Since it is currently late on a Friday night, please know that our 24-hour front desk is always available to ensure your arrival is seamless. An insider tip for your stay: the Earth Tower is home to the Elemis Spa, which is perfect for a quick express treatment or a couples' experience. Being a hotel guest also means you are just steps away from incredible dining like Tuscany or MJ's for a world-class steak dinner.\n\nAre you looking for a room with a specific view, or is being close to the newest amenities more of a priority for you?",
+      "sources": [
+        {
+          "category": "hotel",
+          "source": "mohegan_sun.json",
+          "score": 0.689
+        },
+        {
+          "category": "amenities",
+          "source": "mohegan_sun.json",
+          "score": 0.671
+        },
+        {
+          "category": "gaming",
+          "source": "mohegan_sun.json",
+          "score": 0.64
+        }
+      ],
+      "elapsed_ms": 57730,
+      "error": null
+    },
+    {
+      "turn_index": 1,
+      "user_message": "It's a work trip but we'll have one free evening",
+      "agent_response": "I understand this visit might carry some weight for you, and I hope your time here provides a bit of peace between your work commitments. For your free evening, the Wolf Den is a meaningful way to spend a few hours without the need for a ticket. \n\nIt is an intimate venue in the center of the Casino of the Earth that features free nightly live music from national touring acts and tribute bands, typically starting at 8:00 PM or 9:00 PM. Since you mentioned being here for work, the Wolf Den offers a relaxed environment where you can simply sit back and listen. If you find yourself looking for a meal afterward, Lantern Bar & Grill is nearby and serves American favorites 24 hours a day in a casual setting. \n\nWould you prefer a night of live music, or were you thinking of something more quiet like a massage at Elemis Spa to unwind after your meetings?",
+      "sources": [
+        {
+          "category": "entertainment",
+          "source": "mohegan_sun.json",
+          "score": 0.653
+        },
+        {
+          "category": "restaurants",
+          "source": "mohegan_sun.json",
+          "score": 0.656
+        },
+        {
+          "category": "faq",
+          "source": "mohegan_sun.json",
+          "score": 0.627
+        }
+      ],
+      "elapsed_ms": 38087,
+      "error": null
+    },
+    {
+      "turn_index": 2,
+      "user_message": "What would you suggest for that evening?",
+      "agent_response": "For a free evening during a work trip, the Wolf Den is my top recommendation because it offers high-quality live music with no cover charge. It's centrally located in the Casino of the Earth, so you don't have to travel far once your meetings wrap up. \n\nTo keep things budget-friendly for dinner, The Lansdowne Irish Pub & Music House has a great casual atmosphere and serves hearty portions that are reasonably priced. If you're looking for a quicker bite, Bobby's Burger Palace is a popular spot for a great meal without the fine-dining price tag. Most shows at the Wolf Den start around 8:00 PM or 9:00 PM on weekends, so it fits well into a post-work schedule. \n\nWill you be exploring on your own, or are you looking for a place that can fit a group of colleagues?",
+      "sources": [
+        {
+          "category": "entertainment",
+          "source": "mohegan_sun.json",
+          "score": 0.671
+        },
+        {
+          "category": "restaurants",
+          "source": "mohegan_sun.json",
+          "score": 0.664
+        },
+        {
+          "category": "faq",
+          "source": "mohegan_sun.json",
+          "score": 0.666
+        }
+      ],
+      "elapsed_ms": 50893,
+      "error": null
+    }
+  ],
+  "completed": true
+}

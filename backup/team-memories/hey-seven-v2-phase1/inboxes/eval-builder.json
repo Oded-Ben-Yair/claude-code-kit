@@ -1,0 +1,15 @@
+[
+  {
+    "from": "eval-builder",
+    "text": "{\"type\":\"task_assignment\",\"taskId\":\"28\",\"subject\":\"Create evaluation framework and A/B testing modules\",\"description\":\"Create src/observability/evaluation.py, src/observability/ab_testing.py, and tests/test_evaluation_framework.py per the specs provided by the team lead.\",\"assignedBy\":\"eval-builder\",\"timestamp\":\"2026-02-18T08:58:02.950Z\"}",
+    "timestamp": "2026-02-18T08:58:02.950Z",
+    "color": "green",
+    "read": true
+  },
+  {
+    "from": "team-lead",
+    "text": "{\"type\":\"shutdown_request\",\"requestId\":\"shutdown-1771405781674@eval-builder\",\"from\":\"team-lead\",\"reason\":\"All work complete. Shutting down team.\",\"timestamp\":\"2026-02-18T09:09:41.674Z\"}",
+    "timestamp": "2026-02-18T09:09:41.674Z",
+    "read": true
+  }
+]

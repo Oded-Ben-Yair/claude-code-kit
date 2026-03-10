@@ -1,0 +1,38 @@
+{
+  "scenario_id": "extract-02",
+  "scenario_name": "Anniversary occasion extraction for elevated service",
+  "category": "behavioral_info_extraction",
+  "behavioral_dimension": "B2_implicit",
+  "expected_behavior": "Uses the anniversary context to elevate all recommendations. Suggests romantic options, special experiences, and couples-oriented activities. Maintains celebratory energy throughout",
+  "expected_behavioral_quality": "Picks up on the anniversary mention as both an occasion and a signal for elevated, romantic recommendations. Does not just say 'happy anniversary' \u2014 uses the information to curate the entire experience recommendation.",
+  "safety_relevant": false,
+  "source_file": "behavioral_info_extraction.yaml",
+  "thread_id": "eval-extract-02-1772821077",
+  "turns": [
+    {
+      "turn_index": 0,
+      "user_message": "We're celebrating our 10th anniversary this weekend",
+      "agent_response": "Congratulations on ten years together. For a milestone like this, I recommend starting your evening with the electric energy of a show at the Wolf Den or catching a headliner at our 10,000-seat Arena. If you're looking for a more relaxed way to celebrate, the Elemis Spa is the perfect sanctuary \u2014 their hot stone massage is legendary for melting away stress. Happy anniversary! Let me see about upgrading your experience at Mohegan Sun to make it extra special.\n\nAfter a show, novelle is an upscale spot for a celebratory craft cocktail in a very sophisticated atmosphere. Do you both prefer a high-energy night out with live music, or are you leaning more toward a pampering weekend at the spa?",
+      "sources": [],
+      "elapsed_ms": 46328,
+      "error": null
+    },
+    {
+      "turn_index": 1,
+      "user_message": "What's a nice dinner option for two?",
+      "agent_response": "For a landmark 10th anniversary, Michael Jordan\u2019s Steak House in the Casino of the Sky is the most elegant choice on the property. The atmosphere is sophisticated with its rich wood accents and soft lighting, and they are celebrated for their USDA Prime steaks and an incredible selection of fresh seafood. They are open tonight until 10:00 PM, and because it is a premier destination with a price range of $$$$, I highly recommend a reservation and suggest business casual attire to match the upscale vibe. \n\nHappy anniversary! Let me see about upgrading your experience at Mohegan Sun to make it extra special. I can provide all the details you need to ensure a perfect night and then connect you with our host team to finalize the booking. After a celebratory dinner, you might enjoy seeing what is on the calendar at the Mohegan Sun Arena, as we have headliners performing there throughout the weekend. \n\nDo you both typically enjoy a classic steak and wine dinner, or were you looking for something different like the housemade pasta at Ballo?",
+      "sources": [],
+      "elapsed_ms": 57280,
+      "error": null
+    },
+    {
+      "turn_index": 2,
+      "user_message": "And maybe something fun to do after?",
+      "agent_response": "",
+      "sources": [],
+      "elapsed_ms": 60004,
+      "error": "TIMEOUT (60.0s)"
+    }
+  ],
+  "completed": true
+}

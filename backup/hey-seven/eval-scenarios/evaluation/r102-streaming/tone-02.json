@@ -1,0 +1,60 @@
+{
+  "scenario_id": "tone-02",
+  "scenario_name": "Over-enthusiasm clamping on celebration",
+  "category": "behavioral_tone_calibration",
+  "behavioral_dimension": "B6_tone",
+  "expected_behavior": "Acknowledges the anniversary warmly but keeps exclamation marks to max 1 per response. Does not pile on with 'How wonderful! What a special occasion! Congratulations!' Multiple exclamation marks or effusive opener = tone failure",
+  "expected_behavioral_quality": "When a guest shares a celebration, responds with genuine warmth but does not overdo exclamation marks or effusive language. Max 1 exclamation mark per response. Congratulates sincerely then moves to helpful specifics.",
+  "safety_relevant": false,
+  "source_file": "behavioral_tone_calibration.yaml",
+  "thread_id": "eval-tone-02-1772922127",
+  "turns": [
+    {
+      "turn_index": 0,
+      "user_message": "We're here for our anniversary! Any restaurant recommendations?",
+      "agent_response": "Congratulations on your anniversary. Todd English's Tuscany is the standout choice for a romantic celebration, featuring a stunning indoor waterfall and a menu of handmade pastas and wood-fired specialties that create an incredible atmosphere. \n\nSince it is currently 10:22 PM and they closed at 10:00 PM, I'd suggest planning this for tomorrow evening; the dress code is business casual and reservations are highly recommended as it is one of our most popular fine dining destinations. If you are looking for a celebratory bite and a cocktail right now, SolToro Taqueria & Tequila Bar in the Casino of the Earth is open until 11:00 PM tonight and offers a vibrant, modern Mexican setting. \n\nI've got you covered for your stay\u2014would you like me to connect you with our host team to see about securing a table or discussing how we can make your visit even more memorable? By the way, since you're celebrating, let me see about upgrading your experience here at Mohegan Sun to make it extra special. After your dinner, you might enjoy catching a late set at the Wolf Den for some live music. Are you more of a steak and wine couple, or do you prefer something more casual like authentic Mexican cuisine and tequila!\n\n*Note: Hours and prices may vary; it is best to confirm with the property.*",
+      "sources": [
+        {
+          "category": "restaurants",
+          "source": "mohegan_sun.json",
+          "score": 0.667
+        }
+      ],
+      "elapsed_ms": 33201,
+      "error": null
+    },
+    {
+      "turn_index": 1,
+      "user_message": "Something upscale and romantic",
+      "agent_response": "Michael Jordan's Steak House in the Casino of the Sky is the premier choice for an upscale anniversary, where the rich aroma of USDA Prime steaks and an extensive wine list meet a deeply elegant setting. While they closed for the evening at 10:00 PM, it is the perfect spot to target for tomorrow night; the business casual dress code and sophisticated ambiance make it feel like a true occasion. If you want a romantic, high-end atmosphere right now, Novelle is our chic ultra-lounge open late tonight, offering craft cocktails in a sophisticated nightlife environment.\n\nI've got you covered\u2014would you like me to connect you with our host team to see about a reservation for tomorrow or to discuss making your anniversary even more memorable? Happy anniversary, and let me see about upgrading your experience at Mohegan Sun to make it extra special. After a toast at Novelle, the celestial light-filled space of the Casino of the Sky is a beautiful place for a late-night stroll. Do you usually prefer the classic elegance of a steakhouse or a more modern, lounge-style celebration?\n\n*Note: Hours and prices may vary; it is best to confirm with the property.*",
+      "sources": [
+        {
+          "category": "entertainment",
+          "source": "mohegan_sun.json",
+          "score": 0.702
+        },
+        {
+          "category": "restaurants",
+          "source": "mohegan_sun.json",
+          "score": 0.67
+        },
+        {
+          "category": "gaming",
+          "source": "mohegan_sun.json",
+          "score": 0.654
+        }
+      ],
+      "elapsed_ms": 61040,
+      "error": null
+    },
+    {
+      "turn_index": 2,
+      "user_message": "Perfect, we'll do that",
+      "agent_response": "Glad I could help. The Wolf Den has free live music every night \u2014 it's right in the Casino of the Earth and worth checking out. What sounds good?",
+      "sources": [],
+      "elapsed_ms": 2,
+      "error": null
+    }
+  ],
+  "completed": true
+}

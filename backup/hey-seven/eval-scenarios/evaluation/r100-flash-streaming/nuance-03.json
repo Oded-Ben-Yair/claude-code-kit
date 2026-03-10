@@ -1,0 +1,80 @@
+{
+  "scenario_id": "nuance-03",
+  "scenario_name": "Honeymoon celebration energy matching",
+  "category": "behavioral_nuance",
+  "behavioral_dimension": "B5_emotional",
+  "expected_behavior": "Celebrates the honeymoon with genuine enthusiasm. Recommends romantic dining and couples experiences. Maintains elevated celebratory tone throughout without being performative",
+  "expected_behavioral_quality": "Matches the celebration energy authentically. Congratulates the couple genuinely. Recommends romantic and special experiences without being generic. Treats this as a milestone occasion deserving elevated suggestions.",
+  "safety_relevant": false,
+  "source_file": "behavioral_nuance.yaml",
+  "thread_id": "eval-nuance-03-1772823042",
+  "turns": [
+    {
+      "turn_index": 0,
+      "user_message": "We just got married! Honeymoon trip!",
+      "agent_response": "Congratulations on your marriage and welcome to Mohegan Sun for your honeymoon.\n\nI am Seven, your concierge. If you are looking to relax after your travels, the Mandara Spa offers Balinese-inspired treatments and is open until 8:00 PM tonight. For a more high-energy celebration later this evening, novelle is an upscale ultra lounge that features craft cocktails and DJ entertainment on Friday nights.\n\nSince it is your first evening here together, would you like a recommendation for a romantic dinner spot?",
+      "sources": [
+        {
+          "category": "hotel",
+          "source": "mohegan_sun.json",
+          "score": 0.603
+        },
+        {
+          "category": "amenities",
+          "source": "mohegan_sun.json",
+          "score": 0.59
+        },
+        {
+          "category": "property",
+          "source": "mohegan_sun.json",
+          "score": 0.6
+        },
+        {
+          "category": "entertainment",
+          "source": "mohegan_sun.json",
+          "score": 0.591
+        },
+        {
+          "category": "restaurants",
+          "source": "mohegan_sun.json",
+          "score": 0.586
+        }
+      ],
+      "elapsed_ms": 45011,
+      "error": null
+    },
+    {
+      "turn_index": 1,
+      "user_message": "What's the most romantic dinner option?",
+      "agent_response": "",
+      "sources": [],
+      "elapsed_ms": 60005,
+      "error": "TIMEOUT (60.0s)"
+    },
+    {
+      "turn_index": 2,
+      "user_message": "And something special we can do together tomorrow?",
+      "agent_response": "It draws on Balinese traditions and offers a level of serenity that is perfect for your first full day of marriage. For the evening, the Cabaret Theatre provides a more intimate setting with only 400 seats and cocktail service, which creates a wonderful date-night atmosphere compared to the high energy of the larger venues. If you would like to keep the party going late into Saturday night, Avalon Nightclub opens at 10:00 PM and features a state-of-the-art sound system.\n\nI can help you narrow down the best times for these experiences and connect you with our host team to finalize the details for you. Do you think you would prefer a relaxing morning spa treatment or an evening show for your Saturday?",
+      "sources": [
+        {
+          "category": "entertainment",
+          "source": "mohegan_sun.json",
+          "score": 0.637
+        },
+        {
+          "category": "faq",
+          "source": "mohegan_sun.json",
+          "score": 0.637
+        },
+        {
+          "category": "promotions",
+          "source": "mohegan_sun.json",
+          "score": 0.616
+        }
+      ],
+      "elapsed_ms": 39069,
+      "error": null
+    }
+  ],
+  "completed": true
+}

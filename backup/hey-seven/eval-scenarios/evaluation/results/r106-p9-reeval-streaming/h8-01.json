@@ -1,0 +1,70 @@
+{
+  "scenario_id": "h8-01",
+  "scenario_name": "Comp-eligible guest receiving offer",
+  "category": "host_triangle_h7_h10_revenue",
+  "behavioral_dimension": "H8_strategic_offer_framing",
+  "expected_behavior": "Presents Leap benefits as things the guest has earned through their loyalty, not as promotions being pushed. Uses insider language \u2014 'a lot of people don't realize' or 'one of the quieter Leap perks' \u2014 that makes the guest feel like they are learning something exclusive",
+  "expected_behavioral_quality": "When mentioning comp eligibility or perks, frames them as earned recognition rather than marketing. The guest should feel that the offer exists because of who they are, not because it is a mass promotion. Uses language like 'you've unlocked' rather than 'we're offering.'",
+  "safety_relevant": false,
+  "source_file": "host_triangle_h7_h10_revenue.yaml",
+  "thread_id": "eval-h8-01-1773039219",
+  "turns": [
+    {
+      "turn_index": 0,
+      "user_message": "I'm at Leap tier. Are there any dining perks I should know about?",
+      "agent_response": "The Leap tier includes priority access at our restaurants and an enhanced earning rate on all your dining purchases, meaning you accumulate points faster to redeem for your meals. You are also earning toward your next level just by dining with us\u2014at 25,000 Tier Credits you hit Ascend, which opens up premium benefits like complimentary room upgrades and a dedicated host to handle your reservations.\n\nSince you are looking into dining options today, I can look into arranging a complimentary appetizer or dessert for you at one of our casual spots. After dinner, the Wolf Den usually has live music to round out the night. \n\nWhat kind of food are you leaning toward today?",
+      "sources": [],
+      "elapsed_ms": 50772,
+      "error": null
+    },
+    {
+      "turn_index": 1,
+      "user_message": "Nice, I didn't know about those. What about entertainment?",
+      "agent_response": "At, since you\u2019re at Leap tier, you\u2019re already earning Momentum Points on every concert ticket you buy, which you can then use for dinner or even a treatment at Elemis Spa. For tonight, you should definitely check out the Wolf Den in the heart of the Casino of the Earth; it has this electric, intimate energy where you're right there with the performers, and the shows are complimentary for our guests.\n\nIf you are looking for a bigger production, the Mohegan Sun Arena hosts major headliners and is consistently ranked as one of the top entertainment venues in the country. For a more sophisticated late-night vibe, novelle is our ultra-lounge that features craft cocktails and DJs on the weekends. As you continue to play and earn toward the Ascend tier, you'll even start unlocking priority Arena access and VIP seating at the Wolf Den. \n\nAre you visiting us solo this time, or are you bringing a group along for the show?",
+      "sources": [
+        {
+          "category": "entertainment",
+          "source": "mohegan_sun.json",
+          "score": 0.689
+        },
+        {
+          "category": "faq",
+          "source": "mohegan_sun.json",
+          "score": 0.679
+        }
+      ],
+      "elapsed_ms": 28860,
+      "error": null
+    },
+    {
+      "turn_index": 2,
+      "user_message": "That's actually really cool. I should be using these more",
+      "agent_response": "You've earned those Leap benefits, At, so you should definitely put them to use. \n\nThe easiest way to keep track of everything is through the Mohegan Sun app. It links directly to your Momentum account so you can check your points balance, view any personalized promotions, and even browse restaurant menus or book hotel rooms right from your phone. It takes the guesswork out of knowing what offers are available to you. \n\nSince we're looking at ways to maximize your tier, are you on property right now, or are we planning for an upcoming visit?",
+      "sources": [
+        {
+          "category": "entertainment",
+          "source": "mohegan_sun.json",
+          "score": 0.632
+        },
+        {
+          "category": "hotel",
+          "source": "mohegan_sun.json",
+          "score": 0.621
+        },
+        {
+          "category": "gaming",
+          "source": "mohegan_sun.json",
+          "score": 0.616
+        },
+        {
+          "category": "promotions",
+          "source": "mohegan_sun.json",
+          "score": 0.616
+        }
+      ],
+      "elapsed_ms": 56869,
+      "error": null
+    }
+  ],
+  "completed": true
+}

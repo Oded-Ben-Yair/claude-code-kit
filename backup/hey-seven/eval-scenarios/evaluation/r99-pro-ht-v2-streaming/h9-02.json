@@ -1,0 +1,86 @@
+{
+  "scenario_id": "h9-02",
+  "scenario_name": "Guest on a budget needing value guidance",
+  "category": "host_triangle_h7_h10_revenue",
+  "behavioral_dimension": "H9_revenue_aware_steering",
+  "expected_behavior": "Leads with genuinely good affordable options, not just the cheapest. Bobby's Burgers, Frank Pepe's, and the Buffet all have real culinary appeal. Pairs with the Wolf Den (free shows) to create a full evening without pressure. The guest leaves excited about a great night out, not feeling like they got the budget tour",
+  "expected_behavioral_quality": "When a guest signals budget constraints, the agent steers toward high-value experiences without condescending. Finds genuinely great options at every price point. Never makes the guest feel like they are getting a lesser experience \u2014 just a different one.",
+  "safety_relevant": false,
+  "source_file": "host_triangle_h7_h10_revenue.yaml",
+  "thread_id": "eval-h9-02-1772807562",
+  "turns": [
+    {
+      "turn_index": 0,
+      "user_message": "What's good for dinner that won't break the bank?",
+      "agent_response": "Lantern Bar & Grill in the Casino of the Earth is a reliable favorite for a solid meal that won't stretch your wallet. It's open 24 hours and serves everything from hearty steaks to fresh salads in a relaxed, casual atmosphere with no reservations required. Prices and hours may vary, but it's generally one of our best values for a sit-down dinner. \n\nSince you're visiting us for the first time, you might also like to know that signing up for our rewards program may make you eligible for a $10 introductory free play bonus. After you eat, it's just a short walk over to the Mohegan Sun Arena if you're looking for some live entertainment. How many people are in your party tonight?",
+      "sources": [
+        {
+          "category": "restaurants",
+          "source": "mohegan_sun.json",
+          "score": 0.644
+        }
+      ],
+      "elapsed_ms": 33709,
+      "error": null
+    },
+    {
+      "turn_index": 1,
+      "user_message": "The Buffet sounds good. Any free entertainment after?",
+      "agent_response": "I apologize, but I'm having trouble generating a response right now. Please try again, or  at [PHONE].",
+      "sources": [
+        {
+          "category": "entertainment",
+          "source": "mohegan_sun.json",
+          "score": 0.706
+        },
+        {
+          "category": "restaurants",
+          "source": "mohegan_sun.json",
+          "score": 0.665
+        },
+        {
+          "category": "dining",
+          "source": "cms:dining/dining-001",
+          "score": 0.663
+        }
+      ],
+      "elapsed_ms": 46761,
+      "error": null
+    },
+    {
+      "turn_index": 2,
+      "user_message": "Wait, the Wolf Den is free? That's awesome",
+      "agent_response": "I apologize, but I'm having trouble generating a response right now. Please try again, or  at [PHONE].",
+      "sources": [
+        {
+          "category": "entertainment",
+          "source": "mohegan_sun.json",
+          "score": 0.773
+        },
+        {
+          "category": "faq",
+          "source": "mohegan_sun.json",
+          "score": 0.667
+        },
+        {
+          "category": "promotions",
+          "source": "mohegan_sun.json",
+          "score": 0.637
+        },
+        {
+          "category": "gaming",
+          "source": "mohegan_sun.json",
+          "score": 0.629
+        },
+        {
+          "category": "amenities",
+          "source": "mohegan_sun.json",
+          "score": 0.633
+        }
+      ],
+      "elapsed_ms": 49820,
+      "error": null
+    }
+  ],
+  "completed": true
+}

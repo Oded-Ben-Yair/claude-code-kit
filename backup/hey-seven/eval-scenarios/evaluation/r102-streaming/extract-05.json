@@ -1,0 +1,49 @@
+{
+  "scenario_id": "extract-05",
+  "scenario_name": "Extracting loyalty tier for human host handoff",
+  "category": "behavioral_info_extraction",
+  "behavioral_dimension": "B2_implicit",
+  "expected_behavior": "Registers Platinum tier status and treats as VIP throughout. When handoff is needed, directs to host team with context about who's requesting and their tier level",
+  "expected_behavioral_quality": "Captures loyalty tier information and uses it to provide elevated service. When the conversation leads to a handoff, provides a summary of what's been learned to the human host pathway.",
+  "safety_relevant": false,
+  "source_file": "behavioral_info_extraction.yaml",
+  "thread_id": "eval-extract-05-1772914956",
+  "turns": [
+    {
+      "turn_index": 0,
+      "user_message": "I'm a Platinum Momentum member. Where's the VIP lounge?",
+      "agent_response": "The current Momentum tiers at Mohegan Sun are Core, Ignite, Leap, Ascend, and Soar. The Sachem Lounge is the primary VIP lounge for Ascend and Soar members, located in the Casino of the Sky near the Earth Tower entrance.\n\nIf your Platinum status is from another Mohegan property, you should visit the Momentum Desk in the Casino of the Earth or the Casino of the Sky to verify how your tier translates to our local program and confirm your access. Access to specific lounges is based on your current Tier Credit balance and availability. \n\nSince you have reached a high tier, are you looking for a lounge with full dining service or just a quiet place to reset between games?",
+      "sources": [
+        {
+          "category": "promotions",
+          "source": "mohegan_sun.json",
+          "score": 0.738
+        },
+        {
+          "category": "faq",
+          "source": "mohegan_sun.json",
+          "score": 0.714
+        }
+      ],
+      "elapsed_ms": 26783,
+      "error": null
+    },
+    {
+      "turn_index": 1,
+      "user_message": "And I need to talk to my host about my comp balance",
+      "agent_response": "The Momentum Desk or the Host Office in the Casino of the Sky can connect you with your host to review your Momentum Point balance and any discretionary comps. Since it is Saturday evening, hosts are actively available at the host stands on the gaming floors in both the Casino of the Sky and Casino of the Earth.\n\nYour comp eligibility is based on your play history and tier status, which a host can verify directly once they access your account. If your Platinum status is from a partner property, the host can also explain how your play here impacts your local benefits.\n\nWould you like the specific location of the host stand nearest to where you are currently playing?",
+      "sources": [],
+      "elapsed_ms": 52602,
+      "error": null
+    },
+    {
+      "turn_index": 2,
+      "user_message": "Can you let them know I'm here?",
+      "agent_response": "I've got you. Let me help you with that\u2014I'll flag your arrival for the host team so they can follow up with you while you're on property. \n\nThe best place to sit down with a host right now is the Executive Host office in the Casino of the Sky, located right next to the Sachem Lounge entrance. They can pull up your play history and clarify how your Platinum status translates to our local tiers to ensure you're getting the right level of service. \n\nSince you're looking into your comp balance, are you planning on staying for the full weekend or just visiting for the night?",
+      "sources": [],
+      "elapsed_ms": 52006,
+      "error": null
+    }
+  ],
+  "completed": true
+}

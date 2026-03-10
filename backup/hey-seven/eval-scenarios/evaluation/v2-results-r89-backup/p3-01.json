@@ -1,0 +1,71 @@
+{
+  "id": "p3-01",
+  "name": "Restaurant recommendation plus party composition question",
+  "source_file": "profiling_p3_give_to_get.yaml",
+  "category": "profiling_p3_give_to_get",
+  "behavioral_dimension": "P3_give_to_get",
+  "expected_behavior": "Turn 1 provides a genuine recommendation AND asks about party composition. The recommendation is not held hostage to the answer \u2014 it's useful immediately. Turn 2 refines the recommendation with the new information",
+  "expected_behavioral_quality": "Delivers a complete, useful restaurant recommendation FIRST, then naturally asks about party size or composition. The recommendation stands on its own \u2014 the guest gets value even if they ignore the follow-up question. The question feels like a service refinement, not data collection.",
+  "safety_relevant": false,
+  "turns": [
+    {
+      "turn_index": 0,
+      "user_message": "What's a good dinner spot?",
+      "agent_response": "For a Wednesday evening, Michael Jordan's Steak House in the Casino of the Sky is a standout choice if you're looking for a refined dinner. The sizzle of a USDA Prime steak paired with their legendary garlic bread creates a classic steakhouse experience that's hard to beat. \n\nThey are open tonight until 10:00 PM with a business casual dress code, and because it is a favorite among our guests, I'd suggest securing a reservation. Just a reminder that hours and pricing can occasionally change, so it's best to confirm those details when you arrive. \n\nHow many people are in your party tonight? After dinner, you might want to stop by the Wolf Den to see who's performing on stage.",
+      "sources": [
+        {
+          "category": "restaurants",
+          "source": "mohegan_sun.json",
+          "score": 0.661
+        }
+      ],
+      "elapsed_ms": 27825,
+      "error": null
+    },
+    {
+      "turn_index": 1,
+      "user_message": "Four of us, two couples",
+      "agent_response": "Michael Jordan's Steak House has comfortable seating for a party of four. For a more scenic option, Todd English's Tuscany is right next to our 55-foot indoor waterfall and is a favorite for couples. \n\nAre you celebrating anything special tonight? After dinner, the Wolf Den in the Casino of the Earth has live music starting at 8:00 PM.",
+      "sources": [
+        {
+          "category": "faq",
+          "source": "mohegan_sun.json",
+          "score": 0.629
+        },
+        {
+          "category": "property",
+          "source": "mohegan_sun.json",
+          "score": 0.636
+        },
+        {
+          "category": "gaming",
+          "source": "mohegan_sun.json",
+          "score": 0.619
+        },
+        {
+          "category": "hotel",
+          "source": "mohegan_sun.json",
+          "score": 0.634
+        },
+        {
+          "category": "restaurants",
+          "source": "mohegan_sun.json",
+          "score": 0.613
+        }
+      ],
+      "elapsed_ms": 31914,
+      "error": null
+    },
+    {
+      "turn_index": 2,
+      "user_message": "Perfect, we'll try the steakhouse",
+      "agent_response": "Glad I could help. The Wolf Den has free live music every night \u2014 it's right in the Casino of the Earth and worth checking out. What sounds good?",
+      "sources": [],
+      "elapsed_ms": 3,
+      "error": null
+    }
+  ],
+  "elapsed_ms": 59744,
+  "error": null,
+  "completed": true
+}

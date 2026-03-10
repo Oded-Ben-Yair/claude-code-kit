@@ -1,0 +1,65 @@
+{
+  "scenario_id": "h8-03",
+  "scenario_name": "Guest receiving a promotional offer",
+  "category": "host_triangle_h7_h10_revenue",
+  "behavioral_dimension": "H8_strategic_offer_framing",
+  "expected_behavior": "Validates that the double points weekend is worthwhile by connecting it to the guest's tier progression and earning potential. Frames the promotion as an accelerator for benefits the guest already cares about. Makes coming in this weekend feel like a strategic decision, not a marketing response",
+  "expected_behavioral_quality": "When presenting a promotion, the agent frames it as something special rather than mass-distributed. Uses personal language and connects the offer to the guest's known preferences. The promotion should feel selected for them, not blasted to an email list.",
+  "safety_relevant": false,
+  "source_file": "host_triangle_h7_h10_revenue.yaml",
+  "thread_id": "eval-h8-03-1772992986",
+  "turns": [
+    {
+      "turn_index": 0,
+      "user_message": "I got an email about double Momentum Points this weekend. Is that worth coming in for?",
+      "agent_response": "Double points mean your play converts to rewards twice as fast. Momentum points can be used directly for free play, hotel stays, and dining across the resort, so it adds real value to your visit. If you are looking to build up your balance for a complimentary dinner or room upgrade, a multiplier weekend is the most efficient time to do it.\n\nPro tip \u2014 your earned points update almost immediately. That means the extra points you earn on the floor this afternoon can be used to cover dinner tonight at a place like SolToro or Tuscany.\n\nWhat do you normally like to play when you visit?",
+      "sources": [
+        {
+          "category": "faq",
+          "source": "mohegan_sun.json",
+          "score": 0.712
+        },
+        {
+          "category": "promotions",
+          "source": "mohegan_sun.json",
+          "score": 0.703
+        }
+      ],
+      "elapsed_ms": 59850,
+      "error": null
+    },
+    {
+      "turn_index": 1,
+      "user_message": "How much faster does that add up?",
+      "agent_response": "It directly cuts the time it takes to earn your comps in half. For the exact same amount of play at the slots or tables, your spendable point balance grows at twice the standard rate. \n\nIf you decide to come in this evening, joining the Momentum program is free at any desk on the floor. As a new guest, you may be eligible for a $10 introductory free play bonus once you get your card, which gives you a head start on those double points. \n\nAre you coming in with a specific game in mind, or just looking to see what catches your eye on the floor?",
+      "sources": [],
+      "elapsed_ms": 53324,
+      "error": null
+    },
+    {
+      "turn_index": 2,
+      "user_message": "Alright, I'm in. Coming this Saturday",
+      "agent_response": "That's great news, in \u2014 Saturday nights have an incredible energy here. The Wolf Den has this intimate energy where you're right there with the performer, and it's electric on a weekend!\n\nIf you're looking for a late-night vibe, Avalon Nightclub opens at 10:00 PM and usually draws a great crowd for their DJs. Since you're looking to build up those Momentum points, I'd suggest dining at Tuscany or SolToro before the shows, as your meal spend counts toward your rewards just like your play does. If you need a break from the excitement, the Elemis Spa is the perfect reset for a busy Saturday.\n\nHow many people are you bringing with you this weekend?",
+      "sources": [
+        {
+          "category": "entertainment",
+          "source": "mohegan_sun.json",
+          "score": 0.639
+        },
+        {
+          "category": "promotions",
+          "source": "mohegan_sun.json",
+          "score": 0.621
+        },
+        {
+          "category": "faq",
+          "source": "mohegan_sun.json",
+          "score": 0.624
+        }
+      ],
+      "elapsed_ms": 36269,
+      "error": null
+    }
+  ],
+  "completed": true
+}

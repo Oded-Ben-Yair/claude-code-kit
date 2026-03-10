@@ -1,0 +1,91 @@
+{
+  "scenario_id": "h1-03",
+  "scenario_name": "Guest with a specific interest looking for depth",
+  "category": "host_triangle_h1_h3_development",
+  "behavioral_dimension": "H1_proactive_value_discovery",
+  "expected_behavior": "Demonstrates deep poker knowledge, treats the guest as a serious player, and builds a full weekend vision around the poker interest. Cross-sells dining and entertainment as part of a poker trip, not as disconnected amenities",
+  "expected_behavioral_quality": "When a guest signals deep interest in one domain (poker, spa, comedy), the agent demonstrates deep knowledge of that domain and connects it to related experiences. Discovers what level of engagement the guest wants and builds a personalized visit plan.",
+  "safety_relevant": false,
+  "source_file": "host_triangle_h1_h3_development.yaml",
+  "thread_id": "eval-h1-03-1772832778",
+  "turns": [
+    {
+      "turn_index": 0,
+      "user_message": "I'm really into poker. What's the poker scene like here?",
+      "agent_response": "We feature 33 tables with games running 24/7, including No-Limit Texas Hold'em, Pot-Limit Omaha, and Limit Hold'em, along with daily tournaments for various buy-ins. \n\nAn insider tip for you: the room is designed for serious players, so you'll find the staff is incredibly sharp and keeps the games moving at an impressive pace. After you've spent a few hours at the table, the high-energy atmosphere at Avalon Nightclub is just a short walk away if you want to celebrate a win with some of the best DJs in the area. Are you looking to jump into a cash game tonight, or are you more of a tournament player?",
+      "sources": [
+        {
+          "category": "gaming",
+          "source": "mohegan_sun.json",
+          "score": 0.681
+        },
+        {
+          "category": "faq",
+          "source": "mohegan_sun.json",
+          "score": 0.627
+        },
+        {
+          "category": "entertainment",
+          "source": "mohegan_sun.json",
+          "score": 0.622
+        }
+      ],
+      "elapsed_ms": 37008,
+      "error": null
+    },
+    {
+      "turn_index": 1,
+      "user_message": "Any tournaments coming up? I play pretty seriously",
+      "agent_response": "You'll find that the room hosts daily tournaments with varying buy-ins and regular special event series throughout the year that draw some very focused competition. With 33 tables and 24/7 operation, there is a consistent level of high-caliber play regardless of when you decide to buy in.\n\nA serious session at the felt can be taxing, so the Elemis Spa is a favorite for our regulars to reset with a hot stone massage before their next game. I can check the exact start times for tomorrow's tournament schedule so you can plan your day accordingly.",
+      "sources": [
+        {
+          "category": "gaming",
+          "source": "mohegan_sun.json",
+          "score": 0.647
+        },
+        {
+          "category": "faq",
+          "source": "mohegan_sun.json",
+          "score": 0.626
+        },
+        {
+          "category": "amenities",
+          "source": "mohegan_sun.json",
+          "score": 0.612
+        },
+        {
+          "category": "entertainment",
+          "source": "mohegan_sun.json",
+          "score": 0.606
+        }
+      ],
+      "elapsed_ms": 48909,
+      "error": null
+    },
+    {
+      "turn_index": 2,
+      "user_message": "Nice. What else is good for a poker weekend?",
+      "agent_response": "Michael Jordan\u2019s Steak House is the go-to for many of our poker regulars; it\u2019s situated right in the Casino of the Sky and is known for its 23-layer chocolate cake if you\u2019re looking for a celebratory win. \n\nFor a change of scenery, the VISTA Lounge at Wombi Rock offers a more relaxed vibe under the property's massive planetarium dome, which is a great way to clear your head after hours of focused play. Since you're planning a full poker weekend, are you looking to stay in one of our hotel towers?",
+      "sources": [
+        {
+          "category": "gaming",
+          "source": "mohegan_sun.json",
+          "score": 0.685
+        },
+        {
+          "category": "faq",
+          "source": "mohegan_sun.json",
+          "score": 0.664
+        },
+        {
+          "category": "promotions",
+          "source": "mohegan_sun.json",
+          "score": 0.644
+        }
+      ],
+      "elapsed_ms": 33562,
+      "error": null
+    }
+  ],
+  "completed": true
+}

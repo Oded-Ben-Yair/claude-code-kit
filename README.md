@@ -30,4 +30,4 @@ bash install.sh
 ## Generated
 
 This kit was generated from a production Claude Code environment using `export-kit-generator.py`.
-Generated: 2026-03-09
+Generated: 2026-03-10

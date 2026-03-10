@@ -1,0 +1,75 @@
+{
+  "scenario_id": "h2-01",
+  "scenario_name": "Lapsed guest signals they stopped coming",
+  "category": "host_triangle_h1_h3_development",
+  "behavioral_dimension": "H2_reactivation_win_back",
+  "expected_behavior": "Welcomes the guest back without making the absence feel awkward. Asks what brought them back (not why they left). Highlights what has changed or is new since their last visit \u2014 new restaurants, new entertainment, new loyalty perks. Creates urgency around what they have been missing",
+  "expected_behavioral_quality": "When a guest says they stopped visiting, the agent investigates the reason without being pushy. Acknowledges the gap, discovers what changed, and creates a specific reason to return based on what has changed at the property or what the guest now values.",
+  "safety_relevant": false,
+  "source_file": "host_triangle_h1_h3_development.yaml",
+  "thread_id": "eval-h2-01-1772803887",
+  "turns": [
+    {
+      "turn_index": 0,
+      "user_message": "I used to come here all the time but haven't been in like two years",
+      "agent_response": "Welcome back. It has been a little while, but we are genuinely glad you are returning. A few things have likely been updated since your last visit, but your old favorites are still right here. \n\nSince it has been a couple of years, we should make sure your rewards account is active so you can start earning right away. I can even look into arranging a complimentary appetizer or dessert at one of our casual dining spots to welcome you back. \n\nAre you just visiting for the day, or will you be staying overnight with us?",
+      "sources": [],
+      "elapsed_ms": 67840,
+      "error": null
+    },
+    {
+      "turn_index": 1,
+      "user_message": "Just got busy with work, lost the habit I guess",
+      "agent_response": "Work definitely has a way of taking over. I completely understand how that happens, and we are just glad you carved out some time to come back. \n\nSince you have been so busy, this might be the perfect trip to just decompress. If you want to take it easy, our Mandara Spa is open until 8:00 PM today and offers a really quiet, relaxing space to reset away from the crowds. \n\nAre you looking to jump right back into the action, or are you hoping for a more laid-back visit this time around?",
+      "sources": [
+        {
+          "category": "amenities",
+          "source": "mohegan_sun.json",
+          "score": 0.619
+        },
+        {
+          "category": "entertainment",
+          "source": "mohegan_sun.json",
+          "score": 0.621
+        },
+        {
+          "category": "hotel",
+          "source": "mohegan_sun.json",
+          "score": 0.567
+        }
+      ],
+      "elapsed_ms": 60311,
+      "error": null
+    },
+    {
+      "turn_index": 2,
+      "user_message": "What's actually new since I was last here?",
+      "agent_response": "The biggest changes you'll notice are centered around our new Earth Tower and some elevated evening spaces. \n\nIf you're staying into the evening, we added novelle. It's an upscale ultra-lounge that opens tonight, and as an insider tip, it has some of the best craft cocktails on the property\u2014perfect for a quieter drink away from the main casino floor. \n\nWe also opened the Elemis Spa in the Earth Tower. It focuses on premium skincare and offers express services, which is great if you want to relax but still have time to explore the rest of the resort. \n\nI can look into arranging a complimentary appetizer or dessert at one of our casual restaurants to help welcome you back. Are you planning to grab dinner while you're here today?",
+      "sources": [
+        {
+          "category": "hotel",
+          "source": "mohegan_sun.json",
+          "score": 0.658
+        },
+        {
+          "category": "entertainment",
+          "source": "mohegan_sun.json",
+          "score": 0.66
+        },
+        {
+          "category": "amenities",
+          "source": "mohegan_sun.json",
+          "score": 0.644
+        },
+        {
+          "category": "gaming",
+          "source": "mohegan_sun.json",
+          "score": 0.631
+        }
+      ],
+      "elapsed_ms": 72178,
+      "error": null
+    }
+  ],
+  "completed": true
+}

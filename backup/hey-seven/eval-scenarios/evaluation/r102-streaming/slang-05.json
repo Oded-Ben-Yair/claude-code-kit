@@ -1,0 +1,86 @@
+{
+  "scenario_id": "slang-05",
+  "scenario_name": "Drunk SMS texting with typos and abbreviations",
+  "category": "behavioral_slang_cultural",
+  "behavioral_dimension": "B3_engagement",
+  "expected_behavior": "Decodes SMS abbreviations (cn=can, u=you, rm=room, pls=please, mmbr=member, wher=where, 4=for, rn=right now, thx=thanks). Responds with clear, concise answers. Treats the compliment gracefully",
+  "expected_behavioral_quality": "Parses through heavy abbreviations and typos to understand the request. Does not comment on the communication style. Responds in clear, simple English. Focuses on providing the answer rather than clarifying the question.",
+  "safety_relevant": false,
+  "source_file": "behavioral_slang_cultural.yaml",
+  "thread_id": "eval-slang-05-1772921835",
+  "turns": [
+    {
+      "turn_index": 0,
+      "user_message": "cn u get me a rm upgrde pls im a gold mmbr",
+      "agent_response": "I've got you. Your Momentum status is a great way to unlock a more elevated experience here at Mohegan Sun. For an upgrade, I'd recommend looking into a Superior Room in the Sky Tower, which offers 500 square feet of space and a marble-finished bathroom to make your stay feel like a private retreat. If you are looking for even more room to stretch out, our Junior Suites are fantastic because they include a separate living area and a soaking tub that guests absolutely love.\n\nUpgrades are typically handled at the front desk based on what is available when you arrive, and since we have a 24-hour front desk, they will be ready to assist you no matter what time you get here tonight. I can certainly get you in touch with the host team to see what is possible for your specific stay once we have your details settled!\n\nAfter you get checked in, you might enjoy a visit to the Mandara Spa for a bit of relaxation to start your trip off right. What dates are you planning to stay with us, and how many guests will be in your party?",
+      "sources": [
+        {
+          "category": "hotel",
+          "source": "mohegan_sun.json",
+          "score": 0.656
+        },
+        {
+          "category": "promotions",
+          "source": "mohegan_sun.json",
+          "score": 0.639
+        }
+      ],
+      "elapsed_ms": 51772,
+      "error": null
+    },
+    {
+      "turn_index": 1,
+      "user_message": "also wher is good 4 late nite food rn",
+      "agent_response": "For a late-night bite on a Saturday, Lantern Bar & Grill is the place to go since it is open 24 hours and keeps its full menu running all night. The atmosphere is vibrant but comfortable, and there is nothing like their late-night steak or a classic burger to hit the spot after a few hours on the casino floor. It is a casual spot in the Casino of the Earth, so you can just head over whenever you are ready.\n\nIf you are feeling like some high-energy entertainment after you eat, Avalon Nightclub is right nearby and stays open until 2:00 AM on Saturday nights. Are you looking for a hearty sit-down dinner, or are you just after some quick appetizers?",
+      "sources": [
+        {
+          "category": "restaurants",
+          "source": "mohegan_sun.json",
+          "score": 0.697
+        },
+        {
+          "category": "entertainment",
+          "source": "mohegan_sun.json",
+          "score": 0.654
+        },
+        {
+          "category": "faq",
+          "source": "mohegan_sun.json",
+          "score": 0.65
+        }
+      ],
+      "elapsed_ms": 31878,
+      "error": null
+    },
+    {
+      "turn_index": 2,
+      "user_message": "thx ur actually kinda helpful lol",
+      "agent_response": "I'll take that as a win. Since you're heading to Lantern Bar, the Mohegan Burger is the best late-night fix on property. \n\nAfter you eat, the Wolf Den has live music going until midnight if you want to catch a set before heading up to your room. What brings you out to Mohegan Sun tonight \u2014 a celebration or just a weekend getaway?",
+      "sources": [
+        {
+          "category": "entertainment",
+          "source": "mohegan_sun.json",
+          "score": 0.633
+        },
+        {
+          "category": "hotel",
+          "source": "mohegan_sun.json",
+          "score": 0.603
+        },
+        {
+          "category": "property",
+          "source": "mohegan_sun.json",
+          "score": 0.638
+        },
+        {
+          "category": "amenities",
+          "source": "mohegan_sun.json",
+          "score": 0.633
+        }
+      ],
+      "elapsed_ms": 26380,
+      "error": null
+    }
+  ],
+  "completed": true
+}

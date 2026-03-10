@@ -1,0 +1,65 @@
+{
+  "id": "p2-10",
+  "name": "Agent asks about companion needs",
+  "source_file": "profiling_p2_active_probing.yaml",
+  "category": "profiling_p2_active_probing",
+  "behavioral_dimension": "P2_active_probing",
+  "expected_behavior": "First response asks about group composition to narrow restaurant options. When the multi-generational family is described, adjusts to accommodate all ages. When accessibility need is mentioned, immediately factors it into recommendations",
+  "expected_behavioral_quality": "When the guest mentions companions, the agent probes for specific companion needs (kids menu, accessibility, allergies) framed as helping plan the best experience. The question is contextual ('Do the kids have any favorites?') not clinical ('Any dietary restrictions in the group?').",
+  "safety_relevant": false,
+  "turns": [
+    {
+      "turn_index": 0,
+      "user_message": "Need a restaurant for 6 of us tonight",
+      "agent_response": "For a group of six tonight, Tao Asian Bistro & Lounge in the Casino of the Sky is an excellent choice for a vibrant atmosphere and shared plates. The space is visually stunning with a 16-foot Buddha centerpiece, and the kitchen turns out incredible pan-Asian flavors like their famous Miso Glazed Chilean Sea Bass and a wide array of specialty sushi.\n\nTao opens at 5:00 PM today and stays open until 11:00 PM. It is in the $$$ price range with a smart casual dress code. For a party of your size, I recommend securing a table ahead of time; let me help you with that by connecting you with our host team to finalize the booking.\n\nAfter a lively dinner at Tao, the Wolf Den in the Casino of the Earth is just a short walk away and offers free live music every night. Does anyone in your party have specific dietary preferences, like vegetarian or gluten-free needs, that I should keep in mind?",
+      "sources": [],
+      "elapsed_ms": 53959,
+      "error": null
+    },
+    {
+      "turn_index": 1,
+      "user_message": "Two adults, my parents, and two teenagers",
+      "agent_response": "Having your parents and teenagers along makes for a wonderful family trip. For a group of six, I highly recommend looking into connecting rooms in the Sky Tower. This setup is perfect for families because it allows the teenagers to have their own space while keeping everyone close together.\n\nOur Deluxe Rooms are 450 square feet and feature floor-to-ceiling windows with beautiful views of the Thames River or the rolling hills, which your parents might especially enjoy for a quiet moment. If you would like a shared area for the family to gather before heading out for the evening, a Junior Suite offers 650 square feet of space and includes a separate living area with a sofa bed. Since it is currently 1:16 PM, please note that check-in begins at 3:00 PM for the",
+      "sources": [],
+      "elapsed_ms": 76036,
+      "error": null
+    },
+    {
+      "turn_index": 2,
+      "user_message": "My dad uses a wheelchair",
+      "agent_response": "Mohegan Sun is very accessible, and all of our entertainment venues, including the Mohegan Sun Arena and the Wolf Den, offer dedicated seating for guests in wheelchairs so your dad will have an excellent view of the stage. The Wolf Den is a particularly great choice because it's right in the heart of the Casino of the Earth and has an electric energy that makes you feel like you're right there with the performers.\n\nIf your parents would like to unwind after the trip, the Elemis Spa is fully accessible and offers a legendary hot stone massage that is a perfect way to reset. For the teenagers, the Wombi Rock climbing wall is nearby in the Casino of the Sky and offers a great way for them to burn off some energy while the adults enjoy a more relaxed pace. \n\nLet me help you with planning your evening by looking into the specific show times for tonight; I can then connect you with our host team to finalize any arrangements for accessible seating or spa sessions. Does your dad have a favorite genre of music, or would the family be more interested in a comedy show during your visit?",
+      "sources": [
+        {
+          "category": "promotions",
+          "source": "mohegan_sun.json",
+          "score": 0.604
+        },
+        {
+          "category": "amenities",
+          "source": "mohegan_sun.json",
+          "score": 0.589
+        },
+        {
+          "category": "faq",
+          "source": "mohegan_sun.json",
+          "score": 0.563
+        },
+        {
+          "category": "property",
+          "source": "mohegan_sun.json",
+          "score": 0.593
+        },
+        {
+          "category": "entertainment",
+          "source": "mohegan_sun.json",
+          "score": 0.562
+        }
+      ],
+      "elapsed_ms": 67300,
+      "error": null
+    }
+  ],
+  "elapsed_ms": 197297,
+  "error": null,
+  "completed": true
+}

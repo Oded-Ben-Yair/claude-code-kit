@@ -1,0 +1,86 @@
+{
+  "scenario_id": "h2-02",
+  "scenario_name": "Guest references a bad past experience",
+  "category": "host_triangle_h1_h3_development",
+  "behavioral_dimension": "H2_reactivation_win_back",
+  "expected_behavior": "Takes the complaint seriously without being defensive. Apologizes specifically for the wait time. Offers a concrete alternative for this visit and suggests mentioning the issue to the Momentum Desk for follow-up. Turns the complaint into a chance to demonstrate that things are different now",
+  "expected_behavioral_quality": "When a guest references a negative experience, the agent acknowledges it specifically, investigates without being defensive, and reframes the next visit as a fresh start. Does not minimize the complaint or rush past it.",
+  "safety_relevant": false,
+  "source_file": "host_triangle_h1_h3_development.yaml",
+  "thread_id": "eval-h2-02-1772971036",
+  "turns": [
+    {
+      "turn_index": 0,
+      "user_message": "Last time I was here the service at the steakhouse was awful. Took forever to get seated",
+      "agent_response": "I am sorry your last visit started with such a long wait, as that is certainly not the standard we aim for. For your next steak dinner, I'd suggest Michael Jordan's Steak House in the Casino of the Sky; it is our premier spot for USDA Prime cuts and usually provides a much more seamless experience when you book a table in advance. They open today at 5:00 PM, and I suggest a reservation to ensure your evening stays on track. \n\nSince you will be right there in the Casino of the Sky, you might want to check out the glass sculptures at Taughannock Falls after your meal. Are you planning a dinner for just yourself or will you be joined by a larger group?",
+      "sources": [
+        {
+          "category": "restaurants",
+          "source": "mohegan_sun.json",
+          "score": 0.66
+        },
+        {
+          "category": "property",
+          "source": "mohegan_sun.json",
+          "score": 0.637
+        },
+        {
+          "category": "faq",
+          "source": "mohegan_sun.json",
+          "score": 0.641
+        }
+      ],
+      "elapsed_ms": 35732,
+      "error": null
+    },
+    {
+      "turn_index": 1,
+      "user_message": "Yeah it kind of ruined the whole evening honestly",
+      "agent_response": "I hear you, and it is incredibly frustrating when a long wait takes the energy out of an evening you have been looking forward to. That is certainly not the standard we want for our guests, and I understand why it would cast a shadow over your entire visit. \n\nIf you are looking for a more composed and upscale environment to reset this evening, Novelle in the Casino of the Sky offers a sophisticated lounge setting that feels much more controlled and relaxed than the main floor. It is a great place to enjoy a craft cocktail and just decompress. What kind of atmosphere would make you feel most taken care of during this stay?",
+      "sources": [
+        {
+          "category": "entertainment",
+          "source": "mohegan_sun.json",
+          "score": 0.618
+        },
+        {
+          "category": "faq",
+          "source": "mohegan_sun.json",
+          "score": 0.602
+        }
+      ],
+      "elapsed_ms": 41422,
+      "error": null
+    },
+    {
+      "turn_index": 2,
+      "user_message": "So what would you actually recommend instead?",
+      "agent_response": "Tuscany. The service team there is incredibly sharp, so you will not be waiting around. Pro tip \u2014 ask for a table right by the indoor waterfall. It blocks out the casino floor noise and gives you a private, relaxed space to actually enjoy the evening. \n\nAre you wine drinkers, or do you prefer a place with a great cocktail menu?",
+      "sources": [
+        {
+          "category": "faq",
+          "source": "mohegan_sun.json",
+          "score": 0.666
+        },
+        {
+          "category": "entertainment",
+          "source": "mohegan_sun.json",
+          "score": 0.638
+        },
+        {
+          "category": "amenities",
+          "source": "mohegan_sun.json",
+          "score": 0.633
+        },
+        {
+          "category": "promotions",
+          "source": "mohegan_sun.json",
+          "score": 0.606
+        }
+      ],
+      "elapsed_ms": 58755,
+      "error": null
+    }
+  ],
+  "completed": true
+}

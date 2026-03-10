@@ -1,0 +1,59 @@
+{
+  "scenario_id": "implicit-06",
+  "scenario_name": "Loyalty tier drop implies frustration and entitlement",
+  "category": "behavioral_implicit",
+  "behavioral_dimension": "B2_implicit",
+  "expected_behavior": "Treats returning former-Gold guest as VIP. Acknowledges their history without dwelling on tier change. Focuses on making them feel valued and informed about current options",
+  "expected_behavioral_quality": "Reads 'used to be Gold' as frustration about tier loss and implicit expectation of elevated treatment despite current status. Acknowledges the loyalty history, does not reference the downgrade negatively, and offers help with genuine warmth.",
+  "safety_relevant": false,
+  "source_file": "behavioral_implicit.yaml",
+  "thread_id": "eval-implicit-06-1772820285",
+  "turns": [
+    {
+      "turn_index": 0,
+      "user_message": "I used to be Gold tier. Coming back after a while.",
+      "agent_response": "The Mohegan Sun loyalty program is now called Momentum, and it features five tiers: Core, Ignite, Leap, Ascend, and Soar. Your previous Gold status typically aligns with the current Ignite or Leap levels. \n\nThese tiers include benefits such as priority restaurant seating and enhanced earning rates for Momentum Points on slots, tables, and poker. Since it has been a while since your last visit, I'd suggest visiting a Momentum Desk or signing into the Mohegan Sun app to verify your current Tier Credit balance and any available offers. You are already earning toward your next tier with any gaming, dining, or retail purchases you make today.\n\nBased on your history, you may be eligible for complimentary dining at venues like Tuscany or Michael Jordan\u2019s Steak House, though this depends on your current account activity and availability.\n\nOur high-limit gaming areas provide premium drink service and dedicated hosts if you prefer a more private environment. Will you be staying at the Sky or Earth tower during this visit?",
+      "sources": [
+        {
+          "category": "promotions",
+          "source": "mohegan_sun.json",
+          "score": 0.667
+        },
+        {
+          "category": "faq",
+          "source": "mohegan_sun.json",
+          "score": 0.599
+        },
+        {
+          "category": "entertainment",
+          "source": "mohegan_sun.json",
+          "score": 0.626
+        },
+        {
+          "category": "gaming",
+          "source": "mohegan_sun.json",
+          "score": 0.585
+        }
+      ],
+      "elapsed_ms": 50187,
+      "error": null
+    },
+    {
+      "turn_index": 1,
+      "user_message": "Things look different. Where's the good steakhouse?",
+      "agent_response": "Michael Jordan's Steak House in the Casino of the Sky is the premier choice for a serious steak, especially if you appreciate a USDA Prime cut aged to perfection. The atmosphere is elegant yet energized, featuring a stunning bridge that overlooks the casino floor and a menu famous for its 23-ingredient chopped salad and garlic bread with Gorgonzola fondue.\n\nAs a former Gold member now transitioning into the Momentum program, you likely have the history that would qualify you for priority seating or even a complimentary meal here using your Momentum Dollars. They are open until 10:00 PM tonight and typically recommend business casual attire. I can connect you with our host team to finalize a reservation and check your current tier benefits to see what offers are waiting for you.\n\nAfter a hearty dinner, the Wolf Den in the Casino of the Earth always has a great live band playing \u2014 would you prefer a table with a view of the action or something more tucked away?",
+      "sources": [],
+      "elapsed_ms": 45308,
+      "error": null
+    },
+    {
+      "turn_index": 2,
+      "user_message": "Do returning guests get anything special?",
+      "agent_response": "Returning guests often have personalized offers or reactivation bonuses based on their previous play history. You can verify your current Momentum Point balance and any active promotions by visiting a Momentum Desk or using a kiosk on the casino floor. \n\nBased on available information, your previous Gold status suggests you may be eligible for benefits such as priority restaurant seating or complimentary dining items. Under the current Momentum program, you also earn points on all dining and retail purchases in addition to gaming. Since I cannot access individual account data, the Momentum Desk is the best place to confirm specific free play or meal offers currently linked to your card. \n\nAs an insider tip, the kiosks located near the hotel lobbies are typically much faster for checking balances and printing vouchers than the main rewards desks. Once you have your updated card, the Sky Tower valet provides priority service for higher-tier members. Will you be driving yourself or using a car service for this trip?",
+      "sources": [],
+      "elapsed_ms": 53126,
+      "error": null
+    }
+  ],
+  "completed": true
+}

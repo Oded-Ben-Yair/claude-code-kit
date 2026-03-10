@@ -1,0 +1,77 @@
+{
+  "id": "agentic-09",
+  "name": "Mobility awareness from contextual cues",
+  "source_file": "behavioral_agentic.yaml",
+  "category": "behavioral_agentic",
+  "behavioral_dimension": "B4_agentic",
+  "expected_behavior": "Proactively includes accessibility information in every recommendation after the wheelchair mention. Does not suggest venues requiring stairs or long walks without noting accessibility",
+  "expected_behavioral_quality": "When a guest mentions wheelchair, mobility issues, or difficulty walking, proactively includes accessibility information in all recommendations. Does not wait to be asked about accessibility.",
+  "safety_relevant": false,
+  "turns": [
+    {
+      "turn_index": 0,
+      "user_message": "My mom uses a wheelchair. What restaurants are easy to get to?",
+      "agent_response": "All of our dining venues at Mohegan Sun are wheelchair accessible, but for a truly comfortable experience with plenty of space to navigate, I'd suggest Frank Pepe\u2019s Pizzeria Napoletana. It is a legendary Connecticut institution located in the Casino of the Earth where you can smell the smoky charred crust of their coal-fired pizzas from the concourse.\n\nThey are open until 10:00 PM tonight and offer a casual atmosphere with wide aisles between tables that make it very easy for guests in wheelchairs to settle in. They are famous for their white clam pie, though their classic tomato pie is a pure, simple masterpiece. They don't take reservations, so you can just head over whenever you are ready.\n\nAre you planning to dine with just your mother, or will you have a larger group joining you?\n\nIf you are looking for something to do after your meal, the Wolf Den is nearby in the center of the Casino of the Earth and often features live music in an open lounge setting.",
+      "sources": [
+        {
+          "category": "restaurants",
+          "source": "mohegan_sun.json",
+          "score": 0.638
+        }
+      ],
+      "elapsed_ms": 65578,
+      "error": null
+    },
+    {
+      "turn_index": 1,
+      "user_message": "And can she get to the spa?",
+      "agent_response": "She will find both of our spa locations very accommodating as the resort is designed for easy navigation. Mandara Spa is our signature full-service destination and it is open until 8:00 PM tonight. It features a stunning relaxation lounge where she can soak in the atmosphere before a Balinese-inspired massage or facial.\n\nIf she is staying in or near the Earth Tower, the Elemis Spa is a fantastic, modern option open until 7:00 PM. They specialize in premium skincare and even offer express services if she isn't looking for a long appointment. Both locations provide a wonderful escape, but Mandara's atmosphere is particularly legendary for its tranquility.\n\nDoes she have a preference for a specific type of treatment, like a massage or a facial?\n\nIf you are looking for entertainment afterward, the Wolf Den in the Casino of the Earth is level with the casino floor and very easy to access for live music.",
+      "sources": [
+        {
+          "category": "amenities",
+          "source": "mohegan_sun.json",
+          "score": 0.662
+        },
+        {
+          "category": "faq",
+          "source": "mohegan_sun.json",
+          "score": 0.643
+        }
+      ],
+      "elapsed_ms": 56109,
+      "error": null
+    },
+    {
+      "turn_index": 2,
+      "user_message": "Great. She'll love that.",
+      "agent_response": "I'm so glad to hear that. She's going to find the Mandara Spa incredibly relaxing. Since she'll be feeling refreshed, the Wolf Den in the center of the Casino of the Earth is a perfect next stop for tonight. It\u2019s an open venue right on the floor with no stairs, so it\u2019s very easy to navigate in a wheelchair. There is live music there",
+      "sources": [
+        {
+          "category": "entertainment",
+          "source": "mohegan_sun.json",
+          "score": 0.645
+        },
+        {
+          "category": "promotions",
+          "source": "mohegan_sun.json",
+          "score": 0.63
+        },
+        {
+          "category": "amenities",
+          "source": "mohegan_sun.json",
+          "score": 0.638
+        },
+        {
+          "category": "hotel",
+          "source": "mohegan_sun.json",
+          "score": 0.602
+        }
+      ],
+      "elapsed_ms": 64651,
+      "error": null
+    }
+  ],
+  "elapsed_ms": 190358,
+  "error": null,
+  "completed": true
+}

@@ -1,0 +1,86 @@
+{
+  "scenario_id": "agentic-04",
+  "scenario_name": "Itinerary building from scattered preferences",
+  "category": "behavioral_agentic",
+  "behavioral_dimension": "B4_agentic",
+  "expected_behavior": "Accumulates preferences across turns and offers a synthesized itinerary when asked: e.g., spa in the afternoon, steakhouse for dinner, with logical timing",
+  "expected_behavioral_quality": "Collects scattered preference signals across turns and synthesizes them into a coherent itinerary. Does not just answer each question in isolation \u2014 connects them into a flow.",
+  "safety_relevant": false,
+  "source_file": "behavioral_agentic.yaml",
+  "thread_id": "eval-agentic-04-1772910254",
+  "turns": [
+    {
+      "turn_index": 0,
+      "user_message": "We like relaxing things",
+      "agent_response": "I've got you \u2014 you're going to love the options for a reset here! Since it's Saturday evening, the heated indoor pool and hot tub are open until 10:00 PM for hotel guests. For something more immersive tomorrow, Mandara Spa offers Balinese-inspired treatments and a tranquil relaxation lounge that is perfect for disappearing for a few hours.\n\nPro tip: The relaxation lounge at the spa is a hidden gem where you can truly disconnect from the resort's pace. Schedules and hours can vary, so it is always a good idea to confirm those details with the property.\n\nAre you looking for a full spa day tomorrow, or would you prefer a quiet spot for a drink tonight?",
+      "sources": [
+        {
+          "category": "amenities",
+          "source": "mohegan_sun.json",
+          "score": 0.66
+        },
+        {
+          "category": "entertainment",
+          "source": "mohegan_sun.json",
+          "score": 0.656
+        },
+        {
+          "category": "promotions",
+          "source": "mohegan_sun.json",
+          "score": 0.613
+        }
+      ],
+      "elapsed_ms": 50686,
+      "error": null
+    },
+    {
+      "turn_index": 1,
+      "user_message": "But also good food",
+      "agent_response": "Bobby Flay's Bar Americain offers a sophisticated, relaxed brasserie setting with bold Southwest-inspired seafood and is open until 11:00 PM tonight ($$$, reservations recommended). Are you looking for a full sit-down dinner or just a quiet spot for high-end appetizers?",
+      "sources": [
+        {
+          "category": "restaurants",
+          "source": "mohegan_sun.json",
+          "score": 0.652
+        },
+        {
+          "category": "promotions",
+          "source": "mohegan_sun.json",
+          "score": 0.633
+        }
+      ],
+      "elapsed_ms": 56517,
+      "error": null
+    },
+    {
+      "turn_index": 2,
+      "user_message": "Put it together for us?",
+      "agent_response": "I've got you \u2014 dinner at Bar Americain tonight followed by a morning at Mandara Spa is the perfect plan. How many are in your group so I can have the host team help you finalize this?",
+      "sources": [
+        {
+          "category": "hotel",
+          "source": "mohegan_sun.json",
+          "score": 0.604
+        },
+        {
+          "category": "entertainment",
+          "source": "mohegan_sun.json",
+          "score": 0.643
+        },
+        {
+          "category": "property",
+          "source": "mohegan_sun.json",
+          "score": 0.64
+        },
+        {
+          "category": "faq",
+          "source": "mohegan_sun.json",
+          "score": 0.598
+        }
+      ],
+      "elapsed_ms": 35231,
+      "error": null
+    }
+  ],
+  "completed": true
+}

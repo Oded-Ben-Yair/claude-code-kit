@@ -1,0 +1,8 @@
+[
+  {
+    "from": "team-lead",
+    "text": "{\"type\":\"shutdown_request\",\"requestId\":\"shutdown-1772885549122@domain-researcher\",\"from\":\"team-lead\",\"reason\":\"Research findings received. Excellent work. Shutting down team.\",\"timestamp\":\"2026-03-07T12:12:29.122Z\"}",
+    "timestamp": "2026-03-07T12:12:29.122Z",
+    "read": true
+  }
+]

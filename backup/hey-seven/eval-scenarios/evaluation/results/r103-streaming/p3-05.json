@@ -1,0 +1,86 @@
+{
+  "scenario_id": "p3-05",
+  "scenario_name": "Hotel room info plus visit purpose question",
+  "category": "profiling_p3_give_to_get",
+  "behavioral_dimension": "P3_give_to_get",
+  "expected_behavior": "Hotel comparison is complete and useful before the purpose question. When 'work trip with one free evening' is revealed, recommendations focus on efficient enjoyment \u2014 one great dinner and one nearby activity rather than an all-day itinerary",
+  "expected_behavioral_quality": "Describes room options and hotel amenities first, then asks about the visit purpose to refine the recommendation. The hotel information is useful regardless of purpose. The purpose question is framed as customizing their stay experience.",
+  "safety_relevant": false,
+  "source_file": "profiling_p3_give_to_get.yaml",
+  "thread_id": "eval-p3-05-1772957189",
+  "turns": [
+    {
+      "turn_index": 0,
+      "user_message": "What's the difference between Sky Tower and Earth Tower?",
+      "agent_response": "The Sky Tower is our flagship, featuring modern luxury rooms that offer panoramic views of the Thames River and the rolling Connecticut countryside. If you prefer something more recent, the Earth Tower is our newest addition and focuses on a contemporary design with cutting-edge amenities. Both provide a sanctuary-like feel, but Sky Tower tends to feel more classic while Earth Tower offers a fresh, modern aesthetic.\n\nA little insider tip for you\u2014the Earth Tower is home to the Elemis Spa, which is perfect if you want to slip away for a treatment without a long walk. No matter which tower you choose, you'll be just steps away from our world-class dining, such as Tuscany for a quiet Italian dinner. \n\nTo help you pick the best fit, are you visiting us for a relaxing getaway or are you here for a specific event?",
+      "sources": [
+        {
+          "category": "hotel",
+          "source": "mohegan_sun.json",
+          "score": 0.689
+        },
+        {
+          "category": "amenities",
+          "source": "mohegan_sun.json",
+          "score": 0.671
+        },
+        {
+          "category": "gaming",
+          "source": "mohegan_sun.json",
+          "score": 0.64
+        }
+      ],
+      "elapsed_ms": 41143,
+      "error": null
+    },
+    {
+      "turn_index": 1,
+      "user_message": "It's a work trip but we'll have one free evening",
+      "agent_response": "Since you only have one evening to yourself, the Wolf Den might be a good choice for some low-key entertainment. It features free live music nightly, typically starting at 8:00 PM, and the intimate setting makes it easy to just drop in without the pressure of tickets or reservations. \n\nIf you find yourself hungry later, Lantern Bar & Grill in the Casino of the Earth is a casual spot nearby that stays open 24 hours for a late-night meal. If the work trip feels a bit heavy, the Elemis Spa offers a quiet environment to decompress before you head back. Will you be looking for a place to sit and listen to music, or would you prefer a more peaceful wellness experience?",
+      "sources": [
+        {
+          "category": "entertainment",
+          "source": "mohegan_sun.json",
+          "score": 0.653
+        },
+        {
+          "category": "restaurants",
+          "source": "mohegan_sun.json",
+          "score": 0.656
+        },
+        {
+          "category": "faq",
+          "source": "mohegan_sun.json",
+          "score": 0.627
+        }
+      ],
+      "elapsed_ms": 30991,
+      "error": null
+    },
+    {
+      "turn_index": 2,
+      "user_message": "What would you suggest for that evening?",
+      "agent_response": "The Wolf Den is exactly where you want to be for a night like that. It\u2019s right in the center of the action and the shows are free, so you can just walk in and catch some incredible live music whenever you're ready. \n\nIf the work day was particularly draining, the Elemis Spa is my top recommendation for a reset\u2014their hot stone massage is legendary for clearing away stress. To round out the evening without breaking the bank, Lantern Bar & Grill is open 24 hours and is a solid, casual spot for a burger after the music. Does a live band sound like the right vibe for your night off?",
+      "sources": [
+        {
+          "category": "entertainment",
+          "source": "mohegan_sun.json",
+          "score": 0.671
+        },
+        {
+          "category": "restaurants",
+          "source": "mohegan_sun.json",
+          "score": 0.664
+        },
+        {
+          "category": "faq",
+          "source": "mohegan_sun.json",
+          "score": 0.666
+        }
+      ],
+      "elapsed_ms": 61495,
+      "error": null
+    }
+  ],
+  "completed": true
+}

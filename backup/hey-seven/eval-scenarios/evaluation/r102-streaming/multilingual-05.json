@@ -1,0 +1,28 @@
+{
+  "scenario_id": "multilingual-05",
+  "scenario_name": "Spanish dining question",
+  "category": "behavioral_multilingual",
+  "behavioral_dimension": "B8_cultural",
+  "expected_behavior": "Provides specific restaurant recommendations in Spanish. Mentions atmosphere or cuisine details relevant to a romantic dinner. Uses warm concierge tone in Spanish.",
+  "expected_behavioral_quality": "Handles a routine Spanish dining question with the same quality as English. Response includes specific restaurant names, cuisine types, and helpful details \u2014 all in Spanish.",
+  "safety_relevant": false,
+  "source_file": "behavioral_multilingual.yaml",
+  "thread_id": "eval-multilingual-05-1772915423",
+  "turns": [
+    {
+      "turn_index": 0,
+      "user_message": "Cuales son los mejores restaurantes? Busco algo para una cena romantica",
+      "agent_response": "Ballo Italian Restaurant en el Casino of the Sky es mi recomendaci\u00f3n principal para una noche especial; su dise\u00f1o inspirado en una abad\u00eda g\u00f3tica y su cocina italiana moderna crean una atm\u00f3sfera muy \u00edntima. Otra excelente opci\u00f3n es Michael Jordan's Steak House, que ofrece un ambiente de lujo cl\u00e1sico perfecto para conversar con tranquilidad mientras disfrutan de cortes de carne de primer nivel. \n\nComo detalle adicional, Ballo es conocido por sus pastas hechas a mano y una selecci\u00f3n de vinos italianos que complementan muy bien una cena pausada. Despu\u00e9s de su comida, podr\u00edan pasar por el Wolf Den para disfrutar de algo de m\u00fasica en vivo y cerrar la noche con una nota relajada. \u00bfEst\u00e1n celebrando alguna ocasi\u00f3n en particular esta noche?",
+      "sources": [
+        {
+          "category": "restaurants",
+          "source": "mohegan_sun.json",
+          "score": 0.66
+        }
+      ],
+      "elapsed_ms": 52340,
+      "error": null
+    }
+  ],
+  "completed": true
+}

@@ -1,0 +1,76 @@
+{
+  "scenario_id": "p2-03",
+  "scenario_name": "Agent asks about dining preferences naturally",
+  "category": "profiling_p2_active_probing",
+  "behavioral_dimension": "P2_active_probing",
+  "expected_behavior": "Opens with a preference question rather than dumping all options. Uses the answer to give a targeted recommendation. The interaction feels like a conversation with a host, not a menu search",
+  "expected_behavioral_quality": "Instead of listing all restaurants, asks a preference question first to narrow recommendations. The question is framed as 'What are you in the mood for?' or 'Any cuisine you're craving?' rather than 'What are your dining preferences?'",
+  "safety_relevant": false,
+  "source_file": "profiling_p2_active_probing.yaml",
+  "thread_id": "eval-p2-03-1772955543",
+  "turns": [
+    {
+      "turn_index": 0,
+      "user_message": "Where should we eat?",
+      "agent_response": "The aroma of sage-fried chicken is about to fill the air at Hash House A Go Go. They open at 8:00 AM in the Casino of the Earth and specialize in \"twisted farm food\" with portions so massive they are practically a challenge. It is a casual spot, roughly $$ per person, and you won't need a reservation to get a seat.\n\nAre you fueling up for a big day on the gaming floor, or is this more of a slow Sunday brunch for you? After a meal that size, a stroll through the Shops at Mohegan Sun is a perfect way to digest.",
+      "sources": [
+        {
+          "category": "restaurants",
+          "source": "mohegan_sun.json",
+          "score": 0.673
+        }
+      ],
+      "elapsed_ms": 33442,
+      "error": null
+    },
+    {
+      "turn_index": 1,
+      "user_message": "Something Italian",
+      "agent_response": "Caputo Trattoria in the Casino of the Earth typically opens at 11:00 AM for casual brick-oven pizzas and pasta ($$), though hours and prices may vary. Are you looking for a quick lunch before visiting the shops or a more formal dinner tonight?",
+      "sources": [
+        {
+          "category": "restaurants",
+          "source": "mohegan_sun.json",
+          "score": 0.663
+        },
+        {
+          "category": "entertainment",
+          "source": "mohegan_sun.json",
+          "score": 0.63
+        }
+      ],
+      "elapsed_ms": 52542,
+      "error": null
+    },
+    {
+      "turn_index": 2,
+      "user_message": "Ballo sounds good",
+      "agent_response": "Ballo opens at 5:00 PM in the Casino of the Sky ($$$) for housemade pasta in a smart casual setting, though hours and prices may vary. I've got you\u2014would you like me to connect you with the host team for a reservation tonight before you head to the Wolf Den for live music?",
+      "sources": [
+        {
+          "category": "restaurants",
+          "source": "mohegan_sun.json",
+          "score": 0.714
+        },
+        {
+          "category": "entertainment",
+          "source": "mohegan_sun.json",
+          "score": 0.623
+        },
+        {
+          "category": "gaming",
+          "source": "mohegan_sun.json",
+          "score": 0.597
+        },
+        {
+          "category": "property",
+          "source": "mohegan_sun.json",
+          "score": 0.613
+        }
+      ],
+      "elapsed_ms": 33911,
+      "error": null
+    }
+  ],
+  "completed": true
+}

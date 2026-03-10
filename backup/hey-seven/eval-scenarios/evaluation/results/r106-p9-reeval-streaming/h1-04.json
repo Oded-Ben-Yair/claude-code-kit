@@ -1,0 +1,91 @@
+{
+  "scenario_id": "h1-04",
+  "scenario_name": "Couple exploring for a weekend getaway",
+  "category": "host_triangle_h1_h3_development",
+  "behavioral_dimension": "H1_proactive_value_discovery",
+  "expected_behavior": "Builds a full couples weekend itinerary covering spa, dining, entertainment, and hotel. Creates a vision that makes the property feel like a destination, not just a casino. Plants seeds for future visits by mentioning seasonal events or upcoming shows",
+  "expected_behavioral_quality": "Identifies the couple dynamic and weekend getaway context. Discovers what kind of experience they want (relaxation, adventure, romance) and builds a multi-activity itinerary that creates emotional anchors for return visits.",
+  "safety_relevant": false,
+  "source_file": "host_triangle_h1_h3_development.yaml",
+  "thread_id": "eval-h1-04-1773036437",
+  "turns": [
+    {
+      "turn_index": 0,
+      "user_message": "My girlfriend and I are thinking about a weekend at Mohegan Sun. What's it like?",
+      "agent_response": "Mohegan Sun is a high-energy resort that feels like its own city, blending luxury with the heritage of the Mohegan Tribe. Since it's just the two of you, I'd suggest starting at the Vista Lounge\u2014it sits right under the world's largest indoor planetarium dome and is the best spot to take in the scale of the property. \n\nPro tip: make sure to find the Taughannick Falls, a 55-foot indoor waterfall that's a great spot for a quick photo together. What brings you both out for the weekend\u2014a specific concert, or just a getaway?",
+      "sources": [
+        {
+          "category": "faq",
+          "source": "mohegan_sun.json",
+          "score": 0.732
+        },
+        {
+          "category": "property",
+          "source": "mohegan_sun.json",
+          "score": 0.737
+        },
+        {
+          "category": "hotel",
+          "source": "mohegan_sun.json",
+          "score": 0.712
+        },
+        {
+          "category": "amenities",
+          "source": "mohegan_sun.json",
+          "score": 0.7
+        }
+      ],
+      "elapsed_ms": 33773,
+      "error": null
+    },
+    {
+      "turn_index": 1,
+      "user_message": "We want a mix of relaxation and fun. Not just gambling",
+      "agent_response": "For the relaxation side of your trip, Elemis Spa is the perfect reset\u2014their hot stone massage is legendary for melting away stress. For the fun part, the Wolf Den has an electric, intimate energy where you're right there with the performers, and it is a great spot to grab a drink and enjoy live music without needing a ticket. If you want to dial it up even more on Friday or Saturday night, Avalon Nightclub has a high-energy vibe with top DJs and an incredible lighting system.\n\nSince you are looking for that balance, are you more into live bands at a lounge or a high-energy club atmosphere?",
+      "sources": [
+        {
+          "category": "faq",
+          "source": "mohegan_sun.json",
+          "score": 0.707
+        },
+        {
+          "category": "gaming",
+          "source": "mohegan_sun.json",
+          "score": 0.694
+        },
+        {
+          "category": "entertainment",
+          "source": "mohegan_sun.json",
+          "score": 0.678
+        }
+      ],
+      "elapsed_ms": 30835,
+      "error": null
+    },
+    {
+      "turn_index": 2,
+      "user_message": "That sounds like a perfect weekend, thanks",
+      "agent_response": "I'm glad that sounds like a great plan for your weekend. Before you go, I can connect you with one of our hosts who can handle your spa or dinner reservations so everything is ready for your visit. \n\nTodd English's Tuscany has a table right by the waterfall that is perfect for a weekend getaway like this. Do you usually prefer a quiet, intimate dinner or something more social?",
+      "sources": [
+        {
+          "category": "entertainment",
+          "source": "mohegan_sun.json",
+          "score": 0.648
+        },
+        {
+          "category": "property",
+          "source": "mohegan_sun.json",
+          "score": 0.638
+        },
+        {
+          "category": "promotions",
+          "source": "mohegan_sun.json",
+          "score": 0.606
+        }
+      ],
+      "elapsed_ms": 42395,
+      "error": null
+    }
+  ],
+  "completed": true
+}

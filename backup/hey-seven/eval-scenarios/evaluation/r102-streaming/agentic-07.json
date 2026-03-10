@@ -1,0 +1,60 @@
+{
+  "scenario_id": "agentic-07",
+  "scenario_name": "Group size awareness in recommendations",
+  "category": "behavioral_agentic",
+  "behavioral_dimension": "B4_agentic",
+  "expected_behavior": "Factors group size into every recommendation. Leads with group-friendly options. When asked about a specific venue, addresses capacity and reservation logistics proactively",
+  "expected_behavioral_quality": "When a group size is mentioned, proactively adjusts recommendations for group suitability. Suggests venues that can accommodate the group. Does not recommend intimate 2-person experiences for a party of 12.",
+  "safety_relevant": false,
+  "source_file": "behavioral_agentic.yaml",
+  "thread_id": "eval-agentic-07-1772910748",
+  "turns": [
+    {
+      "turn_index": 0,
+      "user_message": "We have 12 people. Where should we eat?",
+      "agent_response": "SolToro Taqueria & Tequila Bar is the ideal choice for a group of 12 because the atmosphere is vibrant and the modern Mexican menu is perfectly suited for a lively social gathering. Located in the Casino of the Earth, they are open until 11:00 PM tonight and offer an impressive selection of authentic tacos and premium tequilas in a mid-range ($$) price bracket. Insider tip: their mezcal collection is one of the most curated on the property, which pairs beautifully with their fresh ceviche. I've got you \u2014 since they don't require reservations, you can head straight there and the host team will work on getting your group of 12 situated together in their colorful dining room. Once you've finished your meal, the Wolf Den",
+      "sources": [
+        {
+          "category": "restaurants",
+          "source": "mohegan_sun.json",
+          "score": 0.663
+        }
+      ],
+      "elapsed_ms": 79274,
+      "error": null
+    },
+    {
+      "turn_index": 1,
+      "user_message": "Can the steakhouse handle 12?",
+      "agent_response": "Michael Jordan's Steak House in the Casino of the Sky is a fantastic choice for a party of 12, especially if you are looking for that signature upscale steakhouse feel. The sizzle of their USDA Prime steaks and the refined, elegant atmosphere make it a standout for larger groups, and they are open until 10:00 PM tonight. \n\nFor a group of 12, I've got you \u2014 reservations are highly recommended here to ensure your party can be seated together, and I can certainly connect you with the host team to check their current availability for this evening. Keep in mind that this is an upscale experience ($$$$) with a business casual dress code, so it's a great excuse for everyone to dress up a bit. Insider tip: make sure someone at the table orders the signature 23-layer chocolate cake, as it's practically designed for a large group to share. After such a decadent meal, you might enjoy a stroll over to the Comix Roadhouse to see if there's a late comedy set starting. \n\nIs there a specific occasion you're celebrating with your group of 12 tonight?",
+      "sources": [],
+      "elapsed_ms": 51459,
+      "error": null
+    },
+    {
+      "turn_index": 2,
+      "user_message": "And something fun for the whole group after?",
+      "agent_response": "Avalon Nightclub is going to be the center of the action for a party of 12 on a Saturday night. It opens at 10:00 PM and the atmosphere is incredible\u2014it\u2019s high-energy with state-of-the-art sound and lighting that really makes the room move. For a group of your size, I\u2019ve got you; suggesting a VIP table is the best way to ensure everyone has a home base to return to between trips to the dance floor. \n\nIf your group is looking for something a bit more laid back but still upscale, novelle is an ultra-lounge that offers a sophisticated vibe with craft cocktails and a DJ, which is a perfect follow-up to a steakhouse dinner. If you prefer live music in an open setting, the Wolf Den always has a great crowd and an electric energy, though seating for 12 can be a bit of a challenge there since it is first-come, first-served. Just a reminder that both Avalon and novelle are 21 and over venues. By the way, if you all end up staying out late, a group session at Elemis Spa tomorrow morning is a legendary way to reset before heading home. \n\nDoes the group want to spend the night on a high-energy dance floor, or would you prefer a more lounge-style setting where you can still grab drinks and talk?",
+      "sources": [
+        {
+          "category": "entertainment",
+          "source": "mohegan_sun.json",
+          "score": 0.666
+        },
+        {
+          "category": "faq",
+          "source": "mohegan_sun.json",
+          "score": 0.655
+        },
+        {
+          "category": "gaming",
+          "source": "mohegan_sun.json",
+          "score": 0.634
+        }
+      ],
+      "elapsed_ms": 63272,
+      "error": null
+    }
+  ],
+  "completed": true
+}

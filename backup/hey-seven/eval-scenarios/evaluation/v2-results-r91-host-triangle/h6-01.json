@@ -1,0 +1,87 @@
+{
+  "id": "h6-01",
+  "name": "Guest had a bad dining experience",
+  "source_file": "host_triangle_h4_h6_relationship.yaml",
+  "category": "host_triangle_h4_h6_relationship",
+  "behavioral_dimension": "H6_loss_recovery",
+  "expected_behavior": "Apologizes specifically for the wait time, acknowledges the price-point expectation. Offers a concrete alternative for tonight with a strong recommendation. Suggests mentioning the issue to the Momentum Desk for potential follow-up. Turns the complaint into a chance to demonstrate that the property cares",
+  "expected_behavioral_quality": "Takes full ownership of the negative experience. Does not make excuses or deflect. Offers a specific alternative for immediate recovery and a path to formal follow-up. The guest should leave the conversation feeling heard and confident that their next experience will be different.",
+  "safety_relevant": false,
+  "turns": [
+    {
+      "turn_index": 0,
+      "user_message": "We waited 45 minutes for our food at Tuscany last night. Totally unacceptable",
+      "agent_response": "I understand that can be frustrating, especially at a venue like Todd English's Tuscany where the expectation for service is so high. That 45-minute delay definitely takes away from the experience of their handmade pastas and the warm, wood-fired atmosphere. \n\nFor a much more efficient Italian meal today, **Caputo Trattoria** in the Casino of the Earth opens at 11:00 AM and is known for its quick service and excellent brick-oven pizzas. It offers a casual setting with a moderate price range, and reservations are not required, making it a reliable choice when you want to get back to the action quickly. \n\nWould you like a recommendation for a faster lunch spot like this, or are you planning for a specific type of cuisine for dinner tonight? After a long evening, you might find that a relaxing morning browsing the Shops at Mohegan Sun is a good way to reset.",
+      "sources": [
+        {
+          "category": "restaurants",
+          "source": "mohegan_sun.json",
+          "score": 0.666
+        },
+        {
+          "category": "property",
+          "source": "mohegan_sun.json",
+          "score": 0.62
+        },
+        {
+          "category": "faq",
+          "source": "mohegan_sun.json",
+          "score": 0.607
+        }
+      ],
+      "elapsed_ms": 26898,
+      "error": null
+    },
+    {
+      "turn_index": 1,
+      "user_message": "We almost walked out. It's not what you expect at that price point",
+      "agent_response": "It's completely understandable that you'd feel that way, as you should feel valued and attended to when dining with us. I'd like to help you find a bit of sanctuary in your room to make up for that stressful experience. \n\nOur Junior Suites in the Sky Tower are a great option for a reset, offering 650 square feet of space and a soaking tub",
+      "sources": [
+        {
+          "category": "hotel",
+          "source": "mohegan_sun.json",
+          "score": 0.624
+        },
+        {
+          "category": "gaming",
+          "source": "mohegan_sun.json",
+          "score": 0.619
+        },
+        {
+          "category": "restaurants",
+          "source": "mohegan_sun.json",
+          "score": 0.599
+        }
+      ],
+      "elapsed_ms": 47640,
+      "error": null
+    },
+    {
+      "turn_index": 2,
+      "user_message": "So what would you suggest for tonight instead?",
+      "agent_response": "I'd suggest **Michael Jordan\u2019s Steak House** for a high-end experience where the service is consistently professional and attentive. It provides the premium level of hospitality you expect at that price point, focusing on a classic, well-paced meal. If you\u2019d prefer a more modern, high-energy vibe with a completely different menu, **TAO Asian Bistro** is also known for keeping a very steady pace even during busy shifts.\n\nSince it's Thursday, **novelle** will be open this evening, which is a sophisticated lounge for a craft cocktail if you want to keep the night going in a more relaxed atmosphere. Do you generally prefer a classic steakhouse environment or something more modern and high-energy?",
+      "sources": [
+        {
+          "category": "entertainment",
+          "source": "mohegan_sun.json",
+          "score": 0.669
+        },
+        {
+          "category": "restaurants",
+          "source": "mohegan_sun.json",
+          "score": 0.653
+        },
+        {
+          "category": "faq",
+          "source": "mohegan_sun.json",
+          "score": 0.648
+        }
+      ],
+      "elapsed_ms": 31592,
+      "error": null
+    }
+  ],
+  "elapsed_ms": 106131,
+  "error": null,
+  "completed": true
+}

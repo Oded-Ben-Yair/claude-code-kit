@@ -1,0 +1,44 @@
+{
+  "scenario_id": "p10-03",
+  "scenario_name": "Agent does not contradict earlier information",
+  "category": "profiling_p8_p9_p10_completeness",
+  "behavioral_dimension": "P10_cross_turn_memory",
+  "expected_behavior": "Turn 2 does not lead with the steakhouse for the vegetarian guest. Turn 3 addresses the steakhouse question honestly \u2014 are there vegetarian options there? The agent demonstrates memory consistency by never contradicting the dietary restriction",
+  "expected_behavioral_quality": "When the guest mentions they're vegetarian in turn 1, the agent NEVER suggests a steakhouse as the primary recommendation in later turns. Information captured earlier constrains future recommendations. Contradicting known facts makes the agent look like it was not listening.",
+  "safety_relevant": false,
+  "source_file": "profiling_p8_p9_p10_completeness.yaml",
+  "thread_id": "eval-p10-03-1772845261",
+  "turns": [
+    {
+      "turn_index": 0,
+      "user_message": "I'm vegetarian, what are my options?",
+      "agent_response": "Welcome. Being a vegetarian here is a great experience because our chefs really prioritize fresh, vibrant flavors. Since it's currently 1:00 AM, I'd suggest **Lantern Bar & Grill** in the Casino of the Earth. It stays open 24 hours and serves a full menu of American favorites, including crisp salads and various snacks that are perfect for a late-night craving.\n\nThe atmosphere is casual and relaxed, making it a great place to unwind after a long day. For a more indulgent meal when they reopen later today, **Caputo Trattoria** offers incredible brick-oven pizzas and pasta dishes that are very vegetarian-friendly. Lantern is priced in the $$ range and doesn't require reservations, making it a convenient choice for right now. Please note that hours and prices are subject to change, so you may want to confirm those details upon arrival.\n\nOnce you've had something to eat, the Wolf Den often has live music late into the night if you're looking to keep the energy going\u2014are you planning to stay out for some entertainment, or are you looking for a quiet spot to end your evening?",
+      "sources": [
+        {
+          "category": "restaurants",
+          "source": "mohegan_sun.json",
+          "score": 0.665
+        }
+      ],
+      "elapsed_ms": 35579,
+      "error": null
+    },
+    {
+      "turn_index": 1,
+      "user_message": "What about for a group dinner with friends?",
+      "agent_response": "For a group dinner with friends, **Ballo Italian Restaurant** in the Casino of the Sky is a standout choice because of its high-energy, sophisticated atmosphere. The space is modeled after the San Galgano Abbey in Tuscany, featuring massive stone arches and a dramatic, candlelit vibe that sets a great stage for a social evening. For vegetarians, their housemade pastas and seasonal risottos are incredible, and the kitchen is very skilled at creating flavorful, meat-free dishes.\n\nBallo reopens later today at 5:00 PM and serves until 10:00 PM. It falls into the $$$ price range, and the dress code is smart casual. Since it's a popular destination for groups, reservations are highly recommended\u2014I can connect you with our host team to finalize the booking for your party. An insider detail I always share is that the restaurant's design creates incredible acoustics for a lively dinner conversation, though it does get more energetic as the night progresses.\n\nIf your group wants to keep the night going after dinner, **novelle** is a short walk away and offers a sophisticated ultra-lounge experience with DJs and craft cocktails. How many people are you looking to seat for your group dinner?",
+      "sources": [],
+      "elapsed_ms": 59438,
+      "error": null
+    },
+    {
+      "turn_index": 2,
+      "user_message": "Someone suggested the steakhouse, is that OK for me?",
+      "agent_response": "Michael Jordan's Steak House is a sophisticated choice even for vegetarians because their classic sides are elevated to center-stage status. The kitchen puts incredible care into dishes like their saut\u00e9ed mushrooms and seasonal vegetables, which pair beautifully with one of the most extensive wine lists on the property.\n\nThe restaurant is located in the Casino of the Sky and reopens today, Saturday, at 5:00 PM. It is a premier dining destination in the $$$$ price range, so business casual attire is recommended. Since it is a Saturday, reservations are highly encouraged to ensure your group has a table; let me help you with the details, and I can then connect you with our host team to finalize the booking.\n\nAn insider tip: the ambiance is truly unique, blending upscale elegance with subtle nods to Michael Jordan\u2019s iconic sports legacy through curated memorabilia. After such a refined meal, you might enjoy the live music at the Wolf Den in the Casino of the Earth, which often has great energy on Saturday nights. By the way, the Mohegan Sun Arena has some great shows coming up\u2014I can share what's on the calendar if you're interested.\n\nAre you looking for a dinner spot where you can linger over wine and conversation, or are you trying to time your meal around a specific event?",
+      "sources": [],
+      "elapsed_ms": 48123,
+      "error": null
+    }
+  ],
+  "completed": true
+}

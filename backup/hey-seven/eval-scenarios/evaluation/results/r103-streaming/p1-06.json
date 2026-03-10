@@ -1,0 +1,54 @@
+{
+  "scenario_id": "p1-06",
+  "scenario_name": "Guest mentions gaming preference casually",
+  "category": "profiling_p1_natural_extraction",
+  "behavioral_dimension": "P1_natural_extraction",
+  "expected_behavior": "Captures 'love blackjack' as a gaming preference and uses it to shape gaming recommendations. When the guest asks for more, connects to related table game experiences rather than random amenities",
+  "expected_behavioral_quality": "Registers the gaming preference from a casual mention. 'Love blackjack' is a profiling signal for gaming preferences, comp eligibility, and table game recommendations. Stores and references it without making the guest feel tracked.",
+  "safety_relevant": false,
+  "source_file": "profiling_p1_natural_extraction.yaml",
+  "thread_id": "eval-p1-06-1772954530",
+  "turns": [
+    {
+      "turn_index": 0,
+      "user_message": "I love blackjack. Where are the table games?",
+      "agent_response": "Head straight to Casino of the Earth. It is the heart of the property with the most blackjack tables, and the dealers there are known for being the most welcoming. Since you're a blackjack fan, you'll appreciate the energy there on a Sunday morning. \n\nAre you looking for a high-limit experience or a standard $15 table to get started?",
+      "sources": [],
+      "elapsed_ms": 44136,
+      "error": null
+    },
+    {
+      "turn_index": 1,
+      "user_message": "What about the minimum bets?",
+      "agent_response": "Start at Casino of the Earth where you'll find $15 tables this morning. Those minimums typically move to $25 as the floor gets busier later in the day. Do you usually prefer a lively main floor or a quieter high-limit room?",
+      "sources": [],
+      "elapsed_ms": 52108,
+      "error": null
+    },
+    {
+      "turn_index": 2,
+      "user_message": "Cool. Anything else fun for a blackjack fan?",
+      "agent_response": "It has an electric energy where you can hear the live music right from the blackjack tables, which really keeps the momentum going while you're playing. \n\nIf you find yourself needing a break from the cards later, the Elemis Spa is a legendary spot to recharge and get your head back in the game. Do you usually prefer a lively environment with music while you play, or do you like a quieter corner?",
+      "sources": [
+        {
+          "category": "faq",
+          "source": "mohegan_sun.json",
+          "score": 0.666
+        },
+        {
+          "category": "gaming",
+          "source": "mohegan_sun.json",
+          "score": 0.666
+        },
+        {
+          "category": "entertainment",
+          "source": "mohegan_sun.json",
+          "score": 0.659
+        }
+      ],
+      "elapsed_ms": 59669,
+      "error": null
+    }
+  ],
+  "completed": true
+}

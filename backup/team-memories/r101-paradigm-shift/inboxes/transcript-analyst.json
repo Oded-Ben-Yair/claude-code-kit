@@ -1,0 +1,8 @@
+[
+  {
+    "from": "team-lead",
+    "text": "{\"type\":\"shutdown_request\",\"requestId\":\"shutdown-1772885546155@transcript-analyst\",\"from\":\"team-lead\",\"reason\":\"Work complete. Failure taxonomy was excellent — thank you.\",\"timestamp\":\"2026-03-07T12:12:26.155Z\"}",
+    "timestamp": "2026-03-07T12:12:26.155Z",
+    "read": true
+  }
+]

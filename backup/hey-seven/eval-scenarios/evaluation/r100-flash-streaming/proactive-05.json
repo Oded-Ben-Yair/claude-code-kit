@@ -1,0 +1,65 @@
+{
+  "scenario_id": "proactive-05",
+  "scenario_name": "Guest just had a big win \u2014 celebrate and suggest",
+  "category": "behavioral_proactive",
+  "behavioral_dimension": "B4_agentic",
+  "expected_behavior": "Matches the excitement authentically. Suggests a celebratory dinner and evening. Maintains high energy throughout without being performative. Treats the win as a special occasion",
+  "expected_behavioral_quality": "Matches the winning energy authentically. Celebrates with the guest and proactively suggests something fun or celebratory to do \u2014 a nice dinner, a show, champagne. Does not dampnen the mood with generic responses.",
+  "safety_relevant": false,
+  "source_file": "behavioral_proactive.yaml",
+  "thread_id": "eval-proactive-05-1772825466",
+  "turns": [
+    {
+      "turn_index": 0,
+      "user_message": "I just hit a huge jackpot! $5000! What should we do to celebrate?",
+      "agent_response": "Congratulations on the $5,000 jackpot! That is a fantastic win.\n\nFor a celebration like this, I'd suggest dinner at Todd English's Tuscany, which features a terrace overlooking our 55-foot indoor waterfall. Afterward, you might enjoy novelle, our upscale ultra-lounge that features a DJ and craft cocktails on Friday nights. \n\nAre you looking for a high-energy celebration or something more intimate to mark the occasion?",
+      "sources": [
+        {
+          "category": "gaming",
+          "source": "mohegan_sun.json",
+          "score": 0.631
+        },
+        {
+          "category": "faq",
+          "source": "mohegan_sun.json",
+          "score": 0.62
+        },
+        {
+          "category": "property",
+          "source": "mohegan_sun.json",
+          "score": 0.621
+        },
+        {
+          "category": "entertainment",
+          "source": "mohegan_sun.json",
+          "score": 0.603
+        }
+      ],
+      "elapsed_ms": 27056,
+      "error": null
+    },
+    {
+      "turn_index": 1,
+      "user_message": "The steakhouse sounds perfect. Get the best table!",
+      "agent_response": "",
+      "sources": [],
+      "elapsed_ms": 60002,
+      "error": "TIMEOUT (60.0s)"
+    },
+    {
+      "turn_index": 2,
+      "user_message": "And after dinner, something fun",
+      "agent_response": "Avalon Nightclub is the ultimate Friday night destination if you want to keep that jackpot energy going. It opens at 10:00 PM for guests 21 and over and features top DJs with a state-of-the-art sound system that truly electrifies the room. If you are in the mood for something a bit more sophisticated but still upbeat, novelle is an ultra-lounge where the craft cocktails are as impressive as the DJ sets. \n\nLet me help you with that by getting your preferences so I can connect you with our host team to look into VIP table service options for your group. For a major win like yours, having a private area with bottle service at Avalon adds a whole other level of exclusivity to the night! An insider tip for a big celebration is that the VIP booths at Avalon offer the best view of the dance floor while providing your group with a dedicated space to enjoy the music. \n\nSince you will likely be celebrating into the early hours, would you like me to check the morning availability at Elemis Spa for a restorative treatment tomorrow?",
+      "sources": [
+        {
+          "category": "entertainment",
+          "source": "mohegan_sun.json",
+          "score": 0.673
+        }
+      ],
+      "elapsed_ms": 59512,
+      "error": null
+    }
+  ],
+  "completed": true
+}

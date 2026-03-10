@@ -1,0 +1,60 @@
+{
+  "scenario_id": "p1-04",
+  "scenario_name": "Guest mentions party size implicitly",
+  "category": "profiling_p1_natural_extraction",
+  "behavioral_dimension": "P1_natural_extraction",
+  "expected_behavior": "Registers 'me and the wife' as party of 2 and tilts toward romantic or couples-appropriate recommendations. Does not ask 'how many in your party?' when it was already stated",
+  "expected_behavioral_quality": "Infers party size from conversational cues like pronouns and companion mentions. 'Me and the wife' means party of 2. 'The four of us' means party of 4. Does not ask for a headcount when it has been stated implicitly.",
+  "safety_relevant": false,
+  "source_file": "profiling_p1_natural_extraction.yaml",
+  "thread_id": "eval-p1-04-1772837825",
+  "turns": [
+    {
+      "turn_index": 0,
+      "user_message": "Me and the wife are looking for a nice dinner spot",
+      "agent_response": "For a special evening with your wife, Todd English's Tuscany is an exceptional choice. The wood-fired aroma hits you the moment you walk in, and the warm, candlelit ambiance makes it one of our most romantic settings for a Friday night. \n\nThey are open until 10:00 PM tonight and specialize in handmade pastas and rustic Italian dishes prepared in an impressive open kitchen. The dress code is business casual, and since it is a popular spot for celebrations, I'd suggest securing a table soon. Prices typically fall in the $$$$ range, and while hours can vary, I can provide the details you need to connect with their host team to finalize a reservation. \n\nAre you both fans of traditional Italian flavors, or were you looking for something more like a classic steakhouse? After dinner, you might enjoy catching the late show at the Wolf Den for some live music.",
+      "sources": [
+        {
+          "category": "restaurants",
+          "source": "mohegan_sun.json",
+          "score": 0.652
+        }
+      ],
+      "elapsed_ms": 26222,
+      "error": null
+    },
+    {
+      "turn_index": 1,
+      "user_message": "Something with a view or good atmosphere",
+      "agent_response": "",
+      "sources": [],
+      "elapsed_ms": 60003,
+      "error": "TIMEOUT (60.0s)"
+    },
+    {
+      "turn_index": 2,
+      "user_message": "That sounds perfect for the two of us",
+      "agent_response": "I'm glad that hits the mark for your evening. Novelle is located right in the Casino of the Sky, so you'll be in the heart of the resort's energy while still having that sophisticated space to yourselves. \n\nSince it\u2019s just before 11:00 PM on a Friday, the DJ should be in full swing, and the atmosphere is usually at its peak right about now. An insider tip: if you enjoy craft cocktails, their \"Smoke & Mirrors\" drinks are quite a visual experience and a guest favorite. \n\nBy the way, I'm Seven. May I ask who I have the pleasure of assisting tonight? If you're planning to stay out late, I can also let you know which of our casual spots stay open for a late-night bite after you leave the lounge.",
+      "sources": [
+        {
+          "category": "entertainment",
+          "source": "mohegan_sun.json",
+          "score": 0.653
+        },
+        {
+          "category": "hotel",
+          "source": "mohegan_sun.json",
+          "score": 0.64
+        },
+        {
+          "category": "property",
+          "source": "mohegan_sun.json",
+          "score": 0.648
+        }
+      ],
+      "elapsed_ms": 31551,
+      "error": null
+    }
+  ],
+  "completed": true
+}

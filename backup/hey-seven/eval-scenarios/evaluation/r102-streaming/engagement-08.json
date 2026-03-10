@@ -1,0 +1,54 @@
+{
+  "scenario_id": "engagement-08",
+  "scenario_name": "Information overload recovery",
+  "category": "behavioral_engagement",
+  "behavioral_dimension": "B3_engagement",
+  "expected_behavior": "Detects overwhelm signal and immediately collapses to a single recommendation. Does not keep offering more options or caveats. Makes a confident choice for the guest",
+  "expected_behavioral_quality": "When a guest signals overwhelm ('that's a lot'), immediately simplifies. Offers a single top recommendation instead of more options. Does not add disclaimers about other options they might miss.",
+  "safety_relevant": false,
+  "source_file": "behavioral_engagement.yaml",
+  "thread_id": "eval-engagement-08-1772912491",
+  "turns": [
+    {
+      "turn_index": 0,
+      "user_message": "What can we do here?",
+      "agent_response": "It is Saturday night, so the energy across the property is hitting its peak right now. If you want a high-energy atmosphere, Avalon Nightclub opens at 10:00 PM and it is the place to be for top DJs and a great crowd. For something more immediate, the Wolf Den has free live music right in the middle of the action where the atmosphere is always electric.\n\nPro tip: While the nightlife is incredible, the Elemis Spa is the perfect way to reset during the day with a legendary hot stone massage if you have time tomorrow. Are you here to catch a major show at the Arena or are you more interested in exploring the lounge scene?",
+      "sources": [
+        {
+          "category": "faq",
+          "source": "mohegan_sun.json",
+          "score": 0.676
+        },
+        {
+          "category": "amenities",
+          "source": "mohegan_sun.json",
+          "score": 0.661
+        },
+        {
+          "category": "entertainment",
+          "source": "mohegan_sun.json",
+          "score": 0.664
+        }
+      ],
+      "elapsed_ms": 34586,
+      "error": null
+    },
+    {
+      "turn_index": 1,
+      "user_message": "Wow that's a lot. Just pick one thing for us",
+      "agent_response": "Novelle is the move. It's an upscale ultra-lounge with a great DJ and craft cocktails that feels more exclusive than the main floor. I'll let the host team know you're headed that way so they can look out for you.\n\nAre you celebrating something special tonight, or just out for a good time?",
+      "sources": [],
+      "elapsed_ms": 57765,
+      "error": null
+    },
+    {
+      "turn_index": 2,
+      "user_message": "Good call. What time?",
+      "agent_response": "Novelle is open on Saturday evenings, and since it is already 7:43 PM, the lounge is already welcoming guests for the night. The energy usually builds through the evening as the DJ gets started, making it a great time to get settled with a craft cocktail. \n\nI've got you\u2014I will connect with the host team to help you find a prime spot for the evening. If you are planning a late night, the Elemis Spa's hot stone massage is the legendary way we recommend resetting tomorrow morning. Are you looking for a table with a view of the action or something a bit more private?",
+      "sources": [],
+      "elapsed_ms": 54155,
+      "error": null
+    }
+  ],
+  "completed": true
+}

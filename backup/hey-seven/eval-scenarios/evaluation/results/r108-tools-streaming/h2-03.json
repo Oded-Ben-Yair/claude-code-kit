@@ -1,0 +1,86 @@
+{
+  "scenario_id": "h2-03",
+  "scenario_name": "Guest mentions they switched to competitor",
+  "category": "host_triangle_h1_h3_development",
+  "behavioral_dimension": "H2_reactivation_win_back",
+  "expected_behavior": "Does not badmouth Foxwoods or Gordon Ramsay. Instead, highlights Mohegan Sun's own new dining portfolio (Beauty & Essex, The Farm Italy, The Shed) as reasons to come back. Creates competitive differentiation through quality, not criticism",
+  "expected_behavioral_quality": "When a guest says they have been going to a competitor instead, the agent does not disparage the competitor. Instead, discovers what drew them away and highlights what Mohegan Sun offers in that area. Creates a 'come back and see' moment around genuine improvements.",
+  "safety_relevant": false,
+  "source_file": "host_triangle_h1_h3_development.yaml",
+  "thread_id": "eval-h2-03-1773057550",
+  "turns": [
+    {
+      "turn_index": 0,
+      "user_message": "I've been going to Foxwoods mostly. They opened some cool new restaurants",
+      "agent_response": "Foxwoods definitely has some interesting new additions lately. If you're looking for something exceptional here, Todd English's Tuscany in the Casino of the Sky is a standout for its handmade pastas and wood-fired pizzas in a beautiful setting. It is a fine dining experience open Wednesday through Sunday starting at 5:00 PM, and I would recommend a reservation for the best experience.\n\nA little insider tip\u2014if you can, try to snag a table near the indoor waterfall for the best ambiance on the property. Foxwoods definitely has some great spots. We've been updating our menus here too\u2014are you planning a visit for a special occasion or just a quick getaway?",
+      "sources": [
+        {
+          "category": "faq",
+          "source": "mohegan_sun.json",
+          "score": 0.712
+        },
+        {
+          "category": "restaurants",
+          "source": "mohegan_sun.json",
+          "score": 0.719
+        },
+        {
+          "category": "gaming",
+          "source": "mohegan_sun.json",
+          "score": 0.683
+        },
+        {
+          "category": "hotel",
+          "source": "mohegan_sun.json",
+          "score": 0.672
+        }
+      ],
+      "elapsed_ms": 32756,
+      "error": null
+    },
+    {
+      "turn_index": 1,
+      "user_message": "Yeah their Gordon Ramsay place is really good",
+      "agent_response": "It is hard to beat that celebrity chef energy. If you enjoy that high-caliber dining style, Bobby Flay's Bar Americain right here in the Casino of the Earth is a must-visit for its bold Southwest flavors and classic American brasserie feel. \n\nThey are open today until 10:00 PM, and I'd suggest their grilled meats or the seafood, which Bobby gives his signature spicy twist. The dress code is smart casual, and while they're open for lunch right now, a reservation is a good idea if you're planning on a prime dinner slot.\n\nAn insider tip: the crunchified burgers are a fun nod to Bobby's signature style if you're looking for something a bit more casual but still packed with flavor. After a meal there, the Wolf Den is just steps away in the Casino of the Earth and has free live music every night.\n\nAre you planning to join us for a meal tonight, or are you looking further ahead in the week?",
+      "sources": [
+        {
+          "category": "restaurants",
+          "source": "mohegan_sun.json",
+          "score": 0.66
+        }
+      ],
+      "elapsed_ms": 27690,
+      "error": null
+    },
+    {
+      "turn_index": 2,
+      "user_message": "Hmm those do sound worth trying",
+      "agent_response": "They really are, but if you want to try a true Connecticut institution, Frank Pepe's Pizzeria Napoletana in the Casino of the Earth is a local legend. It's famous for New Haven-style coal-fired pizza, particularly their white clam pie which is a staple for anyone visiting the area. They're open today from 11:00 AM to 10:00 PM, it's a casual atmosphere, and you don't need a reservation.\n\nThe secret to their crust is the custom coal-fired oven, which was built to mirror the original 1925 New Haven location perfectly to ensure that specific \"apizza\" char. Since you've been heading to Foxwoods, I think you'll appreciate the distinct history and flavor we have here. After you grab a slice, the Wolf Den right nearby has free live music every night and the energy is always good.\n\nWe also have some big names coming to the Arena soon if you're interested in catching a show while you're on property. To help me make the best recommendations for you, who am I speaking with and what brings you to the area this time?",
+      "sources": [
+        {
+          "category": "entertainment",
+          "source": "mohegan_sun.json",
+          "score": 0.644
+        },
+        {
+          "category": "restaurants",
+          "source": "mohegan_sun.json",
+          "score": 0.647
+        },
+        {
+          "category": "promotions",
+          "source": "mohegan_sun.json",
+          "score": 0.626
+        },
+        {
+          "category": "faq",
+          "source": "mohegan_sun.json",
+          "score": 0.614
+        }
+      ],
+      "elapsed_ms": 47447,
+      "error": null
+    }
+  ],
+  "completed": true
+}

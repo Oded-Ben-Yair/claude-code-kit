@@ -1,0 +1,76 @@
+{
+  "scenario_id": "h1-01",
+  "scenario_name": "First-time guest exploring the property",
+  "category": "host_triangle_h1_h3_development",
+  "behavioral_dimension": "H1_proactive_value_discovery",
+  "expected_behavior": "Recognizes first-time visit, asks about interests to shape recommendations, and plants at least one natural return-visit hook (Wolf Den weekly shows, upcoming Arena concert, Momentum sign-up). The conversation feels like an insider sharing favorites, not a brochure",
+  "expected_behavioral_quality": "Identifies the first-time visit signal and tailors recommendations to create anchor memories. Plants at least one natural return-visit hook (upcoming event, seasonal offering, loyalty sign-up) without making it feel like a pitch. Asks what brought them in to discover what would make them come back.",
+  "safety_relevant": false,
+  "source_file": "host_triangle_h1_h3_development.yaml",
+  "thread_id": "eval-h1-01-1772970333",
+  "turns": [
+    {
+      "turn_index": 0,
+      "user_message": "Hey, first time here at Mohegan Sun. What should we check out?",
+      "agent_response": "Welcome. You're in great hands. The property is huge, so don't try to see it all at once. \n\nI'd suggest starting right at Casino of the Earth. Pro tip \u2014 head straight for the indoor waterfall. It's the perfect central spot to grab a quick drink, get your bearings, and soak in the energy of the floor before you dive in. \n\nWhat brings you guys out today, just a weekend getaway or are you celebrating something?",
+      "sources": [
+        {
+          "category": "amenities",
+          "source": "mohegan_sun.json",
+          "score": 0.769
+        },
+        {
+          "category": "faq",
+          "source": "mohegan_sun.json",
+          "score": 0.746
+        },
+        {
+          "category": "entertainment",
+          "source": "mohegan_sun.json",
+          "score": 0.737
+        }
+      ],
+      "elapsed_ms": 64112,
+      "error": null
+    },
+    {
+      "turn_index": 1,
+      "user_message": "We're mostly into live music and good food",
+      "agent_response": "Since there's no cover charge and it's open seating, it's the perfect spot to catch a high-energy show without needing a ticket. \n\nFor a great meal beforehand, Michael Jordan's Steak House is just a short walk away and always delivers a top-tier experience. Pro tip \u2014 if you're looking for a more upscale nightlife vibe after the bands finish, novelle is a sophisticated lounge nearby with great craft cocktails and DJ entertainment. After a long night of music and dining, you might even want to look into a reset at Elemis Spa the next morning to recharge. \n\nWhat genre of music do you usually listen to?",
+      "sources": [
+        {
+          "category": "entertainment",
+          "source": "mohegan_sun.json",
+          "score": 0.662
+        }
+      ],
+      "elapsed_ms": 30285,
+      "error": null
+    },
+    {
+      "turn_index": 2,
+      "user_message": "That sounds great, we'll definitely check those out",
+      "agent_response": "I've got you covered. Since you mentioned live music, the Wolf Den is the place to be today\u2014the energy is electric and you are right there with the performers. Pro tip \u2014 the rock mountain design isn't just for show, as the acoustics in there are specifically tuned for a high-quality sound that carries through the casino floor. \n\nIf you want to balance out the music with some relaxation, the Elemis Spa has a legendary hot stone massage that is perfect for a reset. Next time you're planning a visit, feel free to reach out ahead of time and I can help share the full entertainment calendar so you can plan your trip around your favorite artists. Are you guys planning on staying through the evening, or are you just here for the afternoon?",
+      "sources": [
+        {
+          "category": "entertainment",
+          "source": "mohegan_sun.json",
+          "score": 0.654
+        },
+        {
+          "category": "faq",
+          "source": "mohegan_sun.json",
+          "score": 0.636
+        },
+        {
+          "category": "restaurants",
+          "source": "mohegan_sun.json",
+          "score": 0.642
+        }
+      ],
+      "elapsed_ms": 38422,
+      "error": null
+    }
+  ],
+  "completed": true
+}

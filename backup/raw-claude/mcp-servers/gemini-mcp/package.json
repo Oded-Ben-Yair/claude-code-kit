@@ -1,0 +1,9 @@
+{
+  "name": "@claude/gemini-mcp",
+  "version": "2.1.0",
+  "type": "module",
+  "dependencies": {
+    "@google/genai": "^1.33.0",
+    "@modelcontextprotocol/sdk": "^1.0.0"
+  }
+}

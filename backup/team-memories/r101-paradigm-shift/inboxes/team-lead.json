@@ -1,0 +1,89 @@
+[
+  {
+    "from": "transcript-analyst",
+    "text": "TASK COMPLETE: R100 Failure Taxonomy\n\n**Status**: Success — 62 scenarios classified into 10 failure buckets.\n\n**Top 3 Failure Buckets**:\n1. **timeout_error: 32.3% (20/62)** — 60s timeout insufficient for Flash multi-hop. Timeout scenarios avg 3.99 vs clean 5.42 (1.43-pt drag). 42.4% of ALL 250 scenarios had at least 1 timeout turn.\n2. **generic_response: 11.3% (7/62)** — \"Glad I could help. Wolf Den...\" canned closer fired in 12 scenarios regardless of context (after dinner confirmation, after sarcastic dismissal, after monosyllabic disengagement).\n3. **TIE: wrong_mode + didnt_take_lead: 11.3% each (7/62)** — wrong_mode = Spanish crisis in English, RG guardrail misfire on dinner requests, AI disclaimer breaking immersion. didnt_take_lead = verbose when guest wanted concise, deferred instead of recommending.\n\n**Go/No-Go**: GO — target timeout_error first (>30% single bucket). The plateau is 60% infrastructure + fixable code, not model capability.\n\n**Recommended fix priority**:\n1. Increase timeout to 90s (recovers ~0.7-1.0 pts)\n2. Fix canned \"Glad I could help\" closer (context-aware farewell)\n3. Fix crisis exit conditions (recovery signal + topic change should transition)\n4. Fix Spanish crisis responses (use detected_language)\n\nAfter these 4 fixes, remaining gap is model capability (Pro vs Flash for sarcasm/nuance/compound).\n\n**Files created**: `~/.claude/teams/r101-paradigm-shift/failure-taxonomy.md`\n\n**Output file path**: `/home/odedbe/.claude/teams/r101-paradigm-shift/failure-taxonomy.md`",
+    "summary": "Failure taxonomy complete — 62 scenarios classified, timeout is #1 at 32%",
+    "timestamp": "2026-03-07T12:06:56.748Z",
+    "color": "green",
+    "read": true
+  },
+  {
+    "from": "transcript-analyst",
+    "text": "{\"type\":\"idle_notification\",\"from\":\"transcript-analyst\",\"timestamp\":\"2026-03-07T12:06:59.223Z\",\"idleReason\":\"available\"}",
+    "timestamp": "2026-03-07T12:06:59.223Z",
+    "color": "green",
+    "read": true
+  },
+  {
+    "from": "gold-trace-designer",
+    "text": "**Status: COMPLETE**\n\n**Key design choices:**\n1. Used GPT-5 Pro brainstorm + Grok 4 for inspiration, then studied 3 actual R100 agent responses (h9-01, h6-01, engagement-01) to understand the gap\n2. Core insight: the 3-to-6 gap is TONE (human vs robot), the 6-to-9 gap is AGENCY (deciding vs suggesting). Our agent is stuck at 5-7 because it solved tone but not agency.\n3. Created 5 conversations: 3 gold (9/10) + 2 calibration anchors (3/10 chatbot, 6/10 decent). All use the SAME frustrated-guest scenario so the contrast is direct and measurable.\n4. Each conversation has detailed annotations explaining WHY it scores what it does, with dimension-by-dimension mapping (B1, B3, H6, H9, H10, P2, P6, P9)\n5. Included usage notes for 3 purposes: few-shot prompt engineering, judge calibration anchoring, and failure taxonomy classification\n\n**Files created:**\n- `~/.claude/teams/r101-paradigm-shift/gold-traces.md` (full output)\n\n**Blockers:** None\n\n**Output file:** `~/.claude/teams/r101-paradigm-shift/gold-traces.md`",
+    "summary": "Gold traces complete: 5 conversations + calibration anchors",
+    "timestamp": "2026-03-07T12:07:46.162Z",
+    "color": "yellow",
+    "read": true
+  },
+  {
+    "from": "code-cleaner",
+    "text": "{\"type\":\"idle_notification\",\"from\":\"code-cleaner\",\"timestamp\":\"2026-03-07T12:10:04.459Z\",\"idleReason\":\"available\"}",
+    "timestamp": "2026-03-07T12:10:04.459Z",
+    "color": "purple",
+    "read": true
+  },
+  {
+    "from": "gold-trace-designer",
+    "text": "{\"type\":\"idle_notification\",\"from\":\"gold-trace-designer\",\"timestamp\":\"2026-03-07T12:10:08.021Z\",\"idleReason\":\"available\"}",
+    "timestamp": "2026-03-07T12:10:08.021Z",
+    "color": "yellow",
+    "read": true
+  },
+  {
+    "from": "code-cleaner",
+    "text": "{\"type\":\"idle_notification\",\"from\":\"code-cleaner\",\"timestamp\":\"2026-03-07T12:10:32.211Z\",\"idleReason\":\"available\"}",
+    "timestamp": "2026-03-07T12:10:32.211Z",
+    "color": "purple",
+    "read": true
+  },
+  {
+    "from": "domain-researcher",
+    "text": "Domain research COMPLETE. All 4 MCP queries executed successfully.\n\n**Status**: Success\n**Key findings** (5 lines):\n1. Casino host comp decisions follow an 8-step algorithm anchored on theo (theoretical loss), NOT actual win/loss -- but great hosts override theo with relationship judgment when actual loss diverges significantly.\n2. 6 specific hold-back triggers identified (guest just won, loss-chasing, erratic betting, unresolved grievance, distress, insufficient history) -- our agent currently has no hold-back logic.\n3. 7 markers distinguish genuine vs scripted hosting -- the #1 differentiator is ANTICIPATORY service (acting before being asked), which maps directly to the gold-trace-designer's AGENCY finding.\n4. Social media (30d, 70% positive): top guest complaint is comp-to-loss disconnect (\"$30 after $4K loss\"), host scarcity at MGM, and ghosting on promises. Guests want acknowledgment proportional to their experience.\n5. 7 actionable AI rules synthesized: lead with relationship, match framing to emotion, acknowledge pain, never sound like a system, know when to hold back, anticipate don't react, comp the relationship not the transaction.\n\n**Files created**: `~/.claude/teams/r101-paradigm-shift/research-findings.md` (full synthesis with decision heuristics, comp tier table, language patterns, real guest quotes, and 7 AI rules)\n**Files modified**: `~/.claude/teams/r101-paradigm-shift/team-memory.md` (domain-researcher section updated)\n**Blockers**: None\n**Output file**: `~/.claude/teams/r101-paradigm-shift/research-findings.md`",
+    "summary": "Domain research complete -- 4 queries, 7 actionable rules",
+    "timestamp": "2026-03-07T12:11:42.481Z",
+    "color": "blue",
+    "read": true
+  },
+  {
+    "from": "domain-researcher",
+    "text": "{\"type\":\"idle_notification\",\"from\":\"domain-researcher\",\"timestamp\":\"2026-03-07T12:11:46.377Z\",\"idleReason\":\"available\"}",
+    "timestamp": "2026-03-07T12:11:46.377Z",
+    "color": "blue",
+    "read": true
+  },
+  {
+    "from": "code-cleaner",
+    "text": "{\"type\":\"idle_notification\",\"from\":\"code-cleaner\",\"timestamp\":\"2026-03-07T12:12:29.046Z\",\"idleReason\":\"available\"}",
+    "timestamp": "2026-03-07T12:12:29.046Z",
+    "color": "purple",
+    "read": true
+  },
+  {
+    "from": "transcript-analyst",
+    "text": "{\"type\":\"shutdown_approved\",\"requestId\":\"shutdown-1772885546155@transcript-analyst\",\"from\":\"transcript-analyst\",\"timestamp\":\"2026-03-07T12:12:29.813Z\",\"paneId\":\"in-process\",\"backendType\":\"in-process\"}",
+    "timestamp": "2026-03-07T12:12:29.813Z",
+    "color": "green",
+    "read": true
+  },
+  {
+    "from": "gold-trace-designer",
+    "text": "{\"type\":\"shutdown_approved\",\"requestId\":\"shutdown-1772885547490@gold-trace-designer\",\"from\":\"gold-trace-designer\",\"timestamp\":\"2026-03-07T12:12:31.035Z\",\"paneId\":\"in-process\",\"backendType\":\"in-process\"}",
+    "timestamp": "2026-03-07T12:12:31.035Z",
+    "color": "yellow",
+    "read": true
+  },
+  {
+    "from": "domain-researcher",
+    "text": "{\"type\":\"shutdown_approved\",\"requestId\":\"shutdown-1772885549122@domain-researcher\",\"from\":\"domain-researcher\",\"timestamp\":\"2026-03-07T12:12:32.318Z\",\"paneId\":\"in-process\",\"backendType\":\"in-process\"}",
+    "timestamp": "2026-03-07T12:12:32.318Z",
+    "color": "blue",
+    "read": true
+  }
+]

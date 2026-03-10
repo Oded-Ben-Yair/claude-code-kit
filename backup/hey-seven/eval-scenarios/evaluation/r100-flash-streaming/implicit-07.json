@@ -1,0 +1,54 @@
+{
+  "scenario_id": "implicit-07",
+  "scenario_name": "Urgency without explicit words",
+  "category": "behavioral_implicit",
+  "behavioral_dimension": "B2_implicit",
+  "expected_behavior": "Reads checkout time constraint as urgency. Provides short, direct answers focused on proximity and speed. Does not add marketing fluff or suggest long activities",
+  "expected_behavioral_quality": "Detects urgency from context (checking out soon, need quick answer) without the guest explicitly saying 'urgent' or 'hurry'. Provides fast, actionable answers without preamble.",
+  "safety_relevant": false,
+  "source_file": "behavioral_implicit.yaml",
+  "thread_id": "eval-implicit-07-1772820434",
+  "turns": [
+    {
+      "turn_index": 0,
+      "user_message": "Checking out in an hour. Anywhere I can grab breakfast?",
+      "agent_response": "Lantern Bar & Grill in the Casino of the Earth is your best bet since it's open 24 hours and serves a reliable menu of American favorites. It's a casual spot with no reservations required, perfect for a quick meal in the $$ price range before you depart. \n\nPro tip \u2014 Lantern is the go-to for guests who need a quality meal without the longer wait times of our larger dining rooms. Since you're heading out soon, would you like a recommendation for a quick coffee spot to fuel your trip home?",
+      "sources": [
+        {
+          "category": "restaurants",
+          "source": "mohegan_sun.json",
+          "score": 0.676
+        },
+        {
+          "category": "faq",
+          "source": "mohegan_sun.json",
+          "score": 0.666
+        },
+        {
+          "category": "amenities",
+          "source": "mohegan_sun.json",
+          "score": 0.622
+        }
+      ],
+      "elapsed_ms": 35802,
+      "error": null
+    },
+    {
+      "turn_index": 1,
+      "user_message": "Is it close to the lobby?",
+      "agent_response": "",
+      "sources": [],
+      "elapsed_ms": 60002,
+      "error": "TIMEOUT (60.0s)"
+    },
+    {
+      "turn_index": 2,
+      "user_message": "Thanks. Last thing \u2014 where do I return the room key?",
+      "agent_response": "You can drop your keys in the express check-out boxes located near the elevator banks in either tower for the fastest departure. While standard check-out is 11:00 AM and check-in is 4:00 PM, our front desk is staffed 24 hours a day to assist with your departure at any time. \n\nOur bellmen can store your bags securely so you don't have to bring them to the restaurant \u2014 do you need assistance with your luggage before you head to breakfast? Next time you're planning a visit, feel free to reach out ahead of time so I can help make sure everything is ready for your arrival.",
+      "sources": [],
+      "elapsed_ms": 59172,
+      "error": null
+    }
+  ],
+  "completed": true
+}

@@ -1,0 +1,79 @@
+{
+  "id": "engagement-01",
+  "name": "Terse disengaged replies signal need for focused questions",
+  "source_file": "behavioral_engagement.yaml",
+  "category": "behavioral_engagement",
+  "behavioral_dimension": "B3_engagement",
+  "expected_behavior": "Adapts to disengaged communication style. Stops listing options and switches to narrow, focused questions. By the final turn, gives a concrete plan rather than more choices",
+  "expected_behavioral_quality": "Recognizes monosyllabic replies as disengagement. Shifts from open-ended suggestions to focused binary or narrow questions. Does not keep listing options. By turn 3, asks a concrete either/or question rather than offering another menu of choices.",
+  "safety_relevant": false,
+  "turns": [
+    {
+      "turn_index": 0,
+      "user_message": "What should we do tonight?",
+      "agent_response": "You are going to love the energy here tonight. Comix Roadhouse has comedy shows starting this evening featuring nationally touring talent in a 400-seat room, or you can head to novelle for an upscale ultra lounge experience with craft cocktails and a DJ. Please note that schedules and availability are subject to change, so you may want to verify exact show times at the box office. After your entertainment, Lantern Bar & Grill is open 24 hours in Casino of the Earth for a late-night meal. Are you in the mood for some laughs or more of a high-energy lounge vibe?",
+      "sources": [
+        {
+          "category": "entertainment",
+          "source": "mohegan_sun.json",
+          "score": 0.668
+        },
+        {
+          "category": "restaurants",
+          "source": "mohegan_sun.json",
+          "score": 0.648
+        },
+        {
+          "category": "faq",
+          "source": "mohegan_sun.json",
+          "score": 0.667
+        }
+      ],
+      "elapsed_ms": 40716,
+      "error": null
+    },
+    {
+      "turn_index": 1,
+      "user_message": "ok",
+      "agent_response": "Glad I could help. If you haven't tried Todd English's Tuscany yet, their wood-fired dishes are a property standout. What sounds good?",
+      "sources": [],
+      "elapsed_ms": 2,
+      "error": null
+    },
+    {
+      "turn_index": 2,
+      "user_message": "fine",
+      "agent_response": "The Wolf Den features free live music tonight right in the center of the action. Would you prefer a high-energy show or a more relaxed lounge?",
+      "sources": [
+        {
+          "category": "entertainment",
+          "source": "mohegan_sun.json",
+          "score": 0.626
+        },
+        {
+          "category": "restaurants",
+          "source": "mohegan_sun.json",
+          "score": 0.612
+        },
+        {
+          "category": "property",
+          "source": "mohegan_sun.json",
+          "score": 0.618
+        }
+      ],
+      "elapsed_ms": 25160,
+      "error": null
+    },
+    {
+      "turn_index": 3,
+      "user_message": "sure",
+      "agent_response": "Glad I could help. If you haven't tried Todd English's Tuscany yet, their wood-fired dishes are a property standout. What sounds good?",
+      "sources": [],
+      "elapsed_ms": 1,
+      "error": null
+    }
+  ],
+  "elapsed_ms": 73924,
+  "error": null,
+  "completed": true
+}

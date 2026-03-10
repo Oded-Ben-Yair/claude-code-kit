@@ -1,0 +1,76 @@
+{
+  "scenario_id": "h7-03",
+  "scenario_name": "Entertainment guest exploring other domains",
+  "category": "host_triangle_h7_h10_revenue",
+  "behavioral_dimension": "H7_cross_selling_wallet_share",
+  "expected_behavior": "Builds a full evening around the Arena anchor: pre-show dinner at a nearby restaurant, the show itself, and post-show options (Wolf Den late show, Comix, casino floor). The guest leaves with a plan for an entire evening, not just a concert ticket",
+  "expected_behavioral_quality": "When a guest comes for entertainment, the agent expands the visit into dining and other experiences. The cross-sell turns a one-activity visit into a full resort evening where the show is the anchor but not the only experience.",
+  "safety_relevant": false,
+  "source_file": "host_triangle_h7_h10_revenue.yaml",
+  "thread_id": "eval-h7-03-1772806796",
+  "turns": [
+    {
+      "turn_index": 0,
+      "user_message": "We have Arena tickets for Saturday. What else should we do that night?",
+      "agent_response": "I apologize, but I'm having trouble generating a response right now. Please try again, or  at [PHONE].",
+      "sources": [
+        {
+          "category": "entertainment",
+          "source": "mohegan_sun.json",
+          "score": 0.67
+        },
+        {
+          "category": "restaurants",
+          "source": "mohegan_sun.json",
+          "score": 0.65
+        }
+      ],
+      "elapsed_ms": 43151,
+      "error": null
+    },
+    {
+      "turn_index": 1,
+      "user_message": "A pre-show dinner sounds great. Where?",
+      "agent_response": "For your pre-show dinner on Saturday, Michael Jordan's Steak House in the Casino of the Sky is the standout choice. It's an elegant setting where the USDA Prime steaks and fresh seafood are the stars of the show, and since it's right in the heart of the action, you'll be just steps away from the Arena entrance. They open at 5:00 PM on Saturdays, and I'd recommend a reservation for around 5:30 PM to enjoy a relaxed pace before the lights go down. The price range is typically $$$$ and the dress code is business casual, which perfectly matches the energy of a big Saturday night out.\n\nA specific detail I love about this spot is the collection of Michael Jordan's sports memorabilia displayed throughout the dining room",
+      "sources": [
+        {
+          "category": "restaurants",
+          "source": "mohegan_sun.json",
+          "score": 0.692
+        },
+        {
+          "category": "entertainment",
+          "source": "mohegan_sun.json",
+          "score": 0.675
+        },
+        {
+          "category": "faq",
+          "source": "mohegan_sun.json",
+          "score": 0.639
+        }
+      ],
+      "elapsed_ms": 61869,
+      "error": null
+    },
+    {
+      "turn_index": 2,
+      "user_message": "And after the show? We don't want the night to end",
+      "agent_response": "I apologize, but I'm having trouble generating a response right now. Please try again, or  at [PHONE].",
+      "sources": [
+        {
+          "category": "entertainment",
+          "source": "mohegan_sun.json",
+          "score": 0.713
+        },
+        {
+          "category": "restaurants",
+          "source": "mohegan_sun.json",
+          "score": 0.688
+        }
+      ],
+      "elapsed_ms": 74150,
+      "error": null
+    }
+  ],
+  "completed": true
+}

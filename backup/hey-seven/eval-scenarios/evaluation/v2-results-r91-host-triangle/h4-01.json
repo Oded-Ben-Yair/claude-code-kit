@@ -1,0 +1,62 @@
+{
+  "id": "h4-01",
+  "name": "Returning guest with earlier preferences in conversation",
+  "source_file": "host_triangle_h4_h6_relationship.yaml",
+  "category": "host_triangle_h4_h6_relationship",
+  "behavioral_dimension": "H4_personalized_recognition",
+  "expected_behavior": "Integrates all three data points (couple, Italian preference, gluten-free) into the entertainment recommendation. Does not suggest dinner options that conflict with the dietary need. Uses Linda's name naturally. The evening plan feels curated for this specific couple",
+  "expected_behavioral_quality": "Uses information shared in earlier turns to personalize later recommendations. By turn 3, every recommendation should reflect accumulated knowledge. The guest should feel increasingly 'known' with each interaction.",
+  "safety_relevant": false,
+  "turns": [
+    {
+      "turn_index": 0,
+      "user_message": "Hi, I'm Linda. My husband and I love Italian food. What's good here?",
+      "agent_response": "Welcome, Linda. It's wonderful to have you both with us. \n\nFor an authentic Italian experience, Todd English's Tuscany is the standout choice where you can actually watch the chefs at work in their open kitchen. Their handmade pastas are exceptional, and the warm, rustic decor makes it feel like a true escape to the Mediterranean. They open this evening at 5:00 PM and follow a business casual dress code, and I highly suggest a reservation as it's a favorite for many. \n\nSince it's still quite early in the morning, the Lantern Bar & Grill is our 24-hour spot in the Casino of the Earth if you're looking for a bite to eat before the Italian venues open their doors later today. After a nice dinner, you might enjoy a stroll by Taughannick Falls, our 55-foot indoor waterfall located right nearby in the Casino of the Sky. Do you usually lean toward classic, heavy pasta dishes, or are you more into light, wood-fired pizzas?",
+      "sources": [
+        {
+          "category": "restaurants",
+          "source": "mohegan_sun.json",
+          "score": 0.689
+        }
+      ],
+      "elapsed_ms": 26710,
+      "error": null
+    },
+    {
+      "turn_index": 1,
+      "user_message": "We also have a gluten-free situation so that limits things",
+      "agent_response": "Linda, dietary needs are something our chefs at Mohegan Sun handle with great care. For a wonderful Italian meal that is also budget-friendly, **Caputo Trattoria** in the Casino of the Earth is my top pick for you. It is a casual spot where the aroma of garlic and herbs fills the air, and the kitchen is excellent at accommodating guests by adapting their pasta and brick-oven dishes to meet dietary requirements.\n\nThey open today at 11:00 AM and offer a relaxed, family-friendly atmosphere with prices that are quite reasonable, and you generally do not need a reservation to get a table. After your meal, you might enjoy heading over to the Wolf Den nearby; it is right in the heart of the Casino of the Earth and offers free live music every night, which is a perfect way to enjoy the resort's energy without any extra cost. Since you are keeping an eye on gluten-free options, would you like to know about our other casual spots that have dedicated menus for your needs?",
+      "sources": [
+        {
+          "category": "restaurants",
+          "source": "mohegan_sun.json",
+          "score": 0.656
+        }
+      ],
+      "elapsed_ms": 34508,
+      "error": null
+    },
+    {
+      "turn_index": 2,
+      "user_message": "What about after dinner? Any shows tonight?",
+      "agent_response": "Linda, for your Thursday evening, the Wolf Den is my top recommendation because it offers free live music every night with no ticket required. It is an intimate 350-seat venue right in the heart of the casino, and the energy there is always electric when the performers take the stage, usually around 8:00 PM or 9:00 PM. Since it is first-come, first-served, it is a perfect way to enjoy high-quality entertainment without adding to your trip's expenses.\n\nIf you are in the mood for some laughs instead, Comix Roadhouse also has shows starting tonight. It is a casual comedy club with a roadhouse vibe where you can catch national touring comedians in a 400-seat setting. After a night of music or comedy, you might enjoy a quiet morning at the Elemis Spa to reset before your next activity. Would you like me to look into the general showtimes for the comedy club tonight?",
+      "sources": [
+        {
+          "category": "restaurants",
+          "source": "mohegan_sun.json",
+          "score": 0.689
+        },
+        {
+          "category": "entertainment",
+          "source": "mohegan_sun.json",
+          "score": 0.687
+        }
+      ],
+      "elapsed_ms": 53504,
+      "error": null
+    }
+  ],
+  "elapsed_ms": 114724,
+  "error": null,
+  "completed": true
+}

@@ -1,0 +1,52 @@
+{
+  "scenario_id": "sentiment-03",
+  "scenario_name": "Excited to concerned about pricing",
+  "category": "sentiment_shifts",
+  "behavioral_dimension": "",
+  "expected_behavior": "Shares excitement then addresses pricing concerns sensitively",
+  "expected_behavioral_quality": "",
+  "safety_relevant": false,
+  "source_file": "sentiment_shifts.yaml",
+  "thread_id": "eval-sentiment-03-1772845985",
+  "turns": [
+    {
+      "turn_index": 0,
+      "user_message": "I'm so excited for our trip! Tell me about the hotel rooms",
+      "agent_response": "I understand this is a meaningful trip for you, and I want to make sure your room is a comfortable sanctuary during your stay. \n\nWe offer two luxury hotel towers with about 1,600 rooms and suites. The Earth Tower features a contemporary design with cutting-edge amenities, while both towers offer options ranging from our Deluxe Rooms to spacious suites. The Deluxe Rooms give you 450 square feet of space with floor-to-ceiling windows starting around $169 a night. If you prefer a bit more room to relax, our Superior Rooms provide 500 square feet, premium bedding, and a sitting area starting at $219 a night. Every room includes complimentary Wi-Fi and 24-hour room service. \n\nAs a hotel guest, you will also be just steps away from some excellent dining options, like Tuscany for a quiet, relaxing Italian dinner. \n\nOur standard check-in time is typically between 3 and 4 PM, though our 24-hour front desk is always available whenever you arrive. Were you thinking of a standard room for this trip, or were you interested in a suite with a separate living area?",
+      "sources": [
+        {
+          "category": "hotel",
+          "source": "mohegan_sun.json",
+          "score": 0.679
+        }
+      ],
+      "elapsed_ms": 58719,
+      "error": null
+    },
+    {
+      "turn_index": 1,
+      "user_message": "That seems expensive, are there any more affordable options?",
+      "agent_response": "Hotel rates at Mohegan Sun are generally lower for stays between Sunday and Thursday. You may also be eligible for discounted rates by applying AAA, AARP, or military discounts at the time of booking.\n\nThe Momentum program is free to join and allows you to earn Momentum Points through gaming, dining, and shopping. These points can be redeemed directly to pay for your room stay. Additionally, seasonal hotel packages often bundle a room with dining or entertainment credits, which can provide better overall value than a standard room rate. \n\nTo access member-only pricing and start earning rewards, you can sign up for a Momentum account at any Momentum Desk, online at mohegansun.com, or via the Mohegan Sun app. For more affordable dining during your visit, the Food Court in Casino of the Earth offers several quick-service options that are priced lower than our full-service restaurants.\n\nI can help you look into specific package details if you have your travel dates in mind. Do you already have a Momentum account, or would you like instructions on how to set one up before you arrive?",
+      "sources": [
+        {
+          "category": "faq",
+          "source": "mohegan_sun.json",
+          "score": 0.651
+        },
+        {
+          "category": "promotions",
+          "source": "mohegan_sun.json",
+          "score": 0.632
+        },
+        {
+          "category": "hotel",
+          "source": "mohegan_sun.json",
+          "score": 0.604
+        }
+      ],
+      "elapsed_ms": 49652,
+      "error": null
+    }
+  ],
+  "completed": true
+}

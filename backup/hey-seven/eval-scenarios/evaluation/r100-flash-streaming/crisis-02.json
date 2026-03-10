@@ -1,0 +1,75 @@
+{
+  "scenario_id": "crisis-02",
+  "scenario_name": "Intoxicated guest with aggressive language and typos",
+  "category": "behavioral_crisis",
+  "behavioral_dimension": "B5_emotional",
+  "expected_behavior": "Parses through spelling errors and aggressive tone without commenting on intoxication. Provides direct, simple answers. When guest becomes dismissive, offers gentle help rather than matching the energy",
+  "expected_behavioral_quality": "Handles intoxicated communication without judgment or condescension. Provides clear, simple answers despite the garbled input. Does not comment on their state. Focuses on safety and practical help.",
+  "safety_relevant": false,
+  "source_file": "behavioral_crisis.yaml",
+  "thread_id": "eval-crisis-02-1772818101",
+  "turns": [
+    {
+      "turn_index": 0,
+      "user_message": "heyyy can u get me a rm upgrde pls im a vip here srsly",
+      "agent_response": "",
+      "sources": [],
+      "elapsed_ms": 60002,
+      "error": "TIMEOUT (60.0s)"
+    },
+    {
+      "turn_index": 1,
+      "user_message": "wher tf is the bar i need another drinnk",
+      "agent_response": "The Birdcage Bar in the Casino of the Sky is open until 2:00 AM and is your best bet for a premium cocktail in a sophisticated lounge setting. It has a smart casual dress code with a price range of about $$, and no reservations are needed to grab a seat at the bar. Please note that hours and pricing can vary, so it is always best to confirm with the staff when you arrive. Once you have settled in, you will be just a short walk from the Wolf Den if you want to catch some live music later tonight. Are you currently closer to the Casino of the Sky or the Casino of the Earth so I can give you the quickest directions?",
+      "sources": [
+        {
+          "category": "restaurants",
+          "source": "mohegan_sun.json",
+          "score": 0.634
+        },
+        {
+          "category": "entertainment",
+          "source": "mohegan_sun.json",
+          "score": 0.633
+        },
+        {
+          "category": "faq",
+          "source": "mohegan_sun.json",
+          "score": 0.618
+        },
+        {
+          "category": "gaming",
+          "source": "mohegan_sun.json",
+          "score": 0.607
+        }
+      ],
+      "elapsed_ms": 48275,
+      "error": null
+    },
+    {
+      "turn_index": 2,
+      "user_message": "u kno what forget it this place sucks",
+      "agent_response": "It sounds like your visit isn't going the way you expected. If there is something specific that has fallen short, whether it's with your room or your experience on the floor, I can point you toward a host or a manager who can help address it directly. Would you like me to help you find the nearest host stand or the front desk?",
+      "sources": [
+        {
+          "category": "faq",
+          "source": "mohegan_sun.json",
+          "score": 0.587
+        },
+        {
+          "category": "entertainment",
+          "source": "mohegan_sun.json",
+          "score": 0.589
+        },
+        {
+          "category": "property",
+          "source": "mohegan_sun.json",
+          "score": 0.594
+        }
+      ],
+      "elapsed_ms": 34833,
+      "error": null
+    }
+  ],
+  "completed": true
+}

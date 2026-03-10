@@ -1,0 +1,44 @@
+{
+  "scenario_id": "p1-05",
+  "scenario_name": "Guest reveals occasion implicitly",
+  "category": "profiling_p1_natural_extraction",
+  "behavioral_dimension": "P1_natural_extraction",
+  "expected_behavior": "Immediately pivots to upscale and celebratory options after 'celebrating tonight'. When the anniversary is confirmed, elevates further. Threads the celebration context through every recommendation",
+  "expected_behavioral_quality": "Detects the celebration context from 'celebrating tonight' and uses it to shape all recommendations. Does not ask 'what's the occasion?' when the guest has already said they're celebrating. Instead, leans into celebratory options.",
+  "safety_relevant": false,
+  "source_file": "profiling_p1_natural_extraction.yaml",
+  "thread_id": "eval-p1-05-1772954399",
+  "turns": [
+    {
+      "turn_index": 0,
+      "user_message": "We're celebrating tonight, what's the best restaurant here?",
+      "agent_response": "Congratulations on your celebration! Michael Jordan\u2019s Steak House in the Casino of the Sky is the premier choice for a special night, offering an elegant atmosphere where the aroma of searing USDA Prime steaks sets the stage for the evening. \n\nThey open at 5:00 PM and run until 10:00 PM tonight with a business casual dress code and a price range of $$$$. Since it is a favorite for milestone meals, I'd suggest securing a reservation to ensure you get the best experience. I have all the information needed to help you plan this, and I can connect you with the host team to finalize your table. After a decadent dinner, you might find that the live music at the Wolf Den is the perfect way to keep the celebration moving. \n\nWhat is the special occasion you are toasting to tonight?",
+      "sources": [
+        {
+          "category": "restaurants",
+          "source": "mohegan_sun.json",
+          "score": 0.684
+        }
+      ],
+      "elapsed_ms": 23647,
+      "error": null
+    },
+    {
+      "turn_index": 1,
+      "user_message": "Yeah it's our anniversary",
+      "agent_response": "Happy anniversary! For a milestone like this, Tuscany is the move \u2014 specifically the waterfall table for the best atmosphere on property. \n\nLet me see about upgrading your experience at Mohegan Sun to make it extra special. I can connect you with the host team to get that table finalized and ensure they have everything ready for your arrival. \n\nHow many years are you toasting to tonight?",
+      "sources": [],
+      "elapsed_ms": 56431,
+      "error": null
+    },
+    {
+      "turn_index": 2,
+      "user_message": "Any other ideas to make it special?",
+      "agent_response": "Mandara Spa is the best way to elevate the day \u2014 booking a couples suite for a treatment together lets you really disconnect in a world-class space. I\u2019ll have the host team reach out to help you secure those times and see about upgrading your experience at Mohegan Sun to make it extra special for your anniversary! \n\nAre you more into a relaxed pace for this trip, or do you prefer a full itinerary of shows and events?",
+      "sources": [],
+      "elapsed_ms": 51058,
+      "error": null
+    }
+  ],
+  "completed": true
+}

@@ -1,0 +1,61 @@
+{
+  "id": "p1-10",
+  "name": "Guest reveals companion ages naturally",
+  "source_file": "profiling_p1_natural_extraction.yaml",
+  "category": "profiling_p1_natural_extraction",
+  "behavioral_dimension": "P1_natural_extraction",
+  "expected_behavior": "Uses the 8 and 12 age data to recommend age-appropriate activities. An 8-year-old and 12-year-old have different interest profiles. Dining recommendation accounts for family-friendly seating and menu. Never re-asks for ages",
+  "expected_behavioral_quality": "Extracts companion ages from a casual mention ('kids are 8 and 12') and uses them to shape family-appropriate recommendations. Distinguishes between young children and pre-teens when suggesting activities. Does not ask ages after they've been volunteered.",
+  "safety_relevant": false,
+  "turns": [
+    {
+      "turn_index": 0,
+      "user_message": "Looking for stuff to do with the family. Kids are 8 and 12.",
+      "agent_response": "For a bit of physical adventure, the Wombi Rock Climbing Wall is located right nearby and offers routes for all skill levels, which is a fantastic way for them to burn off some energy together.\n\nIf you are looking for some adult time to explore the casino or the Elemis Spa, Kids Quest provides supervised entertainment for children from 6 weeks up to age 12. For larger scale entertainment, the Mohegan Sun Arena often hosts all-ages events like WWE or major concerts, so it is always worth checking the current schedule at the box office when you arrive. Are you looking for activities you can all do together as a family, or were you hoping for a few hours of supervised play for the kids?",
+      "sources": [
+        {
+          "category": "entertainment",
+          "source": "mohegan_sun.json",
+          "score": 0.655
+        },
+        {
+          "category": "amenities",
+          "source": "mohegan_sun.json",
+          "score": 0.644
+        }
+      ],
+      "elapsed_ms": 29104,
+      "error": null
+    },
+    {
+      "turn_index": 1,
+      "user_message": "Anything they can do while we hit the casino?",
+      "agent_response": "Kids Quest is specifically designed for this situation because it provides fully supervised entertainment for children from 6 weeks up to 12 years old, which fits both of your kids perfectly. They have a professional staff that leads organized activities and games, so you can head to the casino floor with total peace of mind.\n\nIf your 12-year-old prefers something a bit more high-tech, Cyber Quest is right next door and features an incredible selection of arcade games that they can explore together. Since you'll be spending some time in the casino, you might find that Jasper White's Summer Shack is a great spot to meet back up for a casual family dinner afterward. Would you like me to check the current hours for Kids Quest so you can plan your time at the tables?",
+      "sources": [],
+      "elapsed_ms": 38080,
+      "error": null
+    },
+    {
+      "turn_index": 2,
+      "user_message": "And somewhere we can all eat together after?",
+      "agent_response": "Mohegan Sun Caputo Trattoria is my top choice for a family meal because the casual vibe and brick-oven pizzas are always a hit with kids. The scent of toasted crust and savory tomato sauce makes it a very welcoming spot, and they serve a variety of pasta dishes and Italian sandwiches that are perfect for a post-casino dinner. It is located in the Casino of the Earth and opens today at 11:00 AM, staying open until 10:00 PM.\n\nThe service is quick and the price range is moderate, making it easy to grab a table without a reservation. Once you've finished your meal, the nearby shops are great for a family stroll. Does a menu of pizza and pasta sound like something your 8 and 12-year-old would enjoy?",
+      "sources": [
+        {
+          "category": "restaurants",
+          "source": "mohegan_sun.json",
+          "score": 0.669
+        },
+        {
+          "category": "faq",
+          "source": "mohegan_sun.json",
+          "score": 0.652
+        }
+      ],
+      "elapsed_ms": 29408,
+      "error": null
+    }
+  ],
+  "elapsed_ms": 96593,
+  "error": null,
+  "completed": true
+}

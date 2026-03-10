@@ -1,0 +1,9 @@
+[
+  {
+    "from": "phase3-integration",
+    "text": "{\"type\":\"task_assignment\",\"taskId\":\"16\",\"subject\":\"Wire Phase 3 modules into app + integration tests\",\"description\":\"Phase 3, Task 3.3: Wire per-casino config and CMS modules into the application. Update app.py with CMS webhook endpoint, add casino_id propagation, write integration tests.\\n\\nFiles to modify:\\n- src/api/app.py: Add POST /cms/webhook endpoint for Google Sheets re-indexing\\n- src/config.py: Add CMS-related settings if needed (GOOGLE_SHEETS_ID, etc.)\\n- tests/conftest.py: Add any new singleton/cache clearing\\n\\nFiles to create:\\n- tests/test_phase3_integration.py (~80L): Integration tests for casino config loading, feature flag checking, CMS webhook triggering\\n\\nBlocked by tasks 14 and 15 (casino config + CMS must be created first).\",\"assignedBy\":\"phase3-integration\",\"timestamp\":\"2026-02-18T08:41:55.033Z\"}",
+    "timestamp": "2026-02-18T08:41:55.033Z",
+    "color": "orange",
+    "read": false
+  }
+]

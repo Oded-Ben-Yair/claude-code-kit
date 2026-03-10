@@ -1,0 +1,49 @@
+{
+  "scenario_id": "p4-08",
+  "scenario_name": "Group of friends \u2014 assumption about nightlife correct",
+  "category": "profiling_p4_assumptive_bridge",
+  "behavioral_dimension": "P4_assumptive_bridging",
+  "expected_behavior": "Correctly bridges from 'group of friends + weekend' to nightlife and party-oriented options. When confirmed, builds a full evening progression: dinner to drinks to entertainment. The assumption felt natural and was validated",
+  "expected_behavioral_quality": "When a group of friends mentions a weekend trip, assumes nightlife and entertainment are priorities. Leads with bars, shows, and high-energy dining options. The assumption is tested softly ('I imagine you're looking for some nightlife?') and confirmed.",
+  "safety_relevant": false,
+  "source_file": "profiling_p4_assumptive_bridge.yaml",
+  "thread_id": "eval-p4-08-1772958324",
+  "turns": [
+    {
+      "turn_index": 0,
+      "user_message": "Group of 6 friends here for the weekend",
+      "agent_response": "Welcome to Mohegan Sun. I've got the perfect spot for a group of six: TAO Asian Bistro & Lounge in the Casino of the Sky. The atmosphere is high-energy and the menu is built for sharing. I'd suggest an 8:00 PM seating, then heading over to novelle right after for drinks and music. \n\nPro tip: novelle is one of the few spots that blends a lounge vibe with a bit of gaming, so you can keep the energy up without being stuck on the main casino floor. What brought the six of you out this weekend \u2014 a celebration or just a getaway?",
+      "sources": [
+        {
+          "category": "entertainment",
+          "source": "mohegan_sun.json",
+          "score": 0.669
+        },
+        {
+          "category": "restaurants",
+          "source": "mohegan_sun.json",
+          "score": 0.641
+        }
+      ],
+      "elapsed_ms": 33919,
+      "error": null
+    },
+    {
+      "turn_index": 1,
+      "user_message": "Absolutely, we want the full party experience",
+      "agent_response": "You're going to love this\u2014the Wolf Den is the center of the party tonight. It has an electric energy where you're right there with the performer, and since it's located right in the middle of the Casino of the Earth, the atmosphere is always high. For a group of six, it's the perfect spot to catch a high-energy show together without needing to worry about tickets.\n\nInsider tip: The Wolf Den is designed so that the music stays crisp throughout the entire lounge, but for a group of six, arriving about 45 minutes early is the best way to secure a table together! After a big night, the Elemis Spa is the perfect reset\u2014their hot stone massage is legendary for a morning recovery session. Does your group prefer being right in the middle of the live music crowd, or are you looking for a more private lounge experience tonight?",
+      "sources": [],
+      "elapsed_ms": 80391,
+      "error": null
+    },
+    {
+      "turn_index": 2,
+      "user_message": "Start with dinner then go from there",
+      "agent_response": "I've got you at Ballo Italian for 7:00 PM\u2014it\u2019s high-energy and the housemade pasta is perfect for a group of six to share. After dinner, head over to VISTA Lounge at Wombi Rock for cocktails under the planetarium dome. \n\nInsider tip: The Roman-inspired architecture in Ballo is the best backdrop on property for group photos before the night picks up. I\u2019ll flag the host team to help finalize the details for tonight, and keep in mind that hours and pricing can vary. \n\nSince you're looking for the full experience, do you usually prefer a loud, high-energy dining room or something a bit more private?",
+      "sources": [],
+      "elapsed_ms": 72935,
+      "error": null
+    }
+  ],
+  "completed": true
+}

@@ -1,0 +1,49 @@
+{
+  "scenario_id": "h8-02",
+  "scenario_name": "Guest asking about loyalty rewards value",
+  "category": "host_triangle_h7_h10_revenue",
+  "behavioral_dimension": "H8_strategic_offer_framing",
+  "expected_behavior": "Explains point redemption options across property domains (dining, spa, hotel, entertainment, free play). When the guest chooses the steakhouse, frames it as 'a dinner you've earned.' The redemption feels like a reward, not a coupon",
+  "expected_behavioral_quality": "When a guest asks about rewards value, the agent frames Momentum Points as a recognition of their play rather than a transactional currency. Connects point redemption to experiences (dining, spa, shows) rather than just dollar equivalents.",
+  "safety_relevant": false,
+  "source_file": "host_triangle_h7_h10_revenue.yaml",
+  "thread_id": "eval-h8-02-1772992827",
+  "turns": [
+    {
+      "turn_index": 0,
+      "user_message": "I've got a bunch of Momentum Points saved up. What can I actually use them for?",
+      "agent_response": "Momentum Points can be redeemed for free play, dining at participating restaurants, hotel stays, and retail purchases throughout the resort. \n\nA helpful tip is that you can present your Momentum card right at the table at places like Tuscany or SolToro to cover your meal directly with your points, making it seamless. \n\nWhat kind of experience are you looking to use them on today?",
+      "sources": [
+        {
+          "category": "promotions",
+          "source": "mohegan_sun.json",
+          "score": 0.723
+        },
+        {
+          "category": "faq",
+          "source": "mohegan_sun.json",
+          "score": 0.707
+        }
+      ],
+      "elapsed_ms": 47788,
+      "error": null
+    },
+    {
+      "turn_index": 1,
+      "user_message": "Can I use them at the steakhouse?",
+      "agent_response": "Yes, you can use your points directly at Michael Jordan's Steak House. You just need to present your Momentum card to your server to cover your bill. \n\nThe steakhouse is located in the Casino of the Sky and is open Wednesday through Sunday from 5:00 PM to 10:00 PM. The dress code is business casual, and they are known for their USDA Prime steaks and extensive wine list.\n\nSince reservations are highly recommended, I've got you covered on setting that up and can connect you with the host team to finalize it. How many people are in your party, and what night were you looking to go?",
+      "sources": [],
+      "elapsed_ms": 57668,
+      "error": null
+    },
+    {
+      "turn_index": 2,
+      "user_message": "Awesome, free steak dinner it is",
+      "agent_response": "That is a great way to use your points. Just as a quick reminder, since Michael Jordan's Steak House is a premium spot, points apply dollar-for-dollar, so checking your exact balance on the Mohegan Sun app beforehand will let you know if it covers the entire check. \n\nI can get the ball rolling on that reservation for you, and I will connect you with the host team to finalize the details. After dinner, heading over to the Wolf Den for some free live music is a perfect way to keep the evening going without dipping back into your wallet. \n\nHow many people will be joining you for dinner?",
+      "sources": [],
+      "elapsed_ms": 52686,
+      "error": null
+    }
+  ],
+  "completed": true
+}

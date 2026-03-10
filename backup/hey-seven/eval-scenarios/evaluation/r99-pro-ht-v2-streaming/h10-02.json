@@ -1,0 +1,91 @@
+{
+  "scenario_id": "h10-02",
+  "scenario_name": "Guest needs help with a complex multi-part request",
+  "category": "host_triangle_h7_h10_revenue",
+  "behavioral_dimension": "H10_host_identity_authority",
+  "expected_behavior": "Takes full ownership of the multi-domain request. Builds a coordinated birthday weekend plan: Italian dinner with birthday touches Saturday, spa treatment Sunday, and room upgrade guidance. Presents it as a unified plan, not three separate requests. The guest feels like one person is handling everything",
+  "expected_behavioral_quality": "When a guest has a complex request spanning multiple property domains, the agent coordinates across all of them with confidence. Does not pass the guest between departments. Takes ownership of the full request and presents a unified plan.",
+  "safety_relevant": false,
+  "source_file": "host_triangle_h7_h10_revenue.yaml",
+  "thread_id": "eval-h10-02-1772807856",
+  "turns": [
+    {
+      "turn_index": 0,
+      "user_message": "I need help planning my wife's surprise birthday weekend. Dinner Saturday, spa Sunday, and a room upgrade if possible",
+      "agent_response": "I apologize, but I'm having trouble generating a response right now. Please try again, or  at [PHONE].",
+      "sources": [
+        {
+          "category": "amenities",
+          "source": "mohegan_sun.json",
+          "score": 0.671
+        },
+        {
+          "category": "promotions",
+          "source": "mohegan_sun.json",
+          "score": 0.647
+        },
+        {
+          "category": "restaurants",
+          "source": "mohegan_sun.json",
+          "score": 0.637
+        }
+      ],
+      "elapsed_ms": 46087,
+      "error": null
+    },
+    {
+      "turn_index": 1,
+      "user_message": "She loves Italian food and deep tissue massage. Can you work with that?",
+      "agent_response": "I apologize, but I'm having trouble generating a response right now. Please try again, or  at [PHONE].",
+      "sources": [
+        {
+          "category": "restaurants",
+          "source": "mohegan_sun.json",
+          "score": 0.642
+        },
+        {
+          "category": "entertainment",
+          "source": "mohegan_sun.json",
+          "score": 0.612
+        },
+        {
+          "category": "promotions",
+          "source": "mohegan_sun.json",
+          "score": 0.607
+        }
+      ],
+      "elapsed_ms": 44019,
+      "error": null
+    },
+    {
+      "turn_index": 2,
+      "user_message": "This is exactly what I needed. You've been amazing",
+      "agent_response": "Exactly, It's my pleasure. To make the Saturday night plans even more special, the Mohegan Sun Arena often hosts major headliners, or you can find great live music at the Wolf Den for a more casual atmosphere after dinner. \n\nI can connect you with our host team at [PHONE] to finalize the room upgrade and apply your birthday dining credit whenever you're ready. Since the Arena is one of the top-ranked venues in the country, would you like to know which artists are performing during your stay?",
+      "sources": [
+        {
+          "category": "hotel",
+          "source": "mohegan_sun.json",
+          "score": 0.619
+        },
+        {
+          "category": "entertainment",
+          "source": "mohegan_sun.json",
+          "score": 0.619
+        },
+        {
+          "category": "promotions",
+          "source": "mohegan_sun.json",
+          "score": 0.616
+        },
+        {
+          "category": "property",
+          "source": "mohegan_sun.json",
+          "score": 0.629
+        }
+      ],
+      "elapsed_ms": 35885,
+      "error": null
+    }
+  ],
+  "completed": true
+}

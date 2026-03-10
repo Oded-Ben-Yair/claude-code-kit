@@ -1,0 +1,71 @@
+{
+  "scenario_id": "engagement-06",
+  "scenario_name": "Clarification repair after misunderstood question",
+  "category": "behavioral_engagement",
+  "behavioral_dimension": "B3_engagement",
+  "expected_behavior": "Recovers from initial misunderstanding by narrowing the scope. When corrected, does not repeat the same broad answer but focuses specifically on what the guest clarified they want",
+  "expected_behavioral_quality": "When the guest says the answer wasn't what they meant, immediately asks a clarifying question rather than guessing again. Acknowledges the misunderstanding without being defensive. Uses a narrowing question to zero in on intent.",
+  "safety_relevant": false,
+  "source_file": "behavioral_engagement.yaml",
+  "thread_id": "eval-engagement-06-1772818959",
+  "turns": [
+    {
+      "turn_index": 0,
+      "user_message": "What's happening tonight?",
+      "agent_response": "Friday nights at Mohegan Sun are always high-energy. Avalon Nightclub opens at 10:00 PM for those looking to hit the dance floor with a state-of-the-art sound system and top-tier DJs. If you prefer a more sophisticated atmosphere, novelle is open tonight for craft cocktails and DJ entertainment in an upscale lounge setting. For some laughs, Comix Roadhouse has comedy shows tonight that pair perfectly with their full dinner menu. \n\nOne of my favorite insider tips is starting at novelle for a drink before the nightclub crowd peaks as it\u2019s a great way to transition into the evening. After a big night out, the Elemis Spa is the perfect way to reset tomorrow morning! Are you leaning toward a high-energy nightclub vibe or something more laid back like a comedy show?",
+      "sources": [
+        {
+          "category": "entertainment",
+          "source": "mohegan_sun.json",
+          "score": 0.671
+        },
+        {
+          "category": "faq",
+          "source": "mohegan_sun.json",
+          "score": 0.662
+        }
+      ],
+      "elapsed_ms": 41432,
+      "error": null
+    },
+    {
+      "turn_index": 1,
+      "user_message": "No I meant like events, shows, that kind of thing",
+      "agent_response": "The Wolf Den is the center of the energy tonight with a free live performance, typically starting at 8:00 PM or 9:00 PM, featuring everything from national touring acts to top-tier tribute bands. If you're looking for something with a bit more bass, Avalon Nightclub starts their high-energy DJ sets at 10:00 PM, while novelle offers a more sophisticated lounge vibe with craft cocktails and DJ entertainment. The Arena also hosts major headliners, though the nightly shows at the Den are the best way to catch live music without needing a ticket!\n\nA little tip from someone who's been there\u2014the Wolf Den is an intimate 350-seat venue, so getting there a bit early is always a smart move to snag a good spot. Since you'll be right in the Casino of the Earth, grabbing dinner at Todd English's Tuscany before the music starts is a great way to kick off the night. Are you looking for a major concert experience or something a bit more intimate like the Wolf Den?",
+      "sources": [
+        {
+          "category": "entertainment",
+          "source": "mohegan_sun.json",
+          "score": 0.659
+        },
+        {
+          "category": "promotions",
+          "source": "mohegan_sun.json",
+          "score": 0.644
+        }
+      ],
+      "elapsed_ms": 50730,
+      "error": null
+    },
+    {
+      "turn_index": 2,
+      "user_message": "Yes, what shows are on tonight?",
+      "agent_response": "Tonight, the Wolf Den is hosting its nightly free live music performance, typically starting at 8:00 PM, where you can catch national touring acts in an intimate 350-seat setting. For a high-energy club experience, Avalon Nightclub opens at 10:00 PM with top DJs and a massive dance floor, or you can head to novelle for an upscale lounge vibe with a DJ and craft cocktails. While specific lineups can vary and are subject to change, the Wolf Den is famous for its electric atmosphere because the fans are right there with the performer.\n\nSince the Wolf Den shows are complimentary and first-come, first-served, I'd suggest arriving early to secure a seat as it fills up fast on Friday nights. If you're looking for a pre-show meal, Todd English's Tuscany is right nearby and serves incredible wood-fired dishes. Would you like to know about some other great dinner options near the venues before the music kicks off?",
+      "sources": [
+        {
+          "category": "entertainment",
+          "source": "mohegan_sun.json",
+          "score": 0.662
+        },
+        {
+          "category": "faq",
+          "source": "mohegan_sun.json",
+          "score": 0.677
+        }
+      ],
+      "elapsed_ms": 35321,
+      "error": null
+    }
+  ],
+  "completed": true
+}

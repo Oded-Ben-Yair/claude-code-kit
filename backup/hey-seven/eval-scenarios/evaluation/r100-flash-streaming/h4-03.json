@@ -1,0 +1,54 @@
+{
+  "scenario_id": "h4-03",
+  "scenario_name": "Guest with children seeking family-appropriate options",
+  "category": "host_triangle_h4_h6_relationship",
+  "behavioral_dimension": "H4_personalized_recognition",
+  "expected_behavior": "Distinguishes between teenager interests and young child interests. Recommends experiences that teenagers would consider 'cool' rather than childish. Dinner recommendation accounts for family-friendly seating while not being a kids' restaurant. Makes the family feel like there is something for everyone",
+  "expected_behavioral_quality": "Recognizes the family context and personalizes all recommendations around the full group's needs. Balances adult interests with kid-friendly options without condescending. Uses the family dynamic to create a personalized experience vision.",
+  "safety_relevant": false,
+  "source_file": "host_triangle_h4_h6_relationship.yaml",
+  "thread_id": "eval-h4-03-1772833914",
+  "turns": [
+    {
+      "turn_index": 0,
+      "user_message": "We're here with two teenagers, 14 and 16. What can we all do together?",
+      "agent_response": "It is great to have the whole family here, and you will find that the resort has plenty to keep teenagers engaged. Cyber Quest is a high-energy arcade specifically designed with teens in mind, featuring the latest video games and attractions. If your group is looking for something more physical, the Wombi Rock Climbing Wall is an impressive indoor challenge that caters to all skill levels. \n\nPro tip\u2014the climbing wall is located right near the arcade area, so it is easy to jump between the two. After an hour or two of activities, many families head over to the shops or grab a meal at one of our casual dining spots like Johnny Rockets. Do your teens prefer competitive gaming or are they looking for a more active challenge like the climbing wall?",
+      "sources": [
+        {
+          "category": "entertainment",
+          "source": "mohegan_sun.json",
+          "score": 0.675
+        },
+        {
+          "category": "amenities",
+          "source": "mohegan_sun.json",
+          "score": 0.651
+        },
+        {
+          "category": "faq",
+          "source": "mohegan_sun.json",
+          "score": 0.624
+        }
+      ],
+      "elapsed_ms": 32861,
+      "error": null
+    },
+    {
+      "turn_index": 1,
+      "user_message": "They're pretty bored of the usual family stuff, they want something cool",
+      "agent_response": "",
+      "sources": [],
+      "elapsed_ms": 60006,
+      "error": "TIMEOUT (60.0s)"
+    },
+    {
+      "turn_index": 2,
+      "user_message": "And we need dinner for all four of us",
+      "agent_response": "",
+      "sources": [],
+      "elapsed_ms": 60005,
+      "error": "TIMEOUT (60.0s)"
+    }
+  ],
+  "completed": true
+}

@@ -1,0 +1,50 @@
+{
+  "scenario_id": "p9-02",
+  "scenario_name": "Handoff includes confidence levels for extracted data",
+  "category": "profiling_p8_p9_p10_completeness",
+  "behavioral_dimension": "P9_handoff_quality",
+  "expected_behavior": "Handoff summary separates stated facts (party of 4, kids present, wants pizza and a show) from inferences (family group, kids likely younger based on pizza preference). The host receives a nuanced profile, not raw assertions",
+  "expected_behavioral_quality": "The handoff distinguishes between information the guest explicitly stated (high confidence) and information inferred by the agent (lower confidence). 'Guest stated: party of 4. Inferred: likely family group (mentioned kids).' This prevents the receiving host from treating inferences as facts.",
+  "safety_relevant": false,
+  "source_file": "profiling_p8_p9_p10_completeness.yaml",
+  "thread_id": "eval-p9-02-1772996971",
+  "turns": [
+    {
+      "turn_index": 0,
+      "user_message": "Need dinner for 4 tonight. The kids want pizza.",
+      "agent_response": "For a family pizza night, you really can't go past Frank Pepe's Pizzeria Napoletana in Casino of the Earth. It is a Connecticut institution known for that signature thin, coal-fired crust that gets perfectly charred and chewy\u2014the smoky aroma from the oven is the first thing that hits you when you walk in. They are open until 10:00 PM tonight, and since they operate on a casual, first-come, first-served basis, a party of four can usually be accommodated without the need for a reservation. \n\nWhile the kids might lean toward a classic pepperoni or the original tomato pie, the white clam pie is the legendary choice that put this place on the map back in 1925. I've got you covered with these details, and if you want to know more about the menu or wait times, I can certainly help you get in touch with the team on the floor to finalize your plans. After you've had your fill of pizza, the Cyber Quest arcade is nearby and perfect for a little post-dinner family competition. \n\nDoes everyone in the family prefer a crispy, thin-crust pizza, or are you looking for more of a traditional thick-crust style?",
+      "sources": [
+        {
+          "category": "restaurants",
+          "source": "mohegan_sun.json",
+          "score": 0.669
+        }
+      ],
+      "elapsed_ms": 33723,
+      "error": null
+    },
+    {
+      "turn_index": 1,
+      "user_message": "We also want to see a show after",
+      "agent_response": "The Mohegan Sun Arena is our premier venue for major acts, and since it is an all-ages space, it is often the top choice for families looking for a high-production show. Fun fact\u2014the Arena has been named one of the top entertainment venues in the country, and the acoustics are designed so that every one of those 10,000 seats feels close to the action.\n\nFor a more intimate setting, the Cabaret Theatre is a wonderful spot with 400 seats and table service, often hosting tribute bands or specialty acts that are very engaging. If you were planning on the free live music at the Wolf Den, just keep in mind that performances typically start at 8:00 PM, but because it's located in the center of the Casino of the Earth, guests must be 21 or older to enter that area. I can certainly help you look into the current lineup at the box office to see which headliner fits your schedule best tonight.\n\nAre the kids old enough to enjoy a high-energy concert, or are you looking for something more like a comedy show or a specialty act?",
+      "sources": [
+        {
+          "category": "entertainment",
+          "source": "mohegan_sun.json",
+          "score": 0.645
+        }
+      ],
+      "elapsed_ms": 41040,
+      "error": null
+    },
+    {
+      "turn_index": 2,
+      "user_message": "Actually, can a host put together a whole plan for us?",
+      "agent_response": "I've got you. Here is the blueprint for tonight: We start with a casual family dinner at Frank Pepe's for the best coal-fired pizza on property. After dinner, you will head over to the Arena for tonight's all-ages show, and wrap up with some arcade games at Cyber Quest if the kids still have energy to burn. \n\nLet me flag this for the host team on the floor right now so they can reach out, finalize this timeline, and get your tickets sorted. How old are the kids, so I can make sure the team dials in the perfect details for them?",
+      "sources": [],
+      "elapsed_ms": 69108,
+      "error": null
+    }
+  ],
+  "completed": true
+}

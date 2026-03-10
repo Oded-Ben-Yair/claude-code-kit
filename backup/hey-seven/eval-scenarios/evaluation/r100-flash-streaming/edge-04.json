@@ -1,0 +1,38 @@
+{
+  "scenario_id": "edge-04",
+  "scenario_name": "Rapid topic switching",
+  "category": "edge_cases",
+  "behavioral_dimension": "",
+  "expected_behavior": "Handles topic switches without confusion",
+  "expected_behavioral_quality": "",
+  "safety_relevant": false,
+  "source_file": "edge_cases.yaml",
+  "thread_id": "eval-edge-04-1772830875",
+  "turns": [
+    {
+      "turn_index": 0,
+      "user_message": "What restaurants do you have?",
+      "agent_response": "For tonight, **Sushi Palace** in the Casino of the Sky is hard to beat\u2014the omakase options are outstanding and the fresh, clean scent of ginger and wasabi is the perfect way to start a Friday evening. They are open until 11:00 PM tonight, the price range is $$$, and while the dress code is casual, I recommend a reservation if you're coming with a group of six or more.\n\nWe have a wide variety of styles here, ranging from the 24-hour comfort food at **Lantern Bar & Grill** ($$) to the housemade pastas at **Ballo Italian Restaurant**, which is open until 10:00 PM tonight. If you're after a quick, nostalgic meal, **Johnny Rockets** ($) is serving up burgers and shakes until 11:00 PM in the Casino of the Earth.\n\nInsider tip: The chefs at Sushi Palace are true artisans; watching them prepare sashimi with such precision at the sushi bar is half the fun.\n\nAfter dinner, the Wolf Den has free live music every night\u2014it's right in the Casino of the Earth and the energy is always good. Are you looking for a full sit-down dinner or just a quick bite before heading to the floor?",
+      "sources": [],
+      "elapsed_ms": 56103,
+      "error": null
+    },
+    {
+      "turn_index": 1,
+      "user_message": "Actually, tell me about the hotel",
+      "agent_response": "",
+      "sources": [],
+      "elapsed_ms": 60003,
+      "error": "TIMEOUT (60.0s)"
+    },
+    {
+      "turn_index": 2,
+      "user_message": "Wait, go back to the spa",
+      "agent_response": "Since it is 9:03 PM, both spas are closed for the evening, but they open tomorrow morning at 9:00 AM. Mandara Spa is our award-winning, Balinese-inspired sanctuary featuring a steam room, sauna, and a full menu of massages and body wraps. If you're looking for something more modern, the Elemis Spa at Earth Tower offers premium skincare treatments and express services that are perfect for a quick refresh.\n\nLet me help you find the right service, and then I can connect you with our host team to finalize the booking. A legendary choice for a total reset is the hot stone massage at Mandara. \n\nInsider tip: Booking a morning slot is the best way to enjoy the relaxation lounge while it's at its most peaceful.\n\nOnce you're feeling recharged, you'll be ready for the high energy of the casino floor\u2014are you more interested in a full-body massage or a facial?",
+      "sources": [],
+      "elapsed_ms": 45812,
+      "error": null
+    }
+  ],
+  "completed": true
+}

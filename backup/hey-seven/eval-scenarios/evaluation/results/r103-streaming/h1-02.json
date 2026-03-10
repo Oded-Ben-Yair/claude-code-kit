@@ -1,0 +1,81 @@
+{
+  "scenario_id": "h1-02",
+  "scenario_name": "Guest comparing Mohegan Sun to competitor",
+  "category": "host_triangle_h1_h3_development",
+  "behavioral_dimension": "H1_proactive_value_discovery",
+  "expected_behavior": "Highlights Mohegan Sun's dining portfolio as a competitive advantage without badmouthing Foxwoods. Discovers the guest's foodie identity and uses it to position the property. Creates a switching reason tied to the guest's stated values",
+  "expected_behavioral_quality": "When a guest compares to a competitor (Foxwoods, MGM), the agent highlights Mohegan Sun's unique differentiators without disparaging the competitor. Discovers what the guest values most and positions Mohegan Sun as the better fit for those specific preferences.",
+  "safety_relevant": false,
+  "source_file": "host_triangle_h1_h3_development.yaml",
+  "thread_id": "eval-h1-02-1772949938",
+  "turns": [
+    {
+      "turn_index": 0,
+      "user_message": "We usually go to Foxwoods. What's different about Mohegan Sun?",
+      "agent_response": "Mohegan Sun is designed around the heritage of the Mohegan Tribe, creating an immersive atmosphere that feels more like a retreat than just a gaming floor. You should start in the Casino of the Sky to see the planetarium dome overhead\u2014it\u2019s a great spot to grab a drink and get your bearings. What usually brings you out for a casino night, the tables or the dining?",
+      "sources": [
+        {
+          "category": "faq",
+          "source": "mohegan_sun.json",
+          "score": 0.769
+        },
+        {
+          "category": "gaming",
+          "source": "mohegan_sun.json",
+          "score": 0.729
+        },
+        {
+          "category": "property",
+          "source": "mohegan_sun.json",
+          "score": 0.741
+        }
+      ],
+      "elapsed_ms": 28594,
+      "error": null
+    },
+    {
+      "turn_index": 1,
+      "user_message": "We're big foodies and love trying new spots",
+      "agent_response": "For a true foodie, Hash House A Go Go in the Casino of the Earth is an absolute must-see for its \"twisted farm food\" and architectural portions. The sight of their sage fried chicken and waffles\u2014towering high with a literal pitchfork through the center\u2014is a rite of passage for guests here. They open at 8:00 AM today, making it the perfect spot for an adventurous breakfast in a casual setting. Reservations are not required and prices are mid-range, though I always suggest confirming hours and pricing when you arrive. \n\nSince you enjoy exploring new culinary scenes, are you more into bold comfort food or would you prefer a refined sushi experience for lunch later today? After you have finished your meal, the Wolf Den often has great live entertainment that is worth a visit.",
+      "sources": [
+        {
+          "category": "restaurants",
+          "source": "mohegan_sun.json",
+          "score": 0.643
+        }
+      ],
+      "elapsed_ms": 37376,
+      "error": null
+    },
+    {
+      "turn_index": 2,
+      "user_message": "Those sound amazing. Maybe we'll make the switch",
+      "agent_response": "We would love to have you. Since you are serious about the food scene, you should do dinner at Todd English's Tuscany and ask for the table right next to the Taughannick Falls waterfall. It is the most iconic seat on the property for a meal. Pro tip\u2014the flatbreads there are made in a wood-fired oven imported directly from Italy. \n\nAre you planning a day trip or staying overnight for your first visit?",
+      "sources": [
+        {
+          "category": "entertainment",
+          "source": "mohegan_sun.json",
+          "score": 0.632
+        },
+        {
+          "category": "promotions",
+          "source": "mohegan_sun.json",
+          "score": 0.622
+        },
+        {
+          "category": "hotel",
+          "source": "mohegan_sun.json",
+          "score": 0.617
+        },
+        {
+          "category": "gaming",
+          "source": "mohegan_sun.json",
+          "score": 0.621
+        }
+      ],
+      "elapsed_ms": 75208,
+      "error": null
+    }
+  ],
+  "completed": true
+}

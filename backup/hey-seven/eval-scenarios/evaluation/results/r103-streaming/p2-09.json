@@ -1,0 +1,64 @@
+{
+  "scenario_id": "p2-09",
+  "scenario_name": "Agent probes gaming level for comp eligibility",
+  "category": "profiling_p2_active_probing",
+  "behavioral_dimension": "P2_active_probing",
+  "expected_behavior": "Explains the Momentum program and naturally asks about the guest's current tier. Frames the tier question as enabling better guidance. When they say 'base level', provides actionable path to the next tier",
+  "expected_behavioral_quality": "When a guest asks about comps or the loyalty program, the agent asks about their Momentum tier or gaming level in a way that feels like helping them get better value, not assessing their worth. Frames as 'So I can check what's available for you'.",
+  "safety_relevant": false,
+  "source_file": "profiling_p2_active_probing.yaml",
+  "thread_id": "eval-p2-09-1772956381",
+  "turns": [
+    {
+      "turn_index": 0,
+      "user_message": "How do I earn free stuff here?",
+      "agent_response": "You earn rewards through the Momentum program by playing slots, table games, and poker, as well as by spending on dining, hotel stays, and retail. These points are redeemable for free play, meals, and hotel stays.\n\nJoining is free at any Momentum Desk, online, or via the Mohegan Sun app. As a new guest, you may be eligible for an introductory $10 free play bonus upon sign-up. For entertainment with no cover charge, the Wolf Den hosts nightly live performances from national acts that do not require a ticket.\n\nI can check for any specific promotions that might apply to your visit if you'll share your name with me. Are you planning to spend most of your time on the gaming floor or checking out the shops and restaurants?",
+      "sources": [],
+      "elapsed_ms": 45571,
+      "error": null
+    },
+    {
+      "turn_index": 1,
+      "user_message": "I think I'm at the base level",
+      "agent_response": "The Core tier is the entry level for the Momentum program. It allows you to earn Momentum Points and Tier Credits on slots, table games, and poker, as well as on dining and retail purchases. These points are redeemable for free play, hotel stays, and dining.\n\nAt, I've got you if you're looking for value; points typically stretch further at our casual dining locations like the buffet. You may also be eligible for a complimentary appetizer or dessert at select restaurants based on your play history. For entertainment without a cover charge, the Wolf Den provides nightly live music. You can confirm your specific point balance and any personalized offers at a Momentum Desk or via the Mohegan Sun app. After you've spent some time on the floor, do you usually prefer a quick bite or a sit-down dinner?",
+      "sources": [
+        {
+          "category": "promotions",
+          "source": "mohegan_sun.json",
+          "score": 0.631
+        },
+        {
+          "category": "entertainment",
+          "source": "mohegan_sun.json",
+          "score": 0.631
+        },
+        {
+          "category": "amenities",
+          "source": "mohegan_sun.json",
+          "score": 0.615
+        },
+        {
+          "category": "property",
+          "source": "mohegan_sun.json",
+          "score": 0.628
+        },
+        {
+          "category": "hotel",
+          "source": "mohegan_sun.json",
+          "score": 0.605
+        }
+      ],
+      "elapsed_ms": 39277,
+      "error": null
+    },
+    {
+      "turn_index": 2,
+      "user_message": "How do I move up?",
+      "agent_response": "You move up tiers by earning Tier Credits through gaming and resort spending on dining, hotel stays, and retail. To reach the Ignite tier, you must earn 2,500 Tier Credits. \n\nThe Ignite tier includes a 10% bonus on your Momentum Point earn rate and priority seating at restaurants. Based on available information, you may be eligible for select invitations to events once you reach this level. For higher levels, the Leap tier requires 10,000 Tier Credits and the Ascend tier requires 25,000. \n\nAt, you can check your current Tier Credit balance at any Momentum Desk or through the Mohegan Sun app to see how close you are to the next level. Since spending on meals also counts toward your tier progress, your dining choices can help you move up. After you finish on the gaming floor, do you usually prefer to head to the Wolf Den for music or do you like to browse the shops?",
+      "sources": [],
+      "elapsed_ms": 40617,
+      "error": null
+    }
+  ],
+  "completed": true
+}

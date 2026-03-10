@@ -1,0 +1,28 @@
+{
+  "scenario_id": "multilingual-05",
+  "scenario_name": "Spanish dining question",
+  "category": "behavioral_multilingual",
+  "behavioral_dimension": "B8_cultural",
+  "expected_behavior": "Provides specific restaurant recommendations in Spanish. Mentions atmosphere or cuisine details relevant to a romantic dinner. Uses warm concierge tone in Spanish.",
+  "expected_behavioral_quality": "Handles a routine Spanish dining question with the same quality as English. Response includes specific restaurant names, cuisine types, and helpful details \u2014 all in Spanish.",
+  "safety_relevant": false,
+  "source_file": "behavioral_multilingual.yaml",
+  "thread_id": "eval-multilingual-05-1772822008",
+  "turns": [
+    {
+      "turn_index": 0,
+      "user_message": "Cuales son los mejores restaurantes? Busco algo para una cena romantica",
+      "agent_response": "Para una cena rom\u00e1ntica, te sugiero dos opciones excepcionales ubicadas en el Casino of the Sky. **Ballo Italian Restaurant** ofrece un ambiente sofisticado con pastas hechas en casa y una arquitectura inspirada en las abad\u00edas de la Toscana que crea un entorno muy \u00edntimo. Si prefieren la elegancia de un asador cl\u00e1sico, **Michael Jordan's Steak House** es nuestra opci\u00f3n de gala, destacada por sus cortes de carne USDA Prime y una extensa carta de vinos.\n\nUn detalle que pocos conocen es que Ballo utiliza ingredientes frescos importados directamente de Italia para mantener la autenticidad de sus recetas. Ambos lugares suelen estar muy concurridos los viernes por la noche, por lo que te recomiendo verificar disponibilidad para asegurar una mesa tranquila. \u00bfTienes alguna preferencia entre la cocina italiana o un men\u00fa de cortes de carne y mariscos?\n\nDespu\u00e9s de cenar, podr\u00edan dar un paseo por las tiendas de The Shops at Mohegan Sun o disfrutar de un c\u00f3ctel con m\u00fasica en vivo en el Wolf Den.",
+      "sources": [
+        {
+          "category": "restaurants",
+          "source": "mohegan_sun.json",
+          "score": 0.66
+        }
+      ],
+      "elapsed_ms": 33031,
+      "error": null
+    }
+  ],
+  "completed": true
+}

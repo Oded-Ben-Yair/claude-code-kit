@@ -1,0 +1,75 @@
+{
+  "scenario_id": "h1-03",
+  "scenario_name": "Guest with a specific interest looking for depth",
+  "category": "host_triangle_h1_h3_development",
+  "behavioral_dimension": "H1_proactive_value_discovery",
+  "expected_behavior": "Demonstrates deep poker knowledge, treats the guest as a serious player, and builds a full weekend vision around the poker interest. Cross-sells dining and entertainment as part of a poker trip, not as disconnected amenities",
+  "expected_behavioral_quality": "When a guest signals deep interest in one domain (poker, spa, comedy), the agent demonstrates deep knowledge of that domain and connects it to related experiences. Discovers what level of engagement the guest wants and builds a personalized visit plan.",
+  "safety_relevant": false,
+  "source_file": "host_triangle_h1_h3_development.yaml",
+  "thread_id": "eval-h1-03-1772950080",
+  "turns": [
+    {
+      "turn_index": 0,
+      "user_message": "I'm really into poker. What's the poker scene like here?",
+      "agent_response": "I've got you covered on the poker front. You're going to love the action here; the room is open right now with 33 tables ready for play, as it's a 24/7 operation. It's one of the premier rooms in the Northeast, featuring No-Limit Texas Hold'em, Pot-Limit Omaha, and Limit Hold'em at all stakes.\n\nInsider tip: Sunday mornings have a great energy as the overnight games merge with the early tournament crowd. After a long session, a treatment at Elemis Spa is the perfect way to reset those shoulders! I'd be happy to connect you with the host team if you want to check the specific buy-ins for today's tournaments. \n\nDo you usually stick to cash games or are you looking to play in a tournament while you're here?",
+      "sources": [
+        {
+          "category": "gaming",
+          "source": "mohegan_sun.json",
+          "score": 0.681
+        },
+        {
+          "category": "faq",
+          "source": "mohegan_sun.json",
+          "score": 0.627
+        },
+        {
+          "category": "entertainment",
+          "source": "mohegan_sun.json",
+          "score": 0.622
+        }
+      ],
+      "elapsed_ms": 52794,
+      "error": null
+    },
+    {
+      "turn_index": 1,
+      "user_message": "Any tournaments coming up? I play pretty seriously",
+      "agent_response": "The Poker Room features daily tournaments with varying buy-ins and also hosts regular special event series throughout the year. When you play, ensure you use your Momentum card to earn Points and Tier Credits, which are redeemable for dining, hotel stays, and retail. Higher tiers, starting with Ignite at 2,500 Tier Credits, offer benefits like priority restaurant seating which is helpful during busy tournament breaks.\n\nFor the specific tournament schedule and blind structures today, the Poker Room desk has the most current information. Since you mentioned playing seriously, Michael Jordan\u2019s Steak House is a reliable choice for a high-protein meal to stay sharp between sessions. \n\nDo you prefer No-Limit Hold'em tournaments, or are you looking for Pot-Limit Omaha events?",
+      "sources": [
+        {
+          "category": "gaming",
+          "source": "mohegan_sun.json",
+          "score": 0.647
+        },
+        {
+          "category": "faq",
+          "source": "mohegan_sun.json",
+          "score": 0.626
+        },
+        {
+          "category": "amenities",
+          "source": "mohegan_sun.json",
+          "score": 0.612
+        },
+        {
+          "category": "entertainment",
+          "source": "mohegan_sun.json",
+          "score": 0.606
+        }
+      ],
+      "elapsed_ms": 50923,
+      "error": null
+    },
+    {
+      "turn_index": 2,
+      "user_message": "Nice. What else is good for a poker weekend?",
+      "agent_response": "For a serious poker weekend, the Sportsbook is your best move when you need a breather from the felt. It's the perfect spot to track the games and manage your bets on the massive high-definition screens without losing your competitive edge. \n\nSince you\u2019re putting in long hours, I\u2019ll flag your interest to the host team so they can keep an eye on your play and see how we can best support your stay. For a meal that gets you back to the action quickly but keeps you fueled, the Bow & Arrow sports bar in Casino of the Earth is my top pick for a solid burger and a great atmosphere. \n\nAre you visiting us from out of state for this poker run?",
+      "sources": [],
+      "elapsed_ms": 61753,
+      "error": null
+    }
+  ],
+  "completed": true
+}

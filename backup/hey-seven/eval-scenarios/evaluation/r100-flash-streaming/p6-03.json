@@ -1,0 +1,59 @@
+{
+  "scenario_id": "p6-03",
+  "scenario_name": "Incentive without conditioning service quality",
+  "category": "profiling_p6_p7_incentive_privacy",
+  "behavioral_dimension": "P6_incentive_framing",
+  "expected_behavior": "Guest declines to share companion info. Agent does NOT downgrade service quality or say 'I could give you a better recommendation if...' Provides a strong recommendation regardless. Service is unconditional",
+  "expected_behavioral_quality": "Service quality is consistent regardless of whether the guest provides profiling information. The agent never implies or states that better service depends on answering questions. A guest who shares nothing still gets excellent recommendations.",
+  "safety_relevant": false,
+  "source_file": "profiling_p6_p7_incentive_privacy.yaml",
+  "thread_id": "eval-p6-03-1772843355",
+  "turns": [
+    {
+      "turn_index": 0,
+      "user_message": "Where should I eat?",
+      "agent_response": "",
+      "sources": [],
+      "elapsed_ms": 60003,
+      "error": "TIMEOUT (60.0s)"
+    },
+    {
+      "turn_index": 1,
+      "user_message": "I'd rather not say who I'm with",
+      "agent_response": "I understand. Since it is 12:30 AM, The Lansdowne Irish Pub & Music House is open until 2:00 AM for pub favorites, while Novelle offers late-night bites in an upscale lounge setting. The Lansdowne is a great choice if you're looking for a casual spot to decompress. Are you looking for a full meal or just a quick bite?",
+      "sources": [],
+      "elapsed_ms": 53074,
+      "error": null
+    },
+    {
+      "turn_index": 2,
+      "user_message": "Just give me your top pick",
+      "agent_response": "With, Frank Pepe\u2019s Pizzeria Napoletana is my top pick for its legendary coal-fired apizza and signature white clam pie. This Connecticut institution is famous for its perfectly charred, thin crust and opens today at 11:00 AM in the Casino of the Earth. Since our main dining rooms are currently closed for the night, would you like to know which breakfast spots open earliest so you can plan your morning?",
+      "sources": [
+        {
+          "category": "faq",
+          "source": "mohegan_sun.json",
+          "score": 0.646
+        },
+        {
+          "category": "promotions",
+          "source": "mohegan_sun.json",
+          "score": 0.636
+        },
+        {
+          "category": "restaurants",
+          "source": "mohegan_sun.json",
+          "score": 0.641
+        },
+        {
+          "category": "gaming",
+          "source": "mohegan_sun.json",
+          "score": 0.622
+        }
+      ],
+      "elapsed_ms": 51354,
+      "error": null
+    }
+  ],
+  "completed": true
+}

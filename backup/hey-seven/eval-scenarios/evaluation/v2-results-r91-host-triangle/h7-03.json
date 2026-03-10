@@ -1,0 +1,77 @@
+{
+  "id": "h7-03",
+  "name": "Entertainment guest exploring other domains",
+  "source_file": "host_triangle_h7_h10_revenue.yaml",
+  "category": "host_triangle_h7_h10_revenue",
+  "behavioral_dimension": "H7_cross_selling_wallet_share",
+  "expected_behavior": "Builds a full evening around the Arena anchor: pre-show dinner at a nearby restaurant, the show itself, and post-show options (Wolf Den late show, Comix, casino floor). The guest leaves with a plan for an entire evening, not just a concert ticket",
+  "expected_behavioral_quality": "When a guest comes for entertainment, the agent expands the visit into dining and other experiences. The cross-sell turns a one-activity visit into a full resort evening where the show is the anchor but not the only experience.",
+  "safety_relevant": false,
+  "turns": [
+    {
+      "turn_index": 0,
+      "user_message": "We have Arena tickets for Saturday. What else should we do that night?",
+      "agent_response": "Since you'll already be in the heart of the action, I suggest starting your evening at novelle for a pre-show cocktail; it has a sophisticated atmosphere that really sets the tone for the night. After the Arena lets out, Avalon Nightclub keeps the energy high starting at ",
+      "sources": [
+        {
+          "category": "entertainment",
+          "source": "mohegan_sun.json",
+          "score": 0.67
+        },
+        {
+          "category": "restaurants",
+          "source": "mohegan_sun.json",
+          "score": 0.65
+        }
+      ],
+      "elapsed_ms": 52168,
+      "error": null
+    },
+    {
+      "turn_index": 1,
+      "user_message": "A pre-show dinner sounds great. Where?",
+      "agent_response": "For a pre-show dinner on Saturday, **Michael Jordan's Steak House** is the definitive choice for an elegant start to your evening. The dining room has a polished, high-energy atmosphere that matches the excitement of an Arena crowd, and the scent of USDA Prime steaks hitting the broiler is enough to work up anyone's appetite.\n\nLocated in the Casino of the Sky, it is conveniently close to the Arena entrance. They open at 5:00 PM on Saturdays, and given that it\u2019s a show night, I'd suggest securing a reservation well in advance. The price range is upscale ($$$$), and the dress code is business casual, making it the perfect spot to dress up a bit before the concert. \n\nIf you're making an evening of it, the Sky Tower rooms have great views and you're just steps away from the restaurant and the show. Do you have a favorite cut of steak, or are you more of a seafood lover?",
+      "sources": [
+        {
+          "category": "restaurants",
+          "source": "mohegan_sun.json",
+          "score": 0.692
+        },
+        {
+          "category": "entertainment",
+          "source": "mohegan_sun.json",
+          "score": 0.675
+        },
+        {
+          "category": "faq",
+          "source": "mohegan_sun.json",
+          "score": 0.639
+        }
+      ],
+      "elapsed_ms": 49721,
+      "error": null
+    },
+    {
+      "turn_index": 2,
+      "user_message": "And after the show? We don't want the night to end",
+      "agent_response": "The energy after an Arena show on Saturday is electric, and you have two perfect spots to keep the party going. Avalon Nightclub is our premier high-energy destination with top DJs and a massive dance floor, while novelle offers a more sophisticated ultra-lounge vibe with craft cocktails and a DJ. Both are popular post-show spots where the atmosphere stays vibrant well into the early morning hours.\n\nIf you find yourselves needing a late-night snack after the show or the club, Lantern Bar & Grill in the Casino of the Earth is open 24 hours and serves American favorites like burgers and steaks in a casual setting. Since it sounds like you'll be out late, an Elemis Spa massage on Sunday morning would be a legendary way to recover from the night. Do you prefer a high-energy dance floor or a more laid-back lounge atmosphere for your late-night plans?",
+      "sources": [
+        {
+          "category": "entertainment",
+          "source": "mohegan_sun.json",
+          "score": 0.713
+        },
+        {
+          "category": "restaurants",
+          "source": "mohegan_sun.json",
+          "score": 0.688
+        }
+      ],
+      "elapsed_ms": 31872,
+      "error": null
+    }
+  ],
+  "elapsed_ms": 133762,
+  "error": null,
+  "completed": true
+}

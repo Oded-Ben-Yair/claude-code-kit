@@ -1,0 +1,60 @@
+{
+  "scenario_id": "relationship-05",
+  "scenario_name": "Group dining inquiry \u2014 does agent profile party details?",
+  "category": "relationship_building",
+  "behavioral_dimension": "P1_natural_extraction",
+  "expected_behavior": "Agent profiles naturally: asks about occasion and party size (if not volunteered). When guest provides retirement+12 people+seafood, subsequent recommendations reference ALL THREE details. Offers host bridge for large party.",
+  "expected_behavioral_quality": "Agent extracts party size, occasion, and food preferences through natural conversation \u2014 not clinical questions. Uses gathered details to refine recommendations. By turn 4, references all previously mentioned details.",
+  "safety_relevant": false,
+  "source_file": "relationship_building.yaml",
+  "thread_id": "eval-relationship-05-1772910785",
+  "turns": [
+    {
+      "turn_index": 0,
+      "user_message": "We need a restaurant for tonight.",
+      "agent_response": "Tao Asian Bistro & Lounge in the Casino of the Sky is my top pick for tonight\u2014the dramatic, stylish setting and the aroma of signature pan-Asian spices create an atmosphere that is hard to match on a Saturday. They are open until 11:00 PM, and I'd suggest exploring their sushi bar or the dim sum selection while you take in the scenery. The dress code is smart casual and, as it is a prime weekend night, reservations are strongly recommended for this $$$ venue. \n\nI've got you on the details and can easily connect you with the host team to help finalize a table if that sounds like the right fit. Since you'll already be in the Casino of the Sky, you might enjoy heading over to the Wolf Den for some live music after your meal. Are you celebrating a special occasion this evening?",
+      "sources": [
+        {
+          "category": "restaurants",
+          "source": "mohegan_sun.json",
+          "score": 0.679
+        }
+      ],
+      "elapsed_ms": 32073,
+      "error": null
+    },
+    {
+      "turn_index": 1,
+      "user_message": "It's a retirement dinner for my boss. About 12 people.",
+      "agent_response": "Congratulations to your boss on such a massive milestone! For a retirement celebration of this caliber, Michael Jordan's Steak House in the Casino of the Sky is the premier choice for making a statement. \n\nThe aroma of searing USDA Prime steaks and the sophisticated, wood-toned atmosphere create exactly the kind of prestigious backdrop a career-capping dinner deserves. They are open until 10:00 PM tonight, the price range is $$$$, and the dress code is business casual. Since you are a party of 12, I'd suggest moving quickly to secure a table as they are highly sought after on Saturday nights. I've got you on all the details and can certainly connect you with the host team to help finalize those arrangements for your group. \n\nAfter the toasts are finished, you might consider heading over to novelle for a celebratory craft cocktail in their sophisticated lounge. Is your boss a fan of a classic steakhouse dinner, or were you leaning toward something like high-end Italian? Please keep in mind that hours and prices may vary, so confirming with the property is recommended.",
+      "sources": [],
+      "elapsed_ms": 52976,
+      "error": null
+    },
+    {
+      "turn_index": 2,
+      "user_message": "She's really into seafood.",
+      "agent_response": "Bobby Flay's Bar Americain in the Casino of the Earth is a fantastic choice for a seafood enthusiast; the menu highlights bold, regional American flavors with a specific focus on signature seafood and wood-grilled dishes. The vibrant brasserie atmosphere is perfect for a celebratory retirement dinner where you want a bit of energy and sophisticated flair. They are open until 11:00 PM tonight, the price range is typically $$$, and they recommend a smart casual dress code with reservations suggested for dinner. \n\nI\u2019ve got you on the details and can certainly connect you with the host team to help finalize a table for your group of 12. Please note that hours and prices may vary, so confirming with the property is a good idea. After your meal, the Wolf Den is right in the Casino of the Earth and offers free live music every night\u2014it's a great spot to continue the celebration! Does your boss prefer classic preparations or more adventurous, spice-forward seafood dishes?",
+      "sources": [],
+      "elapsed_ms": 60924,
+      "error": null
+    },
+    {
+      "turn_index": 3,
+      "user_message": "What time would work best for a group that size?",
+      "agent_response": "Since it\u2019s already 7:15 PM on a Saturday, I recommend aiming for a seating around 8:30 PM for a party of 12. This slightly later window often makes it easier for the dining teams to coordinate a large table so your boss and the whole group can stay together for the retirement toasts, and it ensures the service feels attentive rather than rushed during the peak dinner rush.\n\nI've got you on the details and can certainly connect you with the host team to help finalize a time that fits your group's flow. For the post-dinner celebration, novelle is an upscale ultra lounge nearby that is perfect for a party of 12 to grab craft cocktails in a sophisticated atmosphere\u2014it is open on Saturday nights and has a capacity for up to 500 guests. Just keep in mind that schedules and venue hours can change, so it's always a good idea to confirm with the property when you arrive.\n\nSince you'll be celebrating such a big milestone, are you looking for a spot with a high-energy DJ vibe or somewhere a bit more intimate for conversation?",
+      "sources": [],
+      "elapsed_ms": 67193,
+      "error": null
+    },
+    {
+      "turn_index": 4,
+      "user_message": "Great, we'll go with that.",
+      "agent_response": "Glad I could help. If you're on the gaming floor later, check your Momentum tier at the desk \u2014 you may have dining or spa credits. What sounds good?",
+      "sources": [],
+      "elapsed_ms": 2,
+      "error": null
+    }
+  ],
+  "completed": true
+}

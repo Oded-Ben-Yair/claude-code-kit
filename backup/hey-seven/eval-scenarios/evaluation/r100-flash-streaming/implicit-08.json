@@ -1,0 +1,65 @@
+{
+  "scenario_id": "implicit-08",
+  "scenario_name": "Fatigue indicators implying need for low-effort options",
+  "category": "behavioral_implicit",
+  "behavioral_dimension": "B2_implicit",
+  "expected_behavior": "Reads exhaustion and conference context as needing comfort-first recommendations. Prioritizes proximity, ease, and relaxation. Does not suggest gaming floor or shows",
+  "expected_behavioral_quality": "Detects fatigue signals (exhausted, long day, need to unwind) and shifts all recommendations toward restful, low-effort options. Does not suggest shows, gaming, or anything requiring energy.",
+  "safety_relevant": false,
+  "source_file": "behavioral_implicit.yaml",
+  "thread_id": "eval-implicit-08-1772820590",
+  "turns": [
+    {
+      "turn_index": 0,
+      "user_message": "We've been on our feet all day at the conference. Exhausted.",
+      "agent_response": "It sounds like you've had an incredibly long day, and I can help with that. you find a way to unwind. The Elemis Spa at Earth Tower is specifically designed for this kind of reset, offering premium skincare and therapeutic treatments that can help ease that fatigue. While they close at 7:00 PM tonight, booking a session for tomorrow morning might be the perfect way to reward yourself for a productive week.\n\nIf you aren't quite ready for bed, novelle is our upscale lounge that offers a much more relaxed, sophisticated atmosphere than the main gaming floor tonight. It is a great place to sink into a comfortable seat with a craft cocktail and just breathe for a while.\n\nMany guests find that the premium bedding and blackout curtains in our hotel towers are the best cure for a long conference. Would you like to know more about the specific massage treatments available at Elemis Spa to help with your recovery tomorrow?",
+      "sources": [
+        {
+          "category": "amenities",
+          "source": "mohegan_sun.json",
+          "score": 0.646
+        },
+        {
+          "category": "entertainment",
+          "source": "mohegan_sun.json",
+          "score": 0.651
+        },
+        {
+          "category": "hotel",
+          "source": "mohegan_sun.json",
+          "score": 0.641
+        }
+      ],
+      "elapsed_ms": 32814,
+      "error": null
+    },
+    {
+      "turn_index": 1,
+      "user_message": "Something close, we don't want to walk far",
+      "agent_response": "For a relaxing meal that won't require a hike if you are near the convention space, Mohegan Sun Caputo Trattoria in the Casino of the Earth is my top choice. The aroma of their brick-oven pizzas is incredibly comforting, and the casual booths are perfect for sinking into after a long day on your feet. They serve classic Italian favorites like pasta and calzones until 10:00 PM tonight.\n\nPro tip \u2014 their calzones are quite generous in size, making them a great option if you are looking to share a quick bite before heading back to your room. Since you are already in that area, the Wolf Den is nearby if you would like to sit and listen to some live music without having to walk any further. Would you prefer a sit-down pasta dinner or a specialty pizza to take back with you?",
+      "sources": [
+        {
+          "category": "faq",
+          "source": "mohegan_sun.json",
+          "score": 0.676
+        },
+        {
+          "category": "restaurants",
+          "source": "mohegan_sun.json",
+          "score": 0.665
+        }
+      ],
+      "elapsed_ms": 40260,
+      "error": null
+    },
+    {
+      "turn_index": 2,
+      "user_message": "Perfect. Anything else low-key tonight?",
+      "agent_response": "",
+      "sources": [],
+      "elapsed_ms": 60006,
+      "error": "TIMEOUT (60.0s)"
+    }
+  ],
+  "completed": true
+}

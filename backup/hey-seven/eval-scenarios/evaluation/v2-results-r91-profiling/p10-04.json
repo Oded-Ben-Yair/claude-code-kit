@@ -1,0 +1,100 @@
+{
+  "id": "p10-04",
+  "name": "Agent builds on accumulated knowledge progressively",
+  "source_file": "profiling_p8_p9_p10_completeness.yaml",
+  "category": "profiling_p8_p9_p10_completeness",
+  "behavioral_dimension": "P10_cross_turn_memory",
+  "expected_behavior": "Turn 4 response integrates ALL accumulated data: Maria's name, bachelorette occasion, party of 8, cocktail preference. The evening plan is tailored to the specific group profile, not a generic night out. Progressive refinement is evident",
+  "expected_behavioral_quality": "Each recommendation gets more personalized as the agent accumulates knowledge. Turn 1 is generic. Turn 3 reflects name, occasion, and dietary info. Turn 5 synthesizes everything into a highly personalized plan. The progressive refinement is visible.",
+  "safety_relevant": false,
+  "turns": [
+    {
+      "turn_index": 0,
+      "user_message": "What's there to do here?",
+      "agent_response": "You've arrived at a great time to explore the property. For entertainment, the Wolf Den has this incredible energy where you're right there with the performer, or you can check the schedule for our 10,000-seat Arena which hosts everything from major concerts to comedy. If you'd rather stay active, we have the Wombi Rock climbing wall and over 40 retail shops to browse, though many guests prefer to reset at the Elemis Spa after a long trip. Since it's Thursday morning, our weekend lineup is just around the corner. What brings you to Mohegan Sun today?",
+      "sources": [
+        {
+          "category": "faq",
+          "source": "mohegan_sun.json",
+          "score": 0.669
+        },
+        {
+          "category": "entertainment",
+          "source": "mohegan_sun.json",
+          "score": 0.668
+        },
+        {
+          "category": "amenities",
+          "source": "mohegan_sun.json",
+          "score": 0.669
+        }
+      ],
+      "elapsed_ms": 33099,
+      "error": null
+    },
+    {
+      "turn_index": 1,
+      "user_message": "I'm Maria, here for my sister's bachelorette",
+      "agent_response": "Congratulations to your sister, Maria. For a bachelorette celebration, SolToro Taqueria is a popular choice for a lively group dinner with an extensive tequila selection and a festive atmosphere. \n\nAfterward, you might enjoy novelle, which is our upscale lounge featuring craft cocktails and a DJ, or Avalon Nightclub if you are looking for a high-energy dance floor on Friday or Saturday night. Between the festivities, many groups also visit the Mandara Spa for some relaxation. How many guests are in your party for the weekend?",
+      "sources": [
+        {
+          "category": "entertainment",
+          "source": "mohegan_sun.json",
+          "score": 0.63
+        },
+        {
+          "category": "restaurants",
+          "source": "mohegan_sun.json",
+          "score": 0.611
+        },
+        {
+          "category": "hotel",
+          "source": "mohegan_sun.json",
+          "score": 0.607
+        }
+      ],
+      "elapsed_ms": 39082,
+      "error": null
+    },
+    {
+      "turn_index": 2,
+      "user_message": "There's 8 of us and we're all into cocktails",
+      "agent_response": "Maria, for a group of eight cocktail enthusiasts, the Birdcage Bar in the Casino of the Sky is a standout choice. The atmosphere is upscale and the menu focuses on premium spirits and artisanal ingredients, making it a great spot to toast your sister. They open today at 4:00 PM and stay open until 2:00 AM, though please keep in mind that hours and pricing can vary, so it's always wise to confirm with the property. \n\nSince it's Thursday, you might also consider novelle later this evening, which is our sophisticated ultra-lounge known for craft cocktails and DJ entertainment. If you find yourselves needing a late-night snack after the drinks, we have several 24-hour dining options available nearby to keep the celebration going. Are you looking for a high-energy spot with a DJ tonight or somewhere a bit more relaxed for your first round?",
+      "sources": [
+        {
+          "category": "entertainment",
+          "source": "mohegan_sun.json",
+          "score": 0.666
+        },
+        {
+          "category": "restaurants",
+          "source": "mohegan_sun.json",
+          "score": 0.653
+        },
+        {
+          "category": "property",
+          "source": "mohegan_sun.json",
+          "score": 0.631
+        },
+        {
+          "category": "gaming",
+          "source": "mohegan_sun.json",
+          "score": 0.626
+        }
+      ],
+      "elapsed_ms": 53291,
+      "error": null
+    },
+    {
+      "turn_index": 3,
+      "user_message": "Put together the perfect bachelorette evening",
+      "agent_response": "Maria, the perfect bachelorette evening starts with cocktails at the Birdcage Bar, followed by dinner at Tao Asian Bistro, and ends with the nightlife at novelle. \n\nThe Birdcage Bar in the Casino of the Sky opens at 4:00 PM and is a great spot for your group of eight to kick off the night with artisanal drinks. For dinner, Tao is popular for its high",
+      "sources": [],
+      "elapsed_ms": 58793,
+      "error": null
+    }
+  ],
+  "elapsed_ms": 184267,
+  "error": null,
+  "completed": true
+}

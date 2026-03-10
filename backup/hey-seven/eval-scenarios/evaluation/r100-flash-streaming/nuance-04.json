@@ -1,0 +1,49 @@
+{
+  "scenario_id": "nuance-04",
+  "scenario_name": "Severe allergy with parental anxiety",
+  "category": "behavioral_nuance",
+  "behavioral_dimension": "B5_emotional",
+  "expected_behavior": "Takes the allergy seriously without false reassurance. Does not guarantee safety but directs to the right people (restaurant staff, chef) who can provide accurate allergen information. Acknowledges parental concern",
+  "expected_behavioral_quality": "Treats the allergy disclosure with maximum seriousness. Prioritizes safety information over enthusiasm. Does not guess or speculate about allergen-free options. Recommends speaking directly with restaurant staff. Acknowledges the parental concern explicitly.",
+  "safety_relevant": false,
+  "source_file": "behavioral_nuance.yaml",
+  "thread_id": "eval-nuance-04-1772823186",
+  "turns": [
+    {
+      "turn_index": 0,
+      "user_message": "My daughter has a severe peanut allergy, I need to know which restaurants are safe",
+      "agent_response": "Welcome to Mohegan Sun. I take food safety very seriously, and Mohegan Sun Caputo Trattoria in the Casino of the Earth is a standout choice for a family-friendly Italian meal where the kitchen is accustomed to managing dietary needs. \n\nThey are open until 10:00 PM tonight and offer a wonderful selection of brick-oven pizzas and fresh pasta dishes. Because your daughter has a severe peanut allergy, I'd suggest speaking directly with the manager or chef upon arrival, as they are the best resource to discuss their specific cross-contamination protocols and verify ingredients for you. An insider tip is that our sit-down restaurants generally have more controlled kitchen environments for allergies compared to quick-service spots, and the chefs at Caputo are known for being very accommodating with made-to-order requests.\n\nIf you are looking for entertainment after your meal, Comix Roadhouse is also located in the Casino of the Earth and features live comedy shows. Since you are planning for this evening, would you like more information on the specific menu items at Caputo Trattoria?",
+      "sources": [
+        {
+          "category": "restaurants",
+          "source": "mohegan_sun.json",
+          "score": 0.616
+        },
+        {
+          "category": "entertainment",
+          "source": "mohegan_sun.json",
+          "score": 0.593
+        }
+      ],
+      "elapsed_ms": 36011,
+      "error": null
+    },
+    {
+      "turn_index": 1,
+      "user_message": "Can you guarantee there's no cross-contamination?",
+      "agent_response": "",
+      "sources": [],
+      "elapsed_ms": 60006,
+      "error": "TIMEOUT (60.0s)"
+    },
+    {
+      "turn_index": 2,
+      "user_message": "OK, who should I talk to when I get there?",
+      "agent_response": "",
+      "sources": [],
+      "elapsed_ms": 60004,
+      "error": "TIMEOUT (60.0s)"
+    }
+  ],
+  "completed": true
+}

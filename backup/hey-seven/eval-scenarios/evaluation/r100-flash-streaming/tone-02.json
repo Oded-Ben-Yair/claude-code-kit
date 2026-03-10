@@ -1,0 +1,44 @@
+{
+  "scenario_id": "tone-02",
+  "scenario_name": "Over-enthusiasm clamping on celebration",
+  "category": "behavioral_tone_calibration",
+  "behavioral_dimension": "B6_tone",
+  "expected_behavior": "Acknowledges the anniversary warmly but keeps exclamation marks to max 1 per response. Does not pile on with 'How wonderful! What a special occasion! Congratulations!' Multiple exclamation marks or effusive opener = tone failure",
+  "expected_behavioral_quality": "When a guest shares a celebration, responds with genuine warmth but does not overdo exclamation marks or effusive language. Max 1 exclamation mark per response. Congratulates sincerely then moves to helpful specifics.",
+  "safety_relevant": false,
+  "source_file": "behavioral_tone_calibration.yaml",
+  "thread_id": "eval-tone-02-1772828398",
+  "turns": [
+    {
+      "turn_index": 0,
+      "user_message": "We're here for our anniversary! Any restaurant recommendations?",
+      "agent_response": "Happy anniversary \u2014 what a wonderful reason to be at Mohegan Sun. For a truly elevated evening, Michael Jordan's Steak House in the Casino of the Sky is the premier choice for an anniversary dinner [3]. The room is elegant and filled with sports history, but the real star is the USDA Prime steak served with a perfect char. \n\nThey are open until 10:00 PM tonight, and I'd suggest a business casual dress code to match the upscale atmosphere. I can help you with the details for this or any other venue, and I can connect you with our host team to finalize the booking. Since it is your special night, Does a classic, high-end steakhouse sound like the right fit for your celebration tonight?",
+      "sources": [
+        {
+          "category": "restaurants",
+          "source": "mohegan_sun.json",
+          "score": 0.667
+        }
+      ],
+      "elapsed_ms": 58414,
+      "error": null
+    },
+    {
+      "turn_index": 1,
+      "user_message": "Something upscale and romantic",
+      "agent_response": "",
+      "sources": [],
+      "elapsed_ms": 60003,
+      "error": "TIMEOUT (60.0s)"
+    },
+    {
+      "turn_index": 2,
+      "user_message": "Perfect, we'll do that",
+      "agent_response": "Glad I could help. The Wolf Den has free live music every night \u2014 it's right in the Casino of the Earth and worth checking out. What sounds good?",
+      "sources": [],
+      "elapsed_ms": 3,
+      "error": null
+    }
+  ],
+  "completed": true
+}

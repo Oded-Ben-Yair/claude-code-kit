@@ -1,0 +1,72 @@
+{
+  "id": "coherence-01",
+  "name": "Re-asking guest name after it was already given",
+  "source_file": "behavioral_multiturn_coherence.yaml",
+  "category": "behavioral_multiturn_coherence",
+  "behavioral_dimension": "B7_coherence",
+  "expected_behavior": "Sarah's name captured in turn 1 and used naturally in later turns without re-asking. By turn 3, 'Sarah' should appear in the response as a natural address. Agent never asks 'What's your name?' or 'And who am I speaking with?'",
+  "expected_behavioral_quality": "Guest introduces themselves in turn 1. Agent must NOT ask for name in any subsequent turn. Name should appear naturally in later responses (sign-offs, confirmations) without being re-asked.",
+  "safety_relevant": false,
+  "turns": [
+    {
+      "turn_index": 0,
+      "user_message": "Hi, I'm Sarah. What restaurants do you have?",
+      "agent_response": "Welcome to Mohegan Sun, Sarah. For tonight, SolToro Taqueria & Tequila Bar in the Casino of the Earth is a standout choice for authentic Mexican cuisine in a high-energy setting. \n\nThe air is often filled with the scent of fresh-pressed tortillas, and their extensive tequila and mezcal list is quite impressive for anyone looking to sample something new. They are open until 10:00 PM this evening with a casual dress code, and you generally won't need a reservation to get a table.\n\nAfter you finish your meal, you might enjoy walking over to the Wolf Den nearby, which features free live music every night and has a great atmosphere.\n\nAre you looking for a full sit-down dinner or something a bit quicker?",
+      "sources": [
+        {
+          "category": "restaurants",
+          "source": "mohegan_sun.json",
+          "score": 0.655
+        }
+      ],
+      "elapsed_ms": 48694,
+      "error": null
+    },
+    {
+      "turn_index": 1,
+      "user_message": "What about the spa?",
+      "agent_response": "Sarah, Since it is 6:34 PM, you still have a little time this evening, though both of our spas will be closing within the next hour or so.\n\nMandara Spa is open until 8:00 PM and is a full-service sanctuary inspired by Balinese healing traditions. It is a fantastic place to find some peace in their relaxation lounge or steam room. For a more modern feel, Elemis Spa in the Earth Tower is open until 7:00 PM, and their hot stone massage is legendary for melting away stress. If you are a hotel guest and just want a warm soak tonight, the heated indoor pool and hot tub are available until 10:00 PM.\n\nI can certainly give you more details on their signature treatments if you are planning a visit for tomorrow morning. Do you usually prefer a deep tissue massage or more of a rejuvenating facial?",
+      "sources": [
+        {
+          "category": "amenities",
+          "source": "mohegan_sun.json",
+          "score": 0.687
+        },
+        {
+          "category": "faq",
+          "source": "mohegan_sun.json",
+          "score": 0.654
+        },
+        {
+          "category": "property",
+          "source": "mohegan_sun.json",
+          "score": 0.643
+        },
+        {
+          "category": "promotions",
+          "source": "mohegan_sun.json",
+          "score": 0.645
+        }
+      ],
+      "elapsed_ms": 33069,
+      "error": null
+    },
+    {
+      "turn_index": 2,
+      "user_message": "Can you recommend something fun tonight?",
+      "agent_response": "Sarah, you should definitely head over to the Wolf Den tonight. It has this electric, intimate energy where you're right there with the performers, and since the shows are complimentary, it's the perfect way to spend a Wednesday evening. \n\nThe performance typically starts around 8:00 PM, and since seating is first-come, first-served, it's a good idea to head that way soon to find a spot. For a Wednesday, it\u2019s a great chance to catch a national touring act or a high-energy tribute band without needing a ticket.\n\nIf you find yourself hungry after the show, the Lantern Bar & Grill is open 24 hours for a late-night burger or snack. Are you coming with a group or is it just you tonight?",
+      "sources": [
+        {
+          "category": "entertainment",
+          "source": "mohegan_sun.json",
+          "score": 0.687
+        }
+      ],
+      "elapsed_ms": 26952,
+      "error": null
+    }
+  ],
+  "elapsed_ms": 108716,
+  "error": null,
+  "completed": true
+}

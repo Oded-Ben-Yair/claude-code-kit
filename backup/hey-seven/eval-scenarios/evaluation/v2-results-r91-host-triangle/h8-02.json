@@ -1,0 +1,81 @@
+{
+  "id": "h8-02",
+  "name": "Guest asking about loyalty rewards value",
+  "source_file": "host_triangle_h7_h10_revenue.yaml",
+  "category": "host_triangle_h7_h10_revenue",
+  "behavioral_dimension": "H8_strategic_offer_framing",
+  "expected_behavior": "Explains point redemption options across property domains (dining, spa, hotel, entertainment, free play). When the guest chooses the steakhouse, frames it as 'a dinner you've earned.' The redemption feels like a reward, not a coupon",
+  "expected_behavioral_quality": "When a guest asks about rewards value, the agent frames Momentum Points as a recognition of their play rather than a transactional currency. Connects point redemption to experiences (dining, spa, shows) rather than just dollar equivalents.",
+  "safety_relevant": false,
+  "turns": [
+    {
+      "turn_index": 0,
+      "user_message": "I've got a bunch of Momentum Points saved up. What can I actually use them for?",
+      "agent_response": "Momentum Points are redeemable for free play, dining at participating Mohegan Sun restaurants, hotel stays, and retail purchases. Based on available information, redemption is subject to current availability and program terms.\n\nWhile you use those points, you are likely also accumulating Tier Credits. Reaching the Ignite tier at 2,500 credits provides a 10% bonus on your point earning rate and priority restaurant seating. Are you looking to use your points for a meal tonight, or were you thinking of booking a hotel stay?",
+      "sources": [],
+      "elapsed_ms": 41320,
+      "error": null
+    },
+    {
+      "turn_index": 1,
+      "user_message": "Can I use them at the steakhouse?",
+      "agent_response": "You can certainly use your points at Michael Jordan\u2019s Steak House in the Casino of the Sky. It is our most refined steakhouse, serving USDA Prime cuts and fresh seafood in an elegant environment that feels both sophisticated and high-energy. They open tonight at 5:00 PM and recommend business casual attire, making it a perfect spot to enjoy those saved-up rewards. ",
+      "sources": [
+        {
+          "category": "faq",
+          "source": "mohegan_sun.json",
+          "score": 0.692
+        },
+        {
+          "category": "restaurants",
+          "source": "mohegan_sun.json",
+          "score": 0.703
+        },
+        {
+          "category": "promotions",
+          "source": "mohegan_sun.json",
+          "score": 0.654
+        },
+        {
+          "category": "entertainment",
+          "source": "mohegan_sun.json",
+          "score": 0.66
+        }
+      ],
+      "elapsed_ms": 36465,
+      "error": null
+    },
+    {
+      "turn_index": 2,
+      "user_message": "Awesome, free steak dinner it is",
+      "agent_response": "Redemption at Michael Jordan's Steak House is subject to your available point balance and the program's terms. I'd suggest confirming your point total at a Momentum Desk or via the Mohegan Sun app to ensure it covers the cost of your meal. \n\nIf you're looking for other free activities after dinner, the Wolf Den in the Casino of the Earth has live music every night with no cover charge. Do you need the location of the nearest Momentum Desk to check your balance before you go?",
+      "sources": [
+        {
+          "category": "promotions",
+          "source": "mohegan_sun.json",
+          "score": 0.649
+        },
+        {
+          "category": "restaurants",
+          "source": "mohegan_sun.json",
+          "score": 0.639
+        },
+        {
+          "category": "property",
+          "source": "mohegan_sun.json",
+          "score": 0.637
+        },
+        {
+          "category": "faq",
+          "source": "mohegan_sun.json",
+          "score": 0.621
+        }
+      ],
+      "elapsed_ms": 31867,
+      "error": null
+    }
+  ],
+  "elapsed_ms": 109653,
+  "error": null,
+  "completed": true
+}

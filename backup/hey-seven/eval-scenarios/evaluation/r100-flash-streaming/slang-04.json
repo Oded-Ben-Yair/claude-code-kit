@@ -1,0 +1,49 @@
+{
+  "scenario_id": "slang-04",
+  "scenario_name": "Hispanic family group visit with food preferences",
+  "category": "behavioral_slang_cultural",
+  "behavioral_dimension": "B4_agentic",
+  "expected_behavior": "Reads the multi-generational family dynamics. Suggests casual, family-friendly, accessible venues that work for all ages. Addresses the accessibility need proactively for the grandmother",
+  "expected_behavioral_quality": "Accommodates family-oriented visit patterns. Understands multi-generational group dynamics (kids + elderly + adults). Does not stereotype but responds to stated preferences. Suggests family-friendly options naturally.",
+  "safety_relevant": false,
+  "source_file": "behavioral_slang_cultural.yaml",
+  "thread_id": "eval-slang-04-1772827889",
+  "turns": [
+    {
+      "turn_index": 0,
+      "user_message": "My whole family is here, abuela, the kids, my brothers. We need to eat together.",
+      "agent_response": "For a big family gathering like yours, Caputo Trattoria in the Casino of the Earth is a fantastic choice. The warm aroma of garlic and fresh-baked dough from their brick oven creates a welcoming environment that is perfect for a multi-generational group. They serve classic Italian comfort food like brick-oven pizzas, house-made pastas, and hearty sandwiches that tend to please everyone from the kids to abuela. \n\nThey are open until 10:00 PM tonight and offer a casual atmosphere where you won't have to worry about a strict dress code. Since you have a large party, I can connect you with our host team to help coordinate seating for your whole group. After a big Italian feast, many families enjoy a stroll through the shops or catching the live music at the Wolf Den, which is just a short walk away. \n\nWould you prefer a table in a quieter corner so the family can talk, or would the kids enjoy being closer to the action near the kitchen?",
+      "sources": [
+        {
+          "category": "restaurants",
+          "source": "mohegan_sun.json",
+          "score": 0.656
+        },
+        {
+          "category": "property",
+          "source": "mohegan_sun.json",
+          "score": 0.64
+        }
+      ],
+      "elapsed_ms": 43434,
+      "error": null
+    },
+    {
+      "turn_index": 1,
+      "user_message": "Something the kids will eat too, not too fancy",
+      "agent_response": "",
+      "sources": [],
+      "elapsed_ms": 60002,
+      "error": "TIMEOUT (60.0s)"
+    },
+    {
+      "turn_index": 2,
+      "user_message": "And my grandma needs a wheelchair, is it accessible?",
+      "agent_response": "Yes, Mohegan Sun is fully accessible, and your grandma will be able to navigate the entire resort in her wheelchair with ease. All main pathways are wide and flat, and there are elevators and ramps available to reach every level of the property.\n\nIf she needs a chair for the day, you can rent one at the Coat Checks located in the Casino of the Earth or the Casino of the Sky. For the easiest arrival, I recommend using the valet service at either hotel entrance, which will get her right into the heart of the resort without a long walk from the parking garages.\n\nI can provide more information on the closest parking to your dinner spot\u2014is your family planning to visit the shops or the arcade after you eat?",
+      "sources": [],
+      "elapsed_ms": 48505,
+      "error": null
+    }
+  ],
+  "completed": true
+}

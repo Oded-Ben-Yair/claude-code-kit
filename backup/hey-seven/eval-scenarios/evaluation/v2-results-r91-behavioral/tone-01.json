@@ -1,0 +1,61 @@
+{
+  "id": "tone-01",
+  "name": "Slop opener detection \u2014 routine dining question",
+  "source_file": "behavioral_tone_calibration.yaml",
+  "category": "behavioral_tone_calibration",
+  "behavioral_dimension": "B6_tone",
+  "expected_behavior": "No response begins with 'Oh' or contains slop words like 'delighted', 'absolutely', 'wonderful', or 'fantastic'. Warmth expressed through specific details about the restaurants, not through enthusiasm language",
+  "expected_behavioral_quality": "Responds to a routine dining question without opening with AI-slop words (Oh!, delighted, absolutely, wonderful, fantastic). Provides useful restaurant information with warmth from specificity, not from adjective density.",
+  "safety_relevant": false,
+  "turns": [
+    {
+      "turn_index": 0,
+      "user_message": "What restaurants do you have?",
+      "agent_response": "Since it is early morning, Lantern Bar & Grill in the Casino of the Earth is your best option right now as it is open 24 hours. It is a casual spot where the aroma of grilled favorites is always in the air, offering a full American menu from steaks to late-night snacks in a mid-price range.\n\nIf you can wait until 8:00 AM, Hash House A Go Go is famous for its \"twisted farm food\" and massive portions, like their signature sage fried chicken and waffles, which are perfect for a hearty start to the day. For a more refined evening, Ballo Italian Restaurant in the Casino of the Sky opens at 5:00 PM and features incredible housemade pastas in a smart-casual setting. Our chefs across the property are also very accommodating with dietary needs, so we can always find great vegetarian or gluten-free options for you. Please note that hours and prices may vary, so it is a good idea to confirm details when you arrive.\n\nAfter you have had a chance to eat, you might enjoy checking out the free live music at the Wolf Den in the Casino of the Earth. Are you looking for a substantial breakfast to start your morning or are you planning a more formal dinner for later tonight?",
+      "sources": [
+        {
+          "category": "restaurants",
+          "source": "mohegan_sun.json",
+          "score": 0.67
+        }
+      ],
+      "elapsed_ms": 47242,
+      "error": null
+    },
+    {
+      "turn_index": 1,
+      "user_message": "Tell me more about the steakhouse",
+      "agent_response": "Michael Jordan's Steak House in the Casino of the Sky is the standout choice for USDA Prime steaks and fresh seafood in an elegant, upscale setting. It opens tonight at 5:00 PM and follows a business casual dress code with prices in the $$$$ range. Given its popularity, reservations are highly recommended to ensure you get a table.\n\nAfter a high-end dinner, the Wolf Den in the Casino of the Earth often has great live music to keep the night going. Are you planning a special occasion or just looking for a great meal?",
+      "sources": [
+        {
+          "category": "restaurants",
+          "source": "mohegan_sun.json",
+          "score": 0.684
+        },
+        {
+          "category": "faq",
+          "source": "mohegan_sun.json",
+          "score": 0.645
+        },
+        {
+          "category": "property",
+          "source": "mohegan_sun.json",
+          "score": 0.639
+        }
+      ],
+      "elapsed_ms": 22363,
+      "error": null
+    },
+    {
+      "turn_index": 2,
+      "user_message": "Sounds good, thanks",
+      "agent_response": "Glad I could help. The Wolf Den has free live music every night \u2014 it's right in the Casino of the Earth and worth checking out. What sounds good?",
+      "sources": [],
+      "elapsed_ms": 2,
+      "error": null
+    }
+  ],
+  "elapsed_ms": 69608,
+  "error": null,
+  "completed": true
+}

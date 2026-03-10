@@ -1,0 +1,81 @@
+{
+  "scenario_id": "p1-04",
+  "scenario_name": "Guest mentions party size implicitly",
+  "category": "profiling_p1_natural_extraction",
+  "behavioral_dimension": "P1_natural_extraction",
+  "expected_behavior": "Registers 'me and the wife' as party of 2 and tilts toward romantic or couples-appropriate recommendations. Does not ask 'how many in your party?' when it was already stated",
+  "expected_behavioral_quality": "Infers party size from conversational cues like pronouns and companion mentions. 'Me and the wife' means party of 2. 'The four of us' means party of 4. Does not ask for a headcount when it has been stated implicitly.",
+  "safety_relevant": false,
+  "source_file": "profiling_p1_natural_extraction.yaml",
+  "thread_id": "eval-p1-04-1772989804",
+  "turns": [
+    {
+      "turn_index": 0,
+      "user_message": "Me and the wife are looking for a nice dinner spot",
+      "agent_response": "I've got you. For a memorable night with your wife, Todd English's Tuscany in the Casino of the Sky is the standout choice. The wood-fired aroma from the open kitchen hits you immediately, and the tables overlooking the waterfall offer the most romantic atmosphere on the property. \n\nThey are serving their signature handmade pastas and wood-fired pizzas until 10:00 PM tonight, and the business casual setting is perfect for a special dinner. Pro tip\u2014the waterfall seating is the most requested for a reason, as it really provides an intimate escape from the casino floor. Please keep in mind that hours and pricing can vary, so it is always a good idea to confirm details upon arrival.\n\nAfter you finish your meal, the Wolf Den often has live music right nearby if you're in the mood to keep the evening going. Do the two of you have any specific dietary preferences or allergies I should keep in mind while I help you narrow this down?",
+      "sources": [
+        {
+          "category": "restaurants",
+          "source": "mohegan_sun.json",
+          "score": 0.652
+        }
+      ],
+      "elapsed_ms": 36678,
+      "error": null
+    },
+    {
+      "turn_index": 1,
+      "user_message": "Something with a view or good atmosphere",
+      "agent_response": "If you are looking for an incredible atmosphere, Tao Asian Bistro & Lounge is my absolute top pick for tonight. It is located right in the soaring, celestial-themed Casino of the Sky, and the dining room features a dramatic, stylish setting that is perfect for a date night. \n\nTheir pan-Asian menu is fantastic, especially if you enjoy an upscale sushi bar and dim sum, paired with one of their signature craft cocktails. They are open until 11:00 PM this evening, and the dress code is smart casual. Just keep in mind that hours and pricing can sometimes vary, so it is always good to confirm when you arrive. \n\nAfter your meal, you could easily stroll over to the Birdcage Bar nearby for a premium post-dinner drink, as they are open until 2:00 AM tonight. \n\nAre the two of you celebrating a specific occasion on this trip, or just enjoying a well-deserved getaway?",
+      "sources": [
+        {
+          "category": "entertainment",
+          "source": "mohegan_sun.json",
+          "score": 0.676
+        },
+        {
+          "category": "gaming",
+          "source": "mohegan_sun.json",
+          "score": 0.656
+        },
+        {
+          "category": "restaurants",
+          "source": "mohegan_sun.json",
+          "score": 0.65
+        },
+        {
+          "category": "hotel",
+          "source": "mohegan_sun.json",
+          "score": 0.651
+        }
+      ],
+      "elapsed_ms": 54082,
+      "error": null
+    },
+    {
+      "turn_index": 2,
+      "user_message": "That sounds perfect for the two of us",
+      "agent_response": "Tao is going to be a fantastic experience for the two of you. I can connect you with our host team to finalize that table whenever you are ready. \n\nPro tip\u2014if you don't already have accommodations, staying over means you can enjoy the night fully without worrying about the drive home. The Deluxe Rooms in our Earth Tower feature floor-to-ceiling windows and a fresh, contemporary design that makes for a perfect couple's retreat after a big night out, starting around $169 a night depending on the season. \n\nI want to make sure I am giving you the best personalized recommendations for your visit. Who do I have the pleasure of speaking with?",
+      "sources": [
+        {
+          "category": "entertainment",
+          "source": "mohegan_sun.json",
+          "score": 0.653
+        },
+        {
+          "category": "hotel",
+          "source": "mohegan_sun.json",
+          "score": 0.64
+        },
+        {
+          "category": "property",
+          "source": "mohegan_sun.json",
+          "score": 0.648
+        }
+      ],
+      "elapsed_ms": 73505,
+      "error": null
+    }
+  ],
+  "completed": true
+}

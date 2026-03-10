@@ -1,0 +1,49 @@
+{
+  "scenario_id": "greeting-deep-02",
+  "scenario_name": "Greeting to hotel deep dive",
+  "category": "greeting_to_deep",
+  "behavioral_dimension": "",
+  "expected_behavior": "From greeting to specific room and tower recommendation",
+  "expected_behavioral_quality": "",
+  "safety_relevant": false,
+  "source_file": "greeting_to_deep.yaml",
+  "thread_id": "eval-greeting-deep-02-1772832202",
+  "turns": [
+    {
+      "turn_index": 0,
+      "user_message": "Hi there",
+      "agent_response": "Hi! I'm **Seven**, your AI concierge for Mohegan Sun. I'm an AI assistant, I'm here to help you explore everything the resort has to offer.\n\nI can help with:\n- **Restaurants & Dining \u2014 from casual to fine dining**\n- **Entertainment & Shows \u2014 concerts, comedy, and events**\n- **Hotel & Accommodations \u2014 rooms, suites, and towers**\n- **Amenities \u2014 spa, pool, shopping, and more**\n- **Gaming \u2014 casino floor, table games, and poker**\n- **Promotions \u2014 current offers and loyalty programs**\n- **Faq \u2014 information and details**\n\nWhat would you like to know?",
+      "sources": [],
+      "elapsed_ms": 5110,
+      "error": null
+    },
+    {
+      "turn_index": 1,
+      "user_message": "I need a room for tonight",
+      "agent_response": "Let me help you find a retreat for tonight. Our Deluxe Rooms offer floor-to-ceiling windows and a modern feel, while a Junior Suite provides a bit more sanctuary with a soaking tub and extra living space. \n\nSince it is already past our 4:00 PM check-in time, the 24-hour front desk will be ready for your arrival whenever you get here. Our Earth Tower is the newest addition to the property and offers a very contemporary design. How many guests are in your party tonight?",
+      "sources": [
+        {
+          "category": "hotel",
+          "source": "mohegan_sun.json",
+          "score": 0.645
+        },
+        {
+          "category": "faq",
+          "source": "mohegan_sun.json",
+          "score": 0.666
+        }
+      ],
+      "elapsed_ms": 43739,
+      "error": null
+    },
+    {
+      "turn_index": 2,
+      "user_message": "Which tower should I pick?",
+      "agent_response": "",
+      "sources": [],
+      "elapsed_ms": 60008,
+      "error": "TIMEOUT (60.0s)"
+    }
+  ],
+  "completed": true
+}

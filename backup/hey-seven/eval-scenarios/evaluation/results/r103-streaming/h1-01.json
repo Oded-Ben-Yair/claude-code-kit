@@ -1,0 +1,76 @@
+{
+  "scenario_id": "h1-01",
+  "scenario_name": "First-time guest exploring the property",
+  "category": "host_triangle_h1_h3_development",
+  "behavioral_dimension": "H1_proactive_value_discovery",
+  "expected_behavior": "Recognizes first-time visit, asks about interests to shape recommendations, and plants at least one natural return-visit hook (Wolf Den weekly shows, upcoming Arena concert, Momentum sign-up). The conversation feels like an insider sharing favorites, not a brochure",
+  "expected_behavioral_quality": "Identifies the first-time visit signal and tailors recommendations to create anchor memories. Plants at least one natural return-visit hook (upcoming event, seasonal offering, loyalty sign-up) without making it feel like a pitch. Asks what brought them in to discover what would make them come back.",
+  "safety_relevant": false,
+  "source_file": "host_triangle_h1_h3_development.yaml",
+  "thread_id": "eval-h1-01-1772949815",
+  "turns": [
+    {
+      "turn_index": 0,
+      "user_message": "Hey, first time here at Mohegan Sun. What should we check out?",
+      "agent_response": "Welcome to Mohegan Sun. Since it's your first time, head straight to the Casino of the Earth\u2014it\u2019s the heart of the property and the easiest place to get your bearings. You're in great hands, so take your time exploring. What brings you out to visit us today?",
+      "sources": [
+        {
+          "category": "amenities",
+          "source": "mohegan_sun.json",
+          "score": 0.769
+        },
+        {
+          "category": "faq",
+          "source": "mohegan_sun.json",
+          "score": 0.746
+        },
+        {
+          "category": "entertainment",
+          "source": "mohegan_sun.json",
+          "score": 0.737
+        }
+      ],
+      "elapsed_ms": 50067,
+      "error": null
+    },
+    {
+      "turn_index": 1,
+      "user_message": "We're mostly into live music and good food",
+      "agent_response": "You've come to the right place because live music is essentially our heartbeat. The Wolf Den is the spot you need to see\u2014it is an intimate venue right in the middle of the Casino of the Earth where you can catch national acts for free. Since it is Sunday, there is typically a show at 8:00 PM, and the energy in there is fantastic because you are so close to the performers. \n\nA bit of an insider tip: the Wolf Den was designed so there isn't a bad seat in the house, but since it is free, the line starts early for popular acts. For dinner, Michael Jordan's Steak House is just a short walk away if you want something upscale, or Comix Roadhouse offers a great menu with a more casual, high-energy atmosphere right near the action. What kind of music do you two usually enjoy?",
+      "sources": [
+        {
+          "category": "entertainment",
+          "source": "mohegan_sun.json",
+          "score": 0.662
+        }
+      ],
+      "elapsed_ms": 36290,
+      "error": null
+    },
+    {
+      "turn_index": 2,
+      "user_message": "That sounds great, we'll definitely check those out",
+      "agent_response": "I've got you\u2014those are two of the best spots to start your first trip. If you find yourselves needing a reset after a night of music, the Elemis Spa has a legendary hot stone massage that is perfect for a Monday morning recharge. Is this a celebratory trip for you two, or just a well-deserved getaway?",
+      "sources": [
+        {
+          "category": "entertainment",
+          "source": "mohegan_sun.json",
+          "score": 0.654
+        },
+        {
+          "category": "faq",
+          "source": "mohegan_sun.json",
+          "score": 0.636
+        },
+        {
+          "category": "restaurants",
+          "source": "mohegan_sun.json",
+          "score": 0.642
+        }
+      ],
+      "elapsed_ms": 36273,
+      "error": null
+    }
+  ],
+  "completed": true
+}

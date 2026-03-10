@@ -1,0 +1,60 @@
+{
+  "scenario_id": "tone-01",
+  "scenario_name": "Slop opener detection \u2014 routine dining question",
+  "category": "behavioral_tone_calibration",
+  "behavioral_dimension": "B6_tone",
+  "expected_behavior": "No response begins with 'Oh' or contains slop words like 'delighted', 'absolutely', 'wonderful', or 'fantastic'. Warmth expressed through specific details about the restaurants, not through enthusiasm language",
+  "expected_behavioral_quality": "Responds to a routine dining question without opening with AI-slop words (Oh!, delighted, absolutely, wonderful, fantastic). Provides useful restaurant information with warmth from specificity, not from adjective density.",
+  "safety_relevant": false,
+  "source_file": "behavioral_tone_calibration.yaml",
+  "thread_id": "eval-tone-01-1772828303",
+  "turns": [
+    {
+      "turn_index": 0,
+      "user_message": "What restaurants do you have?",
+      "agent_response": "We have a vibrant culinary scene here at Mohegan Sun, but for a Friday evening, Ballo Italian Restaurant in the Casino of the Sky is my standout recommendation. The atmosphere is modeled after a historic Italian abbey, and their housemade pastas have a modern presentation that guests rave about. \n\nThey are open until 10:00 PM tonight with a smart casual dress code and a price range of $$$. While reservations are recommended, I can help you with the details to connect with their host team to finalize a booking. After dinner, the Wolf Den in the Casino of the Earth is just a short walk away and features free live music every night. \n\nAre you visiting us for a special occasion tonight, or are you just looking to explore the best flavors on the property?",
+      "sources": [
+        {
+          "category": "restaurants",
+          "source": "mohegan_sun.json",
+          "score": 0.67
+        }
+      ],
+      "elapsed_ms": 59817,
+      "error": null
+    },
+    {
+      "turn_index": 1,
+      "user_message": "Tell me more about the steakhouse",
+      "agent_response": "Michael Jordan's Steak House in the Casino of the Sky is our premier choice, known for its USDA Prime steaks and elegant sports-themed atmosphere. They are open tonight until 10:00 PM ($$$$) and recommend business casual attire, though please note hours and pricing may vary. I can provide the details to connect you with their host team to finalize a booking. After dinner, the nearby Wolf Den offers free live music that makes for a great night out. Would you like to hear more about their signature cuts or their famous garlic bread appetizer?",
+      "sources": [
+        {
+          "category": "restaurants",
+          "source": "mohegan_sun.json",
+          "score": 0.684
+        },
+        {
+          "category": "faq",
+          "source": "mohegan_sun.json",
+          "score": 0.645
+        },
+        {
+          "category": "property",
+          "source": "mohegan_sun.json",
+          "score": 0.639
+        }
+      ],
+      "elapsed_ms": 34082,
+      "error": null
+    },
+    {
+      "turn_index": 2,
+      "user_message": "Sounds good, thanks",
+      "agent_response": "Glad I could help. The Wolf Den has free live music every night \u2014 it's right in the Casino of the Earth and worth checking out. What sounds good?",
+      "sources": [],
+      "elapsed_ms": 3,
+      "error": null
+    }
+  ],
+  "completed": true
+}

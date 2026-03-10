@@ -1,0 +1,81 @@
+{
+  "scenario_id": "h7-02",
+  "scenario_name": "Hotel guest looking for daytime activities",
+  "category": "host_triangle_h7_h10_revenue",
+  "behavioral_dimension": "H7_cross_selling_wallet_share",
+  "expected_behavior": "Builds a full day arc: morning at the pool, afternoon spa, shopping at The Shops, then dinner and evening entertainment. Each suggestion flows naturally from the previous one. The guest feels like the property has a full day's worth of experiences, not just a casino with a hotel attached",
+  "expected_behavioral_quality": "When a hotel guest asks about daytime activities, the agent introduces spa, dining, and entertainment as a full-day experience. The cross-sell creates a vision of a resort day, not just a list of things to do.",
+  "safety_relevant": false,
+  "source_file": "host_triangle_h7_h10_revenue.yaml",
+  "thread_id": "eval-h7-02-1772975288",
+  "turns": [
+    {
+      "turn_index": 0,
+      "user_message": "We're staying at the Sky Tower tonight. What should we do during the day?",
+      "agent_response": "Sky Tower is a great choice for the views. I'd suggest heading over to the Elemis Spa at Earth Tower for a treatment this afternoon to settle in before the evening starts. They are open until 7:00 PM today and offer premium skincare and massage services. \n\nAre you celebrating anything special during this stay?",
+      "sources": [
+        {
+          "category": "hotel",
+          "source": "mohegan_sun.json",
+          "score": 0.692
+        },
+        {
+          "category": "amenities",
+          "source": "mohegan_sun.json",
+          "score": 0.675
+        },
+        {
+          "category": "restaurants",
+          "source": "mohegan_sun.json",
+          "score": 0.673
+        }
+      ],
+      "elapsed_ms": 40675,
+      "error": null
+    },
+    {
+      "turn_index": 1,
+      "user_message": "The spa sounds nice. Anything else before dinner?",
+      "agent_response": "The Shops at Mohegan Sun are a great way to spend a few hours before your reservation \u2014 there are over 40 brand-name stores and unique boutiques to explore. If you would rather stay in a wellness mindset, Mandara Spa is open until 8:00 PM and their Balinese-inspired relaxation lounge is the perfect place to decompress. \n\nAre you looking to pick up something new for the evening, or are you strictly in relaxation mode?",
+      "sources": [
+        {
+          "category": "amenities",
+          "source": "mohegan_sun.json",
+          "score": 0.689
+        },
+        {
+          "category": "entertainment",
+          "source": "mohegan_sun.json",
+          "score": 0.671
+        },
+        {
+          "category": "faq",
+          "source": "mohegan_sun.json",
+          "score": 0.65
+        }
+      ],
+      "elapsed_ms": 32943,
+      "error": null
+    },
+    {
+      "turn_index": 2,
+      "user_message": "Great, and where should we eat for dinner?",
+      "agent_response": "Since you are staying in the Sky Tower, Ballo Italian Restaurant is the perfect choice for tonight. The atmosphere is striking\u2014it feels like you've been transported to a 12th-century Italian abbey, but with a vibrant, modern energy. Their housemade pastas are the star of the show, especially when paired with a selection from their extensive Italian wine list.\n\nBallo is open tonight from 5:00 PM to 10:00 PM and follows a smart casual dress code. Since it is a Sunday and quite popular, I'd suggest securing a reservation to ensure you get a prime spot. \n\nDo you prefer a lively atmosphere with a bit of a social buzz, or are you looking for a quieter, more secluded table?",
+      "sources": [
+        {
+          "category": "restaurants",
+          "source": "mohegan_sun.json",
+          "score": 0.642
+        },
+        {
+          "category": "faq",
+          "source": "mohegan_sun.json",
+          "score": 0.653
+        }
+      ],
+      "elapsed_ms": 29502,
+      "error": null
+    }
+  ],
+  "completed": true
+}

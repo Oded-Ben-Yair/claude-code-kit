@@ -1,0 +1,71 @@
+{
+  "scenario_id": "h7-01",
+  "scenario_name": "Dining guest open to entertainment",
+  "category": "host_triangle_h7_h10_revenue",
+  "behavioral_dimension": "H7_cross_selling_wallet_share",
+  "expected_behavior": "Confirms the dinner choice and immediately paints the after-dinner picture: Wolf Den show, Comix comedy, or casino floor. The cross-sell feels like a natural 'and then...' suggestion from someone who wants the guest to have a full evening, not a checklist of amenities",
+  "expected_behavioral_quality": "When a guest engages with dining, the agent naturally introduces entertainment and nightlife as the next part of the evening. The cross-sell creates a seamless 'full evening' vision where dinner flows into the next experience \u2014 not a list of unrelated amenities.",
+  "safety_relevant": false,
+  "source_file": "host_triangle_h7_h10_revenue.yaml",
+  "thread_id": "eval-h7-01-1773038900",
+  "turns": [
+    {
+      "turn_index": 0,
+      "user_message": "Where should we eat tonight? We're thinking Italian",
+      "agent_response": "For tonight, Ballo Italian Restaurant in the Casino of the Sky is the standout choice for Italian. The atmosphere is sophisticated and contemporary, and they are well-regarded for their housemade pastas and risottos that feature a beautiful, modern presentation. They are open tonight from 5:00 PM to 10:00 PM with a price range of $$$, and I would recommend a reservation to ensure your table is ready.\n\nInsider tip: The texture of their housemade pasta is exceptional\u2014it really elevates the meal compared to standard fare. \n\nHow many people are in your party? After your meal, you might enjoy catching some live music at the Wolf Den since it is located nearby in the same casino.",
+      "sources": [
+        {
+          "category": "restaurants",
+          "source": "mohegan_sun.json",
+          "score": 0.695
+        }
+      ],
+      "elapsed_ms": 35292,
+      "error": null
+    },
+    {
+      "turn_index": 1,
+      "user_message": "Tuscany sounds great. We'll do that",
+      "agent_response": "While Tuscany is a favorite for its waterfall views and wood-fired kitchen, they are actually closed on Mondays. Ballo Italian Restaurant is your best move tonight for that upscale Italian experience\u2014it is open from 5:00 PM to 10:00 PM and their housemade pasta is some of the best on property.\n\nI have got you covered with the details: it is located in the Casino of the Sky, has a price range of $$$, and I'd suggest a reservation to secure your table. The atmosphere is very sophisticated, making it a great spot if you were looking for the same refined energy as Tuscany. \n\nHow many people are in your party? After your meal, you might want to stop by the Wolf Den in the center of the casino, as they have live music every night and the energy is always good.",
+      "sources": [
+        {
+          "category": "restaurants",
+          "source": "mohegan_sun.json",
+          "score": 0.672
+        },
+        {
+          "category": "promotions",
+          "source": "mohegan_sun.json",
+          "score": 0.615
+        },
+        {
+          "category": "property",
+          "source": "mohegan_sun.json",
+          "score": 0.627
+        }
+      ],
+      "elapsed_ms": 38136,
+      "error": null
+    },
+    {
+      "turn_index": 2,
+      "user_message": "Oh there's a show tonight? What's playing?",
+      "agent_response": "The Wolf Den has a free show tonight at 8:00 PM, and the energy there is electric because you're right there with the performer in an intimate setting. There is no ticket required, so it is a perfect way to keep the night going after dinner at Ballo. \n\nThe performers range from national touring acts to high-energy tribute bands, and while the schedule can change, you can confirm tonight's specific artist at any of our box office locations. It's a fun fact that the Wolf Den is one of the most popular spots on property precisely because of that up-close feel you can't get in a massive arena.\n\nWhat kind of music do you usually enjoy most? Also, if you find yourself needing a reset tomorrow after a late night, the Elemis Spa is legendary for their hot stone massages.",
+      "sources": [
+        {
+          "category": "entertainment",
+          "source": "mohegan_sun.json",
+          "score": 0.67
+        },
+        {
+          "category": "faq",
+          "source": "mohegan_sun.json",
+          "score": 0.666
+        }
+      ],
+      "elapsed_ms": 31377,
+      "error": null
+    }
+  ],
+  "completed": true
+}

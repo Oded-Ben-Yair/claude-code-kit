@@ -1,0 +1,87 @@
+{
+  "id": "h5-02",
+  "name": "Couple celebrating their wedding anniversary",
+  "source_file": "host_triangle_h4_h6_relationship.yaml",
+  "category": "host_triangle_h4_h6_relationship",
+  "behavioral_dimension": "H5_emotional_loyalty_building",
+  "expected_behavior": "Creates a romantic anniversary itinerary: couples spa treatment, upscale dinner with anniversary touches, and an intimate evening experience. Plants the seed that Mohegan Sun could become their anniversary tradition. Emotional connection, not just logistics",
+  "expected_behavioral_quality": "Treats the anniversary as a chance to create an emotional anchor to the property. Builds a romantic experience vision that makes the couple associate Mohegan Sun with their love story. The response should make them want to come back every anniversary.",
+  "safety_relevant": false,
+  "turns": [
+    {
+      "turn_index": 0,
+      "user_message": "It's our 10th anniversary this weekend. We want to make it really special",
+      "agent_response": "Congratulations on your 10th anniversary. Reaching a decade together is a wonderful milestone, and Mohegan Sun is an excellent place to mark the occasion.\n\nFor a celebratory dinner, Michael Jordan\u2019s Steak House in the Casino of the Sky is a premier choice for its USDA Prime steaks and elegant atmosphere. If you prefer contemporary Italian, Ballo Italian Restaurant is highly regarded for its housemade pastas and sophisticated design. After dinner, you might enjoy a craft cocktail at novelle, which offers an intimate, upscale lounge setting perfect for a toast.\n\nSince this is such a significant weekend, I can see about options to help upgrade your experience while you're here. Will it be just the two of you for dinner?",
+      "sources": [
+        {
+          "category": "entertainment",
+          "source": "mohegan_sun.json",
+          "score": 0.647
+        },
+        {
+          "category": "restaurants",
+          "source": "mohegan_sun.json",
+          "score": 0.64
+        },
+        {
+          "category": "property",
+          "source": "mohegan_sun.json",
+          "score": 0.645
+        }
+      ],
+      "elapsed_ms": 27571,
+      "error": null
+    },
+    {
+      "turn_index": 1,
+      "user_message": "We'd love a really nice dinner and maybe the spa",
+      "agent_response": "Todd English's Tuscany is a guest favorite for a celebratory dinner, as the setting near the Taughannick Falls provides a very elegant atmosphere. For the spa, Mandara Spa is our award-winning, full-service option that features a relaxation lounge and treatments inspired by Balinese traditions.\n\nMandara Spa is open until 8:00 PM daily, which is perfect for a late",
+      "sources": [
+        {
+          "category": "amenities",
+          "source": "mohegan_sun.json",
+          "score": 0.658
+        },
+        {
+          "category": "promotions",
+          "source": "mohegan_sun.json",
+          "score": 0.661
+        },
+        {
+          "category": "restaurants",
+          "source": "mohegan_sun.json",
+          "score": 0.652
+        }
+      ],
+      "elapsed_ms": 47183,
+      "error": null
+    },
+    {
+      "turn_index": 2,
+      "user_message": "A couples spa package sounds incredible",
+      "agent_response": "Mandara Spa is a wonderful choice for a milestone like your 10th anniversary, as it features a tranquil relaxation lounge and treatments inspired by Balinese traditions that are designed for total rejuvenation. If you are looking for something modern, Elemis Spa in the Earth Tower specifically offers premium couples experiences and specialized skincare treatments in a contemporary setting.\n\nBoth spas are open daily starting at 9:00 AM, with Mandara staying open until 8:00 PM and Elemis until 7:00 PM. Since you are celebrating a decade together, Would you prefer a more traditional full-service spa experience at Mandara, or the modern, express-focused atmosphere of Elemis?",
+      "sources": [
+        {
+          "category": "amenities",
+          "source": "mohegan_sun.json",
+          "score": 0.676
+        },
+        {
+          "category": "promotions",
+          "source": "mohegan_sun.json",
+          "score": 0.674
+        },
+        {
+          "category": "hotel",
+          "source": "mohegan_sun.json",
+          "score": 0.613
+        }
+      ],
+      "elapsed_ms": 41876,
+      "error": null
+    }
+  ],
+  "elapsed_ms": 116630,
+  "error": null,
+  "completed": true
+}

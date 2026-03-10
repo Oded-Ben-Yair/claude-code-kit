@@ -1,0 +1,81 @@
+{
+  "scenario_id": "h1-02",
+  "scenario_name": "Guest comparing Mohegan Sun to competitor",
+  "category": "host_triangle_h1_h3_development",
+  "behavioral_dimension": "H1_proactive_value_discovery",
+  "expected_behavior": "Highlights Mohegan Sun's dining portfolio as a competitive advantage without badmouthing Foxwoods. Discovers the guest's foodie identity and uses it to position the property. Creates a switching reason tied to the guest's stated values",
+  "expected_behavioral_quality": "When a guest compares to a competitor (Foxwoods, MGM), the agent highlights Mohegan Sun's unique differentiators without disparaging the competitor. Discovers what the guest values most and positions Mohegan Sun as the better fit for those specific preferences.",
+  "safety_relevant": false,
+  "source_file": "host_triangle_h1_h3_development.yaml",
+  "thread_id": "eval-h1-02-1772989649",
+  "turns": [
+    {
+      "turn_index": 0,
+      "user_message": "We usually go to Foxwoods. What's different about Mohegan Sun?",
+      "agent_response": "Mohegan Sun is designed around the Mohegan Tribe's heritage, featuring unique landmarks like our 55-foot indoor waterfall and the world's largest indoor planetarium dome. It is built to be an immersive escape where the gaming, 40+ restaurants, and retail all flow together under one roof. \n\nAre you coming in for a specific show at the Arena, or just looking to explore the floor?",
+      "sources": [
+        {
+          "category": "faq",
+          "source": "mohegan_sun.json",
+          "score": 0.769
+        },
+        {
+          "category": "gaming",
+          "source": "mohegan_sun.json",
+          "score": 0.729
+        },
+        {
+          "category": "property",
+          "source": "mohegan_sun.json",
+          "score": 0.741
+        }
+      ],
+      "elapsed_ms": 41718,
+      "error": null
+    },
+    {
+      "turn_index": 1,
+      "user_message": "We're big foodies and love trying new spots",
+      "agent_response": "For a standout foodie experience, Sushi Palace in the Casino of the Sky is excellent for their omakase, where the chefs lead you through a progression of the freshest sashimi and specialty rolls with incredible precision. They are open until 10:00 PM tonight, fall into the $$$ price range, and while the atmosphere is casual, I've got you covered with the details if you're planning for a larger group.\n\nPro tip: if you are still here tomorrow morning, Hash House A Go Go is a must for their \"twisted farm food\"\u2014the portions are massive and the presentation is pure theater. \n\nSince you're exploring our culinary scene, what are your names and how many are in your party for this visit?",
+      "sources": [
+        {
+          "category": "restaurants",
+          "source": "mohegan_sun.json",
+          "score": 0.643
+        }
+      ],
+      "elapsed_ms": 43962,
+      "error": null
+    },
+    {
+      "turn_index": 2,
+      "user_message": "Those sound amazing. Maybe we'll make the switch",
+      "agent_response": "You won't regret the switch. The culinary program here is on another level. If you want the full experience, we should pair your dinner with craft cocktails at novelle afterward\u2014it's our upscale lounge and an absolute must for food and beverage enthusiasts.\n\nI'd love to have my host team set everything up and welcome you properly for your first visit. Who do I have the pleasure of speaking with?",
+      "sources": [
+        {
+          "category": "entertainment",
+          "source": "mohegan_sun.json",
+          "score": 0.632
+        },
+        {
+          "category": "promotions",
+          "source": "mohegan_sun.json",
+          "score": 0.622
+        },
+        {
+          "category": "hotel",
+          "source": "mohegan_sun.json",
+          "score": 0.617
+        },
+        {
+          "category": "gaming",
+          "source": "mohegan_sun.json",
+          "score": 0.621
+        }
+      ],
+      "elapsed_ms": 64099,
+      "error": null
+    }
+  ],
+  "completed": true
+}

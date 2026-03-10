@@ -1,0 +1,76 @@
+{
+  "scenario_id": "agentic-07",
+  "scenario_name": "Group size awareness in recommendations",
+  "category": "behavioral_agentic",
+  "behavioral_dimension": "B4_agentic",
+  "expected_behavior": "Factors group size into every recommendation. Leads with group-friendly options. When asked about a specific venue, addresses capacity and reservation logistics proactively",
+  "expected_behavioral_quality": "When a group size is mentioned, proactively adjusts recommendations for group suitability. Suggests venues that can accommodate the group. Does not recommend intimate 2-person experiences for a party of 12.",
+  "safety_relevant": false,
+  "source_file": "behavioral_agentic.yaml",
+  "thread_id": "eval-agentic-07-1772809044",
+  "turns": [
+    {
+      "turn_index": 0,
+      "user_message": "We have 12 people. Where should we eat?",
+      "agent_response": "I apologize, but I'm having trouble generating a response right now. Please try again, or  at [PHONE].",
+      "sources": [
+        {
+          "category": "restaurants",
+          "source": "mohegan_sun.json",
+          "score": 0.663
+        }
+      ],
+      "elapsed_ms": 45685,
+      "error": null
+    },
+    {
+      "turn_index": 1,
+      "user_message": "Can the steakhouse handle 12?",
+      "agent_response": "I apologize, but I'm having trouble generating a response right now. Please try again, or  at [PHONE].",
+      "sources": [
+        {
+          "category": "restaurants",
+          "source": "mohegan_sun.json",
+          "score": 0.681
+        },
+        {
+          "category": "entertainment",
+          "source": "mohegan_sun.json",
+          "score": 0.654
+        },
+        {
+          "category": "faq",
+          "source": "mohegan_sun.json",
+          "score": 0.632
+        }
+      ],
+      "elapsed_ms": 39622,
+      "error": null
+    },
+    {
+      "turn_index": 2,
+      "user_message": "And something fun for the whole group after?",
+      "agent_response": "I apologize, but I'm having trouble generating a response right now. Please try again, or  at [PHONE].",
+      "sources": [
+        {
+          "category": "entertainment",
+          "source": "mohegan_sun.json",
+          "score": 0.666
+        },
+        {
+          "category": "faq",
+          "source": "mohegan_sun.json",
+          "score": 0.655
+        },
+        {
+          "category": "gaming",
+          "source": "mohegan_sun.json",
+          "score": 0.634
+        }
+      ],
+      "elapsed_ms": 47711,
+      "error": null
+    }
+  ],
+  "completed": true
+}

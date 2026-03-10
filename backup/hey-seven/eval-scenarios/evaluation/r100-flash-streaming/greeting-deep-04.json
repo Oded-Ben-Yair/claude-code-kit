@@ -1,0 +1,65 @@
+{
+  "scenario_id": "greeting-deep-04",
+  "scenario_name": "Greeting to loyalty program",
+  "category": "greeting_to_deep",
+  "behavioral_dimension": "",
+  "expected_behavior": "Greeting to rewards discovery to tier details",
+  "expected_behavioral_quality": "",
+  "safety_relevant": false,
+  "source_file": "greeting_to_deep.yaml",
+  "thread_id": "eval-greeting-deep-04-1772832399",
+  "turns": [
+    {
+      "turn_index": 0,
+      "user_message": "Hey there!",
+      "agent_response": "Hi! I'm **Seven**, your AI concierge for Mohegan Sun. I'm an AI assistant, I'm here to help you explore everything the resort has to offer.\n\nI can help with:\n- **Restaurants & Dining \u2014 from casual to fine dining**\n- **Entertainment & Shows \u2014 concerts, comedy, and events**\n- **Hotel & Accommodations \u2014 rooms, suites, and towers**\n- **Amenities \u2014 spa, pool, shopping, and more**\n- **Gaming \u2014 casino floor, table games, and poker**\n- **Promotions \u2014 current offers and loyalty programs**\n- **Faq \u2014 information and details**\n\nWhat would you like to know?",
+      "sources": [],
+      "elapsed_ms": 4460,
+      "error": null
+    },
+    {
+      "turn_index": 1,
+      "user_message": "I heard you have a rewards program",
+      "agent_response": "Momentum is the official loyalty program at Mohegan Sun. It consists of five tiers: Core, Ignite (2,500 Tier Credits), Leap (10,000 Tier Credits), Ascend (25,000 Tier Credits), and Soar (invitation only). \n\nYou earn Momentum Points and Tier Credits through gaming, hotel stays, dining, and retail purchases. These points are redeemable for dining, hotel stays, or retail purchases. It is free to join at any Momentum Desk on the casino floor, online at mohegansun.com, or through the Mohegan Sun mobile app. \n\nYou earn toward your next tier level with every dollar spent at the resort. Are you planning to visit mainly for the gaming floor or our dining options?",
+      "sources": [
+        {
+          "category": "faq",
+          "source": "mohegan_sun.json",
+          "score": 0.689
+        },
+        {
+          "category": "promotions",
+          "source": "mohegan_sun.json",
+          "score": 0.68
+        }
+      ],
+      "elapsed_ms": 44722,
+      "error": null
+    },
+    {
+      "turn_index": 2,
+      "user_message": "What's the top tier?",
+      "agent_response": "Soar is the top tier and is available by invitation only, providing full VIP treatment and access to a dedicated host. You earn Tier Credits toward higher levels through both gaming and resort spending\u2014do you prefer table games or slots?",
+      "sources": [
+        {
+          "category": "promotions",
+          "source": "mohegan_sun.json",
+          "score": 0.679
+        },
+        {
+          "category": "gaming",
+          "source": "mohegan_sun.json",
+          "score": 0.636
+        },
+        {
+          "category": "hotel",
+          "source": "mohegan_sun.json",
+          "score": 0.645
+        }
+      ],
+      "elapsed_ms": 26582,
+      "error": null
+    }
+  ],
+  "completed": true
+}

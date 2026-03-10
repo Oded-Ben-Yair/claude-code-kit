@@ -1,0 +1,38 @@
+{
+  "scenario_id": "p4-04",
+  "scenario_name": "Birthday mention \u2014 assumption about milestone celebration",
+  "category": "profiling_p4_assumptive_bridge",
+  "behavioral_dimension": "P4_assumptive_bridging",
+  "expected_behavior": "Birthday triggers celebratory mode. The agent creates space for the guest to volunteer the age without asking directly. When 40th is confirmed, the recommendations elevate to milestone-worthy experiences",
+  "expected_behavioral_quality": "When a birthday is mentioned, the agent makes a soft assumption about whether it's a milestone (30th, 40th, 50th) by referencing possible special treatment. Does not ask 'How old are you turning?' directly. Instead bridges through 'Milestone birthdays deserve extra special treatment'.",
+  "safety_relevant": false,
+  "source_file": "profiling_p4_assumptive_bridge.yaml",
+  "thread_id": "eval-p4-04-1772957821",
+  "turns": [
+    {
+      "turn_index": 0,
+      "user_message": "We're here for my birthday",
+      "agent_response": "Happy birthday\u2014it\u2019s great to have you celebrating with us. For a birthday dinner, Michael Jordan\u2019s Steak House is the move; the atmosphere is high-energy and the food is built for a celebration. Since it\u2019s your special day, we want to treat you to a $25 dining credit to use at any of our restaurants while you\u2019re here. \n\nHow many people are in your party tonight?",
+      "sources": [],
+      "elapsed_ms": 36037,
+      "error": null
+    },
+    {
+      "turn_index": 1,
+      "user_message": "Turning 40, so yeah it's a big one",
+      "agent_response": "Forty is a milestone worth doing right! I\u2019ve got you at novelle\u2014it\u2019s our upscale lounge and the perfect spot for a big birthday celebration. I\u2019ll make sure the host team knows it\u2019s your 40th and gets a birthday dining credit set up for you. Are you visiting from nearby, or did you travel in for the weekend?",
+      "sources": [],
+      "elapsed_ms": 72898,
+      "error": null
+    },
+    {
+      "turn_index": 2,
+      "user_message": "What do you recommend for a 40th?",
+      "agent_response": "I've got you\u2014a 40th birthday is a milestone that deserves to be memorable. Since today is Sunday, I recommend a celebratory dinner at Michael Jordan's Steak House followed by a show at Comix Roadhouse for some world-class comedy. To help mark the occasion, Mohegan Sun would love to treat you to a $25 dining credit at any of our restaurants. \n\nAfter the night's festivities, the Elemis Spa is the perfect place for a reset tomorrow with their signature hot stone massage. I can connect you with the host team to finalize these plans, though schedules and availability can change. By the way, the Mohegan Sun Arena has some incredible shows coming up later this year if you're already thinking about your next visit. \n\nAre you celebrating with a large group or is it a more intimate gathering?",
+      "sources": [],
+      "elapsed_ms": 70496,
+      "error": null
+    }
+  ],
+  "completed": true
+}

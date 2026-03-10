@@ -1,0 +1,77 @@
+{
+  "id": "p2-03",
+  "name": "Agent asks about dining preferences naturally",
+  "source_file": "profiling_p2_active_probing.yaml",
+  "category": "profiling_p2_active_probing",
+  "behavioral_dimension": "P2_active_probing",
+  "expected_behavior": "Opens with a preference question rather than dumping all options. Uses the answer to give a targeted recommendation. The interaction feels like a conversation with a host, not a menu search",
+  "expected_behavioral_quality": "Instead of listing all restaurants, asks a preference question first to narrow recommendations. The question is framed as 'What are you in the mood for?' or 'Any cuisine you're craving?' rather than 'What are your dining preferences?'",
+  "safety_relevant": false,
+  "turns": [
+    {
+      "turn_index": 0,
+      "user_message": "Where should we eat?",
+      "agent_response": "Since it is just before 6:00 AM, your best bet for a delicious meal right now is the **Lantern Bar & Grill** in the Casino of the Earth. \n\nIt is open 24 hours and serves up hearty American favorites like steaks and burgers in a very relaxed, casual atmosphere. The price range is mid-tier ($$), and you don't need a reservation to grab a seat and enjoy the classic comfort food. \n\nIf you can wait until 8:00 AM, **Hash House A Go Go** opens its doors and is famous for its \"twisted farm food\" and massive portions\u2014their giant pancakes are legendary and perfect for a big morning start. Please keep in mind that hours and prices may vary, so it is always a good idea to confirm with the property when you arrive. \n\nAfter you have fueled up, you might want to check the schedule at the Wolf Den, as they have free live music every night right in the heart of the Casino of the Earth. Are you looking for a quick bite to keep your morning moving, or are you hoping for a larger sit-down breakfast once more venues open?",
+      "sources": [
+        {
+          "category": "restaurants",
+          "source": "mohegan_sun.json",
+          "score": 0.673
+        }
+      ],
+      "elapsed_ms": 43026,
+      "error": null
+    },
+    {
+      "turn_index": 1,
+      "user_message": "Something Italian",
+      "agent_response": "The aroma of brick-oven pizza at Caputo Trattoria is incredible when they open at 11:00 AM today in the Casino of the Earth. After a casual lunch there, you can catch free live music at the nearby Wolf Den\u2014would you prefer a midday meal or an upscale Italian dinner tonight?",
+      "sources": [
+        {
+          "category": "restaurants",
+          "source": "mohegan_sun.json",
+          "score": 0.663
+        },
+        {
+          "category": "entertainment",
+          "source": "mohegan_sun.json",
+          "score": 0.63
+        }
+      ],
+      "elapsed_ms": 32531,
+      "error": null
+    },
+    {
+      "turn_index": 2,
+      "user_message": "Ballo sounds good",
+      "agent_response": "Ballo Italian Restaurant opens at 5:00 PM today in the Casino of the Sky and is known for housemade pastas and a smart casual dress code. After dinner, the nearby novelle lounge is great for craft cocktails\u2014would you like to know if reservations are recommended for your preferred time?",
+      "sources": [
+        {
+          "category": "restaurants",
+          "source": "mohegan_sun.json",
+          "score": 0.714
+        },
+        {
+          "category": "entertainment",
+          "source": "mohegan_sun.json",
+          "score": 0.623
+        },
+        {
+          "category": "gaming",
+          "source": "mohegan_sun.json",
+          "score": 0.597
+        },
+        {
+          "category": "property",
+          "source": "mohegan_sun.json",
+          "score": 0.613
+        }
+      ],
+      "elapsed_ms": 30437,
+      "error": null
+    }
+  ],
+  "elapsed_ms": 105994,
+  "error": null,
+  "completed": true
+}

@@ -1,0 +1,87 @@
+{
+  "id": "p2-01",
+  "name": "Agent asks about party size after dinner question",
+  "source_file": "profiling_p2_active_probing.yaml",
+  "category": "profiling_p2_active_probing",
+  "behavioral_dimension": "P2_active_probing",
+  "expected_behavior": "First response includes a dinner recommendation AND a natural follow-up question about party size. The question feels like part of the service, not an information harvest",
+  "expected_behavioral_quality": "After answering a dinner question, naturally asks how many guests will be dining. The question flows from the recommendation context ('Should I look into a table for how many?') rather than a standalone interrogation ('How many people?').",
+  "safety_relevant": false,
+  "turns": [
+    {
+      "turn_index": 0,
+      "user_message": "What's a good dinner spot tonight?",
+      "agent_response": "For tonight, SolToro Taqueria & Tequila Bar in the Casino of the Earth is hard to beat for its vibrant energy and authentic flavors. The scent of fresh lime and sizzling carnitas sets the stage for a great evening, and their extensive tequila selection is second to none. They are open until 10:00 PM tonight with a casual dress code and a moderate price range",
+      "sources": [
+        {
+          "category": "restaurants",
+          "source": "mohegan_sun.json",
+          "score": 0.672
+        }
+      ],
+      "elapsed_ms": 32447,
+      "error": null
+    },
+    {
+      "turn_index": 1,
+      "user_message": "Just the two of us",
+      "agent_response": "Michael Jordan\u2019s Steak House in the Casino of the Sky is ideal for two, offering an elegant atmosphere and prime cuts. They are open until 10:00 PM tonight and I'd suggest a reservation for the best seating. Are you looking for a quiet, intimate evening or something with more energy?",
+      "sources": [
+        {
+          "category": "entertainment",
+          "source": "mohegan_sun.json",
+          "score": 0.624
+        },
+        {
+          "category": "hotel",
+          "source": "mohegan_sun.json",
+          "score": 0.604
+        },
+        {
+          "category": "restaurants",
+          "source": "mohegan_sun.json",
+          "score": 0.622
+        },
+        {
+          "category": "amenities",
+          "source": "mohegan_sun.json",
+          "score": 0.6
+        }
+      ],
+      "elapsed_ms": 65242,
+      "error": null
+    },
+    {
+      "turn_index": 2,
+      "user_message": "That sounds great, thanks",
+      "agent_response": "You're welcome. Since you'll be in the Casino of the Sky, the Wolf Den is just a short walk away and features free live music starting at 8:00 PM. Would you like to know who is performing tonight?",
+      "sources": [
+        {
+          "category": "promotions",
+          "source": "mohegan_sun.json",
+          "score": 0.64
+        },
+        {
+          "category": "entertainment",
+          "source": "mohegan_sun.json",
+          "score": 0.636
+        },
+        {
+          "category": "property",
+          "source": "mohegan_sun.json",
+          "score": 0.641
+        },
+        {
+          "category": "amenities",
+          "source": "mohegan_sun.json",
+          "score": 0.636
+        }
+      ],
+      "elapsed_ms": 29707,
+      "error": null
+    }
+  ],
+  "elapsed_ms": 127999,
+  "error": null,
+  "completed": true
+}

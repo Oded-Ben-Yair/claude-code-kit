@@ -1,0 +1,70 @@
+{
+  "scenario_id": "implicit-06",
+  "scenario_name": "Loyalty tier drop implies frustration and entitlement",
+  "category": "behavioral_implicit",
+  "behavioral_dimension": "B2_implicit",
+  "expected_behavior": "Treats returning former-Gold guest as VIP. Acknowledges their history without dwelling on tier change. Focuses on making them feel valued and informed about current options",
+  "expected_behavioral_quality": "Reads 'used to be Gold' as frustration about tier loss and implicit expectation of elevated treatment despite current status. Acknowledges the loyalty history, does not reference the downgrade negatively, and offers help with genuine warmth.",
+  "safety_relevant": false,
+  "source_file": "behavioral_implicit.yaml",
+  "thread_id": "eval-implicit-06-1772913643",
+  "turns": [
+    {
+      "turn_index": 0,
+      "user_message": "I used to be Gold tier. Coming back after a while.",
+      "agent_response": "The loyalty program is now called Momentum, and the tier names have changed since you were at the Gold level. The current tiers are Core, Ignite (2,500 Tier Credits), Leap (10,000 Tier Credits), Ascend (25,000 Tier Credits), and Soar (by invitation).\n\nSince you have been away for a while, your account may currently be at the Core level, but your history as a Gold member suggests you may be eligible for specific return offers or complimentary dining at venues like Bobby's or Tuscany. You can verify your exact tier status and any available rewards by visiting a Momentum Desk with your ID or by logging into the Mohegan Sun app. \n\nPro tip: If you are arriving this evening, Novelle is an upscale lounge that offers a great atmosphere for a drink once the casino floor gets busy.\n\nWhen exactly are you planning to be on-property? I can check which specific promotions are active for those dates.",
+      "sources": [
+        {
+          "category": "promotions",
+          "source": "mohegan_sun.json",
+          "score": 0.667
+        },
+        {
+          "category": "faq",
+          "source": "mohegan_sun.json",
+          "score": 0.599
+        },
+        {
+          "category": "entertainment",
+          "source": "mohegan_sun.json",
+          "score": 0.626
+        },
+        {
+          "category": "gaming",
+          "source": "mohegan_sun.json",
+          "score": 0.585
+        }
+      ],
+      "elapsed_ms": 34961,
+      "error": null
+    },
+    {
+      "turn_index": 1,
+      "user_message": "Things look different. Where's the good steakhouse?",
+      "agent_response": "Welcome back\u2014a lot has changed, but the standard for a great steak remains the same. \n\nFor tonight, Michael Jordan's Steak House in the Casino of the Sky is the premier choice, especially if you appreciate USDA Prime cuts and an extensive wine list in an elegant, upscale setting. It is currently open until 10:00 PM, and since the dress code is business casual, it feels a bit more like an \"event\" than a typical dinner.\n\nGiven your history as a Gold member, you likely remember how the host team can elevate an evening; I can certainly look into your current Momentum status to see what complimentary dining options or host-led experiences are available for you. If you're looking for a more relaxed but still high-quality grilled meal, Bobby Flay's Bar Americain in the Casino of the Earth is also a fantastic option and stays open until 11:00 PM on Saturdays.\n\nAfter dinner, the Wolf Den often has free live music which is a great way to ease back into the property's energy. \n\nAre you looking for a quiet booth for a long dinner, or do you need something a bit faster so you can get to the tables?",
+      "sources": [
+        {
+          "category": "restaurants",
+          "source": "mohegan_sun.json",
+          "score": 0.691
+        },
+        {
+          "category": "faq",
+          "source": "mohegan_sun.json",
+          "score": 0.638
+        }
+      ],
+      "elapsed_ms": 46267,
+      "error": null
+    },
+    {
+      "turn_index": 2,
+      "user_message": "Do returning guests get anything special?",
+      "agent_response": "Returning guests often have personalized offers based on their previous play history. Since you were previously at the Gold level, your account may be eligible for \"bounce back\" offers like Free Play or dining credits.\n\nI can look into your Momentum status to see exactly what is available, as guests with your history typically qualify for complimentary dining at Bobby's or Tuscany. To access these offers, visit any Momentum Desk with your photo ID to reactivate your card and view your current balance of Momentum Dollars. Based on your previous status, you may also qualify for a dedicated host introduction to help manage your stay. All offers and comps are subject to availability and your specific play history. \n\nIf you are making an evening of it, the Sky Tower rooms offer great views and are located just steps from the Casino of the Sky. Are you planning to focus on slots this visit, or do you prefer the table games?",
+      "sources": [],
+      "elapsed_ms": 56425,
+      "error": null
+    }
+  ],
+  "completed": true
+}

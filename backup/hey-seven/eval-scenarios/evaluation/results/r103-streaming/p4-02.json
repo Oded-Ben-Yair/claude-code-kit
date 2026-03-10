@@ -1,0 +1,75 @@
+{
+  "scenario_id": "p4-02",
+  "scenario_name": "Party of 4 assumption about kids \u2014 incorrect (business colleagues)",
+  "category": "profiling_p4_assumptive_bridge",
+  "behavioral_dimension": "P4_assumptive_bridging",
+  "expected_behavior": "Handles the correction gracefully. Immediately shifts from family-friendly to business-appropriate recommendations. When 'clients' is revealed, further elevates to impressive and upscale options. No dwelling on the wrong assumption",
+  "expected_behavioral_quality": "Makes the same soft assumption about a family group, but when corrected ('No, it's colleagues'), pivots immediately without embarrassment. Does NOT apologize excessively. Seamlessly adjusts to a business dinner register with appropriate restaurant suggestions.",
+  "safety_relevant": false,
+  "source_file": "profiling_p4_assumptive_bridge.yaml",
+  "thread_id": "eval-p4-02-1772957466",
+  "turns": [
+    {
+      "turn_index": 0,
+      "user_message": "Table for 4 tonight",
+      "agent_response": "For a group of four tonight, Tao Asian Bistro & Lounge in the Casino of the Sky is my top pick. The Pan-Asian menu is built for sharing, and the atmosphere is electric with its signature 16-foot Buddha and incredible dim sum. They are open tonight from 5:00 PM to 11:00 PM, fall into the $$$ price range, and reservations are highly recommended to ensure your group gets a prime spot. \n\nPro tip: their Chilean Sea Bass is the dish most people talk about for weeks after visiting. After dinner, the Wolf Den usually has live music if you want to keep the night going. What time were you hoping to sit down for dinner?",
+      "sources": [
+        {
+          "category": "restaurants",
+          "source": "mohegan_sun.json",
+          "score": 0.646
+        },
+        {
+          "category": "entertainment",
+          "source": "mohegan_sun.json",
+          "score": 0.643
+        },
+        {
+          "category": "faq",
+          "source": "mohegan_sun.json",
+          "score": 0.664
+        }
+      ],
+      "elapsed_ms": 53301,
+      "error": null
+    },
+    {
+      "turn_index": 1,
+      "user_message": "No kids, it's a work dinner with colleagues",
+      "agent_response": "For a business dinner where you want a sophisticated but conversational atmosphere, Tuscany is the standout choice. The wood-fired aroma hits you the moment you walk into the space, and the nearby waterfall provides a serene backdrop that naturally masks surrounding noise for your party of four. Their focus on Northern Italian cuisine and premium steaks makes for a substantial meal that is well-suited for impressing colleagues. This venue typically falls in the $$$ price range and a business casual dress code is the right call for the evening.\n\nPro tip: If your colleagues have specific dietary needs, the chefs here are fantastic at making accommodations feel like a curated part of the menu rather than an afterthought. Reservations are highly recommended for this spot to ensure your group has a table that's conducive to conversation. Since it's Sunday, you might want to",
+      "sources": [],
+      "elapsed_ms": 80506,
+      "error": null
+    },
+    {
+      "turn_index": 2,
+      "user_message": "Somewhere impressive, they're clients",
+      "agent_response": "I've got you\u2014TAO in the Casino of the Sky is our most visually stunning choice for clients, and you can transition to the novelle ultra lounge afterward for craft cocktails. Do you know if they prefer Asian cuisine or would they favor a classic steakhouse?",
+      "sources": [
+        {
+          "category": "promotions",
+          "source": "mohegan_sun.json",
+          "score": 0.639
+        },
+        {
+          "category": "entertainment",
+          "source": "mohegan_sun.json",
+          "score": 0.639
+        },
+        {
+          "category": "gaming",
+          "source": "mohegan_sun.json",
+          "score": 0.624
+        },
+        {
+          "category": "property",
+          "source": "mohegan_sun.json",
+          "score": 0.627
+        }
+      ],
+      "elapsed_ms": 65484,
+      "error": null
+    }
+  ],
+  "completed": true
+}

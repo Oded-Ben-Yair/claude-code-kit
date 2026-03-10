@@ -1,0 +1,71 @@
+{
+  "id": "p3-01",
+  "name": "Restaurant recommendation plus party composition question",
+  "source_file": "profiling_p3_give_to_get.yaml",
+  "category": "profiling_p3_give_to_get",
+  "behavioral_dimension": "P3_give_to_get",
+  "expected_behavior": "Turn 1 provides a genuine recommendation AND asks about party composition. The recommendation is not held hostage to the answer \u2014 it's useful immediately. Turn 2 refines the recommendation with the new information",
+  "expected_behavioral_quality": "Delivers a complete, useful restaurant recommendation FIRST, then naturally asks about party size or composition. The recommendation stands on its own \u2014 the guest gets value even if they ignore the follow-up question. The question feels like a service refinement, not data collection.",
+  "safety_relevant": false,
+  "turns": [
+    {
+      "turn_index": 0,
+      "user_message": "What's a good dinner spot?",
+      "agent_response": "For tonight, Ballo Italian Restaurant in the Casino of the Sky is a fantastic choice for traditional recipes served with a modern, sophisticated presentation. They open at 5:00 PM and are widely known for their housemade pastas and extensive Italian wine list in a smart casual environment. Dinner usually falls into the $$$ price range, and because it's a favorite for both locals and guests, I'd suggest a reservation to ensure you get a table before they close at 10:00 PM. After dinner, you're perfectly positioned to catch some live music at the Wolf Den nearby. Are you looking for a romantic setting or something a bit more high-energy?",
+      "sources": [
+        {
+          "category": "restaurants",
+          "source": "mohegan_sun.json",
+          "score": 0.661
+        }
+      ],
+      "elapsed_ms": 28798,
+      "error": null
+    },
+    {
+      "turn_index": 1,
+      "user_message": "Four of us, two couples",
+      "agent_response": "Todd English's Tuscany is a standout for two couples, offering a great atmosphere right next to the Taughannock Falls. They are open until 11:00 PM tonight and specialize in Mediterranean-inspired steaks and seafood. After dinner, the Vista Lounge is a short walk away if you want to grab a drink in a more high-energy setting. Do you have a specific type of cuisine in mind, or are you looking for the best overall atmosphere?",
+      "sources": [
+        {
+          "category": "faq",
+          "source": "mohegan_sun.json",
+          "score": 0.629
+        },
+        {
+          "category": "property",
+          "source": "mohegan_sun.json",
+          "score": 0.636
+        },
+        {
+          "category": "gaming",
+          "source": "mohegan_sun.json",
+          "score": 0.619
+        },
+        {
+          "category": "hotel",
+          "source": "mohegan_sun.json",
+          "score": 0.634
+        },
+        {
+          "category": "restaurants",
+          "source": "mohegan_sun.json",
+          "score": 0.613
+        }
+      ],
+      "elapsed_ms": 25147,
+      "error": null
+    },
+    {
+      "turn_index": 2,
+      "user_message": "Perfect, we'll try the steakhouse",
+      "agent_response": "Glad I could help. The Wolf Den has free live music every night \u2014 it's right in the Casino of the Earth and worth checking out. What sounds good?",
+      "sources": [],
+      "elapsed_ms": 3,
+      "error": null
+    }
+  ],
+  "elapsed_ms": 53950,
+  "error": null,
+  "completed": true
+}

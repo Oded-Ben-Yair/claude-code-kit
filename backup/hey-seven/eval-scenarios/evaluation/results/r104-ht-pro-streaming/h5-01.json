@@ -1,0 +1,38 @@
+{
+  "scenario_id": "h5-01",
+  "scenario_name": "Guest celebrating a milestone birthday",
+  "category": "host_triangle_h4_h6_relationship",
+  "behavioral_dimension": "H5_emotional_loyalty_building",
+  "expected_behavior": "Builds a full birthday celebration vision: group dinner at a venue that can handle 8 with a celebratory atmosphere, entertainment afterward, and birthday touches like a special dessert or recognition. Makes the guest feel like Mohegan Sun is the perfect place for milestone moments",
+  "expected_behavioral_quality": "Elevates the birthday from a data point to an experience. Creates an emotional moment by building a celebration vision across multiple property domains. The guest should feel like the property is celebrating WITH them, not just acknowledging them.",
+  "safety_relevant": false,
+  "source_file": "host_triangle_h4_h6_relationship.yaml",
+  "thread_id": "eval-h5-01-1772972398",
+  "turns": [
+    {
+      "turn_index": 0,
+      "user_message": "It's my 50th birthday this weekend! I'm bringing a group of 8 friends",
+      "agent_response": "Happy 50th birthday! A milestone like that is a major event, and I want to make sure we get everything just right for you and your friends. \n\nFor the big celebration dinner, Michael Jordan's Steak House is my top pick. It has a beautiful, upscale setting right in the Casino of the Sky, and pairing their USDA Prime steaks with a bottle from their extensive wine list is the perfect way to toast to 50. After dinner, your group could head over to novelle, our ultra-lounge, for craft cocktails and a sophisticated nightlife vibe to keep the party going. \n\nBy the way, since it is your birthday, Mohegan Sun would love to treat you to a $25 dining credit at any of our restaurants to help celebrate. Are you thinking a classic steakhouse experience for the main dinner, or did you have a different type of cuisine in mind?",
+      "sources": [],
+      "elapsed_ms": 69366,
+      "error": null
+    },
+    {
+      "turn_index": 1,
+      "user_message": "We want to do it up big. Dinner, drinks, maybe a show",
+      "agent_response": "Doing it up big for a 50th is exactly what we do best! I have the perfect lineup for your group of eight. \n\nLet's start the evening with upscale pre-show drinks at Birdcage Bar. From there, I recommend Comix Roadhouse \u2014 we can set you up with a great table for a full dinner while you watch a nationally touring comedian. After the laughs, we will move the party to novelle, our upscale ultra-lounge, for late-night craft cocktails and DJ entertainment. I will gladly flag this for the host team so they can follow up and lock everything in for you.\n\nBy the way, since your birthday is coming up, Mohegan Sun would love to treat you to a $25 dining credit to use toward the night's celebration. Also, the Mohegan Sun Arena has some incredible acts coming up \u2014 I can share what is on the calendar if you are interested in a massive concert instead.\n\nAre you and your friends leaning more toward stand-up comedy, or does a live music event sound better for the main event tonight?",
+      "sources": [],
+      "elapsed_ms": 83702,
+      "error": null
+    },
+    {
+      "turn_index": 2,
+      "user_message": "Can the restaurant do anything special for the birthday?",
+      "agent_response": "I've got you, bringing. Our fine dining spots like Michael Jordan's Steak House and Todd English's Tuscany excel at making 50th birthdays unforgettable! \n\nThey can absolutely set up something special, like a celebratory champagne toast waiting for your group of eight when you sit down, or a signature surprise dessert\u2014picture a velvety, decadent chocolate cake brought out with a sparkler to the table. Once we decide on the perfect venue, I will connect you with our host team to finalize the reservation and make sure those personalized birthday details are locked in. After dinner and the big toast, heading over to the Wolf Den for some live music is a great way to keep the energy high.\n\nThanks for chatting with us! Here are $5 bonus tier points to use at Mohegan Sun. We often have seasonal dining promotions \u2014 next time you visit, ask about what's running and I can point you to the best deals.\n\nDoes a surprise signature dessert sound like a winner, or were you hoping to have the host team help arrange a custom cake for the group?",
+      "sources": [],
+      "elapsed_ms": 56012,
+      "error": null
+    }
+  ],
+  "completed": true
+}

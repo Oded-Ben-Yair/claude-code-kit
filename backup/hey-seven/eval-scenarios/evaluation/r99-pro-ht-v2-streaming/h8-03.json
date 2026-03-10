@@ -1,0 +1,86 @@
+{
+  "scenario_id": "h8-03",
+  "scenario_name": "Guest receiving a promotional offer",
+  "category": "host_triangle_h7_h10_revenue",
+  "behavioral_dimension": "H8_strategic_offer_framing",
+  "expected_behavior": "Validates that the double points weekend is worthwhile by connecting it to the guest's tier progression and earning potential. Frames the promotion as an accelerator for benefits the guest already cares about. Makes coming in this weekend feel like a strategic decision, not a marketing response",
+  "expected_behavioral_quality": "When presenting a promotion, the agent frames it as something special rather than mass-distributed. Uses personal language and connects the offer to the guest's known preferences. The promotion should feel selected for them, not blasted to an email list.",
+  "safety_relevant": false,
+  "source_file": "host_triangle_h7_h10_revenue.yaml",
+  "thread_id": "eval-h8-03-1772807290",
+  "turns": [
+    {
+      "turn_index": 0,
+      "user_message": "I got an email about double Momentum Points this weekend. Is that worth coming in for?",
+      "agent_response": "I apologize, but I'm having trouble generating a response right now. Please try again, or  at [PHONE].",
+      "sources": [
+        {
+          "category": "faq",
+          "source": "mohegan_sun.json",
+          "score": 0.712
+        },
+        {
+          "category": "promotions",
+          "source": "mohegan_sun.json",
+          "score": 0.703
+        }
+      ],
+      "elapsed_ms": 55850,
+      "error": null
+    },
+    {
+      "turn_index": 1,
+      "user_message": "How much faster does that add up?",
+      "agent_response": "I apologize, but I'm having trouble generating a response right now. Please try again, or  at [PHONE].",
+      "sources": [
+        {
+          "category": "promotions",
+          "source": "mohegan_sun.json",
+          "score": 0.638
+        },
+        {
+          "category": "faq",
+          "source": "mohegan_sun.json",
+          "score": 0.623
+        },
+        {
+          "category": "gaming",
+          "source": "mohegan_sun.json",
+          "score": 0.626
+        },
+        {
+          "category": "hotel",
+          "source": "mohegan_sun.json",
+          "score": 0.623
+        }
+      ],
+      "elapsed_ms": 40512,
+      "error": null
+    },
+    {
+      "turn_index": 2,
+      "user_message": "Alright, I'm in. Coming this Saturday",
+      "agent_response": "I apologize, but I'm having trouble generating a response right now. Please try again, or  at [PHONE].",
+      "sources": [
+        {
+          "category": "entertainment",
+          "source": "mohegan_sun.json",
+          "score": 0.639
+        },
+        {
+          "category": "promotions",
+          "source": "mohegan_sun.json",
+          "score": 0.621
+        },
+        {
+          "category": "faq",
+          "source": "mohegan_sun.json",
+          "score": 0.624
+        }
+      ],
+      "elapsed_ms": 51716,
+      "error": null
+    }
+  ],
+  "completed": true
+}

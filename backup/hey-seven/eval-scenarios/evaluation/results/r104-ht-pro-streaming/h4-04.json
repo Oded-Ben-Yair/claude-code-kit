@@ -1,0 +1,71 @@
+{
+  "scenario_id": "h4-04",
+  "scenario_name": "Guest who introduced themselves formally",
+  "category": "host_triangle_h4_h6_relationship",
+  "behavioral_dimension": "H4_personalized_recognition",
+  "expected_behavior": "Maintains 'Mr. Chen' throughout, never dropping to first name. Matches the formal register in vocabulary and sentence structure. Recommendation blends fine dining with a 'hidden gem' angle, showing the agent listened to what Mr. Chen actually values \u2014 not just price tier",
+  "expected_behavioral_quality": "Mirrors the guest's formality level throughout the conversation. A guest who introduces themselves with a title or full name expects that register to be maintained. Recognition includes respecting the communication style, not just remembering the name.",
+  "safety_relevant": false,
+  "source_file": "host_triangle_h4_h6_relationship.yaml",
+  "thread_id": "eval-h4-04-1772972253",
+  "turns": [
+    {
+      "turn_index": 0,
+      "user_message": "Good evening. I'm Mr. Chen, visiting from New York. I understand you have quite a dining portfolio.",
+      "agent_response": "It is a pleasure to have you with us, Mr. Seven. Since you are visiting from New York, I imagine you appreciate a well-executed menu, and Sushi Palace in the Casino of the Sky is an exceptional place to start your afternoon. \n\nThe chefs there prepare fresh sashimi and specialty rolls with a precision that rivals the best boutiques in Manhattan, and the atmosphere remains elegant yet approachable. They are currently open until 10:00 PM tonight, and I'd suggest exploring their omakase options if you want to see the full range of their expertise. After a meal like that, you might enjoy a stroll through the shops in the Riverview Terrace to settle in. \n\nTo help me narrow down the best spots for the rest of your trip, how many people will be joining you for dinner tonight?",
+      "sources": [
+        {
+          "category": "restaurants",
+          "source": "mohegan_sun.json",
+          "score": 0.672
+        },
+        {
+          "category": "faq",
+          "source": "mohegan_sun.json",
+          "score": 0.654
+        },
+        {
+          "category": "entertainment",
+          "source": "mohegan_sun.json",
+          "score": 0.662
+        }
+      ],
+      "elapsed_ms": 32157,
+      "error": null
+    },
+    {
+      "turn_index": 1,
+      "user_message": "I appreciate fine dining but also enjoy discovering hidden gems. What would you recommend?",
+      "agent_response": "Chen, Mr. Seven, if you want fine dining with a bit of an insider feel, Ballo Italian Restaurant is where you want to be tonight. While our celebrity-backed spots get a lot of the obvious spotlight, Ballo operates like a brilliant culinary secret tucked into the Casino of the Sky. \n\nThey focus on contemporary Italian, and their housemade pastas and risottos have a velvety finish that guests come back for again and again. It opens at 5:00 PM this evening, and the smart casual atmosphere is perfect for a relaxed but elevated meal. Afterward, if you are looking to keep the night going, the Wolf Den has free live music every night and the energy there is always fantastic. \n\nAre you dining solo this evening, or do you have a group with you so I can envision the best table for you?",
+      "sources": [
+        {
+          "category": "restaurants",
+          "source": "mohegan_sun.json",
+          "score": 0.657
+        }
+      ],
+      "elapsed_ms": 69864,
+      "error": null
+    },
+    {
+      "turn_index": 2,
+      "user_message": "Excellent taste. I'll try the Tuscany tonight.",
+      "agent_response": "Mr. Seven, Tuscany is a marvelous choice for this evening. The wood-fired aroma hits you the moment you walk in, and their handmade pastas have a velvety finish that guests come back for again and again. \n\nThey open today at 5:00 PM in the Casino of the Sky and serve until 10:00 PM. I suggest business casual attire to match the elegant, Tuscan-inspired decor. Since it is a Sunday and this is one of our most popular destinations, I'd suggest securing a reservation. Please keep in mind that hours and prices can vary, so it is always wise to confirm details upon your arrival. Once you have enjoyed your meal, the Wolf Den in the Casino of the Earth is a great next stop\u2014it features free live music every night and the energy is a perfect way to transition into the night. \n\nI can certainly connect you with our host team to finalize those dinner plans if you are ready. Do you usually prefer a table near the open kitchen to watch the chefs at work, or are you looking for a quieter corner?",
+      "sources": [
+        {
+          "category": "restaurants",
+          "source": "mohegan_sun.json",
+          "score": 0.689
+        },
+        {
+          "category": "faq",
+          "source": "mohegan_sun.json",
+          "score": 0.649
+        }
+      ],
+      "elapsed_ms": 41986,
+      "error": null
+    }
+  ],
+  "completed": true
+}

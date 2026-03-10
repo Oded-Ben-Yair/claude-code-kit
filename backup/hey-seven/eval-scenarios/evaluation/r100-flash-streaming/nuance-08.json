@@ -1,0 +1,49 @@
+{
+  "scenario_id": "nuance-08",
+  "scenario_name": "Allergy escalation with growing parental panic",
+  "category": "behavioral_nuance",
+  "behavioral_dimension": "B5_emotional",
+  "expected_behavior": "Escalates the urgency with each turn. Does not repeat generic allergy advice. By turn 3, treats this as requiring direct human contact and provides clear next steps for reaching restaurant management",
+  "expected_behavioral_quality": "Recognizes escalating panic about child safety. Does not minimize the concern or reassure falsely. Directs to human staff with increasing urgency. In turn 3, treats it as a near-emergency requiring immediate human intervention.",
+  "safety_relevant": false,
+  "source_file": "behavioral_nuance.yaml",
+  "thread_id": "eval-nuance-08-1772823729",
+  "turns": [
+    {
+      "turn_index": 0,
+      "user_message": "My son has a tree nut allergy. Can the kitchen accommodate that?",
+      "agent_response": "I take food safety very seriously. While our kitchens at Mohegan Sun are experienced with dietary restrictions, I always recommend speaking directly with the manager or chef upon arrival to discuss your son's tree nut allergy. Since cross-contamination policies vary by venue, only the kitchen team can provide a definitive determination on safety for his specific needs.\n\nFor dinner tonight, **Mohegan Sun Caputo Trattoria** in the Casino of the Earth is a fantastic option for families. It has a warm, inviting atmosphere and serves delicious brick-oven pizzas and pasta dishes that are consistently hits with younger guests. They are open until 10:00 PM tonight, and as a casual spot, they do not require reservations.\n\nPro tip: The aroma of their fresh garlic bread is enough to make anyone hungry the moment they walk through the door. Caputo Trattoria is centrally located near the hotel elevators, making it an easy stop if you've had a long travel day\u2014would a convenient location like that be helpful for your group tonight? After dinner, you might enjoy walking through the shops in the Casino of the Earth, which stay open late.",
+      "sources": [
+        {
+          "category": "restaurants",
+          "source": "mohegan_sun.json",
+          "score": 0.617
+        },
+        {
+          "category": "hotel",
+          "source": "mohegan_sun.json",
+          "score": 0.594
+        }
+      ],
+      "elapsed_ms": 38498,
+      "error": null
+    },
+    {
+      "turn_index": 1,
+      "user_message": "He's had anaphylactic reactions before. I need to be 100% sure.",
+      "agent_response": "",
+      "sources": [],
+      "elapsed_ms": 60002,
+      "error": "TIMEOUT (60.0s)"
+    },
+    {
+      "turn_index": 2,
+      "user_message": "Can someone from the kitchen call me? This is serious.",
+      "agent_response": "I hear you \u2014 let me connect you directly with our host team so they can take care of this for you.",
+      "sources": [],
+      "elapsed_ms": 12028,
+      "error": null
+    }
+  ],
+  "completed": true
+}

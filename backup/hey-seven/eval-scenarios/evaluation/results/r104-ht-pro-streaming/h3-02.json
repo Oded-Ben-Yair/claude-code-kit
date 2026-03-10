@@ -1,0 +1,60 @@
+{
+  "scenario_id": "h3-02",
+  "scenario_name": "Guest mentions tier at competitor property",
+  "category": "host_triangle_h1_h3_development",
+  "behavioral_dimension": "H3_pipeline_advancement",
+  "expected_behavior": "Translates the Caesars Diamond status into Momentum-equivalent context. Explains how table game play earns tier credits and what tier would match their current status. Makes signing up feel like a strategic move for a serious player, not a marketing exercise",
+  "expected_behavioral_quality": "When a guest mentions tier status at a competitor, the agent recognizes the status signal and positions Mohegan Sun's Momentum tiers as comparable or better for their play level. Does not dismiss the competitor tier but creates curiosity about Momentum benefits.",
+  "safety_relevant": false,
+  "source_file": "host_triangle_h1_h3_development.yaml",
+  "thread_id": "eval-h3-02-1772971478",
+  "turns": [
+    {
+      "turn_index": 0,
+      "user_message": "I'm Diamond at Caesars. What do you have here that's comparable?",
+      "agent_response": "Welcome to Mohegan Sun, Diamond. While I cannot compare our program directly to other properties' tiers, I can tell you exactly how our Momentum Rewards program is structured. \n\nOur program features five tiers: Core, Ignite, Leap, Ascend, and the invite-only Soar level. Premium tiers like Leap and Ascend include benefits such as priority access, VIP events, complimentary valet, and a dedicated host. Signing up is free at any Momentum Desk on the casino floor, and as a new guest, you may be eligible for a $10 introductory free play bonus when you join. \n\nWhat types of games do you usually prefer to play?",
+      "sources": [],
+      "elapsed_ms": 60173,
+      "error": null
+    },
+    {
+      "turn_index": 1,
+      "user_message": "How fast can I move up? I play mostly table games",
+      "agent_response": "Tier progression on table games depends strictly on your average bet, game type, and time played. Hand your Momentum card to the dealer at any of our 370 tables to start earning toward the 2,500 Tier Credits needed for the Ignite tier. \n\nDiamond, are you looking for standard tables or our high-limit gaming areas today?",
+      "sources": [
+        {
+          "category": "gaming",
+          "source": "mohegan_sun.json",
+          "score": 0.701
+        },
+        {
+          "category": "promotions",
+          "source": "mohegan_sun.json",
+          "score": 0.677
+        }
+      ],
+      "elapsed_ms": 69151,
+      "error": null
+    },
+    {
+      "turn_index": 2,
+      "user_message": "Alright, I'll sign up at the Momentum Desk",
+      "agent_response": "Diamond, the main Momentum Desk near the Spring Gateway usually has the shortest lines, so that is your fastest option to get your card and check on your introductory free play bonus. \n\nOnce you are set up, you will start earning Tier Credits immediately on the tables. Are you planning to grab a quick bite before you start playing, or heading straight to the action?",
+      "sources": [
+        {
+          "category": "faq",
+          "source": "mohegan_sun.json",
+          "score": 0.767
+        },
+        {
+          "category": "promotions",
+          "source": "mohegan_sun.json",
+          "score": 0.735
+        }
+      ],
+      "elapsed_ms": 50535,
+      "error": null
+    }
+  ],
+  "completed": true
+}

@@ -1,0 +1,38 @@
+{
+  "scenario_id": "h10-01",
+  "scenario_name": "Guest asking agent to arrange something",
+  "category": "host_triangle_h7_h10_revenue",
+  "behavioral_dimension": "H10_host_identity_authority",
+  "expected_behavior": "Handles the reservation request with host authority \u2014 'let me arrange that' not 'you can call the restaurant.' Accepts the special seating request with confidence. When the guest compliments the service, accepts it naturally. The agent feels like an insider who can pull strings, not a search engine",
+  "expected_behavioral_quality": "When a guest asks the agent to arrange or set up something, the agent projects the authority of a host who can make things happen. Uses language like 'let me look into that' rather than 'you'll need to call.' Takes ownership of the request even when it needs to be escalated.",
+  "safety_relevant": false,
+  "source_file": "host_triangle_h7_h10_revenue.yaml",
+  "thread_id": "eval-h10-01-1772836168",
+  "turns": [
+    {
+      "turn_index": 0,
+      "user_message": "Can you set up a dinner reservation at Tuscany for 4 tonight at 7?",
+      "agent_response": "",
+      "sources": [],
+      "elapsed_ms": 60005,
+      "error": "TIMEOUT (60.0s)"
+    },
+    {
+      "turn_index": 1,
+      "user_message": "We'd also love a table with a good view if possible",
+      "agent_response": "",
+      "sources": [],
+      "elapsed_ms": 60003,
+      "error": "TIMEOUT (60.0s)"
+    },
+    {
+      "turn_index": 2,
+      "user_message": "Perfect. You're like having a personal concierge",
+      "agent_response": "",
+      "sources": [],
+      "elapsed_ms": 60006,
+      "error": "TIMEOUT (60.0s)"
+    }
+  ],
+  "completed": true
+}

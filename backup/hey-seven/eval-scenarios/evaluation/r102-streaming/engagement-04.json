@@ -1,0 +1,81 @@
+{
+  "scenario_id": "engagement-04",
+  "scenario_name": "Multi-part compound question",
+  "category": "behavioral_engagement",
+  "behavioral_dimension": "B3_engagement",
+  "expected_behavior": "Attempts to address all parts of the compound question in the first response. If pressed on missed parts, provides the missing information without defensiveness and acknowledges the omission",
+  "expected_behavioral_quality": "Addresses all three parts of the compound question systematically. Does not answer only the first or last part. Uses structure (numbered list or clear sections) to show each sub-question was heard. Does not merge them into a vague general answer.",
+  "safety_relevant": false,
+  "source_file": "behavioral_engagement.yaml",
+  "thread_id": "eval-engagement-04-1772911906",
+  "turns": [
+    {
+      "turn_index": 0,
+      "user_message": "What restaurants are open now and which ones have outdoor seating and are they kid-friendly?",
+      "agent_response": "I've got you. SolToro Taqueria & Tequila Bar in the Casino of the Earth is my top recommendation for your family right now. They are open until 11:00 PM on Saturdays and offer a vibrant atmosphere where the aroma of fresh tortillas and grilled meats creates a festive mood. While our restaurants are located within the climate-controlled beauty of the resort rather than outdoors, SolToro's lively energy makes it a favorite for guests of all ages.\n\nThe menu is very kid-friendly with authentic tacos and ceviches, and they do not require reservations. For other options open now, Johnny Rockets is serving burgers and shakes until 11:00 PM, and Caputo Trattoria has brick-oven pizzas and pasta until 10:00 PM. If you need a spot that never closes, Lantern Bar & Grill is open 24 hours with a full menu of American favorites.\n\nI can provide more details on any of these menus and then connect you with the host team to finalize your dinner plans. After you eat, the Wolf Den is right nearby in the Casino of the Earth and has free live music every night to keep the energy up.\n\nHow many people are in your group this evening?",
+      "sources": [
+        {
+          "category": "restaurants",
+          "source": "mohegan_sun.json",
+          "score": 0.65
+        }
+      ],
+      "elapsed_ms": 85709,
+      "error": null
+    },
+    {
+      "turn_index": 1,
+      "user_message": "You didn't mention which ones have outdoor seating",
+      "agent_response": "Let me be more specific. All dining at Mohegan Sun is located indoors within our climate-controlled resort environment, so we do not have restaurants with outdoor seating.\n\nFor a fun, kid-friendly atmosphere right now, **Johnny Rockets** is a great choice. It's located in the Casino of the Earth and stays open until 11:00 PM on Saturdays. It's a classic 1950s-style diner where families can enjoy burgers and shakes in a casual setting without needing a reservation.\n\nKnowledge flex: The team at Johnny Rockets is known for their high-energy service, and they'll often break into a song or dance which is usually a big hit with the kids!\n\nIf you would prefer a sit-down Italian meal, **Caputo Trattoria** is also in the Casino of the Earth and is open until 10:00 PM tonight. They serve brick-oven pizzas and pasta dishes that are perfect for sharing with the family. Both of these spots are very welcoming to children and offer a relaxed vibe.\n\nAfter you finish your meal, the Wolf Den in the center of the Casino of the Earth has free live music tonight which is always a great way to keep the energy up. How many children are in your party this evening?",
+      "sources": [
+        {
+          "category": "faq",
+          "source": "mohegan_sun.json",
+          "score": 0.65
+        },
+        {
+          "category": "restaurants",
+          "source": "mohegan_sun.json",
+          "score": 0.64
+        }
+      ],
+      "elapsed_ms": 43722,
+      "error": null
+    },
+    {
+      "turn_index": 2,
+      "user_message": "OK and the kid-friendly part?",
+      "agent_response": "I've got you. Caputo Trattoria is my top pick for a kid-friendly meal tonight because it has a very casual atmosphere and serves brick-oven pizzas and pastas that are always a hit with younger guests. They are open until 10:00 PM tonight in the Casino of the Earth.\n\nFor entertainment, Kids Quest and Cyber Quest are the centers of the action. Kids Quest provides supervised play for children ages 6 weeks to 12 years if you're looking for some adult time, while Cyber Quest is a massive arcade with the latest games for teens and families. You'll also find the Wombi Rock Climbing Wall nearby, which is an indoor climb suitable for all skill levels.\n\nInsider tip: Wombi Rock is located right near the family entertainment zone, so it's very easy to jump from the arcade to the climbing wall. \n\nHours and availability for these activities can vary, so it is always a good idea to confirm specific times with the front desk when you arrive. How old are the kids you're traveling with tonight?",
+      "sources": [
+        {
+          "category": "entertainment",
+          "source": "mohegan_sun.json",
+          "score": 0.663
+        },
+        {
+          "category": "amenities",
+          "source": "mohegan_sun.json",
+          "score": 0.656
+        },
+        {
+          "category": "faq",
+          "source": "mohegan_sun.json",
+          "score": 0.605
+        },
+        {
+          "category": "restaurants",
+          "source": "mohegan_sun.json",
+          "score": 0.642
+        },
+        {
+          "category": "hotel",
+          "source": "mohegan_sun.json",
+          "score": 0.604
+        }
+      ],
+      "elapsed_ms": 52818,
+      "error": null
+    }
+  ],
+  "completed": true
+}

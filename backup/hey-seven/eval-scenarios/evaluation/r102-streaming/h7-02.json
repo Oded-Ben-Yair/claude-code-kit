@@ -1,0 +1,81 @@
+{
+  "scenario_id": "h7-02",
+  "scenario_name": "Hotel guest looking for daytime activities",
+  "category": "host_triangle_h7_h10_revenue",
+  "behavioral_dimension": "H7_cross_selling_wallet_share",
+  "expected_behavior": "Builds a full day arc: morning at the pool, afternoon spa, shopping at The Shops, then dinner and evening entertainment. Each suggestion flows naturally from the previous one. The guest feels like the property has a full day's worth of experiences, not just a casino with a hotel attached",
+  "expected_behavioral_quality": "When a hotel guest asks about daytime activities, the agent introduces spa, dining, and entertainment as a full-day experience. The cross-sell creates a vision of a resort day, not just a list of things to do.",
+  "safety_relevant": false,
+  "source_file": "host_triangle_h7_h10_revenue.yaml",
+  "thread_id": "eval-h7-02-1772912916",
+  "turns": [
+    {
+      "turn_index": 0,
+      "user_message": "We're staying at the Sky Tower tonight. What should we do during the day?",
+      "agent_response": "Sky Tower has those floor-to-ceiling windows that show off the Thames River valley perfectly in the morning light. I'd recommend starting your day at the Elemis Spa in the Earth Tower\u2014it opens at 9:00 AM and is the best spot to recharge before the casino floor gets busy.\n\nAre you here for a special occasion or just a getaway?",
+      "sources": [
+        {
+          "category": "hotel",
+          "source": "mohegan_sun.json",
+          "score": 0.692
+        },
+        {
+          "category": "amenities",
+          "source": "mohegan_sun.json",
+          "score": 0.675
+        },
+        {
+          "category": "restaurants",
+          "source": "mohegan_sun.json",
+          "score": 0.673
+        }
+      ],
+      "elapsed_ms": 42892,
+      "error": null
+    },
+    {
+      "turn_index": 1,
+      "user_message": "The spa sounds nice. Anything else before dinner?",
+      "agent_response": "Since you'll be feeling refreshed from the spa, strolling through The Shops at Mohegan Sun is a great way to spend the afternoon; there are over 40 boutiques and brand-name stores to explore. If you're looking for a sophisticated pre-dinner drink, novelle is our ultra-lounge that opens on Saturday evenings and has a fantastic atmosphere with a DJ.\n\nAre you more into a high-energy vibe or something a bit more relaxed for your evening?",
+      "sources": [
+        {
+          "category": "amenities",
+          "source": "mohegan_sun.json",
+          "score": 0.689
+        },
+        {
+          "category": "entertainment",
+          "source": "mohegan_sun.json",
+          "score": 0.671
+        },
+        {
+          "category": "faq",
+          "source": "mohegan_sun.json",
+          "score": 0.65
+        }
+      ],
+      "elapsed_ms": 27673,
+      "error": null
+    },
+    {
+      "turn_index": 2,
+      "user_message": "Great, and where should we eat for dinner?",
+      "agent_response": "Since you're staying in the Sky Tower, Ballo Italian Restaurant is the standout choice for tonight; it\u2019s right there in the Casino of the Sky and has an incredible energy on Saturday nights. The space feels like a modern Italian cathedral with its arched ceilings, and the housemade pasta\u2014especially the tagliatelle with wild mushrooms\u2014is exceptional.\n\nThey are open until 10:00 PM tonight, and since it's a bit more upscale with a smart casual dress code, I'd suggest heading over soon or checking in to see if they can tuck you into a booth. After dinner, the Wolf Den usually has great live music and is just a short walk away if you're looking to keep the night going. \n\nWhat kind of flavors are you usually drawn to\u2014rich pastas or more of a fresh seafood person?",
+      "sources": [
+        {
+          "category": "restaurants",
+          "source": "mohegan_sun.json",
+          "score": 0.642
+        },
+        {
+          "category": "faq",
+          "source": "mohegan_sun.json",
+          "score": 0.653
+        }
+      ],
+      "elapsed_ms": 27181,
+      "error": null
+    }
+  ],
+  "completed": true
+}

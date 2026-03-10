@@ -1,0 +1,61 @@
+{
+  "id": "coherence-03",
+  "name": "Forgetting dietary preference across domain shift",
+  "source_file": "behavioral_multiturn_coherence.yaml",
+  "category": "behavioral_multiturn_coherence",
+  "behavioral_dimension": "B7_coherence",
+  "expected_behavior": "Turn 3 dining recommendation must account for the vegetarian preference stated in turn 1, even though turn 2 was about the spa. Agent should NOT recommend the steakhouse as the primary option. The dietary extraction should persist via the state reducer",
+  "expected_behavioral_quality": "Guest mentions a dietary restriction in turn 1. After a topic shift to spa/entertainment, when dining comes up again, the dietary preference must still be applied. The extracted_fields reducer should persist this across turns.",
+  "safety_relevant": false,
+  "turns": [
+    {
+      "turn_index": 0,
+      "user_message": "I'm vegetarian. What are my dinner options?",
+      "agent_response": "For a standout vegetarian dinner, Todd English's Tuscany is an exceptional choice where the wood-fired aroma of the kitchen sets the stage for a wonderful meal. Their handmade pastas and artisanal pizzas are crafted with a level of detail that makes them favorites even for our non-vegetarian guests.\n\nThey are located in the Casino of the Sky and open this evening at 5:00 PM, with service until 10:00 PM. The setting is business casual with a price range of $$$$, so I do recommend a reservation to ensure you have a table waiting. I can easily connect you with our host team to handle that booking for you.\n\nSince the Casino of the Earth is just a short walk away, you might enjoy catching a live performance at the Wolf Den after your meal. How many guests are in your party tonight?",
+      "sources": [],
+      "elapsed_ms": 42167,
+      "error": null
+    },
+    {
+      "turn_index": 1,
+      "user_message": "Actually tell me about the spa first",
+      "agent_response": "The spas here are designed to be a complete escape from the energy of the casino floor. Mandara Spa is our award-winning, full-service retreat that uses Balinese healing traditions, and it's perfect if you want to spend time in the steam room or sauna before your treatment. They are open until 8:00 PM tonight.\n\nIf you're looking for something more modern or focused on skincare, the Elemis Spa at Earth Tower is excellent. They offer premium Elemis treatments and even express services if you're looking for a quicker refresh before dinner. They stay open until 7:00 PM daily. I can certainly help you get in touch with the spa team to see which therapists are available for a session today.\n\nSince you're planning on a vegetarian dinner later, a mid-afternoon spa session would time out perfectly for a 5:00 PM reservation. Are you leaning more toward a full body massage or a focused skincare treatment?",
+      "sources": [
+        {
+          "category": "amenities",
+          "source": "mohegan_sun.json",
+          "score": 0.678
+        },
+        {
+          "category": "property",
+          "source": "mohegan_sun.json",
+          "score": 0.653
+        },
+        {
+          "category": "hotel",
+          "source": "mohegan_sun.json",
+          "score": 0.633
+        }
+      ],
+      "elapsed_ms": 27559,
+      "error": null
+    },
+    {
+      "turn_index": 2,
+      "user_message": "Ok back to dinner \u2014 where should I go?",
+      "agent_response": "For a vegetarian-friendly dinner, Tao Asian Bistro & Lounge is a standout choice because their menu features an incredible array of vegetable-focused dim sum and specialized sushi rolls. The 16-foot Buddha and the dark, stylish lighting create a dramatic atmosphere that makes the meal feel like a special event.\n\nThey open today at 5:00 PM and serve until 11:00 PM, though hours and pricing in the $$$ range can vary, so confirming with the property is always a good idea. It is a smart casual venue where reservations are highly recommended, and I can certainly connect you with our host team to finalize a booking for you. Since you were looking into the spa earlier, an early evening reservation would give you plenty of time to relax before your meal! After dinner, the shops at the Casino of the Sky are just a few steps away for some late-night browsing. Does a Pan-Asian menu sound like the right fit for your evening?",
+      "sources": [
+        {
+          "category": "restaurants",
+          "source": "mohegan_sun.json",
+          "score": 0.657
+        }
+      ],
+      "elapsed_ms": 77548,
+      "error": null
+    }
+  ],
+  "elapsed_ms": 151303,
+  "error": null,
+  "completed": true
+}

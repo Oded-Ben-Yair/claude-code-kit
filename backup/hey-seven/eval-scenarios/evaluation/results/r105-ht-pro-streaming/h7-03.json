@@ -1,0 +1,76 @@
+{
+  "scenario_id": "h7-03",
+  "scenario_name": "Entertainment guest exploring other domains",
+  "category": "host_triangle_h7_h10_revenue",
+  "behavioral_dimension": "H7_cross_selling_wallet_share",
+  "expected_behavior": "Builds a full evening around the Arena anchor: pre-show dinner at a nearby restaurant, the show itself, and post-show options (Wolf Den late show, Comix, casino floor). The guest leaves with a plan for an entire evening, not just a concert ticket",
+  "expected_behavioral_quality": "When a guest comes for entertainment, the agent expands the visit into dining and other experiences. The cross-sell turns a one-activity visit into a full resort evening where the show is the anchor but not the only experience.",
+  "safety_relevant": false,
+  "source_file": "host_triangle_h7_h10_revenue.yaml",
+  "thread_id": "eval-h7-03-1772992548",
+  "turns": [
+    {
+      "turn_index": 0,
+      "user_message": "We have Arena tickets for Saturday. What else should we do that night?",
+      "agent_response": "I\u2019ve got you. Make novelle your post-show destination for craft cocktails and a DJ set. It\u2019s the best way to keep the energy going in a sophisticated space once the Arena lets out. \n\nThe atmosphere there shifts perfectly from a relaxed lounge to a high-energy nightlife spot right as the crowds leave the show. What artist are you coming to see?",
+      "sources": [
+        {
+          "category": "entertainment",
+          "source": "mohegan_sun.json",
+          "score": 0.67
+        },
+        {
+          "category": "restaurants",
+          "source": "mohegan_sun.json",
+          "score": 0.65
+        }
+      ],
+      "elapsed_ms": 51658,
+      "error": null
+    },
+    {
+      "turn_index": 1,
+      "user_message": "A pre-show dinner sounds great. Where?",
+      "agent_response": "For a Saturday night before an Arena show, Michael Jordan's Steak House is my top pick. Their USDA Prime steaks and classic sides make for an incredible meal, and the staff is great at pacing your service if they know you are heading to the show. \n\nAs a quick insider tip, try to secure a table right around 5:00 PM when they open. That gives you plenty of time to enjoy the extensive wine list without having to watch the clock before heading to your seats. \n\nAre you leaning toward an upscale steakhouse vibe for Saturday, or were you hoping for something a bit more casual?",
+      "sources": [
+        {
+          "category": "restaurants",
+          "source": "mohegan_sun.json",
+          "score": 0.692
+        },
+        {
+          "category": "entertainment",
+          "source": "mohegan_sun.json",
+          "score": 0.675
+        },
+        {
+          "category": "faq",
+          "source": "mohegan_sun.json",
+          "score": 0.639
+        }
+      ],
+      "elapsed_ms": 59923,
+      "error": null
+    },
+    {
+      "turn_index": 2,
+      "user_message": "And after the show? We don't want the night to end",
+      "agent_response": "Avalon Nightclub is exactly where you want to be if you aren't ready to call it a night. It stays high-energy until 2:00 AM on Saturdays with top-tier DJs and an incredible sound system that keeps the party moving long after the Arena show ends.\n\nIf you find yourself getting hungry after dancing, Lantern Bar & Grill is open 24 hours in the Casino of the Earth and serves a full menu of late-night favorites like burgers and steaks. \n\nSince we are planning a full Saturday night out, are you celebrating a birthday or another special occasion?",
+      "sources": [
+        {
+          "category": "entertainment",
+          "source": "mohegan_sun.json",
+          "score": 0.713
+        },
+        {
+          "category": "restaurants",
+          "source": "mohegan_sun.json",
+          "score": 0.688
+        }
+      ],
+      "elapsed_ms": 40586,
+      "error": null
+    }
+  ],
+  "completed": true
+}

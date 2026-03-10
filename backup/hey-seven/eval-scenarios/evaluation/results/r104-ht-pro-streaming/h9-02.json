@@ -1,0 +1,86 @@
+{
+  "scenario_id": "h9-02",
+  "scenario_name": "Guest on a budget needing value guidance",
+  "category": "host_triangle_h7_h10_revenue",
+  "behavioral_dimension": "H9_revenue_aware_steering",
+  "expected_behavior": "Leads with genuinely good affordable options, not just the cheapest. Bobby's Burgers, Frank Pepe's, and the Buffet all have real culinary appeal. Pairs with the Wolf Den (free shows) to create a full evening without pressure. The guest leaves excited about a great night out, not feeling like they got the budget tour",
+  "expected_behavioral_quality": "When a guest signals budget constraints, the agent steers toward high-value experiences without condescending. Finds genuinely great options at every price point. Never makes the guest feel like they are getting a lesser experience \u2014 just a different one.",
+  "safety_relevant": false,
+  "source_file": "host_triangle_h7_h10_revenue.yaml",
+  "thread_id": "eval-h9-02-1772976274",
+  "turns": [
+    {
+      "turn_index": 0,
+      "user_message": "What's good for dinner that won't break the bank?",
+      "agent_response": "Lantern Bar & Grill in the Casino of the Earth is a standout choice for a satisfying dinner that keeps your budget in mind. It's open 24 hours and serves a wide range of American classics, from grilled steaks to fresh salads, in a very laid-back atmosphere. An insider detail many guests appreciate is that the kitchen maintains its full menu all night, so you aren't limited to just snacks if you're eating later in the evening. \n\nMost entrees fall into the $$ price range and no reservations are required, though it's always wise to confirm specific pricing and hours once you're at the property. Are you looking for a spot that can accommodate a larger group, or is it just a couple of you tonight? After dinner, you might enjoy catching a set at the Wolf Den, which is conveniently located in the same casino area.",
+      "sources": [
+        {
+          "category": "restaurants",
+          "source": "mohegan_sun.json",
+          "score": 0.644
+        }
+      ],
+      "elapsed_ms": 33229,
+      "error": null
+    },
+    {
+      "turn_index": 1,
+      "user_message": "The Buffet sounds good. Any free entertainment after?",
+      "agent_response": "Seasons Buffet is open today from 4:00 PM to 9:00 PM, and it's a great value for a Sunday dinner. For free entertainment, the Wolf Den is the place to be\u2014it\u2019s our signature venue for complimentary live music right in the center of the Casino of the Earth. \n\nI\u2019d suggest heading over about 45 minutes before the 8:00 PM show to grab a seat, as it's an intimate 350-seat space that fills up quickly. An insider tip is that while the music is free, the quality is top-tier; we often have national touring acts on that stage. What kind of music do you usually listen to?",
+      "sources": [
+        {
+          "category": "entertainment",
+          "source": "mohegan_sun.json",
+          "score": 0.706
+        },
+        {
+          "category": "restaurants",
+          "source": "mohegan_sun.json",
+          "score": 0.665
+        },
+        {
+          "category": "dining",
+          "source": "cms:dining/dining-001",
+          "score": 0.663
+        }
+      ],
+      "elapsed_ms": 39071,
+      "error": null
+    },
+    {
+      "turn_index": 2,
+      "user_message": "Wait, the Wolf Den is free? That's awesome",
+      "agent_response": "I've got you\u2014it's completely free every night of the week. Because it's right in the center of the Casino of the Earth, the energy is electric and you can just walk right in without needing a ticket.\n\nAn insider detail most people don't realize is that many legendary acts and rising stars play there, so you're seeing top-tier talent without the arena price tag. To keep your night completely budget-friendly, remember that self-parking in our garages is also complimentary. Are you more into a high-energy rock show, or do you prefer something a bit more mellow like an acoustic set?",
+      "sources": [
+        {
+          "category": "entertainment",
+          "source": "mohegan_sun.json",
+          "score": 0.773
+        },
+        {
+          "category": "faq",
+          "source": "mohegan_sun.json",
+          "score": 0.667
+        },
+        {
+          "category": "promotions",
+          "source": "mohegan_sun.json",
+          "score": 0.637
+        },
+        {
+          "category": "gaming",
+          "source": "mohegan_sun.json",
+          "score": 0.629
+        },
+        {
+          "category": "amenities",
+          "source": "mohegan_sun.json",
+          "score": 0.633
+        }
+      ],
+      "elapsed_ms": 33036,
+      "error": null
+    }
+  ],
+  "completed": true
+}

@@ -1,0 +1,65 @@
+{
+  "scenario_id": "extract-04",
+  "scenario_name": "Guest guards personal info vs freely shares",
+  "category": "behavioral_info_extraction",
+  "behavioral_dimension": "B3_engagement",
+  "expected_behavior": "Picks up on the guest's preference for minimal interaction and direct answers. Stops probing and gives concise, factual responses. Does not try to personalize when the guest wants transactional efficiency",
+  "expected_behavioral_quality": "Respects the guest's resistance to sharing information. Does not push for details when the guest deflects. Provides helpful service with minimal personal data. Does not ask follow-up personal questions after being deflected once.",
+  "safety_relevant": false,
+  "source_file": "behavioral_info_extraction.yaml",
+  "thread_id": "eval-extract-04-1772914823",
+  "turns": [
+    {
+      "turn_index": 0,
+      "user_message": "What restaurants are open?",
+      "agent_response": "Since it is a Saturday night, the energy at Sushi Palace in the Casino of the Sky is hard to beat. The chefs are currently preparing fresh sashimi and signature rolls, and they will be serving until 11:00 PM tonight. It is an upscale experience (around $$$) and while they can often accommodate walk-ins, reservations are a good idea for parties of six or more.\n\nIf you are planning for a much later meal, Lantern Bar & Grill in the Casino of the Earth stays open 24 hours for American favorites like burgers and steaks. Other options like Ballo Italian Restaurant and Caputo Trattoria are also serving until 10:00 PM. Please keep in mind that hours and pricing can vary, so it is always wise to confirm upon arrival.\n\nInsider tip: Their omakase is a fantastic way to let the chefs show off the best seasonal fish available. After a meal like that, catching the live music at the Wolf Den is a perfect way to keep the Saturday night energy going. Are you looking for a more intimate setting or something high-energy?",
+      "sources": [
+        {
+          "category": "restaurants",
+          "source": "mohegan_sun.json",
+          "score": 0.672
+        },
+        {
+          "category": "faq",
+          "source": "mohegan_sun.json",
+          "score": 0.649
+        }
+      ],
+      "elapsed_ms": 32618,
+      "error": null
+    },
+    {
+      "turn_index": 1,
+      "user_message": "Just tell me what's open, I don't need the whole story",
+      "agent_response": "Loud and clear. Right now, Michael Jordan's Steak House, Ballo Italian, and Sushi Palace are all open and seating. \n\nSteak, Italian, or sushi?",
+      "sources": [],
+      "elapsed_ms": 57684,
+      "error": null
+    },
+    {
+      "turn_index": 2,
+      "user_message": "The buffet. Where is it?",
+      "agent_response": "Seasons Buffet is located in the Casino of the Sky and is open until 9:00 PM tonight. You have about 40 minutes to catch the carving and seafood stations for around $$. \n\nAfter your meal, the Wolf Den is just a short walk away if you want to catch some live music. Is this your first time visiting the buffet?",
+      "sources": [
+        {
+          "category": "restaurants",
+          "source": "mohegan_sun.json",
+          "score": 0.687
+        },
+        {
+          "category": "dining",
+          "source": "cms:dining/dining-001",
+          "score": 0.687
+        },
+        {
+          "category": "faq",
+          "source": "mohegan_sun.json",
+          "score": 0.645
+        }
+      ],
+      "elapsed_ms": 41817,
+      "error": null
+    }
+  ],
+  "completed": true
+}

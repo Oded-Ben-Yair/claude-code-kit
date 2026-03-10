@@ -1,0 +1,76 @@
+{
+  "id": "p4-04",
+  "name": "Birthday mention \u2014 assumption about milestone celebration",
+  "source_file": "profiling_p4_assumptive_bridge.yaml",
+  "category": "profiling_p4_assumptive_bridge",
+  "behavioral_dimension": "P4_assumptive_bridging",
+  "expected_behavior": "Birthday triggers celebratory mode. The agent creates space for the guest to volunteer the age without asking directly. When 40th is confirmed, the recommendations elevate to milestone-worthy experiences",
+  "expected_behavioral_quality": "When a birthday is mentioned, the agent makes a soft assumption about whether it's a milestone (30th, 40th, 50th) by referencing possible special treatment. Does not ask 'How old are you turning?' directly. Instead bridges through 'Milestone birthdays deserve extra special treatment'.",
+  "safety_relevant": false,
+  "turns": [
+    {
+      "turn_index": 0,
+      "user_message": "We're here for my birthday",
+      "agent_response": "Happy birthday \u2014 it's a great day to be at Mohegan Sun! \n\nTo help you celebrate, the resort offers a $25 dining credit that you can use at any of our restaurants. For a special birthday dinner, I recommend Todd English's Tuscany for its atmosphere and views of the Taughannick Falls, or TAO Asian Bistro if you prefer a high-energy environment with a world-class menu. If you're looking for something to do after your meal, the Wolf Den in the center of the Casino of the Earth always has live music with no cover charge. \n\nAre you looking for a formal fine-dining experience or something more casual for your celebration?",
+      "sources": [],
+      "elapsed_ms": 44655,
+      "error": null
+    },
+    {
+      "turn_index": 1,
+      "user_message": "Turning 40, so yeah it's a big one",
+      "agent_response": "Turning 40 is a major milestone that deserves a celebration to match, and you have picked the perfect place to mark the occasion. For a sophisticated evening, you're going to love novelle, which is our upscale ultra-lounge featuring craft cocktails and DJ entertainment in a very polished atmosphere. Since today is Thursday, they will be open tonight for pre-show or post-show gatherings,",
+      "sources": [
+        {
+          "category": "property",
+          "source": "mohegan_sun.json",
+          "score": 0.656
+        },
+        {
+          "category": "entertainment",
+          "source": "mohegan_sun.json",
+          "score": 0.637
+        },
+        {
+          "category": "amenities",
+          "source": "mohegan_sun.json",
+          "score": 0.625
+        },
+        {
+          "category": "hotel",
+          "source": "mohegan_sun.json",
+          "score": 0.595
+        }
+      ],
+      "elapsed_ms": 49504,
+      "error": null
+    },
+    {
+      "turn_index": 2,
+      "user_message": "What do you recommend for a 40th?",
+      "agent_response": "For a milestone like this, I'd suggest a prime steak dinner at Michael Jordan\u2019s Steak House in the Casino of the Sky; the atmosphere is elegant and the USDA Prime cuts are perfect for a big celebration.\n\nSince it\u2019s Thursday, you should definitely head to novelle afterward, as their craft cocktails and DJ set a sophisticated but high-energy tone for the night. Don't forget you have that $25 dining credit to put toward a celebratory dinner or a round of drinks at any of our spots. To round out the trip, a legendary hot stone massage at Elemis Spa is the best way to start your new decade feeling completely refreshed. Would you prefer to start your evening with a formal steak dinner or something more high-energy like a comedy show at Comix Roadhouse?",
+      "sources": [
+        {
+          "category": "entertainment",
+          "source": "mohegan_sun.json",
+          "score": 0.649
+        },
+        {
+          "category": "amenities",
+          "source": "mohegan_sun.json",
+          "score": 0.64
+        },
+        {
+          "category": "restaurants",
+          "source": "mohegan_sun.json",
+          "score": 0.637
+        }
+      ],
+      "elapsed_ms": 44408,
+      "error": null
+    }
+  ],
+  "elapsed_ms": 138567,
+  "error": null,
+  "completed": true
+}

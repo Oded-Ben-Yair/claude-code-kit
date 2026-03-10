@@ -1,0 +1,91 @@
+{
+  "scenario_id": "p2-07",
+  "scenario_name": "Agent asks about visit duration naturally",
+  "category": "profiling_p2_active_probing",
+  "behavioral_dimension": "P2_active_probing",
+  "expected_behavior": "Uses the hotel check-in and 'through Sunday' mentions to shape a multi-day experience plan. Suggests tonight's activities with awareness that more days are available for other experiences",
+  "expected_behavioral_quality": "Learns visit duration through context rather than directly asking 'how long are you staying?' When the guest mentions hotel or multiple days, the agent can frame a multi-day plan. Otherwise, infers from cues like checkout or 'tomorrow'.",
+  "safety_relevant": false,
+  "source_file": "profiling_p2_active_probing.yaml",
+  "thread_id": "eval-p2-07-1772839704",
+  "turns": [
+    {
+      "turn_index": 0,
+      "user_message": "We just checked into the Sky Tower",
+      "agent_response": "Welcome to the Sky Tower! Since you've arrived later in the evening, your room will be a quiet sanctuary for you to settle into. One of the best features of this tower is the floor-to-ceiling windows, which offer a beautiful view of the Thames River valley once the sun comes up tomorrow.\n\nStandard check-out is at 11:00 AM, so you'll have some time to rest in the morning. If you're feeling a bit hungry after your travels, the Casino of the Sky is just a short walk away and has several dining options that stay open late for a quick bite. Did you have a long journey getting to the resort tonight?",
+      "sources": [
+        {
+          "category": "hotel",
+          "source": "mohegan_sun.json",
+          "score": 0.728
+        },
+        {
+          "category": "gaming",
+          "source": "mohegan_sun.json",
+          "score": 0.65
+        },
+        {
+          "category": "faq",
+          "source": "mohegan_sun.json",
+          "score": 0.647
+        }
+      ],
+      "elapsed_ms": 40494,
+      "error": null
+    },
+    {
+      "turn_index": 1,
+      "user_message": "Yeah we're here through Sunday",
+      "agent_response": "That gives you a full weekend to settle in and explore. Since you're in the Sky Tower, you're right above the Mandara Spa if you want to start your Saturday with some relaxation. \n\nAn insider tip for your first morning: the coffee shop in the Sky Tower lobby is often much quieter than the ones located directly on the casino floor, making it a great spot for a peaceful start to the day. For tomorrow night, the Wolf Den usually has free live music starting at 8:00 PM, which is just a short walk from your tower elevators. Are you planning on catching any of the shows at the Mohegan Sun Arena while you're here?",
+      "sources": [
+        {
+          "category": "entertainment",
+          "source": "mohegan_sun.json",
+          "score": 0.648
+        },
+        {
+          "category": "hotel",
+          "source": "mohegan_sun.json",
+          "score": 0.642
+        },
+        {
+          "category": "promotions",
+          "source": "mohegan_sun.json",
+          "score": 0.641
+        },
+        {
+          "category": "faq",
+          "source": "mohegan_sun.json",
+          "score": 0.639
+        }
+      ],
+      "elapsed_ms": 36348,
+      "error": null
+    },
+    {
+      "turn_index": 2,
+      "user_message": "What should we do tonight?",
+      "agent_response": "Novelle is a great choice right now if you want craft cocktails and a DJ in a more sophisticated, lounge-style setting. If you're feeling energetic, Avalon Nightclub is also open until 2:00 AM with a high-energy dance floor. \n\nSince you had a long journey, Lantern Bar & Grill is open 24 hours in the Casino of the Earth if you're looking for a late-night meal before heading to bed. Are you in the mood for music and drinks or are you looking for a quiet bite to eat first?",
+      "sources": [
+        {
+          "category": "entertainment",
+          "source": "mohegan_sun.json",
+          "score": 0.668
+        },
+        {
+          "category": "restaurants",
+          "source": "mohegan_sun.json",
+          "score": 0.648
+        },
+        {
+          "category": "faq",
+          "source": "mohegan_sun.json",
+          "score": 0.667
+        }
+      ],
+      "elapsed_ms": 46316,
+      "error": null
+    }
+  ],
+  "completed": true
+}

@@ -1,0 +1,54 @@
+{
+  "scenario_id": "p4-05",
+  "scenario_name": "Budget signal \u2014 assumption about casual dining correct",
+  "category": "profiling_p4_assumptive_bridge",
+  "behavioral_dimension": "P4_assumptive_bridging",
+  "expected_behavior": "Leads with casual and affordable options. When pizza is confirmed, does not try to upsell. Provides practical information (location, hours) without marketing language",
+  "expected_behavioral_quality": "When the guest signals budget consciousness ('nothing fancy'), assumes they want casual, affordable options and leads with those. Does not include a disclaimer like 'If you change your mind about budget...' The assumption respects the signal.",
+  "safety_relevant": false,
+  "source_file": "profiling_p4_assumptive_bridge.yaml",
+  "thread_id": "eval-p4-05-1772841638",
+  "turns": [
+    {
+      "turn_index": 0,
+      "user_message": "Just looking for something simple, nothing fancy",
+      "agent_response": "Lantern Bar & Grill is your best bet right now since it is open 24 hours and keeps things straightforward with a menu of American classics. \n\nLocated in the Casino of the Earth, it has a relaxed atmosphere where you can grab a solid burger, a fresh salad, or even some late-night breakfast without any of the fine-dining fuss. It is a favorite for guests who want a reliable, no-frills meal at any hour, and the price range is quite approachable for a casual sit-down spot. Since it's a Saturday night, the surrounding casino area is usually buzzing, making it a great place to refuel while staying close to the action. \n\nAre you looking to grab a quick bite before heading to your room, or are you planning to explore the gaming floor after you eat?",
+      "sources": [
+        {
+          "category": "entertainment",
+          "source": "mohegan_sun.json",
+          "score": 0.644
+        },
+        {
+          "category": "restaurants",
+          "source": "mohegan_sun.json",
+          "score": 0.641
+        },
+        {
+          "category": "hotel",
+          "source": "mohegan_sun.json",
+          "score": 0.629
+        }
+      ],
+      "elapsed_ms": 29243,
+      "error": null
+    },
+    {
+      "turn_index": 1,
+      "user_message": "Pizza sounds great actually",
+      "agent_response": "",
+      "sources": [],
+      "elapsed_ms": 60002,
+      "error": "TIMEOUT (60.0s)"
+    },
+    {
+      "turn_index": 2,
+      "user_message": "Where is it?",
+      "agent_response": "Frank Pepe's is located in the Casino of the Earth, right near the Earth bus lobby and the Wolf Den. It\u2019s a very short walk if you're coming from the Earth Tower\u2014are you staying with us tonight?",
+      "sources": [],
+      "elapsed_ms": 43066,
+      "error": null
+    }
+  ],
+  "completed": true
+}

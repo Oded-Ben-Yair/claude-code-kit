@@ -1,0 +1,71 @@
+{
+  "scenario_id": "engagement-06",
+  "scenario_name": "Clarification repair after misunderstood question",
+  "category": "behavioral_engagement",
+  "behavioral_dimension": "B3_engagement",
+  "expected_behavior": "Recovers from initial misunderstanding by narrowing the scope. When corrected, does not repeat the same broad answer but focuses specifically on what the guest clarified they want",
+  "expected_behavioral_quality": "When the guest says the answer wasn't what they meant, immediately asks a clarifying question rather than guessing again. Acknowledges the misunderstanding without being defensive. Uses a narrowing question to zero in on intent.",
+  "safety_relevant": false,
+  "source_file": "behavioral_engagement.yaml",
+  "thread_id": "eval-engagement-06-1772912215",
+  "turns": [
+    {
+      "turn_index": 0,
+      "user_message": "What's happening tonight?",
+      "agent_response": "You've picked a great night to be here. Right now, novelle is the spot for an upscale lounge vibe with craft cocktails and a DJ, while Avalon Nightclub will be opening its doors at 10:00 PM for a high-energy party. If you're in the mood for a laugh, Comix Roadhouse has comedy sets scheduled throughout the evening. Are you looking for a high-energy dance floor or a more relaxed spot to grab a drink?",
+      "sources": [
+        {
+          "category": "entertainment",
+          "source": "mohegan_sun.json",
+          "score": 0.671
+        },
+        {
+          "category": "faq",
+          "source": "mohegan_sun.json",
+          "score": 0.662
+        }
+      ],
+      "elapsed_ms": 32390,
+      "error": null
+    },
+    {
+      "turn_index": 1,
+      "user_message": "No I meant like events, shows, that kind of thing",
+      "agent_response": "The Wolf Den has live music starting tonight at 8:00 PM, and the energy in there is always electric for a Saturday show. It's an intimate venue where you're right in the action with national acts, and the best part is there's no ticket required\u2014you can just walk right in! \n\nPro tip: since the Wolf Den is first-come, first-served, people usually start heading that way about now to snag the best seats near the stage. If you're looking for a massive production, the Mohegan Sun Arena is our 10,000-seat powerhouse that hosts the major concert tours and big comedy specials on Saturday nights. \n\nBefore the music kicks off, Todd English's Tuscany is a short walk away and their wood-fired dishes are the perfect way to start the evening. Do you usually look for big arena headliners or do you like the vibe of a smaller live music setting?",
+      "sources": [
+        {
+          "category": "entertainment",
+          "source": "mohegan_sun.json",
+          "score": 0.659
+        },
+        {
+          "category": "promotions",
+          "source": "mohegan_sun.json",
+          "score": 0.644
+        }
+      ],
+      "elapsed_ms": 80339,
+      "error": null
+    },
+    {
+      "turn_index": 2,
+      "user_message": "Yes, what shows are on tonight?",
+      "agent_response": "The energy on property is high tonight. At 8:00 PM, the Wolf Den starts its free show, which is a fantastic way to see national acts and tribute bands in an intimate 350-seat setting without needing a ticket. For the major headliner experience, the Mohegan Sun Arena is our 10,000-seat venue that hosts the biggest tours on Saturday nights.\n\nInsider tip \u2014 if you prefer a high-energy atmosphere later on, Avalon Nightclub opens at 10:00 PM with top DJs and a state-of-the-art sound system. Before the music kicks off, Todd English's Tuscany is right near the Wolf Den and their wood-fired dishes are a local favorite for a pre-show meal. Are you more interested in a big arena concert or do you prefer the close-up energy of a smaller venue?",
+      "sources": [
+        {
+          "category": "entertainment",
+          "source": "mohegan_sun.json",
+          "score": 0.662
+        },
+        {
+          "category": "faq",
+          "source": "mohegan_sun.json",
+          "score": 0.677
+        }
+      ],
+      "elapsed_ms": 52610,
+      "error": null
+    }
+  ],
+  "completed": true
+}

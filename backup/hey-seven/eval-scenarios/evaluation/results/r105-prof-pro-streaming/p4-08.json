@@ -1,0 +1,49 @@
+{
+  "scenario_id": "p4-08",
+  "scenario_name": "Group of friends \u2014 assumption about nightlife correct",
+  "category": "profiling_p4_assumptive_bridge",
+  "behavioral_dimension": "P4_assumptive_bridging",
+  "expected_behavior": "Correctly bridges from 'group of friends + weekend' to nightlife and party-oriented options. When confirmed, builds a full evening progression: dinner to drinks to entertainment. The assumption felt natural and was validated",
+  "expected_behavioral_quality": "When a group of friends mentions a weekend trip, assumes nightlife and entertainment are priorities. Leads with bars, shows, and high-energy dining options. The assumption is tested softly ('I imagine you're looking for some nightlife?') and confirmed.",
+  "safety_relevant": false,
+  "source_file": "profiling_p4_assumptive_bridge.yaml",
+  "thread_id": "eval-p4-08-1772994100",
+  "turns": [
+    {
+      "turn_index": 0,
+      "user_message": "Group of 6 friends here for the weekend",
+      "agent_response": "Welcome to Mohegan. Six is the perfect size for a weekend run here. \n\nLet's get your trip started right. I'd suggest doing Tao Asian Bistro & Lounge for dinner. The dim sum and sushi are fantastic, and the room has a really dramatic energy that is perfect for a group. Pro tip \u2014 start with a pre-dinner round at Birdcage Bar right nearby. The craft cocktails are top-tier and it sets the perfect tone for the night.\n\nWhat brings the six of you out this weekend\u2014are we celebrating something specific, or just escaping for a few days?",
+      "sources": [
+        {
+          "category": "entertainment",
+          "source": "mohegan_sun.json",
+          "score": 0.669
+        },
+        {
+          "category": "restaurants",
+          "source": "mohegan_sun.json",
+          "score": 0.641
+        }
+      ],
+      "elapsed_ms": 57345,
+      "error": null
+    },
+    {
+      "turn_index": 1,
+      "user_message": "Absolutely, we want the full party experience",
+      "agent_response": "I've got you. If you want the full VIP party vibe, we can definitely elevate the night. Since our main nightclub Avalon and our ultra-lounge novelle run through Saturday, we can keep your Sunday energy going strong at the Wolf Den. It has this electric, intimate atmosphere right in the center of the casino floor where you're up close with the live band. \n\nFor that exclusive feel tonight, we can also have a dedicated host set your group up in one of the High Limit gaming areas, which comes with premium drink service while you play. Are you all looking to hit the tables, or are you mostly focused on live music and cocktails?",
+      "sources": [],
+      "elapsed_ms": 75839,
+      "error": null
+    },
+    {
+      "turn_index": 2,
+      "user_message": "Start with dinner then go from there",
+      "agent_response": "I've got you. To kick off a big night out, Ballo Italian Restaurant is exactly where your group should start. They are open tonight until 10:00 PM in the Casino of the Sky, and the smart casual setting gives it that elevated, pre-party atmosphere. The menu is contemporary Italian, and their housemade pastas and risottos are incredible to share around a big table while you work through their wine list. \n\nAfter dinner, you could seamlessly shift over to Comix Roadhouse\u2014they have a full bar and live comedy running tonight to keep the energy high. I can connect you with the host team to get that table for six finalized at Ballo. \n\nDoes a modern Italian feast sound like the right vibe for the group, or is everyone craving a different type of cuisine?",
+      "sources": [],
+      "elapsed_ms": 65903,
+      "error": null
+    }
+  ],
+  "completed": true
+}

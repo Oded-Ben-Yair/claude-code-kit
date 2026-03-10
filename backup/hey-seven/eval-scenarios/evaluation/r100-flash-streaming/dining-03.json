@@ -1,0 +1,36 @@
+{
+  "scenario_id": "dining-03",
+  "scenario_name": "Fine dining exploration",
+  "category": "dining_journey",
+  "behavioral_dimension": "",
+  "expected_behavior": "Recommends fine dining and provides location",
+  "expected_behavioral_quality": "",
+  "safety_relevant": false,
+  "source_file": "dining_journey.yaml",
+  "thread_id": "eval-dining-03-1772830318",
+  "turns": [
+    {
+      "turn_index": 0,
+      "user_message": "I'm looking for a fine dining experience tonight",
+      "agent_response": "Michael Jordan's Steak House is the premier choice for an upscale evening \u2014 the aroma of USDA Prime steaks hits you the moment you approach their elegant entrance in the Casino of the Sky. They are open until 10:00 PM tonight and typically require business casual attire, though please note that hours and pricing are subject to change. \n\nI can certainly help gather the details for you and then connect you with our host team to finalize a booking. How many guests will be in your party tonight? After dinner, you might enjoy catching some live music at the Wolf Den just a short walk away.",
+      "sources": [
+        {
+          "category": "restaurants",
+          "source": "mohegan_sun.json",
+          "score": 0.684
+        }
+      ],
+      "elapsed_ms": 54303,
+      "error": null
+    },
+    {
+      "turn_index": 1,
+      "user_message": "Where is it located?",
+      "agent_response": "Michael Jordan's Steak House is located in the Casino of the Sky, right near the entrance to the Mohegan Sun Arena. It is a quick walk from the Sky Valet and offers a great view of the casino action if you sit in their elevated \"Bridge\" area. \n\nSince it's nearly 9:00 PM, the late-night energy in that part of the property is excellent, and you'll be just steps away from the Wolf Den if you're interested in live music after your meal. Are you staying in one of our hotel towers tonight, or just visiting for the evening?",
+      "sources": [],
+      "elapsed_ms": 53827,
+      "error": null
+    }
+  ],
+  "completed": true
+}

@@ -1,0 +1,51 @@
+{
+  "id": "p9-02",
+  "name": "Handoff includes confidence levels for extracted data",
+  "source_file": "profiling_p8_p9_p10_completeness.yaml",
+  "category": "profiling_p8_p9_p10_completeness",
+  "behavioral_dimension": "P9_handoff_quality",
+  "expected_behavior": "Handoff summary separates stated facts (party of 4, kids present, wants pizza and a show) from inferences (family group, kids likely younger based on pizza preference). The host receives a nuanced profile, not raw assertions",
+  "expected_behavioral_quality": "The handoff distinguishes between information the guest explicitly stated (high confidence) and information inferred by the agent (lower confidence). 'Guest stated: party of 4. Inferred: likely family group (mentioned kids).' This prevents the receiving host from treating inferences as facts.",
+  "safety_relevant": false,
+  "turns": [
+    {
+      "turn_index": 0,
+      "user_message": "Need dinner for 4 tonight. The kids want pizza.",
+      "agent_response": "For the best pizza at Mohegan Sun, you have to take the kids to Frank Pepe's Pizzeria Napoletana. It's a legendary Connecticut institution where the coal-fired ovens create a thin, charred crust that has a specific chew and flavor you won't find anywhere else. \n\nLocated in the Casino of the Earth, they are open from 11:00 AM to 10:00 PM tonight and offer a casual atmosphere perfect for a party of four. Since they don't take reservations, it's a great spot to drop in whenever the kids get hungry. While their famous white clam pie is a local favorite, their classic tomato pie is the gold standard for a traditional family dinner. \n\nAfter a few slices, you might want to catch some of the live music often playing nearby at the Wolf Den. Before I look into any family-friendly entertainment for your evening, could I get your name to help personalize your plans?",
+      "sources": [
+        {
+          "category": "restaurants",
+          "source": "mohegan_sun.json",
+          "score": 0.669
+        }
+      ],
+      "elapsed_ms": 24886,
+      "error": null
+    },
+    {
+      "turn_index": 1,
+      "user_message": "We also want to see a show after",
+      "agent_response": "For a Thursday evening, Comix Roadhouse is a premier spot for laughs, as they host nationally touring talent with shows running Thursday through Sunday. If you want something with a bit more volume, the Wolf Den has this intimate energy where you're right there with the performer \u2014 it's electric. They have free live music every night, typically at 8:00 PM or 9:00 PM, though keep in mind the seating area is restricted to those 21 and older. You might also check the Mohegan Sun Arena for major headliners or the Cabaret Theatre for specialty acts, as lineups and schedules can change and are best confirmed at the box office or property website.\n\nAfter a late night of entertainment, a signature treatment at Elemis Spa is the perfect way to reset for the next day. To make sure I point you toward the right venue for your group, are the kids in your party teenagers or younger?",
+      "sources": [
+        {
+          "category": "entertainment",
+          "source": "mohegan_sun.json",
+          "score": 0.645
+        }
+      ],
+      "elapsed_ms": 33258,
+      "error": null
+    },
+    {
+      "turn_index": 2,
+      "user_message": "Actually, can a host put together a whole plan for us?",
+      "agent_response": "Let me help you get that set up. I'll pull together the details you need.\n\nFor the booking itself, our reservations team at 1-888-226-7711 can lock it in right away, or I can connect you with a host who handles this personally.\n\nWhat are you looking to book \u2014 dining, a room, or something else?",
+      "sources": [],
+      "elapsed_ms": 12450,
+      "error": null
+    }
+  ],
+  "elapsed_ms": 72009,
+  "error": null,
+  "completed": true
+}

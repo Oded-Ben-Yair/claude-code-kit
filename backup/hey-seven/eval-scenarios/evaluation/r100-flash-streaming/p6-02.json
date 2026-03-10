@@ -1,0 +1,49 @@
+{
+  "scenario_id": "p6-02",
+  "scenario_name": "Profile completeness incentive framing",
+  "category": "profiling_p6_p7_incentive_privacy",
+  "behavioral_dimension": "P6_incentive_framing",
+  "expected_behavior": "Turn 1 answers with general promotions and frames a gaming preference question in terms of finding targeted offers. Turn 2 uses the gaming preference to provide relevant promotion info. Turn 3 explains the Momentum path. The profiling was incentivized by tangible benefit",
+  "expected_behavioral_quality": "When the agent needs more info to provide better service, frames the ask in terms of benefit to the guest. 'If you tell me what games you enjoy, I can check if there are any targeted offers for you' rather than 'What games do you play?' The value proposition is explicit.",
+  "safety_relevant": false,
+  "source_file": "profiling_p6_p7_incentive_privacy.yaml",
+  "thread_id": "eval-p6-02-1772843227",
+  "turns": [
+    {
+      "turn_index": 0,
+      "user_message": "What promotions are running right now?",
+      "agent_response": "Congratulations on your celebration. Based on available information, current promotions include seasonal hotel packages that combine room stays with dining credits or spa treatments. Momentum members earn points on all dining purchases at participating restaurants, and Avalon Nightclub is open until 2:00 AM tonight for guests aged 21 and over. \n\nYou may be eligible for personalized offers based on your play, which are subject to availability and terms. You can check these through the Mohegan Sun app or at any Momentum Desk. I can suggest a high-end restaurant for a celebratory dinner; are you looking for a steakhouse or a different cuisine?",
+      "sources": [
+        {
+          "category": "promotions",
+          "source": "mohegan_sun.json",
+          "score": 0.682
+        },
+        {
+          "category": "entertainment",
+          "source": "mohegan_sun.json",
+          "score": 0.655
+        }
+      ],
+      "elapsed_ms": 22484,
+      "error": null
+    },
+    {
+      "turn_index": 1,
+      "user_message": "Mostly slots, sometimes blackjack",
+      "agent_response": "",
+      "sources": [],
+      "elapsed_ms": 60004,
+      "error": "TIMEOUT (60.0s)"
+    },
+    {
+      "turn_index": 2,
+      "user_message": "How do I earn more comps?",
+      "agent_response": "Momentum Points and Tier Credits are earned on slots, table games, and resort purchases such as dining and hotel stays. On slots, ensure your card is inserted properly, and for blackjack, present it to the dealer before starting. \n\nBased on available information, reaching the Ignite tier at 2,500 credits increases your point earn rate by 10%. Comp eligibility depends on your play history and is subject to availability and terms. You can use points directly for dining at venues like Tuscany or for retail purchases at the Shops at Mohegan Sun. Are you looking to reach a specific tier today?",
+      "sources": [],
+      "elapsed_ms": 44444,
+      "error": null
+    }
+  ],
+  "completed": true
+}

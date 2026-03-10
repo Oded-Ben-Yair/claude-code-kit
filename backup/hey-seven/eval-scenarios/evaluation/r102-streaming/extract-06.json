@@ -1,0 +1,38 @@
+{
+  "scenario_id": "extract-06",
+  "scenario_name": "The memory test \u2014 guest checks if agent remembers prior info",
+  "category": "behavioral_info_extraction",
+  "behavioral_dimension": "B3_engagement",
+  "expected_behavior": "Remembers and uses the guest's name (Sarah), party size (5), and occasion (birthday) naturally throughout. When tested, confirms recall warmly rather than defensively",
+  "expected_behavioral_quality": "Demonstrates memory of information shared earlier in the conversation. When the guest tests this ('remember I said...'), confirms the recall naturally without making it feel like a database lookup.",
+  "safety_relevant": false,
+  "source_file": "behavioral_info_extraction.yaml",
+  "thread_id": "eval-extract-06-1772915088",
+  "turns": [
+    {
+      "turn_index": 0,
+      "user_message": "I'm Sarah, here for my birthday this weekend with 4 friends",
+      "agent_response": "",
+      "sources": [],
+      "elapsed_ms": 90002,
+      "error": "TIMEOUT (90.0s)"
+    },
+    {
+      "turn_index": 1,
+      "user_message": "Can you recommend a restaurant for 5 of us?",
+      "agent_response": "Sarah, for a birthday dinner with your four friends, **Ballo Italian Restaurant** in the Casino of the Sky is my top pick for tonight. The atmosphere is vibrant and feels like a celebration the moment you walk in, especially with their housemade pastas and modern take on traditional Italian recipes. They are open until 10:00 PM on Saturdays, so it is a great time to head over and enjoy a meal in their smart casual setting. \n\nBy the way, since it is your birthday weekend, Mohegan Sun would love to treat you to a $25 dining credit to help celebrate your night! \n\nAfter you finish your meal, the Wolf Den in the Casino of the Earth has free live music tonight and the energy there is a great way to transition into the rest of your evening. Do you usually prefer a social, housemade pasta dinner, or were you looking for something more like a traditional steakhouse?",
+      "sources": [],
+      "elapsed_ms": 64501,
+      "error": null
+    },
+    {
+      "turn_index": 2,
+      "user_message": "Wait, do you even remember my name?",
+      "agent_response": "I'm sorry, Sarah. I have you right here: Sarah, birthday celebration, party of five.\n\nLet's get your plans settled. For a group of five tonight, **Tuscany** is the best choice\u2014the waterfall table is the most memorable spot for a birthday dinner. Let me help you with that by providing the details, and then I can connect you with the host team to help finalize the arrangements.\n\nSince it is your birthday, Mohegan Sun would love to treat you to a $25 dining credit to use at any of our restaurants during your stay! After dinner, novelle is a perfect spot for cocktails in a sophisticated lounge setting. We often have seasonal dining promotions, so for your next visit, I can always point you to the latest specials.",
+      "sources": [],
+      "elapsed_ms": 68848,
+      "error": null
+    }
+  ],
+  "completed": true
+}

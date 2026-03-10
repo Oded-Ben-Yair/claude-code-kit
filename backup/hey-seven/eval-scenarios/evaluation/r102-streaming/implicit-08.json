@@ -1,0 +1,76 @@
+{
+  "scenario_id": "implicit-08",
+  "scenario_name": "Fatigue indicators implying need for low-effort options",
+  "category": "behavioral_implicit",
+  "behavioral_dimension": "B2_implicit",
+  "expected_behavior": "Reads exhaustion and conference context as needing comfort-first recommendations. Prioritizes proximity, ease, and relaxation. Does not suggest gaming floor or shows",
+  "expected_behavioral_quality": "Detects fatigue signals (exhausted, long day, need to unwind) and shifts all recommendations toward restful, low-effort options. Does not suggest shows, gaming, or anything requiring energy.",
+  "safety_relevant": false,
+  "source_file": "behavioral_implicit.yaml",
+  "thread_id": "eval-implicit-08-1772913968",
+  "turns": [
+    {
+      "turn_index": 0,
+      "user_message": "We've been on our feet all day at the conference. Exhausted.",
+      "agent_response": "I hear you, and it sounds like you have earned a proper reset. Since the Elemis Spa is closed for the evening, I'd suggest a session when they open at 9:00 AM tomorrow\u2014their hot stone massage is legendary for recovering after a long day on the floor. \n\nFor tonight, heading back to your room to enjoy the premium bedding and quiet atmosphere in the Earth Tower is likely your best bet for a quick recovery. If you do want one quiet drink before bed, novelle offers a sophisticated lounge atmosphere that is a bit more relaxed than the main gaming floors. I can certainly help you look at the different treatment packages for tomorrow if you'd like to eventually connect with the host team to finalize those details. \n\nAre you looking for a full-body treatment tomorrow morning, or would an express service fit your schedule better?",
+      "sources": [
+        {
+          "category": "amenities",
+          "source": "mohegan_sun.json",
+          "score": 0.646
+        },
+        {
+          "category": "entertainment",
+          "source": "mohegan_sun.json",
+          "score": 0.651
+        },
+        {
+          "category": "hotel",
+          "source": "mohegan_sun.json",
+          "score": 0.641
+        }
+      ],
+      "elapsed_ms": 42014,
+      "error": null
+    },
+    {
+      "turn_index": 1,
+      "user_message": "Something close, we don't want to walk far",
+      "agent_response": "Lantern Bar & Grill in the Casino of the Earth is the most convenient choice for you right now because it is open 24 hours and specializes in no-fuss American comfort food. You can grab a booth and enjoy a juicy burger or a full steak dinner without needing to worry about reservations or dressing up. It is an easy, reliable spot that gets you fed and back to your room for some well-deserved rest.\n\nPro tip\u2014if you find yourself awake and hungry in the middle of the night, they serve their full menu around the clock. Once you have had a chance to sleep, the Elemis Spa is a great place to rejuvenate tomorrow morning. \n\nWould you prefer a hearty meal like a ribeye tonight, or something lighter like a fresh salad?",
+      "sources": [
+        {
+          "category": "faq",
+          "source": "mohegan_sun.json",
+          "score": 0.676
+        },
+        {
+          "category": "restaurants",
+          "source": "mohegan_sun.json",
+          "score": 0.665
+        }
+      ],
+      "elapsed_ms": 33893,
+      "error": null
+    },
+    {
+      "turn_index": 2,
+      "user_message": "Perfect. Anything else low-key tonight?",
+      "agent_response": "Since you are already in the Casino of the Earth, the Wolf Den is your best low-key option tonight. There is a performance starting at 9:00 PM, and because it is a free venue with no tickets required, you can just walk in and find a seat to enjoy the music. It is an intimate space that lets you experience great talent without the exhaustion of a massive arena crowd.\n\nIf you prefer something even quieter, novelle is a nearby lounge where you can settle into a comfortable chair for a craft cocktail in a more sophisticated setting. \n\nInsider tip\u2014the Wolf Den is one of the few places where you can see national touring acts for free, and the seating is designed so there is not a bad spot in the house.\n\nBy the way, the Mohegan Sun Arena has some great headliners coming up later this month\u2014I can share what is on the calendar if you are interested in a future visit.\n\nDo you usually enjoy discovering new live bands, or do you prefer a quiet lounge atmosphere when you are winding down?",
+      "sources": [
+        {
+          "category": "entertainment",
+          "source": "mohegan_sun.json",
+          "score": 0.674
+        },
+        {
+          "category": "restaurants",
+          "source": "mohegan_sun.json",
+          "score": 0.63
+        }
+      ],
+      "elapsed_ms": 41567,
+      "error": null
+    }
+  ],
+  "completed": true
+}

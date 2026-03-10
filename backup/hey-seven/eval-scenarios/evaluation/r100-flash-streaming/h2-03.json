@@ -1,0 +1,80 @@
+{
+  "scenario_id": "h2-03",
+  "scenario_name": "Guest mentions they switched to competitor",
+  "category": "host_triangle_h1_h3_development",
+  "behavioral_dimension": "H2_reactivation_win_back",
+  "expected_behavior": "Does not badmouth Foxwoods or Gordon Ramsay. Instead, highlights Mohegan Sun's own new dining portfolio (Beauty & Essex, The Farm Italy, The Shed) as reasons to come back. Creates competitive differentiation through quality, not criticism",
+  "expected_behavioral_quality": "When a guest says they have been going to a competitor instead, the agent does not disparage the competitor. Instead, discovers what drew them away and highlights what Mohegan Sun offers in that area. Creates a 'come back and see' moment around genuine improvements.",
+  "safety_relevant": false,
+  "source_file": "host_triangle_h1_h3_development.yaml",
+  "thread_id": "eval-h2-03-1772833290",
+  "turns": [
+    {
+      "turn_index": 0,
+      "user_message": "I've been going to Foxwoods mostly. They opened some cool new restaurants",
+      "agent_response": "We focus on providing the premier dining experience right here at Mohegan Sun, and if you are looking for something truly special, the wood-fired aroma hits you the moment you walk into Todd English's Tuscany. \n\nChef English is known for his handmade pastas and wood-fired pizzas, which make it a favorite for many of our guests looking for a modern twist on Italian classics. The restaurant is located in the Casino of the Sky and is open until 10:00 PM tonight, though I'd suggest a reservation if you plan to visit over the weekend. Are you in the mood for a formal sit-down dinner or would you prefer a recommendation for something a bit more casual this evening?",
+      "sources": [
+        {
+          "category": "faq",
+          "source": "mohegan_sun.json",
+          "score": 0.712
+        },
+        {
+          "category": "restaurants",
+          "source": "mohegan_sun.json",
+          "score": 0.719
+        },
+        {
+          "category": "gaming",
+          "source": "mohegan_sun.json",
+          "score": 0.683
+        },
+        {
+          "category": "hotel",
+          "source": "mohegan_sun.json",
+          "score": 0.672
+        }
+      ],
+      "elapsed_ms": 38514,
+      "error": null
+    },
+    {
+      "turn_index": 1,
+      "user_message": "Yeah their Gordon Ramsay place is really good",
+      "agent_response": "If you enjoy dining from world-renowned chefs, Bobby Flay's Bar Americain is the premier choice here at Mohegan Sun. This American brasserie brings bold flavors and Southwest influences to every dish, and since it is Friday, they are open until 11:00 PM in the Casino of the Earth.\n\nThe atmosphere is vibrant and fits the smart casual dress code, with a menu featuring everything from fresh seafood to prime grilled meats. Once you are finished, the Wolf Den is just a short walk away for some live music, and I can connect you with our host team to finalize a booking if you'd like. Would you like to know which signature dishes guests usually rave about before you decide?",
+      "sources": [],
+      "elapsed_ms": 54456,
+      "error": null
+    },
+    {
+      "turn_index": 2,
+      "user_message": "Hmm those do sound worth trying",
+      "agent_response": "They certainly are, but since it is already after 9:30 PM, you might also consider the legendary Frank Pepe's Pizzeria Napoletana in the Casino of the Earth.\n\nThe coal-fired thin crust has a signature char and crunch that has made it a Connecticut institution since 1925! Their white clam pie is a masterclass in balance with fresh clams, garlic, and oregano, and since they are open until 11:00 PM tonight, it's a perfect late-night stop. It is casual and doesn't take reservations, making it an easy choice for a spontaneous bite. \n\nLet me help you with that\u2014I can provide more details on the menu or point you toward their location. After your pizza, Novelle is nearby if you're looking for an upscale lounge with craft cocktails and a DJ to keep the night going\u2014would you prefer a full meal or just a few signature slices to share?",
+      "sources": [
+        {
+          "category": "entertainment",
+          "source": "mohegan_sun.json",
+          "score": 0.644
+        },
+        {
+          "category": "restaurants",
+          "source": "mohegan_sun.json",
+          "score": 0.647
+        },
+        {
+          "category": "promotions",
+          "source": "mohegan_sun.json",
+          "score": 0.626
+        },
+        {
+          "category": "faq",
+          "source": "mohegan_sun.json",
+          "score": 0.614
+        }
+      ],
+      "elapsed_ms": 36812,
+      "error": null
+    }
+  ],
+  "completed": true
+}

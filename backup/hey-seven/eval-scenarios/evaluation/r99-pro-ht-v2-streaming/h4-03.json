@@ -1,0 +1,70 @@
+{
+  "scenario_id": "h4-03",
+  "scenario_name": "Guest with children seeking family-appropriate options",
+  "category": "host_triangle_h4_h6_relationship",
+  "behavioral_dimension": "H4_personalized_recognition",
+  "expected_behavior": "Distinguishes between teenager interests and young child interests. Recommends experiences that teenagers would consider 'cool' rather than childish. Dinner recommendation accounts for family-friendly seating while not being a kids' restaurant. Makes the family feel like there is something for everyone",
+  "expected_behavioral_quality": "Recognizes the family context and personalizes all recommendations around the full group's needs. Balances adult interests with kid-friendly options without condescending. Uses the family dynamic to create a personalized experience vision.",
+  "safety_relevant": false,
+  "source_file": "host_triangle_h4_h6_relationship.yaml",
+  "thread_id": "eval-h4-03-1772805325",
+  "turns": [
+    {
+      "turn_index": 0,
+      "user_message": "We're here with two teenagers, 14 and 16. What can we all do together?",
+      "agent_response": "You're going to have a great time with your teenagers here. Cyber Quest is our high-energy arcade that is essentially built for that age group, featuring all the latest video games and plenty of space for some friendly family competition. \n\nIf you want something more active, the Wombi Rock Climbing Wall is a fantastic indoor challenge located nearby where everyone can participate regardless of their climbing experience. Pro tip \u2014 the climbing wall provides all the necessary equipment and instruction, so you can just show up and start your adventure together. \n\nAre you more of a gaming family, or would you prefer to start with the physical challenge of the wall?",
+      "sources": [
+        {
+          "category": "entertainment",
+          "source": "mohegan_sun.json",
+          "score": 0.675
+        },
+        {
+          "category": "amenities",
+          "source": "mohegan_sun.json",
+          "score": 0.651
+        },
+        {
+          "category": "faq",
+          "source": "mohegan_sun.json",
+          "score": 0.624
+        }
+      ],
+      "elapsed_ms": 34232,
+      "error": null
+    },
+    {
+      "turn_index": 1,
+      "user_message": "They're pretty bored of the usual family stuff, they want something cool",
+      "agent_response": "I completely get it \u2014 at 14 and 16, they want an experience that feels a bit more grown-up. \n\nThe Mohegan Sun Arena is where you will find that real wow factor. We host massive headlining tours and events, and the energy in the arena is electric. To make it a full VIP-style night out, you could start with dinner at Todd English's Tuscany. It has a beautifully sophisticated vibe and incredible wood-fired dishes that make it feel like a proper night on the town before heading to a show. \n\nI can check what is hitting the Arena stage this weekend. Are they more into live music, or would they prefer an action-packed sporting event?",
+      "sources": [
+        {
+          "category": "entertainment",
+          "source": "mohegan_sun.json",
+          "score": 0.649
+        },
+        {
+          "category": "amenities",
+          "source": "mohegan_sun.json",
+          "score": 0.643
+        },
+        {
+          "category": "hotel",
+          "source": "mohegan_sun.json",
+          "score": 0.602
+        }
+      ],
+      "elapsed_ms": 71697,
+      "error": null
+    },
+    {
+      "turn_index": 2,
+      "user_message": "And we need dinner for all four of us",
+      "agent_response": "For teenagers wanting something a step above the usual food court, Mohegan Sun Caputo Trattoria is a fantastic choice for dinner tonight. It is a casual, high-energy Italian spot serving incredible brick-oven pizzas and massive calzones that definitely satisfy teenage appetites without feeling like a \"kiddie\" restaurant. It is located right in the Casino of the Earth and is open until 10:00 PM.\n\nPro tip \u2014 getting a few different brick-oven pizzas to share is the best way for everyone to try a bit of everything. Plus, I can look into arranging a complimentary appetizer or dessert for the four of you at our casual dining spots to make the meal a little sweeter. \n\nAfter you eat, you will be in the perfect spot to walk around and take in the evening entertainment or head to the Arena. Let me help you get this set up. I know you have a party of four, but what time were you hoping to eat, and do you have any food allergies or dietary restrictions? Once we nail down a time, I can connect you with our host team to finalize everything.",
+      "sources": [],
+      "elapsed_ms": 95816,
+      "error": null
+    }
+  ],
+  "completed": true
+}

@@ -1,0 +1,101 @@
+{
+  "scenario_id": "p4-07",
+  "scenario_name": "First-time visitor \u2014 assumption about tour wrong (returning after years)",
+  "category": "profiling_p4_assumptive_bridge",
+  "behavioral_dimension": "P4_assumptive_bridging",
+  "expected_behavior": "Initial assumption about being a first-timer is softly held. When corrected to a returning regular, pivots to highlighting what has changed. The 'welcome back' feels genuine, not performative",
+  "expected_behavioral_quality": "When the guest seems unfamiliar, softly suggests a property overview. When corrected ('I used to come all the time'), immediately abandons the newcomer register and shifts to a 'welcome back, here's what's changed' posture. Does not over-apologize.",
+  "safety_relevant": false,
+  "source_file": "profiling_p4_assumptive_bridge.yaml",
+  "thread_id": "eval-p4-07-1772958211",
+  "turns": [
+    {
+      "turn_index": 0,
+      "user_message": "Wow, this place looks different",
+      "agent_response": "It definitely has a new energy with the Earth Tower and novelle now in the mix. If you're looking for the latest vibe, novelle is the spot for craft cocktails and a great atmosphere after dark. \n\nIt certainly has evolved! We've added quite a bit recently. What brings you back to see us this time?",
+      "sources": [
+        {
+          "category": "hotel",
+          "source": "mohegan_sun.json",
+          "score": 0.653
+        },
+        {
+          "category": "gaming",
+          "source": "mohegan_sun.json",
+          "score": 0.636
+        },
+        {
+          "category": "entertainment",
+          "source": "mohegan_sun.json",
+          "score": 0.643
+        },
+        {
+          "category": "restaurants",
+          "source": "mohegan_sun.json",
+          "score": 0.643
+        }
+      ],
+      "elapsed_ms": 26228,
+      "error": null
+    },
+    {
+      "turn_index": 1,
+      "user_message": "Oh I used to come here every month, just haven't been in 5 years",
+      "agent_response": "Five years is a significant gap. Start your morning with a walk through the Earth Tower lobby\u2014it has a much more modern, serene feel than the original side of the property. Since you were a regular, did you have a favorite game or table you usually stuck to?",
+      "sources": [
+        {
+          "category": "entertainment",
+          "source": "mohegan_sun.json",
+          "score": 0.641
+        },
+        {
+          "category": "gaming",
+          "source": "mohegan_sun.json",
+          "score": 0.613
+        },
+        {
+          "category": "restaurants",
+          "source": "mohegan_sun.json",
+          "score": 0.61
+        },
+        {
+          "category": "property",
+          "source": "mohegan_sun.json",
+          "score": 0.612
+        }
+      ],
+      "elapsed_ms": 40324,
+      "error": null
+    },
+    {
+      "turn_index": 2,
+      "user_message": "What's new since I was last here?",
+      "agent_response": "The standout addition is novelle. It's a sophisticated ultra-lounge near the Casino of the Sky that offers a more elevated nightlife experience than what you remember. \n\nWhat kind of dining are you usually in the mood for when you visit?",
+      "sources": [
+        {
+          "category": "hotel",
+          "source": "mohegan_sun.json",
+          "score": 0.661
+        },
+        {
+          "category": "entertainment",
+          "source": "mohegan_sun.json",
+          "score": 0.655
+        },
+        {
+          "category": "gaming",
+          "source": "mohegan_sun.json",
+          "score": 0.63
+        },
+        {
+          "category": "amenities",
+          "source": "mohegan_sun.json",
+          "score": 0.645
+        }
+      ],
+      "elapsed_ms": 45346,
+      "error": null
+    }
+  ],
+  "completed": true
+}

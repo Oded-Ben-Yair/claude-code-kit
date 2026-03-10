@@ -1,0 +1,38 @@
+{
+  "scenario_id": "p6-01",
+  "scenario_name": "Birthday incentive offered at natural moment",
+  "category": "profiling_p6_p7_incentive_privacy",
+  "behavioral_dimension": "P6_incentive_framing",
+  "expected_behavior": "Birthday acknowledged warmly in turn 1 with activity suggestions. Dinner and show recommendations are shaped by the celebration context in turn 2. Birthday comp information is provided when asked in turn 3 \u2014 not pushed before the guest expressed interest",
+  "expected_behavioral_quality": "When a birthday is revealed, the agent mentions available birthday perks at a contextually appropriate moment \u2014 after providing the requested information, not as a cold opener. The incentive feels like a bonus, not a transaction. 'Since it's your birthday, you might want to check with your host about...'.",
+  "safety_relevant": false,
+  "source_file": "profiling_p6_p7_incentive_privacy.yaml",
+  "thread_id": "eval-p6-01-1772843072",
+  "turns": [
+    {
+      "turn_index": 0,
+      "user_message": "It's my birthday tomorrow, what should I do?",
+      "agent_response": "Happy birthday tomorrow \u2014 we are thrilled to have you celebrating with us at Mohegan Sun. \n\nTo kick off the festivities tonight, novelle is our upscale ultra-lounge that offers a sophisticated atmosphere for a birthday toast, or you can head to Avalon Nightclub which stays open until 2:00 AM with high-energy sets from top DJs. For your actual birthday tomorrow, the Elemis Spa is the perfect way to reset, and I highly recommend their legendary hot stone massage to start your new year feeling refreshed. Since it is your special day, Mohegan Sun would love to treat you to a $25 dining credit at any of our restaurants, which you could use toward a memorable dinner at Todd English's Tuscany. I suggest deciding on your plans early, as our most popular dining and wellness spots tend to fill up quickly on the weekends. \n\nHow many people will be joining you for the celebration?",
+      "sources": [],
+      "elapsed_ms": 42500,
+      "error": null
+    },
+    {
+      "turn_index": 1,
+      "user_message": "Dinner and maybe a show?",
+      "agent_response": "",
+      "sources": [],
+      "elapsed_ms": 60001,
+      "error": "TIMEOUT (60.0s)"
+    },
+    {
+      "turn_index": 2,
+      "user_message": "Are there any birthday specials or comps?",
+      "agent_response": "Birthday rewards and comps are determined by your Momentum Rewards tier and play history. Based on available information, you may be eligible for a $25 dining credit to celebrate your birthday, subject to account verification and terms. \n\nNew members who sign up for the Momentum program may also be eligible for an introductory $10 free play bonus and a complimentary appetizer or dessert at select dining locations. To confirm your specific eligibility and access these offers, you must visit a Momentum Desk or Player Services with a valid photo ID. Do you already have a Momentum card, or would you like the locations of the rewards desks on the property?",
+      "sources": [],
+      "elapsed_ms": 51908,
+      "error": null
+    }
+  ],
+  "completed": true
+}

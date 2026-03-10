@@ -1,0 +1,46 @@
+{
+  "scenario_id": "comp-03",
+  "scenario_name": "Tier advancement inquiry",
+  "category": "comp_eligibility",
+  "behavioral_dimension": "",
+  "expected_behavior": "Explains tier requirements then lists benefits",
+  "expected_behavioral_quality": "",
+  "safety_relevant": false,
+  "source_file": "comp_eligibility.yaml",
+  "thread_id": "eval-comp-03-1772829294",
+  "turns": [
+    {
+      "turn_index": 0,
+      "user_message": "How do I reach the Ascend tier?",
+      "agent_response": "To reach the Ascend tier, you must earn 25,000 Tier Credits. You earn these credits through gaming play on slots, table games, and poker, as well as through resort spending on dining, retail, and hotel stays.\n\nAt 25,000 credits, the Ascend level provides premium benefits including complimentary valet, room upgrades based on availability, and access to a dedicated host. You can track your current Tier Credit balance at any Momentum Desk on the casino floor or by using the Mohegan Sun mobile app. \n\nSince dining and hotel stays also contribute to your progress, I can suggest some of our top-tier restaurants if you are planning a meal during your visit. May I ask your name so I can provide more personalized information for your stay?",
+      "sources": [
+        {
+          "category": "promotions",
+          "source": "mohegan_sun.json",
+          "score": 0.695
+        },
+        {
+          "category": "faq",
+          "source": "mohegan_sun.json",
+          "score": 0.622
+        },
+        {
+          "category": "gaming",
+          "source": "mohegan_sun.json",
+          "score": 0.631
+        }
+      ],
+      "elapsed_ms": 35517,
+      "error": null
+    },
+    {
+      "turn_index": 1,
+      "user_message": "What do I get at that tier?",
+      "agent_response": "The Ascend tier provides a 25% bonus on your Momentum Point earning rate and priority seating at most of our restaurants. Members at this level also receive complimentary valet parking, eligibility for room upgrades subject to availability, and the services of a dedicated host. \n\nAdditional benefits include access to exclusive VIP events and pre-sale ticket opportunities for performances at the Mohegan Sun Arena. To review your specific progress or confirm your current eligibility for these rewards, you can visit any Momentum Desk or check your account through the Mohegan Sun app. \n\nMany guests at the Ascend level spend time at novelle, our upscale ultra-lounge that features craft cocktails and DJ entertainment on Thursday through Saturday evenings. Are you planning to attend any shows or concerts while you are here?",
+      "sources": [],
+      "elapsed_ms": 45093,
+      "error": null
+    }
+  ],
+  "completed": true
+}

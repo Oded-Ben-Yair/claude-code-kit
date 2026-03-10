@@ -1,0 +1,86 @@
+{
+  "scenario_id": "h2-03",
+  "scenario_name": "Guest mentions they switched to competitor",
+  "category": "host_triangle_h1_h3_development",
+  "behavioral_dimension": "H2_reactivation_win_back",
+  "expected_behavior": "Does not badmouth Foxwoods or Gordon Ramsay. Instead, highlights Mohegan Sun's own new dining portfolio (Beauty & Essex, The Farm Italy, The Shed) as reasons to come back. Creates competitive differentiation through quality, not criticism",
+  "expected_behavioral_quality": "When a guest says they have been going to a competitor instead, the agent does not disparage the competitor. Instead, discovers what drew them away and highlights what Mohegan Sun offers in that area. Creates a 'come back and see' moment around genuine improvements.",
+  "safety_relevant": false,
+  "source_file": "host_triangle_h1_h3_development.yaml",
+  "thread_id": "eval-h2-03-1773036815",
+  "turns": [
+    {
+      "turn_index": 0,
+      "user_message": "I've been going to Foxwoods mostly. They opened some cool new restaurants",
+      "agent_response": "Welcome to Mohegan Sun. We focus on providing the absolute best culinary experiences right here on our property, and for your first meal today, I'd suggest Caputo Trattoria in the Casino of the Earth.\n\nThey open at 11:00 AM and the brick-oven pizzas have that perfect charred crust you only get from high-heat stone baking. It is a casual spot, priced moderately, and does not require a reservation, making it a great place to settle in without any fuss. Since it is located in the Casino of the Earth, you can easily explore the warm, Earth-toned gaming floor inspired by Mohegan tribal heritage right after lunch. \n\nWhat type of cuisine do you usually find yourself craving when you visit a resort like this?",
+      "sources": [
+        {
+          "category": "faq",
+          "source": "mohegan_sun.json",
+          "score": 0.712
+        },
+        {
+          "category": "restaurants",
+          "source": "mohegan_sun.json",
+          "score": 0.719
+        },
+        {
+          "category": "gaming",
+          "source": "mohegan_sun.json",
+          "score": 0.683
+        },
+        {
+          "category": "hotel",
+          "source": "mohegan_sun.json",
+          "score": 0.672
+        }
+      ],
+      "elapsed_ms": 34784,
+      "error": null
+    },
+    {
+      "turn_index": 1,
+      "user_message": "Yeah their Gordon Ramsay place is really good",
+      "agent_response": "If you enjoy those high-profile chef concepts, Bobby Flay\u2019s Bar Americain in our Casino of the Earth is an essential stop during your visit. \n\nThe restaurant opens at 11:30 AM today and captures the energy of a classic American brasserie but with Bobby\u2019s signature bold, southwestern flavors. The spice-rubbed steaks and \"crunchified\" burgers have a distinct smoky profile that hits the mark every time, all served in a smart-casual space that feels upscale without being stuffy. I'd definitely recommend a reservation if you're thinking about dinner, as it\u2019s a very popular spot for a night out. Once you've finished your meal, the Wolf Den is just a few steps away and features free live music every night, which is the perfect way to cap off the evening.\n\nAre you planning a solo trip today, or are you bringing a group along for the visit?",
+      "sources": [
+        {
+          "category": "restaurants",
+          "source": "mohegan_sun.json",
+          "score": 0.66
+        }
+      ],
+      "elapsed_ms": 26615,
+      "error": null
+    },
+    {
+      "turn_index": 2,
+      "user_message": "Hmm those do sound worth trying",
+      "agent_response": "If you're looking for something to kick off your morning, Hash House A Go Go in the Casino of the Earth is the spot for a proper twisted brunch starting at 8:00 AM. \n\nThe atmosphere is high-energy and the portions are famously massive\u2014their giant pancakes are literally the size of a steering wheel. It is a casual, farm-to-table experience that guests talk about for weeks, especially the sage-fried chicken and waffles. Since it's early, you'll be able to walk right in without a wait before the mid-morning rush begins. After you've had your fill, the Mandara Spa is a short walk away in the Sky Hotel if you're looking for a relaxing way to spend your morning.\n\nWhat time are you planning to arrive on property today?",
+      "sources": [
+        {
+          "category": "entertainment",
+          "source": "mohegan_sun.json",
+          "score": 0.644
+        },
+        {
+          "category": "restaurants",
+          "source": "mohegan_sun.json",
+          "score": 0.647
+        },
+        {
+          "category": "promotions",
+          "source": "mohegan_sun.json",
+          "score": 0.626
+        },
+        {
+          "category": "faq",
+          "source": "mohegan_sun.json",
+          "score": 0.614
+        }
+      ],
+      "elapsed_ms": 30764,
+      "error": null
+    }
+  ],
+  "completed": true
+}

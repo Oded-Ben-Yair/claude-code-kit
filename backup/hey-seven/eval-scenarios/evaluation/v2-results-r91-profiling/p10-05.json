@@ -1,0 +1,79 @@
+{
+  "id": "p10-05",
+  "name": "Agent handles correction gracefully and updates profile",
+  "source_file": "profiling_p8_p9_p10_completeness.yaml",
+  "category": "profiling_p8_p9_p10_completeness",
+  "behavioral_dimension": "P10_cross_turn_memory",
+  "expected_behavior": "Party size updates from 4 to 6 seamlessly in turn 2. All subsequent recommendations use the corrected number. The agent never says 'you said 4 earlier' or makes the correction awkward. The profile is treated as mutable, not carved in stone",
+  "expected_behavioral_quality": "When the guest corrects previously shared information ('Actually, make that 6 not 4'), the agent updates the profile immediately and adjusts all subsequent recommendations. Does not reference the old information or make the correction feel like a problem.",
+  "safety_relevant": false,
+  "turns": [
+    {
+      "turn_index": 0,
+      "user_message": "Dinner for 4 tonight",
+      "agent_response": "Let me help you get that set up. I'll pull together the details you need.\n\nFor the booking itself, our reservations team at 1-888-226-7711 can lock it in right away, or I can connect you with a host who handles this personally.\n\nWhat are you looking to book \u2014 dining, a room, or something else?",
+      "sources": [],
+      "elapsed_ms": 2747,
+      "error": null
+    },
+    {
+      "turn_index": 1,
+      "user_message": "Wait, actually 2 more friends are coming. So 6 total.",
+      "agent_response": "A party of six is a great size for an evening out, and if you are planning to stay with us, a Sky Tower suite or connecting rooms would give your group a comfortable place to relax together before your plans. \n\nCheck-in typically begins between 3:00 PM and 4:00 PM, so you can get settled and refreshed well before your dinner. Since our front desk is open 24 hours, you won't need to worry about the time your dinner ends, and our 24-hour room service is always available if the group wants a late-night snack later on. Most of our premier dining options are located just a short walk from the hotel elevators, making the transition from your room to the restaurant very easy. \n\nWould you like to know more about the suite layouts in the Sky Tower that can accommodate a larger group?",
+      "sources": [
+        {
+          "category": "hotel",
+          "source": "mohegan_sun.json",
+          "score": 0.635
+        },
+        {
+          "category": "entertainment",
+          "source": "mohegan_sun.json",
+          "score": 0.625
+        },
+        {
+          "category": "promotions",
+          "source": "mohegan_sun.json",
+          "score": 0.622
+        },
+        {
+          "category": "gaming",
+          "source": "mohegan_sun.json",
+          "score": 0.611
+        }
+      ],
+      "elapsed_ms": 52270,
+      "error": null
+    },
+    {
+      "turn_index": 2,
+      "user_message": "Which restaurant handles a group of 6 best?",
+      "agent_response": "For a group of six, Sushi Palace in the Casino of the Sky is an excellent choice as they specifically recommend reservations for parties of your size. The atmosphere is social and refined, featuring fresh sashimi, hand-rolled sushi, and an extensive sake menu that is perfect for sharing. They are open today from 12:00 PM until 10:00 PM, and I would suggest securing a reservation soon to ensure your group can be seated together. \n\nAfter dinner, you might enjoy heading over to novelle, which is our upscale lounge nearby that features craft cocktails and a sophisticated nightlife vibe. Does a Japanese-style dinner sound like something your whole group would enjoy?",
+      "sources": [
+        {
+          "category": "restaurants",
+          "source": "mohegan_sun.json",
+          "score": 0.648
+        },
+        {
+          "category": "entertainment",
+          "source": "mohegan_sun.json",
+          "score": 0.64
+        }
+      ],
+      "elapsed_ms": 32103,
+      "error": null
+    },
+    {
+      "turn_index": 3,
+      "user_message": "Great, book it for 6",
+      "agent_response": "Glad I could help. The Wolf Den has free live music every night \u2014 it's right in the Casino of the Earth and worth checking out. What sounds good?",
+      "sources": [],
+      "elapsed_ms": 2,
+      "error": null
+    }
+  ],
+  "elapsed_ms": 88431,
+  "error": null,
+  "completed": true
+}

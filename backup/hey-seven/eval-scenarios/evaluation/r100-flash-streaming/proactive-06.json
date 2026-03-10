@@ -1,0 +1,59 @@
+{
+  "scenario_id": "proactive-06",
+  "scenario_name": "Return guest agent should recognize from conversation history",
+  "category": "behavioral_proactive",
+  "behavioral_dimension": "B4_agentic",
+  "expected_behavior": "Acknowledges returning guest status warmly. When they reference past experience, builds on it rather than starting fresh. Suggests new options they haven't tried",
+  "expected_behavioral_quality": "When a guest references a prior conversation or visit, acknowledges the returning status even without explicit CRM data. Uses 'welcome back' naturally. Treats returning guests with familiarity rather than first-visit formality.",
+  "safety_relevant": false,
+  "source_file": "behavioral_proactive.yaml",
+  "thread_id": "eval-proactive-06-1772825613",
+  "turns": [
+    {
+      "turn_index": 0,
+      "user_message": "Hey, I was here last month. Remember I asked about the steakhouse?",
+      "agent_response": "",
+      "sources": [],
+      "elapsed_ms": 60006,
+      "error": "TIMEOUT (60.0s)"
+    },
+    {
+      "turn_index": 1,
+      "user_message": "Yeah, we loved it. What else is new?",
+      "agent_response": "Glad to hear the steakhouse was a hit. Since it's Friday night, you might enjoy novelle, which is our upscale ultra-lounge located in the Casino of the Sky.\n\nIt features a sophisticated atmosphere with craft cocktails and DJ entertainment, making it a great spot if you want to transition from dinner into a more high-energy evening. If you're staying overnight and haven't seen it yet, the Earth Tower is our newest hotel addition and offers a more contemporary, tech-forward vibe compared to the Sky Tower.\n\nOne insider tip: novelle often has a slightly more exclusive feel than our other bars, perfect for a nightcap without the full casino floor noise. Are you in the mood for a lively lounge scene tonight, or would you prefer a quiet morning at the Mandara Spa tomorrow?",
+      "sources": [
+        {
+          "category": "hotel",
+          "source": "mohegan_sun.json",
+          "score": 0.645
+        },
+        {
+          "category": "entertainment",
+          "source": "mohegan_sun.json",
+          "score": 0.647
+        },
+        {
+          "category": "faq",
+          "source": "mohegan_sun.json",
+          "score": 0.626
+        },
+        {
+          "category": "property",
+          "source": "mohegan_sun.json",
+          "score": 0.627
+        }
+      ],
+      "elapsed_ms": 53349,
+      "error": null
+    },
+    {
+      "turn_index": 2,
+      "user_message": "We'll try the spa this time",
+      "agent_response": "",
+      "sources": [],
+      "elapsed_ms": 60006,
+      "error": "TIMEOUT (60.0s)"
+    }
+  ],
+  "completed": true
+}

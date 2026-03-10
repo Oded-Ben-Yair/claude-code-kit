@@ -1,0 +1,44 @@
+{
+  "scenario_id": "h1-02",
+  "scenario_name": "Guest comparing Mohegan Sun to competitor",
+  "category": "host_triangle_h1_h3_development",
+  "behavioral_dimension": "H1_proactive_value_discovery",
+  "expected_behavior": "Highlights Mohegan Sun's dining portfolio as a competitive advantage without badmouthing Foxwoods. Discovers the guest's foodie identity and uses it to position the property. Creates a switching reason tied to the guest's stated values",
+  "expected_behavioral_quality": "When a guest compares to a competitor (Foxwoods, MGM), the agent highlights Mohegan Sun's unique differentiators without disparaging the competitor. Discovers what the guest values most and positions Mohegan Sun as the better fit for those specific preferences.",
+  "safety_relevant": false,
+  "source_file": "host_triangle_h1_h3_development.yaml",
+  "thread_id": "eval-h1-02-1772909980",
+  "turns": [
+    {
+      "turn_index": 0,
+      "user_message": "We usually go to Foxwoods. What's different about Mohegan Sun?",
+      "agent_response": "Welcome. You'll find our layout is designed around the Mohegan heritage, with three distinct casinos\u2014Earth, Sky, and Wind\u2014that flow into one another based on the seasons. The energy at the Wolf Den is a major standout, as we have free live music right in the center of the gaming floor. Are you more of a table games player or do you prefer the slots?",
+      "sources": [],
+      "elapsed_ms": 53592,
+      "error": null
+    },
+    {
+      "turn_index": 1,
+      "user_message": "We're big foodies and love trying new spots",
+      "agent_response": "The minimalist elegance of Sushi Palace in the Casino of the Sky sets the stage for some of the finest knife work on the property, especially if you opt for the omakase where the chef selects the freshest seasonal cuts for you. It\u2019s a sophisticated experience with an extensive sake menu to explore, and they're open until 11:00 PM tonight with a price range around $$$. Pro tip: Their sake flight is one of the best ways to experience how different brews complement the fatty tuna. \n\nHours and pricing can vary, so it's always good to confirm with the property when you arrive. I've got you on the details, and while reservations are generally recommended for parties of six or more, I can connect you with the host team to see about getting you settled in. Since you enjoy trying new spots, do you typically look for a lively atmosphere or something a bit more intimate?",
+      "sources": [
+        {
+          "category": "restaurants",
+          "source": "mohegan_sun.json",
+          "score": 0.643
+        }
+      ],
+      "elapsed_ms": 42462,
+      "error": null
+    },
+    {
+      "turn_index": 2,
+      "user_message": "Those sound amazing. Maybe we'll make the switch",
+      "agent_response": "I've got you. If you're coming for a culinary tour, your room should be the perfect place to recharge between meals. The Sky Tower suites really feel like a private retreat after a night at Sushi Palace or Tao. If you're looking for something with a modern edge, the Earth Tower rooms offer contemporary design and panoramic views that guests absolutely rave about. Our check-in is typically between 3:00 PM and 4:00 PM and check-out is at 11:00 AM, but our 24-hour front desk will have everything ready for you regardless of when your dinner concludes. Staying over means you can catch the Wolf Den shows at 8:00 PM without worrying about the drive home. Would you prefer a room closer to the action of the Casino of the Earth, or something high up in the Sky Tower with a view of the river?",
+      "sources": [],
+      "elapsed_ms": 65705,
+      "error": null
+    }
+  ],
+  "completed": true
+}

@@ -1,0 +1,87 @@
+{
+  "id": "h2-02",
+  "name": "Guest references a bad past experience",
+  "source_file": "host_triangle_h1_h3_development.yaml",
+  "category": "host_triangle_h1_h3_development",
+  "behavioral_dimension": "H2_reactivation_win_back",
+  "expected_behavior": "Takes the complaint seriously without being defensive. Apologizes specifically for the wait time. Offers a concrete alternative for this visit and suggests mentioning the issue to the Momentum Desk for follow-up. Turns the complaint into a chance to demonstrate that things are different now",
+  "expected_behavioral_quality": "When a guest references a negative experience, the agent acknowledges it specifically, investigates without being defensive, and reframes the next visit as a fresh start. Does not minimize the complaint or rush past it.",
+  "safety_relevant": false,
+  "turns": [
+    {
+      "turn_index": 0,
+      "user_message": "Last time I was here the service at the steakhouse was awful. Took forever to get seated",
+      "agent_response": "I am truly sorry to hear that a long wait at the door dampened your last experience here, as that certainly isn't the standard we want for our guests. To ensure your next meal is much more seamless, I'd suggest Michael Jordan's Steak House in the Casino of the Sky, where securing a reservation in advance is the most reliable way to ensure you are seated promptly at your preferred time",
+      "sources": [
+        {
+          "category": "restaurants",
+          "source": "mohegan_sun.json",
+          "score": 0.66
+        },
+        {
+          "category": "property",
+          "source": "mohegan_sun.json",
+          "score": 0.637
+        },
+        {
+          "category": "faq",
+          "source": "mohegan_sun.json",
+          "score": 0.641
+        }
+      ],
+      "elapsed_ms": 37044,
+      "error": null
+    },
+    {
+      "turn_index": 1,
+      "user_message": "Yeah it kind of ruined the whole evening honestly",
+      "agent_response": "It is completely understandable how a delay like that can derail your entire night. I would love to help you plan a much smoother experience next time, perhaps starting with a total reset at Elemis Spa to leave that stress behind. \n\nTheir hot stone massage is legendary and usually sets a much better tone for the rest of the evening. After you've had a chance to relax, would you be interested in seeing what live music we have playing tonight at the Wolf Den?",
+      "sources": [
+        {
+          "category": "entertainment",
+          "source": "mohegan_sun.json",
+          "score": 0.618
+        },
+        {
+          "category": "faq",
+          "source": "mohegan_sun.json",
+          "score": 0.602
+        }
+      ],
+      "elapsed_ms": 29162,
+      "error": null
+    },
+    {
+      "turn_index": 2,
+      "user_message": "So what would you actually recommend instead?",
+      "agent_response": "I'd suggest heading to Mandara Spa to start your visit on a much more peaceful note. Their Balinese-inspired healing traditions and quiet relaxation lounge provide a perfect escape from the busier parts of the resort. \n\nFor your evening, Novelle is our upscale ultra-lounge that offers a sophisticated and curated atmosphere, making it a great alternative to the high-traffic areas. It opens tonight and provides a polished setting for craft cocktails and DJ entertainment\u2014would you prefer a quiet morning at the spa or an upscale evening at the lounge?",
+      "sources": [
+        {
+          "category": "faq",
+          "source": "mohegan_sun.json",
+          "score": 0.666
+        },
+        {
+          "category": "entertainment",
+          "source": "mohegan_sun.json",
+          "score": 0.638
+        },
+        {
+          "category": "amenities",
+          "source": "mohegan_sun.json",
+          "score": 0.633
+        },
+        {
+          "category": "promotions",
+          "source": "mohegan_sun.json",
+          "score": 0.606
+        }
+      ],
+      "elapsed_ms": 33105,
+      "error": null
+    }
+  ],
+  "elapsed_ms": 99311,
+  "error": null,
+  "completed": true
+}

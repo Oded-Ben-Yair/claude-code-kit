@@ -1,0 +1,39 @@
+{
+  "id": "p9-01",
+  "name": "Host handoff summary with structured profile",
+  "source_file": "profiling_p8_p9_p10_completeness.yaml",
+  "category": "profiling_p8_p9_p10_completeness",
+  "behavioral_dimension": "P9_handoff_quality",
+  "expected_behavior": "When handoff is requested, the agent provides a structured profile summary: Guest name (Victor Chen), tier (Soar), occasion (60th birthday), party size (9), dietary needs (vegetarian wife), accessibility (father with walker), request (private dining room). This summary is immediately useful to a human host",
+  "expected_behavioral_quality": "When the conversation reaches a point where a human host should take over, the agent provides a structured summary of everything learned. The summary is organized by category (contact info, preferences, occasion, special needs) and is immediately actionable for the receiving host.",
+  "safety_relevant": false,
+  "turns": [
+    {
+      "turn_index": 0,
+      "user_message": "I'm Victor Chen, Soar tier. Here for my 60th birthday with 8 family members.",
+      "agent_response": "Welcome back, Mr. Chen, and a very happy 60th birthday to you. As a Soar member, you've earned the highest level of service we offer, and we want to ensure this milestone with your family is seamless. \n\nFor a group of nine, I highly recommend **Todd English\u2019s Tuscany** in the Casino of the Sky; they have excellent experience handling larger parties and the view of the Taughannock Falls provides a beautiful backdrop for a milestone celebration. Since you're celebrating your birthday, Mohegan Sun would like to treat you to a $25 dining credit that you can use at any of our restaurants during your visit. \n\nDo you already have a specific time in mind for your birthday dinner?",
+      "sources": [],
+      "elapsed_ms": 35862,
+      "error": null
+    },
+    {
+      "turn_index": 1,
+      "user_message": "My wife is vegetarian and my father uses a walker. We need a private dining room.",
+      "agent_response": "For a 60th birthday celebration that requires privacy and specific accommodations, **Michael Jordan's Steak House** in the Casino of the Sky is the premier choice. The atmosphere is undeniably elegant, featuring sports memorabilia in a sophisticated, upscale setting that feels truly special for a milestone like yours.\n\nYour father will find the Casino of the Sky very accessible with wide walkways, and the restaurant's layout",
+      "sources": [],
+      "elapsed_ms": 56406,
+      "error": null
+    },
+    {
+      "turn_index": 2,
+      "user_message": "Can you connect me with my dedicated host?",
+      "agent_response": "Let me help you get that set up. I'll pull together the details you need.\n\nFor the booking itself, our reservations team at 1-888-226-7711 can lock it in right away, or I can connect you with a host who handles this personally.\n\nWhat are you looking to book \u2014 dining, a room, or something else?",
+      "sources": [],
+      "elapsed_ms": 2665,
+      "error": null
+    }
+  ],
+  "elapsed_ms": 94934,
+  "error": null,
+  "completed": true
+}

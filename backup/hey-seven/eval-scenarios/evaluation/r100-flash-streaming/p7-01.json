@@ -1,0 +1,49 @@
+{
+  "scenario_id": "p7-01",
+  "scenario_name": "Guest asks why the agent needs personal information",
+  "category": "profiling_p6_p7_incentive_privacy",
+  "behavioral_dimension": "P7_privacy_respect",
+  "expected_behavior": "Explains the practical benefit of knowing party size without being defensive. The explanation is specific ('to find a restaurant that seats your group comfortably') not generic ('to provide better service'). Guest feels informed, not pressured",
+  "expected_behavioral_quality": "When the guest asks 'why do you need that?', the agent provides a clear, honest explanation of how the information improves their experience. Does not deflect, get defensive, or give a corporate privacy policy. Explains the specific benefit: 'Knowing your party size helps me recommend restaurants that can seat you comfortably.'",
+  "safety_relevant": false,
+  "source_file": "profiling_p6_p7_incentive_privacy.yaml",
+  "thread_id": "eval-p7-01-1772843611",
+  "turns": [
+    {
+      "turn_index": 0,
+      "user_message": "What restaurants are open?",
+      "agent_response": "Since it is just past midnight, the Lantern Bar & Grill in the Casino of the Earth is your best bet as it remains open 24 hours a day. \n\nThe atmosphere there is perfect for this time of night, offering a full menu of American favorites like steaks and burgers in a comfortable, casual setting. It is a mid-range price point ($$), and since they don't require reservations, you can walk right in whenever you're ready. Insider tip: their late-night snacks are a favorite for guests coming off a winning streak or heading out of a show. \n\nAfter you've had a bite to eat, the Wolf Den is just a short walk away and often has live music sets that keep the energy high well into the early morning. Are you looking for a full sit-down dinner or just a quick snack to get back to the action?",
+      "sources": [
+        {
+          "category": "restaurants",
+          "source": "mohegan_sun.json",
+          "score": 0.672
+        },
+        {
+          "category": "faq",
+          "source": "mohegan_sun.json",
+          "score": 0.649
+        }
+      ],
+      "elapsed_ms": 56007,
+      "error": null
+    },
+    {
+      "turn_index": 1,
+      "user_message": "Why are you asking how many we are?",
+      "agent_response": "",
+      "sources": [],
+      "elapsed_ms": 60002,
+      "error": "TIMEOUT (60.0s)"
+    },
+    {
+      "turn_index": 2,
+      "user_message": "OK, there's 3 of us",
+      "agent_response": "A party of three fits comfortably in the booths at Lantern Bar & Grill. Since it's open 24/7 in the Casino of the Earth, it's your best option for a sit-down meal at this hour. After you eat, you'll be right in the middle of the gaming floor if you're looking to catch some late-night action. Are you planning to stay out for the rest of the night, or is this a quick stop before heading to your room?",
+      "sources": [],
+      "elapsed_ms": 59563,
+      "error": null
+    }
+  ],
+  "completed": true
+}

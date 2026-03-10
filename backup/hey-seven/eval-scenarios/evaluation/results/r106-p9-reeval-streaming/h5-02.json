@@ -1,0 +1,38 @@
+{
+  "scenario_id": "h5-02",
+  "scenario_name": "Couple celebrating their wedding anniversary",
+  "category": "host_triangle_h4_h6_relationship",
+  "behavioral_dimension": "H5_emotional_loyalty_building",
+  "expected_behavior": "Creates a romantic anniversary itinerary: couples spa treatment, upscale dinner with anniversary touches, and an intimate evening experience. Plants the seed that Mohegan Sun could become their anniversary tradition. Emotional connection, not just logistics",
+  "expected_behavioral_quality": "Treats the anniversary as a chance to create an emotional anchor to the property. Builds a romantic experience vision that makes the couple associate Mohegan Sun with their love story. The response should make them want to come back every anniversary.",
+  "safety_relevant": false,
+  "source_file": "host_triangle_h4_h6_relationship.yaml",
+  "thread_id": "eval-h5-02-1773038075",
+  "turns": [
+    {
+      "turn_index": 0,
+      "user_message": "It's our 10th anniversary this weekend. We want to make it really special",
+      "agent_response": "Ten years is a huge milestone\u2014congratulations! Let's make this an unforgettable weekend. \n\nI've got a perfect night planned for you: an elegant dinner at Michael Jordan's Steak House, followed by craft cocktails at our upscale lounge, novelle. Since it is your big anniversary, let me see about upgrading your experience while you are here to make it extra special. \n\nAre you staying over with us, or just driving in for the evening?",
+      "sources": [],
+      "elapsed_ms": 46759,
+      "error": null
+    },
+    {
+      "turn_index": 1,
+      "user_message": "We'd love a really nice dinner and maybe the spa",
+      "agent_response": "For the spa, Mandara is exactly what you want for a milestone like this. It is our award-winning spa, and a couples massage there is the perfect way to truly disconnect and relax. \n\nFor dinner, let's go with Ballo Italian Restaurant. The dining room is gorgeous, the house-made pasta is incredible, and it has the exact romantic vibe you want for a decade together. Since weekend tables and spa times fill up very quickly, I'd suggest getting those reservations locked in as soon as possible.\n\nBy the way, since it is your big anniversary, we would love to treat you to a dining credit to make the meal extra special. What name should I have the host team put this under so they can get that set up for you?",
+      "sources": [],
+      "elapsed_ms": 64123,
+      "error": null
+    },
+    {
+      "turn_index": 2,
+      "user_message": "A couples spa package sounds incredible",
+      "agent_response": "It is the ultimate way to celebrate. Mandara Spa is phenomenal for this\u2014you can arrive early to unwind in their tranquil relaxation lounge, steam room, and sauna before enjoying a massage inspired by Balinese healing traditions. If you prefer a more modern vibe, our Elemis Spa in the Earth Tower also features beautiful, dedicated couples experiences. \n\nSince weekend slots fill up fast, I want to make sure we get this in motion for you. While I handle the recommendations and information, I'll have our host team reach out to lock in the actual spa reservations and apply that anniversary dining credit we talked about. \n\nAfter a deeply relaxing afternoon, catching some live music at the Wolf Den is the perfect low-key way to spend the evening! \n\nTo get all of this started, what name should I give the host team?",
+      "sources": [],
+      "elapsed_ms": 53928,
+      "error": null
+    }
+  ],
+  "completed": true
+}

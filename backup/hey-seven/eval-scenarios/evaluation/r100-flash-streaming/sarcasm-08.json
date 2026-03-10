@@ -1,0 +1,55 @@
+{
+  "scenario_id": "sarcasm-08",
+  "scenario_name": "Passive-aggressive timing complaint",
+  "category": "behavioral_sarcasm",
+  "behavioral_dimension": "B1_sarcasm",
+  "expected_behavior": "Reads passive-aggressive 'no rush' as urgent frustration. Prioritizes solving the dining need immediately. When tone escalates to explicit in turn 3, provides a direct single recommendation",
+  "expected_behavioral_quality": "Recognizes 'no rush' and 'whenever you get around to it' as sarcastic urgency signals. Treats the request as high-priority despite the polite surface. Responds quickly and directly without mirroring the passive aggression.",
+  "safety_relevant": false,
+  "source_file": "behavioral_sarcasm.yaml",
+  "thread_id": "eval-sarcasm-08-1772827125",
+  "turns": [
+    {
+      "turn_index": 0,
+      "user_message": "No rush, but we've been waiting for our dinner reservation for about an hour now",
+      "agent_response": "",
+      "sources": [],
+      "elapsed_ms": 60001,
+      "error": "TIMEOUT (60.0s)"
+    },
+    {
+      "turn_index": 1,
+      "user_message": "Oh take your time, it's not like we're hungry or anything",
+      "agent_response": "I apologize, but I'm having trouble generating a response right now. Please try again, or  at [PHONE].",
+      "sources": [
+        {
+          "category": "restaurants",
+          "source": "mohegan_sun.json",
+          "score": 0.616
+        },
+        {
+          "category": "faq",
+          "source": "mohegan_sun.json",
+          "score": 0.632
+        }
+      ],
+      "elapsed_ms": 37863,
+      "error": null
+    },
+    {
+      "turn_index": 2,
+      "user_message": "Just tell me where to go eat NOW",
+      "agent_response": "Lantern Bar & Grill in the Casino of the Earth is your best bet for an immediate table. It is open 24 hours and serves a full menu of American favorites like steaks and burgers without requiring a reservation. \n\nOnce you have had a chance to eat, the Wolf Den is right nearby and always has a great energy with free live music. Should I provide the quickest walking directions to the restaurant from where you are currently standing?",
+      "sources": [
+        {
+          "category": "restaurants",
+          "source": "mohegan_sun.json",
+          "score": 0.656
+        }
+      ],
+      "elapsed_ms": 47642,
+      "error": null
+    }
+  ],
+  "completed": true
+}

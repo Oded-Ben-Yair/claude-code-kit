@@ -1,0 +1,72 @@
+{
+  "id": "agentic-03",
+  "name": "Follow-up anticipation for incomplete plan",
+  "source_file": "behavioral_agentic.yaml",
+  "category": "behavioral_agentic",
+  "behavioral_dimension": "B4_agentic",
+  "expected_behavior": "Recognizes the guest is building a sequential evening plan. After each decision, proactively suggests the logical next activity in the timeline without waiting to be asked",
+  "expected_behavioral_quality": "When a guest is building an evening plan piece by piece, anticipates the next question rather than waiting passively. After dinner is settled, offers 'and for after dinner...' without being asked.",
+  "safety_relevant": false,
+  "turns": [
+    {
+      "turn_index": 0,
+      "user_message": "We need to plan our evening. Start with dinner.",
+      "agent_response": "Todd English's Tuscany is a guest favorite for its wood-fired pizzas and handmade pasta, and it opens at 5:00 PM today. If you're looking for something with a bit more energy, Ballo Italian Restaurant offers a contemporary take on Italian classics in a very striking setting. \n\nAfter dinner, you could stop by Novelle, our upscale lounge that is open on Thursday nights for craft cocktails and music. Are you celebrating a special occasion tonight or just looking for a great meal?",
+      "sources": [
+        {
+          "category": "entertainment",
+          "source": "mohegan_sun.json",
+          "score": 0.655
+        },
+        {
+          "category": "restaurants",
+          "source": "mohegan_sun.json",
+          "score": 0.65
+        }
+      ],
+      "elapsed_ms": 43505,
+      "error": null
+    },
+    {
+      "turn_index": 1,
+      "user_message": "Steakhouse at 7. What next?",
+      "agent_response": "Michael Jordan's Steak House is a great pick for 7:00 PM, and you\u2019ll likely be looking for something to do around 9:00 PM. Novelle is our upscale lounge and it's open tonight for craft cocktails and DJ entertainment in a very stylish setting. Alternatively, you can head to the Wolf Den in the center of the Casino of the Earth for a free live musical performance.\n\nThe Wolf Den shows are quite popular and seats are first-come, first-served, so it's worth checking the schedule when you arrive at the resort. Would you prefer a high-energy lounge environment or a live music show?",
+      "sources": [
+        {
+          "category": "restaurants",
+          "source": "mohegan_sun.json",
+          "score": 0.687
+        },
+        {
+          "category": "entertainment",
+          "source": "mohegan_sun.json",
+          "score": 0.663
+        }
+      ],
+      "elapsed_ms": 39195,
+      "error": null
+    },
+    {
+      "turn_index": 2,
+      "user_message": "A show would be fun. And then?",
+      "agent_response": "The Wolf Den is an excellent choice for a show because the atmosphere is electric and it's located right in the heart of the action. Since you'll be finishing dinner at Michael Jordan's Steak House around 8:30 PM or 9:00 PM, you can walk right over to catch the live performance, which is complimentary and features national touring acts or tribute bands. \n\nAfter the show, Novelle is our upscale ultra lounge that stays open on Thursday nights for craft cocktails and DJ entertainment in a more sophisticated setting. If the night runs a bit late, a morning session at Elemis Spa for a hot stone massage is a legendary way to reset for the next day. Do you prefer being right up front near the stage or do you like having a bit of space to move around?",
+      "sources": [
+        {
+          "category": "entertainment",
+          "source": "mohegan_sun.json",
+          "score": 0.65
+        },
+        {
+          "category": "faq",
+          "source": "mohegan_sun.json",
+          "score": 0.625
+        }
+      ],
+      "elapsed_ms": 27506,
+      "error": null
+    }
+  ],
+  "elapsed_ms": 110207,
+  "error": null,
+  "completed": true
+}

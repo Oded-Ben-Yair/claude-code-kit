@@ -1,0 +1,77 @@
+{
+  "id": "h3-02",
+  "name": "Guest mentions tier at competitor property",
+  "source_file": "host_triangle_h1_h3_development.yaml",
+  "category": "host_triangle_h1_h3_development",
+  "behavioral_dimension": "H3_pipeline_advancement",
+  "expected_behavior": "Translates the Caesars Diamond status into Momentum-equivalent context. Explains how table game play earns tier credits and what tier would match their current status. Makes signing up feel like a strategic move for a serious player, not a marketing exercise",
+  "expected_behavioral_quality": "When a guest mentions tier status at a competitor, the agent recognizes the status signal and positions Mohegan Sun's Momentum tiers as comparable or better for their play level. Does not dismiss the competitor tier but creates curiosity about Momentum benefits.",
+  "safety_relevant": false,
+  "turns": [
+    {
+      "turn_index": 0,
+      "user_message": "I'm Diamond at Caesars. What do you have here that's comparable?",
+      "agent_response": "Diamond, the Momentum program is the loyalty system at Mohegan Sun, consisting of five tiers: Core, Ignite (2,500 Tier Credits), Leap (10,000 Tier Credits), Ascend (25,000 Tier Credits), and Soar (invitation only). Tier Credits are earned through play on slots, tables, and poker, as well as spending on dining, hotel stays, and retail.\n\nFor guests seeking premium benefits, the Ascend tier includes complimentary valet, room upgrades, and a dedicated host. The Leap tier provides priority access, enhanced earning rates, and invitations to exclusive events. You can sign up for free at any Momentum Desk on the casino floor or via the Mohegan Sun app to receive your card immediately! \n\nOur high-limit gaming areas also offer elevated minimums and dedicated host service\u2014are you looking for high-limit slots or table games today?",
+      "sources": [
+        {
+          "category": "promotions",
+          "source": "mohegan_sun.json",
+          "score": 0.697
+        },
+        {
+          "category": "gaming",
+          "source": "mohegan_sun.json",
+          "score": 0.664
+        },
+        {
+          "category": "faq",
+          "source": "mohegan_sun.json",
+          "score": 0.672
+        }
+      ],
+      "elapsed_ms": 27288,
+      "error": null
+    },
+    {
+      "turn_index": 1,
+      "user_message": "How fast can I move up? I play mostly table games",
+      "agent_response": "Diamond, Tier progression speed at table games is determined by your average bet and duration of play. Presenting your card at any of our 370 table games ensures you earn Tier Credits toward levels like Ignite (2,500) or Leap (10,000). \n\nHigher tiers also unlock dining credits at restaurants like Tuscany or SolToro. Do you usually play blackjack, or are you looking for a game like baccarat today?",
+      "sources": [
+        {
+          "category": "gaming",
+          "source": "mohegan_sun.json",
+          "score": 0.701
+        },
+        {
+          "category": "promotions",
+          "source": "mohegan_sun.json",
+          "score": 0.677
+        }
+      ],
+      "elapsed_ms": 28712,
+      "error": null
+    },
+    {
+      "turn_index": 2,
+      "user_message": "Alright, I'll sign up at the Momentum Desk",
+      "agent_response": "Diamond, the Momentum Desk will issue your card immediately with a valid photo ID. There are locations in both the Casino of the Earth and Casino of the Sky. Once you have your card, you can also use it to earn points on dinner at spots like TAO or Michael Jordan's Steak House. Would you like the location of the desk closest to the table games?",
+      "sources": [
+        {
+          "category": "faq",
+          "source": "mohegan_sun.json",
+          "score": 0.767
+        },
+        {
+          "category": "promotions",
+          "source": "mohegan_sun.json",
+          "score": 0.735
+        }
+      ],
+      "elapsed_ms": 42883,
+      "error": null
+    }
+  ],
+  "elapsed_ms": 98885,
+  "error": null,
+  "completed": true
+}

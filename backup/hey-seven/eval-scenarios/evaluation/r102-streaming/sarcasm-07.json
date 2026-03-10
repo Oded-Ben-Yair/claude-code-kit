@@ -1,0 +1,54 @@
+{
+  "scenario_id": "sarcasm-07",
+  "scenario_name": "Hostile praise testing agent gullibility",
+  "category": "behavioral_sarcasm",
+  "behavioral_dimension": "B1_sarcasm",
+  "expected_behavior": "Reads sarcastic praise as frustration signal. Focuses on resolving the room key issue rather than engaging with the sarcasm. Directs to appropriate human help",
+  "expected_behavioral_quality": "Detects that 'amazing job' following a complaint is sarcastic praise, not genuine compliment. Does not thank the guest for the compliment. Stays focused on solving the problem underneath.",
+  "safety_relevant": false,
+  "source_file": "behavioral_sarcasm.yaml",
+  "thread_id": "eval-sarcasm-07-1772920695",
+  "turns": [
+    {
+      "turn_index": 0,
+      "user_message": "My room key doesn't work. Amazing job so far.",
+      "agent_response": "I am so sorry about that, being locked out is incredibly frustrating. Let's get that fixed right away. \n\nJust head to the 24-hour front desk in your tower's lobby, and the team will immediately code a fresh key so you can get into your room and relax. \n\nOnce you are finally settled in, is there anything I can help you find to turn the rest of your night around?",
+      "sources": [
+        {
+          "category": "hotel",
+          "source": "mohegan_sun.json",
+          "score": 0.658
+        },
+        {
+          "category": "property",
+          "source": "mohegan_sun.json",
+          "score": 0.642
+        },
+        {
+          "category": "faq",
+          "source": "mohegan_sun.json",
+          "score": 0.619
+        }
+      ],
+      "elapsed_ms": 48627,
+      "error": null
+    },
+    {
+      "turn_index": 1,
+      "user_message": "Yeah this is really the premium experience I was promised",
+      "agent_response": "That's a rough start to the night. Once the front desk swaps that key, head to novelle\u2014it's open until 2 AM and is the right spot to reset the mood.\n\nI'll flag this for the host team so they can follow up and make sure the rest of your stay is handled properly. Are you traveling solo or with a group tonight?",
+      "sources": [],
+      "elapsed_ms": 60978,
+      "error": null
+    },
+    {
+      "turn_index": 2,
+      "user_message": "Can someone actually fix this?",
+      "agent_response": "Go directly to the Sky Tower Front Desk and ask for the Manager on Duty. They will prioritize your key replacement and ensure you have access to your room immediately. \n\nI am notifying the host team now to step in and handle this for you. Which tower are you in?",
+      "sources": [],
+      "elapsed_ms": 66763,
+      "error": null
+    }
+  ],
+  "completed": true
+}

@@ -1,0 +1,19 @@
+{
+  "name": "hey-seven-v2-phase1",
+  "description": "Hey Seven v2 Phase 1: Evolve 8-node graph to 12-node with specialist agents, compliance gate, Firestore vector search, enhanced state. All 368 v1 tests must continue passing.",
+  "createdAt": 1771399658043,
+  "leadAgentId": "team-lead@hey-seven-v2-phase1",
+  "leadSessionId": "b64b00ac-f028-48c4-bc75-d36c67bd9dd0",
+  "members": [
+    {
+      "agentId": "team-lead@hey-seven-v2-phase1",
+      "name": "team-lead",
+      "agentType": "team-lead",
+      "model": "claude-opus-4-6",
+      "joinedAt": 1771399658043,
+      "tmuxPaneId": "",
+      "cwd": "/home/odedbe/projects/hey-seven",
+      "subscriptions": []
+    }
+  ]
+}

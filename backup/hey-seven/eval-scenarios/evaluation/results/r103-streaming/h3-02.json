@@ -1,0 +1,65 @@
+{
+  "scenario_id": "h3-02",
+  "scenario_name": "Guest mentions tier at competitor property",
+  "category": "host_triangle_h1_h3_development",
+  "behavioral_dimension": "H3_pipeline_advancement",
+  "expected_behavior": "Translates the Caesars Diamond status into Momentum-equivalent context. Explains how table game play earns tier credits and what tier would match their current status. Makes signing up feel like a strategic move for a serious player, not a marketing exercise",
+  "expected_behavioral_quality": "When a guest mentions tier status at a competitor, the agent recognizes the status signal and positions Mohegan Sun's Momentum tiers as comparable or better for their play level. Does not dismiss the competitor tier but creates curiosity about Momentum benefits.",
+  "safety_relevant": false,
+  "source_file": "host_triangle_h1_h3_development.yaml",
+  "thread_id": "eval-h3-02-1772950884",
+  "turns": [
+    {
+      "turn_index": 0,
+      "user_message": "I'm Diamond at Caesars. What do you have here that's comparable?",
+      "agent_response": "Diamond, Mohegan Sun\u2019s Momentum program consists of five tiers: Core, Ignite, Leap, Ascend, and Soar.\n\nThe Leap tier (10,000 Tier Credits) offers priority access and enhanced earning rates. The Ascend tier (25,000 Tier Credits) includes complimentary valet, room upgrades, and a dedicated host. These levels provide the premium access and personalized service associated with high-tier rewards.\n\nYou can join for free at any Momentum Desk on the casino floor or via the Mohegan Sun app. The staff at the Momentum Desk can review your play and provide specific information regarding your tier standing and eligibility for benefits.\n\nAfter you visit the desk, you might consider dining at Tuscany, where higher-tier members receive priority seating. Do you usually prefer slots or table games?",
+      "sources": [
+        {
+          "category": "promotions",
+          "source": "mohegan_sun.json",
+          "score": 0.697
+        },
+        {
+          "category": "gaming",
+          "source": "mohegan_sun.json",
+          "score": 0.664
+        },
+        {
+          "category": "faq",
+          "source": "mohegan_sun.json",
+          "score": 0.672
+        }
+      ],
+      "elapsed_ms": 53791,
+      "error": null
+    },
+    {
+      "turn_index": 1,
+      "user_message": "How fast can I move up? I play mostly table games",
+      "agent_response": "Tier Credits at table games are calculated based on your average bet, the game's house edge, and the length of your session. Reaching the Ignite tier requires 2,500 Tier Credits, while the Leap tier is set at 10,000. \n\nPresent your Momentum card to the dealer at any of our 370 tables, including Blackjack, Craps, or Baccarat, to ensure your play is accurately tracked. The staff at the Momentum Desk can provide a precise update on your progress toward the next tier. After your session, you might consider visiting the Wolf Den for live music. \n\nDo you have a specific table game you prefer to play, Diamond?",
+      "sources": [
+        {
+          "category": "gaming",
+          "source": "mohegan_sun.json",
+          "score": 0.701
+        },
+        {
+          "category": "promotions",
+          "source": "mohegan_sun.json",
+          "score": 0.677
+        }
+      ],
+      "elapsed_ms": 42057,
+      "error": null
+    },
+    {
+      "turn_index": 2,
+      "user_message": "Alright, I'll sign up at the Momentum Desk",
+      "agent_response": "The Momentum Desk will issue your card immediately. Based on available information, you may be eligible for a $10 introductory free play bonus upon registration. At 2,500 Tier Credits, you reach the Ignite level, which includes a 10% bonus on your point earning rate. \n\nWhich casino floor are you currently on, Diamond?",
+      "sources": [],
+      "elapsed_ms": 42531,
+      "error": null
+    }
+  ],
+  "completed": true
+}

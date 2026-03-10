@@ -1,0 +1,87 @@
+{
+  "id": "p4-01",
+  "name": "Party of 4 assumption about kids \u2014 correct",
+  "source_file": "profiling_p4_assumptive_bridge.yaml",
+  "category": "profiling_p4_assumptive_bridge",
+  "behavioral_dimension": "P4_assumptive_bridging",
+  "expected_behavior": "Assumption about kids is offered softly and confirmed by the guest. Agent smoothly pivots to family-friendly recommendations. The assumption felt natural, not presumptuous",
+  "expected_behavioral_quality": "Makes a contextual inference that a party of 4 might include children and gently tests it with kid-friendly options. The assumption is offered as a soft suggestion ('If any of your group are younger, they might enjoy...') rather than a hard presumption ('Your kids will love...').",
+  "safety_relevant": false,
+  "turns": [
+    {
+      "turn_index": 0,
+      "user_message": "Need a restaurant for 4 tonight",
+      "agent_response": "Welcome to Mohegan Sun; I\u2019m Seven, and I\u2019d be happy to point your group of four in the right direction. \n\nSince it's Wednesday, I'd suggest SolToro Taqueria & Tequila Bar for a vibrant dinner. The aroma of citrus and freshly made tortillas hits you right at the entrance, and their authentic tacos are perfect for a group to share in such a lively, colorful setting. They are open until 10:00 PM tonight, the price range is moderate ($$), and they maintain a casual dress code with no reservations required.\n\nAre you in the mood for a high-energy atmosphere like SolToro, or were you looking for something a bit more low-key?\n\nAfter you've had your fill of tacos, the Wolf Den usually has some fantastic live music if you're looking for entertainment.",
+      "sources": [
+        {
+          "category": "restaurants",
+          "source": "mohegan_sun.json",
+          "score": 0.686
+        }
+      ],
+      "elapsed_ms": 49285,
+      "error": null
+    },
+    {
+      "turn_index": 1,
+      "user_message": "Yeah actually the kids would love that",
+      "agent_response": "Since you have the kids with you, they are going to love Cyber Quest. It\u2019s an arcade that features all the latest video games and is a fantastic spot for the whole family to hang out together. If they're feeling more active, the Wombi Rock Climbing Wall is right nearby and offers equipment and instruction for all skill levels.\n\nJust a heads up that the Wolf Den is located within the casino floor, so it is limited to guests 21 and over. If the adults wanted to catch a performance there tonight, Kids Quest provides supervised entertainment for children aged 6 weeks to 12 years so you can enjoy the music worry-free.\n\nHow old are the kids in your party?\n\nAfter a busy day with the family, you might find that the Elemis Spa is the perfect way to recharge tomorrow\u2014their hot stone massage is legendary.",
+      "sources": [
+        {
+          "category": "entertainment",
+          "source": "mohegan_sun.json",
+          "score": 0.643
+        },
+        {
+          "category": "hotel",
+          "source": "mohegan_sun.json",
+          "score": 0.625
+        },
+        {
+          "category": "property",
+          "source": "mohegan_sun.json",
+          "score": 0.634
+        },
+        {
+          "category": "amenities",
+          "source": "mohegan_sun.json",
+          "score": 0.621
+        }
+      ],
+      "elapsed_ms": 35243,
+      "error": null
+    },
+    {
+      "turn_index": 2,
+      "user_message": "How old do they need to be for the arcade?",
+      "agent_response": "Cyber Quest is open to guests of all ages, so your whole family can jump into the games together. It is designed to be a high-energy spot for everyone from younger children to teens, and even adults who enjoy a bit of friendly competition.\n\nSince it is currently 5:54 PM on a Wednesday, the arcade should be in full swing and is a great way to spend the evening before or after dinner.\n\nDo your kids have a favorite type of arcade game they usually look for?\n\nAfter they've finished at the arcade, Bobby's Burger Palace is just a short walk away and perfect for a casual family meal.",
+      "sources": [
+        {
+          "category": "entertainment",
+          "source": "mohegan_sun.json",
+          "score": 0.709
+        },
+        {
+          "category": "faq",
+          "source": "mohegan_sun.json",
+          "score": 0.702
+        },
+        {
+          "category": "amenities",
+          "source": "mohegan_sun.json",
+          "score": 0.631
+        },
+        {
+          "category": "gaming",
+          "source": "mohegan_sun.json",
+          "score": 0.617
+        }
+      ],
+      "elapsed_ms": 53243,
+      "error": null
+    }
+  ],
+  "elapsed_ms": 137773,
+  "error": null,
+  "completed": true
+}

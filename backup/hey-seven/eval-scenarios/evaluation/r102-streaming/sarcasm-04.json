@@ -1,0 +1,59 @@
+{
+  "scenario_id": "sarcasm-04",
+  "scenario_name": "Direct sarcasm with time-based frustration",
+  "category": "behavioral_sarcasm",
+  "behavioral_dimension": "B1_sarcasm",
+  "expected_behavior": "Acknowledges frustration and wasted time sincerely, provides a direct dining recommendation immediately, then delivers concise factual answers as trust rebuilds",
+  "expected_behavioral_quality": "Triggers HEART framework. Acknowledges the wait time and frustration explicitly. Does not say 'I understand' without substance. Offers immediate actionable help and mentions human escalation if the issue is unresolved.",
+  "safety_relevant": false,
+  "source_file": "behavioral_sarcasm.yaml",
+  "thread_id": "eval-sarcasm-04-1772920293",
+  "turns": [
+    {
+      "turn_index": 0,
+      "user_message": "Thanks for nothing, I've been asking for 10 minutes and still don't know where to eat dinner",
+      "agent_response": "I've got you, and I understand how frustrating it is to be hungry and not have a clear direction, especially with a group of 10. \n\nFor right now, I'd suggest Lantern Bar & Grill in the Casino of the Earth. It is open 24 hours, so you won't have to worry about a kitchen closing soon, and they offer a full menu of American favorites like steaks and burgers in a casual setting for a moderate price ($$). They don't require reservations, which makes it the most reliable spot for a party of your size to get seated quickly at this hour. \n\nAfter dinner, the nearby Wolf Den is a great spot to catch some free live music. Are you in the mood for a full sit-down meal, or are you looking for more of a quick late-night bite?",
+      "sources": [
+        {
+          "category": "faq",
+          "source": "mohegan_sun.json",
+          "score": 0.613
+        },
+        {
+          "category": "promotions",
+          "source": "mohegan_sun.json",
+          "score": 0.598
+        },
+        {
+          "category": "restaurants",
+          "source": "mohegan_sun.json",
+          "score": 0.599
+        },
+        {
+          "category": "entertainment",
+          "source": "mohegan_sun.json",
+          "score": 0.592
+        }
+      ],
+      "elapsed_ms": 31845,
+      "error": null
+    },
+    {
+      "turn_index": 1,
+      "user_message": "The steakhouse then. Is there a wait?",
+      "agent_response": "Michael Jordan's Steak House is our upscale steakhouse ($$$$) located in the Casino of the Sky, but they close at 10:00 PM on Saturdays. Because it is currently 9:52 PM, they won't be able to accommodate a party of 10 for a full dinner service this late.\n\nI've got you\u2014Lantern Bar & Grill in the Casino of the Earth is open 24 hours and serves a full menu of American favorites including steaks in a casual setting ($$). Since they don't require reservations, it is the most reliable spot to get a group of 10 seated immediately at this hour. I can connect with the host team there to see how quickly they can get your table ready. \n\nAfter your meal, the Wolf Den nearby has free live music every night and the energy is always great. Do you usually prefer a formal dining atmosphere, or is a more relaxed vibe better for your group tonight?",
+      "sources": [],
+      "elapsed_ms": 70020,
+      "error": null
+    },
+    {
+      "turn_index": 2,
+      "user_message": "Fine. Where is it?",
+      "agent_response": "Lantern Bar & Grill is in the heart of Casino of the Earth, right near the Wolf Den. I'll flag the floor team now so they can start getting a table ready for your group of 10. Where are you all visiting from tonight?",
+      "sources": [],
+      "elapsed_ms": 43979,
+      "error": null
+    }
+  ],
+  "completed": true
+}

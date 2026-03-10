@@ -1,0 +1,105 @@
+{
+  "scenario_id": "p5-05",
+  "scenario_name": "Agent recovers from tangent back to profiling",
+  "category": "profiling_p5_progressive_sequence",
+  "behavioral_dimension": "P5_progressive_sequencing",
+  "expected_behavior": "Wi-Fi complaint is handled empathetically in turn 1. When the guest pivots to dinner, the agent smoothly enters profiling mode: party size in turn 3, dietary needs in turn 4. The transition from complaint to concierge feels seamless",
+  "expected_behavioral_quality": "After a tangent (complaint, off-topic question, general chat), the agent naturally returns to the profiling sequence by connecting the tangent resolution to a profiling-relevant question. The bridge feels organic ('Now that that's sorted, were you looking for...') not forced.",
+  "safety_relevant": false,
+  "source_file": "profiling_p5_progressive_sequence.yaml",
+  "thread_id": "eval-p5-05-1772995015",
+  "turns": [
+    {
+      "turn_index": 0,
+      "user_message": "The Wi-Fi in my room isn't working",
+      "agent_response": "I'm sorry to hear your Wi-Fi isn't cooperating. Your room should be a sanctuary where everything works perfectly, especially something as essential as staying connected.\n\nSince complimentary Wi-Fi is standard in every room at both the Sky and Earth Towers, we want to get this sorted out for you immediately. Usually, ensuring you are connected to the \"Mohegan Sun Guest\" network and that the login splash page has fully loaded to accept the terms will resolve the connection. If you've already tried that and it's still not working, I can certainly get our technical team involved to look into the signal in your specific area.\n\nWhich tower are you staying in this evening?",
+      "sources": [
+        {
+          "category": "hotel",
+          "source": "mohegan_sun.json",
+          "score": 0.644
+        },
+        {
+          "category": "promotions",
+          "source": "mohegan_sun.json",
+          "score": 0.595
+        },
+        {
+          "category": "property",
+          "source": "mohegan_sun.json",
+          "score": 0.615
+        }
+      ],
+      "elapsed_ms": 30174,
+      "error": null
+    },
+    {
+      "turn_index": 1,
+      "user_message": "OK I'll call them. Anyway, what's for dinner?",
+      "agent_response": "Sounds like a plan. Let's focus on the best part of the evening\u2014dinner.\n\nIf you are looking for a standout meal tonight, Todd English's Tuscany is hard to beat. The wood-fired aroma hits you the moment you walk in, and their handmade pastas are incredible. Pro tip \u2014 if you decide to go, ask to be seated near their interior waterfall for the best ambiance in the Casino of the Sky. \n\nAfter you eat, you can always wander over to the Wolf Den in the Casino of the Earth to catch some free live music. \n\nWhat kind of food are you craving tonight, and how many of you will be dining?",
+      "sources": [
+        {
+          "category": "faq",
+          "source": "mohegan_sun.json",
+          "score": 0.613
+        },
+        {
+          "category": "restaurants",
+          "source": "mohegan_sun.json",
+          "score": 0.61
+        }
+      ],
+      "elapsed_ms": 63161,
+      "error": null
+    },
+    {
+      "turn_index": 2,
+      "user_message": "Something for the family, 5 of us",
+      "agent_response": "Since you have the family of five with you, Mohegan Sun Caputo Trattoria is a perfect fit. It is located right in the Casino of the Earth and has a very casual, family-friendly atmosphere. They serve great brick-oven pizzas, calzones, and Italian sandwiches, and since they do not require reservations, your group can walk right in whenever you are ready [5].\n\nAfter you all grab a bite, if you want to keep everyone entertained, the Cyber Quest arcade is a blast and features all the latest video games and attractions [1]. \n\nWhat brings the five of you out to the resort this week?",
+      "sources": [
+        {
+          "category": "entertainment",
+          "source": "mohegan_sun.json",
+          "score": 0.641
+        },
+        {
+          "category": "hotel",
+          "source": "mohegan_sun.json",
+          "score": 0.651
+        },
+        {
+          "category": "restaurants",
+          "source": "mohegan_sun.json",
+          "score": 0.619
+        }
+      ],
+      "elapsed_ms": 64165,
+      "error": null
+    },
+    {
+      "turn_index": 3,
+      "user_message": "The kids are picky eaters",
+      "agent_response": "If pizza at Caputo is off the table, Bow & Arrow is my top pick for selective eaters. It is a casual pub and grill right in the Casino of the Earth serving up approachable comfort food\u2014straightforward burgers, wings, and fries that usually win over a picky crowd. \n\nThey are open until 2:00 AM and do not require reservations, so your group of five can just walk right in whenever hunger strikes. \n\nDo the kids usually stick to burgers and fries, or is there a specific favorite food we should try to track down for them tonight?",
+      "sources": [
+        {
+          "category": "restaurants",
+          "source": "mohegan_sun.json",
+          "score": 0.608
+        },
+        {
+          "category": "entertainment",
+          "source": "mohegan_sun.json",
+          "score": 0.595
+        },
+        {
+          "category": "property",
+          "source": "mohegan_sun.json",
+          "score": 0.608
+        }
+      ],
+      "elapsed_ms": 54040,
+      "error": null
+    }
+  ],
+  "completed": true
+}

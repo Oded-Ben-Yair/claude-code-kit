@@ -1,0 +1,76 @@
+{
+  "scenario_id": "h7-03",
+  "scenario_name": "Entertainment guest exploring other domains",
+  "category": "host_triangle_h7_h10_revenue",
+  "behavioral_dimension": "H7_cross_selling_wallet_share",
+  "expected_behavior": "Builds a full evening around the Arena anchor: pre-show dinner at a nearby restaurant, the show itself, and post-show options (Wolf Den late show, Comix, casino floor). The guest leaves with a plan for an entire evening, not just a concert ticket",
+  "expected_behavioral_quality": "When a guest comes for entertainment, the agent expands the visit into dining and other experiences. The cross-sell turns a one-activity visit into a full resort evening where the show is the anchor but not the only experience.",
+  "safety_relevant": false,
+  "source_file": "host_triangle_h7_h10_revenue.yaml",
+  "thread_id": "eval-h7-03-1772952777",
+  "turns": [
+    {
+      "turn_index": 0,
+      "user_message": "We have Arena tickets for Saturday. What else should we do that night?",
+      "agent_response": "The energy in the building on a Saturday night is electric, and you're going to love the atmosphere in the Arena. To make the most of your evening, I suggest starting at novelle for a pre-show cocktail; it has a sophisticated, upscale vibe that really sets the mood before a big performance. If you still have energy after the concert, Avalon Nightclub is right there and stays open until 2:00 AM with an incredible sound system and high-energy dance floor. \n\nSince you'll be on your feet for a while, you might also consider stopping by the Elemis Spa earlier in the day to get refreshed before the night kicks off. Are you coming in with a large group or is this more of a date night?",
+      "sources": [
+        {
+          "category": "entertainment",
+          "source": "mohegan_sun.json",
+          "score": 0.67
+        },
+        {
+          "category": "restaurants",
+          "source": "mohegan_sun.json",
+          "score": 0.65
+        }
+      ],
+      "elapsed_ms": 29107,
+      "error": null
+    },
+    {
+      "turn_index": 1,
+      "user_message": "A pre-show dinner sounds great. Where?",
+      "agent_response": "For a Saturday night at the Arena, Michael Jordan's Steak House in the Casino of the Sky is the ultimate pre-show move. The atmosphere is elegant but energized, and their USDA Prime steaks have a rich, buttery char that sets a high bar for the rest of your evening. They are open from 5:00 PM to 10:00 PM on Saturdays, and because it is such a popular choice for concert-goers, I'd suggest securing a reservation well in advance. \n\nThe dress code is business casual, so it fits perfectly if you're dressing up for the show. If you'd like to move forward with this, I've got you covered with all the details you need to coordinate with our hosting team to finalize the timing. Are you more into a classic, heavy ribeye or do you prefer starting with fresh seafood before a big event?",
+      "sources": [
+        {
+          "category": "restaurants",
+          "source": "mohegan_sun.json",
+          "score": 0.692
+        },
+        {
+          "category": "entertainment",
+          "source": "mohegan_sun.json",
+          "score": 0.675
+        },
+        {
+          "category": "faq",
+          "source": "mohegan_sun.json",
+          "score": 0.639
+        }
+      ],
+      "elapsed_ms": 28361,
+      "error": null
+    },
+    {
+      "turn_index": 2,
+      "user_message": "And after the show? We don't want the night to end",
+      "agent_response": "Novelle is the perfect transition after the Arena \u2014 it\u2019s an ultra-lounge with craft cocktails and a DJ that keeps the sophisticated vibe going late into the night. If you\u2019re looking to really turn up the energy and dance, Avalon Nightclub is right here and stays open until 2:00 AM on Saturdays with top-tier sound and lighting. If the show leaves you hungry again, Lantern Bar & Grill in the Casino of the Earth is open 24 hours for a late-night burger or wings.\n\nPro tip: Novelle is a favorite for post-show gatherings, so it's a great spot to debrief on your favorite moments from the concert while the energy is still high. Since you're planning a big night, would you like to hear about our Elemis Spa recovery treatments for the morning after?",
+      "sources": [
+        {
+          "category": "entertainment",
+          "source": "mohegan_sun.json",
+          "score": 0.713
+        },
+        {
+          "category": "restaurants",
+          "source": "mohegan_sun.json",
+          "score": 0.688
+        }
+      ],
+      "elapsed_ms": 35536,
+      "error": null
+    }
+  ],
+  "completed": true
+}

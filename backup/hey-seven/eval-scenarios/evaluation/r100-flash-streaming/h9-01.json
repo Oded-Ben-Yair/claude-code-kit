@@ -1,0 +1,38 @@
+{
+  "scenario_id": "h9-01",
+  "scenario_name": "Guest open to suggestions for a special evening",
+  "category": "host_triangle_h7_h10_revenue",
+  "behavioral_dimension": "H9_revenue_aware_steering",
+  "expected_behavior": "Reads 'no budget concerns' and 'really special' as clear premium signals. Leads with the highest-tier dining option and builds a full VIP evening. Does not mention budget alternatives. The steering feels like a host sharing their genuine top picks, not an upsell script",
+  "expected_behavioral_quality": "When a guest signals they want something special, the agent steers toward premium experiences that match the occasion. The premium suggestion feels like expert guidance, not upselling. The agent reads context cues (occasion, group, tone) to calibrate the recommendation tier.",
+  "safety_relevant": false,
+  "source_file": "host_triangle_h7_h10_revenue.yaml",
+  "thread_id": "eval-h9-01-1772835855",
+  "turns": [
+    {
+      "turn_index": 0,
+      "user_message": "We want to do something really special tonight. No budget concerns. What's the best?",
+      "agent_response": "Since it is currently 10:24 PM, the most exclusive experience available right now is at Tao Asian Bistro & Lounge, which remains open until 11:00 PM for a high-end, late-night dining experience. Following that, I recommend heading to novelle, our upscale ultra-lounge that features craft cocktails and a sophisticated nightlife atmosphere perfect for a special night out. \n\nIf you prefer a high-energy environment, Avalon Nightclub is also open until 2:00 AM and features top-tier DJs and a state-of-the-art sound system. An insider tip for a truly special night: novelle often has more intimate seating options that allow you to enjoy the energy of the resort without the crowds of the main gaming floor. I can help you coordinate with our host team to see about securing a table at novelle for the rest of the evening. Would you prefer the sophisticated lounge vibe of novelle or the high-energy dance floor at Avalon?",
+      "sources": [],
+      "elapsed_ms": 57995,
+      "error": null
+    },
+    {
+      "turn_index": 1,
+      "user_message": "Michael Jordan's sounds perfect. What about wine?",
+      "agent_response": "",
+      "sources": [],
+      "elapsed_ms": 60003,
+      "error": "TIMEOUT (60.0s)"
+    },
+    {
+      "turn_index": 2,
+      "user_message": "And after dinner? We want the full VIP experience",
+      "agent_response": "For the ultimate Friday night VIP experience, you have two incredible paths to take after your meal. If you want high-octane energy, **Avalon Nightclub** is the heart of the action with its state-of-the-art sound and lighting systems\u2014securing a VIP table there puts you right in the center of the party with dedicated service [2].\n\nIf you prefer something more refined, **novelle** is our upscale ultra-lounge where the vibe is sophisticated and the cocktails are world-class [1]. It\u2019s a bit more intimate and perfect for lounging with a craft drink while a DJ sets the mood.\n\nPro tip: Both of these venues are located in the Casino of the Sky, so the energy there is electric on a Friday night. \n\nAfter a late night out, a session at **Mandara Spa** the next morning is the perfect reset\u2014their signature treatments are the best way to recharge. I can help you coordinate with our host team to see about securing a VIP table for your evening\u2014do you prefer a high-energy dance club or a sleek, lounge atmosphere?",
+      "sources": [],
+      "elapsed_ms": 56368,
+      "error": null
+    }
+  ],
+  "completed": true
+}

@@ -1,0 +1,86 @@
+{
+  "scenario_id": "implicit-03",
+  "scenario_name": "Partner feeling unwell implies quiet needs",
+  "category": "behavioral_implicit",
+  "behavioral_dimension": "B2_implicit",
+  "expected_behavior": "Picks up on partner illness as a need for quiet, comfortable options. Avoids high-energy suggestions entirely. Splits recommendations when one partner needs rest and the other wants activity",
+  "expected_behavioral_quality": "Infers that 'not feeling well' shifts the entire recommendation context toward comfort and calm. Does not suggest shows, gaming, or anything high-energy. Leads with room service, spa, or quiet dining. Expresses care for the partner without being intrusive.",
+  "safety_relevant": false,
+  "source_file": "behavioral_implicit.yaml",
+  "thread_id": "eval-implicit-03-1772913240",
+  "turns": [
+    {
+      "turn_index": 0,
+      "user_message": "My wife isn't feeling well. What can we do that's relaxing?",
+      "agent_response": "I'm sorry to hear your wife isn't feeling 100%. Since it's nearly 8:00 PM, the spas are winding down for the night, but I'd love to help you plan a relaxing morning for her to help her recover. \n\nMandara Spa opens at 9:00 AM tomorrow and it's the perfect place to reset with their tranquil relaxation lounge and steam room. Their Balinese-inspired treatments are designed to be incredibly restorative, which might be just what she needs to feel like herself again. If she's up for a very quiet, upscale environment tonight before heading to bed, novelle offers a sophisticated lounge setting that's much calmer than the high-energy gaming floors. \n\nDo you think she'd prefer a gentle aromatherapy treatment tomorrow or would she be more interested in some quiet time in the sauna and steam room?",
+      "sources": [
+        {
+          "category": "amenities",
+          "source": "mohegan_sun.json",
+          "score": 0.666
+        },
+        {
+          "category": "entertainment",
+          "source": "mohegan_sun.json",
+          "score": 0.642
+        },
+        {
+          "category": "faq",
+          "source": "mohegan_sun.json",
+          "score": 0.601
+        }
+      ],
+      "elapsed_ms": 37343,
+      "error": null
+    },
+    {
+      "turn_index": 1,
+      "user_message": "She might want to just stay in the room. Is there room service?",
+      "agent_response": "I've got you\u2014we offer 24-hour room service for all our guests in both the Sky and Earth Towers, so she can stay tucked in and comfortable while still enjoying a great meal. The menu features a variety of American favorites and comforting dishes that can be brought right to your door at any hour. Since it is a Saturday evening, the kitchens can get quite busy, so a good insider tip is to place your order about 45 minutes before you\u2019re actually ready to eat to ensure it arrives exactly when she wants it.\n\nIf she starts feeling up for a bit of movement tomorrow, a gentle walk through the Shops at Mohegan Sun is a nice, climate-controlled way to get some air without the hustle of the gaming floors.\n\nDoes she usually lean towards something light like a fresh salad or a more filling comfort meal when she's feeling unwell?",
+      "sources": [
+        {
+          "category": "hotel",
+          "source": "mohegan_sun.json",
+          "score": 0.669
+        },
+        {
+          "category": "restaurants",
+          "source": "mohegan_sun.json",
+          "score": 0.663
+        },
+        {
+          "category": "promotions",
+          "source": "mohegan_sun.json",
+          "score": 0.647
+        }
+      ],
+      "elapsed_ms": 68002,
+      "error": null
+    },
+    {
+      "turn_index": 2,
+      "user_message": "And something I can do nearby while she rests?",
+      "agent_response": "The Wolf Den is exactly where you want to be on a Saturday night because the energy is incredible and the shows are always free. Since it\u2019s right in the middle of the Casino of the Earth, you\u2019re just a quick elevator ride away from the hotel towers if she needs anything at all.\n\nIf you\u2019d prefer a more upscale vibe, novelle is our ultra-lounge that features DJ entertainment and a sophisticated atmosphere on Saturday nights. It is a great spot to grab a craft cocktail and soak in the nightlife without being right in the middle of the gaming floor. If you just need to clear your head with a quiet walk, the Shops at Mohegan Sun are open until 9:00 PM and offer a much calmer environment than the lounges or the casino floor.\n\nPro tip \u2014 if you head to the Wolf Den, you don't need a ticket, but for the best experience, try to find a spot near the center rail where the acoustics are legendary.\n\nWould you prefer a spot with live music like the Wolf Den or somewhere a bit more low-key like a lounge?",
+      "sources": [
+        {
+          "category": "faq",
+          "source": "mohegan_sun.json",
+          "score": 0.653
+        },
+        {
+          "category": "amenities",
+          "source": "mohegan_sun.json",
+          "score": 0.646
+        },
+        {
+          "category": "entertainment",
+          "source": "mohegan_sun.json",
+          "score": 0.64
+        }
+      ],
+      "elapsed_ms": 40020,
+      "error": null
+    }
+  ],
+  "completed": true
+}

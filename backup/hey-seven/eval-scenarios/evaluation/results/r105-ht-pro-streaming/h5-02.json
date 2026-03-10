@@ -1,0 +1,70 @@
+{
+  "scenario_id": "h5-02",
+  "scenario_name": "Couple celebrating their wedding anniversary",
+  "category": "host_triangle_h4_h6_relationship",
+  "behavioral_dimension": "H5_emotional_loyalty_building",
+  "expected_behavior": "Creates a romantic anniversary itinerary: couples spa treatment, upscale dinner with anniversary touches, and an intimate evening experience. Plants the seed that Mohegan Sun could become their anniversary tradition. Emotional connection, not just logistics",
+  "expected_behavioral_quality": "Treats the anniversary as a chance to create an emotional anchor to the property. Builds a romantic experience vision that makes the couple associate Mohegan Sun with their love story. The response should make them want to come back every anniversary.",
+  "safety_relevant": false,
+  "source_file": "host_triangle_h4_h6_relationship.yaml",
+  "thread_id": "eval-h5-02-1772991388",
+  "turns": [
+    {
+      "turn_index": 0,
+      "user_message": "It's our 10th anniversary this weekend. We want to make it really special",
+      "agent_response": "Ten years is a massive milestone \u2014 happy anniversary! Let me see about upgrading your experience this weekend to make it extra special. \n\nFor a dinner you won't forget, Michael Jordan's Steak House is my top pick, followed by craft cocktails in our upscale lounge, novelle. Are you two thinking a classic steakhouse vibe for the big night, or does elevated Italian at Ballo sound more your style?",
+      "sources": [
+        {
+          "category": "entertainment",
+          "source": "mohegan_sun.json",
+          "score": 0.647
+        },
+        {
+          "category": "restaurants",
+          "source": "mohegan_sun.json",
+          "score": 0.64
+        },
+        {
+          "category": "property",
+          "source": "mohegan_sun.json",
+          "score": 0.645
+        }
+      ],
+      "elapsed_ms": 68454,
+      "error": null
+    },
+    {
+      "turn_index": 1,
+      "user_message": "We'd love a really nice dinner and maybe the spa",
+      "agent_response": "Mandara Spa is exactly where you want to be for this. It is our award-winning full-service spa featuring a tranquil relaxation lounge, perfect for unplugging together. After you are fully relaxed, Ballo Italian Restaurant in the Casino of the Sky is an incredible spot for an anniversary dinner, featuring housemade pastas and a fantastic wine list. \n\nAre you thinking of doing the spa early in the day, or looking to wind down right before dinner?",
+      "sources": [
+        {
+          "category": "amenities",
+          "source": "mohegan_sun.json",
+          "score": 0.658
+        },
+        {
+          "category": "promotions",
+          "source": "mohegan_sun.json",
+          "score": 0.661
+        },
+        {
+          "category": "restaurants",
+          "source": "mohegan_sun.json",
+          "score": 0.652
+        }
+      ],
+      "elapsed_ms": 80679,
+      "error": null
+    },
+    {
+      "turn_index": 2,
+      "user_message": "A couples spa package sounds incredible",
+      "agent_response": "A couples experience is the ultimate way to celebrate 10 years. The Elemis Spa at our Earth Tower specifically offers beautiful premium couples experiences that are the perfect reset. Alternatively, our award-winning Mandara Spa draws on Balinese healing traditions and features a tranquil relaxation lounge, steam room, and sauna you can enjoy together. \n\nI've got you \u2014 I will connect you with the host team to finalize the exact package and secure your timeslot! \n\nAre you both leaning more toward classic massages, or maybe a hot stone treatment to really unwind?",
+      "sources": [],
+      "elapsed_ms": 59966,
+      "error": null
+    }
+  ],
+  "completed": true
+}

@@ -1,0 +1,81 @@
+{
+  "scenario_id": "h4-03",
+  "scenario_name": "Guest with children seeking family-appropriate options",
+  "category": "host_triangle_h4_h6_relationship",
+  "behavioral_dimension": "H4_personalized_recognition",
+  "expected_behavior": "Distinguishes between teenager interests and young child interests. Recommends experiences that teenagers would consider 'cool' rather than childish. Dinner recommendation accounts for family-friendly seating while not being a kids' restaurant. Makes the family feel like there is something for everyone",
+  "expected_behavioral_quality": "Recognizes the family context and personalizes all recommendations around the full group's needs. Balances adult interests with kid-friendly options without condescending. Uses the family dynamic to create a personalized experience vision.",
+  "safety_relevant": false,
+  "source_file": "host_triangle_h4_h6_relationship.yaml",
+  "thread_id": "eval-h4-03-1772911488",
+  "turns": [
+    {
+      "turn_index": 0,
+      "user_message": "We're here with two teenagers, 14 and 16. What can we all do together?",
+      "agent_response": "Cyber Quest is going to be your best bet for the 14 and 16-year-olds as it's a high-energy arcade with all the latest games and attractions. If they want to test their strength, the Wombi Rock Climbing Wall is right near there and provides all the gear and instruction they'll need. \n\nInsider tip: Heading to the arcade before the post-dinner rush usually means shorter wait times for the most popular games. After you've had your fill of gaming, Bobby\u2019s Burgers is right around the corner and is a reliable favorite for a quick, high-quality meal! \n\nAre your teens more into competitive gaming or are they looking for something more active like the climbing wall?",
+      "sources": [
+        {
+          "category": "entertainment",
+          "source": "mohegan_sun.json",
+          "score": 0.675
+        },
+        {
+          "category": "amenities",
+          "source": "mohegan_sun.json",
+          "score": 0.651
+        },
+        {
+          "category": "faq",
+          "source": "mohegan_sun.json",
+          "score": 0.624
+        }
+      ],
+      "elapsed_ms": 55808,
+      "error": null
+    },
+    {
+      "turn_index": 1,
+      "user_message": "They're pretty bored of the usual family stuff, they want something cool",
+      "agent_response": "I've got you \u2014 if they want something with a bit more edge, the Mohegan Sun Arena is the place to be on a Saturday night. It is a massive venue that pulls in major headliner acts, and the energy in the building when a show is about to start is electric. For something active that isn't your average family activity, Wombi Rock is our indoor climbing wall that offers a legitimate challenge for all skill levels.\n\nAfter checking out the scene at the Arena, Todd English's Tuscany is a short walk away and the waterfall backdrop makes for a dinner spot that feels much more grown-up and sophisticated. Do your teens generally prefer the high-energy atmosphere of a big live performance or are they looking for something more hands-on like the climbing wall?",
+      "sources": [
+        {
+          "category": "entertainment",
+          "source": "mohegan_sun.json",
+          "score": 0.649
+        },
+        {
+          "category": "amenities",
+          "source": "mohegan_sun.json",
+          "score": 0.643
+        },
+        {
+          "category": "hotel",
+          "source": "mohegan_sun.json",
+          "score": 0.602
+        }
+      ],
+      "elapsed_ms": 45818,
+      "error": null
+    },
+    {
+      "turn_index": 2,
+      "user_message": "And we need dinner for all four of us",
+      "agent_response": "I've got you \u2014 Lantern Bar & Grill is the move for a Saturday night dinner that avoids those \"family-style\" clich\u00e9s. It sits right in the heart of the Casino of the Earth and stays open 24 hours, offering a high-energy atmosphere that teens actually find cool. You can expect a full menu of American favorites like hand-cut steaks and creative burgers in a casual setting that feels more like an upscale late-night hang than a standard restaurant.\n\nPrices are generally in the $$ range and reservations aren't required, though keep in mind that hours and pricing can vary. After dinner, the Wolf Den is just a short walk away and usually has great live music that\u2019s fun for the whole family to experience together!\n\nOnce you're ready, I can connect you",
+      "sources": [
+        {
+          "category": "restaurants",
+          "source": "mohegan_sun.json",
+          "score": 0.645
+        },
+        {
+          "category": "hotel",
+          "source": "mohegan_sun.json",
+          "score": 0.595
+        }
+      ],
+      "elapsed_ms": 45661,
+      "error": null
+    }
+  ],
+  "completed": true
+}

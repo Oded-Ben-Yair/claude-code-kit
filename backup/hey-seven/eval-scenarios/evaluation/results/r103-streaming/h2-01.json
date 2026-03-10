@@ -1,0 +1,75 @@
+{
+  "scenario_id": "h2-01",
+  "scenario_name": "Lapsed guest signals they stopped coming",
+  "category": "host_triangle_h1_h3_development",
+  "behavioral_dimension": "H2_reactivation_win_back",
+  "expected_behavior": "Welcomes the guest back without making the absence feel awkward. Asks what brought them back (not why they left). Highlights what has changed or is new since their last visit \u2014 new restaurants, new entertainment, new loyalty perks. Creates urgency around what they have been missing",
+  "expected_behavioral_quality": "When a guest says they stopped visiting, the agent investigates the reason without being pushy. Acknowledges the gap, discovers what changed, and creates a specific reason to return based on what has changed at the property or what the guest now values.",
+  "safety_relevant": false,
+  "source_file": "host_triangle_h1_h3_development.yaml",
+  "thread_id": "eval-h2-01-1772950354",
+  "turns": [
+    {
+      "turn_index": 0,
+      "user_message": "I used to come here all the time but haven't been in like two years",
+      "agent_response": "Welcome back. Two years is a long time to be away, but we will make sure you feel right at home again. \n\nI'd suggest starting at Casino of the Earth\u2014it still has that classic Mohegan energy and is the perfect place to get your bearings before exploring what else has changed. What brought you back to see us this time?",
+      "sources": [
+        {
+          "category": "entertainment",
+          "source": "mohegan_sun.json",
+          "score": 0.641
+        },
+        {
+          "category": "gaming",
+          "source": "mohegan_sun.json",
+          "score": 0.63
+        },
+        {
+          "category": "faq",
+          "source": "mohegan_sun.json",
+          "score": 0.652
+        },
+        {
+          "category": "amenities",
+          "source": "mohegan_sun.json",
+          "score": 0.62
+        }
+      ],
+      "elapsed_ms": 32710,
+      "error": null
+    },
+    {
+      "turn_index": 1,
+      "user_message": "Just got busy with work, lost the habit I guess",
+      "agent_response": "I completely understand how frustrating it can be when work just takes over your schedule and you lose your downtime. You are here now, so let's make sure you get a proper break. \n\nTo help you decompress, I'd suggest grabbing a quiet drink at novelle tonight\u2014it is an upscale lounge away from the main casino floor and a perfect spot to just relax and reset. Would you like me to connect you with one of our dedicated hosts who can assist you personally with the rest of your visit?",
+      "sources": [
+        {
+          "category": "amenities",
+          "source": "mohegan_sun.json",
+          "score": 0.619
+        },
+        {
+          "category": "entertainment",
+          "source": "mohegan_sun.json",
+          "score": 0.621
+        },
+        {
+          "category": "hotel",
+          "source": "mohegan_sun.json",
+          "score": 0.567
+        }
+      ],
+      "elapsed_ms": 57936,
+      "error": null
+    },
+    {
+      "turn_index": 2,
+      "user_message": "What's actually new since I was last here?",
+      "agent_response": "The biggest change you'll notice is the Earth Tower\u2014it has a modern, contemporary vibe that is perfect for a work reset. It also houses the Elemis Spa, which is ideal if you need a quick way to unwind before heading to the floor. I'll flag this for the host team so they can welcome you back properly and help you get reacquainted.\n\nWhen you were coming regularly, were you usually here for the weekend or just a quick day trip?",
+      "sources": [],
+      "elapsed_ms": 63273,
+      "error": null
+    }
+  ],
+  "completed": true
+}

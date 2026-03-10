@@ -1,0 +1,38 @@
+{
+  "scenario_id": "h9-01",
+  "scenario_name": "Guest open to suggestions for a special evening",
+  "category": "host_triangle_h7_h10_revenue",
+  "behavioral_dimension": "H9_revenue_aware_steering",
+  "expected_behavior": "Reads 'no budget concerns' and 'really special' as clear premium signals. Leads with the highest-tier dining option and builds a full VIP evening. Does not mention budget alternatives. The steering feels like a host sharing their genuine top picks, not an upsell script",
+  "expected_behavioral_quality": "When a guest signals they want something special, the agent steers toward premium experiences that match the occasion. The premium suggestion feels like expert guidance, not upselling. The agent reads context cues (occasion, group, tone) to calibrate the recommendation tier.",
+  "safety_relevant": false,
+  "source_file": "host_triangle_h7_h10_revenue.yaml",
+  "thread_id": "eval-h9-01-1772953353",
+  "turns": [
+    {
+      "turn_index": 0,
+      "user_message": "We want to do something really special tonight. No budget concerns. What's the best?",
+      "agent_response": "Tao Asian Bistro & Lounge is the move if you want the best experience on property. The 16-foot Quan Yin statue sits over a reflecting pool that creates an atmosphere unlike anywhere else, making it perfect for a high-energy evening. I'll have the host team look into a prime table so you're in the heart of the action. By the way, with your visit today you're earning toward rewards \u2014 I can connect you with a host who can check your exact tier and what comps you qualify for. What's the occasion for the big night out?",
+      "sources": [],
+      "elapsed_ms": 73092,
+      "error": null
+    },
+    {
+      "turn_index": 1,
+      "user_message": "Michael Jordan's sounds perfect. What about wine?",
+      "agent_response": "The wine program at Michael Jordan's Steak House is exceptional, featuring an extensive list designed to pair specifically with their USDA Prime steaks. The collection is curated with such precision that finding a heavy red to match the marbling of a signature steak becomes a highlight of the evening. They open today at 5:00 PM and recommend business casual attire, with reservations being highly recommended to secure a spot in their elegant dining room. \n\nI've got you\u2014I can provide all the details you need on their cellar selections and then connect you with the host team to finalize the arrangements. After dinner, the Wolf Den has free live music every night, and the energy there is a great way to transition from a fine meal to a late-night celebration. Do you usually lean toward a bold Cabernet or are you looking for a specific vintage?",
+      "sources": [],
+      "elapsed_ms": 54487,
+      "error": null
+    },
+    {
+      "turn_index": 2,
+      "user_message": "And after dinner? We want the full VIP experience",
+      "agent_response": "For the full VIP treatment tonight, the Birdcage Bar in the Casino of the Sky is the ideal choice. It is an upscale cocktail lounge with a sleek, sophisticated atmosphere that stays open until 2:00 AM, perfect for enjoying premium spirits after your meal. I've got you\u2014I can give you all the details on their top-shelf selections, and then I'll connect you with the host team to see about securing a prime spot for you. To finish the weekend properly, a morning at Elemis Spa for their legendary hot stone massage is the ultimate way to recharge. Do you prefer a high-energy lounge with a DJ or a more private corner for a quiet drink?",
+      "sources": [],
+      "elapsed_ms": 63324,
+      "error": null
+    }
+  ],
+  "completed": true
+}

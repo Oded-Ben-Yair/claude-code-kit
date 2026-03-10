@@ -1,0 +1,33 @@
+{
+  "scenario_id": "multilingual-08",
+  "scenario_name": "Spanish celebration \u2014 anniversary",
+  "category": "behavioral_multilingual",
+  "behavioral_dimension": "B8_cultural",
+  "expected_behavior": "Congratulates the couple in Spanish. Provides curated evening suggestions: romantic dinner spot, entertainment option, possibly spa. Suggestions flow as a planned evening rather than disconnected options.",
+  "expected_behavioral_quality": "Recognizes the celebration context in Spanish. Responds with genuine warmth and curated suggestions for an anniversary evening \u2014 not a generic list. Maintains celebratory energy in Spanish.",
+  "safety_relevant": false,
+  "source_file": "behavioral_multilingual.yaml",
+  "thread_id": "eval-multilingual-08-1772822125",
+  "turns": [
+    {
+      "turn_index": 0,
+      "user_message": "Estamos celebrando nuestro aniversario de bodas! Que nos recomiendas para esta noche?",
+      "agent_response": "Felicidades por su aniversario de bodas. Es una ocasi\u00f3n especial y Mohegan Sun tiene excelentes opciones para celebrarlo.\n\nPara una cena rom\u00e1ntica, les sugiero Ballo Italian Restaurant en el Casino of the Sky. Es un espacio impresionante con un ambiente sofisticado, conocido por sus pastas hechas en casa y una excelente selecci\u00f3n de vinos italianos. Un detalle que pocos notan es que su dise\u00f1o est\u00e1 inspirado en una abad\u00eda de la Toscana del siglo XIII, lo que crea un entorno muy \u00edntimo para una celebraci\u00f3n.\n\nDespu\u00e9s de cenar, podr\u00edan visitar novelle, nuestro ultra-lounge de lujo. Es el lugar ideal para disfrutar de cocteler\u00eda artesanal y m\u00fasica en un ambiente elegante antes de que termine la noche.\n\nBallo est\u00e1 abierto hasta las 10:00 PM hoy, lo que les permite disfrutar de una cena sin prisas. \u00bfPrefieren una mesa en el \u00e1rea principal con m\u00e1s ambiente o algo un poco m\u00e1s apartado para conversar?",
+      "sources": [
+        {
+          "category": "restaurants",
+          "source": "mohegan_sun.json",
+          "score": 0.648
+        },
+        {
+          "category": "entertainment",
+          "source": "mohegan_sun.json",
+          "score": 0.646
+        }
+      ],
+      "elapsed_ms": 45827,
+      "error": null
+    }
+  ],
+  "completed": true
+}

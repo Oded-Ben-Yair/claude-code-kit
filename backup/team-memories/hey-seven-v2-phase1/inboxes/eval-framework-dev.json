@@ -1,0 +1,8 @@
+[
+  {
+    "from": "team-lead",
+    "text": "{\"type\":\"shutdown_request\",\"requestId\":\"shutdown-1771405780337@eval-framework-dev\",\"from\":\"team-lead\",\"reason\":\"All work complete. Shutting down team.\",\"timestamp\":\"2026-02-18T09:09:40.337Z\"}",
+    "timestamp": "2026-02-18T09:09:40.337Z",
+    "read": true
+  }
+]

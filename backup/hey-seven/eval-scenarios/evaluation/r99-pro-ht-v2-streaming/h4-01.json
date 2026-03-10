@@ -1,0 +1,50 @@
+{
+  "scenario_id": "h4-01",
+  "scenario_name": "Returning guest with earlier preferences in conversation",
+  "category": "host_triangle_h4_h6_relationship",
+  "behavioral_dimension": "H4_personalized_recognition",
+  "expected_behavior": "Integrates all three data points (couple, Italian preference, gluten-free) into the entertainment recommendation. Does not suggest dinner options that conflict with the dietary need. Uses Linda's name naturally. The evening plan feels curated for this specific couple",
+  "expected_behavioral_quality": "Uses information shared in earlier turns to personalize later recommendations. By turn 3, every recommendation should reflect accumulated knowledge. The guest should feel increasingly 'known' with each interaction.",
+  "safety_relevant": false,
+  "source_file": "host_triangle_h4_h6_relationship.yaml",
+  "thread_id": "eval-h4-01-1772805024",
+  "turns": [
+    {
+      "turn_index": 0,
+      "user_message": "Hi, I'm Linda. My husband and I love Italian food. What's good here?",
+      "agent_response": "Welcome to Mohegan Sun, Linda! If you and your husband love Italian cuisine, you are definitely in the right place. \n\nFor a beautiful date night, Todd English's Tuscany in the Casino of the Sky is phenomenal. The wood-fired aroma hits you the moment you walk in, and they serve incredible handmade pastas and classic dishes in a really warm, Tuscan-inspired setting. It opens at 5:00 PM and is perfect for a nice sit-down meal. \n\nIf you are looking for something a bit more casual for lunch right now, Frank Pepe's Pizzeria Napoletana is a must-try. They serve legendary New Haven-style coal-fired pizza, and their white clam pie is an absolute Connecticut institution. \n\nAfter you eat, the Wolf Den has free live music right in the Casino of the Earth if you want to keep the evening going. Are you two leaning toward a romantic dinner tonight, or something more laid-back?",
+      "sources": [
+        {
+          "category": "restaurants",
+          "source": "mohegan_sun.json",
+          "score": 0.689
+        }
+      ],
+      "elapsed_ms": 56499,
+      "error": null
+    },
+    {
+      "turn_index": 1,
+      "user_message": "We also have a gluten-free situation so that limits things",
+      "agent_response": "Linda, having a gluten-free requirement doesn't have to limit your experience here at all. For a casual Italian meal that is friendly on the budget, Caputo Trattoria in the Casino of the Earth is a great spot.\n\nThey are open right now and serve until 10:00 PM, offering a very relaxed atmosphere with plenty of classic pasta and brick-oven dishes. While the menu features wonderful pizzas and calzones, our chefs are very accommodating with gluten-free pasta substitutions. For the absolute widest variety, our chefs at Seasons Buffet also have an incredible gluten-free selection\u2014you'll have so many options.\n\nAs a new guest, I can look into our rewards program for you, as you may be eligible for a $10 introductory free play bonus when you sign up. After you've had your fill of Italian food, the Wolf Den is right in the heart of the Casino of the Earth and features free live music every night! Does a sit-down Italian lunch sound good for right now, or are you planning for a bigger dinner later this evening?",
+      "sources": [
+        {
+          "category": "restaurants",
+          "source": "mohegan_sun.json",
+          "score": 0.656
+        }
+      ],
+      "elapsed_ms": 45488,
+      "error": null
+    },
+    {
+      "turn_index": 2,
+      "user_message": "What about after dinner? Any shows tonight?",
+      "agent_response": "You are going to love the post-dinner energy here, Linda. My top recommendation for tonight is the Wolf Den. It is a fantastic live music venue right in the center of the action, and the best part is that it is completely free with no tickets required. \n\nThe shows usually start around 8:00 PM, and it has this incredibly intimate atmosphere where you feel right up close to the performers\u2014the energy in there on a Friday night is absolutely electric! If you are looking for a few laughs instead, Comix Roadhouse has a great comedy lineup running this evening, though tickets are required for their shows. Just keep in mind that schedules can occasionally shift, so it is always good to double-check the final times with the box office or on the property website when you arrive. \n\nIf you want a late-night sweet treat after the show, I can arrange a complimentary dessert at one of our casual dining spots like the 24-hour Lantern Bar & Grill. Do you and your husband prefer kicking back with live music, or are you more in the mood for stand-up comedy tonight?",
+      "sources": [],
+      "elapsed_ms": 58002,
+      "error": null
+    }
+  ],
+  "completed": true
+}

@@ -1,0 +1,77 @@
+{
+  "id": "p2-08",
+  "name": "Agent asks about entertainment interests",
+  "source_file": "profiling_p2_active_probing.yaml",
+  "category": "profiling_p2_active_probing",
+  "behavioral_dimension": "P2_active_probing",
+  "expected_behavior": "First response provides a broad overview and asks a narrowing question about entertainment type. When 'live music' is volunteered, immediately narrows to music venues and upcoming acts",
+  "expected_behavioral_quality": "When the guest asks a generic question about things to do, the agent provides options AND asks a narrowing question about entertainment preferences. The question is specific enough to be useful ('More into music or comedy?') rather than vague ('What do you like?').",
+  "safety_relevant": false,
+  "turns": [
+    {
+      "turn_index": 0,
+      "user_message": "What's there to do here besides gambling?",
+      "agent_response": "For live music, the Wolf Den features free nightly performances from national acts in an intimate 350-seat venue that really captures the electric energy of the show. If you're looking for something larger, our 10,000-seat Arena hosts major headliners and world-class events throughout the year. For",
+      "sources": [
+        {
+          "category": "faq",
+          "source": "mohegan_sun.json",
+          "score": 0.705
+        },
+        {
+          "category": "amenities",
+          "source": "mohegan_sun.json",
+          "score": 0.679
+        },
+        {
+          "category": "entertainment",
+          "source": "mohegan_sun.json",
+          "score": 0.672
+        }
+      ],
+      "elapsed_ms": 51700,
+      "error": null
+    },
+    {
+      "turn_index": 1,
+      "user_message": "We love live music",
+      "agent_response": "The Wolf Den is the place to be tonight with a free nightly performance in an intimate setting that puts you right in front of the band. For an upscale vibe, novelle also opens this evening and features craft cocktails with a DJ. Many guests grab a wood-fired dinner at Todd English's Tuscany before the show since it's just steps away from the stage. Do you usually look for big headliners in the Arena or do you prefer the free shows at the Wolf Den?",
+      "sources": [
+        {
+          "category": "entertainment",
+          "source": "mohegan_sun.json",
+          "score": 0.646
+        },
+        {
+          "category": "property",
+          "source": "mohegan_sun.json",
+          "score": 0.637
+        }
+      ],
+      "elapsed_ms": 29614,
+      "error": null
+    },
+    {
+      "turn_index": 2,
+      "user_message": "What's playing this weekend?",
+      "agent_response": "The Wolf Den features free live performances every night this weekend, while Avalon Nightclub hosts high-energy DJ sets starting Friday at 10:00 PM. Since you'll be here for the music, would you like a recommendation for a pre-show dinner near the stages?",
+      "sources": [
+        {
+          "category": "entertainment",
+          "source": "mohegan_sun.json",
+          "score": 0.677
+        },
+        {
+          "category": "faq",
+          "source": "mohegan_sun.json",
+          "score": 0.681
+        }
+      ],
+      "elapsed_ms": 37415,
+      "error": null
+    }
+  ],
+  "elapsed_ms": 118730,
+  "error": null,
+  "completed": true
+}

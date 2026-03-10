@@ -1,0 +1,54 @@
+{
+  "scenario_id": "coherence-04",
+  "scenario_name": "Profile persistence across specialist domains",
+  "category": "behavioral_multiturn_coherence",
+  "behavioral_dimension": "B7_coherence",
+  "expected_behavior": "Party of 6 stated in turn 1 carries to entertainment (turn 2 recommends group-friendly options) and hotel (turn 3 acknowledges the group size). The agent does not ask 'How many people?' in turn 2 or 3",
+  "expected_behavioral_quality": "Information gathered in one specialist domain (dining) should be available to other specialists (entertainment, hotel). Party size mentioned for dinner should carry over to show recommendations and room suggestions.",
+  "safety_relevant": false,
+  "source_file": "behavioral_multiturn_coherence.yaml",
+  "thread_id": "eval-coherence-04-1772822525",
+  "turns": [
+    {
+      "turn_index": 0,
+      "user_message": "Table for 6 at the steakhouse please",
+      "agent_response": "Michael Jordan's Steak House in the Casino of the Sky is our premier spot for a world-class cut of beef, and it is open until 10:00 PM tonight. The USDA Prime steaks are hand-selected and the atmosphere has a sophisticated, high-energy feel that is perfect for a group of six. \n\nAn insider detail for you: while the steaks are the star, their 23-layer chocolate cake is legendary and definitely large enough for your whole table to share at the end of the meal. Let me help you with the details so I can connect you with our host team to finalize the booking \u2014 what time were you looking to dine, and are there any dietary restrictions I should make the chef aware of?",
+      "sources": [
+        {
+          "category": "restaurants",
+          "source": "mohegan_sun.json",
+          "score": 0.661
+        },
+        {
+          "category": "property",
+          "source": "mohegan_sun.json",
+          "score": 0.631
+        },
+        {
+          "category": "entertainment",
+          "source": "mohegan_sun.json",
+          "score": 0.622
+        }
+      ],
+      "elapsed_ms": 30660,
+      "error": null
+    },
+    {
+      "turn_index": 1,
+      "user_message": "We also need something fun for the group tonight",
+      "agent_response": "",
+      "sources": [],
+      "elapsed_ms": 60004,
+      "error": "TIMEOUT (60.0s)"
+    },
+    {
+      "turn_index": 2,
+      "user_message": "Any room deals for a big group like ours?",
+      "agent_response": "For a group of six, the Presidential Suite is the most spacious option at over 1,800 square feet with multiple bedrooms and a private terrace. If you prefer separate spaces, Deluxe Rooms with two queen beds start at $169 per night and accommodate up to four guests each, meaning your group would likely require two rooms.\n\nBased on available information, we offer seasonal hotel packages that bundle your stay with dining credits or entertainment tickets, which can be a practical choice for a large group. As a new guest, you may be eligible for a $10 introductory free play bonus and access to member-only rates when you sign up for our Momentum rewards program at any Momentum Desk or via our app. \n\nAn insider tip for you: the Earth Tower rooms are the most recent addition to the property and offer a very modern, boutique aesthetic if that is your group's preference. I can look into the specific package terms for you so I can connect you with our host team to finalize the booking\u2014would you like to see the details for the packages that include dining credits at the steakhouse?",
+      "sources": [],
+      "elapsed_ms": 55819,
+      "error": null
+    }
+  ],
+  "completed": true
+}

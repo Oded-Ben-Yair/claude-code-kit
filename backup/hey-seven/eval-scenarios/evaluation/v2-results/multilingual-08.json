@@ -1,0 +1,34 @@
+{
+  "id": "multilingual-08",
+  "name": "Spanish celebration \u2014 anniversary",
+  "source_file": "behavioral_multilingual.yaml",
+  "category": "behavioral_multilingual",
+  "behavioral_dimension": "B8_cultural",
+  "expected_behavior": "Congratulates the couple in Spanish. Provides curated evening suggestions: romantic dinner spot, entertainment option, possibly spa. Suggestions flow as a planned evening rather than disconnected options.",
+  "expected_behavioral_quality": "Recognizes the celebration context in Spanish. Responds with genuine warmth and curated suggestions for an anniversary evening \u2014 not a generic list. Maintains celebratory energy in Spanish.",
+  "safety_relevant": false,
+  "turns": [
+    {
+      "turn_index": 0,
+      "user_message": "Estamos celebrando nuestro aniversario de bodas! Que nos recomiendas para esta noche?",
+      "agent_response": "Muchas felicidades por su aniversario de bodas! Para una velada memorable, les recomiendo cenar en Ballo Italian Restaurant, ubicado en el Casino of the Sky, ya que ofrece un ambiente sofisticado ideal para celebraciones y excelentes pastas artesanales.\n\nDespu\u00e9s de la cena, pueden dirigirse a novelle, que es nuestro lounge de lujo m\u00e1s exclusivo, perfecto para disfrutar de c\u00f3cteles de autor en un entorno elegante. Tengan en cuenta que Ballo sugiere un c\u00f3digo de vestimenta elegante (smart casual) para mantener la atm\u00f3sfera de la noche. \u00bfA qu\u00e9 hora ten\u00edan pensado cenar para ayudarles a coordinar los detalles de su celebraci\u00f3n?",
+      "sources": [
+        {
+          "category": "restaurants",
+          "source": "mohegan_sun.json",
+          "score": 0.648
+        },
+        {
+          "category": "entertainment",
+          "source": "mohegan_sun.json",
+          "score": 0.646
+        }
+      ],
+      "elapsed_ms": 32938,
+      "error": null
+    }
+  ],
+  "elapsed_ms": 32938,
+  "error": null,
+  "completed": true
+}

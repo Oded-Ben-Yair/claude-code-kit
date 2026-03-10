@@ -1,0 +1,70 @@
+{
+  "scenario_id": "h6-01",
+  "scenario_name": "Guest had a bad dining experience",
+  "category": "host_triangle_h4_h6_relationship",
+  "behavioral_dimension": "H6_loss_recovery",
+  "expected_behavior": "Apologizes specifically for the wait time, acknowledges the price-point expectation. Offers a concrete alternative for tonight with a strong recommendation. Suggests mentioning the issue to the Momentum Desk for potential follow-up. Turns the complaint into a chance to demonstrate that the property cares",
+  "expected_behavioral_quality": "Takes full ownership of the negative experience. Does not make excuses or deflect. Offers a specific alternative for immediate recovery and a path to formal follow-up. The guest should leave the conversation feeling heard and confident that their next experience will be different.",
+  "safety_relevant": false,
+  "source_file": "host_triangle_h4_h6_relationship.yaml",
+  "thread_id": "eval-h6-01-1772991772",
+  "turns": [
+    {
+      "turn_index": 0,
+      "user_message": "We waited 45 minutes for our food at Tuscany last night. Totally unacceptable",
+      "agent_response": "I am sincerely sorry that your meal at Tuscany took so long to reach the table last night. A forty-five-minute wait for your food is frustrating when you are expecting a seamless evening of handmade pasta and wood-fired flavors. \n\nIf you would like to stick with Italian but are looking for a more efficient pace tonight, **Caputo Trattoria** in the Casino of the Earth is known for its quick service and excellent brick-oven pizzas. They are open until 10:00 PM, fall into the $$ price range, and do not require reservations. After a quick bite there, you might enjoy catching some live music at the Wolf Den to help turn the night around. \n\nWhat time are you planning to head out for your meal?",
+      "sources": [
+        {
+          "category": "restaurants",
+          "source": "mohegan_sun.json",
+          "score": 0.666
+        },
+        {
+          "category": "property",
+          "source": "mohegan_sun.json",
+          "score": 0.62
+        },
+        {
+          "category": "faq",
+          "source": "mohegan_sun.json",
+          "score": 0.607
+        }
+      ],
+      "elapsed_ms": 34114,
+      "error": null
+    },
+    {
+      "turn_index": 1,
+      "user_message": "We almost walked out. It's not what you expect at that price point",
+      "agent_response": "You are completely right. When you are paying for premium dining, you should be getting a flawless experience, not sitting at the table debating whether to leave. That completely derails a night out. \n\nLet me flag this for the host team immediately so they can look into exactly what happened and follow up with you to make it right. Who am I speaking with so I can make sure they know who to look for?",
+      "sources": [],
+      "elapsed_ms": 58334,
+      "error": null
+    },
+    {
+      "turn_index": 2,
+      "user_message": "So what would you suggest for tonight instead?",
+      "agent_response": "Michael Jordan's Steak House in the Casino of the Sky. The service there is sharp, the atmosphere matches the quality you expect, and they won't leave you waiting. After dinner, head right next door to the Vista Lounge for a drink under the Wombi Rock to really turn the evening around. \n\nHow many people are in your party tonight?",
+      "sources": [
+        {
+          "category": "entertainment",
+          "source": "mohegan_sun.json",
+          "score": 0.669
+        },
+        {
+          "category": "restaurants",
+          "source": "mohegan_sun.json",
+          "score": 0.653
+        },
+        {
+          "category": "faq",
+          "source": "mohegan_sun.json",
+          "score": 0.648
+        }
+      ],
+      "elapsed_ms": 36619,
+      "error": null
+    }
+  ],
+  "completed": true
+}

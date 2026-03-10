@@ -1,0 +1,38 @@
+{
+  "scenario_id": "h5-01",
+  "scenario_name": "Guest celebrating a milestone birthday",
+  "category": "host_triangle_h4_h6_relationship",
+  "behavioral_dimension": "H5_emotional_loyalty_building",
+  "expected_behavior": "Builds a full birthday celebration vision: group dinner at a venue that can handle 8 with a celebratory atmosphere, entertainment afterward, and birthday touches like a special dessert or recognition. Makes the guest feel like Mohegan Sun is the perfect place for milestone moments",
+  "expected_behavioral_quality": "Elevates the birthday from a data point to an experience. Creates an emotional moment by building a celebration vision across multiple property domains. The guest should feel like the property is celebrating WITH them, not just acknowledging them.",
+  "safety_relevant": false,
+  "source_file": "host_triangle_h4_h6_relationship.yaml",
+  "thread_id": "eval-h5-01-1772991207",
+  "turns": [
+    {
+      "turn_index": 0,
+      "user_message": "It's my 50th birthday this weekend! I'm bringing a group of 8 friends",
+      "agent_response": "Happy 50th birthday! What a fantastic milestone to celebrate with a big group of friends. \n\nFor an unforgettable dinner with eight people, I highly recommend Michael Jordan's Steak House in the Casino of the Sky. It has an elegant, upscale energy, and their USDA Prime steaks paired with an extensive wine list make it the perfect spot for a milestone toast. After dinner, you could walk right over to novelle, our upscale lounge, for craft cocktails and DJ entertainment to keep the night going. \n\nOh, and since you are celebrating your big day, Mohegan Sun would love to treat you to a $25 dining credit to use while you are here. \n\nAre you leaning toward a classic steakhouse vibe for the dinner, or is your group in the mood for a different type of cuisine?",
+      "sources": [],
+      "elapsed_ms": 49852,
+      "error": null
+    },
+    {
+      "turn_index": 1,
+      "user_message": "We want to do it up big. Dinner, drinks, maybe a show",
+      "agent_response": "Going all out for your 50th is exactly how it should be done! I've got you. Here is a perfect blueprint for all eight of you to celebrate. \n\nWe start with an incredible dinner at Michael Jordan's Steak House to set the tone. From there, we send you to Comix Roadhouse for a comedy show \u2014 it is a fantastic vibe for a big group. Finally, we cap off the night at novelle, our upscale ultra-lounge, where you can enjoy premium craft cocktails and DJ entertainment. \n\nLet me help you get this all set up by connecting you with my host team to finalize the reservations so you don't have to lift a finger. Before I flag them down, are you definitely leaning toward stand-up comedy, or were you hoping to catch a live concert in the Arena?",
+      "sources": [],
+      "elapsed_ms": 77166,
+      "error": null
+    },
+    {
+      "turn_index": 2,
+      "user_message": "Can the restaurant do anything special for the birthday?",
+      "agent_response": "I've got you. For a milestone like a 50th, our upscale restaurants know exactly how to roll out the red carpet. \n\nWe can arrange a crisp champagne toast for all eight of you the moment you sit down, secure a prime table with the best energy in the room, and have the kitchen prepare a beautifully plated celebratory dessert. I will get you connected with our host team to orchestrate all these details with the restaurant manager so it is completely seamless when you walk through the doors. \n\nTo make sure we personalize it perfectly, do you have an absolute favorite dessert or signature cocktail we should know about?",
+      "sources": [],
+      "elapsed_ms": 53596,
+      "error": null
+    }
+  ],
+  "completed": true
+}

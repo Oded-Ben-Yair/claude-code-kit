@@ -1,0 +1,70 @@
+{
+  "scenario_id": "p3-03",
+  "scenario_name": "Spa information plus companion question",
+  "category": "profiling_p3_give_to_get",
+  "behavioral_dimension": "P3_give_to_get",
+  "expected_behavior": "Full spa overview provided before asking who's attending. When 'sister' is mentioned, pivots to duo-friendly services without making assumptions about the relationship dynamic",
+  "expected_behavioral_quality": "Provides spa details (services, hours, pricing context) first, then asks who they'll be visiting with. The spa info is actionable on its own. The companion question is framed as helping recommend couples treatments, group packages, or solo relaxation.",
+  "safety_relevant": false,
+  "source_file": "profiling_p3_give_to_get.yaml",
+  "thread_id": "eval-p3-03-1772956924",
+  "turns": [
+    {
+      "turn_index": 0,
+      "user_message": "Tell me about the spa",
+      "agent_response": "You have two distinct ways to recharge today, and both open shortly at 9:00 AM. Mandara Spa is the go-to for a full Balinese-inspired experience, including a tranquil relaxation lounge and steam rooms that are ideal for a deep reset. If you prefer something more modern, Elemis Spa in the Earth Tower specializes in high-end skincare and even offers express services for a quicker refresh.\n\nI've got you covered on all the specifics for their signature treatments, and I'd recommend Mandara's legendary massages if you really want to melt away any travel fatigue. Since you're looking into wellness, you might also want to note that the heated indoor pool is already open until 10:00 PM for hotel guests. Once you decide on a treatment that fits your mood, I can connect you with the host team to finalize the details. \n\nAre you looking for a full day of pampering or just a quick session before heading to a show tonight?",
+      "sources": [
+        {
+          "category": "amenities",
+          "source": "mohegan_sun.json",
+          "score": 0.693
+        },
+        {
+          "category": "property",
+          "source": "mohegan_sun.json",
+          "score": 0.667
+        },
+        {
+          "category": "faq",
+          "source": "mohegan_sun.json",
+          "score": 0.639
+        },
+        {
+          "category": "promotions",
+          "source": "mohegan_sun.json",
+          "score": 0.639
+        }
+      ],
+      "elapsed_ms": 31711,
+      "error": null
+    },
+    {
+      "turn_index": 1,
+      "user_message": "It would be for me and my sister",
+      "agent_response": "Mandara Spa in the Sky Tower is usually the best choice for a duo because the relaxation lounge allows you to spend time together between treatments. For your stay, I would recommend a Deluxe Room with two queen beds in the Sky Tower so you are just a quick elevator ride away from your appointments. \n\nIf you want more space to lounge, the Junior Suite offers 650 square feet and an expanded bathroom with a soaking tub that serves as a perfect extension of your spa day. I have got you covered with all the room specifics to make sure you are both comfortable. After a morning of pampering, a quiet lunch at Tuscany is a great way to enjoy the indoor waterfall view while staying in that relaxed headspace.\n\nWould you two prefer a room with a view of the Thames River or the rolling hills of the Connecticut countryside?",
+      "sources": [
+        {
+          "category": "hotel",
+          "source": "mohegan_sun.json",
+          "score": 0.645
+        },
+        {
+          "category": "faq",
+          "source": "mohegan_sun.json",
+          "score": 0.613
+        }
+      ],
+      "elapsed_ms": 50912,
+      "error": null
+    },
+    {
+      "turn_index": 2,
+      "user_message": "A couples massage would be fun",
+      "agent_response": "A shared treatment suite is a fantastic way to catch up while you both unwind! Elemis Spa in the Earth Tower specifically offers couples experiences with their premium skincare treatments, while Mandara Spa provides a Balinese-inspired setting that includes access to their steam room and sauna.\n\nBoth spas open at 9:00 AM today, so you are perfectly timed for a morning session. Pro tip \u2014 if you go with Mandara, arrive at least 30 minutes early to take full advantage of the steam room and sauna to help your muscles relax before the massage starts. I've got you covered on the treatment details, and I can coordinate with the host team to find two side-by-side slots for you. Afterward, a quiet lunch at Tuscany near the indoor waterfall is a great way to keep that relaxed energy going.\n\nDo you both usually go for a classic Swedish massage, or are you looking for something more specialized like hot stones?",
+      "sources": [],
+      "elapsed_ms": 64407,
+      "error": null
+    }
+  ],
+  "completed": true
+}

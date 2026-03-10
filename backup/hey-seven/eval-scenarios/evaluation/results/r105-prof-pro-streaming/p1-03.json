@@ -1,0 +1,70 @@
+{
+  "scenario_id": "p1-03",
+  "scenario_name": "Guest corrects their name mid-conversation",
+  "category": "profiling_p1_natural_extraction",
+  "behavioral_dimension": "P1_natural_extraction",
+  "expected_behavior": "Immediately switches from 'Liz' to 'Elizabeth' without over-apologizing. The correction is treated as a simple update, not a mistake to dwell on",
+  "expected_behavioral_quality": "When the guest corrects their name, the agent immediately adopts the corrected version. Does not apologize excessively or make a production of the correction. Just uses the right name going forward.",
+  "safety_relevant": false,
+  "source_file": "profiling_p1_natural_extraction.yaml",
+  "thread_id": "eval-p1-03-1772989693",
+  "turns": [
+    {
+      "turn_index": 0,
+      "user_message": "I'm Liz, looking for a spa appointment",
+      "agent_response": "Welcome to Mohegan Sun, Liz. I have got you covered with two distinct spa experiences depending on whether you want a full day of pampering or a targeted refresh.\n\nThe Mandara Spa is our award-winning, full-service destination that draws on Balinese healing traditions. It features a beautiful relaxation lounge, steam room, and sauna, and they are open until 8:00 PM tonight. If you are looking for something more modern and focused on premium skincare, the Elemis Spa in the Earth Tower offers incredible facials and express services for when you are on the move. \n\nSince it is just after 5:00 PM, we could see about a late session today or look at the schedule for tomorrow morning. Were you hoping for a deep tissue massage to unwind, or more of a rejuvenating facial?",
+      "sources": [
+        {
+          "category": "amenities",
+          "source": "mohegan_sun.json",
+          "score": 0.67
+        },
+        {
+          "category": "promotions",
+          "source": "mohegan_sun.json",
+          "score": 0.628
+        },
+        {
+          "category": "property",
+          "source": "mohegan_sun.json",
+          "score": 0.623
+        },
+        {
+          "category": "entertainment",
+          "source": "mohegan_sun.json",
+          "score": 0.609
+        }
+      ],
+      "elapsed_ms": 27780,
+      "error": null
+    },
+    {
+      "turn_index": 1,
+      "user_message": "Actually it's Elizabeth, not Liz. What services do they offer?",
+      "agent_response": "I appreciate you setting me straight, Elizabeth. \n\nMandara Spa is our full-service destination where you can find everything from Balinese-inspired massages and body wraps to aromatherapy and facials. They also have a steam room and sauna if you want to make a full afternoon of it before they close at 8:00 PM. Elemis Spa in the Earth Tower focuses more on premium skincare treatments and express services, though their hot stone massage is a legendary way to reset. \n\nAfter you finish at the spa, a quiet dinner at Todd English's Tuscany nearby is a great way to keep that relaxed energy going. Are you looking to book something for just yourself, or are you traveling with a group?",
+      "sources": [
+        {
+          "category": "amenities",
+          "source": "mohegan_sun.json",
+          "score": 0.628
+        },
+        {
+          "category": "entertainment",
+          "source": "mohegan_sun.json",
+          "score": 0.622
+        }
+      ],
+      "elapsed_ms": 37277,
+      "error": null
+    },
+    {
+      "turn_index": 2,
+      "user_message": "Book me a massage",
+      "agent_response": "I've got you, Elizabeth. The traditional Balinese massage at Mandara Spa is incredibly restorative, or if you prefer warmth to melt away tension, the hot stone massage at Elemis is legendary. \n\nOnce we nail down exactly what you are looking for, I will connect you with our host team to finalize the reservation on the books. Are you hoping to schedule this for later this evening, or were you thinking of a morning session tomorrow?",
+      "sources": [],
+      "elapsed_ms": 46089,
+      "error": null
+    }
+  ],
+  "completed": true
+}

@@ -1,0 +1,65 @@
+{
+  "scenario_id": "proactive-05",
+  "scenario_name": "Guest just had a big win \u2014 celebrate and suggest",
+  "category": "behavioral_proactive",
+  "behavioral_dimension": "B4_agentic",
+  "expected_behavior": "Matches the excitement authentically. Suggests a celebratory dinner and evening. Maintains high energy throughout without being performative. Treats the win as a special occasion",
+  "expected_behavioral_quality": "Matches the winning energy authentically. Celebrates with the guest and proactively suggests something fun or celebratory to do \u2014 a nice dinner, a show, champagne. Does not dampnen the mood with generic responses.",
+  "safety_relevant": false,
+  "source_file": "behavioral_proactive.yaml",
+  "thread_id": "eval-proactive-05-1772919135",
+  "turns": [
+    {
+      "turn_index": 0,
+      "user_message": "I just hit a huge jackpot! $5000! What should we do to celebrate?",
+      "agent_response": "Congratulations on the $5,000 win. Head straight to novelle \u2014 it's our upscale lounge with a DJ and the best atmosphere to keep that momentum going tonight. Are you celebrating with a large group or just a few friends?",
+      "sources": [
+        {
+          "category": "gaming",
+          "source": "mohegan_sun.json",
+          "score": 0.631
+        },
+        {
+          "category": "faq",
+          "source": "mohegan_sun.json",
+          "score": 0.62
+        },
+        {
+          "category": "property",
+          "source": "mohegan_sun.json",
+          "score": 0.621
+        },
+        {
+          "category": "entertainment",
+          "source": "mohegan_sun.json",
+          "score": 0.603
+        }
+      ],
+      "elapsed_ms": 49605,
+      "error": null
+    },
+    {
+      "turn_index": 1,
+      "user_message": "The steakhouse sounds perfect. Get the best table!",
+      "agent_response": "I've got you. Michael Jordan's Steak House is the premier choice for a celebration of this caliber, offering incredible USDA Prime steaks in an elegant setting filled with sports memorabilia right in the Casino of the Sky. They are open until 10:00 PM tonight, so we should move quickly to get you settled for a signature dry-aged ribeye or their fresh seafood. \n\nThe atmosphere is upscale with a business casual dress code, which perfectly matches the energy of a big win. To ensure I provide the host team with everything they need to finalize this for you, how many guests are in your party and are there any dietary restrictions I should note for the chef? \n\nAfter your dinner, you might want to keep the celebration going with the live music at the Wolf Den in the Casino of the Earth.",
+      "sources": [],
+      "elapsed_ms": 78361,
+      "error": null
+    },
+    {
+      "turn_index": 2,
+      "user_message": "And after dinner, something fun",
+      "agent_response": "I've got you for the post-dinner celebration. Since it's Saturday night, Avalon Nightclub is the peak of the energy here with top DJs and an incredible sound system starting at 10:00 PM. If you'd prefer something a bit more social, novelle is an upscale lounge with a DJ that's perfect for a celebratory toast. I can connect you with the host team to help prioritize your entry or look into VIP table options for your group. Are you in the mood for a high-energy dance floor or a sophisticated lounge setting?",
+      "sources": [
+        {
+          "category": "entertainment",
+          "source": "mohegan_sun.json",
+          "score": 0.673
+        }
+      ],
+      "elapsed_ms": 38419,
+      "error": null
+    }
+  ],
+  "completed": true
+}

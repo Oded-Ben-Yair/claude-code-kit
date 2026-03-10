@@ -1,0 +1,75 @@
+{
+  "scenario_id": "h4-02",
+  "scenario_name": "VIP guest signaling status expectations",
+  "category": "host_triangle_h4_h6_relationship",
+  "behavioral_dimension": "H4_personalized_recognition",
+  "expected_behavior": "Immediately registers Ascend status and calibrates all recommendations to VIP level. Leads with premium options, mentions priority reservations as a tier benefit, and handles the suite request with host authority. The guest feels their status is recognized and acted upon",
+  "expected_behavioral_quality": "Recognizes VIP signals (tier mention, high-end requests, 'usual' language) and immediately elevates the service register. Recommendations match the VIP's expected quality level without the guest needing to explicitly state their status.",
+  "safety_relevant": false,
+  "source_file": "host_triangle_h4_h6_relationship.yaml",
+  "thread_id": "eval-h4-02-1773037488",
+  "turns": [
+    {
+      "turn_index": 0,
+      "user_message": "I'm an Ascend member. Where should I eat tonight? Something nice.",
+      "agent_response": "An, it is a pleasure to welcome an Ascend member back to the property. Since it's Monday, Ballo Italian Restaurant in the Casino of the Sky is my top pick for a sophisticated dinner tonight. \n\nThe dining room is stunning, designed to resemble a classic Italian cathedral with massive stone arches, making it easily one of our most atmospheric spaces. You should definitely try the housemade pasta or one of their signature risottos. They are open from 5:00 PM to 10:00 PM, though hours and prices can vary so it is always wise to confirm with the property. While the dress code is smart casual, the service and setting are truly elevated, and I would suggest a reservation to ensure you have a table waiting! \n\nHow many guests will be in your party tonight? After dinner, the Wolf Den usually has some great live entertainment nearby if you are looking to keep the evening going.",
+      "sources": [
+        {
+          "category": "restaurants",
+          "source": "mohegan_sun.json",
+          "score": 0.698
+        },
+        {
+          "category": "promotions",
+          "source": "mohegan_sun.json",
+          "score": 0.674
+        }
+      ],
+      "elapsed_ms": 31294,
+      "error": null
+    },
+    {
+      "turn_index": 1,
+      "user_message": "And I'll need a table for 6, so something with a private area",
+      "agent_response": "I've got you, An. For a group of six wanting a more intimate feel, Todd English's Tuscany is fantastic. \n\nThey have a gorgeous semi-private space right by their indoor waterfall that is perfect for your party size, and the wood-fired aroma when you walk in is unforgettable. The rustic Tuscan-style dishes and house-made pastas are incredible for a group dinner. I can connect you directly with our host team to finalize the details and lock in that specific table for tonight. \n\nIf you are planning to hit the casino floor afterward, your Ascend status makes our High Limit areas a perfect next stop, featuring elevated table games and premium drink service. \n\nOh, and thanks for chatting with us today\u2014we would love to treat you to $5 in bonus tier points to use at Mohegan Sun! Are you celebrating a special occasion tonight so I can let the host team know?",
+      "sources": [
+        {
+          "category": "entertainment",
+          "source": "mohegan_sun.json",
+          "score": 0.65
+        },
+        {
+          "category": "faq",
+          "source": "mohegan_sun.json",
+          "score": 0.631
+        },
+        {
+          "category": "hotel",
+          "source": "mohegan_sun.json",
+          "score": 0.627
+        },
+        {
+          "category": "restaurants",
+          "source": "mohegan_sun.json",
+          "score": 0.628
+        },
+        {
+          "category": "gaming",
+          "source": "mohegan_sun.json",
+          "score": 0.626
+        }
+      ],
+      "elapsed_ms": 67858,
+      "error": null
+    },
+    {
+      "turn_index": 2,
+      "user_message": "Perfect. Can you also check on suite availability for tonight?",
+      "agent_response": "I hear you \u2014 let me connect you directly with our host team so they can take care of this for you.",
+      "sources": [],
+      "elapsed_ms": 5898,
+      "error": null
+    }
+  ],
+  "completed": true
+}

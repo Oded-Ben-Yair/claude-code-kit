@@ -1,0 +1,61 @@
+{
+  "scenario_id": "slang-06",
+  "scenario_name": "Gen Z guest using TikTok-influenced slang",
+  "category": "behavioral_slang_cultural",
+  "behavioral_dimension": "B3_engagement",
+  "expected_behavior": "Understands bussin=great, lowkey=somewhat, no cap=honestly, fire=excellent, bet=agreed, slaps=is great. Responds helpfully without code-switching to match the slang. Maintains professional warmth",
+  "expected_behavioral_quality": "Understands modern slang (bussin, lowkey, no cap, slay) without asking for translation. Does NOT use the slang back \u2014 responds in warm professional English. Matches the casual energy without mimicking the register.",
+  "safety_relevant": false,
+  "source_file": "behavioral_slang_cultural.yaml",
+  "thread_id": "eval-slang-06-1772828199",
+  "turns": [
+    {
+      "turn_index": 0,
+      "user_message": "ok so whats bussin for food here? lowkey starving",
+      "agent_response": "SolToro Taqueria & Tequila Bar in the Casino of the Earth is the spot if you want food that's actually on point. Their street tacos and fresh ceviche are packed with bold flavors, and the vibe in there is perfect for a Friday night. They are open until 11:00 PM tonight, and you typically won't need a reservation to get a table. \n\nPro tip: their tableside guacamole is made fresh right in front of you and is a consistent favorite for guests who want something high-quality and fast. Since you're already in the Casino of the Earth, you're just steps away from the Wolf Den if you want to catch some live music after you've had your fill. Do you want to stick with Mexican food, or would you prefer a 24-hour American spot like Lantern Bar & Grill?",
+      "sources": [
+        {
+          "category": "restaurants",
+          "source": "mohegan_sun.json",
+          "score": 0.665
+        }
+      ],
+      "elapsed_ms": 33408,
+      "error": null
+    },
+    {
+      "turn_index": 1,
+      "user_message": "the steakhouse looks fire no cap. is it expensive tho",
+      "agent_response": "I apologize, but I'm having trouble generating a response right now. Please try again, or  at [PHONE].",
+      "sources": [
+        {
+          "category": "restaurants",
+          "source": "mohegan_sun.json",
+          "score": 0.693
+        }
+      ],
+      "elapsed_ms": 37629,
+      "error": null
+    },
+    {
+      "turn_index": 2,
+      "user_message": "bet. what else should we do tonight that slaps",
+      "agent_response": "Avalon Nightclub is the move tonight if you want a high-energy vibe because it opens at 10:00 PM and features top-tier DJs with an incredible sound system. It is a massive space that holds 1,500 people, so once it gets going, the energy is truly unmatched on the property. If you want something a bit more sophisticated but still has a DJ, novelle is an ultra lounge that's perfect for grabbing craft cocktails after your steak. \n\nPro tip: novelle is a hidden gem because it has an upscale feel that's more intimate than the main club, making it a great spot to actually hang out while still hearing a great set. I can help you with more info on either spot and then connect you with our host team if you want to look into VIP bottle service or table reservations. Are you leaning more toward a high-energy nightclub like Avalon or a chill lounge like novelle?",
+      "sources": [
+        {
+          "category": "entertainment",
+          "source": "mohegan_sun.json",
+          "score": 0.671
+        },
+        {
+          "category": "faq",
+          "source": "mohegan_sun.json",
+          "score": 0.683
+        }
+      ],
+      "elapsed_ms": 32731,
+      "error": null
+    }
+  ],
+  "completed": true
+}

@@ -1,0 +1,38 @@
+{
+  "scenario_id": "h5-03",
+  "scenario_name": "Guest sharing a personal achievement",
+  "category": "host_triangle_h4_h6_relationship",
+  "behavioral_dimension": "H5_emotional_loyalty_building",
+  "expected_behavior": "Celebrates the retirement with genuine warmth, not just 'congrats.' Builds a premium celebration weekend \u2014 Sky Tower suite, fine dining, spa \u2014 framed as something the guest has earned. Makes the guest feel like the property is honoring their achievement, not just selling services",
+  "expected_behavioral_quality": "When a guest shares a personal achievement (promotion, retirement, graduation), the agent celebrates genuinely and connects it to an experience that honors the accomplishment. The celebration should feel personal and earned, not a generic 'congrats.'",
+  "safety_relevant": false,
+  "source_file": "host_triangle_h4_h6_relationship.yaml",
+  "thread_id": "eval-h5-03-1772912114",
+  "turns": [
+    {
+      "turn_index": 0,
+      "user_message": "I just retired after 35 years! Coming to celebrate with my wife this weekend",
+      "agent_response": "Thirty-five years is a massive milestone, so congratulations on your retirement. Tuscany is the perfect choice for a celebration like this\u2014ask for the waterfall table to get the best view of the Taughannick Falls while you dine. \n\nI'll flag this for the host team so they can help you finalize the details for a special evening. Since you're here for the weekend, are you planning on catching a show at the Arena or just relaxing at the spa?",
+      "sources": [],
+      "elapsed_ms": 52733,
+      "error": null
+    },
+    {
+      "turn_index": 1,
+      "user_message": "We want something really memorable. We've earned it",
+      "agent_response": "Thirty-five years of service is a significant milestone. The Momentum program tracks your play across five tiers\u2014Core, Ignite, Leap, Ascend, and Soar\u2014to provide benefits like dining credits, room upgrades, and priority seating. You should visit any Momentum Desk to sign up; as a new member, you are eligible for a $10 introductory free play bonus to start your weekend.\n\nFor a truly memorable celebration, the Presidential Suite offers over 1,800 square feet of luxury, including a private terrace and personalized concierge service. I\u2019ve got you for a reservation at Michael Jordan\u2019s Steak House, and I can look into arranging a complimentary celebratory dessert for you and your wife to mark the occasion. Are you planning to spend more time at the table games in Casino of the Sky, or would you prefer a more relaxed itinerary with a visit to the spa!",
+      "sources": [],
+      "elapsed_ms": 53299,
+      "error": null
+    },
+    {
+      "turn_index": 2,
+      "user_message": "That sounds like a perfect way to kick off retirement",
+      "agent_response": "",
+      "sources": [],
+      "elapsed_ms": 90005,
+      "error": "TIMEOUT (90.0s)"
+    }
+  ],
+  "completed": true
+}

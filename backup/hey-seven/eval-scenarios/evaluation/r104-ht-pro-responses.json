@@ -1,0 +1,1994 @@
+{
+  "metadata": {
+    "timestamp": "2026-03-08T13:32:40Z",
+    "model": "gemini-3-flash-preview",
+    "total_scenarios": 30,
+    "total_turns": 90,
+    "total_errors": 0,
+    "total_elapsed_ms": 4654077,
+    "avg_turn_ms": 51711
+  },
+  "results": [
+    {
+      "scenario_id": "h1-01",
+      "scenario_name": "First-time guest exploring the property",
+      "category": "host_triangle_h1_h3_development",
+      "behavioral_dimension": "H1_proactive_value_discovery",
+      "expected_behavior": "Recognizes first-time visit, asks about interests to shape recommendations, and plants at least one natural return-visit hook (Wolf Den weekly shows, upcoming Arena concert, Momentum sign-up). The conversation feels like an insider sharing favorites, not a brochure",
+      "expected_behavioral_quality": "Identifies the first-time visit signal and tailors recommendations to create anchor memories. Plants at least one natural return-visit hook (upcoming event, seasonal offering, loyalty sign-up) without making it feel like a pitch. Asks what brought them in to discover what would make them come back.",
+      "safety_relevant": false,
+      "source_file": "host_triangle_h1_h3_development.yaml",
+      "thread_id": "eval-h1-01-1772970333",
+      "turns": [
+        {
+          "turn_index": 0,
+          "user_message": "Hey, first time here at Mohegan Sun. What should we check out?",
+          "agent_response": "Welcome. You're in great hands. The property is huge, so don't try to see it all at once. \n\nI'd suggest starting right at Casino of the Earth. Pro tip \u2014 head straight for the indoor waterfall. It's the perfect central spot to grab a quick drink, get your bearings, and soak in the energy of the floor before you dive in. \n\nWhat brings you guys out today, just a weekend getaway or are you celebrating something?",
+          "sources": [
+            {
+              "category": "amenities",
+              "source": "mohegan_sun.json",
+              "score": 0.769
+            },
+            {
+              "category": "faq",
+              "source": "mohegan_sun.json",
+              "score": 0.746
+            },
+            {
+              "category": "entertainment",
+              "source": "mohegan_sun.json",
+              "score": 0.737
+            }
+          ],
+          "elapsed_ms": 64112,
+          "error": null
+        },
+        {
+          "turn_index": 1,
+          "user_message": "We're mostly into live music and good food",
+          "agent_response": "Since there's no cover charge and it's open seating, it's the perfect spot to catch a high-energy show without needing a ticket. \n\nFor a great meal beforehand, Michael Jordan's Steak House is just a short walk away and always delivers a top-tier experience. Pro tip \u2014 if you're looking for a more upscale nightlife vibe after the bands finish, novelle is a sophisticated lounge nearby with great craft cocktails and DJ entertainment. After a long night of music and dining, you might even want to look into a reset at Elemis Spa the next morning to recharge. \n\nWhat genre of music do you usually listen to?",
+          "sources": [
+            {
+              "category": "entertainment",
+              "source": "mohegan_sun.json",
+              "score": 0.662
+            }
+          ],
+          "elapsed_ms": 30285,
+          "error": null
+        },
+        {
+          "turn_index": 2,
+          "user_message": "That sounds great, we'll definitely check those out",
+          "agent_response": "I've got you covered. Since you mentioned live music, the Wolf Den is the place to be today\u2014the energy is electric and you are right there with the performers. Pro tip \u2014 the rock mountain design isn't just for show, as the acoustics in there are specifically tuned for a high-quality sound that carries through the casino floor. \n\nIf you want to balance out the music with some relaxation, the Elemis Spa has a legendary hot stone massage that is perfect for a reset. Next time you're planning a visit, feel free to reach out ahead of time and I can help share the full entertainment calendar so you can plan your trip around your favorite artists. Are you guys planning on staying through the evening, or are you just here for the afternoon?",
+          "sources": [
+            {
+              "category": "entertainment",
+              "source": "mohegan_sun.json",
+              "score": 0.654
+            },
+            {
+              "category": "faq",
+              "source": "mohegan_sun.json",
+              "score": 0.636
+            },
+            {
+              "category": "restaurants",
+              "source": "mohegan_sun.json",
+              "score": 0.642
+            }
+          ],
+          "elapsed_ms": 38422,
+          "error": null
+        }
+      ]
+    },
+    {
+      "scenario_id": "h1-02",
+      "scenario_name": "Guest comparing Mohegan Sun to competitor",
+      "category": "host_triangle_h1_h3_development",
+      "behavioral_dimension": "H1_proactive_value_discovery",
+      "expected_behavior": "Highlights Mohegan Sun's dining portfolio as a competitive advantage without badmouthing Foxwoods. Discovers the guest's foodie identity and uses it to position the property. Creates a switching reason tied to the guest's stated values",
+      "expected_behavioral_quality": "When a guest compares to a competitor (Foxwoods, MGM), the agent highlights Mohegan Sun's unique differentiators without disparaging the competitor. Discovers what the guest values most and positions Mohegan Sun as the better fit for those specific preferences.",
+      "safety_relevant": false,
+      "source_file": "host_triangle_h1_h3_development.yaml",
+      "thread_id": "eval-h1-02-1772970466",
+      "turns": [
+        {
+          "turn_index": 0,
+          "user_message": "We usually go to Foxwoods. What's different about Mohegan Sun?",
+          "agent_response": "We focus on providing the best experience right here at Mohegan Sun. You'll notice the design reflects the Mohegan Tribe's heritage, from the three-story crystal mountain in the Casino of the Sky to the 55-foot indoor waterfall. \n\nStart your night at the Wolf Den\u2014it's the heart of the property with free live music in a setting you won't find anywhere else. Are you more into the high-energy table games or do you prefer finding a favorite slot machine?",
+          "sources": [
+            {
+              "category": "faq",
+              "source": "mohegan_sun.json",
+              "score": 0.769
+            },
+            {
+              "category": "gaming",
+              "source": "mohegan_sun.json",
+              "score": 0.729
+            },
+            {
+              "category": "property",
+              "source": "mohegan_sun.json",
+              "score": 0.741
+            }
+          ],
+          "elapsed_ms": 31383,
+          "error": null
+        },
+        {
+          "turn_index": 1,
+          "user_message": "We're big foodies and love trying new spots",
+          "agent_response": "Since you appreciate the culinary arts, Sushi Palace in the Casino of the Sky opens in just a few minutes at noon. Their omakase service is the standout\u2014letting the chef curate your meal ensures you're getting the freshest, most seasonal cuts available, and watching the precision of the sushi chefs is half the experience. \n\nThe atmosphere is refined yet approachable, with an extensive sake list to round out your lunch. I've got you covered on the details, and I can connect you with our host team if you'd like to finalize a plan for a larger group later this evening. Since you're exploring the property today, are you here for a specific celebration or just a well-deserved getaway?",
+          "sources": [
+            {
+              "category": "restaurants",
+              "source": "mohegan_sun.json",
+              "score": 0.643
+            }
+          ],
+          "elapsed_ms": 36562,
+          "error": null
+        },
+        {
+          "turn_index": 2,
+          "user_message": "Those sound amazing. Maybe we'll make the switch",
+          "agent_response": "We'd love to be your new home base. If culinary experiences drive your trips, you're going to have a lot of fun here. \n\nPro tip\u2014make sure to stop by any Momentum Desk to sign up for our rewards program. It's free to join, and your play immediately starts building toward dining comps at all those new restaurants you want to try. After lunch, taking a walk through the Casino of the Wind is a great way to check out the gaming floor and get a feel for the property's energy.\n\nAre you planning to stay for dinner tonight, or just scouting us out for the afternoon?",
+          "sources": [
+            {
+              "category": "entertainment",
+              "source": "mohegan_sun.json",
+              "score": 0.632
+            },
+            {
+              "category": "promotions",
+              "source": "mohegan_sun.json",
+              "score": 0.622
+            },
+            {
+              "category": "hotel",
+              "source": "mohegan_sun.json",
+              "score": 0.617
+            },
+            {
+              "category": "gaming",
+              "source": "mohegan_sun.json",
+              "score": 0.621
+            }
+          ],
+          "elapsed_ms": 66225,
+          "error": null
+        }
+      ]
+    },
+    {
+      "scenario_id": "h1-03",
+      "scenario_name": "Guest with a specific interest looking for depth",
+      "category": "host_triangle_h1_h3_development",
+      "behavioral_dimension": "H1_proactive_value_discovery",
+      "expected_behavior": "Demonstrates deep poker knowledge, treats the guest as a serious player, and builds a full weekend vision around the poker interest. Cross-sells dining and entertainment as part of a poker trip, not as disconnected amenities",
+      "expected_behavioral_quality": "When a guest signals deep interest in one domain (poker, spa, comedy), the agent demonstrates deep knowledge of that domain and connects it to related experiences. Discovers what level of engagement the guest wants and builds a personalized visit plan.",
+      "safety_relevant": false,
+      "source_file": "host_triangle_h1_h3_development.yaml",
+      "thread_id": "eval-h1-03-1772970601",
+      "turns": [
+        {
+          "turn_index": 0,
+          "user_message": "I'm really into poker. What's the poker scene like here?",
+          "agent_response": "Our Poker Room is one of the premier spots in the Northeast, and with 33 tables running 24/7, there is a game waiting for you right now. We feature daily tournaments with various buy-ins alongside cash games for No-Limit Texas Hold'em and Pot-Limit Omaha. \n\nOne thing that sets our room apart is the consistent energy from the regular special event series we host throughout the year. After a long session at the table, a hot stone massage at Elemis Spa is the perfect way to reset your back and shoulders. Do you usually prefer the fast pace of a tournament or the steady grind of a cash game?",
+          "sources": [
+            {
+              "category": "gaming",
+              "source": "mohegan_sun.json",
+              "score": 0.681
+            },
+            {
+              "category": "faq",
+              "source": "mohegan_sun.json",
+              "score": 0.627
+            },
+            {
+              "category": "entertainment",
+              "source": "mohegan_sun.json",
+              "score": 0.622
+            }
+          ],
+          "elapsed_ms": 41418,
+          "error": null
+        },
+        {
+          "turn_index": 1,
+          "user_message": "Any tournaments coming up? I play pretty seriously",
+          "agent_response": "Daily tournaments are held in the Poker Room with varying buy-ins and formats, primarily focusing on No-Limit Texas Hold'em. Since you play seriously, you may also want to track our regular special event series, which feature larger prize pools and more competitive structures throughout the year.\n\nFor every hour of rated play at the tables, you earn Momentum Points and Tier Credits, which contribute to your status and can be redeemed for dining or hotel stays. After a long session, a steak at Michael Jordan's Steak House is a great way to refuel right near the gaming floor. What buy-in range do you typically look for in a daily tournament?",
+          "sources": [
+            {
+              "category": "gaming",
+              "source": "mohegan_sun.json",
+              "score": 0.647
+            },
+            {
+              "category": "faq",
+              "source": "mohegan_sun.json",
+              "score": 0.626
+            },
+            {
+              "category": "amenities",
+              "source": "mohegan_sun.json",
+              "score": 0.612
+            },
+            {
+              "category": "entertainment",
+              "source": "mohegan_sun.json",
+              "score": 0.606
+            }
+          ],
+          "elapsed_ms": 51371,
+          "error": null
+        },
+        {
+          "turn_index": 2,
+          "user_message": "Nice. What else is good for a poker weekend?",
+          "agent_response": "For a serious poker weekend, pacing your sessions is key. We have various seasonal hotel packages that combine a room stay with dining credits or entertainment tickets, keeping everything convenient between your tournaments. \n\nPro tip \u2014 the Poker Room is located in Casino of the Earth, which features a warm design inspired by Mohegan tribal heritage. When you need a break from the tables, stepping out to grab a drink at the nearby Bow & Arrow sports bar is a great way to clear your head. If you haven't joined our Momentum rewards program yet, as a new guest you are eligible for a $10 introductory free play bonus when you sign up. I can also look into arranging a complimentary appetizer at one of our casual dining spots to start your weekend off right.\n\nAre you planning to head down solo to focus on the cards, or are you bringing a group with you?",
+          "sources": [],
+          "elapsed_ms": 71294,
+          "error": null
+        }
+      ]
+    },
+    {
+      "scenario_id": "h1-04",
+      "scenario_name": "Couple exploring for a weekend getaway",
+      "category": "host_triangle_h1_h3_development",
+      "behavioral_dimension": "H1_proactive_value_discovery",
+      "expected_behavior": "Builds a full couples weekend itinerary covering spa, dining, entertainment, and hotel. Creates a vision that makes the property feel like a destination, not just a casino. Plants seeds for future visits by mentioning seasonal events or upcoming shows",
+      "expected_behavioral_quality": "Identifies the couple dynamic and weekend getaway context. Discovers what kind of experience they want (relaxation, adventure, romance) and builds a multi-activity itinerary that creates emotional anchors for return visits.",
+      "safety_relevant": false,
+      "source_file": "host_triangle_h1_h3_development.yaml",
+      "thread_id": "eval-h1-04-1772970766",
+      "turns": [
+        {
+          "turn_index": 0,
+          "user_message": "My girlfriend and I are thinking about a weekend at Mohegan Sun. What's it like?",
+          "agent_response": "You are looking at a full-scale resort experience with everything from high-energy gaming to a world-class spa. For a weekend for two, I'd suggest staying in the Sky Tower for the best views of the Thames River. It puts you right in the heart of the property while offering a bit of a retreat from the floor.\n\nPro tip: Head to the Casino of the Sky to see the planetarium dome. It is one of the largest indoor planetariums in the world and creates a great atmosphere for a walk through the shops. After you settle in, I suggest dinner at Tuscany\u2014the waterfall table is the best seat in the house for a first night. Are you two celebrating a special occasion or just looking for a quick getaway!",
+          "sources": [
+            {
+              "category": "faq",
+              "source": "mohegan_sun.json",
+              "score": 0.732
+            },
+            {
+              "category": "property",
+              "source": "mohegan_sun.json",
+              "score": 0.737
+            },
+            {
+              "category": "hotel",
+              "source": "mohegan_sun.json",
+              "score": 0.712
+            },
+            {
+              "category": "amenities",
+              "source": "mohegan_sun.json",
+              "score": 0.7
+            }
+          ],
+          "elapsed_ms": 47719,
+          "error": null
+        },
+        {
+          "turn_index": 1,
+          "user_message": "We want a mix of relaxation and fun. Not just gambling",
+          "agent_response": "For the relaxation side, I have got you covered with a visit to Elemis Spa. Their hot stone massage is a signature treatment that is perfect for a reset after your arrival. When you are ready for the fun, the Wolf Den offers an electric energy where you are right there with the performers in an intimate lounge setting\u2014it is a great spot for live music without the scale of a stadium show. \n\nFor a higher-energy late night, Avalon Nightclub has a great vibe on Friday and Saturday nights starting at 10:00 PM with top-tier sound and lighting. If you enjoy being active, we also have a luxury bowling alley at Cyber Quest and Kids Quest that adds a bit of nostalgia to the evening. Since you are looking for a mix, would you prefer a late-night show or are you more of a relax-by-the-pool type of couple?",
+          "sources": [
+            {
+              "category": "faq",
+              "source": "mohegan_sun.json",
+              "score": 0.707
+            },
+            {
+              "category": "gaming",
+              "source": "mohegan_sun.json",
+              "score": 0.694
+            },
+            {
+              "category": "entertainment",
+              "source": "mohegan_sun.json",
+              "score": 0.678
+            }
+          ],
+          "elapsed_ms": 48934,
+          "error": null
+        },
+        {
+          "turn_index": 2,
+          "user_message": "That sounds like a perfect weekend, thanks",
+          "agent_response": "I'm glad that sounds like a good fit for you both. One last insider tip\u2014Novelle is our ultra-lounge that offers craft drinks and an upscale vibe for a post-show cocktail on the weekends. Would you like me to look into the specific headliners performing at the Arena during the weekend you're planning to visit?",
+          "sources": [
+            {
+              "category": "entertainment",
+              "source": "mohegan_sun.json",
+              "score": 0.648
+            },
+            {
+              "category": "property",
+              "source": "mohegan_sun.json",
+              "score": 0.638
+            },
+            {
+              "category": "promotions",
+              "source": "mohegan_sun.json",
+              "score": 0.606
+            }
+          ],
+          "elapsed_ms": 37353,
+          "error": null
+        }
+      ]
+    },
+    {
+      "scenario_id": "h2-01",
+      "scenario_name": "Lapsed guest signals they stopped coming",
+      "category": "host_triangle_h1_h3_development",
+      "behavioral_dimension": "H2_reactivation_win_back",
+      "expected_behavior": "Welcomes the guest back without making the absence feel awkward. Asks what brought them back (not why they left). Highlights what has changed or is new since their last visit \u2014 new restaurants, new entertainment, new loyalty perks. Creates urgency around what they have been missing",
+      "expected_behavioral_quality": "When a guest says they stopped visiting, the agent investigates the reason without being pushy. Acknowledges the gap, discovers what changed, and creates a specific reason to return based on what has changed at the property or what the guest now values.",
+      "safety_relevant": false,
+      "source_file": "host_triangle_h1_h3_development.yaml",
+      "thread_id": "eval-h2-01-1772970900",
+      "turns": [
+        {
+          "turn_index": 0,
+          "user_message": "I used to come here all the time but haven't been in like two years",
+          "agent_response": "Welcome back. Two years is a long time to be away, but I'll make sure you feel right at home again. \n\nI'd suggest heading straight to Casino of the Earth to get your bearings, as it still has that classic atmosphere you likely remember. Stop by the Bow & Arrow sports bar for a drink while you take everything in. What was your favorite game to play when you were a regular here?",
+          "sources": [
+            {
+              "category": "entertainment",
+              "source": "mohegan_sun.json",
+              "score": 0.641
+            },
+            {
+              "category": "gaming",
+              "source": "mohegan_sun.json",
+              "score": 0.63
+            },
+            {
+              "category": "faq",
+              "source": "mohegan_sun.json",
+              "score": 0.652
+            },
+            {
+              "category": "amenities",
+              "source": "mohegan_sun.json",
+              "score": 0.62
+            }
+          ],
+          "elapsed_ms": 49208,
+          "error": null
+        },
+        {
+          "turn_index": 1,
+          "user_message": "Just got busy with work, lost the habit I guess",
+          "agent_response": "I hear you. Work can definitely take over. Since you're finally getting a break, I'd suggest starting at Mandara Spa to leave the office behind before you head to the floor. \n\nThey're open until 8:00 PM and the relaxation lounge is the perfect place to reset and get back into the swing of things. What's the one thing you missed most about Mohegan Sun while you were away?",
+          "sources": [
+            {
+              "category": "amenities",
+              "source": "mohegan_sun.json",
+              "score": 0.619
+            },
+            {
+              "category": "entertainment",
+              "source": "mohegan_sun.json",
+              "score": 0.621
+            },
+            {
+              "category": "hotel",
+              "source": "mohegan_sun.json",
+              "score": 0.567
+            }
+          ],
+          "elapsed_ms": 30384,
+          "error": null
+        },
+        {
+          "turn_index": 2,
+          "user_message": "What's actually new since I was last here?",
+          "agent_response": "If it's been a couple of years, you definitely need to see the Earth Tower. It's our newest addition and brings a completely fresh, contemporary feel to the property, including a brand new Elemis Spa right inside. \n\nPro tip \u2014 if you are looking for a great drink later, novelle is an upscale ultra-lounge we added that completely changes the nightlife and cocktail game here. Are you staying overnight with us this trip, or just visiting for the day?",
+          "sources": [
+            {
+              "category": "hotel",
+              "source": "mohegan_sun.json",
+              "score": 0.658
+            },
+            {
+              "category": "entertainment",
+              "source": "mohegan_sun.json",
+              "score": 0.66
+            },
+            {
+              "category": "amenities",
+              "source": "mohegan_sun.json",
+              "score": 0.644
+            },
+            {
+              "category": "gaming",
+              "source": "mohegan_sun.json",
+              "score": 0.631
+            }
+          ],
+          "elapsed_ms": 55435,
+          "error": null
+        }
+      ]
+    },
+    {
+      "scenario_id": "h2-02",
+      "scenario_name": "Guest references a bad past experience",
+      "category": "host_triangle_h1_h3_development",
+      "behavioral_dimension": "H2_reactivation_win_back",
+      "expected_behavior": "Takes the complaint seriously without being defensive. Apologizes specifically for the wait time. Offers a concrete alternative for this visit and suggests mentioning the issue to the Momentum Desk for follow-up. Turns the complaint into a chance to demonstrate that things are different now",
+      "expected_behavioral_quality": "When a guest references a negative experience, the agent acknowledges it specifically, investigates without being defensive, and reframes the next visit as a fresh start. Does not minimize the complaint or rush past it.",
+      "safety_relevant": false,
+      "source_file": "host_triangle_h1_h3_development.yaml",
+      "thread_id": "eval-h2-02-1772971036",
+      "turns": [
+        {
+          "turn_index": 0,
+          "user_message": "Last time I was here the service at the steakhouse was awful. Took forever to get seated",
+          "agent_response": "I am sorry your last visit started with such a long wait, as that is certainly not the standard we aim for. For your next steak dinner, I'd suggest Michael Jordan's Steak House in the Casino of the Sky; it is our premier spot for USDA Prime cuts and usually provides a much more seamless experience when you book a table in advance. They open today at 5:00 PM, and I suggest a reservation to ensure your evening stays on track. \n\nSince you will be right there in the Casino of the Sky, you might want to check out the glass sculptures at Taughannock Falls after your meal. Are you planning a dinner for just yourself or will you be joined by a larger group?",
+          "sources": [
+            {
+              "category": "restaurants",
+              "source": "mohegan_sun.json",
+              "score": 0.66
+            },
+            {
+              "category": "property",
+              "source": "mohegan_sun.json",
+              "score": 0.637
+            },
+            {
+              "category": "faq",
+              "source": "mohegan_sun.json",
+              "score": 0.641
+            }
+          ],
+          "elapsed_ms": 35732,
+          "error": null
+        },
+        {
+          "turn_index": 1,
+          "user_message": "Yeah it kind of ruined the whole evening honestly",
+          "agent_response": "I hear you, and it is incredibly frustrating when a long wait takes the energy out of an evening you have been looking forward to. That is certainly not the standard we want for our guests, and I understand why it would cast a shadow over your entire visit. \n\nIf you are looking for a more composed and upscale environment to reset this evening, Novelle in the Casino of the Sky offers a sophisticated lounge setting that feels much more controlled and relaxed than the main floor. It is a great place to enjoy a craft cocktail and just decompress. What kind of atmosphere would make you feel most taken care of during this stay?",
+          "sources": [
+            {
+              "category": "entertainment",
+              "source": "mohegan_sun.json",
+              "score": 0.618
+            },
+            {
+              "category": "faq",
+              "source": "mohegan_sun.json",
+              "score": 0.602
+            }
+          ],
+          "elapsed_ms": 41422,
+          "error": null
+        },
+        {
+          "turn_index": 2,
+          "user_message": "So what would you actually recommend instead?",
+          "agent_response": "Tuscany. The service team there is incredibly sharp, so you will not be waiting around. Pro tip \u2014 ask for a table right by the indoor waterfall. It blocks out the casino floor noise and gives you a private, relaxed space to actually enjoy the evening. \n\nAre you wine drinkers, or do you prefer a place with a great cocktail menu?",
+          "sources": [
+            {
+              "category": "faq",
+              "source": "mohegan_sun.json",
+              "score": 0.666
+            },
+            {
+              "category": "entertainment",
+              "source": "mohegan_sun.json",
+              "score": 0.638
+            },
+            {
+              "category": "amenities",
+              "source": "mohegan_sun.json",
+              "score": 0.633
+            },
+            {
+              "category": "promotions",
+              "source": "mohegan_sun.json",
+              "score": 0.606
+            }
+          ],
+          "elapsed_ms": 58755,
+          "error": null
+        }
+      ]
+    },
+    {
+      "scenario_id": "h2-03",
+      "scenario_name": "Guest mentions they switched to competitor",
+      "category": "host_triangle_h1_h3_development",
+      "behavioral_dimension": "H2_reactivation_win_back",
+      "expected_behavior": "Does not badmouth Foxwoods or Gordon Ramsay. Instead, highlights Mohegan Sun's own new dining portfolio (Beauty & Essex, The Farm Italy, The Shed) as reasons to come back. Creates competitive differentiation through quality, not criticism",
+      "expected_behavioral_quality": "When a guest says they have been going to a competitor instead, the agent does not disparage the competitor. Instead, discovers what drew them away and highlights what Mohegan Sun offers in that area. Creates a 'come back and see' moment around genuine improvements.",
+      "safety_relevant": false,
+      "source_file": "host_triangle_h1_h3_development.yaml",
+      "thread_id": "eval-h2-03-1772971172",
+      "turns": [
+        {
+          "turn_index": 0,
+          "user_message": "I've been going to Foxwoods mostly. They opened some cool new restaurants",
+          "agent_response": "It is always a treat to discover a new favorite spot, and if you are looking for a meal that truly stands out here at Mohegan Sun, Todd English's Tuscany is the place to be this evening. The wood-fired aroma hits you the moment you walk in, and their handmade pastas have a velvety texture that shows off the craft of a celebrity chef kitchen. Fun fact\u2014the culinary team there uses a specialized wood-burning oven to ensure every dish gets that perfect, smoky finish you can only get from traditional Italian methods. \n\nThey open at 5:00 PM today in the Casino of the Sky and usually recommend business casual attire and a reservation to secure a prime table near the indoor waterfall. Since you enjoy exploring new culinary scenes, are you looking for a high-energy atmosphere tonight or something a bit more intimate and quiet!",
+          "sources": [
+            {
+              "category": "faq",
+              "source": "mohegan_sun.json",
+              "score": 0.712
+            },
+            {
+              "category": "restaurants",
+              "source": "mohegan_sun.json",
+              "score": 0.719
+            },
+            {
+              "category": "gaming",
+              "source": "mohegan_sun.json",
+              "score": 0.683
+            },
+            {
+              "category": "hotel",
+              "source": "mohegan_sun.json",
+              "score": 0.672
+            }
+          ],
+          "elapsed_ms": 37572,
+          "error": null
+        },
+        {
+          "turn_index": 1,
+          "user_message": "Yeah their Gordon Ramsay place is really good",
+          "agent_response": "If you appreciate the flair of a celebrity chef, Bobby Flay's Bar Americain here in the Casino of the Earth is our standout spot for bold, regional flavors. The menu is inspired by American brasserie classics but infused with Bobby\u2019s signature Southwest spice\u2014the crunch and heat in his dishes are legendary. It is open today from 11:30 AM until 10:00 PM, and while it is great for a casual lunch, I'd suggest a reservation if you're coming for dinner in your smart casual attire.\n\nInsider tip: Bobby Flay is known for his love of bold textures, so I suggest trying any dish that features his signature spice rubs or sauces, as they really tie the whole meal together. Please keep in mind that hours and prices may vary, so it's best to confirm with the property.\n\nSince you are here today, you might enjoy the live music at the Wolf Den nearby after you eat; it is right in the heart of the Casino of the Earth and always has a great energy. Do you usually prefer a lively bar atmosphere for your meals, or are you looking for a more formal dining room experience?",
+          "sources": [
+            {
+              "category": "restaurants",
+              "source": "mohegan_sun.json",
+              "score": 0.66
+            }
+          ],
+          "elapsed_ms": 36577,
+          "error": null
+        },
+        {
+          "turn_index": 2,
+          "user_message": "Hmm those do sound worth trying",
+          "agent_response": "If you're looking for a legendary taste of Connecticut for lunch today, **Frank Pepe's Pizzeria Napoletana** in the Casino of the Earth is a must-visit. The char from the coal-fired oven gives that thin crust a perfect crunch that guests travel from all over the state to experience. They are open right now until 10:00 PM, and since it\u2019s casual, you can just walk right in without a reservation. \n\nTheir white clam pie is a national icon, but honestly, even a simple tomato pie there is something special because they've been perfecting that recipe since 1925. Hours and prices can vary, so it is always good to check in with the property once you arrive. By the way, the Mohegan Sun Arena has some great shows coming up\u2014I can share what's on the calendar if you're interested! I've got you on all the details, and I can connect you with our host team if you'd like to finalize a plan for your visit. \n\nAre you more of a classic pepperoni fan, or are you adventurous enough to try the famous white clam pie?",
+          "sources": [
+            {
+              "category": "entertainment",
+              "source": "mohegan_sun.json",
+              "score": 0.644
+            },
+            {
+              "category": "restaurants",
+              "source": "mohegan_sun.json",
+              "score": 0.647
+            },
+            {
+              "category": "promotions",
+              "source": "mohegan_sun.json",
+              "score": 0.626
+            },
+            {
+              "category": "faq",
+              "source": "mohegan_sun.json",
+              "score": 0.614
+            }
+          ],
+          "elapsed_ms": 37708,
+          "error": null
+        }
+      ]
+    },
+    {
+      "scenario_id": "h3-01",
+      "scenario_name": "Frequent visitor unaware of tier benefits",
+      "category": "host_triangle_h1_h3_development",
+      "behavioral_dimension": "H3_pipeline_advancement",
+      "expected_behavior": "Connects the guest's weekly visit pattern to tier advancement potential. Explains specific benefits that match their blackjack interest (table game earning rates, priority seating). Makes checking tier status feel like discovering hidden money, not filling out a loyalty form",
+      "expected_behavioral_quality": "When a guest reveals frequent visit patterns, the agent connects that behavior to tier advancement opportunities. Makes tier progression feel like insider knowledge being shared, not a sales pitch. Explains specific benefits that match the guest's interests.",
+      "safety_relevant": false,
+      "source_file": "host_triangle_h1_h3_development.yaml",
+      "thread_id": "eval-h3-01-1772971284",
+      "turns": [
+        {
+          "turn_index": 0,
+          "user_message": "I'm here pretty much every weekend. Love the blackjack tables",
+          "agent_response": "Great to have you back. Blackjack is always a solid choice. Since you know the floor so well, you might already know this, but the Spanish 21 tables usually pull in a really fun crowd on weekends if you ever want a slight change of pace. \n\nWhen you need a break from the cards, where is your go-to spot to grab a bite?",
+          "sources": [
+            {
+              "category": "gaming",
+              "source": "mohegan_sun.json",
+              "score": 0.673
+            },
+            {
+              "category": "faq",
+              "source": "mohegan_sun.json",
+              "score": 0.655
+            }
+          ],
+          "elapsed_ms": 72450,
+          "error": null
+        },
+        {
+          "turn_index": 1,
+          "user_message": "Yeah I've got the card but I never really pay attention to it",
+          "agent_response": "It is easy to forget about the card when you are focused on the game. Handing it to the dealer every weekend tracks your time and average bet, which is exactly how table comps are calculated. \n\nSince you play so consistently, you might be closer to the next tier than you think\u2014dining credits at places like Tuscany and SolToro open up at each level, and you likely already have Momentum Dollars sitting on your account. You can check your current balance and tier status at any Momentum Desk on the floor.\n\nDo you usually grab dinner here on property, or do you head out after you wrap up at the tables?",
+          "sources": [
+            {
+              "category": "faq",
+              "source": "mohegan_sun.json",
+              "score": 0.603
+            },
+            {
+              "category": "entertainment",
+              "source": "mohegan_sun.json",
+              "score": 0.598
+            },
+            {
+              "category": "promotions",
+              "source": "mohegan_sun.json",
+              "score": 0.594
+            }
+          ],
+          "elapsed_ms": 57122,
+          "error": null
+        },
+        {
+          "turn_index": 2,
+          "user_message": "Really? What kind of perks are we talking?",
+          "agent_response": "Because you are putting in regular hours at the blackjack tables, you are already building toward the upper tiers just by playing. \n\nAt the Ignite level, which takes 2,500 Tier Credits, you unlock a 10% bonus on your earn rate and get priority seating at our restaurants. Reaching the Leap tier at 10,000 credits adds complimentary valet and access to VIP events. Ascend and Soar bring in premium benefits like room upgrades and a dedicated casino host. \n\nPro tip\u2014your points are not just for standard dining. You can use them for craft cocktails and DJ entertainment over at novelle ultra lounge when you want a sophisticated break from the casino floor. \n\nI can arrange a complimentary appetizer or dessert at one of our casual dining spots for you tonight. Are you in the mood for something quick like a burger, or leaning more toward a sit-down meal?",
+          "sources": [],
+          "elapsed_ms": 63325,
+          "error": null
+        }
+      ]
+    },
+    {
+      "scenario_id": "h3-02",
+      "scenario_name": "Guest mentions tier at competitor property",
+      "category": "host_triangle_h1_h3_development",
+      "behavioral_dimension": "H3_pipeline_advancement",
+      "expected_behavior": "Translates the Caesars Diamond status into Momentum-equivalent context. Explains how table game play earns tier credits and what tier would match their current status. Makes signing up feel like a strategic move for a serious player, not a marketing exercise",
+      "expected_behavioral_quality": "When a guest mentions tier status at a competitor, the agent recognizes the status signal and positions Mohegan Sun's Momentum tiers as comparable or better for their play level. Does not dismiss the competitor tier but creates curiosity about Momentum benefits.",
+      "safety_relevant": false,
+      "source_file": "host_triangle_h1_h3_development.yaml",
+      "thread_id": "eval-h3-02-1772971478",
+      "turns": [
+        {
+          "turn_index": 0,
+          "user_message": "I'm Diamond at Caesars. What do you have here that's comparable?",
+          "agent_response": "Welcome to Mohegan Sun, Diamond. While I cannot compare our program directly to other properties' tiers, I can tell you exactly how our Momentum Rewards program is structured. \n\nOur program features five tiers: Core, Ignite, Leap, Ascend, and the invite-only Soar level. Premium tiers like Leap and Ascend include benefits such as priority access, VIP events, complimentary valet, and a dedicated host. Signing up is free at any Momentum Desk on the casino floor, and as a new guest, you may be eligible for a $10 introductory free play bonus when you join. \n\nWhat types of games do you usually prefer to play?",
+          "sources": [],
+          "elapsed_ms": 60173,
+          "error": null
+        },
+        {
+          "turn_index": 1,
+          "user_message": "How fast can I move up? I play mostly table games",
+          "agent_response": "Tier progression on table games depends strictly on your average bet, game type, and time played. Hand your Momentum card to the dealer at any of our 370 tables to start earning toward the 2,500 Tier Credits needed for the Ignite tier. \n\nDiamond, are you looking for standard tables or our high-limit gaming areas today?",
+          "sources": [
+            {
+              "category": "gaming",
+              "source": "mohegan_sun.json",
+              "score": 0.701
+            },
+            {
+              "category": "promotions",
+              "source": "mohegan_sun.json",
+              "score": 0.677
+            }
+          ],
+          "elapsed_ms": 69151,
+          "error": null
+        },
+        {
+          "turn_index": 2,
+          "user_message": "Alright, I'll sign up at the Momentum Desk",
+          "agent_response": "Diamond, the main Momentum Desk near the Spring Gateway usually has the shortest lines, so that is your fastest option to get your card and check on your introductory free play bonus. \n\nOnce you are set up, you will start earning Tier Credits immediately on the tables. Are you planning to grab a quick bite before you start playing, or heading straight to the action?",
+          "sources": [
+            {
+              "category": "faq",
+              "source": "mohegan_sun.json",
+              "score": 0.767
+            },
+            {
+              "category": "promotions",
+              "source": "mohegan_sun.json",
+              "score": 0.735
+            }
+          ],
+          "elapsed_ms": 50535,
+          "error": null
+        }
+      ]
+    },
+    {
+      "scenario_id": "h3-03",
+      "scenario_name": "Guest spending patterns suggest tier-up readiness",
+      "category": "host_triangle_h1_h3_development",
+      "behavioral_dimension": "H3_pipeline_advancement",
+      "expected_behavior": "Calculates that twice-monthly slot play likely puts the guest near the Ignite-to-Leap threshold (2,500 to 10,000 tier credits). Explains the specific Leap benefits that match their interests. Makes the tier-up feel like a natural next step they are already close to achieving",
+      "expected_behavioral_quality": "When a guest describes play patterns that suggest they are close to the next tier threshold, the agent recognizes the signal and proactively mentions the advancement opportunity. Frames tier progression as something the guest has already earned through their play.",
+      "safety_relevant": false,
+      "source_file": "host_triangle_h1_h3_development.yaml",
+      "thread_id": "eval-h3-03-1772971658",
+      "turns": [
+        {
+          "turn_index": 0,
+          "user_message": "I've been coming here twice a month, usually play slots for a few hours each time",
+          "agent_response": "Coming in twice a month for a few hours of slots builds up rewards quickly. Our Momentum program tracks that play so you can earn points to use toward free play, hotel stays, and dining across the resort. \n\nIf you aren't enrolled yet, as a new member you are eligible for a $10 introductory free play bonus when you sign up. With your consistent play history, you might be closer to the next tier than you think \u2014 dining credits and priority seating at spots like Tuscany and SolToro open up at each level.\n\nAre you already playing with a Momentum card, or do you need to get set up with one today?",
+          "sources": [],
+          "elapsed_ms": 59776,
+          "error": null
+        },
+        {
+          "turn_index": 1,
+          "user_message": "I'm at Ignite level right now I think",
+          "agent_response": "At, the Ignite tier provides enhanced rewards and access to select invitations based on your slot play. Thanks for chatting with us! Here are $5 bonus tier points to use at Mohegan Sun. \n\nIf you keep building those tier credits with your twice-a-month visits, you'll unlock priority access and exclusive events at the Leap tier. What kind of food do you usually grab when taking a break from the machines?",
+          "sources": [],
+          "elapsed_ms": 55888,
+          "error": null
+        },
+        {
+          "turn_index": 2,
+          "user_message": "What's the difference between Ignite and Leap?",
+          "agent_response": "At, Ignite triggers at 2,500 Tier Credits for enhanced rewards and select invitations. Leap requires 10,000 Tier Credits and adds a higher point earning rate, priority access lines across the resort, and exclusive VIP events. \n\nThat Leap priority status even gets you access to VIP seating at the Wolf Den for entertainment. By the way, thanks for chatting with us! Here are $5 bonus tier points to use at Mohegan Sun. \n\nSince you are usually only here for a few hours at a time, do you ever stay to catch any live music, or strictly stick to the slots?",
+          "sources": [],
+          "elapsed_ms": 54032,
+          "error": null
+        }
+      ]
+    },
+    {
+      "scenario_id": "h4-01",
+      "scenario_name": "Returning guest with earlier preferences in conversation",
+      "category": "host_triangle_h4_h6_relationship",
+      "behavioral_dimension": "H4_personalized_recognition",
+      "expected_behavior": "Integrates all three data points (couple, Italian preference, gluten-free) into the entertainment recommendation. Does not suggest dinner options that conflict with the dietary need. Uses Linda's name naturally. The evening plan feels curated for this specific couple",
+      "expected_behavioral_quality": "Uses information shared in earlier turns to personalize later recommendations. By turn 3, every recommendation should reflect accumulated knowledge. The guest should feel increasingly 'known' with each interaction.",
+      "safety_relevant": false,
+      "source_file": "host_triangle_h4_h6_relationship.yaml",
+      "thread_id": "eval-h4-01-1772971828",
+      "turns": [
+        {
+          "turn_index": 0,
+          "user_message": "Hi, I'm Linda. My husband and I love Italian food. What's good here?",
+          "agent_response": "Welcome to Mohegan Sun, Linda. Since you and your husband are Italian food fans, you are definitely in the right place. \n\nFor a really special date night, Todd English's Tuscany is hard to beat. The wood-fired aroma hits you the moment you walk in, and their handmade pastas are absolutely incredible. They open at 5:00 PM over in the Casino of the Sky, and the open kitchen gives the whole room a warm, romantic energy. \n\nIf you are actually looking for something right now, Mohegan Sun Caputo Trattoria is already open for lunch and serves fantastic brick-oven pizzas and fresh pasta. Also, if you want to make a full night out of it later, the Wolf Den is right nearby in the Casino of the Earth and has free live music every night.\n\nAre you looking to grab a casual bite right now, or are you planning ahead for a nicer dinner tonight?",
+          "sources": [
+            {
+              "category": "restaurants",
+              "source": "mohegan_sun.json",
+              "score": 0.689
+            }
+          ],
+          "elapsed_ms": 57479,
+          "error": null
+        },
+        {
+          "turn_index": 1,
+          "user_message": "We also have a gluten-free situation so that limits things",
+          "agent_response": "Linda, I've got you covered\u2014dietary needs are never a limitation here. At Caputo Trattoria in the Casino of the Earth, the chefs are wonderful about gluten-free substitutions for their pasta dishes, and the casual, family-friendly vibe makes it a great spot for a relaxed meal without a steep price tag. They are open right now until 10:00 PM, and since they are a casual eatery, you won't need a reservation or a formal dress code to enjoy a meal.\n\nPrices and hours can vary, so it is always a good idea to confirm with the restaurant once you arrive. After your meal, you might want to stop by the Wolf Den right nearby; they have free live music every night, which is a fantastic way to enjoy the property's energy without spending a dime. \n\nAre you looking for a quick lunch while you're on the move, or would you prefer a more leisurely sit-down experience for dinner tonight?",
+          "sources": [
+            {
+              "category": "restaurants",
+              "source": "mohegan_sun.json",
+              "score": 0.656
+            }
+          ],
+          "elapsed_ms": 37199,
+          "error": null
+        },
+        {
+          "turn_index": 2,
+          "user_message": "What about after dinner? Any shows tonight?",
+          "agent_response": "Linda, for a great night out that keeps the budget in check, the Wolf Den is absolutely the way to go. It is our complimentary live music venue, featuring performances every single night with shows usually kicking off around 8:00 PM. Fun fact\u2014because it is an open-concept venue right in the center of the Casino of the Earth, even if the 350 seats fill up, you can easily stand near the perimeter and catch the whole show without missing a beat.\n\nIf you two are in the mood for some laughs instead, Comix Roadhouse runs stand-up shows on Sundays as well. Also, if you end up staying out late, the Lantern Bar & Grill is open 24 hours for a casual, well-priced late-night snack after the show. \n\nBy the way, the Mohegan Sun Arena always has great headliners rolling through\u2014I can share what is on the calendar if you are thinking about future visits.\n\nDo you and your husband usually prefer kicking back to live music, or does a comedy club sound like a better fit for tonight?",
+          "sources": [
+            {
+              "category": "restaurants",
+              "source": "mohegan_sun.json",
+              "score": 0.689
+            },
+            {
+              "category": "entertainment",
+              "source": "mohegan_sun.json",
+              "score": 0.687
+            }
+          ],
+          "elapsed_ms": 56800,
+          "error": null
+        }
+      ]
+    },
+    {
+      "scenario_id": "h4-02",
+      "scenario_name": "VIP guest signaling status expectations",
+      "category": "host_triangle_h4_h6_relationship",
+      "behavioral_dimension": "H4_personalized_recognition",
+      "expected_behavior": "Immediately registers Ascend status and calibrates all recommendations to VIP level. Leads with premium options, mentions priority reservations as a tier benefit, and handles the suite request with host authority. The guest feels their status is recognized and acted upon",
+      "expected_behavioral_quality": "Recognizes VIP signals (tier mention, high-end requests, 'usual' language) and immediately elevates the service register. Recommendations match the VIP's expected quality level without the guest needing to explicitly state their status.",
+      "safety_relevant": false,
+      "source_file": "host_triangle_h4_h6_relationship.yaml",
+      "thread_id": "eval-h4-02-1772971980",
+      "turns": [
+        {
+          "turn_index": 0,
+          "user_message": "I'm an Ascend member. Where should I eat tonight? Something nice.",
+          "agent_response": "An, as an Ascend member, you likely appreciate a refined atmosphere, and for a nice Sunday evening, Todd English\u2019s Tuscany in the Casino of the Sky is an exceptional choice. The wood-fired aroma from the open kitchen hits you the moment you walk in, setting the stage for signature dishes like their handmade pastas and flatbreads. \n\nThey are open tonight from 5:00 PM to 10:00 PM, and the dress code is business casual. Since it is a popular spot, reservations are highly recommended to ensure you get a table with a view of the nearby waterfall. Prices are generally in the $$$$ range, though please keep in mind that hours and pricing are subject to change. \n\nAfter your meal, you might enjoy catching a live performance at the Wolf Den nearby. How many people will be joining you for dinner tonight?",
+          "sources": [
+            {
+              "category": "restaurants",
+              "source": "mohegan_sun.json",
+              "score": 0.698
+            },
+            {
+              "category": "promotions",
+              "source": "mohegan_sun.json",
+              "score": 0.674
+            }
+          ],
+          "elapsed_ms": 32738,
+          "error": null
+        },
+        {
+          "turn_index": 1,
+          "user_message": "And I'll need a table for 6, so something with a private area",
+          "agent_response": "I've got you, An. For a group of six wanting an upscale, secluded vibe, TAO Asian Bistro is phenomenal. They have stunning semi-private dining alcoves that give your group an exclusive feel while still letting you take in the gorgeous architecture of the main dining room. Their miso-roasted black cod is an absolute standout, and ordering a few plates to share is the best way to experience the menu. \n\nSince I know you are looking for a table for six tonight, I can connect you with our host team to finalize the reservation and secure that private space. \n\nAlso, thanks for chatting with us! Here are $5 bonus tier points to use at Mohegan Sun. \n\nIf your group wants to keep the momentum going after the meal, our High Limit gaming areas offer premium drink service and a great atmosphere to round out the evening. \n\nWhat time were you hoping to sit down for dinner, and does anyone in your party have any dietary restrictions I should note for the chef?",
+          "sources": [],
+          "elapsed_ms": 77350,
+          "error": null
+        },
+        {
+          "turn_index": 2,
+          "user_message": "Perfect. Can you also check on suite availability for tonight?",
+          "agent_response": "I hear you \u2014 let me connect you directly with our host team so they can take care of this for you.",
+          "sources": [],
+          "elapsed_ms": 28458,
+          "error": null
+        }
+      ]
+    },
+    {
+      "scenario_id": "h4-03",
+      "scenario_name": "Guest with children seeking family-appropriate options",
+      "category": "host_triangle_h4_h6_relationship",
+      "behavioral_dimension": "H4_personalized_recognition",
+      "expected_behavior": "Distinguishes between teenager interests and young child interests. Recommends experiences that teenagers would consider 'cool' rather than childish. Dinner recommendation accounts for family-friendly seating while not being a kids' restaurant. Makes the family feel like there is something for everyone",
+      "expected_behavioral_quality": "Recognizes the family context and personalizes all recommendations around the full group's needs. Balances adult interests with kid-friendly options without condescending. Uses the family dynamic to create a personalized experience vision.",
+      "safety_relevant": false,
+      "source_file": "host_triangle_h4_h6_relationship.yaml",
+      "thread_id": "eval-h4-03-1772972119",
+      "turns": [
+        {
+          "turn_index": 0,
+          "user_message": "We're here with two teenagers, 14 and 16. What can we all do together?",
+          "agent_response": "Since it is just after noon, the Wombi Rock climbing wall is a great way to kick off your Sunday afternoon together. It is an indoor climbing experience suitable for all skill levels, and it is located right next to Cyber Quest, which is our massive arcade that your 14 and 16-year-olds will definitely gravitate toward.\n\nPro tip: while Cyber Quest has the latest video games to keep them busy, the Wombi Rock wall is a great way for the whole family to stay active and even have a little friendly competition. After you've finished with the games, I can recommend some great casual dining spots nearby that are perfect for a family meal. Are your teens more into competitive gaming or do they prefer something more physical like the climbing wall?",
+          "sources": [
+            {
+              "category": "entertainment",
+              "source": "mohegan_sun.json",
+              "score": 0.675
+            },
+            {
+              "category": "amenities",
+              "source": "mohegan_sun.json",
+              "score": 0.651
+            },
+            {
+              "category": "faq",
+              "source": "mohegan_sun.json",
+              "score": 0.624
+            }
+          ],
+          "elapsed_ms": 38137,
+          "error": null
+        },
+        {
+          "turn_index": 1,
+          "user_message": "They're pretty bored of the usual family stuff, they want something cool",
+          "agent_response": "I hear you\u2014at 14 and 16, they want an experience that feels a bit more grown-up. Cyber Quest is the move for them because it's designed as a high-tech gaming lounge rather than a simple arcade, featuring the latest competitive titles that actually challenge older players. If there is a show tonight at the Mohegan Sun Arena, that is where the real energy is; it is a 10,000-seat venue that hosts the biggest names in music and is easily the coolest spot on property.\n\nInsider tip: the Earth Tower area has a much more contemporary, sleek design that feels less like a traditional resort and more like a modern city vibe, which is great for just hanging out and taking photos. For dinner, they might enjoy the atmosphere at a place like Todd English's Tuscany where they can see the waterfall while they eat. Do your teens have a favorite music genre or a specific artist they are currently obsessed with?",
+          "sources": [
+            {
+              "category": "entertainment",
+              "source": "mohegan_sun.json",
+              "score": 0.649
+            },
+            {
+              "category": "amenities",
+              "source": "mohegan_sun.json",
+              "score": 0.643
+            },
+            {
+              "category": "hotel",
+              "source": "mohegan_sun.json",
+              "score": 0.602
+            }
+          ],
+          "elapsed_ms": 38602,
+          "error": null
+        },
+        {
+          "turn_index": 2,
+          "user_message": "And we need dinner for all four of us",
+          "agent_response": "I've got you\u2014the smell of the brick-oven pizza hits you the moment you walk into Mohegan Sun Caputo Trattoria, making it my top pick for a dinner that feels a bit more grown-up for your teens while staying relaxed. It is located in the Casino of the Earth and is open until 10:00 PM tonight, offering a full menu of Italian favorites like pasta, calzones, and specialty pizzas in a $$-priced casual setting. Since reservations are not required, it is a perfect spot for the four of you to grab a table whenever you are hungry after hitting the arcade. \n\nAfter dinner, you might want to check the schedule at the Mohegan Sun Arena, as they often host major concerts that your 14 and 16-year-olds would find much cooler than the typical resort activities. Do any of you have dietary restrictions or a specific time you were planning to sit down for dinner?",
+          "sources": [
+            {
+              "category": "restaurants",
+              "source": "mohegan_sun.json",
+              "score": 0.645
+            },
+            {
+              "category": "hotel",
+              "source": "mohegan_sun.json",
+              "score": 0.595
+            }
+          ],
+          "elapsed_ms": 56474,
+          "error": null
+        }
+      ]
+    },
+    {
+      "scenario_id": "h4-04",
+      "scenario_name": "Guest who introduced themselves formally",
+      "category": "host_triangle_h4_h6_relationship",
+      "behavioral_dimension": "H4_personalized_recognition",
+      "expected_behavior": "Maintains 'Mr. Chen' throughout, never dropping to first name. Matches the formal register in vocabulary and sentence structure. Recommendation blends fine dining with a 'hidden gem' angle, showing the agent listened to what Mr. Chen actually values \u2014 not just price tier",
+      "expected_behavioral_quality": "Mirrors the guest's formality level throughout the conversation. A guest who introduces themselves with a title or full name expects that register to be maintained. Recognition includes respecting the communication style, not just remembering the name.",
+      "safety_relevant": false,
+      "source_file": "host_triangle_h4_h6_relationship.yaml",
+      "thread_id": "eval-h4-04-1772972253",
+      "turns": [
+        {
+          "turn_index": 0,
+          "user_message": "Good evening. I'm Mr. Chen, visiting from New York. I understand you have quite a dining portfolio.",
+          "agent_response": "It is a pleasure to have you with us, Mr. Seven. Since you are visiting from New York, I imagine you appreciate a well-executed menu, and Sushi Palace in the Casino of the Sky is an exceptional place to start your afternoon. \n\nThe chefs there prepare fresh sashimi and specialty rolls with a precision that rivals the best boutiques in Manhattan, and the atmosphere remains elegant yet approachable. They are currently open until 10:00 PM tonight, and I'd suggest exploring their omakase options if you want to see the full range of their expertise. After a meal like that, you might enjoy a stroll through the shops in the Riverview Terrace to settle in. \n\nTo help me narrow down the best spots for the rest of your trip, how many people will be joining you for dinner tonight?",
+          "sources": [
+            {
+              "category": "restaurants",
+              "source": "mohegan_sun.json",
+              "score": 0.672
+            },
+            {
+              "category": "faq",
+              "source": "mohegan_sun.json",
+              "score": 0.654
+            },
+            {
+              "category": "entertainment",
+              "source": "mohegan_sun.json",
+              "score": 0.662
+            }
+          ],
+          "elapsed_ms": 32157,
+          "error": null
+        },
+        {
+          "turn_index": 1,
+          "user_message": "I appreciate fine dining but also enjoy discovering hidden gems. What would you recommend?",
+          "agent_response": "Chen, Mr. Seven, if you want fine dining with a bit of an insider feel, Ballo Italian Restaurant is where you want to be tonight. While our celebrity-backed spots get a lot of the obvious spotlight, Ballo operates like a brilliant culinary secret tucked into the Casino of the Sky. \n\nThey focus on contemporary Italian, and their housemade pastas and risottos have a velvety finish that guests come back for again and again. It opens at 5:00 PM this evening, and the smart casual atmosphere is perfect for a relaxed but elevated meal. Afterward, if you are looking to keep the night going, the Wolf Den has free live music every night and the energy there is always fantastic. \n\nAre you dining solo this evening, or do you have a group with you so I can envision the best table for you?",
+          "sources": [
+            {
+              "category": "restaurants",
+              "source": "mohegan_sun.json",
+              "score": 0.657
+            }
+          ],
+          "elapsed_ms": 69864,
+          "error": null
+        },
+        {
+          "turn_index": 2,
+          "user_message": "Excellent taste. I'll try the Tuscany tonight.",
+          "agent_response": "Mr. Seven, Tuscany is a marvelous choice for this evening. The wood-fired aroma hits you the moment you walk in, and their handmade pastas have a velvety finish that guests come back for again and again. \n\nThey open today at 5:00 PM in the Casino of the Sky and serve until 10:00 PM. I suggest business casual attire to match the elegant, Tuscan-inspired decor. Since it is a Sunday and this is one of our most popular destinations, I'd suggest securing a reservation. Please keep in mind that hours and prices can vary, so it is always wise to confirm details upon your arrival. Once you have enjoyed your meal, the Wolf Den in the Casino of the Earth is a great next stop\u2014it features free live music every night and the energy is a perfect way to transition into the night. \n\nI can certainly connect you with our host team to finalize those dinner plans if you are ready. Do you usually prefer a table near the open kitchen to watch the chefs at work, or are you looking for a quieter corner?",
+          "sources": [
+            {
+              "category": "restaurants",
+              "source": "mohegan_sun.json",
+              "score": 0.689
+            },
+            {
+              "category": "faq",
+              "source": "mohegan_sun.json",
+              "score": 0.649
+            }
+          ],
+          "elapsed_ms": 41986,
+          "error": null
+        }
+      ]
+    },
+    {
+      "scenario_id": "h5-01",
+      "scenario_name": "Guest celebrating a milestone birthday",
+      "category": "host_triangle_h4_h6_relationship",
+      "behavioral_dimension": "H5_emotional_loyalty_building",
+      "expected_behavior": "Builds a full birthday celebration vision: group dinner at a venue that can handle 8 with a celebratory atmosphere, entertainment afterward, and birthday touches like a special dessert or recognition. Makes the guest feel like Mohegan Sun is the perfect place for milestone moments",
+      "expected_behavioral_quality": "Elevates the birthday from a data point to an experience. Creates an emotional moment by building a celebration vision across multiple property domains. The guest should feel like the property is celebrating WITH them, not just acknowledging them.",
+      "safety_relevant": false,
+      "source_file": "host_triangle_h4_h6_relationship.yaml",
+      "thread_id": "eval-h5-01-1772972398",
+      "turns": [
+        {
+          "turn_index": 0,
+          "user_message": "It's my 50th birthday this weekend! I'm bringing a group of 8 friends",
+          "agent_response": "Happy 50th birthday! A milestone like that is a major event, and I want to make sure we get everything just right for you and your friends. \n\nFor the big celebration dinner, Michael Jordan's Steak House is my top pick. It has a beautiful, upscale setting right in the Casino of the Sky, and pairing their USDA Prime steaks with a bottle from their extensive wine list is the perfect way to toast to 50. After dinner, your group could head over to novelle, our ultra-lounge, for craft cocktails and a sophisticated nightlife vibe to keep the party going. \n\nBy the way, since it is your birthday, Mohegan Sun would love to treat you to a $25 dining credit at any of our restaurants to help celebrate. Are you thinking a classic steakhouse experience for the main dinner, or did you have a different type of cuisine in mind?",
+          "sources": [],
+          "elapsed_ms": 69366,
+          "error": null
+        },
+        {
+          "turn_index": 1,
+          "user_message": "We want to do it up big. Dinner, drinks, maybe a show",
+          "agent_response": "Doing it up big for a 50th is exactly what we do best! I have the perfect lineup for your group of eight. \n\nLet's start the evening with upscale pre-show drinks at Birdcage Bar. From there, I recommend Comix Roadhouse \u2014 we can set you up with a great table for a full dinner while you watch a nationally touring comedian. After the laughs, we will move the party to novelle, our upscale ultra-lounge, for late-night craft cocktails and DJ entertainment. I will gladly flag this for the host team so they can follow up and lock everything in for you.\n\nBy the way, since your birthday is coming up, Mohegan Sun would love to treat you to a $25 dining credit to use toward the night's celebration. Also, the Mohegan Sun Arena has some incredible acts coming up \u2014 I can share what is on the calendar if you are interested in a massive concert instead.\n\nAre you and your friends leaning more toward stand-up comedy, or does a live music event sound better for the main event tonight?",
+          "sources": [],
+          "elapsed_ms": 83702,
+          "error": null
+        },
+        {
+          "turn_index": 2,
+          "user_message": "Can the restaurant do anything special for the birthday?",
+          "agent_response": "I've got you, bringing. Our fine dining spots like Michael Jordan's Steak House and Todd English's Tuscany excel at making 50th birthdays unforgettable! \n\nThey can absolutely set up something special, like a celebratory champagne toast waiting for your group of eight when you sit down, or a signature surprise dessert\u2014picture a velvety, decadent chocolate cake brought out with a sparkler to the table. Once we decide on the perfect venue, I will connect you with our host team to finalize the reservation and make sure those personalized birthday details are locked in. After dinner and the big toast, heading over to the Wolf Den for some live music is a great way to keep the energy high.\n\nThanks for chatting with us! Here are $5 bonus tier points to use at Mohegan Sun. We often have seasonal dining promotions \u2014 next time you visit, ask about what's running and I can point you to the best deals.\n\nDoes a surprise signature dessert sound like a winner, or were you hoping to have the host team help arrange a custom cake for the group?",
+          "sources": [],
+          "elapsed_ms": 56012,
+          "error": null
+        }
+      ]
+    },
+    {
+      "scenario_id": "h5-02",
+      "scenario_name": "Couple celebrating their wedding anniversary",
+      "category": "host_triangle_h4_h6_relationship",
+      "behavioral_dimension": "H5_emotional_loyalty_building",
+      "expected_behavior": "Creates a romantic anniversary itinerary: couples spa treatment, upscale dinner with anniversary touches, and an intimate evening experience. Plants the seed that Mohegan Sun could become their anniversary tradition. Emotional connection, not just logistics",
+      "expected_behavioral_quality": "Treats the anniversary as a chance to create an emotional anchor to the property. Builds a romantic experience vision that makes the couple associate Mohegan Sun with their love story. The response should make them want to come back every anniversary.",
+      "safety_relevant": false,
+      "source_file": "host_triangle_h4_h6_relationship.yaml",
+      "thread_id": "eval-h5-02-1772972607",
+      "turns": [
+        {
+          "turn_index": 0,
+          "user_message": "It's our 10th anniversary this weekend. We want to make it really special",
+          "agent_response": "Happy anniversary! Let me see about upgrading your experience at Mohegan Sun to make it extra special. \n\nFor a ten-year milestone, I have the perfect night in mind. We'll start with dinner at Michael Jordan's Steak House\u2014it has an elegant, upscale vibe right in Casino of the Sky. Afterward, we can slip over to novelle for craft cocktails to keep the celebration going. Since weekend tables go fast, I want to get this locked in for you right away.\n\nWhat time were you hoping to sit down for dinner?",
+          "sources": [],
+          "elapsed_ms": 62527,
+          "error": null
+        },
+        {
+          "turn_index": 1,
+          "user_message": "We'd love a really nice dinner and maybe the spa",
+          "agent_response": "Thought\n\"We'd love a really nice dinner and maybe the spa\"\nAnniversary (10th), Weekend visit.\nHost (Seven), Relationship builder, Decisive, Brief, Personal.\n\n        *   Address immediate need/recommendation.\n        *   Learn something new (ONE natural question).\n        *   Make it personal (use known info).\n        *   Include Guest Incentive naturally.\n        *   Rapport Technique (shared_excitement/anticipatory).\n        *   Cross-Domain Awareness (suggested dinner + spa/entertainment).\n        *   Return Visit Seeding (optional/if natural).\n        *   Search KB for Spa/Dinner.\n\n    *   *Dinner:* KB mentions Ballo Italian ($$$, Casino of the Sky, Thursdays-Mondays 5:00-10:00 PM). Previous response mentioned Michael Jordan's. Let's stick with one high-end recommendation. Ballo has housemade pasta and a great atmosphere. Or Tuscany (mentioned in prompt examples as \"waterfall table\"). Let's go with **Ballo** since it's in the KB and matches the \"really nice\" request.\n    *   *Spa:* KB mentions **Mandara Spa** (Full-service, 9am-8pm) and **Elemis Spa at Earth Tower** (Luxury, 9am-7pm). For a 10th anniversary, Mandara is the flagship \"award-winning\" choice.\n    *   *Incentive:* \"Happy anniversary! Let me see about upgrading your experience at Mohegan Sun to make it extra special.\"\n    *   *Profiling/Question:* Need to ask one question. Maybe about party size or preference.\n\n    *   *Correction on response length:* Keep it brief and avoid repeating \"Happy anniversary\" multiple times like the previous model output seemed to glitch.\n    *   *Tone Check:* Warm, grounded, no exclamation overload.\n\n    *   *Drafting the response:*\n        \"Since you\u2019re celebrating ten years, let\u2019s do Ballo Italian Restaurant for dinner\u2014the atmosphere is incredible and the housemade pasta is some of the best on property. For the spa, Mandara is my pick for an anniversary; their Balinese-inspired treatments are the ultimate way to unwind. Happy anniversary. Let me see about upgrading your experience at Mohegan Sun to make it extra special. I'll flag our host team to help coordinate these for you. Are you thinking about a couples massage or individual treatments?\"\n\n    *   \"DECIDE, don't list.\" -> Picked Ballo and Mandara.\n    *   \"ONE natural question\" -> \"Couples massage or individual treatments?\"\n    *   \"Make it personal\" -> Mentions the 10-year celebration.\n    *   \"Incentive included\" -> Yes.\n    *   \"No 'Oh', 'Ah', etc.\" -> Checked.\n    *   \"No 'I'd be delighted'.\" -> Checked.\n    *   \"Max 1 exclamation mark.\" -> Need to be careful. The incentive text has one. I should keep the rest of the text calm.\n    *   \"Search knowledge base.\" -> Used Ballo [3] and Mandara [4].\n\n    *Response:*\n    \"For a ten-year milestone, Ballo Italian Restaurant is the move\u2014it has a stunning atmosphere and the housemade pasta is perfect for a celebration. I\u2019ve also got you at Mandara Spa for your relaxation; their Balinese-inspired treatments are the property's gold standard. Happy anniversary. Let me see about upgrading your experience at Mohegan Sun to make it extra special. I\u2019ll alert the host team so they can help get everything lined up for your weekend. Are you leaning toward a couples massage or individual treatments?\"\n\n    *Wait, the incentive text has an exclamation mark. \"Happy anniversary.\" I need to make sure I don't use another one.*\n\n    *Self-Correction on the \"Action\" part:* I should frame it as \"I've got you\" or \"Let's do...\" as per instructions.\n\n    *Refining the draft:*\n    \"For a ten-year milestone, Ballo Italian Restaurant is the move\u2014it has a stunning atmosphere and the housemade pasta is perfect for a celebration. I\u2019ve also got you at Mandara Spa for your relaxation; their Balinese-inspired treatments are the property's gold standard. Happy anniversary. Let me see about upgrading your experience at Mohegan Sun to make it extra special. I\u2019ll alert the host team so they can help get everything lined up for your weekend. Are you leaning toward a couples massage or individual treatments?\"\n\n    *Double check on one exclamation mark rule:* \"Happy anniversary.\" counts as one. No others allowed.\n\n    *Final check on instructions:* \"I'll make sure your host knows about the anniversary \u2014 they'll take care of you\". \"I'll flag this for the host team so they can follow up in person\".\n\n    *Let's check the time/hours:* Ballo is open 5pm-10pm. Mandara is 9am-8pm. Matches \"weekend\".\n\n    *Final Polish:*\n    \"For a ten-year milestone, Ballo Italian Restaurant is the move\u2014it has a stunning atmosphere and the housemade pasta is perfect for a celebration. I\u2019ve also got you at Mandara Spa for your relaxation; their Balinese-inspired treatments are the property's gold standard. Happy anniversary. Let me see about upgrading your experience at Mohegan Sun to make it extra special. I\u2019ll alert the host team so they can help get everything lined up for your weekend. Are you leaning toward a couples massage or individual treatments?\"\nFor a ten-year milestone, Ballo Italian Restaurant is the move\u2014it has a stunning atmosphere and the housemade pasta is perfect for a celebration. I\u2019ve also got you at Mandara Spa for your relaxation; their Balinese-inspired treatments are the property's gold standard. Happy anniversary. Let me see about upgrading your experience at Mohegan Sun to make it extra special. I\u2019ll alert the host team so they can help get everything lined up for your weekend. \n\nAre you leaning toward a couples massage or individual treatments?",
+          "sources": [
+            {
+              "category": "amenities",
+              "source": "mohegan_sun.json",
+              "score": 0.658
+            },
+            {
+              "category": "promotions",
+              "source": "mohegan_sun.json",
+              "score": 0.661
+            },
+            {
+              "category": "restaurants",
+              "source": "mohegan_sun.json",
+              "score": 0.652
+            }
+          ],
+          "elapsed_ms": 35902,
+          "error": null
+        },
+        {
+          "turn_index": 2,
+          "user_message": "A couples spa package sounds incredible",
+          "agent_response": "That is going to be incredibly relaxing. Elemis Spa at Earth Tower is perfect for this, as they feature dedicated couples experiences in a beautiful, modern setting. I've got you covered on the details, and I will connect you with our host team to finalize the exact appointment for the two of you. Happy anniversary! Let me see about upgrading your experience at Mohegan Sun to make it extra special. \n\nAfter you are done at the spa, grabbing a drink and catching some live music at the Wolf Den is a great way to roll right into your evening celebration. \n\nElemis is open daily from 9:00 AM to 7:00 PM\u2014would you prefer a peaceful morning session or an afternoon wind-down?",
+          "sources": [],
+          "elapsed_ms": 68092,
+          "error": null
+        }
+      ]
+    },
+    {
+      "scenario_id": "h5-03",
+      "scenario_name": "Guest sharing a personal achievement",
+      "category": "host_triangle_h4_h6_relationship",
+      "behavioral_dimension": "H5_emotional_loyalty_building",
+      "expected_behavior": "Celebrates the retirement with genuine warmth, not just 'congrats.' Builds a premium celebration weekend \u2014 Sky Tower suite, fine dining, spa \u2014 framed as something the guest has earned. Makes the guest feel like the property is honoring their achievement, not just selling services",
+      "expected_behavioral_quality": "When a guest shares a personal achievement (promotion, retirement, graduation), the agent celebrates genuinely and connects it to an experience that honors the accomplishment. The celebration should feel personal and earned, not a generic 'congrats.'",
+      "safety_relevant": false,
+      "source_file": "host_triangle_h4_h6_relationship.yaml",
+      "thread_id": "eval-h5-03-1772972774",
+      "turns": [
+        {
+          "turn_index": 0,
+          "user_message": "I just retired after 35 years! Coming to celebrate with my wife this weekend",
+          "agent_response": "Congratulations on 35 years! That is a massive milestone and well worth a weekend getaway. \n\nSince you are celebrating something this special, I'd suggest Michael Jordan's Steak House for your dinner. It has an upscale, elegant atmosphere that is perfect for a major life event, and heading over to novelle afterward for a craft cocktail makes for an unforgettable night out. The fine dining spots fill up fast on weekends, so I definitely suggest locking in a reservation soon. \n\nIs it just you and your wife for the weekend, or are friends coming down to join the party?",
+          "sources": [
+            {
+              "category": "restaurants",
+              "source": "mohegan_sun.json",
+              "score": 0.629
+            },
+            {
+              "category": "entertainment",
+              "source": "mohegan_sun.json",
+              "score": 0.633
+            }
+          ],
+          "elapsed_ms": 61622,
+          "error": null
+        },
+        {
+          "turn_index": 1,
+          "user_message": "We want something really memorable. We've earned it",
+          "agent_response": "You absolutely have earned it. If you are staying on property, our Presidential Suite is the ultimate luxury option, featuring over 1,800 square feet, a private terrace, and a premium entertainment system. \n\nI've got you on making this special. I can look into arranging a complimentary celebration dessert for you and your wife during your dinner to mark the milestone. Also, if you have not joined our Momentum rewards program yet, signing up at the desk provides a $10 introductory free play bonus to start the weekend. \n\nPro tip \u2014 an evening walk through the Casino of the Sky is highly recommended, as the soaring, celestial-themed architecture makes for a spectacular backdrop. \n\nAre you planning to spend some time at the tables and slots, or mostly focusing on dining and relaxing?",
+          "sources": [],
+          "elapsed_ms": 58005,
+          "error": null
+        },
+        {
+          "turn_index": 2,
+          "user_message": "That sounds like a perfect way to kick off retirement",
+          "agent_response": "It really is. You're going to have an incredible weekend! \n\nSince we are going all out, let's add some downtime before that big dinner. Mandara Spa has fantastic couples treatments\u2014it is the absolute best way to wash off 35 years of work and officially transition into relaxation mode. I'll pass all these notes over to the host team so they can reach out directly to help finalize the suite, the dinner, and any spa arrangements for you.\n\nBy the way, the Mohegan Sun Arena always has a great weekend lineup. Are you two fans of live music, or would you prefer a comedy show to cap off the night?",
+          "sources": [],
+          "elapsed_ms": 58420,
+          "error": null
+        }
+      ]
+    },
+    {
+      "scenario_id": "h6-01",
+      "scenario_name": "Guest had a bad dining experience",
+      "category": "host_triangle_h4_h6_relationship",
+      "behavioral_dimension": "H6_loss_recovery",
+      "expected_behavior": "Apologizes specifically for the wait time, acknowledges the price-point expectation. Offers a concrete alternative for tonight with a strong recommendation. Suggests mentioning the issue to the Momentum Desk for potential follow-up. Turns the complaint into a chance to demonstrate that the property cares",
+      "expected_behavioral_quality": "Takes full ownership of the negative experience. Does not make excuses or deflect. Offers a specific alternative for immediate recovery and a path to formal follow-up. The guest should leave the conversation feeling heard and confident that their next experience will be different.",
+      "safety_relevant": false,
+      "source_file": "host_triangle_h4_h6_relationship.yaml",
+      "thread_id": "eval-h6-01-1772972953",
+      "turns": [
+        {
+          "turn_index": 0,
+          "user_message": "We waited 45 minutes for our food at Tuscany last night. Totally unacceptable",
+          "agent_response": "I understand that a 45-minute wait for your food is incredibly frustrating, and I am truly sorry that happened at Tuscany last night. I've got you, and I can connect you with our host team right away to address this delay and ensure your next experience is handled with the care you deserve. \n\nFor a reliable and efficient Italian meal today, Caputo Trattoria in the Casino of the Earth is open daily from 11:00 AM to 10:00 PM and is known for its quick service and wonderful brick-oven pizzas. Please note that hours and pricing for all our venues may vary and should be confirmed with the property. Would you like me to facilitate a conversation with our host team to make this right for you?",
+          "sources": [
+            {
+              "category": "restaurants",
+              "source": "mohegan_sun.json",
+              "score": 0.666
+            },
+            {
+              "category": "property",
+              "source": "mohegan_sun.json",
+              "score": 0.62
+            },
+            {
+              "category": "faq",
+              "source": "mohegan_sun.json",
+              "score": 0.607
+            }
+          ],
+          "elapsed_ms": 48674,
+          "error": null
+        },
+        {
+          "turn_index": 1,
+          "user_message": "We almost walked out. It's not what you expect at that price point",
+          "agent_response": "You're right\u2014at that level, the service should be seamless. I've got you. I am connecting you with our host team right now to review what happened and make this right. \n\nIf you are looking for a more relaxed environment this afternoon to reset, the Mandara Spa is open until 8:00 PM for world-class treatments. Please note that hours and pricing for all our venues may vary and should be confirmed with the property. Are you staying with us through the end of the weekend?",
+          "sources": [
+            {
+              "category": "hotel",
+              "source": "mohegan_sun.json",
+              "score": 0.624
+            },
+            {
+              "category": "gaming",
+              "source": "mohegan_sun.json",
+              "score": 0.619
+            },
+            {
+              "category": "restaurants",
+              "source": "mohegan_sun.json",
+              "score": 0.599
+            }
+          ],
+          "elapsed_ms": 44636,
+          "error": null
+        },
+        {
+          "turn_index": 2,
+          "user_message": "So what would you suggest for tonight instead?",
+          "agent_response": "I apologize, but I'm having trouble generating a response right now. Please try again, or  at [PHONE].",
+          "sources": [
+            {
+              "category": "entertainment",
+              "source": "mohegan_sun.json",
+              "score": 0.669
+            },
+            {
+              "category": "restaurants",
+              "source": "mohegan_sun.json",
+              "score": 0.653
+            },
+            {
+              "category": "faq",
+              "source": "mohegan_sun.json",
+              "score": 0.648
+            }
+          ],
+          "elapsed_ms": 61364,
+          "error": null
+        }
+      ]
+    },
+    {
+      "scenario_id": "h6-02",
+      "scenario_name": "Guest frustrated with hotel service",
+      "category": "host_triangle_h4_h6_relationship",
+      "behavioral_dimension": "H6_loss_recovery",
+      "expected_behavior": "Acknowledges both specific complaints (late room, broken AC) without minimizing. Does not blame any specific department. Offers a path to resolution (room change, front desk escalation) and reframes the rest of the visit positively. The guest should feel their frustration was heard and someone is taking action",
+      "expected_behavioral_quality": "When a guest reports a hotel service issue, the agent acknowledges the frustration, takes ownership, and offers both immediate and follow-up resolution paths. Does not blame housekeeping or front desk \u2014 represents the property as a whole.",
+      "safety_relevant": false,
+      "source_file": "host_triangle_h4_h6_relationship.yaml",
+      "thread_id": "eval-h6-02-1772974866",
+      "turns": [
+        {
+          "turn_index": 0,
+          "user_message": "Our room wasn't ready at 4 PM even though check-in is at 4. Then the AC wasn't working",
+          "agent_response": "That's outside what I can help with, but I'm happy to assist with anything about Mohegan Sun \u2014 dining, entertainment, hotel, spa, or gaming. What can I help you find?",
+          "sources": [],
+          "elapsed_ms": 5010,
+          "error": null
+        },
+        {
+          "turn_index": 1,
+          "user_message": "We drove two hours to get here and this is how it starts",
+          "agent_response": "After a two-hour drive, that is exactly the opposite of how your arrival should go. Let me flag this for the hotel management team immediately so they can address the AC and make this right for you. \n\nAre you stuck waiting down in the lobby right now, or did they get you moved to a cooler room?",
+          "sources": [],
+          "elapsed_ms": 58549,
+          "error": null
+        },
+        {
+          "turn_index": 2,
+          "user_message": "Fine, what can actually be done about it?",
+          "agent_response": "Let me help you with that. I can connect you directly with our on-site host team to finalize a room change and get the AC situation sorted out immediately. \n\nWhile they handle the logistics, let's get you out of that uncomfortable room. Head down to Tuscany and grab a seat by the waterfall\u2014it's cool, relaxed, and perfect for shaking off a rough drive. \n\nAre you looking to grab a full dinner while this gets fixed, or just a drink?",
+          "sources": [],
+          "elapsed_ms": 72543,
+          "error": null
+        }
+      ]
+    },
+    {
+      "scenario_id": "h6-03",
+      "scenario_name": "Guest had a tough night at the tables",
+      "category": "host_triangle_h4_h6_relationship",
+      "behavioral_dimension": "H6_loss_recovery",
+      "expected_behavior": "Empathizes with the bad session without asking about amounts. Pivots to non-gaming experiences that shift the mood \u2014 live music, dining, spa. The Wolf Den (free shows) is a natural suggestion that does not require more spending. Never suggests going back to play or 'chasing losses'",
+      "expected_behavioral_quality": "When a guest signals gaming frustration or losses, the agent empathizes without prying into amounts. Redirects to non-gaming experiences to recover the overall visit mood. Never suggests gambling more to 'win it back.' Responsible gaming awareness without being preachy.",
+      "safety_relevant": false,
+      "source_file": "host_triangle_h4_h6_relationship.yaml",
+      "thread_id": "eval-h6-03-1772975003",
+      "turns": [
+        {
+          "turn_index": 0,
+          "user_message": "Rough night at the tables. Need to clear my head",
+          "agent_response": "That is a tough night. Stepping away to catch your breath is definitely the right call. \n\nIf things ever feel overwhelming and you need some support, please know there are resources available to help. You can always reach the CT Problem Gambling Helpline at 1-800-MY-RESET or the National Helpline at 1-800-GAMBLER. \n\nSince you mentioned wanting to clear your head, the Elemis Spa has a very calm, quiet atmosphere away from the energy of the casino floor. Are you looking for a peaceful place to just sit and decompress for a bit, or would taking a quiet walk be better right now?",
+          "sources": [],
+          "elapsed_ms": 91264,
+          "error": null
+        },
+        {
+          "turn_index": 1,
+          "user_message": "Yeah just looking for something to take my mind off it",
+          "agent_response": "I'm sorry the tables weren't treating you better, but I've got you. If you want a total mental shift right now, the Wombi Rock Climbing Wall is a great pick because it forces you to focus on the climb rather than anything else. It is located near Kids Quest and they provide all the instruction and gear you will need.\n\nIf you're feeling more drained than restless, a session at Elemis Spa is a solid way to hit the reset button\u2014their hot stone massage is excellent for clearing the mind. Later on, you can catch a free show at the Wolf Den where you can just sit back and listen without any pressure. Keep in mind that hours and availability for these can vary, so checking in when you're ready to head over is best. After you've had a chance to decompress, you might find the indoor waterfall at Todd English\u2019s Tuscany to be a very calming spot for a meal.\n\nAre you leaning more toward something active to burn off some steam, or does a quiet afternoon at the spa sound better?",
+          "sources": [
+            {
+              "category": "faq",
+              "source": "mohegan_sun.json",
+              "score": 0.635
+            },
+            {
+              "category": "entertainment",
+              "source": "mohegan_sun.json",
+              "score": 0.655
+            },
+            {
+              "category": "amenities",
+              "source": "mohegan_sun.json",
+              "score": 0.598
+            }
+          ],
+          "elapsed_ms": 53898,
+          "error": null
+        },
+        {
+          "turn_index": 2,
+          "user_message": "A show sounds good actually. Thanks",
+          "agent_response": "A show is a great way to flip the script on the day. The Wolf Den has free live music tonight\u2014typically starting at 8:00 PM or 9:00 PM\u2014and it has this intimate energy where you're right there with the performer. Since it's Sunday, Comix Roadhouse is also a solid option if you'd rather clear your head with some stand-up comedy. \n\nIf you're heading to the Wolf Den, Todd English's Tuscany is a short walk away and their wood-fired dishes by the waterfall are perfect for a quiet dinner before the music starts. Just a reminder that show schedules and availability can change, so it's always good to confirm the lineup when you arrive at the venue. \n\nAre you more of a live music fan, or do you think a comedy show would be a better way to turn the night around?",
+          "sources": [
+            {
+              "category": "entertainment",
+              "source": "mohegan_sun.json",
+              "score": 0.655
+            },
+            {
+              "category": "promotions",
+              "source": "mohegan_sun.json",
+              "score": 0.64
+            }
+          ],
+          "elapsed_ms": 36003,
+          "error": null
+        }
+      ]
+    },
+    {
+      "scenario_id": "h7-01",
+      "scenario_name": "Dining guest open to entertainment",
+      "category": "host_triangle_h7_h10_revenue",
+      "behavioral_dimension": "H7_cross_selling_wallet_share",
+      "expected_behavior": "Confirms the dinner choice and immediately paints the after-dinner picture: Wolf Den show, Comix comedy, or casino floor. The cross-sell feels like a natural 'and then...' suggestion from someone who wants the guest to have a full evening, not a checklist of amenities",
+      "expected_behavioral_quality": "When a guest engages with dining, the agent naturally introduces entertainment and nightlife as the next part of the evening. The cross-sell creates a seamless 'full evening' vision where dinner flows into the next experience \u2014 not a list of unrelated amenities.",
+      "safety_relevant": false,
+      "source_file": "host_triangle_h7_h10_revenue.yaml",
+      "thread_id": "eval-h7-01-1772975185",
+      "turns": [
+        {
+          "turn_index": 0,
+          "user_message": "Where should we eat tonight? We're thinking Italian",
+          "agent_response": "For an authentic Italian evening, Todd English's Tuscany in the Casino of the Sky is a standout where you can enjoy handmade pasta right near our signature indoor waterfall. The wood-fired aroma from the open kitchen hits you immediately, creating a rustic vibe that is perfect for a slow Sunday dinner. \n\nThey open at 5:00 PM tonight and run until 10:00 PM with a business casual dress code, though I would definitely suggest a reservation to secure the best view of the falls. After dinner, the Wolf Den is just steps away and usually has great live music to cap off the night. How many people will be joining you for dinner tonight?",
+          "sources": [
+            {
+              "category": "restaurants",
+              "source": "mohegan_sun.json",
+              "score": 0.695
+            }
+          ],
+          "elapsed_ms": 33789,
+          "error": null
+        },
+        {
+          "turn_index": 1,
+          "user_message": "Tuscany sounds great. We'll do that",
+          "agent_response": "Tuscany is a fantastic choice, especially with the way the wood-fired grill flavors their signature flatbreads. They open right at 5:00 PM tonight, giving you plenty of time for a leisurely meal before they close at 10:00 PM. \n\nJust a reminder that the dress code is business casual, and while I'd suggest their handmade pastas, it is always worth checking the daily specials when you arrive as prices and menus can vary. I've got you\u2014if you'd like to secure a table, I can provide the information to connect with the host team to make that happen. Are you celebrating anything special tonight, or is this just a well-deserved night out?",
+          "sources": [
+            {
+              "category": "restaurants",
+              "source": "mohegan_sun.json",
+              "score": 0.672
+            },
+            {
+              "category": "promotions",
+              "source": "mohegan_sun.json",
+              "score": 0.615
+            },
+            {
+              "category": "property",
+              "source": "mohegan_sun.json",
+              "score": 0.627
+            }
+          ],
+          "elapsed_ms": 32007,
+          "error": null
+        },
+        {
+          "turn_index": 2,
+          "user_message": "Oh there's a show tonight? What's playing?",
+          "agent_response": "The Wolf Den features free live music every single night, usually starting at 8:00 PM or 9:00 PM, and it has this intimate energy where you're right there with the performer\u2014it's electric! Since it's Sunday, Comix Roadhouse also has comedy shows scheduled, which is a great way to keep the energy going after a nice Italian dinner. \n\nFor the biggest events, the Mohegan Sun Arena hosts major headliners, though the specific lineup varies each week and can be confirmed at the box office or on the property website. Pro tip: the Wolf Den is first-come, first-served, so if you see a crowd forming after your dinner at Tuscany, that's your cue to head over and grab a seat. Are you more in the mood for a live concert vibe or a night of stand-up comedy?",
+          "sources": [
+            {
+              "category": "entertainment",
+              "source": "mohegan_sun.json",
+              "score": 0.67
+            },
+            {
+              "category": "faq",
+              "source": "mohegan_sun.json",
+              "score": 0.666
+            }
+          ],
+          "elapsed_ms": 37115,
+          "error": null
+        }
+      ]
+    },
+    {
+      "scenario_id": "h7-02",
+      "scenario_name": "Hotel guest looking for daytime activities",
+      "category": "host_triangle_h7_h10_revenue",
+      "behavioral_dimension": "H7_cross_selling_wallet_share",
+      "expected_behavior": "Builds a full day arc: morning at the pool, afternoon spa, shopping at The Shops, then dinner and evening entertainment. Each suggestion flows naturally from the previous one. The guest feels like the property has a full day's worth of experiences, not just a casino with a hotel attached",
+      "expected_behavioral_quality": "When a hotel guest asks about daytime activities, the agent introduces spa, dining, and entertainment as a full-day experience. The cross-sell creates a vision of a resort day, not just a list of things to do.",
+      "safety_relevant": false,
+      "source_file": "host_triangle_h7_h10_revenue.yaml",
+      "thread_id": "eval-h7-02-1772975288",
+      "turns": [
+        {
+          "turn_index": 0,
+          "user_message": "We're staying at the Sky Tower tonight. What should we do during the day?",
+          "agent_response": "Sky Tower is a great choice for the views. I'd suggest heading over to the Elemis Spa at Earth Tower for a treatment this afternoon to settle in before the evening starts. They are open until 7:00 PM today and offer premium skincare and massage services. \n\nAre you celebrating anything special during this stay?",
+          "sources": [
+            {
+              "category": "hotel",
+              "source": "mohegan_sun.json",
+              "score": 0.692
+            },
+            {
+              "category": "amenities",
+              "source": "mohegan_sun.json",
+              "score": 0.675
+            },
+            {
+              "category": "restaurants",
+              "source": "mohegan_sun.json",
+              "score": 0.673
+            }
+          ],
+          "elapsed_ms": 40675,
+          "error": null
+        },
+        {
+          "turn_index": 1,
+          "user_message": "The spa sounds nice. Anything else before dinner?",
+          "agent_response": "The Shops at Mohegan Sun are a great way to spend a few hours before your reservation \u2014 there are over 40 brand-name stores and unique boutiques to explore. If you would rather stay in a wellness mindset, Mandara Spa is open until 8:00 PM and their Balinese-inspired relaxation lounge is the perfect place to decompress. \n\nAre you looking to pick up something new for the evening, or are you strictly in relaxation mode?",
+          "sources": [
+            {
+              "category": "amenities",
+              "source": "mohegan_sun.json",
+              "score": 0.689
+            },
+            {
+              "category": "entertainment",
+              "source": "mohegan_sun.json",
+              "score": 0.671
+            },
+            {
+              "category": "faq",
+              "source": "mohegan_sun.json",
+              "score": 0.65
+            }
+          ],
+          "elapsed_ms": 32943,
+          "error": null
+        },
+        {
+          "turn_index": 2,
+          "user_message": "Great, and where should we eat for dinner?",
+          "agent_response": "Since you are staying in the Sky Tower, Ballo Italian Restaurant is the perfect choice for tonight. The atmosphere is striking\u2014it feels like you've been transported to a 12th-century Italian abbey, but with a vibrant, modern energy. Their housemade pastas are the star of the show, especially when paired with a selection from their extensive Italian wine list.\n\nBallo is open tonight from 5:00 PM to 10:00 PM and follows a smart casual dress code. Since it is a Sunday and quite popular, I'd suggest securing a reservation to ensure you get a prime spot. \n\nDo you prefer a lively atmosphere with a bit of a social buzz, or are you looking for a quieter, more secluded table?",
+          "sources": [
+            {
+              "category": "restaurants",
+              "source": "mohegan_sun.json",
+              "score": 0.642
+            },
+            {
+              "category": "faq",
+              "source": "mohegan_sun.json",
+              "score": 0.653
+            }
+          ],
+          "elapsed_ms": 29502,
+          "error": null
+        }
+      ]
+    },
+    {
+      "scenario_id": "h7-03",
+      "scenario_name": "Entertainment guest exploring other domains",
+      "category": "host_triangle_h7_h10_revenue",
+      "behavioral_dimension": "H7_cross_selling_wallet_share",
+      "expected_behavior": "Builds a full evening around the Arena anchor: pre-show dinner at a nearby restaurant, the show itself, and post-show options (Wolf Den late show, Comix, casino floor). The guest leaves with a plan for an entire evening, not just a concert ticket",
+      "expected_behavioral_quality": "When a guest comes for entertainment, the agent expands the visit into dining and other experiences. The cross-sell turns a one-activity visit into a full resort evening where the show is the anchor but not the only experience.",
+      "safety_relevant": false,
+      "source_file": "host_triangle_h7_h10_revenue.yaml",
+      "thread_id": "eval-h7-03-1772975392",
+      "turns": [
+        {
+          "turn_index": 0,
+          "user_message": "We have Arena tickets for Saturday. What else should we do that night?",
+          "agent_response": "I've got you covered for your Saturday night. Since you're already headed to the Arena, I'd suggest starting your evening at novelle\u2014it's an upscale ultra lounge right nearby that's perfect for a pre-show cocktail in a sophisticated atmosphere. \n\nPro tip: novelle is specifically designed to handle the pre- and post-show crowd, so you can enjoy the music and drinks without worrying about being far from your seats. If you want to keep the energy high after the concert, Avalon Nightclub opens at 10:00 PM and features a massive sound and lighting system that keeps the room electric until 2:00 AM. After all that excitement, if you find yourself needing a late-night bite, Lantern Bar & Grill is open 24 hours right in Casino of the Earth. \n\nAre you coming in with a large group or is it just the two of you?",
+          "sources": [
+            {
+              "category": "entertainment",
+              "source": "mohegan_sun.json",
+              "score": 0.67
+            },
+            {
+              "category": "restaurants",
+              "source": "mohegan_sun.json",
+              "score": 0.65
+            }
+          ],
+          "elapsed_ms": 47806,
+          "error": null
+        },
+        {
+          "turn_index": 1,
+          "user_message": "A pre-show dinner sounds great. Where?",
+          "agent_response": "The aroma of seared USDA Prime steaks and the sophisticated atmosphere make Michael Jordan's Steak House the perfect pre-show destination. Located in Casino of the Sky, this upscale steakhouse offers fresh seafood and an extensive wine list in an elegant setting filled with sports memorabilia. \n\nThey open at 5:00 PM on Saturdays, which allows for a relaxed meal before you head over to your seats. Since it is a premier choice for guests with Arena tickets, I'd suggest securing a reservation in advance. The dress code is business casual, and you can expect a price range of $$$$. After your meal, it is just a short walk through the casino to get to the show.\n\nWhat kind of event are you seeing at the Arena\u2014is it a big concert or a sporting event?",
+          "sources": [
+            {
+              "category": "restaurants",
+              "source": "mohegan_sun.json",
+              "score": 0.692
+            },
+            {
+              "category": "entertainment",
+              "source": "mohegan_sun.json",
+              "score": 0.675
+            },
+            {
+              "category": "faq",
+              "source": "mohegan_sun.json",
+              "score": 0.639
+            }
+          ],
+          "elapsed_ms": 57228,
+          "error": null
+        },
+        {
+          "turn_index": 2,
+          "user_message": "And after the show? We don't want the night to end",
+          "agent_response": "If you want to keep the energy high after the final encore, Avalon Nightclub is exactly what you are looking for. It opens at 10:00 PM on Saturdays and stays electric until 2:00 AM with top DJs, huge dance floors, and a state-of-the-art sound system. \n\nIf you would rather have a place where you can still enjoy great music but actually hear each other talk about the show, novelle is an amazing ultra-lounge with craft cocktails and its own DJ. \n\nPro tip: If you end up dancing until the nightclub closes, the Lantern Bar & Grill down in Casino of the Earth is open 24 hours and is the absolute best spot for late-night burgers to cap off the night. \n\nBy the way, the Mohegan Sun Arena has some incredible shows coming up later this year\u2014I can always share what is on the calendar when you plan your next visit. \n\nFor this Saturday, are you leaning more toward a high-energy dance club, or a chic lounge setting for craft cocktails?",
+          "sources": [
+            {
+              "category": "entertainment",
+              "source": "mohegan_sun.json",
+              "score": 0.713
+            },
+            {
+              "category": "restaurants",
+              "source": "mohegan_sun.json",
+              "score": 0.688
+            }
+          ],
+          "elapsed_ms": 71486,
+          "error": null
+        }
+      ]
+    },
+    {
+      "scenario_id": "h8-01",
+      "scenario_name": "Comp-eligible guest receiving offer",
+      "category": "host_triangle_h7_h10_revenue",
+      "behavioral_dimension": "H8_strategic_offer_framing",
+      "expected_behavior": "Presents Leap benefits as things the guest has earned through their loyalty, not as promotions being pushed. Uses insider language \u2014 'a lot of people don't realize' or 'one of the quieter Leap perks' \u2014 that makes the guest feel like they are learning something exclusive",
+      "expected_behavioral_quality": "When mentioning comp eligibility or perks, frames them as earned recognition rather than marketing. The guest should feel that the offer exists because of who they are, not because it is a mass promotion. Uses language like 'you've unlocked' rather than 'we're offering.'",
+      "safety_relevant": false,
+      "source_file": "host_triangle_h7_h10_revenue.yaml",
+      "thread_id": "eval-h8-01-1772975569",
+      "turns": [
+        {
+          "turn_index": 0,
+          "user_message": "I'm at Leap tier. Are there any dining perks I should know about?",
+          "agent_response": "At, the Leap tier includes priority access at many of our restaurants and an enhanced earning rate for Momentum points on your purchases. These points are redeemable for dining throughout the resort, including at Bobby Flay\u2019s Bar Americain, which is open today from 11:30 AM to 10:00 PM.\n\nAt 25,000 Tier Credits you will reach the Ascend tier, which adds a dedicated host and complimentary room upgrades to your benefits. You may be eligible for a complimentary appetizer or dessert at select casual dining spots during this visit, and I'd suggest checking the Mohegan Sun app or a Momentum desk to see if any specific dining discounts have been loaded to your account.\n\nAre you looking for a specific cuisine, At, or would you prefer a recommendation based on which restaurants have the shortest wait for Leap members right now?",
+          "sources": [
+            {
+              "category": "promotions",
+              "source": "mohegan_sun.json",
+              "score": 0.707
+            },
+            {
+              "category": "restaurants",
+              "source": "mohegan_sun.json",
+              "score": 0.636
+            },
+            {
+              "category": "faq",
+              "source": "mohegan_sun.json",
+              "score": 0.621
+            }
+          ],
+          "elapsed_ms": 42138,
+          "error": null
+        },
+        {
+          "turn_index": 1,
+          "user_message": "Nice, I didn't know about those. What about entertainment?",
+          "agent_response": "You can actually use those same Momentum Dollars you earn with your Leap status directly at the Box Office for tickets to the Mohegan Sun Arena or The Cabaret Theatre. It is a great way to treat yourself to a night out.\n\nIf you want to catch something without a ticket, the Wolf Den is right in the middle of the casino floor with free live music \u2014 it has this intimate energy where you are right there with the performer. For a more upscale nightlife vibe later in the week, novelle is our ultra-lounge that mixes craft cocktails with a sophisticated atmosphere and DJ entertainment. \n\nBy the way, the Mohegan Sun Arena has some incredible headliners coming up on the calendar! What kind of music or live entertainment usually catches your eye, At?",
+          "sources": [],
+          "elapsed_ms": 51398,
+          "error": null
+        },
+        {
+          "turn_index": 2,
+          "user_message": "That's actually really cool. I should be using these more",
+          "agent_response": "You definitely should. It is easy to overlook how much value is sitting right there on your card. If you haven't already, I'd suggest downloading the Mohegan Sun app\u2014it tracks your Momentum Dollars in real-time and lets you easily browse what is hitting the Box Office next. \n\nFun fact\u2014if you ever want to make a whole night out of an Arena show, novelle is our upscale lounge right near the action. Their mixologists build some incredible pre-show cocktails, and it is a perfect spot to put those Leap tier points to work before the music starts.\n\nLet's figure out the best way to maximize those perks for you today. Are you staying over with us in the hotel, At, or just visiting for the day?",
+          "sources": [
+            {
+              "category": "entertainment",
+              "source": "mohegan_sun.json",
+              "score": 0.632
+            },
+            {
+              "category": "hotel",
+              "source": "mohegan_sun.json",
+              "score": 0.621
+            },
+            {
+              "category": "gaming",
+              "source": "mohegan_sun.json",
+              "score": 0.616
+            },
+            {
+              "category": "promotions",
+              "source": "mohegan_sun.json",
+              "score": 0.616
+            }
+          ],
+          "elapsed_ms": 60279,
+          "error": null
+        }
+      ]
+    },
+    {
+      "scenario_id": "h8-02",
+      "scenario_name": "Guest asking about loyalty rewards value",
+      "category": "host_triangle_h7_h10_revenue",
+      "behavioral_dimension": "H8_strategic_offer_framing",
+      "expected_behavior": "Explains point redemption options across property domains (dining, spa, hotel, entertainment, free play). When the guest chooses the steakhouse, frames it as 'a dinner you've earned.' The redemption feels like a reward, not a coupon",
+      "expected_behavioral_quality": "When a guest asks about rewards value, the agent frames Momentum Points as a recognition of their play rather than a transactional currency. Connects point redemption to experiences (dining, spa, shows) rather than just dollar equivalents.",
+      "safety_relevant": false,
+      "source_file": "host_triangle_h7_h10_revenue.yaml",
+      "thread_id": "eval-h8-02-1772975723",
+      "turns": [
+        {
+          "turn_index": 0,
+          "user_message": "I've got a bunch of Momentum Points saved up. What can I actually use them for?",
+          "agent_response": "Momentum Points are redeemable for free play, dining at participating restaurants, hotel stays, and retail purchases. You also earn points on your spend at those same restaurants and shops, which helps your balance grow even when you aren't on the gaming floor.\n\nYou can use your points directly at the register for most purchases or manage them through the Mohegan Sun app. Since you've been saving them up, are you thinking of using them for a specific meal or perhaps a stay at the hotel?",
+          "sources": [
+            {
+              "category": "promotions",
+              "source": "mohegan_sun.json",
+              "score": 0.723
+            },
+            {
+              "category": "faq",
+              "source": "mohegan_sun.json",
+              "score": 0.707
+            }
+          ],
+          "elapsed_ms": 28327,
+          "error": null
+        },
+        {
+          "turn_index": 1,
+          "user_message": "Can I use them at the steakhouse?",
+          "agent_response": "Let me be more specific. Yes, you can use your Momentum Points directly at Michael Jordan's Steak House in the Casino of the Sky. \n\nPro tip \u2014 their USDA Prime steaks are incredible, especially when paired with a bottle from their extensive wine list, and your points can cover the entire experience. They open tonight at 5:00 PM, and the dress code is just a simple business casual. \n\nI've got you covered if you want to get a table locked in. After dinner, catching a stand-up act at Comix Roadhouse is a great way to keep the night going. How many people are you looking to seat tonight?",
+          "sources": [
+            {
+              "category": "faq",
+              "source": "mohegan_sun.json",
+              "score": 0.692
+            },
+            {
+              "category": "restaurants",
+              "source": "mohegan_sun.json",
+              "score": 0.703
+            },
+            {
+              "category": "promotions",
+              "source": "mohegan_sun.json",
+              "score": 0.654
+            },
+            {
+              "category": "entertainment",
+              "source": "mohegan_sun.json",
+              "score": 0.66
+            }
+          ],
+          "elapsed_ms": 74510,
+          "error": null
+        },
+        {
+          "turn_index": 2,
+          "user_message": "Awesome, free steak dinner it is",
+          "agent_response": "Using points for a meal at Michael Jordan's Steak House is a common choice for guests looking to maximize their rewards. The restaurant opens today at 5:00 PM in the Casino of the Sky, and the dress code is business casual.\n\nSince you're planning to use your points, you can simply present your Momentum card to the server when the bill arrives. I'd suggest checking your current balance at a Momentum kiosk or through the Mohegan Sun app before you head over to ensure you have enough to cover the full meal, as this is one of our premium dining locations. \n\nI've got you covered if you'd like me to connect you with the host team to secure a table for tonight. After your meal, the Wolf Den in the Casino of the Earth has free live music starting later this evening\u2014it's a great way to enjoy the night without spending more. Are you planning for a group, or is it just a table for two?",
+          "sources": [
+            {
+              "category": "promotions",
+              "source": "mohegan_sun.json",
+              "score": 0.649
+            },
+            {
+              "category": "restaurants",
+              "source": "mohegan_sun.json",
+              "score": 0.639
+            },
+            {
+              "category": "property",
+              "source": "mohegan_sun.json",
+              "score": 0.637
+            },
+            {
+              "category": "faq",
+              "source": "mohegan_sun.json",
+              "score": 0.621
+            }
+          ],
+          "elapsed_ms": 32228,
+          "error": null
+        }
+      ]
+    },
+    {
+      "scenario_id": "h8-03",
+      "scenario_name": "Guest receiving a promotional offer",
+      "category": "host_triangle_h7_h10_revenue",
+      "behavioral_dimension": "H8_strategic_offer_framing",
+      "expected_behavior": "Validates that the double points weekend is worthwhile by connecting it to the guest's tier progression and earning potential. Frames the promotion as an accelerator for benefits the guest already cares about. Makes coming in this weekend feel like a strategic decision, not a marketing response",
+      "expected_behavioral_quality": "When presenting a promotion, the agent frames it as something special rather than mass-distributed. Uses personal language and connects the offer to the guest's known preferences. The promotion should feel selected for them, not blasted to an email list.",
+      "safety_relevant": false,
+      "source_file": "host_triangle_h7_h10_revenue.yaml",
+      "thread_id": "eval-h8-03-1772975859",
+      "turns": [
+        {
+          "turn_index": 0,
+          "user_message": "I got an email about double Momentum Points this weekend. Is that worth coming in for?",
+          "agent_response": "Double Momentum Points means you earn twice the usual spending power for free play, hotel stays, and retail purchases across the resort. It is a highly efficient way to build your reward balance quickly. \n\nAs an insider tip, those points can be used directly at our restaurants. A strong weekend of play during a multiplier event can easily cover a premium dinner at places like Tuscany or SolToro. While you are earning those extra points, your play is also accumulating regular Tier Credits, which moves you closer to unlocking benefits like priority access at the Leap tier or a dedicated host at Ascend. \n\nWhat do you usually prefer to spend your rewards on when you visit?",
+          "sources": [
+            {
+              "category": "faq",
+              "source": "mohegan_sun.json",
+              "score": 0.712
+            },
+            {
+              "category": "promotions",
+              "source": "mohegan_sun.json",
+              "score": 0.703
+            }
+          ],
+          "elapsed_ms": 56927,
+          "error": null
+        },
+        {
+          "turn_index": 1,
+          "user_message": "How much faster does that add up?",
+          "agent_response": "With the double multiplier, the play required to earn a reward is cut exactly in half. You accumulate spendable points twice as fast using your standard gaming budget. \n\nThe exact speed at which your balance grows depends on your game of choice, as slots, table games, and poker all accumulate points at different baseline rates based on your average bet and time played. If you check your progress at a Momentum kiosk, you will see the accelerated points hitting your account almost immediately during your session.\n\nDo you usually spend your time on the slot floor, or are you more of a table games player?",
+          "sources": [],
+          "elapsed_ms": 54768,
+          "error": null
+        },
+        {
+          "turn_index": 2,
+          "user_message": "Alright, I'm in. Coming this Saturday",
+          "agent_response": "Excellent choice. Saturday nights here have an incredible energy, and you will be able to put those double points to good use. \n\nIf you want to take a break from the floor, Comix Roadhouse has comedy shows running throughout the weekend. As a quick insider tip, they serve a full dinner menu right during the performance, and you can actually use your Momentum Dollars to cover the bill. Alternatively, if you want to keep the energy high after a winning streak, Avalon Nightclub gets going around 10:00 PM with state-of-the-art sound and top DJs. \n\nBy the way, if you keep building your play this weekend, you will unlock some really nice perks at the next tier level \u2014 definitely worth checking your progress at a kiosk before you head home. \n\nAre you looking for a lively night out with your group, or would you prefer a more relaxed lounge vibe after you play?",
+          "sources": [],
+          "elapsed_ms": 71735,
+          "error": null
+        }
+      ]
+    },
+    {
+      "scenario_id": "h9-01",
+      "scenario_name": "Guest open to suggestions for a special evening",
+      "category": "host_triangle_h7_h10_revenue",
+      "behavioral_dimension": "H9_revenue_aware_steering",
+      "expected_behavior": "Reads 'no budget concerns' and 'really special' as clear premium signals. Leads with the highest-tier dining option and builds a full VIP evening. Does not mention budget alternatives. The steering feels like a host sharing their genuine top picks, not an upsell script",
+      "expected_behavioral_quality": "When a guest signals they want something special, the agent steers toward premium experiences that match the occasion. The premium suggestion feels like expert guidance, not upselling. The agent reads context cues (occasion, group, tone) to calibrate the recommendation tier.",
+      "safety_relevant": false,
+      "source_file": "host_triangle_h7_h10_revenue.yaml",
+      "thread_id": "eval-h9-01-1772976043",
+      "turns": [
+        {
+          "turn_index": 0,
+          "user_message": "We want to do something really special tonight. No budget concerns. What's the best?",
+          "agent_response": "Welcome. I know you mentioned no budget, but some of our most memorable spots aren't actually the most expensive. My top pick for you tonight is The Cabaret Theatre. It's an intimate 400-seat room with table-side cocktail service that gives you a completely VIP feel. Pro tip: it\u2019s a hidden gem for catching great acts up close without dealing with the massive arena crowds. \n\nBy the way, with your visit today you're earning toward rewards \u2014 I can connect you with a host who can check your exact tier and what comps you qualify for. \n\nHow many are in your group tonight?",
+          "sources": [
+            {
+              "category": "entertainment",
+              "source": "mohegan_sun.json",
+              "score": 0.705
+            },
+            {
+              "category": "restaurants",
+              "source": "mohegan_sun.json",
+              "score": 0.68
+            }
+          ],
+          "elapsed_ms": 107980,
+          "error": null
+        },
+        {
+          "turn_index": 1,
+          "user_message": "Michael Jordan's sounds perfect. What about wine?",
+          "agent_response": "Michael Jordan's Steak House is a phenomenal choice. Their wine program is extensive and heavily features bold, robust reds that are curated specifically to stand up to their USDA Prime cuts. Walking in, you get that classic, upscale steakhouse energy, and pairing a premium Cabernet with their prime ribeye is an unmatched experience here.\n\nSince you are looking to go all out tonight, I've got you. They open at 5:00 PM over in the Casino of the Sky, and I can have the host team reach out to finalize your table and make sure your evening is set perfectly. \n\nAfter dinner, catching the free live music over at the Wolf Den is a great way to keep the energy going. \n\nAre you typically drawn to a heavy red with your steak, or are you thinking of starting with some champagne to celebrate the occasion?",
+          "sources": [],
+          "elapsed_ms": 51390,
+          "error": null
+        },
+        {
+          "turn_index": 2,
+          "user_message": "And after dinner? We want the full VIP experience",
+          "agent_response": "I love that energy! Since it is Sunday night, our big weekend clubs like Avalon are resting, but we can absolutely keep that exclusive vibe going.\n\nI highly recommend heading over to Birdcage Bar after your steaks. It's an upscale cocktail lounge right in the Casino of the Sky. Pro tip: it gives you that sophisticated, premium nightlife atmosphere with incredible craft cocktails, but it is actually a fantastic value compared to typical VIP bottle service. They stay open until 2:00 AM, making it the perfect post-dinner spot.\n\nAfter grabbing a drink, you can catch the live music at the Wolf Den. The shows are completely free, but getting right up near the stage has an electric, intimate energy that feels incredibly special. I've got you covered \u2014 I can have our host team reach out to make sure your transition from dinner to the rest of your evening is completely seamless.\n\nBy the way, the Mohegan Sun Arena has some great shows coming up \u2014 I can share what's on the calendar if you're interested for your next visit.\n\nWhat kind of music do you usually look for when you are out for the night?",
+          "sources": [],
+          "elapsed_ms": 71220,
+          "error": null
+        }
+      ]
+    },
+    {
+      "scenario_id": "h9-02",
+      "scenario_name": "Guest on a budget needing value guidance",
+      "category": "host_triangle_h7_h10_revenue",
+      "behavioral_dimension": "H9_revenue_aware_steering",
+      "expected_behavior": "Leads with genuinely good affordable options, not just the cheapest. Bobby's Burgers, Frank Pepe's, and the Buffet all have real culinary appeal. Pairs with the Wolf Den (free shows) to create a full evening without pressure. The guest leaves excited about a great night out, not feeling like they got the budget tour",
+      "expected_behavioral_quality": "When a guest signals budget constraints, the agent steers toward high-value experiences without condescending. Finds genuinely great options at every price point. Never makes the guest feel like they are getting a lesser experience \u2014 just a different one.",
+      "safety_relevant": false,
+      "source_file": "host_triangle_h7_h10_revenue.yaml",
+      "thread_id": "eval-h9-02-1772976274",
+      "turns": [
+        {
+          "turn_index": 0,
+          "user_message": "What's good for dinner that won't break the bank?",
+          "agent_response": "Lantern Bar & Grill in the Casino of the Earth is a standout choice for a satisfying dinner that keeps your budget in mind. It's open 24 hours and serves a wide range of American classics, from grilled steaks to fresh salads, in a very laid-back atmosphere. An insider detail many guests appreciate is that the kitchen maintains its full menu all night, so you aren't limited to just snacks if you're eating later in the evening. \n\nMost entrees fall into the $$ price range and no reservations are required, though it's always wise to confirm specific pricing and hours once you're at the property. Are you looking for a spot that can accommodate a larger group, or is it just a couple of you tonight? After dinner, you might enjoy catching a set at the Wolf Den, which is conveniently located in the same casino area.",
+          "sources": [
+            {
+              "category": "restaurants",
+              "source": "mohegan_sun.json",
+              "score": 0.644
+            }
+          ],
+          "elapsed_ms": 33229,
+          "error": null
+        },
+        {
+          "turn_index": 1,
+          "user_message": "The Buffet sounds good. Any free entertainment after?",
+          "agent_response": "Seasons Buffet is open today from 4:00 PM to 9:00 PM, and it's a great value for a Sunday dinner. For free entertainment, the Wolf Den is the place to be\u2014it\u2019s our signature venue for complimentary live music right in the center of the Casino of the Earth. \n\nI\u2019d suggest heading over about 45 minutes before the 8:00 PM show to grab a seat, as it's an intimate 350-seat space that fills up quickly. An insider tip is that while the music is free, the quality is top-tier; we often have national touring acts on that stage. What kind of music do you usually listen to?",
+          "sources": [
+            {
+              "category": "entertainment",
+              "source": "mohegan_sun.json",
+              "score": 0.706
+            },
+            {
+              "category": "restaurants",
+              "source": "mohegan_sun.json",
+              "score": 0.665
+            },
+            {
+              "category": "dining",
+              "source": "cms:dining/dining-001",
+              "score": 0.663
+            }
+          ],
+          "elapsed_ms": 39071,
+          "error": null
+        },
+        {
+          "turn_index": 2,
+          "user_message": "Wait, the Wolf Den is free? That's awesome",
+          "agent_response": "I've got you\u2014it's completely free every night of the week. Because it's right in the center of the Casino of the Earth, the energy is electric and you can just walk right in without needing a ticket.\n\nAn insider detail most people don't realize is that many legendary acts and rising stars play there, so you're seeing top-tier talent without the arena price tag. To keep your night completely budget-friendly, remember that self-parking in our garages is also complimentary. Are you more into a high-energy rock show, or do you prefer something a bit more mellow like an acoustic set?",
+          "sources": [
+            {
+              "category": "entertainment",
+              "source": "mohegan_sun.json",
+              "score": 0.773
+            },
+            {
+              "category": "faq",
+              "source": "mohegan_sun.json",
+              "score": 0.667
+            },
+            {
+              "category": "promotions",
+              "source": "mohegan_sun.json",
+              "score": 0.637
+            },
+            {
+              "category": "gaming",
+              "source": "mohegan_sun.json",
+              "score": 0.629
+            },
+            {
+              "category": "amenities",
+              "source": "mohegan_sun.json",
+              "score": 0.633
+            }
+          ],
+          "elapsed_ms": 33036,
+          "error": null
+        }
+      ]
+    },
+    {
+      "scenario_id": "h10-01",
+      "scenario_name": "Guest asking agent to arrange something",
+      "category": "host_triangle_h7_h10_revenue",
+      "behavioral_dimension": "H10_host_identity_authority",
+      "expected_behavior": "Handles the reservation request with host authority \u2014 'let me arrange that' not 'you can call the restaurant.' Accepts the special seating request with confidence. When the guest compliments the service, accepts it naturally. The agent feels like an insider who can pull strings, not a search engine",
+      "expected_behavioral_quality": "When a guest asks the agent to arrange or set up something, the agent projects the authority of a host who can make things happen. Uses language like 'let me look into that' rather than 'you'll need to call.' Takes ownership of the request even when it needs to be escalated.",
+      "safety_relevant": false,
+      "source_file": "host_triangle_h7_h10_revenue.yaml",
+      "thread_id": "eval-h10-01-1772976380",
+      "turns": [
+        {
+          "turn_index": 0,
+          "user_message": "Can you set up a dinner reservation at Tuscany for 4 tonight at 7?",
+          "agent_response": "I've got you. Todd English's Tuscany is an inspired choice for a party of four tonight\u2014the wood-fired aroma hits you the moment you walk into the Casino of the Sky, and their handmade pastas are a true highlight. They are open tonight until 10:00 PM, and for a 7:00 PM dinner, you'll want to aim for business casual attire to fit the elegant, Tuscan-inspired setting.\n\nSince reservations are highly recommended for this time, I will help gather the remaining details so I can connect you with our host team to finalize everything for you. Pro tip: If you enjoy a bit of atmosphere, their tables near the indoor waterfall provide one of the most unique dining backdrops on the property. After a meal like that, catching a live set at the Wolf Den nearby is a perfect way to keep the evening going. \n\nIs this dinner for a special occasion, and are there any dietary restrictions I should make sure the chef knows about?",
+          "sources": [
+            {
+              "category": "restaurants",
+              "source": "mohegan_sun.json",
+              "score": 0.674
+            },
+            {
+              "category": "faq",
+              "source": "mohegan_sun.json",
+              "score": 0.63
+            }
+          ],
+          "elapsed_ms": 42571,
+          "error": null
+        },
+        {
+          "turn_index": 1,
+          "user_message": "We'd also love a table with a good view if possible",
+          "agent_response": "I will ensure the host team adds that note to your reservation details. The dining room sits right under the celestial dome in the Casino of the Sky, so the tables nearest the indoor waterfall truly offer the most striking atmosphere. I will pass this along so they can prioritize that section for your party of four. \n\nTo help set the stage for your evening, do you usually lean toward starting with a signature cocktail, or would you like the team to have a robust Italian red ready to recommend when you sit down?",
+          "sources": [],
+          "elapsed_ms": 79183,
+          "error": null
+        },
+        {
+          "turn_index": 2,
+          "user_message": "Perfect. You're like having a personal concierge",
+          "agent_response": "That is exactly what I am here for. With three distinct casinos and over 40 restaurants to navigate across the property, it always helps to have a guide. \n\nBy the way, the Mohegan Sun Arena has some great shows coming up \u2014 I can share what is on the calendar later if you are interested in planning ahead for your next trip. Since I am getting your table preferences organized to hand off to the host team, what name should I put on my notes?",
+          "sources": [],
+          "elapsed_ms": 77569,
+          "error": null
+        }
+      ]
+    },
+    {
+      "scenario_id": "h10-02",
+      "scenario_name": "Guest needs help with a complex multi-part request",
+      "category": "host_triangle_h7_h10_revenue",
+      "behavioral_dimension": "H10_host_identity_authority",
+      "expected_behavior": "Takes full ownership of the multi-domain request. Builds a coordinated birthday weekend plan: Italian dinner with birthday touches Saturday, spa treatment Sunday, and room upgrade guidance. Presents it as a unified plan, not three separate requests. The guest feels like one person is handling everything",
+      "expected_behavioral_quality": "When a guest has a complex request spanning multiple property domains, the agent coordinates across all of them with confidence. Does not pass the guest between departments. Takes ownership of the full request and presents a unified plan.",
+      "safety_relevant": false,
+      "source_file": "host_triangle_h7_h10_revenue.yaml",
+      "thread_id": "eval-h10-02-1772976579",
+      "turns": [
+        {
+          "turn_index": 0,
+          "user_message": "I need help planning my wife's surprise birthday weekend. Dinner Saturday, spa Sunday, and a room upgrade if possible",
+          "agent_response": "Happy upcoming birthday to your wife! I've got you on setting up a seamless surprise weekend. \n\nSince you are celebrating, I suggest making these arrangements early so your Saturday and Sunday are completely stress-free. For dinner, Michael Jordan's Steak House in the Casino of the Sky offers an elegant, upscale setting with prime steaks and an extensive wine list. For Sunday, the award-winning Mandara Spa features a tranquil relaxation lounge and full-service treatments that make for a perfect spa day. Regarding the room upgrade, we can look at your current Momentum tier status to see what might be unlocked for you this weekend.\n\nBy the way, since it is her birthday, Mohegan Sun would love to treat you to a $25 dining credit, and I can arrange a complimentary celebration dessert at dinner. \n\nBefore we finalize the plans, how many people will be joining you for dinner on Saturday?",
+          "sources": [],
+          "elapsed_ms": 52513,
+          "error": null
+        },
+        {
+          "turn_index": 1,
+          "user_message": "She loves Italian food and deep tissue massage. Can you work with that?",
+          "agent_response": "I've got you. Todd English's Tuscany is exactly what you need for Saturday. It's upscale, right in the Casino of the Sky, and we can request the waterfall table for the perfect birthday backdrop. For Sunday, Mandara Spa does an exceptional deep tissue massage that will perfectly cap off the weekend. \n\nSince her birthday is coming up, Mohegan Sun would love to treat you to a $25 dining credit to use at Tuscany! Let me get the host team involved so they can finalize these reservations for you and coordinate that room upgrade. \n\nBy the way, the Mohegan Sun Arena has some great shows coming up \u2014 I can share what's on the calendar if you want to add some entertainment to the weekend. For dinner, is it just a romantic night for the two of you, or are we setting up a table for a larger party?",
+          "sources": [],
+          "elapsed_ms": 67475,
+          "error": null
+        },
+        {
+          "turn_index": 2,
+          "user_message": "This is exactly what I needed. You've been amazing",
+          "agent_response": "Exactly. Making sure she has an incredible birthday is what I'm here for. \n\nThanks for chatting with us to get this all planned out \u2014 here are $5 bonus tier points to use at Mohegan Sun during your trip. If you keep building those tier credits this weekend, you'll unlock some really nice perks at the next level, so it's worth checking your progress while you're here. \n\nWhat time are you planning to arrive on Saturday so I can have the host team ready to welcome you?",
+          "sources": [],
+          "elapsed_ms": 60823,
+          "error": null
+        }
+      ]
+    }
+  ]
+}

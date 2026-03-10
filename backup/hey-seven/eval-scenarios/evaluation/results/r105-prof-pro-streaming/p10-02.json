@@ -1,0 +1,66 @@
+{
+  "scenario_id": "p10-02",
+  "scenario_name": "Agent uses dining preference from earlier turn",
+  "category": "profiling_p8_p9_p10_completeness",
+  "behavioral_dimension": "P10_cross_turn_memory",
+  "expected_behavior": "Seafood preference from turn 1 carries into the turn 3 lunch recommendation. The agent does not ask 'what kind of food?' again. The preference was stored and applied across topic changes",
+  "expected_behavioral_quality": "A dining preference mentioned in turn 1 shapes recommendations in a later turn about a different meal. The agent carries 'I love seafood' from dinner planning to breakfast/lunch suggestions without the guest needing to repeat it.",
+  "safety_relevant": false,
+  "source_file": "profiling_p8_p9_p10_completeness.yaml",
+  "thread_id": "eval-p10-02-1772997437",
+  "turns": [
+    {
+      "turn_index": 0,
+      "user_message": "I love seafood, where should I go for dinner?",
+      "agent_response": "For the freshest catch on the property tonight, Sushi Palace in the Casino of the Sky is the place to be. The fish is handled with such precision that the sashimi practically melts, and their sake menu is thoughtfully curated to match the delicate flavors of the seafood. They are open until 10:00 PM tonight with a casual vibe, and while prices are typically in the $$$ range, the omakase quality is exceptional. \n\nPro tip \u2014 if you're feeling adventurous, let the chefs lead the way with the omakase to see the absolute best of what they've prepared for the day. After dinner, the Wolf Den is just a short walk away if you're in the mood for some live music.\n\nHow many people are in your party for dinner tonight?",
+      "sources": [
+        {
+          "category": "restaurants",
+          "source": "mohegan_sun.json",
+          "score": 0.629
+        }
+      ],
+      "elapsed_ms": 46671,
+      "error": null
+    },
+    {
+      "turn_index": 1,
+      "user_message": "Great, what about shows tonight?",
+      "agent_response": "The Wolf Den is the centerpiece for entertainment tonight with a free live performance starting at 8:00 PM. Since it's located right in the Casino of the Earth, you can walk straight over after dinner without needing to worry about tickets or reservations. It's a fantastic spot because the 350-seat capacity means you're never more than a few rows from the stage.\n\nInsider tip \u2014 the acoustics in the Den are designed so there isn't a bad seat in the house, but sitting near the perimeter allows for easier access to the lounge service. For future visits, the Mohegan Sun Arena often hosts massive headliners, and I can share that upcoming schedule if you're already planning a trip back soon.\n\nAre you more into high-energy rock and pop, or do you prefer a more soulful, acoustic set?",
+      "sources": [
+        {
+          "category": "entertainment",
+          "source": "mohegan_sun.json",
+          "score": 0.676
+        },
+        {
+          "category": "faq",
+          "source": "mohegan_sun.json",
+          "score": 0.683
+        }
+      ],
+      "elapsed_ms": 35498,
+      "error": null
+    },
+    {
+      "turn_index": 2,
+      "user_message": "And tomorrow for lunch?",
+      "agent_response": "SolToro Taqueria & Tequila Bar in the Casino of the Earth is your best bet for a seafood-inspired lunch tomorrow. Their ceviche is marinated perfectly with a bright, citrusy finish that pairs beautifully with their fresh fish tacos. They open at 11:30 AM daily, offer a casual atmosphere in the $$ price range, and reservations are generally not required.\n\nInsider tip \u2014 their tequila and mezcal selection is one of the most extensive in the region, and even a small tasting can really elevate the coastal flavors of the lime and seafood. Since hours and prices can vary, it is always a good idea to confirm those details when you arrive at the host stand. After lunch, the Mandara Spa is a great place to keep that relaxed vibe going with a quick treatment.\n\nDo you typically look for a quiet, relaxing lunch spot or do you enjoy a more high-energy atmosphere while you eat?",
+      "sources": [
+        {
+          "category": "restaurants",
+          "source": "mohegan_sun.json",
+          "score": 0.641
+        },
+        {
+          "category": "faq",
+          "source": "mohegan_sun.json",
+          "score": 0.606
+        }
+      ],
+      "elapsed_ms": 34275,
+      "error": null
+    }
+  ],
+  "completed": true
+}

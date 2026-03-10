@@ -1,0 +1,49 @@
+{
+  "scenario_id": "p2-02",
+  "scenario_name": "Agent asks about occasion after comp inquiry",
+  "category": "profiling_p2_active_probing",
+  "behavioral_dimension": "P2_active_probing",
+  "expected_behavior": "First response answers the comp question and naturally asks about an occasion. When birthday is revealed, the agent upgrades its service posture and connects the occasion to available birthday perks",
+  "expected_behavioral_quality": "When a guest asks about comps or promotions, the agent provides comp information and naturally bridges to 'Any special occasion we should know about?' The occasion question is framed as enabling better service or a potential comp enhancement.",
+  "safety_relevant": false,
+  "source_file": "profiling_p2_active_probing.yaml",
+  "thread_id": "eval-p2-02-1772955385",
+  "turns": [
+    {
+      "turn_index": 0,
+      "user_message": "What comps are available for dinner?",
+      "agent_response": "Dining comps at Mohegan Sun are primarily distributed through Momentum Points earned during play. These points are redeemable at a 1:1 ratio at participating on-site restaurants, such as Ballo Italian Restaurant in the Casino of the Sky or Lantern Bar & Grill in the Casino of the Earth.\n\nBased on available information, you may be eligible for a complimentary appetizer or dessert at select casual dining spots. Eligibility for specific dining offers and comp values is determined by your Momentum tier level and recent gaming activity. For example, higher tiers like Ignite or Leap often receive enhanced earn rates and specific dining rewards. \n\nTo confirm your current eligibility or redeem points for a meal, visit any Momentum desk or player services. If you are not yet a member, signing up for a Core account is free and allows you to start earning points toward dinner immediately. After dining, you might consider visiting the Wolf Den for live entertainment, which is centrally located in the Casino of the Earth.\n\nWhat kind of cuisine are you in the mood for tonight?",
+      "sources": [
+        {
+          "category": "restaurants",
+          "source": "mohegan_sun.json",
+          "score": 0.687
+        },
+        {
+          "category": "promotions",
+          "source": "mohegan_sun.json",
+          "score": 0.686
+        }
+      ],
+      "elapsed_ms": 41476,
+      "error": null
+    },
+    {
+      "turn_index": 1,
+      "user_message": "It's my birthday actually",
+      "agent_response": "Happy birthday. I've got you \u2014 Ballo Italian Restaurant is the perfect spot for a birthday celebration. Since it's your birthday, we'd love to treat you to a $25 dining credit at any of our restaurants. If you'd like, I can connect you with the host team to help finalize a spot for you. How many people are in your party?",
+      "sources": [],
+      "elapsed_ms": 66118,
+      "error": null
+    },
+    {
+      "turn_index": 2,
+      "user_message": "What can I get for my birthday?",
+      "agent_response": "Happy birthday! Since you are celebrating, Mohegan Sun would love to treat you to a $25 dining credit at any of our restaurants. Based on available information, you may also be eligible for a complimentary appetizer or dessert at select dining locations depending on your play history.\n\nI've got you for a dinner recommendation \u2014 Ballo Italian Restaurant in the Casino of the Sky provides an elevated atmosphere suitable for a birthday celebration. If you are not yet a Momentum member, you are also eligible for a $10 introductory free play bonus when you sign up for the rewards program at any Momentum Desk. I suggest visiting the desk or checking the Mohegan Sun app to confirm all birthday offers currently loaded onto your account. \n\nAfter dinner, you might enjoy visiting the Shops at Mohegan Sun, which are open until 9:00 PM today. Are you planning a birthday dinner for a large group or just a few people?",
+      "sources": [],
+      "elapsed_ms": 49895,
+      "error": null
+    }
+  ],
+  "completed": true
+}

@@ -1,0 +1,55 @@
+{
+  "scenario_id": "agentic-09",
+  "scenario_name": "Mobility awareness from contextual cues",
+  "category": "behavioral_agentic",
+  "behavioral_dimension": "B4_agentic",
+  "expected_behavior": "Proactively includes accessibility information in every recommendation after the wheelchair mention. Does not suggest venues requiring stairs or long walks without noting accessibility",
+  "expected_behavioral_quality": "When a guest mentions wheelchair, mobility issues, or difficulty walking, proactively includes accessibility information in all recommendations. Does not wait to be asked about accessibility.",
+  "safety_relevant": false,
+  "source_file": "behavioral_agentic.yaml",
+  "thread_id": "eval-agentic-09-1772817851",
+  "turns": [
+    {
+      "turn_index": 0,
+      "user_message": "My mom uses a wheelchair. What restaurants are easy to get to?",
+      "agent_response": "Lantern Bar & Grill in the Casino of the Earth is an excellent choice for accessibility because it features an open floor plan and wide, level entryways that make navigating a wheelchair quite simple. They are open 24 hours daily with a price range of around $$, serving a full menu of American classics from grilled steaks to fresh salads. \n\nAs an insider tip, the staff there is very experienced in accommodating mobility needs and can provide a table with extra clearance to ensure she is comfortable, and no reservations are required. Please note that hours and prices may vary, so I suggest confirming those details once you are on the property. Does she have a particular favorite cuisine, or are you leaning toward a more casual American-style dinner tonight? After you finish your meal, the Wolf Den is just a short, level walk away and often has great live music!",
+      "sources": [
+        {
+          "category": "restaurants",
+          "source": "mohegan_sun.json",
+          "score": 0.638
+        }
+      ],
+      "elapsed_ms": 34444,
+      "error": null
+    },
+    {
+      "turn_index": 1,
+      "user_message": "And can she get to the spa?",
+      "agent_response": "She can certainly get to either of our spas, as Mohegan Sun is designed with accessibility at the forefront, featuring spacious elevators and level paths throughout the property. Let me help you with some details so she can choose the best experience. Mandara Spa is open until 8:00 PM daily and offers Balinese-inspired treatments, including incredible massages and facials, while Elemis Spa in the Earth Tower is open until 7:00 PM and specializes in luxury skincare and express services.\n\nAs an insider tip, the relaxation lounge at Mandara Spa is a particularly serene space where she can sit back and truly unwind before her appointment. Please note that spa hours and prices are subject to change, so it is best to confirm the details when you arrive on the property. I can connect you with our host team to finalize the booking whenever you are ready. Does she prefer a full-body massage to relax, or would she enjoy a premium facial more? After her spa session, staying at the resort makes it easy to head straight to a nice dinner without having to worry about a drive home.",
+      "sources": [
+        {
+          "category": "amenities",
+          "source": "mohegan_sun.json",
+          "score": 0.662
+        },
+        {
+          "category": "faq",
+          "source": "mohegan_sun.json",
+          "score": 0.643
+        }
+      ],
+      "elapsed_ms": 49405,
+      "error": null
+    },
+    {
+      "turn_index": 2,
+      "user_message": "Great. She'll love that.",
+      "agent_response": "",
+      "sources": [],
+      "elapsed_ms": 60003,
+      "error": "TIMEOUT (60.0s)"
+    }
+  ],
+  "completed": true
+}

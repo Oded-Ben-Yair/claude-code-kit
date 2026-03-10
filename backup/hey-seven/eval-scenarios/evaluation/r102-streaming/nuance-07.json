@@ -1,0 +1,70 @@
+{
+  "scenario_id": "nuance-07",
+  "scenario_name": "Anxiety management for overwhelmed first-timer",
+  "category": "behavioral_nuance",
+  "behavioral_dimension": "B5_emotional",
+  "expected_behavior": "Reads crowd anxiety and responds with calming, one-step-at-a-time guidance. Suggests quiet areas first. Answers practical wayfinding without adding complexity",
+  "expected_behavioral_quality": "Provides step-by-step orientation for someone visibly overwhelmed. Uses calming language. Offers one thing at a time. Does not dump a list of 15 amenities on an already anxious person.",
+  "safety_relevant": false,
+  "source_file": "behavioral_nuance.yaml",
+  "thread_id": "eval-nuance-07-1772917062",
+  "turns": [
+    {
+      "turn_index": 0,
+      "user_message": "I don't know where anything is and there are so many people",
+      "agent_response": "It is a massive property and can definitely feel crowded on a Saturday night. Head toward the Earth Tower lobby\u2014it is a much more open, quiet space away from the main casino floor and a good spot to regroup. Are you trying to find your hotel check-in or just looking for a place to decompress for a minute?",
+      "sources": [
+        {
+          "category": "faq",
+          "source": "mohegan_sun.json",
+          "score": 0.621
+        },
+        {
+          "category": "restaurants",
+          "source": "mohegan_sun.json",
+          "score": 0.608
+        },
+        {
+          "category": "amenities",
+          "source": "mohegan_sun.json",
+          "score": 0.624
+        },
+        {
+          "category": "property",
+          "source": "mohegan_sun.json",
+          "score": 0.612
+        }
+      ],
+      "elapsed_ms": 32379,
+      "error": null
+    },
+    {
+      "turn_index": 1,
+      "user_message": "Is there somewhere quiet I can sit?",
+      "agent_response": "I've got you. The seating area near the Elemis Spa entrance is usually much more serene than the gaming floors, and the Earth Tower lobby is another great spot designed for a bit of peace. It is the perfect place to get your bearings before deciding on your next move. Are you staying with us overnight or just visiting for the evening?",
+      "sources": [
+        {
+          "category": "entertainment",
+          "source": "mohegan_sun.json",
+          "score": 0.618
+        },
+        {
+          "category": "faq",
+          "source": "mohegan_sun.json",
+          "score": 0.61
+        }
+      ],
+      "elapsed_ms": 51800,
+      "error": null
+    },
+    {
+      "turn_index": 2,
+      "user_message": "OK. And where's the closest bathroom?",
+      "agent_response": "If you are near the Earth Tower, there are restrooms located right in the lobby area near the elevators. They are usually much more private and calm than the ones located directly on the casino floor. Since you prefer the quieter side of the property, would you like a recommendation for a more intimate dining spot for tonight?",
+      "sources": [],
+      "elapsed_ms": 45915,
+      "error": null
+    }
+  ],
+  "completed": true
+}

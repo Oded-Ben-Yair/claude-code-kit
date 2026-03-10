@@ -1,0 +1,86 @@
+{
+  "scenario_id": "p5-02",
+  "scenario_name": "Agent avoids Phase 3 questions in first interaction",
+  "category": "profiling_p5_progressive_sequence",
+  "behavioral_dimension": "P5_progressive_sequencing",
+  "expected_behavior": "Agent asks about party size, occasion, preferences \u2014 all Phase 1 and 2 topics. Does NOT ask about gaming budget, comp expectations, loyalty status, or how much they typically spend. Those questions are too early for a first-time guest",
+  "expected_behavioral_quality": "In a first interaction, the agent NEVER asks Phase 3 questions (relationship-level: gaming budget, comp history, host relationship, personal financial signals). These feel invasive before trust is established. The agent stays in Phase 1 (foundation) and Phase 2 (preferences) only.",
+  "safety_relevant": false,
+  "source_file": "profiling_p5_progressive_sequence.yaml",
+  "thread_id": "eval-p5-02-1772958729",
+  "turns": [
+    {
+      "turn_index": 0,
+      "user_message": "First time here, what do you recommend?",
+      "agent_response": "Welcome to Mohegan Sun. You're in great hands here, so take your time getting settled. Start your morning at Hash House A Go Go in Casino of the Earth for some serious comfort food. Pro tip: the portions are massive, so it is the best spot to fuel up while you get your bearings. Afterward, you can head over to the Wolf Den nearby to check the schedule for tonight's free live music. \n\nWhat brought you out to visit us today?",
+      "sources": [
+        {
+          "category": "restaurants",
+          "source": "mohegan_sun.json",
+          "score": 0.675
+        },
+        {
+          "category": "entertainment",
+          "source": "mohegan_sun.json",
+          "score": 0.67
+        },
+        {
+          "category": "faq",
+          "source": "mohegan_sun.json",
+          "score": 0.685
+        }
+      ],
+      "elapsed_ms": 37098,
+      "error": null
+    },
+    {
+      "turn_index": 1,
+      "user_message": "What's fun to do?",
+      "agent_response": "The Wolf Den is a must-see for free live music tonight, and the energy there is always electric. Insider tip: seating is first-come, first-served, so heading there a bit early is the best way to snag a spot close to the stage. After the music, you might want to check out one of our signature restaurants for a late-night bite. Are you leaning toward a high-energy show or a relaxing spa day?",
+      "sources": [
+        {
+          "category": "entertainment",
+          "source": "mohegan_sun.json",
+          "score": 0.671
+        },
+        {
+          "category": "faq",
+          "source": "mohegan_sun.json",
+          "score": 0.661
+        },
+        {
+          "category": "amenities",
+          "source": "mohegan_sun.json",
+          "score": 0.65
+        }
+      ],
+      "elapsed_ms": 34976,
+      "error": null
+    },
+    {
+      "turn_index": 2,
+      "user_message": "We like trying new restaurants",
+      "agent_response": "For tonight, Ballo Italian Restaurant is hard to beat\u2014it offers contemporary Italian soul with housemade pastas and risottos that guests love. It's located in the Casino of the Sky and is open from 5:00 PM to 10:00 PM tonight, with a $$$ price range; I've got you with the details, and I'd recommend a reservation to secure your spot. Insider tip: the modern presentation of their traditional recipes makes every dish feel like a discovery. \n\nWhat kind of cuisine do you usually look for when trying somewhere new?\n\nAfter your meal, you might enjoy heading over to the shops in the Sky for a little evening browsing.",
+      "sources": [
+        {
+          "category": "entertainment",
+          "source": "mohegan_sun.json",
+          "score": 0.648
+        },
+        {
+          "category": "restaurants",
+          "source": "mohegan_sun.json",
+          "score": 0.643
+        },
+        {
+          "category": "promotions",
+          "source": "mohegan_sun.json",
+          "score": 0.634
+        }
+      ],
+      "elapsed_ms": 38499,
+      "error": null
+    }
+  ],
+  "completed": true
+}

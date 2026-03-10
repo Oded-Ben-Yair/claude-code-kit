@@ -1,0 +1,89 @@
+{
+  "scenario_id": "proactive-01",
+  "scenario_name": "Introvert giving one-word answers is satisfied, not disengaged",
+  "category": "behavioral_proactive",
+  "behavioral_dimension": "B3_engagement",
+  "expected_behavior": "Matches the terse style throughout. Does not try to expand answers or engage the guest in longer conversation. The 'Good' and 'Perfect thanks' confirm satisfaction \u2014 respect the style",
+  "expected_behavioral_quality": "Recognizes that short answers can signal satisfaction, not just disengagement. When the guest keeps asking new questions (progressing the conversation), treat the brevity as a communication style rather than dissatisfaction. Do NOT try to 'engage' them more.",
+  "safety_relevant": false,
+  "source_file": "behavioral_proactive.yaml",
+  "thread_id": "eval-proactive-01-1772918472",
+  "turns": [
+    {
+      "turn_index": 0,
+      "user_message": "Steakhouse hours",
+      "agent_response": "Michael Jordan's Steak House in the Casino of the Sky is our premier choice for USDA Prime cuts and is open tonight until 10:00 PM. It is a sophisticated spot with a $$$$ price range and business casual dress code, so I suggest heading over shortly as reservations are highly recommended. How many guests are in your party this evening? After dinner, you should consider catching the live music over at the Wolf Den.",
+      "sources": [
+        {
+          "category": "restaurants",
+          "source": "mohegan_sun.json",
+          "score": 0.697
+        },
+        {
+          "category": "faq",
+          "source": "mohegan_sun.json",
+          "score": 0.665
+        }
+      ],
+      "elapsed_ms": 45924,
+      "error": null
+    },
+    {
+      "turn_index": 1,
+      "user_message": "Pool?",
+      "agent_response": "Our heated indoor pool and hot tub are open to hotel guests until 10:00 PM, which is a great way to unwind before catching a show at the Wolf Den. Are you staying in one of our hotel towers this weekend?",
+      "sources": [
+        {
+          "category": "faq",
+          "source": "mohegan_sun.json",
+          "score": 0.701
+        },
+        {
+          "category": "amenities",
+          "source": "mohegan_sun.json",
+          "score": 0.681
+        },
+        {
+          "category": "entertainment",
+          "source": "mohegan_sun.json",
+          "score": 0.627
+        },
+        {
+          "category": "property",
+          "source": "mohegan_sun.json",
+          "score": 0.634
+        }
+      ],
+      "elapsed_ms": 26722,
+      "error": null
+    },
+    {
+      "turn_index": 2,
+      "user_message": "Good. Spa hours?",
+      "agent_response": "Both spas are closed for the night but open tomorrow at 9:00 AM, with Mandara offering legendary Balinese-inspired treatments until 8:00 PM. Are you looking for a relaxing massage or a refreshing facial to start your morning?",
+      "sources": [
+        {
+          "category": "amenities",
+          "source": "mohegan_sun.json",
+          "score": 0.707
+        },
+        {
+          "category": "faq",
+          "source": "mohegan_sun.json",
+          "score": 0.686
+        }
+      ],
+      "elapsed_ms": 64229,
+      "error": null
+    },
+    {
+      "turn_index": 3,
+      "user_message": "Perfect thanks",
+      "agent_response": "Enjoy your time at Mohegan Sun. If you need anything later, I'm here. And if you'd like a host to check in on you in person, just say the word.",
+      "sources": [],
+      "elapsed_ms": 2,
+      "error": null
+    }
+  ],
+  "completed": true
+}

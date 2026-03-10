@@ -1,0 +1,38 @@
+{
+  "scenario_id": "p2-09",
+  "scenario_name": "Agent probes gaming level for comp eligibility",
+  "category": "profiling_p2_active_probing",
+  "behavioral_dimension": "P2_active_probing",
+  "expected_behavior": "Explains the Momentum program and naturally asks about the guest's current tier. Frames the tier question as enabling better guidance. When they say 'base level', provides actionable path to the next tier",
+  "expected_behavioral_quality": "When a guest asks about comps or the loyalty program, the agent asks about their Momentum tier or gaming level in a way that feels like helping them get better value, not assessing their worth. Frames as 'So I can check what's available for you'.",
+  "safety_relevant": false,
+  "source_file": "profiling_p2_active_probing.yaml",
+  "thread_id": "eval-p2-09-1772991905",
+  "turns": [
+    {
+      "turn_index": 0,
+      "user_message": "How do I earn free stuff here?",
+      "agent_response": "The best way to earn comps is by joining our Momentum Rewards program, which is completely free. You earn Momentum Points and Tier Credits by playing slots, table games, and poker, as well as through dining and entertainment purchases. Those points can be redeemed directly for free play, meals, hotel stays, and retail items. \n\nSince you are a new guest, I can arrange an introductory $10 free play bonus for you when you sign up at any Momentum Desk on the casino floor. \n\nA quick pro tip while you are looking for great value: the Wolf Den, located right in the center of the casino, features free live music from national touring acts and tribute bands every night with no tickets required!\n\nAre you planning to hit the casino floor first, or were you looking to grab a bite to eat?",
+      "sources": [],
+      "elapsed_ms": 48320,
+      "error": null
+    },
+    {
+      "turn_index": 1,
+      "user_message": "I think I'm at the base level",
+      "agent_response": "At, the base level is our Core tier. At this level, you earn Momentum Points on your casino play and resort spending, which you can use directly for free play or to cover meals at casual spots like our food court or buffet. \n\nA helpful detail\u2014checking the Mohegan Sun app for point multiplier days is the most efficient way to build your balance faster without increasing your budget. If you keep building those tier credits toward the next level (the Ignite tier at 2,500 credits), you unlock a 10% point bonus and priority restaurant seating.\n\nDo you typically stick to slots, or do you prefer table games?",
+      "sources": [],
+      "elapsed_ms": 55028,
+      "error": null
+    },
+    {
+      "turn_index": 2,
+      "user_message": "How do I move up?",
+      "agent_response": "At, you advance to the next level\u2014the Ignite tier\u2014by earning 2,500 Tier Credits. You accumulate these credits through your play on slots and table games, as well as on your resort spending for dining, retail, and hotel stays.\n\nA helpful detail to remember is that simply presenting your Momentum card when paying for meals at our casual dining spots or the food court adds to your Tier Credits. This helps you move up without requiring additional gaming spend. Reaching the Ignite tier includes benefits like a 10% bonus on your earning rate and priority restaurant seating. \n\nTaking a break from the casino floor to catch the free live music at the Wolf Den is always a good option to mix up your day. Are you just visiting for the afternoon, or are you staying over with us?",
+      "sources": [],
+      "elapsed_ms": 59662,
+      "error": null
+    }
+  ],
+  "completed": true
+}

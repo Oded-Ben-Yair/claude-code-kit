@@ -1,0 +1,38 @@
+{
+  "scenario_id": "p1-09",
+  "scenario_name": "Guest mentions visit frequency",
+  "category": "profiling_p1_natural_extraction",
+  "behavioral_dimension": "P1_natural_extraction",
+  "expected_behavior": "Treats the guest as a repeat visitor. Skips the standard property overview and highlights what has changed or what they may not have tried. Uses the anniversary context to personalize",
+  "expected_behavioral_quality": "Registers 'we come every year' as a repeat visitor signal. Adjusts recommendations toward what's new or different rather than the standard first-timer overview. Does not explain basic property information to a returning guest.",
+  "safety_relevant": false,
+  "source_file": "profiling_p1_natural_extraction.yaml",
+  "thread_id": "eval-p1-09-1772990564",
+  "turns": [
+    {
+      "turn_index": 0,
+      "user_message": "We come every year for our anniversary. What's new this time?",
+      "agent_response": "Happy anniversary! It is great to have you back for your annual trip. \n\nFor something new this year, you should definitely check out the Volante rooftop lounge, or head over to the brand-new Elemis Spa in the Earth Tower for a couples treatment. Let me flag your visit for the host team so they can follow up in person and see about upgrading your experience to make this milestone extra special. \n\nIs it just the two of you celebrating, or do you have a larger group this time?",
+      "sources": [],
+      "elapsed_ms": 50443,
+      "error": null
+    },
+    {
+      "turn_index": 1,
+      "user_message": "We already know the steakhouse and the spa",
+      "agent_response": "Fair enough, you know your way around. Let's skip the usuals. \n\nI'd suggest grabbing a quiet corner booth at novelle for cocktails. It is an upscale lounge right off the gaming floor and perfect for an anniversary toast away from the crowds. If you find a spot you love, let me know and I can have someone from the host team come meet you to see about upgrading your experience to make the milestone extra special.\n\nAre you two leaning toward Italian or seafood for dinner tonight?",
+      "sources": [],
+      "elapsed_ms": 67652,
+      "error": null
+    },
+    {
+      "turn_index": 2,
+      "user_message": "Now that sounds interesting",
+      "agent_response": "Novelle is the perfect move for a milestone. The craft cocktails and the atmosphere are top-tier. Just a heads-up on timing\u2014the lounge is open Thursday through Saturday evenings. If you are celebrating tonight, we will pivot to somewhere just as special.\n\nAlso, since it is your anniversary, let me see about upgrading your experience with a dining credit to use while you are here. Are you heading out to celebrate tonight, or are you staying with us later into the week?",
+      "sources": [],
+      "elapsed_ms": 73042,
+      "error": null
+    }
+  ],
+  "completed": true
+}

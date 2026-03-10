@@ -1,0 +1,75 @@
+{
+  "scenario_id": "h5-03",
+  "scenario_name": "Guest sharing a personal achievement",
+  "category": "host_triangle_h4_h6_relationship",
+  "behavioral_dimension": "H5_emotional_loyalty_building",
+  "expected_behavior": "Celebrates the retirement with genuine warmth, not just 'congrats.' Builds a premium celebration weekend \u2014 Sky Tower suite, fine dining, spa \u2014 framed as something the guest has earned. Makes the guest feel like the property is honoring their achievement, not just selling services",
+  "expected_behavioral_quality": "When a guest shares a personal achievement (promotion, retirement, graduation), the agent celebrates genuinely and connects it to an experience that honors the accomplishment. The celebration should feel personal and earned, not a generic 'congrats.'",
+  "safety_relevant": false,
+  "source_file": "host_triangle_h4_h6_relationship.yaml",
+  "thread_id": "eval-h5-03-1772834521",
+  "turns": [
+    {
+      "turn_index": 0,
+      "user_message": "I just retired after 35 years! Coming to celebrate with my wife this weekend",
+      "agent_response": "Congratulations on your retirement\u201435 years is an incredible achievement. \n\nFor a celebratory dinner with your wife, Todd English's Tuscany is a guest favorite for its warm atmosphere and classic Italian menu. If you're in the mood for a high-end steakhouse experience instead, Michael Jordan\u2019s Steak House is another excellent choice for a special occasion. Since it's a busy weekend, I'd suggest securing a reservation as soon as possible to ensure you get your preferred time. \n\nAfter dinner, you might enjoy a visit to novelle, our upscale lounge that offers craft cocktails and a sophisticated atmosphere. To help me point you in the right direction for the rest of your stay, are you looking for a quiet, intimate weekend or something with more live music and energy?",
+      "sources": [
+        {
+          "category": "restaurants",
+          "source": "mohegan_sun.json",
+          "score": 0.629
+        },
+        {
+          "category": "entertainment",
+          "source": "mohegan_sun.json",
+          "score": 0.633
+        }
+      ],
+      "elapsed_ms": 33242,
+      "error": null
+    },
+    {
+      "turn_index": 1,
+      "user_message": "We want something really memorable. We've earned it",
+      "agent_response": "For a celebration of this scale, the Presidential Suite in the Sky Tower is the most exclusive accommodation available, featuring over 1,800 square feet of space, a private terrace, and personalized concierge service. \n\nRegarding your rewards, you can sign up for the Momentum program for free at any Momentum Desk. Members earn Momentum Points and Tier Credits through gaming and dining. The program scales through five tiers:\n*   **Core:** Entry level.\n*   **Ignite:** 2,500 Tier Credits (includes 10% earn rate bonus and priority restaurant seating).\n*   **Leap:** 10,000 Tier Credits (includes complimentary valet).\n*   **Ascend:** 25,000 Tier Credits (includes room upgrades and a dedicated host).\n*   **Soar:** Invitation only.\n\nAs a new member celebrating a milestone, you may be eligible for a $10 introductory free play bonus or a complimentary appetizer at one of our casual dining spots. I can look into these options for you once you've visited the rewards desk. \n\nAn insider tip for your weekend: novelle is our upscale lounge that functions as a sophisticated nightlife destination with craft cocktails, which is often a highlight for guests seeking a more refined evening than the standard casino floor. \n\nSince you are looking for a memorable experience, would you like me to provide the schedule for the live entertainment at the Wolf Den or the DJ lineup at novelle for this Saturday?",
+      "sources": [],
+      "elapsed_ms": 55824,
+      "error": null
+    },
+    {
+      "turn_index": 2,
+      "user_message": "That sounds like a perfect way to kick off retirement",
+      "agent_response": "It certainly is\u2014you\u2019ve put in the years to deserve a weekend where you don't have to lift a finger.\n\nTo really lean into the relaxation of retirement, I'd suggest a visit to Mandara Spa for one of their signature treatments like the Fire & Ice massage. It\u2019s a 55,000-square-foot sanctuary and a perfect way to decompress and start your first weekend of retirement on a high note! Since you\u2019re looking for a memorable stay, would you prefer a quiet morning at the spa or should I check the entertainment schedule for a big show at the Arena?",
+      "sources": [
+        {
+          "category": "entertainment",
+          "source": "mohegan_sun.json",
+          "score": 0.642
+        },
+        {
+          "category": "gaming",
+          "source": "mohegan_sun.json",
+          "score": 0.63
+        },
+        {
+          "category": "faq",
+          "source": "mohegan_sun.json",
+          "score": 0.594
+        },
+        {
+          "category": "hotel",
+          "source": "mohegan_sun.json",
+          "score": 0.594
+        },
+        {
+          "category": "property",
+          "source": "mohegan_sun.json",
+          "score": 0.629
+        }
+      ],
+      "elapsed_ms": 30531,
+      "error": null
+    }
+  ],
+  "completed": true
+}

@@ -1,0 +1,92 @@
+{
+  "id": "p3-03",
+  "name": "Spa information plus companion question",
+  "source_file": "profiling_p3_give_to_get.yaml",
+  "category": "profiling_p3_give_to_get",
+  "behavioral_dimension": "P3_give_to_get",
+  "expected_behavior": "Full spa overview provided before asking who's attending. When 'sister' is mentioned, pivots to duo-friendly services without making assumptions about the relationship dynamic",
+  "expected_behavioral_quality": "Provides spa details (services, hours, pricing context) first, then asks who they'll be visiting with. The spa info is actionable on its own. The companion question is framed as helping recommend couples treatments, group packages, or solo relaxation.",
+  "safety_relevant": false,
+  "turns": [
+    {
+      "turn_index": 0,
+      "user_message": "Tell me about the spa",
+      "agent_response": "We have two primary spa destinations here at Mohegan Sun, each with its own unique atmosphere. Mandara Spa is our full-service Balinese-inspired retreat that features a steam room, sauna, and a very peaceful relaxation lounge for a deep reset. For a more modern experience, the Elemis Spa in the Earth Tower focuses on high-end skincare and even offers couples treatments if you aren't visiting alone.\n\nThe spas open at 9:00 AM, but our heated indoor pool and hot tub are available starting at 6:00 AM for hotel guests who want an early start. After a morning at the spa, a matinee show or a nice lunch usually keeps that relaxed feeling going \u2014 are you planning a solo retreat or a spa day with someone else?",
+      "sources": [
+        {
+          "category": "amenities",
+          "source": "mohegan_sun.json",
+          "score": 0.693
+        },
+        {
+          "category": "property",
+          "source": "mohegan_sun.json",
+          "score": 0.667
+        },
+        {
+          "category": "faq",
+          "source": "mohegan_sun.json",
+          "score": 0.639
+        },
+        {
+          "category": "promotions",
+          "source": "mohegan_sun.json",
+          "score": 0.639
+        }
+      ],
+      "elapsed_ms": 24483,
+      "error": null
+    },
+    {
+      "turn_index": 1,
+      "user_message": "It would be for me and my sister",
+      "agent_response": "A spa day with your sister sounds like a perfect getaway. For your stay, I would recommend a Deluxe Room with two queen beds; at 450 square feet, there is plenty of space for both of you to relax. If you choose a room in the Earth Tower, you'll be just a short walk from the Elemis Spa, which makes it easy to head back to your room and enjoy the view from the floor-to-ceiling windows after your treatments.\n\nOur standard check-in time is 4:00 PM, though our 24-hour front desk can assist with your luggage if your spa appointments are earlier in the day. After a relaxing morning, a quiet lunch at Todd English\u2019s Tuscany is a great way to keep that peaceful feeling going \u2014 would you prefer a room closer to the spa or one on a higher floor for the best views?",
+      "sources": [
+        {
+          "category": "hotel",
+          "source": "mohegan_sun.json",
+          "score": 0.645
+        },
+        {
+          "category": "faq",
+          "source": "mohegan_sun.json",
+          "score": 0.613
+        }
+      ],
+      "elapsed_ms": 27836,
+      "error": null
+    },
+    {
+      "turn_index": 2,
+      "user_message": "A couples massage would be fun",
+      "agent_response": "Elemis Spa at Earth Tower is a fantastic spot for that since they specifically offer premium couples experiences designed for two people to relax together. Mandara Spa is another great option if you would like to spend time in their Balinese-inspired relaxation lounge or steam room before your massage starts.\n\nMandara stays open until 8:00 PM, which is perfect if you want to head straight from the spa to a nice dinner at one of our restaurants like Tuscany. Since you will both be feeling refreshed, catching a free show at the Wolf Den afterward would be a great way to keep the energy going without needing to worry about tickets. Do you think you would prefer the modern feel of the Earth Tower spa or the traditional Balinese atmosphere at Mandara?",
+      "sources": [
+        {
+          "category": "amenities",
+          "source": "mohegan_sun.json",
+          "score": 0.638
+        },
+        {
+          "category": "promotions",
+          "source": "mohegan_sun.json",
+          "score": 0.603
+        },
+        {
+          "category": "property",
+          "source": "mohegan_sun.json",
+          "score": 0.615
+        },
+        {
+          "category": "hotel",
+          "source": "mohegan_sun.json",
+          "score": 0.585
+        }
+      ],
+      "elapsed_ms": 28955,
+      "error": null
+    }
+  ],
+  "elapsed_ms": 81276,
+  "error": null,
+  "completed": true
+}

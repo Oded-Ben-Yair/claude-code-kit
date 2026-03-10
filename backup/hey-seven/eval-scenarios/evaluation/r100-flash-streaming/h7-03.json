@@ -1,0 +1,76 @@
+{
+  "scenario_id": "h7-03",
+  "scenario_name": "Entertainment guest exploring other domains",
+  "category": "host_triangle_h7_h10_revenue",
+  "behavioral_dimension": "H7_cross_selling_wallet_share",
+  "expected_behavior": "Builds a full evening around the Arena anchor: pre-show dinner at a nearby restaurant, the show itself, and post-show options (Wolf Den late show, Comix, casino floor). The guest leaves with a plan for an entire evening, not just a concert ticket",
+  "expected_behavioral_quality": "When a guest comes for entertainment, the agent expands the visit into dining and other experiences. The cross-sell turns a one-activity visit into a full resort evening where the show is the anchor but not the only experience.",
+  "safety_relevant": false,
+  "source_file": "host_triangle_h7_h10_revenue.yaml",
+  "thread_id": "eval-h7-03-1772835360",
+  "turns": [
+    {
+      "turn_index": 0,
+      "user_message": "We have Arena tickets for Saturday. What else should we do that night?",
+      "agent_response": "For a sophisticated vibe before or after your show, novelle is an ultra-lounge that features craft cocktails and DJ entertainment specifically designed for the concert crowd. If you find yourself hungry once the encore is over, Lantern Bar & Grill is open 24 hours and serves excellent late-night burgers right in the Casino of the Earth. \n\nA little insider tip for your first time: novelle is usually the best place to stay close to the action and avoid the immediate post-concert exit rush. How many people are in your group for the evening?",
+      "sources": [
+        {
+          "category": "entertainment",
+          "source": "mohegan_sun.json",
+          "score": 0.67
+        },
+        {
+          "category": "restaurants",
+          "source": "mohegan_sun.json",
+          "score": 0.65
+        }
+      ],
+      "elapsed_ms": 32986,
+      "error": null
+    },
+    {
+      "turn_index": 1,
+      "user_message": "A pre-show dinner sounds great. Where?",
+      "agent_response": "For a pre-show meal that feels like a main event, Michael Jordan's Steak House is my top pick. The aroma of USDA Prime steaks hitting the grill sets the tone for a high-energy night, and the elegant space in the Casino of the Sky is filled with Michael Jordan's personal sports memorabilia. It's a business casual spot that opens at 5:00 PM on Saturdays, so I'd suggest securing a table early to give yourselves plenty of time to savor their signature cuts and a glass from the extensive wine list before your show. \n\nLet me help you with that\u2014I can provide more details on the menu or connect you with our host team to finalize the booking once you're ready. After the concert, novelle is just a short stroll away if you want to keep the night going with cocktails and a DJ. Do you have a specific time in mind for your dinner?",
+      "sources": [
+        {
+          "category": "restaurants",
+          "source": "mohegan_sun.json",
+          "score": 0.692
+        },
+        {
+          "category": "entertainment",
+          "source": "mohegan_sun.json",
+          "score": 0.675
+        },
+        {
+          "category": "faq",
+          "source": "mohegan_sun.json",
+          "score": 0.639
+        }
+      ],
+      "elapsed_ms": 37120,
+      "error": null
+    },
+    {
+      "turn_index": 2,
+      "user_message": "And after the show? We don't want the night to end",
+      "agent_response": "With a state-of-the-art sound system and top-tier DJs, the dance floor stays packed until 2:00 AM, which is the perfect high-octane follow-up to an Arena show. If you'd prefer something a bit more intimate but still high-energy, novelle offers a sophisticated ultra-lounge vibe with craft cocktails and a DJ right nearby. \n\nLet me help you with that\u2014I can provide more details on the VIP table options or connect you with our host team to finalize a reservation for your group. After a long night of dancing, a morning treatment at the Elemis Spa is the legendary way to reset before you head home. Would you like me to look into the VIP table service at Avalon to give your group a home base for the night? \n\nBy the way, the Mohegan Sun Arena has some great shows coming up\u2014I can share what's on the calendar if you're interested.",
+      "sources": [
+        {
+          "category": "entertainment",
+          "source": "mohegan_sun.json",
+          "score": 0.713
+        },
+        {
+          "category": "restaurants",
+          "source": "mohegan_sun.json",
+          "score": 0.688
+        }
+      ],
+      "elapsed_ms": 48226,
+      "error": null
+    }
+  ],
+  "completed": true
+}

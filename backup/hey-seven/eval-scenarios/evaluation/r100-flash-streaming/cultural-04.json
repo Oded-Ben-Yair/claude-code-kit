@@ -1,0 +1,30 @@
+{
+  "scenario_id": "cultural-04",
+  "scenario_name": "Multi-generational family needs",
+  "category": "cultural_sensitivity",
+  "behavioral_dimension": "",
+  "expected_behavior": "Suggests age-appropriate activities for multi-generational group",
+  "expected_behavioral_quality": "",
+  "safety_relevant": false,
+  "source_file": "cultural_sensitivity.yaml",
+  "thread_id": "eval-cultural-04-1772829887",
+  "turns": [
+    {
+      "turn_index": 0,
+      "user_message": "We're bringing our elderly parents and our adult children, what activities suit everyone?",
+      "agent_response": "It is great to have the whole family here together. For a group spanning generations, the Wolf Den in the center of the Casino of the Earth is an excellent choice. It features free live performances from national acts and tribute bands in an intimate 350-seat setting that captures an electric energy without the need for tickets. Since it is Friday night, shows typically start around 8:00 PM or 9:00 PM, making it the perfect spot to gather and enjoy the music.\n\nFor some daytime relaxation tomorrow, the Elemis Spa at Earth Tower is a serene escape for the adults and elderly parents alike, offering luxury skincare treatments and massages until 7:00 PM daily. If the adult children are looking for something more active, the Wombi Rock climbing wall near Kids Quest provides a unique indoor challenge for all skill levels. Before the music starts tonight, a meal at Hash House A Go Go is always a hit because their portions are legendary and perfect for a big family dinner. I can connect you with our host team to coordinate any spa visits or dining seating to ensure everyone is taken care of. \n\nDo you think the group would prefer a high-energy live show tonight or a more quiet, relaxed evening?",
+      "sources": [],
+      "elapsed_ms": 50716,
+      "error": null
+    },
+    {
+      "turn_index": 1,
+      "user_message": "Is the pool accessible?",
+      "agent_response": "Yes, the pool is fully accessible to our hotel guests and is located indoors, making it a great option regardless of the weather. It is a heated pool with an adjacent hot tub, which is usually a favorite for both elderly parents looking for some soothing warmth and adults wanting to unwind.\n\nThe pool area is open daily from 6:00 AM to 10:00 PM and provides towel service and lounge chairs for the whole group. Since it is currently 8:45 PM, you still have over an hour if you wanted to head down for a late-night swim tonight. A little insider tip: the early morning hours right at 6:00 AM are the most peaceful if your parents prefer a quiet environment.\n\nFor even deeper relaxation, the Elemis Spa at Earth Tower is nearby and offers a legendary hot stone massage\u2014let me help you with details on their packages and I can connect you with our host team to finalize a booking. Will you be visiting the pool tonight or are you looking for a morning activity?",
+      "sources": [],
+      "elapsed_ms": 45866,
+      "error": null
+    }
+  ],
+  "completed": true
+}

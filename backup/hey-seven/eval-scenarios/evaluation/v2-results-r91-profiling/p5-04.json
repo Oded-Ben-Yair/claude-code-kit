@@ -1,0 +1,89 @@
+{
+  "id": "p5-04",
+  "name": "Agent handles mid-conversation topic change gracefully",
+  "source_file": "profiling_p5_progressive_sequence.yaml",
+  "category": "profiling_p5_progressive_sequence",
+  "behavioral_dimension": "P5_progressive_sequencing",
+  "expected_behavior": "Bathroom question is handled cleanly without forcing poker back into the response. When Tom returns to the poker topic, agent resumes where they left off. The profiling sequence adapts to the guest's flow, not the other way around",
+  "expected_behavioral_quality": "When the guest abruptly changes topic mid-profiling sequence, the agent follows the guest's lead without forcing the conversation back to the profiling path. Captures what was volunteered and resumes profiling only when the conversation naturally allows it.",
+  "safety_relevant": false,
+  "turns": [
+    {
+      "turn_index": 0,
+      "user_message": "I'm Tom, here for a poker tournament",
+      "agent_response": "Welcome to Mohegan Sun, Tom. You're in for a great experience as our Poker Room is a premier destination with 33 tables and a constant rotation of tournaments. \n\nAfter a long session at the table, the Elemis Spa is the perfect reset\u2014their legendary hot stone massage is specifically designed to help you decompress and clear your head. Tonight, the Wolf Den will have live music right in the heart of the casino, offering an electric, intimate energy where you're right there with the performer! Are you planning to balance your tournament schedule with some relaxation or a live show tonight?",
+      "sources": [
+        {
+          "category": "gaming",
+          "source": "mohegan_sun.json",
+          "score": 0.667
+        },
+        {
+          "category": "entertainment",
+          "source": "mohegan_sun.json",
+          "score": 0.643
+        },
+        {
+          "category": "faq",
+          "source": "mohegan_sun.json",
+          "score": 0.639
+        },
+        {
+          "category": "property",
+          "source": "mohegan_sun.json",
+          "score": 0.636
+        }
+      ],
+      "elapsed_ms": 36943,
+      "error": null
+    },
+    {
+      "turn_index": 1,
+      "user_message": "Wait, where's the nearest bathroom?",
+      "agent_response": "The nearest restrooms are located immediately outside the entrance to the Poker Room in the Casino of the Wind. There is also another set located nearby by the Bow & Arrow Sports Bar if you're heading toward the center of the gaming floor.\n\nSince it is currently 6:42 AM, if you need a coffee or a quick snack before your next round, Dunkin' in the Casino of the Earth is open 24 hours. Do you have a scheduled break coming up in your tournament?",
+      "sources": [],
+      "elapsed_ms": 39898,
+      "error": null
+    },
+    {
+      "turn_index": 2,
+      "user_message": "Thanks. OK so about the tournament...",
+      "agent_response": "Tom, the Poker Room features 33 tables and hosts daily tournaments with varying buy-ins. You earn Momentum Points and Tier Credits for your play at the tables, which are tracked when you present your Momentum card at the Poker Room desk. \n\nFor specific tournament structures, buy-ins, and registration, the staff at the Poker Room desk can provide the current daily schedule and blind levels. Since the room is open 24 hours, cash games in No-Limit Texas Hold'em and Pot-Limit Omaha are also available if you finish your tournament early. If you need a meal during a longer break, MJ23 Sports Bar & Grill is located nearby in the Casino of the Wind and offers a full menu. \n\nAre you playing in a specific scheduled event today, or are you looking for the daily cash games?",
+      "sources": [
+        {
+          "category": "gaming",
+          "source": "mohegan_sun.json",
+          "score": 0.63
+        },
+        {
+          "category": "property",
+          "source": "mohegan_sun.json",
+          "score": 0.635
+        },
+        {
+          "category": "hotel",
+          "source": "mohegan_sun.json",
+          "score": 0.612
+        },
+        {
+          "category": "faq",
+          "source": "mohegan_sun.json",
+          "score": 0.614
+        }
+      ],
+      "elapsed_ms": 26452,
+      "error": null
+    },
+    {
+      "turn_index": 3,
+      "user_message": "Cool. I play here every quarter or so.",
+      "agent_response": "Visiting quarterly allows you to maintain your Tier Credit progress, as Momentum status is evaluated over six-month periods. Playing in the Poker Room earns both Momentum Points for spending and Tier Credits toward your status level. \n\nReaching the Ignite tier at 2,500 Tier Credits provides a 10% bonus on your point earning rate and priority seating at many of our restaurants. Since you are a regular visitor, you can track your progress toward the next tier or check your current point balance at any Momentum Desk or via the Mohegan Sun app. If you want a change of pace after the tournament, novelle is an upscale lounge nearby that opens on Thursday evenings for craft cocktails and a more relaxed atmosphere. \n\nHave you had a chance to check your current Tier Credit balance at the Momentum Desk today?",
+      "sources": [],
+      "elapsed_ms": 51104,
+      "error": null
+    }
+  ],
+  "elapsed_ms": 154398,
+  "error": null,
+  "completed": true
+}

@@ -1,0 +1,38 @@
+{
+  "scenario_id": "h2-03",
+  "scenario_name": "Guest mentions they switched to competitor",
+  "category": "host_triangle_h1_h3_development",
+  "behavioral_dimension": "H2_reactivation_win_back",
+  "expected_behavior": "Does not badmouth Foxwoods or Gordon Ramsay. Instead, highlights Mohegan Sun's own new dining portfolio (Beauty & Essex, The Farm Italy, The Shed) as reasons to come back. Creates competitive differentiation through quality, not criticism",
+  "expected_behavioral_quality": "When a guest says they have been going to a competitor instead, the agent does not disparage the competitor. Instead, discovers what drew them away and highlights what Mohegan Sun offers in that area. Creates a 'come back and see' moment around genuine improvements.",
+  "safety_relevant": false,
+  "source_file": "host_triangle_h1_h3_development.yaml",
+  "thread_id": "eval-h2-03-1772804296",
+  "turns": [
+    {
+      "turn_index": 0,
+      "user_message": "I've been going to Foxwoods mostly. They opened some cool new restaurants",
+      "agent_response": "We love having guests explore what we have to offer here at Mohegan Sun. Our culinary scene is something we take a lot of pride in, and our chefs have been creating some truly incredible menus. \n\nIf you are looking for a standout meal tonight, Todd English's Tuscany opens at 5:00 PM in the Casino of the Sky. The wood-fired aroma hits you the moment you walk in, and fun fact \u2014 the culinary team crafts all of their pastas by hand daily, which gives their dishes a really beautiful, authentic texture. \n\nSince you are checking us out for the first time, I can actually arrange a complimentary appetizer or dessert at one of our spots to welcome you. After dinner, the Wolf Den right next door in the Casino of the Earth usually has great free live music to keep the evening going. \n\nWhat kind of food are you usually drawn to when you are trying out a new destination?",
+      "sources": [],
+      "elapsed_ms": 57898,
+      "error": null
+    },
+    {
+      "turn_index": 1,
+      "user_message": "Yeah their Gordon Ramsay place is really good",
+      "agent_response": "We have some incredible celebrity chef experiences right here that I think you will really enjoy. Bobby Flay's Bar Americain in the Casino of the Earth is an absolute standout. The menu is fantastic \u2014 he brings his signature Southwest influences to a classic American brasserie style, and their grilled meats are incredibly flavorful. They are open until 11:00 PM tonight, and the energy there is perfect for a Friday. \n\nIf you want to experience it for yourself, I can help with the details and connect you with our host team to finalize a booking. Are you leaning toward a great steak tonight, or maybe some fresh seafood?",
+      "sources": [],
+      "elapsed_ms": 68050,
+      "error": null
+    },
+    {
+      "turn_index": 2,
+      "user_message": "Hmm those do sound worth trying",
+      "agent_response": "They really are, and I think you will be incredibly impressed once you taste what our culinary teams are doing here. \n\nSince it is just about 8:40 AM locally, if you are looking to grab a late breakfast or brunch right now, Hash House A Go Go in the Casino of the Earth is open until 2:00 PM. Fun fact \u2014 they are famous for their \"twisted farm food,\" and their giant pancakes and stuffed burgers are absolutely legendary for their enormous portions. \n\nIf you are planning for later in the day, Frank Pepe's Pizzeria Napoletana opens at 11:00 AM. It is a true Connecticut institution. The char on their coal-fired thin crust is phenomenal, and their white clam pie is something guests come back for again and again! Neither of these casual spots requires a reservation, so you can just walk right in. I can also still set up that complimentary appetizer or dessert for you at one of our participating casual dining venues. \n\nAfter you eat, novelle is our upscale lounge right on property that opens up tonight with craft cocktails and a great DJ atmosphere. \n\nAre you looking to grab a bite soon, or are we planning out the perfect dinner for tonight?",
+      "sources": [],
+      "elapsed_ms": 66751,
+      "error": null
+    }
+  ],
+  "completed": true
+}

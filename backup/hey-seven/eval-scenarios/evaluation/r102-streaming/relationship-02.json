@@ -1,0 +1,54 @@
+{
+  "scenario_id": "relationship-02",
+  "scenario_name": "Anniversary couple \u2014 does agent build a complete plan?",
+  "category": "relationship_building",
+  "behavioral_dimension": "H10_lifetime_value",
+  "expected_behavior": "Agent builds a weekend arc: Friday dinner+nightlife, Saturday spa+casino, Sunday brunch. References 'anniversary' throughout. Adapts when curveball (wife wants to try casino) is introduced. Offers host bridge by final turn.",
+  "expected_behavioral_quality": "Agent immediately plans a full experience arc (dinner, after-dinner, next day) instead of answering one question at a time. Uses 'anniversary' in every subsequent recommendation. Offers human host bridge. Shows decisive host behavior.",
+  "safety_relevant": false,
+  "source_file": "relationship_building.yaml",
+  "thread_id": "eval-relationship-02-1772910004",
+  "turns": [
+    {
+      "turn_index": 0,
+      "user_message": "We're coming up Friday for our 10th anniversary. Can you help us plan something nice?",
+      "agent_response": "Ten years is a massive milestone\u2014congratulations to you both. \n\nI've got you at Ballo Italian for dinner; the atmosphere is perfect for a 10th anniversary. Afterward, head to novelle for craft cocktails in a sophisticated lounge setting. Since you're celebrating, I'd love to see about upgrading your experience here to make it truly memorable! \n\nI'll pass these details to our host team so they can help finalize the arrangements for you. Will it just be the two of you, or is there a larger group joining?",
+      "sources": [],
+      "elapsed_ms": 61859,
+      "error": null
+    },
+    {
+      "turn_index": 1,
+      "user_message": "She loves steak. Anything fun after dinner?",
+      "agent_response": "Let me help you with that. Michael Jordan\u2019s Steak House at 7:00 PM followed by a comedy set at Comix Roadhouse is exactly what you\u2019re looking for. \n\nHappy anniversary! Let me see about upgrading your experience at Mohegan Sun to make it extra special. \n\nI can flag this for our host team so they can reach out to help you finalize the details. Are you more into comedy or live music?",
+      "sources": [],
+      "elapsed_ms": 75383,
+      "error": null
+    },
+    {
+      "turn_index": 2,
+      "user_message": "What about Saturday?",
+      "agent_response": "Saturday is when the energy here really peaks. Since you're celebrating, I recommend starting your day at Elemis Spa for a total reset\u2014their hot stone massage is legendary and perfect for a couple's relaxation session. \n\nFor your Saturday night, the Wolf Den has an electric atmosphere with live music right in the heart of the casino, or you could head to Avalon Nightclub starting at 10:00 PM if you're in the mood for a high-energy dance floor. Keep in mind that showtimes and availability can change, so it's always good to confirm details when you arrive.\n\nHappy anniversary! Let me see about upgrading your experience at Mohegan Sun to make it extra special. I'll pass these Saturday options to the host team so they can help you finalize everything. By the way, the Mohegan Sun Arena has some great shows coming up later this year\u2014I can share what's on the calendar if you're interested in planning a return trip.\n\nAre you looking for a high-energy night out or something more intimate for your second evening?",
+      "sources": [],
+      "elapsed_ms": 49853,
+      "error": null
+    },
+    {
+      "turn_index": 3,
+      "user_message": "She mentioned wanting to try the casino. She's never played.",
+      "agent_response": "Start at Casino of the Earth\u2014the atmosphere is low-pressure and the dealers are the best on property for someone learning the ropes. Grab two seats at a $15 blackjack table just to watch a few hands and get the hang of it together. \n\nHappy anniversary! Let me see about upgrading your experience at Mohegan Sun to make it extra special. I'll make sure the host team knows it's her first time playing so they can help you both feel right at home on the floor. \n\nDo you think she'd prefer the social energy of the table games or starting out on the slot machines?",
+      "sources": [],
+      "elapsed_ms": 76341,
+      "error": null
+    },
+    {
+      "turn_index": 4,
+      "user_message": "This is going to be amazing. Thanks!",
+      "agent_response": "It's going to be a weekend to remember. I've noted the steak dinner and her first trip to the casino floor so the host team can ensure it's a seamless experience. Just remember that specific hours for the lounges and the spa may vary, so it's best to confirm when you check in. \n\nHappy anniversary! Let me see about upgrading your experience at Mohegan Sun to make it extra special. I'll make sure the host team is ready to help you finalize these details once you arrive. Next time you're planning a visit, feel free to reach out ahead of time\u2014I can help set things up so everything's ready when you arrive. \n\nWhat time are you two planning on pulling in this Friday?",
+      "sources": [],
+      "elapsed_ms": 65010,
+      "error": null
+    }
+  ],
+  "completed": true
+}

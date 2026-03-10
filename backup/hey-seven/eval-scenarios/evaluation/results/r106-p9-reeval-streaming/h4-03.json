@@ -1,0 +1,81 @@
+{
+  "scenario_id": "h4-03",
+  "scenario_name": "Guest with children seeking family-appropriate options",
+  "category": "host_triangle_h4_h6_relationship",
+  "behavioral_dimension": "H4_personalized_recognition",
+  "expected_behavior": "Distinguishes between teenager interests and young child interests. Recommends experiences that teenagers would consider 'cool' rather than childish. Dinner recommendation accounts for family-friendly seating while not being a kids' restaurant. Makes the family feel like there is something for everyone",
+  "expected_behavioral_quality": "Recognizes the family context and personalizes all recommendations around the full group's needs. Balances adult interests with kid-friendly options without condescending. Uses the family dynamic to create a personalized experience vision.",
+  "safety_relevant": false,
+  "source_file": "host_triangle_h4_h6_relationship.yaml",
+  "thread_id": "eval-h4-03-1773037594",
+  "turns": [
+    {
+      "turn_index": 0,
+      "user_message": "We're here with two teenagers, 14 and 16. What can we all do together?",
+      "agent_response": "I've got some great options for you. For that age group, Cyber Quest is usually the biggest hit\u2014it is a massive arcade featuring the latest video games and attractions that are perfect for a bit of friendly competition. If they are looking for something more physical, the Wombi Rock climbing wall is right nearby and offers a great challenge for all skill levels.\n\nPro tip: Wombi Rock is centrally located near the arcade, making it easy to spend a whole afternoon in that area without having to wander across the property. Once you are finished with the activities, I can recommend a few spots for a family dinner that even the pickiest 16-year-old will enjoy!\n\nAre they the type who live for a high score at the arcade, or are you looking to catch a big show at the Arena together?",
+      "sources": [
+        {
+          "category": "entertainment",
+          "source": "mohegan_sun.json",
+          "score": 0.675
+        },
+        {
+          "category": "amenities",
+          "source": "mohegan_sun.json",
+          "score": 0.651
+        },
+        {
+          "category": "faq",
+          "source": "mohegan_sun.json",
+          "score": 0.624
+        }
+      ],
+      "elapsed_ms": 33595,
+      "error": null
+    },
+    {
+      "turn_index": 1,
+      "user_message": "They're pretty bored of the usual family stuff, they want something cool",
+      "agent_response": "I hear you\u2014at 14 and 16, they are definitely looking for something with a bit more edge. The Mohegan Sun Arena is where the real energy is, as it hosts major global headliners and high-profile events that definitely pass the 'cool' test for teenagers. For something active, Cyber Quest isn't your average arcade\u2014it features high-tech gaming and competitive titles that usually keep that age group locked in for hours. \n\nBefore the excitement, I'd suggest grabbing a meal at Todd English\u2019s Tuscany; the wood-fired dishes and the view of the property's signature waterfall create a much more sophisticated vibe than a standard food court. \n\nDo they have a favorite musical artist or sport I should check the Arena schedule for?",
+      "sources": [
+        {
+          "category": "entertainment",
+          "source": "mohegan_sun.json",
+          "score": 0.649
+        },
+        {
+          "category": "amenities",
+          "source": "mohegan_sun.json",
+          "score": 0.643
+        },
+        {
+          "category": "hotel",
+          "source": "mohegan_sun.json",
+          "score": 0.602
+        }
+      ],
+      "elapsed_ms": 30495,
+      "error": null
+    },
+    {
+      "turn_index": 2,
+      "user_message": "And we need dinner for all four of us",
+      "agent_response": "I've got you. Since they want to avoid the typical kid-friendly spots, Mohegan Sun Caputo Trattoria is a great fit for tonight. It serves fantastic brick-oven pizzas, massive calzones, and pastas\u2014giving you a great, slightly elevated dining atmosphere but with food teenagers will actually devour. It is open until 10:00 PM tonight. \n\nIf they are craving something a bit more classic, Lantern Bar & Grill is open 24 hours and does excellent steaks and huge burgers. \n\nI can connect you with our host team to finalize the arrangements for the four of you. What time are you thinking for dinner tonight, and does anyone in your group have any dietary restrictions?",
+      "sources": [
+        {
+          "category": "restaurants",
+          "source": "mohegan_sun.json",
+          "score": 0.645
+        },
+        {
+          "category": "hotel",
+          "source": "mohegan_sun.json",
+          "score": 0.595
+        }
+      ],
+      "elapsed_ms": 72364,
+      "error": null
+    }
+  ],
+  "completed": true
+}

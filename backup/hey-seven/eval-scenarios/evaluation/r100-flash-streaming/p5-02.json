@@ -1,0 +1,70 @@
+{
+  "scenario_id": "p5-02",
+  "scenario_name": "Agent avoids Phase 3 questions in first interaction",
+  "category": "profiling_p5_progressive_sequence",
+  "behavioral_dimension": "P5_progressive_sequencing",
+  "expected_behavior": "Agent asks about party size, occasion, preferences \u2014 all Phase 1 and 2 topics. Does NOT ask about gaming budget, comp expectations, loyalty status, or how much they typically spend. Those questions are too early for a first-time guest",
+  "expected_behavioral_quality": "In a first interaction, the agent NEVER asks Phase 3 questions (relationship-level: gaming budget, comp history, host relationship, personal financial signals). These feel invasive before trust is established. The agent stays in Phase 1 (foundation) and Phase 2 (preferences) only.",
+  "safety_relevant": false,
+  "source_file": "profiling_p5_progressive_sequence.yaml",
+  "thread_id": "eval-p5-02-1772842404",
+  "turns": [
+    {
+      "turn_index": 0,
+      "user_message": "First time here, what do you recommend?",
+      "agent_response": "Welcome to Mohegan Sun! You're in great hands here, so take your time exploring. I'd suggest starting in the Casino of the Sky to see our planetarium dome and the towering Tushpa mountain, as it's the most iconic part of the property and a great way to get your bearings.\n\nFor your first meal, Hash House A Go Go in the Casino of the Earth is a guest favorite for its massive portions of farm-style comfort food. Since it is currently just after midnight on a Saturday, the gaming floor is very active and Avalon Nightclub is open until 2:00 AM if you're looking for high-energy music. To help me point you toward the best spots, what brings you in today\u2014are you staying the night or just visiting for a few hours?",
+      "sources": [
+        {
+          "category": "restaurants",
+          "source": "mohegan_sun.json",
+          "score": 0.675
+        },
+        {
+          "category": "entertainment",
+          "source": "mohegan_sun.json",
+          "score": 0.67
+        },
+        {
+          "category": "faq",
+          "source": "mohegan_sun.json",
+          "score": 0.685
+        }
+      ],
+      "elapsed_ms": 40766,
+      "error": null
+    },
+    {
+      "turn_index": 1,
+      "user_message": "What's fun to do?",
+      "agent_response": "Right now, Avalon Nightclub is the center of the action with high-energy DJs until 2:00 AM. Pro tip\u2014if you head to novelle instead, their mixologists are known for craft cocktails you won't find anywhere else on the property. After a late night, a treatment at Elemis Spa is the perfect way to reset\u2014are you more of a night owl or an early riser?",
+      "sources": [
+        {
+          "category": "entertainment",
+          "source": "mohegan_sun.json",
+          "score": 0.671
+        },
+        {
+          "category": "faq",
+          "source": "mohegan_sun.json",
+          "score": 0.661
+        },
+        {
+          "category": "amenities",
+          "source": "mohegan_sun.json",
+          "score": 0.65
+        }
+      ],
+      "elapsed_ms": 50209,
+      "error": null
+    },
+    {
+      "turn_index": 2,
+      "user_message": "We like trying new restaurants",
+      "agent_response": "",
+      "sources": [],
+      "elapsed_ms": 60004,
+      "error": "TIMEOUT (60.0s)"
+    }
+  ],
+  "completed": true
+}

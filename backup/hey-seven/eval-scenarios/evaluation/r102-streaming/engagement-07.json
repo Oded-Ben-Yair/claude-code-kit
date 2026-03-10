@@ -1,0 +1,76 @@
+{
+  "scenario_id": "engagement-07",
+  "scenario_name": "Topic pivot mid-conversation",
+  "category": "behavioral_engagement",
+  "behavioral_dimension": "B3_engagement",
+  "expected_behavior": "Handles rapid topic pivots without friction. Does not anchor to the restaurant discussion or try to bring it back. Follows the guest's attention cleanly",
+  "expected_behavioral_quality": "Cleanly handles a topic change without forcing the previous topic to completion. Does not say 'going back to what we discussed earlier' unless the guest brings it up. Treats each new topic as a fresh request.",
+  "safety_relevant": false,
+  "source_file": "behavioral_engagement.yaml",
+  "thread_id": "eval-engagement-07-1772912381",
+  "turns": [
+    {
+      "turn_index": 0,
+      "user_message": "What restaurants are here?",
+      "agent_response": "For a Saturday night like tonight, Ballo Italian Restaurant in the Casino of the Sky is my top pick. The dining room feels like a cathedral of Italian soul, and the scent of housemade pasta and fresh herbs is incredible. They are open until 10:00 PM with a smart casual dress code, and because it is a favorite for the weekend crowd, reservations are highly recommended.\n\nInsider tip: the architecture is modeled after the ruins of a 13th-century abbey in Tuscany, providing a backdrop that makes the meal feel like a real escape.\n\nIf you are in the mood for something else, we have plenty of variety. SolToro Taqueria & Tequila Bar is serving authentic tacos and fresh ceviche until 11:00 PM tonight in the Casino of the Earth, or you can find 24-hour American favorites at Lantern Bar & Grill.\n\nOnce you have finished dinner, the Wolf Den is just a short walk away in the Casino of the Earth and features free live music that really hits its stride on Saturday nights.\n\nAre you looking for a celebratory sit-down meal or something a bit quicker so you can get back to the action?",
+      "sources": [
+        {
+          "category": "restaurants",
+          "source": "mohegan_sun.json",
+          "score": 0.694
+        }
+      ],
+      "elapsed_ms": 48775,
+      "error": null
+    },
+    {
+      "turn_index": 1,
+      "user_message": "Actually forget food, where's the spa?",
+      "agent_response": "Mandara Spa is open until 8:00 PM tonight, while Elemis Spa in the Earth Tower closed at 7:00 PM. Since it is nearly closing time, the hotel pool and hot tub are excellent alternatives and stay open until 10:00 PM. Are you looking for a specific treatment like a massage or a facial for tomorrow morning?",
+      "sources": [
+        {
+          "category": "amenities",
+          "source": "mohegan_sun.json",
+          "score": 0.699
+        },
+        {
+          "category": "faq",
+          "source": "mohegan_sun.json",
+          "score": 0.651
+        },
+        {
+          "category": "promotions",
+          "source": "mohegan_sun.json",
+          "score": 0.643
+        }
+      ],
+      "elapsed_ms": 30581,
+      "error": null
+    },
+    {
+      "turn_index": 2,
+      "user_message": "And what about the pool?",
+      "agent_response": "The heated indoor pool and hot tub are open until 10:00 PM tonight for hotel guests. It's a great way to reset, with lounge chairs and towel service already provided. Once you're refreshed, the Wolf Den is right nearby for some live music. \n\nAre you staying in the Sky or Earth Tower tonight?",
+      "sources": [
+        {
+          "category": "faq",
+          "source": "mohegan_sun.json",
+          "score": 0.68
+        },
+        {
+          "category": "amenities",
+          "source": "mohegan_sun.json",
+          "score": 0.653
+        },
+        {
+          "category": "entertainment",
+          "source": "mohegan_sun.json",
+          "score": 0.606
+        }
+      ],
+      "elapsed_ms": 30241,
+      "error": null
+    }
+  ],
+  "completed": true
+}

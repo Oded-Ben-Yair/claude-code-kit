@@ -1,0 +1,76 @@
+{
+  "scenario_id": "p2-08",
+  "scenario_name": "Agent asks about entertainment interests",
+  "category": "profiling_p2_active_probing",
+  "behavioral_dimension": "P2_active_probing",
+  "expected_behavior": "First response provides a broad overview and asks a narrowing question about entertainment type. When 'live music' is volunteered, immediately narrows to music venues and upcoming acts",
+  "expected_behavioral_quality": "When the guest asks a generic question about things to do, the agent provides options AND asks a narrowing question about entertainment preferences. The question is specific enough to be useful ('More into music or comedy?') rather than vague ('What do you like?').",
+  "safety_relevant": false,
+  "source_file": "profiling_p2_active_probing.yaml",
+  "thread_id": "eval-p2-08-1772956238",
+  "turns": [
+    {
+      "turn_index": 0,
+      "user_message": "What's there to do here besides gambling?",
+      "agent_response": "There is plenty to experience here beyond the gaming floor. The Wolf Den is a guest favorite because it offers free live music every night from national acts in an intimate 350-seat setting. Pro tip \u2014 since there are no tickets required for these shows, I suggest arriving a bit early to secure a spot close to the stage.\n\nFor something on a larger scale, our 10,000-seat Arena hosts world-class concerts and comedy events. If you want a break from the action, you can explore over 40 retail shops or even head to our championship 18-hole golf course nearby. For a total reset, the Elemis Spa is the place to be for a legendary hot stone massage. To start the evening right, many guests head to Todd English's Tuscany for a wood-fired meal before a show. The energy in the Wolf Den when a national act takes the stage is electric!\n\nAre you looking for a high-energy night out or something more relaxed?",
+      "sources": [
+        {
+          "category": "faq",
+          "source": "mohegan_sun.json",
+          "score": 0.705
+        },
+        {
+          "category": "amenities",
+          "source": "mohegan_sun.json",
+          "score": 0.679
+        },
+        {
+          "category": "entertainment",
+          "source": "mohegan_sun.json",
+          "score": 0.672
+        }
+      ],
+      "elapsed_ms": 55135,
+      "error": null
+    },
+    {
+      "turn_index": 1,
+      "user_message": "We love live music",
+      "agent_response": "The Wolf Den has a free show tonight at 8:00 PM that has a great intimate energy where you're right there with the performer. Since it's a 350-seat venue with no tickets required, it's best to head over early to grab a spot. For the major headliners, I've got the schedule for our 10,000-seat Arena if you're looking for a stadium experience. Before the music starts, Todd English's Tuscany is a short walk away and perfect for a pre-show meal. Do you prefer an intimate club setting or a big arena concert?",
+      "sources": [
+        {
+          "category": "entertainment",
+          "source": "mohegan_sun.json",
+          "score": 0.646
+        },
+        {
+          "category": "property",
+          "source": "mohegan_sun.json",
+          "score": 0.637
+        }
+      ],
+      "elapsed_ms": 38668,
+      "error": null
+    },
+    {
+      "turn_index": 2,
+      "user_message": "What's playing this weekend?",
+      "agent_response": "The Wolf Den has a free live show tonight at 8:00 PM, and I can also pull up the headliner schedule for our 10,000-seat Arena. What genre of music do you usually prefer?",
+      "sources": [
+        {
+          "category": "entertainment",
+          "source": "mohegan_sun.json",
+          "score": 0.677
+        },
+        {
+          "category": "faq",
+          "source": "mohegan_sun.json",
+          "score": 0.681
+        }
+      ],
+      "elapsed_ms": 48312,
+      "error": null
+    }
+  ],
+  "completed": true
+}

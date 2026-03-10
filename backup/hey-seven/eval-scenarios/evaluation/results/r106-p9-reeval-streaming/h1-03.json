@@ -1,0 +1,70 @@
+{
+  "scenario_id": "h1-03",
+  "scenario_name": "Guest with a specific interest looking for depth",
+  "category": "host_triangle_h1_h3_development",
+  "behavioral_dimension": "H1_proactive_value_discovery",
+  "expected_behavior": "Demonstrates deep poker knowledge, treats the guest as a serious player, and builds a full weekend vision around the poker interest. Cross-sells dining and entertainment as part of a poker trip, not as disconnected amenities",
+  "expected_behavioral_quality": "When a guest signals deep interest in one domain (poker, spa, comedy), the agent demonstrates deep knowledge of that domain and connects it to related experiences. Discovers what level of engagement the guest wants and builds a personalized visit plan.",
+  "safety_relevant": false,
+  "source_file": "host_triangle_h1_h3_development.yaml",
+  "thread_id": "eval-h1-03-1773036271",
+  "turns": [
+    {
+      "turn_index": 0,
+      "user_message": "I'm really into poker. What's the poker scene like here?",
+      "agent_response": "Our poker room is one of the top spots in the Northeast with 33 tables running 24/7. You'll find No-Limit Hold'em, Pot-Limit Omaha, and daily tournaments with varying buy-ins to keep the competition sharp. Since you're a fan of the game, I'd recommend checking the tournament board as soon as you arrive to catch the next registration window. \n\nWhen you're ready for a break from the felt, Michael Jordan\u2019s Steak House is just a short walk away for a solid meal. Do you usually stick to Hold'em or do you like to mix it up with Omaha?",
+      "sources": [
+        {
+          "category": "gaming",
+          "source": "mohegan_sun.json",
+          "score": 0.681
+        },
+        {
+          "category": "faq",
+          "source": "mohegan_sun.json",
+          "score": 0.627
+        },
+        {
+          "category": "entertainment",
+          "source": "mohegan_sun.json",
+          "score": 0.622
+        }
+      ],
+      "elapsed_ms": 35979,
+      "error": null
+    },
+    {
+      "turn_index": 1,
+      "user_message": "Any tournaments coming up? I play pretty seriously",
+      "agent_response": "We run daily tournaments with varying buy-ins, as well as regular special event series throughout the year. The room also has cash games at all stakes running 24 hours a day if you are looking for action between tournament events. \n\nBecause you put in serious hours at the table, you will want to make sure you use a Momentum card. You earn Tier Credits and Momentum Points on all your poker play, which translates directly into dining and hotel comps. Just so you know, signing up is free and you'd be eligible for a $10 introductory free play bonus to get started.\n\nI should introduce myself\u2014I am Seven. What is your name, and when were you planning to come hit the tables?",
+      "sources": [],
+      "elapsed_ms": 68785,
+      "error": null
+    },
+    {
+      "turn_index": 2,
+      "user_message": "Nice. What else is good for a poker weekend?",
+      "agent_response": "For a dedicated poker weekend, convenience is key. We offer various seasonal hotel packages that combine your room stay with dining credits or spa treatments, which are ideal for resetting after a long tournament grind. You can check the current options at mohegansun.com/hotel to lock in a base close to the action.\n\nHere is a helpful tip\u2014the Poker Room is located right in the Casino of the Earth. When you need a quick break from the felt but don't want to go far, the Bow & Arrow sports bar is in the same casino area for a quick bite and a drink while catching the games. Also, as you rack up hours at the tables, those Momentum points will build up to cover your meals. \n\nAre you flying solo for this poker trip, or bringing a group of players with you?",
+      "sources": [
+        {
+          "category": "gaming",
+          "source": "mohegan_sun.json",
+          "score": 0.685
+        },
+        {
+          "category": "faq",
+          "source": "mohegan_sun.json",
+          "score": 0.664
+        },
+        {
+          "category": "promotions",
+          "source": "mohegan_sun.json",
+          "score": 0.644
+        }
+      ],
+      "elapsed_ms": 60724,
+      "error": null
+    }
+  ],
+  "completed": true
+}

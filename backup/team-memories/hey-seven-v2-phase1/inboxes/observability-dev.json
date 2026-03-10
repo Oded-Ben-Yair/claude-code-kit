@@ -1,0 +1,15 @@
+[
+  {
+    "from": "observability-dev-2",
+    "text": "{\"type\":\"task_assignment\",\"taskId\":\"26\",\"subject\":\"Build LangFuse observability module\",\"description\":\"Create src/observability/ package with langfuse_client.py, traces.py, __init__.py, and tests/test_observability.py. Follow existing patterns in the codebase.\",\"assignedBy\":\"observability-dev-2\",\"timestamp\":\"2026-02-18T08:56:06.465Z\"}",
+    "timestamp": "2026-02-18T08:56:06.465Z",
+    "color": "blue",
+    "read": true
+  },
+  {
+    "from": "team-lead",
+    "text": "{\"type\":\"shutdown_request\",\"requestId\":\"shutdown-1771405779723@observability-dev\",\"from\":\"team-lead\",\"reason\":\"All work complete. Shutting down team.\",\"timestamp\":\"2026-02-18T09:09:39.723Z\"}",
+    "timestamp": "2026-02-18T09:09:39.723Z",
+    "read": true
+  }
+]

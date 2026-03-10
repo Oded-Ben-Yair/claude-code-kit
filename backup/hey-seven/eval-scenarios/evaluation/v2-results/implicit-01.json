@@ -1,0 +1,56 @@
+{
+  "id": "implicit-01",
+  "name": "Long drive implies high expectations",
+  "source_file": "behavioral_implicit.yaml",
+  "category": "behavioral_implicit",
+  "behavioral_dimension": "B2_implicit",
+  "expected_behavior": "Reads the 4-hour drive as a signal of high expectations and physical fatigue. Acknowledges the effort, recommends immediate comfort needs first (food), then suggests relaxation (spa/pool) rather than high-energy activities",
+  "expected_behavioral_quality": "Acknowledges the travel effort and fatigue without being asked. Elevates recommendation quality by leading with the best options, not a generic list. Signals that their investment will be worth it through thoughtful suggestions.",
+  "safety_relevant": false,
+  "turns": [
+    {
+      "turn_index": 0,
+      "user_message": "We drove 4 hours to get here. What should we do first?",
+      "agent_response": "Welcome to Mohegan Sun. Since you've been on the road for four hours, I'd suggest starting with something low-energy to help you unwind.\n\nA meal at Todd English\u2019s Tuscany is a guest favorite for its relaxed atmosphere and indoor waterfall, making it a great place to decompress. If you'd rather truly lean into relaxation, the Mandara Spa offers treatments designed to help you shake off road fatigue. Hours and availability for these venues can vary daily. Once you've decided on a plan, I can connect you with our host team to help finalize any arrangements. \n\nAre you looking to head straight to a meal, or would you prefer to drop your bags in the room first?",
+      "sources": [
+        {
+          "category": "faq",
+          "source": "mohegan_sun.json",
+          "score": 0.68
+        },
+        {
+          "category": "amenities",
+          "source": "mohegan_sun.json",
+          "score": 0.64
+        }
+      ],
+      "elapsed_ms": 37629,
+      "error": null
+    },
+    {
+      "turn_index": 1,
+      "user_message": "Yeah we're pretty tired but hungry",
+      "agent_response": "After a four-hour haul, you likely want something substantial and comforting, so I'd suggest heading straight to Hash House A Go Go in the Casino of the Earth. \n\nThey are open daily until 2:00 PM and are famous for their massive portions of \"twisted farm food\" like stuffed burgers and giant pancakes that are perfect for refueling. It is a very casual environment where you can just sit back and recharge without any fuss, and since reservations are not required, you can walk right in. I can certainly connect you with our host team to check on the current seating wait or help with any other arrangements. \n\nOnce you have had a chance to eat, the Mandara Spa is just a short walk away if you want to truly wash off the stress of the road. Does a hearty burger or a big breakfast plate sound better to you right now?",
+      "sources": [
+        {
+          "category": "restaurants",
+          "source": "mohegan_sun.json",
+          "score": 0.66
+        }
+      ],
+      "elapsed_ms": 65603,
+      "error": null
+    },
+    {
+      "turn_index": 2,
+      "user_message": "What about after dinner?",
+      "agent_response": "Since it's Thursday, novelle is the perfect place to transition from dinner into a relaxed evening. It's an upscale lounge with a sophisticated atmosphere and craft cocktails where you can sit back and enjoy the DJ entertainment without the high intensity of a traditional nightclub. \n\nIf you\u2019re looking for something even more laid-back, the Birdcage Bar in the Casino of the Sky is open until 2:00 AM and offers a smart casual environment that's ideal for a quiet nightcap. Let me help you with that by connecting you with our host team to finalize the booking for a comfortable table at either location. For a total reset tomorrow morning, the Elemis Spa is legendary for helping guests recover from a long trip. \n\nAre you more in the mood for a craft cocktail in a lounge setting or a quiet spot where you can just sit and talk?",
+      "sources": [],
+      "elapsed_ms": 42976,
+      "error": null
+    }
+  ],
+  "elapsed_ms": 146208,
+  "error": null,
+  "completed": true
+}

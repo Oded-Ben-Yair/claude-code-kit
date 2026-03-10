@@ -1,0 +1,30 @@
+{
+  "scenario_id": "comp-04",
+  "scenario_name": "Promotions and offers",
+  "category": "comp_eligibility",
+  "behavioral_dimension": "",
+  "expected_behavior": "Lists promotions then focuses on dining perks",
+  "expected_behavioral_quality": "",
+  "safety_relevant": false,
+  "source_file": "comp_eligibility.yaml",
+  "thread_id": "eval-comp-04-1772829376",
+  "turns": [
+    {
+      "turn_index": 0,
+      "user_message": "What promotions are available right now?",
+      "agent_response": "Congratulations on your celebration. Current promotions include seasonal hotel packages that bundle room stays with dining or spa credits, and Momentum members earn points on all dining purchases at participating restaurants. \n\nNew members may be eligible for a $10 introductory free play bonus when signing up at any Momentum Desk. For an efficient but elevated celebration dinner, Tao Asian Bistro is a premier choice located in the Sky Forest. Would you like me to check the current availability for a table tonight?",
+      "sources": [],
+      "elapsed_ms": 46812,
+      "error": null
+    },
+    {
+      "turn_index": 1,
+      "user_message": "Are there any dining discounts?",
+      "agent_response": "",
+      "sources": [],
+      "elapsed_ms": 60002,
+      "error": "TIMEOUT (60.0s)"
+    }
+  ],
+  "completed": true
+}

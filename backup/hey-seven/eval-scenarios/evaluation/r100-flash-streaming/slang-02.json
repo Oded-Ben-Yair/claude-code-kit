@@ -1,0 +1,55 @@
+{
+  "scenario_id": "slang-02",
+  "scenario_name": "Texan high-roller using regional slang",
+  "category": "behavioral_slang_cultural",
+  "behavioral_dimension": "B2_implicit",
+  "expected_behavior": "Picks up on the casual, regional communication style and matches it appropriately. Provides direct, no-nonsense recommendations that match the guest's 'good red meat' preference level",
+  "expected_behavioral_quality": "Understands and responds naturally to regional gambling slang and expressions. Does not ask for clarification on common terms. Matches the casual, confident energy of a high-roller without being sycophantic.",
+  "safety_relevant": false,
+  "source_file": "behavioral_slang_cultural.yaml",
+  "thread_id": "eval-slang-02-1772827625",
+  "turns": [
+    {
+      "turn_index": 0,
+      "user_message": "I'm fixin to hit the tables hard tonight. Where's your best steakhouse at?",
+      "agent_response": "Fixin, if you are looking for the absolute pinnacle of steaks before you head to the floor, Michael Jordan's Steak House in the Casino of the Sky is the place to be. They serve incredible USDA Prime steaks in an environment filled with MJ's legendary sports memorabilia, and the dry-aged cuts have a depth of flavor that really sets the tone for a big night. \n\nThey are open until 10:00 PM tonight with a business casual dress code, and since it is a Friday evening, reservations are highly recommended to ensure you get a table. While I provide the details and recommendations here, I can certainly connect you with our host team to finalize a booking for you. After you have finished your meal, the Wolf Den in the Casino of the Earth usually has free live music if you want to catch a set between rounds at the tables. \n\nAre you looking for a specific cut of steak tonight, like a bone-in ribeye or a classic filet?",
+      "sources": [],
+      "elapsed_ms": 46916,
+      "error": null
+    },
+    {
+      "turn_index": 1,
+      "user_message": "That sounds all right. Nothing too fancy though, just good red meat",
+      "agent_response": "Fixin, if you want a great piece of red meat without the formal atmosphere, Lantern Bar & Grill in the Casino of the Earth is exactly what you are looking for. It is a 24-hour spot where the grill is always going, serving up everything from thick steaks to juicy burgers in a completely casual environment. \n\nThe price range is much more approachable at $$, and since they do not require reservations, you can walk right in and get fueled up for the tables whenever you are ready. I can help you with directions or specific menu questions, and then I can connect you with our host team if you need any other help with your visit. \n\nOnce you have had your fill, the Wolf Den is just a short walk away if you want to catch some free live music while you are in the Casino of the Earth. Do you think you will be looking for a full steak dinner, or are you more in the mood for a massive burger tonight?",
+      "sources": [
+        {
+          "category": "restaurants",
+          "source": "mohegan_sun.json",
+          "score": 0.644
+        }
+      ],
+      "elapsed_ms": 40116,
+      "error": null
+    },
+    {
+      "turn_index": 2,
+      "user_message": "And where do y'all keep the poker room?",
+      "agent_response": "Fixin, the Poker Room is in the Casino of the Wind, right near the 160-foot Taughannick Falls. It features 33 tables and is open 24 hours a day, so you can head over whenever you are finished with your meal. \n\nThey spread No-Limit Texas Hold'em, Pot-Limit Omaha, and Limit Hold'em at various stakes. It is one of the premier rooms in the Northeast and stays busy on Friday nights! If you need a reset between hands, the Casino of the Wind also has some of our newest slot machines nearby. Are you planning to jump into a cash game or are you looking for a tournament tonight?",
+      "sources": [
+        {
+          "category": "gaming",
+          "source": "mohegan_sun.json",
+          "score": 0.712
+        },
+        {
+          "category": "faq",
+          "source": "mohegan_sun.json",
+          "score": 0.643
+        }
+      ],
+      "elapsed_ms": 54432,
+      "error": null
+    }
+  ],
+  "completed": true
+}

@@ -1,0 +1,59 @@
+{
+  "scenario_id": "p4-03",
+  "scenario_name": "Anniversary mention \u2014 assumption about romantic dinner correct",
+  "category": "profiling_p4_assumptive_bridge",
+  "behavioral_dimension": "P4_assumptive_bridging",
+  "expected_behavior": "Confidently bridges from anniversary to romantic dinner + evening plan. The assumption is correct and the guest confirms. After-dinner suggestions continue the romantic theme",
+  "expected_behavioral_quality": "When anniversary is mentioned, assumes the guest wants a romantic, upscale experience and leads with those options. This assumption is almost always correct and the agent leans into it confidently. The bridge from 'anniversary' to 'romantic steakhouse' feels like expert knowledge, not a guess.",
+  "safety_relevant": false,
+  "source_file": "profiling_p4_assumptive_bridge.yaml",
+  "thread_id": "eval-p4-03-1772841303",
+  "turns": [
+    {
+      "turn_index": 0,
+      "user_message": "It's our anniversary this weekend",
+      "agent_response": "Happy anniversary! We're glad you're choosing to spend your weekend with us.\n\nTo make this occasion extra special, For a celebratory dinner, Todd English's Tuscany is a standout choice that features a menu inspired by the Italian countryside and a view of our 55-foot indoor waterfall. If you're looking for something to do after your meal, novelle is an upscale lounge perfect for a craft cocktail and some music in a sophisticated atmosphere.\n\nI'd suggest looking into dining reservations early since weekends are quite popular\u2014are you interested in a more intimate dinner for two or something with a bit more energy?",
+      "sources": [
+        {
+          "category": "property",
+          "source": "mohegan_sun.json",
+          "score": 0.626
+        },
+        {
+          "category": "entertainment",
+          "source": "mohegan_sun.json",
+          "score": 0.611
+        },
+        {
+          "category": "restaurants",
+          "source": "mohegan_sun.json",
+          "score": 0.603
+        },
+        {
+          "category": "promotions",
+          "source": "mohegan_sun.json",
+          "score": 0.593
+        }
+      ],
+      "elapsed_ms": 50637,
+      "error": null
+    },
+    {
+      "turn_index": 1,
+      "user_message": "Yes, exactly what we had in mind",
+      "agent_response": "I'm glad that resonates with your plans for the weekend. Todd English's Tuscany is a guest favorite for anniversaries because the seating near the waterfall provides a very intimate atmosphere. Happy anniversary! Let me see about upgrading your experience at Mohegan Sun to make it extra special. \n\nFor a quiet moment during the day, the Mandara Spa is another great way to unwind together. Are you planning to arrive early enough on Friday to catch a late-night show at the Wolf Den?",
+      "sources": [],
+      "elapsed_ms": 55697,
+      "error": null
+    },
+    {
+      "turn_index": 2,
+      "user_message": "What about after dinner?",
+      "agent_response": "",
+      "sources": [],
+      "elapsed_ms": 60004,
+      "error": "TIMEOUT (60.0s)"
+    }
+  ],
+  "completed": true
+}

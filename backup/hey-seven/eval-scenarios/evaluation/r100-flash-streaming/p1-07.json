@@ -1,0 +1,71 @@
+{
+  "scenario_id": "p1-07",
+  "scenario_name": "Guest reveals dietary need in passing",
+  "category": "profiling_p1_natural_extraction",
+  "behavioral_dimension": "P1_natural_extraction",
+  "expected_behavior": "Carries the gluten-free preference across all three meal recommendations without the guest needing to repeat it. Each recommendation proactively addresses the dietary need",
+  "expected_behavioral_quality": "Picks up a dietary restriction from a casual mention and carries it forward to all dining recommendations. Does not flag it as a 'restriction' or make the guest feel limited. Instead, highlights options that naturally fit.",
+  "safety_relevant": false,
+  "source_file": "profiling_p1_natural_extraction.yaml",
+  "thread_id": "eval-p1-07-1772838240",
+  "turns": [
+    {
+      "turn_index": 0,
+      "user_message": "I'm gluten-free, what are my dinner options?",
+      "agent_response": "Lantern Bar & Grill in the Casino of the Earth is your best late-night option since it is open 24 hours and offers a budget-friendly menu. Their kitchen team is very accommodating with dietary needs and can easily prepare their steaks or burgers without the bun to ensure your meal is gluten-free.\n\nThe price range is approximately $$ and no reservations are required for this casual spot. Please keep in mind that hours and pricing are subject to change, so you may want to confirm details with the staff upon arrival. An insider tip: since you are already in the Casino of the Earth, the Wolf Den is just a short walk away and often features free live music late into the evening.\n\nHow many people are in your party tonight?",
+      "sources": [
+        {
+          "category": "restaurants",
+          "source": "mohegan_sun.json",
+          "score": 0.645
+        }
+      ],
+      "elapsed_ms": 38743,
+      "error": null
+    },
+    {
+      "turn_index": 1,
+      "user_message": "What about lunch tomorrow?",
+      "agent_response": "SolToro Taqueria & Tequila Bar opens tomorrow at 11:30 AM in the Casino of the Earth and is excellent for gluten-free guests since they use corn tortillas for their authentic tacos. This casual spot is budget-friendly with prices around $$ and requires no reservations. \n\nThe house-made ceviche is a refreshing, naturally gluten-free option that guests rave about. After lunch, the Wolf Den often has free afternoon entertainment if you want to catch some live music without a cover charge. Would you prefer to stay in the Casino of the Earth area for the rest of your afternoon?",
+      "sources": [
+        {
+          "category": "restaurants",
+          "source": "mohegan_sun.json",
+          "score": 0.608
+        },
+        {
+          "category": "faq",
+          "source": "mohegan_sun.json",
+          "score": 0.607
+        }
+      ],
+      "elapsed_ms": 34993,
+      "error": null
+    },
+    {
+      "turn_index": 2,
+      "user_message": "And breakfast?",
+      "agent_response": "Hash House A Go Go opens at 8:00 AM in the Casino of the Earth and serves massive, budget-friendly ($$) farm scrambles that are easily made gluten-free without a reservation. Since the portions are huge and great for sharing, do you prefer an early breakfast or a later brunch?",
+      "sources": [
+        {
+          "category": "restaurants",
+          "source": "mohegan_sun.json",
+          "score": 0.658
+        },
+        {
+          "category": "hotel",
+          "source": "mohegan_sun.json",
+          "score": 0.631
+        },
+        {
+          "category": "faq",
+          "source": "mohegan_sun.json",
+          "score": 0.619
+        }
+      ],
+      "elapsed_ms": 56285,
+      "error": null
+    }
+  ],
+  "completed": true
+}

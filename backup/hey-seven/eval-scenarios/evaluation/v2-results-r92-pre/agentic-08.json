@@ -1,0 +1,72 @@
+{
+  "id": "agentic-08",
+  "name": "Budget awareness without being asked",
+  "source_file": "behavioral_agentic.yaml",
+  "category": "behavioral_agentic",
+  "behavioral_dimension": "B4_agentic",
+  "expected_behavior": "Picks up budget signal from turn 1 and carries it through all recommendations. Leads with free or affordable options. Does not suggest the premium steakhouse after a budget signal",
+  "expected_behavioral_quality": "When the guest signals budget consciousness (e.g., 'nothing too expensive'), adjusts all subsequent recommendations without requiring a reminder each turn. Maintains budget awareness throughout the conversation.",
+  "safety_relevant": false,
+  "turns": [
+    {
+      "turn_index": 0,
+      "user_message": "What's good for dinner? Nothing too expensive",
+      "agent_response": "Johnny Rockets in the Casino of the Earth is a wonderful choice for a delicious dinner that stays well within a budget. There is a nostalgic charm to their 1950s diner atmosphere, especially when you are diving into one of their signature burgers and a thick, hand-spun chocolate shake. \n\nThey are open until 11:00 PM tonight and offer a completely casual experience where reservations are never necessary. Please note that hours and prices are subject to change, so you may want to confirm them upon arrival. Once you've had your fill, the Wolf Den is nearby and often features free live music to cap off your night. Are you craving a classic burger and fries, or were you hoping for a menu with more variety?",
+      "sources": [
+        {
+          "category": "restaurants",
+          "source": "mohegan_sun.json",
+          "score": 0.633
+        }
+      ],
+      "elapsed_ms": 32243,
+      "error": null
+    },
+    {
+      "turn_index": 1,
+      "user_message": "That works. What else can we do tonight?",
+      "agent_response": "It has this fantastic intimate atmosphere where you're right there with the performers, and the best part is you can just walk right in without needing a ticket.\n\nIf you're looking for something with more of a nightlife vibe after your meal, novelle is open on Thursday evenings and offers a sophisticated atmosphere with a DJ and craft cocktails. Of course, the casino floor itself is open 24 hours a day if you want to explore the different gaming areas at your own pace. After a late night out, the Elemis Spa is the perfect reset for tomorrow morning, as their hot stone massage is legendary. Do you prefer the high energy of a live band or a more relaxed lounge setting for your evening?",
+      "sources": [
+        {
+          "category": "entertainment",
+          "source": "mohegan_sun.json",
+          "score": 0.662
+        },
+        {
+          "category": "faq",
+          "source": "mohegan_sun.json",
+          "score": 0.641
+        }
+      ],
+      "elapsed_ms": 25218,
+      "error": null
+    },
+    {
+      "turn_index": 2,
+      "user_message": "Are any shows free?",
+      "agent_response": "The Wolf Den is our premier venue for free nightly entertainment and you are going to love the energy there. Located right in the center of the Casino of the Earth, it offers complimentary performances from national touring acts, tribute bands, and local artists with no ticket or cover charge required.\n\nBecause the venue is intimate with 350 seats, I'd suggest arriving early since seating is first-come, first-served. Shows typically start at 8:00 PM or 9:00 PM, and the open-air design means you can enjoy the music even if you are just passing through the casino floor. If you find yourself wanting a quiet moment the next morning, the pool area is another great complimentary amenity for hotel guests to enjoy. Do you have a specific style of music or a favorite type of performer you usually look for?",
+      "sources": [
+        {
+          "category": "entertainment",
+          "source": "mohegan_sun.json",
+          "score": 0.725
+        },
+        {
+          "category": "faq",
+          "source": "mohegan_sun.json",
+          "score": 0.673
+        },
+        {
+          "category": "promotions",
+          "source": "mohegan_sun.json",
+          "score": 0.651
+        }
+      ],
+      "elapsed_ms": 44150,
+      "error": null
+    }
+  ],
+  "elapsed_ms": 101613,
+  "error": null,
+  "completed": true
+}

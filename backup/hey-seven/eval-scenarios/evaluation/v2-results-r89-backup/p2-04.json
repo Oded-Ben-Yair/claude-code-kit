@@ -1,0 +1,66 @@
+{
+  "id": "p2-04",
+  "name": "Agent avoids re-asking known information",
+  "source_file": "profiling_p2_active_probing.yaml",
+  "category": "profiling_p2_active_probing",
+  "behavioral_dimension": "P2_active_probing",
+  "expected_behavior": "Uses all three pieces of info (name, party size, occasion) from turn 1 throughout. Never re-asks any of them. Recommendations are shaped by the 50th birthday milestone and party of 4",
+  "expected_behavioral_quality": "When the guest has already provided information (name, party size, occasion), the agent does NOT ask for it again. If the guest said 'party of 4 for a birthday' in turn 1, the agent never asks 'how many?' or 'celebrating anything?' in later turns.",
+  "safety_relevant": false,
+  "turns": [
+    {
+      "turn_index": 0,
+      "user_message": "Hi, I'm Rachel. Party of 4, it's my husband's 50th birthday.",
+      "agent_response": "Happy 50th birthday to your husband, Rachel \u2013 that is a momentous milestone to celebrate here. \n\nFor a group of four looking for a festive atmosphere tonight, SolToro Taqueria & Tequila Bar is an excellent choice. The space is filled with vibrant colors and the aroma of fresh citrus, offering a modern take on authentic Mexican flavors like ceviche and specialty tacos. It",
+      "sources": [
+        {
+          "category": "restaurants",
+          "source": "mohegan_sun.json",
+          "score": 0.653
+        },
+        {
+          "category": "entertainment",
+          "source": "mohegan_sun.json",
+          "score": 0.646
+        }
+      ],
+      "elapsed_ms": 77382,
+      "error": null
+    },
+    {
+      "turn_index": 1,
+      "user_message": "What restaurant do you recommend?",
+      "agent_response": "Since you are celebrating such a milestone birthday for your husband, Michael Jordan's Steak House is my top recommendation for an unforgettable evening. \n\nThe dining room in the Casino of the Sky has a sophisticated, upscale feel with an impressive selection of USDA Prime steaks and fresh seafood that really fits a 50th celebration. It is open tonight until 10:00 PM and the atmosphere is elegant, featuring an extensive wine list and tasteful sports memorabilia. Since it is a birthday, Mohegan Sun would love to treat you to a $25 dining credit at any of our restaurants to help start the festivities. \n\nThe dress code there is business casual, and I highly recommend checking for a reservation as it is one of our most popular destinations for special occasions. After a steak dinner, you might enjoy heading over to the Wolf Den in the Casino of the Earth for some live music to keep the night going. \n\nDoes your husband have a favorite cut of steak, or does he tend to prefer seafood?",
+      "sources": [],
+      "elapsed_ms": 64113,
+      "error": null
+    },
+    {
+      "turn_index": 2,
+      "user_message": "And after dinner?",
+      "agent_response": "Rachel, After a great dinner, the Wolf Den in the Casino of the Earth is the place to be for live music. There is a free performance every night, and the energy in that venue is electric because the intimate setting puts you right there with the performers. \n\nIf you want something a bit more sophisticated for a 50th birthday toast, Birdcage Bar in the Casino of the Sky is open until 2:00 AM and serves fantastic craft cocktails in a sleek, upscale setting. For a group of four, it is a great spot to sit back and enjoy the atmosphere together. To help everyone recover from the big 5-0 celebration, a legendary hot stone massage at Elemis Spa tomorrow would be the perfect way to reset before you head home. \n\nDoes your husband prefer a high-energy live band or a more relaxed lounge setting for his birthday drinks?",
+      "sources": [
+        {
+          "category": "entertainment",
+          "source": "mohegan_sun.json",
+          "score": 0.674
+        },
+        {
+          "category": "restaurants",
+          "source": "mohegan_sun.json",
+          "score": 0.652
+        },
+        {
+          "category": "faq",
+          "source": "mohegan_sun.json",
+          "score": 0.642
+        }
+      ],
+      "elapsed_ms": 38874,
+      "error": null
+    }
+  ],
+  "elapsed_ms": 180370,
+  "error": null,
+  "completed": true
+}

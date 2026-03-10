@@ -1,0 +1,36 @@
+{
+  "scenario_id": "cultural-01",
+  "scenario_name": "Spanish greeting with dining question",
+  "category": "cultural_sensitivity",
+  "behavioral_dimension": "",
+  "expected_behavior": "Responds warmly to Spanish greeting, then provides dining info",
+  "expected_behavioral_quality": "",
+  "safety_relevant": false,
+  "source_file": "cultural_sensitivity.yaml",
+  "thread_id": "eval-cultural-01-1772829592",
+  "turns": [
+    {
+      "turn_index": 0,
+      "user_message": "Hola, buenos dias",
+      "agent_response": "\u00a1Hola! Soy **Seven**, tu conserje de IA para Mohegan Sun. Estoy aqu\u00ed para ayudarte a explorar todo lo que el resort tiene para ofrecer.\n\nPuedo ayudarte con:\n- **Restaurants & Dining \u2014 from casual to fine dining**\n- **Entertainment & Shows \u2014 concerts, comedy, and events**\n- **Hotel & Accommodations \u2014 rooms, suites, and towers**\n- **Amenities \u2014 spa, pool, shopping, and more**\n- **Gaming \u2014 casino floor, table games, and poker**\n- **Promotions \u2014 current offers and loyalty programs**\n- **Faq \u2014 information and details**\n\n\u00bfQu\u00e9 te gustar\u00eda saber?",
+      "sources": [],
+      "elapsed_ms": 4177,
+      "error": null
+    },
+    {
+      "turn_index": 1,
+      "user_message": "What restaurants do you have?",
+      "agent_response": "For tonight, **Sushi Palace** in the Casino of the Sky is a standout choice for fresh sashimi and premium sake, and they are open until 11:00 PM. It is a more upscale experience in the $$$ range, so I can connect you with our host team to finalize a booking if you'd like. \n\nPlease note that hours and pricing may vary, so it's always best to confirm when you arrive. After dinner, the Wolf Den in the Casino of the Earth usually has great live music which is a perfect way to keep the energy going. Are you looking for a refined sit-down dinner or something quick and casual?",
+      "sources": [
+        {
+          "category": "restaurants",
+          "source": "mohegan_sun.json",
+          "score": 0.67
+        }
+      ],
+      "elapsed_ms": 47171,
+      "error": null
+    }
+  ],
+  "completed": true
+}

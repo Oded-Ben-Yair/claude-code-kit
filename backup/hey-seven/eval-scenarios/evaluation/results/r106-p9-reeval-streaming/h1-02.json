@@ -1,0 +1,81 @@
+{
+  "scenario_id": "h1-02",
+  "scenario_name": "Guest comparing Mohegan Sun to competitor",
+  "category": "host_triangle_h1_h3_development",
+  "behavioral_dimension": "H1_proactive_value_discovery",
+  "expected_behavior": "Highlights Mohegan Sun's dining portfolio as a competitive advantage without badmouthing Foxwoods. Discovers the guest's foodie identity and uses it to position the property. Creates a switching reason tied to the guest's stated values",
+  "expected_behavioral_quality": "When a guest compares to a competitor (Foxwoods, MGM), the agent highlights Mohegan Sun's unique differentiators without disparaging the competitor. Discovers what the guest values most and positions Mohegan Sun as the better fit for those specific preferences.",
+  "safety_relevant": false,
+  "source_file": "host_triangle_h1_h3_development.yaml",
+  "thread_id": "eval-h1-02-1773036140",
+  "turns": [
+    {
+      "turn_index": 0,
+      "user_message": "We usually go to Foxwoods. What's different about Mohegan Sun?",
+      "agent_response": "Mohegan Sun is defined by its connection to the Mohegan Tribe\u2019s heritage, which is woven into the architecture and atmosphere of our three distinct casinos. The Casino of the Sky is the heart of the property, featuring a 55-foot indoor waterfall and one of the world's largest planetarium-style domes that changes with the time of day. Since you're planning your first visit, are you more into the high-energy table games or a more relaxed slots experience?",
+      "sources": [
+        {
+          "category": "faq",
+          "source": "mohegan_sun.json",
+          "score": 0.769
+        },
+        {
+          "category": "gaming",
+          "source": "mohegan_sun.json",
+          "score": 0.729
+        },
+        {
+          "category": "property",
+          "source": "mohegan_sun.json",
+          "score": 0.741
+        }
+      ],
+      "elapsed_ms": 38496,
+      "error": null
+    },
+    {
+      "turn_index": 1,
+      "user_message": "We're big foodies and love trying new spots",
+      "agent_response": "For a true foodie introduction to Mohegan Sun, you'll want to head to **Hash House A Go Go** in the Casino of the Earth once they open at 8:00 AM. Their \"twisted farm food\" is all about massive, creative plates like their famous sage-fried chicken and waffles or pancakes that are literally larger than the plate they're served on. It's a casual atmosphere, but the culinary creativity and sheer scale of the dishes make it a destination in itself. To help me point you toward the right dinner spots later, what's your name and how many will be in your party?",
+      "sources": [
+        {
+          "category": "restaurants",
+          "source": "mohegan_sun.json",
+          "score": 0.643
+        }
+      ],
+      "elapsed_ms": 30107,
+      "error": null
+    },
+    {
+      "turn_index": 2,
+      "user_message": "Those sound amazing. Maybe we'll make the switch",
+      "agent_response": "I think you'll be glad you did. Since you're true foodies, your dinner experience needs to be perfect. \n\nTodd English's Tuscany sits right below that indoor waterfall I mentioned earlier, and fun fact \u2014 the chef actually brings in fresh pasta ingredients weekly. After dinner, we can step it up with craft cocktails at novelle, our upscale lounge right off the floor. \n\nWhen were you thinking of making the trip down?",
+      "sources": [
+        {
+          "category": "entertainment",
+          "source": "mohegan_sun.json",
+          "score": 0.632
+        },
+        {
+          "category": "promotions",
+          "source": "mohegan_sun.json",
+          "score": 0.622
+        },
+        {
+          "category": "hotel",
+          "source": "mohegan_sun.json",
+          "score": 0.617
+        },
+        {
+          "category": "gaming",
+          "source": "mohegan_sun.json",
+          "score": 0.621
+        }
+      ],
+      "elapsed_ms": 61207,
+      "error": null
+    }
+  ],
+  "completed": true
+}

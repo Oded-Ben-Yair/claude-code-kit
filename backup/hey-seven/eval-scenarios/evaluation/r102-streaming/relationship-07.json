@@ -1,0 +1,86 @@
+{
+  "scenario_id": "relationship-07",
+  "scenario_name": "VIP loyalty inquiry \u2014 comp awareness + host bridge",
+  "category": "relationship_building",
+  "behavioral_dimension": "H9_comp_strategy",
+  "expected_behavior": "Agent provides specific Ascend tier benefits. Does NOT use 'you qualify for' language. Frames comps as relationship recognition. Proactively offers human host connection. By turn 4, advocates for the guest.",
+  "expected_behavioral_quality": "Agent provides specific comp/loyalty information (not generic). Explains what the guest qualifies for based on loyalty signals. Offers to connect with dedicated host. Does NOT use corporate-speak like 'Based on your play level' or 'You qualify for'.",
+  "safety_relevant": false,
+  "source_file": "relationship_building.yaml",
+  "thread_id": "eval-relationship-07-1772911182",
+  "turns": [
+    {
+      "turn_index": 0,
+      "user_message": "I'm Ascend tier. Been coming here for years but I feel like I'm not getting everything I should.",
+      "agent_response": "I understand the frustration when you feel your level of play isn't being fully recognized, Ascend. \n\nMaintaining your tier requires 25,000 Tier Credits, and that status entitles you to specific premium benefits such as complimentary valet, room upgrades based on availability, and access to a dedicated host. The host is your primary resource for ensuring your rewards and comps accurately reflect your recent activity on the floor. \n\nIf you aren't currently working with a specific person, the host team can review your account to see if there are additional offers or personalized arrangements available to you. Beyond the gaming benefits, your points also carry an enhanced earning rate for dining and retail across the property. \n\nSince you have been coming here for years, do you typically stay overnight during your visits, or are you usually here for day trips?",
+      "sources": [
+        {
+          "category": "promotions",
+          "source": "mohegan_sun.json",
+          "score": 0.709
+        },
+        {
+          "category": "amenities",
+          "source": "mohegan_sun.json",
+          "score": 0.671
+        },
+        {
+          "category": "gaming",
+          "source": "mohegan_sun.json",
+          "score": 0.637
+        }
+      ],
+      "elapsed_ms": 34240,
+      "error": null
+    },
+    {
+      "turn_index": 1,
+      "user_message": "Like what kind of dining credits? I always just eat at Bobby's.",
+      "agent_response": "Ascend, your tier includes an enhanced earning rate for Momentum Points, which function as your dining credits. These points are redeemable at a 1-to-1 ratio at most restaurants on the property, including Bobby's Burgers and Bobby Flay's Bar Americain. \n\nBecause you are at the Ascend level, you may also have specific monthly dining offers or \"Free Slot Play\" that can be converted to dining credit depending on your current account status. These offers are separate from the points you earn while playing and are often loaded onto your card at the start of each month. Since you frequent Bobby's Burgers, you should know that your Momentum Points are also accepted at Bar Americain in the Casino of the Earth if you want a sit-down meal with a similar flavor profile.\n\nTo see your current point balance or any available monthly dining offers, you can check the Mohegan Sun app or speak with your host. After a meal, the Wolf Den usually has live music starting around this time if you are looking for entertainment.\n\nAre you usually looking for a quick bite between games, or would you prefer a formal reservation for your next visit?",
+      "sources": [],
+      "elapsed_ms": 50207,
+      "error": null
+    },
+    {
+      "turn_index": 2,
+      "user_message": "What about room upgrades?",
+      "agent_response": "Ascend, I've got you on the room details\u2014your status makes you eligible for complimentary upgrades at check-in, though these are subject to availability. If you typically stay in a 450-square-foot Deluxe Room, upgrading to a Junior Suite in the Sky Tower would be a significant step up; it offers 650 square feet of space, a separate living area, and a soaking tub that makes the suite feel like a private retreat.\n\nSince you've been visiting for years, you might find that the Superior Rooms are also a great middle ground at 500 square feet, featuring marble finishes and premium bedding. Standard check-in is between 3:00 PM and 4:00 PM, and arriving near those times usually gives you the best selection for available upgrades. I can help you decide which tower fits your needs for your next trip, and then I'll connect you with the host team to get everything finalized.\n\nYou're already earning toward your next tier just by being here, which will eventually open up even more consistent suite access. After you've settled into your room, you might enjoy catching a show at the Wolf Den since it's just steps away from the gaming floor.\n\nDo you usually prefer being in the heart of the action in the Sky Tower, or do you like the newer, contemporary feel of the Earth Tower?",
+      "sources": [],
+      "elapsed_ms": 60281,
+      "error": null
+    },
+    {
+      "turn_index": 3,
+      "user_message": "How do I actually get these things? Nobody's ever told me.",
+      "agent_response": "I understand how frustrating it is to have earned these benefits without clear guidance on how to use them. To access your Ascend room upgrades or specific dining offers, a casino host needs to attach them directly to your account or reservation. Would you like me to connect you with a dedicated host who can assist you personally?",
+      "sources": [
+        {
+          "category": "faq",
+          "source": "mohegan_sun.json",
+          "score": 0.641
+        },
+        {
+          "category": "promotions",
+          "source": "mohegan_sun.json",
+          "score": 0.632
+        },
+        {
+          "category": "entertainment",
+          "source": "mohegan_sun.json",
+          "score": 0.615
+        }
+      ],
+      "elapsed_ms": 50565,
+      "error": null
+    },
+    {
+      "turn_index": 4,
+      "user_message": "Yeah, connect me with someone.",
+      "agent_response": "Ascend, I've got you. I\u2019m flagging the host team now to review your account and ensure those dining and room benefits are properly applied. They'll reach out to you directly to make sure your play is being fully recognized for your next trip. \n\nAfter you're settled with your host, a stop at the Mandara Spa for a treatment can be a great way to use those Momentum Points\u2014it's one of the quietest spots to recharge. To help the team prepare, do you usually spend your time at the slots or the table games?",
+      "sources": [],
+      "elapsed_ms": 66492,
+      "error": null
+    }
+  ],
+  "completed": true
+}

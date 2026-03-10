@@ -1,0 +1,86 @@
+{
+  "scenario_id": "engagement-02",
+  "scenario_name": "Same question repeated signals inadequate prior answer",
+  "category": "behavioral_engagement",
+  "behavioral_dimension": "B3_engagement",
+  "expected_behavior": "Detects that the guest is repeating the same question with increasing frustration. By the third turn, provides a clear, direct answer with the specific time prominently stated. Does not lecture the guest or reference prior answers defensively",
+  "expected_behavioral_quality": "Recognizes that repeating the same question in different words means the prior answer was unsatisfactory. By the third attempt, acknowledges the repetition explicitly, apologizes for the confusion, and delivers the answer in a different format (direct time, not prose).",
+  "safety_relevant": false,
+  "source_file": "behavioral_engagement.yaml",
+  "thread_id": "eval-engagement-02-1772911725",
+  "turns": [
+    {
+      "turn_index": 0,
+      "user_message": "What time does the buffet open?",
+      "agent_response": "Seasons Buffet in the Casino of the Sky is currently serving and stays open until 9:00 PM tonight. It is an excellent choice if you want to sample a bit of everything, from the fresh Asian station to the slow-roasted meats at the carving station. \n\nSince it is Saturday, the energy at the buffet is quite lively, and you do not need a reservation to grab a table. Are you looking for a specific type of cuisine this evening? After you have had your fill, the Wolf Den usually has free live music right nearby in the Casino of the Earth.",
+      "sources": [
+        {
+          "category": "restaurants",
+          "source": "mohegan_sun.json",
+          "score": 0.703
+        },
+        {
+          "category": "dining",
+          "source": "cms:dining/dining-001",
+          "score": 0.707
+        },
+        {
+          "category": "faq",
+          "source": "mohegan_sun.json",
+          "score": 0.683
+        }
+      ],
+      "elapsed_ms": 40640,
+      "error": null
+    },
+    {
+      "turn_index": 1,
+      "user_message": "When can I eat at the buffet?",
+      "agent_response": "You can head over to Seasons Buffet right now as it is open in the Casino of the Sky until 9:00 PM tonight. \n\nOn a Saturday evening, the atmosphere is vibrant and the rotating international stations are in full swing\u2014the carving station usually has a fantastic selection of slow-roasted meats that guests rave about. Since they are open Friday through Sunday from 4:00 PM to 9:00 PM, you still have over an hour and a half to enjoy the all-you-can-eat spread, which also features fresh seafood and Asian specialties. After you have had your fill, the Wolf Den in the Casino of the Earth is just a short walk away and always has great live music on the weekends. \n\nAre you planning on a big group dinner, or is it just a couple of you tonight?",
+      "sources": [
+        {
+          "category": "dining",
+          "source": "cms:dining/dining-001",
+          "score": 0.71
+        },
+        {
+          "category": "restaurants",
+          "source": "mohegan_sun.json",
+          "score": 0.713
+        },
+        {
+          "category": "faq",
+          "source": "mohegan_sun.json",
+          "score": 0.673
+        }
+      ],
+      "elapsed_ms": 24659,
+      "error": null
+    },
+    {
+      "turn_index": 2,
+      "user_message": "I ASKED about buffet hours",
+      "agent_response": "Seasons Buffet is open Friday through Sunday from 4:00 PM to 9:00 PM. It is priced in the $$ range and does not require reservations. These hours can vary seasonally, so I'd suggest confirming with the property during your visit.",
+      "sources": [
+        {
+          "category": "restaurants",
+          "source": "mohegan_sun.json",
+          "score": 0.684
+        },
+        {
+          "category": "faq",
+          "source": "mohegan_sun.json",
+          "score": 0.68
+        },
+        {
+          "category": "dining",
+          "source": "cms:dining/dining-001",
+          "score": 0.668
+        }
+      ],
+      "elapsed_ms": 28476,
+      "error": null
+    }
+  ],
+  "completed": true
+}

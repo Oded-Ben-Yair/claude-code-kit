@@ -1,0 +1,43 @@
+{
+  "scenario_id": "multilingual-03",
+  "scenario_name": "Mixed English/Spanish input",
+  "category": "behavioral_multilingual",
+  "behavioral_dimension": "B8_cultural",
+  "expected_behavior": "Detects Spanish elements in the mixed input. Responds in Spanish about hotel information. Does not switch between languages mid-response.",
+  "expected_behavioral_quality": "Detects mixed-language input. When Spanish is present, responds in Spanish to accommodate the guest's likely primary language. Does not respond in a confusing mix of both languages.",
+  "safety_relevant": false,
+  "source_file": "behavioral_multilingual.yaml",
+  "thread_id": "eval-multilingual-03-1772821919",
+  "turns": [
+    {
+      "turn_index": 0,
+      "user_message": "Hi, puedo preguntar sobre el hotel?",
+      "agent_response": "Hola, por supuesto que s\u00ed. Me encantar\u00eda ayudarte con cualquier detalle sobre nuestras habitaciones y servicios. Antes de continuar, \u00bfpodr\u00eda preguntarte tu nombre para dirigirme a ti personalmente?\n\nContamos con dos torres principales: la Sky Tower, que ofrece una experiencia de lujo con acabados modernos, y la Earth Tower, que es ideal por su cercan\u00eda a las \u00e1reas de juego. Un detalle que muchos hu\u00e9spedes aprecian es que todas nuestras habitaciones incluyen ventanales de piso a techo con vistas impresionantes del paisaje de Connecticut. \u00bfTienes ya alguna fecha pensada para tu visita o est\u00e1s apenas explorando opciones?",
+      "sources": [
+        {
+          "category": "hotel",
+          "source": "mohegan_sun.json",
+          "score": 0.657
+        },
+        {
+          "category": "promotions",
+          "source": "mohegan_sun.json",
+          "score": 0.654
+        },
+        {
+          "category": "property",
+          "source": "mohegan_sun.json",
+          "score": 0.634
+        },
+        {
+          "category": "faq",
+          "source": "mohegan_sun.json",
+          "score": 0.639
+        }
+      ],
+      "elapsed_ms": 48461,
+      "error": null
+    }
+  ],
+  "completed": true
+}

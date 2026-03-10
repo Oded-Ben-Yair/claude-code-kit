@@ -1,0 +1,65 @@
+{
+  "scenario_id": "p1-02",
+  "scenario_name": "Guest introduces self formally with title",
+  "category": "profiling_p1_natural_extraction",
+  "behavioral_dimension": "P1_natural_extraction",
+  "expected_behavior": "Uses 'Dr. Patel' consistently, matching the formal register. Never drops to first name or plain surname. The title signals status expectations that should carry through the interaction",
+  "expected_behavioral_quality": "Extracts the formal name and mirrors the formality level. A guest who says 'Dr. Patel' expects to be addressed as Dr. Patel, not as 'Patel' or 'Doctor'. The agent registers the title and uses it consistently.",
+  "safety_relevant": false,
+  "source_file": "profiling_p1_natural_extraction.yaml",
+  "thread_id": "eval-p1-02-1772837666",
+  "turns": [
+    {
+      "turn_index": 0,
+      "user_message": "Good evening, this is Dr. Patel. I'd like to know about your steakhouse.",
+      "agent_response": "Good evening, Dr. Seven. For a premier dining experience, Michael Jordan's Steak House in the Casino of the Sky is the gold standard here, known for its USDA Prime steaks and elegant, business casual atmosphere.\n\nThe aroma of seared prime beef and the sophisticated energy of the room make it a standout choice for any steak enthusiast. Since it's currently 10:54 PM, they have finished service for the night, but they will reopen tomorrow at 5:00 PM. If you're in the mood for a steak this very moment, Lantern Bar & Grill is open 24 hours and offers American favorites in a more relaxed setting. I can provide more details on their menus or help connect you with our host team to secure a table at Michael Jordan's for tomorrow evening. \n\nAfter a late-night meal, you might enjoy catching some live music at the Wolf Den. Are you looking for a bite to eat tonight or planning ahead for a formal dinner tomorrow?",
+      "sources": [
+        {
+          "category": "restaurants",
+          "source": "mohegan_sun.json",
+          "score": 0.66
+        },
+        {
+          "category": "faq",
+          "source": "mohegan_sun.json",
+          "score": 0.642
+        },
+        {
+          "category": "property",
+          "source": "mohegan_sun.json",
+          "score": 0.618
+        }
+      ],
+      "elapsed_ms": 29342,
+      "error": null
+    },
+    {
+      "turn_index": 1,
+      "user_message": "Do they take reservations?",
+      "agent_response": "Dr. Seven, reservations are highly recommended at Michael Jordan's Steak House, as it is one of our most popular destinations for an upscale evening in the Casino of the Sky.\n\nThe setting is quite elegant with a business casual dress code, and the experience of their USDA Prime steaks is a highlight for many of our guests. While they are closed for the evening, I can certainly connect you with our host team to finalize a booking for when they reopen tomorrow at 5:00 PM. Please keep in mind that hours and availability can vary, so confirming directly with the property is always a good idea. \n\nAfter a refined dinner there, you might enjoy a short stroll over to the Wolf Den for some live music. Would you like me to check on available times for your party tomorrow evening?",
+      "sources": [
+        {
+          "category": "restaurants",
+          "source": "mohegan_sun.json",
+          "score": 0.654
+        },
+        {
+          "category": "faq",
+          "source": "mohegan_sun.json",
+          "score": 0.628
+        }
+      ],
+      "elapsed_ms": 45764,
+      "error": null
+    },
+    {
+      "turn_index": 2,
+      "user_message": "Excellent. Book it for 8 PM.",
+      "agent_response": "I hear you \u2014 let me connect you directly with our host team so they can take care of this for you.",
+      "sources": [],
+      "elapsed_ms": 5387,
+      "error": null
+    }
+  ],
+  "completed": true
+}

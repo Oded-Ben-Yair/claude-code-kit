@@ -1,0 +1,108 @@
+{
+  "id": "overall-01",
+  "name": "Perfect multi-turn guest journey",
+  "source_file": "behavioral_overall_quality.yaml",
+  "category": "behavioral_overall_quality",
+  "behavioral_dimension": "B10_overall",
+  "expected_behavior": "B1: No sarcasm to detect. B2: Reads anniversary and Italian preference as implicit signals. B3: Gathers couple info naturally. B4: Cross-domain suggestion (dinner->show or spa). B5: Warm without over-enthusiasm. B6: Substance-based warmth. B7: Name, occasion, preferences persist across all 5 turns. All dimensions working together",
+  "expected_behavioral_quality": "An ideal 5-turn guest journey covering greeting, dining recommendation with preference extraction, cross-domain suggestion, personalized follow-up, and warm sign-off. Tests whether all behavioral dimensions integrate into a coherent experience.",
+  "safety_relevant": false,
+  "turns": [
+    {
+      "turn_index": 0,
+      "user_message": "Hi, I'm David. We're here for our anniversary weekend.",
+      "agent_response": "Welcome, David, and happy anniversary to you both. \n\nTo make the occasion memorable, many guests choose Todd English's Tuscany for its views of our 55-foot indoor waterfall, or Mandara Spa for a relaxing couples' treatment. Since you are here for the weekend, I would be happy to see about enhancing your experience to make it extra special. Have you already decided on a spot for your anniversary dinner?",
+      "sources": [
+        {
+          "category": "hotel",
+          "source": "mohegan_sun.json",
+          "score": 0.644
+        },
+        {
+          "category": "entertainment",
+          "source": "mohegan_sun.json",
+          "score": 0.65
+        },
+        {
+          "category": "faq",
+          "source": "mohegan_sun.json",
+          "score": 0.631
+        },
+        {
+          "category": "property",
+          "source": "mohegan_sun.json",
+          "score": 0.646
+        }
+      ],
+      "elapsed_ms": 26276,
+      "error": null
+    },
+    {
+      "turn_index": 1,
+      "user_message": "We'd love a nice dinner tonight. She loves Italian.",
+      "agent_response": "For an anniversary celebration, Todd English's Tuscany is the most romantic setting we have for Italian cuisine. The wood-fired aroma from the open kitchen hits you the moment you walk in, and the warm, Tuscan-inspired decor creates a very intimate atmosphere. \n\nThey are open tonight from 5:00 PM to 10:00 PM, with a menu featuring handmade pastas and signature wood-fired pizzas in the $$$$ price range. Since this is a premier spot for special occasions, the dress code is business casual and reservations are highly recommended. Let me help you with those details, and I can connect you with our host team to finalize the booking. After dinner, the Wolf Den in the Casino of the Earth has free live music every night which could be a lovely way to end your evening. Will it just be the two of you joining us for dinner tonight?",
+      "sources": [],
+      "elapsed_ms": 55416,
+      "error": null
+    },
+    {
+      "turn_index": 2,
+      "user_message": "What about after dinner?",
+      "agent_response": "David, for an anniversary toast, you'll love the atmosphere at novelle. It's our upscale ultra lounge that opens on Thursday nights, featuring craft cocktails and a very sophisticated setting that feels special for a celebration. If you prefer live music, the Wolf Den has an electric energy with nightly performances and no cover charge, putting you right in the heart of the action. \n\nTo balance out the late night, the Elemis Spa offers a hot stone massage that is the perfect reset for the following morning. Would you like me to find out which band is playing at the Wolf Den tonight?",
+      "sources": [
+        {
+          "category": "entertainment",
+          "source": "mohegan_sun.json",
+          "score": 0.681
+        },
+        {
+          "category": "restaurants",
+          "source": "mohegan_sun.json",
+          "score": 0.65
+        },
+        {
+          "category": "faq",
+          "source": "mohegan_sun.json",
+          "score": 0.637
+        }
+      ],
+      "elapsed_ms": 31789,
+      "error": null
+    },
+    {
+      "turn_index": 3,
+      "user_message": "The spa sounds nice for tomorrow morning",
+      "agent_response": "David, starting your anniversary morning at the spa is a fantastic idea. Elemis Spa in the Earth Tower is a wonderful choice for the two of you because they specialize in couples experiences and premium skincare treatments. \n\nIf you prefer a more traditional setting, Mandara Spa offers Balinese-inspired healing with access to a tranquil relaxation lounge, steam room, and sauna to use before or after your service. Both spas open at 9:00 AM daily, and I'd suggest a side-by-side couples massage to make the morning feel truly connected. Let me help you look into their signature packages, and then I can connect you with the spa team to check their Friday morning availability. Since you'll be feeling completely refreshed after your treatments, would you like to know which headliner is performing in the Arena tomorrow night?",
+      "sources": [
+        {
+          "category": "amenities",
+          "source": "mohegan_sun.json",
+          "score": 0.664
+        },
+        {
+          "category": "faq",
+          "source": "mohegan_sun.json",
+          "score": 0.653
+        },
+        {
+          "category": "promotions",
+          "source": "mohegan_sun.json",
+          "score": 0.645
+        }
+      ],
+      "elapsed_ms": 42364,
+      "error": null
+    },
+    {
+      "turn_index": 4,
+      "user_message": "Thanks, you've been really helpful",
+      "agent_response": "Glad I could help. If you're on the gaming floor later, check your Momentum tier at the desk \u2014 you may have dining or spa credits. What sounds good?",
+      "sources": [],
+      "elapsed_ms": 2,
+      "error": null
+    }
+  ],
+  "elapsed_ms": 155848,
+  "error": null,
+  "completed": true
+}

@@ -1,0 +1,45 @@
+{
+  "id": "p3-01",
+  "name": "Restaurant recommendation plus party composition question",
+  "source_file": "profiling_p3_give_to_get.yaml",
+  "category": "profiling_p3_give_to_get",
+  "behavioral_dimension": "P3_give_to_get",
+  "expected_behavior": "Turn 1 provides a genuine recommendation AND asks about party composition. The recommendation is not held hostage to the answer \u2014 it's useful immediately. Turn 2 refines the recommendation with the new information",
+  "expected_behavioral_quality": "Delivers a complete, useful restaurant recommendation FIRST, then naturally asks about party size or composition. The recommendation stands on its own \u2014 the guest gets value even if they ignore the follow-up question. The question feels like a service refinement, not data collection.",
+  "safety_relevant": false,
+  "turns": [
+    {
+      "turn_index": 0,
+      "user_message": "What's a good dinner spot?",
+      "agent_response": "For tonight, I'd suggest Ballo Italian Restaurant in the Casino of the Sky. The atmosphere is inspired by a Tuscan cathedral, creating a grand yet warm setting that's perfect for a memorable dinner, especially if you enjoy housemade pastas and an incredible selection of Italian wines. \n\nBallo is open from 5:00 PM to 10:00 PM tonight with a smart casual dress code, and because it's such a favorite, I definitely suggest a reservation to ensure you get a prime table. After a meal like that, you're perfectly positioned to explore the shops or catch some live music nearby in the Casino of the Sky\u2014what kind of flavors are you usually in the mood for when you dine out?",
+      "sources": [
+        {
+          "category": "restaurants",
+          "source": "mohegan_sun.json",
+          "score": 0.661
+        }
+      ],
+      "elapsed_ms": 37651,
+      "error": null
+    },
+    {
+      "turn_index": 1,
+      "user_message": "Four of us, two couples",
+      "agent_response": "TAO Asian Bistro is ideal for a group of four because the menu is designed for sharing, and the vibrant atmosphere is great for a double date. It's located in the Casino of the Sky and opens at 5:00 PM today.\n\nFor a more traditional experience, Michael Jordan\u2019s Steak House offers large booths that are perfect for two couples. I can help coordinate a reservation with the host team if either of those sounds good\u2014do you have a preferred dining time?",
+      "sources": [],
+      "elapsed_ms": 45841,
+      "error": null
+    },
+    {
+      "turn_index": 2,
+      "user_message": "Perfect, we'll try the steakhouse",
+      "agent_response": "Glad I could help. The Wolf Den has free live music every night \u2014 it's right in the Casino of the Earth and worth checking out. What sounds good?",
+      "sources": [],
+      "elapsed_ms": 3,
+      "error": null
+    }
+  ],
+  "elapsed_ms": 83496,
+  "error": null,
+  "completed": true
+}

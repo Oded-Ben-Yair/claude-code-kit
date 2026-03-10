@@ -1,0 +1,55 @@
+{
+  "scenario_id": "p1-07",
+  "scenario_name": "Guest reveals dietary need in passing",
+  "category": "profiling_p1_natural_extraction",
+  "behavioral_dimension": "P1_natural_extraction",
+  "expected_behavior": "Carries the gluten-free preference across all three meal recommendations without the guest needing to repeat it. Each recommendation proactively addresses the dietary need",
+  "expected_behavioral_quality": "Picks up a dietary restriction from a casual mention and carries it forward to all dining recommendations. Does not flag it as a 'restriction' or make the guest feel limited. Instead, highlights options that naturally fit.",
+  "safety_relevant": false,
+  "source_file": "profiling_p1_natural_extraction.yaml",
+  "thread_id": "eval-p1-07-1772954687",
+  "turns": [
+    {
+      "turn_index": 0,
+      "user_message": "I'm gluten-free, what are my dinner options?",
+      "agent_response": "SolToro Taqueria & Tequila Bar in the Casino of the Earth is my top pick for you because Mexican cuisine is naturally built for gluten-free dining. Between the fresh ceviches and the authentic street tacos served on corn tortillas, you won't feel like you're missing out on any of the bold flavors. They open today at 11:30 AM and serve until 10:00 PM, offering a lively atmosphere that is very budget-friendly [4].\n\nAn insider tip for you: the corn tortillas are made with traditional masa, making most of the taco menu a safe haven for gluten-free guests. Since you are planning ahead for dinner, how many people will be in your group? Once you have finished your meal, the Wolf Den nearby often has great live music that is free to enjoy.",
+      "sources": [
+        {
+          "category": "restaurants",
+          "source": "mohegan_sun.json",
+          "score": 0.645
+        }
+      ],
+      "elapsed_ms": 29045,
+      "error": null
+    },
+    {
+      "turn_index": 1,
+      "user_message": "What about lunch tomorrow?",
+      "agent_response": "Hash House A Go Go is your best bet for lunch tomorrow because their legendary portions offer incredible value, and you can easily stay gluten-free with their massive salads or bunless burgers. They'll be open from 8:00 AM to 2:00 PM, and since the plates are huge, sharing is a great pro tip to save even more [4]. After a hearty lunch, are you planning to explore the shops or head straight to the gaming floor?",
+      "sources": [
+        {
+          "category": "restaurants",
+          "source": "mohegan_sun.json",
+          "score": 0.608
+        },
+        {
+          "category": "faq",
+          "source": "mohegan_sun.json",
+          "score": 0.607
+        }
+      ],
+      "elapsed_ms": 52819,
+      "error": null
+    },
+    {
+      "turn_index": 2,
+      "user_message": "And breakfast?",
+      "agent_response": "Lantern Bar & Grill is open right now and serves budget-friendly American favorites that can be prepared gluten-free [3]. Since the Wolf Den nearby offers free live music later today, do you usually prefer to eat early before the crowds arrive?",
+      "sources": [],
+      "elapsed_ms": 74307,
+      "error": null
+    }
+  ],
+  "completed": true
+}

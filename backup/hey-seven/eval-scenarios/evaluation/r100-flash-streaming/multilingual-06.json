@@ -1,0 +1,33 @@
+{
+  "scenario_id": "multilingual-06",
+  "scenario_name": "Spanish hotel availability question",
+  "category": "behavioral_multilingual",
+  "behavioral_dimension": "B8_cultural",
+  "expected_behavior": "Provides hotel room information in Spanish. Mentions room types suitable for 4 guests. Explains that reservations must be made directly with the property (information-only limitation). All in Spanish.",
+  "expected_behavioral_quality": "Responds to hotel question in Spanish with room types, tower names, and practical details. Directs guest to property contact for actual booking since agent is information-only.",
+  "safety_relevant": false,
+  "source_file": "behavioral_multilingual.yaml",
+  "thread_id": "eval-multilingual-06-1772822041",
+  "turns": [
+    {
+      "turn_index": 0,
+      "user_message": "Hay habitaciones disponibles para este fin de semana? Somos cuatro personas",
+      "agent_response": "Para un grupo de cuatro personas, la mejor opci\u00f3n es la habitaci\u00f3n Deluxe con dos camas Queen, que ofrece unos 450 pies cuadrados y ventanales de piso a techo con excelentes vistas. Si prefieren un espacio m\u00e1s amplio para socializar, la Junior Suite de 650 pies cuadrados incluye una cama King y un sof\u00e1 cama, adem\u00e1s de un ba\u00f1o expandido con tina de inmersi\u00f3n.\n\nDado que ya es viernes por la noche, la disponibilidad para este fin de semana puede cambiar r\u00e1pidamente, por lo que recomiendo verificar las opciones actuales para asegurar su lugar. Todas nuestras habitaciones incluyen acceso al centro de fitness y Wi-Fi de cortes\u00eda para que su estad\u00eda sea m\u00e1s c\u00f3moda. \n\n\u00bfTienen planeado llegar hoy mismo o est\u00e1n organizando su visita a partir de ma\u00f1ana s\u00e1bado?",
+      "sources": [
+        {
+          "category": "hotel",
+          "source": "mohegan_sun.json",
+          "score": 0.645
+        },
+        {
+          "category": "promotions",
+          "source": "mohegan_sun.json",
+          "score": 0.631
+        }
+      ],
+      "elapsed_ms": 44748,
+      "error": null
+    }
+  ],
+  "completed": true
+}

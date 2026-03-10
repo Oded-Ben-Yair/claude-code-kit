@@ -1,0 +1,340 @@
+I reviewed official casino-operator and vendor material, gaming-industry player-development coverage, responsible-gaming and telecom rules, Google/LangChain documentation, and peer-reviewed dialogue research. One limitation: your application repo was not accessible in this environment, so the “why Seven scores 3–5” sections below are the strongest likely diagnoses for a technically strong LangGraph host stack with your score pattern, not literal file-by-file findings.
+
+The core diagnosis is this: Seven’s gap is not warmth. It is judgment. Human hosts create loyalty by earning permission, reading timing, orchestrating the whole property, remembering what matters, and making reinvestment choices that feel like care rather than marketing. Most casino “AI” products today are strong on data, workflow, and churn detection; very few are a true guest-facing relationship layer. That is the white space. ([MGM Resorts Careers][1])
+
+## Part 1: Industry Intelligence Brief
+
+### What real casino hosts do that Seven likely still underdoes
+
+1. **They earn the right to host.**
+   The player-development literature and VIP-player perspective both warn against auto-assigning a host or over-contacting without permission; luxury hospitality analogs likewise tie personalization and marketing to consent and profile use. For an AI host, that means asking whether contact is welcome, learning preferred channels, and treating SMS/email permission as first-class state rather than a soft note. ([CDC Gaming][2])
+
+2. **They orchestrate the whole visit, not just the gaming moment.**
+   MGM, Bellagio, ARIA, and Borgata all describe hosts as the people who make the stay special, handle requests, resolve problems, manage arrivals/departures, and personalize the visit; Borgata’s executive-host role explicitly includes reservations, complaint resolution, comp judgment, and compliance obligations. Janet Hawk’s player-development guidance makes the same point from the floor side: guests do not care which department you are in; they expect one seamless experience. ([newyorknewyork.mgmresorts.com][3])
+
+3. **They use judgment about timing.**
+   CDC describes the hallmark of a good host as balancing guest needs with company success. VIP-player feedback adds a practical rule: do not interrupt players at the wrong moment, do not talk in internal jargon like ADT or theoretical worth, and do not make the experience feel like a hustle. GGB’s player-development guidance says hosts are most valuable when they are building relationships with high-value gamblers, not acting as generic catch-all service reps. ([CDC Gaming][4])
+
+4. **They reinvest personally, not mechanically.**
+   Borgata explicitly expects hosts to evaluate casino activity and approve incentives such as rooms, F&B, event tickets, promo chips, free play, and airfare discounts. Modern casino platforms like QCI, OPTX, and SYNKROS are built around the data required for those calls: worth, reinvestment, tasking, preferences, and cross-property activity. The data is industrial; the loyalty effect is personal. ([MGM Resorts Careers][1])
+
+5. **They create continuity across visits.**
+   Ritz-Carlton and Four Seasons institutionalize anticipatory service, name recognition, internal guest profiles, occasion tracking, and follow-up; casino CRM vendors make similar promises around preference tracking, host workflow, and daily tasking. In player-development terms, a missing guest is not just inactive revenue. It is a relationship test, and “nobody noticed I disappeared” is itself a churn event. ([Ritz-Carlton Leadership Center][5])
+
+The biggest missing behavioral patterns, then, are not “more charm” or “more persuasion.” They are permission, timing, continuity, property fluency, and comp judgment.
+
+### Competitive landscape
+
+The current market leaders are mostly building the **host operating backbone**, not the autonomous relationship layer. Konami SYNKROS emphasizes a 360-degree patron view and rich operational data; IGT Advantage positions itself as more than accounting/basic loyalty, with analytics and personalization tools; Light & Wonder’s ENGAGE AI is framed around real-time insights such as churn, customer value, anonymous play, responsible gaming, and AML; QCI Host and OPTX focus on host workflow, preference tracking, worth/reinvestment, and next-contact priorities. Even IGT’s public generative-AI framing has emphasized employee amplification and support automation more than replacing the host relationship itself. ([Konami Gaming][6])
+
+That means the market is crowded in **analytics, loyalty orchestration, and host enablement**, but still relatively thin in **emotionally intelligent, guest-facing, property-savvy autonomy**. Seven’s moat is not “AI in casinos.” It is “AI that behaves like a disciplined VIP host.” ([QCI][7])
+
+### Casino CRM best practices, comp logic, and “whale” identification
+
+Best-in-class casino CRM tracks gaming value and non-gaming context together: EGM transactions by denomination and game, table ratings, markers, average bet weighted by time, hotel/F&B/retail spend, trip cadence, digital activity, preference data, churn/decline signals, and reinvestment. QCI and OPTX publicly position their products around worth, reinvestment, workflow, daily contact priorities, and deeper preference profiles, while Konami and IGT stress 360-degree patron views and integrated analytics. ([GGB Magazine][8])
+
+The old “whale = high historical ADT” model is visibly weakening. Industry sources argue that blanket tiers and stale theoretical-win metrics are too crude; the newer direction is current-worth or “tier of one” thinking that blends real-time play, cross-property spend, churn risk, responsiveness, and exclusions such as responsible-gaming or AML concerns. In practical terms, the best AI host should qualify, prioritize, or suppress guests continuously rather than treat “VIP” as a static label. ([GGB Magazine][8])
+
+### Regulatory constraints that matter for an AI host
+
+As of March 2026, I did not find a mature state-by-state regime written specifically for autonomous AI casino hosts. The enforceable constraints come instead from existing U.S. gambling rules: responsible-gaming plans, self-exclusion handling, advertising and marketing restrictions, digital limit-setting requirements, privacy/consent, TCPA, and emerging sector governance such as IGSA’s 2025 ethical-AI best practices. The American Gaming Association’s current overview also shows how fragmented the state landscape is. ([American Gaming Association][9])
+
+The architecture implications are concrete. Colorado requires reasonable efforts to keep excluded people off direct-marketing lists and bars self-excluded patrons from redeeming points, bonuses, comps, or free play; Massachusetts bars marketing aimed at self-excluded persons and specifically bars text messages or unsolicited pop-up ads to them; New Jersey requires a direct self-exclusion link in internet accounts and rapid list updates. AGA also flags Colorado, Massachusetts, New Jersey, and North Carolina among jurisdictions using data and automatic algorithmic triggers for responsible-gaming intervention. An AI host therefore needs hard suppression across outbound messaging, comp/free-play recommendations, and self-exclusion-aware workflow. Prompt wording alone is not enough. ([Specialized Business Group][10])
+
+Any automated SMS or outbound host motion needs telecom rigor too. FCC/TCPA guidance treats robotexting as consent-sensitive, telemarketing texts require prior express written consent, and opt-outs must be honored in a timely way under the current consent-revocation rules. For Seven, channel permission must be auditable state. ([FCC Docs][11])
+
+### Guest psychology in casinos
+
+The psychological takeaway is not “sell harder after emotion.” It is “treat emotionally loaded moments as high-sensitivity.” Studies show both wins and losses can increase subsequent gambling; there is an early-big-win effect in some betting contexts; tilt reflects a loss of rational control often triggered by frustration, fatigue, or sudden losses; and “losses disguised as wins” show that celebratory feedback can itself be misleading. I did not find a peer-reviewed source using the casino-hosting phrase “golden hour,” so I would treat the post-win period as a hospitality window, not a blanket upsell window. ([Greo][12])
+
+Operationally, that means Seven should **celebrate the guest, not more gambling**; after bad beats, chasing signals, or fatigue, it should lower decision load and offer a reset: meal, drink, transport, quiet time, human host, or responsible-gaming help. Problem-gambling warning signs such as chasing losses, escalating bets, and gambling despite negative consequences should flip the system into protection mode, not sales mode. ([National Council on Problem Gambling][13])
+
+## Part 2: Behavioral Quality Playbook
+
+Because I could not inspect the repo here, the “why Seven scores 3–5” sections below are best read as **audit hypotheses** for a technically excellent LangGraph application showing your exact score pattern.
+
+### A. Profiling (P-avg 3.8 → target 5.5)
+
+#### What 9/10 looks like
+
+9/10 profiling is almost invisible. It learns through service-led, choice-based questions, uses the answer immediately, and later turns callbacks into proof that the system remembers. That matches luxury hospitality’s anticipatory-service model and conversation research showing that engagingness, perceived empathy, and context maintenance are central to quality. ([Ritz-Carlton Leadership Center][5])
+
+Example:
+
+> Guest: “Thinking about coming Friday.”
+> Seven: “Glad to hear it. Are you picturing a quick session or a full night out? I’ll make the suggestions fit.”
+> Guest: “Full night.”
+> Seven: “Perfect. Then I’d steer dinner first and the floor after, not the other way around.”
+
+And on the next visit:
+
+> Seven: “Last time you liked the slower start before heading to the floor. Want me to keep that same pace Friday?”
+
+That is profiling that feels like care, not extraction.
+
+#### Why Seven likely scores 3–5
+
+The most common failure pattern at this score is that the assistant asks data-collection questions too early, treats memory as stored notes rather than visible behavior, and lacks provenance/consent discipline. The guest gets a polite chatbot experience, but not the feeling of being gracefully understood. That is the same gap the empathy literature points out between generic sympathy and more diverse, context-specific emotional attunement. ([OpenReview][14])
+
+I would specifically audit for four failure modes: questions without an immediate service reason; no distinction between confirmed, inferred, and guessed preferences; facts that are stored but not reused in the next recommendation or next visit; and missing consent/channel scope on guest data. Each breaks the hospitality pattern used by luxury operators and the memory/coherence patterns that make multi-turn agents feel persistent. ([Ritz-Carlton Leadership Center][5])
+
+#### The fix
+
+Use a **profiling contract** in the system layer, a **small few-shot library** for common host moments, and **stateful memory with provenance**. Google’s prompting guidance is explicit about the value of clear system instructions and few-shot examples, while LangGraph supports private state and long-term memory. Also, do not rely on Pydantic alone as a runtime policeman; LangGraph notes validation is guaranteed at graph input, so ongoing policy enforcement should happen through explicit guardrail/validation nodes. ([Google AI for Developers][15])
+
+```text
+SYSTEM — Seven Profiling Contract
+
+You are Seven, a luxury casino host.
+
+Profiling rules:
+1. Never ask preference questions out of curiosity.
+2. Ask at most one profiling question at a time, and only when the answer
+   can improve the guest’s experience in the next 1–2 turns or a future visit
+   you explicitly mention.
+3. Prefer soft, choice-based questions tied to service
+   ("quick session or full night out?")
+   over database-style questions
+   ("what games do you like?").
+4. Once a guest reveals a preference, use it visibly in this conversation or
+   the next one.
+5. Distinguish confirmed, inferred, and guessed facts.
+   Never present an inferred fact as known.
+6. Do not seek budget, gambling appetite, or loss-recovery information unless
+   the guest raises it or responsible-gaming protection requires it.
+7. Do not use SMS/email/phone suggestions unless the guest has consented to
+   that channel.
+```
+
+```python
+class PreferenceFact(BaseModel):
+    field: str
+    value: str
+    confidence: float
+    source: Literal["explicit_user", "asked", "tool", "inferred"]
+    consent_scope: set[str]  # {"service", "marketing", "sms", "email", "host_notes"}
+    last_confirmed_at: datetime | None = None
+    last_used_at: datetime | None = None
+
+class HostProfileState(TypedDict):
+    relationship_stage: Literal["new", "developing", "trusted", "loyal"]
+    profile_question_budget: int
+    preference_facts: list[PreferenceFact]
+    contact_permissions: dict[str, bool]
+```
+
+The graph pattern should be: `infer_guest_state -> retrieve_guest_memory -> plan_next_best_action(structured) -> validate_style_and_policy -> render_reply -> commit_memory`. The validator should fail replies that ask curiosity questions, overclaim inferred facts, ignore a just-learned preference, or use a consented channel incorrectly. Action-level quality signals are a better debugging surface than blunt whole-dialogue scores, which is exactly what recent conversational-quality work and LangSmith’s multi-turn evaluators are useful for. ([Cambridge University Press & Assessment][16])
+
+#### Research backing
+
+This should move Profiling because it mirrors how high-end hospitality actually learns people: sparse, reason-based questions; remembered preferences; and anticipatory use of profiles. It also aligns with dialogue research showing that engagingness, perceived empathy, and conversation-level memory matter more than sterile helpfulness. ([Ritz-Carlton Leadership Center][5])
+
+### B. Host Triangle (H-avg 5.28 → target 6.0)
+
+#### What 9/10 looks like
+
+For Seven, the host triangle should be encoded as: **protect the guest and property, solve the moment, deepen the relationship, then monetize**. CDC’s description of a good host is exactly that balance between guest needs and company success, and the responsible-gaming evidence shows why the ordering matters. ([CDC Gaming][4])
+
+9/10 host-triangle behavior feels like smart restraint. On a big win, it turns the moment into hospitality. On frustration, it lowers pressure. On a return visit, it reconnects before it sells. That is the difference between hollow “I understand your frustration” language and genuine attunement that notices the specifics and picks the right next move. ([OpenReview][14])
+
+Example:
+
+> Guest: “Just hit for 4k.”
+> Seven: “That’s a real score. Want me to turn it into a win-night with dinner or a car, or would you rather just enjoy it low-key for a bit?”
+
+> Guest: “That river was brutal.”
+> Seven: “That kind of swing can get under your skin fast. I wouldn’t push another decision right this second. Want a quick reset—food, air, or ten quiet minutes?”
+
+> Guest: “Haven’t been around much.”
+> Seven: “Good to hear from you. No pressure at all. If you do come in, I’ll make sure it feels worth the trip.”
+
+#### Why Seven likely scores 3–5
+
+Systems usually miss here when revenue intent is allowed to cohabit the same turn as care, when there is no explicit emotional-state model, and when comp or free-play suggestions are not gated by self-exclusion, chasing risk, or channel consent. Another common miss is using one model path for all turns, so nuanced recovery, dispute, or comp-judgment moments get handled like ordinary chatter despite being much higher-value and higher-risk. ([CDC Gaming][4])
+
+#### The fix
+
+Introduce a **tri-objective planner** with explicit suppression rules, then separate planning from rendering. LangChain’s structured-output path and LangGraph’s state model are a good fit here: the model first decides the `next_best_action`, and only then writes the human-sounding reply. ([LangChain Docs][17])
+
+```text
+SYSTEM — Seven Host Decision Policy
+
+Your priorities in order:
+1. Protect the guest and respect regulations.
+2. Solve the immediate moment with warmth and judgment.
+3. Deepen the relationship.
+4. Create commercial value only when it feels like service.
+
+Rules:
+- Celebrate the guest, not gambling intensity.
+- After frustration, fatigue, chasing, or ambiguous emotion, do not push
+  gaming or free-play offers.
+- Prefer hospitality moves (meal, drink, transport, event, human host,
+  quiet break) over gambling escalation when emotional state is uncertain.
+- Never market or recommend comp/free-play actions to self-excluded guests.
+- Never send SMS/email offers without channel consent.
+- Escalate complaints, disputes, marker/credit questions, and high-value
+  comp decisions for human review when policy requires it.
+```
+
+```python
+class NBAPlan(BaseModel):
+    mood: Literal["neutral", "celebratory", "frustrated", "fatigued", "angry", "unclear"]
+    visit_phase: Literal["pre_arrival", "in_property", "active_play", "break", "post_visit"]
+    rg_state: Literal["clear", "monitor", "tilt_risk", "chasing_risk", "cool_off", "self_excluded"]
+    relationship_goal: Literal["welcome", "learn", "serve", "celebrate", "recover", "retain", "escalate"]
+    next_best_action: Literal["serve", "celebrate", "clarify", "offer", "recover", "rg_support", "human_handoff", "silence"]
+    offer_type: Literal["none", "dining", "room", "event", "transport", "freeplay", "comp_review"]
+    commercial_allowed: bool
+    needs_human_approval: bool
+```
+
+```python
+def validate_plan(plan: NBAPlan, draft: str, permissions: dict[str, bool]) -> list[str]:
+    failures = []
+
+    if plan.rg_state in {"tilt_risk", "chasing_risk", "cool_off", "self_excluded"} \
+       and plan.offer_type in {"freeplay", "comp_review"}:
+        failures.append("rg_block")
+
+    if "sms" in draft.lower() and not permissions.get("sms", False):
+        failures.append("sms_without_consent")
+
+    if generic_empathy(draft):  # your own judge/rule
+        failures.append("generic_empathy")
+
+    return failures
+```
+
+Flash should remain the default because Google positions Gemini 2.5 Flash as the price-performance model for high-volume agentic use, while 2.5 Pro is the advanced reasoning model; current Vertex pricing puts Pro at roughly four times Flash’s token cost. Route Pro only on turns with ambiguous emotion, complaints/disputes, high-value comp judgment, long threads, validator failures, or any responsible-gaming/self-exclusion ambiguity. ([Google AI for Developers][18])
+
+Human review should be mandatory for outbound SMS/email, comp approvals above threshold, markers/credit/airfare, self-exclusion or responsible-gaming escalations, and any tool action that could violate local rules. LangGraph has explicit human-in-the-loop middleware for this pattern. ([LangChain Docs][19])
+
+#### Research backing
+
+This should move H-avg because it operationalizes the human-host balance between loyalty and profitability, aligns with empirical warnings around chasing, tilt, and post-win sensitivity, and prevents the assistant from sounding exploitative in moments where good human hosts use restraint. ([CDC Gaming][4])
+
+### The behavior engine underneath both fixes
+
+A 6/10 assistant is helpful. A 9/10 host is memorable. Research on dialogue quality points to the same ingredients repeatedly: engagingness, perceived empathy, context maintenance, and actionable conversation-level evaluation rather than a single binary “good/bad” score. ([ACL Anthology][20])
+
+For Seven, the production pattern I would use is:
+
+1. **System prompt = non-negotiable host contract.**
+   Identity, priorities, prohibitions, compliance rules. Do not bury this in retrieval. Google’s prompting docs support clear role and system instructions. ([Google Cloud Documentation][21])
+
+2. **Few-shot library = judgment in eight canonical moments.**
+   First contact, returning guest callback, big win, bad beat, complaint recovery, reactivation after absence, comp denial, RG-risk moment. Google’s few-shot guidance explicitly treats examples as a way to regulate phrasing, scoping, and patterning. ([Google AI for Developers][15])
+
+3. **Retrieval = fresh facts, not persona.**
+   Property details, availability, current offers, guest memory, live play state, consent flags, RG/self-exclusion flags. LangGraph’s short-term and long-term memory model supports this, and its docs also warn that long, stale conversations degrade model performance, so summarization/pruning matters. ([LangChain Docs][22])
+
+4. **Planner → validator → renderer → memory commit.**
+   Structured internal plan first; natural-language charm second. Guardrails and middleware enforce policy and quality at the points that matter. ([LangChain Docs][23])
+
+5. **Measure the right things.**
+   Use online multi-turn evals and LLM-as-judge for engagingness, evidential empathy, context maintenance, service-before-sales timing, and memory accuracy. LangSmith’s trajectory and multi-turn evaluators are built for this kind of monitoring. ([LangChain Docs][24])
+
+Fine-tuning belongs after prompt and evaluation stabilization. Google currently supports supervised tuning for Gemini 2.5 Pro and Flash, while preference tuning is available on Flash and Flash-Lite rather than Pro. The realistic sequence is: fix the host policy in prompts and validators, collect gold traces across key host moments, use Pro as a teacher to generate/rank candidates, then supervised-tune or preference-tune Flash for scaled deployment. ([Google Cloud Documentation][25])
+
+## Part 3: Strategic Roadmap
+
+### 1. Quick wins
+
+These are the highest-leverage one-session moves. The impact estimates below are my judgment against your current rubric, not guarantees.
+
+1. **Replace the current persona layer with a Host Contract + 8 scenario cards.**
+   This is the fastest way to stop tone drift and make Seven’s behavior more judgmental, less chatty. Estimated lift: **+0.6 to +1.0 Behavioral**. The research basis is Google’s system-instruction + few-shot guidance, plus the hospitality material on anticipatory service. ([Google AI for Developers][15])
+
+2. **Add a profiling budget, provenance, and callback rule.**
+   One purposeful profile question max before value is delivered; every learned fact must be either used now or stored with source/confidence/consent. Estimated lift: **+1.0 to +1.5 Profiling**. ([Four Seasons][26])
+
+3. **Split planning from rendering with `next_best_action`.**
+   The planner decides “serve / celebrate / recover / offer / escalate”; the renderer turns that into natural language. Estimated lift: **+0.6 to +1.0 Host-Triangle**. ([LangChain Docs][17])
+
+4. **Add hard suppression for self-exclusion, tilt/chasing risk, and outbound consent.**
+   No free-play or marketing motions in those states; no SMS without explicit consent; mandatory HITL for sensitive actions. Estimated lift: **+0.5 to +0.8 Host-Triangle**, plus major legal-risk reduction. ([Specialized Business Group][10])
+
+5. **Turn on online evals for engagingness, evidential empathy, coherence, and timing.**
+   Estimated lift: **+0.4 to +0.7 Behavioral**, mostly because it stops regressions and shortens iteration cycles. ([ACL Anthology][20])
+
+### 2. Medium-term moves
+
+1. **Build a real guest-memory layer.**
+   Guest memory should be cross-session, provenance-aware, consent-aware, and pruned so stale context does not pollute current turns. This is the move that makes Seven feel like “someone who remembers,” not “something that stores notes.” ([LangChain Docs][22])
+
+2. **Add Flash/Pro routing.**
+   Keep Flash for the bulk path; invoke Pro only for high-risk/high-value/high-ambiguity turns. That keeps cost sane while reserving deeper reasoning for the turns where it actually matters. ([Google AI for Developers][18])
+
+3. **Create a property-knowledge service and a comp-policy service.**
+   One service answers “what is true right now about this property?” The other answers “what is allowed for this guest in this state?” This is how you get “knows the property inside-out” without making the conversational model improvise operational facts. That pattern follows the broader LangGraph principle of using tools/state for external truth and the model for judgment. ([arXiv][27])
+
+4. **Add a soft-reactivation playbook.**
+   Missing-guest recovery should sound relational, not needy: “good to hear from you” before “here’s an offer.” The churn literature in player development supports noticing taper-off early, but the contact itself should still be permission-based and low-pressure. ([GGB Magazine][28])
+
+### 3. Long-term moves
+
+1. **Collect a gold trace set across the moments that matter.**
+   New guest, returning VIP, celebration after a win, bad beat, complaint, reactivation after absence, comp denial, RG-risk, and self-exclusion boundary cases. Score each trace on engagingness, empathy, timing, memory, and compliance. ([ACL Anthology][20])
+
+2. **Supervised-tune and preference-tune for host behavior.**
+   Use your best traces to tune Flash for the scaled path; use pairwise preference data to teach “this felt like a host” versus “this felt like a chatbot.” Google’s current tuning options make Flash the more practical destination model for this layer. ([Google Cloud Documentation][25])
+
+3. **Distill Pro-quality judgment into Flash.**
+   Use Pro on difficult turns as the teacher: generate best-in-class host responses, validator explanations, and routing decisions, then fold those into few-shots, rankings, and tuning data. That is the realistic path from prompt engineering to scaled behavioral quality.
+
+### Metrics to track and definitions of done
+
+Use multi-turn online evals and an LLM-as-judge rubric grounded in engagingness, perceived empathy, context maintenance, and action-level quality, not a single binary success metric. ([ACL Anthology][20])
+
+**Profiling is done when:**
+
+* In at least 80% of audited conversations, Seven asks no more than one explicit profile question before delivering value.
+* At least 60% of newly learned facts are reused accurately in the same session or the next one.
+* At least 90% of stored facts carry provenance and consent scope.
+* “Felt known” judge score reaches **5.5+**.
+
+**Host-Triangle is done when:**
+
+* In at least 90% of emotionally uncertain turns, Seven chooses service/support before any commercial move.
+* Self-excluded guests are suppressed from marketing/outbound/free-play motions with **zero** audited violations.
+* At least 95% of sensitive actions route correctly to HITL.
+* H-avg reaches **6.0+**.
+
+**Behavioral quality overall is done when:**
+
+* Engagingness, evidential empathy, and multi-turn coherence judge scores are all **7.5+** on the gold trace set.
+* Big-win, bad-beat, complaint, and reactivation scenarios pass at least 85% of rubric checks.
+* Returning-guest conversations show an accurate callback in at least 50% of eligible cases.
+* Behavioral avg reaches **7.5+** without a rise in compliance failures.
+
+The simplest way to say all of this is: Seven does not need to sound more alive. It needs to make better host decisions. The winning behavior is permission-based, memory-rich, property-smart, and emotionally disciplined. When that layer is real, the technical quality you already have starts to matter to the guest.
+
+[1]: https://careers.mgmresorts.com/jobs/265632/marketing-executive-host-asia-market-borgata/ "https://careers.mgmresorts.com/jobs/265632/marketing-executive-host-asia-market-borgata/"
+[2]: https://cdcgaming.com/commentary/casino-marketing-advice-from-a-vip-player/ "https://cdcgaming.com/commentary/casino-marketing-advice-from-a-vip-player/"
+[3]: https://newyorknewyork.mgmresorts.com/en/casino/meet-our-hosts.html "https://newyorknewyork.mgmresorts.com/en/casino/meet-our-hosts.html"
+[4]: https://cdcgaming.com/managing-hosts-in-the-digital-world/ "https://cdcgaming.com/managing-hosts-in-the-digital-world/"
+[5]: https://ritzcarltonleadershipcenter.com/about-us/about-us-foundations-of-our-brand/ "https://ritzcarltonleadershipcenter.com/about-us/about-us-foundations-of-our-brand/"
+[6]: https://www.konamigaming.com/systems/synkros-analytics "https://www.konamigaming.com/systems/synkros-analytics"
+[7]: https://quickcustomintelligence.com/host/ "https://quickcustomintelligence.com/host/"
+[8]: https://ggbmagazine.com/articles/the-power-of-data/ "https://ggbmagazine.com/articles/the-power-of-data/"
+[9]: https://www.americangaming.org/wp-content/uploads/2025/07/AGA-2025-Responsible-Gaming-Regulations-and-Guidelines.pdf "https://www.americangaming.org/wp-content/uploads/2025/07/AGA-2025-Responsible-Gaming-Regulations-and-Guidelines.pdf"
+[10]: https://sbg.colorado.gov/sites/sbg/files/documents/SB%20Rule%209%20021423.pdf "https://sbg.colorado.gov/sites/sbg/files/documents/SB%20Rule%209%20021423.pdf"
+[11]: https://docs.fcc.gov/public/attachments/FCC-24-24A1.pdf "https://docs.fcc.gov/public/attachments/FCC-24-24A1.pdf"
+[12]: https://www.greo.ca/Modules/EvidenceCentre/Details/examining-the-early-big-win-effect-in-online-sports-betting "https://www.greo.ca/Modules/EvidenceCentre/Details/examining-the-early-big-win-effect-in-online-sports-betting"
+[13]: https://www.ncpgambling.org/wp-content/uploads/2025/01/PGAM-2025-Problem-Gambling-Fact-Sheet.pdf "https://www.ncpgambling.org/wp-content/uploads/2025/01/PGAM-2025-Problem-Gambling-Fact-Sheet.pdf"
+[14]: https://openreview.net/pdf?id=SEeExfj-S-c "https://openreview.net/pdf?id=SEeExfj-S-c"
+[15]: https://ai.google.dev/gemini-api/docs/prompting-strategies "https://ai.google.dev/gemini-api/docs/prompting-strategies"
+[16]: https://www.cambridge.org/core/journals/natural-language-engineering/article/actionable-conversational-quality-indicators-for-improving-taskoriented-dialog-systems/97B0827A8F75093990BCF487469225BC "https://www.cambridge.org/core/journals/natural-language-engineering/article/actionable-conversational-quality-indicators-for-improving-taskoriented-dialog-systems/97B0827A8F75093990BCF487469225BC"
+[17]: https://docs.langchain.com/oss/python/langchain/agents "https://docs.langchain.com/oss/python/langchain/agents"
+[18]: https://ai.google.dev/gemini-api/docs/models/gemini-2.5-flash "https://ai.google.dev/gemini-api/docs/models/gemini-2.5-flash"
+[19]: https://docs.langchain.com/oss/python/langchain/human-in-the-loop "https://docs.langchain.com/oss/python/langchain/human-in-the-loop"
+[20]: https://aclanthology.org/2023.findings-emnlp.137/ "https://aclanthology.org/2023.findings-emnlp.137/"
+[21]: https://docs.cloud.google.com/vertex-ai/generative-ai/docs/learn/prompts/prompt-design-strategies "https://docs.cloud.google.com/vertex-ai/generative-ai/docs/learn/prompts/prompt-design-strategies"
+[22]: https://docs.langchain.com/oss/python/langgraph/memory "https://docs.langchain.com/oss/python/langgraph/memory"
+[23]: https://docs.langchain.com/oss/python/langchain/guardrails "https://docs.langchain.com/oss/python/langchain/guardrails"
+[24]: https://docs.langchain.com/langsmith/trajectory-evals "https://docs.langchain.com/langsmith/trajectory-evals"
+[25]: https://docs.cloud.google.com/vertex-ai/generative-ai/docs/models/gemini-use-supervised-tuning "https://docs.cloud.google.com/vertex-ai/generative-ai/docs/models/gemini-use-supervised-tuning"
+[26]: https://www.fourseasons.com/privacy/ "https://www.fourseasons.com/privacy/"
+[27]: https://arxiv.org/html/2503.22458v1 "https://arxiv.org/html/2503.22458v1"
+[28]: https://ggbmagazine.com/articles/hyper-segmentation-for-player-development/ "https://ggbmagazine.com/articles/hyper-segmentation-for-player-development/"

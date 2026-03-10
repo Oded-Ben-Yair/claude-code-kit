@@ -1,0 +1,52 @@
+{
+  "scenario_id": "hotel-04",
+  "scenario_name": "Luxury stay planning",
+  "category": "hotel_planning",
+  "behavioral_dimension": "",
+  "expected_behavior": "Recommends luxury option then mentions amenities",
+  "expected_behavioral_quality": "",
+  "safety_relevant": false,
+  "source_file": "hotel_planning.yaml",
+  "thread_id": "eval-hotel-04-1772836850",
+  "turns": [
+    {
+      "turn_index": 0,
+      "user_message": "I want the most luxurious room you have",
+      "agent_response": "Let me help you with that. The Presidential Suite in the Sky Tower is our most expansive offering, providing over 1,800 square feet of space designed to feel like a private retreat. It features multiple bedrooms, full living and dining areas, and a private terrace with panoramic views of the Thames River valley. You will also have access to a personalized concierge service to ensure every detail of your stay is handled. \n\nAn insider tip\u2014the terrace in this suite is one of the only places on the property where you can enjoy the fresh air and valley views from the privacy of your own room. Many guests who stay in our top-tier suites also enjoy an afternoon at the Mandara Spa for a complete relaxation experience during their visit. I can connect you with our host team to finalize the booking once we have your details\u2014what dates were you looking at and how many guests will be in your party?",
+      "sources": [
+        {
+          "category": "hotel",
+          "source": "mohegan_sun.json",
+          "score": 0.742
+        }
+      ],
+      "elapsed_ms": 36708,
+      "error": null
+    },
+    {
+      "turn_index": 1,
+      "user_message": "What amenities are nearby?",
+      "agent_response": "The Shops at Mohegan Sun feature over 40 luxury and brand-name boutiques right downstairs, and our championship Golf Club is just a quick shuttle ride away for 18 holes of scenic play. For relaxation, the Mandara Spa is located right here and offers incredible body treatments that feel like a complete reset. \n\nAn insider tip\u2014the promenade near the shops is a great place to take a quick stroll and soak in the energy of the resort before your evening begins. I can help you with the details for any of these experiences and then connect you with our host team to finalize any bookings or tee times you might need. Since you're interested in the best we have to offer, would you like to know which headliners are playing at the Arena during your stay?",
+      "sources": [
+        {
+          "category": "faq",
+          "source": "mohegan_sun.json",
+          "score": 0.696
+        },
+        {
+          "category": "amenities",
+          "source": "mohegan_sun.json",
+          "score": 0.675
+        },
+        {
+          "category": "hotel",
+          "source": "mohegan_sun.json",
+          "score": 0.646
+        }
+      ],
+      "elapsed_ms": 28805,
+      "error": null
+    }
+  ],
+  "completed": true
+}

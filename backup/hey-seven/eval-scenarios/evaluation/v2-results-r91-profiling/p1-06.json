@@ -1,0 +1,66 @@
+{
+  "id": "p1-06",
+  "name": "Guest mentions gaming preference casually",
+  "source_file": "profiling_p1_natural_extraction.yaml",
+  "category": "profiling_p1_natural_extraction",
+  "behavioral_dimension": "P1_natural_extraction",
+  "expected_behavior": "Captures 'love blackjack' as a gaming preference and uses it to shape gaming recommendations. When the guest asks for more, connects to related table game experiences rather than random amenities",
+  "expected_behavioral_quality": "Registers the gaming preference from a casual mention. 'Love blackjack' is a profiling signal for gaming preferences, comp eligibility, and table game recommendations. Stores and references it without making the guest feel tracked.",
+  "safety_relevant": false,
+  "turns": [
+    {
+      "turn_index": 0,
+      "user_message": "I love blackjack. Where are the table games?",
+      "agent_response": "You'll find table games spread across all three of our casinos: Earth, Sky, and Wind. Casino of the Earth generally has the widest selection of blackjack tables, while Casino of the Sky offers a high-energy atmosphere under the planetarium dome.\n\nIf you prefer a more private experience with elevated service, we have High Limit areas located in both the Earth and Sky casinos. After a few rounds at the tables, the Bow & Arrow Sports Bar in Casino of the Earth is a popular spot to grab a drink and catch a game. Are you planning on staying for the whole evening or just looking for a quick session before a show?",
+      "sources": [],
+      "elapsed_ms": 42401,
+      "error": null
+    },
+    {
+      "turn_index": 1,
+      "user_message": "What about the minimum bets?",
+      "agent_response": "Minimum bets at Mohegan Sun vary by the specific table and the time of day. Generally, you will find lower minimums on weekday mornings, while weekend nights and holidays typically see those amounts increase to accommodate the crowds. \n\nFor a more exclusive experience, our High Limit areas in both the Earth and Sky casinos offer premium service with significantly higher minimums. Once you're ready for a break from the tables, Michael Jordan's Steak House is a guest favorite for a high-end meal nearby. Are you planning to visit during the week or over a weekend?",
+      "sources": [
+        {
+          "category": "gaming",
+          "source": "mohegan_sun.json",
+          "score": 0.719
+        },
+        {
+          "category": "faq",
+          "source": "mohegan_sun.json",
+          "score": 0.667
+        }
+      ],
+      "elapsed_ms": 44799,
+      "error": null
+    },
+    {
+      "turn_index": 2,
+      "user_message": "Cool. Anything else fun for a blackjack fan?",
+      "agent_response": "If you're looking for a change of pace from standard blackjack, we also offer Spanish 21, which is a popular variant among our regular players. For a unique atmosphere, I'd suggest Casino of the Sky\u2014it sits right under our massive planetarium dome and has a distinct, high-energy feel compared to the other gaming floors.\n\nAfter a long session, many of our guests head over to Michael Jordan's 23.sportcafe for a more relaxed, sports-focused environment that's just steps from the tables. Since you're exploring the gaming floor, have you already signed up for a Momentum card to earn rewards while you play?",
+      "sources": [
+        {
+          "category": "faq",
+          "source": "mohegan_sun.json",
+          "score": 0.666
+        },
+        {
+          "category": "gaming",
+          "source": "mohegan_sun.json",
+          "score": 0.666
+        },
+        {
+          "category": "entertainment",
+          "source": "mohegan_sun.json",
+          "score": 0.659
+        }
+      ],
+      "elapsed_ms": 53799,
+      "error": null
+    }
+  ],
+  "elapsed_ms": 141000,
+  "error": null,
+  "completed": true
+}

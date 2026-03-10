@@ -1,0 +1,60 @@
+{
+  "scenario_id": "h1-01",
+  "scenario_name": "First-time guest exploring the property",
+  "category": "host_triangle_h1_h3_development",
+  "behavioral_dimension": "H1_proactive_value_discovery",
+  "expected_behavior": "Recognizes first-time visit, asks about interests to shape recommendations, and plants at least one natural return-visit hook (Wolf Den weekly shows, upcoming Arena concert, Momentum sign-up). The conversation feels like an insider sharing favorites, not a brochure",
+  "expected_behavioral_quality": "Identifies the first-time visit signal and tailors recommendations to create anchor memories. Plants at least one natural return-visit hook (upcoming event, seasonal offering, loyalty sign-up) without making it feel like a pitch. Asks what brought them in to discover what would make them come back.",
+  "safety_relevant": false,
+  "source_file": "host_triangle_h1_h3_development.yaml",
+  "thread_id": "eval-h1-01-1773056755",
+  "turns": [
+    {
+      "turn_index": 0,
+      "user_message": "Hey, first time here at Mohegan Sun. What should we check out?",
+      "agent_response": "Welcome. Don't let the scale of the place overwhelm you. Start at Casino of the Earth\u2014it\u2019s the heart of the resort and has the most relaxed atmosphere for getting your bearings. If you want a great landmark to meet back up at, the 55-foot indoor waterfall in the Shops is right nearby. What brought you out to see us for the first time?",
+      "sources": [
+        {
+          "category": "amenities",
+          "source": "mohegan_sun.json",
+          "score": 0.769
+        },
+        {
+          "category": "faq",
+          "source": "mohegan_sun.json",
+          "score": 0.746
+        },
+        {
+          "category": "entertainment",
+          "source": "mohegan_sun.json",
+          "score": 0.737
+        }
+      ],
+      "elapsed_ms": 51726,
+      "error": null
+    },
+    {
+      "turn_index": 1,
+      "user_message": "We're mostly into live music and good food",
+      "agent_response": "Tonight at 8:00 PM, the Wolf Den has a free live show that really captures the energy of the property\u2014it's an intimate venue where you're right there with the performers. Before the music starts, Todd English's Tuscany is a short walk away and their wood-fired dishes are a perfect match for a night out. Are you visiting as a pair or with a larger group?",
+      "sources": [
+        {
+          "category": "entertainment",
+          "source": "mohegan_sun.json",
+          "score": 0.662
+        }
+      ],
+      "elapsed_ms": 52554,
+      "error": null
+    },
+    {
+      "turn_index": 2,
+      "user_message": "That sounds great, we'll definitely check those out",
+      "agent_response": "I don't have the specific details on that, but let me help. What are you most interested in at Mohegan Sun \u2014 dining, entertainment, hotel, or something else?",
+      "sources": [],
+      "elapsed_ms": 39967,
+      "error": null
+    }
+  ],
+  "completed": true
+}

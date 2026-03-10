@@ -1,0 +1,82 @@
+{
+  "id": "engagement-04",
+  "name": "Multi-part compound question",
+  "source_file": "behavioral_engagement.yaml",
+  "category": "behavioral_engagement",
+  "behavioral_dimension": "B3_engagement",
+  "expected_behavior": "Attempts to address all parts of the compound question in the first response. If pressed on missed parts, provides the missing information without defensiveness and acknowledges the omission",
+  "expected_behavioral_quality": "Addresses all three parts of the compound question systematically. Does not answer only the first or last part. Uses structure (numbered list or clear sections) to show each sub-question was heard. Does not merge them into a vague general answer.",
+  "safety_relevant": false,
+  "turns": [
+    {
+      "turn_index": 0,
+      "user_message": "What restaurants are open now and which ones have outdoor seating and are they kid-friendly?",
+      "agent_response": "For a late breakfast or brunch right now, Hash House A Go Go is the place to be\u2014the portions are legendary and kids usually get a kick out of pancakes that are larger than the plates they're served on. \n\nThey are open until 2:00 PM today in the Casino of the Earth and offer a very casual, high-energy environment that's perfect for families. While our dining venues are situated within the resort's indoor landscape, the \"twisted farm food\" vibe at Hash House is very bright and welcoming. You can expect a moderate price range and a relaxed dress code, and there is no need for reservations. If you prefer a 24-hour option, the Lantern Bar & Grill is also currently open and serves American favorites in a casual setting.\n\nSince it's nearly 10:00 AM, are you looking for a full breakfast spread or just a quick bite to get the day started? After you've had your fill, the Wolf Den is just a short walk away and always has a great atmosphere for a post-meal stroll.",
+      "sources": [
+        {
+          "category": "restaurants",
+          "source": "mohegan_sun.json",
+          "score": 0.65
+        }
+      ],
+      "elapsed_ms": 61354,
+      "error": null
+    },
+    {
+      "turn_index": 1,
+      "user_message": "You didn't mention which ones have outdoor seating",
+      "agent_response": "Let me be more specific about the layout here. Our dining venues are located within the climate-controlled indoor resort complex to ensure a comfortable experience regardless of the weather, so they do not offer outdoor seating. \n\nFor a kid-friendly meal right now, Hash House A Go Go is the absolute standout\u2014it is open until 2:00 PM and is famous for its \"twisted farm food\" served in portions so large they often surprise even our hungriest guests. It\u2019s a casual, high-energy environment in the Casino of the Earth that is perfect for families, and no reservations are required. If you can wait until 11:00 AM, Johnny Rockets also opens nearby, offering a fun 1950s diner atmosphere with burgers and shakes that kids always enjoy.\n\nSince we are nearing the lunch hour, would you like recommendations for other spots that open at 11:00 AM? After you've had your fill, the Wolf Den is just a short walk away in the Casino of the Earth and often has live music that adds a great energy to the afternoon.",
+      "sources": [
+        {
+          "category": "faq",
+          "source": "mohegan_sun.json",
+          "score": 0.65
+        },
+        {
+          "category": "restaurants",
+          "source": "mohegan_sun.json",
+          "score": 0.64
+        }
+      ],
+      "elapsed_ms": 40041,
+      "error": null
+    },
+    {
+      "turn_index": 2,
+      "user_message": "OK and the kid-friendly part?",
+      "agent_response": "Caputo Trattoria, opening at 11:00 AM in the Casino of the Earth, is a fantastic kid-friendly choice because it offers brick-oven pizzas and pasta in a casual, quick-service atmosphere. For something available right now, Hash House A Go Go is legendary for its oversized \"twisted farm food\" that usually keeps children entertained just by the scale of the plates.\n\nTo keep the momentum going after your meal, Kids Quest and Cyber Quest are the centers of family fun here. Kids Quest offers supervised play for children aged 6 weeks to 12 years, while Cyber Quest is an arcade perfect for teens and older kids. If they are feeling adventurous, the Wombi Rock Climbing Wall is also nearby and welcomes all skill levels. \n\nAre you looking for activities that the whole family can do together, or would you prefer a supervised option like Kids Quest so you can explore the resort for a bit?",
+      "sources": [
+        {
+          "category": "entertainment",
+          "source": "mohegan_sun.json",
+          "score": 0.663
+        },
+        {
+          "category": "amenities",
+          "source": "mohegan_sun.json",
+          "score": 0.656
+        },
+        {
+          "category": "faq",
+          "source": "mohegan_sun.json",
+          "score": 0.605
+        },
+        {
+          "category": "restaurants",
+          "source": "mohegan_sun.json",
+          "score": 0.642
+        },
+        {
+          "category": "hotel",
+          "source": "mohegan_sun.json",
+          "score": 0.604
+        }
+      ],
+      "elapsed_ms": 40428,
+      "error": null
+    }
+  ],
+  "elapsed_ms": 145851,
+  "error": null,
+  "completed": true
+}

@@ -1,0 +1,76 @@
+{
+  "id": "p4-03",
+  "name": "Anniversary mention \u2014 assumption about romantic dinner correct",
+  "source_file": "profiling_p4_assumptive_bridge.yaml",
+  "category": "profiling_p4_assumptive_bridge",
+  "behavioral_dimension": "P4_assumptive_bridging",
+  "expected_behavior": "Confidently bridges from anniversary to romantic dinner + evening plan. The assumption is correct and the guest confirms. After-dinner suggestions continue the romantic theme",
+  "expected_behavioral_quality": "When anniversary is mentioned, assumes the guest wants a romantic, upscale experience and leads with those options. This assumption is almost always correct and the agent leans into it confidently. The bridge from 'anniversary' to 'romantic steakhouse' feels like expert knowledge, not a guess.",
+  "safety_relevant": false,
+  "turns": [
+    {
+      "turn_index": 0,
+      "user_message": "It's our anniversary this weekend",
+      "agent_response": "Happy anniversary to you both. It is a wonderful occasion to visit, and I would love to help make your weekend here extra special!\n\nFor a classic romantic dinner, Todd English's Tuscany is a guest favorite for its sophisticated menu and the view of our indoor waterfall. If you're looking for something more high-energy afterward, novelle is our upscale ultra-lounge that features craft cocktails and a DJ in a very stylish setting. \n\nAre you leaning toward a quiet, intimate evening or something with a bit more of a social scene?",
+      "sources": [
+        {
+          "category": "property",
+          "source": "mohegan_sun.json",
+          "score": 0.626
+        },
+        {
+          "category": "entertainment",
+          "source": "mohegan_sun.json",
+          "score": 0.611
+        },
+        {
+          "category": "restaurants",
+          "source": "mohegan_sun.json",
+          "score": 0.603
+        },
+        {
+          "category": "promotions",
+          "source": "mohegan_sun.json",
+          "score": 0.593
+        }
+      ],
+      "elapsed_ms": 39422,
+      "error": null
+    },
+    {
+      "turn_index": 1,
+      "user_message": "Yes, exactly what we had in mind",
+      "agent_response": "It's a great choice for a weekend celebration. I'll see what we can do about upgrading your experience here to make your anniversary extra special. \n\nIf you're planning on visiting novelle, it's worth noting that the atmosphere shifts to a more high-energy lounge vibe with a DJ later in the evening, which is perfect for an anniversary toast. Happy anniversary! Will this be",
+      "sources": [],
+      "elapsed_ms": 44711,
+      "error": null
+    },
+    {
+      "turn_index": 2,
+      "user_message": "What about after dinner?",
+      "agent_response": "After dinner, novelle is the top choice for an upscale lounge experience with craft cocktails and a DJ. If you want to keep the energy high on Friday or Saturday, Avalon Nightclub opens at 10:00 PM for dancing. Since it's your anniversary, I'd love to see about upgrading your experience\u2014do you prefer a sophisticated lounge or a high-energy dance floor?",
+      "sources": [
+        {
+          "category": "entertainment",
+          "source": "mohegan_sun.json",
+          "score": 0.681
+        },
+        {
+          "category": "restaurants",
+          "source": "mohegan_sun.json",
+          "score": 0.65
+        },
+        {
+          "category": "faq",
+          "source": "mohegan_sun.json",
+          "score": 0.637
+        }
+      ],
+      "elapsed_ms": 24956,
+      "error": null
+    }
+  ],
+  "elapsed_ms": 109090,
+  "error": null,
+  "completed": true
+}

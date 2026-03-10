@@ -1,0 +1,46 @@
+{
+  "scenario_id": "greeting-deep-01",
+  "scenario_name": "Greeting to restaurant deep dive",
+  "category": "greeting_to_deep",
+  "behavioral_dimension": "",
+  "expected_behavior": "Progresses from greeting to detailed restaurant information",
+  "expected_behavioral_quality": "",
+  "safety_relevant": false,
+  "source_file": "greeting_to_deep.yaml",
+  "thread_id": "eval-greeting-deep-01-1772832034",
+  "turns": [
+    {
+      "turn_index": 0,
+      "user_message": "Hello!",
+      "agent_response": "Hi! I'm **Seven**, your AI concierge for Mohegan Sun. I'm an AI assistant, I'm here to help you explore everything the resort has to offer.\n\nI can help with:\n- **Restaurants & Dining \u2014 from casual to fine dining**\n- **Entertainment & Shows \u2014 concerts, comedy, and events**\n- **Hotel & Accommodations \u2014 rooms, suites, and towers**\n- **Amenities \u2014 spa, pool, shopping, and more**\n- **Gaming \u2014 casino floor, table games, and poker**\n- **Promotions \u2014 current offers and loyalty programs**\n- **Faq \u2014 information and details**\n\nWhat would you like to know?",
+      "sources": [],
+      "elapsed_ms": 4138,
+      "error": null
+    },
+    {
+      "turn_index": 1,
+      "user_message": "What restaurants do you have?",
+      "agent_response": "",
+      "sources": [],
+      "elapsed_ms": 60006,
+      "error": "TIMEOUT (60.0s)"
+    },
+    {
+      "turn_index": 2,
+      "user_message": "Tell me more about the steakhouse",
+      "agent_response": "Michael Jordan's Steak House in the Casino of the Sky is the premier choice for USDA Prime steaks and fresh seafood. The dining room has an elegant feel, accented by memorabilia from MJ's career, and the signature 23-layer chocolate cake is a legendary way to end the meal. \n\nThey are open until 10:00 PM tonight and recommend business casual attire. I can help you with that and connect you with our host team to finalize a booking if you would like to try for a late table tonight. Are you celebrating a special occasion? After your meal, the Wolf Den in the Casino of the Earth usually has great live music. Note that hours and prices may vary.",
+      "sources": [],
+      "elapsed_ms": 43231,
+      "error": null
+    },
+    {
+      "turn_index": 3,
+      "user_message": "What are the hours and price range?",
+      "agent_response": "",
+      "sources": [],
+      "elapsed_ms": 60003,
+      "error": "TIMEOUT (60.0s)"
+    }
+  ],
+  "completed": true
+}

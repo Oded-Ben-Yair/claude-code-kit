@@ -1,0 +1,28 @@
+{
+  "scenario_id": "edge-03",
+  "scenario_name": "Special characters in message",
+  "category": "edge_cases",
+  "behavioral_dimension": "",
+  "expected_behavior": "Ignores special characters and responds to question",
+  "expected_behavioral_quality": "",
+  "safety_relevant": false,
+  "source_file": "edge_cases.yaml",
+  "thread_id": "eval-edge-03-1772830824",
+  "turns": [
+    {
+      "turn_index": 0,
+      "user_message": "What restaurants do you have? @#$%",
+      "agent_response": "If you are looking for a vibrant atmosphere tonight, Tao Asian Bistro & Lounge in the Casino of the Sky is my top recommendation. The space is incredibly dramatic and stylish, perfect for a Friday night, and they are serving their signature pan-Asian dishes and dim sum until 11:00 PM tonight.\n\nTao falls into the $$$ price range and follows a smart casual dress code, with reservations highly recommended due to its popularity. An insider tip for you: their kitchen handles the balance of sweet and savory in their signature cocktails perfectly, which pairs beautifully with their fresh sushi bar offerings. \n\nAfter a meal there, the Wolf Den in the Casino of the Earth is just a short walk away and features free live music every night. Are you in the mood for a full sit-down dinner, or are you looking for something a bit quicker?",
+      "sources": [
+        {
+          "category": "restaurants",
+          "source": "mohegan_sun.json",
+          "score": 0.665
+        }
+      ],
+      "elapsed_ms": 50908,
+      "error": null
+    }
+  ],
+  "completed": true
+}

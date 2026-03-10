@@ -1,0 +1,97 @@
+{
+  "id": "sarcasm-01",
+  "name": "Sarcastic opener dismissing chatbot",
+  "source_file": "behavioral_sarcasm.yaml",
+  "category": "behavioral_sarcasm",
+  "behavioral_dimension": "B1_sarcasm",
+  "expected_behavior": "Does not match sarcasm with excessive enthusiasm. Stays grounded, earns trust through useful answers, and naturally warms as guest engagement shifts",
+  "expected_behavioral_quality": "Acknowledges the skepticism without defensiveness or forced enthusiasm. Does not mirror sarcasm. Calm, competent opener that proves value through substance, not cheerfulness.",
+  "safety_relevant": false,
+  "turns": [
+    {
+      "turn_index": 0,
+      "user_message": "Oh wonderful, another chatbot. This should be fun.",
+      "agent_response": "I'm Seven, and I am indeed an AI. I know a chatbot isn't the same as speaking with a person at the front desk, but I can help you skip the maps and find exactly what you're looking for. Since I have all our venue schedules and menus ready, are you here for a specific show or just looking for a recommendation for dinner?",
+      "sources": [
+        {
+          "category": "faq",
+          "source": "mohegan_sun.json",
+          "score": 0.635
+        },
+        {
+          "category": "entertainment",
+          "source": "mohegan_sun.json",
+          "score": 0.635
+        },
+        {
+          "category": "gaming",
+          "source": "mohegan_sun.json",
+          "score": 0.607
+        },
+        {
+          "category": "promotions",
+          "source": "mohegan_sun.json",
+          "score": 0.605
+        },
+        {
+          "category": "property",
+          "source": "mohegan_sun.json",
+          "score": 0.613
+        }
+      ],
+      "elapsed_ms": 25549,
+      "error": null
+    },
+    {
+      "turn_index": 1,
+      "user_message": "Fine. What restaurants do you have?",
+      "agent_response": "The Lantern Bar & Grill is your best option right now because it's open 24 hours and serves a full American menu in the Casino of the Earth. It\u2019s a casual spot with prices typically in the $20-$30 range, and you won't need a reservation to grab a seat. \n\nIf you can wait until 8:00 AM, Hash House A Go Go is a local favorite for their massive \"twisted farm food\" portions, like their legendary giant pancakes. Are you looking for a quick breakfast to start your morning, or would you like to hear about our fine dining options for later this evening?",
+      "sources": [
+        {
+          "category": "restaurants",
+          "source": "mohegan_sun.json",
+          "score": 0.672
+        },
+        {
+          "category": "faq",
+          "source": "mohegan_sun.json",
+          "score": 0.658
+        }
+      ],
+      "elapsed_ms": 28898,
+      "error": null
+    },
+    {
+      "turn_index": 2,
+      "user_message": "Alright that was actually useful. What about the spa?",
+      "agent_response": "Both of our spas open at 9:00 AM today. Mandara Spa is the place to go for a deep reset with Balinese-inspired massages and a tranquil relaxation lounge, while Elemis Spa in the Earth Tower is excellent for high-end skincare and couples treatments. \n\nSince it's currently 6:02 AM, our heated indoor pool and hot tub are already open for hotel guests if you want an early start on relaxing. After you've had some time to unwind at the spa, are you planning on catching a show at the Arena or the Wolf Den later tonight?",
+      "sources": [
+        {
+          "category": "amenities",
+          "source": "mohegan_sun.json",
+          "score": 0.703
+        },
+        {
+          "category": "promotions",
+          "source": "mohegan_sun.json",
+          "score": 0.65
+        },
+        {
+          "category": "faq",
+          "source": "mohegan_sun.json",
+          "score": 0.646
+        },
+        {
+          "category": "property",
+          "source": "mohegan_sun.json",
+          "score": 0.649
+        }
+      ],
+      "elapsed_ms": 24108,
+      "error": null
+    }
+  ],
+  "elapsed_ms": 78556,
+  "error": null,
+  "completed": true
+}

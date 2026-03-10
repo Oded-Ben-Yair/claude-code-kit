@@ -1,0 +1,91 @@
+{
+  "scenario_id": "h1-04",
+  "scenario_name": "Couple exploring for a weekend getaway",
+  "category": "host_triangle_h1_h3_development",
+  "behavioral_dimension": "H1_proactive_value_discovery",
+  "expected_behavior": "Builds a full couples weekend itinerary covering spa, dining, entertainment, and hotel. Creates a vision that makes the property feel like a destination, not just a casino. Plants seeds for future visits by mentioning seasonal events or upcoming shows",
+  "expected_behavioral_quality": "Identifies the couple dynamic and weekend getaway context. Discovers what kind of experience they want (relaxation, adventure, romance) and builds a multi-activity itinerary that creates emotional anchors for return visits.",
+  "safety_relevant": false,
+  "source_file": "host_triangle_h1_h3_development.yaml",
+  "thread_id": "eval-h1-04-1772989948",
+  "turns": [
+    {
+      "turn_index": 0,
+      "user_message": "My girlfriend and I are thinking about a weekend at Mohegan Sun. What's it like?",
+      "agent_response": "Mohegan Sun is a high-energy resort that feels like a city of its own, with three distinct casinos and over 40 restaurants all under one roof. For a weekend for two, I'd suggest staying in the Sky Tower; it\u2019s our most elevated experience and puts you closest to the Mandara Spa for when you want to unwind. Insider tip: the architecture here actually tells the story of the Mohegan Tribe's history through the seasons as you move through the different casinos. \n\nWhat kind of atmosphere are you looking for\u2014non-stop action or a more relaxed escape?",
+      "sources": [
+        {
+          "category": "faq",
+          "source": "mohegan_sun.json",
+          "score": 0.732
+        },
+        {
+          "category": "property",
+          "source": "mohegan_sun.json",
+          "score": 0.737
+        },
+        {
+          "category": "hotel",
+          "source": "mohegan_sun.json",
+          "score": 0.712
+        },
+        {
+          "category": "amenities",
+          "source": "mohegan_sun.json",
+          "score": 0.7
+        }
+      ],
+      "elapsed_ms": 36088,
+      "error": null
+    },
+    {
+      "turn_index": 1,
+      "user_message": "We want a mix of relaxation and fun. Not just gambling",
+      "agent_response": "I've got you covered with a perfect balance for the two of you. For the relaxation side, Mandara Spa is the go-to \u2014 their signature treatments are a total reset and the atmosphere is incredibly serene. When you're ready for some fun, the Wolf Den has an electric energy where you're right there with the performers for free nightly shows. \n\nIf you want to dial up the energy, Avalon Nightclub is the spot on Friday and Saturday with a massive sound system and top DJs. Pro tip: if you visit the spa, try to book a morning slot so you have the rest of the day to explore the shops and lounges at your own pace. \n\nSince you're coming as a couple, are you more into a big arena concert vibe or something more low-key like a lounge?",
+      "sources": [
+        {
+          "category": "faq",
+          "source": "mohegan_sun.json",
+          "score": 0.707
+        },
+        {
+          "category": "gaming",
+          "source": "mohegan_sun.json",
+          "score": 0.694
+        },
+        {
+          "category": "entertainment",
+          "source": "mohegan_sun.json",
+          "score": 0.678
+        }
+      ],
+      "elapsed_ms": 33876,
+      "error": null
+    },
+    {
+      "turn_index": 2,
+      "user_message": "That sounds like a perfect weekend, thanks",
+      "agent_response": "I'm glad that sounds like a good fit for you two. For that perfect mix, Novelle is an excellent choice because it's an upscale ultra-lounge where you can enjoy craft cocktails in a sophisticated setting before the DJ kicks things off for the night. Fun fact: our Arena is consistently named one of the top entertainment venues in the country, which makes catching a headliner there a truly special experience.\n\nBefore a show, Todd English's Tuscany is a short walk away and their waterfall table is a great spot for a couple's dinner. Since I'm helping you plan this out, what are your names and are you celebrating a special occasion like an anniversary?",
+      "sources": [
+        {
+          "category": "entertainment",
+          "source": "mohegan_sun.json",
+          "score": 0.648
+        },
+        {
+          "category": "property",
+          "source": "mohegan_sun.json",
+          "score": 0.638
+        },
+        {
+          "category": "promotions",
+          "source": "mohegan_sun.json",
+          "score": 0.606
+        }
+      ],
+      "elapsed_ms": 34059,
+      "error": null
+    }
+  ],
+  "completed": true
+}

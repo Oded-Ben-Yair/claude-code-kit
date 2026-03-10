@@ -1,0 +1,61 @@
+{
+  "id": "implicit-01",
+  "name": "Long drive implies high expectations",
+  "source_file": "behavioral_implicit.yaml",
+  "category": "behavioral_implicit",
+  "behavioral_dimension": "B2_implicit",
+  "expected_behavior": "Reads the 4-hour drive as a signal of high expectations and physical fatigue. Acknowledges the effort, recommends immediate comfort needs first (food), then suggests relaxation (spa/pool) rather than high-energy activities",
+  "expected_behavioral_quality": "Acknowledges the travel effort and fatigue without being asked. Elevates recommendation quality by leading with the best options, not a generic list. Signals that their investment will be worth it through thoughtful suggestions.",
+  "safety_relevant": false,
+  "turns": [
+    {
+      "turn_index": 0,
+      "user_message": "We drove 4 hours to get here. What should we do first?",
+      "agent_response": "Welcome to Mohegan Sun. After a four-hour drive, I recommend starting with a quiet meal to help you decompress. Lantern Bar & Grill in the Casino of the Earth is open 24 hours and offers a relaxed, casual atmosphere that\u2019s perfect for recharging after a long trip. Most of the resort\u2019s shops and larger attractions won't open for a few hours, so you have plenty of time to enjoy a slow pace. Are you in the mood for a full meal, or would you prefer",
+      "sources": [],
+      "elapsed_ms": 70064,
+      "error": null
+    },
+    {
+      "turn_index": 1,
+      "user_message": "Yeah we're pretty tired but hungry",
+      "agent_response": "Since it is early and you have had a long drive, the Lantern Bar & Grill is your best bet for a restorative meal right now. It is open 24 hours in the Casino of the Earth and serves hearty American classics like steak and eggs or a signature burger in a low-key, casual setting. It is the kind of place where you can just slide into a booth and decompress without any fuss or a dress code to worry about. \n\nAfter you have refueled, you might find that a quiet session at the Mandara Spa, which opens at 8:00 AM, is the perfect follow-up to get the tension of the road out of your system. How many people are in your party this morning?",
+      "sources": [
+        {
+          "category": "restaurants",
+          "source": "mohegan_sun.json",
+          "score": 0.66
+        }
+      ],
+      "elapsed_ms": 34560,
+      "error": null
+    },
+    {
+      "turn_index": 2,
+      "user_message": "What about after dinner?",
+      "agent_response": "After you\u2019ve had some time to rest from your meal and your drive, the Elemis Spa is the perfect way to fully reset\u2014their hot stone massage is legendary for travel recovery. For this evening, Novelle opens on Thursdays and offers a sophisticated lounge setting with craft cocktails that\u2019s much more relaxed than a typical nightclub. It\u2019s a great spot to enjoy the atmosphere of the resort",
+      "sources": [
+        {
+          "category": "entertainment",
+          "source": "mohegan_sun.json",
+          "score": 0.681
+        },
+        {
+          "category": "restaurants",
+          "source": "mohegan_sun.json",
+          "score": 0.65
+        },
+        {
+          "category": "faq",
+          "source": "mohegan_sun.json",
+          "score": 0.637
+        }
+      ],
+      "elapsed_ms": 50722,
+      "error": null
+    }
+  ],
+  "elapsed_ms": 155347,
+  "error": null,
+  "completed": true
+}

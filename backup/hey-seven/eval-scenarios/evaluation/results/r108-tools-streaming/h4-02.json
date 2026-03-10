@@ -1,0 +1,65 @@
+{
+  "scenario_id": "h4-02",
+  "scenario_name": "VIP guest signaling status expectations",
+  "category": "host_triangle_h4_h6_relationship",
+  "behavioral_dimension": "H4_personalized_recognition",
+  "expected_behavior": "Immediately registers Ascend status and calibrates all recommendations to VIP level. Leads with premium options, mentions priority reservations as a tier benefit, and handles the suite request with host authority. The guest feels their status is recognized and acted upon",
+  "expected_behavioral_quality": "Recognizes VIP signals (tier mention, high-end requests, 'usual' language) and immediately elevates the service register. Recommendations match the VIP's expected quality level without the guest needing to explicitly state their status.",
+  "safety_relevant": false,
+  "source_file": "host_triangle_h4_h6_relationship.yaml",
+  "thread_id": "eval-h4-02-1773058307",
+  "turns": [
+    {
+      "turn_index": 0,
+      "user_message": "I'm an Ascend member. Where should I eat tonight? Something nice.",
+      "agent_response": "Welcome back, an. Since you're looking for something refined on a Monday, Ballo Italian Restaurant in the Casino of the Sky is the standout choice for an Ascend member. It's a beautiful spot where they specialize in traditional Italian recipes with a modern flair, and their housemade pastas and risottos are consistently excellent. \n\nThey open at 5:00 PM and recommend smart casual attire for the evening. I'll get the team to lock in a table for you; how many will be in your party? Once you've finished dinner, the Wolf Den always has fantastic live music to keep the night going.",
+      "sources": [
+        {
+          "category": "restaurants",
+          "source": "mohegan_sun.json",
+          "score": 0.698
+        },
+        {
+          "category": "promotions",
+          "source": "mohegan_sun.json",
+          "score": 0.674
+        }
+      ],
+      "elapsed_ms": 35235,
+      "error": null
+    },
+    {
+      "turn_index": 1,
+      "user_message": "And I'll need a table for 6, so something with a private area",
+      "agent_response": "I don't have the specific details on that, but let me help. What are you most interested in at Mohegan Sun \u2014 dining, entertainment, hotel, or something else?",
+      "sources": [],
+      "elapsed_ms": 45331,
+      "error": null
+    },
+    {
+      "turn_index": 2,
+      "user_message": "Perfect. Can you also check on suite availability for tonight?",
+      "agent_response": "An, for a group of six, I'd suggest looking at our Junior Suites in the Sky Tower. These suites offer 650 square feet of space with a king bed and a sofa bed, so booking two of them would give your party the most comfort and privacy. Rates for these suites typically start at $299 per night, but I'll get the team to check the live inventory for tonight and hold those rooms for you.\n\nSince you are an Ascend member, we can certainly look into a late check-out beyond the standard 11:00 AM time to make your stay even more relaxing. After you settle in, you might enjoy heading over to novelle for a sophisticated cocktail before your dinner at Ballo. Are you planning to arrive close to our 4:00 PM check-in time, or will you be getting here earlier?",
+      "sources": [
+        {
+          "category": "hotel",
+          "source": "mohegan_sun.json",
+          "score": 0.669
+        },
+        {
+          "category": "faq",
+          "source": "mohegan_sun.json",
+          "score": 0.67
+        },
+        {
+          "category": "entertainment",
+          "source": "mohegan_sun.json",
+          "score": 0.66
+        }
+      ],
+      "elapsed_ms": 66361,
+      "error": null
+    }
+  ],
+  "completed": true
+}

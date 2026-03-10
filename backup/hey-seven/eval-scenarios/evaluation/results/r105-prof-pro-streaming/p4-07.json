@@ -1,0 +1,101 @@
+{
+  "scenario_id": "p4-07",
+  "scenario_name": "First-time visitor \u2014 assumption about tour wrong (returning after years)",
+  "category": "profiling_p4_assumptive_bridge",
+  "behavioral_dimension": "P4_assumptive_bridging",
+  "expected_behavior": "Initial assumption about being a first-timer is softly held. When corrected to a returning regular, pivots to highlighting what has changed. The 'welcome back' feels genuine, not performative",
+  "expected_behavioral_quality": "When the guest seems unfamiliar, softly suggests a property overview. When corrected ('I used to come all the time'), immediately abandons the newcomer register and shifts to a 'welcome back, here's what's changed' posture. Does not over-apologize.",
+  "safety_relevant": false,
+  "source_file": "profiling_p4_assumptive_bridge.yaml",
+  "thread_id": "eval-p4-07-1772993983",
+  "turns": [
+    {
+      "turn_index": 0,
+      "user_message": "Wow, this place looks different",
+      "agent_response": "We've been busy with updates lately, from the Earth Tower expansion to our newest dining spots. If you're looking for the best atmosphere to start your night, I'd head straight to Casino of the Earth. A quick insider tip: the 55-foot Taughannick Falls waterfall is the best landmark for meeting up if your group gets separated.\n\nIt certainly has! We've been busy updating things to make every stay better. Are you here for a quick getaway or a special occasion?",
+      "sources": [
+        {
+          "category": "hotel",
+          "source": "mohegan_sun.json",
+          "score": 0.653
+        },
+        {
+          "category": "gaming",
+          "source": "mohegan_sun.json",
+          "score": 0.636
+        },
+        {
+          "category": "entertainment",
+          "source": "mohegan_sun.json",
+          "score": 0.643
+        },
+        {
+          "category": "restaurants",
+          "source": "mohegan_sun.json",
+          "score": 0.643
+        }
+      ],
+      "elapsed_ms": 34382,
+      "error": null
+    },
+    {
+      "turn_index": 1,
+      "user_message": "Oh I used to come here every month, just haven't been in 5 years",
+      "agent_response": "Welcome back to the Sun. Since it's been a few years, I'd suggest starting at Tuscany\u2014the waterfall table is the best seat in the house to take in the view while you get your bearings. \n\nWhat was your favorite spot to hit first back when you were coming every month?",
+      "sources": [
+        {
+          "category": "entertainment",
+          "source": "mohegan_sun.json",
+          "score": 0.641
+        },
+        {
+          "category": "gaming",
+          "source": "mohegan_sun.json",
+          "score": 0.613
+        },
+        {
+          "category": "restaurants",
+          "source": "mohegan_sun.json",
+          "score": 0.61
+        },
+        {
+          "category": "property",
+          "source": "mohegan_sun.json",
+          "score": 0.612
+        }
+      ],
+      "elapsed_ms": 36988,
+      "error": null
+    },
+    {
+      "turn_index": 2,
+      "user_message": "What's new since I was last here?",
+      "agent_response": "Since you used to know the property so well, the biggest change you'll notice is the Earth Tower. It is a completely new addition with a really modern feel, and it even has its own Elemis Spa. \n\nIf you are looking for a spot to grab a drink tonight, you should check out novelle. It is a new upscale lounge we added that completely elevates the late-night vibe away from the tables. \n\nAre you staying over with us on this trip, or just visiting for the evening?",
+      "sources": [
+        {
+          "category": "hotel",
+          "source": "mohegan_sun.json",
+          "score": 0.661
+        },
+        {
+          "category": "entertainment",
+          "source": "mohegan_sun.json",
+          "score": 0.655
+        },
+        {
+          "category": "gaming",
+          "source": "mohegan_sun.json",
+          "score": 0.63
+        },
+        {
+          "category": "amenities",
+          "source": "mohegan_sun.json",
+          "score": 0.645
+        }
+      ],
+      "elapsed_ms": 45030,
+      "error": null
+    }
+  ],
+  "completed": true
+}

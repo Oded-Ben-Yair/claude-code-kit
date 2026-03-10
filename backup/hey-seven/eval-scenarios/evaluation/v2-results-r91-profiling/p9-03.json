@@ -1,0 +1,55 @@
+{
+  "id": "p9-03",
+  "name": "Handoff actionable for human host",
+  "source_file": "profiling_p8_p9_p10_completeness.yaml",
+  "category": "profiling_p8_p9_p10_completeness",
+  "behavioral_dimension": "P9_handoff_quality",
+  "expected_behavior": "Handoff includes: Guest profile (Linda, Rush tier, anniversary), request (comp dinner inquiry), suggested actions (anniversary comp evaluation, Saturday reservation assistance). The host receives a brief with clear next steps",
+  "expected_behavioral_quality": "The handoff includes specific next-action items for the human host, not just raw data. 'Guest is interested in a comp dinner \u2014 follow up with tier-appropriate offer. Guest mentioned anniversary \u2014 consider sending a dessert or champagne gesture.' The host can act on it immediately.",
+  "safety_relevant": false,
+  "turns": [
+    {
+      "turn_index": 0,
+      "user_message": "I'm Linda, Rush tier. Anniversary dinner for 2 on Saturday.",
+      "agent_response": "Let me help you get that set up. I'll pull together the details you need.\n\nFor the booking itself, our reservations team at 1-888-226-7711 can lock it in right away, or I can connect you with a host who handles this personally.\n\nWhat are you looking to book \u2014 dining, a room, or something else?",
+      "sources": [],
+      "elapsed_ms": 6387,
+      "error": null
+    },
+    {
+      "turn_index": 1,
+      "user_message": "I've heard you can get special comps for anniversaries",
+      "agent_response": "I should clarify that Mohegan Sun's Momentum program tiers are Core, Ignite, Leap, Ascend, and Soar. Anniversary offers are typically based on your individual play history and current tier status. \n\nYou may be eligible for specific dining credits or rewards, which you can verify by visiting any Momentum Desk or checking your account on the Mohegan Sun app. While there is no automatic anniversary gift, any Momentum Points you have earned can be used directly at our restaurants to cover the cost of your dinner at a 1:1 ratio. \n\nAfter your meal, the Wolf Den in Casino of the Earth usually has live music that does not require a cover charge or tickets. Do you have a specific type of cuisine in mind for your anniversary?",
+      "sources": [
+        {
+          "category": "promotions",
+          "source": "mohegan_sun.json",
+          "score": 0.659
+        },
+        {
+          "category": "property",
+          "source": "mohegan_sun.json",
+          "score": 0.641
+        },
+        {
+          "category": "faq",
+          "source": "mohegan_sun.json",
+          "score": 0.631
+        }
+      ],
+      "elapsed_ms": 43267,
+      "error": null
+    },
+    {
+      "turn_index": 2,
+      "user_message": "Please have my host reach out",
+      "agent_response": "Let me help you get that set up. I'll pull together the details you need.\n\nFor the booking itself, our reservations team at 1-888-226-7711 can lock it in right away, or I can connect you with a host who handles this personally.\n\nWhat are you looking to book \u2014 dining, a room, or something else?",
+      "sources": [],
+      "elapsed_ms": 3142,
+      "error": null
+    }
+  ],
+  "elapsed_ms": 52797,
+  "error": null,
+  "completed": true
+}

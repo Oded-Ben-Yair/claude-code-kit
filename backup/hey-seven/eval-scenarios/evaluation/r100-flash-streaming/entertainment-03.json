@@ -1,0 +1,57 @@
+{
+  "scenario_id": "entertainment-03",
+  "scenario_name": "Swimming pool inquiry",
+  "category": "entertainment",
+  "behavioral_dimension": "",
+  "expected_behavior": "Confirms pool and provides hours",
+  "expected_behavioral_quality": "",
+  "safety_relevant": false,
+  "source_file": "entertainment.yaml",
+  "thread_id": "eval-entertainment-03-1772831385",
+  "turns": [
+    {
+      "turn_index": 0,
+      "user_message": "Do you have a swimming pool?",
+      "agent_response": "We have a beautiful heated indoor pool and hot tub available exclusively for our hotel guests. It is open daily from 6:00 AM until 10:00 PM, so you still have a bit of time to squeeze in a swim tonight if you're already on property.\n\nThe pool area is designed for relaxation with comfortable lounge chairs and full towel service provided. If you're looking for the ultimate wellness experience, the Mandara Spa is located nearby and offers world-class treatments like their fire and ice massage. Are you staying with us in the Sky or Earth tower during your visit?",
+      "sources": [
+        {
+          "category": "faq",
+          "source": "mohegan_sun.json",
+          "score": 0.691
+        },
+        {
+          "category": "amenities",
+          "source": "mohegan_sun.json",
+          "score": 0.643
+        },
+        {
+          "category": "hotel",
+          "source": "mohegan_sun.json",
+          "score": 0.601
+        }
+      ],
+      "elapsed_ms": 29106,
+      "error": null
+    },
+    {
+      "turn_index": 1,
+      "user_message": "What time does the pool open?",
+      "agent_response": "The pool opens daily at 6:00 AM and remains available until 10:00 PM. Since it is currently 9:10 PM, you still have nearly an hour to enjoy a swim or the hot tub this evening.\n\nMany of our guests find that a morning swim is the perfect way to build up an appetite before heading to one of our breakfast spots like Todd English's Tuscany. Are you planning to get some laps in early tomorrow morning?",
+      "sources": [
+        {
+          "category": "faq",
+          "source": "mohegan_sun.json",
+          "score": 0.728
+        },
+        {
+          "category": "amenities",
+          "source": "mohegan_sun.json",
+          "score": 0.683
+        }
+      ],
+      "elapsed_ms": 26670,
+      "error": null
+    }
+  ],
+  "completed": true
+}

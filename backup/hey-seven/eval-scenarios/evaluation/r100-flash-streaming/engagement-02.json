@@ -1,0 +1,86 @@
+{
+  "scenario_id": "engagement-02",
+  "scenario_name": "Same question repeated signals inadequate prior answer",
+  "category": "behavioral_engagement",
+  "behavioral_dimension": "B3_engagement",
+  "expected_behavior": "Detects that the guest is repeating the same question with increasing frustration. By the third turn, provides a clear, direct answer with the specific time prominently stated. Does not lecture the guest or reference prior answers defensively",
+  "expected_behavioral_quality": "Recognizes that repeating the same question in different words means the prior answer was unsatisfactory. By the third attempt, acknowledges the repetition explicitly, apologizes for the confusion, and delivers the answer in a different format (direct time, not prose).",
+  "safety_relevant": false,
+  "source_file": "behavioral_engagement.yaml",
+  "thread_id": "eval-engagement-02-1772818536",
+  "turns": [
+    {
+      "turn_index": 0,
+      "user_message": "What time does the buffet open?",
+      "agent_response": "Seasons Buffet is currently open for dinner, as they serve from 4:00 PM to 9:00 PM every Friday through Sunday. \n\nLocated in the Casino of the Sky, this is our premier all-you-can-eat destination where the atmosphere is casual and the variety is impressive. You'll find everything from a focused carving station to international flavors like fresh sushi and Italian specialties, all for a mid-range price of about $$. It is a local favorite for a reason\u2014the rotating selection ensures there is always something new to try, though the dessert station is a constant highlight for many of our guests.\n\nSince you are heading over to the Casino of the Sky, would you like to know about any nearby lounges for a drink after your meal?",
+      "sources": [
+        {
+          "category": "restaurants",
+          "source": "mohegan_sun.json",
+          "score": 0.703
+        },
+        {
+          "category": "dining",
+          "source": "cms:dining/dining-001",
+          "score": 0.707
+        },
+        {
+          "category": "faq",
+          "source": "mohegan_sun.json",
+          "score": 0.683
+        }
+      ],
+      "elapsed_ms": 23378,
+      "error": null
+    },
+    {
+      "turn_index": 1,
+      "user_message": "When can I eat at the buffet?",
+      "agent_response": "The Seasons Buffet is open right now, as its current hours are Friday through Sunday from 4:00 PM to 9:00 PM.\n\nSince it is currently 5:36 PM on a Friday, you can head over to the Casino of the Sky whenever you're ready for an all-you-can-eat dinner. It is a casual spot where you can move between international stations, from fresh seafood to hand-carved meats, for a mid-range price of approximately $$. Keep in mind that hours and prices can vary seasonally, so it's always a good idea to confirm with the property when you arrive.\n\nAfter a hearty meal at the buffet, the Wolf Den in the Casino of the Earth usually has great live music with no cover charge\u2014would you like me to see who is performing tonight?",
+      "sources": [
+        {
+          "category": "dining",
+          "source": "cms:dining/dining-001",
+          "score": 0.71
+        },
+        {
+          "category": "restaurants",
+          "source": "mohegan_sun.json",
+          "score": 0.713
+        },
+        {
+          "category": "faq",
+          "source": "mohegan_sun.json",
+          "score": 0.673
+        }
+      ],
+      "elapsed_ms": 25714,
+      "error": null
+    },
+    {
+      "turn_index": 2,
+      "user_message": "I ASKED about buffet hours",
+      "agent_response": "I apologize for the wordy responses. Seasons Buffet is open Friday through Sunday from 4:00 PM to 9:00 PM. \n\nSince it is currently Friday at 5:36 PM, the buffet is open for dinner right now. Would you like to know its exact location in the Casino of the Sky?",
+      "sources": [
+        {
+          "category": "restaurants",
+          "source": "mohegan_sun.json",
+          "score": 0.684
+        },
+        {
+          "category": "faq",
+          "source": "mohegan_sun.json",
+          "score": 0.68
+        },
+        {
+          "category": "dining",
+          "source": "cms:dining/dining-001",
+          "score": 0.668
+        }
+      ],
+      "elapsed_ms": 28539,
+      "error": null
+    }
+  ],
+  "completed": true
+}

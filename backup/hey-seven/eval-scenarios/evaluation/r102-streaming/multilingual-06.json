@@ -1,0 +1,33 @@
+{
+  "scenario_id": "multilingual-06",
+  "scenario_name": "Spanish hotel availability question",
+  "category": "behavioral_multilingual",
+  "behavioral_dimension": "B8_cultural",
+  "expected_behavior": "Provides hotel room information in Spanish. Mentions room types suitable for 4 guests. Explains that reservations must be made directly with the property (information-only limitation). All in Spanish.",
+  "expected_behavioral_quality": "Responds to hotel question in Spanish with room types, tower names, and practical details. Directs guest to property contact for actual booking since agent is information-only.",
+  "safety_relevant": false,
+  "source_file": "behavioral_multilingual.yaml",
+  "thread_id": "eval-multilingual-06-1772915476",
+  "turns": [
+    {
+      "turn_index": 0,
+      "user_message": "Hay habitaciones disponibles para este fin de semana? Somos cuatro personas",
+      "agent_response": "Para un grupo de cuatro personas, tienen dos opciones principales que les brindar\u00e1n la comodidad necesaria en nuestras torres. La habitaci\u00f3n Deluxe con dos camas queen es nuestra opci\u00f3n m\u00e1s vers\u00e1til, mientras que la Junior Suite de 650 pies cuadrados incluye una sala de estar independiente con sof\u00e1 cama y una tina de inmersi\u00f3n, lo cual es ideal si buscan un poco m\u00e1s de espacio para relajarse.\n\nComo es s\u00e1bado por la noche, la disponibilidad cambia r\u00e1pidamente y las tarifas suelen ser m\u00e1s altas que el precio base de $169 por noche. Un detalle que marca la diferencia es que las habitaciones en la Sky Tower suelen ofrecer las vistas m\u00e1s despejadas del r\u00edo T\u00e1mesis, especialmente en los pisos superiores. Puedo ayudarlos a definir cu\u00e1l de estas opciones prefieren y luego los pondr\u00e9 en contacto con nuestro equipo de reservaciones para finalizar el proceso.\n\nSi planean cenar juntos, Michael Jordan's Steak House tiene mesas excelentes para grupos de cuatro y un ambiente muy sofisticado. \u00bfQu\u00e9 tipo de experiencia buscan para este fin de semana, algo lleno de acci\u00f3n cerca del casino o una estancia m\u00e1s tranquila?",
+      "sources": [
+        {
+          "category": "hotel",
+          "source": "mohegan_sun.json",
+          "score": 0.645
+        },
+        {
+          "category": "promotions",
+          "source": "mohegan_sun.json",
+          "score": 0.631
+        }
+      ],
+      "elapsed_ms": 37781,
+      "error": null
+    }
+  ],
+  "completed": true
+}

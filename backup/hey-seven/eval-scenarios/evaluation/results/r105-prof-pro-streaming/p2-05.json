@@ -1,0 +1,75 @@
+{
+  "scenario_id": "p2-05",
+  "scenario_name": "Agent backs off when guest is terse",
+  "category": "profiling_p2_active_probing",
+  "behavioral_dimension": "P2_active_probing",
+  "expected_behavior": "Matches the terse style. Does NOT ask 'How many will be dining?' or 'Any special occasion?' when the guest is clearly in lookup mode. Every response is functional and concise",
+  "expected_behavioral_quality": "Recognizes that terse responses signal the guest wants information, not conversation. Stops asking profiling questions after the guest gives short, functional replies. Switches to direct, concise answers without further probing.",
+  "safety_relevant": false,
+  "source_file": "profiling_p2_active_probing.yaml",
+  "thread_id": "eval-p2-05-1772991420",
+  "turns": [
+    {
+      "turn_index": 0,
+      "user_message": "Steakhouse hours",
+      "agent_response": "Michael Jordan's Steak House is our premier spot for USDA Prime cuts, and they are open Wednesday through Sunday from 5:00 PM to 10:00 PM. Since it is Sunday afternoon right now, they will be opening their doors later this evening. \n\nIf you are craving a great steak right now, Bobby Flay's Bar Americain is already open and serves some fantastic grilled meats with a bold Southwest twist. \n\nA quick insider tip if you do head to Michael Jordan's later \u2014 start with the garlic bread and blue cheese fondue. It is practically legendary among our regulars.\n\nHow many people are in your dining party today?",
+      "sources": [],
+      "elapsed_ms": 46915,
+      "error": null
+    },
+    {
+      "turn_index": 1,
+      "user_message": "Location",
+      "agent_response": "Mohegan Sun is located at 1 Mohegan Sun Boulevard in Uncasville, Connecticut. Were you looking for directions to the resort, or the steakhouse's location inside the casino?",
+      "sources": [
+        {
+          "category": "property",
+          "source": "mohegan_sun.json",
+          "score": 0.645
+        },
+        {
+          "category": "faq",
+          "source": "mohegan_sun.json",
+          "score": 0.639
+        },
+        {
+          "category": "gaming",
+          "source": "mohegan_sun.json",
+          "score": 0.643
+        },
+        {
+          "category": "amenities",
+          "source": "mohegan_sun.json",
+          "score": 0.641
+        }
+      ],
+      "elapsed_ms": 53485,
+      "error": null
+    },
+    {
+      "turn_index": 2,
+      "user_message": "Dress code",
+      "agent_response": "It is business casual, so collared shirts and nice jeans or slacks will work perfectly. How many people are in your party tonight?",
+      "sources": [
+        {
+          "category": "faq",
+          "source": "mohegan_sun.json",
+          "score": 0.706
+        },
+        {
+          "category": "entertainment",
+          "source": "mohegan_sun.json",
+          "score": 0.655
+        },
+        {
+          "category": "restaurants",
+          "source": "mohegan_sun.json",
+          "score": 0.648
+        }
+      ],
+      "elapsed_ms": 50578,
+      "error": null
+    }
+  ],
+  "completed": true
+}

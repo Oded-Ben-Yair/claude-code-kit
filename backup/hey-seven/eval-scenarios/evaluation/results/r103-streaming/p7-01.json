@@ -1,0 +1,91 @@
+{
+  "scenario_id": "p7-01",
+  "scenario_name": "Guest asks why the agent needs personal information",
+  "category": "profiling_p6_p7_incentive_privacy",
+  "behavioral_dimension": "P7_privacy_respect",
+  "expected_behavior": "Explains the practical benefit of knowing party size without being defensive. The explanation is specific ('to find a restaurant that seats your group comfortably') not generic ('to provide better service'). Guest feels informed, not pressured",
+  "expected_behavioral_quality": "When the guest asks 'why do you need that?', the agent provides a clear, honest explanation of how the information improves their experience. Does not deflect, get defensive, or give a corporate privacy policy. Explains the specific benefit: 'Knowing your party size helps me recommend restaurants that can seat you comfortably.'",
+  "safety_relevant": false,
+  "source_file": "profiling_p6_p7_incentive_privacy.yaml",
+  "thread_id": "eval-p7-01-1772959984",
+  "turns": [
+    {
+      "turn_index": 0,
+      "user_message": "What restaurants are open?",
+      "agent_response": "Since it is currently 8:53 AM on a Sunday, your standout choice right now is the **Lantern Bar & Grill**. It stays open 24 hours in the Casino of the Earth, serving a full menu of American classics like thick burgers and steaks for when you need a substantial meal at any hour.\n\nIt is a casual spot with a $$ price range, and you can walk right in without a reservation. If you are looking for more options, Mohegan Sun Caputo Trattoria will open at 11:00 AM for brick-oven pizzas and pasta. Just so you are aware, I am an AI dining specialist here to help you navigate our culinary scene.\n\nOnce you've had your fill, you might want to check the schedule at the Wolf Den for some live music later today. Are you looking for a hearty sit-down breakfast to start your Sunday?",
+      "sources": [
+        {
+          "category": "restaurants",
+          "source": "mohegan_sun.json",
+          "score": 0.672
+        },
+        {
+          "category": "faq",
+          "source": "mohegan_sun.json",
+          "score": 0.649
+        }
+      ],
+      "elapsed_ms": 28306,
+      "error": null
+    },
+    {
+      "turn_index": 1,
+      "user_message": "Why are you asking how many we are?",
+      "agent_response": "Knowing your party size helps me pick the right spot so you aren't stuck waiting for a table that fits. A solo guest can grab a stool at any bar, but for a group, I'd recommend a larger booth at a place like Michael Jordan's later today to keep everyone together. \n\nPro tip: if you have a larger crew, the Sun Diner usually has the fastest seating for breakfast on a Sunday morning. Did you just arrive this morning, or have you been here all weekend?",
+      "sources": [
+        {
+          "category": "faq",
+          "source": "mohegan_sun.json",
+          "score": 0.598
+        },
+        {
+          "category": "hotel",
+          "source": "mohegan_sun.json",
+          "score": 0.589
+        },
+        {
+          "category": "property",
+          "source": "mohegan_sun.json",
+          "score": 0.589
+        }
+      ],
+      "elapsed_ms": 38371,
+      "error": null
+    },
+    {
+      "turn_index": 2,
+      "user_message": "OK, there's 3 of us",
+      "agent_response": "Since there are three of you, **Hash House A Go Go** in the Casino of the Earth is the move. The portions are massive and meant for sharing, which is perfect for a group of three on a Sunday morning. \n\nAfter you've had your fill, you might want to walk through the shops while it's still relatively quiet before the afternoon crowds arrive. Do you usually go for a sweet breakfast or something savory?",
+      "sources": [
+        {
+          "category": "property",
+          "source": "mohegan_sun.json",
+          "score": 0.623
+        },
+        {
+          "category": "promotions",
+          "source": "mohegan_sun.json",
+          "score": 0.609
+        },
+        {
+          "category": "hotel",
+          "source": "mohegan_sun.json",
+          "score": 0.608
+        },
+        {
+          "category": "gaming",
+          "source": "mohegan_sun.json",
+          "score": 0.604
+        },
+        {
+          "category": "faq",
+          "source": "mohegan_sun.json",
+          "score": 0.603
+        }
+      ],
+      "elapsed_ms": 36275,
+      "error": null
+    }
+  ],
+  "completed": true
+}

@@ -1,0 +1,71 @@
+{
+  "scenario_id": "h7-01",
+  "scenario_name": "Dining guest open to entertainment",
+  "category": "host_triangle_h7_h10_revenue",
+  "behavioral_dimension": "H7_cross_selling_wallet_share",
+  "expected_behavior": "Confirms the dinner choice and immediately paints the after-dinner picture: Wolf Den show, Comix comedy, or casino floor. The cross-sell feels like a natural 'and then...' suggestion from someone who wants the guest to have a full evening, not a checklist of amenities",
+  "expected_behavioral_quality": "When a guest engages with dining, the agent naturally introduces entertainment and nightlife as the next part of the evening. The cross-sell creates a seamless 'full evening' vision where dinner flows into the next experience \u2014 not a list of unrelated amenities.",
+  "safety_relevant": false,
+  "source_file": "host_triangle_h7_h10_revenue.yaml",
+  "thread_id": "eval-h7-01-1772992238",
+  "turns": [
+    {
+      "turn_index": 0,
+      "user_message": "Where should we eat tonight? We're thinking Italian",
+      "agent_response": "You have some fantastic options for Italian here. For a truly standout dinner tonight, I'd suggest Todd English's Tuscany over in the Casino of the Sky. The wood-fired aroma hits you the moment you walk in, and their handmade pastas are incredible. It also features a beautiful open kitchen that gives the whole dining room a great, warm energy. \n\nIf you are looking for a slightly more contemporary vibe, Ballo Italian Restaurant is right nearby and serves a beautiful housemade risotto alongside a fantastic Italian wine list. Both open at 5:00 PM for dinner. Also, if you want to keep the night going after you eat, the Wolf Den has free live music right in the Casino of the Earth.\n\nSince both Tuscany and Ballo are popular spots on Sunday evenings, how many people are in your party tonight so we can figure out the best fit?",
+      "sources": [
+        {
+          "category": "restaurants",
+          "source": "mohegan_sun.json",
+          "score": 0.695
+        }
+      ],
+      "elapsed_ms": 56034,
+      "error": null
+    },
+    {
+      "turn_index": 1,
+      "user_message": "Tuscany sounds great. We'll do that",
+      "agent_response": "\u2014 the wood-fired aroma in Tuscany really sets the mood, especially with the view of the indoor waterfall nearby. Since it's currently 5:51 PM, they are open and serving their full menu right now until 10:00 PM. I'd definitely recommend aiming for a business casual look to match the atmosphere, and keep in mind that prices generally reflect a fine dining experience.\n\nI've got you covered with the details, and since it is a Sunday evening, I'd suggest securing a table soon as it's a popular spot. After dinner, if you are looking to keep the night going, the Wolf Den in the Casino of the Earth is just a short walk away and features free live music every night. \n\nIs this a special occasion like an anniversary or a birthday that you are celebrating tonight?",
+      "sources": [
+        {
+          "category": "restaurants",
+          "source": "mohegan_sun.json",
+          "score": 0.672
+        },
+        {
+          "category": "promotions",
+          "source": "mohegan_sun.json",
+          "score": 0.615
+        },
+        {
+          "category": "property",
+          "source": "mohegan_sun.json",
+          "score": 0.627
+        }
+      ],
+      "elapsed_ms": 31021,
+      "error": null
+    },
+    {
+      "turn_index": 2,
+      "user_message": "Oh there's a show tonight? What's playing?",
+      "agent_response": "For tonight, the Wolf Den has a free live show typically starting at 8:00 PM or 9:00 PM. It's an intimate 350-seat venue that hosts national acts and tribute bands, and the energy there is electric. If you'd prefer comedy over music, Comix Roadhouse also has shows running on Sunday evenings. \n\nJust a heads up that schedules can change, so it's always good to confirm with the box office when you arrive. I've got you on the details for both, but I'd love to know who I'm speaking with \u2014 what is your name and how many people are in your party?",
+      "sources": [
+        {
+          "category": "entertainment",
+          "source": "mohegan_sun.json",
+          "score": 0.67
+        },
+        {
+          "category": "faq",
+          "source": "mohegan_sun.json",
+          "score": 0.666
+        }
+      ],
+      "elapsed_ms": 42253,
+      "error": null
+    }
+  ],
+  "completed": true
+}

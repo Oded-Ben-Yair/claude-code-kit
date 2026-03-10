@@ -1,0 +1,60 @@
+{
+  "scenario_id": "coherence-03",
+  "scenario_name": "Forgetting dietary preference across domain shift",
+  "category": "behavioral_multiturn_coherence",
+  "behavioral_dimension": "B7_coherence",
+  "expected_behavior": "Turn 3 dining recommendation must account for the vegetarian preference stated in turn 1, even though turn 2 was about the spa. Agent should NOT recommend the steakhouse as the primary option. The dietary extraction should persist via the state reducer",
+  "expected_behavioral_quality": "Guest mentions a dietary restriction in turn 1. After a topic shift to spa/entertainment, when dining comes up again, the dietary preference must still be applied. The extracted_fields reducer should persist this across turns.",
+  "safety_relevant": false,
+  "source_file": "behavioral_multiturn_coherence.yaml",
+  "thread_id": "eval-coherence-03-1772915857",
+  "turns": [
+    {
+      "turn_index": 0,
+      "user_message": "I'm vegetarian. What are my dinner options?",
+      "agent_response": "For a vegetarian palate, Todd English's Tuscany is my top pick for you tonight. The wood-fired aroma from the open kitchen is incredible, and their handmade pastas and artisanal flatbreads are crafted with such care that you won't feel like you're missing out on anything. \n\nIt is located in the Casino of the Sky and stays open until 10:00 PM this evening. They do observe a business casual dress code, and because it is a Saturday night, reservations are highly recommended to ensure you get a spot. An insider tip\u2014the restaurant is situated right next to our indoor waterfall, so the sound of crashing water adds a beautiful layer to the dining experience. After you've had your fill of pasta, you might want to wander over to the Wolf Den in the Casino of the Earth for some live music. \n\nHow many people are in your party this evening?",
+      "sources": [
+        {
+          "category": "restaurants",
+          "source": "mohegan_sun.json",
+          "score": 0.673
+        }
+      ],
+      "elapsed_ms": 43835,
+      "error": null
+    },
+    {
+      "turn_index": 1,
+      "user_message": "Actually tell me about the spa first",
+      "agent_response": "Since it is 8:38 PM, both of our spas have closed for the night, but I have got you covered for a rejuvenating Sunday morning. \n\nMandara Spa in the Casino of the Sky is our full-service sanctuary where the Balinese healing traditions really transport you to another world. It features a tranquil relaxation lounge, steam room, and sauna that are perfect for a complete reset. If you are looking for something a bit more modern and skincare-focused, Elemis Spa in the Earth Tower is fantastic for premium treatments and express services if you are on the go. \n\nAn insider tip for you\u2014if you choose Mandara, try to arrive at least thirty minutes early to take full advantage of the steam room and sauna to help your muscles relax before the treatment even begins. Both spas open at 9:00 AM tomorrow morning, and I can certainly connect you with the spa team to see what times are still available for a Sunday session. \n\nAre you looking for a deep tissue massage to work out some tension, or more of a refreshing facial?",
+      "sources": [
+        {
+          "category": "amenities",
+          "source": "mohegan_sun.json",
+          "score": 0.678
+        },
+        {
+          "category": "property",
+          "source": "mohegan_sun.json",
+          "score": 0.653
+        },
+        {
+          "category": "hotel",
+          "source": "mohegan_sun.json",
+          "score": 0.633
+        }
+      ],
+      "elapsed_ms": 29369,
+      "error": null
+    },
+    {
+      "turn_index": 2,
+      "user_message": "Ok back to dinner \u2014 where should I go?",
+      "agent_response": "The scent of lemongrass and ginger fills the air at Tao Asian Bistro & Lounge in the Casino of the Sky, and it is my top pick for your vegetarian dinner tonight. The dramatic 16-foot Buddha and stylish lounge create an atmosphere that is as impressive as the food. Since you are vegetarian, their vegetable dim sum and creative sushi rolls are standout choices that really let the fresh ingredients shine.\n\nThey are open until 11:00 PM tonight, with a smart casual dress code and a price range of around $$$. Because it is Saturday, I recommend checking for a table soon, and I have got you covered if you would like me to coordinate with the host team to see if they can seat you. After your meal, the Wolf Den usually has great live music to keep the energy up! \n\nDo you prefer a quiet, intimate table or do you like being in the middle of the action near the lounge?",
+      "sources": [],
+      "elapsed_ms": 52068,
+      "error": null
+    }
+  ],
+  "completed": true
+}

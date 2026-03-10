@@ -1,0 +1,70 @@
+{
+  "scenario_id": "p1-05",
+  "scenario_name": "Guest reveals occasion implicitly",
+  "category": "profiling_p1_natural_extraction",
+  "behavioral_dimension": "P1_natural_extraction",
+  "expected_behavior": "Immediately pivots to upscale and celebratory options after 'celebrating tonight'. When the anniversary is confirmed, elevates further. Threads the celebration context through every recommendation",
+  "expected_behavioral_quality": "Detects the celebration context from 'celebrating tonight' and uses it to shape all recommendations. Does not ask 'what's the occasion?' when the guest has already said they're celebrating. Instead, leans into celebratory options.",
+  "safety_relevant": false,
+  "source_file": "profiling_p1_natural_extraction.yaml",
+  "thread_id": "eval-p1-05-1772989969",
+  "turns": [
+    {
+      "turn_index": 0,
+      "user_message": "We're celebrating tonight, what's the best restaurant here?",
+      "agent_response": "What a night to remember! If you want the absolute peak of dining for your celebration, Michael Jordan's Steak House in the Casino of the Sky is my top pick. The room feels electric yet elegant, and the scent of charred USDA Prime beef is incredible the moment you step inside. \n\nThey are open until 10:00 PM tonight and fall into the $$$$ price range, so I definitely suggest a reservation to ensure you get a prime table. I've got you covered with all the details you need to make it happen, and once you're ready, I can help get you in touch with the team to finalize everything. \n\nHow many people are joining you for the festivities tonight? After dinner, you might want to swing by the Wolf Den for some live music to keep the party going.",
+      "sources": [
+        {
+          "category": "restaurants",
+          "source": "mohegan_sun.json",
+          "score": 0.684
+        }
+      ],
+      "elapsed_ms": 25713,
+      "error": null
+    },
+    {
+      "turn_index": 1,
+      "user_message": "Yeah it's our anniversary",
+      "agent_response": "Happy anniversary! Let me see about upgrading your experience tonight to make it extra special. \n\nA quiet, corner booth at Michael Jordan's is perfect for an anniversary\u2014it gives you that incredible atmosphere but still lets you focus on each other. I'll make sure the host team knows exactly what you're celebrating so they can pull out all the stops for you. \n\nAre we setting this table up for just the two of you, or do you have friends joining in later?",
+      "sources": [],
+      "elapsed_ms": 54519,
+      "error": null
+    },
+    {
+      "turn_index": 2,
+      "user_message": "Any other ideas to make it special?",
+      "agent_response": "I'd suggest a couple's treatment at Mandara Spa to really elevate the weekend. Their private suites are the most tranquil spots on the property and provide a level of luxury that really sets an anniversary apart. \n\nHow many years are you celebrating tonight? I can connect you with the host team to look into a special upgrade for your experience to make it even more memorable! After your spa session, a walk through the Casino of the Wind offers a completely different, high-energy atmosphere to balance out the relaxation.",
+      "sources": [
+        {
+          "category": "faq",
+          "source": "mohegan_sun.json",
+          "score": 0.628
+        },
+        {
+          "category": "hotel",
+          "source": "mohegan_sun.json",
+          "score": 0.627
+        },
+        {
+          "category": "entertainment",
+          "source": "mohegan_sun.json",
+          "score": 0.64
+        },
+        {
+          "category": "promotions",
+          "source": "mohegan_sun.json",
+          "score": 0.619
+        },
+        {
+          "category": "gaming",
+          "source": "mohegan_sun.json",
+          "score": 0.62
+        }
+      ],
+      "elapsed_ms": 49017,
+      "error": null
+    }
+  ],
+  "completed": true
+}

@@ -1,0 +1,76 @@
+{
+  "scenario_id": "extract-01",
+  "scenario_name": "Natural dietary preference extraction during restaurant rec",
+  "category": "behavioral_info_extraction",
+  "behavioral_dimension": "B2_implicit",
+  "expected_behavior": "Extracts vegetarian preference from casual mention. Carries it forward to all subsequent restaurant recommendations without needing to be reminded. Checks veggie options proactively",
+  "expected_behavioral_quality": "Learns dietary preferences naturally through the conversation flow. Does not explicitly ask 'do you have any dietary requirements?' Picks up on the vegetarian mention and adjusts all subsequent recommendations without being asked.",
+  "safety_relevant": false,
+  "source_file": "behavioral_info_extraction.yaml",
+  "thread_id": "eval-extract-01-1772820953",
+  "turns": [
+    {
+      "turn_index": 0,
+      "user_message": "Where should we eat tonight? I'm vegetarian by the way",
+      "agent_response": "SolToro Taqueria & Tequila Bar is my top pick for you tonight, as their menu is a vibrant playground for vegetarian flavors with plenty of authentic options beyond just standard beans and rice. The atmosphere in the Casino of the Earth is electric on a Friday night, and you'll find the scent of charred chilies and fresh-pressed tortillas is absolutely intoxicating. They are open until 11:00 PM tonight and offer a casual setting where reservations aren't necessary.\n\nOne insider detail: their house-made salsas have a complex depth of flavor that really elevates their vegetable-focused dishes, and the staff is excellent at navigating menu modifications.\n\nIf you're planning on catching some live music later, the Lantern Bar & Grill is nearby for a late-night drink since they never close. Are you looking for a lively, high-energy environment or something a bit more quiet and intimate?",
+      "sources": [
+        {
+          "category": "restaurants",
+          "source": "mohegan_sun.json",
+          "score": 0.673
+        }
+      ],
+      "elapsed_ms": 30701,
+      "error": null
+    },
+    {
+      "turn_index": 1,
+      "user_message": "What about the steakhouse? Do they have veggie options?",
+      "agent_response": "Michael Jordan's Steak House is a sophisticated choice where the vegetarian experience focuses on their decadent classic sides and an extensive wine list. The setting is elegant and filled with sports memorabilia, creating an atmosphere that feels both exclusive and high-energy. They are open tonight until 10:00 PM and recommend business casual attire, with reservations being highly suggested for a Friday evening.\n\nInsider tip \u2014 the restaurant's location in the Casino of the Sky puts you right near the stunning 115-foot Taughannick Falls waterfall, which is a great landmark to meet your party before heading in. I can certainly provide the details for our host team to help you secure a table for tonight.\n\nAfter dinner, the Wolf Den in the Casino of the Earth usually has great live music starting around 8:00 PM. Do you have a specific time in mind for when you'd like to sit down for dinner?",
+      "sources": [
+        {
+          "category": "restaurants",
+          "source": "mohegan_sun.json",
+          "score": 0.7
+        },
+        {
+          "category": "faq",
+          "source": "mohegan_sun.json",
+          "score": 0.652
+        }
+      ],
+      "elapsed_ms": 43501,
+      "error": null
+    },
+    {
+      "turn_index": 2,
+      "user_message": "And for breakfast tomorrow?",
+      "agent_response": "Hash House A Go Go in the Casino of the Earth is the definitive spot for breakfast tomorrow, as they specialize in \"twisted farm food\" with portions that are truly legendary. The aroma of their signature griddled pancakes usually fills the hallway before you even reach the door, and they have plenty of vegetarian-friendly options like their massive flapjacks and creative French toast dishes! They are typically open from 8:00 AM to 2:00 PM, and since they don't take reservations, you can head over whenever you're ready.\n\nOne insider detail to keep in mind is that the portions are so large that many guests find one plate is more than enough for two people to share. Please note that hours and pricing can vary, so it is a good idea to confirm with the property when you head out.\n\nIf you're looking for some relaxation after such a hearty meal, the Mandara Spa is a short walk away and offers a tranquil escape for the rest of your morning. Do you prefer a quiet, early breakfast or are you more of a late-morning brunch person?",
+      "sources": [
+        {
+          "category": "restaurants",
+          "source": "mohegan_sun.json",
+          "score": 0.659
+        },
+        {
+          "category": "entertainment",
+          "source": "mohegan_sun.json",
+          "score": 0.617
+        },
+        {
+          "category": "faq",
+          "source": "mohegan_sun.json",
+          "score": 0.607
+        },
+        {
+          "category": "hotel",
+          "source": "mohegan_sun.json",
+          "score": 0.605
+        }
+      ],
+      "elapsed_ms": 49880,
+      "error": null
+    }
+  ],
+  "completed": true
+}

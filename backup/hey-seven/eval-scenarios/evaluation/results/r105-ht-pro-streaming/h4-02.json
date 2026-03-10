@@ -1,0 +1,49 @@
+{
+  "scenario_id": "h4-02",
+  "scenario_name": "VIP guest signaling status expectations",
+  "category": "host_triangle_h4_h6_relationship",
+  "behavioral_dimension": "H4_personalized_recognition",
+  "expected_behavior": "Immediately registers Ascend status and calibrates all recommendations to VIP level. Leads with premium options, mentions priority reservations as a tier benefit, and handles the suite request with host authority. The guest feels their status is recognized and acted upon",
+  "expected_behavioral_quality": "Recognizes VIP signals (tier mention, high-end requests, 'usual' language) and immediately elevates the service register. Recommendations match the VIP's expected quality level without the guest needing to explicitly state their status.",
+  "safety_relevant": false,
+  "source_file": "host_triangle_h4_h6_relationship.yaml",
+  "thread_id": "eval-h4-02-1772990754",
+  "turns": [
+    {
+      "turn_index": 0,
+      "user_message": "I'm an Ascend member. Where should I eat tonight? Something nice.",
+      "agent_response": "It is a pleasure to meet you, an. Since you are looking for something refined tonight, Michael Jordan's Steak House in the Casino of the Sky is my top recommendation. \n\nThe USDA Prime steaks are exceptional, and there is a certain prestige to the atmosphere that fits an Ascend member's evening perfectly. They are open until 10:00 PM tonight, and I would suggest business casual attire for the occasion. While I cannot handle the reservation myself, I can certainly share more about their signature cuts or provide details on other fine dining venues if you are leaning toward a different cuisine. \n\nOnce you have finished your meal, a stroll through the Casino of the Sky to see the glass sculptures is a wonderful way to cap off the night. Do you usually prefer a robust red wine with your dinner, or are you more of a cocktail enthusiast?",
+      "sources": [
+        {
+          "category": "restaurants",
+          "source": "mohegan_sun.json",
+          "score": 0.698
+        },
+        {
+          "category": "promotions",
+          "source": "mohegan_sun.json",
+          "score": 0.674
+        }
+      ],
+      "elapsed_ms": 35657,
+      "error": null
+    },
+    {
+      "turn_index": 1,
+      "user_message": "And I'll need a table for 6, so something with a private area",
+      "agent_response": "I've got you, an. For a group of six wanting a more secluded feel, TAO Asian Bistro is spectacular. They have stunning semi-private dining enclaves, and the upscale, dimly lit ambiance is perfect for a VIP group. Another great option is Todd English's Tuscany, which features a dedicated private room where you can still take in that incredible wood-fired aroma without the noise of the main floor.\n\nLet me know which menu sounds better, and I can connect you with our host team to finalize the table arrangements for tonight. \n\nOh, and thanks for chatting with us today\u2014I would love to set you up with $5 bonus tier points to use during your visit. What is the special occasion you are bringing everyone together for?",
+      "sources": [],
+      "elapsed_ms": 77741,
+      "error": null
+    },
+    {
+      "turn_index": 2,
+      "user_message": "Perfect. Can you also check on suite availability for tonight?",
+      "agent_response": "I hear you \u2014 let me connect you directly with our host team so they can take care of this for you.",
+      "sources": [],
+      "elapsed_ms": 7011,
+      "error": null
+    }
+  ],
+  "completed": true
+}

@@ -1,0 +1,91 @@
+{
+  "scenario_id": "h8-02",
+  "scenario_name": "Guest asking about loyalty rewards value",
+  "category": "host_triangle_h7_h10_revenue",
+  "behavioral_dimension": "H8_strategic_offer_framing",
+  "expected_behavior": "Explains point redemption options across property domains (dining, spa, hotel, entertainment, free play). When the guest chooses the steakhouse, frames it as 'a dinner you've earned.' The redemption feels like a reward, not a coupon",
+  "expected_behavioral_quality": "When a guest asks about rewards value, the agent frames Momentum Points as a recognition of their play rather than a transactional currency. Connects point redemption to experiences (dining, spa, shows) rather than just dollar equivalents.",
+  "safety_relevant": false,
+  "source_file": "host_triangle_h7_h10_revenue.yaml",
+  "thread_id": "eval-h8-02-1772807142",
+  "turns": [
+    {
+      "turn_index": 0,
+      "user_message": "I've got a bunch of Momentum Points saved up. What can I actually use them for?",
+      "agent_response": "I apologize, but I'm having trouble generating a response right now. Please try again, or  at [PHONE].",
+      "sources": [
+        {
+          "category": "promotions",
+          "source": "mohegan_sun.json",
+          "score": 0.723
+        },
+        {
+          "category": "faq",
+          "source": "mohegan_sun.json",
+          "score": 0.707
+        }
+      ],
+      "elapsed_ms": 41546,
+      "error": null
+    },
+    {
+      "turn_index": 1,
+      "user_message": "Can I use them at the steakhouse?",
+      "agent_response": "I apologize, but I'm having trouble generating a response right now. Please try again, or  at [PHONE].",
+      "sources": [
+        {
+          "category": "faq",
+          "source": "mohegan_sun.json",
+          "score": 0.692
+        },
+        {
+          "category": "restaurants",
+          "source": "mohegan_sun.json",
+          "score": 0.703
+        },
+        {
+          "category": "promotions",
+          "source": "mohegan_sun.json",
+          "score": 0.654
+        },
+        {
+          "category": "entertainment",
+          "source": "mohegan_sun.json",
+          "score": 0.66
+        }
+      ],
+      "elapsed_ms": 55714,
+      "error": null
+    },
+    {
+      "turn_index": 2,
+      "user_message": "Awesome, free steak dinner it is",
+      "agent_response": "I apologize, but I'm having trouble generating a response right now. Please try again, or  at [PHONE].",
+      "sources": [
+        {
+          "category": "promotions",
+          "source": "mohegan_sun.json",
+          "score": 0.649
+        },
+        {
+          "category": "restaurants",
+          "source": "mohegan_sun.json",
+          "score": 0.639
+        },
+        {
+          "category": "property",
+          "source": "mohegan_sun.json",
+          "score": 0.637
+        },
+        {
+          "category": "faq",
+          "source": "mohegan_sun.json",
+          "score": 0.621
+        }
+      ],
+      "elapsed_ms": 49998,
+      "error": null
+    }
+  ],
+  "completed": true
+}

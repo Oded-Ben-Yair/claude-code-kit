@@ -1,0 +1,81 @@
+{
+  "scenario_id": "sarcasm-05",
+  "scenario_name": "Passive resignation and disengagement",
+  "category": "behavioral_sarcasm",
+  "behavioral_dimension": "B1_sarcasm",
+  "expected_behavior": "Recognizes 'whatever' as disengagement, not agreement. Gently asks a narrowing question rather than celebrating the 'choice'. When guest reveals preference for low-key, adjusts recommendations away from high-energy options",
+  "expected_behavioral_quality": "Detects passive resignation as disengagement rather than agreement. Makes one gentle re-engagement attempt without being pushy. Offers a concrete alternative or asks a focused question. Does not ignore the tone and barrel ahead.",
+  "safety_relevant": false,
+  "source_file": "behavioral_sarcasm.yaml",
+  "thread_id": "eval-sarcasm-05-1772920439",
+  "turns": [
+    {
+      "turn_index": 0,
+      "user_message": "What should we do tonight?",
+      "agent_response": "Since it is nearly 10:00 PM on a Saturday, the energy across the property is reaching its peak. You have a few fantastic options depending on the vibe you are looking for.\n\nIf you want a high-energy atmosphere, Avalon Nightclub opens its doors right at 10:00 PM for a night of top DJs and dancing. For something a bit more sophisticated, novelle is our premier ultra-lounge where you can grab a craft cocktail and enjoy a DJ in a more intimate, upscale setting. If you find yourself getting hungry after all the excitement, Lantern Bar & Grill is open 24 hours in the Casino of the Earth for a late-night steak or burger.\n\nAn insider tip for you: novelle is actually designed to be the perfect middle ground\u2014it has the nightlife energy but allows for a bit more conversation than a traditional club. Are you in the mood for a high-energy dance floor or a more relaxed lounge setting tonight?",
+      "sources": [
+        {
+          "category": "entertainment",
+          "source": "mohegan_sun.json",
+          "score": 0.668
+        },
+        {
+          "category": "restaurants",
+          "source": "mohegan_sun.json",
+          "score": 0.648
+        },
+        {
+          "category": "faq",
+          "source": "mohegan_sun.json",
+          "score": 0.667
+        }
+      ],
+      "elapsed_ms": 32102,
+      "error": null
+    },
+    {
+      "turn_index": 1,
+      "user_message": "Sure, that works. Whatever.",
+      "agent_response": "Sounds like you just need to unwind. Let's make it effortless. \n\nHead over to novelle. Grab a corner booth away from the main floor, sit back, and just relax. It is a lounge, so you can avoid the loud club chaos and just take it easy. \n\nAre you looking to grab a drink, or do you need a late-night bite?",
+      "sources": [
+        {
+          "category": "entertainment",
+          "source": "mohegan_sun.json",
+          "score": 0.641
+        },
+        {
+          "category": "hotel",
+          "source": "mohegan_sun.json",
+          "score": 0.627
+        },
+        {
+          "category": "promotions",
+          "source": "mohegan_sun.json",
+          "score": 0.622
+        }
+      ],
+      "elapsed_ms": 46848,
+      "error": null
+    },
+    {
+      "turn_index": 2,
+      "user_message": "I don't know, maybe something low-key",
+      "agent_response": "Go to the Wolf Den in the center of Casino of the Earth. It is an intimate, seated venue for free live music where you can just relax and listen without the Saturday night club crowd. Since you want low-key, this is the best spot to just sit back for a while. \n\nAre you visiting from nearby?",
+      "sources": [
+        {
+          "category": "entertainment",
+          "source": "mohegan_sun.json",
+          "score": 0.669
+        },
+        {
+          "category": "restaurants",
+          "source": "mohegan_sun.json",
+          "score": 0.629
+        }
+      ],
+      "elapsed_ms": 32896,
+      "error": null
+    }
+  ],
+  "completed": true
+}

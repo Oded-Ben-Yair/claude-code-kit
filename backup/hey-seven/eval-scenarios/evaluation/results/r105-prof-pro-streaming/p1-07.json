@@ -1,0 +1,76 @@
+{
+  "scenario_id": "p1-07",
+  "scenario_name": "Guest reveals dietary need in passing",
+  "category": "profiling_p1_natural_extraction",
+  "behavioral_dimension": "P1_natural_extraction",
+  "expected_behavior": "Carries the gluten-free preference across all three meal recommendations without the guest needing to repeat it. Each recommendation proactively addresses the dietary need",
+  "expected_behavioral_quality": "Picks up a dietary restriction from a casual mention and carries it forward to all dining recommendations. Does not flag it as a 'restriction' or make the guest feel limited. Instead, highlights options that naturally fit.",
+  "safety_relevant": false,
+  "source_file": "profiling_p1_natural_extraction.yaml",
+  "thread_id": "eval-p1-07-1772990280",
+  "turns": [
+    {
+      "turn_index": 0,
+      "user_message": "I'm gluten-free, what are my dinner options?",
+      "agent_response": "I've got you covered for your gluten-free options, and I'd suggest SolToro Taqueria & Tequila Bar for a meal that is both delicious and budget-conscious [4]. The atmosphere is vibrant with the scent of fresh lime and sizzling grills, and because they focus on authentic Mexican cuisine, many of their signature dishes like the ceviches and corn-tortilla tacos are naturally gluten-free. They are located in the Casino of the Earth and are open until 10:00 PM tonight with a very approachable price range.\n\nInsider tip: Our culinary teams are specifically trained to handle dietary restrictions, so just let your server know and they will take excellent care of you. After your meal, the Wolf Den is just a short walk away if you're in the mood for some free live entertainment.\n\nHow many people are in your party tonight?",
+      "sources": [
+        {
+          "category": "restaurants",
+          "source": "mohegan_sun.json",
+          "score": 0.645
+        }
+      ],
+      "elapsed_ms": 40340,
+      "error": null
+    },
+    {
+      "turn_index": 1,
+      "user_message": "What about lunch tomorrow?",
+      "agent_response": "For a great value lunch tomorrow, I'd head to Hash House A Go Go. They are open until 2:00 PM and are famous for absolutely massive portions that are perfect for sharing or taking back to your room. \n\nTheir farm-to-table ingredients are incredibly fresh, and the kitchen is great at modifying their huge salads or serving their famous stuffed burgers without a bun to keep things safely gluten-free for you. \n\nWhat brings you to Mohegan Sun this week?",
+      "sources": [
+        {
+          "category": "restaurants",
+          "source": "mohegan_sun.json",
+          "score": 0.608
+        },
+        {
+          "category": "faq",
+          "source": "mohegan_sun.json",
+          "score": 0.607
+        }
+      ],
+      "elapsed_ms": 55766,
+      "error": null
+    },
+    {
+      "turn_index": 2,
+      "user_message": "And breakfast?",
+      "agent_response": "Hash House A Go Go actually opens at 8:00 AM, making it the perfect value spot for massive, gluten-free farm-fresh egg scrambles. Are you staying over in one of our hotel towers tonight?",
+      "sources": [
+        {
+          "category": "restaurants",
+          "source": "mohegan_sun.json",
+          "score": 0.658
+        },
+        {
+          "category": "hotel",
+          "source": "mohegan_sun.json",
+          "score": 0.635
+        },
+        {
+          "category": "promotions",
+          "source": "mohegan_sun.json",
+          "score": 0.62
+        },
+        {
+          "category": "faq",
+          "source": "mohegan_sun.json",
+          "score": 0.619
+        }
+      ],
+      "elapsed_ms": 62308,
+      "error": null
+    }
+  ],
+  "completed": true
+}

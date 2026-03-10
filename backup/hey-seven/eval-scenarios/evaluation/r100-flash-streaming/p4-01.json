@@ -1,0 +1,59 @@
+{
+  "scenario_id": "p4-01",
+  "scenario_name": "Party of 4 assumption about kids \u2014 correct",
+  "category": "profiling_p4_assumptive_bridge",
+  "behavioral_dimension": "P4_assumptive_bridging",
+  "expected_behavior": "Assumption about kids is offered softly and confirmed by the guest. Agent smoothly pivots to family-friendly recommendations. The assumption felt natural, not presumptuous",
+  "expected_behavioral_quality": "Makes a contextual inference that a party of 4 might include children and gently tests it with kid-friendly options. The assumption is offered as a soft suggestion ('If any of your group are younger, they might enjoy...') rather than a hard presumption ('Your kids will love...').",
+  "safety_relevant": false,
+  "source_file": "profiling_p4_assumptive_bridge.yaml",
+  "thread_id": "eval-p4-01-1772840981",
+  "turns": [
+    {
+      "turn_index": 0,
+      "user_message": "Need a restaurant for 4 tonight",
+      "agent_response": "",
+      "sources": [],
+      "elapsed_ms": 60004,
+      "error": "TIMEOUT (60.0s)"
+    },
+    {
+      "turn_index": 1,
+      "user_message": "Yeah actually the kids would love that",
+      "agent_response": "",
+      "sources": [],
+      "elapsed_ms": 60001,
+      "error": "TIMEOUT (60.0s)"
+    },
+    {
+      "turn_index": 2,
+      "user_message": "How old do they need to be for the arcade?",
+      "agent_response": "Cyber Quest is open to all ages, so your whole group can jump into the games and attractions together. For any younger children between the ages of 6 weeks and 12 years, Kids Quest is also available and provides a supervised space specifically for them to play.\n\nPro tip\u2014the arcade uses a high-tech card system for the games, which makes it easy for the kids to track their points and trade them in for prizes at the end of the night. While the kids are occupied with gaming, you might want to look into the Elemis Spa for a relaxing morning reset the next day. Are your kids more into the competitive video games or would they enjoy the physical challenge of the Wombi Rock climbing wall?",
+      "sources": [
+        {
+          "category": "entertainment",
+          "source": "mohegan_sun.json",
+          "score": 0.709
+        },
+        {
+          "category": "faq",
+          "source": "mohegan_sun.json",
+          "score": 0.702
+        },
+        {
+          "category": "amenities",
+          "source": "mohegan_sun.json",
+          "score": 0.631
+        },
+        {
+          "category": "gaming",
+          "source": "mohegan_sun.json",
+          "score": 0.617
+        }
+      ],
+      "elapsed_ms": 47197,
+      "error": null
+    }
+  ],
+  "completed": true
+}

@@ -1,0 +1,36 @@
+{
+  "scenario_id": "entertainment-01",
+  "scenario_name": "Shows and events discovery",
+  "category": "entertainment",
+  "behavioral_dimension": "",
+  "expected_behavior": "Lists venue then provides capacity details",
+  "expected_behavioral_quality": "",
+  "safety_relevant": false,
+  "source_file": "entertainment.yaml",
+  "thread_id": "eval-entertainment-01-1772831186",
+  "turns": [
+    {
+      "turn_index": 0,
+      "user_message": "What shows are playing?",
+      "agent_response": "Let me help you with that. You've arrived at a great time to plan your evening, as the energy on property really picks up on Friday nights.\n\nFor tonight, the Wolf Den will have a live performance starting around 8:00 PM or 9:00 PM. This is one of our most popular spots because it's an intimate setting where you're right there with the performer, and the shows are complimentary. If you're looking for a laugh, Comix Roadhouse has comedy sets scheduled for this evening, which is a great pick if you want a full dinner menu served during the show. \n\nFor a more upscale late-night scene, novelle features DJ entertainment and craft cocktails in a sophisticated lounge atmosphere. Please keep in mind that schedules and ticket availability for venues like the Arena or Cabaret Theatre can change, so I can connect you with our host team to finalize any details or confirm current listings.\n\nPro tip: if you are heading to the Wolf Den, the music carries beautifully through the Casino of the Earth, so you can catch the vibe even if you're just passing by. Before the show, Todd English's Tuscany is a short walk from the Wolf Den and their wood-fired dishes pair well with a night out. \n\nAre you leaning more toward a live band or a comedy show this evening?",
+      "sources": [
+        {
+          "category": "entertainment",
+          "source": "mohegan_sun.json",
+          "score": 0.669
+        }
+      ],
+      "elapsed_ms": 50520,
+      "error": null
+    },
+    {
+      "turn_index": 1,
+      "user_message": "How big is the arena?",
+      "agent_response": "The Mohegan Sun Arena is a massive 10,000-seat venue that still manages to feel surprisingly intimate for its size. It is consistently ranked as one of the top entertainment venues in the country and has hosted legendary performers like Elton John and Jay-Z.\n\nLet me help you with that\u2014I can share the upcoming schedule for the month and then connect you with our host team to finalize any details or ticket information. If you're attending a big show, keep in mind the energy is electric but the crowds can be dense, so arriving early is always a smart move. After a high-energy night at the Arena, the Elemis Spa is the perfect reset for the next morning since their hot stone massage is legendary. \n\nAre you looking to catch a major concert or are you more interested in a sporting event like a boxing match?",
+      "sources": [],
+      "elapsed_ms": 42946,
+      "error": null
+    }
+  ],
+  "completed": true
+}

@@ -1,0 +1,81 @@
+{
+  "scenario_id": "slang-03",
+  "scenario_name": "Millennial crypto whale using degen language",
+  "category": "behavioral_slang_cultural",
+  "behavioral_dimension": "B2_implicit",
+  "expected_behavior": "Decodes crypto/gambling slang naturally: YOLO'd = risked money, on tilt = frustrated after losing, rekt = lost significantly, mid = mediocre. Adjusts recommendations to reflect frustration without lecturing about gambling",
+  "expected_behavioral_quality": "Understands crypto/gambling crossover slang (degen, ape in, YOLO) without asking for translation. Responds in standard English but shows awareness of the cultural context. Treats with same respect as traditional VIPs.",
+  "safety_relevant": false,
+  "source_file": "behavioral_slang_cultural.yaml",
+  "thread_id": "eval-slang-03-1772921533",
+  "turns": [
+    {
+      "turn_index": 0,
+      "user_message": "yo just YOLO'd my bags at the craps table lmao. where's the best food",
+      "agent_response": "If you want the best bite on the property right now, Sushi Palace in the Casino of the Sky is where you should head \u2014 the melt-in-your-mouth quality of their sashimi is something guests talk about for weeks. They are open until 11:00 PM on Saturdays, giving you just enough time to enjoy a late-night omakase in a casual setting. The price range is typically $$$, and while hours and pricing can vary, you can generally get a table for a smaller group without a reservation. Pro tip: their sake list is exceptionally deep and pairs beautifully with the richness of their signature rolls.\n\nSince you just dropped your bags, are you looking for a light meal like sushi, or did the energy at the craps table work up a more substantial appetite?\n\nAfter you finish, the Wolf Den usually has some great live music to keep that momentum going.",
+      "sources": [
+        {
+          "category": "restaurants",
+          "source": "mohegan_sun.json",
+          "score": 0.692
+        }
+      ],
+      "elapsed_ms": 42152,
+      "error": null
+    },
+    {
+      "turn_index": 1,
+      "user_message": "something chill, I'm on tilt after getting rekt at blackjack",
+      "agent_response": "I understand how frustrating a rough run at the tables can be, so let's get you into a better headspace. For something low-key tonight, the Wolf Den in the Casino of the Earth is the perfect spot to just grab a seat and lose yourself in the music without needing a ticket.\n\nIf you want a serious reset tomorrow morning, the Elemis Spa is legendary for their hot stone treatments which are great for clearing your mind. Frank Pepe's Pizzeria is also right nearby in the Casino of the Earth and open until 11:00 PM if you want some classic coal-fired pizza to take the edge off. Are you more of a live music person, or does a quiet spa morning sound like the better way to bounce back?",
+      "sources": [
+        {
+          "category": "faq",
+          "source": "mohegan_sun.json",
+          "score": 0.65
+        },
+        {
+          "category": "gaming",
+          "source": "mohegan_sun.json",
+          "score": 0.651
+        },
+        {
+          "category": "restaurants",
+          "source": "mohegan_sun.json",
+          "score": 0.644
+        }
+      ],
+      "elapsed_ms": 41416,
+      "error": null
+    },
+    {
+      "turn_index": 2,
+      "user_message": "nah the spa is kinda mid. whats else u got",
+      "agent_response": "I hear you, on \u2014 if the spa feels a bit too slow, the Wolf Den is the place to be for a chill but electric vibe. It features live music in an intimate setting right in the center of the casino, so you can reset without leaving the energy of the floor.\n\nIf you decide you want to completely pivot and go high-energy instead, Avalon Nightclub is open until 2:00 AM with a 1,500-person capacity and a full DJ set. Both are great for getting your mind off the cards, though keep in mind that schedules and entry requirements can vary. Do you usually lean toward live bands, or is a DJ and a loud room more what you're looking for tonight?",
+      "sources": [
+        {
+          "category": "amenities",
+          "source": "mohegan_sun.json",
+          "score": 0.674
+        },
+        {
+          "category": "faq",
+          "source": "mohegan_sun.json",
+          "score": 0.657
+        },
+        {
+          "category": "entertainment",
+          "source": "mohegan_sun.json",
+          "score": 0.648
+        },
+        {
+          "category": "promotions",
+          "source": "mohegan_sun.json",
+          "score": 0.657
+        }
+      ],
+      "elapsed_ms": 41516,
+      "error": null
+    }
+  ],
+  "completed": true
+}

@@ -1,0 +1,76 @@
+{
+  "scenario_id": "h1-01",
+  "scenario_name": "First-time guest exploring the property",
+  "category": "host_triangle_h1_h3_development",
+  "behavioral_dimension": "H1_proactive_value_discovery",
+  "expected_behavior": "Recognizes first-time visit, asks about interests to shape recommendations, and plants at least one natural return-visit hook (Wolf Den weekly shows, upcoming Arena concert, Momentum sign-up). The conversation feels like an insider sharing favorites, not a brochure",
+  "expected_behavioral_quality": "Identifies the first-time visit signal and tailors recommendations to create anchor memories. Plants at least one natural return-visit hook (upcoming event, seasonal offering, loyalty sign-up) without making it feel like a pitch. Asks what brought them in to discover what would make them come back.",
+  "safety_relevant": false,
+  "source_file": "host_triangle_h1_h3_development.yaml",
+  "thread_id": "eval-h1-01-1772989481",
+  "turns": [
+    {
+      "turn_index": 0,
+      "user_message": "Hey, first time here at Mohegan Sun. What should we check out?",
+      "agent_response": "Welcome to Mohegan Sun. You're in great hands. \n\nSince it is your first time, don't overthink it. Start by grabbing a drink and walking through Casino of the Earth. It is the best way to get a feel for the energy of the property without feeling overwhelmed. Pro tip: use the massive Dale Chihuly glass sculptures as landmarks so you don't get turned around while you explore.\n\nWhat brought you guys out today, just checking the place out or are we celebrating something?",
+      "sources": [
+        {
+          "category": "amenities",
+          "source": "mohegan_sun.json",
+          "score": 0.769
+        },
+        {
+          "category": "faq",
+          "source": "mohegan_sun.json",
+          "score": 0.746
+        },
+        {
+          "category": "entertainment",
+          "source": "mohegan_sun.json",
+          "score": 0.737
+        }
+      ],
+      "elapsed_ms": 73135,
+      "error": null
+    },
+    {
+      "turn_index": 1,
+      "user_message": "We're mostly into live music and good food",
+      "agent_response": "If you are after live music, the Wolf Den is the heart of the property. It is an intimate venue right in the center of the action where you can catch national acts for free, and the energy there is electric once the show starts. \n\nSince you mentioned food, Comix Roadhouse is a solid choice because they serve a full menu right during their sets. Pro tip: if you want a seat at the Wolf Den, people usually start lining up about an hour before the 8:00 PM showtime, but you can always hear the music from the surrounding lounge area if you prefer to stay mobile.\n\nHow many of you are looking to grab dinner together?",
+      "sources": [
+        {
+          "category": "entertainment",
+          "source": "mohegan_sun.json",
+          "score": 0.662
+        }
+      ],
+      "elapsed_ms": 36732,
+      "error": null
+    },
+    {
+      "turn_index": 2,
+      "user_message": "That sounds great, we'll definitely check those out",
+      "agent_response": "Pro tip: the venue is literally built into the \"rock\" of the casino, which makes the acoustics there some of the best on the property. If you need a reset tomorrow morning after a night of live music, Elemis Spa is legendary for its hot stone massages. \n\nBefore you head to the show, Todd English's Tuscany is a short walk from the Wolf Den and their wood-fired dishes pair well with a night out. To help me narrow down some dinner spots for you, are you more into a classic steakhouse vibe or something a bit more casual?",
+      "sources": [
+        {
+          "category": "entertainment",
+          "source": "mohegan_sun.json",
+          "score": 0.654
+        },
+        {
+          "category": "faq",
+          "source": "mohegan_sun.json",
+          "score": 0.636
+        },
+        {
+          "category": "restaurants",
+          "source": "mohegan_sun.json",
+          "score": 0.642
+        }
+      ],
+      "elapsed_ms": 57491,
+      "error": null
+    }
+  ],
+  "completed": true
+}

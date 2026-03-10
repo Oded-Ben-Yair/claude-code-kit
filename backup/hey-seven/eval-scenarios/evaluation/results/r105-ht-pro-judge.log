@@ -1,0 +1,62 @@
+2026-03-08 18:34:14,723 INFO: Watching tests/evaluation/results/r105-ht-pro-streaming for new all results (poll every 10s)
+2026-03-08 18:34:14,735 INFO: Found 30 new scenarios to judge
+2026-03-08 18:34:20,665 INFO: HTTP Request: POST https://brn-azai.cognitiveservices.azure.com/openai/deployments/gpt-5.2/chat/completions?api-version=2024-10-21 "HTTP/1.1 200 OK"
+2026-03-08 18:34:20,970 INFO: HTTP Request: POST https://brn-azai.cognitiveservices.azure.com/openai/deployments/gpt-5.2/chat/completions?api-version=2024-10-21 "HTTP/1.1 200 OK"
+2026-03-08 18:34:21,739 INFO: HTTP Request: POST https://brn-azai.cognitiveservices.azure.com/openai/deployments/gpt-5.2/chat/completions?api-version=2024-10-21 "HTTP/1.1 200 OK"
+2026-03-08 18:34:22,340 INFO: HTTP Request: POST https://brn-azai.cognitiveservices.azure.com/openai/deployments/gpt-5.2/chat/completions?api-version=2024-10-21 "HTTP/1.1 200 OK"
+2026-03-08 18:34:22,887 INFO: HTTP Request: POST https://brn-azai.cognitiveservices.azure.com/openai/deployments/gpt-5.2/chat/completions?api-version=2024-10-21 "HTTP/1.1 200 OK"
+2026-03-08 18:34:29,646 INFO: HTTP Request: POST https://brn-azai.cognitiveservices.azure.com/openai/deployments/gpt-5.2/chat/completions?api-version=2024-10-21 "HTTP/1.1 200 OK"
+2026-03-08 18:34:30,044 INFO: HTTP Request: POST https://brn-azai.cognitiveservices.azure.com/openai/deployments/gpt-5.2/chat/completions?api-version=2024-10-21 "HTTP/1.1 200 OK"
+2026-03-08 18:34:30,109 INFO: HTTP Request: POST https://brn-azai.cognitiveservices.azure.com/openai/deployments/gpt-5.2/chat/completions?api-version=2024-10-21 "HTTP/1.1 200 OK"
+2026-03-08 18:34:30,261 INFO: HTTP Request: POST https://brn-azai.cognitiveservices.azure.com/openai/deployments/gpt-5.2/chat/completions?api-version=2024-10-21 "HTTP/1.1 200 OK"
+2026-03-08 18:34:31,336 INFO: HTTP Request: POST https://brn-azai.cognitiveservices.azure.com/openai/deployments/gpt-5.2/chat/completions?api-version=2024-10-21 "HTTP/1.1 200 OK"
+2026-03-08 18:34:37,676 INFO: HTTP Request: POST https://brn-azai.cognitiveservices.azure.com/openai/deployments/gpt-5.2/chat/completions?api-version=2024-10-21 "HTTP/1.1 200 OK"
+2026-03-08 18:34:38,092 INFO: HTTP Request: POST https://brn-azai.cognitiveservices.azure.com/openai/deployments/gpt-5.2/chat/completions?api-version=2024-10-21 "HTTP/1.1 200 OK"
+2026-03-08 18:34:38,222 INFO: HTTP Request: POST https://brn-azai.cognitiveservices.azure.com/openai/deployments/gpt-5.2/chat/completions?api-version=2024-10-21 "HTTP/1.1 200 OK"
+2026-03-08 18:34:38,319 INFO: HTTP Request: POST https://brn-azai.cognitiveservices.azure.com/openai/deployments/gpt-5.2/chat/completions?api-version=2024-10-21 "HTTP/1.1 200 OK"
+2026-03-08 18:34:39,054 INFO: HTTP Request: POST https://brn-azai.cognitiveservices.azure.com/openai/deployments/gpt-5.2/chat/completions?api-version=2024-10-21 "HTTP/1.1 200 OK"
+2026-03-08 18:34:45,242 INFO: HTTP Request: POST https://brn-azai.cognitiveservices.azure.com/openai/deployments/gpt-5.2/chat/completions?api-version=2024-10-21 "HTTP/1.1 200 OK"
+2026-03-08 18:34:45,572 INFO: HTTP Request: POST https://brn-azai.cognitiveservices.azure.com/openai/deployments/gpt-5.2/chat/completions?api-version=2024-10-21 "HTTP/1.1 200 OK"
+2026-03-08 18:34:46,630 INFO: HTTP Request: POST https://brn-azai.cognitiveservices.azure.com/openai/deployments/gpt-5.2/chat/completions?api-version=2024-10-21 "HTTP/1.1 200 OK"
+2026-03-08 18:34:46,901 INFO: HTTP Request: POST https://brn-azai.cognitiveservices.azure.com/openai/deployments/gpt-5.2/chat/completions?api-version=2024-10-21 "HTTP/1.1 200 OK"
+2026-03-08 18:34:47,187 INFO: HTTP Request: POST https://brn-azai.cognitiveservices.azure.com/openai/deployments/gpt-5.2/chat/completions?api-version=2024-10-21 "HTTP/1.1 200 OK"
+2026-03-08 18:34:53,874 INFO: HTTP Request: POST https://brn-azai.cognitiveservices.azure.com/openai/deployments/gpt-5.2/chat/completions?api-version=2024-10-21 "HTTP/1.1 200 OK"
+2026-03-08 18:34:53,930 INFO: HTTP Request: POST https://brn-azai.cognitiveservices.azure.com/openai/deployments/gpt-5.2/chat/completions?api-version=2024-10-21 "HTTP/1.1 200 OK"
+2026-03-08 18:34:54,295 INFO: HTTP Request: POST https://brn-azai.cognitiveservices.azure.com/openai/deployments/gpt-5.2/chat/completions?api-version=2024-10-21 "HTTP/1.1 200 OK"
+2026-03-08 18:34:54,461 INFO: HTTP Request: POST https://brn-azai.cognitiveservices.azure.com/openai/deployments/gpt-5.2/chat/completions?api-version=2024-10-21 "HTTP/1.1 200 OK"
+2026-03-08 18:34:55,250 INFO: HTTP Request: POST https://brn-azai.cognitiveservices.azure.com/openai/deployments/gpt-5.2/chat/completions?api-version=2024-10-21 "HTTP/1.1 200 OK"
+2026-03-08 18:35:01,760 INFO: HTTP Request: POST https://brn-azai.cognitiveservices.azure.com/openai/deployments/gpt-5.2/chat/completions?api-version=2024-10-21 "HTTP/1.1 200 OK"
+2026-03-08 18:35:02,581 INFO: HTTP Request: POST https://brn-azai.cognitiveservices.azure.com/openai/deployments/gpt-5.2/chat/completions?api-version=2024-10-21 "HTTP/1.1 200 OK"
+2026-03-08 18:35:03,129 INFO: HTTP Request: POST https://brn-azai.cognitiveservices.azure.com/openai/deployments/gpt-5.2/chat/completions?api-version=2024-10-21 "HTTP/1.1 200 OK"
+2026-03-08 18:35:03,168 INFO: HTTP Request: POST https://brn-azai.cognitiveservices.azure.com/openai/deployments/gpt-5.2/chat/completions?api-version=2024-10-21 "HTTP/1.1 200 OK"
+2026-03-08 18:35:04,451 INFO: HTTP Request: POST https://brn-azai.cognitiveservices.azure.com/openai/deployments/gpt-5.2/chat/completions?api-version=2024-10-21 "HTTP/1.1 200 OK"
+2026-03-08 18:35:04,453 INFO: DASHBOARD: [1 scored] | B-avg:7.2 | P-avg:6.5 | H-avg:5.7
+2026-03-08 18:35:04,453 INFO: DASHBOARD: [2 scored] | B-avg:6.9 | P-avg:6.1 | H-avg:5.5
+2026-03-08 18:35:04,453 INFO: DASHBOARD: [3 scored] | B-avg:7.0 | P-avg:6.0 | H-avg:5.7
+2026-03-08 18:35:04,453 INFO: DASHBOARD: [4 scored] | B-avg:6.9 | P-avg:5.8 | H-avg:5.7
+2026-03-08 18:35:04,453 INFO: DASHBOARD: [5 scored] | B-avg:7.2 | P-avg:5.6 | H-avg:5.5
+2026-03-08 18:35:04,453 INFO: DASHBOARD: [6 scored] | B-avg:7.1 | P-avg:5.5 | H-avg:5.5
+2026-03-08 18:35:04,453 INFO: DASHBOARD: [7 scored] | B-avg:7.1 | P-avg:5.5 | H-avg:5.5
+2026-03-08 18:35:04,453 INFO: DASHBOARD: [8 scored] | B-avg:6.5 | P-avg:4.9 | H-avg:5.2
+2026-03-08 18:35:04,453 INFO: DASHBOARD: [9 scored] | B-avg:6.0 | P-avg:4.6 | H-avg:4.8
+2026-03-08 18:35:04,454 INFO: DASHBOARD: [10 scored] | B-avg:5.6 | P-avg:4.1 | H-avg:4.3
+2026-03-08 18:35:04,454 INFO: DASHBOARD: [11 scored] | B-avg:5.7 | P-avg:4.2 | H-avg:4.4
+2026-03-08 18:35:04,454 INFO: DASHBOARD: [12 scored] | B-avg:5.7 | P-avg:4.3 | H-avg:4.5
+2026-03-08 18:35:04,454 INFO: DASHBOARD: [13 scored] | B-avg:5.8 | P-avg:4.4 | H-avg:4.5
+2026-03-08 18:35:04,454 INFO: DASHBOARD: [14 scored] | B-avg:5.8 | P-avg:4.4 | H-avg:4.6
+2026-03-08 18:35:04,454 INFO: DASHBOARD: [15 scored] | B-avg:5.9 | P-avg:4.5 | H-avg:4.6
+2026-03-08 18:35:04,454 INFO: DASHBOARD: [16 scored] | B-avg:5.8 | P-avg:4.5 | H-avg:4.6
+2026-03-08 18:35:04,454 INFO: DASHBOARD: [17 scored] | B-avg:5.9 | P-avg:4.6 | H-avg:4.7
+2026-03-08 18:35:04,454 INFO: DASHBOARD: [18 scored] | B-avg:5.9 | P-avg:4.6 | H-avg:4.7
+2026-03-08 18:35:04,454 INFO: DASHBOARD: [19 scored] | B-avg:6.0 | P-avg:4.7 | H-avg:4.8
+2026-03-08 18:35:04,454 INFO: DASHBOARD: [20 scored] | B-avg:6.1 | P-avg:4.7 | H-avg:4.8
+2026-03-08 18:35:04,454 INFO: DASHBOARD: [21 scored] | B-avg:6.2 | P-avg:4.6 | H-avg:4.8
+2026-03-08 18:35:04,454 INFO: DASHBOARD: [22 scored] | B-avg:6.2 | P-avg:4.7 | H-avg:4.8
+2026-03-08 18:35:04,454 INFO: DASHBOARD: [23 scored] | B-avg:6.3 | P-avg:4.7 | H-avg:4.9
+2026-03-08 18:35:04,454 INFO: DASHBOARD: [24 scored] | B-avg:6.3 | P-avg:4.7 | H-avg:4.9
+2026-03-08 18:35:04,454 INFO: DASHBOARD: [25 scored] | B-avg:6.3 | P-avg:4.7 | H-avg:4.9
+2026-03-08 18:35:04,454 INFO: DASHBOARD: [26 scored] | B-avg:6.3 | P-avg:4.7 | H-avg:5.0
+2026-03-08 18:35:04,454 INFO: DASHBOARD: [27 scored] | B-avg:6.5 | P-avg:4.7 | H-avg:5.0
+2026-03-08 18:35:04,454 INFO: DASHBOARD: [28 scored] | B-avg:6.4 | P-avg:4.7 | H-avg:5.0
+2026-03-08 18:35:04,454 INFO: DASHBOARD: [29 scored] | B-avg:6.5 | P-avg:4.8 | H-avg:5.1
+2026-03-08 18:35:04,454 INFO: DASHBOARD: [30 scored] | B-avg:6.5 | P-avg:4.8 | H-avg:5.1

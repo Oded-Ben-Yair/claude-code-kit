@@ -1,0 +1,99 @@
+{
+  "id": "p5-01",
+  "name": "5-turn golden path \u2014 foundation to relationship",
+  "source_file": "profiling_p5_progressive_sequence.yaml",
+  "category": "profiling_p5_progressive_sequence",
+  "behavioral_dimension": "P5_progressive_sequencing",
+  "expected_behavior": "Profiling progresses naturally: Turn 1 captures name. Turn 2 captures party composition. Turn 3 captures dining preference. Turn 4 captures visit frequency. Turn 5 captures loyalty tier. Each profiling question follows logically from the conversation, never feels like a form.",
+  "expected_behavioral_quality": "Over 5 turns, the agent naturally progresses through profiling phases: (1) Foundation \u2014 name, party size, occasion; (2) Preference \u2014 dining, entertainment, gaming; (3) Relationship \u2014 visit frequency, loyalty tier, host relationship. Each phase builds on the previous. No phase-skipping.",
+  "safety_relevant": false,
+  "turns": [
+    {
+      "turn_index": 0,
+      "user_message": "Hi, I'm Dave. Looking for dinner recommendations.",
+      "agent_response": "Welcome to Mohegan Sun, Dave. For dinner this evening, I'd suggest SolToro Taqueria & Tequila Bar located in the Casino of the Earth. It has a wonderful, lively energy and some of the best street tacos and house-made ceviche on the property. \n\nThey are open until 10:00 PM tonight, and since it is a casual spot, you won't need a reservation. After you've finished your meal, the Wolf Den usually has live music and is just a short walk away. \n\nAre you looking for a high-energy atmosphere or something a bit more relaxed?",
+      "sources": [
+        {
+          "category": "restaurants",
+          "source": "mohegan_sun.json",
+          "score": 0.638
+        }
+      ],
+      "elapsed_ms": 26714,
+      "error": null
+    },
+    {
+      "turn_index": 1,
+      "user_message": "It's just me and my girlfriend, nothing too formal",
+      "agent_response": "Dave, for a relaxed evening for two, SolToro in the Casino of the Earth is my top pick. The atmosphere is vibrant and modern with an impressive tequila selection, but it remains casual enough that you can just walk in and feel right at home. \n\nThey are open until 10:00 PM tonight with a mid-range price point, and their authentic street tacos or fresh ceviche are perfect for a low-key dinner. If you want something even more nostalgic and simple, Johnny Rockets is also open until 11:00 PM for burgers and shakes in a fun 1950s diner setting. After you've had your fill, the Wolf Den is just around the corner and usually has some great live music to enjoy. \n\nDo either of you have any specific dietary preferences or allergies I should keep in mind?",
+      "sources": [
+        {
+          "category": "entertainment",
+          "source": "mohegan_sun.json",
+          "score": 0.63
+        },
+        {
+          "category": "restaurants",
+          "source": "mohegan_sun.json",
+          "score": 0.62
+        }
+      ],
+      "elapsed_ms": 47012,
+      "error": null
+    },
+    {
+      "turn_index": 2,
+      "user_message": "We love Italian food",
+      "agent_response": "Dave, for a great Italian meal that keeps things casual, Caputo Trattoria in the Casino of the Earth is my top recommendation. The aroma of garlic and fresh dough from their brick oven is incredibly inviting, and it's the perfect spot to share some pasta or a specialty pizza without needing to dress up.\n\nThey are open until 10:00 PM tonight and offer a relaxed, family-friendly atmosphere with a mid-range price point. Since it is a casual eatery, you don't need a reservation and can just head over whenever you're ready. After you finish your meal, you might enjoy wandering over to the Wolf Den nearby for some live music. \n\nDo you two usually lean toward hearty pasta dishes or are you more in the mood for a coal-fired pizza tonight?",
+      "sources": [
+        {
+          "category": "restaurants",
+          "source": "mohegan_sun.json",
+          "score": 0.662
+        }
+      ],
+      "elapsed_ms": 44435,
+      "error": null
+    },
+    {
+      "turn_index": 3,
+      "user_message": "We come here a few times a year",
+      "agent_response": "It's good to have you back, Dave. Since you visit a few times a year, you likely appreciate the local favorites like Frank Pepe\u2019s Pizzeria Napoletana in the Casino of the Earth. It\u2019s a Connecticut institution famous for its coal-fired thin crust, and it is the perfect spot for a high-quality Italian dinner that stays completely casual.\n\nThey are open until ",
+      "sources": [
+        {
+          "category": "restaurants",
+          "source": "mohegan_sun.json",
+          "score": 0.633
+        },
+        {
+          "category": "promotions",
+          "source": "mohegan_sun.json",
+          "score": 0.635
+        },
+        {
+          "category": "entertainment",
+          "source": "mohegan_sun.json",
+          "score": 0.639
+        },
+        {
+          "category": "property",
+          "source": "mohegan_sun.json",
+          "score": 0.635
+        }
+      ],
+      "elapsed_ms": 85180,
+      "error": null
+    },
+    {
+      "turn_index": 4,
+      "user_message": "Yeah I have a Momentum card, Ignite level I think",
+      "agent_response": "The Ignite tier is reached at 2,500 Tier Credits. This level includes a 10% Momentum Point earn rate bonus and priority restaurant seating at participating locations, which may be useful for your Italian dinner tonight.\n\nYou can verify your exact tier status and point balance through the Mohegan Sun app or by visiting any Momentum Desk on the casino floor. Both Caputo Trattoria and Frank Pepe's allow you to earn and redeem Momentum Points on your meal. After you finish dinner, the Wolf Den in the Casino of the Earth offers live music and is a short walk from both restaurants.\n\nDo you usually prefer to use your points for dining or save them for free play?",
+      "sources": [],
+      "elapsed_ms": 60191,
+      "error": null
+    }
+  ],
+  "elapsed_ms": 263533,
+  "error": null,
+  "completed": true
+}

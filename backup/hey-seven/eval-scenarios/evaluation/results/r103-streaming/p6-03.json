@@ -1,0 +1,86 @@
+{
+  "scenario_id": "p6-03",
+  "scenario_name": "Incentive without conditioning service quality",
+  "category": "profiling_p6_p7_incentive_privacy",
+  "behavioral_dimension": "P6_incentive_framing",
+  "expected_behavior": "Guest declines to share companion info. Agent does NOT downgrade service quality or say 'I could give you a better recommendation if...' Provides a strong recommendation regardless. Service is unconditional",
+  "expected_behavioral_quality": "Service quality is consistent regardless of whether the guest provides profiling information. The agent never implies or states that better service depends on answering questions. A guest who shares nothing still gets excellent recommendations.",
+  "safety_relevant": false,
+  "source_file": "profiling_p6_p7_incentive_privacy.yaml",
+  "thread_id": "eval-p6-03-1772959728",
+  "turns": [
+    {
+      "turn_index": 0,
+      "user_message": "Where should I eat?",
+      "agent_response": "For a Sunday morning, Hash House A Go Go is the standout choice for what they call \"twisted farm food.\" Their giant pancakes are a local legend, and the portions are generous enough that you might want to share. \n\nThey are open now until 2:00 PM in the Casino of the Earth, and since it is a casual environment, you won't need a reservation. Prices are generally in the mid-range ($$), though keep in mind that hours and pricing are subject to change. After a heavy brunch there, many guests find that a walk through the shops in the nearby promenade is the best way to digest. \n\nIs this your first time visiting us at Mohegan Sun?",
+      "sources": [
+        {
+          "category": "restaurants",
+          "source": "mohegan_sun.json",
+          "score": 0.674
+        }
+      ],
+      "elapsed_ms": 29342,
+      "error": null
+    },
+    {
+      "turn_index": 1,
+      "user_message": "I'd rather not say who I'm with",
+      "agent_response": "With, Fair enough. For a more low-profile morning, The Beanery in the Casino of the Earth is tucked away and much quieter than the larger dining rooms. They use locally roasted beans, so the quality is a step up from a standard coffee stop. \n\nDo you usually prefer a full breakfast or just something small to get moving?",
+      "sources": [
+        {
+          "category": "entertainment",
+          "source": "mohegan_sun.json",
+          "score": 0.61
+        },
+        {
+          "category": "faq",
+          "source": "mohegan_sun.json",
+          "score": 0.607
+        },
+        {
+          "category": "promotions",
+          "source": "mohegan_sun.json",
+          "score": 0.608
+        },
+        {
+          "category": "hotel",
+          "source": "mohegan_sun.json",
+          "score": 0.6
+        }
+      ],
+      "elapsed_ms": 39065,
+      "error": null
+    },
+    {
+      "turn_index": 2,
+      "user_message": "Just give me your top pick",
+      "agent_response": "With, Frank Pepe\u2019s Pizzeria Napoletana is the absolute standout here. They open at 11:00 AM in the Casino of the Earth and serve a coal-fired \"apizza\" with a signature thin, charred crust that is a Connecticut staple. It is a casual spot ($$) with no reservations required, though prices and hours can vary. \n\nAre you a fan of traditional toppings, or do you usually go for specialty pies like their famous white clam pizza?",
+      "sources": [
+        {
+          "category": "faq",
+          "source": "mohegan_sun.json",
+          "score": 0.646
+        },
+        {
+          "category": "promotions",
+          "source": "mohegan_sun.json",
+          "score": 0.636
+        },
+        {
+          "category": "restaurants",
+          "source": "mohegan_sun.json",
+          "score": 0.641
+        },
+        {
+          "category": "gaming",
+          "source": "mohegan_sun.json",
+          "score": 0.622
+        }
+      ],
+      "elapsed_ms": 32506,
+      "error": null
+    }
+  ],
+  "completed": true
+}

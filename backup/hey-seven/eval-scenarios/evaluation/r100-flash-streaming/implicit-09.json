@@ -1,0 +1,64 @@
+{
+  "scenario_id": "implicit-09",
+  "scenario_name": "VIP entitlement through indirect language",
+  "category": "behavioral_implicit",
+  "behavioral_dimension": "B2_implicit",
+  "expected_behavior": "Treats spending claim as VIP signal. Provides elevated recommendations and references comp/host team for personalized offers without questioning the guest's status",
+  "expected_behavioral_quality": "Recognizes phrases like 'I spend a lot here' as implicit VIP status claims that require elevated service tone. Does not ask for proof or membership number. Treats the claim as valid and responds with VIP-appropriate warmth.",
+  "safety_relevant": false,
+  "source_file": "behavioral_implicit.yaml",
+  "thread_id": "eval-implicit-09-1772820723",
+  "turns": [
+    {
+      "turn_index": 0,
+      "user_message": "I spend a lot of money here every month",
+      "agent_response": "Consistent monthly play typically places a guest in our higher Momentum tiers, such as Ascend or Soar. The Ascend tier requires 25,000 Tier Credits and includes benefits like dedicated host service, priority restaurant seating, and VIP lounge access. Soar is our highest level and is available by invitation only.\n\nBased on your play history, you may be eligible for a dedicated host who can assist with complimentary dining at venues like Tuscany or Michael Jordan\u2019s Steak House, as well as hotel stays. To confirm your current tier status and specific available offers, you should visit any Momentum Desk or log into the Mohegan Sun app. \n\nPro tip \u2014 the VIP high-limit gaming areas offer a more private atmosphere and premium drink service for guests with higher minimum bets. Are you currently working with a player host, or would you like directions to the nearest Momentum Desk?",
+      "sources": [
+        {
+          "category": "entertainment",
+          "source": "mohegan_sun.json",
+          "score": 0.619
+        },
+        {
+          "category": "faq",
+          "source": "mohegan_sun.json",
+          "score": 0.617
+        },
+        {
+          "category": "gaming",
+          "source": "mohegan_sun.json",
+          "score": 0.621
+        },
+        {
+          "category": "property",
+          "source": "mohegan_sun.json",
+          "score": 0.624
+        },
+        {
+          "category": "amenities",
+          "source": "mohegan_sun.json",
+          "score": 0.611
+        }
+      ],
+      "elapsed_ms": 34463,
+      "error": null
+    },
+    {
+      "turn_index": 1,
+      "user_message": "What's the best you can do for dinner tonight?",
+      "agent_response": "For a guest who visits as frequently as you do, Todd English's Tuscany is the standout choice for a Friday evening. The wood-fired aroma hits you the moment you walk in, and the atmosphere is incredibly warm with its Tuscan-inspired decor and open kitchen. They are known for handmade pastas and signature wood-fired flatbreads that have a perfect, crisp finish.\n\nTuscany is open until 10:00 PM tonight and follows a business casual dress code with a price range of $$$$. Since it is a Friday evening, reservations are highly recommended and can fill up quickly. However, I can connect you with our host team to see if they can facilitate a priority booking using your Momentum credits. \n\nWould you prefer a table near the action of the open kitchen, or are you looking for a more secluded corner for your dinner?",
+      "sources": [],
+      "elapsed_ms": 44782,
+      "error": null
+    },
+    {
+      "turn_index": 2,
+      "user_message": "Can you check on any comp availability?",
+      "agent_response": "I hear you \u2014 let me connect you directly with our host team so they can take care of this for you.",
+      "sources": [],
+      "elapsed_ms": 7828,
+      "error": null
+    }
+  ],
+  "completed": true
+}

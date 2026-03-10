@@ -1,0 +1,77 @@
+{
+  "id": "p3-02",
+  "name": "Show suggestion plus occasion inquiry",
+  "source_file": "profiling_p3_give_to_get.yaml",
+  "category": "profiling_p3_give_to_get",
+  "behavioral_dimension": "P3_give_to_get",
+  "expected_behavior": "Show listing is useful and complete before asking about the occasion. When the bachelorette context is revealed, the agent reshapes recommendations around group energy, nightlife, and celebration activities",
+  "expected_behavioral_quality": "Lists upcoming entertainment options with genuine enthusiasm, then asks if there's a special occasion. The show information is complete and actionable before the occasion question. The question is framed as 'so I can make it extra special' not 'for our records'.",
+  "safety_relevant": false,
+  "turns": [
+    {
+      "turn_index": 0,
+      "user_message": "What shows are happening this weekend?",
+      "agent_response": "You have picked a great weekend to visit Mohegan Sun. For tonight, Thursday, you can catch a comedy show at Comix Roadhouse or head over to the Wolf Den for their nightly free performance, which typically starts at 8:00 PM. \n\nAs we move into Friday and Saturday, the energy picks up significantly with high-energy sets at Avalon Nightclub starting at 10:00 PM and sophisticated lounge vibes at novelle. If you're looking for a major production, the Mohegan Sun Arena often hosts the biggest names in music and comedy on weekend nights. After a night out, many of our guests find that a legendary hot stone massage at Elemis Spa is the perfect way to reset for the next day. \n\nAre you more interested in a high-energy concert at the Arena or an intimate, free show at the Wolf Den?",
+      "sources": [
+        {
+          "category": "entertainment",
+          "source": "mohegan_sun.json",
+          "score": 0.655
+        }
+      ],
+      "elapsed_ms": 26679,
+      "error": null
+    },
+    {
+      "turn_index": 1,
+      "user_message": "Yeah, it's actually a bachelorette party",
+      "agent_response": "Congratulations, that is a fantastic reason to celebrate with us. For a bachelorette weekend, novelle is an excellent choice for a sophisticated night out with its craft cocktails and DJ entertainment, or you can head to Avalon Nightclub if the group wants a high-energy dance floor. \n\nTo keep the celebration going between shows, the Birdcage Bar in the Casino of the Sky offers an upscale cocktail experience with live DJs on the weekends. If you're looking to pamper the bride, the Elemis Spa is the perfect spot for the group to recharge with a legendary hot stone massage before your night out. Would you prefer a more laid-back lounge atmosphere like novelle or a high-energy club experience at Avalon?",
+      "sources": [
+        {
+          "category": "entertainment",
+          "source": "mohegan_sun.json",
+          "score": 0.636
+        },
+        {
+          "category": "restaurants",
+          "source": "mohegan_sun.json",
+          "score": 0.611
+        },
+        {
+          "category": "faq",
+          "source": "mohegan_sun.json",
+          "score": 0.591
+        }
+      ],
+      "elapsed_ms": 29383,
+      "error": null
+    },
+    {
+      "turn_index": 2,
+      "user_message": "What would you recommend for the group?",
+      "agent_response": "For a bachelorette group, I'd suggest starting your Saturday evening at novelle. It is an upscale ultra-lounge with craft cocktails and a DJ, offering a sophisticated atmosphere that is perfect for a group celebration.\n\nIf the bride wants to dance the night away, Avalon Nightclub is the place to be starting at 10:00 PM on Friday and Saturday with its state-of-the-art sound and light system. After a long night out, Elemis Spa is the perfect reset\u2014their hot stone massage is legendary and a great way for the whole group to recharge. Before the festivities begin, Todd English's Tuscany is a short walk from the Wolf Den and their wood-fired dishes are perfect for a celebratory dinner. Do you think the group would prefer a night of high-energy dancing at Avalon or a relaxed evening of comedy at Comix Roadhouse?",
+      "sources": [
+        {
+          "category": "entertainment",
+          "source": "mohegan_sun.json",
+          "score": 0.669
+        },
+        {
+          "category": "faq",
+          "source": "mohegan_sun.json",
+          "score": 0.653
+        },
+        {
+          "category": "amenities",
+          "source": "mohegan_sun.json",
+          "score": 0.633
+        }
+      ],
+      "elapsed_ms": 48217,
+      "error": null
+    }
+  ],
+  "elapsed_ms": 108306,
+  "error": null,
+  "completed": true
+}

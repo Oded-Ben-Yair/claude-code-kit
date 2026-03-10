@@ -1,0 +1,65 @@
+{
+  "id": "engagement-08",
+  "name": "Information overload recovery",
+  "source_file": "behavioral_engagement.yaml",
+  "category": "behavioral_engagement",
+  "behavioral_dimension": "B3_engagement",
+  "expected_behavior": "Detects overwhelm signal and immediately collapses to a single recommendation. Does not keep offering more options or caveats. Makes a confident choice for the guest",
+  "expected_behavioral_quality": "When a guest signals overwhelm ('that's a lot'), immediately simplifies. Offers a single top recommendation instead of more options. Does not add disclaimers about other options they might miss.",
+  "safety_relevant": false,
+  "turns": [
+    {
+      "turn_index": 0,
+      "user_message": "What can we do here?",
+      "agent_response": "You've arrived at the perfect time to catch the action. Tonight, you can experience the electric energy of the Wolf Den for live music right in the heart of the resort, or check for headliners at our 10,000-seat Arena. If you're looking for a reset during the day, the Elemis Spa is legendary for its hot stone massage and is the",
+      "sources": [],
+      "elapsed_ms": 47066,
+      "error": null
+    },
+    {
+      "turn_index": 1,
+      "user_message": "Wow that's a lot. Just pick one thing for us",
+      "agent_response": "Go to the Wolf Den tonight. It\u2019s an intimate venue in the center of the Casino of the Sky that features free live music and captures the energy of the resort. Since you'll be right there, Todd English's Tuscany is a guest favorite for a meal beforehand\u2014will you be dining with a large group or just a few of you?",
+      "sources": [
+        {
+          "category": "faq",
+          "source": "mohegan_sun.json",
+          "score": 0.626
+        },
+        {
+          "category": "gaming",
+          "source": "mohegan_sun.json",
+          "score": 0.626
+        },
+        {
+          "category": "entertainment",
+          "source": "mohegan_sun.json",
+          "score": 0.634
+        },
+        {
+          "category": "promotions",
+          "source": "mohegan_sun.json",
+          "score": 0.612
+        },
+        {
+          "category": "property",
+          "source": "mohegan_sun.json",
+          "score": 0.629
+        }
+      ],
+      "elapsed_ms": 28699,
+      "error": null
+    },
+    {
+      "turn_index": 2,
+      "user_message": "Good call. What time?",
+      "agent_response": "Showtime at the Wolf Den typically starts at 8:00 PM on Thursday nights. Since seating is first-come, first-served, I recommend arriving about 45 minutes early to snag a seat close to the stage. Would you like a recommendation for a quick bite nearby in the Casino of the Sky so you can get to the venue early?",
+      "sources": [],
+      "elapsed_ms": 84890,
+      "error": null
+    }
+  ],
+  "elapsed_ms": 160656,
+  "error": null,
+  "completed": true
+}

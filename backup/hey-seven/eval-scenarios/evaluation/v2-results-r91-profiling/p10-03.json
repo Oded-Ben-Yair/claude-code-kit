@@ -1,0 +1,56 @@
+{
+  "id": "p10-03",
+  "name": "Agent does not contradict earlier information",
+  "source_file": "profiling_p8_p9_p10_completeness.yaml",
+  "category": "profiling_p8_p9_p10_completeness",
+  "behavioral_dimension": "P10_cross_turn_memory",
+  "expected_behavior": "Turn 2 does not lead with the steakhouse for the vegetarian guest. Turn 3 addresses the steakhouse question honestly \u2014 are there vegetarian options there? The agent demonstrates memory consistency by never contradicting the dietary restriction",
+  "expected_behavioral_quality": "When the guest mentions they're vegetarian in turn 1, the agent NEVER suggests a steakhouse as the primary recommendation in later turns. Information captured earlier constrains future recommendations. Contradicting known facts makes the agent look like it was not listening.",
+  "safety_relevant": false,
+  "turns": [
+    {
+      "turn_index": 0,
+      "user_message": "I'm vegetarian, what are my options?",
+      "agent_response": "Hash House A Go Go is the place to be for a vegetarian breakfast that will keep you full well into the afternoon. Opening at 8:00 AM in the Casino of the Earth, they serve massive portions of \"twisted farm food\" like their signature giant pancakes and creative brunch dishes that are as visually stunning as they are delicious [4]. It is a casual spot with a mid-range price point ($$) where reservations are not required.\n\nIf you are looking for something to eat right this moment, Lantern Bar & Grill is open 24 hours and offers a selection of salads and American favorites [1]. Later in the day, Bow & Arrow is a fantastic choice as it typically offers the most variety for vegetarian guests looking for pub-style comfort food [5]. After a big meal at Hash House, a morning visit to the Mandara Spa is a wonderful way to relax before the casino floor gets busy. Do you prefer a sweet start with pancakes, or are you more of a savory breakfast person?",
+      "sources": [
+        {
+          "category": "restaurants",
+          "source": "mohegan_sun.json",
+          "score": 0.665
+        }
+      ],
+      "elapsed_ms": 26808,
+      "error": null
+    },
+    {
+      "turn_index": 1,
+      "user_message": "What about for a group dinner with friends?",
+      "agent_response": "For a group of friends, Ballo Italian Restaurant in the Casino of the Sky is the standout choice for a vegetarian-friendly feast tonight. The aroma of roasted garlic and fresh herbs fills the air as they serve up incredible housemade pastas and seasonal risottos that truly highlight Italian soul [3]. It is a contemporary, smart casual spot that is perfect for sharing plates and wine, opening at 5:00 PM today with prices in the $$$ range. \n\nSince Ballo is a popular destination for groups, I definitely suggest making a reservation to ensure your party gets a great table. After a big Italian dinner, you might enjoy heading over to novelle, which opens its doors on Thursday evenings for a sophisticated lounge experience with craft cocktails [4]. How many friends are you planning to have joining you for dinner tonight?",
+      "sources": [
+        {
+          "category": "restaurants",
+          "source": "mohegan_sun.json",
+          "score": 0.65
+        },
+        {
+          "category": "entertainment",
+          "source": "mohegan_sun.json",
+          "score": 0.644
+        }
+      ],
+      "elapsed_ms": 25347,
+      "error": null
+    },
+    {
+      "turn_index": 2,
+      "user_message": "Someone suggested the steakhouse, is that OK for me?",
+      "agent_response": "Michael Jordan's Steak House is a great option for vegetarians who want an upscale atmosphere, especially because of their exceptional selection of classic sides and fresh salads [1]. While it is known for USDA Prime steaks, the elegant setting in the Casino of the Sky and the high-end service make it a wonderful spot for a group to gather and share a variety of vegetable-based dishes.\n\nThe steakhouse opens",
+      "sources": [],
+      "elapsed_ms": 45119,
+      "error": null
+    }
+  ],
+  "elapsed_ms": 97276,
+  "error": null,
+  "completed": true
+}

@@ -1,0 +1,79 @@
+{
+  "id": "p5-03",
+  "name": "Agent advances to Phase 2 after Phase 1 complete",
+  "source_file": "profiling_p5_progressive_sequence.yaml",
+  "category": "profiling_p5_progressive_sequence",
+  "behavioral_dimension": "P5_progressive_sequencing",
+  "expected_behavior": "Phase 1 is complete by turn 1 (name, occasion, party size). Agent moves to Phase 2 in turns 2-4: cuisine preference, entertainment interest, activity planning. The progression feels natural because the foundation was established first",
+  "expected_behavioral_quality": "After capturing foundation info (name, party size, occasion), the agent naturally shifts to preference questions (cuisine type, entertainment interests, gaming style). The transition feels like deepening the service, not advancing through a checklist.",
+  "safety_relevant": false,
+  "turns": [
+    {
+      "turn_index": 0,
+      "user_message": "Hi, I'm Karen. Here with my husband for our anniversary, party of 2.",
+      "agent_response": "Happy anniversary, Karen! It is so wonderful to have you and your husband here to celebrate such a special milestone. \n\nFor a sophisticated anniversary evening, Novelle is the place to be\u2014it is an upscale lounge with craft cocktails and a chic atmosphere that is perfect for a celebratory toast. They open on Thursday evenings, so it is a great option for you tonight to enjoy some nightlife and DJ entertainment",
+      "sources": [
+        {
+          "category": "entertainment",
+          "source": "mohegan_sun.json",
+          "score": 0.646
+        },
+        {
+          "category": "hotel",
+          "source": "mohegan_sun.json",
+          "score": 0.637
+        },
+        {
+          "category": "restaurants",
+          "source": "mohegan_sun.json",
+          "score": 0.638
+        }
+      ],
+      "elapsed_ms": 38877,
+      "error": null
+    },
+    {
+      "turn_index": 1,
+      "user_message": "We're open to anything really",
+      "agent_response": "Happy anniversary, Karen! Since you have a blank slate for your celebration, I highly recommend Todd English's Tuscany for dinner\u2014the terrace seating near the Taughannic Falls waterfall is particularly romantic. \n\nI would love to help make this trip even more memorable, so let me see about upgrading your experience here at the resort to add a little something extra to your stay. When it comes to dining, do you usually lean toward a classic steakhouse feel or something more like Italian or sushi?",
+      "sources": [],
+      "elapsed_ms": 37268,
+      "error": null
+    },
+    {
+      "turn_index": 2,
+      "user_message": "We've never tried Asian food at a casino before",
+      "agent_response": "Karen, if you are looking to explore Asian cuisine for your anniversary, Tao Asian Bistro & Lounge in the Casino of the Sky is the ultimate choice for a memorable night. \n\nThe space is breathtaking with its dramatic, stylish decor that creates a sophisticated atmosphere unlike anywhere else on the property. They offer a Pan-Asian menu with a mix of Chinese, Japanese, and Thai influences, so you can try their signature dim sum or fresh sushi alongside creative cocktails. They open today at 5:00 PM and usually stay open until 11:00 PM on Thursdays, though hours and prices can vary so it is best to confirm with the property. Since it is your anniversary, a reservation is highly recommended for Tao, and the dress code is smart casual. \n\nAfter a decadent meal there, you might enjoy heading over to the Wolf Den for some live music to keep the celebration going. Do you think you would prefer starting your meal with some fresh sushi or diving straight into their hot signature dishes?",
+      "sources": [],
+      "elapsed_ms": 47838,
+      "error": null
+    },
+    {
+      "turn_index": 3,
+      "user_message": "That sounds amazing. And maybe something after?",
+      "agent_response": "Karen, After a dinner at Tao, Novelle is the perfect next stop because it has that sophisticated, upscale lounge energy and DJ entertainment on Thursday evenings. If you prefer live music, the Wolf Den is right in the center of the action and offers an intimate, high-energy performance where you're right there with the artist. Since you're celebrating, I'd love to see about upgrading your experience at the resort to make things even more memorable. \n\nAfter a late night out, a treatment at Elemis Spa could be the perfect way to reset on Friday morning\u2014would you like me to look into our signature massage options for tomorrow?",
+      "sources": [
+        {
+          "category": "entertainment",
+          "source": "mohegan_sun.json",
+          "score": 0.658
+        },
+        {
+          "category": "faq",
+          "source": "mohegan_sun.json",
+          "score": 0.635
+        },
+        {
+          "category": "promotions",
+          "source": "mohegan_sun.json",
+          "score": 0.627
+        }
+      ],
+      "elapsed_ms": 29443,
+      "error": null
+    }
+  ],
+  "elapsed_ms": 153427,
+  "error": null,
+  "completed": true
+}

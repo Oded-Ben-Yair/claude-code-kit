@@ -1,0 +1,76 @@
+{
+  "scenario_id": "extract-01",
+  "scenario_name": "Natural dietary preference extraction during restaurant rec",
+  "category": "behavioral_info_extraction",
+  "behavioral_dimension": "B2_implicit",
+  "expected_behavior": "Extracts vegetarian preference from casual mention. Carries it forward to all subsequent restaurant recommendations without needing to be reminded. Checks veggie options proactively",
+  "expected_behavioral_quality": "Learns dietary preferences naturally through the conversation flow. Does not explicitly ask 'do you have any dietary requirements?' Picks up on the vegetarian mention and adjusts all subsequent recommendations without being asked.",
+  "safety_relevant": false,
+  "source_file": "behavioral_info_extraction.yaml",
+  "thread_id": "eval-extract-01-1772914305",
+  "turns": [
+    {
+      "turn_index": 0,
+      "user_message": "Where should we eat tonight? I'm vegetarian by the way",
+      "agent_response": "Since you are looking for vegetarian options, SolToro Taqueria & Tequila Bar in the Casino of the Earth is a standout choice for a Saturday night. The aroma of fresh-pressed tortillas and charred peppers greets you as you walk in, and their menu offers authentic tacos and fresh ingredients that provide plenty of variety for a meat-free meal. They are open until 11:00 PM tonight, feature a casual dress code, and do not require reservations for their mid-range prices. \n\nInsider tip: Their tequila and mezcal selection is one of the most extensive on the property, so I'd suggest trying a signature margarita to pair with your tacos. After dinner, you might enjoy walking over to the Wolf Den to catch some live music. How many people are in your party tonight?",
+      "sources": [
+        {
+          "category": "restaurants",
+          "source": "mohegan_sun.json",
+          "score": 0.673
+        }
+      ],
+      "elapsed_ms": 36601,
+      "error": null
+    },
+    {
+      "turn_index": 1,
+      "user_message": "What about the steakhouse? Do they have veggie options?",
+      "agent_response": "Michael Jordan's Steak House in the Casino of the Sky is an excellent choice for a vegetarian who appreciates a high-end atmosphere, as their classic sides are prepared with the same reverence as their USDA Prime steaks. You can easily build a sophisticated meal out of their elevated salads and fresh vegetable dishes while enjoying the elegant, dimly lit setting that feels like a true escape from the casino floor. They are open until 10:00 PM tonight, and since business casual attire is recommended, it is a perfect excuse to dress up for the evening.\n\nKnowledge flex: The restaurant's design is inspired by Michael Jordan's own tastes, creating a space that feels both powerful and intimate, especially in the plush booth seating. After your meal, you might want to head over to the Mohegan Sun Arena to see if there is a late-show performance starting soon. I've got you covered with all the information you need, and I can certainly point you toward our hosting team to see if they can secure a table for your group. Are you looking for a full three-course dinner or something a bit lighter tonight?",
+      "sources": [
+        {
+          "category": "restaurants",
+          "source": "mohegan_sun.json",
+          "score": 0.7
+        },
+        {
+          "category": "faq",
+          "source": "mohegan_sun.json",
+          "score": 0.652
+        }
+      ],
+      "elapsed_ms": 40862,
+      "error": null
+    },
+    {
+      "turn_index": 2,
+      "user_message": "And for breakfast tomorrow?",
+      "agent_response": "For tomorrow morning, Hash House A Go Go in the Casino of the Earth is a must-visit for their legendary \"Twisted Farm Food\" that guests talk about for weeks after their trip. The smell of griddled batter and fresh coffee fills the space, and as a vegetarian, you will find their oversized pancakes and creative brunch dishes are incredibly satisfying. They are open from 8:00 AM to 2:00 PM and have a casual atmosphere, so you can head straight there when you wake up without needing a reservation.\n\nPro tip: The portions here are famously massive, so if you are dining with a companion, you might consider sharing one of their signature pancakes to save room for later. If you want a slow Sunday, you might also look into a morning treatment at Mandara Spa to really lean into the resort experience. We often have seasonal dining promotions, so next time you visit, ask about what is running and I can point you to the best deals. \n\nDo you usually look for a sweet or savory start to your morning?",
+      "sources": [
+        {
+          "category": "restaurants",
+          "source": "mohegan_sun.json",
+          "score": 0.659
+        },
+        {
+          "category": "entertainment",
+          "source": "mohegan_sun.json",
+          "score": 0.617
+        },
+        {
+          "category": "faq",
+          "source": "mohegan_sun.json",
+          "score": 0.607
+        },
+        {
+          "category": "hotel",
+          "source": "mohegan_sun.json",
+          "score": 0.605
+        }
+      ],
+      "elapsed_ms": 58273,
+      "error": null
+    }
+  ],
+  "completed": true
+}

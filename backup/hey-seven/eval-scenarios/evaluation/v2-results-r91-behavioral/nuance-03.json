@@ -1,0 +1,92 @@
+{
+  "id": "nuance-03",
+  "name": "Honeymoon celebration energy matching",
+  "source_file": "behavioral_nuance.yaml",
+  "category": "behavioral_nuance",
+  "behavioral_dimension": "B5_emotional",
+  "expected_behavior": "Celebrates the honeymoon with genuine enthusiasm. Recommends romantic dining and couples experiences. Maintains elevated celebratory tone throughout without being performative",
+  "expected_behavioral_quality": "Matches the celebration energy authentically. Congratulates the couple genuinely. Recommends romantic and special experiences without being generic. Treats this as a milestone occasion deserving elevated suggestions.",
+  "safety_relevant": false,
+  "turns": [
+    {
+      "turn_index": 0,
+      "user_message": "We just got married! Honeymoon trip!",
+      "agent_response": "Congratulations on your marriage! I'm Seven, and I would be happy to help you plan a memorable honeymoon. \n\nFor a special dinner, Todd English's Tuscany is a guest favorite, especially with its seating near the indoor waterfall. If you are looking for relaxation, the Mandara Spa offers treatments inspired by Balinese traditions that are perfect for unwinding after the wedding festivities. May I ask your names so I can better personalize my recommendations for your stay?",
+      "sources": [
+        {
+          "category": "hotel",
+          "source": "mohegan_sun.json",
+          "score": 0.603
+        },
+        {
+          "category": "amenities",
+          "source": "mohegan_sun.json",
+          "score": 0.59
+        },
+        {
+          "category": "property",
+          "source": "mohegan_sun.json",
+          "score": 0.6
+        },
+        {
+          "category": "entertainment",
+          "source": "mohegan_sun.json",
+          "score": 0.591
+        },
+        {
+          "category": "restaurants",
+          "source": "mohegan_sun.json",
+          "score": 0.586
+        }
+      ],
+      "elapsed_ms": 28288,
+      "error": null
+    },
+    {
+      "turn_index": 1,
+      "user_message": "What's the most romantic dinner option?",
+      "agent_response": "Tao Asian Bistro & Lounge is the most striking choice for a honeymoon dinner because of its dramatic and stylish atmosphere. The Pan-Asian menu is a culinary journey, featuring everything from delicate dim sum to a full sushi bar in a setting that feels worlds away from the rest of the property. \n\nIt opens at 5:00 PM this evening with a price range of approximately $$$, and",
+      "sources": [
+        {
+          "category": "entertainment",
+          "source": "mohegan_sun.json",
+          "score": 0.637
+        },
+        {
+          "category": "restaurants",
+          "source": "mohegan_sun.json",
+          "score": 0.639
+        }
+      ],
+      "elapsed_ms": 49931,
+      "error": null
+    },
+    {
+      "turn_index": 2,
+      "user_message": "And something special we can do together tomorrow?",
+      "agent_response": "For your first full day as a married couple, I'd suggest starting with a reset at the Elemis Spa where their hot stone massage is legendary. Later in the evening, novelle is the perfect spot for a sophisticated honeymoon vibe, as it is an upscale ultra-lounge with craft cocktails and DJ entertainment that really sets a celebratory mood. \n\nSince it's a Friday, novelle will have a great energy and typically hosts about 500 guests in a very chic, modern setting. Would you prefer a relaxing morning at the spa or heading straight into the nightlife tomorrow evening?",
+      "sources": [
+        {
+          "category": "entertainment",
+          "source": "mohegan_sun.json",
+          "score": 0.637
+        },
+        {
+          "category": "faq",
+          "source": "mohegan_sun.json",
+          "score": 0.637
+        },
+        {
+          "category": "promotions",
+          "source": "mohegan_sun.json",
+          "score": 0.616
+        }
+      ],
+      "elapsed_ms": 35021,
+      "error": null
+    }
+  ],
+  "elapsed_ms": 113242,
+  "error": null,
+  "completed": true
+}

@@ -1,0 +1,71 @@
+{
+  "id": "h4-03",
+  "name": "Guest with children seeking family-appropriate options",
+  "source_file": "host_triangle_h4_h6_relationship.yaml",
+  "category": "host_triangle_h4_h6_relationship",
+  "behavioral_dimension": "H4_personalized_recognition",
+  "expected_behavior": "Distinguishes between teenager interests and young child interests. Recommends experiences that teenagers would consider 'cool' rather than childish. Dinner recommendation accounts for family-friendly seating while not being a kids' restaurant. Makes the family feel like there is something for everyone",
+  "expected_behavioral_quality": "Recognizes the family context and personalizes all recommendations around the full group's needs. Balances adult interests with kid-friendly options without condescending. Uses the family dynamic to create a personalized experience vision.",
+  "safety_relevant": false,
+  "turns": [
+    {
+      "turn_index": 0,
+      "user_message": "We're here with two teenagers, 14 and 16. What can we all do together?",
+      "agent_response": "You're going to find that Cyber Quest and Wombi Rock are the best spots for a group with teenagers. Cyber Quest is an arcade designed specifically for families and features the latest video games, while the Wombi Rock climbing wall offers an indoor experience that works for any skill level. It's a great way to stay active together, and they provide all the instruction and equipment you'll need.\n\nAfter an active afternoon on the climbing wall, a meal at Todd English's Tuscany is a great way to refuel, as their wood-fired dishes are a favorite for all ages. Do your teenagers prefer high-tech gaming or would they rather test their skills on the climbing wall?",
+      "sources": [
+        {
+          "category": "entertainment",
+          "source": "mohegan_sun.json",
+          "score": 0.675
+        },
+        {
+          "category": "amenities",
+          "source": "mohegan_sun.json",
+          "score": 0.651
+        },
+        {
+          "category": "faq",
+          "source": "mohegan_sun.json",
+          "score": 0.624
+        }
+      ],
+      "elapsed_ms": 52098,
+      "error": null
+    },
+    {
+      "turn_index": 1,
+      "user_message": "They're pretty bored of the usual family stuff, they want something cool",
+      "agent_response": "Wombi Rock is open today and it's a great pick if they're looking for something with more of an edge. It's a massive indoor climbing wall that offers a legitimate challenge for all skill levels, which usually hits the mark for teenagers who want to test their limits. If they're more into high-tech entertainment, Cyber Quest is an arcade featuring the latest video games",
+      "sources": [
+        {
+          "category": "entertainment",
+          "source": "mohegan_sun.json",
+          "score": 0.649
+        },
+        {
+          "category": "amenities",
+          "source": "mohegan_sun.json",
+          "score": 0.643
+        },
+        {
+          "category": "hotel",
+          "source": "mohegan_sun.json",
+          "score": 0.602
+        }
+      ],
+      "elapsed_ms": 51791,
+      "error": null
+    },
+    {
+      "turn_index": 2,
+      "user_message": "And we need dinner for all four of us",
+      "agent_response": "Let me help you get that set up. I'll pull together the details you need.\n\nFor the booking itself, our reservations team at 1-888-226-7711 can lock it in right away, or I can connect you with a host who handles this personally.\n\nWhat are you looking to book \u2014 dining, a room, or something else?",
+      "sources": [],
+      "elapsed_ms": 12294,
+      "error": null
+    }
+  ],
+  "elapsed_ms": 116183,
+  "error": null,
+  "completed": true
+}

@@ -1,0 +1,80 @@
+{
+  "scenario_id": "crisis-05",
+  "scenario_name": "Guest demanding comps with threats",
+  "category": "behavioral_crisis",
+  "behavioral_dimension": "B3_engagement",
+  "expected_behavior": "De-escalates without being defensive. Validates the frustration about the spending-to-comp ratio. Directs to a human host who can discuss comp eligibility rather than making promises",
+  "expected_behavioral_quality": "Stays calm under threat. Does not become defensive or dismissive. Acknowledges the frustration while being clear about what the agent can and cannot do. Directs to the right human for escalation.",
+  "safety_relevant": false,
+  "source_file": "behavioral_crisis.yaml",
+  "thread_id": "eval-crisis-05-1772911505",
+  "turns": [
+    {
+      "turn_index": 0,
+      "user_message": "I've spent $10K here this weekend and you can't even comp me dinner? I'll never come back.",
+      "agent_response": "I understand how frustrating it is to feel your play hasn't been recognized after your spending this weekend. A host can review your Momentum account and play history to determine what dining comps you may be eligible for based on available information. Would you like me to connect you with a dedicated host who can assist you personally?",
+      "sources": [
+        {
+          "category": "gaming",
+          "source": "mohegan_sun.json",
+          "score": 0.658
+        },
+        {
+          "category": "promotions",
+          "source": "mohegan_sun.json",
+          "score": 0.653
+        },
+        {
+          "category": "faq",
+          "source": "mohegan_sun.json",
+          "score": 0.646
+        }
+      ],
+      "elapsed_ms": 27682,
+      "error": null
+    },
+    {
+      "turn_index": 1,
+      "user_message": "I'm going to blast this place all over TripAdvisor and Twitter. This is ridiculous.",
+      "agent_response": "You have every right to be upset, and you shouldn't feel dismissed after spending your weekend with us. \n\nI am stepping out of the way and flagging this directly to a host team supervisor right now so a real person can look at your account immediately. Are you still on the property so someone can come speak with you directly?",
+      "sources": [
+        {
+          "category": "faq",
+          "source": "mohegan_sun.json",
+          "score": 0.592
+        },
+        {
+          "category": "property",
+          "source": "mohegan_sun.json",
+          "score": 0.602
+        },
+        {
+          "category": "entertainment",
+          "source": "mohegan_sun.json",
+          "score": 0.593
+        },
+        {
+          "category": "restaurants",
+          "source": "mohegan_sun.json",
+          "score": 0.596
+        },
+        {
+          "category": "hotel",
+          "source": "mohegan_sun.json",
+          "score": 0.573
+        }
+      ],
+      "elapsed_ms": 54885,
+      "error": null
+    },
+    {
+      "turn_index": 2,
+      "user_message": "Get me someone who can actually do something",
+      "agent_response": "The Host Office in Casino of the Sky is the best place for an immediate review of your weekend play. I will prepare the details for the host team so they can pull up your account and address this as soon as you arrive. \n\nAre you currently in the Sky or Earth casino?",
+      "sources": [],
+      "elapsed_ms": 54443,
+      "error": null
+    }
+  ],
+  "completed": true
+}

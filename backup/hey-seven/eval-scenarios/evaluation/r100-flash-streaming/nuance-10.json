@@ -1,0 +1,38 @@
+{
+  "scenario_id": "nuance-10",
+  "scenario_name": "Celebration calibration for birthday milestone",
+  "category": "behavioral_nuance",
+  "behavioral_dimension": "B5_emotional",
+  "expected_behavior": "Celebrates the milestone birthday with genuine enthusiasm. Recommends group-friendly dining and suggests contacting the host team for special arrangements. Maintains elevated energy throughout",
+  "expected_behavioral_quality": "Matches celebration energy for a milestone birthday. Recommends special, memorable experiences. Does not give a generic answer. Treats the birthday as deserving elevated service and enthusiasm.",
+  "safety_relevant": false,
+  "source_file": "behavioral_nuance.yaml",
+  "thread_id": "eval-nuance-10-1772823985",
+  "turns": [
+    {
+      "turn_index": 0,
+      "user_message": "It's my 50th birthday this weekend!",
+      "agent_response": "",
+      "sources": [],
+      "elapsed_ms": 60011,
+      "error": "TIMEOUT (60.0s)"
+    },
+    {
+      "turn_index": 1,
+      "user_message": "We have a group of 8. What should we do?",
+      "agent_response": "For a group of eight, Todd English's Tuscany is a standout choice for a celebratory dinner. It features a beautiful terrace overlooking the Taughannick Falls and handles larger parties very well. After dinner, Avalon Nightclub is the place to be if you want a high-energy environment with a DJ and a large dance floor.\n\nBy the way, since it is your 50th birthday, we would love to treat you to that $25 dining credit at any of our restaurants \u2014 just let me know if you would like me to set that up. Are you more interested in a night of dancing, or would you prefer to catch a live show at the Arena or Wolf Den?",
+      "sources": [],
+      "elapsed_ms": 58099,
+      "error": null
+    },
+    {
+      "turn_index": 2,
+      "user_message": "Can we do anything special for the birthday?",
+      "agent_response": "A 50th birthday is a fantastic milestone \u2014 congratulations!\n\nFor a group of eight, a VIP table at novelle or Avalon Nightclub is the best way to ensure your party has its own dedicated space and service for the night. These venues are designed for milestone celebrations and offer a much more exclusive experience than the general lounge areas. I can help you coordinate those arrangements by connecting you with our host team to finalize the details.\n\nSince it is your birthday, Mohegan Sun would love to treat you to a $25 dining credit at any of our restaurants to help start the night off right. Would you like to use that toward a celebratory dinner or for drinks later in the evening?",
+      "sources": [],
+      "elapsed_ms": 53725,
+      "error": null
+    }
+  ],
+  "completed": true
+}

@@ -1,0 +1,49 @@
+{
+  "scenario_id": "h8-03",
+  "scenario_name": "Guest receiving a promotional offer",
+  "category": "host_triangle_h7_h10_revenue",
+  "behavioral_dimension": "H8_strategic_offer_framing",
+  "expected_behavior": "Validates that the double points weekend is worthwhile by connecting it to the guest's tier progression and earning potential. Frames the promotion as an accelerator for benefits the guest already cares about. Makes coming in this weekend feel like a strategic decision, not a marketing response",
+  "expected_behavioral_quality": "When presenting a promotion, the agent frames it as something special rather than mass-distributed. Uses personal language and connects the offer to the guest's known preferences. The promotion should feel selected for them, not blasted to an email list.",
+  "safety_relevant": false,
+  "source_file": "host_triangle_h7_h10_revenue.yaml",
+  "thread_id": "eval-h8-03-1772975859",
+  "turns": [
+    {
+      "turn_index": 0,
+      "user_message": "I got an email about double Momentum Points this weekend. Is that worth coming in for?",
+      "agent_response": "Double Momentum Points means you earn twice the usual spending power for free play, hotel stays, and retail purchases across the resort. It is a highly efficient way to build your reward balance quickly. \n\nAs an insider tip, those points can be used directly at our restaurants. A strong weekend of play during a multiplier event can easily cover a premium dinner at places like Tuscany or SolToro. While you are earning those extra points, your play is also accumulating regular Tier Credits, which moves you closer to unlocking benefits like priority access at the Leap tier or a dedicated host at Ascend. \n\nWhat do you usually prefer to spend your rewards on when you visit?",
+      "sources": [
+        {
+          "category": "faq",
+          "source": "mohegan_sun.json",
+          "score": 0.712
+        },
+        {
+          "category": "promotions",
+          "source": "mohegan_sun.json",
+          "score": 0.703
+        }
+      ],
+      "elapsed_ms": 56927,
+      "error": null
+    },
+    {
+      "turn_index": 1,
+      "user_message": "How much faster does that add up?",
+      "agent_response": "With the double multiplier, the play required to earn a reward is cut exactly in half. You accumulate spendable points twice as fast using your standard gaming budget. \n\nThe exact speed at which your balance grows depends on your game of choice, as slots, table games, and poker all accumulate points at different baseline rates based on your average bet and time played. If you check your progress at a Momentum kiosk, you will see the accelerated points hitting your account almost immediately during your session.\n\nDo you usually spend your time on the slot floor, or are you more of a table games player?",
+      "sources": [],
+      "elapsed_ms": 54768,
+      "error": null
+    },
+    {
+      "turn_index": 2,
+      "user_message": "Alright, I'm in. Coming this Saturday",
+      "agent_response": "Excellent choice. Saturday nights here have an incredible energy, and you will be able to put those double points to good use. \n\nIf you want to take a break from the floor, Comix Roadhouse has comedy shows running throughout the weekend. As a quick insider tip, they serve a full dinner menu right during the performance, and you can actually use your Momentum Dollars to cover the bill. Alternatively, if you want to keep the energy high after a winning streak, Avalon Nightclub gets going around 10:00 PM with state-of-the-art sound and top DJs. \n\nBy the way, if you keep building your play this weekend, you will unlock some really nice perks at the next tier level \u2014 definitely worth checking your progress at a kiosk before you head home. \n\nAre you looking for a lively night out with your group, or would you prefer a more relaxed lounge vibe after you play?",
+      "sources": [],
+      "elapsed_ms": 71735,
+      "error": null
+    }
+  ],
+  "completed": true
+}

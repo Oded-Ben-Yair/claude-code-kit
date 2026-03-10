@@ -1,0 +1,71 @@
+{
+  "scenario_id": "p1-06",
+  "scenario_name": "Guest mentions gaming preference casually",
+  "category": "profiling_p1_natural_extraction",
+  "behavioral_dimension": "P1_natural_extraction",
+  "expected_behavior": "Captures 'love blackjack' as a gaming preference and uses it to shape gaming recommendations. When the guest asks for more, connects to related table game experiences rather than random amenities",
+  "expected_behavioral_quality": "Registers the gaming preference from a casual mention. 'Love blackjack' is a profiling signal for gaming preferences, comp eligibility, and table game recommendations. Stores and references it without making the guest feel tracked.",
+  "safety_relevant": false,
+  "source_file": "profiling_p1_natural_extraction.yaml",
+  "thread_id": "eval-p1-06-1772990099",
+  "turns": [
+    {
+      "turn_index": 0,
+      "user_message": "I love blackjack. Where are the table games?",
+      "agent_response": "Casino of the Earth is the place for you\u2014it's the heart of the property and has the widest variety of blackjack tables. If you want to take a break from the cards later, the Bow & Arrow Sports Bar is right there in the center of the action. \n\nDo you usually prefer a lively main floor or are you looking for a high-limit area tonight?",
+      "sources": [
+        {
+          "category": "gaming",
+          "source": "mohegan_sun.json",
+          "score": 0.693
+        }
+      ],
+      "elapsed_ms": 36412,
+      "error": null
+    },
+    {
+      "turn_index": 1,
+      "user_message": "What about the minimum bets?",
+      "agent_response": "The minimums vary based on the time of day and which of our three casino areas you're playing in. With over 370 table games across the property, there is always a good mix of options to fit your style. \n\nAre you planning to hit the tables right away, or are we getting you set up with dinner first?",
+      "sources": [
+        {
+          "category": "gaming",
+          "source": "mohegan_sun.json",
+          "score": 0.722
+        },
+        {
+          "category": "faq",
+          "source": "mohegan_sun.json",
+          "score": 0.667
+        }
+      ],
+      "elapsed_ms": 54370,
+      "error": null
+    },
+    {
+      "turn_index": 2,
+      "user_message": "Cool. Anything else fun for a blackjack fan?",
+      "agent_response": "If you want to stick to the cards but try a different flavor, we offer Spanish 21, which is a really popular twist on classic blackjack. I'd also recommend taking a walk over to Casino of the Wind when you want a change of scenery, as it has a very dynamic, high-energy environment compared to the classic feel of Earth.\n\nPro tip \u2014 if you are playing late on a Friday or Saturday and want to keep that adrenaline going after cashing out, Avalon Nightclub is the perfect move. It brings in top DJs and the energy in there is incredible. \n\nAre you here with a group looking to hit the nightlife later, or keeping it strictly about the tables this trip?",
+      "sources": [
+        {
+          "category": "faq",
+          "source": "mohegan_sun.json",
+          "score": 0.666
+        },
+        {
+          "category": "gaming",
+          "source": "mohegan_sun.json",
+          "score": 0.666
+        },
+        {
+          "category": "entertainment",
+          "source": "mohegan_sun.json",
+          "score": 0.659
+        }
+      ],
+      "elapsed_ms": 89773,
+      "error": null
+    }
+  ],
+  "completed": true
+}

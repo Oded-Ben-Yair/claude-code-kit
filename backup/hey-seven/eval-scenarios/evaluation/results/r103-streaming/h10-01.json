@@ -1,0 +1,49 @@
+{
+  "scenario_id": "h10-01",
+  "scenario_name": "Guest asking agent to arrange something",
+  "category": "host_triangle_h7_h10_revenue",
+  "behavioral_dimension": "H10_host_identity_authority",
+  "expected_behavior": "Handles the reservation request with host authority \u2014 'let me arrange that' not 'you can call the restaurant.' Accepts the special seating request with confidence. When the guest compliments the service, accepts it naturally. The agent feels like an insider who can pull strings, not a search engine",
+  "expected_behavioral_quality": "When a guest asks the agent to arrange or set up something, the agent projects the authority of a host who can make things happen. Uses language like 'let me look into that' rather than 'you'll need to call.' Takes ownership of the request even when it needs to be escalated.",
+  "safety_relevant": false,
+  "source_file": "host_triangle_h7_h10_revenue.yaml",
+  "thread_id": "eval-h10-01-1772953642",
+  "turns": [
+    {
+      "turn_index": 0,
+      "user_message": "Can you set up a dinner reservation at Tuscany for 4 tonight at 7?",
+      "agent_response": "Todd English's Tuscany is an excellent choice for a party of four, especially with the 55-foot Taughannock Falls waterfall providing a backdrop that makes the room feel tucked away from the casino floor. The smell of the wood-burning oven is incredible, and their handmade pastas are some of the best on property. I can certainly help you get this organized and then connect you with our host team to finalize the booking. \n\nTuscany is open tonight from 5:00 PM to 10:00 PM in the Casino of the Sky. Since it is one of our premier fine dining spots, they do recommend business casual attire for guests. Please keep in mind that hours and prices can vary, so it is always a good idea to confirm with the restaurant staff. \n\nAre there any specific dietary needs or allergies I should make sure the chefs are aware of for your group?",
+      "sources": [
+        {
+          "category": "restaurants",
+          "source": "mohegan_sun.json",
+          "score": 0.674
+        },
+        {
+          "category": "faq",
+          "source": "mohegan_sun.json",
+          "score": 0.63
+        }
+      ],
+      "elapsed_ms": 28810,
+      "error": null
+    },
+    {
+      "turn_index": 1,
+      "user_message": "We'd also love a table with a good view if possible",
+      "agent_response": "I hear you \u2014 let me connect you directly with our host team so they can take care of this for you.",
+      "sources": [],
+      "elapsed_ms": 12793,
+      "error": null
+    },
+    {
+      "turn_index": 2,
+      "user_message": "Perfect. You're like having a personal concierge",
+      "agent_response": "I'm glad to help. I'll make sure the host team knows you're looking for that waterfall view at Tuscany for your party of four tonight. Since you're looking for a great atmosphere, novelle is right nearby if you're in the mood for a cocktail in a lounge setting after dinner. \n\nWhat brought the four of you out to Mohegan Sun tonight?",
+      "sources": [],
+      "elapsed_ms": 46119,
+      "error": null
+    }
+  ],
+  "completed": true
+}

@@ -1,0 +1,38 @@
+{
+  "scenario_id": "sarcasm-04",
+  "scenario_name": "Direct sarcasm with time-based frustration",
+  "category": "behavioral_sarcasm",
+  "behavioral_dimension": "B1_sarcasm",
+  "expected_behavior": "Acknowledges frustration and wasted time sincerely, provides a direct dining recommendation immediately, then delivers concise factual answers as trust rebuilds",
+  "expected_behavioral_quality": "Triggers HEART framework. Acknowledges the wait time and frustration explicitly. Does not say 'I understand' without substance. Offers immediate actionable help and mentions human escalation if the issue is unresolved.",
+  "safety_relevant": false,
+  "source_file": "behavioral_sarcasm.yaml",
+  "thread_id": "eval-sarcasm-04-1772826613",
+  "turns": [
+    {
+      "turn_index": 0,
+      "user_message": "Thanks for nothing, I've been asking for 10 minutes and still don't know where to eat dinner",
+      "agent_response": "I understand that can be frustrating, especially when you have ten hungry people waiting. Let's get your group settled right now.\n\nFor a party of your size, Lantern Bar & Grill in the Casino of the Earth is my top recommendation tonight. They serve a full menu of American favorites, from great steaks to hearty burgers, so everyone will find something they like. They are open right now and don't require reservations, which makes it incredibly easy for a large group to walk in. \n\nAfter you finish eating, the Wolf Den is right nearby and features free live music if your group wants to keep the night going. \n\nDoes a sit-down American meal sound like a winner for everyone, or were you looking for something a bit quicker like classic burgers and shakes at Johnny Rockets?",
+      "sources": [],
+      "elapsed_ms": 53335,
+      "error": null
+    },
+    {
+      "turn_index": 1,
+      "user_message": "The steakhouse then. Is there a wait?",
+      "agent_response": "",
+      "sources": [],
+      "elapsed_ms": 60005,
+      "error": "TIMEOUT (60.0s)"
+    },
+    {
+      "turn_index": 2,
+      "user_message": "Fine. Where is it?",
+      "agent_response": "",
+      "sources": [],
+      "elapsed_ms": 60004,
+      "error": "TIMEOUT (60.0s)"
+    }
+  ],
+  "completed": true
+}

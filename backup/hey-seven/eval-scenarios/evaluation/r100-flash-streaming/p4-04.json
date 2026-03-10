@@ -1,0 +1,38 @@
+{
+  "scenario_id": "p4-04",
+  "scenario_name": "Birthday mention \u2014 assumption about milestone celebration",
+  "category": "profiling_p4_assumptive_bridge",
+  "behavioral_dimension": "P4_assumptive_bridging",
+  "expected_behavior": "Birthday triggers celebratory mode. The agent creates space for the guest to volunteer the age without asking directly. When 40th is confirmed, the recommendations elevate to milestone-worthy experiences",
+  "expected_behavioral_quality": "When a birthday is mentioned, the agent makes a soft assumption about whether it's a milestone (30th, 40th, 50th) by referencing possible special treatment. Does not ask 'How old are you turning?' directly. Instead bridges through 'Milestone birthdays deserve extra special treatment'.",
+  "safety_relevant": false,
+  "source_file": "profiling_p4_assumptive_bridge.yaml",
+  "thread_id": "eval-p4-04-1772841470",
+  "turns": [
+    {
+      "turn_index": 0,
+      "user_message": "We're here for my birthday",
+      "agent_response": "Happy Birthday! Welcome to Mohegan Sun. \n\nFor your celebration, you might enjoy a world-class show at the Mohegan Sun Arena or live music at the Wolf Den in the Casino of the Sky. Since it is your birthday, the resort would like to treat you to a $25 dining credit at any of our restaurants. \n\nHow many guests will be joining you for the evening?",
+      "sources": [],
+      "elapsed_ms": 51117,
+      "error": null
+    },
+    {
+      "turn_index": 1,
+      "user_message": "Turning 40, so yeah it's a big one",
+      "agent_response": "",
+      "sources": [],
+      "elapsed_ms": 60004,
+      "error": "TIMEOUT (60.0s)"
+    },
+    {
+      "turn_index": 2,
+      "user_message": "What do you recommend for a 40th?",
+      "agent_response": "Turning 40 is the perfect excuse to go all out, and since it is just before midnight on a Friday, the energy at Avalon Nightclub is hitting its peak right now with its state-of-the-art sound and light shows. If you prefer a more sophisticated vibe for your milestone, novelle is our upscale ultra-lounge where the craft cocktails and atmosphere are specifically designed for an elevated night like this. \n\nSince it is your birthday, Mohegan Sun would love to treat you to a $25 dining credit at any of our restaurants to help celebrate. Beyond the nightlife tonight, a birthday weekend isn't complete without a reset at Elemis Spa\u2014their hot stone massage is a legendary way to start your 40th year feeling refreshed. \n\nAre you looking to dive into the high-energy nightlife tonight, or would you prefer a more relaxed start to your Saturday morning?",
+      "sources": [],
+      "elapsed_ms": 56827,
+      "error": null
+    }
+  ],
+  "completed": true
+}

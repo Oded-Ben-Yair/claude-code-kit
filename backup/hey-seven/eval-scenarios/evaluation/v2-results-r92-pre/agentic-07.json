@@ -1,0 +1,77 @@
+{
+  "id": "agentic-07",
+  "name": "Group size awareness in recommendations",
+  "source_file": "behavioral_agentic.yaml",
+  "category": "behavioral_agentic",
+  "behavioral_dimension": "B4_agentic",
+  "expected_behavior": "Factors group size into every recommendation. Leads with group-friendly options. When asked about a specific venue, addresses capacity and reservation logistics proactively",
+  "expected_behavioral_quality": "When a group size is mentioned, proactively adjusts recommendations for group suitability. Suggests venues that can accommodate the group. Does not recommend intimate 2-person experiences for a party of 12.",
+  "safety_relevant": false,
+  "turns": [
+    {
+      "turn_index": 0,
+      "user_message": "We have 12 people. Where should we eat?",
+      "agent_response": "For a party of twelve, SolToro Taqueria & Tequila Bar in the Casino of the Earth is a fantastic choice because its vibrant, colorful atmosphere is built for high-energy groups. You can smell the citrus and spice of their fresh ceviches the moment you approach the entrance, and their authentic street tacos are perfect for sharing across a large table.\n\nThey are open today from 11:30 AM until 10:00 PM with a mid-range price point, and while reservations are not required, arriving a bit early is helpful for a group of your size. Please keep in mind that hours and prices may vary and are best confirmed with the restaurant directly. Their tequila and mezcal selection is one of the most extensive on the property, which adds a great kick to a festive group meal. \n\nAre you celebrating a birthday or a special event today? After you finish your meal, you will be right in the heart of the Casino of the Earth if you want to explore the gaming floor together.",
+      "sources": [
+        {
+          "category": "restaurants",
+          "source": "mohegan_sun.json",
+          "score": 0.663
+        }
+      ],
+      "elapsed_ms": 34799,
+      "error": null
+    },
+    {
+      "turn_index": 1,
+      "user_message": "Can the steakhouse handle 12?",
+      "agent_response": "Michael Jordan's Steak House in the Casino of the Sky is an excellent choice for a group of twelve, as the dining room is spacious and designed for a sophisticated, high-end experience. The scent of USDA Prime cuts and roasted garlic fills the air, and their signature 23-layer chocolate cake is practically a requirement for a party of your size to share. \n\nThey open today at 5:00 PM and stay open until 10:00 PM, and since they are a top-tier destination with a business casual dress code, I'd suggest securing a reservation for a party of twelve. Please note that hours and pricing are subject to change, so confirming with the property is always a good idea. \n\nIf you finish dinner around 7:00 PM or 8:00 PM, you'll be just steps away from the Vista Lounge for a post-dinner cocktail under the planetarium dome. Do you prefer a more private area for your group to talk, or are you looking to be right in the middle of the energy?",
+      "sources": [
+        {
+          "category": "restaurants",
+          "source": "mohegan_sun.json",
+          "score": 0.681
+        },
+        {
+          "category": "entertainment",
+          "source": "mohegan_sun.json",
+          "score": 0.654
+        },
+        {
+          "category": "faq",
+          "source": "mohegan_sun.json",
+          "score": 0.632
+        }
+      ],
+      "elapsed_ms": 37624,
+      "error": null
+    },
+    {
+      "turn_index": 2,
+      "user_message": "And something fun for the whole group after?",
+      "agent_response": "Since it is Thursday night, novelle is a fantastic destination for your group of twelve because the ultra lounge atmosphere is sophisticated and features DJ entertainment that keeps the energy high. You can enjoy craft cocktails in a space designed for up to 500 people, which makes it a great spot for a larger party to socialize after a meal.\n\nIf you prefer something more raw and electric, the Wolf Den in the center of the Casino of the Earth offers free live music every night where you are right there with the performer. Both venues provide a great transition from dinner, though schedules and specific performers can change, so it is best to check the current lineup at the property when you arrive.\n\nFor a group that stays out late, the Elemis Spa is the perfect reset the next morning with their legendary hot stone massage. Does your group usually prefer a high-energy DJ set or the vibe of a live band?",
+      "sources": [
+        {
+          "category": "entertainment",
+          "source": "mohegan_sun.json",
+          "score": 0.666
+        },
+        {
+          "category": "faq",
+          "source": "mohegan_sun.json",
+          "score": 0.655
+        },
+        {
+          "category": "gaming",
+          "source": "mohegan_sun.json",
+          "score": 0.634
+        }
+      ],
+      "elapsed_ms": 54267,
+      "error": null
+    }
+  ],
+  "elapsed_ms": 126691,
+  "error": null,
+  "completed": true
+}

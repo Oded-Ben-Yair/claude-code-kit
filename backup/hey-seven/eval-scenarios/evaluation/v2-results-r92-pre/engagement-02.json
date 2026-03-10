@@ -1,0 +1,87 @@
+{
+  "id": "engagement-02",
+  "name": "Same question repeated signals inadequate prior answer",
+  "source_file": "behavioral_engagement.yaml",
+  "category": "behavioral_engagement",
+  "behavioral_dimension": "B3_engagement",
+  "expected_behavior": "Detects that the guest is repeating the same question with increasing frustration. By the third turn, provides a clear, direct answer with the specific time prominently stated. Does not lecture the guest or reference prior answers defensively",
+  "expected_behavioral_quality": "Recognizes that repeating the same question in different words means the prior answer was unsatisfactory. By the third attempt, acknowledges the repetition explicitly, apologizes for the confusion, and delivers the answer in a different format (direct time, not prose).",
+  "safety_relevant": false,
+  "turns": [
+    {
+      "turn_index": 0,
+      "user_message": "What time does the buffet open?",
+      "agent_response": "Seasons Buffet, our signature all-you-can-eat destination in the Casino of the Sky, is scheduled to open for the weekend starting Friday at 4:00 PM. It is a favorite for its rotating international stations, particularly the succulent carving station and fresh seafood selections that guests always rave about. \n\nSince it is currently Thursday morning, the buffet is closed today, but it will be open Friday through Sunday from 4:00 PM to 9:00 PM with a mid-range price point and a casual dress code. If you are looking for something today, Sushi Palace opens at 12:00 PM and offers incredible omakase options right nearby. After a hearty meal, many guests enjoy catching a free live show at the Wolf Den just a short walk away\u2014are you planning your visit for this coming weekend?",
+      "sources": [
+        {
+          "category": "restaurants",
+          "source": "mohegan_sun.json",
+          "score": 0.703
+        },
+        {
+          "category": "dining",
+          "source": "cms:dining/dining-001",
+          "score": 0.707
+        },
+        {
+          "category": "faq",
+          "source": "mohegan_sun.json",
+          "score": 0.683
+        }
+      ],
+      "elapsed_ms": 26335,
+      "error": null
+    },
+    {
+      "turn_index": 1,
+      "user_message": "When can I eat at the buffet?",
+      "agent_response": "Seasons Buffet is open Friday through Sunday from 4:00 PM to 9:00 PM. It is a true weekend highlight where the aroma of the carving station and the variety of international dishes create a lively atmosphere in the Casino of the Sky. \n\nSince today is Thursday, the buffet will remain closed until tomorrow afternoon. If you are looking for a hearty meal right now, Lantern Bar & Grill is open 24 hours and serves a great steak and burger menu in a casual setting. After you eat, you might enjoy a stroll through The Shops at Mohegan Sun for some retail therapy\u2014will you be staying with us for the full weekend?",
+      "sources": [
+        {
+          "category": "dining",
+          "source": "cms:dining/dining-001",
+          "score": 0.71
+        },
+        {
+          "category": "restaurants",
+          "source": "mohegan_sun.json",
+          "score": 0.713
+        },
+        {
+          "category": "faq",
+          "source": "mohegan_sun.json",
+          "score": 0.673
+        }
+      ],
+      "elapsed_ms": 25799,
+      "error": null
+    },
+    {
+      "turn_index": 2,
+      "user_message": "I ASKED about buffet hours",
+      "agent_response": "Seasons Buffet is open Friday through Sunday from 4:00 PM to 9:00 PM. \n\nThese hours can vary seasonally, so I'd suggest confirming with the property during your visit. Is there anything else I can clarify about the buffet schedule for you?",
+      "sources": [
+        {
+          "category": "restaurants",
+          "source": "mohegan_sun.json",
+          "score": 0.684
+        },
+        {
+          "category": "faq",
+          "source": "mohegan_sun.json",
+          "score": 0.68
+        },
+        {
+          "category": "dining",
+          "source": "cms:dining/dining-001",
+          "score": 0.668
+        }
+      ],
+      "elapsed_ms": 22817,
+      "error": null
+    }
+  ],
+  "elapsed_ms": 78981,
+  "error": null,
+  "completed": true
+}

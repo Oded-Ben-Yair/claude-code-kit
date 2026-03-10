@@ -1,0 +1,65 @@
+{
+  "scenario_id": "p4-05",
+  "scenario_name": "Budget signal \u2014 assumption about casual dining correct",
+  "category": "profiling_p4_assumptive_bridge",
+  "behavioral_dimension": "P4_assumptive_bridging",
+  "expected_behavior": "Leads with casual and affordable options. When pizza is confirmed, does not try to upsell. Provides practical information (location, hours) without marketing language",
+  "expected_behavioral_quality": "When the guest signals budget consciousness ('nothing fancy'), assumes they want casual, affordable options and leads with those. Does not include a disclaimer like 'If you change your mind about budget...' The assumption respects the signal.",
+  "safety_relevant": false,
+  "source_file": "profiling_p4_assumptive_bridge.yaml",
+  "thread_id": "eval-p4-05-1772993685",
+  "turns": [
+    {
+      "turn_index": 0,
+      "user_message": "Just looking for something simple, nothing fancy",
+      "agent_response": "Johnny Rockets in the Casino of the Earth is your best bet for a straightforward meal without any fuss. It is a classic 1950s-style diner serving burgers, fries, and thick shakes until 11:00 PM tonight, and since it is casual, you can just walk right in. \n\nIt is one of our most budget-friendly spots with prices typically in the $ range, and the atmosphere is pure nostalgia. If you find yourself hungry even later, Lantern Bar & Grill is nearby and stays open 24 hours for American staples like wings and sandwiches. Just keep in mind that hours and prices can vary, so it is always worth a quick look when you arrive at the entrance. After you grab a bite, are you planning to head over to the Wolf Den for some live music?",
+      "sources": [
+        {
+          "category": "entertainment",
+          "source": "mohegan_sun.json",
+          "score": 0.644
+        },
+        {
+          "category": "restaurants",
+          "source": "mohegan_sun.json",
+          "score": 0.641
+        },
+        {
+          "category": "hotel",
+          "source": "mohegan_sun.json",
+          "score": 0.629
+        }
+      ],
+      "elapsed_ms": 30292,
+      "error": null
+    },
+    {
+      "turn_index": 1,
+      "user_message": "Pizza sounds great actually",
+      "agent_response": "Frank Pepe's Pizzeria Napoletana is the place you are looking for\u2014it is a Connecticut legend known for its thin-crust, coal-fired \"apizza.\" The signature white clam pie is world-famous, but their classic tomato pie is the ultimate simple, high-quality choice if you want to keep things basic.\n\nThey are located in the Casino of the Earth and stay open until 10:00 PM tonight. It is a very casual spot with prices in the $$ range, and since they do not take reservations, you can just head over whenever the craving hits. Hours and prices might vary, so it is always smart to double-check when you arrive at the entrance. Are you dining solo tonight, or are you bringing along a group?",
+      "sources": [
+        {
+          "category": "restaurants",
+          "source": "mohegan_sun.json",
+          "score": 0.655
+        },
+        {
+          "category": "property",
+          "source": "mohegan_sun.json",
+          "score": 0.621
+        }
+      ],
+      "elapsed_ms": 29679,
+      "error": null
+    },
+    {
+      "turn_index": 2,
+      "user_message": "Where is it?",
+      "agent_response": "Frank Pepe's is right inside the Casino of the Earth, conveniently located near the Winter entrance. Are you grabbing dinner solo tonight, or do you have a group with you?",
+      "sources": [],
+      "elapsed_ms": 44466,
+      "error": null
+    }
+  ],
+  "completed": true
+}

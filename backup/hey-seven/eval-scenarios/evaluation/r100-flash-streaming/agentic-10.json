@@ -1,0 +1,86 @@
+{
+  "scenario_id": "agentic-10",
+  "scenario_name": "Domain tracking across conversation turns",
+  "category": "behavioral_agentic",
+  "behavioral_dimension": "B4_agentic",
+  "expected_behavior": "Tracks that spa and dining are already done. Suggests entertainment, gaming, and other uncovered domains. When asked for more, covers the remaining property categories",
+  "expected_behavioral_quality": "Tracks what domains have been discussed and what hasn't. When the guest asks 'what else?', suggests categories not yet covered rather than repeating dining or spa. Shows awareness of the full property scope.",
+  "safety_relevant": false,
+  "source_file": "behavioral_agentic.yaml",
+  "thread_id": "eval-agentic-10-1772817995",
+  "turns": [
+    {
+      "turn_index": 0,
+      "user_message": "We've already been to the spa and had dinner. What else is there?",
+      "agent_response": "The evening is just getting started, and the energy at the Wolf Den is already building. It is an incredible spot because it offers an intimate, 360-degree view of the performers right in the center of the property, and the atmosphere on a Friday night is always electric.\n\nIf you are looking for something a bit more active, Cyber Quest features the latest video games and is a great way to spend an hour or two before the late-night entertainment kicks off. \n\nInsider tip: For the Wolf Den, the seating is first-come, first-served, so if you see a crowd starting to gather, that is your cue to grab a spot and soak in the performance. \n\nI can check the specific showtimes for you\u2014are you in the mood for high-energy live music or would you prefer to explore the shops before they close at 9:00 PM?",
+      "sources": [
+        {
+          "category": "amenities",
+          "source": "mohegan_sun.json",
+          "score": 0.702
+        },
+        {
+          "category": "faq",
+          "source": "mohegan_sun.json",
+          "score": 0.678
+        },
+        {
+          "category": "entertainment",
+          "source": "mohegan_sun.json",
+          "score": 0.669
+        }
+      ],
+      "elapsed_ms": 37265,
+      "error": null
+    },
+    {
+      "turn_index": 1,
+      "user_message": "Any events happening?",
+      "agent_response": "You are going to love the energy on the floor tonight. Since it is Friday, the Wolf Den will have a live performance at 8:00 PM; it is a completely free show, and the intimate 360-degree stage makes you feel like you're right there with the performer. \n\nIf you want to keep the night going late, Avalon Nightclub opens at 10:00 PM for those 21 and over, featuring a high-energy atmosphere and a top-tier sound system. For a more sophisticated wrap-up to your evening, novelle is also open tonight, offering an upscale lounge experience with craft cocktails and a DJ. Please keep in mind that schedules and performers can occasionally change, so it is a good idea to confirm details at the box office when you arrive.\n\nKnowledge flex: The Wolf Den is unique because it brings in national touring acts and tribute bands every single week, and because there's no cover charge, it's one of the best ways to experience live music without any fuss.\n\nWould you like to know more about the music styles playing tonight, or are you leaning toward the nightclub scene at Avalon!",
+      "sources": [
+        {
+          "category": "entertainment",
+          "source": "mohegan_sun.json",
+          "score": 0.646
+        },
+        {
+          "category": "faq",
+          "source": "mohegan_sun.json",
+          "score": 0.632
+        }
+      ],
+      "elapsed_ms": 32774,
+      "error": null
+    },
+    {
+      "turn_index": 2,
+      "user_message": "Good ideas. Anything else we're missing?",
+      "agent_response": "You might enjoy visiting the Casino of the Wind. It has a very different atmosphere from our other gaming floors, featuring modern slots and table games in a space inspired by the elements. If you prefer something interactive, Bowlero is a great spot for luxury bowling and has a high-energy vibe on Friday nights.\n\nInsider tip: If you walk through the Casino of the Sky, make sure to look up\u2014the ceiling is a massive, hand-painted planetarium that is one of the most photographed features of the resort. \n\nSince you have already had a relaxing spa day and dinner, would you like to try your hand at the tables, or does a round of bowling sound more your speed?",
+      "sources": [
+        {
+          "category": "entertainment",
+          "source": "mohegan_sun.json",
+          "score": 0.656
+        },
+        {
+          "category": "faq",
+          "source": "mohegan_sun.json",
+          "score": 0.646
+        },
+        {
+          "category": "promotions",
+          "source": "mohegan_sun.json",
+          "score": 0.635
+        },
+        {
+          "category": "gaming",
+          "source": "mohegan_sun.json",
+          "score": 0.621
+        }
+      ],
+      "elapsed_ms": 34655,
+      "error": null
+    }
+  ],
+  "completed": true
+}

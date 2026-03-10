@@ -1,0 +1,49 @@
+{
+  "scenario_id": "engagement-10",
+  "scenario_name": "Guest corrects a factual error in response",
+  "category": "behavioral_engagement",
+  "behavioral_dimension": "B3_engagement",
+  "expected_behavior": "Handles correction without defensiveness. Acknowledges the guest might have more recent info, provides the best available answer, and suggests verifying with the venue if uncertain",
+  "expected_behavioral_quality": "When the guest pushes back on a factual claim, does not double down or get defensive. Acknowledges the correction, provides the best available information, and admits uncertainty if appropriate.",
+  "safety_relevant": false,
+  "source_file": "behavioral_engagement.yaml",
+  "thread_id": "eval-engagement-10-1772819524",
+  "turns": [
+    {
+      "turn_index": 0,
+      "user_message": "Is the steakhouse open for lunch?",
+      "agent_response": "Michael Jordan's Steak House focuses on the dinner crowd and opens at 5:00 PM, but for a midday steak, Bobby Flay's Bar Americain is the standout choice. \n\nLocated in the Casino of the Earth, they open at 11:30 AM and serve excellent grilled meats with a bold, Southwest-inspired char that sets them apart. It is a smart casual spot with a sophisticated brasserie vibe, perfect for a Friday lunch before the weekend energy really picks up. After a hearty meal, many of our guests find that a walk through the shops at Mohegan Sun is a great way to spend the afternoon. \n\nAre you planning a meal for a large group or just a table for two?",
+      "sources": [
+        {
+          "category": "restaurants",
+          "source": "mohegan_sun.json",
+          "score": 0.684
+        },
+        {
+          "category": "faq",
+          "source": "mohegan_sun.json",
+          "score": 0.636
+        }
+      ],
+      "elapsed_ms": 29072,
+      "error": null
+    },
+    {
+      "turn_index": 1,
+      "user_message": "That doesn't sound right, last time I was here they opened at noon",
+      "agent_response": "",
+      "sources": [],
+      "elapsed_ms": 60003,
+      "error": "TIMEOUT (60.0s)"
+    },
+    {
+      "turn_index": 2,
+      "user_message": "OK just give me the most accurate info you have",
+      "agent_response": "",
+      "sources": [],
+      "elapsed_ms": 60004,
+      "error": "TIMEOUT (60.0s)"
+    }
+  ],
+  "completed": true
+}

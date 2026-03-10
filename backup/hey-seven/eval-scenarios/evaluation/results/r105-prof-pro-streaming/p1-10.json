@@ -1,0 +1,81 @@
+{
+  "scenario_id": "p1-10",
+  "scenario_name": "Guest reveals companion ages naturally",
+  "category": "profiling_p1_natural_extraction",
+  "behavioral_dimension": "P1_natural_extraction",
+  "expected_behavior": "Uses the 8 and 12 age data to recommend age-appropriate activities. An 8-year-old and 12-year-old have different interest profiles. Dining recommendation accounts for family-friendly seating and menu. Never re-asks for ages",
+  "expected_behavioral_quality": "Extracts companion ages from a casual mention ('kids are 8 and 12') and uses them to shape family-appropriate recommendations. Distinguishes between young children and pre-teens when suggesting activities. Does not ask ages after they've been volunteered.",
+  "safety_relevant": false,
+  "source_file": "profiling_p1_natural_extraction.yaml",
+  "thread_id": "eval-p1-10-1772990756",
+  "turns": [
+    {
+      "turn_index": 0,
+      "user_message": "Looking for stuff to do with the family. Kids are 8 and 12.",
+      "agent_response": "You have some great options for those ages, especially in the Kids Quest and Cyber Quest wing. Cyber Quest is a high-energy arcade that is a huge hit with 12-year-olds, and an 8-year-old will find plenty of games to jump into as well. Right nearby is the Wombi Rock climbing wall, which is an impressive indoor setup where instructors help kids reach the top regardless of their experience level.\n\nOne insider detail you might appreciate is that the climbing wall is located right by the arcade area, making it easy to pivot between activities without trekking across the whole property. Since schedules for these spots can vary seasonally, it is always a good idea to confirm the daily hours for Wombi Rock at the front desk when you arrive. If you and your partner are looking for a break, Kids Quest also offers supervised entertainment for children up to age 12.\n\nAfter the kids finish at the arcade, are you looking for a family-friendly spot for dinner nearby?",
+      "sources": [
+        {
+          "category": "entertainment",
+          "source": "mohegan_sun.json",
+          "score": 0.655
+        },
+        {
+          "category": "amenities",
+          "source": "mohegan_sun.json",
+          "score": 0.644
+        }
+      ],
+      "elapsed_ms": 36276,
+      "error": null
+    },
+    {
+      "turn_index": 1,
+      "user_message": "Anything they can do while we hit the casino?",
+      "agent_response": "Kids Quest is the perfect solution for that. It is a supervised entertainment center specifically for children from 6 weeks up to 12 years old, so both of yours are in the perfect age range to be well-taken care of while you are in the casino. They will have plenty of activities and play areas to keep them busy in a secure environment, giving you the freedom to head to the floor with peace of mind.\n\nFor your 12-year-old, the Cyber Quest arcade is right next door and is usually a huge hit for that age group. Since you are looking at some floor time, the high-limit gaming areas are also available if you prefer a more private setting with dedicated service. \n\nAre you planning to visit for the day, or are you staying overnight with us?",
+      "sources": [
+        {
+          "category": "entertainment",
+          "source": "mohegan_sun.json",
+          "score": 0.693
+        },
+        {
+          "category": "faq",
+          "source": "mohegan_sun.json",
+          "score": 0.675
+        },
+        {
+          "category": "amenities",
+          "source": "mohegan_sun.json",
+          "score": 0.663
+        },
+        {
+          "category": "gaming",
+          "source": "mohegan_sun.json",
+          "score": 0.652
+        }
+      ],
+      "elapsed_ms": 31201,
+      "error": null
+    },
+    {
+      "turn_index": 2,
+      "user_message": "And somewhere we can all eat together after?",
+      "agent_response": "For a family meal everyone can agree on, Mohegan Sun Caputo Trattoria is the standout choice because the kids will love the brick-oven pizzas and pasta while you can enjoy a great Italian dinner in a relaxed atmosphere. It is located in the Casino of the Earth and is open until 10:00 PM tonight with a casual dress code. Since it is a mid-range price point and does not require reservations, it is very easy to fit into a busy evening.\n\nA little insider tip\u2014the brick oven gives the crust a specific char and texture that guests always mention as a highlight. Hours and prices can vary, so it is always a good idea to check in at the podium when you arrive. Once you finish dinner, the Cyber Quest arcade is just a short walk away if the kids have any energy left to burn before heading to the room.\n\nSince I am making sure everything is perfect for your visit, what is your name and how many will be in your party for dinner tonight?",
+      "sources": [
+        {
+          "category": "restaurants",
+          "source": "mohegan_sun.json",
+          "score": 0.669
+        },
+        {
+          "category": "faq",
+          "source": "mohegan_sun.json",
+          "score": 0.652
+        }
+      ],
+      "elapsed_ms": 38757,
+      "error": null
+    }
+  ],
+  "completed": true
+}

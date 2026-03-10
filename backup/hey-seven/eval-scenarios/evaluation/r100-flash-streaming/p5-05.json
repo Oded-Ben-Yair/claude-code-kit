@@ -1,0 +1,73 @@
+{
+  "scenario_id": "p5-05",
+  "scenario_name": "Agent recovers from tangent back to profiling",
+  "category": "profiling_p5_progressive_sequence",
+  "behavioral_dimension": "P5_progressive_sequencing",
+  "expected_behavior": "Wi-Fi complaint is handled empathetically in turn 1. When the guest pivots to dinner, the agent smoothly enters profiling mode: party size in turn 3, dietary needs in turn 4. The transition from complaint to concierge feels seamless",
+  "expected_behavioral_quality": "After a tangent (complaint, off-topic question, general chat), the agent naturally returns to the profiling sequence by connecting the tangent resolution to a profiling-relevant question. The bridge feels organic ('Now that that's sorted, were you looking for...') not forced.",
+  "safety_relevant": false,
+  "source_file": "profiling_p5_progressive_sequence.yaml",
+  "thread_id": "eval-p5-05-1772842883",
+  "turns": [
+    {
+      "turn_index": 0,
+      "user_message": "The Wi-Fi in my room isn't working",
+      "agent_response": "I am sorry to hear your Wi-Fi is giving you trouble. I can look into whether there is a service disruption on your floor or if your room connection specifically needs a reset. \n\nComplimentary high-speed Wi-Fi is a standard amenity in all 1,600 rooms across both of our towers. Are you currently staying in the Earth Tower or the Sky Tower so I can check the status for your area?",
+      "sources": [
+        {
+          "category": "hotel",
+          "source": "mohegan_sun.json",
+          "score": 0.644
+        },
+        {
+          "category": "promotions",
+          "source": "mohegan_sun.json",
+          "score": 0.595
+        },
+        {
+          "category": "property",
+          "source": "mohegan_sun.json",
+          "score": 0.615
+        }
+      ],
+      "elapsed_ms": 24790,
+      "error": null
+    },
+    {
+      "turn_index": 1,
+      "user_message": "OK I'll call them. Anyway, what's for dinner?",
+      "agent_response": "Since it's just past midnight, Lantern Bar & Grill is the perfect spot for a late-night meal\u2014they are open 24 hours in the Casino of the Earth. It's a classic American grill where the kitchen stays busy serving up everything from thick, juicy burgers to hand-cut steaks long after other venues have closed. \n\nThe vibe is relaxed and welcoming, making it a favorite for guests looking to refuel without any fuss. It's a casual setting with a moderate price range, and there is no need for a reservation. Pro tip \u2014 if you aren't quite ready for a full steak, their late-night snack menu is one of the best-kept secrets for a quick bite between games. After you've had your fill, the Wolf Den nearby often has live music sets that run late into the night. \n\nPlease keep in mind that hours and prices may vary, so it's always a good idea to confirm with the property. Are you looking for a hearty sit-down dinner or just a quick snack? Next time you're planning a visit, feel free to reach out ahead of time and I can help provide recommendations so you're all set.",
+      "sources": [
+        {
+          "category": "faq",
+          "source": "mohegan_sun.json",
+          "score": 0.613
+        },
+        {
+          "category": "restaurants",
+          "source": "mohegan_sun.json",
+          "score": 0.61
+        }
+      ],
+      "elapsed_ms": 44039,
+      "error": null
+    },
+    {
+      "turn_index": 2,
+      "user_message": "Something for the family, 5 of us",
+      "agent_response": "",
+      "sources": [],
+      "elapsed_ms": 60004,
+      "error": "TIMEOUT (60.0s)"
+    },
+    {
+      "turn_index": 3,
+      "user_message": "The kids are picky eaters",
+      "agent_response": "",
+      "sources": [],
+      "elapsed_ms": 60011,
+      "error": "TIMEOUT (60.0s)"
+    }
+  ],
+  "completed": true
+}

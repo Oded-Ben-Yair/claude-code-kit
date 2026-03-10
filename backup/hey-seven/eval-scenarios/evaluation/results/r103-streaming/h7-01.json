@@ -1,0 +1,55 @@
+{
+  "scenario_id": "h7-01",
+  "scenario_name": "Dining guest open to entertainment",
+  "category": "host_triangle_h7_h10_revenue",
+  "behavioral_dimension": "H7_cross_selling_wallet_share",
+  "expected_behavior": "Confirms the dinner choice and immediately paints the after-dinner picture: Wolf Den show, Comix comedy, or casino floor. The cross-sell feels like a natural 'and then...' suggestion from someone who wants the guest to have a full evening, not a checklist of amenities",
+  "expected_behavioral_quality": "When a guest engages with dining, the agent naturally introduces entertainment and nightlife as the next part of the evening. The cross-sell creates a seamless 'full evening' vision where dinner flows into the next experience \u2014 not a list of unrelated amenities.",
+  "safety_relevant": false,
+  "source_file": "host_triangle_h7_h10_revenue.yaml",
+  "thread_id": "eval-h7-01-1772952562",
+  "turns": [
+    {
+      "turn_index": 0,
+      "user_message": "Where should we eat tonight? We're thinking Italian",
+      "agent_response": "Todd English's Tuscany is the standout choice for a Sunday evening. The wood-fired aroma from the open kitchen hits you the moment you arrive, and their handmade pastas are a favorite among our regular guests.\n\nThey are open this evening from 5:00 PM to 10:00 PM. The atmosphere is business casual with a price range of $$$$, and I'd suggest a reservation to secure a table near the Taughannick Falls view. If any of your guests have dietary needs, the kitchen team is known for their excellent gluten-free pasta substitutions. Just a reminder that hours and prices may vary, so it is best to confirm details upon arrival.\n\nPro tip: Request a table with a view of the indoor waterfall; the sound of the water provides a serene backdrop that makes the meal feel tucked away from the energy of the casino floor.\n\nIs this dinner for a large group or a more intimate party? After you finish, you might enjoy heading over to the Wolf Den to see who is performing tonight.",
+      "sources": [
+        {
+          "category": "restaurants",
+          "source": "mohegan_sun.json",
+          "score": 0.695
+        }
+      ],
+      "elapsed_ms": 29941,
+      "error": null
+    },
+    {
+      "turn_index": 1,
+      "user_message": "Tuscany sounds great. We'll do that",
+      "agent_response": "Tuscany is a fantastic choice for a Sunday night. You'll find it right in the Casino of the Sky, and the wood-fired flatbreads are the perfect way to start your meal. Since they open at 5:00 PM today and reservations are highly recommended for the best seating, I've got you covered with the details. \n\nThe dress code is business casual, so it feels like a proper night out. I can certainly connect you with our host team to finalize those dining arrangements for you.\n\nIs there a particular dish you're usually drawn to when eating Italian, or are you looking to try one of Chef Todd English's signature handmade pastas? After your meal, the nearby shops in the Casino of the Sky are a great spot for a post-dinner stroll.",
+      "sources": [],
+      "elapsed_ms": 42685,
+      "error": null
+    },
+    {
+      "turn_index": 2,
+      "user_message": "Oh there's a show tonight? What's playing?",
+      "agent_response": "The Wolf Den is the heart of the action tonight with a free live show starting at 8:00 PM. It has this incredible, intimate energy where you're right there with the performers\u2014it\u2019s electric, and since it\u2019s complimentary, you can just walk in after your dinner at Tuscany.\n\nFor laughs, Comix Roadhouse also hosts comedy shows on Sunday nights, featuring nationally touring comedians and a great atmosphere for a more relaxed evening. If you're looking for something massive, the Mohegan Sun Arena is our premier venue for headliners, though the schedule varies, so you'll want to check with the box office for tonight's specific availability. \n\nYou're going to love the transition from a sophisticated Italian dinner to the live energy on the casino floor. Do you usually prefer the high energy of a live band, or does a comedy show sound like a better way to wrap up your Sunday?\n\nAfter a late night enjoying the shows, the Elemis Spa is the perfect reset for Monday morning\u2014their hot stone massage is legendary.",
+      "sources": [
+        {
+          "category": "entertainment",
+          "source": "mohegan_sun.json",
+          "score": 0.67
+        },
+        {
+          "category": "faq",
+          "source": "mohegan_sun.json",
+          "score": 0.666
+        }
+      ],
+      "elapsed_ms": 35695,
+      "error": null
+    }
+  ],
+  "completed": true
+}

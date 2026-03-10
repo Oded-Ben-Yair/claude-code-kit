@@ -1,0 +1,61 @@
+{
+  "scenario_id": "h4-01",
+  "scenario_name": "Returning guest with earlier preferences in conversation",
+  "category": "host_triangle_h4_h6_relationship",
+  "behavioral_dimension": "H4_personalized_recognition",
+  "expected_behavior": "Integrates all three data points (couple, Italian preference, gluten-free) into the entertainment recommendation. Does not suggest dinner options that conflict with the dietary need. Uses Linda's name naturally. The evening plan feels curated for this specific couple",
+  "expected_behavioral_quality": "Uses information shared in earlier turns to personalize later recommendations. By turn 3, every recommendation should reflect accumulated knowledge. The guest should feel increasingly 'known' with each interaction.",
+  "safety_relevant": false,
+  "source_file": "host_triangle_h4_h6_relationship.yaml",
+  "thread_id": "eval-h4-01-1772971828",
+  "turns": [
+    {
+      "turn_index": 0,
+      "user_message": "Hi, I'm Linda. My husband and I love Italian food. What's good here?",
+      "agent_response": "Welcome to Mohegan Sun, Linda. Since you and your husband are Italian food fans, you are definitely in the right place. \n\nFor a really special date night, Todd English's Tuscany is hard to beat. The wood-fired aroma hits you the moment you walk in, and their handmade pastas are absolutely incredible. They open at 5:00 PM over in the Casino of the Sky, and the open kitchen gives the whole room a warm, romantic energy. \n\nIf you are actually looking for something right now, Mohegan Sun Caputo Trattoria is already open for lunch and serves fantastic brick-oven pizzas and fresh pasta. Also, if you want to make a full night out of it later, the Wolf Den is right nearby in the Casino of the Earth and has free live music every night.\n\nAre you looking to grab a casual bite right now, or are you planning ahead for a nicer dinner tonight?",
+      "sources": [
+        {
+          "category": "restaurants",
+          "source": "mohegan_sun.json",
+          "score": 0.689
+        }
+      ],
+      "elapsed_ms": 57479,
+      "error": null
+    },
+    {
+      "turn_index": 1,
+      "user_message": "We also have a gluten-free situation so that limits things",
+      "agent_response": "Linda, I've got you covered\u2014dietary needs are never a limitation here. At Caputo Trattoria in the Casino of the Earth, the chefs are wonderful about gluten-free substitutions for their pasta dishes, and the casual, family-friendly vibe makes it a great spot for a relaxed meal without a steep price tag. They are open right now until 10:00 PM, and since they are a casual eatery, you won't need a reservation or a formal dress code to enjoy a meal.\n\nPrices and hours can vary, so it is always a good idea to confirm with the restaurant once you arrive. After your meal, you might want to stop by the Wolf Den right nearby; they have free live music every night, which is a fantastic way to enjoy the property's energy without spending a dime. \n\nAre you looking for a quick lunch while you're on the move, or would you prefer a more leisurely sit-down experience for dinner tonight?",
+      "sources": [
+        {
+          "category": "restaurants",
+          "source": "mohegan_sun.json",
+          "score": 0.656
+        }
+      ],
+      "elapsed_ms": 37199,
+      "error": null
+    },
+    {
+      "turn_index": 2,
+      "user_message": "What about after dinner? Any shows tonight?",
+      "agent_response": "Linda, for a great night out that keeps the budget in check, the Wolf Den is absolutely the way to go. It is our complimentary live music venue, featuring performances every single night with shows usually kicking off around 8:00 PM. Fun fact\u2014because it is an open-concept venue right in the center of the Casino of the Earth, even if the 350 seats fill up, you can easily stand near the perimeter and catch the whole show without missing a beat.\n\nIf you two are in the mood for some laughs instead, Comix Roadhouse runs stand-up shows on Sundays as well. Also, if you end up staying out late, the Lantern Bar & Grill is open 24 hours for a casual, well-priced late-night snack after the show. \n\nBy the way, the Mohegan Sun Arena always has great headliners rolling through\u2014I can share what is on the calendar if you are thinking about future visits.\n\nDo you and your husband usually prefer kicking back to live music, or does a comedy club sound like a better fit for tonight?",
+      "sources": [
+        {
+          "category": "restaurants",
+          "source": "mohegan_sun.json",
+          "score": 0.689
+        },
+        {
+          "category": "entertainment",
+          "source": "mohegan_sun.json",
+          "score": 0.687
+        }
+      ],
+      "elapsed_ms": 56800,
+      "error": null
+    }
+  ],
+  "completed": true
+}

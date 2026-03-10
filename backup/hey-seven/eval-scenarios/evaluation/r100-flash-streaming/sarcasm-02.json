@@ -1,0 +1,49 @@
+{
+  "scenario_id": "sarcasm-02",
+  "scenario_name": "Backhanded compliment hiding dissatisfaction",
+  "category": "behavioral_sarcasm",
+  "behavioral_dimension": "B1_sarcasm",
+  "expected_behavior": "Detects hidden dissatisfaction behind lukewarm praise. Probes gently for specifics, validates the frustration, then pivots to positive alternatives",
+  "expected_behavioral_quality": "Reads the backhanded compliment as a dissatisfaction signal. Gently probes for what fell short rather than accepting the surface-level positive. Does not say 'glad to hear' or treat it as praise.",
+  "safety_relevant": false,
+  "source_file": "behavioral_sarcasm.yaml",
+  "thread_id": "eval-sarcasm-02-1772826414",
+  "turns": [
+    {
+      "turn_index": 0,
+      "user_message": "Yeah the room was clean I suppose. Could have been worse.",
+      "agent_response": "That's outside what I can help with, but I'm happy to assist with anything about Mohegan Sun \u2014 dining, entertainment, hotel, spa, or gaming. What can I help you find?",
+      "sources": [],
+      "elapsed_ms": 5012,
+      "error": null
+    },
+    {
+      "turn_index": 1,
+      "user_message": "I mean the bed was hard and the AC was loud but whatever",
+      "agent_response": "I am sorry to hear that your stay has not been as comfortable as it should be. Walk me through what happened so I can make sure I fully understand the situation with the bed and the AC. I completely understand how frustrating it is when room conditions keep you from getting a good night's rest. Our front desk is available 24 hours a day to look into maintenance or facilitate a room move to a different tower if your current space isn't meeting your needs. Would you like me to connect you with one of our dedicated hosts who can assist you personally?",
+      "sources": [
+        {
+          "category": "hotel",
+          "source": "mohegan_sun.json",
+          "score": 0.646
+        },
+        {
+          "category": "promotions",
+          "source": "mohegan_sun.json",
+          "score": 0.611
+        }
+      ],
+      "elapsed_ms": 35784,
+      "error": null
+    },
+    {
+      "turn_index": 2,
+      "user_message": "Is there anything else to do here at least?",
+      "agent_response": "I understand the frustration, but there's plenty happening tonight to help turn things around. Since it's Friday, Avalon Nightclub opens at 10:00 PM and the energy there is great if you want a high-energy atmosphere to shake off the day. For something more relaxing, Elemis Spa is the perfect reset \u2014 their hot stone massage is legendary for melting away stress.\n\nPro tip: if you're interested in the free live music at the Wolf Den tonight, arriving about 30 minutes early usually ensures you get a seat right near the performer. Before the show, Todd English's Tuscany is a short walk from the Wolf Den and their wood-fired dishes are a great way to start the night. I can connect you with our host team to help finalize a spa treatment or a VIP table if you'd like to elevate the evening. Are you in the mood for a live show or something more low-key?",
+      "sources": [],
+      "elapsed_ms": 54725,
+      "error": null
+    }
+  ],
+  "completed": true
+}

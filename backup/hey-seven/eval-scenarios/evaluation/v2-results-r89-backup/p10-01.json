@@ -1,0 +1,80 @@
+{
+  "id": "p10-01",
+  "name": "Agent remembers name from turn 1 in turn 4",
+  "source_file": "profiling_p8_p9_p10_completeness.yaml",
+  "category": "profiling_p8_p9_p10_completeness",
+  "behavioral_dimension": "P10_cross_turn_memory",
+  "expected_behavior": "Angela's name appears in the turn 4 response ('Here's what I'd suggest for your evening, Angela...') despite 2 topic changes in between. The name use feels natural, not performative",
+  "expected_behavioral_quality": "The guest's name from the opening message is used naturally in turn 4 without being re-asked. The name appears in context (not forced) and demonstrates that the agent maintained the information across multiple turns of different topics.",
+  "safety_relevant": false,
+  "turns": [
+    {
+      "turn_index": 0,
+      "user_message": "Hi, I'm Angela. What restaurants are open?",
+      "agent_response": "Welcome, Angela. Since it's Wednesday evening, the wood-fired aroma coming from Todd English's Tuscany in the Casino of the Sky is exactly where you should head first. \n\nThey are open until 10:00 PM tonight and serve incredible handmade pastas and wood-fired pizzas in a room that feels like a rustic Italian escape. It's a fine dining spot with a business casual dress code, so I'd recommend a reservation if possible, though it's always worth checking for a seat at the bar. If you prefer something more casual or need a bite much later, the Lantern Bar & Grill in the Casino of the Earth is open 24 hours and serves great American comfort food like steaks and burgers.\n\nAre you looking for a relaxed multi-course meal or just a quick bite before heading to the casino floor? After dinner, you might want to stop by the Wolf Den to see if there is any live music playing.",
+      "sources": [
+        {
+          "category": "restaurants",
+          "source": "mohegan_sun.json",
+          "score": 0.649
+        },
+        {
+          "category": "faq",
+          "source": "mohegan_sun.json",
+          "score": 0.643
+        }
+      ],
+      "elapsed_ms": 30340,
+      "error": null
+    },
+    {
+      "turn_index": 1,
+      "user_message": "What about entertainment?",
+      "agent_response": "Angela, the Wolf Den is your best bet for tonight since they host free live music nightly right in the center of the Casino of the Earth. It has an electric energy where you can just walk up and enjoy the performance without needing a ticket. \n\nFor larger headliners later this week, the Mohegan Sun Arena hosts major concerts and comedy acts in a 10,000-seat venue. If you prefer something more low-key, the Cabaret Theatre offers a 400-seat intimate setting with cocktail service. Do you prefer a high-energy crowd or a more relaxed seated show? \n\nTo balance out the late-night excitement, you might want to look into a signature treatment at Mandara Spa for tomorrow morning.",
+      "sources": [
+        {
+          "category": "entertainment",
+          "source": "mohegan_sun.json",
+          "score": 0.678
+        },
+        {
+          "category": "faq",
+          "source": "mohegan_sun.json",
+          "score": 0.675
+        }
+      ],
+      "elapsed_ms": 43792,
+      "error": null
+    },
+    {
+      "turn_index": 2,
+      "user_message": "Is the spa still open?",
+      "agent_response": "Angela, Yes, both spas are currently open, though they will be winding down soon. Mandara Spa stays open until 8:00 PM, and the Elemis Spa at Earth Tower is open until 7:00 PM.\n\nIf you're looking for something quick before they close, the express services at Elemis are perfect for a fast reset. Otherwise, Mandara's relaxation lounge is a great spot to decompress for an hour before heading to the Wolf Den.\n\nAre you looking for a treatment tonight or would you like to plan something for tomorrow morning? After a late show, staying at the resort means you can walk back to your room instead of the drive home.",
+      "sources": [
+        {
+          "category": "amenities",
+          "source": "mohegan_sun.json",
+          "score": 0.693
+        },
+        {
+          "category": "faq",
+          "source": "mohegan_sun.json",
+          "score": 0.672
+        }
+      ],
+      "elapsed_ms": 25271,
+      "error": null
+    },
+    {
+      "turn_index": 3,
+      "user_message": "Can you put together an evening plan for me?",
+      "agent_response": "I completely understand your frustration. Your loyalty to Mohegan Sun matters, and I want to make sure you're taken care of.\n\nLet me connect you with our host team \u2014 they have the authority to review your play history and discuss what we can do for you.\n\nIn the meantime, is there anything else about the property I can help you with?",
+      "sources": [],
+      "elapsed_ms": 11431,
+      "error": null
+    }
+  ],
+  "elapsed_ms": 110834,
+  "error": null,
+  "completed": true
+}

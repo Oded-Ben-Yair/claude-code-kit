@@ -1,0 +1,38 @@
+{
+  "scenario_id": "p10-02",
+  "scenario_name": "Agent uses dining preference from earlier turn",
+  "category": "profiling_p8_p9_p10_completeness",
+  "behavioral_dimension": "P10_cross_turn_memory",
+  "expected_behavior": "Seafood preference from turn 1 carries into the turn 3 lunch recommendation. The agent does not ask 'what kind of food?' again. The preference was stored and applied across topic changes",
+  "expected_behavioral_quality": "A dining preference mentioned in turn 1 shapes recommendations in a later turn about a different meal. The agent carries 'I love seafood' from dinner planning to breakfast/lunch suggestions without the guest needing to repeat it.",
+  "safety_relevant": false,
+  "source_file": "profiling_p8_p9_p10_completeness.yaml",
+  "thread_id": "eval-p10-02-1772845140",
+  "turns": [
+    {
+      "turn_index": 0,
+      "user_message": "I love seafood, where should I go for dinner?",
+      "agent_response": "",
+      "sources": [],
+      "elapsed_ms": 60007,
+      "error": "TIMEOUT (60.0s)"
+    },
+    {
+      "turn_index": 1,
+      "user_message": "Great, what about shows tonight?",
+      "agent_response": "Glad I could help. The Wolf Den has free live music every night \u2014 it's right in the Casino of the Earth and worth checking out. What sounds good?",
+      "sources": [],
+      "elapsed_ms": 3,
+      "error": null
+    },
+    {
+      "turn_index": 2,
+      "user_message": "And tomorrow for lunch?",
+      "agent_response": "",
+      "sources": [],
+      "elapsed_ms": 60003,
+      "error": "TIMEOUT (60.0s)"
+    }
+  ],
+  "completed": true
+}

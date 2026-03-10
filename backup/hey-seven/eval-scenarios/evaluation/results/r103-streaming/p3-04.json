@@ -1,0 +1,86 @@
+{
+  "scenario_id": "p3-04",
+  "scenario_name": "Gaming information plus visit frequency question",
+  "category": "profiling_p3_give_to_get",
+  "behavioral_dimension": "P3_give_to_get",
+  "expected_behavior": "Poker info is delivered first. Visit frequency question is a natural extension. When the guest reveals monthly visits, the agent adjusts to regular-guest register and skips introductory details",
+  "expected_behavioral_quality": "Explains gaming floor layout and table game options first, then naturally asks if they've visited before. The gaming overview is useful for both first-timers and regulars. The visit frequency question is framed as 'so I can skip the basics if you already know the floor'.",
+  "safety_relevant": false,
+  "source_file": "profiling_p3_give_to_get.yaml",
+  "thread_id": "eval-p3-04-1772957072",
+  "turns": [
+    {
+      "turn_index": 0,
+      "user_message": "Where are the poker tables?",
+      "agent_response": "Head over to the Casino of the Wind\u2014that's where our dedicated Poker Room is located, with 33 tables running 24/7. Pro tip: You can check the current waitlists on the Bravo Poker Live app before you even walk over to see which games are active. \n\nAre you looking to jump into a cash game or are you here for one of the daily tournaments?",
+      "sources": [
+        {
+          "category": "gaming",
+          "source": "mohegan_sun.json",
+          "score": 0.716
+        },
+        {
+          "category": "faq",
+          "source": "mohegan_sun.json",
+          "score": 0.65
+        }
+      ],
+      "elapsed_ms": 50911,
+      "error": null
+    },
+    {
+      "turn_index": 1,
+      "user_message": "Yeah I play here every month",
+      "agent_response": "Consistent monthly play is the fastest way to increase your Momentum tier status and earn rate. You can check your current Tier Credit balance at any Momentum Desk to see if you are eligible for an upgrade to Ignite or Leap. \n\nDo you usually play No-Limit or are you here for the PLO games?",
+      "sources": [
+        {
+          "category": "gaming",
+          "source": "mohegan_sun.json",
+          "score": 0.641
+        },
+        {
+          "category": "amenities",
+          "source": "mohegan_sun.json",
+          "score": 0.641
+        },
+        {
+          "category": "faq",
+          "source": "mohegan_sun.json",
+          "score": 0.624
+        }
+      ],
+      "elapsed_ms": 31425,
+      "error": null
+    },
+    {
+      "turn_index": 2,
+      "user_message": "Any tournaments coming up?",
+      "agent_response": "Daily tournaments run with varying buy-ins and structures. You can find today's specific schedule on the Bravo Poker Live app or at the Poker Room desk in the Casino of the Wind. \n\nIf you're looking for a quick meal between rounds, Phantasia is right near the Poker Room and has great options for a fast break. What's your preferred buy-in range for a tournament?",
+      "sources": [
+        {
+          "category": "gaming",
+          "source": "mohegan_sun.json",
+          "score": 0.686
+        },
+        {
+          "category": "amenities",
+          "source": "mohegan_sun.json",
+          "score": 0.657
+        },
+        {
+          "category": "faq",
+          "source": "mohegan_sun.json",
+          "score": 0.653
+        },
+        {
+          "category": "entertainment",
+          "source": "mohegan_sun.json",
+          "score": 0.654
+        }
+      ],
+      "elapsed_ms": 34809,
+      "error": null
+    }
+  ],
+  "completed": true
+}

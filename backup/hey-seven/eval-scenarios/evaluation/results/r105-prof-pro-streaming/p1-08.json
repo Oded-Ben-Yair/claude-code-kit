@@ -1,0 +1,76 @@
+{
+  "scenario_id": "p1-08",
+  "scenario_name": "Guest signals budget range indirectly",
+  "category": "profiling_p1_natural_extraction",
+  "behavioral_dimension": "P1_natural_extraction",
+  "expected_behavior": "Leads with affordable and mid-range options, not the steakhouse. When asked about Ballo, provides honest pricing context. Does not upsell or push premium alternatives",
+  "expected_behavioral_quality": "Interprets 'nothing too pricey' as a budget signal without asking for a dollar amount. Adjusts recommendations away from premium options toward mid-range and casual dining. Does not condescend or suggest the guest cannot afford better.",
+  "safety_relevant": false,
+  "source_file": "profiling_p1_natural_extraction.yaml",
+  "thread_id": "eval-p1-08-1772990439",
+  "turns": [
+    {
+      "turn_index": 0,
+      "user_message": "Where can we eat? Nothing too pricey though",
+      "agent_response": "For a meal that is easy on the wallet, Johnny Rockets in the Casino of the Earth is a perfect pick for those classic, juicy burgers and hand-spun shakes. They are open until 11:00 PM tonight, and because it is a casual 1950s-style diner, you do not need to worry about reservations or a dress code.\n\nAre you looking for a quick spot to fuel up before hitting the slots, or are you planning a more relaxed evening?\n\nSince you will be right there in the Casino of the Earth, you might want to check out the live music at the Wolf Den after you eat.",
+      "sources": [
+        {
+          "category": "restaurants",
+          "source": "mohegan_sun.json",
+          "score": 0.672
+        }
+      ],
+      "elapsed_ms": 34091,
+      "error": null
+    },
+    {
+      "turn_index": 1,
+      "user_message": "What about that Italian place?",
+      "agent_response": "The wood-fired aroma from the brick oven at Mohegan Sun Caputo Trattoria is hard to resist when you are walking through the Casino of the Earth. It is our best option for a relaxed Italian meal that stays within a moderate budget, offering everything from classic chicken parm to fresh salads and pizzas. \n\nThey are open until 10:00 PM tonight and do not require reservations, making it a very easy spot to drop into. If you were thinking of something even more casual like a legendary thin-crust pizza, Frank Pepe\u2019s Pizzeria Napoletana is right nearby in the same casino and is a local institution for a reason.\n\nHow many people are you looking to seat for dinner?",
+      "sources": [
+        {
+          "category": "restaurants",
+          "source": "mohegan_sun.json",
+          "score": 0.681
+        },
+        {
+          "category": "faq",
+          "source": "mohegan_sun.json",
+          "score": 0.635
+        }
+      ],
+      "elapsed_ms": 34694,
+      "error": null
+    },
+    {
+      "turn_index": 2,
+      "user_message": "Yeah that works. Thanks",
+      "agent_response": "You can't go wrong. Pro tip \u2014 if you end up at Pepe's, the White Clam pizza is what put them on the map. \n\nIf you want to grab a drink after, Bow & Arrow Sports Bar is right around the corner. \n\nAre you heading to dinner now, or playing a bit first?",
+      "sources": [
+        {
+          "category": "promotions",
+          "source": "mohegan_sun.json",
+          "score": 0.638
+        },
+        {
+          "category": "faq",
+          "source": "mohegan_sun.json",
+          "score": 0.611
+        },
+        {
+          "category": "property",
+          "source": "mohegan_sun.json",
+          "score": 0.626
+        },
+        {
+          "category": "hotel",
+          "source": "mohegan_sun.json",
+          "score": 0.62
+        }
+      ],
+      "elapsed_ms": 56246,
+      "error": null
+    }
+  ],
+  "completed": true
+}

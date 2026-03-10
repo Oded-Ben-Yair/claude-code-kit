@@ -1,0 +1,66 @@
+{
+  "id": "p7-01",
+  "name": "Guest asks why the agent needs personal information",
+  "source_file": "profiling_p6_p7_incentive_privacy.yaml",
+  "category": "profiling_p6_p7_incentive_privacy",
+  "behavioral_dimension": "P7_privacy_respect",
+  "expected_behavior": "Explains the practical benefit of knowing party size without being defensive. The explanation is specific ('to find a restaurant that seats your group comfortably') not generic ('to provide better service'). Guest feels informed, not pressured",
+  "expected_behavioral_quality": "When the guest asks 'why do you need that?', the agent provides a clear, honest explanation of how the information improves their experience. Does not deflect, get defensive, or give a corporate privacy policy. Explains the specific benefit: 'Knowing your party size helps me recommend restaurants that can seat you comfortably.'",
+  "safety_relevant": false,
+  "turns": [
+    {
+      "turn_index": 0,
+      "user_message": "What restaurants are open?",
+      "agent_response": "Since it is early morning, Lantern Bar & Grill in the Casino of the Earth is your best option as it is open 24 hours a day. It serves a full menu of American classics like steaks, burgers, and breakfast favorites in a comfortable, casual environment. Prices are mid-range, and you can walk right in without needing a reservation.\n\nPlease note that hours and prices can vary, so I'd suggest confirming with the property when you arrive. Later this morning, Mohegan Sun Caputo Trattoria will open at 11:00 AM if you find yourself craving brick-oven pizza or pasta. Are you looking for a quick breakfast to start your day or a more leisurely sit-down meal?",
+      "sources": [
+        {
+          "category": "restaurants",
+          "source": "mohegan_sun.json",
+          "score": 0.672
+        },
+        {
+          "category": "faq",
+          "source": "mohegan_sun.json",
+          "score": 0.649
+        }
+      ],
+      "elapsed_ms": 45181,
+      "error": null
+    },
+    {
+      "turn_index": 1,
+      "user_message": "Why are you asking how many we are?",
+      "agent_response": "Knowing your party size helps me recommend the right atmosphere and seating for your meal. For example, some of our lounges are better for couples, while spots like Hash House A Go Go feature massive portions that are perfect for sharing with a larger group. \n\nI'm an AI concierge here to help tailor your experience so you can spend less time searching and more time enjoying the resort. Since you're looking for something open early this morning, are you staying in the Sky Tower or the Earth Tower?",
+      "sources": [
+        {
+          "category": "faq",
+          "source": "mohegan_sun.json",
+          "score": 0.598
+        },
+        {
+          "category": "hotel",
+          "source": "mohegan_sun.json",
+          "score": 0.589
+        },
+        {
+          "category": "property",
+          "source": "mohegan_sun.json",
+          "score": 0.589
+        }
+      ],
+      "elapsed_ms": 30148,
+      "error": null
+    },
+    {
+      "turn_index": 2,
+      "user_message": "OK, there's 3 of us",
+      "agent_response": "Lantern Bar & Grill in the Casino of the Earth is open now and has plenty of space for three. If you can wait a few minutes, Hash House A Go Go opens at 7:00 AM and is perfect for sharing their oversized breakfast plates. Would you like a table near the gaming floor or somewhere a bit quieter?",
+      "sources": [],
+      "elapsed_ms": 47111,
+      "error": null
+    }
+  ],
+  "elapsed_ms": 123247,
+  "error": null,
+  "completed": true
+}

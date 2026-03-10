@@ -1,0 +1,76 @@
+{
+  "scenario_id": "h7-03",
+  "scenario_name": "Entertainment guest exploring other domains",
+  "category": "host_triangle_h7_h10_revenue",
+  "behavioral_dimension": "H7_cross_selling_wallet_share",
+  "expected_behavior": "Builds a full evening around the Arena anchor: pre-show dinner at a nearby restaurant, the show itself, and post-show options (Wolf Den late show, Comix, casino floor). The guest leaves with a plan for an entire evening, not just a concert ticket",
+  "expected_behavioral_quality": "When a guest comes for entertainment, the agent expands the visit into dining and other experiences. The cross-sell turns a one-activity visit into a full resort evening where the show is the anchor but not the only experience.",
+  "safety_relevant": false,
+  "source_file": "host_triangle_h7_h10_revenue.yaml",
+  "thread_id": "eval-h7-03-1773039106",
+  "turns": [
+    {
+      "turn_index": 0,
+      "user_message": "We have Arena tickets for Saturday. What else should we do that night?",
+      "agent_response": "Saturday nights here have an incredible energy that you'll feel the moment you walk in. For a sophisticated pre-show experience, novelle is an upscale ultra-lounge that's perfect for craft cocktails and a bit of people-watching before you head into the Arena. \n\nIf you want to keep the momentum going after the show, Avalon Nightclub is right there with world-class DJs and a high-energy atmosphere until 2:00 AM. Pro tip: Lantern Bar & Grill in Casino of the Earth is open 24 hours, so you don't have to worry about missing the kitchen if the concert runs late and you're craving a post-show burger. Since you'll be on your feet for the show, would you be interested in a morning spa treatment to reset the next day?\n\nIs this visit for a special occasion like a birthday or anniversary?",
+      "sources": [
+        {
+          "category": "entertainment",
+          "source": "mohegan_sun.json",
+          "score": 0.67
+        },
+        {
+          "category": "restaurants",
+          "source": "mohegan_sun.json",
+          "score": 0.65
+        }
+      ],
+      "elapsed_ms": 34080,
+      "error": null
+    },
+    {
+      "turn_index": 1,
+      "user_message": "A pre-show dinner sounds great. Where?",
+      "agent_response": "Michael Jordan's Steak House is the definitive choice for a Saturday pre-show meal because it captures that high-energy, sophisticated vibe perfectly. It is located right in the Casino of the Sky, so you are just steps away from the Arena entrance once you finish your dinner. \n\nThe aroma of their USDA Prime steaks hitting the grill is incredible, and the atmosphere is upscale but buzzing with excitement before a big show. Since it is a Saturday night, the dining room will be lively and a business casual dress code is expected. I would suggest booking a reservation as soon as possible to ensure you have plenty of time to enjoy your meal before the lights go down at the Arena. How many people are in your party?",
+      "sources": [
+        {
+          "category": "restaurants",
+          "source": "mohegan_sun.json",
+          "score": 0.692
+        },
+        {
+          "category": "entertainment",
+          "source": "mohegan_sun.json",
+          "score": 0.675
+        },
+        {
+          "category": "faq",
+          "source": "mohegan_sun.json",
+          "score": 0.639
+        }
+      ],
+      "elapsed_ms": 34988,
+      "error": null
+    },
+    {
+      "turn_index": 2,
+      "user_message": "And after the show? We don't want the night to end",
+      "agent_response": "I've got you\u2014the night is just getting started when the show ends. Avalon Nightclub is the high-energy choice with world-class DJs and a party that lasts until 2:00 AM, while novelle offers a more sophisticated ultra-lounge atmosphere specifically designed for post-show cocktails. \n\nIf you find yourself hungry after the encore, Lantern Bar & Grill in Casino of the Earth is open 24 hours and serves fantastic late-night favorites like burgers and wings. Insider tip: novelle is one of the best spots for people-watching as the Arena crowd filters out, making it a great place to see and be seen. Since you are staying late, would you like me to look into some relaxing spa options for your Sunday morning?\n\nAre you more of a dance floor person or do you prefer a lounge where you can sit and talk?",
+      "sources": [
+        {
+          "category": "entertainment",
+          "source": "mohegan_sun.json",
+          "score": 0.713
+        },
+        {
+          "category": "restaurants",
+          "source": "mohegan_sun.json",
+          "score": 0.688
+        }
+      ],
+      "elapsed_ms": 43325,
+      "error": null
+    }
+  ],
+  "completed": true
+}

@@ -1,0 +1,49 @@
+{
+  "scenario_id": "h8-01",
+  "scenario_name": "Comp-eligible guest receiving offer",
+  "category": "host_triangle_h7_h10_revenue",
+  "behavioral_dimension": "H8_strategic_offer_framing",
+  "expected_behavior": "Presents Leap benefits as things the guest has earned through their loyalty, not as promotions being pushed. Uses insider language \u2014 'a lot of people don't realize' or 'one of the quieter Leap perks' \u2014 that makes the guest feel like they are learning something exclusive",
+  "expected_behavioral_quality": "When mentioning comp eligibility or perks, frames them as earned recognition rather than marketing. The guest should feel that the offer exists because of who they are, not because it is a mass promotion. Uses language like 'you've unlocked' rather than 'we're offering.'",
+  "safety_relevant": false,
+  "source_file": "host_triangle_h7_h10_revenue.yaml",
+  "thread_id": "eval-h8-01-1772913167",
+  "turns": [
+    {
+      "turn_index": 0,
+      "user_message": "I'm at Leap tier. Are there any dining perks I should know about?",
+      "agent_response": "At, the Leap tier provides priority access at our restaurants and an enhanced earning rate for Momentum Points on all dining purchases. These points are redeemable for meals at participating venues, and your status may qualify you for invitations to exclusive culinary events. Based on your current standing, you may also be eligible for a complimentary appetizer or dessert at select casual dining spots. You can check your specific point balance and any targeted offers at the Momentum Desk or through the Mohegan Sun app.\n\nI've got you on the dining recommendations\u2014Bobby Flay\u2019s Bar Americain is a strong choice for a bold American brasserie experience, while Tuscany offers a more traditional setting near the waterfall. I can connect you with the host team to finalize a table at either location. Do you prefer a lively atmosphere or a more quiet setting for your meals? After dinner, you might consider visiting the Wolf Den, where your Leap status provides priority entry for the nightly live music.",
+      "sources": [],
+      "elapsed_ms": 56607,
+      "error": null
+    },
+    {
+      "turn_index": 1,
+      "user_message": "Nice, I didn't know about those. What about entertainment?",
+      "agent_response": "At, your Leap status really opens up the entertainment side of the house. One of the best perks is priority seating at the Wolf Den, which is a huge win on a Saturday night when the crowd starts to build for the live music. You also get pre-sale access for Mohegan Sun Arena shows, meaning you get first pick at seats for the headliners before the general public.\n\nFor tonight, novelle is the spot if you want a sophisticated vibe with a DJ and great cocktails, or Avalon Nightclub starts its high-energy set at 10:00 PM. I've got you covered if you want to check the schedule for any upcoming Arena shows\u2014your Momentum points can even be used toward ticket purchases at the box office. After a late night, a session at the Elemis Spa tomorrow might be the perfect way to reset. Are you more of a front-row concert fan or do you like the energy of a nightclub?",
+      "sources": [
+        {
+          "category": "entertainment",
+          "source": "mohegan_sun.json",
+          "score": 0.689
+        },
+        {
+          "category": "faq",
+          "source": "mohegan_sun.json",
+          "score": 0.679
+        }
+      ],
+      "elapsed_ms": 27127,
+      "error": null
+    },
+    {
+      "turn_index": 2,
+      "user_message": "That's actually really cool. I should be using these more",
+      "agent_response": "At, your Leap status ensures you earn Momentum Points at a faster rate than Core or Ignite members, which can be redeemed for dining, hotel stays, or free play. You also have priority lines at the hotel front desk and a 10% discount at Mohegan Sun-owned retail shops. If you decide to stay the night to avoid the drive home, the Earth Tower rooms provide a contemporary setting very close to the action in the Casino of the Earth. \n\nI've got you on the room details if you're interested in checking availability. Do you usually prefer to stay overnight when you visit, or are you just here for a day trip?",
+      "sources": [],
+      "elapsed_ms": 48434,
+      "error": null
+    }
+  ],
+  "completed": true
+}

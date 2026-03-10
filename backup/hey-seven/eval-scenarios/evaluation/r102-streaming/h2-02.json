@@ -1,0 +1,86 @@
+{
+  "scenario_id": "h2-02",
+  "scenario_name": "Guest references a bad past experience",
+  "category": "host_triangle_h1_h3_development",
+  "behavioral_dimension": "H2_reactivation_win_back",
+  "expected_behavior": "Takes the complaint seriously without being defensive. Apologizes specifically for the wait time. Offers a concrete alternative for this visit and suggests mentioning the issue to the Momentum Desk for follow-up. Turns the complaint into a chance to demonstrate that things are different now",
+  "expected_behavioral_quality": "When a guest references a negative experience, the agent acknowledges it specifically, investigates without being defensive, and reframes the next visit as a fresh start. Does not minimize the complaint or rush past it.",
+  "safety_relevant": false,
+  "source_file": "host_triangle_h1_h3_development.yaml",
+  "thread_id": "eval-h2-02-1772910530",
+  "turns": [
+    {
+      "turn_index": 0,
+      "user_message": "Last time I was here the service at the steakhouse was awful. Took forever to get seated",
+      "agent_response": "I'm truly sorry to hear that your last visit was dampened by a long wait; that's certainly not the experience we want for you. To ensure a much smoother evening tonight, I would suggest Michael Jordan\u2019s Steak House in the Casino of the Sky, where the USDA Prime steaks are exceptional and they are open until 10:00 PM. Securing a reservation is the best way to ensure you are seated promptly, especially on a busy Saturday night, as this is one of our most popular upscale destinations.\n\nSince I want to help make this visit better than the last, how many people are in your party tonight? After your meal, the Wolf Den usually has some fantastic live music if you are looking to keep the night going.",
+      "sources": [
+        {
+          "category": "restaurants",
+          "source": "mohegan_sun.json",
+          "score": 0.66
+        },
+        {
+          "category": "property",
+          "source": "mohegan_sun.json",
+          "score": 0.637
+        },
+        {
+          "category": "faq",
+          "source": "mohegan_sun.json",
+          "score": 0.641
+        }
+      ],
+      "elapsed_ms": 37309,
+      "error": null
+    },
+    {
+      "turn_index": 1,
+      "user_message": "Yeah it kind of ruined the whole evening honestly",
+      "agent_response": "I hear you, and it\u2019s frustrating when the timing is off on a night out. I'm determined to help you have a much better experience this time around. \n\nIf you want to avoid the crowds and feel a bit more looked after, novelle is an excellent choice for a sophisticated atmosphere with DJ entertainment and craft cocktails. It\u2019s an upscale lounge designed for a smoother pace, which might be the perfect antidote to the rush you experienced last time. Alternatively, the Wolf Den has live music tonight with an electric energy that really pulls the whole room together. \n\nTo help me point you in the right direction, do you usually prefer a high-energy show or something a bit more laid-back like a lounge setting?",
+      "sources": [
+        {
+          "category": "entertainment",
+          "source": "mohegan_sun.json",
+          "score": 0.618
+        },
+        {
+          "category": "faq",
+          "source": "mohegan_sun.json",
+          "score": 0.602
+        }
+      ],
+      "elapsed_ms": 32473,
+      "error": null
+    },
+    {
+      "turn_index": 2,
+      "user_message": "So what would you actually recommend instead?",
+      "agent_response": "I've got you. If you want to skip the formal dining wait and get straight to the vibe, novelle is my top pick for you tonight. It\u2019s our upscale ultra lounge in the Casino of the Sky, and on a Saturday night, the energy is perfect with a live DJ and craft cocktails. You're going to love the atmosphere there \u2014 it feels much more exclusive and avoids that crowded restaurant feel you dealt with last time.\n\nIf you want to really wash away the memory of that last trip, a morning session at Mandara Spa tomorrow would be a great way to start fresh. Their Balinese-inspired treatments are legendary for helping guests hit the reset button.\n\nAre you looking for a spot where you can dance, or do you prefer a place with comfortable seating to just enjoy the music?",
+      "sources": [
+        {
+          "category": "faq",
+          "source": "mohegan_sun.json",
+          "score": 0.666
+        },
+        {
+          "category": "entertainment",
+          "source": "mohegan_sun.json",
+          "score": 0.638
+        },
+        {
+          "category": "amenities",
+          "source": "mohegan_sun.json",
+          "score": 0.633
+        },
+        {
+          "category": "promotions",
+          "source": "mohegan_sun.json",
+          "score": 0.606
+        }
+      ],
+      "elapsed_ms": 35688,
+      "error": null
+    }
+  ],
+  "completed": true
+}

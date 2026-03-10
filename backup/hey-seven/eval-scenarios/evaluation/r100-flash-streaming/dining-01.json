@@ -1,0 +1,38 @@
+{
+  "scenario_id": "dining-01",
+  "scenario_name": "Restaurant discovery to specific question",
+  "category": "dining_journey",
+  "behavioral_dimension": "",
+  "expected_behavior": "Narrows from overview to steak recommendation to hours",
+  "expected_behavioral_quality": "",
+  "safety_relevant": false,
+  "source_file": "dining_journey.yaml",
+  "thread_id": "eval-dining-01-1772830072",
+  "turns": [
+    {
+      "turn_index": 0,
+      "user_message": "What restaurants do you have?",
+      "agent_response": "",
+      "sources": [],
+      "elapsed_ms": 60003,
+      "error": "TIMEOUT (60.0s)"
+    },
+    {
+      "turn_index": 1,
+      "user_message": "Which one has the best steak?",
+      "agent_response": "Michael Jordan's Steak House is the premier choice for a high-quality cut\u2014they serve incredible USDA Prime steaks in an elegant, upscale setting. They are open tonight until 10:00 PM in the Casino of the Sky, with a business casual dress code and a price range of $$$$. Since it is a Friday, I recommend a reservation; let me help you with that by connecting you with our host team to finalize the booking.\n\nHours and pricing may vary, so it is best to confirm details upon arrival. Pro tip: Their MJ's Delmonico is ginger-crusted and has a unique flavor profile that guests consistently rave about.\n\nOnce you have finished dinner, the Wolf Den in the Casino of the Earth is a perfect next stop for free live music. Are you celebrating something special tonight, or just looking for an excellent meal?",
+      "sources": [],
+      "elapsed_ms": 47682,
+      "error": null
+    },
+    {
+      "turn_index": 2,
+      "user_message": "What are the hours?",
+      "agent_response": "",
+      "sources": [],
+      "elapsed_ms": 60013,
+      "error": "TIMEOUT (60.0s)"
+    }
+  ],
+  "completed": true
+}

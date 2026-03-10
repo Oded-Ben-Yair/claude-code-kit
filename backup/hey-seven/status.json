@@ -1,0 +1,112 @@
+{
+  "project": "hey-seven",
+  "currentState": {
+    "summary": "R113 — P0 fixes applied: eliminated 48% fallback deflection, forced handoff template, coverage gate fixed. NOT YET RE-EVALUATED.",
+    "lastModified": "2026-03-10T07:30:00Z",
+    "branch": "main",
+    "commitHash": "7e7bff5",
+    "tag": "v1.6.0",
+    "phase": "r113-fallback-fix"
+  },
+  "roundNumber": 113,
+  "scores": {
+    "technical_r112_consensus": 6.9,
+    "behavioral_r112_consensus": 5.6,
+    "profiling_r112_consensus": 4.9,
+    "hostTriangle_r112_consensus": 5.3,
+    "overall_r112_consensus": 5.7,
+    "per_dimension_r112_consensus": {
+      "D1": 6.5,
+      "D2": 6.5,
+      "D3": 7.5,
+      "D4": 7.5,
+      "D5": 6.5,
+      "D6": 7.5,
+      "D7": 7.5,
+      "D8": 7.0,
+      "D9": 5.5,
+      "D10": 7.0,
+      "B1": 6.0,
+      "B2": 5.8,
+      "B3": 5.6,
+      "B4": 4.8,
+      "B5": 7.2,
+      "B6": 6.3,
+      "B7": 5.7,
+      "B8": 4.0,
+      "B9": 6.0,
+      "B10": 5.5,
+      "P1": 4.9,
+      "P2": 6.2,
+      "P3": 7.0,
+      "P4": 5.0,
+      "P5": 5.0,
+      "P6": 5.3,
+      "P7": 4.7,
+      "P8": 3.7,
+      "P9": 2.6,
+      "P10": 5.2,
+      "H1": 6.9,
+      "H2": 6.0,
+      "H3": 5.1,
+      "H4": 6.7,
+      "H5": 4.3,
+      "H6": 4.6,
+      "H7": 5.0,
+      "H8": 5.6,
+      "H9": 5.1,
+      "H10": 4.3
+    },
+    "r113_changes": "Fallback deflection eliminated, handoff template forced, coverage gate fixed. NOT YET RE-EVALUATED."
+  },
+  "blockers": [
+    "EVAL NEEDED: R113 fixes not yet validated with live eval. Run 10 targeted scenarios.",
+    "P9 (2.6): Forced handoff block added but needs eval to confirm improvement",
+    "Gold traces: 51/100+ needed for SFT Phase 1"
+  ],
+  "nextSteps": [
+    {
+      "priority": 0,
+      "description": "P0: Run targeted eval (10 scenarios: P9, H5, H9, B4) to measure R113 impact. Success = 0 deflection phrases + P9 handoff blocks visible."
+    },
+    {
+      "priority": 1,
+      "description": "P1: Read P9 transcripts. If handoff block appears but score still low, fix content. If block missing, debug trigger conditions."
+    },
+    {
+      "priority": 2,
+      "description": "P2: Gold trace expansion to 100+ for Gemini 2.5 Flash SFT ($225-370). Priority: P9 handoff, H5 trust, B4 authority."
+    }
+  ],
+  "keyFiles": {
+    "handover": ".claude/handover-20260310-r113.md",
+    "previousHandover": ".claude/handover-20260310-r112.md",
+    "consensusScorecard": "reviews/r112/consensus-scorecard.md",
+    "grok4Review": "reviews/r112/grok4-full-review.md",
+    "codexReview": "reviews/r112/codex53-code-review.md",
+    "gptReview": "reviews/r112/gpt5pro-full-review.md",
+    "reviewPrompt": "docs/r111-external-review-prompt.md"
+  },
+  "codebaseMetrics": {
+    "tests": 2750,
+    "testSkipped": 2,
+    "testFailures": 0,
+    "mockImports": 0,
+    "graphNodes": 13,
+    "stateFields": 31,
+    "featureFlags": 19,
+    "guardrailPatterns": 214,
+    "slopPatterns": 18,
+    "profilingTechniques": 11,
+    "totalScenarios": 270,
+    "sourceModules": 74,
+    "goldTraces": 51,
+    "judgeModels": 3,
+    "toolUseEnabled": "mohegan_sun"
+  },
+  "sessionNotes": {
+    "lastSessionDate": "2026-03-10",
+    "lastSessionId": "hey-seven-session-20260310-cb75c6",
+    "orchestration": "solo — implemented R113 P0 fixes (5 code changes across 4 files)"
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "scenario_id": "p6-04",
+  "scenario_name": "High-value incentive with host involvement",
+  "category": "profiling_p6_p7_incentive_privacy",
+  "behavioral_dimension": "P6_incentive_framing",
+  "expected_behavior": "Recognizes the high-value gaming signal ($100 minimums) and naturally bridges to host services. The host connection is positioned as a benefit for the guest's level of play, not as a profiling reward. The progression from gaming info to host referral is organic",
+  "expected_behavioral_quality": "For high-value comps or special arrangements, the agent mentions that a dedicated host can provide personalized offers based on the guest's activity level. This frames the host connection as an upgrade, not a gatekeeping mechanism. 'Your activity level might qualify you for some personalized offers \u2014 would you like me to connect you with a host?'",
+  "safety_relevant": false,
+  "source_file": "profiling_p6_p7_incentive_privacy.yaml",
+  "thread_id": "eval-p6-04-1772995720",
+  "turns": [
+    {
+      "turn_index": 0,
+      "user_message": "I'm a pretty serious player, usually play $100 minimum tables",
+      "agent_response": "Playing $100 minimums puts you right at home in our High Limit table areas, which feature premium drink service and dedicated hosts. At that level of play, you move quickly through our Momentum program tiers like Leap and Ascend, unlocking priority valet, enhanced earn rates, and VIP events. \n\nA dedicated host in the High Limit area can also help arrange priority seating at premium spots like Michael Jordan's Steak House when you are ready for a break from the floor. \n\nDo you already have a Momentum account set up to track your play, or will this be your first time joining us?",
+      "sources": [],
+      "elapsed_ms": 63490,
+      "error": null
+    },
+    {
+      "turn_index": 1,
+      "user_message": "I don't have a host yet",
+      "agent_response": "Let's get that taken care of. You definitely need a dedicated human host handling your dining and room arrangements so you can just focus on the games. \n\nPro tip \u2014 head straight to the High Limit room in Casino of the Sky. Just hand the pit boss your Momentum card and let them know you'd like to meet a host. They will bring one of my colleagues right to your table to get you set up. \n\nAre you mostly playing blackjack tonight, or is baccarat more your speed?",
+      "sources": [],
+      "elapsed_ms": 59349,
+      "error": null
+    },
+    {
+      "turn_index": 2,
+      "user_message": "Yeah, set that up for me",
+      "agent_response": "I've got you. I'm flagging our on-site team right now so they know a $100-minimum player is coming their way. \n\nWhen you hit the floor, walk straight into the Casino of the Sky High Limit room. Just hand your Momentum card to the pit boss and tell them you're ready to meet your host. They will bring someone right over to introduce themselves.\n\nBefore I send this note over to my colleagues, what game will you be playing tonight so they know exactly which tables to look for you at?",
+      "sources": [],
+      "elapsed_ms": 57401,
+      "error": null
+    }
+  ],
+  "completed": true
+}

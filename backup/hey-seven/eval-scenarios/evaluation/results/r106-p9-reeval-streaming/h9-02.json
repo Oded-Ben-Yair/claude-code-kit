@@ -1,0 +1,86 @@
+{
+  "scenario_id": "h9-02",
+  "scenario_name": "Guest on a budget needing value guidance",
+  "category": "host_triangle_h7_h10_revenue",
+  "behavioral_dimension": "H9_revenue_aware_steering",
+  "expected_behavior": "Leads with genuinely good affordable options, not just the cheapest. Bobby's Burgers, Frank Pepe's, and the Buffet all have real culinary appeal. Pairs with the Wolf Den (free shows) to create a full evening without pressure. The guest leaves excited about a great night out, not feeling like they got the budget tour",
+  "expected_behavioral_quality": "When a guest signals budget constraints, the agent steers toward high-value experiences without condescending. Finds genuinely great options at every price point. Never makes the guest feel like they are getting a lesser experience \u2014 just a different one.",
+  "safety_relevant": false,
+  "source_file": "host_triangle_h7_h10_revenue.yaml",
+  "thread_id": "eval-h9-02-1773039803",
+  "turns": [
+    {
+      "turn_index": 0,
+      "user_message": "What's good for dinner that won't break the bank?",
+      "agent_response": "For a satisfying dinner that is easy on the wallet, Lantern Bar & Grill is my top pick. It is located right in the Casino of the Earth and serves up excellent American food, from great burgers to hearty salads, without the fine-dining price tag. \n\nPro tip: it is perfectly positioned if you want to catch some free live music at the Wolf Den right after you eat. \n\nIf you are in the mood for something even quicker and more casual, Johnny Rockets is a fantastic 1950s-style diner option that won't break the bank, and their milkshakes really hit the spot.\n\nHow many people will you have in your group tonight?",
+      "sources": [
+        {
+          "category": "restaurants",
+          "source": "mohegan_sun.json",
+          "score": 0.644
+        }
+      ],
+      "elapsed_ms": 46971,
+      "error": null
+    },
+    {
+      "turn_index": 1,
+      "user_message": "The Buffet sounds good. Any free entertainment after?",
+      "agent_response": "The buffet is a fantastic choice to get a ton of variety for a great value. After you finish up, the Wolf Den is exactly what you are looking for. \n\nIt is our completely free live entertainment venue located right in the middle of the action. They host complimentary shows every single night, usually kicking off around 8:00 PM or 9:00 PM. The energy in there is electric because it is an intimate space where you are right up close to the performers \u2014 no tickets or cover charge required. Pro tip: since it only seats about 350 people, wandering over a little before showtime is always a smart move to grab a good spot.\n\nThe Wolf Den brings in everyone from incredible tribute bands to national touring acts and even stand-up. Are you usually more into live music or catching a comedy set?",
+      "sources": [
+        {
+          "category": "entertainment",
+          "source": "mohegan_sun.json",
+          "score": 0.706
+        },
+        {
+          "category": "restaurants",
+          "source": "mohegan_sun.json",
+          "score": 0.665
+        },
+        {
+          "category": "dining",
+          "source": "cms:dining/dining-001",
+          "score": 0.663
+        }
+      ],
+      "elapsed_ms": 51656,
+      "error": null
+    },
+    {
+      "turn_index": 2,
+      "user_message": "Wait, the Wolf Den is free? That's awesome",
+      "agent_response": "It really is one of the best parts of the property because there is no cover charge and no ticket required ever. The Wolf Den has an electric, intimate energy where you are right there with the performer, whether it is a national touring act, a top-tier tribute band, or a comedian.\n\nSince the venue seats about 350 people on a first-come, first-served basis, it is a good idea to head over a bit early to snag a spot. Shows typically start at 8:00 PM or 9:00 PM nightly, so it fits perfectly after a casual dinner. If you find yourself with some extra energy during the day, you might also enjoy checking out the Wombi Rock climbing wall near Kids Quest for a fun, active break that is a bit different from the usual resort experience. \n\nDo you usually prefer a high-energy rock show or something a bit more mellow for your night out?",
+      "sources": [
+        {
+          "category": "entertainment",
+          "source": "mohegan_sun.json",
+          "score": 0.773
+        },
+        {
+          "category": "faq",
+          "source": "mohegan_sun.json",
+          "score": 0.667
+        },
+        {
+          "category": "promotions",
+          "source": "mohegan_sun.json",
+          "score": 0.637
+        },
+        {
+          "category": "gaming",
+          "source": "mohegan_sun.json",
+          "score": 0.629
+        },
+        {
+          "category": "amenities",
+          "source": "mohegan_sun.json",
+          "score": 0.633
+        }
+      ],
+      "elapsed_ms": 32770,
+      "error": null
+    }
+  ],
+  "completed": true
+}

@@ -1,0 +1,46 @@
+# Property Q&A Agent -- Python Dependencies (pinned to tested versions)
+
+# --- API Framework ---
+fastapi==0.129.0
+uvicorn[standard]==0.40.0
+pydantic==2.12.5
+pydantic-settings==2.10.1
+
+# --- LangGraph & LangChain ---
+langgraph==1.0.8
+langchain-core==1.2.12
+langchain-community==0.4.1
+langchain-text-splitters==1.1.0
+langchain-google-genai==4.2.0
+
+# --- Observability ---
+langsmith==0.7.1
+langfuse==3.14.4
+
+# --- Vector DB (local dev) ---
+chromadb==1.5.0
+
+# --- GCP / Firestore (production) ---
+google-cloud-firestore==2.20.1
+langgraph-checkpoint-firestore==0.1.0
+
+# --- Evaluation ---
+deepeval==3.8.4
+hypothesis==6.151.9
+vaderSentiment==3.3.2
+
+# --- State Backend (distributed) ---
+# R47 fix C2: redis[hiredis] for native async Redis (redis.asyncio).
+# hiredis provides C-extension parser for ~10x faster Redis responses.
+redis[hiredis]==5.2.1
+
+# --- Utilities ---
+# R52 fix D7: google-re2 for linear-time regex (ReDoS protection).
+# Optional: falls back to stdlib re when unavailable (e.g., WSL without libre2-dev).
+# Pin to exact version when deploying to production.
+google-re2==1.1.0
+sse-starlette==3.2.0
+httpx==0.28.1
+cryptography==46.0.5
+cachetools==5.5.2
+pyyaml==6.0.1

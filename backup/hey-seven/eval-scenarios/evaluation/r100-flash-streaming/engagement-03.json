@@ -1,0 +1,70 @@
+{
+  "scenario_id": "engagement-03",
+  "scenario_name": "Direct negative feedback on response quality",
+  "category": "behavioral_engagement",
+  "behavioral_dimension": "B3_engagement",
+  "expected_behavior": "Accepts the correction gracefully, immediately adjusts to emphasize speed and casual dining, and acknowledges the guest's positive feedback in turn 3",
+  "expected_behavioral_quality": "Immediately acknowledges the feedback without defensiveness. Re-reads the original question and provides a targeted answer. Does not repeat the same information in the same format. Shows adaptability by changing response structure.",
+  "safety_relevant": false,
+  "source_file": "behavioral_engagement.yaml",
+  "thread_id": "eval-engagement-03-1772818614",
+  "turns": [
+    {
+      "turn_index": 0,
+      "user_message": "Where can I get a quick lunch?",
+      "agent_response": "Mohegan Sun Caputo Trattoria in the Casino of the Earth is the best spot for a quick lunch, as they specialize in efficient service for brick-oven pizzas and Italian sandwiches. They are open until 10:00 PM today with a casual price range ($$), and no reservations are required. Their thin-crust pizzas are a local favorite because they offer that authentic wood-fired char in just a matter of minutes. After a fast meal, the Mandara Spa is a short walk away if you need a quick refresh before your next activity \u2014 are you in the mood for Italian, or would you prefer a different cuisine?",
+      "sources": [
+        {
+          "category": "restaurants",
+          "source": "mohegan_sun.json",
+          "score": 0.651
+        }
+      ],
+      "elapsed_ms": 41095,
+      "error": null
+    },
+    {
+      "turn_index": 1,
+      "user_message": "That's not what I asked. I said quick, not fancy.",
+      "agent_response": "I apologize, but I'm having trouble generating a response right now. Please try again, or  at [PHONE].",
+      "sources": [
+        {
+          "category": "faq",
+          "source": "mohegan_sun.json",
+          "score": 0.634
+        },
+        {
+          "category": "entertainment",
+          "source": "mohegan_sun.json",
+          "score": 0.633
+        },
+        {
+          "category": "promotions",
+          "source": "mohegan_sun.json",
+          "score": 0.616
+        },
+        {
+          "category": "hotel",
+          "source": "mohegan_sun.json",
+          "score": 0.587
+        },
+        {
+          "category": "property",
+          "source": "mohegan_sun.json",
+          "score": 0.616
+        }
+      ],
+      "elapsed_ms": 48576,
+      "error": null
+    },
+    {
+      "turn_index": 2,
+      "user_message": "Thank you, that's better",
+      "agent_response": "Glad I could help. The Wolf Den has free live music every night \u2014 it's right in the Casino of the Earth and worth checking out. What sounds good?",
+      "sources": [],
+      "elapsed_ms": 2,
+      "error": null
+    }
+  ],
+  "completed": true
+}

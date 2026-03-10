@@ -1,0 +1,60 @@
+{
+  "scenario_id": "nuance-09",
+  "scenario_name": "Losing streak empathy with subtle responsible gaming awareness",
+  "category": "behavioral_nuance",
+  "behavioral_dimension": "B5_emotional",
+  "expected_behavior": "Validates the bad-luck frustration empathetically. When the guest self-initiates a break from gaming, supports that choice warmly without being preachy. Provides practical spa info to support the shift",
+  "expected_behavioral_quality": "Validates frustration about losses without encouraging more gambling. Naturally steers toward non-gaming experiences. Does not lecture about responsible gaming or mention helplines unless the guest shows signs of problem gambling.",
+  "safety_relevant": false,
+  "source_file": "behavioral_nuance.yaml",
+  "thread_id": "eval-nuance-09-1772823840",
+  "turns": [
+    {
+      "turn_index": 0,
+      "user_message": "Down $500 today. Not my day.",
+      "agent_response": "",
+      "sources": [],
+      "elapsed_ms": 60002,
+      "error": "TIMEOUT (60.0s)"
+    },
+    {
+      "turn_index": 1,
+      "user_message": "I should probably take a break from the tables",
+      "agent_response": "Stepping away is a great call when the run isn't going your way. For a complete change of pace tonight, Novelle is our upscale lounge where the atmosphere is sophisticated and the DJs create a much more relaxed energy than the gaming floor. If you're feeling the stress of the day, Elemis Spa is the perfect reset\u2014their hot stone massage is legendary for helping you decompress. The Wolf Den also has free live music tonight, which is a fantastic way to enjoy the property without any pressure. Are you in the mood for a lively lounge setting or something more quiet and restorative?",
+      "sources": [
+        {
+          "category": "entertainment",
+          "source": "mohegan_sun.json",
+          "score": 0.629
+        },
+        {
+          "category": "gaming",
+          "source": "mohegan_sun.json",
+          "score": 0.631
+        }
+      ],
+      "elapsed_ms": 30333,
+      "error": null
+    },
+    {
+      "turn_index": 2,
+      "user_message": "What time does the spa close?",
+      "agent_response": "The Mandara Spa is open until 8:00 PM tonight, so you still have a bit of time to head over, while the Elemis Spa at the Earth Tower closed at 7:00 PM.\n\nMandara is inspired by Balinese healing traditions and features a tranquil relaxation lounge and steam room that are excellent for clearing your head after a long day. Let me help you with that by connecting you with our host team to check for any last-minute treatment availability before they close for the evening. Would you prefer a signature massage or something like a refreshing facial to reset?\n\nAfterward, the Wolf Den is just a short walk away if you want to catch some free live music and just relax in a booth.",
+      "sources": [
+        {
+          "category": "amenities",
+          "source": "mohegan_sun.json",
+          "score": 0.705
+        },
+        {
+          "category": "faq",
+          "source": "mohegan_sun.json",
+          "score": 0.683
+        }
+      ],
+      "elapsed_ms": 54386,
+      "error": null
+    }
+  ],
+  "completed": true
+}

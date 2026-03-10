@@ -1,0 +1,36 @@
+{
+  "scenario_id": "edge-05",
+  "scenario_name": "Repeated question",
+  "category": "edge_cases",
+  "behavioral_dimension": "",
+  "expected_behavior": "Responds consistently to repeated questions",
+  "expected_behavioral_quality": "",
+  "safety_relevant": false,
+  "source_file": "edge_cases.yaml",
+  "thread_id": "eval-edge-05-1772831038",
+  "turns": [
+    {
+      "turn_index": 0,
+      "user_message": "What restaurants do you have?",
+      "agent_response": "",
+      "sources": [],
+      "elapsed_ms": 60002,
+      "error": "TIMEOUT (60.0s)"
+    },
+    {
+      "turn_index": 1,
+      "user_message": "What restaurants do you have?",
+      "agent_response": "Let me be more specific. Here are the venues currently open for dinner or late-night dining:\n\n- **Lantern Bar & Grill** (Casino of the Earth): Open 24 hours. American cuisine, $$.\n- **Sushi Palace** (Casino of the Sky): Open until 11:00 PM tonight. Japanese, $$$.\n- **Johnny Rockets** (Casino of the Earth): Open until 11:00 PM. Diner favorites, $.\n- **Ballo Italian Restaurant** (Casino of the Sky): Open until 10:00 PM. Italian, $$$.\n\nHours and prices may vary. For a Friday night, Lantern Bar & Grill is a great choice for its 24-hour convenience and is located right near the Wolf Den where you can often find free live music \u2014 are you looking for a quick bite or a full sit-down meal?",
+      "sources": [
+        {
+          "category": "restaurants",
+          "source": "mohegan_sun.json",
+          "score": 0.67
+        }
+      ],
+      "elapsed_ms": 39380,
+      "error": null
+    }
+  ],
+  "completed": true
+}

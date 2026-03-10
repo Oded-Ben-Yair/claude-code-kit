@@ -1,0 +1,101 @@
+{
+  "scenario_id": "p4-06",
+  "scenario_name": "VIP language \u2014 assumption about premium expectations correct",
+  "category": "profiling_p4_assumptive_bridge",
+  "behavioral_dimension": "P4_assumptive_bridging",
+  "expected_behavior": "Immediately leads with the most premium options. When Soar tier is confirmed, elevates to VIP-specific benefits and access. The assumption about premium expectations was correct from the first message's language",
+  "expected_behavioral_quality": "When the guest uses VIP language ('I'm used to the best', 'premium experience'), assumes they expect top-tier recommendations and elevated service. Leads with the most exclusive options and uses a premium service register throughout.",
+  "safety_relevant": false,
+  "source_file": "profiling_p4_assumptive_bridge.yaml",
+  "thread_id": "eval-p4-06-1772958104",
+  "turns": [
+    {
+      "turn_index": 0,
+      "user_message": "I want the best dinner experience you've got",
+      "agent_response": "For the most striking dinner experience tonight, Tao Asian Bistro & Lounge in the Casino of the Sky is unparalleled. Between the dramatic 16-foot Buddha and the incredible aroma of pan-Asian spices, it is a sensory journey that features everything from a world-class sushi bar to their famous miso-glazed Chilean sea bass. They open at 5:00 PM and stay open until 11:00 PM with pricing in the $$$ range; reservations are highly recommended to ensure you get a great table. \n\nFun fact\u2014the architecture in Tao was designed to transport you straight to a serene, high-end bistro in Asia the moment you step through the doors. After your meal, you might enjoy heading over to novelle for a refined cocktail in their upscale ultra-lounge setting. What kind of flavors usually make a dinner the best for you?",
+      "sources": [
+        {
+          "category": "restaurants",
+          "source": "mohegan_sun.json",
+          "score": 0.65
+        },
+        {
+          "category": "entertainment",
+          "source": "mohegan_sun.json",
+          "score": 0.645
+        },
+        {
+          "category": "promotions",
+          "source": "mohegan_sun.json",
+          "score": 0.65
+        }
+      ],
+      "elapsed_ms": 36155,
+      "error": null
+    },
+    {
+      "turn_index": 1,
+      "user_message": "That's more like it. We're Soar tier members.",
+      "agent_response": "Soar status includes full VIP treatment, such as a dedicated host who can manage your Tao reservation and any other arrangements for the evening. You also have priority access to all amenities, including complimentary valet and entry to the VIP lounges in the Casino of the Earth and Casino of the Sky.\n\nOne thing many of our Soar guests appreciate is the ability to bypass standard lines for everything from dining to entertainment venues like the Wolf Den. After your meal at Tao, the Soar lounge offers a more private atmosphere for a nightcap. Are you planning on seeing a show at the Arena while you're here?",
+      "sources": [
+        {
+          "category": "promotions",
+          "source": "mohegan_sun.json",
+          "score": 0.74
+        },
+        {
+          "category": "faq",
+          "source": "mohegan_sun.json",
+          "score": 0.628
+        },
+        {
+          "category": "hotel",
+          "source": "mohegan_sun.json",
+          "score": 0.627
+        },
+        {
+          "category": "property",
+          "source": "mohegan_sun.json",
+          "score": 0.632
+        }
+      ],
+      "elapsed_ms": 28483,
+      "error": null
+    },
+    {
+      "turn_index": 2,
+      "user_message": "What else is available at our level?",
+      "agent_response": "Soar status includes a dedicated executive host, complimentary valet parking, and room upgrades based on availability. You have access to the private VIP lounges in both the Casino of the Earth and Casino of the Sky, along with the High Limit gaming areas which offer premium drink service and dedicated hosts. For entertainment, your tier provides priority access to Mohegan Sun Arena and VIP seating at the Wolf Den. \n\nBased on available information, your host can also facilitate access to private events or specific tournament entries that may be on your profile. Pro tip\u2014if you're looking for a quieter gaming experience, the High Limit areas offer elevated minimums and a more secluded environment than the main floor. Since you have priority access, are you planning to visit the High Limit tables or do you prefer the slot floor?",
+      "sources": [
+        {
+          "category": "faq",
+          "source": "mohegan_sun.json",
+          "score": 0.678
+        },
+        {
+          "category": "promotions",
+          "source": "mohegan_sun.json",
+          "score": 0.686
+        },
+        {
+          "category": "entertainment",
+          "source": "mohegan_sun.json",
+          "score": 0.674
+        },
+        {
+          "category": "amenities",
+          "source": "mohegan_sun.json",
+          "score": 0.668
+        },
+        {
+          "category": "gaming",
+          "source": "mohegan_sun.json",
+          "score": 0.657
+        }
+      ],
+      "elapsed_ms": 42029,
+      "error": null
+    }
+  ],
+  "completed": true
+}

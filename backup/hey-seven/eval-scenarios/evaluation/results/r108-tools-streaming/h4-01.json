@@ -1,0 +1,55 @@
+{
+  "scenario_id": "h4-01",
+  "scenario_name": "Returning guest with earlier preferences in conversation",
+  "category": "host_triangle_h4_h6_relationship",
+  "behavioral_dimension": "H4_personalized_recognition",
+  "expected_behavior": "Integrates all three data points (couple, Italian preference, gluten-free) into the entertainment recommendation. Does not suggest dinner options that conflict with the dietary need. Uses Linda's name naturally. The evening plan feels curated for this specific couple",
+  "expected_behavioral_quality": "Uses information shared in earlier turns to personalize later recommendations. By turn 3, every recommendation should reflect accumulated knowledge. The guest should feel increasingly 'known' with each interaction.",
+  "safety_relevant": false,
+  "source_file": "host_triangle_h4_h6_relationship.yaml",
+  "thread_id": "eval-h4-01-1773058095",
+  "turns": [
+    {
+      "turn_index": 0,
+      "user_message": "Hi, I'm Linda. My husband and I love Italian food. What's good here?",
+      "agent_response": "Linda, since you're here on a Monday, Ballo Italian Restaurant is my top recommendation\u2014their housemade pastas have that perfect al dente bite and the modern presentation is stunning. They are located in the Casino of the Sky and open tonight from 5:00 PM to 10:00 PM with a smart casual dress code.\n\nIf that sounds like your kind of evening, I'll get the team to lock in a table for you two. After dinner, the Wolf Den in the Casino of the Earth is a great spot to catch some free live music.\n\nDo you and your husband usually prefer a classic pasta dish, or are you in the mood to explore their risotto and wine selection?",
+      "sources": [
+        {
+          "category": "restaurants",
+          "source": "mohegan_sun.json",
+          "score": 0.689
+        }
+      ],
+      "elapsed_ms": 80067,
+      "error": null
+    },
+    {
+      "turn_index": 1,
+      "user_message": "We also have a gluten-free situation so that limits things",
+      "agent_response": "Linda, for a great Italian meal that handles gluten-free needs beautifully, Caputo Trattoria in the Casino of the Earth is the perfect choice. Their chefs offer gluten-free pasta and pizza crusts that still have that authentic, wood-fired flavor you're looking for, and it's a bit more easygoing on the wallet than some of our other spots.\n\nThey are open until 10:00 PM tonight, and I'll get the team to lock in a table for the two of you. After you've had your fill, the Wolf Den is right nearby and hosts free live music every night\u2014it\u2019s a great way to enjoy the atmosphere.\n\nAre you more of a classic pasta fan, or would you want to try one of their gluten-free brick-oven pizzas?",
+      "sources": [],
+      "elapsed_ms": 59773,
+      "error": null
+    },
+    {
+      "turn_index": 2,
+      "user_message": "What about after dinner? Any shows tonight?",
+      "agent_response": "Linda, you're in luck\u2014the Wolf Den has a free live show tonight starting at 8:00 PM. It\u2019s located right in the Casino of the Earth near where you\u2019ll be dining, so it\u2019s a very easy transition after your meal.\n\nSince there are no tickets required and it\u2019s a first-come, first-served venue with about 350 seats, I'd suggest heading over a little early to grab a good spot. The energy there is fantastic because it\u2019s such an intimate space; you really feel like you\u2019re part of the performance. If you're looking for a relaxing way to end the evening without spending extra on tickets, this is definitely the best move on property tonight.\n\nAfter a long day of travel and a nice dinner, would you and your husband prefer to sit back and listen to some live music, or are you more into the high-energy atmosphere of the casino floor?",
+      "sources": [
+        {
+          "category": "restaurants",
+          "source": "mohegan_sun.json",
+          "score": 0.689
+        },
+        {
+          "category": "entertainment",
+          "source": "mohegan_sun.json",
+          "score": 0.687
+        }
+      ],
+      "elapsed_ms": 72234,
+      "error": null
+    }
+  ],
+  "completed": true
+}

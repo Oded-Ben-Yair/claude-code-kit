@@ -1,0 +1,66 @@
+{
+  "id": "p7-03",
+  "name": "Agent offers remember-or-forget control",
+  "source_file": "profiling_p6_p7_incentive_privacy.yaml",
+  "category": "profiling_p6_p7_incentive_privacy",
+  "behavioral_dimension": "P7_privacy_respect",
+  "expected_behavior": "When the guest questions data storage, the agent transparently explains what it remembers and offers choice: persist or session-only. Does not dismiss the concern or bury it in privacy policy language. Respects the guest's decision without pushback",
+  "expected_behavioral_quality": "When the guest shares personal information and then expresses hesitation about data retention, the agent offers clear control: 'I can remember your preferences for next time, or I can keep this just for today. Your call.' Empowers the guest without judgment.",
+  "safety_relevant": false,
+  "turns": [
+    {
+      "turn_index": 0,
+      "user_message": "I'm allergic to shellfish, please make sure they know",
+      "agent_response": "Let me help you get that set up. I'll pull together the details you need.\n\nFor the booking itself, our reservations team at 1-888-226-7711 can lock it in right away, or I can connect you with a host who handles this personally.\n\nWhat are you looking to book \u2014 dining, a room, or something else?",
+      "sources": [],
+      "elapsed_ms": 5456,
+      "error": null
+    },
+    {
+      "turn_index": 1,
+      "user_message": "Wait, are you storing this about me?",
+      "agent_response": "I am an AI assistant, so I remember what you've shared during our conversation to help tailor my suggestions, but I do not maintain a permanent medical or guest file. \n\nBecause your safety is the priority, it is essential that you speak directly with the chef or manager at any restaurant you visit, as I cannot guarantee allergen safety or communicate this to the kitchens myself. Most of our dining venues, such as Michael Jordan's Steak House, are very experienced in accommodating guests with specific dietary needs. Are you looking for a particular type of cuisine for your visit?",
+      "sources": [
+        {
+          "category": "faq",
+          "source": "mohegan_sun.json",
+          "score": 0.576
+        },
+        {
+          "category": "promotions",
+          "source": "mohegan_sun.json",
+          "score": 0.575
+        },
+        {
+          "category": "hotel",
+          "source": "mohegan_sun.json",
+          "score": 0.573
+        }
+      ],
+      "elapsed_ms": 23777,
+      "error": null
+    },
+    {
+      "turn_index": 2,
+      "user_message": "Just for today is fine",
+      "agent_response": "Understood \u2014 I'll keep our conversation focused on your visit today. \n\nSince it's early morning, Hash House A Go Go is a great spot for a hearty breakfast, and their menu is naturally low on shellfish options. Just be sure to mention your allergy to the manager as soon as you're seated to ensure they take the necessary precautions in the kitchen. \n\nAre you here for a quick day trip, or will you be staying overnight with us?",
+      "sources": [
+        {
+          "category": "faq",
+          "source": "mohegan_sun.json",
+          "score": 0.644
+        },
+        {
+          "category": "amenities",
+          "source": "mohegan_sun.json",
+          "score": 0.608
+        }
+      ],
+      "elapsed_ms": 26558,
+      "error": null
+    }
+  ],
+  "elapsed_ms": 55791,
+  "error": null,
+  "completed": true
+}

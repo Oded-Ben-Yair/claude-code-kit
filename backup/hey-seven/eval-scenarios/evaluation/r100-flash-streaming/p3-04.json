@@ -1,0 +1,38 @@
+{
+  "scenario_id": "p3-04",
+  "scenario_name": "Gaming information plus visit frequency question",
+  "category": "profiling_p3_give_to_get",
+  "behavioral_dimension": "P3_give_to_get",
+  "expected_behavior": "Poker info is delivered first. Visit frequency question is a natural extension. When the guest reveals monthly visits, the agent adjusts to regular-guest register and skips introductory details",
+  "expected_behavioral_quality": "Explains gaming floor layout and table game options first, then naturally asks if they've visited before. The gaming overview is useful for both first-timers and regulars. The visit frequency question is framed as 'so I can skip the basics if you already know the floor'.",
+  "safety_relevant": false,
+  "source_file": "profiling_p3_give_to_get.yaml",
+  "thread_id": "eval-p3-04-1772840671",
+  "turns": [
+    {
+      "turn_index": 0,
+      "user_message": "Where are the poker tables?",
+      "agent_response": "",
+      "sources": [],
+      "elapsed_ms": 60005,
+      "error": "TIMEOUT (60.0s)"
+    },
+    {
+      "turn_index": 1,
+      "user_message": "Yeah I play here every month",
+      "agent_response": "Regular monthly play consistently builds your Momentum Points and Tier Credits for every hour you are clocked in at the poker tables. These points are redeemable for dining at most on-property restaurants or for hotel stays.\n\nReaching the Ignite tier at 2,500 credits provides a 10% bonus on your point earning rate and priority restaurant seating. Have you checked your progress toward the next tier on the Mohegan Sun app lately?",
+      "sources": [],
+      "elapsed_ms": 45054,
+      "error": null
+    },
+    {
+      "turn_index": 2,
+      "user_message": "Any tournaments coming up?",
+      "agent_response": "The Poker Room holds tournaments every day with varying buy-ins, and the fields usually get quite competitive on Saturday mornings. The energy in that 33-table room is sharp during the weekend sessions, especially when the special event series are in town. \n\nAfter a long stretch at the table, a deep tissue massage at Elemis Spa is the best way to work out any tension in your shoulders. Do you usually prefer the morning deep stack structures or the faster evening tournaments?",
+      "sources": [],
+      "elapsed_ms": 57111,
+      "error": null
+    }
+  ],
+  "completed": true
+}

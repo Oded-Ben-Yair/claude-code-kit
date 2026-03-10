@@ -1,0 +1,49 @@
+{
+  "scenario_id": "h4-02",
+  "scenario_name": "VIP guest signaling status expectations",
+  "category": "host_triangle_h4_h6_relationship",
+  "behavioral_dimension": "H4_personalized_recognition",
+  "expected_behavior": "Immediately registers Ascend status and calibrates all recommendations to VIP level. Leads with premium options, mentions priority reservations as a tier benefit, and handles the suite request with host authority. The guest feels their status is recognized and acted upon",
+  "expected_behavioral_quality": "Recognizes VIP signals (tier mention, high-end requests, 'usual' language) and immediately elevates the service register. Recommendations match the VIP's expected quality level without the guest needing to explicitly state their status.",
+  "safety_relevant": false,
+  "source_file": "host_triangle_h4_h6_relationship.yaml",
+  "thread_id": "eval-h4-02-1772971980",
+  "turns": [
+    {
+      "turn_index": 0,
+      "user_message": "I'm an Ascend member. Where should I eat tonight? Something nice.",
+      "agent_response": "An, as an Ascend member, you likely appreciate a refined atmosphere, and for a nice Sunday evening, Todd English\u2019s Tuscany in the Casino of the Sky is an exceptional choice. The wood-fired aroma from the open kitchen hits you the moment you walk in, setting the stage for signature dishes like their handmade pastas and flatbreads. \n\nThey are open tonight from 5:00 PM to 10:00 PM, and the dress code is business casual. Since it is a popular spot, reservations are highly recommended to ensure you get a table with a view of the nearby waterfall. Prices are generally in the $$$$ range, though please keep in mind that hours and pricing are subject to change. \n\nAfter your meal, you might enjoy catching a live performance at the Wolf Den nearby. How many people will be joining you for dinner tonight?",
+      "sources": [
+        {
+          "category": "restaurants",
+          "source": "mohegan_sun.json",
+          "score": 0.698
+        },
+        {
+          "category": "promotions",
+          "source": "mohegan_sun.json",
+          "score": 0.674
+        }
+      ],
+      "elapsed_ms": 32738,
+      "error": null
+    },
+    {
+      "turn_index": 1,
+      "user_message": "And I'll need a table for 6, so something with a private area",
+      "agent_response": "I've got you, An. For a group of six wanting an upscale, secluded vibe, TAO Asian Bistro is phenomenal. They have stunning semi-private dining alcoves that give your group an exclusive feel while still letting you take in the gorgeous architecture of the main dining room. Their miso-roasted black cod is an absolute standout, and ordering a few plates to share is the best way to experience the menu. \n\nSince I know you are looking for a table for six tonight, I can connect you with our host team to finalize the reservation and secure that private space. \n\nAlso, thanks for chatting with us! Here are $5 bonus tier points to use at Mohegan Sun. \n\nIf your group wants to keep the momentum going after the meal, our High Limit gaming areas offer premium drink service and a great atmosphere to round out the evening. \n\nWhat time were you hoping to sit down for dinner, and does anyone in your party have any dietary restrictions I should note for the chef?",
+      "sources": [],
+      "elapsed_ms": 77350,
+      "error": null
+    },
+    {
+      "turn_index": 2,
+      "user_message": "Perfect. Can you also check on suite availability for tonight?",
+      "agent_response": "I hear you \u2014 let me connect you directly with our host team so they can take care of this for you.",
+      "sources": [],
+      "elapsed_ms": 28458,
+      "error": null
+    }
+  ],
+  "completed": true
+}

@@ -1,0 +1,70 @@
+{
+  "scenario_id": "h6-01",
+  "scenario_name": "Guest had a bad dining experience",
+  "category": "host_triangle_h4_h6_relationship",
+  "behavioral_dimension": "H6_loss_recovery",
+  "expected_behavior": "Apologizes specifically for the wait time, acknowledges the price-point expectation. Offers a concrete alternative for tonight with a strong recommendation. Suggests mentioning the issue to the Momentum Desk for potential follow-up. Turns the complaint into a chance to demonstrate that the property cares",
+  "expected_behavioral_quality": "Takes full ownership of the negative experience. Does not make excuses or deflect. Offers a specific alternative for immediate recovery and a path to formal follow-up. The guest should leave the conversation feeling heard and confident that their next experience will be different.",
+  "safety_relevant": false,
+  "source_file": "host_triangle_h4_h6_relationship.yaml",
+  "thread_id": "eval-h6-01-1773038426",
+  "turns": [
+    {
+      "turn_index": 0,
+      "user_message": "We waited 45 minutes for our food at Tuscany last night. Totally unacceptable",
+      "agent_response": "I understand how frustrating that is, and you are absolutely right\u2014waiting 45 minutes for your meal at Tuscany is unacceptable. When you are expecting a flawless wood-fired dinner, the pacing needs to be perfect. \n\nI want to make sure this is addressed, and I can connect you with our host team to look into last night's service and make it right. I would love to help turn your experience around today. What kind of dining experience were you hoping to have tonight so we can ensure it goes perfectly?",
+      "sources": [
+        {
+          "category": "restaurants",
+          "source": "mohegan_sun.json",
+          "score": 0.666
+        },
+        {
+          "category": "property",
+          "source": "mohegan_sun.json",
+          "score": 0.62
+        },
+        {
+          "category": "faq",
+          "source": "mohegan_sun.json",
+          "score": 0.607
+        }
+      ],
+      "elapsed_ms": 66015,
+      "error": null
+    },
+    {
+      "turn_index": 1,
+      "user_message": "We almost walked out. It's not what you expect at that price point",
+      "agent_response": "You are completely right. When you are paying for premium dining, the service needs to flawlessly match that price point, and I do not blame you for almost walking out. \n\nI am making a direct note of this for our food and beverage directors so it is addressed immediately. Since my main focus is your hotel experience, I want to make sure the rest of your time on property feels exactly like the premium retreat you expect and deserve. \n\nAre you currently staying over in one of our towers with us, or did you drive in just for the evening?",
+      "sources": [
+        {
+          "category": "hotel",
+          "source": "mohegan_sun.json",
+          "score": 0.624
+        },
+        {
+          "category": "gaming",
+          "source": "mohegan_sun.json",
+          "score": 0.619
+        },
+        {
+          "category": "restaurants",
+          "source": "mohegan_sun.json",
+          "score": 0.599
+        }
+      ],
+      "elapsed_ms": 55156,
+      "error": null
+    },
+    {
+      "turn_index": 2,
+      "user_message": "So what would you suggest for tonight instead?",
+      "agent_response": "Let's completely change the pace tonight and make sure you get the flawless service you expect. I will have the host team set you up at Michael Jordan's Steak House. The pacing there is razor-sharp, and as a quick tip\u2014their warm garlic bread with blue cheese fondue is the best starter on the property. \n\nAfter you eat, the Wolf Den usually has great live music right in the center of the casino to keep the evening relaxed and enjoyable. \n\nHow many are in your party tonight so we can get this handled for you?",
+      "sources": [],
+      "elapsed_ms": 60993,
+      "error": null
+    }
+  ],
+  "completed": true
+}

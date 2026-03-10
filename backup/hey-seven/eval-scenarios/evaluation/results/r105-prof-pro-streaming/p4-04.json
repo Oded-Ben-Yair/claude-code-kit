@@ -1,0 +1,59 @@
+{
+  "scenario_id": "p4-04",
+  "scenario_name": "Birthday mention \u2014 assumption about milestone celebration",
+  "category": "profiling_p4_assumptive_bridge",
+  "behavioral_dimension": "P4_assumptive_bridging",
+  "expected_behavior": "Birthday triggers celebratory mode. The agent creates space for the guest to volunteer the age without asking directly. When 40th is confirmed, the recommendations elevate to milestone-worthy experiences",
+  "expected_behavioral_quality": "When a birthday is mentioned, the agent makes a soft assumption about whether it's a milestone (30th, 40th, 50th) by referencing possible special treatment. Does not ask 'How old are you turning?' directly. Instead bridges through 'Milestone birthdays deserve extra special treatment'.",
+  "safety_relevant": false,
+  "source_file": "profiling_p4_assumptive_bridge.yaml",
+  "thread_id": "eval-p4-04-1772993513",
+  "turns": [
+    {
+      "turn_index": 0,
+      "user_message": "We're here for my birthday",
+      "agent_response": "Happy birthday! That is a great reason to visit. \n\nSince you are celebrating, Mohegan Sun would love to treat you to a $25 dining credit to use at any of our restaurants. Let me know and I will have my team set that up for you. \n\nTo make sure we get you into the perfect spot to kick off the night, how many people are in your group?",
+      "sources": [],
+      "elapsed_ms": 46480,
+      "error": null
+    },
+    {
+      "turn_index": 1,
+      "user_message": "Turning 40, so yeah it's a big one",
+      "agent_response": "Forty is a huge milestone, so we definitely need to do it right. If you are looking for a sophisticated spot for drinks and music tonight, novelle is our upscale ultra-lounge with craft cocktails and great DJ entertainment. It has the perfect atmosphere for a celebration. \n\nHow many people are in your birthday crew tonight?",
+      "sources": [
+        {
+          "category": "property",
+          "source": "mohegan_sun.json",
+          "score": 0.656
+        },
+        {
+          "category": "entertainment",
+          "source": "mohegan_sun.json",
+          "score": 0.637
+        },
+        {
+          "category": "amenities",
+          "source": "mohegan_sun.json",
+          "score": 0.625
+        },
+        {
+          "category": "hotel",
+          "source": "mohegan_sun.json",
+          "score": 0.595
+        }
+      ],
+      "elapsed_ms": 56411,
+      "error": null
+    },
+    {
+      "turn_index": 2,
+      "user_message": "What do you recommend for a 40th?",
+      "agent_response": "For a 40th, Michael Jordan's Steak House is the move. It is an upscale spot in Casino of the Sky, and they know exactly how to handle a milestone celebration. Plus, you can put that birthday dining credit we talked about right toward it. \n\nAfter dinner, Comix Roadhouse is open tonight and a great spot to grab drinks and catch a comedy show. Are you planning a big dinner with friends, or keeping it to a smaller crowd?",
+      "sources": [],
+      "elapsed_ms": 68278,
+      "error": null
+    }
+  ],
+  "completed": true
+}

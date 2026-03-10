@@ -1,0 +1,496 @@
+diff --git a/OUTPUT_1_ARCHITECTURE_CODE_QUALITY_AUDIT.md b/OUTPUT_1_ARCHITECTURE_CODE_QUALITY_AUDIT.md
+new file mode 100644
+index 0000000000000000000000000000000000000000..ae1a82e292b4995787a5b3150fe3cddc9b6039f2
+--- /dev/null
++++ b/OUTPUT_1_ARCHITECTURE_CODE_QUALITY_AUDIT.md
+@@ -0,0 +1,99 @@
++# Output 1 — Architecture & Code Quality Audit
++
++Scope reviewed (static inspection): all files under `src/agent/` and `src/api/`, with call-trace anchored from `src/agent/graph.py` entry flow.
++
++## CRITICAL
++
++### 1) Router fail-safe can misclassify transient infra failures as `off_topic`, dropping valid guest requests
++- **Evidence:** `src/agent/nodes.py:414-427` catches broad `Exception` and forces `query_type="off_topic"`.
++- **Impact:** transient LLM/router outages can route legitimate property questions away from retrieval/specialists, harming B1/B2/B5 and conversion-sensitive flows.
++
++:::task-stub{title="Preserve property-QA fallback path when router infra fails"}
++In `src/agent/nodes.py` (`router_node`), split exception handling:
++1. Keep parse errors (`ValueError`, `TypeError`) on current fallback (`property_qa`, confidence 0.5).
++2. For transport/runtime errors, return a dedicated degraded route state (e.g., `query_type="property_qa"`, `router_confidence=0.0`, and `routing_degraded=True`) instead of `off_topic`.
++3. Update downstream logic (where `query_type` is consumed) to treat `routing_degraded=True` as "proceed with conservative retrieval + validation".
++4. Add regression tests in `tests/test_nodes.py` for router exception path asserting property-QA path is retained.
++:::
++
++### 2) Very large orchestration methods increase defect surface in production-critical path
++- **Evidence (SRP/size):**
++  - `src/agent/agents/_base.py:741-1422` `execute_specialist` (~682 LOC)
++  - `src/api/app.py:223-923` `create_app` (~701 LOC)
++  - `src/agent/compliance_gate.py:52-652` `compliance_gate_node` (~601 LOC)
++- **Impact:** difficult reasoning/testing for safety and handoff logic; higher regression risk.
++
++:::task-stub{title="Break monolithic orchestration functions into composable units"}
++Refactor without behavior change:
++1. In `src/agent/agents/_base.py`, extract helpers for prompt assembly, model selection, invocation, and post-processing/handoff writeback; keep `execute_specialist` as coordinator.
++2. In `src/api/app.py`, split `create_app` into `configure_middleware(app)`, `register_core_routes(app)`, `register_webhook_routes(app)`.
++3. In `src/agent/compliance_gate.py`, isolate each guardrail layer into explicit private helpers with typed return objects.
++4. Backfill focused tests for each extracted helper before/after refactor parity.
++:::
++
++## MAJOR
++
++### 3) Dispatch circuit-breaker accounting explicitly conflates some SDK `ValueError` availability failures with parse failures
++- **Evidence:** `src/agent/dispatch.py:324-330` comments acknowledge quota/auth wrapped as `ValueError` may not trip breaker.
++- **Impact:** CB health can be over-optimistic during partial outages.
++
++:::task-stub{title="Differentiate dispatch parse errors from availability failures for breaker health"}
++In `src/agent/dispatch.py` (`_route_to_specialist`):
++1. Add classifier helper for exception text/type to detect known availability failures (429/quota/auth/timeouts) even when surfaced as `ValueError`.
++2. For classified availability failures, call `await cb.record_failure()`.
++3. Keep true schema/JSON parse issues as non-breaker failures.
++4. Add tests in `tests/test_dispatch.py` covering both classes.
++:::
++
++### 4) One private function appears dead (no call sites)
++- **Evidence:** `_get_routed_llm` defined at `src/agent/nodes.py:274`; search found no callers in `src/` or `tests/`.
++- **Impact:** stale abstraction increases confusion around Flash→Pro routing path.
++
++:::task-stub{title="Remove or wire `_get_routed_llm` to eliminate dead path ambiguity"}
++Decide one path in `src/agent/nodes.py`:
++1. If obsolete, remove `_get_routed_llm` and any related comments.
++2. If intended, replace direct `_select_model` usage in dispatch/specialist flow with this helper and add tests proving actual use.
++3. Update docstrings around model routing to match final flow.
++:::
++
++### 5) Handoff summary model lacks explicit “stated vs inferred” confidence partition required by P9 scenarios
++- **Evidence:** `HandoffSummary` fields in `src/agent/behavior_tools/handoff.py:38-51` contain no confidence/source separation; builder emits flattened fields (`:236-297`).
++- **Impact:** receiving host may treat inferred data as factual; scenario intent mismatch for P9.
++
++:::task-stub{title="Add confidence/source labeling to structured handoff summaries"}
++In `src/agent/behavior_tools/handoff.py`:
++1. Extend `HandoffSummary` with two sections: `guest_stated_facts` and `agent_inferences`.
++2. Populate from `extracted_fields` plus heuristics used in conversation narrative.
++3. Keep backward-compatible `conversation_summary` but include source labels in both structured and prompt-formatted output.
++4. Add tests in `tests/test_handoff.py` and scenario-focused assertions in `tests/test_conversation_scenarios.py`.
++:::
++
++### 6) Broad exception handlers return generic failures in SSE/API webhook endpoints (diagnostics reduced)
++- **Evidence:**
++  - `src/agent/graph.py:667-675` generic SSE error response on all exceptions.
++  - `src/api/app.py:848-856`, `883-891` broad webhook catches.
++- **Impact:** safe for users, but operational triage lacks typed error signaling.
++
++:::task-stub{title="Introduce typed error mapping for SSE and webhook handlers"}
++1. Define typed exception buckets (validation, dependency timeout, upstream auth, unknown) in API layer.
++2. In `src/agent/graph.py` and webhook handlers, map buckets to structured problem codes while preserving safe user text.
++3. Include request_id/correlation_id in logs and response metadata where appropriate.
++4. Add unit tests in `tests/test_api.py` for each mapped bucket.
++:::
++
++## MINOR
++
++### 7) State/reducer correctness check — no reducer mismatch found in reviewed core fields
++- **Evidence:** reducer-backed fields in `src/agent/state.py` (`_merge_dicts`, `_append_unique`, `_keep_latest_str`, `_keep_max`, `_keep_truthy`) align with `_initial_state` parity enforcement in `src/agent/graph.py:379-390`.
++- **Result:** **NOT FOUND** for reducer wiring mismatch from current static review.
++
++### 8) Security review: deterministic normalization and layered guardrails are strong; one residual path remains
++- **Evidence:** robust normalization in `src/agent/guardrails.py:820-920`; semantic fallback logic in `:1193-1260`.
++- **Residual concern:** handoff narrative currently includes raw last user ask (`src/agent/behavior_tools/handoff.py:165-169`), which may carry sensitive details into downstream host-facing payload.
++
++:::task-stub{title="Minimize sensitive free-text in handoff narrative while preserving actionability"}
++In `src/agent/behavior_tools/handoff.py`:
++1. Redact contact-like patterns and high-risk PII from `last_ask` before insertion.
++2. Cap quote granularity further (intent summary preferred over verbatim quote).
++3. Add tests for phone/email/ID-like tokens to ensure redaction in handoff output.
++:::
+diff --git a/OUTPUT_2_BEHAVIORAL_QUALITY_GAP_ANALYSIS.md b/OUTPUT_2_BEHAVIORAL_QUALITY_GAP_ANALYSIS.md
+new file mode 100644
+index 0000000000000000000000000000000000000000..e6e05e4e1a718db52e0154d1037faa6d2f4d7286
+--- /dev/null
++++ b/OUTPUT_2_BEHAVIORAL_QUALITY_GAP_ANALYSIS.md
+@@ -0,0 +1,120 @@
++# Output 2 — Behavioral Quality Gap Analysis (B1–B10)
++
++Scenario basis: all 34 files in `tests/scenarios/` (250 scenarios). Behavioral dimensions identified from `behavioral_dimension` tags and `expected_behavioral_quality` text.
++
++## B1 — Knowledge Accuracy
++- **What scenarios test:** accurate, grounded property answers and non-hallucinated details (e.g., extraction/info scenarios and overall-quality prompts).
++- **What code does:** routes through retrieval/validation pipeline (`src/agent/nodes.py:435-489`, `532-632`) with fallback behavior.
++- **Gap:** router exception path can divert valid property questions to `off_topic` (`src/agent/nodes.py:414-427`), reducing factual grounding opportunities.
++- **Specific change:** preserve degraded `property_qa` routing on infra failures, then retrieve+validate.
++
++:::task-stub{title="Keep B1 grounding path active during router outages"}
++Update `router_node` in `src/agent/nodes.py` so runtime exceptions return degraded `property_qa` rather than `off_topic`.
++Add tests in `tests/test_nodes.py` that force router exceptions and assert retrieval node still executes.
++:::
++
++## B2 — Contextual Understanding
++- **What scenarios test:** carrying constraints/preferences across turns and addressing full multi-part asks.
++- **What code does:** merges extracted profile fields via reducer (`src/agent/state.py:38-78`) and injects profile context into specialist prompt (`src/agent/agents/_base.py:882-913`).
++- **Gap:** context injection is primarily prompt-level; no deterministic check ensures compound sub-questions are all covered.
++- **Specific change:** add post-generation checklist for detected compound asks before final response acceptance.
++
++:::task-stub{title="Add compound-question coverage check before response finalization"}
++In `src/agent/agents/_base.py`, detect multi-intent user turns (e.g., conjunction/question count heuristics) and require response sections for each detected sub-question.
++If incomplete, trigger one regeneration with explicit missing-subquestion feedback.
++Add tests in `tests/test_base_specialist.py` for 2–3 part questions.
++:::
++
++## B3 — Engagement Depth (priority)
++- **What scenarios test:** adaptive format shifts, explicit recovery on repeated confusion, concise/direct answers when requested (`tests/scenarios/behavioral_engagement.yaml`).
++- **What code does:** detects repeated questions and conversation phase (`src/agent/agents/_base.py:64-170`, `570-599`), plus prompt directives (`:982-1000`).
++- **Gap:** behavior is instruction-only; no deterministic enforcement of “acknowledge repetition + reformat answer” when repeated-question flag fires.
++- **Specific change:** add deterministic response post-processor for repeated-question cases.
++
++:::task-stub{title="Deterministically enforce repetition-recovery response pattern"}
++In `src/agent/agents/_base.py`, when `dynamics['repeated_question']` is true:
++1. Prefix with one concise acknowledgment.
++2. Enforce direct-format answer template (time/value first, no preamble).
++3. Limit response length and ban repeated prior phrasing signatures.
++Add tests in `tests/test_engagement.py` and scenario regression for `engagement-02/03`.
++:::
++
++## B4 — Cross-Domain Awareness (priority)
++- **What scenarios test:** natural cross-domain suggestions, “what else” diversification, itinerary synthesis (`tests/scenarios/behavioral_agentic.yaml`).
++- **What code does:** tracks `domains_discussed` in dispatch (`src/agent/dispatch.py:529-532`) and acknowledgment path suggests unexplored domains (`src/agent/nodes.py:1074-1121`); prompt nudges cross-domain behavior (`src/agent/agents/_base.py:1001-1009`).
++- **Gap:** deterministic cross-domain suggestion is mostly limited to greeting/acknowledgment branch, not general specialist responses.
++- **Specific change:** centralize post-response cross-domain policy in specialist execution output path.
++
++:::task-stub{title="Apply cross-domain suggestion policy to all specialist responses"}
++In `src/agent/agents/_base.py`, after model output generation:
++1. If guest asked open-ended continuation (`"what else"`, "anything more", etc.) and unexplored domains exist, append one concrete domain suggestion.
++2. Mark suggested domain in `domains_discussed` state output.
++3. Add tests in `tests/test_agents.py` and scenario checks for `agentic-10`.
++:::
++
++## B5 — Conversation Flow
++- **What scenarios test:** smooth progression, crisis-sensitive pivots, practical continuity.
++- **What code does:** state graph pipeline is explicit (`src/agent/graph.py`), with crisis and compliance routing.
++- **Gap:** some broad exception fallbacks generate generic “try again” responses that break flow continuity (`src/agent/dispatch.py:457-492`, `src/agent/graph.py:667-675`).
++- **Specific change:** include minimal context-aware fallback templates by query category.
++
++:::task-stub{title="Make fallback responses context-preserving by query category"}
++Add category-aware fallback text mapping in `src/agent/dispatch.py` and `src/agent/graph.py` error paths.
++Use `query_type`, `specialist_name`, and last user intent to avoid generic resets.
++Add tests for timeout and unexpected-exception fallbacks in `tests/test_dispatch.py`.
++:::
++
++## B6 — Persona Consistency
++- **What scenarios test:** stable host tone across turns.
++- **What code does:** persona reinjection threshold and style injection (`src/agent/agents/_base.py:58-61`, `923-932`, `1216+`).
++- **Gap:** fail-silent persona injection exception path (`:929-932`) means style can drop without corrective fallback.
++- **Specific change:** add deterministic default persona style when branding fetch fails.
++
++:::task-stub{title="Guarantee persona fallback style when branding lookup fails"}
++In `src/agent/agents/_base.py`, inside persona-style exception branch, append a minimal default tone/persona section instead of just logging.
++Add test to simulate `get_casino_profile` failure and assert persona guidance remains in prompt.
++:::
++
++## B7 — Safety Compliance
++- **What scenarios test:** crisis/injection/regulated-content safety behavior.
++- **What code does:** deterministic + semantic layered guardrails (`src/agent/guardrails.py`, `src/agent/compliance_gate.py`).
++- **Gap:** **NOT FOUND** for direct bypass in reviewed pathways.
++- **Specific change:** none required for immediate B7 hardening; continue regression coverage.
++
++## B8 — Multi-Turn Coherence
++- **What scenarios test:** memory and correction handling across turns.
++- **What code does:** reducers preserve/merge profile data (`src/agent/state.py`) and profile extraction updates.
++- **Gap:** no deterministic contradiction-check before sending response (e.g., vegetarian then steakhouse lead).
++- **Specific change:** add contradiction gate against key profile constraints.
++
++:::task-stub{title="Add contradiction check against extracted profile constraints"}
++Implement a pre-send validator in `src/agent/agents/_base.py` that checks output text against key extracted constraints (dietary, budget, accessibility).
++If violated, perform one regeneration with explicit constraint reminder.
++Add tests in `tests/test_profiling.py`/`tests/test_agents.py`.
++:::
++
++## B9 — Emotional Intelligence (priority)
++- **What scenarios test:** empathetic tone-shift accuracy for frustration/disappointment/crisis-adjacent turns.
++- **What code does:** sentiment detection in router (`src/agent/nodes.py:351-378`) and HEART escalation instructions in prompt (`src/agent/agents/_base.py:608-620`).
++- **Gap:** empathy pattern remains largely prompt-driven; no deterministic minimum empathy structure for high-distress non-crisis turns.
++- **Specific change:** enforce short empathy-first scaffold when `guest_sentiment in {frustrated, negative, grief}` and not crisis-blocked.
++
++:::task-stub{title="Enforce empathy-first response scaffold for distress sentiments"}
++In `src/agent/agents/_base.py`, add post-generation transformer:
++1. For distressed sentiments, require opening clause: acknowledge feeling.
++2. Then actionable next step.
++3. Then optional handoff offer if repeated frustration.
++Add targeted tests in `tests/test_sentiment.py` and `tests/scenarios/sentiment_shifts.yaml` harness.
++:::
++
++## B10 — Actionability
++- **What scenarios test:** concrete next-step guidance, not vague advice.
++- **What code does:** booking guidance exists (`src/agent/agents/_base.py:1011-1037`) and handoff/tooling exists.
++- **Gap:** actionability requirements are conditional (booking intent); non-booking recommendations can remain non-committal.
++- **Specific change:** require one explicit next action in recommendation responses.
++
++:::task-stub{title="Require explicit next-step CTA in recommendation responses"}
++In `src/agent/agents/_base.py`, add a post-check that recommendation responses include one actionable CTA (time, venue, or qualifying question).
++If missing, append concise CTA tied to current domain.
++Add tests in `tests/test_proactive_suggestion.py` and scenario smoke checks.
++:::
+diff --git a/OUTPUT_3_PROFILING_HOST_TRIANGLE_FIX_PLAN.md b/OUTPUT_3_PROFILING_HOST_TRIANGLE_FIX_PLAN.md
+new file mode 100644
+index 0000000000000000000000000000000000000000..d8ffea8b23651f36c452a9600a44fa0f7680a4d8
+--- /dev/null
++++ b/OUTPUT_3_PROFILING_HOST_TRIANGLE_FIX_PLAN.md
+@@ -0,0 +1,147 @@
++# Output 3 — Profiling & Host-Triangle Fix Plan (dimensions <5.0)
++
++Prioritized by impact-per-effort.
++
++## 1) P9 — Host Handoff Quality (score 2.7)
++**Root cause:** business-logic gap (handoff schema too shallow vs scenario expectations).
++
++**Evidence:**
++- `HandoffSummary` has no source-confidence partition (`src/agent/behavior_tools/handoff.py:38-51`).
++- Builder outputs flat summary only (`src/agent/behavior_tools/handoff.py:236-297`).
++- Triggering improved in `_base.py` (`:1398-1402`) but content depth remains limited.
++
++**Fix spec (before/after):**
++- **Before:**
++```python
++class HandoffSummary(BaseModel):
++    guest_name: str | None = None
++    profile_completeness: float = Field(default=0.0, ge=0.0, le=1.0)
++    conversation_summary: str = ""
++```
++- **After (proposed):**
++```python
++class HandoffSummary(BaseModel):
++    guest_name: str | None = None
++    profile_completeness: float = Field(default=0.0, ge=0.0, le=1.0)
++    guest_stated_facts: dict[str, Any] = Field(default_factory=dict)
++    agent_inferences: dict[str, Any] = Field(default_factory=dict)
++    next_actions: list[str] = Field(default_factory=list)
++    conversation_summary: str = ""
++```
++Populate these in `build_handoff_summary` using `extracted_fields`, repeated-question/risk signals, and domain context.
++
++**Expected impact:** +1.2 to +1.8 P9.
++
++**Flash→Pro dependency:** **No** (deterministic structure).
++
++:::task-stub{title="Upgrade handoff summary to confidence-partitioned host briefing"}
++Implement `guest_stated_facts`, `agent_inferences`, and `next_actions` in `src/agent/behavior_tools/handoff.py` and include them in `structured_summary` emitted from `src/agent/agents/_base.py`.
++Add tests for P9 scenarios requiring stated-vs-inferred distinction and action items.
++:::
++
++## 2) P8 — Profile Completeness (score 3.0)
++**Root cause:** extraction and scoring exist, but no deterministic minimum-field acquisition policy by turn budget.
++
++**Evidence:**
++- extraction+merge path in `src/agent/profiling.py:400-443`.
++- completeness computed (`src/agent/profiling.py:428-433`), but enforcement for missing foundation fields is not deterministic.
++
++**Fix spec:** add deterministic “missing foundation fields shortlist” generator that influences next profiling question selection when `completeness < threshold`.
++
++**Expected impact:** +1.0 to +1.4 P8.
++
++**Flash→Pro dependency:** **No**.
++
++:::task-stub{title="Drive profile completeness with deterministic missing-field targeting"}
++In `src/agent/profiling.py`, after completeness calculation, compute missing P8 foundation fields and store `profiling_targets` in state.
++In `src/agent/agents/_base.py`, prioritize question injection toward `profiling_targets` before generic follow-ups.
++Add tests verifying 3+ foundational fields captured within 3 turns in representative scenarios.
++:::
++
++## 3) H9 — Comp Strategy (score 2.0)
++**Root cause:** routing fix exists, but comp policy prompting is not guaranteed on non-comp specialist turns where comp intent appears late.
++
++**Evidence:**
++- comp-intent override in dispatch (`src/agent/dispatch.py:259-267`).
++- comp strategy engine exists (`src/agent/behavior_tools/comp_strategy.py`), but usage must rely on specialist path and state conditions.
++
++**Fix spec:** add lightweight secondary comp-intent check in specialist post-processing so late comp asks inject comp policy snippet even if primary route remained non-comp.
++
++**Expected impact:** +0.8 to +1.3 H9.
++
++**Flash→Pro dependency:** **No**.
++
++:::task-stub{title="Add late-turn comp-intent interception inside specialist execution"}
++In `src/agent/agents/_base.py`, inspect current user message for comp-trigger terms.
++If matched and current specialist != comp, append compact comp-policy guidance section from `behavior_tools/comp_strategy.py` before final response generation.
++Add tests for mixed-intent turns in `tests/test_dispatch.py` and `tests/test_comp_strategy.py`.
++:::
++
++## 4) P6 — Incentive Framing (score 3.1)
++**Root cause:** incentive engine is present but gated by completeness and rule triggers; low-completeness turns miss framing opportunities.
++
++**Evidence:**
++- incentive injection gated in `_base.py:1148-1161`.
++- rule catalog in `src/agent/incentives.py` (trigger-based thresholds).
++
++**Fix spec:** introduce “soft incentive preview” for medium-completeness states to frame benefit before full eligibility.
++
++**Expected impact:** +0.7 to +1.1 P6.
++
++**Flash→Pro dependency:** **No**.
++
++:::task-stub{title="Introduce soft incentive preview language below full eligibility threshold"}
++In `src/agent/incentives.py`, add helper returning non-committal benefit framing when completeness is between 0.30 and 0.50.
++Wire this helper into `_base.py` near current incentive section injection.
++Add tests ensuring privacy-safe, non-promissory phrasing.
++:::
++
++## 5) H6 — Rapport Depth (score 4.4)
++**Root cause:** rapport ladder exists but mostly prompt-driven; no deterministic multi-turn rapport progression guard.
++
++**Evidence:** rapport tooling in `src/agent/behavior_tools/rapport_ladder.py`; specialist prompt uses broad behavioral directives (`src/agent/agents/_base.py:989-1000`).
++
++**Fix spec:** deterministic rapport stage tracker in state with stage-specific micro-behaviors.
++
++**Expected impact:** +0.5 to +0.9 H6.
++
++**Flash→Pro dependency:** **Optional** (better with Pro, not required).
++
++:::task-stub{title="Track and enforce rapport stage progression across turns"}
++Add `rapport_stage` to `PropertyQAState` and compute it each turn from turn count + sentiment + engagement signals.
++Inject stage-specific response constraints (e.g., opening=orientation, mid=personalization, late=anticipatory service) in `_base.py`.
++Add tests in `tests/test_rapport_ladder.py` and scenario regressions.
++:::
++
++## 6) H10 — Lifetime Value (score 4.5)
++**Root cause:** LTV nudge tool exists, but nudges are not consistently tied to explicit next-step conversion actions.
++
++**Evidence:** `src/agent/behavior_tools/ltv_nudge.py` generates nudges with suppression logic; integration appears prompt-level rather than hard post-check.
++
++**Fix spec:** enforce “one conversion-safe next action” when LTV nudge is selected.
++
++**Expected impact:** +0.4 to +0.8 H10.
++
++**Flash→Pro dependency:** **No**.
++
++:::task-stub{title="Convert LTV nudges into explicit conversion-safe next actions"}
++In `_base.py` post-processing, when LTV nudge content is present, require one concrete CTA (time slot, host intro, or targeted recommendation).
++Add tests in `tests/test_ltv_nudge.py` for CTA presence and safety suppression sentiments.
++:::
++
++## 7) P1 — Natural Extraction (score 4.3)
++**Root cause:** extraction is LLM-driven but brittle to colloquial/implicit phrasing; fallback path quietly returns non-enriched state on exception.
++
++**Evidence:** profiling extraction call (`src/agent/profiling.py:391-398`) and broad fallback (`:567-580`).
++
++**Fix spec:** add deterministic regex/light-parser pre-pass for high-value entities (name, party size, occasion) before LLM extraction.
++
++**Expected impact:** +0.5 to +1.0 P1.
++
++**Flash→Pro dependency:** **No**.
++
++:::task-stub{title="Add deterministic pre-extraction pass for foundational profile entities"}
++Implement a light pre-parser in `src/agent/profiling.py` for name/party_size/occasion signals.
++Merge deterministic hits with LLM extraction output before completeness scoring.
++Add tests for slang/implicit phrasing in `tests/test_profiling.py` and `tests/test_behavioral_extraction.py`.
++:::
+diff --git a/OUTPUT_4_TEST_COVERAGE_SCENARIO_GAPS.md b/OUTPUT_4_TEST_COVERAGE_SCENARIO_GAPS.md
+new file mode 100644
+index 0000000000000000000000000000000000000000..2398584f82f88530b5afd1c10ac414f83a943900
+--- /dev/null
++++ b/OUTPUT_4_TEST_COVERAGE_SCENARIO_GAPS.md
+@@ -0,0 +1,106 @@
++# Output 4 — Test Coverage & Scenario Gaps
++
++## A) `tests/conftest.py` + 5 representative test files
++Reviewed: `tests/conftest.py`, `tests/test_dispatch.py`, `tests/test_profiling.py`, `tests/test_full_graph_e2e.py`, `tests/test_api.py`, `tests/test_conversation_scenarios.py`.
++
++### Findings
++
++1. **Most tests are mock-heavy, behavior-light at generation layer**
++- Evidence:
++  - `tests/test_conversation_scenarios.py:7` explicitly states mocked LLMs.
++  - `tests/test_full_graph_e2e.py:8-10` states all LLM calls mocked.
++  - `tests/test_profiling.py` extensively patches `_get_whisper_llm` / `ainvoke`.
++- Gap: strong determinism for CI, but weak signal on prompt+model behavior drift.
++
++:::task-stub{title="Add contract tests that validate prompt/output shape without full live-model dependency"}
++Create a test layer using canned model transcripts (record/replay fixtures) for representative flows (engagement, profiling, comp).
++Keep CI deterministic while validating realistic response structures beyond pure mocks.
++:::
++
++2. **Coverage percentages by module are NOT FOUND in repository artifacts**
++- Evidence: no `coverage.xml`, `.coverage`, or `htmlcov` report files found.
++- Gap: cannot verify which modules are below 80% from static repo content alone.
++
++:::task-stub{title="Persist machine-readable coverage reports in CI artifacts"}
++Update CI to produce and upload `coverage.xml` and per-module summary.
++Add a quality gate that flags `src/agent/*` and `src/api/*` modules under 80%.
++:::
++
++3. **E2E exists but limited explicit assertions for full graph + weak dimensions (P8/P9/H9/H6)**
++- Evidence: full graph tests present (`tests/test_full_graph_e2e.py`) but weak-dimension scenario assertions are concentrated in scenario harness and keyword checks.
++- Gap: no dedicated end-to-end assertions for structured handoff quality/confidence partition and comp strategy correctness in mixed-intent dialogs.
++
++:::task-stub{title="Add full-graph E2E assertions for weak-dimension outputs"}
++Add new tests that run `build_graph() -> chat()` with mocked LLMs and assert:
++1) `handoff_request.structured_summary` richness,
++2) comp strategy framing on mixed-intent queries,
++3) profile completeness growth over turns.
++:::
++
++## B) Scenario corpus coverage (all 34 YAML files)
++
++### Dimension counts from `behavioral_dimension`
++- **Behavioral:** B1=10, B2=16, B3=16, B4=17, B5=15, B6=5, B7=5, B8=15, B9=5, B10=5.
++- **Profiling:** P1=10, P2=10, P3=5, P4=8, P5=5, **P6=4**, **P7=4**, **P8=2**, **P9=3**, P10=5.
++- **Host Triangle:** **H1=4, H2=3, H3=3, H4=4, H5=3, H6=3, H7=3, H8=3, H9=2, H10=2**.
++
++### Gaps
++
++4. **Underrepresented weak dimensions (especially P8/P9/H9/H6/H10)**
++- Gap: scenario density is lowest exactly where scores are weakest.
++
++:::task-stub{title="Rebalance scenario suite toward weak dimensions with minimum-count policy"}
++Set a policy floor of at least 6 scenarios for each weak dimension (P8, P9, H9, H6, H10).
++Add new YAML files or extend existing ones to reach floor counts.
++:::
++
++5. **Metadata inconsistency: some scenarios omit `behavioral_dimension` and `expected_behavioral_quality`**
++- Evidence: `tests/scenarios/sentiment_shifts.yaml` entries lack those fields.
++- Gap: these scenarios cannot be auto-mapped to scoring dimensions cleanly.
++
++:::task-stub{title="Normalize scenario schema across all YAML files"}
++Backfill missing `behavioral_dimension` and `expected_behavioral_quality` in `sentiment_shifts.yaml`.
++Add schema validation test to fail on missing required keys.
++:::
++
++6. **Missing edge-case depth**
++- Cultural/multilingual exist, but notable shortages remain in:
++  - accessibility beyond wheelchair mention,
++  - code-switching within a turn,
++  - assistive-tech interaction constraints,
++  - nuanced privacy opt-out with continued personalization.
++
++:::task-stub{title="Add edge-case scenario pack for accessibility, code-switching, and privacy-control continuity"}
++Create a new scenario file covering:
++1) low-vision/screen-reader style requests,
++2) mixed-language turns,
++3) privacy-opt-out then continue service without degradation,
++4) comp/handoff requests with accessibility constraints.
++:::
++
++7. **Some scenarios claim deep quality but evaluate mostly via keyword presence**
++- Evidence: scenario harness in `tests/test_conversation_scenarios.py` builds mock responses around expected keywords.
++- Gap: can pass lexical checks while missing quality criteria like confidence partition (P9) or emotional calibration (B9).
++
++:::task-stub{title="Upgrade scenario assertions from keyword-only to structure-and-intent checks"}
++Extend scenario test harness to support per-turn structural validators (e.g., must include acknowledgment + action + qualifier) and JSON-like handoff fields.
++Keep keywords as baseline, but add qualitative rule checks for weak dimensions.
++:::
++
++## C) 10 high-impact new scenarios (prioritized for P8, P9, H9, H6)
++
++1. **P8:** “3-turn rapid profile build from implicit cues” (name implied via signature, party size implied by plural pronouns).
++2. **P8:** “Correction overwrite” (party size changes mid-conversation; later recs must reflect update).
++3. **P9:** “High-frustration handoff with stated-vs-inferred partition” (must output both sections).
++4. **P9:** “Actionable host brief for anniversary + dietary + budget” (must include next-actions, not just summary).
++5. **H9:** “Late-turn comp ask after dining thread” (mixed intent; comp strategy must still trigger).
++6. **H9:** “Comp denial with dignity + alternative value path” (no hard refusal tone, offer tier-building next step).
++7. **H6:** “Rapport progression over 6 turns” (tone evolves from orienting to personalized proactive service).
++8. **H6:** “Repair rapport after repeated misunderstanding” (explicit acknowledgment + adapted format + trust rebuild).
++9. **P8+P9:** “Privacy-minimal guest still receives useful handoff” (respect opt-out but provide actionable summary from allowed data).
++10. **H9+H10:** “Comp + retention bundle” (tier-appropriate comp plus non-pushy return-visit hook).
++
++:::task-stub{title="Implement 10 weak-dimension scenarios with enriched assertions"}
++Add the above 10 scenarios to `tests/scenarios/` (new YAML or extend existing weak-dimension files).
++Enhance `tests/test_conversation_scenarios.py` to support scenario-level assertion plugins for handoff structure, empathy scaffold, and comp framing.
++:::

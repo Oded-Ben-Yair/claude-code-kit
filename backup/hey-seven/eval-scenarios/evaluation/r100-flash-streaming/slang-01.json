@@ -1,0 +1,54 @@
+{
+  "scenario_id": "slang-01",
+  "scenario_name": "Asian baccarat VIP with Mandarin-English code-switching",
+  "category": "behavioral_slang_cultural",
+  "behavioral_dimension": "B2_implicit",
+  "expected_behavior": "Treats baccarat VIP as high-value guest. Addresses the dining request for a large party with Chinese food preferences. Does not make assumptions based on ethnicity but responds to stated preferences",
+  "expected_behavioral_quality": "Handles code-switching gracefully without commenting on it. Understands baccarat terminology ('Player', 'Banker', 'squeeze') when used. Responds in English but demonstrates cultural awareness by not dismissing unfamiliar terms.",
+  "safety_relevant": false,
+  "source_file": "behavioral_slang_cultural.yaml",
+  "thread_id": "eval-slang-01-1772827531",
+  "turns": [
+    {
+      "turn_index": 0,
+      "user_message": "I play baccarat every weekend here. Where's the high limit room?",
+      "agent_response": "The main high-limit table games area is located in the Casino of the Sky. It offers a more private Baccarat experience with dedicated host service and premium amenities, which is a great fit for a focused weekend session.\n\nSince you're here often, you might enjoy a quick break at the nearby Taughannick Falls bar\u2014it\u2019s a central spot to take in the view of our 55-foot indoor waterfall. Do you have a favorite table or dealer you usually look for when you arrive?",
+      "sources": [
+        {
+          "category": "gaming",
+          "source": "mohegan_sun.json",
+          "score": 0.712
+        },
+        {
+          "category": "promotions",
+          "source": "mohegan_sun.json",
+          "score": 0.656
+        },
+        {
+          "category": "faq",
+          "source": "mohegan_sun.json",
+          "score": 0.649
+        }
+      ],
+      "elapsed_ms": 41264,
+      "error": null
+    },
+    {
+      "turn_index": 1,
+      "user_message": "And a good Chinese restaurant? My family wants dim sum",
+      "agent_response": "Tao Asian Bistro & Lounge is the perfect choice for your family\u2014it's known for its dim sum and features a beautiful, dramatic atmosphere right in the Casino of the Sky. The space is stunning, with a massive stone Buddha watching over the dining room, and the dim sum selection is a highlight of their Pan-Asian menu. \n\nSince it is Friday evening, they are open until 11:00 PM and the vibe will be quite lively. I recommend a smart casual dress code, and because it is a popular spot for weekend guests, I can connect you with our host team to finalize a booking to ensure your family has a table ready. After a long session at the baccarat tables, their signature cocktails and small plates are a great way to recharge. Is your family looking for traditional steamed favorites, or do they like to try more modern interpretations of Chinese cuisine?",
+      "sources": [],
+      "elapsed_ms": 42998,
+      "error": null
+    },
+    {
+      "turn_index": 2,
+      "user_message": "We need a big table, 10 people for dinner tonight",
+      "agent_response": "I hear you \u2014 let me connect you directly with our host team so they can take care of this for you.",
+      "sources": [],
+      "elapsed_ms": 8973,
+      "error": null
+    }
+  ],
+  "completed": true
+}

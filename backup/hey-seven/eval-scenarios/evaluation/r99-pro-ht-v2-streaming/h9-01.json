@@ -1,0 +1,86 @@
+{
+  "scenario_id": "h9-01",
+  "scenario_name": "Guest open to suggestions for a special evening",
+  "category": "host_triangle_h7_h10_revenue",
+  "behavioral_dimension": "H9_revenue_aware_steering",
+  "expected_behavior": "Reads 'no budget concerns' and 'really special' as clear premium signals. Leads with the highest-tier dining option and builds a full VIP evening. Does not mention budget alternatives. The steering feels like a host sharing their genuine top picks, not an upsell script",
+  "expected_behavioral_quality": "When a guest signals they want something special, the agent steers toward premium experiences that match the occasion. The premium suggestion feels like expert guidance, not upselling. The agent reads context cues (occasion, group, tone) to calibrate the recommendation tier.",
+  "safety_relevant": false,
+  "source_file": "host_triangle_h7_h10_revenue.yaml",
+  "thread_id": "eval-h9-01-1772807439",
+  "turns": [
+    {
+      "turn_index": 0,
+      "user_message": "We want to do something really special tonight. No budget concerns. What's the best?",
+      "agent_response": "For a premier experience, I'd suggest starting with dinner at Michael Jordan's Steak House in the Casino of the Sky. They serve USDA Prime steaks in an elegant setting that feels worlds away from the gaming floor. Afterward, you can head over to novelle, our upscale ultra-lounge, for craft cocktails and a sophisticated nightlife atmosphere.\n\nAn insider tip: Michael Jordan's has an extensive wine cellar that's widely considered the best on the property. Are you celebrating a specific occasion tonight, or just looking to enjoy the best of what we have to offer?",
+      "sources": [
+        {
+          "category": "entertainment",
+          "source": "mohegan_sun.json",
+          "score": 0.705
+        },
+        {
+          "category": "restaurants",
+          "source": "mohegan_sun.json",
+          "score": 0.68
+        }
+      ],
+      "elapsed_ms": 34178,
+      "error": null
+    },
+    {
+      "turn_index": 1,
+      "user_message": "Michael Jordan's sounds perfect. What about wine?",
+      "agent_response": "I apologize, but I'm having trouble generating a response right now. Please try again, or  at [PHONE].",
+      "sources": [
+        {
+          "category": "restaurants",
+          "source": "mohegan_sun.json",
+          "score": 0.717
+        },
+        {
+          "category": "faq",
+          "source": "mohegan_sun.json",
+          "score": 0.653
+        },
+        {
+          "category": "property",
+          "source": "mohegan_sun.json",
+          "score": 0.631
+        }
+      ],
+      "elapsed_ms": 42295,
+      "error": null
+    },
+    {
+      "turn_index": 2,
+      "user_message": "And after dinner? We want the full VIP experience",
+      "agent_response": "I apologize, but I'm having trouble generating a response right now. Please try again, or  at [PHONE].",
+      "sources": [
+        {
+          "category": "entertainment",
+          "source": "mohegan_sun.json",
+          "score": 0.696
+        },
+        {
+          "category": "promotions",
+          "source": "mohegan_sun.json",
+          "score": 0.667
+        },
+        {
+          "category": "gaming",
+          "source": "mohegan_sun.json",
+          "score": 0.681
+        },
+        {
+          "category": "restaurants",
+          "source": "mohegan_sun.json",
+          "score": 0.659
+        }
+      ],
+      "elapsed_ms": 46304,
+      "error": null
+    }
+  ],
+  "completed": true
+}

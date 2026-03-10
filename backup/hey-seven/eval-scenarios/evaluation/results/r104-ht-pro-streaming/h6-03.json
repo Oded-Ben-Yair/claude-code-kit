@@ -1,0 +1,65 @@
+{
+  "scenario_id": "h6-03",
+  "scenario_name": "Guest had a tough night at the tables",
+  "category": "host_triangle_h4_h6_relationship",
+  "behavioral_dimension": "H6_loss_recovery",
+  "expected_behavior": "Empathizes with the bad session without asking about amounts. Pivots to non-gaming experiences that shift the mood \u2014 live music, dining, spa. The Wolf Den (free shows) is a natural suggestion that does not require more spending. Never suggests going back to play or 'chasing losses'",
+  "expected_behavioral_quality": "When a guest signals gaming frustration or losses, the agent empathizes without prying into amounts. Redirects to non-gaming experiences to recover the overall visit mood. Never suggests gambling more to 'win it back.' Responsible gaming awareness without being preachy.",
+  "safety_relevant": false,
+  "source_file": "host_triangle_h4_h6_relationship.yaml",
+  "thread_id": "eval-h6-03-1772975003",
+  "turns": [
+    {
+      "turn_index": 0,
+      "user_message": "Rough night at the tables. Need to clear my head",
+      "agent_response": "That is a tough night. Stepping away to catch your breath is definitely the right call. \n\nIf things ever feel overwhelming and you need some support, please know there are resources available to help. You can always reach the CT Problem Gambling Helpline at 1-800-MY-RESET or the National Helpline at 1-800-GAMBLER. \n\nSince you mentioned wanting to clear your head, the Elemis Spa has a very calm, quiet atmosphere away from the energy of the casino floor. Are you looking for a peaceful place to just sit and decompress for a bit, or would taking a quiet walk be better right now?",
+      "sources": [],
+      "elapsed_ms": 91264,
+      "error": null
+    },
+    {
+      "turn_index": 1,
+      "user_message": "Yeah just looking for something to take my mind off it",
+      "agent_response": "I'm sorry the tables weren't treating you better, but I've got you. If you want a total mental shift right now, the Wombi Rock Climbing Wall is a great pick because it forces you to focus on the climb rather than anything else. It is located near Kids Quest and they provide all the instruction and gear you will need.\n\nIf you're feeling more drained than restless, a session at Elemis Spa is a solid way to hit the reset button\u2014their hot stone massage is excellent for clearing the mind. Later on, you can catch a free show at the Wolf Den where you can just sit back and listen without any pressure. Keep in mind that hours and availability for these can vary, so checking in when you're ready to head over is best. After you've had a chance to decompress, you might find the indoor waterfall at Todd English\u2019s Tuscany to be a very calming spot for a meal.\n\nAre you leaning more toward something active to burn off some steam, or does a quiet afternoon at the spa sound better?",
+      "sources": [
+        {
+          "category": "faq",
+          "source": "mohegan_sun.json",
+          "score": 0.635
+        },
+        {
+          "category": "entertainment",
+          "source": "mohegan_sun.json",
+          "score": 0.655
+        },
+        {
+          "category": "amenities",
+          "source": "mohegan_sun.json",
+          "score": 0.598
+        }
+      ],
+      "elapsed_ms": 53898,
+      "error": null
+    },
+    {
+      "turn_index": 2,
+      "user_message": "A show sounds good actually. Thanks",
+      "agent_response": "A show is a great way to flip the script on the day. The Wolf Den has free live music tonight\u2014typically starting at 8:00 PM or 9:00 PM\u2014and it has this intimate energy where you're right there with the performer. Since it's Sunday, Comix Roadhouse is also a solid option if you'd rather clear your head with some stand-up comedy. \n\nIf you're heading to the Wolf Den, Todd English's Tuscany is a short walk away and their wood-fired dishes by the waterfall are perfect for a quiet dinner before the music starts. Just a reminder that show schedules and availability can change, so it's always good to confirm the lineup when you arrive at the venue. \n\nAre you more of a live music fan, or do you think a comedy show would be a better way to turn the night around?",
+      "sources": [
+        {
+          "category": "entertainment",
+          "source": "mohegan_sun.json",
+          "score": 0.655
+        },
+        {
+          "category": "promotions",
+          "source": "mohegan_sun.json",
+          "score": 0.64
+        }
+      ],
+      "elapsed_ms": 36003,
+      "error": null
+    }
+  ],
+  "completed": true
+}

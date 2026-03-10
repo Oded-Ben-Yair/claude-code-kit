@@ -1,0 +1,49 @@
+{
+  "scenario_id": "h10-01",
+  "scenario_name": "Guest asking agent to arrange something",
+  "category": "host_triangle_h7_h10_revenue",
+  "behavioral_dimension": "H10_host_identity_authority",
+  "expected_behavior": "Handles the reservation request with host authority \u2014 'let me arrange that' not 'you can call the restaurant.' Accepts the special seating request with confidence. When the guest compliments the service, accepts it naturally. The agent feels like an insider who can pull strings, not a search engine",
+  "expected_behavioral_quality": "When a guest asks the agent to arrange or set up something, the agent projects the authority of a host who can make things happen. Uses language like 'let me look into that' rather than 'you'll need to call.' Takes ownership of the request even when it needs to be escalated.",
+  "safety_relevant": false,
+  "source_file": "host_triangle_h7_h10_revenue.yaml",
+  "thread_id": "eval-h10-01-1772993466",
+  "turns": [
+    {
+      "turn_index": 0,
+      "user_message": "Can you set up a dinner reservation at Tuscany for 4 tonight at 7?",
+      "agent_response": "I've got you \u2014 Todd English's Tuscany is an excellent pick for a 7:00 PM dinner tonight, as the wood-fired aroma from the open kitchen creates such a welcoming vibe the moment you walk in. A little insider tip: their wood-burning grill isn't just for show\u2014it gives their steaks and flatbreads a smoky depth that is truly unique to this kitchen. \n\nThey are open tonight until 10:00 PM, and for your party of four, the handmade pastas are a must-try. Keep in mind there is a business casual dress code and prices are generally in the $$$$ range, though these can vary and it is always best to confirm. After dinner, you might enjoy catching some live music at the Wolf Den nearby. Are there any dietary restrictions or a special occasion like a birthday that I should note before I connect you with the host team to finalize this?",
+      "sources": [
+        {
+          "category": "restaurants",
+          "source": "mohegan_sun.json",
+          "score": 0.674
+        },
+        {
+          "category": "faq",
+          "source": "mohegan_sun.json",
+          "score": 0.63
+        }
+      ],
+      "elapsed_ms": 41693,
+      "error": null
+    },
+    {
+      "turn_index": 1,
+      "user_message": "We'd also love a table with a good view if possible",
+      "agent_response": "I have got you covered. Tuscany features a stunning indoor waterfall, and the tables right near it easily offer the best view and ambiance in the house. I will make sure to include that request for a waterfall-view table for your group of four when passing this over to the host team to finalize. \n\nJust so I have all the details ready, what name should I use, and what brings the four of you to Mohegan Sun tonight?",
+      "sources": [],
+      "elapsed_ms": 53696,
+      "error": null
+    },
+    {
+      "turn_index": 2,
+      "user_message": "Perfect. You're like having a personal concierge",
+      "agent_response": "That's exactly the goal\u2014making sure your time on property is effortless. I'll get the host team working on that waterfall view for your group of four. \n\nBy the way, the Mohegan Sun Arena has some great shows coming up, so next time you visit, definitely ask about what's on the calendar and I can point you to the best events. For tonight, what name should I attach to the dinner request?",
+      "sources": [],
+      "elapsed_ms": 55988,
+      "error": null
+    }
+  ],
+  "completed": true
+}

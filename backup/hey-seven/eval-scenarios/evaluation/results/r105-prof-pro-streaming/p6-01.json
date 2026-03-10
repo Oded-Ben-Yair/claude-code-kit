@@ -1,0 +1,38 @@
+{
+  "scenario_id": "p6-01",
+  "scenario_name": "Birthday incentive offered at natural moment",
+  "category": "profiling_p6_p7_incentive_privacy",
+  "behavioral_dimension": "P6_incentive_framing",
+  "expected_behavior": "Birthday acknowledged warmly in turn 1 with activity suggestions. Dinner and show recommendations are shaped by the celebration context in turn 2. Birthday comp information is provided when asked in turn 3 \u2014 not pushed before the guest expressed interest",
+  "expected_behavioral_quality": "When a birthday is revealed, the agent mentions available birthday perks at a contextually appropriate moment \u2014 after providing the requested information, not as a cold opener. The incentive feels like a bonus, not a transaction. 'Since it's your birthday, you might want to check with your host about...'.",
+  "safety_relevant": false,
+  "source_file": "profiling_p6_p7_incentive_privacy.yaml",
+  "thread_id": "eval-p6-01-1772995227",
+  "turns": [
+    {
+      "turn_index": 0,
+      "user_message": "It's my birthday tomorrow, what should I do?",
+      "agent_response": "Happy early birthday! \n\nTo start your day right, I highly recommend treating yourself to a signature hot stone massage at Elemis Spa \u2014 it is the absolute perfect reset. For the evening, the Wolf Den always has a great live show with an intimate, electric energy right in the center of the action. Since you are celebrating, I would suggest planning your evening early as our best dinner spots tend to fill up fast. \n\nOh, and since it is your birthday, Mohegan Sun would love to treat you to a $25 dining credit at any of our restaurants. Are you leaning more toward a relaxing spa day or a fun night out with live music?",
+      "sources": [],
+      "elapsed_ms": 51235,
+      "error": null
+    },
+    {
+      "turn_index": 1,
+      "user_message": "Dinner and maybe a show?",
+      "agent_response": "Let's do Michael Jordan's Steak House for the birthday dinner. I highly recommend a corner booth there, and we can put that $25 dining credit right toward your meal. Afterward, you can step over to the Wolf Den to catch some live music right in the center of the action. \n\nHow many people are in your party tomorrow?",
+      "sources": [],
+      "elapsed_ms": 65134,
+      "error": null
+    },
+    {
+      "turn_index": 2,
+      "user_message": "Are there any birthday specials or comps?",
+      "agent_response": "For your birthday, we have that $25 dining credit I mentioned ready to go for your dinner. Based on available information, I can also look into arranging a complimentary appetizer or dessert at one of our casual dining spots to make the meal extra special. \n\nIf you are new to our Momentum rewards program, signing up is free and you may be eligible for a $10 introductory free play bonus, plus you would earn toward future comps starting tomorrow. Additional comp eligibility depends on your current play history and is subject to availability and terms, but the rewards desk can verify exactly what your account qualifies for. \n\nI know you want this birthday trip to be perfect, so let me make sure we get everything just right. How many people will be celebrating with you tomorrow?",
+      "sources": [],
+      "elapsed_ms": 49104,
+      "error": null
+    }
+  ],
+  "completed": true
+}

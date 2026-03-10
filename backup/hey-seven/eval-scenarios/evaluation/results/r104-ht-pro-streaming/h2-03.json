@@ -1,0 +1,86 @@
+{
+  "scenario_id": "h2-03",
+  "scenario_name": "Guest mentions they switched to competitor",
+  "category": "host_triangle_h1_h3_development",
+  "behavioral_dimension": "H2_reactivation_win_back",
+  "expected_behavior": "Does not badmouth Foxwoods or Gordon Ramsay. Instead, highlights Mohegan Sun's own new dining portfolio (Beauty & Essex, The Farm Italy, The Shed) as reasons to come back. Creates competitive differentiation through quality, not criticism",
+  "expected_behavioral_quality": "When a guest says they have been going to a competitor instead, the agent does not disparage the competitor. Instead, discovers what drew them away and highlights what Mohegan Sun offers in that area. Creates a 'come back and see' moment around genuine improvements.",
+  "safety_relevant": false,
+  "source_file": "host_triangle_h1_h3_development.yaml",
+  "thread_id": "eval-h2-03-1772971172",
+  "turns": [
+    {
+      "turn_index": 0,
+      "user_message": "I've been going to Foxwoods mostly. They opened some cool new restaurants",
+      "agent_response": "It is always a treat to discover a new favorite spot, and if you are looking for a meal that truly stands out here at Mohegan Sun, Todd English's Tuscany is the place to be this evening. The wood-fired aroma hits you the moment you walk in, and their handmade pastas have a velvety texture that shows off the craft of a celebrity chef kitchen. Fun fact\u2014the culinary team there uses a specialized wood-burning oven to ensure every dish gets that perfect, smoky finish you can only get from traditional Italian methods. \n\nThey open at 5:00 PM today in the Casino of the Sky and usually recommend business casual attire and a reservation to secure a prime table near the indoor waterfall. Since you enjoy exploring new culinary scenes, are you looking for a high-energy atmosphere tonight or something a bit more intimate and quiet!",
+      "sources": [
+        {
+          "category": "faq",
+          "source": "mohegan_sun.json",
+          "score": 0.712
+        },
+        {
+          "category": "restaurants",
+          "source": "mohegan_sun.json",
+          "score": 0.719
+        },
+        {
+          "category": "gaming",
+          "source": "mohegan_sun.json",
+          "score": 0.683
+        },
+        {
+          "category": "hotel",
+          "source": "mohegan_sun.json",
+          "score": 0.672
+        }
+      ],
+      "elapsed_ms": 37572,
+      "error": null
+    },
+    {
+      "turn_index": 1,
+      "user_message": "Yeah their Gordon Ramsay place is really good",
+      "agent_response": "If you appreciate the flair of a celebrity chef, Bobby Flay's Bar Americain here in the Casino of the Earth is our standout spot for bold, regional flavors. The menu is inspired by American brasserie classics but infused with Bobby\u2019s signature Southwest spice\u2014the crunch and heat in his dishes are legendary. It is open today from 11:30 AM until 10:00 PM, and while it is great for a casual lunch, I'd suggest a reservation if you're coming for dinner in your smart casual attire.\n\nInsider tip: Bobby Flay is known for his love of bold textures, so I suggest trying any dish that features his signature spice rubs or sauces, as they really tie the whole meal together. Please keep in mind that hours and prices may vary, so it's best to confirm with the property.\n\nSince you are here today, you might enjoy the live music at the Wolf Den nearby after you eat; it is right in the heart of the Casino of the Earth and always has a great energy. Do you usually prefer a lively bar atmosphere for your meals, or are you looking for a more formal dining room experience?",
+      "sources": [
+        {
+          "category": "restaurants",
+          "source": "mohegan_sun.json",
+          "score": 0.66
+        }
+      ],
+      "elapsed_ms": 36577,
+      "error": null
+    },
+    {
+      "turn_index": 2,
+      "user_message": "Hmm those do sound worth trying",
+      "agent_response": "If you're looking for a legendary taste of Connecticut for lunch today, **Frank Pepe's Pizzeria Napoletana** in the Casino of the Earth is a must-visit. The char from the coal-fired oven gives that thin crust a perfect crunch that guests travel from all over the state to experience. They are open right now until 10:00 PM, and since it\u2019s casual, you can just walk right in without a reservation. \n\nTheir white clam pie is a national icon, but honestly, even a simple tomato pie there is something special because they've been perfecting that recipe since 1925. Hours and prices can vary, so it is always good to check in with the property once you arrive. By the way, the Mohegan Sun Arena has some great shows coming up\u2014I can share what's on the calendar if you're interested! I've got you on all the details, and I can connect you with our host team if you'd like to finalize a plan for your visit. \n\nAre you more of a classic pepperoni fan, or are you adventurous enough to try the famous white clam pie?",
+      "sources": [
+        {
+          "category": "entertainment",
+          "source": "mohegan_sun.json",
+          "score": 0.644
+        },
+        {
+          "category": "restaurants",
+          "source": "mohegan_sun.json",
+          "score": 0.647
+        },
+        {
+          "category": "promotions",
+          "source": "mohegan_sun.json",
+          "score": 0.626
+        },
+        {
+          "category": "faq",
+          "source": "mohegan_sun.json",
+          "score": 0.614
+        }
+      ],
+      "elapsed_ms": 37708,
+      "error": null
+    }
+  ],
+  "completed": true
+}

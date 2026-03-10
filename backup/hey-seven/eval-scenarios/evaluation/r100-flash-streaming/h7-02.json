@@ -1,0 +1,70 @@
+{
+  "scenario_id": "h7-02",
+  "scenario_name": "Hotel guest looking for daytime activities",
+  "category": "host_triangle_h7_h10_revenue",
+  "behavioral_dimension": "H7_cross_selling_wallet_share",
+  "expected_behavior": "Builds a full day arc: morning at the pool, afternoon spa, shopping at The Shops, then dinner and evening entertainment. Each suggestion flows naturally from the previous one. The guest feels like the property has a full day's worth of experiences, not just a casino with a hotel attached",
+  "expected_behavioral_quality": "When a hotel guest asks about daytime activities, the agent introduces spa, dining, and entertainment as a full-day experience. The cross-sell creates a vision of a resort day, not just a list of things to do.",
+  "safety_relevant": false,
+  "source_file": "host_triangle_h7_h10_revenue.yaml",
+  "thread_id": "eval-h7-02-1772835236",
+  "turns": [
+    {
+      "turn_index": 0,
+      "user_message": "We're staying at the Sky Tower tonight. What should we do during the day?",
+      "agent_response": "The Sky Tower offers some of the best panoramic views of the Thames River valley to wake up to. During the day, I'd suggest visiting the Elemis Spa at the Earth Tower for a relaxing treatment; it opens daily at 9:00 AM and is perfect for unwinding. Alternatively, the Shops at Mohegan Sun are great for a casual stroll if you're looking to explore the property's unique boutiques.\n\nPro tip\u2014the glass-enclosed walkway between the towers is a quiet spot to take in the architecture and get your bearings. For dinner later, Ballo Italian Restaurant is a standout choice for housemade pasta in a beautiful, high-energy setting. Do you usually prefer a packed schedule, or are you looking for a more laid-back visit?",
+      "sources": [
+        {
+          "category": "hotel",
+          "source": "mohegan_sun.json",
+          "score": 0.692
+        },
+        {
+          "category": "amenities",
+          "source": "mohegan_sun.json",
+          "score": 0.675
+        },
+        {
+          "category": "restaurants",
+          "source": "mohegan_sun.json",
+          "score": 0.673
+        }
+      ],
+      "elapsed_ms": 41967,
+      "error": null
+    },
+    {
+      "turn_index": 1,
+      "user_message": "The spa sounds nice. Anything else before dinner?",
+      "agent_response": "If you're looking for something after your spa session, Mandara Spa is another great option that features a steam room and sauna for a full Balinese-inspired relaxation experience. For some pre-dinner energy, the Wolf Den usually has live music starting in the late afternoon or early evening, and the atmosphere there is always electric.\n\nInsider tip\u2014the lounge area at novelle opens early on Saturday evenings and is a fantastic spot for a craft cocktail in a more sophisticated, upscale setting. Since you're planning for dinner, I can also suggest some of our late-night spots if you're not ready for the night to end after your meal. Would you like me to find out more about the specific live music lineup at the Wolf Den for tomorrow?",
+      "sources": [
+        {
+          "category": "amenities",
+          "source": "mohegan_sun.json",
+          "score": 0.689
+        },
+        {
+          "category": "entertainment",
+          "source": "mohegan_sun.json",
+          "score": 0.671
+        },
+        {
+          "category": "faq",
+          "source": "mohegan_sun.json",
+          "score": 0.65
+        }
+      ],
+      "elapsed_ms": 34319,
+      "error": null
+    },
+    {
+      "turn_index": 2,
+      "user_message": "Great, and where should we eat for dinner?",
+      "agent_response": "For your Saturday dinner, Ballo Italian Restaurant is a standout choice that perfectly captures the energy of the Casino of the Sky. The atmosphere is inspired by an Italian cathedral with stunning stonework and soaring arches, making it a very sophisticated spot for housemade pastas and exceptional Italian wines. They are open from 5:00 PM to 10:00 PM tomorrow, and since it is a popular weekend destination, I highly recommend securing a table in advance.\n\nThe dress code there is smart casual, which fits perfectly with the refined yet high-energy vibe of the room. I can certainly connect you with our host team to finalize a booking if that sounds like the right fit for your evening. Are there any specific dietary needs or a favorite type of cuisine I should keep in mind while we finalize your plans?\n\nIf you are looking for entertainment afterward, the Mohegan Sun Arena often has major headliners on Saturday nights that are just a short walk from the restaurant.",
+      "sources": [],
+      "elapsed_ms": 47713,
+      "error": null
+    }
+  ],
+  "completed": true
+}

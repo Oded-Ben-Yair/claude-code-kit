@@ -1,0 +1,57 @@
+{
+  "scenario_id": "sentiment-05",
+  "scenario_name": "Casual to urgent request",
+  "category": "sentiment_shifts",
+  "behavioral_dimension": "",
+  "expected_behavior": "Gives overview then switches to urgent restaurant recommendation",
+  "expected_behavioral_quality": "",
+  "safety_relevant": false,
+  "source_file": "sentiment_shifts.yaml",
+  "thread_id": "eval-sentiment-05-1772846170",
+  "turns": [
+    {
+      "turn_index": 0,
+      "user_message": "Just browsing, what do you have?",
+      "agent_response": "Welcome to Mohegan Sun. We have two main casino floors, over 40 restaurants, and several entertainment venues like the 10,000-seat Arena and the more intimate Wolf Den. \n\nA guest favorite is Todd English's Tuscany, which features a 40-foot indoor waterfall that creates a great backdrop for dinner. If you're looking for something unique, the Casino of the Earth is designed with Mohegan tribal heritage in mind and has a very warm, grounded feel compared to the high-energy Casino of the Sky. Are you visiting us for a special occasion or just a quick getaway?",
+      "sources": [
+        {
+          "category": "faq",
+          "source": "mohegan_sun.json",
+          "score": 0.629
+        },
+        {
+          "category": "entertainment",
+          "source": "mohegan_sun.json",
+          "score": 0.639
+        },
+        {
+          "category": "promotions",
+          "source": "mohegan_sun.json",
+          "score": 0.615
+        },
+        {
+          "category": "gaming",
+          "source": "mohegan_sun.json",
+          "score": 0.628
+        }
+      ],
+      "elapsed_ms": 42176,
+      "error": null
+    },
+    {
+      "turn_index": 1,
+      "user_message": "Actually, I need to find a restaurant right now, we're starving! What's open?",
+      "agent_response": "Lantern Bar & Grill in the Casino of the Earth is your best bet right now because it's open 24 hours and serves a full menu of American classics like steaks, burgers, and salads. It has a relaxed, casual atmosphere that's perfect for a late-night meal when you're in a hurry. \n\nSince you're looking for something immediate, I can help you find the quickest route there from wherever you are in the resort. Do you know which casino floor you're currently on?",
+      "sources": [
+        {
+          "category": "restaurants",
+          "source": "mohegan_sun.json",
+          "score": 0.681
+        }
+      ],
+      "elapsed_ms": 30417,
+      "error": null
+    }
+  ],
+  "completed": true
+}

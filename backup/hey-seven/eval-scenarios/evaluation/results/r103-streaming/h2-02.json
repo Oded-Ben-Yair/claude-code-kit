@@ -1,0 +1,86 @@
+{
+  "scenario_id": "h2-02",
+  "scenario_name": "Guest references a bad past experience",
+  "category": "host_triangle_h1_h3_development",
+  "behavioral_dimension": "H2_reactivation_win_back",
+  "expected_behavior": "Takes the complaint seriously without being defensive. Apologizes specifically for the wait time. Offers a concrete alternative for this visit and suggests mentioning the issue to the Momentum Desk for follow-up. Turns the complaint into a chance to demonstrate that things are different now",
+  "expected_behavioral_quality": "When a guest references a negative experience, the agent acknowledges it specifically, investigates without being defensive, and reframes the next visit as a fresh start. Does not minimize the complaint or rush past it.",
+  "safety_relevant": false,
+  "source_file": "host_triangle_h1_h3_development.yaml",
+  "thread_id": "eval-h2-02-1772950508",
+  "turns": [
+    {
+      "turn_index": 0,
+      "user_message": "Last time I was here the service at the steakhouse was awful. Took forever to get seated",
+      "agent_response": "I'm sorry your last visit started with a frustrating wait; that's not the standard we aim for here. For a much more seamless dinner tonight, Michael Jordan's Steak House in the Casino of the Sky is my top recommendation for USDA Prime cuts and professional service. \n\nThey open at 5:00 PM today, and since they highly recommend reservations for their business casual dining room, it's the best way to ensure your table is waiting for you. The price range is $$$$ and the quality of their fresh seafood and steaks is truly the gold standard on the property. Are you more of a traditional ribeye fan or do you usually lean toward a leaner cut like the filet mignon? \n\nAfter dinner, a visit to the Wolf Den for some live music is a great way to keep the evening going.",
+      "sources": [
+        {
+          "category": "restaurants",
+          "source": "mohegan_sun.json",
+          "score": 0.66
+        },
+        {
+          "category": "property",
+          "source": "mohegan_sun.json",
+          "score": 0.637
+        },
+        {
+          "category": "faq",
+          "source": "mohegan_sun.json",
+          "score": 0.641
+        }
+      ],
+      "elapsed_ms": 40241,
+      "error": null
+    },
+    {
+      "turn_index": 1,
+      "user_message": "Yeah it kind of ruined the whole evening honestly",
+      "agent_response": "I hear you\u2014a rough start to dinner can definitely throw off the whole vibe of the night, but I've got you. To make sure this trip is a complete turnaround, I'd suggest catching a set at the Wolf Den for free live music tonight; because it is first-come, first-served, you can just walk in and soak up that electric energy without worrying about a reservation list. \n\nIf you would rather leave that past stress behind entirely, a signature treatment at Elemis Spa is a world-class way to hit the reset button. Their hot stone massage is legendary for melting away tension and making the rest of the world disappear for a while. Are you more of a live music fan, or does a quiet spa morning sound more like your speed? After you have had a chance to unwind, you might enjoy heading over to the Casino of the Sky to see the planetarium dome\u2014it is a great way to transition into the evening.",
+      "sources": [
+        {
+          "category": "entertainment",
+          "source": "mohegan_sun.json",
+          "score": 0.618
+        },
+        {
+          "category": "faq",
+          "source": "mohegan_sun.json",
+          "score": 0.602
+        }
+      ],
+      "elapsed_ms": 43590,
+      "error": null
+    },
+    {
+      "turn_index": 2,
+      "user_message": "So what would you actually recommend instead?",
+      "agent_response": "Tuscany, waterfall table, 6:30 PM. The service is sharp and the atmosphere is a complete reset from your last experience. I'll flag this for the host team so they can ensure your table is ready the moment you arrive. Are you visiting for a specific occasion or just a quick getaway?",
+      "sources": [
+        {
+          "category": "faq",
+          "source": "mohegan_sun.json",
+          "score": 0.666
+        },
+        {
+          "category": "entertainment",
+          "source": "mohegan_sun.json",
+          "score": 0.638
+        },
+        {
+          "category": "amenities",
+          "source": "mohegan_sun.json",
+          "score": 0.633
+        },
+        {
+          "category": "promotions",
+          "source": "mohegan_sun.json",
+          "score": 0.606
+        }
+      ],
+      "elapsed_ms": 42013,
+      "error": null
+    }
+  ],
+  "completed": true
+}

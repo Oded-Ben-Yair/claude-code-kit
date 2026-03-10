@@ -1,0 +1,91 @@
+{
+  "scenario_id": "h1-04",
+  "scenario_name": "Couple exploring for a weekend getaway",
+  "category": "host_triangle_h1_h3_development",
+  "behavioral_dimension": "H1_proactive_value_discovery",
+  "expected_behavior": "Builds a full couples weekend itinerary covering spa, dining, entertainment, and hotel. Creates a vision that makes the property feel like a destination, not just a casino. Plants seeds for future visits by mentioning seasonal events or upcoming shows",
+  "expected_behavioral_quality": "Identifies the couple dynamic and weekend getaway context. Discovers what kind of experience they want (relaxation, adventure, romance) and builds a multi-activity itinerary that creates emotional anchors for return visits.",
+  "safety_relevant": false,
+  "source_file": "host_triangle_h1_h3_development.yaml",
+  "thread_id": "eval-h1-04-1772970766",
+  "turns": [
+    {
+      "turn_index": 0,
+      "user_message": "My girlfriend and I are thinking about a weekend at Mohegan Sun. What's it like?",
+      "agent_response": "You are looking at a full-scale resort experience with everything from high-energy gaming to a world-class spa. For a weekend for two, I'd suggest staying in the Sky Tower for the best views of the Thames River. It puts you right in the heart of the property while offering a bit of a retreat from the floor.\n\nPro tip: Head to the Casino of the Sky to see the planetarium dome. It is one of the largest indoor planetariums in the world and creates a great atmosphere for a walk through the shops. After you settle in, I suggest dinner at Tuscany\u2014the waterfall table is the best seat in the house for a first night. Are you two celebrating a special occasion or just looking for a quick getaway!",
+      "sources": [
+        {
+          "category": "faq",
+          "source": "mohegan_sun.json",
+          "score": 0.732
+        },
+        {
+          "category": "property",
+          "source": "mohegan_sun.json",
+          "score": 0.737
+        },
+        {
+          "category": "hotel",
+          "source": "mohegan_sun.json",
+          "score": 0.712
+        },
+        {
+          "category": "amenities",
+          "source": "mohegan_sun.json",
+          "score": 0.7
+        }
+      ],
+      "elapsed_ms": 47719,
+      "error": null
+    },
+    {
+      "turn_index": 1,
+      "user_message": "We want a mix of relaxation and fun. Not just gambling",
+      "agent_response": "For the relaxation side, I have got you covered with a visit to Elemis Spa. Their hot stone massage is a signature treatment that is perfect for a reset after your arrival. When you are ready for the fun, the Wolf Den offers an electric energy where you are right there with the performers in an intimate lounge setting\u2014it is a great spot for live music without the scale of a stadium show. \n\nFor a higher-energy late night, Avalon Nightclub has a great vibe on Friday and Saturday nights starting at 10:00 PM with top-tier sound and lighting. If you enjoy being active, we also have a luxury bowling alley at Cyber Quest and Kids Quest that adds a bit of nostalgia to the evening. Since you are looking for a mix, would you prefer a late-night show or are you more of a relax-by-the-pool type of couple?",
+      "sources": [
+        {
+          "category": "faq",
+          "source": "mohegan_sun.json",
+          "score": 0.707
+        },
+        {
+          "category": "gaming",
+          "source": "mohegan_sun.json",
+          "score": 0.694
+        },
+        {
+          "category": "entertainment",
+          "source": "mohegan_sun.json",
+          "score": 0.678
+        }
+      ],
+      "elapsed_ms": 48934,
+      "error": null
+    },
+    {
+      "turn_index": 2,
+      "user_message": "That sounds like a perfect weekend, thanks",
+      "agent_response": "I'm glad that sounds like a good fit for you both. One last insider tip\u2014Novelle is our ultra-lounge that offers craft drinks and an upscale vibe for a post-show cocktail on the weekends. Would you like me to look into the specific headliners performing at the Arena during the weekend you're planning to visit?",
+      "sources": [
+        {
+          "category": "entertainment",
+          "source": "mohegan_sun.json",
+          "score": 0.648
+        },
+        {
+          "category": "property",
+          "source": "mohegan_sun.json",
+          "score": 0.638
+        },
+        {
+          "category": "promotions",
+          "source": "mohegan_sun.json",
+          "score": 0.606
+        }
+      ],
+      "elapsed_ms": 37353,
+      "error": null
+    }
+  ],
+  "completed": true
+}

@@ -1,0 +1,102 @@
+{
+  "id": "p4-07",
+  "name": "First-time visitor \u2014 assumption about tour wrong (returning after years)",
+  "source_file": "profiling_p4_assumptive_bridge.yaml",
+  "category": "profiling_p4_assumptive_bridge",
+  "behavioral_dimension": "P4_assumptive_bridging",
+  "expected_behavior": "Initial assumption about being a first-timer is softly held. When corrected to a returning regular, pivots to highlighting what has changed. The 'welcome back' feels genuine, not performative",
+  "expected_behavioral_quality": "When the guest seems unfamiliar, softly suggests a property overview. When corrected ('I used to come all the time'), immediately abandons the newcomer register and shifts to a 'welcome back, here's what's changed' posture. Does not over-apologize.",
+  "safety_relevant": false,
+  "turns": [
+    {
+      "turn_index": 0,
+      "user_message": "Wow, this place looks different",
+      "agent_response": "It has certainly evolved over the years. The Earth Tower is our newest hotel addition and features a very contemporary, cutting-edge design compared to the original tribal-themed areas. \n\nIf you're looking for a hearty breakfast while you re-orient yourself, Hash House A Go Go in the Casino of the Earth opens at 8:00 AM and is famous for its massive portions. How long has it been since your last visit?",
+      "sources": [
+        {
+          "category": "hotel",
+          "source": "mohegan_sun.json",
+          "score": 0.653
+        },
+        {
+          "category": "gaming",
+          "source": "mohegan_sun.json",
+          "score": 0.636
+        },
+        {
+          "category": "entertainment",
+          "source": "mohegan_sun.json",
+          "score": 0.643
+        },
+        {
+          "category": "restaurants",
+          "source": "mohegan_sun.json",
+          "score": 0.643
+        }
+      ],
+      "elapsed_ms": 31610,
+      "error": null
+    },
+    {
+      "turn_index": 1,
+      "user_message": "Oh I used to come here every month, just haven't been in 5 years",
+      "agent_response": "Welcome back. Five years is a significant gap, and you'll find several new additions like novelle, which is an upscale lounge that combines dining and gaming in a more intimate setting than the main floors. \n\nMany of our staples like Todd English's Tuscany are still guest favorites for a reliable, high-quality dinner. Are you planning to spend most of your time on the gaming floor or looking for more of a resort experience with dining and shows?",
+      "sources": [
+        {
+          "category": "entertainment",
+          "source": "mohegan_sun.json",
+          "score": 0.641
+        },
+        {
+          "category": "gaming",
+          "source": "mohegan_sun.json",
+          "score": 0.613
+        },
+        {
+          "category": "restaurants",
+          "source": "mohegan_sun.json",
+          "score": 0.61
+        },
+        {
+          "category": "property",
+          "source": "mohegan_sun.json",
+          "score": 0.612
+        }
+      ],
+      "elapsed_ms": 46921,
+      "error": null
+    },
+    {
+      "turn_index": 2,
+      "user_message": "What's new since I was last here?",
+      "agent_response": "TAO Asian Bistro & Nightclub and Novelle are two of the biggest additions you'll notice in the Casino of the Sky. TAO is a high-energy spot known for its pan-Asian menu and striking 16-foot Quan Yin statue, while Novelle offers a more intimate, upscale lounge setting with its own table games and craft cocktails.\n\nFor a change of pace, we also added the Elemis Spa in the Earth Tower, which focuses on modern skincare and express treatments. Since it has been a few years, are you looking to explore these newer dining spots or revisit some of your old favorites?",
+      "sources": [
+        {
+          "category": "hotel",
+          "source": "mohegan_sun.json",
+          "score": 0.661
+        },
+        {
+          "category": "entertainment",
+          "source": "mohegan_sun.json",
+          "score": 0.655
+        },
+        {
+          "category": "gaming",
+          "source": "mohegan_sun.json",
+          "score": 0.63
+        },
+        {
+          "category": "amenities",
+          "source": "mohegan_sun.json",
+          "score": 0.645
+        }
+      ],
+      "elapsed_ms": 25011,
+      "error": null
+    }
+  ],
+  "elapsed_ms": 103544,
+  "error": null,
+  "completed": true
+}

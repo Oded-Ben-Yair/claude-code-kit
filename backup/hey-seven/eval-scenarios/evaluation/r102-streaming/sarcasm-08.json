@@ -1,0 +1,71 @@
+{
+  "scenario_id": "sarcasm-08",
+  "scenario_name": "Passive-aggressive timing complaint",
+  "category": "behavioral_sarcasm",
+  "behavioral_dimension": "B1_sarcasm",
+  "expected_behavior": "Reads passive-aggressive 'no rush' as urgent frustration. Prioritizes solving the dining need immediately. When tone escalates to explicit in turn 3, provides a direct single recommendation",
+  "expected_behavioral_quality": "Recognizes 'no rush' and 'whenever you get around to it' as sarcastic urgency signals. Treats the request as high-priority despite the polite surface. Responds quickly and directly without mirroring the passive aggression.",
+  "safety_relevant": false,
+  "source_file": "behavioral_sarcasm.yaml",
+  "thread_id": "eval-sarcasm-08-1772920872",
+  "turns": [
+    {
+      "turn_index": 0,
+      "user_message": "No rush, but we've been waiting for our dinner reservation for about an hour now",
+      "agent_response": "I understand how frustrating it is to wait an hour past your reservation time. For immediate service, Lantern Bar & Grill in the Casino of the Earth is open 24 hours and serves American classics like burgers and steaks in a casual setting with no reservation required. I've got you\u2014if you tell me which restaurant you are at, I can help you get this resolved with the host team. Which restaurant are you currently waiting for?",
+      "sources": [
+        {
+          "category": "entertainment",
+          "source": "mohegan_sun.json",
+          "score": 0.626
+        },
+        {
+          "category": "restaurants",
+          "source": "mohegan_sun.json",
+          "score": 0.617
+        },
+        {
+          "category": "faq",
+          "source": "mohegan_sun.json",
+          "score": 0.624
+        }
+      ],
+      "elapsed_ms": 58063,
+      "error": null
+    },
+    {
+      "turn_index": 1,
+      "user_message": "Oh take your time, it's not like we're hungry or anything",
+      "agent_response": "I completely understand the frustration, especially when you are hungry and just want to sit down. Let's skip the wait and get you eating right away. \n\nI've got you covered with an immediate alternative: Lantern Bar & Grill in the Casino of the Earth is open 24 hours, requires no reservations, and serves a full menu of steaks, burgers, and American favorites. You can walk right in and get seated. \n\nAre you currently close to the Casino of the Earth so you can head right over?",
+      "sources": [
+        {
+          "category": "restaurants",
+          "source": "mohegan_sun.json",
+          "score": 0.616
+        },
+        {
+          "category": "faq",
+          "source": "mohegan_sun.json",
+          "score": 0.632
+        }
+      ],
+      "elapsed_ms": 49047,
+      "error": null
+    },
+    {
+      "turn_index": 2,
+      "user_message": "Just tell me where to go eat NOW",
+      "agent_response": "Head straight to Lantern Bar & Grill in the Casino of the Earth. It is open 24 hours, requires no reservations, and serves a full menu of steaks, burgers, and salads for about $20 to $40 per person. After you've had a bite, the Wolf Den is right nearby and usually has live music going late into the night. Do you prefer a booth or a table for a more comfortable meal?",
+      "sources": [
+        {
+          "category": "restaurants",
+          "source": "mohegan_sun.json",
+          "score": 0.656
+        }
+      ],
+      "elapsed_ms": 35594,
+      "error": null
+    }
+  ],
+  "completed": true
+}

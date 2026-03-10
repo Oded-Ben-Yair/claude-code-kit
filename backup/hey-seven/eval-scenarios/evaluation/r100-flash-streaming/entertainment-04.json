@@ -1,0 +1,67 @@
+{
+  "scenario_id": "entertainment-04",
+  "scenario_name": "Full entertainment overview",
+  "category": "entertainment",
+  "behavioral_dimension": "",
+  "expected_behavior": "Provides non-gaming activity overview then specific location",
+  "expected_behavioral_quality": "",
+  "safety_relevant": false,
+  "source_file": "entertainment.yaml",
+  "thread_id": "eval-entertainment-04-1772831441",
+  "turns": [
+    {
+      "turn_index": 0,
+      "user_message": "What is there to do besides gambling?",
+      "agent_response": "Right now, the Wolf Den is likely in the middle of a performance, as they host free nightly shows with national acts in an intimate setting that feels electric. \n\nIf you're looking for something tomorrow, The Shops at Mohegan Sun features over 40 retail stores and boutiques starting at 10:00 AM. Pro tip: since the Wolf Den is a complimentary venue with no tickets required, it's a great spot to catch a show on a whim. Before the music starts, Todd English's Tuscany is a short walk away and offers a great atmosphere for dinner. Are you more interested in catching a live performance or doing some shopping while you're here?",
+      "sources": [
+        {
+          "category": "faq",
+          "source": "mohegan_sun.json",
+          "score": 0.712
+        },
+        {
+          "category": "amenities",
+          "source": "mohegan_sun.json",
+          "score": 0.688
+        },
+        {
+          "category": "gaming",
+          "source": "mohegan_sun.json",
+          "score": 0.674
+        },
+        {
+          "category": "entertainment",
+          "source": "mohegan_sun.json",
+          "score": 0.677
+        }
+      ],
+      "elapsed_ms": 55258,
+      "error": null
+    },
+    {
+      "turn_index": 1,
+      "user_message": "Where is the spa located?",
+      "agent_response": "The Elemis Spa is located in the Earth Tower, while the Mandara Spa is our award-winning full-service sanctuary. Both have closed for the evening, but they open daily at 9:00 AM.\n\nAn insider tip for you: the Elemis Spa is excellent if you are looking for express services to refresh before a night out, while Mandara is the place to go for a deep reset in their steam room and sauna. I can help you look at the specific treatment menus for either location, and then I can connect you with our host team to finalize the booking. Just keep in mind that spa hours and pricing may change, so confirming when you arrive is always a good idea. \n\nSince the spas are finished for the day, would you like to hear about the live music currently playing at the Wolf Den?",
+      "sources": [
+        {
+          "category": "amenities",
+          "source": "mohegan_sun.json",
+          "score": 0.696
+        },
+        {
+          "category": "property",
+          "source": "mohegan_sun.json",
+          "score": 0.664
+        },
+        {
+          "category": "faq",
+          "source": "mohegan_sun.json",
+          "score": 0.656
+        }
+      ],
+      "elapsed_ms": 42186,
+      "error": null
+    }
+  ],
+  "completed": true
+}

@@ -1,0 +1,49 @@
+{
+  "scenario_id": "p3-03",
+  "scenario_name": "Spa information plus companion question",
+  "category": "profiling_p3_give_to_get",
+  "behavioral_dimension": "P3_give_to_get",
+  "expected_behavior": "Full spa overview provided before asking who's attending. When 'sister' is mentioned, pivots to duo-friendly services without making assumptions about the relationship dynamic",
+  "expected_behavioral_quality": "Provides spa details (services, hours, pricing context) first, then asks who they'll be visiting with. The spa info is actionable on its own. The companion question is framed as helping recommend couples treatments, group packages, or solo relaxation.",
+  "safety_relevant": false,
+  "source_file": "profiling_p3_give_to_get.yaml",
+  "thread_id": "eval-p3-03-1772840530",
+  "turns": [
+    {
+      "turn_index": 0,
+      "user_message": "Tell me about the spa",
+      "agent_response": "You've come to the right place for a reset, especially since both of our spas open at 9:00 AM tomorrow morning. We actually have two distinct spa experiences on the property depending on what kind of energy you're looking for. \n\nThe Mandara Spa is our award-winning, full-service retreat inspired by Balinese healing traditions. It features a tranquil relaxation lounge, steam room, and sauna, making it ideal if you want to spend a few hours truly disconnecting. If you're looking for something more modern or are on the go, the Elemis Spa at Earth Tower specializes in premium skincare and express services. Let me help you narrow down a treatment, as I can connect you with our host team to finalize a booking for you. \n\nA quick insider tip: the relaxation lounge at Mandara is one of the most peaceful spots on the property, and I highly recommend arriving a little early to enjoy the atmosphere before your appointment starts. Since the spas are located near our luxury hotel towers, they're the perfect way to transition into a night of dining or a show at the Arena. Are you thinking of a solo escape or a couples experience?",
+      "sources": [],
+      "elapsed_ms": 56299,
+      "error": null
+    },
+    {
+      "turn_index": 1,
+      "user_message": "It would be for me and my sister",
+      "agent_response": "A sister's getaway is the perfect excuse for a bit of pampering. Since you\u2019ll be visiting the spa together, you might want to consider which tower fits your vibe best\u2014the Mandara Spa is located in the Sky Tower, while the Elemis Spa is right in the Earth Tower. \n\nFor the two of you, our Deluxe Rooms with two queen beds provide 450 square feet of space and floor-to-ceiling windows, which makes for a bright and inviting retreat. If you really want to treat yourselves, the Junior Suites offer 650 square feet and include an expanded bathroom with a soaking tub that is ideal for winding down after your treatments. Deluxe rooms typically start at $169 per night, while Junior Suites start around $299, though I'd suggest confirming the specific rates for your stay as they can vary by season. \n\nSince you'll likely be arriving with luggage, just a reminder that check-in is typically between 3:00 PM and 4:00 PM, and our 24-hour front desk will have everything ready for you whenever you're set to settle in. After a relaxing afternoon, Todd English's Tuscany is just a short walk away and offers a beautiful atmosphere for a sister's dinner. Would you prefer a room with a view of the Thames River or the rolling Connecticut hills?",
+      "sources": [
+        {
+          "category": "hotel",
+          "source": "mohegan_sun.json",
+          "score": 0.645
+        },
+        {
+          "category": "faq",
+          "source": "mohegan_sun.json",
+          "score": 0.613
+        }
+      ],
+      "elapsed_ms": 30309,
+      "error": null
+    },
+    {
+      "turn_index": 2,
+      "user_message": "A couples massage would be fun",
+      "agent_response": "That sounds like a perfect afternoon\u2014a couples massage is a fantastic way for sisters to relax together in the same treatment suite. Let me help you with that by looking at our two main options. \n\nElemis Spa at Earth Tower specifically features dedicated couples experiences with their premium skincare treatments, while Mandara Spa provides a full-service Balinese-inspired setting that includes access to their steam room and sauna. Mandara stays open until 8:00 PM, which gives you a bit more time to lounge after your service. I can connect you with our host team to finalize the booking and check on the specific availability for a shared room. \n\nA quick insider tip: if you choose Mandara, arriving 30 minutes early lets you fully enjoy the relaxation lounge, which is one of the most serene spots on the property. After you're both completely refreshed, the Wolf Den often has great live music in the evening that doesn't require a ticket, making for a very easy transition into the night. Next time you're planning a visit, feel free to reach out ahead of time\u2014I can help set things up so your spa times are locked in exactly when you want them. \n\nWould you prefer a morning session to start the day or something later in the afternoon?",
+      "sources": [],
+      "elapsed_ms": 53230,
+      "error": null
+    }
+  ],
+  "completed": true
+}

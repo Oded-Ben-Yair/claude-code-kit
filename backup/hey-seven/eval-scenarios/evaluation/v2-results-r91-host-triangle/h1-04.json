@@ -1,0 +1,92 @@
+{
+  "id": "h1-04",
+  "name": "Couple exploring for a weekend getaway",
+  "source_file": "host_triangle_h1_h3_development.yaml",
+  "category": "host_triangle_h1_h3_development",
+  "behavioral_dimension": "H1_proactive_value_discovery",
+  "expected_behavior": "Builds a full couples weekend itinerary covering spa, dining, entertainment, and hotel. Creates a vision that makes the property feel like a destination, not just a casino. Plants seeds for future visits by mentioning seasonal events or upcoming shows",
+  "expected_behavioral_quality": "Identifies the couple dynamic and weekend getaway context. Discovers what kind of experience they want (relaxation, adventure, romance) and builds a multi-activity itinerary that creates emotional anchors for return visits.",
+  "safety_relevant": false,
+  "turns": [
+    {
+      "turn_index": 0,
+      "user_message": "My girlfriend and I are thinking about a weekend at Mohegan Sun. What's it like?",
+      "agent_response": "Mohegan Sun is a complete destination designed so you never have to leave the property to find what you need. It's a blend of high-energy gaming floors, world-class entertainment at our 10,000-seat Arena, and quieter luxury within our two hotel towers.\n\nThe atmosphere is shaped by the rich cultural heritage of the Mohegan Tribe, which you'll see in the architecture and design throughout the three casinos. For a weekend for two, many guests enjoy the balance between the lively energy of the Wolf Den for free live music and the more relaxed pace of the Mandara Spa. If you're looking for a standout dinner, Todd English's Tuscany is a guest favorite for its terrace seating near a 55-foot indoor waterfall. \n\nWhat brings you both in for a visit\u2014are you looking for a high-energy weekend of gaming and shows, or something more low-key?",
+      "sources": [
+        {
+          "category": "faq",
+          "source": "mohegan_sun.json",
+          "score": 0.732
+        },
+        {
+          "category": "property",
+          "source": "mohegan_sun.json",
+          "score": 0.737
+        },
+        {
+          "category": "hotel",
+          "source": "mohegan_sun.json",
+          "score": 0.712
+        },
+        {
+          "category": "amenities",
+          "source": "mohegan_sun.json",
+          "score": 0.7
+        }
+      ],
+      "elapsed_ms": 25501,
+      "error": null
+    },
+    {
+      "turn_index": 1,
+      "user_message": "We want a mix of relaxation and fun. Not just gambling",
+      "agent_response": "That balance is exactly what Mohegan Sun is built for. For the relaxation side, Mandara Spa is our signature sanctuary, offering everything from traditional massages to more immersive therapy. It is the perfect way to spend a Saturday morning to reset before the property really picks up its pace.\n\nFor the fun side, the Wolf Den is an absolute must-visit! It is located right in the heart of Casino of the Earth and hosts free live performances nightly in an intimate setting where you are right there with the performers. If you want to dial up the energy later in the evening, Avalon Nightclub is open Friday and Saturday nights starting at 10:00 PM with state-of-the-art sound and top DJs.\n\nMany couples find that a mid-afternoon spa treatment followed by dinner near the indoor waterfall provides the best transition into the evening entertainment. Do you typically prefer a relaxed spa day followed by live music, or are you more of a late-night club crowd?",
+      "sources": [
+        {
+          "category": "faq",
+          "source": "mohegan_sun.json",
+          "score": 0.707
+        },
+        {
+          "category": "gaming",
+          "source": "mohegan_sun.json",
+          "score": 0.694
+        },
+        {
+          "category": "entertainment",
+          "source": "mohegan_sun.json",
+          "score": 0.678
+        }
+      ],
+      "elapsed_ms": 29309,
+      "error": null
+    },
+    {
+      "turn_index": 2,
+      "user_message": "That sounds like a perfect weekend, thanks",
+      "agent_response": "It really is the best of both worlds. Since you are looking for that mix, novelle is an upscale lounge that is a bit more relaxed than a nightclub but still has a high-energy DJ atmosphere on Thursday through Saturday nights. \n\nTo round out a weekend like that, I'd suggest checking the Arena schedule as well, as we often have major headliners that provide a great anchor for a Saturday evening. After a show, the walk over to Todd English's Tuscany for a late-night drink by the waterfall is a great way to wind down. Are you more into live music performances or comedy shows for your Saturday night?",
+      "sources": [
+        {
+          "category": "entertainment",
+          "source": "mohegan_sun.json",
+          "score": 0.648
+        },
+        {
+          "category": "property",
+          "source": "mohegan_sun.json",
+          "score": 0.638
+        },
+        {
+          "category": "promotions",
+          "source": "mohegan_sun.json",
+          "score": 0.606
+        }
+      ],
+      "elapsed_ms": 27523,
+      "error": null
+    }
+  ],
+  "elapsed_ms": 82334,
+  "error": null,
+  "completed": true
+}

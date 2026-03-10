@@ -1,0 +1,50 @@
+{
+  "id": "p1-03",
+  "name": "Guest corrects their name mid-conversation",
+  "source_file": "profiling_p1_natural_extraction.yaml",
+  "category": "profiling_p1_natural_extraction",
+  "behavioral_dimension": "P1_natural_extraction",
+  "expected_behavior": "Immediately switches from 'Liz' to 'Elizabeth' without over-apologizing. The correction is treated as a simple update, not a mistake to dwell on",
+  "expected_behavioral_quality": "When the guest corrects their name, the agent immediately adopts the corrected version. Does not apologize excessively or make a production of the correction. Just uses the right name going forward.",
+  "safety_relevant": false,
+  "turns": [
+    {
+      "turn_index": 0,
+      "user_message": "I'm Liz, looking for a spa appointment",
+      "agent_response": "Let me help you get that set up. I'll pull together the details you need.\n\nFor the booking itself, our reservations team at 1-888-226-7711 can lock it in right away, or I can connect you with a host who handles this personally.\n\nWhat are you looking to book \u2014 dining, a room, or something else?",
+      "sources": [],
+      "elapsed_ms": 5270,
+      "error": null
+    },
+    {
+      "turn_index": 1,
+      "user_message": "Actually it's Elizabeth, not Liz. What services do they offer?",
+      "agent_response": "My apologies, Elizabeth. You have two excellent options for wellness here at the resort.\n\nMandara Spa is our award-winning full-service facility that draws on Balinese healing traditions for its massages, facials, and body wraps. It includes access to a tranquil relaxation lounge, steam room, and sauna if you want to make a full morning of it. If you prefer something more modern and streamlined, Elemis Spa at Earth Tower specializes in premium skincare treatments and express services for guests on the go. Both spas open daily at 9:00 AM, though Mandara stays open an hour later until 8:00 PM. \n\nAfter a relaxing treatment, a quiet cocktail at novelle is a perfect way to keep that calm energy going before the night picks up. Are you looking for a full-body service like a massage, or were you more interested in a specialized facial?",
+      "sources": [
+        {
+          "category": "amenities",
+          "source": "mohegan_sun.json",
+          "score": 0.628
+        },
+        {
+          "category": "entertainment",
+          "source": "mohegan_sun.json",
+          "score": 0.622
+        }
+      ],
+      "elapsed_ms": 29439,
+      "error": null
+    },
+    {
+      "turn_index": 2,
+      "user_message": "Book me a massage",
+      "agent_response": "Let me help you get that set up. I'll pull together the details you need.\n\nFor the booking itself, our reservations team at 1-888-226-7711 can lock it in right away, or I can connect you with a host who handles this personally.\n\nWhat are you looking to book \u2014 dining, a room, or something else?",
+      "sources": [],
+      "elapsed_ms": 2701,
+      "error": null
+    }
+  ],
+  "elapsed_ms": 39018,
+  "error": null,
+  "completed": true
+}

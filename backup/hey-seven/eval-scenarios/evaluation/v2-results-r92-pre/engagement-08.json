@@ -1,0 +1,92 @@
+{
+  "id": "engagement-08",
+  "name": "Information overload recovery",
+  "source_file": "behavioral_engagement.yaml",
+  "category": "behavioral_engagement",
+  "behavioral_dimension": "B3_engagement",
+  "expected_behavior": "Detects overwhelm signal and immediately collapses to a single recommendation. Does not keep offering more options or caveats. Makes a confident choice for the guest",
+  "expected_behavioral_quality": "When a guest signals overwhelm ('that's a lot'), immediately simplifies. Offers a single top recommendation instead of more options. Does not add disclaimers about other options they might miss.",
+  "safety_relevant": false,
+  "turns": [
+    {
+      "turn_index": 0,
+      "user_message": "What can we do here?",
+      "agent_response": "Welcome to Mohegan Sun\u2014I am Seven, and I would be happy to help you find the right way to spend your time. Tonight is a great evening to visit the Wolf Den for live music, as it has an electric energy since the stage is right in the center of the casino floor. If you are looking for something more active, the Wombi Rock indoor climbing wall offers a unique challenge for all skill levels. To balance out the excitement, you might also consider a signature hot stone massage at the spa tomorrow to truly unwind. \n\nWhat brings you to the resort today?",
+      "sources": [
+        {
+          "category": "faq",
+          "source": "mohegan_sun.json",
+          "score": 0.676
+        },
+        {
+          "category": "amenities",
+          "source": "mohegan_sun.json",
+          "score": 0.661
+        },
+        {
+          "category": "entertainment",
+          "source": "mohegan_sun.json",
+          "score": 0.664
+        }
+      ],
+      "elapsed_ms": 34150,
+      "error": null
+    },
+    {
+      "turn_index": 1,
+      "user_message": "Wow that's a lot. Just pick one thing for us",
+      "agent_response": "I'd suggest heading to the Wolf Den in the Casino of the Earth. It is the heart of the resort and features free live music in a unique setting surrounded by the energy of the gaming floor.\n\nAre you planning to have dinner before you head over there?",
+      "sources": [
+        {
+          "category": "faq",
+          "source": "mohegan_sun.json",
+          "score": 0.626
+        },
+        {
+          "category": "gaming",
+          "source": "mohegan_sun.json",
+          "score": 0.626
+        },
+        {
+          "category": "entertainment",
+          "source": "mohegan_sun.json",
+          "score": 0.634
+        },
+        {
+          "category": "promotions",
+          "source": "mohegan_sun.json",
+          "score": 0.612
+        },
+        {
+          "category": "property",
+          "source": "mohegan_sun.json",
+          "score": 0.629
+        }
+      ],
+      "elapsed_ms": 24844,
+      "error": null
+    },
+    {
+      "turn_index": 2,
+      "user_message": "Good call. What time?",
+      "agent_response": "The showtimes for our live performances can vary, so the best way to get the exact timing for tonight is to check the digital displays or visit the Box Office once you arrive. Since the casino is open 24 hours a day, you can enjoy the energy of the floor and the various lounge areas whenever you are ready.\n\nAre you looking for a high-energy experience or something a bit",
+      "sources": [
+        {
+          "category": "faq",
+          "source": "mohegan_sun.json",
+          "score": 0.648
+        },
+        {
+          "category": "entertainment",
+          "source": "mohegan_sun.json",
+          "score": 0.609
+        }
+      ],
+      "elapsed_ms": 71881,
+      "error": null
+    }
+  ],
+  "elapsed_ms": 130876,
+  "error": null,
+  "completed": true
+}

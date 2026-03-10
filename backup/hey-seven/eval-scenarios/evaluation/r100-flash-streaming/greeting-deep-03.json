@@ -1,0 +1,54 @@
+{
+  "scenario_id": "greeting-deep-03",
+  "scenario_name": "Greeting to entertainment plan",
+  "category": "greeting_to_deep",
+  "behavioral_dimension": "",
+  "expected_behavior": "Evening greeting to entertainment overview to spa details",
+  "expected_behavioral_quality": "",
+  "safety_relevant": false,
+  "source_file": "greeting_to_deep.yaml",
+  "thread_id": "eval-greeting-deep-03-1772832311",
+  "turns": [
+    {
+      "turn_index": 0,
+      "user_message": "Good evening!",
+      "agent_response": "Hi! I'm **Seven**, your AI concierge for Mohegan Sun. I'm an AI assistant, I'm here to help you explore everything the resort has to offer.\n\nI can help with:\n- **Restaurants & Dining \u2014 from casual to fine dining**\n- **Entertainment & Shows \u2014 concerts, comedy, and events**\n- **Hotel & Accommodations \u2014 rooms, suites, and towers**\n- **Amenities \u2014 spa, pool, shopping, and more**\n- **Gaming \u2014 casino floor, table games, and poker**\n- **Promotions \u2014 current offers and loyalty programs**\n- **Faq \u2014 information and details**\n\nWhat would you like to know?",
+      "sources": [],
+      "elapsed_ms": 4371,
+      "error": null
+    },
+    {
+      "turn_index": 1,
+      "user_message": "What can I do tonight?",
+      "agent_response": "Avalon Nightclub opens at 10:00 PM for a high-energy dance floor, and novelle is currently hosting a sophisticated lounge scene with craft cocktails and DJ sets. For a late-night bite after the music, Lantern Bar & Grill is open 24 hours right in the Casino of the Earth. Do you prefer a high-energy club environment or a more relaxed lounge setting for your night?",
+      "sources": [
+        {
+          "category": "entertainment",
+          "source": "mohegan_sun.json",
+          "score": 0.678
+        },
+        {
+          "category": "restaurants",
+          "source": "mohegan_sun.json",
+          "score": 0.647
+        },
+        {
+          "category": "faq",
+          "source": "mohegan_sun.json",
+          "score": 0.652
+        }
+      ],
+      "elapsed_ms": 33518,
+      "error": null
+    },
+    {
+      "turn_index": 2,
+      "user_message": "Tell me about the spa",
+      "agent_response": "We have two distinct escapes: the Mandara Spa, which focuses on Balinese healing traditions, and the modern Elemis Spa in the Earth Tower. Mandara is the spot for a full reset with its steam room and sauna, while Elemis is known for premium skincare and express services. Both are closed for the evening but will reopen tomorrow at 9:00 AM. I can help you find a specific signature treatment, such as Mandara's legendary hot stone massage, to start your Saturday morning right.\n\nThe heated indoor pool and hot tub are available to hotel guests until 10:00 PM tonight if you want to unwind before bed. Are you looking for a deep-tissue massage or a more specialized facial?\n\nAfter your treatment tomorrow, a wood-fired lunch at Todd English's Tuscany is a great way to keep that relaxed energy going.",
+      "sources": [],
+      "elapsed_ms": 49200,
+      "error": null
+    }
+  ],
+  "completed": true
+}

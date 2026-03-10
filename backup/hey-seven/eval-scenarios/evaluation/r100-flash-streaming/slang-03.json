@@ -1,0 +1,81 @@
+{
+  "scenario_id": "slang-03",
+  "scenario_name": "Millennial crypto whale using degen language",
+  "category": "behavioral_slang_cultural",
+  "behavioral_dimension": "B2_implicit",
+  "expected_behavior": "Decodes crypto/gambling slang naturally: YOLO'd = risked money, on tilt = frustrated after losing, rekt = lost significantly, mid = mediocre. Adjusts recommendations to reflect frustration without lecturing about gambling",
+  "expected_behavioral_quality": "Understands crypto/gambling crossover slang (degen, ape in, YOLO) without asking for translation. Responds in standard English but shows awareness of the cultural context. Treats with same respect as traditional VIPs.",
+  "safety_relevant": false,
+  "source_file": "behavioral_slang_cultural.yaml",
+  "thread_id": "eval-slang-03-1772827767",
+  "turns": [
+    {
+      "turn_index": 0,
+      "user_message": "yo just YOLO'd my bags at the craps table lmao. where's the best food",
+      "agent_response": "For a night that started with that kind of energy at the craps table, Michael Jordan's Steak House is the definitive choice for the best meal on property. It is located in the Casino of the Sky and serves incredible USDA Prime steaks and fresh seafood in an atmosphere that feels like a win before you even sit down. \n\nThey are open until 10:00 PM tonight, and while the dress code is business casual, it is the perfect spot to celebrate a good run. Since it is a busy Friday evening, I'd suggest securing a reservation as soon as possible. An insider tip: the dining room features actual sports memorabilia from MJ's career, which adds a great layer of history to the elegant setting. \n\nHow many people are in your party tonight? After you finish your meal, the Wolf Den is just a short walk away and usually has a fantastic live band playing on Friday nights.",
+      "sources": [
+        {
+          "category": "restaurants",
+          "source": "mohegan_sun.json",
+          "score": 0.692
+        }
+      ],
+      "elapsed_ms": 29250,
+      "error": null
+    },
+    {
+      "turn_index": 1,
+      "user_message": "something chill, I'm on tilt after getting rekt at blackjack",
+      "agent_response": "I apologize, but I'm having trouble generating a response right now. Please try again, or  at [PHONE].",
+      "sources": [
+        {
+          "category": "faq",
+          "source": "mohegan_sun.json",
+          "score": 0.65
+        },
+        {
+          "category": "gaming",
+          "source": "mohegan_sun.json",
+          "score": 0.651
+        },
+        {
+          "category": "restaurants",
+          "source": "mohegan_sun.json",
+          "score": 0.644
+        }
+      ],
+      "elapsed_ms": 52167,
+      "error": null
+    },
+    {
+      "turn_index": 2,
+      "user_message": "nah the spa is kinda mid. whats else u got",
+      "agent_response": "I apologize, but I'm having trouble generating a response right now. Please try again, or  at [PHONE].",
+      "sources": [
+        {
+          "category": "amenities",
+          "source": "mohegan_sun.json",
+          "score": 0.674
+        },
+        {
+          "category": "faq",
+          "source": "mohegan_sun.json",
+          "score": 0.657
+        },
+        {
+          "category": "entertainment",
+          "source": "mohegan_sun.json",
+          "score": 0.648
+        },
+        {
+          "category": "promotions",
+          "source": "mohegan_sun.json",
+          "score": 0.657
+        }
+      ],
+      "elapsed_ms": 39556,
+      "error": null
+    }
+  ],
+  "completed": true
+}

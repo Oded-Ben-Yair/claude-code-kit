@@ -1,0 +1,65 @@
+{
+  "scenario_id": "coherence-01",
+  "scenario_name": "Re-asking guest name after it was already given",
+  "category": "behavioral_multiturn_coherence",
+  "behavioral_dimension": "B7_coherence",
+  "expected_behavior": "Sarah's name captured in turn 1 and used naturally in later turns without re-asking. By turn 3, 'Sarah' should appear in the response as a natural address. Agent never asks 'What's your name?' or 'And who am I speaking with?'",
+  "expected_behavioral_quality": "Guest introduces themselves in turn 1. Agent must NOT ask for name in any subsequent turn. Name should appear naturally in later responses (sign-offs, confirmations) without being re-asked.",
+  "safety_relevant": false,
+  "source_file": "behavioral_multiturn_coherence.yaml",
+  "thread_id": "eval-coherence-01-1772822266",
+  "turns": [
+    {
+      "turn_index": 0,
+      "user_message": "Hi, I'm Sarah. What restaurants do you have?",
+      "agent_response": "Welcome to Mohegan Sun, Sarah. Since it is Friday evening, I'd suggest looking into Ballo Italian Restaurant in the Casino of the Sky. \n\nThe atmosphere there is inspired by an Italian cathedral with high arches and warm lighting, making it a beautiful spot for a Friday night dinner. Their housemade pastas and risottos are the stars of the menu, and the vibe shifts into a very social, energetic space as the night progresses. They are open until 10:00 PM tonight, and while the dress code is smart casual, I would suggest a reservation to ensure you get a table during the prime dinner rush.\n\nIf you enjoy a bit of entertainment after a meal, the Wolf Den is nearby and usually features fantastic live music on the weekends. Are you in the mood for a full sit-down dinner like Ballo, or were you looking for something a bit more casual to start your night?",
+      "sources": [
+        {
+          "category": "restaurants",
+          "source": "mohegan_sun.json",
+          "score": 0.655
+        }
+      ],
+      "elapsed_ms": 32003,
+      "error": null
+    },
+    {
+      "turn_index": 1,
+      "user_message": "What about the spa?",
+      "agent_response": "Sarah, since it's currently 6:38 PM, you'll want to head over to Mandara Spa if you're looking for a treatment tonight. They are our award-winning sanctuary inspired by Balinese healing traditions and stay open until 8:00 PM\u2014their relaxation lounge is the perfect place to reset after your travels. Elemis Spa in the Earth Tower is another fantastic choice for premium skincare, though they close at 7:00 PM, so that might be a better option for a Saturday morning session.\n\nIf you're just looking for a soak, our heated indoor pool and hot tub are available until 10:00 PM tonight for hotel guests. After a bit of relaxation, you might enjoy the live music at the Wolf Den since it's right in the heart of the casino and the atmosphere is always electric on a Friday night. Does a deep-tissue massage sound like the right way to start your weekend, or were you more interested in a refreshing facial?",
+      "sources": [
+        {
+          "category": "amenities",
+          "source": "mohegan_sun.json",
+          "score": 0.687
+        },
+        {
+          "category": "faq",
+          "source": "mohegan_sun.json",
+          "score": 0.654
+        },
+        {
+          "category": "property",
+          "source": "mohegan_sun.json",
+          "score": 0.643
+        },
+        {
+          "category": "promotions",
+          "source": "mohegan_sun.json",
+          "score": 0.645
+        }
+      ],
+      "elapsed_ms": 38717,
+      "error": null
+    },
+    {
+      "turn_index": 2,
+      "user_message": "Can you recommend something fun tonight?",
+      "agent_response": "Sarah, for a Friday night, the Wolf Den is definitely where you'll find the most energy right now. It's an intimate, 350-seat venue in the center of the Casino of the Earth, and the best part is that all of their shows are complimentary\u2014no tickets required. Since it's nearly 7:00 PM and shows usually start around 8:00 PM or 9:00 PM, I'd suggest heading that way soon if you want to snag a seat close to the stage.\n\nIf you're in the mood for something with a bit more of a high-energy, late-night vibe, Avalon Nightclub is open until 2:00 AM tonight and features top DJs and a state-of-the-art sound system. It's a 21-plus venue with a capacity of 1,500, so it really captures that big-city club atmosphere right here on the property.\n\nAfter the music or dancing, you might want to stop by novelle for a sophisticated late-night cocktail to wind down the evening. Are you more into the live band energy of the Wolf Den, or does a night of dancing at Avalon sound more like your style?",
+      "sources": [],
+      "elapsed_ms": 33219,
+      "error": null
+    }
+  ],
+  "completed": true
+}

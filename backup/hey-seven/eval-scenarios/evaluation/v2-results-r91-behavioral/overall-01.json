@@ -1,0 +1,93 @@
+{
+  "id": "overall-01",
+  "name": "Perfect multi-turn guest journey",
+  "source_file": "behavioral_overall_quality.yaml",
+  "category": "behavioral_overall_quality",
+  "behavioral_dimension": "B10_overall",
+  "expected_behavior": "B1: No sarcasm to detect. B2: Reads anniversary and Italian preference as implicit signals. B3: Gathers couple info naturally. B4: Cross-domain suggestion (dinner->show or spa). B5: Warm without over-enthusiasm. B6: Substance-based warmth. B7: Name, occasion, preferences persist across all 5 turns. All dimensions working together",
+  "expected_behavioral_quality": "An ideal 5-turn guest journey covering greeting, dining recommendation with preference extraction, cross-domain suggestion, personalized follow-up, and warm sign-off. Tests whether all behavioral dimensions integrate into a coherent experience.",
+  "safety_relevant": false,
+  "turns": [
+    {
+      "turn_index": 0,
+      "user_message": "Hi, I'm David. We're here for our anniversary weekend.",
+      "agent_response": "Happy anniversary, David! It is a pleasure to have you celebrating with us this weekend. \n\nTo help make your stay extra special, I would like to see about upgrading your experience here at the resort. For a memorable dinner, Todd English's Tuscany is a top recommendation for its location overlooking the Taughannock Falls. Will it be just the two of you dining tonight?",
+      "sources": [],
+      "elapsed_ms": 50800,
+      "error": null
+    },
+    {
+      "turn_index": 1,
+      "user_message": "We'd love a nice dinner tonight. She loves Italian.",
+      "agent_response": "David, for a truly memorable anniversary dinner, Todd English's Tuscany in the Casino of the Sky is our premier Italian choice. The warm, wood-fired aroma hits you the moment you walk in, and their handmade pastas pair beautifully with an extensive wine list in a sophisticated, business-casual atmosphere. \n\nThey are open tonight from 5:00 PM to 10:00 PM, and as an upscale experience in the $$$$ price range, reservations are definitely recommended to ensure you get a prime spot. To help make this anniversary unforgettable, I would like to see about upgrading your experience during your stay. After a rich meal, a relaxing visit to Mandara Spa tomorrow could be a perfect way to continue the celebration. Since it's a special night, would you prefer a quiet, intimate table or would you enjoy being closer to the energy of the open kitchen?",
+      "sources": [
+        {
+          "category": "restaurants",
+          "source": "mohegan_sun.json",
+          "score": 0.679
+        }
+      ],
+      "elapsed_ms": 29715,
+      "error": null
+    },
+    {
+      "turn_index": 2,
+      "user_message": "What about after dinner?",
+      "agent_response": "David, You're going to love the vibe at novelle after your meal. Since it is Thursday, this ultra-lounge is open and offers a sophisticated atmosphere with craft cocktails and DJ entertainment that perfectly complements a special night out. \n\nIf you prefer something slightly more intimate for a nightcap, Birdcage Bar in the Casino of the Sky is open until 2:00 AM and has a fantastic selection of premium spirits. To make this milestone truly unforgettable, I would like to see about upgrading your experience here at Mohegan Sun. After the late night, would a relaxing treatment at Mandara Spa be something you'd like to explore for tomorrow morning?",
+      "sources": [
+        {
+          "category": "entertainment",
+          "source": "mohegan_sun.json",
+          "score": 0.681
+        },
+        {
+          "category": "restaurants",
+          "source": "mohegan_sun.json",
+          "score": 0.65
+        },
+        {
+          "category": "faq",
+          "source": "mohegan_sun.json",
+          "score": 0.637
+        }
+      ],
+      "elapsed_ms": 42822,
+      "error": null
+    },
+    {
+      "turn_index": 3,
+      "user_message": "The spa sounds nice for tomorrow morning",
+      "agent_response": "David, a relaxing morning at the spa is a wonderful way to continue your anniversary celebration. After the excitement of your dinner tonight, Mandara Spa is the perfect reset with its tranquil relaxation lounge, steam room, and sauna. It draws inspiration from Balinese healing traditions and opens daily at 9:00 AM. \n\nIf you are staying in the Earth Tower, the Elemis Spa is also",
+      "sources": [
+        {
+          "category": "amenities",
+          "source": "mohegan_sun.json",
+          "score": 0.664
+        },
+        {
+          "category": "faq",
+          "source": "mohegan_sun.json",
+          "score": 0.653
+        },
+        {
+          "category": "promotions",
+          "source": "mohegan_sun.json",
+          "score": 0.645
+        }
+      ],
+      "elapsed_ms": 52721,
+      "error": null
+    },
+    {
+      "turn_index": 4,
+      "user_message": "Thanks, you've been really helpful",
+      "agent_response": "Glad I could help. If you're on the gaming floor later, check your Momentum tier at the desk \u2014 you may have dining or spa credits. What sounds good?",
+      "sources": [],
+      "elapsed_ms": 3,
+      "error": null
+    }
+  ],
+  "elapsed_ms": 176062,
+  "error": null,
+  "completed": true
+}

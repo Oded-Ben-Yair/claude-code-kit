@@ -1,0 +1,49 @@
+{
+  "scenario_id": "h5-03",
+  "scenario_name": "Guest sharing a personal achievement",
+  "category": "host_triangle_h4_h6_relationship",
+  "behavioral_dimension": "H5_emotional_loyalty_building",
+  "expected_behavior": "Celebrates the retirement with genuine warmth, not just 'congrats.' Builds a premium celebration weekend \u2014 Sky Tower suite, fine dining, spa \u2014 framed as something the guest has earned. Makes the guest feel like the property is honoring their achievement, not just selling services",
+  "expected_behavioral_quality": "When a guest shares a personal achievement (promotion, retirement, graduation), the agent celebrates genuinely and connects it to an experience that honors the accomplishment. The celebration should feel personal and earned, not a generic 'congrats.'",
+  "safety_relevant": false,
+  "source_file": "host_triangle_h4_h6_relationship.yaml",
+  "thread_id": "eval-h5-03-1772991598",
+  "turns": [
+    {
+      "turn_index": 0,
+      "user_message": "I just retired after 35 years! Coming to celebrate with my wife this weekend",
+      "agent_response": "Thirty-five years is an incredible milestone \u2014 congratulations! You both deserve a proper celebration this weekend. \n\nI'd suggest starting with dinner at Michael Jordan's Steak House for a truly elevated experience, and then taking a short walk over to novelle for craft cocktails to toast your retirement. \n\nAre you two thinking a classic steakhouse vibe, or does your wife prefer something like Italian?",
+      "sources": [
+        {
+          "category": "restaurants",
+          "source": "mohegan_sun.json",
+          "score": 0.629
+        },
+        {
+          "category": "entertainment",
+          "source": "mohegan_sun.json",
+          "score": 0.633
+        }
+      ],
+      "elapsed_ms": 59978,
+      "error": null
+    },
+    {
+      "turn_index": 1,
+      "user_message": "We want something really memorable. We've earned it",
+      "agent_response": "You have absolutely earned it. I've got you covered for making this weekend stand out.\n\nFor dinner, the waterfall table at Tuscany is a true hidden gem that provides a highly memorable backdrop for a retirement toast. If you are looking to elevate your stay as well, our Presidential Suite is the ultimate luxury experience, featuring over 1,800 square feet, a private terrace, and personalized concierge service. \n\nTo recognize the milestone, I can arrange a complimentary appetizer or dessert at select restaurants for your dinner. Just so you know, signing up for our Momentum rewards program is free, and you'd earn toward comps starting today.\n\nI will get these details ready so our host team can help finalize everything for you. Who do I have the pleasure of speaking with?",
+      "sources": [],
+      "elapsed_ms": 59224,
+      "error": null
+    },
+    {
+      "turn_index": 2,
+      "user_message": "That sounds like a perfect way to kick off retirement",
+      "agent_response": "It really is! Thirty-five years of hard work deserves exactly this kind of treatment. Let me flag this for the host team right now so they can reach out, check on that suite, and get the Tuscany table locked in for you and your wife. \n\nBy the way, with you two staying the whole weekend, Mandara Spa is right upstairs if you want to add some real relaxation to the trip. \n\nWhat name should I put on these notes so my team knows exactly who they're looking for?",
+      "sources": [],
+      "elapsed_ms": 54770,
+      "error": null
+    }
+  ],
+  "completed": true
+}

@@ -1,0 +1,30 @@
+{
+  "scenario_id": "profile-01",
+  "scenario_name": "Birthday party planning",
+  "category": "profile_building",
+  "behavioral_dimension": "",
+  "expected_behavior": "Acknowledges birthday context and recommends celebratory dining",
+  "expected_behavioral_quality": "",
+  "safety_relevant": false,
+  "source_file": "profile_building.yaml",
+  "thread_id": "eval-profile-01-1772837032",
+  "turns": [
+    {
+      "turn_index": 0,
+      "user_message": "I'm Sarah and we're a party of 4 visiting next Friday for my birthday",
+      "agent_response": "Happy birthday, Sarah! It is a pleasure to help you plan such a special celebration for your party of four.\n\nFor a landmark birthday, Michael Jordan\u2019s Steak House in the Casino of the Sky is the definitive choice for an elevated evening. The aroma of USDA Prime steaks searing to perfection greets you at the entrance, and the atmosphere strikes a perfect balance between sophisticated elegance and high-energy sports history. It is an upscale experience with a price range of $$$$, and on Fridays, they serve dinner from 5:00 PM until 10:00 PM. I highly recommend making a reservation to secure a prime table, and the dress code is business casual. \n\nSince your birthday is coming up, Mohegan Sun would love to treat you to a $25 dining credit at any of our restaurants to make the night even more memorable. After a meal like that, you might enjoy the sophisticated atmosphere at novelle for a celebratory toast, as it is one of our premier nightlife destinations. I can connect you with our host team to finalize the booking\u2014would you like me to share more about the signature cuts at the steakhouse, or are you looking for a different type of cuisine?",
+      "sources": [],
+      "elapsed_ms": 54629,
+      "error": null
+    },
+    {
+      "turn_index": 1,
+      "user_message": "Where should we go for dinner?",
+      "agent_response": "Sarah, for a birthday celebration with a party of four, Tao Asian Bistro & Lounge in the Casino of the Sky is the place to be. The scent of spiced wok dishes and the sight of the towering 16-foot Buddha set a high-energy, stylish tone that is perfect for your special night. They specialize in Pan-Asian cuisine like signature sushi and dim sum, fall into the $$$ price range, and I suggest a smart casual dress code for the evening.\n\nThey are open from 5:00 PM until 11:00 PM on Fridays, and because it is such a popular spot, I can connect you with our host team to finalize a reservation so your table is ready for you. By the way, since it is your birthday, Mohegan Sun would love to treat you to a $25 dining credit to use at any of our restaurants during your visit. After your meal, you might enjoy heading over to the Wolf Den for some live music to keep the party going. Do you think your group would prefer starting with some fresh sushi or are you looking for more traditional Pan-Asian entrees?",
+      "sources": [],
+      "elapsed_ms": 58518,
+      "error": null
+    }
+  ],
+  "completed": true
+}

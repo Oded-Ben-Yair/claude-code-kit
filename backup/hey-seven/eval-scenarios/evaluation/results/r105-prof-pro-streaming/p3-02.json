@@ -1,0 +1,60 @@
+{
+  "scenario_id": "p3-02",
+  "scenario_name": "Show suggestion plus occasion inquiry",
+  "category": "profiling_p3_give_to_get",
+  "behavioral_dimension": "P3_give_to_get",
+  "expected_behavior": "Show listing is useful and complete before asking about the occasion. When the bachelorette context is revealed, the agent reshapes recommendations around group energy, nightlife, and celebration activities",
+  "expected_behavioral_quality": "Lists upcoming entertainment options with genuine enthusiasm, then asks if there's a special occasion. The show information is complete and actionable before the occasion question. The question is framed as 'so I can make it extra special' not 'for our records'.",
+  "safety_relevant": false,
+  "source_file": "profiling_p3_give_to_get.yaml",
+  "thread_id": "eval-p3-02-1772992388",
+  "turns": [
+    {
+      "turn_index": 0,
+      "user_message": "What shows are happening this weekend?",
+      "agent_response": "Welcome to Mohegan Sun. Since it is Sunday evening, you can still catch a free live show at the Wolf Den at 8:00 PM tonight \u2014 the energy in there is incredible because the intimate setting puts you right next to the performers. \n\nComix Roadhouse also has comedy performances tonight if you are looking for laughs and a full dinner menu. Looking ahead to the upcoming weekend, the property really comes alive starting Thursday and Friday with high-energy DJs at Avalon Nightclub and the sophisticated lounge atmosphere at novelle. An insider tip for a first-timer is that the Wolf Den shows are completely complimentary and don't require a ticket, so you can just walk in and grab a seat. \n\nAre you more of a live music fan or do you prefer a night of comedy?",
+      "sources": [
+        {
+          "category": "entertainment",
+          "source": "mohegan_sun.json",
+          "score": 0.671
+        }
+      ],
+      "elapsed_ms": 33835,
+      "error": null
+    },
+    {
+      "turn_index": 1,
+      "user_message": "Yeah, it's actually a bachelorette party",
+      "agent_response": "A bachelorette party changes the game completely! Let's make this an unforgettable trip for the bride. \n\nFor a group like yours, I suggest starting at novelle \u2014 it is a gorgeous upscale lounge perfect for craft cocktails and photos before the night really starts. When you are ready to dance, Avalon Nightclub is exactly where you want to be on a weekend. I also highly recommend hitting Hash House A Go Go for a massive comfort-food brunch the morning after. \n\nHow many ladies are going to be in your group?",
+      "sources": [
+        {
+          "category": "entertainment",
+          "source": "mohegan_sun.json",
+          "score": 0.636
+        },
+        {
+          "category": "restaurants",
+          "source": "mohegan_sun.json",
+          "score": 0.611
+        },
+        {
+          "category": "faq",
+          "source": "mohegan_sun.json",
+          "score": 0.591
+        }
+      ],
+      "elapsed_ms": 57111,
+      "error": null
+    },
+    {
+      "turn_index": 2,
+      "user_message": "What would you recommend for the group?",
+      "agent_response": "I've got you. For a bachelorette weekend, we want to build the perfect mix of high-energy celebration and ultimate recovery.\n\nI would plan your main night out around Avalon Nightclub. The energy there is electric with top DJs and a massive dance floor. A great insider tip is to start your evening at novelle just before hitting the club \u2014 it is a sophisticated ultra-lounge with fantastic craft cocktails and the absolute best lighting for group photos. \n\nAfter a night on your feet, spending the next morning at the spa is the perfect reset! Their hot stone massage is legendary and will bring everyone right back to life before you head home. Once we know exactly what you want to do, I can connect you with the host team to help finalize VIP tables or spa arrangements. \n\nIs the bride hoping to focus more on dancing the night away, or is she really looking forward to a relaxing spa retreat?",
+      "sources": [],
+      "elapsed_ms": 67970,
+      "error": null
+    }
+  ],
+  "completed": true
+}

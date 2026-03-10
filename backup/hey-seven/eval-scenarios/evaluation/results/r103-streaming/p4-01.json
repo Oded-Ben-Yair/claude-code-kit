@@ -1,0 +1,65 @@
+{
+  "scenario_id": "p4-01",
+  "scenario_name": "Party of 4 assumption about kids \u2014 correct",
+  "category": "profiling_p4_assumptive_bridge",
+  "behavioral_dimension": "P4_assumptive_bridging",
+  "expected_behavior": "Assumption about kids is offered softly and confirmed by the guest. Agent smoothly pivots to family-friendly recommendations. The assumption felt natural, not presumptuous",
+  "expected_behavioral_quality": "Makes a contextual inference that a party of 4 might include children and gently tests it with kid-friendly options. The assumption is offered as a soft suggestion ('If any of your group are younger, they might enjoy...') rather than a hard presumption ('Your kids will love...').",
+  "safety_relevant": false,
+  "source_file": "profiling_p4_assumptive_bridge.yaml",
+  "thread_id": "eval-p4-01-1772957323",
+  "turns": [
+    {
+      "turn_index": 0,
+      "user_message": "Need a restaurant for 4 tonight",
+      "agent_response": "Tao Asian Bistro & Lounge in the Casino of the Sky is a standout choice for a party of four tonight. The atmosphere is high-energy and stylish, featuring a dramatic pan-Asian menu that covers everything from fresh sushi to hand-crafted dim sum. Pro tip: the interior design is one of the most photographed spots on the property, so it\u2019s perfect if you want a meal that feels like a true event. \n\nThey are open from 5:00 PM to 11:00 PM tonight, and because it\u2019s a favorite for groups, a reservation is highly recommended. The dress code is smart casual and pricing typically falls in the $$$ range. I've got you covered with any other details you need, and I can certainly connect you with our host team to help finalize your plans. \n\nAre you looking for a high-energy vibe like Tao, or would you prefer something a bit more quiet? After dinner, the Wolf Den in the Casino of the Earth has free live music every night and the energy there is always good.",
+      "sources": [
+        {
+          "category": "restaurants",
+          "source": "mohegan_sun.json",
+          "score": 0.686
+        }
+      ],
+      "elapsed_ms": 50164,
+      "error": null
+    },
+    {
+      "turn_index": 1,
+      "user_message": "Yeah actually the kids would love that",
+      "agent_response": "If the kids are joining you, they are going to have an incredible time at Kids Quest and Cyber Quest. Just a quick heads-up that the Wolf Den is an adults-only venue for seating, but Kids Quest provides supervised entertainment for children ages 6 weeks to 12 years while parents enjoy the resort. For a shared experience, Cyber Quest is a family-friendly arcade with the latest video games and attractions that everyone can enjoy together.\n\nYou should also check out the Wombi Rock Climbing Wall right nearby, which offers indoor climbing for all skill levels with equipment and instruction provided. It has a great energy and is a favorite for active families looking for a bit of adventure. I have all the details on these locations, and I can certainly connect you with our host team to help coordinate the timing for your group. \n\nHow old are the kids in your party so I can suggest the best activities for them?",
+      "sources": [
+        {
+          "category": "entertainment",
+          "source": "mohegan_sun.json",
+          "score": 0.643
+        },
+        {
+          "category": "hotel",
+          "source": "mohegan_sun.json",
+          "score": 0.625
+        },
+        {
+          "category": "property",
+          "source": "mohegan_sun.json",
+          "score": 0.634
+        },
+        {
+          "category": "amenities",
+          "source": "mohegan_sun.json",
+          "score": 0.621
+        }
+      ],
+      "elapsed_ms": 37007,
+      "error": null
+    },
+    {
+      "turn_index": 2,
+      "user_message": "How old do they need to be for the arcade?",
+      "agent_response": "Cyber Quest is open to all ages, so your kids can jump right into the action. It is a high-energy space with the latest video games and attractions that are perfect for families to enjoy together. Just keep in mind that while the arcade is for everyone, the casino floor and seating at the Wolf Den are reserved for those 21 and older. \n\nI've got you with all the details on the arcade and the nearby Wombi Rock climbing wall, and I can certainly connect you with our host team to help coordinate the timing for your group. Are the kids more into high-tech gaming, or would they enjoy something active like the climbing wall?",
+      "sources": [],
+      "elapsed_ms": 54700,
+      "error": null
+    }
+  ],
+  "completed": true
+}

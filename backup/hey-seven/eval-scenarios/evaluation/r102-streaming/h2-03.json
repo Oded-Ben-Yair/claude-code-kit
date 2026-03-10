@@ -1,0 +1,81 @@
+{
+  "scenario_id": "h2-03",
+  "scenario_name": "Guest mentions they switched to competitor",
+  "category": "host_triangle_h1_h3_development",
+  "behavioral_dimension": "H2_reactivation_win_back",
+  "expected_behavior": "Does not badmouth Foxwoods or Gordon Ramsay. Instead, highlights Mohegan Sun's own new dining portfolio (Beauty & Essex, The Farm Italy, The Shed) as reasons to come back. Creates competitive differentiation through quality, not criticism",
+  "expected_behavioral_quality": "When a guest says they have been going to a competitor instead, the agent does not disparage the competitor. Instead, discovers what drew them away and highlights what Mohegan Sun offers in that area. Creates a 'come back and see' moment around genuine improvements.",
+  "safety_relevant": false,
+  "source_file": "host_triangle_h1_h3_development.yaml",
+  "thread_id": "eval-h2-03-1772910636",
+  "turns": [
+    {
+      "turn_index": 0,
+      "user_message": "I've been going to Foxwoods mostly. They opened some cool new restaurants",
+      "agent_response": "It's great to have you here at Mohegan Sun. If you're looking for something that stands out, Todd English's Tuscany in the Casino of the Sky is my top recommendation. The wood-fired aroma from the open kitchen sets a warm, sophisticated tone that pairs perfectly with their handmade pastas and modern Italian dishes. \n\nThey are open until 10:00 PM tonight with a $$$$ price range, and business casual dress is the way to go. I'd suggest a reservation since it's a popular Saturday night choice. What kind of flavors usually catch your eye when you're exploring a new menu? After dinner, you might want to stop by the Bow & Arrow sports bar in the Casino of the Earth for a more casual atmosphere.",
+      "sources": [
+        {
+          "category": "faq",
+          "source": "mohegan_sun.json",
+          "score": 0.712
+        },
+        {
+          "category": "restaurants",
+          "source": "mohegan_sun.json",
+          "score": 0.719
+        },
+        {
+          "category": "gaming",
+          "source": "mohegan_sun.json",
+          "score": 0.683
+        },
+        {
+          "category": "hotel",
+          "source": "mohegan_sun.json",
+          "score": 0.672
+        }
+      ],
+      "elapsed_ms": 36150,
+      "error": null
+    },
+    {
+      "turn_index": 1,
+      "user_message": "Yeah their Gordon Ramsay place is really good",
+      "agent_response": "Bobby Flay\u2019s Bar Americain in the Casino of the Earth really captures that celebrity chef energy with a menu that's all about bold, regional American flavors. The atmosphere has a lively brasserie feel, and his signature Southwest touches on dishes like the grilled meats and seafood are what keep people coming back. \n\nThey are open until 11:00 PM tonight with a price range of $$$ and a smart casual dress code, and I definitely recommend a reservation for a Saturday night. Since you appreciate a chef-driven menu, are you more in the mood for a signature steak or are you leaning toward something from the raw bar? After dinner, you might enjoy walking over to the Wolf Den nearby to catch some free live music.",
+      "sources": [
+        {
+          "category": "restaurants",
+          "source": "mohegan_sun.json",
+          "score": 0.66
+        }
+      ],
+      "elapsed_ms": 28707,
+      "error": null
+    },
+    {
+      "turn_index": 2,
+      "user_message": "Hmm those do sound worth trying",
+      "agent_response": "They really are, and if you want a taste of a true Connecticut institution, you have to try Frank Pepe\u2019s Pizzeria Napoletana in the Casino of the Earth. The char from their coal-fired oven gives the crust a smoky crunch that\u2019s hard to beat\u2014especially on their legendary white clam pie. \n\nThey\u2019re open until 11:00 PM tonight with a $$ price range, and since they don't take reservations, you can just walk right up in your casual gear. Keep in mind that hours and prices can vary, so it's always a good idea to confirm when you arrive. I\u2019ve got you if you need more specifics on the menu, and I can certainly connect you with our host team if you want to look into dining",
+      "sources": [
+        {
+          "category": "restaurants",
+          "source": "mohegan_sun.json",
+          "score": 0.647
+        },
+        {
+          "category": "entertainment",
+          "source": "mohegan_sun.json",
+          "score": 0.644
+        },
+        {
+          "category": "amenities",
+          "source": "mohegan_sun.json",
+          "score": 0.632
+        }
+      ],
+      "elapsed_ms": 56272,
+      "error": null
+    }
+  ],
+  "completed": true
+}

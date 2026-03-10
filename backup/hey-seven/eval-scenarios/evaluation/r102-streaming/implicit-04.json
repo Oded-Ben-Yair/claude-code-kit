@@ -1,0 +1,76 @@
+{
+  "scenario_id": "implicit-04",
+  "scenario_name": "Restless kids imply urgency and family context",
+  "category": "behavioral_implicit",
+  "behavioral_dimension": "B2_implicit",
+  "expected_behavior": "Treats 'restless kids' as an urgent request for immediate, family-friendly activities. Answers are practical and actionable. Suggests casual dining for families, not fine dining",
+  "expected_behavioral_quality": "Reads 'restless kids' as urgency and stress. Provides quick, practical, family-friendly answers immediately. Does not give a marketing-style overview. Prioritizes activities that kids can do right now, not things that require planning or reservations.",
+  "safety_relevant": false,
+  "source_file": "behavioral_implicit.yaml",
+  "thread_id": "eval-implicit-04-1772913386",
+  "turns": [
+    {
+      "turn_index": 0,
+      "user_message": "The kids are getting restless, what can we do?",
+      "agent_response": "I've got you\u2014Mohegan Sun has several spots designed specifically to help them burn off that energy. Kids Quest is a supervised play area for children aged six weeks up to 12 years, while the Cyber Quest arcade right next door is a hit for the older kids and teens who want to play the latest video games. \n\nIf they need to be active, the Wombi Rock Climbing Wall is also nearby and caters to all skill levels. Pro tip\u2014the Wombi Rock wall is a great way to wear them out before bedtime since it is located right near the Kids Quest area! How old are the kids you're traveling with today? Once they're settled, I can point you toward a great spot for a late dinner or perhaps a relaxing treatment at Elemis Spa.",
+      "sources": [
+        {
+          "category": "entertainment",
+          "source": "mohegan_sun.json",
+          "score": 0.662
+        },
+        {
+          "category": "amenities",
+          "source": "mohegan_sun.json",
+          "score": 0.667
+        },
+        {
+          "category": "faq",
+          "source": "mohegan_sun.json",
+          "score": 0.647
+        },
+        {
+          "category": "gaming",
+          "source": "mohegan_sun.json",
+          "score": 0.599
+        }
+      ],
+      "elapsed_ms": 40402,
+      "error": null
+    },
+    {
+      "turn_index": 1,
+      "user_message": "Is the pool open right now?",
+      "agent_response": "The heated indoor pool is open until 10:00 PM tonight, so you still have about two hours to let the kids jump in and splash around. It is located right in the hotel and features a hot tub where you can take a quick moment for yourself while they play. Are you currently staying with us at the resort? Once everyone is dried off, I can recommend a nearby spot for a quick bite to eat.",
+      "sources": [
+        {
+          "category": "faq",
+          "source": "mohegan_sun.json",
+          "score": 0.713
+        },
+        {
+          "category": "amenities",
+          "source": "mohegan_sun.json",
+          "score": 0.677
+        }
+      ],
+      "elapsed_ms": 28955,
+      "error": null
+    },
+    {
+      "turn_index": 2,
+      "user_message": "Great. And where can we grab a quick bite with kids?",
+      "agent_response": "Johnny Rockets in the Casino of the Earth is your best bet for a quick, kid-approved meal tonight. It's a retro 1950s diner serving burgers, fries, and shakes until 11:00 PM, and it's very budget-friendly with no reservations required. \n\nDo any of the kids have food allergies I should keep in mind for our chefs? After you've finished your shakes, the Cyber Quest arcade is just a short walk away if they still have some energy left.",
+      "sources": [
+        {
+          "category": "restaurants",
+          "source": "mohegan_sun.json",
+          "score": 0.658
+        }
+      ],
+      "elapsed_ms": 30357,
+      "error": null
+    }
+  ],
+  "completed": true
+}

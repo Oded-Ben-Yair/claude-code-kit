@@ -1,0 +1,87 @@
+{
+  "id": "agentic-04",
+  "name": "Itinerary building from scattered preferences",
+  "source_file": "behavioral_agentic.yaml",
+  "category": "behavioral_agentic",
+  "behavioral_dimension": "B4_agentic",
+  "expected_behavior": "Accumulates preferences across turns and offers a synthesized itinerary when asked: e.g., spa in the afternoon, steakhouse for dinner, with logical timing",
+  "expected_behavioral_quality": "Collects scattered preference signals across turns and synthesizes them into a coherent itinerary. Does not just answer each question in isolation \u2014 connects them into a flow.",
+  "safety_relevant": false,
+  "turns": [
+    {
+      "turn_index": 0,
+      "user_message": "We like relaxing things",
+      "agent_response": "If you're looking to unwind, Mandara Spa is open right now until 8:00 PM and offers a peaceful Balinese-inspired sanctuary. Their relaxation lounge and steam rooms provide a great way to disconnect from the buzz of the property. For a more casual way to soak, the heated indoor pool and hot tub are available to hotel guests until 10:00 PM. Many guests find that a quiet walk through the Shops at Mohegan Sun is also a nice way to spend a low-key afternoon. Would you prefer a structured spa treatment like a massage, or are you looking for more of a self-paced relaxation experience?",
+      "sources": [
+        {
+          "category": "amenities",
+          "source": "mohegan_sun.json",
+          "score": 0.66
+        },
+        {
+          "category": "entertainment",
+          "source": "mohegan_sun.json",
+          "score": 0.656
+        },
+        {
+          "category": "promotions",
+          "source": "mohegan_sun.json",
+          "score": 0.613
+        }
+      ],
+      "elapsed_ms": 30214,
+      "error": null
+    },
+    {
+      "turn_index": 1,
+      "user_message": "But also good food",
+      "agent_response": "Hash House A Go Go ($$) is open until 2:00 PM with no reservations needed and serves hearty farm-to-table comfort food in a very relaxed setting; hours may vary. Before you head to the spa, would you prefer a sweet brunch like their giant pancakes or something more savory?",
+      "sources": [
+        {
+          "category": "restaurants",
+          "source": "mohegan_sun.json",
+          "score": 0.654
+        },
+        {
+          "category": "promotions",
+          "source": "mohegan_sun.json",
+          "score": 0.633
+        }
+      ],
+      "elapsed_ms": 40089,
+      "error": null
+    },
+    {
+      "turn_index": 2,
+      "user_message": "Put it together for us?",
+      "agent_response": "A 1:00 PM brunch at Hash House A Go Go followed by an afternoon at Mandara Spa is a great plan, and you could finish with a low-key show at the Wolf Den. Does that 1:00 PM start time work for your schedule?",
+      "sources": [
+        {
+          "category": "hotel",
+          "source": "mohegan_sun.json",
+          "score": 0.604
+        },
+        {
+          "category": "entertainment",
+          "source": "mohegan_sun.json",
+          "score": 0.643
+        },
+        {
+          "category": "property",
+          "source": "mohegan_sun.json",
+          "score": 0.64
+        },
+        {
+          "category": "faq",
+          "source": "mohegan_sun.json",
+          "score": 0.598
+        }
+      ],
+      "elapsed_ms": 34048,
+      "error": null
+    }
+  ],
+  "elapsed_ms": 104352,
+  "error": null,
+  "completed": true
+}

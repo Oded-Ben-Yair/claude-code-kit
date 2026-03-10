@@ -1,0 +1,101 @@
+{
+  "scenario_id": "overall-02",
+  "scenario_name": "Mixed signals requiring adaptation",
+  "category": "behavioral_overall_quality",
+  "behavioral_dimension": "B10_overall",
+  "expected_behavior": "Turn 1: Matches excitement without over-enthusiasm. Turn 2: Does not take offense or over-apologize \u2014 adjusts recommendations based on implicit 'I want something more interesting/upscale'. Turn 3: Smoothly provides spa details without commenting on the mood shift. Coherent adaptation across tones",
+  "expected_behavioral_quality": "Guest sends mixed signals \u2014 starts enthusiastic, becomes critical, then re-engages. Tests the agent's ability to adapt tone, maintain coherence, and not overreact to mood shifts.",
+  "safety_relevant": false,
+  "source_file": "behavioral_overall_quality.yaml",
+  "thread_id": "eval-overall-02-1772824332",
+  "turns": [
+    {
+      "turn_index": 0,
+      "user_message": "Hey! First time here, super excited. What should we check out?",
+      "agent_response": "Welcome to Mohegan Sun! You are in great hands, and since it is Friday evening, the property is just starting to come alive.\n\nFor your first night, I'd suggest heading over to the Wolf Den in the heart of the Casino of the Earth. It is an intimate venue with a really electric energy, and the best part is the shows are completely complimentary. There is typically a performance at 8:00 PM or 9:00 PM, which is perfect timing for you. If you prefer something more high-energy later on, Avalon Nightclub opens at 10:00 PM and features a state-of-the-art sound system that really sets the mood for the weekend.\n\nPro tip: the Wolf Den is open seating and has a capacity of only 350, so if you see a line starting to form about thirty minutes before the show, that is the best time to find your spot. Are you in the mood for a high-energy dance floor tonight, or would you prefer a more relaxed lounge atmosphere like novelle?",
+      "sources": [
+        {
+          "category": "entertainment",
+          "source": "mohegan_sun.json",
+          "score": 0.676
+        },
+        {
+          "category": "restaurants",
+          "source": "mohegan_sun.json",
+          "score": 0.643
+        },
+        {
+          "category": "amenities",
+          "source": "mohegan_sun.json",
+          "score": 0.673
+        }
+      ],
+      "elapsed_ms": 41140,
+      "error": null
+    },
+    {
+      "turn_index": 1,
+      "user_message": "Hmm, those options sound kind of basic honestly",
+      "agent_response": "Fair point \u2014 the Wolf Den is definitely a more classic casino experience. If you want something less traditional, novelle is the spot to check out when it opens later this evening. It is an \"ultra-lounge\" that feels more like a boutique club in a major city, featuring gold-accented gaming tables and a much more sophisticated cocktail program than the standard bars on the floor.\n\nSince it is mid-afternoon, I'd recommend walking over to the Casino of the Sky to see the \"River Blue\" glass sculpture by Dale Chihuly. It is 55 feet tall and one of the most unique architectural features on the property. Afterward, Todd English's Tuscany is a guest favorite for dinner because the restaurant is built directly into the side of a waterfall.\n\nDoes an upscale, private lounge vibe like novelle hit closer to what you had in mind for tonight?",
+      "sources": [
+        {
+          "category": "faq",
+          "source": "mohegan_sun.json",
+          "score": 0.627
+        },
+        {
+          "category": "entertainment",
+          "source": "mohegan_sun.json",
+          "score": 0.632
+        },
+        {
+          "category": "promotions",
+          "source": "mohegan_sun.json",
+          "score": 0.624
+        },
+        {
+          "category": "gaming",
+          "source": "mohegan_sun.json",
+          "score": 0.619
+        },
+        {
+          "category": "hotel",
+          "source": "mohegan_sun.json",
+          "score": 0.621
+        }
+      ],
+      "elapsed_ms": 40371,
+      "error": null
+    },
+    {
+      "turn_index": 2,
+      "user_message": "Wait actually the spa thing sounds pretty good. Tell me more",
+      "agent_response": "We have two main options: Mandara Spa, which is our full-service sanctuary inspired by Balinese healing traditions, and Elemis Spa in the Earth Tower, which focuses on premium skincare and couples experiences. Mandara is the larger of the two and features a beautiful relaxation lounge, steam room, and sauna that really help you disconnect from the energy of the casino floor. \n\nSince it is currently 7:13 PM, Mandara Spa remains open for about 45 more minutes for those looking to browse products or inquire about the morning schedule, while Elemis Spa has already closed for the evening. Mandara offers a wide range of services including massages, facials, body wraps, and aromatherapy, whereas Elemis is great if you're looking for express services or high-end skincare treatments.\n\nInsider tip: if you book a treatment at Mandara, access to the steam room and sauna is included, so it is worth arriving at least thirty minutes early to take advantage of those facilities. Would you like me to go over the specific massage and facial options for a session tomorrow morning? After a morning at the spa, grabbing a fresh juice or a light lunch in the Earth Tower is a great way to keep that relaxed feeling going.",
+      "sources": [
+        {
+          "category": "amenities",
+          "source": "mohegan_sun.json",
+          "score": 0.681
+        },
+        {
+          "category": "promotions",
+          "source": "mohegan_sun.json",
+          "score": 0.652
+        },
+        {
+          "category": "entertainment",
+          "source": "mohegan_sun.json",
+          "score": 0.636
+        },
+        {
+          "category": "property",
+          "source": "mohegan_sun.json",
+          "score": 0.643
+        }
+      ],
+      "elapsed_ms": 35032,
+      "error": null
+    }
+  ],
+  "completed": true
+}

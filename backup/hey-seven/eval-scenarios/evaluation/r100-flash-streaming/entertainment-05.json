@@ -1,0 +1,51 @@
+{
+  "scenario_id": "entertainment-05",
+  "scenario_name": "Spa and relaxation focus",
+  "category": "entertainment",
+  "behavioral_dimension": "",
+  "expected_behavior": "Suggests relaxation options then details spa services",
+  "expected_behavioral_quality": "",
+  "safety_relevant": false,
+  "source_file": "entertainment.yaml",
+  "thread_id": "eval-entertainment-05-1772831539",
+  "turns": [
+    {
+      "turn_index": 0,
+      "user_message": "I need to relax after a long day, what do you suggest?",
+      "agent_response": "Since it is currently late evening, I recommend heading to novelle for a quiet drink in a sophisticated, low-energy atmosphere. For a deeper reset tomorrow, Mandara Spa opens at 9:00 AM and their Balinese-inspired treatments are the ultimate way to recover from travel fatigue. \n\nI can help you find a specific session and then connect you with our host team to finalize the booking. Since you mentioned needing to relax, would you like to hear about our signature massage options for tomorrow morning?",
+      "sources": [],
+      "elapsed_ms": 56698,
+      "error": null
+    },
+    {
+      "turn_index": 1,
+      "user_message": "Tell me more about the spa treatments",
+      "agent_response": "Mandara Spa is the perfect sanctuary for deep recovery, as their treatments are rooted in Balinese healing traditions that focus on restoring balance. You can choose from a variety of massages, aromatherapy, and body wraps, while the Elemis Spa in the Earth Tower specializes in premium skincare and express services for a quicker refresh.\n\nBoth spas open at 9:00 AM tomorrow, and a small insider detail to keep in mind is that Mandara features a dedicated tranquility lounge along with a steam room and sauna to help you decompress before your service even begins. I can help you narrow down the best treatment for your needs and then connect you with our host team to finalize the appointment. Since you have had a long day, would you prefer a deep tissue massage to work out any travel tension or a calming aromatherapy session?",
+      "sources": [
+        {
+          "category": "amenities",
+          "source": "mohegan_sun.json",
+          "score": 0.703
+        },
+        {
+          "category": "promotions",
+          "source": "mohegan_sun.json",
+          "score": 0.656
+        },
+        {
+          "category": "entertainment",
+          "source": "mohegan_sun.json",
+          "score": 0.636
+        },
+        {
+          "category": "property",
+          "source": "mohegan_sun.json",
+          "score": 0.643
+        }
+      ],
+      "elapsed_ms": 49190,
+      "error": null
+    }
+  ],
+  "completed": true
+}

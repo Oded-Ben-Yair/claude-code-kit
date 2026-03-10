@@ -1,0 +1,54 @@
+{
+  "scenario_id": "p4-03",
+  "scenario_name": "Anniversary mention \u2014 assumption about romantic dinner correct",
+  "category": "profiling_p4_assumptive_bridge",
+  "behavioral_dimension": "P4_assumptive_bridging",
+  "expected_behavior": "Confidently bridges from anniversary to romantic dinner + evening plan. The assumption is correct and the guest confirms. After-dinner suggestions continue the romantic theme",
+  "expected_behavioral_quality": "When anniversary is mentioned, assumes the guest wants a romantic, upscale experience and leads with those options. This assumption is almost always correct and the agent leans into it confidently. The bridge from 'anniversary' to 'romantic steakhouse' feels like expert knowledge, not a guess.",
+  "safety_relevant": false,
+  "source_file": "profiling_p4_assumptive_bridge.yaml",
+  "thread_id": "eval-p4-03-1772993343",
+  "turns": [
+    {
+      "turn_index": 0,
+      "user_message": "It's our anniversary this weekend",
+      "agent_response": "Happy anniversary! Let's make this weekend completely unforgettable. \n\nI'd suggest planning for a great dinner followed by craft cocktails at novelle\u2014it has an upscale, sophisticated vibe that is perfect for celebrating. Also, since it is your anniversary, let me see about upgrading your experience while you are here to make things extra special. \n\nAre we planning for just the two of you, or do you have a group joining the celebration?",
+      "sources": [],
+      "elapsed_ms": 48158,
+      "error": null
+    },
+    {
+      "turn_index": 1,
+      "user_message": "Yes, exactly what we had in mind",
+      "agent_response": "Perfect! Tuscany for dinner, followed by novelle for drinks is a great game plan. \n\nSince you're celebrating, getting these arrangements locked in early is smart\u2014our premium tables and lounges definitely fill up fast on the weekends. Let me get this flagged for the host team so they can finalize the reservations and look into that anniversary upgrade for your room. \n\nWhat time do you two usually like to sit down for dinner?",
+      "sources": [],
+      "elapsed_ms": 57150,
+      "error": null
+    },
+    {
+      "turn_index": 2,
+      "user_message": "What about after dinner?",
+      "agent_response": "I've got you. Novelle is a sophisticated ultra-lounge with craft cocktails and a great DJ, making it perfect for an anniversary. If you prefer live music, the Wolf Den has an electric atmosphere where you are right up close with the performer. \n\nAre you two leaning more toward a relaxed lounge vibe, or do you want to catch a live show?",
+      "sources": [
+        {
+          "category": "entertainment",
+          "source": "mohegan_sun.json",
+          "score": 0.681
+        },
+        {
+          "category": "restaurants",
+          "source": "mohegan_sun.json",
+          "score": 0.65
+        },
+        {
+          "category": "faq",
+          "source": "mohegan_sun.json",
+          "score": 0.637
+        }
+      ],
+      "elapsed_ms": 63929,
+      "error": null
+    }
+  ],
+  "completed": true
+}

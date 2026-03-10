@@ -1,0 +1,71 @@
+{
+  "scenario_id": "h4-04",
+  "scenario_name": "Guest who introduced themselves formally",
+  "category": "host_triangle_h4_h6_relationship",
+  "behavioral_dimension": "H4_personalized_recognition",
+  "expected_behavior": "Maintains 'Mr. Chen' throughout, never dropping to first name. Matches the formal register in vocabulary and sentence structure. Recommendation blends fine dining with a 'hidden gem' angle, showing the agent listened to what Mr. Chen actually values \u2014 not just price tier",
+  "expected_behavioral_quality": "Mirrors the guest's formality level throughout the conversation. A guest who introduces themselves with a title or full name expects that register to be maintained. Recognition includes respecting the communication style, not just remembering the name.",
+  "safety_relevant": false,
+  "source_file": "host_triangle_h4_h6_relationship.yaml",
+  "thread_id": "eval-h4-04-1772951489",
+  "turns": [
+    {
+      "turn_index": 0,
+      "user_message": "Good evening. I'm Mr. Chen, visiting from New York. I understand you have quite a dining portfolio.",
+      "agent_response": "Welcome to Mohegan Sun, Mr. Seven. It is a pleasure to have a guest from New York with us.\n\nFor a standout experience this evening, Tao Asian Bistro & Lounge in the Casino of the Sky is our premier choice for Pan-Asian cuisine, offering a mood that is both sophisticated and high-energy. They open today at 5:00 PM and are well-regarded for their sushi bar and dim sum, all served within a dramatic, stylish setting that rivals the best spots in Manhattan. Since you've just arrived this morning, you might also appreciate knowing that Lantern Bar & Grill in the Casino of the Earth is open 24 hours and serves a solid American breakfast if you need to refuel after your trip. \n\nAfter dinner, you might enjoy catching a live show at the Wolf Den to experience the heart of our entertainment scene. Do you usually prefer a vibrant, social atmosphere for your evening meals, or are you looking for something a bit more quiet and secluded?",
+      "sources": [
+        {
+          "category": "restaurants",
+          "source": "mohegan_sun.json",
+          "score": 0.672
+        },
+        {
+          "category": "faq",
+          "source": "mohegan_sun.json",
+          "score": 0.654
+        },
+        {
+          "category": "entertainment",
+          "source": "mohegan_sun.json",
+          "score": 0.662
+        }
+      ],
+      "elapsed_ms": 30949,
+      "error": null
+    },
+    {
+      "turn_index": 1,
+      "user_message": "I appreciate fine dining but also enjoy discovering hidden gems. What would you recommend?",
+      "agent_response": "Mr. Seven, for that balance of high-end quality and an inviting atmosphere that feels like a discovery, Todd English\u2019s Tuscany is the place to be. \n\nThe wood-fired aroma from the open kitchen hits you immediately, creating a warm, artisan backdrop for their handmade pastas and signature dishes. It is located in the Casino of the Sky and is open tonight from 5:00 PM to 10:00 PM. I would suggest business casual attire and a reservation to ensure you get a prime spot near the action. Since you enjoy the finer details, you might also like to know that the restaurant is situated right near our stunning indoor waterfall, which adds a beautiful natural element to the evening. \n\nAfter dinner, the Wolf Den in the Casino of the Earth often has live music that provides a great energy to cap off the night. Are you usually more inclined toward a classic Italian meal, or are you in the mood for something like a prime steak for your first night here?",
+      "sources": [
+        {
+          "category": "restaurants",
+          "source": "mohegan_sun.json",
+          "score": 0.657
+        }
+      ],
+      "elapsed_ms": 30062,
+      "error": null
+    },
+    {
+      "turn_index": 2,
+      "user_message": "Excellent taste. I'll try the Tuscany tonight.",
+      "agent_response": "I've got you, Mr. Seven, and I think you'll find Tuscany lives up to the expectations of a seasoned New Yorker.\n\nThe wood-fired flatbreads are a standout, but the handmade pasta is where the chef\u2019s artistry really shows. Since it opens at 5:00 PM today, I'd suggest a business casual look to match the elegant, warm atmosphere of the Casino of the Sky. Because it\u2019s a popular choice for a Sunday evening, a reservation is highly recommended to secure a table with a view of the open kitchen. \n\nI can certainly connect you with our host team to finalize that timing for you. After a meal like that, a stroll through the Shops at Mohegan Sun or catching the live music at the Wolf Den is a perfect way to walk off the pasta. Will you be dining solo this evening, or should I account for a larger party in the recommendation?",
+      "sources": [
+        {
+          "category": "restaurants",
+          "source": "mohegan_sun.json",
+          "score": 0.689
+        },
+        {
+          "category": "faq",
+          "source": "mohegan_sun.json",
+          "score": 0.649
+        }
+      ],
+      "elapsed_ms": 41872,
+      "error": null
+    }
+  ],
+  "completed": true
+}

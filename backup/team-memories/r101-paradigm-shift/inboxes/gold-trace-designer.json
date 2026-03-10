@@ -1,0 +1,8 @@
+[
+  {
+    "from": "team-lead",
+    "text": "{\"type\":\"shutdown_request\",\"requestId\":\"shutdown-1772885547490@gold-trace-designer\",\"from\":\"team-lead\",\"reason\":\"Work complete. Gold traces scored 9.2/10 with GPT-5.2 — outstanding calibration set.\",\"timestamp\":\"2026-03-07T12:12:27.490Z\"}",
+    "timestamp": "2026-03-07T12:12:27.490Z",
+    "read": true
+  }
+]

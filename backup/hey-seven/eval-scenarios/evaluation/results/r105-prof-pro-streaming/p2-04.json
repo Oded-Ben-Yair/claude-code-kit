@@ -1,0 +1,54 @@
+{
+  "scenario_id": "p2-04",
+  "scenario_name": "Agent avoids re-asking known information",
+  "category": "profiling_p2_active_probing",
+  "behavioral_dimension": "P2_active_probing",
+  "expected_behavior": "Uses all three pieces of info (name, party size, occasion) from turn 1 throughout. Never re-asks any of them. Recommendations are shaped by the 50th birthday milestone and party of 4",
+  "expected_behavioral_quality": "When the guest has already provided information (name, party size, occasion), the agent does NOT ask for it again. If the guest said 'party of 4 for a birthday' in turn 1, the agent never asks 'how many?' or 'celebrating anything?' in later turns.",
+  "safety_relevant": false,
+  "source_file": "profiling_p2_active_probing.yaml",
+  "thread_id": "eval-p2-04-1772991262",
+  "turns": [
+    {
+      "turn_index": 0,
+      "user_message": "Hi, I'm Rachel. Party of 4, it's my husband's 50th birthday.",
+      "agent_response": "Happy 50th to your husband, Rachel! That is a huge milestone to celebrate. \n\nOh, and since it is his birthday, Mohegan Sun would love to treat you to a $25 dining credit at any of our restaurants to help kick off the festivities. \n\nFor a party of four celebrating tonight, we have a few great directions depending on his style. If he enjoys a vibrant, colorful atmosphere, SolToro Taqueria & Tequila Bar is fantastic\u2014they have an extensive mezcal selection and incredible authentic tacos, and they are open right now until 10:00 PM. \n\nAre you leaning toward a fun, energetic dinner like SolToro tonight, or were you hoping for more of a classic, fine-dining vibe for the big 5-0?",
+      "sources": [],
+      "elapsed_ms": 64847,
+      "error": null
+    },
+    {
+      "turn_index": 1,
+      "user_message": "What restaurant do you recommend?",
+      "agent_response": "Rachel, for a milestone like a 50th, Michael Jordan's Steak House in the Casino of the Sky is my absolute top pick. It delivers that classic, upscale birthday experience. The USDA Prime steaks are incredible, and if anyone in your group doesn't do red meat, their fresh seafood selection is outstanding. \n\nThe dining room strikes this perfect balance of elegant fine dining with tasteful sports memorabilia, making it a favorite for celebrations. They are open tonight until 10:00 PM, and the dress code is business casual. Since reservations are highly recommended, I've got you covered with all the details and can connect you with our host team to finalize a table. \n\nAfter dinner, the Wolf Den has free live music every night right in the Casino of the Earth\u2014it is the perfect spot to keep the birthday energy going! \n\nDoes a classic steakhouse sound like the right fit for his celebration tonight?",
+      "sources": [],
+      "elapsed_ms": 56548,
+      "error": null
+    },
+    {
+      "turn_index": 2,
+      "user_message": "And after dinner?",
+      "agent_response": "Rachel, the celebration really kicks into gear after dinner at the Wolf Den. \n\nIt is located right in the heart of the Casino of the Earth and features free live music every single night, so you don't need tickets to walk in and enjoy the show. There is an intimate energy there where you are right in the mix with the performers, which makes for a great birthday atmosphere. If he would prefer a more sophisticated lounge vibe for a birthday toast, Birdcage Bar in the Casino of the Sky is open until 2:00 AM tonight and specializes in excellent craft cocktails. \n\nSince it is a big milestone, I'd also suggest looking into a session at Mandara Spa for tomorrow morning. Their fire and ice massage is the perfect way to reset after a night of celebrating. I've got all the details on their wellness packages if you want to help him start his 51st year feeling refreshed.\n\nWould you say your husband is more of a live music fan, or would he prefer a quiet spot for a high-end whiskey to end the night?",
+      "sources": [
+        {
+          "category": "entertainment",
+          "source": "mohegan_sun.json",
+          "score": 0.674
+        },
+        {
+          "category": "restaurants",
+          "source": "mohegan_sun.json",
+          "score": 0.652
+        },
+        {
+          "category": "faq",
+          "source": "mohegan_sun.json",
+          "score": 0.642
+        }
+      ],
+      "elapsed_ms": 36236,
+      "error": null
+    }
+  ],
+  "completed": true
+}

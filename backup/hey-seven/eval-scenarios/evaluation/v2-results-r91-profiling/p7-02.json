@@ -1,0 +1,97 @@
+{
+  "id": "p7-02",
+  "name": "Sensitive question with reason framing",
+  "source_file": "profiling_p6_p7_incentive_privacy.yaml",
+  "category": "profiling_p6_p7_incentive_privacy",
+  "behavioral_dimension": "P7_privacy_respect",
+  "expected_behavior": "When asking about budget level, provides the reason first: 'To put together the right mix of dinner and entertainment for you...' Guest shares budget signal willingly because they understand why it was asked. No awkwardness",
+  "expected_behavioral_quality": "When the agent asks a question that could feel sensitive (budget, gaming level, occasion details), it ALWAYS provides the reason BEFORE or alongside the question. 'So I can match you with the right experience \u2014 are you looking for something casual or upscale?' The reason comes first.",
+  "safety_relevant": false,
+  "turns": [
+    {
+      "turn_index": 0,
+      "user_message": "Plan a whole evening for us",
+      "agent_response": "I can certainly help you map out a full evening.\n\nA great way to start is with dinner at Todd English\u2019s Tuscany, which is a guest favorite for its \"Tuscan T-Bone\" and the view of our indoor waterfall. Afterward, the Wolf Den offers free live music in a high-energy setting right in the center of the Casino of the Earth. For a more sophisticated end to the night, Novelle is open on Thursday evenings for craft cocktails in an upscale lounge environment.\n\nTo help me narrow down the best seating and venue options for you, how many people are in your party?",
+      "sources": [
+        {
+          "category": "entertainment",
+          "source": "mohegan_sun.json",
+          "score": 0.66
+        },
+        {
+          "category": "restaurants",
+          "source": "mohegan_sun.json",
+          "score": 0.617
+        },
+        {
+          "category": "faq",
+          "source": "mohegan_sun.json",
+          "score": 0.653
+        }
+      ],
+      "elapsed_ms": 33252,
+      "error": null
+    },
+    {
+      "turn_index": 1,
+      "user_message": "Mid-range, we're not high rollers",
+      "agent_response": "I appreciate the clarification. For a quality mid-range evening, I suggest dinner at Johnny Rockets in the Casino of the Earth followed by a free live show at the Wolf Den. You can finish the night with craft cocktails at the Birdcage Bar in the Casino of the Sky, which offers a sophisticated atmosphere at a more accessible price point. Is American fare a good fit for your group tonight?",
+      "sources": [
+        {
+          "category": "restaurants",
+          "source": "mohegan_sun.json",
+          "score": 0.677
+        },
+        {
+          "category": "gaming",
+          "source": "mohegan_sun.json",
+          "score": 0.672
+        },
+        {
+          "category": "hotel",
+          "source": "mohegan_sun.json",
+          "score": 0.668
+        },
+        {
+          "category": "entertainment",
+          "source": "mohegan_sun.json",
+          "score": 0.676
+        }
+      ],
+      "elapsed_ms": 34158,
+      "error": null
+    },
+    {
+      "turn_index": 2,
+      "user_message": "That's a great plan, thanks",
+      "agent_response": "Glad you like the sound of that. Since seating at the Wolf Den is first-come, first-served, I'd suggest arriving about 30 minutes before the show starts to get a good spot. \n\nFor tomorrow morning, would you like a suggestion for a quick and easy breakfast spot on your way out?",
+      "sources": [
+        {
+          "category": "promotions",
+          "source": "mohegan_sun.json",
+          "score": 0.649
+        },
+        {
+          "category": "entertainment",
+          "source": "mohegan_sun.json",
+          "score": 0.623
+        },
+        {
+          "category": "faq",
+          "source": "mohegan_sun.json",
+          "score": 0.595
+        },
+        {
+          "category": "property",
+          "source": "mohegan_sun.json",
+          "score": 0.626
+        }
+      ],
+      "elapsed_ms": 25496,
+      "error": null
+    }
+  ],
+  "elapsed_ms": 92906,
+  "error": null,
+  "completed": true
+}

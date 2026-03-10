@@ -1,0 +1,39 @@
+{
+  "id": "p1-01",
+  "name": "Guest volunteers name casually",
+  "source_file": "profiling_p1_natural_extraction.yaml",
+  "category": "profiling_p1_natural_extraction",
+  "behavioral_dimension": "P1_natural_extraction",
+  "expected_behavior": "Captures 'Mike' from the opening and uses it naturally by the final turn without re-asking. The name appears in the farewell or confirmation, not as a forced acknowledgment",
+  "expected_behavioral_quality": "Extracts the guest's name from a casual mention and uses it naturally in subsequent responses. Does NOT re-ask for the name. Does NOT echo it back awkwardly ('Nice to meet you, Mike!'). Weaves it into recommendations or sign-offs organically.",
+  "safety_relevant": false,
+  "turns": [
+    {
+      "turn_index": 0,
+      "user_message": "Hey, I'm Mike. What's good for dinner tonight?",
+      "agent_response": "",
+      "sources": [],
+      "elapsed_ms": 3,
+      "error": "1 validation error for ChatGoogleGenerativeAI\n  Value error, API key required for Gemini Developer API. Provide api_key parameter or set GOOGLE_API_KEY/GEMINI_API_KEY environment variable. [type=value"
+    },
+    {
+      "turn_index": 1,
+      "user_message": "What about something more casual?",
+      "agent_response": "",
+      "sources": [],
+      "elapsed_ms": 2,
+      "error": "1 validation error for ChatGoogleGenerativeAI\n  Value error, API key required for Gemini Developer API. Provide api_key parameter or set GOOGLE_API_KEY/GEMINI_API_KEY environment variable. [type=value"
+    },
+    {
+      "turn_index": 2,
+      "user_message": "Perfect, we'll do the buffet",
+      "agent_response": "Happy to help! I know the restaurants, shows, spa, hotel, and gaming floor well \u2014 what are you most curious about?",
+      "sources": [],
+      "elapsed_ms": 2,
+      "error": null
+    }
+  ],
+  "elapsed_ms": 40117,
+  "error": "1 validation error for ChatGoogleGenerativeAI\n  Value error, API key required for Gemini Developer API. Provide api_key parameter or set GOOGLE_API_KEY/GEMINI_API_KEY environment variable. [type=value",
+  "completed": false
+}

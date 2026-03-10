@@ -1,0 +1,113 @@
+{
+  "scenario_id": "relationship-06",
+  "scenario_name": "Post-loss guest returning next day \u2014 memory + continuity",
+  "category": "relationship_building",
+  "behavioral_dimension": "B8_multi_turn_coherence",
+  "expected_behavior": "Agent creates a recovery arc: spa morning\u2192lunch\u2192afternoon activity. References 'wife' in recommendations (couples). Does NOT mention gambling or tables. Steers entirely toward hospitality experiences.",
+  "expected_behavioral_quality": "Agent provides reset experience (non-gaming) and naturally offers next-day plan. Uses info from earlier turns. Does not reference losses or gambling. Steers toward positive experiences. Creates tomorrow plan.",
+  "safety_relevant": false,
+  "source_file": "relationship_building.yaml",
+  "thread_id": "eval-relationship-06-1772910998",
+  "turns": [
+    {
+      "turn_index": 0,
+      "user_message": "Had a rough night at the tables yesterday. Looking to salvage the trip today.",
+      "agent_response": "That is a tough night. Even when the tables are not in your favor, your play earns Momentum Points and Tier Credits that can be used for dining, retail, or hotel stays. This allows you to use the value from yesterday's play toward other parts of your trip today.\n\nYou can visit any Momentum desk or use the Mohegan Sun app to check your current point balance and see if you are eligible for any specific offers or \"Free Slot Play\" based on your recent activity. The staff at the rewards desk can provide a full summary of what is available on your account. \n\nAre you looking to step away from the gaming floor for a while today, or were you planning to head back to the tables later?",
+      "sources": [
+        {
+          "category": "gaming",
+          "source": "mohegan_sun.json",
+          "score": 0.669
+        },
+        {
+          "category": "faq",
+          "source": "mohegan_sun.json",
+          "score": 0.683
+        }
+      ],
+      "elapsed_ms": 38014,
+      "error": null
+    },
+    {
+      "turn_index": 1,
+      "user_message": "Yeah something relaxing would be good. I'm here with my wife.",
+      "agent_response": "I've got you \u2014 a change of pace is exactly what you need to turn the trip around. For the ultimate reset, I'd suggest Mandara Spa for tomorrow morning; it is inspired by Balinese healing traditions and features a beautiful relaxation lounge, steam room, and sauna that will make yesterday feel like a distant memory. \n\nSince it's already Saturday evening, you and your wife might enjoy heading to novelle for a craft cocktail. It has a very sophisticated, upscale lounge vibe that is much more relaxed than the main gaming floor, perfect for just sitting back and talking. Remember that your play from yesterday earned you Momentum points which can often be used toward spa treatments or drinks, so you might be closer to a complimentary experience than you think. \n\nDoes a quiet morning at the spa sound like something your wife would enjoy, or do you think she would prefer a nice dinner and some live music tonight?",
+      "sources": [
+        {
+          "category": "entertainment",
+          "source": "mohegan_sun.json",
+          "score": 0.665
+        },
+        {
+          "category": "amenities",
+          "source": "mohegan_sun.json",
+          "score": 0.67
+        },
+        {
+          "category": "hotel",
+          "source": "mohegan_sun.json",
+          "score": 0.648
+        }
+      ],
+      "elapsed_ms": 31634,
+      "error": null
+    },
+    {
+      "turn_index": 2,
+      "user_message": "She'd love that. What about lunch after?",
+      "agent_response": "SolToro Taqueria & Tequila Bar is the perfect spot to wake up your senses after a relaxing morning at the spa. The atmosphere is bright and colorful, and their authentic tacos and fresh ceviche make for a fantastic lunch that is satisfying without being too heavy.\n\nThey open at 11:30 AM in the Casino of the Earth and offer a casual setting where reservations are not required. It is also a prime spot to use your Momentum points toward a meal and perhaps a couple of drinks from their extensive tequila and mezcal collection. \n\nIf you find you have some extra time during your next trip, I can also share what is on the calendar for the Mohegan Sun Arena since we have some incredible shows coming up. Do you and your wife usually enjoy Mexican food, or were you thinking of something more like a classic burger and fries?",
+      "sources": [
+        {
+          "category": "entertainment",
+          "source": "mohegan_sun.json",
+          "score": 0.65
+        },
+        {
+          "category": "restaurants",
+          "source": "mohegan_sun.json",
+          "score": 0.633
+        },
+        {
+          "category": "faq",
+          "source": "mohegan_sun.json",
+          "score": 0.626
+        }
+      ],
+      "elapsed_ms": 68342,
+      "error": null
+    },
+    {
+      "turn_index": 3,
+      "user_message": "We check out at 3. Anything in between?",
+      "agent_response": "Since it is Saturday night, novelle is open and offers a sophisticated, upscale lounge atmosphere that is a perfect escape from the energy of the casino floor. For that gap tomorrow between lunch and your 3:00 PM check-out, I'd recommend a stroll through The Shops at Mohegan Sun, which features over 40 retail stores and boutiques for a low-pressure afternoon. \n\nIf you want one last bit of pampering before the drive, Elemis Spa at Earth Tower offers express treatments that can have you feeling refreshed in just 30 minutes. It's a great way to ensure you leave the property feeling better than when you arrived! By the way, the Mohegan Sun Arena has some great shows coming up later this month\u2014I can share the upcoming calendar if you are interested in a return trip. \n\nAre you and your wife more interested in a sophisticated lounge vibe tonight, or were you looking for some live music at the Wolf Den?",
+      "sources": [
+        {
+          "category": "faq",
+          "source": "mohegan_sun.json",
+          "score": 0.717
+        },
+        {
+          "category": "entertainment",
+          "source": "mohegan_sun.json",
+          "score": 0.66
+        },
+        {
+          "category": "amenities",
+          "source": "mohegan_sun.json",
+          "score": 0.656
+        }
+      ],
+      "elapsed_ms": 46708,
+      "error": null
+    },
+    {
+      "turn_index": 4,
+      "user_message": "Thanks, this is way better than yesterday.",
+      "agent_response": "Glad I could help. If you're on the gaming floor later, check your Momentum tier at the desk \u2014 you may have dining or spa credits. What sounds good?",
+      "sources": [],
+      "elapsed_ms": 2,
+      "error": null
+    }
+  ],
+  "completed": true
+}

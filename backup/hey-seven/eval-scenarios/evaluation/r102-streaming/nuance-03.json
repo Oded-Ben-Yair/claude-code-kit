@@ -1,0 +1,64 @@
+{
+  "scenario_id": "nuance-03",
+  "scenario_name": "Honeymoon celebration energy matching",
+  "category": "behavioral_nuance",
+  "behavioral_dimension": "B5_emotional",
+  "expected_behavior": "Celebrates the honeymoon with genuine enthusiasm. Recommends romantic dining and couples experiences. Maintains elevated celebratory tone throughout without being performative",
+  "expected_behavioral_quality": "Matches the celebration energy authentically. Congratulates the couple genuinely. Recommends romantic and special experiences without being generic. Treats this as a milestone occasion deserving elevated suggestions.",
+  "safety_relevant": false,
+  "source_file": "behavioral_nuance.yaml",
+  "thread_id": "eval-nuance-03-1772916482",
+  "turns": [
+    {
+      "turn_index": 0,
+      "user_message": "We just got married! Honeymoon trip!",
+      "agent_response": "Congratulations on the wedding! Let's make sure this honeymoon is exactly what you both need after all the planning stress. \n\nI'd suggest starting with some downtime at the Mandara Spa\u2014they have a beautiful relaxation lounge and Balinese-inspired treatments that will completely reset you. \n\nAre we focusing on total relaxation today, or are you looking for a memorable dinner to celebrate tonight?",
+      "sources": [
+        {
+          "category": "hotel",
+          "source": "mohegan_sun.json",
+          "score": 0.603
+        },
+        {
+          "category": "amenities",
+          "source": "mohegan_sun.json",
+          "score": 0.59
+        },
+        {
+          "category": "property",
+          "source": "mohegan_sun.json",
+          "score": 0.6
+        },
+        {
+          "category": "entertainment",
+          "source": "mohegan_sun.json",
+          "score": 0.591
+        },
+        {
+          "category": "restaurants",
+          "source": "mohegan_sun.json",
+          "score": 0.586
+        }
+      ],
+      "elapsed_ms": 47793,
+      "error": null
+    },
+    {
+      "turn_index": 1,
+      "user_message": "What's the most romantic dinner option?",
+      "agent_response": "I've got you\u2014Tao Asian Bistro & Lounge is the most romantic choice for your honeymoon dinner. The atmosphere is stylish and dramatic, providing a beautiful backdrop for a celebratory meal that feels completely tucked away from the energy of the casino. \n\nThey specialize in Pan-Asian cuisine, from an excellent sushi bar to their signature dim sum, and the price range is typically around $$$. They are open until 11:00 PM tonight, and the dress code is smart casual, so it's a great excuse to dress up a bit. I'll share your interest with the host team so they can help you secure a table and make sure the occasion is recognized. After your meal, you might enjoy heading over to novelle for a craft cocktail and some more intimate lounge vibes. \n\nDo you usually prefer starting with fresh sushi or going for the warm kitchen specialties?",
+      "sources": [],
+      "elapsed_ms": 52377,
+      "error": null
+    },
+    {
+      "turn_index": 2,
+      "user_message": "And something special we can do together tomorrow?",
+      "agent_response": "I've got you\u2014a couples' treatment at Mandara Spa is the perfect way to spend your first full day as a married couple. You can relax together in their Balinese-inspired sanctuary, and I highly recommend their side-by-side massages to really unwind after the wedding chaos. \n\nSince you're on your honeymoon, I'll pass this along to the host team to see how they can help make your spa visit feel even more exclusive. If you're looking for something with a bit more energy after you've recharged, the Cabaret Theatre offers a much more intimate setting than the Arena, which makes for a great date night atmosphere.\n\nBy the way, if you find you love the spa experience, the Mandara Spa often has seasonal wellness specials that are worth checking out on your next visit. \n\nWould you prefer a morning spa session to start the day refreshed, or would you rather save it for the afternoon?",
+      "sources": [],
+      "elapsed_ms": 63189,
+      "error": null
+    }
+  ],
+  "completed": true
+}

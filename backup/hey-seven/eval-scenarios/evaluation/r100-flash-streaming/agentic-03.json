@@ -1,0 +1,60 @@
+{
+  "scenario_id": "agentic-03",
+  "scenario_name": "Follow-up anticipation for incomplete plan",
+  "category": "behavioral_agentic",
+  "behavioral_dimension": "B4_agentic",
+  "expected_behavior": "Recognizes the guest is building a sequential evening plan. After each decision, proactively suggests the logical next activity in the timeline without waiting to be asked",
+  "expected_behavioral_quality": "When a guest is building an evening plan piece by piece, anticipates the next question rather than waiting passively. After dinner is settled, offers 'and for after dinner...' without being asked.",
+  "safety_relevant": false,
+  "source_file": "behavioral_agentic.yaml",
+  "thread_id": "eval-agentic-03-1772816981",
+  "turns": [
+    {
+      "turn_index": 0,
+      "user_message": "We need to plan our evening. Start with dinner.",
+      "agent_response": "For a Friday evening, Todd English's Tuscany in the Casino of the Sky is an exceptional choice. The wood-fired aroma hits you the moment you walk in, and the warm, Tuscan-inspired decor creates a sophisticated yet welcoming atmosphere for signature handmade pastas and flatbreads.\n\nIt is open until 10:00 PM tonight with a price range of $$$$, and because it is a Friday, I highly recommend a reservation. The dress code is business casual, which fits the upscale vibe perfectly. If you would like to secure a table, I can connect you with our host team to finalize the booking.\n\nPro tip: if you can, ask for a table with a view of the Taughannick Falls waterfall to add a bit of natural drama to your meal. After dinner, the energy picks up at novelle, which is just a short walk away for craft cocktails and a sophisticated lounge atmosphere. \n\nAre you looking for a romantic, candlelit setting or something with a bit more of a high-energy buzz for your group!",
+      "sources": [],
+      "elapsed_ms": 44260,
+      "error": null
+    },
+    {
+      "turn_index": 1,
+      "user_message": "Steakhouse at 7. What next?",
+      "agent_response": "Michael Jordan's Steak House is the premier choice for a 7:00 PM dinner\u2014their USDA Prime cuts and the elegant atmosphere in the Casino of the Sky make for a classic high-end evening. \n\nSince it\u2019s a Friday, the property energy peaks right as you\u2019ll be finishing your meal. I suggest heading to **novelle** afterward; it\u2019s an upscale ultra lounge with craft cocktails and a DJ, perfect for a sophisticated post-dinner drink. If you\u2019re looking for live music instead, the **Wolf Den** is just a short walk away and features free performances in the center of the action.\n\nPro tip: if you go to Michael Jordan's, the garlic bread with blue cheese fondue is a legendary starter that many guests come back specifically to order.\n\nDo you prefer a high-energy lounge vibe with a DJ, or a spot where you can sit back and listen to a live band?",
+      "sources": [
+        {
+          "category": "restaurants",
+          "source": "mohegan_sun.json",
+          "score": 0.687
+        },
+        {
+          "category": "entertainment",
+          "source": "mohegan_sun.json",
+          "score": 0.663
+        }
+      ],
+      "elapsed_ms": 51167,
+      "error": null
+    },
+    {
+      "turn_index": 2,
+      "user_message": "A show would be fun. And then?",
+      "agent_response": "The Wolf Den has an intimate energy where you are right there with the performer\u2014it is electric. Shows there typically start at 8:00 PM or 9:00 PM and are complimentary, making it a seamless transition from your 7:00 PM dinner since no tickets are required. For a larger production, the Mohegan Sun Arena is our premier 10,000-seat venue, and you can confirm tonight's specific headliner availability at the box office or property website.\n\nAfter the show, novelle is the perfect destination to keep the evening going. It is an upscale ultra lounge with DJ entertainment and craft cocktails in a sophisticated atmosphere specifically designed for post-show gatherings. \n\nPro tip: Since the Wolf Den is first-come, first-served, it's a good idea to head over immediately after dinner to secure a spot. After a high-energy night, a morning treatment at Elemis Spa is the legendary way to reset\u2014would you like to hear about our signature massage options for tomorrow?",
+      "sources": [
+        {
+          "category": "entertainment",
+          "source": "mohegan_sun.json",
+          "score": 0.65
+        },
+        {
+          "category": "faq",
+          "source": "mohegan_sun.json",
+          "score": 0.625
+        }
+      ],
+      "elapsed_ms": 35608,
+      "error": null
+    }
+  ],
+  "completed": true
+}

@@ -1,0 +1,56 @@
+{
+  "id": "p10-02",
+  "name": "Agent uses dining preference from earlier turn",
+  "source_file": "profiling_p8_p9_p10_completeness.yaml",
+  "category": "profiling_p8_p9_p10_completeness",
+  "behavioral_dimension": "P10_cross_turn_memory",
+  "expected_behavior": "Seafood preference from turn 1 carries into the turn 3 lunch recommendation. The agent does not ask 'what kind of food?' again. The preference was stored and applied across topic changes",
+  "expected_behavioral_quality": "A dining preference mentioned in turn 1 shapes recommendations in a later turn about a different meal. The agent carries 'I love seafood' from dinner planning to breakfast/lunch suggestions without the guest needing to repeat it.",
+  "safety_relevant": false,
+  "turns": [
+    {
+      "turn_index": 0,
+      "user_message": "I love seafood, where should I go for dinner?",
+      "agent_response": "The scent of smoked chili and fresh shellfish greets you at Bobby Flay\u2019s Bar Americain, making it my premier recommendation for a seafood dinner. Their menu highlights bold, regional flavors through dishes like spice-crusted tuna and an expansive raw bar that really captures the essence of American coastal dining. \n\nThey are open today in the Casino of the Earth from 11:30 AM",
+      "sources": [
+        {
+          "category": "restaurants",
+          "source": "mohegan_sun.json",
+          "score": 0.629
+        }
+      ],
+      "elapsed_ms": 48817,
+      "error": null
+    },
+    {
+      "turn_index": 1,
+      "user_message": "Great, what about shows tonight?",
+      "agent_response": "Glad I could help. The Wolf Den has free live music every night \u2014 it's right in the Casino of the Earth and worth checking out. What sounds good?",
+      "sources": [],
+      "elapsed_ms": 2,
+      "error": null
+    },
+    {
+      "turn_index": 2,
+      "user_message": "And tomorrow for lunch?",
+      "agent_response": "For lunch tomorrow, I'd suggest **SolToro Taqueria & Tequila Bar** in the Casino of the Earth for their fresh, vibrant take on seafood. Their ceviche has a bright, citrusy finish that is incredibly refreshing, and the grilled fish tacos have a perfect balance of crunch and spice that makes for a fantastic midday meal.\n\nThey open at 11:30 AM and offer a casual, high-energy atmosphere with no reservations required. After a flavorful lunch, many of our guests enjoy a visit to Mandara Spa to unwind for the afternoon. Are you looking for a quick bite to get back to the action, or do you have time for a more leisurely sit-down lunch?",
+      "sources": [
+        {
+          "category": "restaurants",
+          "source": "mohegan_sun.json",
+          "score": 0.641
+        },
+        {
+          "category": "faq",
+          "source": "mohegan_sun.json",
+          "score": 0.606
+        }
+      ],
+      "elapsed_ms": 26599,
+      "error": null
+    }
+  ],
+  "elapsed_ms": 79437,
+  "error": null,
+  "completed": true
+}

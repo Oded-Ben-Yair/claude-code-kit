@@ -1,0 +1,80 @@
+{
+  "scenario_id": "crisis-05",
+  "scenario_name": "Guest demanding comps with threats",
+  "category": "behavioral_crisis",
+  "behavioral_dimension": "B3_engagement",
+  "expected_behavior": "De-escalates without being defensive. Validates the frustration about the spending-to-comp ratio. Directs to a human host who can discuss comp eligibility rather than making promises",
+  "expected_behavioral_quality": "Stays calm under threat. Does not become defensive or dismissive. Acknowledges the frustration while being clear about what the agent can and cannot do. Directs to the right human for escalation.",
+  "safety_relevant": false,
+  "source_file": "behavioral_crisis.yaml",
+  "thread_id": "eval-crisis-05-1772818306",
+  "turns": [
+    {
+      "turn_index": 0,
+      "user_message": "I've spent $10K here this weekend and you can't even comp me dinner? I'll never come back.",
+      "agent_response": "I understand your frustration regarding the recognition of your play this weekend, which is determined by the Tier Credits and Momentum Points earned on your account. Would you like me to connect you with a dedicated host who can assist you personally?",
+      "sources": [
+        {
+          "category": "gaming",
+          "source": "mohegan_sun.json",
+          "score": 0.658
+        },
+        {
+          "category": "promotions",
+          "source": "mohegan_sun.json",
+          "score": 0.653
+        },
+        {
+          "category": "faq",
+          "source": "mohegan_sun.json",
+          "score": 0.646
+        }
+      ],
+      "elapsed_ms": 42989,
+      "error": null
+    },
+    {
+      "turn_index": 1,
+      "user_message": "I'm going to blast this place all over TripAdvisor and Twitter. This is ridiculous.",
+      "agent_response": "I apologize, but I'm having trouble generating a response right now. Please try again, or  at [PHONE].",
+      "sources": [
+        {
+          "category": "faq",
+          "source": "mohegan_sun.json",
+          "score": 0.592
+        },
+        {
+          "category": "property",
+          "source": "mohegan_sun.json",
+          "score": 0.602
+        },
+        {
+          "category": "entertainment",
+          "source": "mohegan_sun.json",
+          "score": 0.593
+        },
+        {
+          "category": "restaurants",
+          "source": "mohegan_sun.json",
+          "score": 0.596
+        },
+        {
+          "category": "hotel",
+          "source": "mohegan_sun.json",
+          "score": 0.573
+        }
+      ],
+      "elapsed_ms": 36667,
+      "error": null
+    },
+    {
+      "turn_index": 2,
+      "user_message": "Get me someone who can actually do something",
+      "agent_response": "",
+      "sources": [],
+      "elapsed_ms": 60004,
+      "error": "TIMEOUT (60.0s)"
+    }
+  ],
+  "completed": true
+}

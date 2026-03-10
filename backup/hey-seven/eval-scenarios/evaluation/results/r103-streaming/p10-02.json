@@ -1,0 +1,60 @@
+{
+  "scenario_id": "p10-02",
+  "scenario_name": "Agent uses dining preference from earlier turn",
+  "category": "profiling_p8_p9_p10_completeness",
+  "behavioral_dimension": "P10_cross_turn_memory",
+  "expected_behavior": "Seafood preference from turn 1 carries into the turn 3 lunch recommendation. The agent does not ask 'what kind of food?' again. The preference was stored and applied across topic changes",
+  "expected_behavioral_quality": "A dining preference mentioned in turn 1 shapes recommendations in a later turn about a different meal. The agent carries 'I love seafood' from dinner planning to breakfast/lunch suggestions without the guest needing to repeat it.",
+  "safety_relevant": false,
+  "source_file": "profiling_p8_p9_p10_completeness.yaml",
+  "thread_id": "eval-p10-02-1772961463",
+  "turns": [
+    {
+      "turn_index": 0,
+      "user_message": "I love seafood, where should I go for dinner?",
+      "agent_response": "For a premier seafood dinner tonight, Michael Jordan's Steak House in the Casino of the Sky is a fantastic choice. While the name highlights the beef, their fresh seafood is top-tier\u2014the chilled shellfish towers are a masterpiece of lobster, oysters, and shrimp that really sets the tone for the evening. \n\nThey open at 5:00 PM and the vibe is sophisticated, so business casual is the recommended dress code. Prices typically fall in the $$$$ range, and since it is a Sunday, I've got you on the recommendation to secure a reservation to ensure you get a great table. I can certainly provide more details or connect you with our host team to finalize those plans.\n\nAn insider tip: their wine list is one of the most extensive on property, and the staff is excellent at suggesting a pairing that enhances the brininess of their fresh oysters.\n\nAfter your meal, you might enjoy heading over to the Wolf Den in the Casino of the Earth for some live music; it is a great spot to relax after a high-end dinner. Are you more of a fan of a cold raw bar, or do you prefer a hot, pan-seared fish entree?",
+      "sources": [],
+      "elapsed_ms": 58958,
+      "error": null
+    },
+    {
+      "turn_index": 1,
+      "user_message": "Great, what about shows tonight?",
+      "agent_response": "Since you'll be enjoying that seafood dinner, you are in a great position to catch a show afterward. You're going to love the energy tonight at the Wolf Den! It is an intimate, 350-seat venue right in the center of the action where you can see national touring acts and tribute bands for free, with no tickets required. \n\nShows there usually start around 8:00 PM or 9:00 PM, and being that close to the performer makes the experience feel electric. For a much larger production, the Mohegan Sun Arena hosts our massive headliner events; the schedule varies, so I'd suggest checking the current lineup at the box office as you head out from dinner. Just keep in mind that schedules and performers are subject to change. ",
+      "sources": [
+        {
+          "category": "entertainment",
+          "source": "mohegan_sun.json",
+          "score": 0.676
+        },
+        {
+          "category": "faq",
+          "source": "mohegan_sun.json",
+          "score": 0.683
+        }
+      ],
+      "elapsed_ms": 43752,
+      "error": null
+    },
+    {
+      "turn_index": 2,
+      "user_message": "And tomorrow for lunch?",
+      "agent_response": "SolToro Taqueria & Tequila Bar is the spot to be tomorrow if you're looking to keep that seafood theme going with some bright, coastal flavors. Their ceviches are incredibly refreshing and have that perfect citrus snap that pairs so well with a crisp midday cocktail. \n\nLocated in the Casino of the Earth, they open at 11:30 AM and offer a casual atmosphere with mid-range pricing. Since it is a Monday, you typically don't need a reservation and can just walk in whenever you're ready for a break. A little insider tip: the shrimp tacos are a local favorite because the seafood is always perfectly seasoned and never feels too heavy for a lunch portion. Please note that hours and prices can vary, so confirming with the property is always a good idea.\n\nAfter a long lunch, you might enjoy browsing the shops at The Shops at Mohegan Sun or even booking a treatment at Mandara Spa to recharge. Do you usually like to jump right back into the gaming action after lunch, or do you prefer a slower pace in the afternoon?",
+      "sources": [
+        {
+          "category": "restaurants",
+          "source": "mohegan_sun.json",
+          "score": 0.641
+        },
+        {
+          "category": "faq",
+          "source": "mohegan_sun.json",
+          "score": 0.606
+        }
+      ],
+      "elapsed_ms": 30764,
+      "error": null
+    }
+  ],
+  "completed": true
+}

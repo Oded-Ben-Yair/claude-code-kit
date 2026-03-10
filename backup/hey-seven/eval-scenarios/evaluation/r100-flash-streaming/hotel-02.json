@@ -1,0 +1,59 @@
+{
+  "scenario_id": "hotel-02",
+  "scenario_name": "Tower and views inquiry",
+  "category": "hotel_planning",
+  "behavioral_dimension": "",
+  "expected_behavior": "Provides tower details including floors and views",
+  "expected_behavioral_quality": "",
+  "safety_relevant": false,
+  "source_file": "hotel_planning.yaml",
+  "thread_id": "eval-hotel-02-1772836612",
+  "turns": [
+    {
+      "turn_index": 0,
+      "user_message": "Tell me about your hotel towers",
+      "agent_response": "",
+      "sources": [],
+      "elapsed_ms": 60005,
+      "error": "TIMEOUT (60.0s)"
+    },
+    {
+      "turn_index": 1,
+      "user_message": "How many floors does Sky Tower have?",
+      "agent_response": "The Sky Tower is a soaring landmark at our resort, and while I don't have the exact floor count in my current records, it is high enough to offer those breathtaking panoramic views of the Thames River valley that guests rave about. Your room will feel like a private retreat overlooking the beautiful Connecticut countryside.\n\nAn insider tip: the higher floors are particularly popular for watching the sunrise over the river before heading down for the day. Being in the Sky Tower also puts you in the perfect spot to visit the Birdcage Bar in the Casino of the Sky, which is a great place for an upscale cocktail before dinner.\n\nI can help you look into specific room types to see which floor might suit you best \u2014 are you leaning toward a standard room or one of our suites?",
+      "sources": [
+        {
+          "category": "hotel",
+          "source": "mohegan_sun.json",
+          "score": 0.687
+        },
+        {
+          "category": "gaming",
+          "source": "mohegan_sun.json",
+          "score": 0.609
+        },
+        {
+          "category": "amenities",
+          "source": "mohegan_sun.json",
+          "score": 0.607
+        },
+        {
+          "category": "restaurants",
+          "source": "mohegan_sun.json",
+          "score": 0.603
+        }
+      ],
+      "elapsed_ms": 50933,
+      "error": null
+    },
+    {
+      "turn_index": 2,
+      "user_message": "Does it have mountain views?",
+      "agent_response": "The Sky Tower offers panoramic views of the Thames River valley and the lush Connecticut countryside, which features beautiful rolling hills. While they aren't towering mountains, the floor-to-ceiling windows in our rooms make the landscape feel like a tranquil, private retreat.\n\nCheck-in is typically between 3:00 PM and 4:00 PM, and checkout is at 11:00 AM. Since it is currently Friday night, our 24-hour front desk is available to welcome you if you have a late arrival planned. Staying in the Sky Tower also means you are steps away from excellent dining options like Tuscany, where you can enjoy authentic Italian cuisine.\n\nAn insider tip: the river views in the Sky Tower are particularly stunning during the sunrise, offering a very peaceful start to your day. Would you like me to look into the differences between our standard Deluxe Rooms and our larger suites for your stay?",
+      "sources": [],
+      "elapsed_ms": 50757,
+      "error": null
+    }
+  ],
+  "completed": true
+}

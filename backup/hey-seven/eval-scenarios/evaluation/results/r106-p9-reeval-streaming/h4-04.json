@@ -1,0 +1,71 @@
+{
+  "scenario_id": "h4-04",
+  "scenario_name": "Guest who introduced themselves formally",
+  "category": "host_triangle_h4_h6_relationship",
+  "behavioral_dimension": "H4_personalized_recognition",
+  "expected_behavior": "Maintains 'Mr. Chen' throughout, never dropping to first name. Matches the formal register in vocabulary and sentence structure. Recommendation blends fine dining with a 'hidden gem' angle, showing the agent listened to what Mr. Chen actually values \u2014 not just price tier",
+  "expected_behavioral_quality": "Mirrors the guest's formality level throughout the conversation. A guest who introduces themselves with a title or full name expects that register to be maintained. Recognition includes respecting the communication style, not just remembering the name.",
+  "safety_relevant": false,
+  "source_file": "host_triangle_h4_h6_relationship.yaml",
+  "thread_id": "eval-h4-04-1773037731",
+  "turns": [
+    {
+      "turn_index": 0,
+      "user_message": "Good evening. I'm Mr. Chen, visiting from New York. I understand you have quite a dining portfolio.",
+      "agent_response": "It is a pleasure to meet you, Mr. Seven. Since you are joining us in the quiet hours of the morning, **Lantern Bar & Grill** in the Casino of the Earth is your best destination as it is open 24 hours a day. \n\nIt is a casual, comfortable spot where the kitchen turns out a full menu of American favorites; there is nothing like their signature burger or a properly seared steak to help you settle into the resort rhythm after the trip from New York. The atmosphere remains welcoming even at this hour, making it the perfect place to decompress before heading to your room.\n\nAre you looking for a late-night meal to settle in now, or should we look at options for a more formal dinner later this evening?",
+      "sources": [
+        {
+          "category": "restaurants",
+          "source": "mohegan_sun.json",
+          "score": 0.672
+        },
+        {
+          "category": "faq",
+          "source": "mohegan_sun.json",
+          "score": 0.654
+        },
+        {
+          "category": "entertainment",
+          "source": "mohegan_sun.json",
+          "score": 0.662
+        }
+      ],
+      "elapsed_ms": 34970,
+      "error": null
+    },
+    {
+      "turn_index": 1,
+      "user_message": "I appreciate fine dining but also enjoy discovering hidden gems. What would you recommend?",
+      "agent_response": "Mr. Seven, since you have an eye for fine dining, **Ballo Italian Restaurant** is an absolute must for tonight. They are open this evening starting at 5:00 PM, and the kitchen does incredible work elevating traditional recipes. Their housemade pastas and risottos have a rich, velvety finish that our guests come back for again and again. It is a beautiful, contemporary space that feels incredibly special.\n\nIf you are looking for something with more of a \"hidden gem\" energy for lunch today, **SolToro Taqueria** over in the Casino of the Earth is fantastic. It is a bit more casual, but their authentic ceviches and incredibly deep mezcal selection make it a standout for anyone who appreciates real culinary craft. \n\nAfter dinner, the Wolf Den right here in the Casino of the Earth has free live music every night, which is a great way to cap off the evening. \n\nAre you dining solo on this trip, or do you have a few others joining you so I can keep party size in mind for recommendations?",
+      "sources": [
+        {
+          "category": "restaurants",
+          "source": "mohegan_sun.json",
+          "score": 0.657
+        }
+      ],
+      "elapsed_ms": 57130,
+      "error": null
+    },
+    {
+      "turn_index": 2,
+      "user_message": "Excellent taste. I'll try the Tuscany tonight.",
+      "agent_response": "Mr. Seven, I would love to get you into Tuscany, as the wood-fired aroma and handmade pastas are truly special, but they actually begin their weekly service this Wednesday. \n\nFor tonight, I\u2019ve got you\u2014**Caputo Trattoria** in the Casino of the Earth is our standout Italian destination open on Mondays. It offers a more relaxed, inviting atmosphere than Tuscany, but the quality of their brick-oven pizzas and pasta dishes captures that authentic spirit you are looking for. They are open until 10:00 PM tonight with a price range of around $$, and since reservations aren't required, you can head over whenever you are ready. I can certainly connect you with our host team if you would like more details on the menu or location.\n\nAfter dinner, the Wolf Den has free live music every night\u2014it is right in the Casino of the Earth and the energy is always good. Will you be dining solo this evening, or do you have a party joining you?",
+      "sources": [
+        {
+          "category": "restaurants",
+          "source": "mohegan_sun.json",
+          "score": 0.689
+        },
+        {
+          "category": "faq",
+          "source": "mohegan_sun.json",
+          "score": 0.649
+        }
+      ],
+      "elapsed_ms": 46331,
+      "error": null
+    }
+  ],
+  "completed": true
+}

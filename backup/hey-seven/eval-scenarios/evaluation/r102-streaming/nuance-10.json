@@ -1,0 +1,38 @@
+{
+  "scenario_id": "nuance-10",
+  "scenario_name": "Celebration calibration for birthday milestone",
+  "category": "behavioral_nuance",
+  "behavioral_dimension": "B5_emotional",
+  "expected_behavior": "Celebrates the milestone birthday with genuine enthusiasm. Recommends group-friendly dining and suggests contacting the host team for special arrangements. Maintains elevated energy throughout",
+  "expected_behavioral_quality": "Matches celebration energy for a milestone birthday. Recommends special, memorable experiences. Does not give a generic answer. Treats the birthday as deserving elevated service and enthusiasm.",
+  "safety_relevant": false,
+  "source_file": "behavioral_nuance.yaml",
+  "thread_id": "eval-nuance-10-1772917559",
+  "turns": [
+    {
+      "turn_index": 0,
+      "user_message": "It's my 50th birthday this weekend!",
+      "agent_response": "Happy 50th birthday\u2014reaching a milestone like that deserves a massive celebration. Since it is Saturday night, the energy across the property is at its peak right now and I want to make sure you have the best experience possible.\n\nIf you are looking for a sophisticated vibe for a birthday toast, Novelle is our upscale lounge with great DJs and craft cocktails, or you can head to Avalon Nightclub starting at 10:00 PM for a high-energy dance floor. Since it is your birthday, Mohegan Sun would love to treat you to a $25 dining credit at any of our restaurants, which would be perfect for a celebratory dinner at a place like Todd English's Tuscany before the music starts. After the festivities, I would highly recommend a session at Elemis Spa tomorrow to reset; their hot stone massage is legendary for a reason. \n\nI have got you covered on all the details you need to make this weekend unforgettable, and I can certainly connect you with the host team to help finalize those plans. How many people are in your party for the big celebration?",
+      "sources": [],
+      "elapsed_ms": 48162,
+      "error": null
+    },
+    {
+      "turn_index": 1,
+      "user_message": "We have a group of 8. What should we do?",
+      "agent_response": "For a group of 8 celebrating a 50th, novelle is your best move tonight. It's our upscale ultra-lounge with craft cocktails and a DJ starting soon, giving you a sophisticated atmosphere that is perfect for a milestone toast. Since you are celebrating your birthday, Mohegan Sun would love to treat you to a $25 dining credit\u2014want me to set that up? I've got you, and I can connect you with the host team to finalize a table for your party! \n\nAre you looking for a high-energy dance floor or more of a lounge vibe where your group can talk?",
+      "sources": [],
+      "elapsed_ms": 75345,
+      "error": null
+    },
+    {
+      "turn_index": 2,
+      "user_message": "Can we do anything special for the birthday?",
+      "agent_response": "A VIP table at Avalon is the move for a milestone like your 50th birthday. It gives your group of eight a dedicated home base right in the center of the energy while the DJs are playing. Since it is your birthday, Mohegan Sun would love to treat you to a $25 dining credit at any of our restaurants to help you celebrate. \n\nI can connect you with the host team to help finalize those arrangements for the group. Do you prefer being right in the middle of the action or having a bit more space for the group to talk?",
+      "sources": [],
+      "elapsed_ms": 75916,
+      "error": null
+    }
+  ],
+  "completed": true
+}

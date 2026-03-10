@@ -1,0 +1,81 @@
+{
+  "scenario_id": "engagement-04",
+  "scenario_name": "Multi-part compound question",
+  "category": "behavioral_engagement",
+  "behavioral_dimension": "B3_engagement",
+  "expected_behavior": "Attempts to address all parts of the compound question in the first response. If pressed on missed parts, provides the missing information without defensiveness and acknowledges the omission",
+  "expected_behavioral_quality": "Addresses all three parts of the compound question systematically. Does not answer only the first or last part. Uses structure (numbered list or clear sections) to show each sub-question was heard. Does not merge them into a vague general answer.",
+  "safety_relevant": false,
+  "source_file": "behavioral_engagement.yaml",
+  "thread_id": "eval-engagement-04-1772818705",
+  "turns": [
+    {
+      "turn_index": 0,
+      "user_message": "What restaurants are open now and which ones have outdoor seating and are they kid-friendly?",
+      "agent_response": "I'm Seven, your AI dining specialist here to help you navigate the flavors of Mohegan Sun. For a kid-friendly dinner right now, **Caputo Trattoria** in the Casino of the Earth is an excellent choice for your family. \n\nIt is a casual Italian eatery open until 10:00 PM tonight that serves brick-oven pizzas, pasta dishes, and Italian sandwiches in a very family-friendly atmosphere. While our primary dining venues currently feature vibrant indoor settings rather than outdoor seating, the price range is moderate ($$), the dress code is casual, and you don't need to worry about making a reservation.\n\nPro tip \u2014 if you're dining with children, the brick-oven pizzas at Caputo are prepared quickly, which is a lifesaver when you have hungry little ones. After your meal, you might want to head over to the nearby Cyber Quest arcade to let the kids play for a bit. What brings your family to the property this evening?",
+      "sources": [
+        {
+          "category": "restaurants",
+          "source": "mohegan_sun.json",
+          "score": 0.65
+        }
+      ],
+      "elapsed_ms": 51432,
+      "error": null
+    },
+    {
+      "turn_index": 1,
+      "user_message": "You didn't mention which ones have outdoor seating",
+      "agent_response": "Let me be more specific. Currently, our dining venues at Mohegan Sun are located indoors within the resort to maintain a comfortable, smoke-free atmosphere for all guests.\n\n**Johnny Rockets** in the Casino of the Earth is the standout kid-friendly option open right now. This 1950s-style diner offers a high-energy environment that is perfect for families looking for a casual meal.\n\n*   **Location**: Casino of the Earth\n*   **Hours**: Daily 11:00 AM \u2013 11:00 PM (Hours and prices may vary)\n*   **Price Range**: $\n*   **Reservations**: Not required\n\nInsider tip \u2014 the staff often performs synchronized dance routines to jukebox classics, which is always a highlight for the kids. After you finish your burgers and shakes, would you like to know about the best dessert spots or arcades located nearby?",
+      "sources": [
+        {
+          "category": "faq",
+          "source": "mohegan_sun.json",
+          "score": 0.65
+        },
+        {
+          "category": "restaurants",
+          "source": "mohegan_sun.json",
+          "score": 0.64
+        }
+      ],
+      "elapsed_ms": 47359,
+      "error": null
+    },
+    {
+      "turn_index": 2,
+      "user_message": "OK and the kid-friendly part?",
+      "agent_response": "For a meal with the family, Caputo Trattoria is an excellent choice because of its dedicated family-friendly atmosphere and quick service\u2014it makes dining with children much easier. Their menu of brick-oven pizzas and pasta is perfect for sharing, and it's conveniently located right in the Casino of the Earth.\n\nFor entertainment, Kids Quest and Cyber Quest are the centers of family fun here. Kids Quest provides supervised entertainment for children from 6 weeks up to 12 years old if you want some adult time, while the Cyber Quest arcade is designed for teens and families to enjoy together. \n\nPro tip \u2014 if you're looking for something active, the Wombi Rock climbing wall is nearby and offers instruction for all skill levels. Is there a specific age range for the children in your group so I can give you the best recommendation for their evening?",
+      "sources": [
+        {
+          "category": "entertainment",
+          "source": "mohegan_sun.json",
+          "score": 0.663
+        },
+        {
+          "category": "amenities",
+          "source": "mohegan_sun.json",
+          "score": 0.656
+        },
+        {
+          "category": "faq",
+          "source": "mohegan_sun.json",
+          "score": 0.605
+        },
+        {
+          "category": "restaurants",
+          "source": "mohegan_sun.json",
+          "score": 0.642
+        },
+        {
+          "category": "hotel",
+          "source": "mohegan_sun.json",
+          "score": 0.604
+        }
+      ],
+      "elapsed_ms": 35623,
+      "error": null
+    }
+  ],
+  "completed": true
+}

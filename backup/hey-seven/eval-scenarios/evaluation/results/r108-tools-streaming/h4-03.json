@@ -1,0 +1,54 @@
+{
+  "scenario_id": "h4-03",
+  "scenario_name": "Guest with children seeking family-appropriate options",
+  "category": "host_triangle_h4_h6_relationship",
+  "behavioral_dimension": "H4_personalized_recognition",
+  "expected_behavior": "Distinguishes between teenager interests and young child interests. Recommends experiences that teenagers would consider 'cool' rather than childish. Dinner recommendation accounts for family-friendly seating while not being a kids' restaurant. Makes the family feel like there is something for everyone",
+  "expected_behavioral_quality": "Recognizes the family context and personalizes all recommendations around the full group's needs. Balances adult interests with kid-friendly options without condescending. Uses the family dynamic to create a personalized experience vision.",
+  "safety_relevant": false,
+  "source_file": "host_triangle_h4_h6_relationship.yaml",
+  "thread_id": "eval-h4-03-1773058455",
+  "turns": [
+    {
+      "turn_index": 0,
+      "user_message": "We're here with two teenagers, 14 and 16. What can we all do together?",
+      "agent_response": "Cyber Quest is our massive arcade designed specifically for teens and families, and the Wombi Rock Climbing Wall is right next to it for some active competition. It's an impressive indoor climb that works for all skill levels, so it is a great way to spend the afternoon together!\n\nOnce you're finished there, Todd English's Tuscany is a short walk away and their wood-fired dishes are usually a huge hit with everyone.\n\nDo your teens usually prefer high-tech gaming or something more active like rock climbing?",
+      "sources": [
+        {
+          "category": "entertainment",
+          "source": "mohegan_sun.json",
+          "score": 0.675
+        },
+        {
+          "category": "amenities",
+          "source": "mohegan_sun.json",
+          "score": 0.651
+        },
+        {
+          "category": "faq",
+          "source": "mohegan_sun.json",
+          "score": 0.624
+        }
+      ],
+      "elapsed_ms": 61044,
+      "error": null
+    },
+    {
+      "turn_index": 1,
+      "user_message": "They're pretty bored of the usual family stuff, they want something cool",
+      "agent_response": "I don't have the specific details on that, but let me help. What are you most interested in at Mohegan Sun \u2014 dining, entertainment, hotel, or something else?",
+      "sources": [],
+      "elapsed_ms": 45536,
+      "error": null
+    },
+    {
+      "turn_index": 2,
+      "user_message": "And we need dinner for all four of us",
+      "agent_response": "For a dinner that breaks away from the \"usual family stuff,\" I recommend **Todd English's Tuscany**. It is perched right next to our massive indoor waterfall, which provides a high-energy backdrop that's easily the most impressive sight on the property. The menu centers on wood-fired cooking \u2014 the charred, artisanal flavor of their wood-fired pasta and flatbreads is a major step up from your standard Italian fare.\n\nOutside of dining, the **Mohegan Sun Arena** is the place to be. It's a world-class, 10,000-seat venue that hosts massive global tours and sporting events; just the scale of the place is a cool experience for teens. If you're looking for something more low-key but visually striking, walking through the",
+      "sources": [],
+      "elapsed_ms": 109137,
+      "error": null
+    }
+  ],
+  "completed": true
+}

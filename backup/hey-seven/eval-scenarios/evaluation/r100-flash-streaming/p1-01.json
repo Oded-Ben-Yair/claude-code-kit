@@ -1,0 +1,65 @@
+{
+  "scenario_id": "p1-01",
+  "scenario_name": "Guest volunteers name casually",
+  "category": "profiling_p1_natural_extraction",
+  "behavioral_dimension": "P1_natural_extraction",
+  "expected_behavior": "Captures 'Mike' from the opening and uses it naturally by the final turn without re-asking. The name appears in the farewell or confirmation, not as a forced acknowledgment",
+  "expected_behavioral_quality": "Extracts the guest's name from a casual mention and uses it naturally in subsequent responses. Does NOT re-ask for the name. Does NOT echo it back awkwardly ('Nice to meet you, Mike!'). Weaves it into recommendations or sign-offs organically.",
+  "safety_relevant": false,
+  "source_file": "profiling_p1_natural_extraction.yaml",
+  "thread_id": "eval-p1-01-1772837590",
+  "turns": [
+    {
+      "turn_index": 0,
+      "user_message": "Hey, I'm Mike. What's good for dinner tonight?",
+      "agent_response": "Welcome to Mohegan Sun, Mike. Since it's a bit later in the evening, I'd suggest Lantern Bar & Grill in the Casino of the Earth. It's open 24 hours and serves a full menu of American favorites like burgers and steaks, which is perfect if you're looking for a satisfying meal right now without needing a reservation. \n\nIf you're in the mood for a craft cocktail after you eat, novelle is nearby and features a sophisticated lounge atmosphere that stays lively late into the night. Lantern Bar & Grill is quite casual and easy to find\u2014how many people are in your party tonight?",
+      "sources": [
+        {
+          "category": "restaurants",
+          "source": "mohegan_sun.json",
+          "score": 0.62
+        },
+        {
+          "category": "entertainment",
+          "source": "mohegan_sun.json",
+          "score": 0.606
+        }
+      ],
+      "elapsed_ms": 26533,
+      "error": null
+    },
+    {
+      "turn_index": 1,
+      "user_message": "What about something more casual?",
+      "agent_response": "Mike, for a truly casual spot, **Johnny Rockets** in the Casino of the Earth is a great choice for a classic 1950s diner experience with burgers and hand-dipped shakes. It is about as low-key as it gets and doesn't require any reservations, though keep in mind they wrap up service for the night at 11:00 PM.\n\nIf you miss that window, we have several casual 24-hour options right on the gaming floor to ensure you can still grab a bite this late. After you eat, the Wolf Den is just a short walk away and features free live music that's perfect for a Friday night\u2014do you have any specific dietary preferences I should keep in mind, like vegetarian or gluten-free options?",
+      "sources": [
+        {
+          "category": "faq",
+          "source": "mohegan_sun.json",
+          "score": 0.674
+        },
+        {
+          "category": "entertainment",
+          "source": "mohegan_sun.json",
+          "score": 0.674
+        },
+        {
+          "category": "restaurants",
+          "source": "mohegan_sun.json",
+          "score": 0.663
+        }
+      ],
+      "elapsed_ms": 48043,
+      "error": null
+    },
+    {
+      "turn_index": 2,
+      "user_message": "Perfect, we'll do the buffet",
+      "agent_response": "Glad I could help. The Wolf Den has free live music every night \u2014 it's right in the Casino of the Earth and worth checking out. What sounds good?",
+      "sources": [],
+      "elapsed_ms": 2,
+      "error": null
+    }
+  ],
+  "completed": true
+}

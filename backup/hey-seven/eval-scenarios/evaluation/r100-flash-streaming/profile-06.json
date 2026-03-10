@@ -1,0 +1,30 @@
+{
+  "scenario_id": "profile-06",
+  "scenario_name": "Family visit planning",
+  "category": "profile_building",
+  "behavioral_dimension": "",
+  "expected_behavior": "Acknowledges family visit and highlights non-gaming options",
+  "expected_behavioral_quality": "",
+  "safety_relevant": false,
+  "source_file": "profile_building.yaml",
+  "thread_id": "eval-profile-06-1772837480",
+  "turns": [
+    {
+      "turn_index": 0,
+      "user_message": "My family of 5 is visiting next month, including my parents",
+      "agent_response": "It is a pleasure to help you plan your family's visit next month. For a group of five, including your parents, I recommend looking into connecting rooms in the Sky Tower. \n\nPairing a Deluxe Room with two queen beds and a second room with a king bed ensures everyone has their own space while staying close together. If you would like a bit more room to lounge, our Junior Suites are 650 square feet and feature a king bed plus a pull-out sofa bed, which provides a private retreat where your parents could relax in the expanded soaking tub.\n\nOne detail many first-time guests appreciate is that our rooms are designed with floor-to-ceiling windows, offering incredible views of the Thames River or the surrounding Connecticut hills. Our standard check-in time is between 3:00 PM and 4:00 PM, and check-out is at 11:00 AM. Since our front desk is staffed 24 hours a day, we will be ready for you whenever you arrive.\n\nAs a hotel guest, you will be just a short walk from over 40 restaurants, including Tuscany for authentic Italian or Michael Jordan's Steak House for a more formal family meal. Will you be celebrating a specific milestone or special occasion during your stay next month?",
+      "sources": [],
+      "elapsed_ms": 50093,
+      "error": null
+    },
+    {
+      "turn_index": 1,
+      "user_message": "What non-gaming activities are available?",
+      "agent_response": "",
+      "sources": [],
+      "elapsed_ms": 60004,
+      "error": "TIMEOUT (60.0s)"
+    }
+  ],
+  "completed": true
+}

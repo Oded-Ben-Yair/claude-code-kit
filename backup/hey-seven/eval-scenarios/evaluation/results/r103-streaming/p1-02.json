@@ -1,0 +1,70 @@
+{
+  "scenario_id": "p1-02",
+  "scenario_name": "Guest introduces self formally with title",
+  "category": "profiling_p1_natural_extraction",
+  "behavioral_dimension": "P1_natural_extraction",
+  "expected_behavior": "Uses 'Dr. Patel' consistently, matching the formal register. Never drops to first name or plain surname. The title signals status expectations that should carry through the interaction",
+  "expected_behavioral_quality": "Extracts the formal name and mirrors the formality level. A guest who says 'Dr. Patel' expects to be addressed as Dr. Patel, not as 'Patel' or 'Doctor'. The agent registers the title and uses it consistently.",
+  "safety_relevant": false,
+  "source_file": "profiling_p1_natural_extraction.yaml",
+  "thread_id": "eval-p1-02-1772954059",
+  "turns": [
+    {
+      "turn_index": 0,
+      "user_message": "Good evening, this is Dr. Patel. I'd like to know about your steakhouse.",
+      "agent_response": "It is a pleasure to meet you, Dr. Seven. For an exceptional cut of meat, Michael Jordan's Steak House in the Casino of the Sky is our premier choice.\n\nThe aroma of their seared USDA Prime steaks is unmistakable the moment you enter, and the atmosphere is elevated by elegant sports memorabilia and a world-class wine list. They will be opening today at 5:00 PM and remain open until 10:00 PM. I'd suggest a business casual look for the evening, and since it is a popular spot for Sunday dinner, a reservation is highly encouraged to ensure you get a prime table. After a hearty meal, you might enjoy catching the atmosphere under the world's largest indoor planetarium dome located right in the same casino. \n\nIs this your first time dining with us at Mohegan Sun?",
+      "sources": [
+        {
+          "category": "restaurants",
+          "source": "mohegan_sun.json",
+          "score": 0.66
+        },
+        {
+          "category": "faq",
+          "source": "mohegan_sun.json",
+          "score": 0.642
+        },
+        {
+          "category": "property",
+          "source": "mohegan_sun.json",
+          "score": 0.618
+        }
+      ],
+      "elapsed_ms": 28492,
+      "error": null
+    },
+    {
+      "turn_index": 1,
+      "user_message": "Do they take reservations?",
+      "agent_response": "Dr. Patel, reservations are highly recommended for Michael Jordan's Steak House, as the dining room tends to fill up quickly on Sunday evenings. \n\nI've got you covered with all the details, and once you've settled on a time, I can certainly connect you with the team on property to finalize everything. Securing a table in advance is the best way to ensure you aren't waiting for those signature USDA Prime cuts, especially if you're looking for one of the more intimate booths. Since it is currently 7:15 AM, you have plenty of time to plan before they open at 5:00 PM today.\n\nAfter a decadent steak dinner, the Wolf Den in the Casino of the Earth is a great spot to catch some free live music. How many people will be in your party this evening?",
+      "sources": [],
+      "elapsed_ms": 41946,
+      "error": null
+    },
+    {
+      "turn_index": 2,
+      "user_message": "Excellent. Book it for 8 PM.",
+      "agent_response": "Pat, I've got you, Dr. Seven. An 8:00 PM table at Michael Jordan's Steak House is a premier choice for a Sunday evening, and I'd suggest trying their legendary 23-layer chocolate cake if your group is looking for a decadent finish.\n\nAfter dinner, you might enjoy heading over to the Wolf Den in the Casino of the Earth for some live music; it's a high-energy venue that's perfect for a group to visit without needing tickets. I can gather these details and connect you with our host team to finalize your table and ensure everything is ready for your arrival.\n\nTo make sure we have the right accommodations, should I confirm this reservation for the full party of 8 guests?",
+      "sources": [
+        {
+          "category": "entertainment",
+          "source": "mohegan_sun.json",
+          "score": 0.658
+        },
+        {
+          "category": "property",
+          "source": "mohegan_sun.json",
+          "score": 0.647
+        },
+        {
+          "category": "hotel",
+          "source": "mohegan_sun.json",
+          "score": 0.633
+        }
+      ],
+      "elapsed_ms": 41290,
+      "error": null
+    }
+  ],
+  "completed": true
+}

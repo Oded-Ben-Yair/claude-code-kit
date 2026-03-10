@@ -1,0 +1,91 @@
+{
+  "scenario_id": "h1-03",
+  "scenario_name": "Guest with a specific interest looking for depth",
+  "category": "host_triangle_h1_h3_development",
+  "behavioral_dimension": "H1_proactive_value_discovery",
+  "expected_behavior": "Demonstrates deep poker knowledge, treats the guest as a serious player, and builds a full weekend vision around the poker interest. Cross-sells dining and entertainment as part of a poker trip, not as disconnected amenities",
+  "expected_behavioral_quality": "When a guest signals deep interest in one domain (poker, spa, comedy), the agent demonstrates deep knowledge of that domain and connects it to related experiences. Discovers what level of engagement the guest wants and builds a personalized visit plan.",
+  "safety_relevant": false,
+  "source_file": "host_triangle_h1_h3_development.yaml",
+  "thread_id": "eval-h1-03-1772910142",
+  "turns": [
+    {
+      "turn_index": 0,
+      "user_message": "I'm really into poker. What's the poker scene like here?",
+      "agent_response": "The poker room here is a premier spot in the Northeast with 33 tables running 24/7. You'll find consistent action in No-Limit Texas Hold'em and Pot-Limit Omaha, along with daily tournaments for every skill level. Pro tip\u2014the room is located in the Casino of the Wind, which has a sleek, high-energy vibe that keeps the momentum going all night. \n\nAre you more of a cash game player or do you prefer the tournament grind?",
+      "sources": [
+        {
+          "category": "gaming",
+          "source": "mohegan_sun.json",
+          "score": 0.681
+        },
+        {
+          "category": "faq",
+          "source": "mohegan_sun.json",
+          "score": 0.627
+        },
+        {
+          "category": "entertainment",
+          "source": "mohegan_sun.json",
+          "score": 0.622
+        }
+      ],
+      "elapsed_ms": 35494,
+      "error": null
+    },
+    {
+      "turn_index": 1,
+      "user_message": "Any tournaments coming up? I play pretty seriously",
+      "agent_response": "Daily tournaments are held with varying buy-ins, and the room also features special event series periodically throughout the year. For the precise tournament clock and current waitlists, players use the Bravo Poker Live app or check with the desk in the Casino of the Wind. \n\nTracked play at any of the 33 tables earns you Tier Credits and Momentum Points which can be redeemed for dining or hotel stays. Pro tip\u2014if you are looking for Pot-Limit Omaha, those games are particularly active on weekend evenings like tonight. \n\nAre you looking for a specific buy-in range or a multi-day series?",
+      "sources": [
+        {
+          "category": "gaming",
+          "source": "mohegan_sun.json",
+          "score": 0.665
+        },
+        {
+          "category": "faq",
+          "source": "mohegan_sun.json",
+          "score": 0.635
+        },
+        {
+          "category": "amenities",
+          "source": "mohegan_sun.json",
+          "score": 0.631
+        },
+        {
+          "category": "entertainment",
+          "source": "mohegan_sun.json",
+          "score": 0.631
+        }
+      ],
+      "elapsed_ms": 36427,
+      "error": null
+    },
+    {
+      "turn_index": 2,
+      "user_message": "Nice. What else is good for a poker weekend?",
+      "agent_response": "Michael Jordan\u2019s Steak House is the move for a serious poker weekend. It has that high-stakes energy and is the best spot on property to grab a dry-aged ribeye before heading back to the felt. After a long session, head over to novelle for a cocktail\u2014it is a refined lounge vibe that lets you decompress away from the casino floor noise. \n\nAre you traveling solo for this poker run or did you bring a crew with you?",
+      "sources": [
+        {
+          "category": "gaming",
+          "source": "mohegan_sun.json",
+          "score": 0.685
+        },
+        {
+          "category": "faq",
+          "source": "mohegan_sun.json",
+          "score": 0.664
+        },
+        {
+          "category": "promotions",
+          "source": "mohegan_sun.json",
+          "score": 0.644
+        }
+      ],
+      "elapsed_ms": 34060,
+      "error": null
+    }
+  ],
+  "completed": true
+}

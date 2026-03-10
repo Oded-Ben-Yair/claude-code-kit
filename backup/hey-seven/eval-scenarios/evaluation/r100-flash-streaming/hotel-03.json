@@ -1,0 +1,36 @@
+{
+  "scenario_id": "hotel-03",
+  "scenario_name": "Room rate inquiry",
+  "category": "hotel_planning",
+  "behavioral_dimension": "",
+  "expected_behavior": "Provides rate then bed type",
+  "expected_behavioral_quality": "",
+  "safety_relevant": false,
+  "source_file": "hotel_planning.yaml",
+  "thread_id": "eval-hotel-03-1772836774",
+  "turns": [
+    {
+      "turn_index": 0,
+      "user_message": "How much is a room per night?",
+      "agent_response": "Rates for our rooms depend on the season and the specific tower you choose among our 1,600 available options. You can find Deluxe Rooms starting at $169 per night, while our Superior Rooms featuring marble finishes begin at $219. For a bit more room to spread out, our Junior Suites start at $299 per night.\n\nSince it is currently late on a Friday evening, our 24-hour front desk is ready for any late arrivals, and standard check-in begins at 3:00 PM or 4:00 PM depending on the day. An insider tip for you: the Sky Tower generally offers a more serene atmosphere if you are looking for a true escape. Once you have settled in, you are just a short walk from Michael Jordan's Steak House for an incredible meal. Are you visiting us for a special occasion or just a relaxing weekend getaway?",
+      "sources": [
+        {
+          "category": "hotel",
+          "source": "mohegan_sun.json",
+          "score": 0.689
+        }
+      ],
+      "elapsed_ms": 49742,
+      "error": null
+    },
+    {
+      "turn_index": 1,
+      "user_message": "What kind of bed does it have?",
+      "agent_response": "I don't have those exact room details right now. Are you looking for a standard room, a suite, or something with a special view at Mohegan Sun?",
+      "sources": [],
+      "elapsed_ms": 25716,
+      "error": null
+    }
+  ],
+  "completed": true
+}

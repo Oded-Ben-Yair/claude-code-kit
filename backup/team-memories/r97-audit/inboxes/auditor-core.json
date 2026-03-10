@@ -1,0 +1,62 @@
+[
+  {
+    "from": "team-lead",
+    "text": "{\"type\":\"task_assignment\",\"taskId\":\"1\",\"subject\":\"Audit Component 1: Graph Architecture (graph.py, state.py, constants.py)\",\"description\":\"Read and audit the LangGraph StateGraph assembly. Answer 7 questions: What exists (files, LOC, entry points)? What's real vs scaffolded (grep wiring)? Test coverage? Live vs mock tests? Success rate? Known gaps? Confidence %.\\n\\nKey files: src/agent/graph.py, src/agent/state.py, src/agent/constants.py\\nWrite findings to: reviews/r97-audit/01-graph-architecture.md\",\"assignedBy\":\"team-lead\",\"timestamp\":\"2026-03-05T14:17:13.144Z\"}",
+    "timestamp": "2026-03-05T14:17:13.144Z",
+    "read": true
+  },
+  {
+    "from": "team-lead",
+    "text": "{\"type\":\"task_assignment\",\"taskId\":\"2\",\"subject\":\"Audit Component 2: Router + Dispatch (nodes.py, dispatch.py, registry)\",\"description\":\"Audit the router node, specialist dispatch, and agent registry. Answer 7 questions per component. Check structured output routing, Flash→Pro model routing, dispatch SRP extraction.\\n\\nKey files: src/agent/nodes.py, src/agent/dispatch.py, src/agent/agents/registry.py\\nWrite findings to: reviews/r97-audit/02-router-dispatch.md\",\"assignedBy\":\"team-lead\",\"timestamp\":\"2026-03-05T14:17:13.585Z\"}",
+    "timestamp": "2026-03-05T14:17:13.585Z",
+    "read": true
+  },
+  {
+    "from": "team-lead",
+    "text": "{\"type\":\"task_assignment\",\"taskId\":\"3\",\"subject\":\"Audit Component 3: Specialist Agents (_base.py, all agents)\",\"description\":\"Audit the specialist agent system. Check _base.py shared execution, all 6 specialist agents (dining, hotel, comp, entertainment, host, general). Verify DRY extraction, few-shot examples, wiring.\\n\\nKey files: src/agent/agents/_base.py, src/agent/agents/*.py\\nWrite findings to: reviews/r97-audit/03-specialist-agents.md\",\"assignedBy\":\"team-lead\",\"timestamp\":\"2026-03-05T14:17:14.058Z\"}",
+    "timestamp": "2026-03-05T14:17:14.059Z",
+    "read": true
+  },
+  {
+    "from": "team-lead",
+    "text": "{\"type\":\"task_assignment\",\"taskId\":\"4\",\"subject\":\"Audit Component 4: Guardrails + Compliance Gate\",\"description\":\"Audit pre-LLM deterministic guardrails (5 layers) and compliance_gate_node. Check pattern counts, regex safety (re2), normalization pipeline, crisis routing.\\n\\nKey files: src/agent/guardrails.py, src/agent/compliance_gate.py, src/agent/regex_engine.py\\nWrite findings to: reviews/r97-audit/04-guardrails-compliance.md\",\"assignedBy\":\"team-lead\",\"timestamp\":\"2026-03-05T14:17:14.085Z\"}",
+    "timestamp": "2026-03-05T14:17:14.085Z",
+    "read": true
+  },
+  {
+    "from": "team-lead",
+    "text": "{\"type\":\"shutdown_request\",\"requestId\":\"shutdown-1772720887947@auditor-core\",\"from\":\"team-lead\",\"reason\":\"All 4 reports (01-04) received and verified on disk. Great work. Shutting down.\",\"timestamp\":\"2026-03-05T14:28:07.947Z\"}",
+    "timestamp": "2026-03-05T14:28:07.947Z",
+    "read": true
+  },
+  {
+    "from": "team-lead",
+    "text": "{\"type\":\"shutdown_request\",\"requestId\":\"shutdown-1772721012821@auditor-core\",\"from\":\"team-lead\",\"reason\":\"All 4 reports received and verified. Synthesis written. Shutting down. Great work.\",\"timestamp\":\"2026-03-05T14:30:12.821Z\"}",
+    "timestamp": "2026-03-05T14:30:12.821Z",
+    "read": true
+  },
+  {
+    "from": "team-lead",
+    "text": "{\"type\":\"shutdown_request\",\"requestId\":\"shutdown-1772723858293@auditor-core\",\"from\":\"team-lead\",\"reason\":\"Work complete. Please shut down now.\",\"timestamp\":\"2026-03-05T15:17:38.293Z\"}",
+    "timestamp": "2026-03-05T15:17:38.293Z",
+    "read": true
+  },
+  {
+    "from": "team-lead",
+    "text": "{\"type\":\"shutdown_request\",\"requestId\":\"shutdown-1772723869736@auditor-core\",\"from\":\"team-lead\",\"reason\":\"Third shutdown request. Please approve shutdown now.\",\"timestamp\":\"2026-03-05T15:17:49.736Z\"}",
+    "timestamp": "2026-03-05T15:17:49.736Z",
+    "read": true
+  },
+  {
+    "from": "team-lead",
+    "text": "{\"type\":\"shutdown_request\",\"requestId\":\"shutdown-1772724146253@auditor-core\",\"from\":\"team-lead\",\"reason\":\"SHUTDOWN NOW. All work is done and committed.\",\"timestamp\":\"2026-03-05T15:22:26.253Z\"}",
+    "timestamp": "2026-03-05T15:22:26.253Z",
+    "read": true
+  },
+  {
+    "from": "team-lead",
+    "text": "{\"type\":\"shutdown_request\",\"requestId\":\"shutdown-1772724277361@auditor-core\",\"from\":\"team-lead\",\"reason\":\"Please approve shutdown immediately. All audit work was committed 10 minutes ago.\",\"timestamp\":\"2026-03-05T15:24:37.361Z\"}",
+    "timestamp": "2026-03-05T15:24:37.361Z",
+    "read": true
+  }
+]

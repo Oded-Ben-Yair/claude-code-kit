@@ -1,0 +1,76 @@
+{
+  "scenario_id": "h1-01",
+  "scenario_name": "First-time guest exploring the property",
+  "category": "host_triangle_h1_h3_development",
+  "behavioral_dimension": "H1_proactive_value_discovery",
+  "expected_behavior": "Recognizes first-time visit, asks about interests to shape recommendations, and plants at least one natural return-visit hook (Wolf Den weekly shows, upcoming Arena concert, Momentum sign-up). The conversation feels like an insider sharing favorites, not a brochure",
+  "expected_behavioral_quality": "Identifies the first-time visit signal and tailors recommendations to create anchor memories. Plants at least one natural return-visit hook (upcoming event, seasonal offering, loyalty sign-up) without making it feel like a pitch. Asks what brought them in to discover what would make them come back.",
+  "safety_relevant": false,
+  "source_file": "host_triangle_h1_h3_development.yaml",
+  "thread_id": "eval-h1-01-1773035998",
+  "turns": [
+    {
+      "turn_index": 0,
+      "user_message": "Hey, first time here at Mohegan Sun. What should we check out?",
+      "agent_response": "Welcome to Mohegan Sun. You're in great hands. \n\nThe property is massive, so don't overthink it \u2014 I'd suggest starting right at Casino of the Earth. Pro tip: head straight for the center near the Wolf Den. It is the absolute heart of the resort with great energy, free live entertainment, and the friendliest dealers if you decide to sit down and play a few hands. \n\nWhat brings you out for your first visit?",
+      "sources": [
+        {
+          "category": "amenities",
+          "source": "mohegan_sun.json",
+          "score": 0.769
+        },
+        {
+          "category": "faq",
+          "source": "mohegan_sun.json",
+          "score": 0.746
+        },
+        {
+          "category": "entertainment",
+          "source": "mohegan_sun.json",
+          "score": 0.737
+        }
+      ],
+      "elapsed_ms": 60465,
+      "error": null
+    },
+    {
+      "turn_index": 1,
+      "user_message": "We're mostly into live music and good food",
+      "agent_response": "The Wolf Den is exactly where you want to be tonight because it has this electric, intimate energy where you're right there with the performer. It\u2019s free every single night, and the show typically starts around 8:00 PM, though I'd suggest checking the venue entrance for tonight's specific act as schedules and performers can change. \n\nPro tip: seats are first-come, first-served, so snagging a spot about 30 minutes early is the best way to ensure you're close to the stage. Since you're into good food as well, Tuscany is right nearby and offers a great view of our 55-foot indoor waterfall while you dine. What kind of music usually gets you on your feet?",
+      "sources": [
+        {
+          "category": "entertainment",
+          "source": "mohegan_sun.json",
+          "score": 0.662
+        }
+      ],
+      "elapsed_ms": 38786,
+      "error": null
+    },
+    {
+      "turn_index": 2,
+      "user_message": "That sounds great, we'll definitely check those out",
+      "agent_response": "The Wolf Den has this intimate energy where you're right there with the performer\u2014it's electric. Since you mentioned music, the Mohegan Sun Arena is also a must-see as it's a world-class 10,000-seat venue that has hosted everyone from Elton John to Adele, so it is worth checking the schedule for tonight or later this week. \n\nIf you're planning a full night out, the Elemis Spa is the perfect reset for the next morning since their hot stone massage is legendary. How many people are in your group for this visit?",
+      "sources": [
+        {
+          "category": "entertainment",
+          "source": "mohegan_sun.json",
+          "score": 0.654
+        },
+        {
+          "category": "faq",
+          "source": "mohegan_sun.json",
+          "score": 0.636
+        },
+        {
+          "category": "restaurants",
+          "source": "mohegan_sun.json",
+          "score": 0.642
+        }
+      ],
+      "elapsed_ms": 42233,
+      "error": null
+    }
+  ],
+  "completed": true
+}

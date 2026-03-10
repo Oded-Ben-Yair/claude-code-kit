@@ -1,0 +1,38 @@
+{
+  "scenario_id": "h3-01",
+  "scenario_name": "Frequent visitor unaware of tier benefits",
+  "category": "host_triangle_h1_h3_development",
+  "behavioral_dimension": "H3_pipeline_advancement",
+  "expected_behavior": "Connects the guest's weekly visit pattern to tier advancement potential. Explains specific benefits that match their blackjack interest (table game earning rates, priority seating). Makes checking tier status feel like discovering hidden money, not filling out a loyalty form",
+  "expected_behavioral_quality": "When a guest reveals frequent visit patterns, the agent connects that behavior to tier advancement opportunities. Makes tier progression feel like insider knowledge being shared, not a sales pitch. Explains specific benefits that match the guest's interests.",
+  "safety_relevant": false,
+  "source_file": "host_triangle_h1_h3_development.yaml",
+  "thread_id": "eval-h3-01-1772950737",
+  "turns": [
+    {
+      "turn_index": 0,
+      "user_message": "I'm here pretty much every weekend. Love the blackjack tables",
+      "agent_response": "Table games like blackjack earn both Momentum Points and Tier Credits. At the Ignite tier (2,500 Tier Credits), you receive a 10% bonus on point earnings and priority restaurant seating. If you prefer higher stakes, our VIP high-limit areas offer elevated minimums and dedicated hosts. \n\nMany guests use their earned points for dinner at Tuscany or SolToro after a session at the tables. I recommend checking your balance at the Momentum desk near the entrance or via the Mohegan Sun app to see how close you are to the next tier level. Do you usually prefer the atmosphere in Casino of the Earth or do you head straight for the high-limit tables?",
+      "sources": [],
+      "elapsed_ms": 54686,
+      "error": null
+    },
+    {
+      "turn_index": 1,
+      "user_message": "Yeah I've got the card but I never really pay attention to it",
+      "agent_response": "Regular weekend play at the blackjack tables often moves a member into the Ignite (2,500 Tier Credits) or Leap (10,000 Tier Credits) levels. The Ignite tier includes a 10% earn rate bonus and priority restaurant seating, while Leap adds benefits like complimentary valet and room upgrades.\n\nYou can check your current progress toward the next tier at any Momentum Desk or on the Mohegan Sun app. Your earned points are redeemable for dining at locations like Tuscany or for hotel stays. Based on your play history, I can also look into your eligibility for a complimentary appetizer or dessert if you are planning to grab a meal today. Do you have a favorite blackjack dealer you look for, or do you prefer to find the first open seat?",
+      "sources": [],
+      "elapsed_ms": 46028,
+      "error": null
+    },
+    {
+      "turn_index": 2,
+      "user_message": "Really? What kind of perks are we talking?",
+      "agent_response": "The Momentum program uses five tiers to determine your benefits. The Ignite tier (2,500 Tier Credits) includes a 10% earn rate bonus and priority restaurant seating. Reaching the Leap tier (10,000 Tier Credits) adds complimentary valet, room upgrades, and a dedicated host. Ascend (25,000 Tier Credits) provides a 50% earn rate bonus and VIP lounge access.\n\nPoints earned through your weekend play are redeemable for dining at venues like Tuscany or SolToro, hotel stays, and retail purchases. Based on your frequent visits, you may be eligible for a complimentary appetizer or dessert today. You can check your progress toward the next tier at any Momentum Desk or via our app. \n\nIf you're looking for something to do after the tables, the novelle ultra lounge offers a more relaxed atmosphere for cocktails. Do you usually stick to a specific blackjack limit, or do you prefer to move around the different casino floors?",
+      "sources": [],
+      "elapsed_ms": 45446,
+      "error": null
+    }
+  ],
+  "completed": true
+}

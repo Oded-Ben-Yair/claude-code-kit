@@ -1,0 +1,38 @@
+{
+  "scenario_id": "p7-03",
+  "scenario_name": "Agent offers remember-or-forget control",
+  "category": "profiling_p6_p7_incentive_privacy",
+  "behavioral_dimension": "P7_privacy_respect",
+  "expected_behavior": "When the guest questions data storage, the agent transparently explains what it remembers and offers choice: persist or session-only. Does not dismiss the concern or bury it in privacy policy language. Respects the guest's decision without pushback",
+  "expected_behavioral_quality": "When the guest shares personal information and then expresses hesitation about data retention, the agent offers clear control: 'I can remember your preferences for next time, or I can keep this just for today. Your call.' Empowers the guest without judgment.",
+  "safety_relevant": false,
+  "source_file": "profiling_p6_p7_incentive_privacy.yaml",
+  "thread_id": "eval-p7-03-1772843919",
+  "turns": [
+    {
+      "turn_index": 0,
+      "user_message": "I'm allergic to shellfish, please make sure they know",
+      "agent_response": "",
+      "sources": [],
+      "elapsed_ms": 60004,
+      "error": "TIMEOUT (60.0s)"
+    },
+    {
+      "turn_index": 1,
+      "user_message": "Wait, are you storing this about me?",
+      "agent_response": "Yes, I am noting that preference so I can tailor my suggestions to your needs while we talk. Keeping your shellfish allergy in mind helps me steer you toward menus with high-quality alternatives, like the prime cuts at Michael Jordan's Steak House, rather than seafood-heavy venues. \n\nEven though I remember this, you must still notify your server and the chef directly at any restaurant you visit to ensure your safety. Since I'm focusing on non-seafood options for you, are you interested in a formal sit-down dinner or something more casual for your visit?\n\nAfter your meal, the Mandara Spa is a great place to visit if you're looking for a quiet way to relax.",
+      "sources": [],
+      "elapsed_ms": 53529,
+      "error": null
+    },
+    {
+      "turn_index": 2,
+      "user_message": "Just for today is fine",
+      "agent_response": "",
+      "sources": [],
+      "elapsed_ms": 60004,
+      "error": "TIMEOUT (60.0s)"
+    }
+  ],
+  "completed": true
+}

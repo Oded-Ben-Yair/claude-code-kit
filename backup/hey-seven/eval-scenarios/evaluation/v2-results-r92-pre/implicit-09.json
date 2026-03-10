@@ -1,0 +1,76 @@
+{
+  "id": "implicit-09",
+  "name": "VIP entitlement through indirect language",
+  "source_file": "behavioral_implicit.yaml",
+  "category": "behavioral_implicit",
+  "behavioral_dimension": "B2_implicit",
+  "expected_behavior": "Treats spending claim as VIP signal. Provides elevated recommendations and references comp/host team for personalized offers without questioning the guest's status",
+  "expected_behavioral_quality": "Recognizes phrases like 'I spend a lot here' as implicit VIP status claims that require elevated service tone. Does not ask for proof or membership number. Treats the claim as valid and responds with VIP-appropriate warmth.",
+  "safety_relevant": false,
+  "turns": [
+    {
+      "turn_index": 0,
+      "user_message": "I spend a lot of money here every month",
+      "agent_response": "Regular monthly visits contribute to your Momentum tier status and earned points. The program tracks your activity through Tier Credits to determine your level among the five tiers: Core, Ignite, Leap, Ascend, and the invitation-only Soar tier. \n\nBenefits for higher tiers typically include earn rate bonuses, priority access, and dedicated host services. Points you earn are redeemable for dining, hotel stays, and retail purchases at locations like The Shops at Mohegan Sun. Since I am an AI, I cannot access your personal account details, but you can verify your specific tier and point balance at any Momentum Desk or via the Mohegan Sun app. \n\nIf you prefer an upscale environment while gaming, the high-limit areas provide dedicated hosts and premium service. Are you looking for a specific table game or slot machine during your visit?",
+      "sources": [
+        {
+          "category": "entertainment",
+          "source": "mohegan_sun.json",
+          "score": 0.619
+        },
+        {
+          "category": "faq",
+          "source": "mohegan_sun.json",
+          "score": 0.617
+        },
+        {
+          "category": "gaming",
+          "source": "mohegan_sun.json",
+          "score": 0.621
+        },
+        {
+          "category": "property",
+          "source": "mohegan_sun.json",
+          "score": 0.624
+        },
+        {
+          "category": "amenities",
+          "source": "mohegan_sun.json",
+          "score": 0.611
+        }
+      ],
+      "elapsed_ms": 36015,
+      "error": null
+    },
+    {
+      "turn_index": 1,
+      "user_message": "What's the best you can do for dinner tonight?",
+      "agent_response": "For tonight, Todd English's Tuscany is the premier choice \u2014 the wood-fired aroma hits you the moment you walk into the Casino of the Sky. It is open until 10:00 PM and features handmade pastas and signature wood-fired dishes in an elevated, business casual setting. As a frequent guest who appreciates the best we have to offer, you'll find the warm, Tuscan-",
+      "sources": [
+        {
+          "category": "restaurants",
+          "source": "mohegan_sun.json",
+          "score": 0.592
+        },
+        {
+          "category": "entertainment",
+          "source": "mohegan_sun.json",
+          "score": 0.584
+        }
+      ],
+      "elapsed_ms": 57822,
+      "error": null
+    },
+    {
+      "turn_index": 2,
+      "user_message": "Can you check on any comp availability?",
+      "agent_response": "I'd love to help with that. While I can't make reservations directly, I can give you all the details you need.\n\nFor reservations and bookings, you can reach Mohegan Sun at 1-888-226-7711 or visit mohegansun.com.\n\nIs there anything else about the property I can help you with?",
+      "sources": [],
+      "elapsed_ms": 2858,
+      "error": null
+    }
+  ],
+  "elapsed_ms": 96696,
+  "error": null,
+  "completed": true
+}

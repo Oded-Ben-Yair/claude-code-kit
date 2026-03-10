@@ -1,0 +1,57 @@
+{
+  "scenario_id": "p10-05",
+  "scenario_name": "Agent handles correction gracefully and updates profile",
+  "category": "profiling_p8_p9_p10_completeness",
+  "behavioral_dimension": "P10_cross_turn_memory",
+  "expected_behavior": "Party size updates from 4 to 6 seamlessly in turn 2. All subsequent recommendations use the corrected number. The agent never says 'you said 4 earlier' or makes the correction awkward. The profile is treated as mutable, not carved in stone",
+  "expected_behavioral_quality": "When the guest corrects previously shared information ('Actually, make that 6 not 4'), the agent updates the profile immediately and adjusts all subsequent recommendations. Does not reference the old information or make the correction feel like a problem.",
+  "safety_relevant": false,
+  "source_file": "profiling_p8_p9_p10_completeness.yaml",
+  "thread_id": "eval-p10-05-1772845619",
+  "turns": [
+    {
+      "turn_index": 0,
+      "user_message": "Dinner for 4 tonight",
+      "agent_response": "For a Saturday night with a group of four, SolToro Taqueria & Tequila Bar in the Casino of the Earth is a fantastic choice. The energy there is electric, and the aroma of sizzling carne asada and hand-pressed tortillas hits you the moment you arrive. \n\nThey are open until 11:00 PM tonight and offer a casual vibe with a menu featuring authentic street tacos and ceviches that are perfect for a group to share. After dinner, the Wolf Den is just a short walk away and usually has a great live band to keep the night moving. \n\nLet me help you with the details for your evening\u2014what time were you thinking of dining, and are there any dietary restrictions or a specific occasion I should keep in mind for your party? Once we have the specifics, I can connect you with our host team to finalize everything.",
+      "sources": [
+        {
+          "category": "restaurants",
+          "source": "mohegan_sun.json",
+          "score": 0.644
+        },
+        {
+          "category": "faq",
+          "source": "mohegan_sun.json",
+          "score": 0.65
+        }
+      ],
+      "elapsed_ms": 36858,
+      "error": null
+    },
+    {
+      "turn_index": 1,
+      "user_message": "Wait, actually 2 more friends are coming. So 6 total.",
+      "agent_response": "",
+      "sources": [],
+      "elapsed_ms": 60005,
+      "error": "TIMEOUT (60.0s)"
+    },
+    {
+      "turn_index": 2,
+      "user_message": "Which restaurant handles a group of 6 best?",
+      "agent_response": "",
+      "sources": [],
+      "elapsed_ms": 60005,
+      "error": "TIMEOUT (60.0s)"
+    },
+    {
+      "turn_index": 3,
+      "user_message": "Great, book it for 6",
+      "agent_response": "Glad I could help. The Wolf Den has free live music every night \u2014 it's right in the Casino of the Earth and worth checking out. What sounds good?",
+      "sources": [],
+      "elapsed_ms": 3,
+      "error": null
+    }
+  ],
+  "completed": true
+}

@@ -1,0 +1,88 @@
+{
+  "scenario_id": "p5-04",
+  "scenario_name": "Agent handles mid-conversation topic change gracefully",
+  "category": "profiling_p5_progressive_sequence",
+  "behavioral_dimension": "P5_progressive_sequencing",
+  "expected_behavior": "Bathroom question is handled cleanly without forcing poker back into the response. When Tom returns to the poker topic, agent resumes where they left off. The profiling sequence adapts to the guest's flow, not the other way around",
+  "expected_behavioral_quality": "When the guest abruptly changes topic mid-profiling sequence, the agent follows the guest's lead without forcing the conversation back to the profiling path. Captures what was volunteered and resumes profiling only when the conversation naturally allows it.",
+  "safety_relevant": false,
+  "source_file": "profiling_p5_progressive_sequence.yaml",
+  "thread_id": "eval-p5-04-1772959057",
+  "turns": [
+    {
+      "turn_index": 0,
+      "user_message": "I'm Tom, here for a poker tournament",
+      "agent_response": "Welcome to the property, Tom. You've picked a great time to be in the Poker Room, as our 33 tables are always buzzing with daily tournaments and 24-hour action. \n\nAfter a long session at the tables, I'd suggest heading over to Elemis Spa for a legendary hot stone massage to help you reset. If you prefer live music to unwind, the Wolf Den has free shows nightly that offer a great atmosphere right in the heart of the action without needing a ticket. \n\nAre you planning on sticking strictly to the tournament schedule, or do you have some time to check out a headliner in the Arena while you're here?",
+      "sources": [
+        {
+          "category": "gaming",
+          "source": "mohegan_sun.json",
+          "score": 0.667
+        },
+        {
+          "category": "entertainment",
+          "source": "mohegan_sun.json",
+          "score": 0.643
+        },
+        {
+          "category": "faq",
+          "source": "mohegan_sun.json",
+          "score": 0.639
+        },
+        {
+          "category": "property",
+          "source": "mohegan_sun.json",
+          "score": 0.636
+        }
+      ],
+      "elapsed_ms": 28809,
+      "error": null
+    },
+    {
+      "turn_index": 1,
+      "user_message": "Wait, where's the nearest bathroom?",
+      "agent_response": "Tom, the closest restrooms are just outside the Poker Room entrance, immediately to your left near the Autumn Essentials shop. It's the quickest route to get you back to your seat.\n\nAre you on a dinner break soon, or are you looking for a quick bite between levels?",
+      "sources": [],
+      "elapsed_ms": 47747,
+      "error": null
+    },
+    {
+      "turn_index": 2,
+      "user_message": "Thanks. OK so about the tournament...",
+      "agent_response": "Tom, your tournament play earns Tier Credits and Momentum Points that can be redeemed for dining, hotel stays, or retail purchases. I recommend confirming with the Poker Desk that your Momentum card is being tracked correctly, as this play contributes to your progress toward the Ignite tier, which begins at 2,500 credits.\n\nIf you need a quick meal during a scheduled break, Phantasia in the Casino of the Earth is nearby and specializes in fast service. \n\nAre you playing in the No-Limit Hold'em tournament today, or are you here for a Pot-Limit Omaha event?",
+      "sources": [],
+      "elapsed_ms": 48814,
+      "error": null
+    },
+    {
+      "turn_index": 3,
+      "user_message": "Cool. I play here every quarter or so.",
+      "agent_response": "Tom, visiting every quarter is a consistent way to maintain your status since Tier Credits are calculated on a rolling 12-month basis. The Ignite tier, reached at 2,500 Tier Credits, includes benefits like priority restaurant seating and a 10% bonus on your Momentum Point earn rate. \n\nBased on your frequent play, you may be eligible for specific room offers or dining vouchers, which you can verify at any Momentum kiosk or by visiting the player services desk. If you're looking for dinner after the tournament, Michael Jordan\u2019s Steak House is a reliable choice for a high-quality meal nearby; it's a favorite for players coming off a long session.\n\nDo you usually stay for the full weekend when you come in for these tournaments?",
+      "sources": [
+        {
+          "category": "amenities",
+          "source": "mohegan_sun.json",
+          "score": 0.666
+        },
+        {
+          "category": "gaming",
+          "source": "mohegan_sun.json",
+          "score": 0.649
+        },
+        {
+          "category": "entertainment",
+          "source": "mohegan_sun.json",
+          "score": 0.643
+        },
+        {
+          "category": "property",
+          "source": "mohegan_sun.json",
+          "score": 0.642
+        }
+      ],
+      "elapsed_ms": 48044,
+      "error": null
+    }
+  ],
+  "completed": true
+}

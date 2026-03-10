@@ -1,0 +1,54 @@
+{
+  "scenario_id": "p2-05",
+  "scenario_name": "Agent backs off when guest is terse",
+  "category": "profiling_p2_active_probing",
+  "behavioral_dimension": "P2_active_probing",
+  "expected_behavior": "Matches the terse style. Does NOT ask 'How many will be dining?' or 'Any special occasion?' when the guest is clearly in lookup mode. Every response is functional and concise",
+  "expected_behavioral_quality": "Recognizes that terse responses signal the guest wants information, not conversation. Stops asking profiling questions after the guest gives short, functional replies. Switches to direct, concise answers without further probing.",
+  "safety_relevant": false,
+  "source_file": "profiling_p2_active_probing.yaml",
+  "thread_id": "eval-p2-05-1772955833",
+  "turns": [
+    {
+      "turn_index": 0,
+      "user_message": "Steakhouse hours",
+      "agent_response": "Michael Jordan's Steak House is my top recommendation for a serious cut of beef tonight. Located in the Casino of the Sky, they are open from 5:00 PM to 10:00 PM and serve USDA Prime steaks in a beautifully designed, upscale space ($$$$). Business casual attire is the standard there, and because it is a favorite for many guests, I highly recommend securing a reservation. \n\nAs an insider tip, if you have any room left after your steak, their 23-layer chocolate cake is legendary and definitely worth sharing. Another excellent option is Vic & Anthony's, which is also open this evening from 5:00 PM to 10:00 PM. Please keep in mind that hours and prices can vary, so it is a good idea to confirm with the property when you arrive. \n\nAfter your meal, the Wolf Den in the Casino of the Earth usually has some fantastic live music to cap off the night. Are you planning a dinner for a special celebration or just a night out?",
+      "sources": [],
+      "elapsed_ms": 62527,
+      "error": null
+    },
+    {
+      "turn_index": 1,
+      "user_message": "Location",
+      "agent_response": "Michael Jordan's Steak House is located in the Casino of the Sky. Are you staying in one of our hotel towers tonight?",
+      "sources": [],
+      "elapsed_ms": 40261,
+      "error": null
+    },
+    {
+      "turn_index": 2,
+      "user_message": "Dress code",
+      "agent_response": "Michael Jordan's Steak House recommends business casual attire to match the refined atmosphere. Are you planning a dinner for a special occasion?",
+      "sources": [
+        {
+          "category": "faq",
+          "source": "mohegan_sun.json",
+          "score": 0.706
+        },
+        {
+          "category": "entertainment",
+          "source": "mohegan_sun.json",
+          "score": 0.655
+        },
+        {
+          "category": "restaurants",
+          "source": "mohegan_sun.json",
+          "score": 0.648
+        }
+      ],
+      "elapsed_ms": 37238,
+      "error": null
+    }
+  ],
+  "completed": true
+}

@@ -1,0 +1,86 @@
+{
+  "scenario_id": "h2-03",
+  "scenario_name": "Guest mentions they switched to competitor",
+  "category": "host_triangle_h1_h3_development",
+  "behavioral_dimension": "H2_reactivation_win_back",
+  "expected_behavior": "Does not badmouth Foxwoods or Gordon Ramsay. Instead, highlights Mohegan Sun's own new dining portfolio (Beauty & Essex, The Farm Italy, The Shed) as reasons to come back. Creates competitive differentiation through quality, not criticism",
+  "expected_behavioral_quality": "When a guest says they have been going to a competitor instead, the agent does not disparage the competitor. Instead, discovers what drew them away and highlights what Mohegan Sun offers in that area. Creates a 'come back and see' moment around genuine improvements.",
+  "safety_relevant": false,
+  "source_file": "host_triangle_h1_h3_development.yaml",
+  "thread_id": "eval-h2-03-1772950635",
+  "turns": [
+    {
+      "turn_index": 0,
+      "user_message": "I've been going to Foxwoods mostly. They opened some cool new restaurants",
+      "agent_response": "We are glad to have you here this morning. If you are looking for a meal that matches that \"cool\" factor, Todd English's Tuscany is where you will find it. \n\nThe wood-fired aroma from the open kitchen hits you immediately, and the handmade pasta is some of the best you will ever taste! They open today at 5:00 PM in the Casino of the Sky, with a price range of approximately $$$$. I'd suggest a business casual look and a reservation to get the best experience. I have all the details for you, and I can point you toward our host team if you want to look into a specific time. Prices and hours may vary, so it is always good to confirm when you arrive. \n\nFun fact\u2014the wood-fired grill at Tuscany isn't just for show; it's used to give their signature flatbreads and steaks a very specific smoky finish you won't find anywhere else on the property. After dinner, the Casino of the Sky has a great energy under the planetarium dome if you are looking for some entertainment. \n\nSince you have been trying out different places recently, do you usually lean toward classic Italian or are you looking for something more adventurous?",
+      "sources": [
+        {
+          "category": "faq",
+          "source": "mohegan_sun.json",
+          "score": 0.712
+        },
+        {
+          "category": "restaurants",
+          "source": "mohegan_sun.json",
+          "score": 0.719
+        },
+        {
+          "category": "gaming",
+          "source": "mohegan_sun.json",
+          "score": 0.683
+        },
+        {
+          "category": "hotel",
+          "source": "mohegan_sun.json",
+          "score": 0.672
+        }
+      ],
+      "elapsed_ms": 37845,
+      "error": null
+    },
+    {
+      "turn_index": 1,
+      "user_message": "Yeah their Gordon Ramsay place is really good",
+      "agent_response": "Since you enjoy that celebrity chef atmosphere, Bobby Flay's Bar Americain here at Mohegan Sun is the place to be. \n\nThe energy in the brasserie is incredible, and the bold Southwestern flavors Bobby Flay is famous for really elevate the American classics. They open today at 11:30 AM in the Casino of the Earth and serve until 10:00 PM. It is a smart casual setting with a price range around $$$, and while they welcome walk-ins, I suggest a reservation for dinner. Prices and hours can vary, so it is always a good idea to confirm with the property when you arrive.\n\nPro tip: if you are a fan of bold flavors, the signature dishes with those signature Flay glazes are a must-try. After your meal, you might enjoy heading over to the Wolf Den in the Casino of the Earth; they have free live music every night and the energy is always good. \n\nSince you have an appreciation for chef-driven restaurants, are you usually looking for a specific signature dish like a great steak, or do you prefer to explore a variety of bold flavors?",
+      "sources": [
+        {
+          "category": "restaurants",
+          "source": "mohegan_sun.json",
+          "score": 0.66
+        }
+      ],
+      "elapsed_ms": 27433,
+      "error": null
+    },
+    {
+      "turn_index": 2,
+      "user_message": "Hmm those do sound worth trying",
+      "agent_response": "Since it is still early morning, Hash House A Go Go is the place to be if you want a meal that really makes an impression. They open at 8:00 AM in the Casino of the Earth, and the plates are so massive they practically need their own zip code. \n\nIt is famous for \"twisted farm food\" like their sage fried chicken and waffles or pancakes that are literally larger than the plate. It is a casual spot with a price range around $$, and you won't need a reservation. Hours and prices can vary, so it is a good idea to check with the property when you head over. Fun fact\u2014the kitchen there goes through an incredible amount of fresh produce every morning to keep those farm-to-table portions as fresh as they are huge! \n\nAfter a brunch like that, you might want to look into the Mandara Spa to spend the rest of your morning relaxing. Do you usually look for a hearty breakfast to start your day, or do you prefer to wait for a big dinner?",
+      "sources": [
+        {
+          "category": "entertainment",
+          "source": "mohegan_sun.json",
+          "score": 0.644
+        },
+        {
+          "category": "restaurants",
+          "source": "mohegan_sun.json",
+          "score": 0.647
+        },
+        {
+          "category": "promotions",
+          "source": "mohegan_sun.json",
+          "score": 0.626
+        },
+        {
+          "category": "faq",
+          "source": "mohegan_sun.json",
+          "score": 0.614
+        }
+      ],
+      "elapsed_ms": 37008,
+      "error": null
+    }
+  ],
+  "completed": true
+}

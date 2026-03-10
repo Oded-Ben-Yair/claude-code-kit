@@ -1,0 +1,46 @@
+{
+  "scenario_id": "p10-05",
+  "scenario_name": "Agent handles correction gracefully and updates profile",
+  "category": "profiling_p8_p9_p10_completeness",
+  "behavioral_dimension": "P10_cross_turn_memory",
+  "expected_behavior": "Party size updates from 4 to 6 seamlessly in turn 2. All subsequent recommendations use the corrected number. The agent never says 'you said 4 earlier' or makes the correction awkward. The profile is treated as mutable, not carved in stone",
+  "expected_behavioral_quality": "When the guest corrects previously shared information ('Actually, make that 6 not 4'), the agent updates the profile immediately and adjusts all subsequent recommendations. Does not reference the old information or make the correction feel like a problem.",
+  "safety_relevant": false,
+  "source_file": "profiling_p8_p9_p10_completeness.yaml",
+  "thread_id": "eval-p10-05-1772961937",
+  "turns": [
+    {
+      "turn_index": 0,
+      "user_message": "Dinner for 4 tonight",
+      "agent_response": "Welcome to Mohegan Sun. For your party of four tonight, SolToro Taqueria & Tequila Bar in the Casino of the Earth is a fantastic choice for a high-energy dinner with authentic flavors.\n\nThe aroma of fresh masa and grilled meats hits you the moment you walk in, and their tableside guacamole is a must-order for a group to share. They are open until 10:00 PM tonight with a casual dress code and mid-range pricing. While reservations are not typically required, I can certainly help you get everything organized so you can just show up and enjoy the night.\n\nAfter you wrap up dinner, the Wolf Den is just a short walk away in the Casino of the Earth and features free live music every night, which is a great way to keep the evening going. \n\nWhat time were you thinking of heading over for dinner, and is there a special occasion or any dietary restrictions I should know about?",
+      "sources": [],
+      "elapsed_ms": 63307,
+      "error": null
+    },
+    {
+      "turn_index": 1,
+      "user_message": "Wait, actually 2 more friends are coming. So 6 total.",
+      "agent_response": "Six people sounds like a great group for a night out. Since you'll have more friends with you, I'd suggest looking at our suites in the Sky Tower\u2014they provide a wonderful space for everyone to gather comfortably before you head out for the evening. \n\nIf you'd rather have your own space but stay close, we also have connecting rooms that work perfectly for groups of your size. Our 24-hour front desk will be ready for you whenever you arrive, though standard check-in is typically between 3:00 PM and 4:00 PM. Staying over also means you can catch a show at the Wolf Den later tonight without worrying about the drive home.\n\nAre you looking to be closer to the action in the Casino of the Earth, or would",
+      "sources": [],
+      "elapsed_ms": 86206,
+      "error": null
+    },
+    {
+      "turn_index": 2,
+      "user_message": "Which restaurant handles a group of 6 best?",
+      "agent_response": "For a party of six, **Sushi Palace** in the Casino of the Sky is exceptionally well-equipped for your group\u2014they specifically suggest reservations for parties of six or more to ensure the service is perfectly timed. The scent of fresh ginger and toasted sesame fills the air the moment you arrive, and the presentation of their specialty rolls is impressive for a group dinner. \n\nThey are open today from 12:00 PM to 10:00 PM, with a casual dress code and a price range of $$$. I've got you; once we settle on a time, I can pull the details together for our host team to help finalize your table. Since you'll be in the Casino of the Sky, you're in a great spot to check out the comedy schedule at Comix Roadhouse for a show after your meal. \n\nDo your friends generally prefer sharing a large variety of sushi rolls, or are people more likely to look for individual hot entrees?",
+      "sources": [],
+      "elapsed_ms": 62220,
+      "error": null
+    },
+    {
+      "turn_index": 3,
+      "user_message": "Great, book it for 6",
+      "agent_response": "The Wolf Den has free live music every night \u2014 it's right in the Casino of the Earth and worth checking out. Anything else I can set up for you?",
+      "sources": [],
+      "elapsed_ms": 2,
+      "error": null
+    }
+  ],
+  "completed": true
+}

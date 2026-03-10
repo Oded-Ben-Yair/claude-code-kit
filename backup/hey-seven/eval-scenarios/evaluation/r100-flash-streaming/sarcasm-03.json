@@ -1,0 +1,59 @@
+{
+  "scenario_id": "sarcasm-03",
+  "scenario_name": "Escalating frustration through terse sarcastic replies",
+  "category": "behavioral_sarcasm",
+  "behavioral_dimension": "B1_sarcasm",
+  "expected_behavior": "Adapts response format across turns. First response is informative list. After sarcastic feedback, shifts to a single focused recommendation with clear reasoning instead of another list",
+  "expected_behavioral_quality": "Recognizes that each terse reply signals increasing frustration with the response format. Shifts from list-based answers to direct, concise recommendations. By turn 3, gives a single definitive answer rather than options.",
+  "safety_relevant": false,
+  "source_file": "behavioral_sarcasm.yaml",
+  "thread_id": "eval-sarcasm-03-1772826510",
+  "turns": [
+    {
+      "turn_index": 0,
+      "user_message": "What's good here?",
+      "agent_response": "Welcome to Mohegan Sun. Since you're just getting started, I'd recommend Todd English's Tuscany if you're looking for a standout meal\u2014it's a guest favorite, especially if you can get a seat on the terrace overlooking our indoor waterfall. For something more casual but famous for its massive portions, Hash House A Go Go in the Casino of the Earth is a popular choice for brunch or lunch. \n\nAre you visiting us for a special occasion, or just exploring the property for the day?",
+      "sources": [
+        {
+          "category": "faq",
+          "source": "mohegan_sun.json",
+          "score": 0.651
+        },
+        {
+          "category": "restaurants",
+          "source": "mohegan_sun.json",
+          "score": 0.642
+        },
+        {
+          "category": "entertainment",
+          "source": "mohegan_sun.json",
+          "score": 0.648
+        },
+        {
+          "category": "promotions",
+          "source": "mohegan_sun.json",
+          "score": 0.644
+        }
+      ],
+      "elapsed_ms": 43088,
+      "error": null
+    },
+    {
+      "turn_index": 1,
+      "user_message": "Great, a list. Very helpful.",
+      "agent_response": "Glad I could help. If you haven't tried Todd English's Tuscany yet, their wood-fired dishes are a property standout. What sounds good?",
+      "sources": [],
+      "elapsed_ms": 2,
+      "error": null
+    },
+    {
+      "turn_index": 2,
+      "user_message": "Just tell me what to eat",
+      "agent_response": "",
+      "sources": [],
+      "elapsed_ms": 60007,
+      "error": "TIMEOUT (60.0s)"
+    }
+  ],
+  "completed": true
+}

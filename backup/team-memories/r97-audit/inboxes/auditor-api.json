@@ -1,0 +1,38 @@
+[
+  {
+    "from": "team-lead",
+    "text": "{\"type\":\"task_assignment\",\"taskId\":\"9\",\"subject\":\"Audit Component 9: API Layer (FastAPI, middleware, models)\",\"description\":\"Audit FastAPI app, ASGI middleware, SSE streaming, rate limiting, security headers, PII redaction. Check lifespan, ETag/304, health endpoints.\\n\\nKey files: src/api/app.py, src/api/middleware.py, src/api/models.py, src/api/errors.py, src/api/pii_redaction.py, src/agent/streaming_pii.py\\nWrite findings to: reviews/r97-audit/09-api-layer.md\",\"assignedBy\":\"team-lead\",\"timestamp\":\"2026-03-05T14:17:16.262Z\"}",
+    "timestamp": "2026-03-05T14:17:16.262Z",
+    "read": false
+  },
+  {
+    "from": "team-lead",
+    "text": "{\"type\":\"task_assignment\",\"taskId\":\"10\",\"subject\":\"Audit Component 10: CMS + SMS Modules\",\"description\":\"Audit CMS (Google Sheets client, webhook, validation) and SMS (Telnyx client, webhook, TCPA compliance). Check wiring to main app, real vs scaffolded.\\n\\nKey files: src/cms/*.py, src/sms/*.py\\nWrite findings to: reviews/r97-audit/10-cms-sms.md\",\"assignedBy\":\"team-lead\",\"timestamp\":\"2026-03-05T14:17:17.159Z\"}",
+    "timestamp": "2026-03-05T14:17:17.159Z",
+    "read": false
+  },
+  {
+    "from": "team-lead",
+    "text": "{\"type\":\"task_assignment\",\"taskId\":\"11\",\"subject\":\"Audit Component 11: Observability (Langfuse, tracing, evaluation)\",\"description\":\"Audit observability stack: Langfuse integration, distributed tracing, automated evaluation framework. Check wiring, real traces vs scaffolded.\\n\\nKey files: src/observability/*.py\\nWrite findings to: reviews/r97-audit/11-observability.md\",\"assignedBy\":\"team-lead\",\"timestamp\":\"2026-03-05T14:17:17.426Z\"}",
+    "timestamp": "2026-03-05T14:17:17.426Z",
+    "read": false
+  },
+  {
+    "from": "team-lead",
+    "text": "{\"type\":\"task_assignment\",\"taskId\":\"12\",\"subject\":\"Audit Component 12: Config + Feature Flags + Casino Config\",\"description\":\"Audit global settings, feature flags, multi-property casino config, circuit breaker, memory/checkpointer. Check 17 feature flags, per-casino overrides.\\n\\nKey files: src/config.py, src/casino/config.py, src/casino/feature_flags.py, src/agent/circuit_breaker.py, src/agent/memory.py\\nWrite findings to: reviews/r97-audit/12-config-flags.md\",\"assignedBy\":\"team-lead\",\"timestamp\":\"2026-03-05T14:17:17.591Z\"}",
+    "timestamp": "2026-03-05T14:17:17.591Z",
+    "read": false
+  },
+  {
+    "from": "team-lead",
+    "text": "{\"type\":\"shutdown_request\",\"requestId\":\"shutdown-1772720888443@auditor-api\",\"from\":\"team-lead\",\"reason\":\"All 4 reports (09-12) received and verified on disk. Great work. Shutting down.\",\"timestamp\":\"2026-03-05T14:28:08.443Z\"}",
+    "timestamp": "2026-03-05T14:28:08.443Z",
+    "read": true
+  },
+  {
+    "from": "team-lead",
+    "text": "{\"type\":\"shutdown_request\",\"requestId\":\"shutdown-1772721013341@auditor-api\",\"from\":\"team-lead\",\"reason\":\"All 4 reports received and verified. Synthesis written. Shutting down. Great work.\",\"timestamp\":\"2026-03-05T14:30:13.341Z\"}",
+    "timestamp": "2026-03-05T14:30:13.341Z",
+    "read": false
+  }
+]

@@ -1,0 +1,65 @@
+{
+  "scenario_id": "sarcasm-09",
+  "scenario_name": "Sarcasm embedded in a valid request",
+  "category": "behavioral_sarcasm",
+  "behavioral_dimension": "B1_sarcasm",
+  "expected_behavior": "Strips sarcastic framing and answers the genuine restaurant question directly. Earns trust through competence, not by addressing the sarcasm. Accepts the backhanded compliment gracefully",
+  "expected_behavioral_quality": "Extracts the valid request from the sarcastic wrapper. Answers the actual question without addressing the sarcasm directly. Does not lecture about tone or ask if they're being sarcastic.",
+  "safety_relevant": false,
+  "source_file": "behavioral_sarcasm.yaml",
+  "thread_id": "eval-sarcasm-09-1772827271",
+  "turns": [
+    {
+      "turn_index": 0,
+      "user_message": "Since your amazing AI obviously knows everything, what's the best restaurant here?",
+      "agent_response": "I am Seven, and while \"best\" is often a matter of personal taste, Michael Jordan's Steak House is the definitive choice for an upscale, iconic meal here at Mohegan Sun.\n\nLocated in the Casino of the Sky, it\u2019s an elegant space where the aroma of seared USDA Prime steaks fills the room, surrounded by tasteful sports memorabilia that honors the legend himself. They are open until 10:00 PM tonight, and since it is a Friday evening, I would highly recommend a reservation to secure a table. The atmosphere is business casual, and you can expect a premium experience with a price range to match.\n\nOne insider tip: don't skip the legendary garlic bread served with a rich blue cheese fondue\u2014it's a signature starter that many guests consider a non-negotiable part of the visit. \n\nAre you looking to celebrate a special occasion tonight, or are you simply in the mood for an incredible cut of beef? After a dinner like that, you might enjoy heading over to the Wolf Den nearby to catch some live music and keep the night going.",
+      "sources": [
+        {
+          "category": "restaurants",
+          "source": "mohegan_sun.json",
+          "score": 0.662
+        }
+      ],
+      "elapsed_ms": 27473,
+      "error": null
+    },
+    {
+      "turn_index": 1,
+      "user_message": "Huh. That actually sounds decent. Hours?",
+      "agent_response": "",
+      "sources": [],
+      "elapsed_ms": 60004,
+      "error": "TIMEOUT (60.0s)"
+    },
+    {
+      "turn_index": 2,
+      "user_message": "Alright, maybe you're not totally useless",
+      "agent_response": "I'll take that as a win. \n\nSince you're looking into Michael Jordan's Steak House, their bar area is actually a great spot for a more relaxed experience if you aren't in the mood for the full dining room tonight. Are you staying with us for the whole weekend, or just visiting for the night?",
+      "sources": [
+        {
+          "category": "amenities",
+          "source": "mohegan_sun.json",
+          "score": 0.596
+        },
+        {
+          "category": "entertainment",
+          "source": "mohegan_sun.json",
+          "score": 0.596
+        },
+        {
+          "category": "restaurants",
+          "source": "mohegan_sun.json",
+          "score": 0.599
+        },
+        {
+          "category": "gaming",
+          "source": "mohegan_sun.json",
+          "score": 0.576
+        }
+      ],
+      "elapsed_ms": 52985,
+      "error": null
+    }
+  ],
+  "completed": true
+}

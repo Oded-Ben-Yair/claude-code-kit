@@ -1,0 +1,87 @@
+{
+  "id": "h9-01",
+  "name": "Guest open to suggestions for a special evening",
+  "source_file": "host_triangle_h7_h10_revenue.yaml",
+  "category": "host_triangle_h7_h10_revenue",
+  "behavioral_dimension": "H9_revenue_aware_steering",
+  "expected_behavior": "Reads 'no budget concerns' and 'really special' as clear premium signals. Leads with the highest-tier dining option and builds a full VIP evening. Does not mention budget alternatives. The steering feels like a host sharing their genuine top picks, not an upsell script",
+  "expected_behavioral_quality": "When a guest signals they want something special, the agent steers toward premium experiences that match the occasion. The premium suggestion feels like expert guidance, not upselling. The agent reads context cues (occasion, group, tone) to calibrate the recommendation tier.",
+  "safety_relevant": false,
+  "turns": [
+    {
+      "turn_index": 0,
+      "user_message": "We want to do something really special tonight. No budget concerns. What's the best?",
+      "agent_response": "If you're looking for a premier experience, Michael Jordan's Steak House in the Casino of the Sky is the standout choice for a high-end dinner tonight. They're known for USDA Prime steaks and a sophisticated atmosphere. For something with a bit more energy and a dramatic setting, Tao Asian Bistro & Lounge is also open and offers an excellent Pan-Asian menu.\n\nTo keep the evening going, you might enjoy Novelle, which is our upscale ultra-lounge that opens on Thursday nights for craft cocktails in a refined space. Are you celebrating a specific occasion tonight, like an anniversary or a birthday?",
+      "sources": [
+        {
+          "category": "entertainment",
+          "source": "mohegan_sun.json",
+          "score": 0.705
+        },
+        {
+          "category": "restaurants",
+          "source": "mohegan_sun.json",
+          "score": 0.68
+        }
+      ],
+      "elapsed_ms": 50501,
+      "error": null
+    },
+    {
+      "turn_index": 1,
+      "user_message": "Michael Jordan's sounds perfect. What about wine?",
+      "agent_response": "The wine list at Michael Jordan's Steak House is extensive, featuring world-class labels and rare vintages specifically curated to pair with their USDA Prime steaks. Whether you are looking for a powerful Napa Valley Cabernet or a more nuanced European red, the selection is designed to satisfy even the most discerning collectors.\n\nThe restaurant opens today at 5:00 PM and maintains a business casual dress code, which complements the sophisticated atmosphere. Since you are planning for tonight, I'd suggest securing a reservation as this is one of our most popular destinations for a high-end evening. After your dinner, you might enjoy visiting Novelle, our upscale ultra-lounge, for a refined cocktail in a chic setting. Do you usually prefer a bold red wine with your steak, or would you like to explore their white and sparkling options?",
+      "sources": [
+        {
+          "category": "restaurants",
+          "source": "mohegan_sun.json",
+          "score": 0.717
+        },
+        {
+          "category": "faq",
+          "source": "mohegan_sun.json",
+          "score": 0.653
+        },
+        {
+          "category": "property",
+          "source": "mohegan_sun.json",
+          "score": 0.631
+        }
+      ],
+      "elapsed_ms": 27352,
+      "error": null
+    },
+    {
+      "turn_index": 2,
+      "user_message": "And after dinner? We want the full VIP experience",
+      "agent_response": "You are going to love the atmosphere at Novelle tonight, which is our premier ultra-lounge designed for a sophisticated nightlife experience. It opens on Thursday evenings and features craft cocktails and DJ entertainment in a setting that is both intimate and high-energy.\n\nFor the full VIP treatment, our high-limit gaming areas offer a more exclusive environment with premium drink service and dedicated hosts to ensure your evening is seamless",
+      "sources": [
+        {
+          "category": "entertainment",
+          "source": "mohegan_sun.json",
+          "score": 0.696
+        },
+        {
+          "category": "promotions",
+          "source": "mohegan_sun.json",
+          "score": 0.667
+        },
+        {
+          "category": "gaming",
+          "source": "mohegan_sun.json",
+          "score": 0.681
+        },
+        {
+          "category": "restaurants",
+          "source": "mohegan_sun.json",
+          "score": 0.659
+        }
+      ],
+      "elapsed_ms": 31484,
+      "error": null
+    }
+  ],
+  "elapsed_ms": 109338,
+  "error": null,
+  "completed": true
+}

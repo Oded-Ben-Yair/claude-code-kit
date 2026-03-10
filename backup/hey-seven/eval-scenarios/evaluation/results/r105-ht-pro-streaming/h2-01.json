@@ -1,0 +1,96 @@
+{
+  "scenario_id": "h2-01",
+  "scenario_name": "Lapsed guest signals they stopped coming",
+  "category": "host_triangle_h1_h3_development",
+  "behavioral_dimension": "H2_reactivation_win_back",
+  "expected_behavior": "Welcomes the guest back without making the absence feel awkward. Asks what brought them back (not why they left). Highlights what has changed or is new since their last visit \u2014 new restaurants, new entertainment, new loyalty perks. Creates urgency around what they have been missing",
+  "expected_behavioral_quality": "When a guest says they stopped visiting, the agent investigates the reason without being pushy. Acknowledges the gap, discovers what changed, and creates a specific reason to return based on what has changed at the property or what the guest now values.",
+  "safety_relevant": false,
+  "source_file": "host_triangle_h1_h3_development.yaml",
+  "thread_id": "eval-h2-01-1772990052",
+  "turns": [
+    {
+      "turn_index": 0,
+      "user_message": "I used to come here all the time but haven't been in like two years",
+      "agent_response": "Welcome back\u2014two years is a long time to stay away. Start at Casino of the Earth to get your bearings; it's still the heart of the property and feels the most familiar. \n\nWhat was your go-to spot back when you were visiting regularly?",
+      "sources": [
+        {
+          "category": "entertainment",
+          "source": "mohegan_sun.json",
+          "score": 0.641
+        },
+        {
+          "category": "gaming",
+          "source": "mohegan_sun.json",
+          "score": 0.63
+        },
+        {
+          "category": "faq",
+          "source": "mohegan_sun.json",
+          "score": 0.652
+        },
+        {
+          "category": "amenities",
+          "source": "mohegan_sun.json",
+          "score": 0.62
+        }
+      ],
+      "elapsed_ms": 32029,
+      "error": null
+    },
+    {
+      "turn_index": 1,
+      "user_message": "Just got busy with work, lost the habit I guess",
+      "agent_response": "I understand\u2014it\u2019s easy for work to take over. Since you're finally back, I'd suggest a quiet dinner at Tuscany to help you shift gears. \n\nAre you here for a quick getaway, or is this a business trip?",
+      "sources": [
+        {
+          "category": "amenities",
+          "source": "mohegan_sun.json",
+          "score": 0.619
+        },
+        {
+          "category": "entertainment",
+          "source": "mohegan_sun.json",
+          "score": 0.621
+        },
+        {
+          "category": "hotel",
+          "source": "mohegan_sun.json",
+          "score": 0.567
+        }
+      ],
+      "elapsed_ms": 28435,
+      "error": null
+    },
+    {
+      "turn_index": 2,
+      "user_message": "What's actually new since I was last here?",
+      "agent_response": "Since you've been so focused on work, the biggest change you'll want to check out is the Earth Tower. It's our newest addition and has a completely fresh, contemporary design. We also put the new Elemis Spa right inside it, which is the perfect place to actually disconnect and decompress. \n\nAre you looking to fully relax and take it easy this trip, or are you hoping to get some action in at the tables?",
+      "sources": [
+        {
+          "category": "hotel",
+          "source": "mohegan_sun.json",
+          "score": 0.658
+        },
+        {
+          "category": "entertainment",
+          "source": "mohegan_sun.json",
+          "score": 0.66
+        },
+        {
+          "category": "amenities",
+          "source": "mohegan_sun.json",
+          "score": 0.644
+        },
+        {
+          "category": "gaming",
+          "source": "mohegan_sun.json",
+          "score": 0.631
+        }
+      ],
+      "elapsed_ms": 55825,
+      "error": null
+    }
+  ],
+  "completed": true
+}

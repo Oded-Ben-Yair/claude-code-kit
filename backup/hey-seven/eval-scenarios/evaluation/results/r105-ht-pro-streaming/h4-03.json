@@ -1,0 +1,81 @@
+{
+  "scenario_id": "h4-03",
+  "scenario_name": "Guest with children seeking family-appropriate options",
+  "category": "host_triangle_h4_h6_relationship",
+  "behavioral_dimension": "H4_personalized_recognition",
+  "expected_behavior": "Distinguishes between teenager interests and young child interests. Recommends experiences that teenagers would consider 'cool' rather than childish. Dinner recommendation accounts for family-friendly seating while not being a kids' restaurant. Makes the family feel like there is something for everyone",
+  "expected_behavioral_quality": "Recognizes the family context and personalizes all recommendations around the full group's needs. Balances adult interests with kid-friendly options without condescending. Uses the family dynamic to create a personalized experience vision.",
+  "safety_relevant": false,
+  "source_file": "host_triangle_h4_h6_relationship.yaml",
+  "thread_id": "eval-h4-03-1772990875",
+  "turns": [
+    {
+      "turn_index": 0,
+      "user_message": "We're here with two teenagers, 14 and 16. What can we all do together?",
+      "agent_response": "Right nearby is the Wombi Rock climbing wall, which provides a unique indoor challenge for all skill levels and is a fun way to burn off some energy before dinner. \n\nPro tip: the climbing wall is located right near the arcade area, so you can easily spend a few hours in that section of the resort without needing to trek back and forth. For your evening plans, I suggest checking the Mohegan Sun Arena schedule for any all-ages performances or events happening tonight! \n\nIs this your first time bringing the kids along for a stay at the resort?",
+      "sources": [
+        {
+          "category": "entertainment",
+          "source": "mohegan_sun.json",
+          "score": 0.675
+        },
+        {
+          "category": "amenities",
+          "source": "mohegan_sun.json",
+          "score": 0.651
+        },
+        {
+          "category": "faq",
+          "source": "mohegan_sun.json",
+          "score": 0.624
+        }
+      ],
+      "elapsed_ms": 41613,
+      "error": null
+    },
+    {
+      "turn_index": 1,
+      "user_message": "They're pretty bored of the usual family stuff, they want something cool",
+      "agent_response": "Cyber Quest is the move for that age group because it is loaded with the latest high-tech video games and attractions that appeal specifically to teenagers rather than younger children. For a high-energy experience you can all enjoy together, a headliner show at the Mohegan Sun Arena is the ultimate choice since the atmosphere in there is always electric!\n\nInsider tip: The Arena is consistently ranked as one of the top entertainment venues of its size in the world, so the production quality for any show you catch will be incredible. \n\nBefore a show or a gaming session, Todd English's Tuscany is a short walk away and the massive indoor waterfall gives it a cool, upscale vibe that doesn't feel like a typical family restaurant. Are the kids more into gaming and competition, or would they be excited about a big live performance?",
+      "sources": [
+        {
+          "category": "entertainment",
+          "source": "mohegan_sun.json",
+          "score": 0.649
+        },
+        {
+          "category": "amenities",
+          "source": "mohegan_sun.json",
+          "score": 0.643
+        },
+        {
+          "category": "hotel",
+          "source": "mohegan_sun.json",
+          "score": 0.602
+        }
+      ],
+      "elapsed_ms": 44273,
+      "error": null
+    },
+    {
+      "turn_index": 2,
+      "user_message": "And we need dinner for all four of us",
+      "agent_response": "I've got you. If they want to step away from the typical kiddie-menu spots, Mohegan Sun Caputo Trattoria is an excellent choice for the four of you. It is a casual Italian eatery in the Casino of the Earth, but the atmosphere feels a bit more grown-up. The amazing aroma from their brick-oven pizzas hits you the second you walk in, and their massive, perfectly crisped calzones are a guaranteed hit with hungry teenagers. \n\nSince it is a relaxed environment with quick service, you don't even need a reservation to get a table. \n\nAre you planning to head to dinner soon, or later tonight, and does anyone in the family have any food allergies or dietary restrictions I should keep in mind?",
+      "sources": [
+        {
+          "category": "restaurants",
+          "source": "mohegan_sun.json",
+          "score": 0.645
+        },
+        {
+          "category": "hotel",
+          "source": "mohegan_sun.json",
+          "score": 0.595
+        }
+      ],
+      "elapsed_ms": 85700,
+      "error": null
+    }
+  ],
+  "completed": true
+}

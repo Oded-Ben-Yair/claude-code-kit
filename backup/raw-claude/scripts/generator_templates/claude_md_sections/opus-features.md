@@ -1,0 +1,7 @@
+- **Adaptive thinking**: Use `--effort low|medium|high|max` instead of manual thinking. Low for simple tasks, high for complex reasoning.
+- **Session teleportation**: `&` prefix sends task to Claude.ai web, `/teleport` pulls back. Cross-device session sharing.
+- **Skills `context: fork`**: Add to skill frontmatter for isolated execution (heavy skills like `/multi-model-debate`).
+- **Grok 4 limitation**: `grok_reason` with `reasoning_effort` only works on reasoning-specific models (e.g., `grok-4-fast-reasoning`), NOT on `grok-4` flagship.
+- **New hook events wired**: `SubagentStop`, `PostToolUseFailure`, `ConfigChange`, `WorktreeCreate`, `WorktreeRemove`. Available but not yet wired: `SubagentStart`, `SessionEnd`.
+- **Tool Search**: `ENABLE_TOOL_SEARCH=true` defers MCP tool descriptions until searched. ~85% token reduction for MCP-heavy sessions. Requires Sonnet 4+/Opus 4+ (not Haiku).
+- **Skill safety**: Dangerous skills should use `disable-model-invocation: true`. Heavy skills should use `context: fork`.

@@ -1,0 +1,72 @@
+{
+  "id": "coherence-01",
+  "name": "Re-asking guest name after it was already given",
+  "source_file": "behavioral_multiturn_coherence.yaml",
+  "category": "behavioral_multiturn_coherence",
+  "behavioral_dimension": "B7_coherence",
+  "expected_behavior": "Sarah's name captured in turn 1 and used naturally in later turns without re-asking. By turn 3, 'Sarah' should appear in the response as a natural address. Agent never asks 'What's your name?' or 'And who am I speaking with?'",
+  "expected_behavioral_quality": "Guest introduces themselves in turn 1. Agent must NOT ask for name in any subsequent turn. Name should appear naturally in later responses (sign-offs, confirmations) without being re-asked.",
+  "safety_relevant": false,
+  "turns": [
+    {
+      "turn_index": 0,
+      "user_message": "Hi, I'm Sarah. What restaurants do you have?",
+      "agent_response": "Welcome to Mohegan Sun, Sarah. Right now, Lantern Bar & Grill is your go-to since it's open 24 hours in the Casino of the Earth, serving up a full menu of American favorites from hearty steaks to fresh salads.\n\nIf you can wait until 8:00 AM, Hash House A Go Go is famous for its \"twisted farm food\" and portions so enormous",
+      "sources": [
+        {
+          "category": "restaurants",
+          "source": "mohegan_sun.json",
+          "score": 0.655
+        }
+      ],
+      "elapsed_ms": 50530,
+      "error": null
+    },
+    {
+      "turn_index": 1,
+      "user_message": "What about the spa?",
+      "agent_response": "Sarah, you have two exceptional options for relaxation depending on the vibe you are after. Mandara Spa is inspired by Balinese healing traditions and features a tranquil relaxation lounge and steam room that are perfect for a deep reset. For something more modern, Elemis Spa in the Earth Tower focuses on premium skincare and even offers express services if you are on the move.\n\nBoth spas open at 9:00 AM daily, but since it is just before 6:00 AM, our heated indoor pool and hot tub will be opening in about ten minutes if you want an early morning soak. After a morning at the spa, the Wolf Den usually has great live music in the evening to keep the relaxed energy going. Are you looking for a full day of treatments or just a quick refresh between activities?",
+      "sources": [
+        {
+          "category": "amenities",
+          "source": "mohegan_sun.json",
+          "score": 0.687
+        },
+        {
+          "category": "faq",
+          "source": "mohegan_sun.json",
+          "score": 0.654
+        },
+        {
+          "category": "property",
+          "source": "mohegan_sun.json",
+          "score": 0.643
+        },
+        {
+          "category": "promotions",
+          "source": "mohegan_sun.json",
+          "score": 0.645
+        }
+      ],
+      "elapsed_ms": 34484,
+      "error": null
+    },
+    {
+      "turn_index": 2,
+      "user_message": "Can you recommend something fun tonight?",
+      "agent_response": "Sarah, since it is Thursday, novelle is a fantastic choice for an upscale evening with craft cocktails and a sophisticated lounge atmosphere. If you are in the mood for a laugh, Comix Roadhouse starts its weekend comedy series tonight with nationally touring comedians in a high-energy setting. There is also a nightly free show at the Wolf Den at 8:00 PM, which is a great way to catch live music without needing a ticket.\n\nSince these shows can draw a crowd, I'd suggest arriving early to find a good spot. For a late-night bite after the show, the 24-hour Lantern Bar & Grill is just a short walk from the entertainment venues. Would you prefer the high-energy vibe of a lounge or a more relaxed comedy club environment?",
+      "sources": [
+        {
+          "category": "entertainment",
+          "source": "mohegan_sun.json",
+          "score": 0.687
+        }
+      ],
+      "elapsed_ms": 28369,
+      "error": null
+    }
+  ],
+  "elapsed_ms": 113384,
+  "error": null,
+  "completed": true
+}

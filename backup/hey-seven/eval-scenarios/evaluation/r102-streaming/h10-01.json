@@ -1,0 +1,70 @@
+{
+  "scenario_id": "h10-01",
+  "scenario_name": "Guest asking agent to arrange something",
+  "category": "host_triangle_h7_h10_revenue",
+  "behavioral_dimension": "H10_host_identity_authority",
+  "expected_behavior": "Handles the reservation request with host authority \u2014 'let me arrange that' not 'you can call the restaurant.' Accepts the special seating request with confidence. When the guest compliments the service, accepts it naturally. The agent feels like an insider who can pull strings, not a search engine",
+  "expected_behavioral_quality": "When a guest asks the agent to arrange or set up something, the agent projects the authority of a host who can make things happen. Uses language like 'let me look into that' rather than 'you'll need to call.' Takes ownership of the request even when it needs to be escalated.",
+  "safety_relevant": false,
+  "source_file": "host_triangle_h7_h10_revenue.yaml",
+  "thread_id": "eval-h10-01-1772913881",
+  "turns": [
+    {
+      "turn_index": 0,
+      "user_message": "Can you set up a dinner reservation at Tuscany for 4 tonight at 7?",
+      "agent_response": "Todd English's Tuscany is a fantastic choice for a Saturday night; the wood-fired aroma from the open kitchen and the view of the waterfall make it one of the most atmospheric spots on the property. They are open until 10:00 PM tonight, and for a party of four, a reservation is highly recommended to ensure you get a prime spot. \n\nI've got you covered with the details: the dress code is business casual, and you can expect an upscale experience with a price range around $$$$. A little insider tip\u2014the chef prepares the pasta handmade daily, and their signature wood-fired dishes have a smoky depth that is truly unique.\n\nWhile I can't book the table directly, I can certainly help you get everything ready so the host team can finalize that 7:00 PM reservation for your group. Is there a specific occasion you're celebrating tonight, or perhaps any dietary restrictions I should make sure the team is aware of?",
+      "sources": [
+        {
+          "category": "restaurants",
+          "source": "mohegan_sun.json",
+          "score": 0.674
+        },
+        {
+          "category": "faq",
+          "source": "mohegan_sun.json",
+          "score": 0.63
+        }
+      ],
+      "elapsed_ms": 31659,
+      "error": null
+    },
+    {
+      "turn_index": 1,
+      "user_message": "We'd also love a table with a good view if possible",
+      "agent_response": "The most sought-after spots at Todd English's Tuscany are definitely the tables along the terrace overlooking the 55-foot indoor waterfall. The sound of the rushing water creates a serene backdrop that pairs perfectly with their rustic Italian menu. \n\nWhen you speak with the host team to finalize your 7:00 PM reservation, specifically ask for terrace seating near Taughannick Falls. Those tables are the crown jewel of the dining room and offer the best vantage point for your group of four. Since it is currently mid-afternoon, it's the perfect time to make that request known before the evening rush begins. \n\nAfter a relaxing dinner by the water, you might enjoy heading over to the Wolf Den for some live music; it is located right in the Casino of the Earth and always has a great energy on Saturday nights. Do you prefer being right in the middle of the action, or would you like a quieter corner for your group?",
+      "sources": [
+        {
+          "category": "hotel",
+          "source": "mohegan_sun.json",
+          "score": 0.636
+        },
+        {
+          "category": "gaming",
+          "source": "mohegan_sun.json",
+          "score": 0.634
+        },
+        {
+          "category": "entertainment",
+          "source": "mohegan_sun.json",
+          "score": 0.633
+        },
+        {
+          "category": "restaurants",
+          "source": "mohegan_sun.json",
+          "score": 0.632
+        }
+      ],
+      "elapsed_ms": 76661,
+      "error": null
+    },
+    {
+      "turn_index": 2,
+      "user_message": "Perfect. You're like having a personal concierge",
+      "agent_response": "I've got you. Since it's just past 8:00 PM now, we've missed that 7:00 window, but I'll have the host team check for a 9:00 seating for your group of four. The waterfall view is actually more striking under the evening lighting\u2014it's the best time to be there. \n\nI'll flag this for the team so they can prioritize a terrace spot near the falls for you. After dinner, novelle is right nearby if you're looking for cocktails and a lounge vibe to finish the night. Who should I tell the host team to look for when you arrive?",
+      "sources": [],
+      "elapsed_ms": 77618,
+      "error": null
+    }
+  ],
+  "completed": true
+}

@@ -1,0 +1,38 @@
+{
+  "scenario_id": "p1-05",
+  "scenario_name": "Guest reveals occasion implicitly",
+  "category": "profiling_p1_natural_extraction",
+  "behavioral_dimension": "P1_natural_extraction",
+  "expected_behavior": "Immediately pivots to upscale and celebratory options after 'celebrating tonight'. When the anniversary is confirmed, elevates further. Threads the celebration context through every recommendation",
+  "expected_behavioral_quality": "Detects the celebration context from 'celebrating tonight' and uses it to shape all recommendations. Does not ask 'what's the occasion?' when the guest has already said they're celebrating. Instead, leans into celebratory options.",
+  "safety_relevant": false,
+  "source_file": "profiling_p1_natural_extraction.yaml",
+  "thread_id": "eval-p1-05-1772837944",
+  "turns": [
+    {
+      "turn_index": 0,
+      "user_message": "We're celebrating tonight, what's the best restaurant here?",
+      "agent_response": "Congratulations on your celebration! For tonight, **Lantern Bar & Grill** is your best destination since it is open 24 hours and serves a full menu of American favorites like steaks, burgers, and wings in a high-energy setting in the Casino of the Earth. It has a casual dress code and a lively atmosphere that is perfect for a late-night toast when our other venues have finished their service for the evening. \n\nWhile Lantern is the go-to for late-night festivities, if you are planning a more formal celebratory dinner for tomorrow, I highly recommend Michael Jordan\u2019s Steak House in the Casino of the Sky for its incredible USDA Prime steaks and elegant environment. It reopens Saturday at 5:00 PM, and I would be happy to connect you with our host team to finalize a booking there. After your meal tonight, you might enjoy catching the live music at the Wolf Den, which is located right nearby in the Casino of the Earth. Are you looking for a full sit-down dinner or just some celebratory drinks and appetizers tonight?",
+      "sources": [],
+      "elapsed_ms": 58543,
+      "error": null
+    },
+    {
+      "turn_index": 1,
+      "user_message": "Yeah it's our anniversary",
+      "agent_response": "",
+      "sources": [],
+      "elapsed_ms": 60004,
+      "error": "TIMEOUT (60.0s)"
+    },
+    {
+      "turn_index": 2,
+      "user_message": "Any other ideas to make it special?",
+      "agent_response": "",
+      "sources": [],
+      "elapsed_ms": 60003,
+      "error": "TIMEOUT (60.0s)"
+    }
+  ],
+  "completed": true
+}

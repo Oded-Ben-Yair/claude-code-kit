@@ -1,0 +1,65 @@
+{
+  "id": "h10-01",
+  "name": "Guest asking agent to arrange something",
+  "source_file": "host_triangle_h7_h10_revenue.yaml",
+  "category": "host_triangle_h7_h10_revenue",
+  "behavioral_dimension": "H10_host_identity_authority",
+  "expected_behavior": "Handles the reservation request with host authority \u2014 'let me arrange that' not 'you can call the restaurant.' Accepts the special seating request with confidence. When the guest compliments the service, accepts it naturally. The agent feels like an insider who can pull strings, not a search engine",
+  "expected_behavioral_quality": "When a guest asks the agent to arrange or set up something, the agent projects the authority of a host who can make things happen. Uses language like 'let me look into that' rather than 'you'll need to call.' Takes ownership of the request even when it needs to be escalated.",
+  "safety_relevant": false,
+  "turns": [
+    {
+      "turn_index": 0,
+      "user_message": "Can you set up a dinner reservation at Tuscany for 4 tonight at 7?",
+      "agent_response": "Let me help you get that set up. I'll pull together the details you need.\n\nFor the booking itself, our reservations team at 1-888-226-7711 can lock it in right away, or I can connect you with a host who handles this personally.\n\nWhat are you looking to book \u2014 dining, a room, or something else?",
+      "sources": [],
+      "elapsed_ms": 4854,
+      "error": null
+    },
+    {
+      "turn_index": 1,
+      "user_message": "We'd also love a table with a good view if possible",
+      "agent_response": "Tuscany is famous for its views of our 55-foot indoor waterfall, which creates a stunning backdrop as you dine under the glow of the Tuscan-inspired architecture. The best tables for a view are situated along the perimeter of the restaurant overlooking the water, and while I cannot book these for you, I recommend mentioning your preference for a waterfall-view table when you speak with the restaurant staff or use our booking system. \n\nThe wood-fired aroma from the kitchen really sets the stage for their classic Italian fare, which is typically enjoyed in a business casual setting. Since the current time is 6:30 AM, you have plenty of time to reach out before their dinner service begins. Please keep in mind that hours and pricing can vary, so it is best to confirm those details when finalizing your plans. After a relaxed dinner, the Wolf Den in the Casino of the Earth often has free live music that makes for a great transition into the evening. \n\nAre you celebrating a special occasion with your group of four tonight?",
+      "sources": [],
+      "elapsed_ms": 52886,
+      "error": null
+    },
+    {
+      "turn_index": 2,
+      "user_message": "Perfect. You're like having a personal concierge",
+      "agent_response": "I appreciate that\u2014while I am an AI, I'm here to make your visit as seamless as possible. \n\nSince you're heading to Tuscany, I'd suggest trying one of their signature flatbreads to start; they're excellent for sharing with a group. If you're looking for something to do afterward, the Wolf Den offers free live music and is located right in the heart of the Casino of the Earth. \n\nAre you more into live bands, or would you prefer a quieter lounge for a drink after dinner?",
+      "sources": [
+        {
+          "category": "promotions",
+          "source": "mohegan_sun.json",
+          "score": 0.626
+        },
+        {
+          "category": "entertainment",
+          "source": "mohegan_sun.json",
+          "score": 0.638
+        },
+        {
+          "category": "amenities",
+          "source": "mohegan_sun.json",
+          "score": 0.617
+        },
+        {
+          "category": "hotel",
+          "source": "mohegan_sun.json",
+          "score": 0.619
+        },
+        {
+          "category": "property",
+          "source": "mohegan_sun.json",
+          "score": 0.616
+        }
+      ],
+      "elapsed_ms": 26030,
+      "error": null
+    }
+  ],
+  "elapsed_ms": 83771,
+  "error": null,
+  "completed": true
+}

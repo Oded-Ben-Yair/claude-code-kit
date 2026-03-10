@@ -1,0 +1,49 @@
+{
+  "scenario_id": "h4-04",
+  "scenario_name": "Guest who introduced themselves formally",
+  "category": "host_triangle_h4_h6_relationship",
+  "behavioral_dimension": "H4_personalized_recognition",
+  "expected_behavior": "Maintains 'Mr. Chen' throughout, never dropping to first name. Matches the formal register in vocabulary and sentence structure. Recommendation blends fine dining with a 'hidden gem' angle, showing the agent listened to what Mr. Chen actually values \u2014 not just price tier",
+  "expected_behavioral_quality": "Mirrors the guest's formality level throughout the conversation. A guest who introduces themselves with a title or full name expects that register to be maintained. Recognition includes respecting the communication style, not just remembering the name.",
+  "safety_relevant": false,
+  "source_file": "host_triangle_h4_h6_relationship.yaml",
+  "thread_id": "eval-h4-04-1772805527",
+  "turns": [
+    {
+      "turn_index": 0,
+      "user_message": "Good evening. I'm Mr. Chen, visiting from New York. I understand you have quite a dining portfolio.",
+      "agent_response": "Welcome to Mohegan Sun, Mr. Chen. Coming from New York, I know you are used to an incredible food scene, and we definitely hold our own here. \n\nIf you are looking for a standout experience this evening, Tao Asian Bistro & Lounge in the Casino of the Sky is exceptional. They open at 5:00 PM today, and the Pan-Asian menu features incredible dim sum and sushi in a really dramatic, stylish setting. Since you are exploring the property, I also recommend signing up for our rewards program\u2014I can even look into arranging a complimentary appetizer for you at one of our casual spots to welcome you. \n\nAfter a great meal, a lot of our guests like to head over to novelle for craft cocktails and DJ entertainment. Are you looking for an upscale, lively dinner tonight, or were you hoping for something a bit more relaxed?",
+      "sources": [],
+      "elapsed_ms": 58628,
+      "error": null
+    },
+    {
+      "turn_index": 1,
+      "user_message": "I appreciate fine dining but also enjoy discovering hidden gems. What would you recommend?",
+      "agent_response": "Mr. Chen, if you appreciate fine dining but love discovering something with a bit more of an insider feel, you have to experience Ballo Italian Restaurant in the Casino of the Sky. \n\nWhile our celebrity chef venues get a lot of the spotlight, Ballo is a true culinary gem. They make all their pastas in-house daily, and their signature risotto has a rich, velvety finish that our regular guests come back for again and again. The ambiance is beautifully contemporary, and they open right at 5:00 PM this evening. \n\nIf you are looking for a full evening out, the Wolf Den is just downstairs in the Casino of the Earth and has free live music every night\u2014it is a great spot to relax and enjoy the energy after a fantastic meal. \n\nLet me help you with that if you'd like a table; I can connect you with our host team to finalize the booking. Are you leaning toward incredible Italian tonight, or were you hoping to uncover a great steakhouse instead?",
+      "sources": [],
+      "elapsed_ms": 69245,
+      "error": null
+    },
+    {
+      "turn_index": 2,
+      "user_message": "Excellent taste. I'll try the Tuscany tonight.",
+      "agent_response": "I apologize, but I'm having trouble generating a response right now. Please try again, or  at [PHONE].",
+      "sources": [
+        {
+          "category": "restaurants",
+          "source": "mohegan_sun.json",
+          "score": 0.689
+        },
+        {
+          "category": "faq",
+          "source": "mohegan_sun.json",
+          "score": 0.649
+        }
+      ],
+      "elapsed_ms": 39555,
+      "error": null
+    }
+  ],
+  "completed": true
+}

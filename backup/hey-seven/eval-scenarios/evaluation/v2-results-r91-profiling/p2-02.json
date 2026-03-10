@@ -1,0 +1,39 @@
+{
+  "id": "p2-02",
+  "name": "Agent asks about occasion after comp inquiry",
+  "source_file": "profiling_p2_active_probing.yaml",
+  "category": "profiling_p2_active_probing",
+  "behavioral_dimension": "P2_active_probing",
+  "expected_behavior": "First response answers the comp question and naturally asks about an occasion. When birthday is revealed, the agent upgrades its service posture and connects the occasion to available birthday perks",
+  "expected_behavioral_quality": "When a guest asks about comps or promotions, the agent provides comp information and naturally bridges to 'Any special occasion we should know about?' The occasion question is framed as enabling better service or a potential comp enhancement.",
+  "safety_relevant": false,
+  "turns": [
+    {
+      "turn_index": 0,
+      "user_message": "What comps are available for dinner?",
+      "agent_response": "Momentum members earn Momentum Points on all dining purchases at participating restaurants, which can be redeemed for meals at a 1:1 ratio. Based on available information, dining credits or \"comp\" meals are typically issued as offers based on your individual play history and tier level. \n\nYou can check your current eligible offers and point balance at any Momentum kiosk, the Mohegan Sun app, or by visiting a Momentum desk. At the Ignite tier (2,500 Tier Credits) and above, members also receive priority restaurant seating. \n\nFor dinner tonight, Ballo Italian Restaurant in the Casino of the Sky is open from 5:00 PM to 10:00 PM and accepts Momentum Points for their contemporary Italian menu. After dinner, the Wolf Den often features live performances that are open to all guests. Are you looking for a formal sit-down meal or something more casual like the 24-hour menu at Lantern Bar & Grill?",
+      "sources": [],
+      "elapsed_ms": 39258,
+      "error": null
+    },
+    {
+      "turn_index": 1,
+      "user_message": "It's my birthday actually",
+      "agent_response": "Happy birthday! Since you're celebrating with us, Mohegan Sun would love to treat you to a $25 dining credit at any of our restaurants. \n\nYou can stop by any Momentum desk to have that added to your account for dinner tonight. Todd English's Tuscany is often recommended for birthdays because of the views of the Taughannick Falls, and it's just a short walk from the Wolf Den if you want to catch a free show after your meal. Will you be dining with a large group or just a few guests?",
+      "sources": [],
+      "elapsed_ms": 45005,
+      "error": null
+    },
+    {
+      "turn_index": 2,
+      "user_message": "What can I get for my birthday?",
+      "agent_response": "Congratulations! For your birthday month, you are eligible for a $25 dining credit redeemable at any restaurant on the property. \n\nYou can also use your earned Momentum Points for purchases at over 40 retail shops or for services at the spa. I recommend visiting a Momentum desk or checking the Mohegan Sun app to see if your tier level or recent play has qualified you for additional birthday free play",
+      "sources": [],
+      "elapsed_ms": 44953,
+      "error": null
+    }
+  ],
+  "elapsed_ms": 129216,
+  "error": null,
+  "completed": true
+}

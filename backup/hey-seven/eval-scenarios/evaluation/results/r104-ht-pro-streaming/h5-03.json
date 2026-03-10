@@ -1,0 +1,49 @@
+{
+  "scenario_id": "h5-03",
+  "scenario_name": "Guest sharing a personal achievement",
+  "category": "host_triangle_h4_h6_relationship",
+  "behavioral_dimension": "H5_emotional_loyalty_building",
+  "expected_behavior": "Celebrates the retirement with genuine warmth, not just 'congrats.' Builds a premium celebration weekend \u2014 Sky Tower suite, fine dining, spa \u2014 framed as something the guest has earned. Makes the guest feel like the property is honoring their achievement, not just selling services",
+  "expected_behavioral_quality": "When a guest shares a personal achievement (promotion, retirement, graduation), the agent celebrates genuinely and connects it to an experience that honors the accomplishment. The celebration should feel personal and earned, not a generic 'congrats.'",
+  "safety_relevant": false,
+  "source_file": "host_triangle_h4_h6_relationship.yaml",
+  "thread_id": "eval-h5-03-1772972774",
+  "turns": [
+    {
+      "turn_index": 0,
+      "user_message": "I just retired after 35 years! Coming to celebrate with my wife this weekend",
+      "agent_response": "Congratulations on 35 years! That is a massive milestone and well worth a weekend getaway. \n\nSince you are celebrating something this special, I'd suggest Michael Jordan's Steak House for your dinner. It has an upscale, elegant atmosphere that is perfect for a major life event, and heading over to novelle afterward for a craft cocktail makes for an unforgettable night out. The fine dining spots fill up fast on weekends, so I definitely suggest locking in a reservation soon. \n\nIs it just you and your wife for the weekend, or are friends coming down to join the party?",
+      "sources": [
+        {
+          "category": "restaurants",
+          "source": "mohegan_sun.json",
+          "score": 0.629
+        },
+        {
+          "category": "entertainment",
+          "source": "mohegan_sun.json",
+          "score": 0.633
+        }
+      ],
+      "elapsed_ms": 61622,
+      "error": null
+    },
+    {
+      "turn_index": 1,
+      "user_message": "We want something really memorable. We've earned it",
+      "agent_response": "You absolutely have earned it. If you are staying on property, our Presidential Suite is the ultimate luxury option, featuring over 1,800 square feet, a private terrace, and a premium entertainment system. \n\nI've got you on making this special. I can look into arranging a complimentary celebration dessert for you and your wife during your dinner to mark the milestone. Also, if you have not joined our Momentum rewards program yet, signing up at the desk provides a $10 introductory free play bonus to start the weekend. \n\nPro tip \u2014 an evening walk through the Casino of the Sky is highly recommended, as the soaring, celestial-themed architecture makes for a spectacular backdrop. \n\nAre you planning to spend some time at the tables and slots, or mostly focusing on dining and relaxing?",
+      "sources": [],
+      "elapsed_ms": 58005,
+      "error": null
+    },
+    {
+      "turn_index": 2,
+      "user_message": "That sounds like a perfect way to kick off retirement",
+      "agent_response": "It really is. You're going to have an incredible weekend! \n\nSince we are going all out, let's add some downtime before that big dinner. Mandara Spa has fantastic couples treatments\u2014it is the absolute best way to wash off 35 years of work and officially transition into relaxation mode. I'll pass all these notes over to the host team so they can reach out directly to help finalize the suite, the dinner, and any spa arrangements for you.\n\nBy the way, the Mohegan Sun Arena always has a great weekend lineup. Are you two fans of live music, or would you prefer a comedy show to cap off the night?",
+      "sources": [],
+      "elapsed_ms": 58420,
+      "error": null
+    }
+  ],
+  "completed": true
+}

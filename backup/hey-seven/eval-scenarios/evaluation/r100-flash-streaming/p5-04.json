@@ -1,0 +1,67 @@
+{
+  "scenario_id": "p5-04",
+  "scenario_name": "Agent handles mid-conversation topic change gracefully",
+  "category": "profiling_p5_progressive_sequence",
+  "behavioral_dimension": "P5_progressive_sequencing",
+  "expected_behavior": "Bathroom question is handled cleanly without forcing poker back into the response. When Tom returns to the poker topic, agent resumes where they left off. The profiling sequence adapts to the guest's flow, not the other way around",
+  "expected_behavioral_quality": "When the guest abruptly changes topic mid-profiling sequence, the agent follows the guest's lead without forcing the conversation back to the profiling path. Captures what was volunteered and resumes profiling only when the conversation naturally allows it.",
+  "safety_relevant": false,
+  "source_file": "profiling_p5_progressive_sequence.yaml",
+  "thread_id": "eval-p5-04-1772842734",
+  "turns": [
+    {
+      "turn_index": 0,
+      "user_message": "I'm Tom, here for a poker tournament",
+      "agent_response": "That's outside what I can help with, but I'm happy to assist with anything about Mohegan Sun \u2014 dining, entertainment, hotel, spa, or gaming. What can I help you find?",
+      "sources": [],
+      "elapsed_ms": 5012,
+      "error": null
+    },
+    {
+      "turn_index": 1,
+      "user_message": "Wait, where's the nearest bathroom?",
+      "agent_response": "The nearest restrooms to the Poker Room are located right at the entrance to the Casino of the Wind, just a short walk from the tables. \n\nSince it's after midnight, Novelle is also nearby in that same area if you're looking for a craft cocktail or a late-night atmosphere between rounds \u2014 do you think you'll be playing through the night, Tom?",
+      "sources": [],
+      "elapsed_ms": 43004,
+      "error": null
+    },
+    {
+      "turn_index": 2,
+      "user_message": "Thanks. OK so about the tournament...",
+      "agent_response": "The Poker Room in the Casino of the Wind features 33 tables and operates 24 hours a day, offering daily tournaments and cash games like No-Limit Texas Hold'em and Pot-Limit Omaha. While I don't have the specific blind structures or current leaderboard for your event, the Poker Room staff can provide the full tournament rules and registration details.\n\nAs a player, your time at the table earns you both Momentum Points and Tier Credits when you use your rewards card. These points are redeemable for dining, hotel stays, or retail purchases throughout the property. Since it's currently after midnight, the Sun Diner is a reliable 24-hour option nearby if you need a meal once your round concludes.\n\nAre you looking to see how many Tier Credits you'll need to reach the next level while you're here this weekend, Tom?",
+      "sources": [
+        {
+          "category": "gaming",
+          "source": "mohegan_sun.json",
+          "score": 0.63
+        },
+        {
+          "category": "property",
+          "source": "mohegan_sun.json",
+          "score": 0.635
+        },
+        {
+          "category": "hotel",
+          "source": "mohegan_sun.json",
+          "score": 0.612
+        },
+        {
+          "category": "faq",
+          "source": "mohegan_sun.json",
+          "score": 0.614
+        }
+      ],
+      "elapsed_ms": 51379,
+      "error": null
+    },
+    {
+      "turn_index": 3,
+      "user_message": "Cool. I play here every quarter or so.",
+      "agent_response": "Visiting quarterly is a consistent way to build toward the next tier, as Tier Credits accumulate over six-month periods. The Ignite tier requires 2,500 Tier Credits and provides a 10% point earn rate bonus and priority restaurant seating. \n\nSince you're currently in a tournament, your play contributes to these credits as well as Momentum Points redeemable for dining or hotel stays. I can look into arranging a complimentary appetizer or dessert for you at a spot like the Sun Diner if you're hungry after your round. Do your tournament sessions typically run late into the morning, Tom?",
+      "sources": [],
+      "elapsed_ms": 49347,
+      "error": null
+    }
+  ],
+  "completed": true
+}

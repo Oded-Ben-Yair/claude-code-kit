@@ -1,0 +1,52 @@
+{
+  "scenario_id": "multilingual-10",
+  "scenario_name": "Language switch mid-conversation \u2014 Spanish to English",
+  "category": "behavioral_multilingual",
+  "behavioral_dimension": "B8_cultural",
+  "expected_behavior": "First turn: responds in Spanish about restaurants. Second turn: switches to English naturally without commenting on the language change. Provides steakhouse information in English.",
+  "expected_behavioral_quality": "Follows the guest's language switch naturally. When guest starts in Spanish then switches to English, agent follows and responds in English. No awkward language mixing or commenting on the switch.",
+  "safety_relevant": false,
+  "source_file": "behavioral_multilingual.yaml",
+  "thread_id": "eval-multilingual-10-1772915642",
+  "turns": [
+    {
+      "turn_index": 0,
+      "user_message": "Hola, me gustaria saber sobre los restaurantes",
+      "agent_response": "Mohegan Sun ofrece m\u00e1s de 40 opciones que van desde cenas de lujo hasta bocados r\u00e1pidos de 24 horas. \n\nSi buscas una experiencia italiana contempor\u00e1nea con pastas hechas en casa, te sugiero **Ballo Italian Restaurant** en Casino of the Sky; es uno de nuestros lugares m\u00e1s destacados por su ambiente elegante. Por otro lado, si prefieres algo m\u00e1s animado y casual, **SolToro** en Casino of the Earth tiene excelentes tacos y una selecci\u00f3n de tequilas de primera clase.\n\nUn detalle de conocedor: si te da hambre tarde en la noche, **Lantern Bar & Grill** est\u00e1 abierto las 24 horas y es el lugar ideal para una comida completa sin importar la hora.\n\n\u00bfTienes alguna preferencia de comida en particular o vienes a celebrar alguna ocasi\u00f3n especial?",
+      "sources": [
+        {
+          "category": "restaurants",
+          "source": "mohegan_sun.json",
+          "score": 0.673
+        }
+      ],
+      "elapsed_ms": 29392,
+      "error": null
+    },
+    {
+      "turn_index": 1,
+      "user_message": "Actually, can you tell me about the steakhouse in English?",
+      "agent_response": "The wood-fired aroma hits you the moment you walk into Michael Jordan's Steak House in the Casino of the Sky. It is our premier destination for USDA Prime steaks and fresh seafood, served in an elegant room filled with tasteful sports memorabilia. \n\nThey are open tonight until 10:00 PM, and as it is a high-end $$$$ venue, business casual attire is the recommended dress code. Since it is a Saturday night, securing a reservation is your best bet for a table. One insider tip: their wine list is incredibly deep, so do not hesitate to ask for a pairing recommendation to go with your steak.\n\nAfter your meal, novelle is right nearby in the Casino of the Sky and is a great place to enjoy a craft cocktail and some music to keep the night going.\n\nAre you planning to join us for a special celebration tonight, or just a great Saturday dinner?",
+      "sources": [
+        {
+          "category": "restaurants",
+          "source": "mohegan_sun.json",
+          "score": 0.668
+        },
+        {
+          "category": "entertainment",
+          "source": "mohegan_sun.json",
+          "score": 0.634
+        },
+        {
+          "category": "faq",
+          "source": "mohegan_sun.json",
+          "score": 0.632
+        }
+      ],
+      "elapsed_ms": 45541,
+      "error": null
+    }
+  ],
+  "completed": true
+}

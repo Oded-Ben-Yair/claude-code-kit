@@ -1,0 +1,44 @@
+{
+  "scenario_id": "p9-03",
+  "scenario_name": "Handoff actionable for human host",
+  "category": "profiling_p8_p9_p10_completeness",
+  "behavioral_dimension": "P9_handoff_quality",
+  "expected_behavior": "Handoff includes: Guest profile (Linda, Rush tier, anniversary), request (comp dinner inquiry), suggested actions (anniversary comp evaluation, Saturday reservation assistance). The host receives a brief with clear next steps",
+  "expected_behavioral_quality": "The handoff includes specific next-action items for the human host, not just raw data. 'Guest is interested in a comp dinner \u2014 follow up with tier-appropriate offer. Guest mentioned anniversary \u2014 consider sending a dessert or champagne gesture.' The host can act on it immediately.",
+  "safety_relevant": false,
+  "source_file": "profiling_p8_p9_p10_completeness.yaml",
+  "thread_id": "eval-p9-03-1772961132",
+  "turns": [
+    {
+      "turn_index": 0,
+      "user_message": "I'm Linda, Rush tier. Anniversary dinner for 2 on Saturday.",
+      "agent_response": "Congratulations on your anniversary, Linda. For a truly romantic Saturday evening, Todd English\u2019s Tuscany in the Casino of the Sky is the standout choice. \n\nThe wood-fired aroma hits you the moment you walk in, and the handmade pastas have a delicate, fresh quality that makes for a memorable meal. They are open from 5:00 PM to 10:00 PM on Saturdays with a business casual dress code, and because it is such a popular spot for celebrations, I'd suggest securing a reservation. Happy anniversary! Let me see about upgrading your experience at Mohegan Sun to make it extra special. \n\nWould you prefer a table near the indoor waterfall to really set the mood? Afterward, catching a show at the Mohegan Sun Arena is a wonderful way to cap off the evening.",
+      "sources": [
+        {
+          "category": "restaurants",
+          "source": "mohegan_sun.json",
+          "score": 0.652
+        }
+      ],
+      "elapsed_ms": 26931,
+      "error": null
+    },
+    {
+      "turn_index": 1,
+      "user_message": "I've heard you can get special comps for anniversaries",
+      "agent_response": "Linda, for an anniversary, you may be eligible for a complimentary appetizer or dessert at select dining locations. Comp eligibility depends on your play history and Momentum tier, which consists of Core, Ignite, Leap, Ascend, and Soar levels. \n\nI recommend visiting the Momentum Desk to see if any specific anniversary offers are currently loaded on your account. Thanks for chatting with me; here are $5 bonus tier points to use at Mohegan Sun. Since you'll be here Saturday, would you like me to check the entertainment schedule for the Arena or the Wolf Den for after your meal?",
+      "sources": [],
+      "elapsed_ms": 51052,
+      "error": null
+    },
+    {
+      "turn_index": 2,
+      "user_message": "Please have my host reach out",
+      "agent_response": "Linda, I\u2019ll make sure your host knows about the anniversary so they can reach out and take care of you for this Saturday. For your dinner for two, Tuscany is the standout choice for an elevated atmosphere. Happy anniversary! Let me see about upgrading your experience at Mohegan Sun to make it extra special. \n\nWhat time were you looking to dine?",
+      "sources": [],
+      "elapsed_ms": 47064,
+      "error": null
+    }
+  ],
+  "completed": true
+}

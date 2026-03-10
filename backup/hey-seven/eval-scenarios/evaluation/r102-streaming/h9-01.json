@@ -1,0 +1,75 @@
+{
+  "scenario_id": "h9-01",
+  "scenario_name": "Guest open to suggestions for a special evening",
+  "category": "host_triangle_h7_h10_revenue",
+  "behavioral_dimension": "H9_revenue_aware_steering",
+  "expected_behavior": "Reads 'no budget concerns' and 'really special' as clear premium signals. Leads with the highest-tier dining option and builds a full VIP evening. Does not mention budget alternatives. The steering feels like a host sharing their genuine top picks, not an upsell script",
+  "expected_behavioral_quality": "When a guest signals they want something special, the agent steers toward premium experiences that match the occasion. The premium suggestion feels like expert guidance, not upselling. The agent reads context cues (occasion, group, tone) to calibrate the recommendation tier.",
+  "safety_relevant": false,
+  "source_file": "host_triangle_h7_h10_revenue.yaml",
+  "thread_id": "eval-h9-01-1772913566",
+  "turns": [
+    {
+      "turn_index": 0,
+      "user_message": "We want to do something really special tonight. No budget concerns. What's the best?",
+      "agent_response": "Since you're going all out tonight, Michael Jordan\u2019s Steak House is the move. I\u2019d suggest the 24-ounce Delmonico\u2014it\u2019s the best cut on property. Afterward, I\u2019ll get you into a VIP booth at novelle so you can catch the DJ with some space to yourselves. \n\nI can have someone from my team meet you at the restaurant to handle the details and make sure everything is set. What are we celebrating tonight?",
+      "sources": [],
+      "elapsed_ms": 57388,
+      "error": null
+    },
+    {
+      "turn_index": 1,
+      "user_message": "Michael Jordan's sounds perfect. What about wine?",
+      "agent_response": "Michael Jordan's Steak House features an extensive wine list that is widely considered one of the most comprehensive on the property. The selection is built to complement their USDA Prime steaks, and the staff is excellent at helping you navigate the cellar to find a profile that stands up to a rich cut like the Delmonico. \n\nThe restaurant is located in the Casino of the Sky and is open tonight until 10:00 PM. Since it is one of our more upscale venues, business casual attire is recommended. I've got you with all the details, and I can connect you with the host team to help finalize your plans for the evening. \n\nDo you usually prefer a full-bodied red with your steak, or were you thinking of starting the night with something lighter? After dinner, the Wolf Den has free live music every night\u2014it's right in the Casino of the Earth and the energy is always great.",
+      "sources": [
+        {
+          "category": "restaurants",
+          "source": "mohegan_sun.json",
+          "score": 0.717
+        },
+        {
+          "category": "faq",
+          "source": "mohegan_sun.json",
+          "score": 0.653
+        },
+        {
+          "category": "property",
+          "source": "mohegan_sun.json",
+          "score": 0.631
+        }
+      ],
+      "elapsed_ms": 52941,
+      "error": null
+    },
+    {
+      "turn_index": 2,
+      "user_message": "And after dinner? We want the full VIP experience",
+      "agent_response": "Avalon Nightclub is the centerpiece of our Saturday nightlife and offers a true VIP experience with private bottle service tables right near the DJ. It opens at 10:00 PM and the energy there is electric! If you are looking for something more sophisticated, novelle is an ultra-lounge that focuses on craft cocktails and a chic atmosphere. I've got you with these recommendations and can connect you with the host team to help finalize the details for a table. Just keep in mind that schedules and availability can change, so it is always good to confirm when you arrive. After a big night, the Mandara Spa is the perfect place to reset with a signature treatment tomorrow morning. Are you in the mood for a high-energy dance floor or a more refined social scene tonight?",
+      "sources": [
+        {
+          "category": "entertainment",
+          "source": "mohegan_sun.json",
+          "score": 0.696
+        },
+        {
+          "category": "promotions",
+          "source": "mohegan_sun.json",
+          "score": 0.667
+        },
+        {
+          "category": "gaming",
+          "source": "mohegan_sun.json",
+          "score": 0.681
+        },
+        {
+          "category": "restaurants",
+          "source": "mohegan_sun.json",
+          "score": 0.659
+        }
+      ],
+      "elapsed_ms": 71166,
+      "error": null
+    }
+  ],
+  "completed": true
+}

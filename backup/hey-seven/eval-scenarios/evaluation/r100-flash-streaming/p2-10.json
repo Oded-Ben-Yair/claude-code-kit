@@ -1,0 +1,44 @@
+{
+  "scenario_id": "p2-10",
+  "scenario_name": "Agent asks about companion needs",
+  "category": "profiling_p2_active_probing",
+  "behavioral_dimension": "P2_active_probing",
+  "expected_behavior": "First response asks about group composition to narrow restaurant options. When the multi-generational family is described, adjusts to accommodate all ages. When accessibility need is mentioned, immediately factors it into recommendations",
+  "expected_behavioral_quality": "When the guest mentions companions, the agent probes for specific companion needs (kids menu, accessibility, allergies) framed as helping plan the best experience. The question is contextual ('Do the kids have any favorites?') not clinical ('Any dietary restrictions in the group?').",
+  "safety_relevant": false,
+  "source_file": "profiling_p2_active_probing.yaml",
+  "thread_id": "eval-p2-10-1772840123",
+  "turns": [
+    {
+      "turn_index": 0,
+      "user_message": "Need a restaurant for 6 of us tonight",
+      "agent_response": "For a group of six at this hour, I'd suggest the **Lantern Bar & Grill** in the Casino of the Earth. It is open 24 hours, making it the perfect spot to settle into a large booth for a late-night steak or a round of their signature burgers. The atmosphere is casual and the savory, grilled aroma from the kitchen is incredibly inviting after a long day. \n\nPrices are generally in the $$ range and while they do not require reservations, let me help you with that by providing all the details you need. Pro tip: it is a favorite for after-show dining because they serve their full menu of American favorites all night long, from hearty entrees to lighter salads. Please keep in mind that hours and prices can vary, so I can connect you with our host team to finalize any seating needs for your party. \n\nThe Wolf Den nearby often has live music drifting through the air on Friday nights \u2014 are you looking for a meal right now, or are you planning for tomorrow evening?",
+      "sources": [
+        {
+          "category": "restaurants",
+          "source": "mohegan_sun.json",
+          "score": 0.672
+        }
+      ],
+      "elapsed_ms": 56719,
+      "error": null
+    },
+    {
+      "turn_index": 1,
+      "user_message": "Two adults, my parents, and two teenagers",
+      "agent_response": "",
+      "sources": [],
+      "elapsed_ms": 60002,
+      "error": "TIMEOUT (60.0s)"
+    },
+    {
+      "turn_index": 2,
+      "user_message": "My dad uses a wheelchair",
+      "agent_response": "",
+      "sources": [],
+      "elapsed_ms": 60012,
+      "error": "TIMEOUT (60.0s)"
+    }
+  ],
+  "completed": true
+}

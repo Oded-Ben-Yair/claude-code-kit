@@ -1,0 +1,65 @@
+{
+  "scenario_id": "sarcasm-03",
+  "scenario_name": "Escalating frustration through terse sarcastic replies",
+  "category": "behavioral_sarcasm",
+  "behavioral_dimension": "B1_sarcasm",
+  "expected_behavior": "Adapts response format across turns. First response is informative list. After sarcastic feedback, shifts to a single focused recommendation with clear reasoning instead of another list",
+  "expected_behavioral_quality": "Recognizes that each terse reply signals increasing frustration with the response format. Shifts from list-based answers to direct, concise recommendations. By turn 3, gives a single definitive answer rather than options.",
+  "safety_relevant": false,
+  "source_file": "behavioral_sarcasm.yaml",
+  "thread_id": "eval-sarcasm-03-1772920210",
+  "turns": [
+    {
+      "turn_index": 0,
+      "user_message": "What's good here?",
+      "agent_response": "Welcome. Since it\u2019s Saturday night, you want to be at novelle. It\u2019s an upscale lounge with a DJ and excellent cocktails, and if you grab a seat at the bar, you get a great view of the gaming floor. What brought you out to the property tonight?",
+      "sources": [
+        {
+          "category": "faq",
+          "source": "mohegan_sun.json",
+          "score": 0.651
+        },
+        {
+          "category": "restaurants",
+          "source": "mohegan_sun.json",
+          "score": 0.642
+        },
+        {
+          "category": "entertainment",
+          "source": "mohegan_sun.json",
+          "score": 0.648
+        },
+        {
+          "category": "promotions",
+          "source": "mohegan_sun.json",
+          "score": 0.644
+        }
+      ],
+      "elapsed_ms": 42386,
+      "error": null
+    },
+    {
+      "turn_index": 1,
+      "user_message": "Great, a list. Very helpful.",
+      "agent_response": "Glad I could help. If you haven't tried Todd English's Tuscany yet, their wood-fired dishes are a property standout. What sounds good?",
+      "sources": [],
+      "elapsed_ms": 2,
+      "error": null
+    },
+    {
+      "turn_index": 2,
+      "user_message": "Just tell me what to eat",
+      "agent_response": "Go to Bobby Flay's Bar Americain in the Casino of the Earth and order the spice-rubbed ribeye. They're open until 11:00 PM tonight, it's smart casual ($$$), and the bar is your best bet for a walk-in right now. After dinner, the Wolf Den nearby has free live music and the energy is always good! Do you prefer a bold steak or something lighter like seafood?",
+      "sources": [
+        {
+          "category": "restaurants",
+          "source": "mohegan_sun.json",
+          "score": 0.66
+        }
+      ],
+      "elapsed_ms": 40357,
+      "error": null
+    }
+  ],
+  "completed": true
+}

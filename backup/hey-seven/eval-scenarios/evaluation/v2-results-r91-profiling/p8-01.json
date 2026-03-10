@@ -1,0 +1,50 @@
+{
+  "id": "p8-01",
+  "name": "3-turn conversation achieving 60% Phase 1 completion",
+  "source_file": "profiling_p8_p9_p10_completeness.yaml",
+  "category": "profiling_p8_p9_p10_completeness",
+  "behavioral_dimension": "P8_profile_completeness",
+  "expected_behavior": "By turn 3, profile contains: name (James), party size (2 \u2014 couple), occasion (weekend getaway), dining preference (romantic). At least 60% of Phase 1 captured through natural conversation. The guest volunteered most of this without being asked",
+  "expected_behavioral_quality": "In just 3 turns, the agent captures at least 3 of 5 Phase 1 foundation fields (name, party size, occasion, visit type, contact preference). Achieved through natural conversation flow, not rapid-fire questioning. The guest should not feel like they're filling out a form.",
+  "safety_relevant": false,
+  "turns": [
+    {
+      "turn_index": 0,
+      "user_message": "Hey I'm James, here with my wife for a weekend getaway",
+      "agent_response": "It is a pleasure to meet you, James. A weekend getaway is the perfect way to experience everything we have to offer, and I would be happy to help you find the right home base for your stay.\n\nFor a couple's retreat, many guests find the Sky Tower to be a wonderful choice as it feels like a private sanctuary away from the main excitement of the resort. If you would like a bit of extra room to relax, our Junior Suites are 650 square feet and feature a separate living area and an expanded bathroom with a soaking tub. If you prefer something more classic, our Deluxe Rooms offer floor-to-ceiling windows and premium bedding that make for a very comfortable stay.\n\nOur standard check-in time is between 3:00 PM and 4:00 PM, but since we have a 24-hour front desk, we will be ready for you whenever you happen to arrive. Once you are settled in, you will be just a short walk from restaurants like Tuscany for a quiet Italian dinner or the Wolf Den if you want to catch some live music together. \n\nAre you looking for a room with a specific view, perhaps overlooking the Thames River or the surrounding hills?",
+      "sources": [],
+      "elapsed_ms": 51730,
+      "error": null
+    },
+    {
+      "turn_index": 1,
+      "user_message": "Looking for a romantic dinner tonight",
+      "agent_response": "James, for a romantic evening, Ballo Italian Restaurant in the Casino of the Sky is an excellent choice for you and your wife. The space feels both grand and intimate, specializing in housemade pastas and risottos that pair beautifully with their extensive selection of Italian wines. \n\nBallo is open tonight from 5:00 PM to 10:00 PM with a price range of $$$ and follows a smart casual dress code, which adds to the polished feel of the evening. Because of its popularity for date nights, I'd suggest making a reservation to ensure you get a prime table. After your meal, novelle is just a short walk away if you want to keep the night going with craft cocktails in an upscale lounge environment. \n\nDo you prefer a classic Italian dinner, or were you looking for something with a bit more of a lively, high-energy atmosphere?",
+      "sources": [
+        {
+          "category": "restaurants",
+          "source": "mohegan_sun.json",
+          "score": 0.655
+        },
+        {
+          "category": "entertainment",
+          "source": "mohegan_sun.json",
+          "score": 0.654
+        }
+      ],
+      "elapsed_ms": 30205,
+      "error": null
+    },
+    {
+      "turn_index": 2,
+      "user_message": "Perfect, that's exactly what we needed",
+      "agent_response": "Glad I could help. The Wolf Den has free live music every night \u2014 it's right in the Casino of the Earth and worth checking out. What sounds good?",
+      "sources": [],
+      "elapsed_ms": 9,
+      "error": null
+    }
+  ],
+  "elapsed_ms": 81946,
+  "error": null,
+  "completed": true
+}

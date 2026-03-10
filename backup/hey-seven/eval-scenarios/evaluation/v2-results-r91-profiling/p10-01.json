@@ -1,0 +1,80 @@
+{
+  "id": "p10-01",
+  "name": "Agent remembers name from turn 1 in turn 4",
+  "source_file": "profiling_p8_p9_p10_completeness.yaml",
+  "category": "profiling_p8_p9_p10_completeness",
+  "behavioral_dimension": "P10_cross_turn_memory",
+  "expected_behavior": "Angela's name appears in the turn 4 response ('Here's what I'd suggest for your evening, Angela...') despite 2 topic changes in between. The name use feels natural, not performative",
+  "expected_behavioral_quality": "The guest's name from the opening message is used naturally in turn 4 without being re-asked. The name appears in context (not forced) and demonstrates that the agent maintained the information across multiple turns of different topics.",
+  "safety_relevant": false,
+  "turns": [
+    {
+      "turn_index": 0,
+      "user_message": "Hi, I'm Angela. What restaurants are open?",
+      "agent_response": "Welcome, Angela. Since it is currently just after 7:00 AM, the Lantern Bar & Grill in the Casino of the Earth is your best option as it serves a full American menu 24 hours a day. \n\nIt is a casual spot where you can find anything from classic breakfast plates to burgers and steaks at any hour. If you can wait until 8:00 AM, Hash House A Go Go also opens nearby, which is known for its massive \"twisted farm food\" portions and creative brunch dishes. Many guests enjoy a quiet morning walk through our retail shops or the Mandara Spa area before the afternoon crowds arrive \u2014 are you looking for a light snack or a more substantial breakfast to start your day?",
+      "sources": [
+        {
+          "category": "restaurants",
+          "source": "mohegan_sun.json",
+          "score": 0.649
+        },
+        {
+          "category": "faq",
+          "source": "mohegan_sun.json",
+          "score": 0.643
+        }
+      ],
+      "elapsed_ms": 26312,
+      "error": null
+    },
+    {
+      "turn_index": 1,
+      "user_message": "What about entertainment?",
+      "agent_response": "Angela, Tonight the Wolf Den is a great pick because the energy right in the center of the action is always electric. Since it's Thursday, our upscale lounge novelle also opens this evening, which is perfect for craft cocktails and a DJ set in a sophisticated setting. \n\nFor the biggest headliners, the Mohegan Sun Arena is our premier venue, while the Cabaret Theatre offers an intimate 400-seat experience with table service. After a night of entertainment, many guests find that a morning session at the Elemis Spa is the best way to reset. Are you leaning toward a big arena concert or something more laid back like our lounge settings?",
+      "sources": [
+        {
+          "category": "entertainment",
+          "source": "mohegan_sun.json",
+          "score": 0.678
+        },
+        {
+          "category": "faq",
+          "source": "mohegan_sun.json",
+          "score": 0.675
+        }
+      ],
+      "elapsed_ms": 42940,
+      "error": null
+    },
+    {
+      "turn_index": 2,
+      "user_message": "Is the spa still open?",
+      "agent_response": "Angela, Both the Mandara Spa and Elemis Spa open at 9:00 AM today. Mandara stays open until 8:00 PM, while Elemis in the Earth Tower closes at 7:00 PM. \n\nSince you're looking for wellness options this early, the heated indoor pool and hot tub are open right now for hotel guests and are usually very peaceful at this hour. Are you leaning toward a traditional Balinese massage or a specialized Elemis facial?",
+      "sources": [
+        {
+          "category": "amenities",
+          "source": "mohegan_sun.json",
+          "score": 0.693
+        },
+        {
+          "category": "faq",
+          "source": "mohegan_sun.json",
+          "score": 0.672
+        }
+      ],
+      "elapsed_ms": 25430,
+      "error": null
+    },
+    {
+      "turn_index": 3,
+      "user_message": "Can you put together an evening plan for me?",
+      "agent_response": "Angela, for a well-paced Thursday evening, I recommend starting with dinner at Todd English's Tuscany around 7:00 PM. It is a guest favorite for its wood-fired Mediterranean menu and the scenic view of the Taughannick Falls.\n\nAfter dinner, you might enjoy heading over to novelle, our upscale ultra-lounge. It opens on Thursday evenings and offers a sophisticated atmosphere with craft cocktails and a DJ, which is perfect for a more relaxed but stylish night out. If you're in the mood for something more high-energy, the Wolf Den in the Casino of the Earth always has free live music and is just a short walk away. Since you're planning your evening, are you interested in a specific type of cuisine for dinner, or is the atmosphere the most important part?",
+      "sources": [],
+      "elapsed_ms": 53588,
+      "error": null
+    }
+  ],
+  "elapsed_ms": 149175,
+  "error": null,
+  "completed": true
+}

@@ -1,0 +1,59 @@
+{
+  "scenario_id": "h9-01",
+  "scenario_name": "Guest open to suggestions for a special evening",
+  "category": "host_triangle_h7_h10_revenue",
+  "behavioral_dimension": "H9_revenue_aware_steering",
+  "expected_behavior": "Reads 'no budget concerns' and 'really special' as clear premium signals. Leads with the highest-tier dining option and builds a full VIP evening. Does not mention budget alternatives. The steering feels like a host sharing their genuine top picks, not an upsell script",
+  "expected_behavioral_quality": "When a guest signals they want something special, the agent steers toward premium experiences that match the occasion. The premium suggestion feels like expert guidance, not upselling. The agent reads context cues (occasion, group, tone) to calibrate the recommendation tier.",
+  "safety_relevant": false,
+  "source_file": "host_triangle_h7_h10_revenue.yaml",
+  "thread_id": "eval-h9-01-1773039597",
+  "turns": [
+    {
+      "turn_index": 0,
+      "user_message": "We want to do something really special tonight. No budget concerns. What's the best?",
+      "agent_response": "Throwing the budget out the window is the best way to celebrate! Even so, I always like to make sure you get great value right from the start. Just a heads-up \u2014 our rewards program is free to join and you'd start earning toward dining credits and more right away. \n\nNormally, the ultimate high-end move is Michael Jordan's Steak House for USDA Prime steaks, but since today is Monday, they are taking their early-week break. Let me help you find the perfect premium spot that is open this evening, and then I can connect you with the host team to finalize everything. \n\nWhat kind of food are you in the mood for tonight?",
+      "sources": [],
+      "elapsed_ms": 94645,
+      "error": null
+    },
+    {
+      "turn_index": 1,
+      "user_message": "Michael Jordan's sounds perfect. What about wine?",
+      "agent_response": "Michael Jordan's has an absolutely extensive wine list that pairs beautifully with their USDA Prime steaks. It is an incredible choice, but since you are looking to celebrate tonight, I want to remind you that MJ's is actually closed on Mondays and reopens on Wednesday.\n\nIf you want a phenomenal wine experience this evening, Ballo is the move. They are open until 10 PM and are specifically known for a fantastic selection of Italian wines that perfectly complement their housemade pastas and risottos. I've got you covered with the details, and then I can connect you with the host team to secure a prime table. \n\nAlso, just a quick tip for after your meal \u2014 the Wolf Den has free live music every night, which is a great way to keep the celebration going and enjoy some great entertainment right in the Casino of the Earth.\n\nWould you like to pivot to Ballo for tonight, or would you prefer to postpone the special dinner until MJ's opens on Wednesday?",
+      "sources": [],
+      "elapsed_ms": 65158,
+      "error": null
+    },
+    {
+      "turn_index": 2,
+      "user_message": "And after dinner? We want the full VIP experience",
+      "agent_response": "I've got you\u2014since it\u2019s a Monday, you actually get a much more exclusive, intimate atmosphere than the weekend rush. Birdcage Bar in the Casino of the Sky is the ultimate pick for tonight; it stays open until 2:00 AM and has a sophisticated lounge vibe with fantastic craft cocktails. For a truly unforgettable evening, you should also stop by the Wolf Den for the live music; on a weekday, you can often snag the best seats right near the stage, giving you that front-row experience.\n\nPro tip: the Birdcage is a hidden gem for people-watching, and the service there is top-notch when it's not a packed Saturday night. To round out the VIP treatment, you might want to consider a signature treatment at Mandara Spa tomorrow morning\u2014their Elemis body therapies are the perfect way to recharge after a big night. I can certainly connect you with the host team to help finalize any premium arrangements for your evening.\n\nAre you looking for a high-energy night near the music, or something a bit more private and relaxed for the two of you?",
+      "sources": [
+        {
+          "category": "entertainment",
+          "source": "mohegan_sun.json",
+          "score": 0.696
+        },
+        {
+          "category": "promotions",
+          "source": "mohegan_sun.json",
+          "score": 0.667
+        },
+        {
+          "category": "gaming",
+          "source": "mohegan_sun.json",
+          "score": 0.681
+        },
+        {
+          "category": "restaurants",
+          "source": "mohegan_sun.json",
+          "score": 0.659
+        }
+      ],
+      "elapsed_ms": 45316,
+      "error": null
+    }
+  ],
+  "completed": true
+}

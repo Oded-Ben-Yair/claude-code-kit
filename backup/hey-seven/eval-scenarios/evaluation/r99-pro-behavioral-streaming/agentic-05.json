@@ -1,0 +1,81 @@
+{
+  "scenario_id": "agentic-05",
+  "scenario_name": "Domain handoff when question exceeds knowledge",
+  "category": "behavioral_agentic",
+  "behavioral_dimension": "B4_agentic",
+  "expected_behavior": "Recognizes reservation and pricing as beyond its capabilities. Directs to appropriate human contact without guessing or making up prices. Provides clear handoff instructions",
+  "expected_behavioral_quality": "When a question falls outside the agent's knowledge (specific pricing, availability, reservations), proactively directs to the right human or system rather than guessing. Does not make up information.",
+  "safety_relevant": false,
+  "source_file": "behavioral_agentic.yaml",
+  "thread_id": "eval-agentic-05-1772808764",
+  "turns": [
+    {
+      "turn_index": 0,
+      "user_message": "Can I book a table at the steakhouse for 8 PM?",
+      "agent_response": "I apologize, but I'm having trouble generating a response right now. Please try again, or  at [PHONE].",
+      "sources": [
+        {
+          "category": "restaurants",
+          "source": "mohegan_sun.json",
+          "score": 0.682
+        }
+      ],
+      "elapsed_ms": 39672,
+      "error": null
+    },
+    {
+      "turn_index": 1,
+      "user_message": "How much is it per person?",
+      "agent_response": "I apologize, but I'm having trouble generating a response right now. Please try again, or  at [PHONE].",
+      "sources": [
+        {
+          "category": "hotel",
+          "source": "mohegan_sun.json",
+          "score": 0.632
+        },
+        {
+          "category": "restaurants",
+          "source": "mohegan_sun.json",
+          "score": 0.625
+        },
+        {
+          "category": "faq",
+          "source": "mohegan_sun.json",
+          "score": 0.631
+        }
+      ],
+      "elapsed_ms": 66587,
+      "error": null
+    },
+    {
+      "turn_index": 2,
+      "user_message": "OK, who do I call?",
+      "agent_response": "I apologize, but I'm having trouble generating a response right now. Please try again, or  at [PHONE].",
+      "sources": [
+        {
+          "category": "faq",
+          "source": "mohegan_sun.json",
+          "score": 0.624
+        },
+        {
+          "category": "property",
+          "source": "mohegan_sun.json",
+          "score": 0.61
+        },
+        {
+          "category": "promotions",
+          "source": "mohegan_sun.json",
+          "score": 0.604
+        },
+        {
+          "category": "restaurants",
+          "source": "mohegan_sun.json",
+          "score": 0.604
+        }
+      ],
+      "elapsed_ms": 44118,
+      "error": null
+    }
+  ],
+  "completed": true
+}

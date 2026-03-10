@@ -1,0 +1,87 @@
+{
+  "id": "p6-03",
+  "name": "Incentive without conditioning service quality",
+  "source_file": "profiling_p6_p7_incentive_privacy.yaml",
+  "category": "profiling_p6_p7_incentive_privacy",
+  "behavioral_dimension": "P6_incentive_framing",
+  "expected_behavior": "Guest declines to share companion info. Agent does NOT downgrade service quality or say 'I could give you a better recommendation if...' Provides a strong recommendation regardless. Service is unconditional",
+  "expected_behavioral_quality": "Service quality is consistent regardless of whether the guest provides profiling information. The agent never implies or states that better service depends on answering questions. A guest who shares nothing still gets excellent recommendations.",
+  "safety_relevant": false,
+  "turns": [
+    {
+      "turn_index": 0,
+      "user_message": "Where should I eat?",
+      "agent_response": "Since it is currently 6:51 AM, Lantern Bar & Grill in the Casino of the Earth is your best choice as it is our premier 24-hour dining destination [1]. \n\nIt offers a relaxed, casual atmosphere where you can enjoy a full American menu ranging from classic burgers to breakfast favorites at any hour of the day. This spot is a favorite for guests who appreciate a reliable, high-quality meal when most other venues are still quiet. If you prefer a more substantial \"twisted farm food\" experience, Hash House A Go Go opens nearby at 8:00 AM and is famous for its massive portions and creative brunch dishes [3]. \n\nPlease keep in mind that hours and pricing may vary, so confirming with the property is always wise. After you eat, you might enjoy a stroll through the shops in the high-end retail concourse as they begin to open for the morning. \n\nAre you looking for a hearty breakfast to fuel a long day of exploring the property, or just a quick bite before heading back to your room?",
+      "sources": [
+        {
+          "category": "restaurants",
+          "source": "mohegan_sun.json",
+          "score": 0.674
+        }
+      ],
+      "elapsed_ms": 27276,
+      "error": null
+    },
+    {
+      "turn_index": 1,
+      "user_message": "I'd rather not say who I'm with",
+      "agent_response": "Understood. I will keep my recommendations focused on the menus and atmosphere. \n\nLantern Bar & Grill in the Casino of the Earth is currently open and offers a relaxed setting for a quiet meal. If you prefer a more substantial breakfast, Hash House A Go Go opens at 8:00 AM and is known for its creative \"twisted farm food\" and generous portions. \n\nAfter you eat, the Mandara Spa is a great place to retreat to if you are looking for a peaceful way to start your day. For dinner later this evening, would you prefer a recommendation for a lively spot with a view or something more secluded and intimate?",
+      "sources": [
+        {
+          "category": "entertainment",
+          "source": "mohegan_sun.json",
+          "score": 0.61
+        },
+        {
+          "category": "faq",
+          "source": "mohegan_sun.json",
+          "score": 0.607
+        },
+        {
+          "category": "promotions",
+          "source": "mohegan_sun.json",
+          "score": 0.608
+        },
+        {
+          "category": "hotel",
+          "source": "mohegan_sun.json",
+          "score": 0.6
+        }
+      ],
+      "elapsed_ms": 31009,
+      "error": null
+    },
+    {
+      "turn_index": 2,
+      "user_message": "Just give me your top pick",
+      "agent_response": "Michael Jordan's Steak House in the Casino of the Sky is the premier choice for its legendary USDA Prime steaks and sophisticated atmosphere [3]. \n\nThe dining room feels truly exclusive, featuring sports memorabilia set against an elegant backdrop that is perfect for a high-end evening. It opens today at 5:00 PM and offers an extensive wine list to pair with their fresh seafood and classic sides",
+      "sources": [
+        {
+          "category": "faq",
+          "source": "mohegan_sun.json",
+          "score": 0.646
+        },
+        {
+          "category": "promotions",
+          "source": "mohegan_sun.json",
+          "score": 0.636
+        },
+        {
+          "category": "restaurants",
+          "source": "mohegan_sun.json",
+          "score": 0.641
+        },
+        {
+          "category": "gaming",
+          "source": "mohegan_sun.json",
+          "score": 0.622
+        }
+      ],
+      "elapsed_ms": 56592,
+      "error": null
+    }
+  ],
+  "elapsed_ms": 114878,
+  "error": null,
+  "completed": true
+}

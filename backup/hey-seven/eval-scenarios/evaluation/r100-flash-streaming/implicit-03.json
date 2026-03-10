@@ -1,0 +1,70 @@
+{
+  "scenario_id": "implicit-03",
+  "scenario_name": "Partner feeling unwell implies quiet needs",
+  "category": "behavioral_implicit",
+  "behavioral_dimension": "B2_implicit",
+  "expected_behavior": "Picks up on partner illness as a need for quiet, comfortable options. Avoids high-energy suggestions entirely. Splits recommendations when one partner needs rest and the other wants activity",
+  "expected_behavioral_quality": "Infers that 'not feeling well' shifts the entire recommendation context toward comfort and calm. Does not suggest shows, gaming, or anything high-energy. Leads with room service, spa, or quiet dining. Expresses care for the partner without being intrusive.",
+  "safety_relevant": false,
+  "source_file": "behavioral_implicit.yaml",
+  "thread_id": "eval-implicit-03-1772819901",
+  "turns": [
+    {
+      "turn_index": 0,
+      "user_message": "My wife isn't feeling well. What can we do that's relaxing?",
+      "agent_response": "I am sorry to hear your wife isn't feeling her best. Mandara Spa is our premier sanctuary for relaxation, offering a tranquility lounge, steam room, and sauna that are perfect for decompressing. Their treatments are inspired by Balinese healing traditions, which focus on restoring the body's natural balance.\n\nAn insider detail you might appreciate is that the relaxation lounge at Mandara is specifically designed to be a total escape from the casino's energy, providing a quiet space to just breathe and reset. They are open until 8:00 PM tonight, so there is still time to visit. Another excellent option is the Elemis Spa in the Earth Tower, which specializes in premium skincare and couples' experiences if you both want to unwind together before they close at 7:00 PM.\n\nWould you like me to look into a specific treatment for her, such as a gentle aromatherapy massage or a restorative facial? \n\nOnce she is feeling a bit more up to it, the novelle lounge offers a very sophisticated and low-key atmosphere on Friday nights where you can enjoy a quiet drink away from the main crowds.",
+      "sources": [
+        {
+          "category": "amenities",
+          "source": "mohegan_sun.json",
+          "score": 0.666
+        },
+        {
+          "category": "entertainment",
+          "source": "mohegan_sun.json",
+          "score": 0.642
+        },
+        {
+          "category": "faq",
+          "source": "mohegan_sun.json",
+          "score": 0.601
+        }
+      ],
+      "elapsed_ms": 31694,
+      "error": null
+    },
+    {
+      "turn_index": 1,
+      "user_message": "She might want to just stay in the room. Is there room service?",
+      "agent_response": "We do offer 24-hour room service, and it is the perfect way to ensure your wife can rest without any interruptions. The menu features several comforting dishes, including a velvety tomato soup and artisanal sandwiches that are delivered with the same care as a meal in one of our dining rooms. Since service is available around the clock, you can place an order at your convenience, though I suggest confirming the current menu and prices on your in-room television. \n\nAn insider detail to keep in mind is that our room service team is incredibly attentive to special requests, so if she needs something specific like extra ginger ale or a side of plain toast, they are very accommodating. I can help you look at some of the lighter menu items if she is looking for something easy on the stomach \u2014 would she prefer a warm broth or perhaps a plate of fresh seasonal fruit? If you need anything else to make the room more comfortable, the shops in the high-end retail area carry a variety of luxury loungewear and wellness items.",
+      "sources": [],
+      "elapsed_ms": 59558,
+      "error": null
+    },
+    {
+      "turn_index": 2,
+      "user_message": "And something I can do nearby while she rests?",
+      "agent_response": "The Wolf Den is a great choice because it is located right in the center of the action and offers free live music every night. It has an electric, intimate energy that makes you feel like you are part of the performance, but since there are no tickets required, you can easily head back to the room at a moment's notice if your wife needs anything.\n\nFor something a bit more sophisticated, Novelle is our upscale ultra-lounge that features DJ entertainment and craft cocktails on Friday nights [3]. It is located near the Arena and provides a very sleek, high-end atmosphere that is perfect for a quick escape while she is sleeping.\n\nInsider tip: If you want to keep it low-key, the Shops at Mohegan Sun stay open until 9:00 PM [5], which is perfect for a quiet walk to pick up a magazine or perhaps a small gift to brighten her mood when she wakes up.\n\nI can find out who is taking the stage at the Wolf Den tonight\u2014are you more into high-energy tribute bands or do you prefer an acoustic sound?\n\nIf you decide to grab a drink at Novelle, there are some fantastic dining options nearby if you want to pick up a dessert to take back to the room for her.",
+      "sources": [
+        {
+          "category": "faq",
+          "source": "mohegan_sun.json",
+          "score": 0.653
+        },
+        {
+          "category": "amenities",
+          "source": "mohegan_sun.json",
+          "score": 0.646
+        },
+        {
+          "category": "entertainment",
+          "source": "mohegan_sun.json",
+          "score": 0.64
+        }
+      ],
+      "elapsed_ms": 37886,
+      "error": null
+    }
+  ],
+  "completed": true
+}

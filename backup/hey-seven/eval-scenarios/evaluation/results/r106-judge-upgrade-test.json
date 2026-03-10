@@ -1,0 +1,25 @@
+{
+  "metadata": {
+    "round": "R106",
+    "date": "2026-03-09",
+    "consensus": true,
+    "category": "host-triangle",
+    "judges": [
+      "gpt53",
+      "deepseek"
+    ],
+    "total_scenarios": 2,
+    "scored_scenarios": 0,
+    "failed_scenarios": 2
+  },
+  "aggregates": {
+    "behavioral": {},
+    "profiling": {},
+    "host_triangle": {},
+    "safety": {
+      "pass_rate": "n/a",
+      "percentage": 0.0
+    }
+  },
+  "per_scenario": {}
+}

@@ -1,0 +1,49 @@
+{
+  "scenario_id": "h4-02",
+  "scenario_name": "VIP guest signaling status expectations",
+  "category": "host_triangle_h4_h6_relationship",
+  "behavioral_dimension": "H4_personalized_recognition",
+  "expected_behavior": "Immediately registers Ascend status and calibrates all recommendations to VIP level. Leads with premium options, mentions priority reservations as a tier benefit, and handles the suite request with host authority. The guest feels their status is recognized and acted upon",
+  "expected_behavioral_quality": "Recognizes VIP signals (tier mention, high-end requests, 'usual' language) and immediately elevates the service register. Recommendations match the VIP's expected quality level without the guest needing to explicitly state their status.",
+  "safety_relevant": false,
+  "source_file": "host_triangle_h4_h6_relationship.yaml",
+  "thread_id": "eval-h4-02-1772833862",
+  "turns": [
+    {
+      "turn_index": 0,
+      "user_message": "I'm an Ascend member. Where should I eat tonight? Something nice.",
+      "agent_response": "Welcome back, an. With your Ascend status, you definitely deserve an evening that matches that energy, and given the hour, Tao Asian Bistro & Lounge is the perfect choice since they serve until 11:00 PM tonight.\n\nThe atmosphere there is incredibly striking\u2014the moment you walk in, the dim lighting and the dramatic decor set a sophisticated tone that is hard to beat for a late-night dinner. Their sushi bar is top-tier, and I personally recommend the signature cocktails if you are looking to unwind. Since most of our other fine dining venues like Michael Jordan's Steak House close at 10:00 PM, Tao offers that upscale Pan-Asian experience without the rush. I can help you get in touch with our host team to see about securing a prime table for you. \n\nHow many people will be joining you for dinner tonight? Afterward, you might enjoy catching some live music over at the Wolf Den.",
+      "sources": [
+        {
+          "category": "restaurants",
+          "source": "mohegan_sun.json",
+          "score": 0.698
+        },
+        {
+          "category": "promotions",
+          "source": "mohegan_sun.json",
+          "score": 0.674
+        }
+      ],
+      "elapsed_ms": 28709,
+      "error": null
+    },
+    {
+      "turn_index": 1,
+      "user_message": "And I'll need a table for 6, so something with a private area",
+      "agent_response": "I hear you \u2014 let me connect you directly with our host team so they can take care of this for you.",
+      "sources": [],
+      "elapsed_ms": 8677,
+      "error": null
+    },
+    {
+      "turn_index": 2,
+      "user_message": "Perfect. Can you also check on suite availability for tonight?",
+      "agent_response": "I hear you \u2014 let me connect you directly with our host team so they can take care of this for you.",
+      "sources": [],
+      "elapsed_ms": 14804,
+      "error": null
+    }
+  ],
+  "completed": true
+}

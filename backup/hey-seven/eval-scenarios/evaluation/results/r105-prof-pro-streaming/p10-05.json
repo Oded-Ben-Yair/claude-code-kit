@@ -1,0 +1,89 @@
+{
+  "scenario_id": "p10-05",
+  "scenario_name": "Agent handles correction gracefully and updates profile",
+  "category": "profiling_p8_p9_p10_completeness",
+  "behavioral_dimension": "P10_cross_turn_memory",
+  "expected_behavior": "Party size updates from 4 to 6 seamlessly in turn 2. All subsequent recommendations use the corrected number. The agent never says 'you said 4 earlier' or makes the correction awkward. The profile is treated as mutable, not carved in stone",
+  "expected_behavioral_quality": "When the guest corrects previously shared information ('Actually, make that 6 not 4'), the agent updates the profile immediately and adjusts all subsequent recommendations. Does not reference the old information or make the correction feel like a problem.",
+  "safety_relevant": false,
+  "source_file": "profiling_p8_p9_p10_completeness.yaml",
+  "thread_id": "eval-p10-05-1772997917",
+  "turns": [
+    {
+      "turn_index": 0,
+      "user_message": "Dinner for 4 tonight",
+      "agent_response": "For a party of four tonight, SolToro Taqueria & Tequila Bar in the Casino of the Earth is a fantastic pick. The atmosphere is always lively, and the scent of fresh lime and charred agave hits you as soon as you sit down. They are known for their authentic tacos and an incredible mezcal selection that really sets the mood for a Sunday evening. They are open until 10:00 PM tonight, and since they don't typically require reservations, it is a great spot for a group to walk right in.\n\nInsider tip: their bartenders are true experts on the tequila list, so if you're looking for something unique to pair with your ceviche, don't be afraid to ask for a recommendation. Please note that hours and pricing can vary, so it is always a good idea to confirm with the property upon arrival. After dinner, the Casino of the Earth is open 24 hours if you want to explore the floor.\n\nWhat time were you looking to sit down, and does anyone in your group have dietary restrictions I should know about?",
+      "sources": [
+        {
+          "category": "restaurants",
+          "source": "mohegan_sun.json",
+          "score": 0.644
+        },
+        {
+          "category": "faq",
+          "source": "mohegan_sun.json",
+          "score": 0.65
+        }
+      ],
+      "elapsed_ms": 37164,
+      "error": null
+    },
+    {
+      "turn_index": 1,
+      "user_message": "Wait, actually 2 more friends are coming. So 6 total.",
+      "agent_response": "Got it, a party of six makes it a real celebration! As your accommodations specialist, I always recommend thinking about the end of the night\u2014if the group decides they'd rather not drive home after dinner, grabbing a couple of rooms in our Earth Tower is a great move. It is our newest tower with a fresh, contemporary design that is perfect for a relaxing retreat.\n\nStaying over also means you can easily keep the night going at novelle, our upscale lounge that is fantastic for post-dinner craft cocktails. \n\nAre your friends driving in from out of town today, or are you all local?",
+      "sources": [
+        {
+          "category": "hotel",
+          "source": "mohegan_sun.json",
+          "score": 0.635
+        },
+        {
+          "category": "entertainment",
+          "source": "mohegan_sun.json",
+          "score": 0.625
+        },
+        {
+          "category": "promotions",
+          "source": "mohegan_sun.json",
+          "score": 0.622
+        },
+        {
+          "category": "gaming",
+          "source": "mohegan_sun.json",
+          "score": 0.611
+        }
+      ],
+      "elapsed_ms": 86015,
+      "error": null
+    },
+    {
+      "turn_index": 2,
+      "user_message": "Which restaurant handles a group of 6 best?",
+      "agent_response": "For a group of six, Sushi Palace is perfectly equipped to handle your table. Passing around platters of fresh sashimi or exploring their extensive sake menu is a fantastic way to share a meal with friends. The chefs there are incredibly skilled, and if your group is feeling adventurous, their omakase option is a truly memorable experience. \n\nThey are located in the Casino of the Sky and are open until 10:00 PM tonight. Because you have exactly six people, this is the size where they do recommend a reservation, which is a great way to ensure your table is ready and waiting. Just a quick reminder that hours and pricing can occasionally vary, so it never hurts to double-check with the venue. \n\nIf the group wants to keep the energy going after dinner, Comix Roadhouse often runs Sunday comedy shows and is right nearby. \n\nAre you all celebrating something special tonight, and what is your name so I know who I am chatting with?",
+      "sources": [
+        {
+          "category": "restaurants",
+          "source": "mohegan_sun.json",
+          "score": 0.648
+        },
+        {
+          "category": "entertainment",
+          "source": "mohegan_sun.json",
+          "score": 0.64
+        }
+      ],
+      "elapsed_ms": 66085,
+      "error": null
+    },
+    {
+      "turn_index": 3,
+      "user_message": "Great, book it for 6",
+      "agent_response": "The Wolf Den has free live music every night \u2014 it's right in the Casino of the Earth and worth checking out. Anything else I can set up for you?",
+      "sources": [],
+      "elapsed_ms": 2,
+      "error": null
+    }
+  ],
+  "completed": true
+}

@@ -1,0 +1,61 @@
+{
+  "id": "h7-01",
+  "name": "Dining guest open to entertainment",
+  "source_file": "host_triangle_h7_h10_revenue.yaml",
+  "category": "host_triangle_h7_h10_revenue",
+  "behavioral_dimension": "H7_cross_selling_wallet_share",
+  "expected_behavior": "Confirms the dinner choice and immediately paints the after-dinner picture: Wolf Den show, Comix comedy, or casino floor. The cross-sell feels like a natural 'and then...' suggestion from someone who wants the guest to have a full evening, not a checklist of amenities",
+  "expected_behavioral_quality": "When a guest engages with dining, the agent naturally introduces entertainment and nightlife as the next part of the evening. The cross-sell creates a seamless 'full evening' vision where dinner flows into the next experience \u2014 not a list of unrelated amenities.",
+  "safety_relevant": false,
+  "turns": [
+    {
+      "turn_index": 0,
+      "user_message": "Where should we eat tonight? We're thinking Italian",
+      "agent_response": "For a standout Italian dinner tonight, Todd English's Tuscany is my top recommendation. The wood-fired aroma hits you the moment you walk in, and their handmade pastas are prepared with a precision that guests talk about for weeks. \n\nThey are located in the Casino of the Sky and open at 5:00 PM today. It is a more upscale setting with a business casual dress code and a price range of around $$$$, so I definitely recommend making a reservation to secure a table. \n\nThe Casino of the Sky also features some excellent shopping nearby if you have time to explore before your meal. How many people will be in your party tonight?",
+      "sources": [
+        {
+          "category": "restaurants",
+          "source": "mohegan_sun.json",
+          "score": 0.695
+        }
+      ],
+      "elapsed_ms": 36802,
+      "error": null
+    },
+    {
+      "turn_index": 1,
+      "user_message": "Tuscany sounds great. We'll do that",
+      "agent_response": "Tuscany is a wonderful choice\u2014the open kitchen creates an incredible energy, and watching the chefs work the wood-fired grill is a central part of the experience. Since it is Thursday, they open at 5:00 PM, and I suggest securing a reservation soon as it is a favorite for the evening crowd. \n\nPlease keep in mind their business casual dress code to match the upscale, warm atmosphere. If you find yourself looking for something to do after dinner, the Wolf Den often has great live music and is just a short stroll away in the Casino of the Earth. Are you celebrating something special tonight, or is this just a well-deserved night out?",
+      "sources": [
+        {
+          "category": "restaurants",
+          "source": "mohegan_sun.json",
+          "score": 0.672
+        },
+        {
+          "category": "promotions",
+          "source": "mohegan_sun.json",
+          "score": 0.615
+        },
+        {
+          "category": "property",
+          "source": "mohegan_sun.json",
+          "score": 0.627
+        }
+      ],
+      "elapsed_ms": 29716,
+      "error": null
+    },
+    {
+      "turn_index": 2,
+      "user_message": "Oh there's a show tonight? What's playing?",
+      "agent_response": "\"You're going to love the energy at the resort tonight. For live music, the Wolf Den is incredible because it's completely free and the 350-seat venue makes every performance feel personal. Since it is Thursday, you also have the option of comedy at Comix Roadhouse or a more upscale lounge atmosphere with DJs at Novelle. While the Mohegan Sun Arena hosts our massive",
+      "sources": [],
+      "elapsed_ms": 51382,
+      "error": null
+    }
+  ],
+  "elapsed_ms": 117901,
+  "error": null,
+  "completed": true
+}

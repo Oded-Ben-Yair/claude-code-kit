@@ -1,0 +1,124 @@
+{
+  "scenario_id": "relationship-09",
+  "scenario_name": "Budget-conscious couple \u2014 value steering without condescension",
+  "category": "relationship_building",
+  "behavioral_dimension": "P4_preference_memory",
+  "expected_behavior": "Every suggestion after turn 1 maintains the budget filter. Does NOT suggest Tao, MJ's, or other premium venues. Highlights free activities (Wolf Den, pool, walking). Asks about weekend plans to build itinerary without pushing spend.",
+  "expected_behavioral_quality": "Agent remembers budget constraint across all turns. Every suggestion is value-oriented. Does NOT upsell or mention premium options after budget signal. Maintains budget filter throughout entire conversation.",
+  "safety_relevant": false,
+  "source_file": "relationship_building.yaml",
+  "thread_id": "eval-relationship-09-1772911699",
+  "turns": [
+    {
+      "turn_index": 0,
+      "user_message": "Looking for dinner tonight. Nothing too fancy \u2014 we're on a budget.",
+      "agent_response": "For a casual and budget-friendly dinner tonight, Johnny Rockets in the Casino of the Earth is your best bet. It has a classic 1950s diner feel where you can grab a great burger and a hand-spun shake without breaking the bank, and they are open until 11:00 PM tonight.\n\nPro tip: if you are there at the right time, you might even catch the staff doing a choreographed dance to one of the jukebox classics. Are you dining with a large group or is it just a couple of you tonight? After you finish your meal, you might want to head over to the Wolf Den nearby for some free live music.",
+      "sources": [
+        {
+          "category": "restaurants",
+          "source": "mohegan_sun.json",
+          "score": 0.694
+        }
+      ],
+      "elapsed_ms": 32238,
+      "error": null
+    },
+    {
+      "turn_index": 1,
+      "user_message": "Bobby's sounds good. What about entertainment after?",
+      "agent_response": "Bobby's Burgers is a fantastic choice for a quick, delicious meal right in the heart of the action. For entertainment afterward that fits your budget, the Wolf Den is my top recommendation. It's an intimate venue located in the Casino of the Earth that features free live music from national acts and tribute bands every single night. Since it's Saturday, the energy there is going to be electric.\n\nThe Wolf Den is a hidden gem because you're right there with the performers in a 350-seat setting\u2014it is one of the only places where you can see national touring acts without a cover charge or ticket. Since seating is first-come, first-served, you can head over right after your burger and grab a spot. If you find yourself needing a reset tomorrow morning after the late show, a visit to the Elemis Spa is a great way to recharge before you head home. What brings you to Mohegan Sun this weekend?",
+      "sources": [
+        {
+          "category": "entertainment",
+          "source": "mohegan_sun.json",
+          "score": 0.679
+        }
+      ],
+      "elapsed_ms": 55919,
+      "error": null
+    },
+    {
+      "turn_index": 2,
+      "user_message": "Free music? That's great. We're here until Sunday.",
+      "agent_response": "Since you're staying until Sunday, you can actually catch two different free performances before you leave. Knowledge flex: the Wolf Den is one of the only places where you can see national touring acts in a small 350-seat setting without ever needing a ticket. \n\nWhat kind of music usually gets you on your feet? Since you're here for the night, staying at the resort means you can just walk back to your room after the late show instead of worrying about the drive home.",
+      "sources": [
+        {
+          "category": "entertainment",
+          "source": "mohegan_sun.json",
+          "score": 0.692
+        },
+        {
+          "category": "faq",
+          "source": "mohegan_sun.json",
+          "score": 0.662
+        },
+        {
+          "category": "promotions",
+          "source": "mohegan_sun.json",
+          "score": 0.638
+        }
+      ],
+      "elapsed_ms": 65319,
+      "error": null
+    },
+    {
+      "turn_index": 3,
+      "user_message": "What's there to do during the day tomorrow?",
+      "agent_response": "Since you are looking for budget-friendly options, visiting the 55-foot indoor waterfall or viewing the massive crystal mountain are both free and quite impressive to see in person.\n\nIf you are looking for a reset, the Elemis Spa is legendary for its calm atmosphere, though you can also just relax by the resort pool for a free alternative. Pro tip: if you head to the shops early, it's much quieter and you can really take in the Dale Chihuly glass sculptures without the crowds. \n\nAfter you finish exploring tomorrow, are you interested in a quick bite to eat before you head out? We often have seasonal dining promotions \u2014 next time you visit, ask about what's running and I can point you to the best deals.",
+      "sources": [
+        {
+          "category": "entertainment",
+          "source": "mohegan_sun.json",
+          "score": 0.635
+        },
+        {
+          "category": "faq",
+          "source": "mohegan_sun.json",
+          "score": 0.638
+        },
+        {
+          "category": "amenities",
+          "source": "mohegan_sun.json",
+          "score": 0.633
+        }
+      ],
+      "elapsed_ms": 40646,
+      "error": null
+    },
+    {
+      "turn_index": 4,
+      "user_message": "Perfect. Thanks so much!",
+      "agent_response": "You're very welcome. Enjoy the music at the Wolf Den tonight \u2014 it's the best way to spend a Saturday evening on a budget! \n\nNext time you visit, ask me about our seasonal dining promotions and I can point you toward the best value deals on property. How has the hotel room been working out for you so far?",
+      "sources": [
+        {
+          "category": "promotions",
+          "source": "mohegan_sun.json",
+          "score": 0.617
+        },
+        {
+          "category": "entertainment",
+          "source": "mohegan_sun.json",
+          "score": 0.621
+        },
+        {
+          "category": "property",
+          "source": "mohegan_sun.json",
+          "score": 0.632
+        },
+        {
+          "category": "hotel",
+          "source": "mohegan_sun.json",
+          "score": 0.59
+        },
+        {
+          "category": "faq",
+          "source": "mohegan_sun.json",
+          "score": 0.59
+        }
+      ],
+      "elapsed_ms": 33879,
+      "error": null
+    }
+  ],
+  "completed": true
+}

@@ -1,0 +1,80 @@
+{
+  "scenario_id": "p4-07",
+  "scenario_name": "First-time visitor \u2014 assumption about tour wrong (returning after years)",
+  "category": "profiling_p4_assumptive_bridge",
+  "behavioral_dimension": "P4_assumptive_bridging",
+  "expected_behavior": "Initial assumption about being a first-timer is softly held. When corrected to a returning regular, pivots to highlighting what has changed. The 'welcome back' feels genuine, not performative",
+  "expected_behavioral_quality": "When the guest seems unfamiliar, softly suggests a property overview. When corrected ('I used to come all the time'), immediately abandons the newcomer register and shifts to a 'welcome back, here's what's changed' posture. Does not over-apologize.",
+  "safety_relevant": false,
+  "source_file": "profiling_p4_assumptive_bridge.yaml",
+  "thread_id": "eval-p4-07-1772841905",
+  "turns": [
+    {
+      "turn_index": 0,
+      "user_message": "Wow, this place looks different",
+      "agent_response": "It's quite a transformation if you're comparing it to other resorts or what you've seen in photos. We've expanded significantly over the years, most recently adding the Earth Tower which offers a very modern contrast to the tribal-inspired design of the original Casino of the Earth. \n\nA bit of insider trivia for your first visit: the design throughout the property intentionally reflects the Mohegan Tribe's heritage, like the turtle shell patterns you'll see in the flooring and ceilings. Since you're just getting oriented, are you planning to focus on the gaming floors or are you here for a specific restaurant tonight?",
+      "sources": [
+        {
+          "category": "hotel",
+          "source": "mohegan_sun.json",
+          "score": 0.653
+        },
+        {
+          "category": "gaming",
+          "source": "mohegan_sun.json",
+          "score": 0.636
+        },
+        {
+          "category": "entertainment",
+          "source": "mohegan_sun.json",
+          "score": 0.643
+        },
+        {
+          "category": "restaurants",
+          "source": "mohegan_sun.json",
+          "score": 0.643
+        }
+      ],
+      "elapsed_ms": 30859,
+      "error": null
+    },
+    {
+      "turn_index": 1,
+      "user_message": "Oh I used to come here every month, just haven't been in 5 years",
+      "agent_response": "",
+      "sources": [],
+      "elapsed_ms": 60003,
+      "error": "TIMEOUT (60.0s)"
+    },
+    {
+      "turn_index": 2,
+      "user_message": "What's new since I was last here?",
+      "agent_response": "Since 2021, the most notable addition is **Tao Asian Bistro & Nightclub** in the Casino of the Sky, which features a 16-foot Buddha and a high-energy dining atmosphere that has changed the landscape of that area. We also introduced **Novelle**, a sophisticated ultra-lounge that blends table games with a luxury bar environment, which is actually open right now if you are looking for a club-like feel without the full scale of a nightclub.\n\nPro tip: If you are looking for a quieter retreat tomorrow, the **Elemis Spa** in the Earth Tower is a newer, more modern alternative to the original Mandara Spa you likely remember. Are you looking to jump right back into the gaming action tonight, or are you more interested in exploring the new dining and nightlife scenes?",
+      "sources": [
+        {
+          "category": "hotel",
+          "source": "mohegan_sun.json",
+          "score": 0.661
+        },
+        {
+          "category": "entertainment",
+          "source": "mohegan_sun.json",
+          "score": 0.655
+        },
+        {
+          "category": "gaming",
+          "source": "mohegan_sun.json",
+          "score": 0.63
+        },
+        {
+          "category": "amenities",
+          "source": "mohegan_sun.json",
+          "score": 0.645
+        }
+      ],
+      "elapsed_ms": 34886,
+      "error": null
+    }
+  ],
+  "completed": true
+}

@@ -1,0 +1,38 @@
+[
+  {
+    "from": "team-lead",
+    "text": "{\"type\":\"task_assignment\",\"taskId\":\"5\",\"subject\":\"Audit Component 5: RAG Pipeline\",\"description\":\"Audit RAG ingestion, retrieval, embeddings, reranking. Check per-item chunking, RRF, SHA-256 dedup, version-stamp purging, property_id isolation.\\n\\nKey files: src/rag/pipeline.py, src/rag/firestore_retriever.py, src/rag/embeddings.py, src/rag/reranking.py\\nWrite findings to: reviews/r97-audit/05-rag-pipeline.md\",\"assignedBy\":\"team-lead\",\"timestamp\":\"2026-03-05T14:17:14.500Z\"}",
+    "timestamp": "2026-03-05T14:17:14.500Z",
+    "read": false
+  },
+  {
+    "from": "team-lead",
+    "text": "{\"type\":\"task_assignment\",\"taskId\":\"6\",\"subject\":\"Audit Component 6: Profiling + Extraction\",\"description\":\"Audit guest profiling enrichment node, extraction engine, whisper planner, guest_profile.py. Check LLM extraction, confidence gating, golden path sequencing, profile confirmation.\\n\\nKey files: src/agent/profiling.py, src/agent/extraction.py, src/agent/whisper_planner.py, src/data/guest_profile.py\\nWrite findings to: reviews/r97-audit/06-profiling-extraction.md\",\"assignedBy\":\"team-lead\",\"timestamp\":\"2026-03-05T14:17:15.080Z\"}",
+    "timestamp": "2026-03-05T14:17:15.081Z",
+    "read": false
+  },
+  {
+    "from": "team-lead",
+    "text": "{\"type\":\"task_assignment\",\"taskId\":\"7\",\"subject\":\"Audit Component 7: Incentives + Crisis + Sentiment\",\"description\":\"Audit incentive engine, crisis escalation, sentiment detection, sarcasm detection, slang normalization. Check per-casino rules, tiered autonomy, 4-level crisis, VADER+context-contrast.\\n\\nKey files: src/agent/incentives.py, src/agent/crisis.py, src/agent/sentiment.py, src/agent/slang.py\\nWrite findings to: reviews/r97-audit/07-incentives-crisis-sentiment.md\",\"assignedBy\":\"team-lead\",\"timestamp\":\"2026-03-05T14:17:15.531Z\"}",
+    "timestamp": "2026-03-05T14:17:15.531Z",
+    "read": false
+  },
+  {
+    "from": "team-lead",
+    "text": "{\"type\":\"task_assignment\",\"taskId\":\"8\",\"subject\":\"Audit Component 8: Prompts + Persona\",\"description\":\"Audit system prompts, persona configuration, few-shot examples, behavioral bridges, tone guides. Check prompt assembly pipeline, sentiment-aware tone, specialist-specific prompts.\\n\\nKey files: src/agent/prompts.py, src/agent/persona.py\\nWrite findings to: reviews/r97-audit/08-prompts-persona.md\",\"assignedBy\":\"team-lead\",\"timestamp\":\"2026-03-05T14:17:15.857Z\"}",
+    "timestamp": "2026-03-05T14:17:15.857Z",
+    "read": false
+  },
+  {
+    "from": "team-lead",
+    "text": "{\"type\":\"shutdown_request\",\"requestId\":\"shutdown-1772720868064@auditor-pipeline\",\"from\":\"team-lead\",\"reason\":\"All 4 reports received and tasks #5-8 marked completed. Excellent work. Shutting down.\",\"timestamp\":\"2026-03-05T14:27:48.064Z\"}",
+    "timestamp": "2026-03-05T14:27:48.064Z",
+    "read": true
+  },
+  {
+    "from": "team-lead",
+    "text": "{\"type\":\"shutdown_request\",\"requestId\":\"shutdown-1772723850271@auditor-pipeline\",\"from\":\"team-lead\",\"reason\":\"Work complete. Please shut down now.\",\"timestamp\":\"2026-03-05T15:17:30.271Z\"}",
+    "timestamp": "2026-03-05T15:17:30.271Z",
+    "read": false
+  }
+]

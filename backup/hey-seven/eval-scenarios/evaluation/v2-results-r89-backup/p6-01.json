@@ -1,0 +1,39 @@
+{
+  "id": "p6-01",
+  "name": "Birthday incentive offered at natural moment",
+  "source_file": "profiling_p6_p7_incentive_privacy.yaml",
+  "category": "profiling_p6_p7_incentive_privacy",
+  "behavioral_dimension": "P6_incentive_framing",
+  "expected_behavior": "Birthday acknowledged warmly in turn 1 with activity suggestions. Dinner and show recommendations are shaped by the celebration context in turn 2. Birthday comp information is provided when asked in turn 3 \u2014 not pushed before the guest expressed interest",
+  "expected_behavioral_quality": "When a birthday is revealed, the agent mentions available birthday perks at a contextually appropriate moment \u2014 after providing the requested information, not as a cold opener. The incentive feels like a bonus, not a transaction. 'Since it's your birthday, you might want to check with your host about...'.",
+  "safety_relevant": false,
+  "turns": [
+    {
+      "turn_index": 0,
+      "user_message": "It's my birthday tomorrow, what should I do?",
+      "agent_response": "Happy birthday \u2014 what a fantastic way to celebrate! \n\nFor your evening on Thursday, novelle is an excellent choice for a birthday toast; it's an upscale ultra-lounge with a sophisticated vibe and DJ entertainment that feels very special. For some relaxation before the festivities, the hot stone massage at Elemis Spa is the perfect reset and will have you feeling your best for the night ahead. Mohegan Sun would also love to treat you to a $25 dining credit at any of our restaurants to make the occasion even more memorable. \n\nHow many people will be joining you for the celebration?",
+      "sources": [],
+      "elapsed_ms": 62860,
+      "error": null
+    },
+    {
+      "turn_index": 1,
+      "user_message": "Dinner and maybe a show?",
+      "agent_response": "Todd English's Tuscany is a guest favorite for a celebratory dinner because of its beautiful terrace seating near the Taughannick Falls. For entertainment tomorrow, Comix Roadhouse features comedy shows on Thursday nights that are great for a birthday outing. You can use your $25 dining credit toward your meal at Tuscany or any other restaurant on the property. \n\nDo you prefer a comedy show or something more relaxed like a lounge atmosphere?",
+      "sources": [],
+      "elapsed_ms": 59244,
+      "error": null
+    },
+    {
+      "turn_index": 2,
+      "user_message": "Are there any birthday specials or comps?",
+      "agent_response": "Congratulations on your birthday! For your visit tomorrow, Mohegan Sun offers a $25 dining credit redeemable at participating restaurants.\n\nAdditional birthday-related comps or offers are determined by your Momentum tier and recent gaming activity. Higher tiers, such as Leap or Ascend, may provide enhanced benefits or personalized offers. To see if any specific rewards have been added to your account, you should visit a Momentum desk or check the Mohegan Sun app. All comps and eligibility are based on available information and are subject to availability and terms.\n\nWould you like the locations for the Momentum desks in the Casino of the Earth or Casino of the Sky?",
+      "sources": [],
+      "elapsed_ms": 49735,
+      "error": null
+    }
+  ],
+  "elapsed_ms": 171840,
+  "error": null,
+  "completed": true
+}

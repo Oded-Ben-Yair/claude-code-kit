@@ -1,0 +1,70 @@
+{
+  "scenario_id": "agentic-06",
+  "scenario_name": "Proactive weather-context suggestion",
+  "category": "behavioral_agentic",
+  "behavioral_dimension": "B4_agentic",
+  "expected_behavior": "Reads weather context and proactively recommends only indoor activities. Does not suggest pool or outdoor options. Adjusts all recommendations to the rainy-day constraint",
+  "expected_behavioral_quality": "When a guest mentions weather conditions, adjusts recommendations proactively. Does not suggest outdoor activities when the guest mentions rain. Anticipates the practical impact without being asked.",
+  "safety_relevant": false,
+  "source_file": "behavioral_agentic.yaml",
+  "thread_id": "eval-agentic-06-1772817456",
+  "turns": [
+    {
+      "turn_index": 0,
+      "user_message": "It's raining pretty hard outside. What should we do?",
+      "agent_response": "The rain is the perfect excuse to stay inside and explore novelle, our upscale ultra lounge that features craft cocktails and DJ entertainment on Friday nights. If you're looking for something more active to burn off some energy indoors, the Wombi Rock Climbing Wall is a unique challenge located right here on property. \n\nFor a more laid-back vibe, the Elemis Spa is the ultimate escape from the weather\u2014their hot stone massage is legendary for a reason. Once you decide on a treatment or a time, I can connect you with our host team to finalize the booking. Since you'll be staying indoors, Todd English\u2019s Tuscany is just a short walk away and serves incredible wood-fired dishes that hit the spot when it's pouring outside. \n\nAre you leaning toward a high-energy evening or something more focused on relaxation?",
+      "sources": [],
+      "elapsed_ms": 58438,
+      "error": null
+    },
+    {
+      "turn_index": 1,
+      "user_message": "The spa sounds nice. Is it all indoors?",
+      "agent_response": "Yes, everything at our spas is fully indoors, so you can completely forget about the rain outside. Both Mandara Spa and the Elemis Spa at Earth Tower are designed as total escapes where you can move from the relaxation lounge to your treatment room without ever leaving that climate-controlled environment.\n\nA great detail to know is that because Mohegan Sun is entirely smoke-free indoors, the atmosphere in the spa areas stays incredibly fresh and serene. Since it is currently 5:18 PM, Mandara Spa is open until 8:00 PM and the Elemis Spa is open until 7:00 PM, giving you plenty of time for a late-afternoon reset. \n\nAfter you've finished at the spa, Todd English's Tuscany is a short walk away and offers a very cozy atmosphere that pairs perfectly with a relaxed mindset. Would you like to hear more about the Balinese-inspired massages at Mandara or the skincare treatments at Elemis?",
+      "sources": [
+        {
+          "category": "amenities",
+          "source": "mohegan_sun.json",
+          "score": 0.692
+        },
+        {
+          "category": "faq",
+          "source": "mohegan_sun.json",
+          "score": 0.691
+        },
+        {
+          "category": "property",
+          "source": "mohegan_sun.json",
+          "score": 0.669
+        }
+      ],
+      "elapsed_ms": 30307,
+      "error": null
+    },
+    {
+      "turn_index": 2,
+      "user_message": "Perfect. And dinner after?",
+      "agent_response": "For a dinner that matches the refined feeling of a spa day, Michael Jordan's Steak House in the Casino of the Sky is an excellent choice. The dining room has a sophisticated atmosphere, and their USDA Prime steaks are some of the finest cuts you will find on the property. They are open tonight until 10:00 PM and recommend business casual attire. \n\nSince it is a Friday evening, reservations are highly recommended, and I can certainly connect you with our host team to help you secure a table. An insider tip is that their wine list is one of the most extensive on-site, with pairings designed to complement everything from their signature steaks to their fresh seafood. After dinner, the Wolf Den usually has great live music if you are looking to keep the evening going. Would you prefer a table for a classic steak dinner or something lighter like fresh seafood tonight?",
+      "sources": [
+        {
+          "category": "entertainment",
+          "source": "mohegan_sun.json",
+          "score": 0.654
+        },
+        {
+          "category": "faq",
+          "source": "mohegan_sun.json",
+          "score": 0.635
+        },
+        {
+          "category": "restaurants",
+          "source": "mohegan_sun.json",
+          "score": 0.639
+        }
+      ],
+      "elapsed_ms": 39959,
+      "error": null
+    }
+  ],
+  "completed": true
+}

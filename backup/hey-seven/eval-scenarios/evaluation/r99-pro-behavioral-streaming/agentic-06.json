@@ -1,0 +1,91 @@
+{
+  "scenario_id": "agentic-06",
+  "scenario_name": "Proactive weather-context suggestion",
+  "category": "behavioral_agentic",
+  "behavioral_dimension": "B4_agentic",
+  "expected_behavior": "Reads weather context and proactively recommends only indoor activities. Does not suggest pool or outdoor options. Adjusts all recommendations to the rainy-day constraint",
+  "expected_behavioral_quality": "When a guest mentions weather conditions, adjusts recommendations proactively. Does not suggest outdoor activities when the guest mentions rain. Anticipates the practical impact without being asked.",
+  "safety_relevant": false,
+  "source_file": "behavioral_agentic.yaml",
+  "thread_id": "eval-agentic-06-1772808915",
+  "turns": [
+    {
+      "turn_index": 0,
+      "user_message": "It's raining pretty hard outside. What should we do?",
+      "agent_response": "You won't even notice the weather once you're inside since everything is connected under one roof. For a rainy Friday afternoon, a session at the Elemis Spa is a legendary way to reset before the weekend excitement kicks in. If you'd rather stay active, the Wombi Rock Climbing Wall is an impressive indoor spot near Kids Quest that is perfect for burning off some energy.\n\nPro tip: The Wolf Den has an electric atmosphere on Friday nights with free live music, and since it's located right in the heart of the property, you can enjoy the show without ever needing to head back out into the rain. Are you in the mood for a relaxing spa treatment or some live music tonight?",
+      "sources": [
+        {
+          "category": "faq",
+          "source": "mohegan_sun.json",
+          "score": 0.632
+        },
+        {
+          "category": "entertainment",
+          "source": "mohegan_sun.json",
+          "score": 0.624
+        },
+        {
+          "category": "amenities",
+          "source": "mohegan_sun.json",
+          "score": 0.599
+        },
+        {
+          "category": "gaming",
+          "source": "mohegan_sun.json",
+          "score": 0.599
+        }
+      ],
+      "elapsed_ms": 36065,
+      "error": null
+    },
+    {
+      "turn_index": 1,
+      "user_message": "The spa sounds nice. Is it all indoors?",
+      "agent_response": "I apologize, but I'm having trouble generating a response right now. Please try again, or  at [PHONE].",
+      "sources": [
+        {
+          "category": "amenities",
+          "source": "mohegan_sun.json",
+          "score": 0.692
+        },
+        {
+          "category": "faq",
+          "source": "mohegan_sun.json",
+          "score": 0.691
+        },
+        {
+          "category": "property",
+          "source": "mohegan_sun.json",
+          "score": 0.669
+        }
+      ],
+      "elapsed_ms": 43262,
+      "error": null
+    },
+    {
+      "turn_index": 2,
+      "user_message": "Perfect. And dinner after?",
+      "agent_response": "I apologize, but I'm having trouble generating a response right now. Please try again, or  at [PHONE].",
+      "sources": [
+        {
+          "category": "entertainment",
+          "source": "mohegan_sun.json",
+          "score": 0.654
+        },
+        {
+          "category": "faq",
+          "source": "mohegan_sun.json",
+          "score": 0.635
+        },
+        {
+          "category": "restaurants",
+          "source": "mohegan_sun.json",
+          "score": 0.639
+        }
+      ],
+      "elapsed_ms": 49701,
+      "error": null
+    }
+  ],
+  "completed": true
+}

@@ -1,0 +1,77 @@
+{
+  "scenario_id": "sentiment-04",
+  "scenario_name": "Frustrated then satisfied",
+  "category": "sentiment_shifts",
+  "behavioral_dimension": "",
+  "expected_behavior": "Addresses frustration with helpful info, then acknowledges satisfaction",
+  "expected_behavioral_quality": "",
+  "safety_relevant": false,
+  "source_file": "sentiment_shifts.yaml",
+  "thread_id": "eval-sentiment-04-1772846093",
+  "turns": [
+    {
+      "turn_index": 0,
+      "user_message": "I've been trying to find information about your spa and can't find anything",
+      "agent_response": "I completely understand how frustrating it can be when you can't find the details you need, so let me help clear that up for you right away. I am Seven, your entertainment and wellness concierge. \n\nWe actually have two incredible spas here at Mohegan Sun depending on what kind of reset you are looking for. Mandara Spa is our award-winning, full-service sanctuary featuring Balinese-inspired massages, body wraps, and a beautiful relaxation lounge with a steam room and sauna. They are open daily from 9:00 AM to 8:00 PM. \n\nIf you prefer premium skincare or perhaps an express service, the Elemis Spa located in the Earth Tower is fantastic, and they are open daily from 9:00 AM to 7:00 PM. \n\nAfter a relaxing spa day, sitting down for some wood-fired dishes at Todd English's Tuscany is the perfect way to keep that stress-free energy going. Are you hoping to completely unwind with a massage, or were you looking more toward a facial and skincare treatment?",
+      "sources": [
+        {
+          "category": "amenities",
+          "source": "mohegan_sun.json",
+          "score": 0.676
+        },
+        {
+          "category": "promotions",
+          "source": "mohegan_sun.json",
+          "score": 0.646
+        },
+        {
+          "category": "property",
+          "source": "mohegan_sun.json",
+          "score": 0.637
+        },
+        {
+          "category": "faq",
+          "source": "mohegan_sun.json",
+          "score": 0.636
+        }
+      ],
+      "elapsed_ms": 49266,
+      "error": null
+    },
+    {
+      "turn_index": 1,
+      "user_message": "That's exactly what I was looking for, thank you!",
+      "agent_response": "You're very welcome. One insider tip: if you're planning a weekend visit, I'd suggest booking your spa appointments a couple of weeks in advance since those slots tend to fill up quickly. \n\nAfter a morning at the spa, a quiet lunch at Bean and Vine Cafe is a great way to ease back into the day without losing that relaxed feeling. Will you be visiting us for a special occasion or just a relaxing getaway?",
+      "sources": [
+        {
+          "category": "entertainment",
+          "source": "mohegan_sun.json",
+          "score": 0.625
+        },
+        {
+          "category": "promotions",
+          "source": "mohegan_sun.json",
+          "score": 0.614
+        },
+        {
+          "category": "property",
+          "source": "mohegan_sun.json",
+          "score": 0.626
+        },
+        {
+          "category": "faq",
+          "source": "mohegan_sun.json",
+          "score": 0.604
+        },
+        {
+          "category": "amenities",
+          "source": "mohegan_sun.json",
+          "score": 0.621
+        }
+      ],
+      "elapsed_ms": 27131,
+      "error": null
+    }
+  ],
+  "completed": true
+}

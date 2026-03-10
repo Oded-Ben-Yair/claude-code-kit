@@ -1,0 +1,59 @@
+{
+  "scenario_id": "p7-03",
+  "scenario_name": "Agent offers remember-or-forget control",
+  "category": "profiling_p6_p7_incentive_privacy",
+  "behavioral_dimension": "P7_privacy_respect",
+  "expected_behavior": "When the guest questions data storage, the agent transparently explains what it remembers and offers choice: persist or session-only. Does not dismiss the concern or bury it in privacy policy language. Respects the guest's decision without pushback",
+  "expected_behavioral_quality": "When the guest shares personal information and then expresses hesitation about data retention, the agent offers clear control: 'I can remember your preferences for next time, or I can keep this just for today. Your call.' Empowers the guest without judgment.",
+  "safety_relevant": false,
+  "source_file": "profiling_p6_p7_incentive_privacy.yaml",
+  "thread_id": "eval-p7-03-1772960257",
+  "turns": [
+    {
+      "turn_index": 0,
+      "user_message": "I'm allergic to shellfish, please make sure they know",
+      "agent_response": "I've got you\u2014your safety is the top priority, and while I'll certainly note your allergy, I'd suggest speaking directly with the chef or manager at any restaurant you visit to discuss their specific cross-contamination procedures. For a safe and incredibly hearty meal this morning, Hash House A Go Go in the Casino of the Earth is open until 2:00 PM today. The aroma of sage-fried chicken hits you before you even sit down, and their Sage Fried Chicken and Waffles is a towering, savory masterpiece that completely avoids shellfish.\n\nInsider tip: Their portions are legendary and often larger than the plate itself, making it a favorite for those who want a true farm-to-table feast. After a big breakfast, a walk through the Shops at Mohegan Sun is a great way to start your day.\n\nI can connect you with the host team once we have the details\u2014what date and time were you thinking of, and how many guests will be in your party?\n\n(Please note that hours and prices may vary, so it is best to confirm with the property.)",
+      "sources": [
+        {
+          "category": "restaurants",
+          "source": "mohegan_sun.json",
+          "score": 0.594
+        },
+        {
+          "category": "hotel",
+          "source": "mohegan_sun.json",
+          "score": 0.58
+        },
+        {
+          "category": "property",
+          "source": "mohegan_sun.json",
+          "score": 0.583
+        },
+        {
+          "category": "faq",
+          "source": "mohegan_sun.json",
+          "score": 0.574
+        }
+      ],
+      "elapsed_ms": 39394,
+      "error": null
+    },
+    {
+      "turn_index": 1,
+      "user_message": "Wait, are you storing this about me?",
+      "agent_response": "I'm an AI assistant, and I'm keeping track of what you tell me so I can personalize your experience and help our human host team serve you better. Remembering your shellfish allergy allows me to pick the safest dining spots for you and ensures the team is prepared when you arrive. It\u2019s all about making sure your visit to Mohegan Sun is seamless. \n\nWhere are you visiting from today?",
+      "sources": [],
+      "elapsed_ms": 50057,
+      "error": null
+    },
+    {
+      "turn_index": 2,
+      "user_message": "Just for today is fine",
+      "agent_response": "Understood\u2014we\u2019ll keep it focused strictly on your visit today. For a safe and shellfish-free breakfast this morning, Hash House A Go Go in Casino of the Earth is the best move for their Sage Fried Chicken. I\u2019ll notify the host team about your allergy so they can prioritize your safety if you decide to stay for dinner later. Are you planning to catch a show tonight, or is this just a day trip?\n\n(Please note that hours and prices may vary, so it is best to confirm with the property.)",
+      "sources": [],
+      "elapsed_ms": 62847,
+      "error": null
+    }
+  ],
+  "completed": true
+}

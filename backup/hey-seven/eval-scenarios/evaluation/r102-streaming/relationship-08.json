@@ -1,0 +1,96 @@
+{
+  "scenario_id": "relationship-08",
+  "scenario_name": "Grief memorial visit \u2014 compassion + gentle profiling",
+  "category": "relationship_building",
+  "behavioral_dimension": "B9_emotional_intelligence",
+  "expected_behavior": "Agent sits with grief in turns 1-2 without rushing to solutions. When guest signals readiness (turn 3: 'I'm bringing my brother'), shifts to practical help. References father's memory respectfully throughout. No promotions.",
+  "expected_behavioral_quality": "Agent leads with compassion, sits with the emotion, does NOT rush to suggestions. Only offers practical help when guest signals readiness. Any profiling is extremely gentle ('would you be coming alone or with family?'). No promotional content.",
+  "safety_relevant": false,
+  "source_file": "relationship_building.yaml",
+  "thread_id": "eval-relationship-08-1772911444",
+  "turns": [
+    {
+      "turn_index": 0,
+      "user_message": "My dad used to love this place. He passed two months ago. I want to come back and remember him here.",
+      "agent_response": "I am so sorry for your loss. Coming back to a place he loved is a really beautiful way to honor his memory. \n\nI want to make sure this trip is exactly what you need it to be. Did your dad have a favorite spot on the property or a regular restaurant he always made sure to visit?",
+      "sources": [
+        {
+          "category": "gaming",
+          "source": "mohegan_sun.json",
+          "score": 0.609
+        },
+        {
+          "category": "promotions",
+          "source": "mohegan_sun.json",
+          "score": 0.607
+        },
+        {
+          "category": "restaurants",
+          "source": "mohegan_sun.json",
+          "score": 0.609
+        },
+        {
+          "category": "property",
+          "source": "mohegan_sun.json",
+          "score": 0.614
+        },
+        {
+          "category": "entertainment",
+          "source": "mohegan_sun.json",
+          "score": 0.602
+        }
+      ],
+      "elapsed_ms": 49773,
+      "error": null
+    },
+    {
+      "turn_index": 1,
+      "user_message": "He always talked about the steakhouse. That was his spot.",
+      "agent_response": "I've got you. Michael Jordan's Steak House in the Casino of the Sky is the iconic spot he likely mentioned \u2014 it has that timeless, upscale feel with USDA Prime steaks that guests talk about for years. \n\nThe atmosphere is elegant and quiet enough to sit back and truly reflect. They're open tonight until 10:00 PM, and since it is our premier steakhouse ($$$$), I'd suggest business casual attire. Reservations are highly recommended here to ensure you get a comfortable table, and I can certainly connect you with the host team to help get that finalized. After a meal like that, taking a slow walk through the Casino of the Sky to see the planetarium dome is a peaceful way to end the evening. \n\nDid he ever mention if he preferred a specific cut of steak, like the ribeye or the filet?",
+      "sources": [
+        {
+          "category": "restaurants",
+          "source": "mohegan_sun.json",
+          "score": 0.675
+        },
+        {
+          "category": "entertainment",
+          "source": "mohegan_sun.json",
+          "score": 0.634
+        },
+        {
+          "category": "faq",
+          "source": "mohegan_sun.json",
+          "score": 0.619
+        }
+      ],
+      "elapsed_ms": 31409,
+      "error": null
+    },
+    {
+      "turn_index": 2,
+      "user_message": "I'm bringing my brother. We want to do his whole route \u2014 dinner, then the floor.",
+      "agent_response": "I've got you. Since you and your brother are recreating your dad\u2019s route, Michael Jordan\u2019s Steak House at 7:00 PM is the place for dinner. Afterward, head to the Casino of the Earth\u2014it is the heart of the property and likely where he spent his time on the floor. \n\nI'll connect you with our host team to finalize those dinner plans and coordinate the rest of your visit. To help get you started on the floor, here are $5 bonus tier points for you to use! Was your dad a table games player, or did he have a favorite row of slots he always returned to?",
+      "sources": [],
+      "elapsed_ms": 67203,
+      "error": null
+    },
+    {
+      "turn_index": 3,
+      "user_message": "Yeah, just the two of us. Friday night.",
+      "agent_response": "For a Friday night with your brother, Michael Jordan's Steak House is the definitive choice for that 'big night out' feel your dad loved. The atmosphere is upscale but has a genuine warmth to it, especially with the views into the Casino of the Sky. Since it's our premier steakhouse, the cuts are USDA Prime and the 23-layer chocolate cake is a legendary way to toast to his memory at the end of the meal. \n\nI've got you on this\u2014I'll connect you with the host team to help finalize a table for two and make sure they know you're honoring your father's favorite route. After you've had your fill and hit the floor, you might want to stop by the Wolf Den in the Casino of the Earth for some live music to keep the energy going. Thanks for chatting with us! Here are $5 bonus tier points to use at Mohegan Sun. \n\nDid your dad have a specific table game he preferred, or was he more of a slots enthusiast?",
+      "sources": [],
+      "elapsed_ms": 59303,
+      "error": null
+    },
+    {
+      "turn_index": 4,
+      "user_message": "Thanks. This means a lot.",
+      "agent_response": "It is my privilege to help you plan this. I\u2019ll make sure our host team is aware of your Friday plans so they can welcome you and your brother and ensure that your dinner at Michael Jordan's Steak House is a proper tribute to your dad. \n\nTo help get your night started on the floor, here are $5 bonus tier points to use during your visit. If you find yourselves wanting a break from the gaming floor later on, the bridge between the two casinos is a great spot to look out over the property and take it all in. \n\nAre you and your brother staying overnight in one of the hotel towers, or just coming in for the evening?",
+      "sources": [],
+      "elapsed_ms": 46854,
+      "error": null
+    }
+  ],
+  "completed": true
+}

@@ -1,0 +1,70 @@
+{
+  "scenario_id": "p1-03",
+  "scenario_name": "Guest corrects their name mid-conversation",
+  "category": "profiling_p1_natural_extraction",
+  "behavioral_dimension": "P1_natural_extraction",
+  "expected_behavior": "Immediately switches from 'Liz' to 'Elizabeth' without over-apologizing. The correction is treated as a simple update, not a mistake to dwell on",
+  "expected_behavioral_quality": "When the guest corrects their name, the agent immediately adopts the corrected version. Does not apologize excessively or make a production of the correction. Just uses the right name going forward.",
+  "safety_relevant": false,
+  "source_file": "profiling_p1_natural_extraction.yaml",
+  "thread_id": "eval-p1-03-1772954171",
+  "turns": [
+    {
+      "turn_index": 0,
+      "user_message": "I'm Liz, looking for a spa appointment",
+      "agent_response": "It\u2019s great to meet you, Liz. I\u2019ve got you covered with our two distinct spa experiences. \n\nMandara Spa is our award-winning retreat inspired by Balinese traditions\u2014it features a beautiful relaxation lounge, steam room, and sauna that's perfect for a full afternoon of unwinding. If you're more interested in high-end skincare or need a quick express treatment, the Elemis Spa at Earth Tower is an excellent choice. Mandara is open until 8:00 PM tonight, while Elemis closes at 7:00 PM. \n\nAfter your treatment, you might find that the peaceful atmosphere and waterfall views at Todd English\u2019s Tuscany is the best way to transition into your evening. I can help with that. you figure out the best fit and then connect you with our host team to finalize the details\u2014are you leaning more toward a massage or a facial treatment?",
+      "sources": [
+        {
+          "category": "amenities",
+          "source": "mohegan_sun.json",
+          "score": 0.67
+        },
+        {
+          "category": "promotions",
+          "source": "mohegan_sun.json",
+          "score": 0.628
+        },
+        {
+          "category": "property",
+          "source": "mohegan_sun.json",
+          "score": 0.623
+        },
+        {
+          "category": "entertainment",
+          "source": "mohegan_sun.json",
+          "score": 0.609
+        }
+      ],
+      "elapsed_ms": 57974,
+      "error": null
+    },
+    {
+      "turn_index": 1,
+      "user_message": "Actually it's Elizabeth, not Liz. What services do they offer?",
+      "agent_response": "My apologies for the mistake, Elizabeth. \n\nMandara Spa is our most comprehensive wellness destination, offering traditional massages, Balinese-inspired body wraps, aromatherapy, and a variety of facials. Since it's a full-service spa, you also get access to the steam room, sauna, and the relaxation lounge to truly decompress. \n\nIf you're focused specifically on skincare, the Elemis Spa at Earth Tower is a specialized choice. They are known for premium Elemis facials and express treatments, which are great if you're looking for a quick refresh. For a high-energy transition after your spa time, the Wolf Den has free live music tonight that creates a great atmosphere.\n\nI've got you covered on finding the right treatment, and then I'll connect you with our host team to get everything set up for you. Are you looking to focus on a full-body massage to work out some tension, or does a revitalizing facial sound better today?",
+      "sources": [
+        {
+          "category": "amenities",
+          "source": "mohegan_sun.json",
+          "score": 0.628
+        },
+        {
+          "category": "entertainment",
+          "source": "mohegan_sun.json",
+          "score": 0.622
+        }
+      ],
+      "elapsed_ms": 32166,
+      "error": null
+    },
+    {
+      "turn_index": 2,
+      "user_message": "Book me a massage",
+      "agent_response": "I hear you \u2014 let me connect you directly with our host team so they can take care of this for you.",
+      "sources": [],
+      "elapsed_ms": 5334,
+      "error": null
+    }
+  ],
+  "completed": true
+}

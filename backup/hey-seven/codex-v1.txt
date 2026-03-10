@@ -1,0 +1,437 @@
+output1_architecture_code_quality_audit.md
+Prioritized findings (static inspection only)
+CRITICAL
+Multilingual behavioral requirements conflict with implementation baseline
+
+Evidence: src/agent/nodes.py:61-76 explicitly states “Response language is English-only for MVP,” while multilingual scenarios require full Spanish handling (e.g., tests/scenarios/behavioral_multilingual.yaml entries with Spanish-only expectations and crisis resources).
+
+Risk: Systematically underperforms B4/B9/B10 in multilingual scenarios; not just edge behavior.
+
+SRP note: language strategy lives in node logic and not centralized policy/config.
+
+Suggested task
+Replace English-only response policy with language-aware response pipeline
+
+Start task
+MAJOR
+Profiling node fails silently on all exceptions, masking extraction regressions
+
+Evidence: src/agent/profiling.py:567-580 catches broad except Exception and returns degraded defaults.
+
+Risk: Hidden failures depress P1/P8/P9 while appearing “healthy”; hard to detect in production.
+
+Suggested task
+Replace fail-silent profiling catch-all with typed error handling and telemetry
+
+Start task
+Dead code candidate: model-routing helper appears unreferenced
+
+Evidence: src/agent/nodes.py:274 defines _get_routed_llm; repository search found no callers.
+
+Risk: Drift and confusion in model routing logic; potential stale path.
+
+Suggested task
+Remove or wire `_get_routed_llm` to eliminate dead model-routing path
+
+Start task
+SRP violations from very large orchestration functions
+
+Evidence:
+
+src/agent/agents/_base.py:741-1422 (execute_specialist, 682 LOC)
+
+src/agent/compliance_gate.py:52-652 (compliance_gate_node, 601 LOC)
+
+src/api/app.py:223-923 (create_app, 701 LOC)
+
+Risk: High regression probability, difficult reasoning/testing, high change-coupling.
+
+Suggested task
+Decompose large orchestration functions into focused units with stable contracts
+
+Start task
+Broad exception catches in critical paths degrade diagnosability
+
+Evidence:
+
+src/agent/dispatch.py:331-339, 474-492
+
+src/agent/nodes.py:414-427, 630-632
+
+src/api/app.py:485-493, 848-856, 883-891
+
+Risk: Too many unrelated failures collapse into generic fallbacks; root cause obscured.
+
+Suggested task
+Narrow broad exception blocks and standardize error taxonomy in runtime paths
+
+Start task
+MINOR
+Graph build log message is inconsistent with current topology
+
+Evidence: src/agent/graph.py:321 logs “Custom 12-node StateGraph compiled successfully.” while module docs and graph assembly indicate 13 nodes.
+
+Risk: Operator confusion in observability/debugging.
+
+Suggested task
+Fix graph topology log string to match actual node count
+
+Start task
+output2_behavioral_quality_gap_analysis.md
+Basis: all scenario YAML files were inspected by filename and behavioral_dimension / expected_behavioral_quality fields; code path traced through compliance_gate -> router/retrieve -> dispatch -> specialist -> profiling -> validate -> persona/respond.
+
+B1 Knowledge Accuracy
+Scenario intent: factual, grounded answers tied to property context.
+
+Code today: retrieval + validation path is strong (retrieve_node, validate_node), but degraded-pass logic can allow unvalidated outputs (src/agent/nodes.py:496-525, 573-632).
+
+Gap: under provider failure, B1 can slip due intentional degraded PASS.
+
+Change: tighten degraded-pass for low-context or low-confidence turns.
+
+Suggested task
+Gate degraded-pass behavior on stronger grounding/confidence criteria
+
+Start task
+B2 Contextual Understanding
+Scenario intent: infer implied needs, adapt to context.
+
+Code today: sentiment + whisper + extracted fields exist, but heavy reliance on prompt compliance (_base.py).
+
+Gap: contextual adaptation is mostly prompt-level, weak deterministic enforcement for certain implicit cues.
+
+Change: add deterministic cue extractors for high-value implicit signals (fatigue, urgency, accessibility).
+
+Suggested task
+Add deterministic implicit-cue extraction and pass structured cues to specialists
+
+Start task
+B3 Engagement Depth (priority)
+Scenario intent: avoid shallow one-shot answers; natural follow-up progression.
+
+Code today: profiling question injection is present (_base.py:1118-1144, profiling.py:507-544) but can be skipped or fail silently.
+
+Gap: engagement quality is fragile and LLM-compliance dependent.
+
+Change: deterministic fallback follow-up generator when profiling question is expected but absent.
+
+Suggested task
+Add deterministic engagement fallback when profiling question is not injected
+
+Start task
+B4 Cross-Domain Awareness (priority)
+Scenario intent: suggest relevant adjacent domains naturally.
+
+Code today: domain tracking exists (domains_discussed, _build_cross_domain_hint, greeting_node follow-ups).
+
+Gap: multilingual and some specialist flows may not consistently surface cross-domain hints.
+
+Change: unify cross-domain hint generation in one post-specialist step.
+
+Suggested task
+Centralize cross-domain suggestion generation in post-specialist response assembly
+
+Start task
+B5 Conversation Flow
+Scenario intent: smooth transitions, no robotic jumps.
+
+Code today: multiple override layers (crisis/frustration/profiling/proactive) in _base.py.
+
+Gap: competing prompt sections can create unnatural flow.
+
+Change: add deterministic precedence plan for prompt sections.
+
+Suggested task
+Implement explicit prompt-section precedence to reduce conversational conflicts
+
+Start task
+B6 Persona Consistency
+Scenario intent: stable tone/voice.
+
+Code today: persona envelope + tone cleanup, but many downstream overrides.
+
+Gap: late-stage overrides may conflict with persona consistency.
+
+Change: final unified response normalizer with persona guard.
+
+Suggested task
+Add final persona-consistency normalizer after all response augmentations
+
+Start task
+B7 Safety Compliance
+Scenario intent: robust safety behavior.
+
+Code today: strong deterministic guardrails + crisis paths.
+
+Gap: low; main risk is fallback/degraded paths under exceptions.
+
+Change: add safety assertion pass before final emit on degraded states.
+
+Suggested task
+Add final safety assertion pass for degraded/fallback outputs
+
+Start task
+B8 Multi-Turn Coherence
+Scenario intent: maintain state across turns and corrections.
+
+Code today: reducers are well-defined; correction handling exists via merge semantics.
+
+Gap: coherence can degrade if profiling extraction fails silently.
+
+Change: expose extraction success/failure to downstream prompts.
+
+Suggested task
+Surface profiling extraction health to downstream nodes for coherence safeguards
+
+Start task
+B9 Emotional Intelligence (priority)
+Scenario intent: empathetic handling of distress and mood shifts.
+
+Code today: grief/celebration/frustration logic exists, crisis pathways are strong.
+
+Gap: non-crisis emotional nuance still mostly prompt-level; some multilingual emotional contexts remain weak.
+
+Change: deterministic emotion-response templates for top emotional states.
+
+Suggested task
+Add deterministic emotional response scaffolds for grief/frustration/celebration states
+
+Start task
+B10 Actionability
+Scenario intent: clear next steps and practical help.
+
+Code today: decent handoff and action prompts; fallback paths can be generic.
+
+Gap: generic fallback can reduce actionability.
+
+Change: route fallback through query-type-specific actionable templates.
+
+Suggested task
+Replace generic fallback text with query-type-specific actionable guidance
+
+Start task
+output3_profiling_host_triangle_fix_plan.md
+Priority order (impact / effort): P8 → P9 → H9 → P6 → H10 → H6 → P1
+1) P8 Profile Completeness (score 3.0)
+Root cause: missing schema coverage + fail-silent extraction path.
+
+Evidence: ProfileExtractionOutput in src/agent/profiling.py:72-117 lacks some foundational fields expected by scenarios (e.g., contact preference), and extraction failures are swallowed (567-580).
+
+Fix (before/after):
+
+Before
+
+class ProfileExtractionOutput(BaseModel):
+    guest_name: str | None = None
+    party_size: str | None = None
+    ...
+After
+
+class ProfileExtractionOutput(BaseModel):
+    guest_name: str | None = None
+    party_size: str | None = None
+    visit_type: str | None = None
+    contact_preference: str | None = None
+    communication_preference: str | None = None
+    ...
+Also extend _FIELD_NAME_MAP and _PROFILE_WEIGHTS accordingly.
+
+Expected impact: +0.8 to +1.2
+
+Flash→Pro dependency: No (schema extension + logic).
+
+Suggested task
+Expand profiling schema to include missing foundation fields and weighted completeness mapping
+
+Start task
+2) P9 Host Handoff (score 2.7)
+Root cause: handoff summary lacks confidence/source provenance.
+
+Evidence: HandoffSummary fields (src/agent/behavior_tools/handoff.py:38-50) contain no explicit confidence/source per item; scenarios expect “stated vs inferred”.
+
+Fix (before/after):
+
+Before
+
+key_preferences: list[str]
+After
+
+class HandoffFact(BaseModel):
+    field: str
+    value: str
+    source: Literal["stated","inferred"]
+    confidence: float
+
+key_facts: list[HandoffFact]
+Expected impact: +1.0 to +1.5
+
+Flash→Pro dependency: No
+
+Suggested task
+Add confidence/source-qualified handoff facts for human host transfer
+
+Start task
+3) H9 Comp Strategy (score 2.0)
+Root cause: routing improved, but comp strategy remains prompt-only and tier inference is coarse.
+
+Evidence: dispatch comp-intent override exists (src/agent/dispatch.py:238-267), but comp strategy inference in comp_strategy.py:423-454 uses sparse heuristics.
+
+Fix: add deterministic comp-intent slots (budget sensitivity, explicit comp ask strength) and use them in offer selection.
+
+Expected impact: +0.6 to +1.0
+
+Flash→Pro dependency: No
+
+Suggested task
+Strengthen comp eligibility inference with deterministic intent signals
+
+Start task
+4) P6 Incentive Framing (score 3.1)
+Root cause: “reason-before-ask” not deterministically enforced for all profiling questions.
+
+Evidence: profiling question technique guidance is prompt-only (_base.py:1118-1144), fallback injection appends raw question (profiling.py:529).
+
+Fix: prepend deterministic reason clause template when injecting sensitive asks.
+
+Expected impact: +0.5 to +0.8
+
+Flash→Pro dependency: No
+
+Suggested task
+Enforce reason-before-question framing in profiling question injection path
+
+Start task
+5) H10 Lifetime Value (score 4.5)
+Root cause: LTV nudges are optional prompt fragments; no deterministic insertion checkpoint.
+
+Evidence: get_ltv_prompt_section returns instructions only (ltv_nudge.py:299-350).
+
+Fix: add post-generation insertion fallback (single nudge, context-safe).
+
+Expected impact: +0.4 to +0.7
+
+Flash→Pro dependency: No
+
+Suggested task
+Add deterministic one-nudge fallback when LTV prompt instructions are ignored
+
+Start task
+6) H6 Rapport Depth (score 4.4)
+Root cause: rapport is pattern-instructional only; no memory of used techniques.
+
+Evidence: get_rapport_prompt_section selects patterns each turn (rapport_ladder.py:315-382) but doesn’t track technique reuse.
+
+Fix: store rapport_techniques_used in state and diversify.
+
+Expected impact: +0.4 to +0.7
+
+Flash→Pro dependency: No
+
+Suggested task
+Track and diversify rapport techniques across turns
+
+Start task
+7) P1 Natural Extraction (score 4.3)
+Root cause: extraction prompt is aggressively “extract everything” and may over-infer.
+
+Evidence: _EXTRACTION_PROMPT includes “When in doubt, EXTRACT IT” (profiling.py:284-321).
+
+Fix: calibrate extraction policy with explicit-confidence thresholds and conservative defaults.
+
+Expected impact: +0.3 to +0.6
+
+Flash→Pro dependency: Maybe (if tighter extraction reduces recall on Flash, Pro can offset).
+
+Suggested task
+Recalibrate profiling extraction prompt to reduce over-inference while preserving recall
+
+Start task
+output4_test_coverage_and_scenario_gaps.md
+1) Test style audit (conftest + representative files)
+Mostly mocked behavior tests:
+
+tests/test_full_graph_e2e.py mocks _get_llm, _get_validator_llm, retrieval, CB.
+
+tests/test_conversation_scenarios.py builds synthetic responses from expected keywords.
+
+tests/test_api.py patches chat_stream for SSE contract behavior.
+
+Real behavior tests:
+
+tests/test_live_llm.py is real LLM but skip-gated by GOOGLE_API_KEY.
+
+Infrastructure fixture behavior:
+
+tests/conftest.py aggressively resets caches and disables semantic injection/API key by default.
+
+Coverage gaps (<80%)
+NOT FOUND in repository artifacts (no coverage report file present for static confirmation).
+
+Suggested task
+Publish and enforce module-level coverage report in CI artifacts
+
+Start task
+2) Scenario coverage gaps from 34 YAML files
+Using behavioral_dimension tags:
+
+Under-covered (<5 scenarios):
+
+P8 (2), H9 (2), H10 (2), H2 (3), H3 (3), H5 (3), H6 (3), H7 (3), H8 (3), P6 (4), P7 (4), H1 (4), H4 (4), P9 (3)
+
+Better covered: B2/B3/B4/B5/B8 and P1/P2.
+
+Edge-case misses still notable:
+
+Limited explicit accessibility depth (mobility appears, but less hearing/vision/neurodiversity-specific flows).
+
+Limited code-switching beyond ES↔EN.
+
+Limited host handoff confidence/provenance validation despite scenario intent.
+
+Potential scenario-assertion mismatch class:
+
+In tests/test_conversation_scenarios.py, generated mock responses can satisfy keyword checks without exercising true graph behavior deeply.
+
+Suggested task
+Rework scenario harness so YAML scenarios validate actual graph behavior, not keyword-template mocks
+
+Start task
+3) 10 high-impact new scenarios (focus P8/P9/H9/H6)
+P8: “Guest gives contact preference implicitly (‘text me details’) mid-conversation.”
+
+P8: “Guest corrects party size + date + dietary in one turn; profile updates all three.”
+
+P9: “Handoff requires explicit stated vs inferred separation with confidence values.”
+
+P9: “Frustration-trigger handoff includes concrete host next-actions and urgency rationale.”
+
+H9: “Comp-intent mixed with dining ask (‘best dinner I can comp tonight?’) routes to comp logic first.”
+
+H9: “Budget-sensitive comp request avoids over-promising and offers host escalation path.”
+
+H6: “Long 6-turn rapport progression avoids repeating same rapport technique.”
+
+H6: “Name callback used naturally once, not forced repeatedly.”
+
+P8/H6 cross: “Personalization deepens each turn without contradicting earlier constraints.”
+
+P9/H9 cross: “High-value comp discussion creates structured handoff with comp-specific follow-up actions.”
+
+Suggested task
+Add 10 targeted scenarios for P8/P9/H9/H6 and wire them into scenario test runner
+
+Start task
+Checks executed
+✅ rg --files src/agent src/api tests/scenarios tests | sed -n '1,260p'
+
+✅ python - <<'PY' ... AST scan for long functions / broad exceptions / potential unused defs ... PY
+
+⚠️ python - <<'PY' ... import yaml ... PY (failed: ModuleNotFoundError: No module named 'yaml'; proceeded via regex/static text inspection)
+
+✅ rg -n "expected_behavioral_quality|\\b(B10|B[1-9]|P10|P[1-9]|H10|H[1-9]|D10|D[1-9])\\b" tests/scenarios/*.yaml
+
+✅ for f in tests/scenarios/*.yaml; do rg -n "^-\\s*id:|^\\s*name:|expected_behavioral_quality:" "$f"; done
+
+✅ python - <<'PY' ... count behavioral_dimension tags across 34 YAML files ... PY
+
+✅ nl -ba inspections across key modules (graph.py, nodes.py, dispatch.py, _base.py, profiling.py, guardrails.py, compliance_gate.py, api/app.py, tests/conftest.py, representative tests)

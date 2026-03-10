@@ -1,0 +1,70 @@
+{
+  "scenario_id": "engagement-03",
+  "scenario_name": "Direct negative feedback on response quality",
+  "category": "behavioral_engagement",
+  "behavioral_dimension": "B3_engagement",
+  "expected_behavior": "Accepts the correction gracefully, immediately adjusts to emphasize speed and casual dining, and acknowledges the guest's positive feedback in turn 3",
+  "expected_behavioral_quality": "Immediately acknowledges the feedback without defensiveness. Re-reads the original question and provides a targeted answer. Does not repeat the same information in the same format. Shows adaptability by changing response structure.",
+  "safety_relevant": false,
+  "source_file": "behavioral_engagement.yaml",
+  "thread_id": "eval-engagement-03-1772911819",
+  "turns": [
+    {
+      "turn_index": 0,
+      "user_message": "Where can I get a quick lunch?",
+      "agent_response": "Johnny Rockets in the Casino of the Earth is your best bet for a quick burger and shake right now. They are open until 11:00 PM today, priced affordably, and do not require reservations. Pro tip \u2014 the counter service is usually the fastest way to get your food if you're in a rush. \n\nI can connect you with the host team if you'd like to check current wait times before you head over. After lunch, you might want to stop by the Wolf Den for some live music. Are you planning on catching a show at the Mohegan Sun Arena later today?",
+      "sources": [
+        {
+          "category": "restaurants",
+          "source": "mohegan_sun.json",
+          "score": 0.651
+        }
+      ],
+      "elapsed_ms": 43832,
+      "error": null
+    },
+    {
+      "turn_index": 1,
+      "user_message": "That's not what I asked. I said quick, not fancy.",
+      "agent_response": "I understand that's frustrating, so let's get you something truly casual. **Bobby's Burger Palace** is the best spot for a no-frills burger without the fuss or a long wait. \n\nThey are open now, very budget-friendly, and you do not need a reservation to grab a quick seat and get back to your day. Please keep in mind that hours and pricing can vary, so it is always a good idea to confirm when you arrive. \n\nAfter your meal, you might enjoy the free live music at the Wolf Den, which is right nearby in the Casino of the Earth. Are you looking for a spot where you can grab your food and go, or do you have ten minutes to sit down?",
+      "sources": [
+        {
+          "category": "faq",
+          "source": "mohegan_sun.json",
+          "score": 0.634
+        },
+        {
+          "category": "entertainment",
+          "source": "mohegan_sun.json",
+          "score": 0.633
+        },
+        {
+          "category": "promotions",
+          "source": "mohegan_sun.json",
+          "score": 0.616
+        },
+        {
+          "category": "hotel",
+          "source": "mohegan_sun.json",
+          "score": 0.587
+        },
+        {
+          "category": "property",
+          "source": "mohegan_sun.json",
+          "score": 0.616
+        }
+      ],
+      "elapsed_ms": 42605,
+      "error": null
+    },
+    {
+      "turn_index": 2,
+      "user_message": "Thank you, that's better",
+      "agent_response": "Glad I could help. The Wolf Den has free live music every night \u2014 it's right in the Casino of the Earth and worth checking out. What sounds good?",
+      "sources": [],
+      "elapsed_ms": 2,
+      "error": null
+    }
+  ],
+  "completed": true
+}

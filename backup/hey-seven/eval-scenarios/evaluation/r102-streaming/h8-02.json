@@ -1,0 +1,91 @@
+{
+  "scenario_id": "h8-02",
+  "scenario_name": "Guest asking about loyalty rewards value",
+  "category": "host_triangle_h7_h10_revenue",
+  "behavioral_dimension": "H8_strategic_offer_framing",
+  "expected_behavior": "Explains point redemption options across property domains (dining, spa, hotel, entertainment, free play). When the guest chooses the steakhouse, frames it as 'a dinner you've earned.' The redemption feels like a reward, not a coupon",
+  "expected_behavioral_quality": "When a guest asks about rewards value, the agent frames Momentum Points as a recognition of their play rather than a transactional currency. Connects point redemption to experiences (dining, spa, shows) rather than just dollar equivalents.",
+  "safety_relevant": false,
+  "source_file": "host_triangle_h7_h10_revenue.yaml",
+  "thread_id": "eval-h8-02-1772913300",
+  "turns": [
+    {
+      "turn_index": 0,
+      "user_message": "I've got a bunch of Momentum Points saved up. What can I actually use them for?",
+      "agent_response": "Momentum Points are redeemable for free play, dining at participating restaurants, hotel stays, and retail purchases at shops throughout the property. You can also manage your balance and view specific point values through the Mohegan Sun mobile app or at any Momentum Desk.\n\nA useful tip: many guests don't realize that points can be used for name-brand retail items in the Shops at Mohegan Sun, not just for gaming. Are you looking to use them for a meal tonight, or were you thinking of booking a room?",
+      "sources": [
+        {
+          "category": "promotions",
+          "source": "mohegan_sun.json",
+          "score": 0.723
+        },
+        {
+          "category": "faq",
+          "source": "mohegan_sun.json",
+          "score": 0.707
+        }
+      ],
+      "elapsed_ms": 29925,
+      "error": null
+    },
+    {
+      "turn_index": 1,
+      "user_message": "Can I use them at the steakhouse?",
+      "agent_response": "I've got you \u2014 let me be more specific. Michael Jordan's Steak House in the Casino of the Sky accepts Momentum points and is open tonight until 10:00 PM. \n\nThe aroma of USDA Prime steaks on the grill is the first thing you'll notice when you arrive at this upscale venue. It is a business casual environment with a price range of $$$$ where reservations are highly recommended, especially on a Saturday. After dinner, you might want to head over to Comix Roadhouse for some live comedy. \n\nPlease keep in mind that hours and prices may vary, so it's always best to confirm with the property. Are you looking to celebrate a special occasion tonight, or is this just a well-deserved treat?",
+      "sources": [
+        {
+          "category": "faq",
+          "source": "mohegan_sun.json",
+          "score": 0.692
+        },
+        {
+          "category": "restaurants",
+          "source": "mohegan_sun.json",
+          "score": 0.703
+        },
+        {
+          "category": "promotions",
+          "source": "mohegan_sun.json",
+          "score": 0.654
+        },
+        {
+          "category": "entertainment",
+          "source": "mohegan_sun.json",
+          "score": 0.66
+        }
+      ],
+      "elapsed_ms": 55117,
+      "error": null
+    },
+    {
+      "turn_index": 2,
+      "user_message": "Awesome, free steak dinner it is",
+      "agent_response": "I've got you. Redeeming points for dinner is a common choice, and you can apply your Momentum Points directly to your bill at Michael Jordan's Steak House. \n\nSince it is an upscale venue, I'd suggest checking your exact balance at a Momentum Desk or on the app first to see if it covers the full meal. Keep in mind that point redemption is based on your available balance and is subject to current terms. After dinner, the Wolf Den in the Casino of the Earth offers free live music every night, which is a great way to keep the night going without an extra cost. \n\nAre you planning to dine alone, or will you have others joining you?",
+      "sources": [
+        {
+          "category": "promotions",
+          "source": "mohegan_sun.json",
+          "score": 0.649
+        },
+        {
+          "category": "restaurants",
+          "source": "mohegan_sun.json",
+          "score": 0.639
+        },
+        {
+          "category": "property",
+          "source": "mohegan_sun.json",
+          "score": 0.637
+        },
+        {
+          "category": "faq",
+          "source": "mohegan_sun.json",
+          "score": 0.621
+        }
+      ],
+      "elapsed_ms": 29717,
+      "error": null
+    }
+  ],
+  "completed": true
+}

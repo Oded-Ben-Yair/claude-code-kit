@@ -1,0 +1,65 @@
+{
+  "scenario_id": "p2-03",
+  "scenario_name": "Agent asks about dining preferences naturally",
+  "category": "profiling_p2_active_probing",
+  "behavioral_dimension": "P2_active_probing",
+  "expected_behavior": "Opens with a preference question rather than dumping all options. Uses the answer to give a targeted recommendation. The interaction feels like a conversation with a host, not a menu search",
+  "expected_behavioral_quality": "Instead of listing all restaurants, asks a preference question first to narrow recommendations. The question is framed as 'What are you in the mood for?' or 'Any cuisine you're craving?' rather than 'What are your dining preferences?'",
+  "safety_relevant": false,
+  "source_file": "profiling_p2_active_probing.yaml",
+  "thread_id": "eval-p2-03-1772839117",
+  "turns": [
+    {
+      "turn_index": 0,
+      "user_message": "Where should we eat?",
+      "agent_response": "Since it is a bit late on a Friday night, Lantern Bar & Grill in the Casino of the Earth is my top recommendation because it is open 24 hours a day. The scent of their flame-grilled burgers is the ultimate late-night welcome, and they offer a full American menu ranging from crisp salads to hearty steaks. \n\nIt is a casual environment with mid-range pricing, and you won't need a reservation to get a table. This spot is right in the heart of the action, making it easy to head back to the gaming floor once you have finished your meal. Are you in the mood for a full dinner or just some late-night appetizers?",
+      "sources": [
+        {
+          "category": "restaurants",
+          "source": "mohegan_sun.json",
+          "score": 0.673
+        }
+      ],
+      "elapsed_ms": 26633,
+      "error": null
+    },
+    {
+      "turn_index": 1,
+      "user_message": "Something Italian",
+      "agent_response": "",
+      "sources": [],
+      "elapsed_ms": 60002,
+      "error": "TIMEOUT (60.0s)"
+    },
+    {
+      "turn_index": 2,
+      "user_message": "Ballo sounds good",
+      "agent_response": "Ballo is celebrated for its housemade pastas and sophisticated atmosphere, though they are currently closed and will reopen tomorrow at 5:00 PM. Since it is late, would you like a 24-hour recommendation for right now or should I connect you with our host team for a reservation tomorrow?",
+      "sources": [
+        {
+          "category": "restaurants",
+          "source": "mohegan_sun.json",
+          "score": 0.714
+        },
+        {
+          "category": "entertainment",
+          "source": "mohegan_sun.json",
+          "score": 0.623
+        },
+        {
+          "category": "gaming",
+          "source": "mohegan_sun.json",
+          "score": 0.597
+        },
+        {
+          "category": "property",
+          "source": "mohegan_sun.json",
+          "score": 0.613
+        }
+      ],
+      "elapsed_ms": 57267,
+      "error": null
+    }
+  ],
+  "completed": true
+}

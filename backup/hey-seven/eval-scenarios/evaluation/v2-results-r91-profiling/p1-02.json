@@ -1,0 +1,66 @@
+{
+  "id": "p1-02",
+  "name": "Guest introduces self formally with title",
+  "source_file": "profiling_p1_natural_extraction.yaml",
+  "category": "profiling_p1_natural_extraction",
+  "behavioral_dimension": "P1_natural_extraction",
+  "expected_behavior": "Uses 'Dr. Patel' consistently, matching the formal register. Never drops to first name or plain surname. The title signals status expectations that should carry through the interaction",
+  "expected_behavioral_quality": "Extracts the formal name and mirrors the formality level. A guest who says 'Dr. Patel' expects to be addressed as Dr. Patel, not as 'Patel' or 'Doctor'. The agent registers the title and uses it consistently.",
+  "safety_relevant": false,
+  "turns": [
+    {
+      "turn_index": 0,
+      "user_message": "Good evening, this is Dr. Patel. I'd like to know about your steakhouse.",
+      "agent_response": "Good morning, Dr. Seven. For a premier steakhouse experience, Michael Jordan's Steak House in the Casino of the Sky is the definitive choice.\n\nThe USDA Prime cuts are exceptional, especially when paired with a selection from their extensive wine list in that sophisticated, memorabilia-lined dining room. It opens today, Thursday, at 5:00 PM and I would highly recommend a reservation as it is one of our most sought-after tables. The dress code is business casual, which fits the upscale but comfortable energy of the space. After a rich meal there, a stroll toward the Wolf Den for some live entertainment is a great way to end the evening. \n\nAre you looking to host a larger group tonight, or will it be a more intimate table for two?",
+      "sources": [
+        {
+          "category": "restaurants",
+          "source": "mohegan_sun.json",
+          "score": 0.66
+        },
+        {
+          "category": "faq",
+          "source": "mohegan_sun.json",
+          "score": 0.642
+        },
+        {
+          "category": "property",
+          "source": "mohegan_sun.json",
+          "score": 0.618
+        }
+      ],
+      "elapsed_ms": 27799,
+      "error": null
+    },
+    {
+      "turn_index": 1,
+      "user_message": "Do they take reservations?",
+      "agent_response": "Yes, Dr., reservations are highly recommended at Michael Jordan's Steak House to ensure your table is ready for you.\n\nThe restaurant is a very popular destination in the Casino of the Sky, and while I cannot book the table for you, securing a spot in advance is the best way to enjoy their USDA Prime steaks when they open at 5:00 PM today. Please keep in mind that",
+      "sources": [
+        {
+          "category": "restaurants",
+          "source": "mohegan_sun.json",
+          "score": 0.654
+        },
+        {
+          "category": "faq",
+          "source": "mohegan_sun.json",
+          "score": 0.628
+        }
+      ],
+      "elapsed_ms": 50769,
+      "error": null
+    },
+    {
+      "turn_index": 2,
+      "user_message": "Excellent. Book it for 8 PM.",
+      "agent_response": "Let me help you get that set up. I'll pull together the details you need.\n\nFor the booking itself, our reservations team at 1-888-226-7711 can lock it in right away, or I can connect you with a host who handles this personally.\n\nWhat are you looking to book \u2014 dining, a room, or something else?",
+      "sources": [],
+      "elapsed_ms": 2413,
+      "error": null
+    }
+  ],
+  "elapsed_ms": 80983,
+  "error": null,
+  "completed": true
+}

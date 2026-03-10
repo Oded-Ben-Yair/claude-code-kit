@@ -1,0 +1,70 @@
+{
+  "scenario_id": "h7-02",
+  "scenario_name": "Hotel guest looking for daytime activities",
+  "category": "host_triangle_h7_h10_revenue",
+  "behavioral_dimension": "H7_cross_selling_wallet_share",
+  "expected_behavior": "Builds a full day arc: morning at the pool, afternoon spa, shopping at The Shops, then dinner and evening entertainment. Each suggestion flows naturally from the previous one. The guest feels like the property has a full day's worth of experiences, not just a casino with a hotel attached",
+  "expected_behavioral_quality": "When a hotel guest asks about daytime activities, the agent introduces spa, dining, and entertainment as a full-day experience. The cross-sell creates a vision of a resort day, not just a list of things to do.",
+  "safety_relevant": false,
+  "source_file": "host_triangle_h7_h10_revenue.yaml",
+  "thread_id": "eval-h7-02-1772992368",
+  "turns": [
+    {
+      "turn_index": 0,
+      "user_message": "We're staying at the Sky Tower tonight. What should we do during the day?",
+      "agent_response": "Sky Tower is a great place to anchor your first trip with us. Since you have the afternoon open, I'd suggest heading over to the Elemis Spa at the Earth Tower. \n\nIt is open until 7 PM today, and slipping in for a mid-afternoon treatment is the best way to escape the crowds and recharge before the evening ramps up. \n\nAre you looking to keep things completely relaxed today, or are you hoping to find some action on the casino floor?",
+      "sources": [
+        {
+          "category": "hotel",
+          "source": "mohegan_sun.json",
+          "score": 0.692
+        },
+        {
+          "category": "amenities",
+          "source": "mohegan_sun.json",
+          "score": 0.675
+        },
+        {
+          "category": "restaurants",
+          "source": "mohegan_sun.json",
+          "score": 0.673
+        }
+      ],
+      "elapsed_ms": 63329,
+      "error": null
+    },
+    {
+      "turn_index": 1,
+      "user_message": "The spa sounds nice. Anything else before dinner?",
+      "agent_response": "The spa is definitely a great choice. After you unwind, taking a stroll through The Shops at Mohegan Sun is the perfect way to spend the rest of the afternoon. We have over 40 boutiques to explore, and the resort architecture along the way is beautiful. Pro tip \u2014 as you walk the concourse, be sure to check out the indoor waterfall, it is an amazing backdrop for a photo before your evening starts.\n\nI've got you covered for the transition to the night, and I can easily connect you with the host team to finalize a table once you decide where you want to eat. \n\nWhat kind of cuisine are you in the mood for tonight?",
+      "sources": [
+        {
+          "category": "amenities",
+          "source": "mohegan_sun.json",
+          "score": 0.689
+        },
+        {
+          "category": "entertainment",
+          "source": "mohegan_sun.json",
+          "score": 0.671
+        },
+        {
+          "category": "faq",
+          "source": "mohegan_sun.json",
+          "score": 0.65
+        }
+      ],
+      "elapsed_ms": 63430,
+      "error": null
+    },
+    {
+      "turn_index": 2,
+      "user_message": "Great, and where should we eat for dinner?",
+      "agent_response": "Since you are staying right there in the Sky Tower, Ballo Italian Restaurant is my absolute top pick for tonight. It is located right in the Casino of the Sky, and their housemade pastas and risottos have this incredibly rich, authentic depth that perfectly caps off a relaxing spa day. They open at 5:00 PM and have a smart casual vibe, so it feels elevated but still approachable. \n\nI've got you on all the details, and I can easily connect you with the host team to finalize a table. \n\nJust to make sure they prep the right spot for you, how many people are in your party tonight?",
+      "sources": [],
+      "elapsed_ms": 52383,
+      "error": null
+    }
+  ],
+  "completed": true
+}

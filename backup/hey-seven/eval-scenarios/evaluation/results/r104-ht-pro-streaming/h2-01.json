@@ -1,0 +1,96 @@
+{
+  "scenario_id": "h2-01",
+  "scenario_name": "Lapsed guest signals they stopped coming",
+  "category": "host_triangle_h1_h3_development",
+  "behavioral_dimension": "H2_reactivation_win_back",
+  "expected_behavior": "Welcomes the guest back without making the absence feel awkward. Asks what brought them back (not why they left). Highlights what has changed or is new since their last visit \u2014 new restaurants, new entertainment, new loyalty perks. Creates urgency around what they have been missing",
+  "expected_behavioral_quality": "When a guest says they stopped visiting, the agent investigates the reason without being pushy. Acknowledges the gap, discovers what changed, and creates a specific reason to return based on what has changed at the property or what the guest now values.",
+  "safety_relevant": false,
+  "source_file": "host_triangle_h1_h3_development.yaml",
+  "thread_id": "eval-h2-01-1772970900",
+  "turns": [
+    {
+      "turn_index": 0,
+      "user_message": "I used to come here all the time but haven't been in like two years",
+      "agent_response": "Welcome back. Two years is a long time to be away, but I'll make sure you feel right at home again. \n\nI'd suggest heading straight to Casino of the Earth to get your bearings, as it still has that classic atmosphere you likely remember. Stop by the Bow & Arrow sports bar for a drink while you take everything in. What was your favorite game to play when you were a regular here?",
+      "sources": [
+        {
+          "category": "entertainment",
+          "source": "mohegan_sun.json",
+          "score": 0.641
+        },
+        {
+          "category": "gaming",
+          "source": "mohegan_sun.json",
+          "score": 0.63
+        },
+        {
+          "category": "faq",
+          "source": "mohegan_sun.json",
+          "score": 0.652
+        },
+        {
+          "category": "amenities",
+          "source": "mohegan_sun.json",
+          "score": 0.62
+        }
+      ],
+      "elapsed_ms": 49208,
+      "error": null
+    },
+    {
+      "turn_index": 1,
+      "user_message": "Just got busy with work, lost the habit I guess",
+      "agent_response": "I hear you. Work can definitely take over. Since you're finally getting a break, I'd suggest starting at Mandara Spa to leave the office behind before you head to the floor. \n\nThey're open until 8:00 PM and the relaxation lounge is the perfect place to reset and get back into the swing of things. What's the one thing you missed most about Mohegan Sun while you were away?",
+      "sources": [
+        {
+          "category": "amenities",
+          "source": "mohegan_sun.json",
+          "score": 0.619
+        },
+        {
+          "category": "entertainment",
+          "source": "mohegan_sun.json",
+          "score": 0.621
+        },
+        {
+          "category": "hotel",
+          "source": "mohegan_sun.json",
+          "score": 0.567
+        }
+      ],
+      "elapsed_ms": 30384,
+      "error": null
+    },
+    {
+      "turn_index": 2,
+      "user_message": "What's actually new since I was last here?",
+      "agent_response": "If it's been a couple of years, you definitely need to see the Earth Tower. It's our newest addition and brings a completely fresh, contemporary feel to the property, including a brand new Elemis Spa right inside. \n\nPro tip \u2014 if you are looking for a great drink later, novelle is an upscale ultra-lounge we added that completely changes the nightlife and cocktail game here. Are you staying overnight with us this trip, or just visiting for the day?",
+      "sources": [
+        {
+          "category": "hotel",
+          "source": "mohegan_sun.json",
+          "score": 0.658
+        },
+        {
+          "category": "entertainment",
+          "source": "mohegan_sun.json",
+          "score": 0.66
+        },
+        {
+          "category": "amenities",
+          "source": "mohegan_sun.json",
+          "score": 0.644
+        },
+        {
+          "category": "gaming",
+          "source": "mohegan_sun.json",
+          "score": 0.631
+        }
+      ],
+      "elapsed_ms": 55435,
+      "error": null
+    }
+  ],
+  "completed": true
+}

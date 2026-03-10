@@ -1,0 +1,66 @@
+{
+  "id": "p4-08",
+  "name": "Group of friends \u2014 assumption about nightlife correct",
+  "source_file": "profiling_p4_assumptive_bridge.yaml",
+  "category": "profiling_p4_assumptive_bridge",
+  "behavioral_dimension": "P4_assumptive_bridging",
+  "expected_behavior": "Correctly bridges from 'group of friends + weekend' to nightlife and party-oriented options. When confirmed, builds a full evening progression: dinner to drinks to entertainment. The assumption felt natural and was validated",
+  "expected_behavioral_quality": "When a group of friends mentions a weekend trip, assumes nightlife and entertainment are priorities. Leads with bars, shows, and high-energy dining options. The assumption is tested softly ('I imagine you're looking for some nightlife?') and confirmed.",
+  "safety_relevant": false,
+  "turns": [
+    {
+      "turn_index": 0,
+      "user_message": "Group of 6 friends here for the weekend",
+      "agent_response": "Welcome to Mohegan Sun. Having a group of six is a great way to experience the property, as many of our venues are designed for social dining and entertainment.\n\nFor a memorable group dinner, Tao Asian Bistro in the Casino of the Sky is an excellent pick because of its atmosphere and shareable Pan-Asian plates. If you need a solid start to your morning tomorrow, Hash House A Go Go in the Casino of the Earth serves massive portions of comfort food that are always a hit with larger parties.\n\nBoth spots can get quite busy on the weekends, so I'd suggest checking for a table or joining a waitlist early. Are you planning to catch a show at the Arena or the Wolf Den while you're here!",
+      "sources": [
+        {
+          "category": "entertainment",
+          "source": "mohegan_sun.json",
+          "score": 0.669
+        },
+        {
+          "category": "restaurants",
+          "source": "mohegan_sun.json",
+          "score": 0.641
+        }
+      ],
+      "elapsed_ms": 28445,
+      "error": null
+    },
+    {
+      "turn_index": 1,
+      "user_message": "Absolutely, we want the full party experience",
+      "agent_response": "You're going to love the nightlife here \u2014 Avalon Nightclub is our premier high-energy spot on Friday and Saturday nights. It features a state-of-the-art sound system and a 1,500-person capacity that creates an incredible atmosphere for a group of six. For tonight, novelle is an excellent ultra-lounge choice that offers a sophisticated vibe with DJ entertainment and craft cocktails.\n\nWhen you're ready for a break from the dance floor, the Elemis Spa is the perfect reset for your group to recharge with a legendary hot stone massage. Are you interested in the high-energy club scene at Avalon or a more lounge-style evening at novelle?",
+      "sources": [],
+      "elapsed_ms": 52632,
+      "error": null
+    },
+    {
+      "turn_index": 2,
+      "user_message": "Start with dinner then go from there",
+      "agent_response": "Ballo Italian Restaurant in the Casino of the Sky is the ideal choice for a group of six looking for a vibrant start to the night. The atmosphere is electric, featuring massive stone arches and a social layout that perfectly complements their housemade pastas and extensive Italian wine list. It opens at 5:00 PM today and follows a smart casual dress code, making it a great spot to kick off the weekend in style. \n\nI'd suggest making a reservation for a party of your size to ensure you are seated together during the prime dinner hours. After your meal, you could head over to Comix Roadhouse for a comedy show to keep the momentum going \u2014 would you prefer a high-energy performance or a more relaxed lounge setting for the rest of your night?",
+      "sources": [
+        {
+          "category": "restaurants",
+          "source": "mohegan_sun.json",
+          "score": 0.656
+        },
+        {
+          "category": "entertainment",
+          "source": "mohegan_sun.json",
+          "score": 0.653
+        },
+        {
+          "category": "promotions",
+          "source": "mohegan_sun.json",
+          "score": 0.61
+        }
+      ],
+      "elapsed_ms": 37084,
+      "error": null
+    }
+  ],
+  "elapsed_ms": 118162,
+  "error": null,
+  "completed": true
+}

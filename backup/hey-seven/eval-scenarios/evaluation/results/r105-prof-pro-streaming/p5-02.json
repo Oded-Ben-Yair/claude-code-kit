@@ -1,0 +1,86 @@
+{
+  "scenario_id": "p5-02",
+  "scenario_name": "Agent avoids Phase 3 questions in first interaction",
+  "category": "profiling_p5_progressive_sequence",
+  "behavioral_dimension": "P5_progressive_sequencing",
+  "expected_behavior": "Agent asks about party size, occasion, preferences \u2014 all Phase 1 and 2 topics. Does NOT ask about gaming budget, comp expectations, loyalty status, or how much they typically spend. Those questions are too early for a first-time guest",
+  "expected_behavioral_quality": "In a first interaction, the agent NEVER asks Phase 3 questions (relationship-level: gaming budget, comp history, host relationship, personal financial signals). These feel invasive before trust is established. The agent stays in Phase 1 (foundation) and Phase 2 (preferences) only.",
+  "safety_relevant": false,
+  "source_file": "profiling_p5_progressive_sequence.yaml",
+  "thread_id": "eval-p5-02-1772994452",
+  "turns": [
+    {
+      "turn_index": 0,
+      "user_message": "First time here, what do you recommend?",
+      "agent_response": "Welcome to Mohegan Sun. You're in great hands, so take your time getting acclimated. I'd suggest starting at the Wolf Den in the center of Casino of the Earth\u2014it\u2019s an intimate spot for free live music, and there's a show tonight at 8:00 PM. It\u2019s the best way to soak in the atmosphere without any pressure. \n\nDid you have a long drive to get here, or are you visiting from nearby?",
+      "sources": [
+        {
+          "category": "restaurants",
+          "source": "mohegan_sun.json",
+          "score": 0.675
+        },
+        {
+          "category": "entertainment",
+          "source": "mohegan_sun.json",
+          "score": 0.67
+        },
+        {
+          "category": "faq",
+          "source": "mohegan_sun.json",
+          "score": 0.685
+        }
+      ],
+      "elapsed_ms": 30506,
+      "error": null
+    },
+    {
+      "turn_index": 1,
+      "user_message": "What's fun to do?",
+      "agent_response": "The Wolf Den is the heart of the property tonight, offering free live music right in the center of the action. If you want a break from the floor, the Elemis Spa is the perfect reset\u2014their hot stone massage is legendary. For something completely different, we have an indoor climbing wall called Wombi Rock that\u2019s a fun way to see the resort from a new perspective. \n\nAre you looking for a high-energy night out or more of a relaxing getaway?",
+      "sources": [
+        {
+          "category": "entertainment",
+          "source": "mohegan_sun.json",
+          "score": 0.671
+        },
+        {
+          "category": "faq",
+          "source": "mohegan_sun.json",
+          "score": 0.661
+        },
+        {
+          "category": "amenities",
+          "source": "mohegan_sun.json",
+          "score": 0.65
+        }
+      ],
+      "elapsed_ms": 26475,
+      "error": null
+    },
+    {
+      "turn_index": 2,
+      "user_message": "We like trying new restaurants",
+      "agent_response": "For a standout dinner, Ballo Italian Restaurant over in Casino of the Sky is my top pick. The aroma of their housemade pasta and risotto hits you right when you walk in, and it is a fantastic modern take on traditional Italian. \n\nThey open at 5:00 PM, which gives you plenty of time to explore a bit before grabbing a table. How many people are in your group tonight?",
+      "sources": [
+        {
+          "category": "entertainment",
+          "source": "mohegan_sun.json",
+          "score": 0.648
+        },
+        {
+          "category": "restaurants",
+          "source": "mohegan_sun.json",
+          "score": 0.643
+        },
+        {
+          "category": "promotions",
+          "source": "mohegan_sun.json",
+          "score": 0.634
+        }
+      ],
+      "elapsed_ms": 52987,
+      "error": null
+    }
+  ],
+  "completed": true
+}

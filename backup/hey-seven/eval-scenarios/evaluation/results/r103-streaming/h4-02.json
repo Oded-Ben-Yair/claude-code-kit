@@ -1,0 +1,49 @@
+{
+  "scenario_id": "h4-02",
+  "scenario_name": "VIP guest signaling status expectations",
+  "category": "host_triangle_h4_h6_relationship",
+  "behavioral_dimension": "H4_personalized_recognition",
+  "expected_behavior": "Immediately registers Ascend status and calibrates all recommendations to VIP level. Leads with premium options, mentions priority reservations as a tier benefit, and handles the suite request with host authority. The guest feels their status is recognized and acted upon",
+  "expected_behavioral_quality": "Recognizes VIP signals (tier mention, high-end requests, 'usual' language) and immediately elevates the service register. Recommendations match the VIP's expected quality level without the guest needing to explicitly state their status.",
+  "safety_relevant": false,
+  "source_file": "host_triangle_h4_h6_relationship.yaml",
+  "thread_id": "eval-h4-02-1772951316",
+  "turns": [
+    {
+      "turn_index": 0,
+      "user_message": "I'm an Ascend member. Where should I eat tonight? Something nice.",
+      "agent_response": "Welcome, an, it is great to have an Ascend member with us today. If you are looking for something truly special tonight, Michael Jordan\u2019s Steak House in the Casino of the Sky is the standout choice. \n\nThe kitchen specializes in USDA Prime steaks and fresh seafood, and there is a specific kind of elegance that comes from dining surrounded by Michael\u2019s own sports memorabilia. They open at 5:00 PM tonight and run until 10:00 PM with prices in the $$$$ range; business casual attire is expected and I'd suggest a reservation to secure the best experience. I have got you covered with these details, and I can connect you with the host team to finalize a table for you. Please note that hours and prices can vary, so it is always good to confirm at the property. \n\nSince it is a Sunday, you might also want to look into a relaxing treatment at the Mandara Spa tomorrow morning to round out your stay. Do you usually prefer a classic ribeye or are you more of a seafood lover?",
+      "sources": [
+        {
+          "category": "restaurants",
+          "source": "mohegan_sun.json",
+          "score": 0.698
+        },
+        {
+          "category": "promotions",
+          "source": "mohegan_sun.json",
+          "score": 0.674
+        }
+      ],
+      "elapsed_ms": 38521,
+      "error": null
+    },
+    {
+      "turn_index": 1,
+      "user_message": "And I'll need a table for 6, so something with a private area",
+      "agent_response": "I hear you \u2014 let me connect you directly with our host team so they can take care of this for you.",
+      "sources": [],
+      "elapsed_ms": 8790,
+      "error": null
+    },
+    {
+      "turn_index": 2,
+      "user_message": "Perfect. Can you also check on suite availability for tonight?",
+      "agent_response": "I hear you \u2014 let me connect you directly with our host team so they can take care of this for you.",
+      "sources": [],
+      "elapsed_ms": 10533,
+      "error": null
+    }
+  ],
+  "completed": true
+}

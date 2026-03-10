@@ -1,0 +1,78 @@
+{
+  "scenario_id": "p5-03",
+  "scenario_name": "Agent advances to Phase 2 after Phase 1 complete",
+  "category": "profiling_p5_progressive_sequence",
+  "behavioral_dimension": "P5_progressive_sequencing",
+  "expected_behavior": "Phase 1 is complete by turn 1 (name, occasion, party size). Agent moves to Phase 2 in turns 2-4: cuisine preference, entertainment interest, activity planning. The progression feels natural because the foundation was established first",
+  "expected_behavioral_quality": "After capturing foundation info (name, party size, occasion), the agent naturally shifts to preference questions (cuisine type, entertainment interests, gaming style). The transition feels like deepening the service, not advancing through a checklist.",
+  "safety_relevant": false,
+  "source_file": "profiling_p5_progressive_sequence.yaml",
+  "thread_id": "eval-p5-03-1772842555",
+  "turns": [
+    {
+      "turn_index": 0,
+      "user_message": "Hi, I'm Karen. Here with my husband for our anniversary, party of 2.",
+      "agent_response": "Happy anniversary, Karen. Congratulations! It is a pleasure to have you and your husband celebrating your special occasion with us.\n\nSince it is just after midnight, Novelle is my top pick for a sophisticated celebration tonight; it is an upscale ultra lounge featuring craft cocktails and a very chic, high-energy atmosphere. It is the perfect place to share a toast in a more exclusive setting while the music sets a celebratory mood.\n\nTomorrow morning, Hash House A Go Go serves massive portions of farm-to-table comfort food starting at 8:00 AM if you are looking for a hearty brunch \u2014 what dates are you visiting so I can provide the most accurate recommendations for your stay?",
+      "sources": [
+        {
+          "category": "entertainment",
+          "source": "mohegan_sun.json",
+          "score": 0.646
+        },
+        {
+          "category": "hotel",
+          "source": "mohegan_sun.json",
+          "score": 0.637
+        },
+        {
+          "category": "restaurants",
+          "source": "mohegan_sun.json",
+          "score": 0.638
+        }
+      ],
+      "elapsed_ms": 41243,
+      "error": null
+    },
+    {
+      "turn_index": 1,
+      "user_message": "We're open to anything really",
+      "agent_response": "Karen, for a memorable anniversary dinner later today, Todd English's Tuscany is a guest favorite; the 40-foot stone waterfall provides a beautiful backdrop for a romantic meal. If you're looking for something to do right now, Novelle is our upscale ultra lounge and is perfect for a late-night celebratory cocktail in a sophisticated setting. \n\nHappy anniversary! Let me see about upgrading your experience at Mohegan Sun to make it extra special. Since you're open to anything, do you usually prefer a high-energy environment like the gaming floor or something more relaxed like a spa day?",
+      "sources": [],
+      "elapsed_ms": 47810,
+      "error": null
+    },
+    {
+      "turn_index": 2,
+      "user_message": "We've never tried Asian food at a casino before",
+      "agent_response": "Karen, for your first Asian dining experience at a resort, Tao Asian Bistro & Lounge is the standout choice for an anniversary celebration. The atmosphere is incredibly dramatic with dim lighting and a massive 16-foot Buddha statue that makes the entire meal feel like a special event. \n\nThey offer a sophisticated mix of Chinese, Japanese, and Thai dishes, with their Miso Glazed Chilean Sea Bass being a signature favorite that guests rave about. Tao is located in the Casino of the Sky and falls into a higher price range, with a smart casual dress code and reservations highly recommended. Since it is currently early Saturday morning, they will reopen today at 5:00 PM. Happy anniversary! Let me see about upgrading your experience at Mohegan Sun to make it extra special. \n\nSince you will be in the Casino of the Sky for dinner, would you like to know about the live music schedule at the Wolf Den for later tonight?",
+      "sources": [],
+      "elapsed_ms": 49232,
+      "error": null
+    },
+    {
+      "turn_index": 3,
+      "user_message": "That sounds amazing. And maybe something after?",
+      "agent_response": "Karen, after a meal at Tao, the Wolf Den is a short walk away and features free live music in the center of the Casino of the Sky. For a more intimate anniversary toast, Novelle is an upscale lounge nearby that offers craft cocktails and a sophisticated atmosphere.\n\nHappy anniversary! Let me see about upgrading your experience at Mohegan Sun to make it extra special. Between a live concert atmosphere or a lounge with a DJ, which vibe are you and your husband in the mood for tonight?",
+      "sources": [
+        {
+          "category": "entertainment",
+          "source": "mohegan_sun.json",
+          "score": 0.658
+        },
+        {
+          "category": "faq",
+          "source": "mohegan_sun.json",
+          "score": 0.635
+        },
+        {
+          "category": "promotions",
+          "source": "mohegan_sun.json",
+          "score": 0.627
+        }
+      ],
+      "elapsed_ms": 39812,
+      "error": null
+    }
+  ],
+  "completed": true
+}

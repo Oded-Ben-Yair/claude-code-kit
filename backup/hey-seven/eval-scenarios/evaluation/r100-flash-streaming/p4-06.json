@@ -1,0 +1,85 @@
+{
+  "scenario_id": "p4-06",
+  "scenario_name": "VIP language \u2014 assumption about premium expectations correct",
+  "category": "profiling_p4_assumptive_bridge",
+  "behavioral_dimension": "P4_assumptive_bridging",
+  "expected_behavior": "Immediately leads with the most premium options. When Soar tier is confirmed, elevates to VIP-specific benefits and access. The assumption about premium expectations was correct from the first message's language",
+  "expected_behavioral_quality": "When the guest uses VIP language ('I'm used to the best', 'premium experience'), assumes they expect top-tier recommendations and elevated service. Leads with the most exclusive options and uses a premium service register throughout.",
+  "safety_relevant": false,
+  "source_file": "profiling_p4_assumptive_bridge.yaml",
+  "thread_id": "eval-p4-06-1772841771",
+  "turns": [
+    {
+      "turn_index": 0,
+      "user_message": "I want the best dinner experience you've got",
+      "agent_response": "",
+      "sources": [],
+      "elapsed_ms": 60002,
+      "error": "TIMEOUT (60.0s)"
+    },
+    {
+      "turn_index": 1,
+      "user_message": "That's more like it. We're Soar tier members.",
+      "agent_response": "As Soar tier members, you have access to the highest level of personalized service and a dedicated host to manage your arrangements. For a dinner of this caliber, Michael Jordan's Steak House or TAO Asian Bistro & Nightclub are the primary choices for our VIP guests. Your status ensures priority seating and the ability to redeem Momentum Points for your meal.\n\nAn insider tip for your level: your dedicated host can often coordinate specific off-menu wine selections or preferred seating that isn't available through standard reservations. After dinner, the Sky View VIP Lounge provides a quiet, exclusive environment for top-tier members!\n\nWould you like me to connect you with the host team to reach your dedicated representative for these arrangements?",
+      "sources": [
+        {
+          "category": "promotions",
+          "source": "mohegan_sun.json",
+          "score": 0.74
+        },
+        {
+          "category": "faq",
+          "source": "mohegan_sun.json",
+          "score": 0.628
+        },
+        {
+          "category": "hotel",
+          "source": "mohegan_sun.json",
+          "score": 0.627
+        },
+        {
+          "category": "property",
+          "source": "mohegan_sun.json",
+          "score": 0.632
+        }
+      ],
+      "elapsed_ms": 37221,
+      "error": null
+    },
+    {
+      "turn_index": 2,
+      "user_message": "What else is available at our level?",
+      "agent_response": "The Soar tier is our most exclusive level and is available by invitation only. Your benefits include a dedicated executive host, the highest earn rate for Momentum Points, and complimentary valet parking. You also have priority access for hotel check-in, restaurant seating, and line bypass at various venues across the property.\n\nAdditional benefits include:\n- Invitations to VIP-only events, tournaments, and parties.\n- Room upgrades at Mohegan Sun Connecticut and other Mohegan properties, subject to availability.\n- Priority access to Mohegan Sun Arena tickets and preferred seating at the Wolf Den.\n- Access to exclusive lounges, including the Soar Lounge and the Sky View VIP Lounge.\n\nAn insider tip: your host can often facilitate specialized requests, such as private shopping appointments at The Shops at Mohegan Sun or specific seating preferences for world-class entertainment. After dinner at the steakhouse, your tier status provides immediate entry into novelle without the standard wait.\n\nWould you like me to check the current Arena schedule to see if there are any upcoming performances your host should secure tickets for?",
+      "sources": [
+        {
+          "category": "faq",
+          "source": "mohegan_sun.json",
+          "score": 0.678
+        },
+        {
+          "category": "promotions",
+          "source": "mohegan_sun.json",
+          "score": 0.686
+        },
+        {
+          "category": "entertainment",
+          "source": "mohegan_sun.json",
+          "score": 0.674
+        },
+        {
+          "category": "amenities",
+          "source": "mohegan_sun.json",
+          "score": 0.668
+        },
+        {
+          "category": "gaming",
+          "source": "mohegan_sun.json",
+          "score": 0.657
+        }
+      ],
+      "elapsed_ms": 36590,
+      "error": null
+    }
+  ],
+  "completed": true
+}

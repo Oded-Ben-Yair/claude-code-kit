@@ -1,0 +1,102 @@
+{
+  "id": "p4-06",
+  "name": "VIP language \u2014 assumption about premium expectations correct",
+  "source_file": "profiling_p4_assumptive_bridge.yaml",
+  "category": "profiling_p4_assumptive_bridge",
+  "behavioral_dimension": "P4_assumptive_bridging",
+  "expected_behavior": "Immediately leads with the most premium options. When Soar tier is confirmed, elevates to VIP-specific benefits and access. The assumption about premium expectations was correct from the first message's language",
+  "expected_behavioral_quality": "When the guest uses VIP language ('I'm used to the best', 'premium experience'), assumes they expect top-tier recommendations and elevated service. Leads with the most exclusive options and uses a premium service register throughout.",
+  "safety_relevant": false,
+  "turns": [
+    {
+      "turn_index": 0,
+      "user_message": "I want the best dinner experience you've got",
+      "agent_response": "For the most immersive dinner experience at Mohegan Sun, Tao Asian Bistro & Lounge is the place to be. The transition from the casino floor into the dimly lit, incense-scented dining room is incredible, especially with the massive 16-foot Quan Yin statue overlooking the space. They open tonight at 5:00 PM in the Casino of the Sky, and I would recommend their Miso Glazed Chilean Sea Bass if you are looking for a signature dish. It is a high-energy spot with a smart casual dress code, and reservations are definitely a good idea to ensure you get a prime table. \n\nAfter a meal like that, novelle is just a short walk away if you are in the mood for a craft cocktail and some music. Are you celebrating something special this evening?",
+      "sources": [
+        {
+          "category": "restaurants",
+          "source": "mohegan_sun.json",
+          "score": 0.65
+        },
+        {
+          "category": "entertainment",
+          "source": "mohegan_sun.json",
+          "score": 0.645
+        },
+        {
+          "category": "promotions",
+          "source": "mohegan_sun.json",
+          "score": 0.65
+        }
+      ],
+      "elapsed_ms": 26167,
+      "error": null
+    },
+    {
+      "turn_index": 1,
+      "user_message": "That's more like it. We're Soar tier members.",
+      "agent_response": "As Soar members, you have access to priority restaurant seating and a dedicated host who can coordinate your reservations to ensure you get the best table available. This tier is invitation-only and includes the highest earning rate for Momentum Points, which can be redeemed directly for your meal at Tao or any of our 40 restaurants. You also have access to complimentary valet and exclusive VIP events that are tailored specifically for your tier.\n\nI'd suggest contacting your dedicated host to see if there are any private dining events or invitation-only tastings scheduled during your stay. After dinner, you might enjoy the privacy of our high-limit lounges, which offer a more secluded atmosphere than the main casino floor. Would you like the locations for the Soar-level gaming areas?",
+      "sources": [
+        {
+          "category": "promotions",
+          "source": "mohegan_sun.json",
+          "score": 0.74
+        },
+        {
+          "category": "faq",
+          "source": "mohegan_sun.json",
+          "score": 0.628
+        },
+        {
+          "category": "hotel",
+          "source": "mohegan_sun.json",
+          "score": 0.627
+        },
+        {
+          "category": "property",
+          "source": "mohegan_sun.json",
+          "score": 0.632
+        }
+      ],
+      "elapsed_ms": 31744,
+      "error": null
+    },
+    {
+      "turn_index": 2,
+      "user_message": "What else is available at our level?",
+      "agent_response": "Your Soar status grants you access to our most exclusive spaces, including the private VIP Check-in desk and the high-limit lounges in both the Casino of the Earth and the Casino of the Sky. These lounges offer a refined, quieter atmosphere with premium drink service and dedicated hosts available to assist with any request. You also receive the highest priority for room upgrades and preferred seating at the Mohegan Sun Arena and the Wolf Den.\n\nMany of our Soar guests also enjoy using their status for priority reservations at the Mandara Spa or for tee times at our golf club. Are you planning to take in a show at the Arena during this trip?",
+      "sources": [
+        {
+          "category": "faq",
+          "source": "mohegan_sun.json",
+          "score": 0.678
+        },
+        {
+          "category": "promotions",
+          "source": "mohegan_sun.json",
+          "score": 0.686
+        },
+        {
+          "category": "entertainment",
+          "source": "mohegan_sun.json",
+          "score": 0.674
+        },
+        {
+          "category": "amenities",
+          "source": "mohegan_sun.json",
+          "score": 0.668
+        },
+        {
+          "category": "gaming",
+          "source": "mohegan_sun.json",
+          "score": 0.657
+        }
+      ],
+      "elapsed_ms": 34862,
+      "error": null
+    }
+  ],
+  "elapsed_ms": 92775,
+  "error": null,
+  "completed": true
+}

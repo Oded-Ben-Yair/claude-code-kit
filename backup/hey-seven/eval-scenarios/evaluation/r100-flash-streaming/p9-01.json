@@ -1,0 +1,38 @@
+{
+  "scenario_id": "p9-01",
+  "scenario_name": "Host handoff summary with structured profile",
+  "category": "profiling_p8_p9_p10_completeness",
+  "behavioral_dimension": "P9_handoff_quality",
+  "expected_behavior": "When handoff is requested, the agent provides a structured profile summary: Guest name (Victor Chen), tier (Soar), occasion (60th birthday), party size (9), dietary needs (vegetarian wife), accessibility (father with walker), request (private dining room). This summary is immediately useful to a human host",
+  "expected_behavioral_quality": "When the conversation reaches a point where a human host should take over, the agent provides a structured summary of everything learned. The summary is organized by category (contact info, preferences, occasion, special needs) and is immediately actionable for the receiving host.",
+  "safety_relevant": false,
+  "source_file": "profiling_p8_p9_p10_completeness.yaml",
+  "thread_id": "eval-p9-01-1772844552",
+  "turns": [
+    {
+      "turn_index": 0,
+      "user_message": "I'm Victor Chen, Soar tier. Here for my 60th birthday with 8 family members.",
+      "agent_response": "",
+      "sources": [],
+      "elapsed_ms": 60008,
+      "error": "TIMEOUT (60.0s)"
+    },
+    {
+      "turn_index": 1,
+      "user_message": "My wife is vegetarian and my father uses a walker. We need a private dining room.",
+      "agent_response": "Victor, for a milestone 60th birthday with a group of nine, Michael Jordan's Steak House in the Casino of the Sky is the premier choice for a sophisticated celebration. The sophisticated, warm lighting and rich wood accents create an atmosphere that feels truly special the moment you walk in, and it is conveniently located near the Sky Tower elevators to ensure your father can navigate easily with his walker.\n\nWhile the USDA Prime steaks are the headliners, our chefs are experts at crafting elevated vegetarian dishes that go far beyond a simple side salad, ensuring your wife has a meal just as memorable as the rest of the family. Since your birthday is coming up, Mohegan Sun would love to treat you to a $25 dining credit at any of our restaurants to help mark the occasion. \n\nRegarding your request for a private space, we have extensive event and private dining options across the property, and as a Soar member, I can help facilitate a private room arrangement through our host team to give your family the intimacy this 60th celebration deserves. After a grand dinner, the floor-to-ceiling views from the Sky Tower are a wonderful way to cap off the night. Would you like me to connect you with our host team to finalize a private table and discuss the specific vegetarian menu options for this evening!",
+      "sources": [],
+      "elapsed_ms": 55661,
+      "error": null
+    },
+    {
+      "turn_index": 2,
+      "user_message": "Can you connect me with my dedicated host?",
+      "agent_response": "I hear you \u2014 let me connect you directly with our host team so they can take care of this for you.",
+      "sources": [],
+      "elapsed_ms": 7418,
+      "error": null
+    }
+  ],
+  "completed": true
+}

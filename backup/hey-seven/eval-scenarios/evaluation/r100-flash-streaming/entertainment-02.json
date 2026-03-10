@@ -1,0 +1,81 @@
+{
+  "scenario_id": "entertainment-02",
+  "scenario_name": "Spa discovery and details",
+  "category": "entertainment",
+  "behavioral_dimension": "",
+  "expected_behavior": "Discovers spa, explores treatments, checks hours",
+  "expected_behavioral_quality": "",
+  "safety_relevant": false,
+  "source_file": "entertainment.yaml",
+  "thread_id": "eval-entertainment-02-1772831280",
+  "turns": [
+    {
+      "turn_index": 0,
+      "user_message": "Is there a spa?",
+      "agent_response": "We have two distinct spa experiences here at Mohegan Sun. The Mandara Spa offers a full range of treatments like Balinese-inspired massages and body wraps, and it includes a tranquil relaxation lounge and sauna. If you're looking for something modern, the Elemis Spa in the Earth Tower is known for its premium skincare treatments and specialized couples' packages.\n\nSince it's Friday evening, both spas will reopen tomorrow morning at 9:00 AM. Pro tip: if you book a treatment at Mandara, you also get access to their steam room and sauna, which is a great way to extend the relaxation. Are you visiting us for a solo getaway or are you here with a group? After a morning at the spa, the live music at the Wolf Den is a perfect way to keep the energy up.",
+      "sources": [
+        {
+          "category": "amenities",
+          "source": "mohegan_sun.json",
+          "score": 0.711
+        },
+        {
+          "category": "faq",
+          "source": "mohegan_sun.json",
+          "score": 0.669
+        },
+        {
+          "category": "promotions",
+          "source": "mohegan_sun.json",
+          "score": 0.655
+        }
+      ],
+      "elapsed_ms": 35094,
+      "error": null
+    },
+    {
+      "turn_index": 1,
+      "user_message": "What treatments do they offer?",
+      "agent_response": "Mandara Spa offers a wide range of Balinese-inspired treatments, including massages, facials, body wraps, and aromatherapy. If you are looking for something more focused, Elemis Spa specializes in premium skincare and express services for guests on the move.\n\nBoth spas open at 9:00 AM tomorrow, and the morning slots are typically the most peaceful. Do you have a specific treatment in mind, such as a massage or a facial? After you're finished, Todd English's Tuscany is nearby and perfect for a relaxing lunch.",
+      "sources": [
+        {
+          "category": "amenities",
+          "source": "mohegan_sun.json",
+          "score": 0.686
+        },
+        {
+          "category": "gaming",
+          "source": "mohegan_sun.json",
+          "score": 0.64
+        },
+        {
+          "category": "promotions",
+          "source": "mohegan_sun.json",
+          "score": 0.64
+        }
+      ],
+      "elapsed_ms": 26139,
+      "error": null
+    },
+    {
+      "turn_index": 2,
+      "user_message": "What are the spa hours?",
+      "agent_response": "Mandara Spa is open daily from 9:00 AM to 8:00 PM, and Elemis Spa is available from 9:00 AM to 7:00 PM. Both will reopen tomorrow morning at 9:00 AM, making them a great way to start your Saturday. If you are looking for a way to unwind tonight, the heated indoor pool and hot tub are open for guests until 10:00 PM. Would you like to know more about the signature treatments at either location?",
+      "sources": [
+        {
+          "category": "amenities",
+          "source": "mohegan_sun.json",
+          "score": 0.711
+        },
+        {
+          "category": "faq",
+          "source": "mohegan_sun.json",
+          "score": 0.674
+        }
+      ],
+      "elapsed_ms": 43355,
+      "error": null
+    }
+  ],
+  "completed": true
+}

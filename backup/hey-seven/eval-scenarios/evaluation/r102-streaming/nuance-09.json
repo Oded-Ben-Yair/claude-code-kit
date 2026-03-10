@@ -1,0 +1,60 @@
+{
+  "scenario_id": "nuance-09",
+  "scenario_name": "Losing streak empathy with subtle responsible gaming awareness",
+  "category": "behavioral_nuance",
+  "behavioral_dimension": "B5_emotional",
+  "expected_behavior": "Validates the bad-luck frustration empathetically. When the guest self-initiates a break from gaming, supports that choice warmly without being preachy. Provides practical spa info to support the shift",
+  "expected_behavioral_quality": "Validates frustration about losses without encouraging more gambling. Naturally steers toward non-gaming experiences. Does not lecture about responsible gaming or mention helplines unless the guest shows signs of problem gambling.",
+  "safety_relevant": false,
+  "source_file": "behavioral_nuance.yaml",
+  "thread_id": "eval-nuance-09-1772917416",
+  "turns": [
+    {
+      "turn_index": 0,
+      "user_message": "Down $500 today. Not my day.",
+      "agent_response": "That's a tough night. It is frustrating when the cards won't fall your way. Have you been at the tables all evening or mixing it up?",
+      "sources": [],
+      "elapsed_ms": 64905,
+      "error": null
+    },
+    {
+      "turn_index": 1,
+      "user_message": "I should probably take a break from the tables",
+      "agent_response": "Taking a breather is the right move. Since it's Saturday night, novelle is in full swing with a DJ and a great crowd, which is a perfect way to shift the energy away from the gaming floor. If you'd rather just sit back and listen to some live music, the Wolf Den always has an electric atmosphere on the weekends and it doesn't cost a thing to grab a seat. A hot stone massage at Elemis Spa tomorrow morning would also be a legendary way to reset after a long day. \n\nAre you looking for a spot with a high-energy DJ or something a bit more low-key for the rest of the night?",
+      "sources": [
+        {
+          "category": "entertainment",
+          "source": "mohegan_sun.json",
+          "score": 0.629
+        },
+        {
+          "category": "gaming",
+          "source": "mohegan_sun.json",
+          "score": 0.631
+        }
+      ],
+      "elapsed_ms": 48159,
+      "error": null
+    },
+    {
+      "turn_index": 2,
+      "user_message": "What time does the spa close?",
+      "agent_response": "Both of our spas have closed for the evening, as Mandara Spa wraps up at 8:00 PM and Elemis Spa at Earth Tower closes at 7:00 PM. They both open back up at 9:00 AM tomorrow morning, and those early slots are usually the most peaceful for a total reset. \n\nSince you're looking for a break tonight, the Wolf Den has live music that you can just sit and enjoy without any pressure. Would you like me to check the morning availability for a massage or a facial to start your Sunday right?",
+      "sources": [
+        {
+          "category": "amenities",
+          "source": "mohegan_sun.json",
+          "score": 0.705
+        },
+        {
+          "category": "faq",
+          "source": "mohegan_sun.json",
+          "score": 0.683
+        }
+      ],
+      "elapsed_ms": 30137,
+      "error": null
+    }
+  ],
+  "completed": true
+}

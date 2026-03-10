@@ -1,0 +1,65 @@
+{
+  "scenario_id": "h3-02",
+  "scenario_name": "Guest mentions tier at competitor property",
+  "category": "host_triangle_h1_h3_development",
+  "behavioral_dimension": "H3_pipeline_advancement",
+  "expected_behavior": "Translates the Caesars Diamond status into Momentum-equivalent context. Explains how table game play earns tier credits and what tier would match their current status. Makes signing up feel like a strategic move for a serious player, not a marketing exercise",
+  "expected_behavioral_quality": "When a guest mentions tier status at a competitor, the agent recognizes the status signal and positions Mohegan Sun's Momentum tiers as comparable or better for their play level. Does not dismiss the competitor tier but creates curiosity about Momentum benefits.",
+  "safety_relevant": false,
+  "source_file": "host_triangle_h1_h3_development.yaml",
+  "thread_id": "eval-h3-02-1772910914",
+  "turns": [
+    {
+      "turn_index": 0,
+      "user_message": "I'm Diamond at Caesars. What do you have here that's comparable?",
+      "agent_response": "Diamond, Mohegan Sun uses the Momentum Rewards program, which consists of five tiers: Core, Ignite, Leap, Ascend, and Soar. Based on your status at other properties, you may find our Leap or Ascend tiers provide the most comparable benefits.\n\nThe Leap tier is reached at 10,000 Tier Credits and provides priority access and enhanced earning rates. The Ascend tier, reached at 25,000 Tier Credits, includes complimentary valet, room upgrades, and a dedicated host. Tier Credits are earned through gaming as well as hotel stays, dining, and retail purchases. \n\nYou can join for free at any Momentum Desk on the casino floor, at mohegansun.com, or through our mobile app to receive your card. While I cannot guarantee a specific tier match or comp eligibility, the representatives at the Momentum Desk can review your play and external status to determine what you may be eligible for. \n\nAfter you get your card, are you planning on starting with some dinner or heading straight to the gaming floor?",
+      "sources": [
+        {
+          "category": "promotions",
+          "source": "mohegan_sun.json",
+          "score": 0.697
+        },
+        {
+          "category": "gaming",
+          "source": "mohegan_sun.json",
+          "score": 0.664
+        },
+        {
+          "category": "faq",
+          "source": "mohegan_sun.json",
+          "score": 0.672
+        }
+      ],
+      "elapsed_ms": 29988,
+      "error": null
+    },
+    {
+      "turn_index": 1,
+      "user_message": "How fast can I move up? I play mostly table games",
+      "agent_response": "Diamond, your progression through the Momentum tiers depends on your average bet and the duration of your play. Tier Credits are earned on all table games\u2014including Blackjack, Craps, and Baccarat\u2014and are tracked by presenting your Momentum card to the dealer or pit supervisor when you sit down.\n\nThe Ignite tier is reached at 2,500 Tier Credits, while the Leap tier requires 10,000. Earning rates vary by game and are subject to the evaluation of the pit supervisor based on your play. For those looking to earn credits at a different pace, our VIP high-limit areas offer elevated minimum bets and dedicated hosts. \n\nDo you have a favorite table game you usually stick to, or do you prefer to move between different games?\n\nAfter your session at the tables, you might find that the dining credits you've earned are a good fit for a meal at Tuscany or SolToro.",
+      "sources": [
+        {
+          "category": "gaming",
+          "source": "mohegan_sun.json",
+          "score": 0.701
+        },
+        {
+          "category": "promotions",
+          "source": "mohegan_sun.json",
+          "score": 0.677
+        }
+      ],
+      "elapsed_ms": 32075,
+      "error": null
+    },
+    {
+      "turn_index": 2,
+      "user_message": "Alright, I'll sign up at the Momentum Desk",
+      "agent_response": "Diamond, the Momentum Desks are located near the main entrances of both the Casino of the Earth and Casino of the Sky. Upon signing up, you may be eligible for a $10 introductory free play bonus based on current new member offers. \n\nThe representative at the desk will provide your card and can confirm your current Tier Credit balance as you begin playing. Since you mentioned playing table games, remember to present your card to the dealer as soon as you sit down to ensure your play is tracked for rewards and tier progression.\n\nAre you planning to head to the Casino of the Earth or Casino of the Sky first?\n\nAfter you've spent some time at the tables, the Mohegan Sun Arena often has major headliners that are accessible with priority seating at higher Momentum tiers.",
+      "sources": [],
+      "elapsed_ms": 48467,
+      "error": null
+    }
+  ],
+  "completed": true
+}

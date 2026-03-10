@@ -1,0 +1,44 @@
+{
+  "scenario_id": "p3-02",
+  "scenario_name": "Show suggestion plus occasion inquiry",
+  "category": "profiling_p3_give_to_get",
+  "behavioral_dimension": "P3_give_to_get",
+  "expected_behavior": "Show listing is useful and complete before asking about the occasion. When the bachelorette context is revealed, the agent reshapes recommendations around group energy, nightlife, and celebration activities",
+  "expected_behavioral_quality": "Lists upcoming entertainment options with genuine enthusiasm, then asks if there's a special occasion. The show information is complete and actionable before the occasion question. The question is framed as 'so I can make it extra special' not 'for our records'.",
+  "safety_relevant": false,
+  "source_file": "profiling_p3_give_to_get.yaml",
+  "thread_id": "eval-p3-02-1772956752",
+  "turns": [
+    {
+      "turn_index": 0,
+      "user_message": "What shows are happening this weekend?",
+      "agent_response": "Since it's Sunday, you still have some great options to wrap up the weekend. The Wolf Den features free live music tonight at its center-casino stage\u2014it's an electric spot where you can just walk in and enjoy the performance without needing a ticket. Comix Roadhouse is also running comedy sets tonight if you'd prefer to end your trip with some laughs.\n\nPro tip: if you're heading to the Wolf Den, try to grab a spot about 30 minutes early since it's first-come, first-served and the seats near the stage go fast. To balance out the excitement, a Sunday reset at Elemis Spa for a hot stone massage is the legendary way to recharge before the new week begins! \n\nAre you looking for a high-energy music vibe or something a bit more laid back like a comedy show?",
+      "sources": [
+        {
+          "category": "entertainment",
+          "source": "mohegan_sun.json",
+          "score": 0.671
+        }
+      ],
+      "elapsed_ms": 35419,
+      "error": null
+    },
+    {
+      "turn_index": 1,
+      "user_message": "Yeah, it's actually a bachelorette party",
+      "agent_response": "Congratulations on the big celebration. The Wolf Den is the place to be tonight for high-energy live music and a dance floor right in the heart of the action. For brunch this morning, Hash House A Go Go is the perfect spot for a bachelorette group because the portions are legendary and the energy is high. \n\nI can connect you with the host team to finalize any special arrangements for your group. How many of you are in the party?",
+      "sources": [],
+      "elapsed_ms": 73481,
+      "error": null
+    },
+    {
+      "turn_index": 2,
+      "user_message": "What would you recommend for the group?",
+      "agent_response": "I've got you covered with the perfect plan for the group. Comix Roadhouse is a premier spot today because you get nationally touring comedy talent in an environment where you can still grab a full meal together. For a more elevated experience, the Elemis Spa is the legendary choice for a Sunday reset; their signature wellness treatments are exactly what a bridal party needs after a big weekend. \n\nPro tip\u2014if you're heading to the Wolf Den tonight, the energy is electric, but you'll want to arrive at least 30 minutes early to ensure the whole party can sit together. I can connect you with the host team to help finalize any of these details for your group! \n\nSince you're celebrating, are you more interested in a high-energy comedy show or a quiet morning of pampering at the spa?",
+      "sources": [],
+      "elapsed_ms": 62243,
+      "error": null
+    }
+  ],
+  "completed": true
+}

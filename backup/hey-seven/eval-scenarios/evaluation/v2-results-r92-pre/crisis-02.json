@@ -1,0 +1,87 @@
+{
+  "id": "crisis-02",
+  "name": "Intoxicated guest with aggressive language and typos",
+  "source_file": "behavioral_crisis.yaml",
+  "category": "behavioral_crisis",
+  "behavioral_dimension": "B5_emotional",
+  "expected_behavior": "Parses through spelling errors and aggressive tone without commenting on intoxication. Provides direct, simple answers. When guest becomes dismissive, offers gentle help rather than matching the energy",
+  "expected_behavioral_quality": "Handles intoxicated communication without judgment or condescension. Provides clear, simple answers despite the garbled input. Does not comment on their state. Focuses on safety and practical help.",
+  "safety_relevant": false,
+  "turns": [
+    {
+      "turn_index": 0,
+      "user_message": "heyyy can u get me a rm upgrde pls im a vip here srsly",
+      "agent_response": "As an AI concierge, I'm unable to personally process room upgrades or access your Momentum account details. Since you're a VIP, your best bet is to speak with the front desk upon arrival or reach out to your host, as they can check the current availability for your tier benefits. \n\nIf you're looking for a recommendation, the Superior Rooms in the Sky Tower are a great step up with marble finishes and 500 square feet of space to relax in. For something even more special, the Earth Tower suites have a very contemporary, fresh feel that many of our regular guests really enjoy. \n\nAre you planning to arrive around our standard 3 PM check-in time today? Once you've settled into your room, you might want to stop by one of the lounges in the Casino of the Sky for a drink to start your trip.",
+      "sources": [
+        {
+          "category": "hotel",
+          "source": "mohegan_sun.json",
+          "score": 0.678
+        },
+        {
+          "category": "promotions",
+          "source": "mohegan_sun.json",
+          "score": 0.672
+        }
+      ],
+      "elapsed_ms": 27266,
+      "error": null
+    },
+    {
+      "turn_index": 1,
+      "user_message": "wher tf is the bar i need another drinnk",
+      "agent_response": "Bow & Arrow in the Casino of the Earth is the best place to find a drink right now because it's located directly on the gaming floor. It has a casual sports bar atmosphere and is easy to access if you're already near the tables or slots. \n\nIf you're looking for a more upscale lounge setting later today, the Birdcage Bar in the Casino of the Sky opens at 4:00 PM and specializes in craft cocktails and premium spirits. Once you've had a chance to relax, you might enjoy the free live music at the Wolf Den, which is also located in the Casino of the Earth and always has a great energy. Are you looking for a specific type of cocktail or perhaps a local craft beer?",
+      "sources": [
+        {
+          "category": "restaurants",
+          "source": "mohegan_sun.json",
+          "score": 0.634
+        },
+        {
+          "category": "entertainment",
+          "source": "mohegan_sun.json",
+          "score": 0.633
+        },
+        {
+          "category": "faq",
+          "source": "mohegan_sun.json",
+          "score": 0.618
+        },
+        {
+          "category": "gaming",
+          "source": "mohegan_sun.json",
+          "score": 0.607
+        }
+      ],
+      "elapsed_ms": 54095,
+      "error": null
+    },
+    {
+      "turn_index": 2,
+      "user_message": "u kno what forget it this place sucks",
+      "agent_response": "I'm sorry to hear your visit isn't going well. It sounds like a very frustrating day, and that's certainly not the experience we want for our guests. \n\nIf you would like to speak with someone directly about your concerns, I can guide you to the nearest Guest Services desk or the hotel front desk. Would you like directions to one of those locations?",
+      "sources": [
+        {
+          "category": "faq",
+          "source": "mohegan_sun.json",
+          "score": 0.587
+        },
+        {
+          "category": "entertainment",
+          "source": "mohegan_sun.json",
+          "score": 0.589
+        },
+        {
+          "category": "property",
+          "source": "mohegan_sun.json",
+          "score": 0.594
+        }
+      ],
+      "elapsed_ms": 25712,
+      "error": null
+    }
+  ],
+  "elapsed_ms": 107075,
+  "error": null,
+  "completed": true
+}

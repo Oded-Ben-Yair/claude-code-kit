@@ -1,0 +1,75 @@
+{
+  "scenario_id": "h8-01",
+  "scenario_name": "Comp-eligible guest receiving offer",
+  "category": "host_triangle_h7_h10_revenue",
+  "behavioral_dimension": "H8_strategic_offer_framing",
+  "expected_behavior": "Presents Leap benefits as things the guest has earned through their loyalty, not as promotions being pushed. Uses insider language \u2014 'a lot of people don't realize' or 'one of the quieter Leap perks' \u2014 that makes the guest feel like they are learning something exclusive",
+  "expected_behavioral_quality": "When mentioning comp eligibility or perks, frames them as earned recognition rather than marketing. The guest should feel that the offer exists because of who they are, not because it is a mass promotion. Uses language like 'you've unlocked' rather than 'we're offering.'",
+  "safety_relevant": false,
+  "source_file": "host_triangle_h7_h10_revenue.yaml",
+  "thread_id": "eval-h8-01-1772975569",
+  "turns": [
+    {
+      "turn_index": 0,
+      "user_message": "I'm at Leap tier. Are there any dining perks I should know about?",
+      "agent_response": "At, the Leap tier includes priority access at many of our restaurants and an enhanced earning rate for Momentum points on your purchases. These points are redeemable for dining throughout the resort, including at Bobby Flay\u2019s Bar Americain, which is open today from 11:30 AM to 10:00 PM.\n\nAt 25,000 Tier Credits you will reach the Ascend tier, which adds a dedicated host and complimentary room upgrades to your benefits. You may be eligible for a complimentary appetizer or dessert at select casual dining spots during this visit, and I'd suggest checking the Mohegan Sun app or a Momentum desk to see if any specific dining discounts have been loaded to your account.\n\nAre you looking for a specific cuisine, At, or would you prefer a recommendation based on which restaurants have the shortest wait for Leap members right now?",
+      "sources": [
+        {
+          "category": "promotions",
+          "source": "mohegan_sun.json",
+          "score": 0.707
+        },
+        {
+          "category": "restaurants",
+          "source": "mohegan_sun.json",
+          "score": 0.636
+        },
+        {
+          "category": "faq",
+          "source": "mohegan_sun.json",
+          "score": 0.621
+        }
+      ],
+      "elapsed_ms": 42138,
+      "error": null
+    },
+    {
+      "turn_index": 1,
+      "user_message": "Nice, I didn't know about those. What about entertainment?",
+      "agent_response": "You can actually use those same Momentum Dollars you earn with your Leap status directly at the Box Office for tickets to the Mohegan Sun Arena or The Cabaret Theatre. It is a great way to treat yourself to a night out.\n\nIf you want to catch something without a ticket, the Wolf Den is right in the middle of the casino floor with free live music \u2014 it has this intimate energy where you are right there with the performer. For a more upscale nightlife vibe later in the week, novelle is our ultra-lounge that mixes craft cocktails with a sophisticated atmosphere and DJ entertainment. \n\nBy the way, the Mohegan Sun Arena has some incredible headliners coming up on the calendar! What kind of music or live entertainment usually catches your eye, At?",
+      "sources": [],
+      "elapsed_ms": 51398,
+      "error": null
+    },
+    {
+      "turn_index": 2,
+      "user_message": "That's actually really cool. I should be using these more",
+      "agent_response": "You definitely should. It is easy to overlook how much value is sitting right there on your card. If you haven't already, I'd suggest downloading the Mohegan Sun app\u2014it tracks your Momentum Dollars in real-time and lets you easily browse what is hitting the Box Office next. \n\nFun fact\u2014if you ever want to make a whole night out of an Arena show, novelle is our upscale lounge right near the action. Their mixologists build some incredible pre-show cocktails, and it is a perfect spot to put those Leap tier points to work before the music starts.\n\nLet's figure out the best way to maximize those perks for you today. Are you staying over with us in the hotel, At, or just visiting for the day?",
+      "sources": [
+        {
+          "category": "entertainment",
+          "source": "mohegan_sun.json",
+          "score": 0.632
+        },
+        {
+          "category": "hotel",
+          "source": "mohegan_sun.json",
+          "score": 0.621
+        },
+        {
+          "category": "gaming",
+          "source": "mohegan_sun.json",
+          "score": 0.616
+        },
+        {
+          "category": "promotions",
+          "source": "mohegan_sun.json",
+          "score": 0.616
+        }
+      ],
+      "elapsed_ms": 60279,
+      "error": null
+    }
+  ],
+  "completed": true
+}

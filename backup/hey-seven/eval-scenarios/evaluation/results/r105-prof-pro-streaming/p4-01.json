@@ -1,0 +1,86 @@
+{
+  "scenario_id": "p4-01",
+  "scenario_name": "Party of 4 assumption about kids \u2014 correct",
+  "category": "profiling_p4_assumptive_bridge",
+  "behavioral_dimension": "P4_assumptive_bridging",
+  "expected_behavior": "Assumption about kids is offered softly and confirmed by the guest. Agent smoothly pivots to family-friendly recommendations. The assumption felt natural, not presumptuous",
+  "expected_behavioral_quality": "Makes a contextual inference that a party of 4 might include children and gently tests it with kid-friendly options. The assumption is offered as a soft suggestion ('If any of your group are younger, they might enjoy...') rather than a hard presumption ('Your kids will love...').",
+  "safety_relevant": false,
+  "source_file": "profiling_p4_assumptive_bridge.yaml",
+  "thread_id": "eval-p4-01-1772992982",
+  "turns": [
+    {
+      "turn_index": 0,
+      "user_message": "Need a restaurant for 4 tonight",
+      "agent_response": "For a party of four tonight, Tao Asian Bistro & Lounge is my top pick. It is open until 11:00 PM in the Casino of the Sky, and the stylish, dramatic dining room always has great energy. Pro tip \u2014 their dim sum plates are designed to be shared and are the absolute best way to kick off a meal with a group. \n\nAre you four celebrating a specific occasion tonight, or just looking for a fantastic dinner?",
+      "sources": [
+        {
+          "category": "restaurants",
+          "source": "mohegan_sun.json",
+          "score": 0.686
+        }
+      ],
+      "elapsed_ms": 53635,
+      "error": null
+    },
+    {
+      "turn_index": 1,
+      "user_message": "Yeah actually the kids would love that",
+      "agent_response": "If the kids are joining you, you definitely want to look into Kids Quest and Cyber Quest. Cyber Quest is a high-energy arcade with the latest video games that is perfect for a group of four to challenge each other. For something a bit more active, the Wombi Rock Climbing Wall is right nearby and offers indoor climbing for all skill levels, which is a great way to burn off some energy before sitting down for dinner.\n\nSince you're looking for a meal that will appeal to the whole group, I've got you covered with a recommendation for a spot that's both fun and family-friendly. After you've had your fill of games or climbing, you might enjoy Margaritaville for its laid-back atmosphere and live music that the kids can enjoy too. How old are the kids in your party so I can make sure these activities are the right fit?",
+      "sources": [
+        {
+          "category": "entertainment",
+          "source": "mohegan_sun.json",
+          "score": 0.643
+        },
+        {
+          "category": "hotel",
+          "source": "mohegan_sun.json",
+          "score": 0.625
+        },
+        {
+          "category": "property",
+          "source": "mohegan_sun.json",
+          "score": 0.634
+        },
+        {
+          "category": "amenities",
+          "source": "mohegan_sun.json",
+          "score": 0.621
+        }
+      ],
+      "elapsed_ms": 29256,
+      "error": null
+    },
+    {
+      "turn_index": 2,
+      "user_message": "How old do they need to be for the arcade?",
+      "agent_response": "Cyber Quest is open to all ages, so your kids can jump right into the action regardless of how old they are. If they happen to be between 6 weeks and 12 years old, Kids Quest is also available right next door as a supervised play space where they can stay while you and the other adults enjoy the resort for a bit.\n\nThe atmosphere at the arcade is high-energy and packed with the latest titles, which usually keeps everyone entertained for hours. Pro tip \u2014 the prize hub at Cyber Quest is massive, and if the kids are looking for a specific souvenir, they can actually pool their tickets together on one card to get something really impressive. \n\nSince you're planning for the kids tonight, would you like to know which restaurants have the best menus for younger guests?",
+      "sources": [
+        {
+          "category": "entertainment",
+          "source": "mohegan_sun.json",
+          "score": 0.709
+        },
+        {
+          "category": "faq",
+          "source": "mohegan_sun.json",
+          "score": 0.702
+        },
+        {
+          "category": "amenities",
+          "source": "mohegan_sun.json",
+          "score": 0.631
+        },
+        {
+          "category": "gaming",
+          "source": "mohegan_sun.json",
+          "score": 0.617
+        }
+      ],
+      "elapsed_ms": 31748,
+      "error": null
+    }
+  ],
+  "completed": true
+}

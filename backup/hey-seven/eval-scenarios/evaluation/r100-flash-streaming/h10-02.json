@@ -1,0 +1,38 @@
+{
+  "scenario_id": "h10-02",
+  "scenario_name": "Guest needs help with a complex multi-part request",
+  "category": "host_triangle_h7_h10_revenue",
+  "behavioral_dimension": "H10_host_identity_authority",
+  "expected_behavior": "Takes full ownership of the multi-domain request. Builds a coordinated birthday weekend plan: Italian dinner with birthday touches Saturday, spa treatment Sunday, and room upgrade guidance. Presents it as a unified plan, not three separate requests. The guest feels like one person is handling everything",
+  "expected_behavioral_quality": "When a guest has a complex request spanning multiple property domains, the agent coordinates across all of them with confidence. Does not pass the guest between departments. Takes ownership of the full request and presents a unified plan.",
+  "safety_relevant": false,
+  "source_file": "host_triangle_h7_h10_revenue.yaml",
+  "thread_id": "eval-h10-02-1772836349",
+  "turns": [
+    {
+      "turn_index": 0,
+      "user_message": "I need help planning my wife's surprise birthday weekend. Dinner Saturday, spa Sunday, and a room upgrade if possible",
+      "agent_response": "Congratulations on your wife\u2019s birthday. For a Saturday dinner, Michael Jordan\u2019s Steak House in the Casino of the Sky is available from 5:00 PM to 10:00 PM, serving USDA Prime steaks and seafood. On Sunday, Mandara Spa offers Balinese-inspired treatments, a relaxation lounge, and a steam room from 9:00 AM to 8:00 PM.\n\nRoom upgrades are subject to availability and are primarily determined by your Momentum tier status. The program begins at Core, moving to Ignite at 2,500 Tier Credits and Leap at 10,000 Tier Credits. You can check your current status and upgrade eligibility at any Momentum desk or through the Mohegan Sun app. Since she is celebrating a birthday, Mohegan Sun would love to treat her to a $25 dining credit at any of our restaurants. I can also look into providing a complimentary appetizer or dessert at select dining locations to add to the celebration.\n\nI recommend securing your dinner table soon, as Saturday evenings are the busiest time for reservations! I can connect you with our host team to finalize the booking\u2014would you prefer a table in the main dining room or a more private area for the surprise?",
+      "sources": [],
+      "elapsed_ms": 51846,
+      "error": null
+    },
+    {
+      "turn_index": 1,
+      "user_message": "She loves Italian food and deep tissue massage. Can you work with that?",
+      "agent_response": "Todd English's Tuscany is the standout choice for a celebratory Italian dinner. It is located in the Casino of the Sky and is famous for its handmade pastas and wood-fired pizzas in a warm, upscale atmosphere that feels very special for a birthday. For her deep tissue massage on Sunday, Mandara Spa is our premier facility and offers a serene, Balinese-inspired environment perfect for a morning of relaxation.\n\nRoom upgrades are subject to availability and your Momentum status, so I suggest checking with the front desk right when you arrive to see what is open for the weekend. Since your wife's birthday is coming up, Mohegan Sun would love to treat you to a $25 dining credit at any of our restaurants.\n\nAfter dinner on Saturday, Novelle is a sophisticated lounge nearby for a birthday toast with craft cocktails. I can connect you with our host team to finalize your dining and spa arrangements \u2014 what time were you thinking for the surprise dinner?",
+      "sources": [],
+      "elapsed_ms": 58572,
+      "error": null
+    },
+    {
+      "turn_index": 2,
+      "user_message": "This is exactly what I needed. You've been amazing",
+      "agent_response": "It is a pleasure to help you plan such a special weekend. Tuscany is widely considered one of our most scenic dining spots, and it should make for a memorable surprise. Thanks for chatting with us \u2014 here are $5 bonus tier points to use at Mohegan Sun. Would you like to know about the live music schedule at the Wolf Den for that Saturday night?",
+      "sources": [],
+      "elapsed_ms": 57172,
+      "error": null
+    }
+  ],
+  "completed": true
+}

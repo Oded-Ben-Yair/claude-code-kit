@@ -1,0 +1,81 @@
+{
+  "id": "engagement-08",
+  "name": "Information overload recovery",
+  "source_file": "behavioral_engagement.yaml",
+  "category": "behavioral_engagement",
+  "behavioral_dimension": "B3_engagement",
+  "expected_behavior": "Detects overwhelm signal and immediately collapses to a single recommendation. Does not keep offering more options or caveats. Makes a confident choice for the guest",
+  "expected_behavioral_quality": "When a guest signals overwhelm ('that's a lot'), immediately simplifies. Offers a single top recommendation instead of more options. Does not add disclaimers about other options they might miss.",
+  "safety_relevant": false,
+  "turns": [
+    {
+      "turn_index": 0,
+      "user_message": "What can we do here?",
+      "agent_response": "Welcome to Mohegan Sun! Since it's Thursday morning, you're perfectly positioned to catch our upcoming weekend headliners at the Mohegan Sun Arena or enjoy the intimate, electric energy of a free show at the Wolf Den tonight. \n\nIf you're looking for a bit of adventure, the Wombi Rock climbing wall offers a unique indoor challenge for all skill levels, while the Elemis Spa provides a legendary hot stone massage to help you reset after your travels. For a great meal before the music starts, Todd English\u2019s Tuscany is just a short walk from the Wolf Den and their wood-fired dishes are the perfect start to a night out. \n\nAre you looking for a high-energy night of entertainment or more of a relaxing wellness retreat?",
+      "sources": [
+        {
+          "category": "faq",
+          "source": "mohegan_sun.json",
+          "score": 0.676
+        },
+        {
+          "category": "amenities",
+          "source": "mohegan_sun.json",
+          "score": 0.661
+        },
+        {
+          "category": "entertainment",
+          "source": "mohegan_sun.json",
+          "score": 0.664
+        }
+      ],
+      "elapsed_ms": 42814,
+      "error": null
+    },
+    {
+      "turn_index": 1,
+      "user_message": "Wow that's a lot. Just pick one thing for us",
+      "agent_response": "I'd suggest catching a show at the Wolf Den tonight. It\u2019s an iconic venue in the center of the Casino of the Earth that offers free live music in an intimate setting, so there\u2019s no need to worry about tickets. Since it's currently Thursday morning, the property is a bit quieter, which is a great time to explore the nearby shops or grab a casual lunch at Bobby's Burger Palace before the evening energy picks up. Do you usually prefer high-energy rock or something a bit more mellow?",
+      "sources": [
+        {
+          "category": "faq",
+          "source": "mohegan_sun.json",
+          "score": 0.626
+        },
+        {
+          "category": "gaming",
+          "source": "mohegan_sun.json",
+          "score": 0.626
+        },
+        {
+          "category": "entertainment",
+          "source": "mohegan_sun.json",
+          "score": 0.634
+        },
+        {
+          "category": "promotions",
+          "source": "mohegan_sun.json",
+          "score": 0.612
+        },
+        {
+          "category": "property",
+          "source": "mohegan_sun.json",
+          "score": 0.629
+        }
+      ],
+      "elapsed_ms": 47662,
+      "error": null
+    },
+    {
+      "turn_index": 2,
+      "user_message": "Good call. What time?",
+      "agent_response": "Tonight's show at the Wolf Den starts at 8:00 PM. It\u2019s a first-come, first-served venue, so I recommend arriving about 45 minutes early to snag a seat close to the stage and soak in the atmosphere. \n\nIf you want to keep the night going after the music, novelle opens on Thursday evenings for a more sophisticated lounge vibe with great craft cocktails. Would you like me to find out exactly which artist is performing on the Wolf Den stage tonight?",
+      "sources": [],
+      "elapsed_ms": 60952,
+      "error": null
+    }
+  ],
+  "elapsed_ms": 151430,
+  "error": null,
+  "completed": true
+}

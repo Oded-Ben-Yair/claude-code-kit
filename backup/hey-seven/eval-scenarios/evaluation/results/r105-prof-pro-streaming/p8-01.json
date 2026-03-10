@@ -1,0 +1,54 @@
+{
+  "scenario_id": "p8-01",
+  "scenario_name": "3-turn conversation achieving 60% Phase 1 completion",
+  "category": "profiling_p8_p9_p10_completeness",
+  "behavioral_dimension": "P8_profile_completeness",
+  "expected_behavior": "By turn 3, profile contains: name (James), party size (2 \u2014 couple), occasion (weekend getaway), dining preference (romantic). At least 60% of Phase 1 captured through natural conversation. The guest volunteered most of this without being asked",
+  "expected_behavioral_quality": "In just 3 turns, the agent captures at least 3 of 5 Phase 1 foundation fields (name, party size, occasion, visit type, contact preference). Achieved through natural conversation flow, not rapid-fire questioning. The guest should not feel like they're filling out a form.",
+  "safety_relevant": false,
+  "source_file": "profiling_p8_p9_p10_completeness.yaml",
+  "thread_id": "eval-p8-01-1772996483",
+  "turns": [
+    {
+      "turn_index": 0,
+      "user_message": "Hey I'm James, here with my wife for a weekend getaway",
+      "agent_response": "Welcome to Mohegan Sun, James. A weekend getaway with your wife is exactly what we specialize in. \n\nIf you are looking to truly unwind and treat yourselves, I'd suggest looking into our Junior Suites. They feature a plush king bed, a separate living area, and a beautifully expanded bathroom with a soaking tub that feels like a private retreat, usually starting around $299 a night. Our standard Deluxe Rooms are also fantastic, offering floor-to-ceiling windows with great views. \n\nOnce you get settled in, staying in the towers means you are just steps away from everything \u2014 you could easily head down to novelle for some craft cocktails before dinner.\n\nAre you two planning to focus more on relaxing and recharging, or are you hoping to check out the dining and nightlife this weekend?",
+      "sources": [
+        {
+          "category": "hotel",
+          "source": "mohegan_sun.json",
+          "score": 0.664
+        },
+        {
+          "category": "entertainment",
+          "source": "mohegan_sun.json",
+          "score": 0.647
+        },
+        {
+          "category": "faq",
+          "source": "mohegan_sun.json",
+          "score": 0.63
+        }
+      ],
+      "elapsed_ms": 62131,
+      "error": null
+    },
+    {
+      "turn_index": 1,
+      "user_message": "Looking for a romantic dinner tonight",
+      "agent_response": "James, for a romantic night out, Tao Asian Bistro & Lounge is my absolute top pick. The dramatic, stylish ambiance sets the perfect mood the moment you walk in, and sharing their signature sushi and dim sum over a few craft cocktails is a fantastic dining experience. They are located right in the Casino of the Sky and are open until 11:00 PM tonight, so there is plenty of time to settle in and enjoy yourselves.\n\nIf you want to keep the evening going after you eat, novelle is an upscale lounge right nearby where you can grab a great nightcap. \n\nAre you and your wife fans of Pan-Asian cuisine, or were you hoping for more of a classic Italian candlelit dinner?",
+      "sources": [],
+      "elapsed_ms": 69459,
+      "error": null
+    },
+    {
+      "turn_index": 2,
+      "user_message": "Perfect, that's exactly what we needed",
+      "agent_response": "James, I'm glad that hits the mark for your getaway. Tao is going to be an incredible experience for you two. Let me flag this for the host team so they can finalize a great table for you tonight. \n\nNext time you're planning a visit, feel free to reach out ahead of time \u2014 I can help set things up so everything's ready when you arrive. What time were you thinking of heading down for dinner?",
+      "sources": [],
+      "elapsed_ms": 66162,
+      "error": null
+    }
+  ],
+  "completed": true
+}

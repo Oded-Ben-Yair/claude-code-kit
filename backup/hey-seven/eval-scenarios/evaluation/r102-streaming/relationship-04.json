@@ -1,0 +1,70 @@
+{
+  "scenario_id": "relationship-04",
+  "scenario_name": "Solo regular \u2014 does agent recognize loyalty and personalize?",
+  "category": "relationship_building",
+  "behavioral_dimension": "H6_rapport_depth",
+  "expected_behavior": "Agent acknowledges 5-year loyalty immediately. Asks profiling questions to personalize. When guest says 'Italian', agent picks Tuscany specifically and references the preference. Offers host bridge for a regular.",
+  "expected_behavioral_quality": "Agent recognizes loyalty signals and treats guest as VIP. Asks about preferences to personalize. Uses gathered info in subsequent turns. Offers host bridge. Does not give generic responses.",
+  "safety_relevant": false,
+  "source_file": "relationship_building.yaml",
+  "thread_id": "eval-relationship-04-1772910551",
+  "turns": [
+    {
+      "turn_index": 0,
+      "user_message": "Been coming here every other weekend for 5 years. Looking for something different tonight.",
+      "agent_response": "Five years is a great run. For something different with a group of five, Tao Asian Bistro in the Casino of the Sky is the move\u2014the atmosphere is a total departure from the rest of the floor. \n\nPro tip: their Temple area is one of the best spots on property for a group your size to grab a drink. I can help you with that and connect you with our host team to get a table squared away for tonight. Since you've been coming for five years, do you usually stick to the same favorite spots or are you ready to overhaul the whole routine tonight?",
+      "sources": [],
+      "elapsed_ms": 56053,
+      "error": null
+    },
+    {
+      "turn_index": 1,
+      "user_message": "Usually hit Bobby's and the slots. Want to try something upscale.",
+      "agent_response": "Since you\u2019re ready to pivot from your usual routine at Bobby\u2019s, Michael Jordan\u2019s Steak House in the Casino of the Sky is the definitive choice for an upscale evening. The USDA Prime steaks are aged for 28 days, giving them a depth of flavor that really sets this place apart from a standard grill. It is open until 10:00 PM tonight and follows a business casual dress code to match the refined, elegant atmosphere. \n\nI\u2019ve got you covered on the details, and I can connect you with our host team to help secure a spot for your party of five. After a meal like that, the Wolf Den usually has excellent live music right in the middle of the action if you want to stay near the slots. Are you looking for a quiet, tucked-away table tonight, or do you prefer being in the center of the energy?",
+      "sources": [],
+      "elapsed_ms": 51451,
+      "error": null
+    },
+    {
+      "turn_index": 2,
+      "user_message": "I like Italian.",
+      "agent_response": "Todd English's Tuscany in the Casino of the Sky is the standout choice for an upscale Italian night. The wood-fired aroma hits you the moment you walk in, and the open kitchen adds a great bit of theater to the evening for your group of five. It is open until 10:00 PM tonight and features a business casual dress code ($$$$). Please note that hours and prices may vary and it's best to confirm with the property. \n\nI've got you covered on the details, and I can connect you with the host team to see about getting your party a table for this evening. Fun fact\u2014Tuscany is actually built right alongside our Taughannick Falls waterfall, so you get to enjoy the view of the water while you dine. After dinner, the Wolf Den has free live music every night\u2014it\u2019s right in the Casino of the Earth and the energy is always good. Do you usually prefer a hearty, classic pasta dish, or are you more interested in exploring their wood-fired specialties?",
+      "sources": [],
+      "elapsed_ms": 84631,
+      "error": null
+    },
+    {
+      "turn_index": 3,
+      "user_message": "And after dinner?",
+      "agent_response": "I've got you\u2014novelle is an upscale ultra-lounge with craft cocktails and a DJ that's perfect for your group of five tonight. Are you looking for a high-energy dance floor or a place where you can actually talk?",
+      "sources": [
+        {
+          "category": "entertainment",
+          "source": "mohegan_sun.json",
+          "score": 0.674
+        },
+        {
+          "category": "restaurants",
+          "source": "mohegan_sun.json",
+          "score": 0.652
+        },
+        {
+          "category": "faq",
+          "source": "mohegan_sun.json",
+          "score": 0.642
+        }
+      ],
+      "elapsed_ms": 40862,
+      "error": null
+    },
+    {
+      "turn_index": 4,
+      "user_message": "Sounds like a plan.",
+      "agent_response": "Glad I could help. If you're on the gaming floor later, check your Momentum tier at the desk \u2014 you may have dining or spa credits. What sounds good?",
+      "sources": [],
+      "elapsed_ms": 2,
+      "error": null
+    }
+  ],
+  "completed": true
+}

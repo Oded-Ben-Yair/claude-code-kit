@@ -1,0 +1,57 @@
+{
+  "scenario_id": "p10-01",
+  "scenario_name": "Agent remembers name from turn 1 in turn 4",
+  "category": "profiling_p8_p9_p10_completeness",
+  "behavioral_dimension": "P10_cross_turn_memory",
+  "expected_behavior": "Angela's name appears in the turn 4 response ('Here's what I'd suggest for your evening, Angela...') despite 2 topic changes in between. The name use feels natural, not performative",
+  "expected_behavioral_quality": "The guest's name from the opening message is used naturally in turn 4 without being re-asked. The name appears in context (not forced) and demonstrates that the agent maintained the information across multiple turns of different topics.",
+  "safety_relevant": false,
+  "source_file": "profiling_p8_p9_p10_completeness.yaml",
+  "thread_id": "eval-p10-01-1772844952",
+  "turns": [
+    {
+      "turn_index": 0,
+      "user_message": "Hi, I'm Angela. What restaurants are open?",
+      "agent_response": "Angela, it is a pleasure to meet you. Since we are well into the late-night hours, the Lantern Bar & Grill is your best destination as it is open 24 hours a day.\n\nLocated right in the Casino of the Earth, the Lantern has a relaxed, welcoming vibe and serves a full menu of American favorites. Their late-night burgers are a go-to for guests looking for something hearty and satisfying when most other kitchens have closed. If you prefer a larger breakfast or brunch, our next venue to open will be Hash House A Go Go at 8:00 AM, where the portions are famously oversized.\n\nHow many people are in your party tonight? After you grab a bite, the Casino of the Earth still has plenty of energy if you are looking to catch some late-night action on the floor.",
+      "sources": [
+        {
+          "category": "restaurants",
+          "source": "mohegan_sun.json",
+          "score": 0.649
+        },
+        {
+          "category": "faq",
+          "source": "mohegan_sun.json",
+          "score": 0.633
+        }
+      ],
+      "elapsed_ms": 37152,
+      "error": null
+    },
+    {
+      "turn_index": 1,
+      "user_message": "What about entertainment?",
+      "agent_response": "Angela, Avalon Nightclub is currently open until 2:00 AM if you're looking for high-energy music and a dance floor.\n\nFor a more sophisticated lounge atmosphere, novelle is also open right now and features craft cocktails and a DJ. Later tonight, the Wolf Den will host a live band for a free show, which is a great way to experience a performance without needing a ticket.\n\nAre you in the mood for a high-energy club or something more relaxed? After the late-night fun, the Elemis Spa is a perfect spot to reset tomorrow morning.",
+      "sources": [],
+      "elapsed_ms": 49930,
+      "error": null
+    },
+    {
+      "turn_index": 2,
+      "user_message": "Is the spa still open?",
+      "agent_response": "Angela, both spas are currently closed for the night and will reopen at 9:00 AM later today.\n\nMandara Spa is a fantastic choice for Balinese-inspired healing, while Elemis Spa in the Earth Tower offers premium skincare and express treatments for a quick refresh. Let me help you with that\u2014I can provide details on their signature massages or body wraps to help you plan your morning. \n\nAre you leaning more toward a deep tissue massage or a relaxing facial? Once you finish your treatment, you might enjoy a hearty breakfast at Hash House A Go Go which opens at 8:00 AM.",
+      "sources": [],
+      "elapsed_ms": 40502,
+      "error": null
+    },
+    {
+      "turn_index": 3,
+      "user_message": "Can you put together an evening plan for me?",
+      "agent_response": "",
+      "sources": [],
+      "elapsed_ms": 60005,
+      "error": "TIMEOUT (60.0s)"
+    }
+  ],
+  "completed": true
+}

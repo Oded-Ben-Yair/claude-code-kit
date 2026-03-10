@@ -1,0 +1,86 @@
+{
+  "scenario_id": "p3-05",
+  "scenario_name": "Hotel room info plus visit purpose question",
+  "category": "profiling_p3_give_to_get",
+  "behavioral_dimension": "P3_give_to_get",
+  "expected_behavior": "Hotel comparison is complete and useful before the purpose question. When 'work trip with one free evening' is revealed, recommendations focus on efficient enjoyment \u2014 one great dinner and one nearby activity rather than an all-day itinerary",
+  "expected_behavioral_quality": "Describes room options and hotel amenities first, then asks about the visit purpose to refine the recommendation. The hotel information is useful regardless of purpose. The purpose question is framed as customizing their stay experience.",
+  "safety_relevant": false,
+  "source_file": "profiling_p3_give_to_get.yaml",
+  "thread_id": "eval-p3-05-1772992863",
+  "turns": [
+    {
+      "turn_index": 0,
+      "user_message": "What's the difference between Sky Tower and Earth Tower?",
+      "agent_response": "Sky Tower is our original hotel tower, known for its modern luxury and incredible panoramic views of the Thames River valley and the surrounding countryside. Earth Tower is our newest addition, featuring a very fresh, contemporary design and cutting-edge amenities. \n\nPro tip \u2014 if you're looking for a more tranquil sanctuary, Earth Tower is a great choice because it's slightly removed from the main hustle and is home to our premium Elemis Spa. Sky Tower is fantastic if you want to be right in the heart of the resort's energy, near the soaring Casino of the Sky. Regardless of where you stay, you're just a quick walk away from catching a show at the Wolf Den or grabbing dinner.\n\nAre you planning a relaxing getaway, or are you coming in to celebrate a special occasion?",
+      "sources": [
+        {
+          "category": "hotel",
+          "source": "mohegan_sun.json",
+          "score": 0.689
+        },
+        {
+          "category": "amenities",
+          "source": "mohegan_sun.json",
+          "score": 0.671
+        },
+        {
+          "category": "gaming",
+          "source": "mohegan_sun.json",
+          "score": 0.64
+        }
+      ],
+      "elapsed_ms": 51978,
+      "error": null
+    },
+    {
+      "turn_index": 1,
+      "user_message": "It's a work trip but we'll have one free evening",
+      "agent_response": "Since you have one free evening, the Wolf Den is a gentle way to spend it. They host free nightly shows, typically at 8:00 PM, featuring a variety of live music from national acts to local artists. It is a casual, walk-in venue with no tickets required, which makes it a low-pressure environment if you just want to sit and listen to some music for a while. \n\nIf you find you need a quiet reset after your work sessions, the Elemis Spa in the Earth Tower offers a peaceful space and signature treatments like their hot stone massage. Both are thoughtful options for a solo evening or a small group. Will you be exploring the property on your own or with some of your coworkers?",
+      "sources": [
+        {
+          "category": "entertainment",
+          "source": "mohegan_sun.json",
+          "score": 0.653
+        },
+        {
+          "category": "restaurants",
+          "source": "mohegan_sun.json",
+          "score": 0.656
+        },
+        {
+          "category": "faq",
+          "source": "mohegan_sun.json",
+          "score": 0.627
+        }
+      ],
+      "elapsed_ms": 33603,
+      "error": null
+    },
+    {
+      "turn_index": 2,
+      "user_message": "What would you suggest for that evening?",
+      "agent_response": "Since you have that one evening and are looking for a great value, I've got you \u2014 the Wolf Den is the absolute best way to spend it. It's a centerpiece of the resort that offers free nightly shows with no cover charge, so you can enjoy high-energy live music from national and local acts without needing to plan ahead or buy tickets. The setup is very intimate, so you really feel the energy of the performance while you relax.\n\nAfter the show, you might enjoy grabbing a casual bite at Lantern Bar & Grill since they are open 24 hours and have a great atmosphere for post-show dining. What kind of music usually helps you recharge after a busy day?",
+      "sources": [
+        {
+          "category": "entertainment",
+          "source": "mohegan_sun.json",
+          "score": 0.671
+        },
+        {
+          "category": "restaurants",
+          "source": "mohegan_sun.json",
+          "score": 0.664
+        },
+        {
+          "category": "faq",
+          "source": "mohegan_sun.json",
+          "score": 0.666
+        }
+      ],
+      "elapsed_ms": 32103,
+      "error": null
+    }
+  ],
+  "completed": true
+}

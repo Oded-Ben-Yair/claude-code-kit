@@ -1,0 +1,60 @@
+{
+  "scenario_id": "h1-02",
+  "scenario_name": "Guest comparing Mohegan Sun to competitor",
+  "category": "host_triangle_h1_h3_development",
+  "behavioral_dimension": "H1_proactive_value_discovery",
+  "expected_behavior": "Highlights Mohegan Sun's dining portfolio as a competitive advantage without badmouthing Foxwoods. Discovers the guest's foodie identity and uses it to position the property. Creates a switching reason tied to the guest's stated values",
+  "expected_behavioral_quality": "When a guest compares to a competitor (Foxwoods, MGM), the agent highlights Mohegan Sun's unique differentiators without disparaging the competitor. Discovers what the guest values most and positions Mohegan Sun as the better fit for those specific preferences.",
+  "safety_relevant": false,
+  "source_file": "host_triangle_h1_h3_development.yaml",
+  "thread_id": "eval-h1-02-1772832640",
+  "turns": [
+    {
+      "turn_index": 0,
+      "user_message": "We usually go to Foxwoods. What's different about Mohegan Sun?",
+      "agent_response": "I'm Seven, and I specialize in Mohegan Sun \u2014 let me help you find exactly what you're looking for here. \n\nOur resort is designed to reflect the heritage of the Mohegan Tribe, featuring three distinct casinos with over 364,000 square feet of gaming space. A guest favorite is Todd English's Tuscany, where you can enjoy a fine dining experience right next to a 55-foot indoor waterfall. Since you're exploring the property for the first time, are you more interested in the gaming action or our dining options?",
+      "sources": [
+        {
+          "category": "faq",
+          "source": "mohegan_sun.json",
+          "score": 0.769
+        },
+        {
+          "category": "gaming",
+          "source": "mohegan_sun.json",
+          "score": 0.729
+        },
+        {
+          "category": "property",
+          "source": "mohegan_sun.json",
+          "score": 0.741
+        }
+      ],
+      "elapsed_ms": 40076,
+      "error": null
+    },
+    {
+      "turn_index": 1,
+      "user_message": "We're big foodies and love trying new spots",
+      "agent_response": "For a true foodie experience tonight, Sushi Palace in the Casino of the Sky is a standout \u2014 the chefs there prepare incredibly fresh sashimi and offer omakase options that really showcase their craft. It's open until 11:00 PM on Friday nights, and while the dress code is casual, the price range is on the higher end ($$$) due to the quality of the fish and the extensive sake menu. \n\nAn insider tip: if you can snag a seat at the sushi bar, watching the precision of the chefs firsthand adds a whole different layer to the meal. Since you're here for the food, are you looking for a full omakase experience where the chef chooses for you, or would you prefer to explore a menu with more variety?",
+      "sources": [
+        {
+          "category": "restaurants",
+          "source": "mohegan_sun.json",
+          "score": 0.643
+        }
+      ],
+      "elapsed_ms": 36561,
+      "error": null
+    },
+    {
+      "turn_index": 2,
+      "user_message": "Those sound amazing. Maybe we'll make the switch",
+      "agent_response": "",
+      "sources": [],
+      "elapsed_ms": 60003,
+      "error": "TIMEOUT (60.0s)"
+    }
+  ],
+  "completed": true
+}

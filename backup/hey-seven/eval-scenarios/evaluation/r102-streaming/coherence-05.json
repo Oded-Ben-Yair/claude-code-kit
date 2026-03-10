@@ -1,0 +1,55 @@
+{
+  "scenario_id": "coherence-05",
+  "scenario_name": "Conversation derailment and recovery",
+  "category": "behavioral_multiturn_coherence",
+  "behavioral_dimension": "B7_coherence",
+  "expected_behavior": "Turn 2 pivot to pool handled without losing the dinner context. Turn 3 return to dinner topic should still have anniversary context and party of 2 \u2014 agent does not start the dinner recommendation from scratch",
+  "expected_behavioral_quality": "When a guest abruptly changes topic mid-recommendation, the agent handles the pivot gracefully and can return to the original topic if the guest circles back. No loss of previously gathered context.",
+  "safety_relevant": false,
+  "source_file": "behavioral_multiturn_coherence.yaml",
+  "thread_id": "eval-coherence-05-1772916166",
+  "turns": [
+    {
+      "turn_index": 0,
+      "user_message": "I need a dinner reservation for 2, we're celebrating our anniversary",
+      "agent_response": "Happy anniversary! It is a pleasure to help you mark such a special milestone.\n\nFor an anniversary, Michael Jordan\u2019s Steak House in the Casino of the Sky is the gold standard, offering a sophisticated atmosphere and incredible USDA Prime steaks. They are open until 10:00 PM tonight with an upscale price range, and since it is our premier spot for celebrations, reservations are highly recommended. After a meal like that, you might enjoy walking over to the Wolf Den to catch some live music together.\n\nHappy anniversary. Let me see about upgrading your experience at Mohegan Sun to make it extra special. \n\nAre you looking to dine this evening, or is there a different date you have in mind for the celebration?",
+      "sources": [
+        {
+          "category": "restaurants",
+          "source": "mohegan_sun.json",
+          "score": 0.642
+        }
+      ],
+      "elapsed_ms": 29633,
+      "error": null
+    },
+    {
+      "turn_index": 1,
+      "user_message": "Wait, where's the pool? My wife wants to swim first",
+      "agent_response": "Our heated indoor pool and hot tub are available to hotel guests and are open daily until 10:00 PM. Since it is currently 8:43 PM, she has just over an hour to enjoy the water before it closes for the evening. It is a wonderful way to reset and find a moment of calm together before the excitement of your celebration begins.\n\nHappy anniversary! Let me see about upgrading your experience at Mohegan Sun to make it extra special.\n\nOnce she is finished with her swim, would you prefer a table at one of our fine dining spots like Michael Jordan's Steak House or perhaps something more casual?",
+      "sources": [],
+      "elapsed_ms": 60218,
+      "error": null
+    },
+    {
+      "turn_index": 2,
+      "user_message": "Ok so about that dinner \u2014 steakhouse?",
+      "agent_response": "I've got you \u2014 Michael Jordan\u2019s Steak House in the Casino of the Sky is the definitive choice for an anniversary. The USDA Prime steaks are aged to perfection, and the elegant, low-lit atmosphere creates exactly the kind of intimacy you'd want for a celebration. They are open until 10:00 PM tonight, so you'll have just enough time to transition from the pool to your business casual attire before their last seating ($$$$). Once you are ready, I can connect you with the host team to finalize the details for your table.\n\nHappy anniversary! Let me see about upgrading your experience at Mohegan Sun to make it extra special. \n\nAfter a rich dinner like that, you might enjoy catching the live music at the Wolf Den just a short walk away. Do you prefer a classic filet mignon, or are you more of a ribeye enthusiast?",
+      "sources": [
+        {
+          "category": "restaurants",
+          "source": "mohegan_sun.json",
+          "score": 0.677
+        },
+        {
+          "category": "entertainment",
+          "source": "mohegan_sun.json",
+          "score": 0.637
+        }
+      ],
+      "elapsed_ms": 34354,
+      "error": null
+    }
+  ],
+  "completed": true
+}

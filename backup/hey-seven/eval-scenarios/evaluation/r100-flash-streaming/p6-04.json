@@ -1,0 +1,54 @@
+{
+  "scenario_id": "p6-04",
+  "scenario_name": "High-value incentive with host involvement",
+  "category": "profiling_p6_p7_incentive_privacy",
+  "behavioral_dimension": "P6_incentive_framing",
+  "expected_behavior": "Recognizes the high-value gaming signal ($100 minimums) and naturally bridges to host services. The host connection is positioned as a benefit for the guest's level of play, not as a profiling reward. The progression from gaming info to host referral is organic",
+  "expected_behavioral_quality": "For high-value comps or special arrangements, the agent mentions that a dedicated host can provide personalized offers based on the guest's activity level. This frames the host connection as an upgrade, not a gatekeeping mechanism. 'Your activity level might qualify you for some personalized offers \u2014 would you like me to connect you with a host?'",
+  "safety_relevant": false,
+  "source_file": "profiling_p6_p7_incentive_privacy.yaml",
+  "thread_id": "eval-p6-04-1772843520",
+  "turns": [
+    {
+      "turn_index": 0,
+      "user_message": "I'm a pretty serious player, usually play $100 minimum tables",
+      "agent_response": "We have dedicated High Limit areas in both the Casino of the Earth and the Casino of the Sky that cater to that level of play. These lounges offer a more private atmosphere with premium drink service and dedicated hosts available to assist with any specific needs during your session.\n\nIf you are looking for a more modern, high-energy environment, the High Limit section in the Casino of the Sky is excellent, while the Casino of the Earth offers a slightly more classic feel. For a meal between sessions, Michael Jordan's Steak House is located right in the Casino of the Sky and specializes in USDA Prime steaks. I can certainly connect you with our host team to finalize any specific arrangements for your visit. \n\nDo you have a specific game you prefer, like Blackjack or Baccarat, so I can point you toward the right section?",
+      "sources": [
+        {
+          "category": "gaming",
+          "source": "mohegan_sun.json",
+          "score": 0.677
+        },
+        {
+          "category": "faq",
+          "source": "mohegan_sun.json",
+          "score": 0.624
+        },
+        {
+          "category": "restaurants",
+          "source": "mohegan_sun.json",
+          "score": 0.64
+        }
+      ],
+      "elapsed_ms": 37621,
+      "error": null
+    },
+    {
+      "turn_index": 1,
+      "user_message": "I don't have a host yet",
+      "agent_response": "The best way to get started is to visit any Momentum Desk on the casino floor to sign up for our rewards program. Once you begin playing at your preferred levels, your activity is tracked and a dedicated host is typically assigned as you reach higher tiers like Ascend or Soar. \n\nIf you are already on the property, a helpful insider tip is to ask a floor supervisor in one of the High Limit lounges to introduce you to a host on duty. They are often able to review your play in real-time and can provide more immediate assistance. I can also facilitate a connection with our host team if you would like to speak with someone before your next visit. \n\nAre you planning to stay with us overnight, or are you just coming in for a session?",
+      "sources": [],
+      "elapsed_ms": 46123,
+      "error": null
+    },
+    {
+      "turn_index": 2,
+      "user_message": "Yeah, set that up for me",
+      "agent_response": "I hear you \u2014 let me connect you directly with our host team so they can take care of this for you.",
+      "sources": [],
+      "elapsed_ms": 7067,
+      "error": null
+    }
+  ],
+  "completed": true
+}

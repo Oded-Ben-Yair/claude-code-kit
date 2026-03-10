@@ -1,0 +1,87 @@
+{
+  "id": "p2-01",
+  "name": "Agent asks about party size after dinner question",
+  "source_file": "profiling_p2_active_probing.yaml",
+  "category": "profiling_p2_active_probing",
+  "behavioral_dimension": "P2_active_probing",
+  "expected_behavior": "First response includes a dinner recommendation AND a natural follow-up question about party size. The question feels like part of the service, not an information harvest",
+  "expected_behavioral_quality": "After answering a dinner question, naturally asks how many guests will be dining. The question flows from the recommendation context ('Should I look into a table for how many?') rather than a standalone interrogation ('How many people?').",
+  "safety_relevant": false,
+  "turns": [
+    {
+      "turn_index": 0,
+      "user_message": "What's a good dinner spot tonight?",
+      "agent_response": "The scent of incense and sizzling wok dishes greets you the moment you enter Tao Asian Bistro & Lounge, making it my top pick for your Thursday night dinner. \n\nLocated in the Casino of the Sky, it offers a stunning Pan-Asian menu where the dim sum and sushi are the stars of the show. They are open tonight from 5:00 PM to 11:00 PM with a smart casual dress code, and because of its popularity, I definitely suggest making a reservation. Prices are in the $$$ range, but the dramatic atmosphere alone is worth the visit. \n\nAre you in the mood for a sophisticated Pan-Asian feast, or were you looking for something a bit more laid-back like authentic Mexican? After dinner, the Wolf Den usually has some great live music to keep the night going.",
+      "sources": [
+        {
+          "category": "restaurants",
+          "source": "mohegan_sun.json",
+          "score": 0.672
+        }
+      ],
+      "elapsed_ms": 29241,
+      "error": null
+    },
+    {
+      "turn_index": 1,
+      "user_message": "Just the two of us",
+      "agent_response": "Michael Jordan's Steak House in the Casino of the Sky is an excellent choice for a dinner for two, offering a sophisticated atmosphere and prime cuts. They open at 5:00 PM tonight and have a business casual dress code. Since it's a date night, would you like me to check for any intimate shows at the Cabaret Theatre to see after your meal?",
+      "sources": [
+        {
+          "category": "entertainment",
+          "source": "mohegan_sun.json",
+          "score": 0.624
+        },
+        {
+          "category": "hotel",
+          "source": "mohegan_sun.json",
+          "score": 0.604
+        },
+        {
+          "category": "restaurants",
+          "source": "mohegan_sun.json",
+          "score": 0.622
+        },
+        {
+          "category": "amenities",
+          "source": "mohegan_sun.json",
+          "score": 0.6
+        }
+      ],
+      "elapsed_ms": 53060,
+      "error": null
+    },
+    {
+      "turn_index": 2,
+      "user_message": "That sounds great, thanks",
+      "agent_response": "Michael Jordan's Steak House is a standout choice, especially if you save room to share their famous 23-layer chocolate cake. For entertainment afterward, the Wolf Den in the Casino of the Earth usually hosts live music on Thursday nights starting around 8:00 PM. \n\nDo you prefer a high-energy live band or a quieter lounge for a cocktail to end your evening?",
+      "sources": [
+        {
+          "category": "promotions",
+          "source": "mohegan_sun.json",
+          "score": 0.64
+        },
+        {
+          "category": "entertainment",
+          "source": "mohegan_sun.json",
+          "score": 0.636
+        },
+        {
+          "category": "property",
+          "source": "mohegan_sun.json",
+          "score": 0.641
+        },
+        {
+          "category": "amenities",
+          "source": "mohegan_sun.json",
+          "score": 0.636
+        }
+      ],
+      "elapsed_ms": 42761,
+      "error": null
+    }
+  ],
+  "elapsed_ms": 125062,
+  "error": null,
+  "completed": true
+}

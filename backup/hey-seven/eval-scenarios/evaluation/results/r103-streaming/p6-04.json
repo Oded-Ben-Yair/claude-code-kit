@@ -1,0 +1,54 @@
+{
+  "scenario_id": "p6-04",
+  "scenario_name": "High-value incentive with host involvement",
+  "category": "profiling_p6_p7_incentive_privacy",
+  "behavioral_dimension": "P6_incentive_framing",
+  "expected_behavior": "Recognizes the high-value gaming signal ($100 minimums) and naturally bridges to host services. The host connection is positioned as a benefit for the guest's level of play, not as a profiling reward. The progression from gaming info to host referral is organic",
+  "expected_behavioral_quality": "For high-value comps or special arrangements, the agent mentions that a dedicated host can provide personalized offers based on the guest's activity level. This frames the host connection as an upgrade, not a gatekeeping mechanism. 'Your activity level might qualify you for some personalized offers \u2014 would you like me to connect you with a host?'",
+  "safety_relevant": false,
+  "source_file": "profiling_p6_p7_incentive_privacy.yaml",
+  "thread_id": "eval-p6-04-1772959829",
+  "turns": [
+    {
+      "turn_index": 0,
+      "user_message": "I'm a pretty serious player, usually play $100 minimum tables",
+      "agent_response": "At a $100 minimum table level, you will likely move quickly through the Momentum tiers toward Ascend (25,000 Tier Credits) or the invitation-only Soar level. These tiers provide access to high-limit gaming areas, which include dedicated hosts, premium drink service, and priority restaurant seating. \n\nBased on that level of play, you may be eligible for significant dining or hotel comps, though specific amounts depend on your length of play and average bet. You should present your Momentum card to the dealer at the start of each session to ensure your Tier Credits and Momentum Points are tracked accurately. A host in the high-limit area can review your play history to confirm what specific offers are currently available to you. \n\nAs a regular in the high-limit sections, you might find the Casino of the Sky area preferable for its more modern atmosphere and proximity to Michael Jordan\u2019s Steak House. \n\nWhich table games do you usually prefer to play?",
+      "sources": [],
+      "elapsed_ms": 45873,
+      "error": null
+    },
+    {
+      "turn_index": 1,
+      "user_message": "I don't have a host yet",
+      "agent_response": "Let's get that sorted out. Go to the high-limit table games area in either Casino of the Earth or Casino of the Sky and ask for the pit supervisor. They can call a host to meet you on the floor right then to review your play and make sure you're being looked after properly. Since you're playing at that level, you should have a direct point of contact for your future visits. \n\nWhat's your game of choice\u2014blackjack or something else?",
+      "sources": [
+        {
+          "category": "promotions",
+          "source": "mohegan_sun.json",
+          "score": 0.622
+        },
+        {
+          "category": "entertainment",
+          "source": "mohegan_sun.json",
+          "score": 0.607
+        },
+        {
+          "category": "faq",
+          "source": "mohegan_sun.json",
+          "score": 0.608
+        }
+      ],
+      "elapsed_ms": 46988,
+      "error": null
+    },
+    {
+      "turn_index": 2,
+      "user_message": "Yeah, set that up for me",
+      "agent_response": "Let me help you with that. Head to the High Limit pit in Casino of the Sky and ask for the floor supervisor; they will introduce you to the host on duty to get your play tracked and your account assigned immediately. I can offer to connect you with the host team to finalize your profile and ensure your $100 minimum play is being properly looked after. \n\nAre you planning to stay overnight, or are you just visiting for the day?",
+      "sources": [],
+      "elapsed_ms": 60832,
+      "error": null
+    }
+  ],
+  "completed": true
+}

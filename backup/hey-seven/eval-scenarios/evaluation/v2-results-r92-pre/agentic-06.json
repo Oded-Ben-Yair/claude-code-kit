@@ -1,0 +1,92 @@
+{
+  "id": "agentic-06",
+  "name": "Proactive weather-context suggestion",
+  "source_file": "behavioral_agentic.yaml",
+  "category": "behavioral_agentic",
+  "behavioral_dimension": "B4_agentic",
+  "expected_behavior": "Reads weather context and proactively recommends only indoor activities. Does not suggest pool or outdoor options. Adjusts all recommendations to the rainy-day constraint",
+  "expected_behavioral_quality": "When a guest mentions weather conditions, adjusts recommendations proactively. Does not suggest outdoor activities when the guest mentions rain. Anticipates the practical impact without being asked.",
+  "safety_relevant": false,
+  "turns": [
+    {
+      "turn_index": 0,
+      "user_message": "It's raining pretty hard outside. What should we do?",
+      "agent_response": "Since it's Thursday morning, the Shops at Mohegan Sun are opening at 10:00 AM, giving you dozens of boutiques and brand-name stores to explore. If you'd rather lean into the cozy weather, the Elemis Spa is the perfect indoor reset, especially their legendary hot stone massage. Are you looking for a relaxing spa morning or would you prefer something more active like our indoor Wombi Rock climbing wall?",
+      "sources": [
+        {
+          "category": "faq",
+          "source": "mohegan_sun.json",
+          "score": 0.632
+        },
+        {
+          "category": "entertainment",
+          "source": "mohegan_sun.json",
+          "score": 0.624
+        },
+        {
+          "category": "amenities",
+          "source": "mohegan_sun.json",
+          "score": 0.599
+        },
+        {
+          "category": "gaming",
+          "source": "mohegan_sun.json",
+          "score": 0.599
+        }
+      ],
+      "elapsed_ms": 30459,
+      "error": null
+    },
+    {
+      "turn_index": 1,
+      "user_message": "The spa sounds nice. Is it all indoors?",
+      "agent_response": "Every part of the spa experience is entirely indoors, so you can stay completely dry while moving between your room, the treatments, and the rest of the resort. Mandara Spa is particularly peaceful on a rainy morning, offering a relaxation lounge and steam rooms that feel like a total escape from the weather. If you are looking for something specific, Elemis Spa in the Earth Tower is known for its luxury skincare and express services for guests on the go. Once you are finished, the heated indoor pool is also open until 10:00 PM if you would like to keep the relaxation going. Would you like to hear about our signature Balinese-inspired massages at Mandara?",
+      "sources": [
+        {
+          "category": "amenities",
+          "source": "mohegan_sun.json",
+          "score": 0.692
+        },
+        {
+          "category": "faq",
+          "source": "mohegan_sun.json",
+          "score": 0.691
+        },
+        {
+          "category": "property",
+          "source": "mohegan_sun.json",
+          "score": 0.669
+        }
+      ],
+      "elapsed_ms": 27614,
+      "error": null
+    },
+    {
+      "turn_index": 2,
+      "user_message": "Perfect. And dinner after?",
+      "agent_response": "Michael Jordan's Steak House is the ideal way to complement a relaxing spa morning with a sophisticated evening. They open at 5:00 PM tonight in the Casino of the Sky and serve USDA Prime steaks and fresh seafood in an elegant setting filled with sports memorabilia. Since this is one of our premier fine-dining venues with a price range of $$$$, business casual attire is requested and I would highly recommend a reservation to ensure you have a table. After dinner, you could head over to the Wolf Den for some free live music since it's all under the same roof and completely dry. Are you looking for a signature steak tonight or would you prefer to explore their fresh seafood options?",
+      "sources": [
+        {
+          "category": "entertainment",
+          "source": "mohegan_sun.json",
+          "score": 0.654
+        },
+        {
+          "category": "faq",
+          "source": "mohegan_sun.json",
+          "score": 0.635
+        },
+        {
+          "category": "restaurants",
+          "source": "mohegan_sun.json",
+          "score": 0.639
+        }
+      ],
+      "elapsed_ms": 27103,
+      "error": null
+    }
+  ],
+  "elapsed_ms": 85178,
+  "error": null,
+  "completed": true
+}

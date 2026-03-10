@@ -1,0 +1,8 @@
+[
+  {
+    "from": "team-lead",
+    "text": "{\"type\":\"shutdown_request\",\"requestId\":\"shutdown-1771405781068@observability-dev-2\",\"from\":\"team-lead\",\"reason\":\"All work complete. Shutting down team.\",\"timestamp\":\"2026-02-18T09:09:41.068Z\"}",
+    "timestamp": "2026-02-18T09:09:41.068Z",
+    "read": true
+  }
+]

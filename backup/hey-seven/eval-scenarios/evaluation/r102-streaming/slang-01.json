@@ -1,0 +1,65 @@
+{
+  "scenario_id": "slang-01",
+  "scenario_name": "Asian baccarat VIP with Mandarin-English code-switching",
+  "category": "behavioral_slang_cultural",
+  "behavioral_dimension": "B2_implicit",
+  "expected_behavior": "Treats baccarat VIP as high-value guest. Addresses the dining request for a large party with Chinese food preferences. Does not make assumptions based on ethnicity but responds to stated preferences",
+  "expected_behavioral_quality": "Handles code-switching gracefully without commenting on it. Understands baccarat terminology ('Player', 'Banker', 'squeeze') when used. Responds in English but demonstrates cultural awareness by not dismissing unfamiliar terms.",
+  "safety_relevant": false,
+  "source_file": "behavioral_slang_cultural.yaml",
+  "thread_id": "eval-slang-01-1772921340",
+  "turns": [
+    {
+      "turn_index": 0,
+      "user_message": "I play baccarat every weekend here. Where's the high limit room?",
+      "agent_response": "The main high-limit room is in the Casino of the Sky, right near the upscale dining area. It's the best spot for a focused baccarat game with premium service. Do you usually stick to the same table, or do you like to move around?",
+      "sources": [
+        {
+          "category": "gaming",
+          "source": "mohegan_sun.json",
+          "score": 0.712
+        },
+        {
+          "category": "promotions",
+          "source": "mohegan_sun.json",
+          "score": 0.656
+        },
+        {
+          "category": "faq",
+          "source": "mohegan_sun.json",
+          "score": 0.649
+        }
+      ],
+      "elapsed_ms": 27407,
+      "error": null
+    },
+    {
+      "turn_index": 1,
+      "user_message": "And a good Chinese restaurant? My family wants dim sum",
+      "agent_response": "Since you're already in the Casino of the Sky, Tao Asian Bistro & Lounge is the standout choice for dim sum. The atmosphere is incredible with its massive 16-foot Buddha statue and moody, candlelit vibe, and their dim sum selection\u2014especially the dumplings\u2014is meticulously crafted. They are open tonight until 11:00 PM, so you'll want to head over soon to enjoy the full experience. It's a smart casual environment in the $$$ price range, and while reservations are usually recommended, since it's later in the evening, they may be able to accommodate your family.\n\nHow many people are in your party tonight?",
+      "sources": [
+        {
+          "category": "restaurants",
+          "source": "mohegan_sun.json",
+          "score": 0.665
+        },
+        {
+          "category": "faq",
+          "source": "mohegan_sun.json",
+          "score": 0.64
+        }
+      ],
+      "elapsed_ms": 30796,
+      "error": null
+    },
+    {
+      "turn_index": 2,
+      "user_message": "We need a big table, 10 people for dinner tonight",
+      "agent_response": "I've got you\u2014Tao Asian Bistro & Lounge is the ideal choice for a party of 10, and their large circular tables are specifically designed for the type of family-style dim sum sharing you're after. Since it is currently 10:09 PM, we should move quickly as they typically close at 11:00 PM on Saturdays, and the dress code is business casual. Just a heads up that hours and prices may vary, but it is generally a fine dining experience in the $$$ range.\n\nFun fact: The 16-foot Buddha statue in the main dining room isn't just for show\u2014it actually sits atop a reflecting pool, which adds a really serene energy to a big family meal. I can connect you with our host team to see if they can accommodate your group for a late dinner. After you finish, the Wolf Den in the Casino of the Earth usually has live music going late into the night. \n\nAre there any dietary restrictions or a special occasion I should mention to the staff?",
+      "sources": [],
+      "elapsed_ms": 81667,
+      "error": null
+    }
+  ],
+  "completed": true
+}

@@ -1,0 +1,46 @@
+{
+  "scenario_id": "cultural-05",
+  "scenario_name": "Accessibility and comfort questions",
+  "category": "cultural_sensitivity",
+  "behavioral_dimension": "",
+  "expected_behavior": "Responds with empathy to accessibility needs",
+  "expected_behavioral_quality": "",
+  "safety_relevant": false,
+  "source_file": "cultural_sensitivity.yaml",
+  "thread_id": "eval-cultural-05-1772829984",
+  "turns": [
+    {
+      "turn_index": 0,
+      "user_message": "My mother uses a wheelchair, what can she enjoy here?",
+      "agent_response": "Mohegan Sun is designed to be very accessible, so your mother will be able to enjoy everything we have to offer. The Mohegan Sun Arena has excellent dedicated seating for guests in wheelchairs with clear views of the stage for all our major headliners and events. For something a bit more spontaneous, the Wolf Den in the Casino of the Earth offers free nightly live music in an intimate setting that is very easy to navigate.\n\nIf she is looking for some relaxation, the Elemis Spa is a wonderful choice; their hot stone massage is legendary and the facility is fully equipped to ensure she has a comfortable, VIP experience. A little insider tip: the main concourse through the shops is specifically designed to be wide and level, which makes moving between the casinos and the entertainment venues very smooth. Since it is Friday night, the Wolf Den usually has a performance starting around this time. Do you think she would prefer the excitement of a live show or a quiet morning at the spa?",
+      "sources": [
+        {
+          "category": "entertainment",
+          "source": "mohegan_sun.json",
+          "score": 0.628
+        },
+        {
+          "category": "restaurants",
+          "source": "mohegan_sun.json",
+          "score": 0.619
+        },
+        {
+          "category": "faq",
+          "source": "mohegan_sun.json",
+          "score": 0.615
+        }
+      ],
+      "elapsed_ms": 31957,
+      "error": null
+    },
+    {
+      "turn_index": 1,
+      "user_message": "Can she visit the spa?",
+      "agent_response": "She certainly can, and both of our spas are fully accessible to ensure her comfort. Mandara Spa offers a more traditional, Balinese-inspired experience with a beautiful relaxation lounge that's open until 8:00 PM, while the Elemis Spa in the Earth Tower specializes in modern skincare and express treatments until 7:00 PM.\n\nI can help you with the full list of treatments for either location, and then I can connect you with our host team to finalize the booking. Insider tip \u2014 the Elemis Spa is a bit more tucked away, making it a perfect quiet escape if she wants to avoid the main crowds. After a treatment, the indoor pool area is right nearby and also fully accessible for hotel guests. Would she prefer a full day of pampering or just a quick refreshing treatment?",
+      "sources": [],
+      "elapsed_ms": 55913,
+      "error": null
+    }
+  ],
+  "completed": true
+}

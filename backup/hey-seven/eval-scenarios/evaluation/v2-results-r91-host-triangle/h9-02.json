@@ -1,0 +1,87 @@
+{
+  "id": "h9-02",
+  "name": "Guest on a budget needing value guidance",
+  "source_file": "host_triangle_h7_h10_revenue.yaml",
+  "category": "host_triangle_h7_h10_revenue",
+  "behavioral_dimension": "H9_revenue_aware_steering",
+  "expected_behavior": "Leads with genuinely good affordable options, not just the cheapest. Bobby's Burgers, Frank Pepe's, and the Buffet all have real culinary appeal. Pairs with the Wolf Den (free shows) to create a full evening without pressure. The guest leaves excited about a great night out, not feeling like they got the budget tour",
+  "expected_behavioral_quality": "When a guest signals budget constraints, the agent steers toward high-value experiences without condescending. Finds genuinely great options at every price point. Never makes the guest feel like they are getting a lesser experience \u2014 just a different one.",
+  "safety_relevant": false,
+  "turns": [
+    {
+      "turn_index": 0,
+      "user_message": "What's good for dinner that won't break the bank?",
+      "agent_response": "For an affordable dinner that doesn't sacrifice the sit-down experience, I'd suggest the Lantern Bar & Grill in the Casino of the Earth. It serves up hearty American favorites like steaks and burgers at a mid-range price point and is open 24 hours a day. It's a great low-stress option since they don't require reservations and the dress code is casual. \n\nIf you're looking for the most budget-friendly choice, Johnny Rockets is a fun 1950s-style diner nearby that offers great value for burgers and shakes. After dinner, the Wolf Den is right in the Casino of the Earth and offers free live music every night, which is a perfect way to keep the night going. How many people will be in your party this evening?",
+      "sources": [
+        {
+          "category": "restaurants",
+          "source": "mohegan_sun.json",
+          "score": 0.644
+        }
+      ],
+      "elapsed_ms": 49005,
+      "error": null
+    },
+    {
+      "turn_index": 1,
+      "user_message": "The Buffet sounds good. Any free entertainment after?",
+      "agent_response": "The Seasons Buffet is open Friday through Sunday from 4:00 PM to 9:00 PM, so it will be closed this evening. Since you are looking for a casual meal tonight, Lantern Bar & Grill in the Casino of the Earth is open 24 hours and offers a wide variety of American favorites like burgers and steaks. \n\nFor free entertainment afterward, the Wolf Den is your best option. It features nightly live music with shows typically starting at 8:00 PM or 9:00 PM, and there is never a cover charge or ticket required. It is an intimate 350-seat venue that hosts national touring acts and tribute bands right in the center of the Casino of the Earth. \n\nAre you looking for a high-energy show, or do you prefer something more low-key?",
+      "sources": [
+        {
+          "category": "entertainment",
+          "source": "mohegan_sun.json",
+          "score": 0.706
+        },
+        {
+          "category": "restaurants",
+          "source": "mohegan_sun.json",
+          "score": 0.665
+        },
+        {
+          "category": "dining",
+          "source": "cms:dining/dining-001",
+          "score": 0.663
+        }
+      ],
+      "elapsed_ms": 32698,
+      "error": null
+    },
+    {
+      "turn_index": 2,
+      "user_message": "Wait, the Wolf Den is free? That's awesome",
+      "agent_response": "It truly is one of the best values on the property since you get to see national acts and talented tribute bands without a cover charge or ticket. The venue only seats 350 people, so it has this electric, intimate energy where you are right in the middle of the action in the Casino of the Earth.\n\nTonight's show starts at 8:00 PM, and because seating is first-come, first-served, I'd suggest arriving a little early to secure a good spot. If you find you have some extra time tomorrow morning, the Elemis Spa is the perfect way to reset after a night of music! Are you planning on heading over to the Casino of the Earth early to grab a seat before the set starts?",
+      "sources": [
+        {
+          "category": "entertainment",
+          "source": "mohegan_sun.json",
+          "score": 0.773
+        },
+        {
+          "category": "faq",
+          "source": "mohegan_sun.json",
+          "score": 0.667
+        },
+        {
+          "category": "promotions",
+          "source": "mohegan_sun.json",
+          "score": 0.637
+        },
+        {
+          "category": "gaming",
+          "source": "mohegan_sun.json",
+          "score": 0.629
+        },
+        {
+          "category": "amenities",
+          "source": "mohegan_sun.json",
+          "score": 0.633
+        }
+      ],
+      "elapsed_ms": 54755,
+      "error": null
+    }
+  ],
+  "elapsed_ms": 136459,
+  "error": null,
+  "completed": true
+}

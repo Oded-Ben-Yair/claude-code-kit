@@ -1,0 +1,91 @@
+{
+  "scenario_id": "h1-03",
+  "scenario_name": "Guest with a specific interest looking for depth",
+  "category": "host_triangle_h1_h3_development",
+  "behavioral_dimension": "H1_proactive_value_discovery",
+  "expected_behavior": "Demonstrates deep poker knowledge, treats the guest as a serious player, and builds a full weekend vision around the poker interest. Cross-sells dining and entertainment as part of a poker trip, not as disconnected amenities",
+  "expected_behavioral_quality": "When a guest signals deep interest in one domain (poker, spa, comedy), the agent demonstrates deep knowledge of that domain and connects it to related experiences. Discovers what level of engagement the guest wants and builds a personalized visit plan.",
+  "safety_relevant": false,
+  "source_file": "host_triangle_h1_h3_development.yaml",
+  "thread_id": "eval-h1-03-1772989799",
+  "turns": [
+    {
+      "turn_index": 0,
+      "user_message": "I'm really into poker. What's the poker scene like here?",
+      "agent_response": "The poker scene here is legendary, as we have one of the premier poker rooms in the Northeast with 33 tables running 24/7. You'll find plenty of action with No-Limit Texas Hold'em, Pot-Limit Omaha, and Limit Hold'em, plus we host daily tournaments with various buy-ins if you're looking for that competitive edge.\n\nThe room has a great energy and is designed for serious players who appreciate a professional environment. An insider tip for you: if you need a quick break to catch a game or grab a drink, the Bow & Arrow sports bar is just a short walk away in the Casino of the Earth and it's a perfect spot to recharge. After a long session at the tables, many players find that a treatment at Elemis Spa is the best way to work out any tension from sitting through those high-stakes hands.\n\nDo you usually prefer the fast pace of a tournament or are you more of a cash game player?",
+      "sources": [
+        {
+          "category": "gaming",
+          "source": "mohegan_sun.json",
+          "score": 0.681
+        },
+        {
+          "category": "faq",
+          "source": "mohegan_sun.json",
+          "score": 0.627
+        },
+        {
+          "category": "entertainment",
+          "source": "mohegan_sun.json",
+          "score": 0.622
+        }
+      ],
+      "elapsed_ms": 40293,
+      "error": null
+    },
+    {
+      "turn_index": 1,
+      "user_message": "Any tournaments coming up? I play pretty seriously",
+      "agent_response": "We host daily tournaments with varying buy-ins, along with regular special event series throughout the year that attract a strong competitive field. Just so you know, signing up for our Momentum program is free and you would earn toward comps starting today, as your time at the poker tables earns Tier Credits and Momentum points. \n\nIf you keep building those tier credits through your tournament and cash play, you'll unlock some really nice perks at the next level like dining credits and priority seating \u2014 it is always worth checking your progress. \n\nWhat buy-in range do you typically look for when you play?",
+      "sources": [
+        {
+          "category": "gaming",
+          "source": "mohegan_sun.json",
+          "score": 0.665
+        },
+        {
+          "category": "faq",
+          "source": "mohegan_sun.json",
+          "score": 0.635
+        },
+        {
+          "category": "amenities",
+          "source": "mohegan_sun.json",
+          "score": 0.631
+        },
+        {
+          "category": "entertainment",
+          "source": "mohegan_sun.json",
+          "score": 0.631
+        }
+      ],
+      "elapsed_ms": 64230,
+      "error": null
+    },
+    {
+      "turn_index": 2,
+      "user_message": "Nice. What else is good for a poker weekend?",
+      "agent_response": "For a serious poker weekend, you need a meal at Michael Jordan\u2019s Steak House. It\u2019s the best spot for a high-quality steak and a professional atmosphere right near the gaming floor. \n\nPro tip: the poker room has its own dedicated cage for faster buy-ins and cash-outs, which saves you time when you're on a roll. If you need to clear your head between sessions, the Wolf Den in the center of the casino has great live music with no cover charge. \n\nAre you visiting solo to focus on the grind, or are you bringing a group with you?",
+      "sources": [
+        {
+          "category": "gaming",
+          "source": "mohegan_sun.json",
+          "score": 0.685
+        },
+        {
+          "category": "faq",
+          "source": "mohegan_sun.json",
+          "score": 0.664
+        },
+        {
+          "category": "promotions",
+          "source": "mohegan_sun.json",
+          "score": 0.644
+        }
+      ],
+      "elapsed_ms": 43934,
+      "error": null
+    }
+  ],
+  "completed": true
+}

@@ -1,0 +1,65 @@
+{
+  "scenario_id": "h2-02",
+  "scenario_name": "Guest references a bad past experience",
+  "category": "host_triangle_h1_h3_development",
+  "behavioral_dimension": "H2_reactivation_win_back",
+  "expected_behavior": "Takes the complaint seriously without being defensive. Apologizes specifically for the wait time. Offers a concrete alternative for this visit and suggests mentioning the issue to the Momentum Desk for follow-up. Turns the complaint into a chance to demonstrate that things are different now",
+  "expected_behavioral_quality": "When a guest references a negative experience, the agent acknowledges it specifically, investigates without being defensive, and reframes the next visit as a fresh start. Does not minimize the complaint or rush past it.",
+  "safety_relevant": false,
+  "source_file": "host_triangle_h1_h3_development.yaml",
+  "thread_id": "eval-h2-02-1773036684",
+  "turns": [
+    {
+      "turn_index": 0,
+      "user_message": "Last time I was here the service at the steakhouse was awful. Took forever to get seated",
+      "agent_response": "I understand how frustrating it is when a long-awaited meal is delayed by seating issues\u2014that is certainly not the standard we aim for here. Since Michael Jordan\u2019s Steak House is currently closed and will not reopen until Wednesday at 5:00 PM, I'd suggest heading to Lantern Bar & Grill in the Casino of the Earth for a seamless experience today. \n\nThe aroma of their flame-grilled steaks and burgers is incredibly inviting, and because they are open 24 hours a day with a casual atmosphere, you can typically be seated and served without the formal wait you experienced previously. It is a reliable spot for a hearty American meal at any hour, and the service is geared toward getting you back to the action quickly. After you have had a chance to recharge, you might enjoy walking through the shops at the Casino of the Sky to see the latest collections. \n\nAre you staying with us for the next few days, or just passing through this morning?",
+      "sources": [
+        {
+          "category": "restaurants",
+          "source": "mohegan_sun.json",
+          "score": 0.66
+        },
+        {
+          "category": "property",
+          "source": "mohegan_sun.json",
+          "score": 0.637
+        },
+        {
+          "category": "faq",
+          "source": "mohegan_sun.json",
+          "score": 0.641
+        }
+      ],
+      "elapsed_ms": 41888,
+      "error": null
+    },
+    {
+      "turn_index": 1,
+      "user_message": "Yeah it kind of ruined the whole evening honestly",
+      "agent_response": "I truly hear you. When the timing is off at dinner, it really does throw off the rhythm of the entire night. I want to make sure your experience today feels much more effortless. \n\nIf you need a total reset after that stress, the Elemis Spa is legendary for their hot stone massage, which is perfect for clearing your head and starting fresh. Since it is early Monday morning, the property is quiet and peaceful right now, making it a great time to look into a treatment. Later tonight, the Wolf Den will have free live music where you can just walk in and enjoy the show without worrying about the pressure of reservations or seating delays. \n\nBy the way, I am Seven\u2014who do I have the pleasure of speaking with today?",
+      "sources": [
+        {
+          "category": "entertainment",
+          "source": "mohegan_sun.json",
+          "score": 0.618
+        },
+        {
+          "category": "faq",
+          "source": "mohegan_sun.json",
+          "score": 0.602
+        }
+      ],
+      "elapsed_ms": 25916,
+      "error": null
+    },
+    {
+      "turn_index": 2,
+      "user_message": "So what would you actually recommend instead?",
+      "agent_response": "Since I want to make sure your night is entirely in your control this time, I recommend skipping the rigid dinner reservations and doing something completely stress-free. \n\nIf you want a true luxury reset to make up for last time, head to Mandara Spa. They open at 9:00 AM, and their Balinese-inspired treatments are the perfect way to completely erase any residual frustration. Pro tip\u2014their tranquil relaxation lounge is one of the best hidden escapes on the property to just sit and decompress. \n\nFor tonight's entertainment, the Wolf Den is my definitive pick. There is no waiting for a host to seat you; it is free, walk-in live music right in the center of the action with a genuinely electric atmosphere. You can just grab a drink and enjoy the show on your exact schedule.\n\nWhat kind of music do you normally enjoy listening to?",
+      "sources": [],
+      "elapsed_ms": 63516,
+      "error": null
+    }
+  ],
+  "completed": true
+}

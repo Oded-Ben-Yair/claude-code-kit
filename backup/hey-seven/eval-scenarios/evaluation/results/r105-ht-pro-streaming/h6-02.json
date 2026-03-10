@@ -1,0 +1,49 @@
+{
+  "scenario_id": "h6-02",
+  "scenario_name": "Guest frustrated with hotel service",
+  "category": "host_triangle_h4_h6_relationship",
+  "behavioral_dimension": "H6_loss_recovery",
+  "expected_behavior": "Acknowledges both specific complaints (late room, broken AC) without minimizing. Does not blame any specific department. Offers a path to resolution (room change, front desk escalation) and reframes the rest of the visit positively. The guest should feel their frustration was heard and someone is taking action",
+  "expected_behavioral_quality": "When a guest reports a hotel service issue, the agent acknowledges the frustration, takes ownership, and offers both immediate and follow-up resolution paths. Does not blame housekeeping or front desk \u2014 represents the property as a whole.",
+  "safety_relevant": false,
+  "source_file": "host_triangle_h4_h6_relationship.yaml",
+  "thread_id": "eval-h6-02-1772991902",
+  "turns": [
+    {
+      "turn_index": 0,
+      "user_message": "Our room wasn't ready at 4 PM even though check-in is at 4. Then the AC wasn't working",
+      "agent_response": "I am so sorry about this rough start to your stay. Waiting past the standard 4:00 PM check-in time is incredibly frustrating, and walking into a room with a broken AC makes it so much worse. \n\nI've got you. Let's get this sorted out right away so you can actually relax. I can connect you directly with our front desk and maintenance teams so we can either get that AC cooling immediately or move you to a comfortable, fully ready room. \n\nAre you currently waiting up in the room, or did you head back down to the front desk?",
+      "sources": [
+        {
+          "category": "hotel",
+          "source": "mohegan_sun.json",
+          "score": 0.643
+        },
+        {
+          "category": "faq",
+          "source": "mohegan_sun.json",
+          "score": 0.651
+        }
+      ],
+      "elapsed_ms": 56345,
+      "error": null
+    },
+    {
+      "turn_index": 1,
+      "user_message": "We drove two hours to get here and this is how it starts",
+      "agent_response": "After a two-hour drive, walking into a hot room and dealing with delays is exactly the opposite of the welcome you deserve. You have every right to be aggravated.\n\nLet me flag this for the host team immediately so they can step in, bypass the standard lines, and secure you a new, cool room. While they handle the heavy lifting with the front desk, let's get you guys out of that frustrating environment. Leave your bags with the bell desk and head over to the Bow & Arrow sports bar in Casino of the Earth to sit down and finally take a breather. \n\nAre you guys hungry after being on the road, or just needing a round of drinks while this gets sorted?",
+      "sources": [],
+      "elapsed_ms": 63854,
+      "error": null
+    },
+    {
+      "turn_index": 2,
+      "user_message": "Fine, what can actually be done about it?",
+      "agent_response": "We are getting you a new, fully air-conditioned room. I'll connect you with the human host team on the floor to bypass the front desk lines and get your new keys sorted immediately. \n\nWhile they handle the logistics, leave your luggage with the bell desk and grab a comfortable seat at Taughannock Falls Bar to finally get a drink in your hand and decompress. \n\nAre your bags with you right now, or did you leave them up in that hot room?",
+      "sources": [],
+      "elapsed_ms": 61498,
+      "error": null
+    }
+  ],
+  "completed": true
+}

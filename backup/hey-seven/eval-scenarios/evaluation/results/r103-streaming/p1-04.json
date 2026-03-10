@@ -1,0 +1,81 @@
+{
+  "scenario_id": "p1-04",
+  "scenario_name": "Guest mentions party size implicitly",
+  "category": "profiling_p1_natural_extraction",
+  "behavioral_dimension": "P1_natural_extraction",
+  "expected_behavior": "Registers 'me and the wife' as party of 2 and tilts toward romantic or couples-appropriate recommendations. Does not ask 'how many in your party?' when it was already stated",
+  "expected_behavioral_quality": "Infers party size from conversational cues like pronouns and companion mentions. 'Me and the wife' means party of 2. 'The four of us' means party of 4. Does not ask for a headcount when it has been stated implicitly.",
+  "safety_relevant": false,
+  "source_file": "profiling_p1_natural_extraction.yaml",
+  "thread_id": "eval-p1-04-1772954267",
+  "turns": [
+    {
+      "turn_index": 0,
+      "user_message": "Me and the wife are looking for a nice dinner spot",
+      "agent_response": "For a memorable evening with your wife, I'd suggest **Todd English\u2019s Tuscany** in the Casino of the Sky. The wood-fired aroma hits you the moment you walk in, and the handmade pastas have a texture you just can't find anywhere else. It is widely considered our most romantic setting, especially if you can snag a table near the indoor waterfall.\n\nTuscany is open tonight from 5:00 PM to 10:00 PM. It is a fine-dining experience with a business casual dress code and a price range around $$$$. Since it is a Sunday evening, reservations are definitely recommended to ensure you get a prime spot. If you have any dietary preferences, the chefs there are excellent at adapting their classic Italian dishes to accommodate you.\n\n**Insider Tip:** While the pastas are famous, the wood-fired flatbreads are the perfect way to start your meal while you soak in the atmosphere of the open kitchen.\n\nAfter dinner, you might enjoy a stroll over to the Wolf Den in the Casino of the Earth for some live music to round out the night. Prices and hours can vary, so it's always a good idea to confirm with the property when you arrive.\n\nIs there a particular occasion you two are celebrating tonight, or are you just looking for a great meal?",
+      "sources": [
+        {
+          "category": "restaurants",
+          "source": "mohegan_sun.json",
+          "score": 0.652
+        }
+      ],
+      "elapsed_ms": 29085,
+      "error": null
+    },
+    {
+      "turn_index": 1,
+      "user_message": "Something with a view or good atmosphere",
+      "agent_response": "If you are looking for pure atmosphere, **Tao Asian Bistro & Lounge** in the Casino of the Sky is spectacular. The moment you walk in, the sight of the massive, 16-foot backlit Buddha and the glowing lanterns creates an energy that feels both intimate and grand. It is easily one of the most visually stunning spots on the property.\n\nTao is open today from 5:00 PM to 11:00 PM. The menu is a journey through Chinese, Japanese, and Thai flavors, and their sushi bar is exceptional. I'd suggest the Miso Glazed Sea Bass\u2014it has a buttery richness that practically melts on the tongue. The dress code is smart casual, the price range is around $$$, and because it's such a popular destination for its vibe, I'd suggest securing a reservation. They are also very accommodating with dietary needs, offering a variety of vegetarian and gluten-free options.\n\n**Insider Tip:** If you want the full experience, ask for a table in the main dining room near the reflecting pool; the ambient lighting there makes for a truly incredible backdrop for a dinner date.\n\nAfter your meal, you might enjoy the Birdcage Bar right nearby in the Casino of the Sky. It\u2019s an upscale lounge that stays open until 2:00 AM, perfect for a nightcap in a sophisticated setting! Just keep in mind that hours and pricing can vary, so it's best to confirm when you arrive.\n\nI've got you covered for the atmosphere\u2014do you and your wife usually prefer sharing small plates like dim sum, or do you like having your own dedicated entrees?",
+      "sources": [
+        {
+          "category": "entertainment",
+          "source": "mohegan_sun.json",
+          "score": 0.676
+        },
+        {
+          "category": "gaming",
+          "source": "mohegan_sun.json",
+          "score": 0.656
+        },
+        {
+          "category": "restaurants",
+          "source": "mohegan_sun.json",
+          "score": 0.65
+        },
+        {
+          "category": "hotel",
+          "source": "mohegan_sun.json",
+          "score": 0.651
+        }
+      ],
+      "elapsed_ms": 58974,
+      "error": null
+    },
+    {
+      "turn_index": 2,
+      "user_message": "That sounds perfect for the two of us",
+      "agent_response": "I am glad that hits the mark for you. Since you will be in the Casino of the Sky for dinner, staying in the **Sky Tower** would be your best bet for a seamless evening.\n\nA Sky Tower suite would feel like a private retreat after your night out, especially with the floor-to-ceiling windows that look out over the Thames River or the Connecticut hills. If you prefer something slightly more modern and intimate, the **Earth Tower** is our newest addition and has a very fresh, contemporary feel to it.\n\nCheck-in is typically between 3:00 PM and 4:00 PM, and since our front desk is open 24 hours, there is no rush if your dinner runs late. Check-out is at 11:00 AM, though we can always check for late check-out availability if you want to sleep in. Rates for a Deluxe Room start around $169 depending on the season, so I'd suggest confirming the specific price once you have your dates in mind.\n\n**Insider Tip:** If you stay in the Sky Tower, you are just an elevator ride away from the Mandara Spa, which is a great way to spend a quiet Monday morning before heading home.\n\nAfter a big dinner at Tao, would you prefer a room closer to the action in the Sky Tower, or a slightly quieter corner in the Earth Tower?",
+      "sources": [
+        {
+          "category": "entertainment",
+          "source": "mohegan_sun.json",
+          "score": 0.653
+        },
+        {
+          "category": "hotel",
+          "source": "mohegan_sun.json",
+          "score": 0.64
+        },
+        {
+          "category": "property",
+          "source": "mohegan_sun.json",
+          "score": 0.648
+        }
+      ],
+      "elapsed_ms": 43031,
+      "error": null
+    }
+  ],
+  "completed": true
+}

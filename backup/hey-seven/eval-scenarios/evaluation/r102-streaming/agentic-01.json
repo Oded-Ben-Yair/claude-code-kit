@@ -1,0 +1,49 @@
+{
+  "scenario_id": "agentic-01",
+  "scenario_name": "Cross-domain suggestion after dining question",
+  "category": "behavioral_agentic",
+  "behavioral_dimension": "B4_agentic",
+  "expected_behavior": "Answers the dining question directly, then proactively suggests an after-dinner activity that pairs naturally with the timing and context",
+  "expected_behavioral_quality": "After answering a dining question, proactively suggests a complementary activity (show, spa) without being asked. The suggestion is contextually relevant (e.g., after-dinner show) and not forced.",
+  "safety_relevant": false,
+  "source_file": "behavioral_agentic.yaml",
+  "thread_id": "eval-agentic-01-1772909868",
+  "turns": [
+    {
+      "turn_index": 0,
+      "user_message": "Where should we go for dinner tonight?",
+      "agent_response": "For a Saturday night, Tao Asian Bistro & Lounge in the Casino of the Sky is the standout choice. The atmosphere is vibrant and stylish, and their Pan-Asian menu features everything from high-end sushi to signature dim sum. They are open until 11:00 PM tonight with a price range of $$$ and recommend smart casual attire; since it's a weekend, reservations are highly recommended.\n\nInsider tip: The dim sum here is exceptional\u2014it's the kind of thing guests come back for specifically.\n\nAfter dinner, the Wolf Den in the Casino of the Earth usually has a great live performance going on. I've got you if you want more details on the menu, or I can help connect you with our team to finalize a reservation. What kind of cuisine do you usually find yourself craving on a night out?",
+      "sources": [
+        {
+          "category": "restaurants",
+          "source": "mohegan_sun.json",
+          "score": 0.665
+        },
+        {
+          "category": "faq",
+          "source": "mohegan_sun.json",
+          "score": 0.647
+        }
+      ],
+      "elapsed_ms": 57285,
+      "error": null
+    },
+    {
+      "turn_index": 1,
+      "user_message": "The steakhouse sounds good. What time?",
+      "agent_response": "Michael Jordan's Steak House is open until 10:00 PM tonight in the Casino of the Sky. It is an upscale experience with a price range around $$$$, and business casual attire is recommended to match the elegant atmosphere. Since it is a Saturday night, reservations are highly recommended to ensure you get a prime spot, and I can certainly connect you with our host team to see about finalizing a table for you.\n\nThe scent of USDA Prime steaks hitting the broiler is what truly sets the tone the moment you walk in. While the steaks are the star, the fresh seafood and extensive wine list are equally impressive for a high-end night out. Please keep in mind that hours and pricing can vary, so it is always a good idea to confirm details when you arrive. After you finish your meal, you might enjoy heading over to the Wolf Den in the Casino of the Earth, which features free live music in a high-energy setting.\n\nDo you usually lean toward a classic, marbleized ribeye, or do you prefer a leaner cut like a filet?",
+      "sources": [],
+      "elapsed_ms": 56489,
+      "error": null
+    },
+    {
+      "turn_index": 2,
+      "user_message": "Great, we'll do that",
+      "agent_response": "Glad I could help. The Wolf Den has free live music every night \u2014 it's right in the Casino of the Earth and worth checking out. What sounds good?",
+      "sources": [],
+      "elapsed_ms": 2,
+      "error": null
+    }
+  ],
+  "completed": true
+}

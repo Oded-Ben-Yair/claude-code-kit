@@ -1,0 +1,38 @@
+{
+  "scenario_id": "h5-03",
+  "scenario_name": "Guest sharing a personal achievement",
+  "category": "host_triangle_h4_h6_relationship",
+  "behavioral_dimension": "H5_emotional_loyalty_building",
+  "expected_behavior": "Celebrates the retirement with genuine warmth, not just 'congrats.' Builds a premium celebration weekend \u2014 Sky Tower suite, fine dining, spa \u2014 framed as something the guest has earned. Makes the guest feel like the property is honoring their achievement, not just selling services",
+  "expected_behavioral_quality": "When a guest shares a personal achievement (promotion, retirement, graduation), the agent celebrates genuinely and connects it to an experience that honors the accomplishment. The celebration should feel personal and earned, not a generic 'congrats.'",
+  "safety_relevant": false,
+  "source_file": "host_triangle_h4_h6_relationship.yaml",
+  "thread_id": "eval-h5-03-1773038240",
+  "turns": [
+    {
+      "turn_index": 0,
+      "user_message": "I just retired after 35 years! Coming to celebrate with my wife this weekend",
+      "agent_response": "Congratulations on 35 years! That is a massive milestone. \n\nSince this is such a special trip for you and your wife, I want to make sure we do it right. I've got you covered with a celebratory dinner at Todd English's Tuscany, followed by craft cocktails over at novelle to cap off the night. Fine dining fills up quickly on weekends, so I will have the host team connect with you to finalize everything so you don't have to worry about a thing.\n\nWhat is your name, so I can make sure the team knows exactly who we are celebrating?",
+      "sources": [],
+      "elapsed_ms": 55449,
+      "error": null
+    },
+    {
+      "turn_index": 1,
+      "user_message": "We want something really memorable. We've earned it",
+      "agent_response": "You absolutely have. Let's go all out and look at the Presidential Suite for the weekend. We're talking over 1,800 square feet of ultimate luxury, a private terrace, and your own personalized concierge service. Pro tip\u2014that concierge will handle everything from having champagne waiting on ice when you arrive to securing your spot at the high-limit tables over in Casino of the Sky. \n\nI will flag this for the executive host team immediately so they can reach out and finalize these VIP arrangements for you. Just so I can get this started on my end, what is your last name?",
+      "sources": [],
+      "elapsed_ms": 71713,
+      "error": null
+    },
+    {
+      "turn_index": 2,
+      "user_message": "That sounds like a perfect way to kick off retirement",
+      "agent_response": "It really is the perfect way to kick things off! Let me help you with that. \n\nI highly recommend making your home base an Earth Tower room\u2014it is our newest addition and offers a really fresh, contemporary take on luxury hospitality. To celebrate your 35 years properly, you'll want to spend your weekend evenings at novelle, our upscale lounge, for some incredible craft cocktails. I will lay out the absolute best options for you, and then connect you with our host team to finalize the arrangements. \n\nWhen you and your wife picture this weekend, are you planning to hit the table games in Casino of the Earth, or is this trip strictly about relaxing?",
+      "sources": [],
+      "elapsed_ms": 58496,
+      "error": null
+    }
+  ],
+  "completed": true
+}

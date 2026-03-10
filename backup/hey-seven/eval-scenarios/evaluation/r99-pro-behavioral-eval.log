@@ -1,0 +1,1595 @@
+2026-03-06 14:44:33,334 INFO live_eval: Loading scenarios (pattern=behavioral_*.yaml)...
+2026-03-06 14:44:33,447 INFO live_eval: Loaded 109 scenarios from 14 files
+2026-03-06 14:44:33,447 INFO live_eval: Building graph with gemini-3-flash-preview (timeout=120s)...
+2026-03-06 14:44:33,985 WARNING src.agent.regex_engine: google-re2 not available — falling back to stdlib re (ReDoS risk)
+2026-03-06 14:44:34,741 INFO src.agent.graph: Feature flags at graph build: {'ai_disclosure_enabled': True, 'whisper_planner_enabled': True, 'specialist_agents_enabled': True, 'comp_agent_enabled': True, 'spanish_support_enabled': True, 'human_like_delay_enabled': True, 'sentiment_detection_enabled': True, 'guest_profile_enabled': True, 'field_extraction_enabled': True, 'sentiment_llm_augmented': True, 'extraction_llm_augmented': True, 'profiling_enabled': True, 'incentives_enabled': True, 'few_shot_examples_enabled': True, 'model_routing_enabled': True}
+2026-03-06 14:44:34,760 INFO src.agent.graph: Custom 12-node StateGraph compiled successfully.
+2026-03-06 14:44:34,760 INFO live_eval: Streaming per-scenario results to tests/evaluation/r99-pro-behavioral-streaming
+2026-03-06 14:44:34,761 INFO live_eval: [1/109] Running scenario agentic-01: Cross-domain suggestion after dining question
+2026-03-06 14:44:34,857 INFO google_genai.models: AFC is enabled with max remote calls: 10.
+2026-03-06 14:44:36,948 INFO src.agent.guardrails: Semantic injection classifier: is_injection=False confidence=1.00
+2026-03-06 14:44:36,961 INFO google_genai.models: AFC is enabled with max remote calls: 10.
+2026-03-06 14:44:41,058 INFO httpx: HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-embedding-001:batchEmbedContents "HTTP/1.1 200 OK"
+/home/odedbe/projects/hey-seven/src/rag/pipeline.py:1110: LangChainDeprecationWarning: The class `Chroma` was deprecated in LangChain 0.2.9 and will be removed in 1.0. An updated version of the class exists in the `langchain-chroma package and should be used instead. To use it run `pip install -U `langchain-chroma` and import as `from `langchain_chroma import Chroma``.
+  vectorstore = Chroma(
+2026-03-06 14:44:41,384 INFO chromadb.telemetry.product.posthog: Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+2026-03-06 14:44:41,474 INFO src.rag.pipeline: Loaded ChromaDB retriever from data/chroma
+2026-03-06 14:44:41,771 INFO httpx: HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-embedding-001:batchEmbedContents "HTTP/1.1 200 OK"
+2026-03-06 14:44:41,970 INFO httpx: HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-embedding-001:batchEmbedContents "HTTP/1.1 200 OK"
+2026-03-06 14:44:42,080 INFO google_genai.models: AFC is enabled with max remote calls: 10.
+2026-03-06 14:44:46,667 INFO google_genai.models: AFC is enabled with max remote calls: 10.
+2026-03-06 14:44:49,654 INFO src.agent.dispatch: Structured dispatch -> dining (confidence=1.00, reason=The guest query specifically asks for dinner recommendations, which is the prima)
+2026-03-06 14:44:49,654 INFO src.agent.nodes: R99 model routing: Pro (FORCE_PRO_MODEL override)
+2026-03-06 14:44:49,654 INFO src.agent.dispatch: Dispatching to dining agent (method=structured_output, model=gemini-3.1-pro-preview)
+2026-03-06 14:44:49,656 INFO src.agent.agents._base: R83: Injected 3 few-shot examples for dining agent
+2026-03-06 14:44:49,664 INFO google_genai.models: AFC is enabled with max remote calls: 10.
+2026-03-06 14:44:57,861 INFO google_genai.models: AFC is enabled with max remote calls: 10.
+2026-03-06 14:45:01,958 INFO src.agent.profiling: Profiling extraction: filled=0/16 fields, keys=[], skipped=['guest_name', 'party_size', 'party_composition', 'visit_purpose', 'visit_duration']
+2026-03-06 14:45:01,958 INFO src.agent.profiling: Profiling state: phase=foundation, completeness=0.00, total_known=0, new_this_turn=0
+2026-03-06 14:45:02,006 INFO google_genai.models: AFC is enabled with max remote calls: 10.
+2026-03-06 14:45:06,384 INFO src.agent.dispatch: Retry path -- reusing specialist dining (skipping dispatch)
+2026-03-06 14:45:06,384 INFO src.agent.nodes: R99 model routing: Pro (FORCE_PRO_MODEL override)
+2026-03-06 14:45:06,384 INFO src.agent.dispatch: Dispatching to dining agent (method=retry_reuse, model=gemini-3.1-pro-preview)
+2026-03-06 14:45:06,384 INFO src.agent.agents._base: R83: Injected 3 few-shot examples for dining agent
+2026-03-06 14:45:06,430 INFO src.agent.agents._base: R83: Using Pro model (gemini-3.1-pro-preview) for dining agent
+2026-03-06 14:45:06,431 INFO google_genai.models: AFC is enabled with max remote calls: 10.
+2026-03-06 14:45:06,825 INFO google_genai._api_client: Retrying google.genai._api_client.BaseApiClient._async_request_once in 1.888875488547439 seconds as it raised ClientError: 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_requests_per_model_per_day, limit: 250, model: gemini-3.1-pro\nPlease retry in 9h14m52.281312048s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_requests_per_model_per_day', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel', 'quotaDimensions': {'location': 'global', 'model': 'gemini-3.1-pro'}, 'quotaValue': '250'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '33292s'}]}}.
+2026-03-06 14:45:08,816 ERROR src.agent.agents._base: Dining agent LLM call failed
+Traceback (most recent call last):
+  File "/home/odedbe/.local/lib/python3.12/site-packages/langchain_google_genai/chat_models.py", line 3088, in _agenerate
+    await self.client.aio.models.generate_content(
+  File "/home/odedbe/.local/lib/python3.12/site-packages/google/genai/models.py", line 7331, in generate_content
+    response = await self._generate_content(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/odedbe/.local/lib/python3.12/site-packages/google/genai/models.py", line 6095, in _generate_content
+    response = await self._api_client.async_request(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/odedbe/.local/lib/python3.12/site-packages/google/genai/_api_client.py", line 1442, in async_request
+    result = await self._async_request(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/odedbe/.local/lib/python3.12/site-packages/google/genai/_api_client.py", line 1374, in _async_request
+    return await retry(self._async_request_once, http_request, stream)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/odedbe/.local/lib/python3.12/site-packages/tenacity/asyncio/__init__.py", line 111, in __call__
+    do = await self.iter(retry_state=retry_state)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/odedbe/.local/lib/python3.12/site-packages/tenacity/asyncio/__init__.py", line 153, in iter
+    result = await action(retry_state)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/odedbe/.local/lib/python3.12/site-packages/tenacity/_utils.py", line 99, in inner
+    return call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/odedbe/.local/lib/python3.12/site-packages/tenacity/__init__.py", line 420, in exc_check
+    raise retry_exc.reraise()
+          ^^^^^^^^^^^^^^^^^^^
+  File "/home/odedbe/.local/lib/python3.12/site-packages/tenacity/__init__.py", line 187, in reraise
+    raise self.last_attempt.result()
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/concurrent/futures/_base.py", line 449, in result
+    return self.__get_result()
+           ^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/concurrent/futures/_base.py", line 401, in __get_result
+    raise self._exception
+  File "/home/odedbe/.local/lib/python3.12/site-packages/tenacity/asyncio/__init__.py", line 114, in __call__
+    result = await fn(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/odedbe/.local/lib/python3.12/site-packages/google/genai/_api_client.py", line 1320, in _async_request_once
+    await errors.APIError.raise_for_async_response(response)
+  File "/home/odedbe/.local/lib/python3.12/site-packages/google/genai/errors.py", line 216, in raise_for_async_response
+    await cls.raise_error_async(status_code, response_json, response)
+  File "/home/odedbe/.local/lib/python3.12/site-packages/google/genai/errors.py", line 238, in raise_error_async
+    raise ClientError(status_code, response_json, response)
+google.genai.errors.ClientError: 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_requests_per_model_per_day, limit: 250, model: gemini-3.1-pro\nPlease retry in 9h14m50.291692317s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_requests_per_model_per_day', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel', 'quotaDimensions': {'model': 'gemini-3.1-pro', 'location': 'global'}, 'quotaValue': '250'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '33290s'}]}}
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/odedbe/projects/hey-seven/src/agent/agents/_base.py", line 1301, in execute_specialist
+    response = await llm.ainvoke(llm_messages)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/odedbe/.local/lib/python3.12/site-packages/langchain_core/language_models/chat_models.py", line 425, in ainvoke
+    llm_result = await self.agenerate_prompt(
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/odedbe/.local/lib/python3.12/site-packages/langchain_core/language_models/chat_models.py", line 1132, in agenerate_prompt
+    return await self.agenerate(
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/odedbe/.local/lib/python3.12/site-packages/langchain_core/language_models/chat_models.py", line 1090, in agenerate
+    raise exceptions[0]
+  File "/home/odedbe/.local/lib/python3.12/site-packages/langchain_core/language_models/chat_models.py", line 1359, in _agenerate_with_cache
+    result = await self._agenerate(
+             ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/odedbe/.local/lib/python3.12/site-packages/langchain_google_genai/chat_models.py", line 3093, in _agenerate
+    _handle_client_error(e, request)
+  File "/home/odedbe/.local/lib/python3.12/site-packages/langchain_google_genai/chat_models.py", line 145, in _handle_client_error
+    raise ChatGoogleGenerativeAIError(msg) from e
+langchain_google_genai.chat_models.ChatGoogleGenerativeAIError: Error calling model 'gemini-3.1-pro-preview' (RESOURCE_EXHAUSTED): 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_requests_per_model_per_day, limit: 250, model: gemini-3.1-pro\nPlease retry in 9h14m50.291692317s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_requests_per_model_per_day', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel', 'quotaDimensions': {'model': 'gemini-3.1-pro', 'location': 'global'}, 'quotaValue': '250'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '33290s'}]}}
+2026-03-06 14:45:08,823 INFO google_genai.models: AFC is enabled with max remote calls: 10.
+2026-03-06 14:45:12,821 INFO src.agent.profiling: Profiling extraction: filled=0/16 fields, keys=[], skipped=['guest_name', 'party_size', 'party_composition', 'visit_purpose', 'visit_duration']
+2026-03-06 14:45:12,821 INFO src.agent.profiling: Profiling state: phase=foundation, completeness=0.00, total_known=0, new_this_turn=0
+2026-03-06 14:45:12,822 WARNING src.agent.persona: Output guardrail: PII detected in LLM response, redacting
+2026-03-06 14:45:12,823 INFO src.agent.nodes: Slop detector: cleaned 28 chars from response
+2026-03-06 14:45:12,826 INFO google_genai.models: AFC is enabled with max remote calls: 10.
+2026-03-06 14:45:15,436 INFO src.agent.guardrails: Semantic injection classifier: is_injection=False confidence=1.00
+2026-03-06 14:45:15,438 INFO google_genai.models: AFC is enabled with max remote calls: 10.
+2026-03-06 14:45:18,530 INFO httpx: HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-embedding-001:batchEmbedContents "HTTP/1.1 200 OK"
+2026-03-06 14:45:18,535 INFO httpx: HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-embedding-001:batchEmbedContents "HTTP/1.1 200 OK"
+2026-03-06 14:45:18,596 INFO google_genai.models: AFC is enabled with max remote calls: 10.
+2026-03-06 14:45:23,705 INFO google_genai.models: AFC is enabled with max remote calls: 10.
+2026-03-06 14:45:26,349 INFO src.agent.dispatch: Structured dispatch -> dining (confidence=1.00, reason=The guest is specifically asking about the timing for a steakhouse, which falls )
+2026-03-06 14:45:26,349 INFO src.agent.nodes: R99 model routing: Pro (FORCE_PRO_MODEL override)
+2026-03-06 14:45:26,349 INFO src.agent.dispatch: Dispatching to dining agent (method=structured_output, model=gemini-3.1-pro-preview)
+2026-03-06 14:45:26,350 INFO src.agent.agents._base: R83: Injected 3 few-shot examples for dining agent
+2026-03-06 14:45:26,350 INFO google_genai.models: AFC is enabled with max remote calls: 10.
+2026-03-06 14:45:34,242 INFO google_genai.models: AFC is enabled with max remote calls: 10.
+2026-03-06 14:45:38,030 INFO src.agent.profiling: Profiling extraction: filled=0/16 fields, keys=[], skipped=['guest_name', 'party_size', 'party_composition', 'visit_purpose', 'visit_duration']
+2026-03-06 14:45:38,030 INFO src.agent.profiling: Profiling state: phase=foundation, completeness=0.00, total_known=0, new_this_turn=0
+2026-03-06 14:45:38,032 INFO google_genai.models: AFC is enabled with max remote calls: 10.
+2026-03-06 14:45:42,552 INFO src.agent.dispatch: Retry path -- reusing specialist dining (skipping dispatch)
+2026-03-06 14:45:42,552 INFO src.agent.nodes: R99 model routing: Pro (FORCE_PRO_MODEL override)
+2026-03-06 14:45:42,552 INFO src.agent.dispatch: Dispatching to dining agent (method=retry_reuse, model=gemini-3.1-pro-preview)
+2026-03-06 14:45:42,553 INFO src.agent.agents._base: R83: Injected 3 few-shot examples for dining agent
+2026-03-06 14:45:42,553 INFO src.agent.agents._base: R83: Using Pro model (gemini-3.1-pro-preview) for dining agent
+2026-03-06 14:45:42,553 INFO google_genai.models: AFC is enabled with max remote calls: 10.
+2026-03-06 14:45:43,008 INFO google_genai._api_client: Retrying google.genai._api_client.BaseApiClient._async_request_once in 1.1332709940142163 seconds as it raised ClientError: 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_requests_per_model_per_day, limit: 250, model: gemini-3.1-pro\nPlease retry in 9h14m16.101846573s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_requests_per_model_per_day', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel', 'quotaDimensions': {'model': 'gemini-3.1-pro', 'location': 'global'}, 'quotaValue': '250'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '33256s'}]}}.
+2026-03-06 14:45:44,240 ERROR src.agent.agents._base: Dining agent LLM call failed
+Traceback (most recent call last):
+  File "/home/odedbe/.local/lib/python3.12/site-packages/langchain_google_genai/chat_models.py", line 3088, in _agenerate
+    await self.client.aio.models.generate_content(
+  File "/home/odedbe/.local/lib/python3.12/site-packages/google/genai/models.py", line 7331, in generate_content
+    response = await self._generate_content(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/odedbe/.local/lib/python3.12/site-packages/google/genai/models.py", line 6095, in _generate_content
+    response = await self._api_client.async_request(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/odedbe/.local/lib/python3.12/site-packages/google/genai/_api_client.py", line 1442, in async_request
+    result = await self._async_request(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/odedbe/.local/lib/python3.12/site-packages/google/genai/_api_client.py", line 1374, in _async_request
+    return await retry(self._async_request_once, http_request, stream)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/odedbe/.local/lib/python3.12/site-packages/tenacity/asyncio/__init__.py", line 111, in __call__
+    do = await self.iter(retry_state=retry_state)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/odedbe/.local/lib/python3.12/site-packages/tenacity/asyncio/__init__.py", line 153, in iter
+    result = await action(retry_state)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/odedbe/.local/lib/python3.12/site-packages/tenacity/_utils.py", line 99, in inner
+    return call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/odedbe/.local/lib/python3.12/site-packages/tenacity/__init__.py", line 420, in exc_check
+    raise retry_exc.reraise()
+          ^^^^^^^^^^^^^^^^^^^
+  File "/home/odedbe/.local/lib/python3.12/site-packages/tenacity/__init__.py", line 187, in reraise
+    raise self.last_attempt.result()
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/concurrent/futures/_base.py", line 449, in result
+    return self.__get_result()
+           ^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/concurrent/futures/_base.py", line 401, in __get_result
+    raise self._exception
+  File "/home/odedbe/.local/lib/python3.12/site-packages/tenacity/asyncio/__init__.py", line 114, in __call__
+    result = await fn(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/odedbe/.local/lib/python3.12/site-packages/google/genai/_api_client.py", line 1320, in _async_request_once
+    await errors.APIError.raise_for_async_response(response)
+  File "/home/odedbe/.local/lib/python3.12/site-packages/google/genai/errors.py", line 216, in raise_for_async_response
+    await cls.raise_error_async(status_code, response_json, response)
+  File "/home/odedbe/.local/lib/python3.12/site-packages/google/genai/errors.py", line 238, in raise_error_async
+    raise ClientError(status_code, response_json, response)
+google.genai.errors.ClientError: 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_requests_per_model_per_day, limit: 250, model: gemini-3.1-pro\nPlease retry in 9h14m14.865788353s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_requests_per_model_per_day', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel', 'quotaDimensions': {'location': 'global', 'model': 'gemini-3.1-pro'}, 'quotaValue': '250'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '33254s'}]}}
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/odedbe/projects/hey-seven/src/agent/agents/_base.py", line 1301, in execute_specialist
+    response = await llm.ainvoke(llm_messages)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/odedbe/.local/lib/python3.12/site-packages/langchain_core/language_models/chat_models.py", line 425, in ainvoke
+    llm_result = await self.agenerate_prompt(
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/odedbe/.local/lib/python3.12/site-packages/langchain_core/language_models/chat_models.py", line 1132, in agenerate_prompt
+    return await self.agenerate(
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/odedbe/.local/lib/python3.12/site-packages/langchain_core/language_models/chat_models.py", line 1090, in agenerate
+    raise exceptions[0]
+  File "/home/odedbe/.local/lib/python3.12/site-packages/langchain_core/language_models/chat_models.py", line 1359, in _agenerate_with_cache
+    result = await self._agenerate(
+             ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/odedbe/.local/lib/python3.12/site-packages/langchain_google_genai/chat_models.py", line 3093, in _agenerate
+    _handle_client_error(e, request)
+  File "/home/odedbe/.local/lib/python3.12/site-packages/langchain_google_genai/chat_models.py", line 145, in _handle_client_error
+    raise ChatGoogleGenerativeAIError(msg) from e
+langchain_google_genai.chat_models.ChatGoogleGenerativeAIError: Error calling model 'gemini-3.1-pro-preview' (RESOURCE_EXHAUSTED): 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_requests_per_model_per_day, limit: 250, model: gemini-3.1-pro\nPlease retry in 9h14m14.865788353s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_requests_per_model_per_day', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel', 'quotaDimensions': {'location': 'global', 'model': 'gemini-3.1-pro'}, 'quotaValue': '250'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '33254s'}]}}
+2026-03-06 14:45:44,245 INFO google_genai.models: AFC is enabled with max remote calls: 10.
+2026-03-06 14:45:50,886 INFO src.agent.profiling: Profiling extraction: filled=0/16 fields, keys=[], skipped=['guest_name', 'party_size', 'party_composition', 'visit_purpose', 'visit_duration']
+2026-03-06 14:45:50,886 INFO src.agent.profiling: Profiling state: phase=foundation, completeness=0.00, total_known=0, new_this_turn=0
+2026-03-06 14:45:50,887 WARNING src.agent.persona: Output guardrail: PII detected in LLM response, redacting
+2026-03-06 14:45:50,888 INFO src.agent.nodes: Slop detector: cleaned 28 chars from response
+2026-03-06 14:45:50,889 INFO src.agent.compliance_gate: {"audit_event": "guardrail_triggered", "category": "confirmation_detection", "query_type": "greeting", "timestamp": 1772808350.889768, "action": "shortcut", "severity": "INFO"}
+2026-03-06 14:45:50,891 INFO live_eval:   -> OK | 3 turns | avg 25376ms
+2026-03-06 14:45:51,392 INFO live_eval: [2/109] Running scenario agentic-02: Proactive timing awareness for property hours
+2026-03-06 14:45:51,394 INFO google_genai.models: AFC is enabled with max remote calls: 10.
+2026-03-06 14:45:53,639 INFO src.agent.guardrails: Semantic injection classifier: is_injection=False confidence=1.00
+2026-03-06 14:45:53,642 INFO google_genai.models: AFC is enabled with max remote calls: 10.
+2026-03-06 14:45:56,339 INFO httpx: HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-embedding-001:batchEmbedContents "HTTP/1.1 200 OK"
+2026-03-06 14:45:56,351 INFO httpx: HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-embedding-001:batchEmbedContents "HTTP/1.1 200 OK"
+2026-03-06 14:45:56,412 INFO google_genai.models: AFC is enabled with max remote calls: 10.
+2026-03-06 14:46:00,560 INFO google_genai.models: AFC is enabled with max remote calls: 10.
+2026-03-06 14:46:03,602 INFO src.agent.dispatch: Structured dispatch -> dining (confidence=1.00, reason=The guest query specifically asks for restaurant recommendations, which directly)
+2026-03-06 14:46:03,602 INFO src.agent.nodes: R99 model routing: Pro (FORCE_PRO_MODEL override)
+2026-03-06 14:46:03,602 INFO src.agent.dispatch: Dispatching to dining agent (method=structured_output, model=gemini-3.1-pro-preview)
+2026-03-06 14:46:03,602 INFO src.agent.agents._base: R83: Injected 3 few-shot examples for dining agent
+2026-03-06 14:46:03,603 INFO google_genai.models: AFC is enabled with max remote calls: 10.
+2026-03-06 14:46:11,135 INFO google_genai.models: AFC is enabled with max remote calls: 10.
+2026-03-06 14:46:15,048 INFO src.agent.profiling: Profiling extraction: filled=0/16 fields, keys=[], skipped=['guest_name', 'party_size', 'party_composition', 'visit_purpose', 'visit_duration']
+2026-03-06 14:46:15,048 INFO src.agent.profiling: Profiling state: phase=foundation, completeness=0.00, total_known=0, new_this_turn=0
+2026-03-06 14:46:15,049 INFO google_genai.models: AFC is enabled with max remote calls: 10.
+2026-03-06 14:46:19,350 INFO google_genai.models: AFC is enabled with max remote calls: 10.
+2026-03-06 14:46:21,414 INFO src.agent.guardrails: Semantic injection classifier: is_injection=False confidence=0.99
+2026-03-06 14:46:21,416 INFO google_genai.models: AFC is enabled with max remote calls: 10.
+2026-03-06 14:46:25,456 INFO httpx: HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-embedding-001:batchEmbedContents "HTTP/1.1 200 OK"
+2026-03-06 14:46:25,460 INFO httpx: HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-embedding-001:batchEmbedContents "HTTP/1.1 200 OK"
+2026-03-06 14:46:25,521 INFO google_genai.models: AFC is enabled with max remote calls: 10.
+2026-03-06 14:46:29,627 INFO google_genai.models: AFC is enabled with max remote calls: 10.
+2026-03-06 14:46:34,262 INFO src.agent.dispatch: Structured dispatch -> entertainment (confidence=0.75, reason=The guest's query specifies a time, and the retrieved context categories are pre)
+2026-03-06 14:46:34,263 INFO src.agent.nodes: R99 model routing: Pro (FORCE_PRO_MODEL override)
+2026-03-06 14:46:34,263 INFO src.agent.dispatch: Dispatching to entertainment agent (method=structured_output, model=gemini-3.1-pro-preview)
+2026-03-06 14:46:34,263 INFO src.agent.agents._base: R83: Injected 3 few-shot examples for entertainment agent
+2026-03-06 14:46:34,263 INFO google_genai.models: AFC is enabled with max remote calls: 10.
+2026-03-06 14:46:59,290 INFO google_genai.models: AFC is enabled with max remote calls: 10.
+2026-03-06 14:47:03,637 INFO src.agent.profiling: Profiling extraction: filled=0/16 fields, keys=[], skipped=['guest_name', 'party_size', 'party_composition', 'visit_purpose', 'visit_duration']
+2026-03-06 14:47:03,637 INFO src.agent.profiling: Profiling state: phase=foundation, completeness=0.00, total_known=0, new_this_turn=0
+2026-03-06 14:47:03,639 INFO google_genai.models: AFC is enabled with max remote calls: 10.
+2026-03-06 14:47:07,728 INFO google_genai.models: AFC is enabled with max remote calls: 10.
+2026-03-06 14:47:10,130 INFO src.agent.guardrails: Semantic injection classifier: is_injection=False confidence=0.99
+2026-03-06 14:47:10,132 INFO google_genai.models: AFC is enabled with max remote calls: 10.
+2026-03-06 14:47:14,516 INFO httpx: HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-embedding-001:batchEmbedContents "HTTP/1.1 200 OK"
+2026-03-06 14:47:14,527 INFO httpx: HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-embedding-001:batchEmbedContents "HTTP/1.1 200 OK"
+2026-03-06 14:47:14,587 INFO google_genai.models: AFC is enabled with max remote calls: 10.
+2026-03-06 14:47:18,980 INFO google_genai.models: AFC is enabled with max remote calls: 10.
+2026-03-06 14:47:22,370 INFO src.agent.dispatch: Structured dispatch -> host (confidence=0.85, reason=The guest's query is a general acknowledgment and lacks a specific service domai)
+2026-03-06 14:47:22,371 INFO src.agent.nodes: R99 model routing: Pro (FORCE_PRO_MODEL override)
+2026-03-06 14:47:22,371 INFO src.agent.dispatch: Dispatching to host agent (method=structured_output, model=gemini-3.1-pro-preview)
+2026-03-06 14:47:22,371 INFO src.agent.agents._base: R83: Injected 3 few-shot examples for host agent
+2026-03-06 14:47:22,371 INFO google_genai.models: AFC is enabled with max remote calls: 10.
+2026-03-06 14:47:43,163 INFO google_genai.models: AFC is enabled with max remote calls: 10.
+2026-03-06 14:47:47,745 INFO src.agent.profiling: Profiling extraction: filled=0/16 fields, keys=[], skipped=['guest_name', 'party_size', 'party_composition', 'visit_purpose', 'visit_duration']
+2026-03-06 14:47:47,745 INFO src.agent.profiling: Profiling state: phase=foundation, completeness=0.00, total_known=1, new_this_turn=0
+2026-03-06 14:47:47,747 INFO google_genai.models: AFC is enabled with max remote calls: 10.
+2026-03-06 14:47:51,803 INFO src.agent.dispatch: Retry path -- reusing specialist host (skipping dispatch)
+2026-03-06 14:47:51,803 INFO src.agent.nodes: R99 model routing: Pro (FORCE_PRO_MODEL override)
+2026-03-06 14:47:51,803 INFO src.agent.dispatch: Dispatching to host agent (method=retry_reuse, model=gemini-3.1-pro-preview)
+2026-03-06 14:47:51,803 INFO src.agent.agents._base: R83: Injected 3 few-shot examples for host agent
+2026-03-06 14:47:51,803 INFO src.agent.agents._base: R83: Using Pro model (gemini-3.1-pro-preview) for host agent
+2026-03-06 14:47:51,804 INFO google_genai.models: AFC is enabled with max remote calls: 10.
+2026-03-06 14:47:52,260 INFO google_genai._api_client: Retrying google.genai._api_client.BaseApiClient._async_request_once in 1.457635237380273 seconds as it raised ClientError: 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_requests_per_model_per_day, limit: 250, model: gemini-3.1-pro\nPlease retry in 9h12m6.84394954s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_requests_per_model_per_day', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel', 'quotaDimensions': {'location': 'global', 'model': 'gemini-3.1-pro'}, 'quotaValue': '250'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '33126s'}]}}.
+2026-03-06 14:47:53,877 ERROR src.agent.agents._base: Host agent LLM call failed
+Traceback (most recent call last):
+  File "/home/odedbe/.local/lib/python3.12/site-packages/langchain_google_genai/chat_models.py", line 3088, in _agenerate
+    await self.client.aio.models.generate_content(
+  File "/home/odedbe/.local/lib/python3.12/site-packages/google/genai/models.py", line 7331, in generate_content
+    response = await self._generate_content(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/odedbe/.local/lib/python3.12/site-packages/google/genai/models.py", line 6095, in _generate_content
+    response = await self._api_client.async_request(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/odedbe/.local/lib/python3.12/site-packages/google/genai/_api_client.py", line 1442, in async_request
+    result = await self._async_request(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/odedbe/.local/lib/python3.12/site-packages/google/genai/_api_client.py", line 1374, in _async_request
+    return await retry(self._async_request_once, http_request, stream)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/odedbe/.local/lib/python3.12/site-packages/tenacity/asyncio/__init__.py", line 111, in __call__
+    do = await self.iter(retry_state=retry_state)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/odedbe/.local/lib/python3.12/site-packages/tenacity/asyncio/__init__.py", line 153, in iter
+    result = await action(retry_state)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/odedbe/.local/lib/python3.12/site-packages/tenacity/_utils.py", line 99, in inner
+    return call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/odedbe/.local/lib/python3.12/site-packages/tenacity/__init__.py", line 420, in exc_check
+    raise retry_exc.reraise()
+          ^^^^^^^^^^^^^^^^^^^
+  File "/home/odedbe/.local/lib/python3.12/site-packages/tenacity/__init__.py", line 187, in reraise
+    raise self.last_attempt.result()
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/concurrent/futures/_base.py", line 449, in result
+    return self.__get_result()
+           ^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/concurrent/futures/_base.py", line 401, in __get_result
+    raise self._exception
+  File "/home/odedbe/.local/lib/python3.12/site-packages/tenacity/asyncio/__init__.py", line 114, in __call__
+    result = await fn(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/odedbe/.local/lib/python3.12/site-packages/google/genai/_api_client.py", line 1320, in _async_request_once
+    await errors.APIError.raise_for_async_response(response)
+  File "/home/odedbe/.local/lib/python3.12/site-packages/google/genai/errors.py", line 216, in raise_for_async_response
+    await cls.raise_error_async(status_code, response_json, response)
+  File "/home/odedbe/.local/lib/python3.12/site-packages/google/genai/errors.py", line 238, in raise_error_async
+    raise ClientError(status_code, response_json, response)
+google.genai.errors.ClientError: 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_requests_per_model_per_day, limit: 250, model: gemini-3.1-pro\nPlease retry in 9h12m5.228582443s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_requests_per_model_per_day', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel', 'quotaDimensions': {'location': 'global', 'model': 'gemini-3.1-pro'}, 'quotaValue': '250'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '33125s'}]}}
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/odedbe/projects/hey-seven/src/agent/agents/_base.py", line 1301, in execute_specialist
+    response = await llm.ainvoke(llm_messages)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/odedbe/.local/lib/python3.12/site-packages/langchain_core/language_models/chat_models.py", line 425, in ainvoke
+    llm_result = await self.agenerate_prompt(
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/odedbe/.local/lib/python3.12/site-packages/langchain_core/language_models/chat_models.py", line 1132, in agenerate_prompt
+    return await self.agenerate(
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/odedbe/.local/lib/python3.12/site-packages/langchain_core/language_models/chat_models.py", line 1090, in agenerate
+    raise exceptions[0]
+  File "/home/odedbe/.local/lib/python3.12/site-packages/langchain_core/language_models/chat_models.py", line 1359, in _agenerate_with_cache
+    result = await self._agenerate(
+             ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/odedbe/.local/lib/python3.12/site-packages/langchain_google_genai/chat_models.py", line 3093, in _agenerate
+    _handle_client_error(e, request)
+  File "/home/odedbe/.local/lib/python3.12/site-packages/langchain_google_genai/chat_models.py", line 145, in _handle_client_error
+    raise ChatGoogleGenerativeAIError(msg) from e
+langchain_google_genai.chat_models.ChatGoogleGenerativeAIError: Error calling model 'gemini-3.1-pro-preview' (RESOURCE_EXHAUSTED): 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_requests_per_model_per_day, limit: 250, model: gemini-3.1-pro\nPlease retry in 9h12m5.228582443s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_requests_per_model_per_day', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel', 'quotaDimensions': {'location': 'global', 'model': 'gemini-3.1-pro'}, 'quotaValue': '250'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '33125s'}]}}
+2026-03-06 14:47:53,883 INFO google_genai.models: AFC is enabled with max remote calls: 10.
+2026-03-06 14:47:57,851 INFO src.agent.profiling: Profiling extraction: filled=0/16 fields, keys=[], skipped=['guest_name', 'party_size', 'party_composition', 'visit_purpose', 'visit_duration']
+2026-03-06 14:47:57,851 INFO src.agent.profiling: Profiling state: phase=foundation, completeness=0.00, total_known=1, new_this_turn=0
+2026-03-06 14:47:57,853 WARNING src.agent.persona: Output guardrail: PII detected in LLM response, redacting
+2026-03-06 14:47:57,853 INFO src.agent.nodes: Slop detector: cleaned 28 chars from response
+2026-03-06 14:47:57,854 INFO live_eval:   -> OK | 3 turns | avg 42153ms
+2026-03-06 14:47:58,355 INFO live_eval: [3/109] Running scenario agentic-03: Follow-up anticipation for incomplete plan
+2026-03-06 14:47:58,359 INFO google_genai.models: AFC is enabled with max remote calls: 10.
+2026-03-06 14:48:00,651 INFO src.agent.guardrails: Semantic injection classifier: is_injection=False confidence=1.00
+2026-03-06 14:48:00,654 INFO google_genai.models: AFC is enabled with max remote calls: 10.
+2026-03-06 14:48:07,366 INFO httpx: HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-embedding-001:batchEmbedContents "HTTP/1.1 200 OK"
+2026-03-06 14:48:07,368 INFO httpx: HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-embedding-001:batchEmbedContents "HTTP/1.1 200 OK"
+2026-03-06 14:48:07,432 INFO google_genai.models: AFC is enabled with max remote calls: 10.
+2026-03-06 14:48:12,066 INFO google_genai.models: AFC is enabled with max remote calls: 10.
+2026-03-06 14:48:16,014 INFO src.agent.dispatch: Structured dispatch -> dining (confidence=0.90, reason=The guest explicitly requested dinner as the first priority for their evening pl)
+2026-03-06 14:48:16,014 INFO src.agent.nodes: R99 model routing: Pro (FORCE_PRO_MODEL override)
+2026-03-06 14:48:16,014 INFO src.agent.dispatch: Dispatching to dining agent (method=structured_output, model=gemini-3.1-pro-preview)
+2026-03-06 14:48:16,014 INFO src.agent.agents._base: R83: Injected 3 few-shot examples for dining agent
+2026-03-06 14:48:16,015 INFO google_genai.models: AFC is enabled with max remote calls: 10.
+2026-03-06 14:48:26,070 INFO google_genai.models: AFC is enabled with max remote calls: 10.
+2026-03-06 14:48:30,407 INFO src.agent.profiling: Profiling extraction: filled=0/16 fields, keys=[], skipped=['guest_name', 'party_size', 'party_composition', 'visit_purpose', 'visit_duration']
+2026-03-06 14:48:30,407 INFO src.agent.profiling: Profiling state: phase=foundation, completeness=0.00, total_known=0, new_this_turn=0
+2026-03-06 14:48:30,409 INFO google_genai.models: AFC is enabled with max remote calls: 10.
+2026-03-06 14:48:34,830 INFO src.agent.dispatch: Retry path -- reusing specialist dining (skipping dispatch)
+2026-03-06 14:48:34,830 INFO src.agent.nodes: R99 model routing: Pro (FORCE_PRO_MODEL override)
+2026-03-06 14:48:34,830 INFO src.agent.dispatch: Dispatching to dining agent (method=retry_reuse, model=gemini-3.1-pro-preview)
+2026-03-06 14:48:34,830 INFO src.agent.agents._base: R83: Injected 3 few-shot examples for dining agent
+2026-03-06 14:48:34,830 INFO src.agent.agents._base: R83: Using Pro model (gemini-3.1-pro-preview) for dining agent
+2026-03-06 14:48:34,831 INFO google_genai.models: AFC is enabled with max remote calls: 10.
+2026-03-06 14:48:35,256 INFO google_genai._api_client: Retrying google.genai._api_client.BaseApiClient._async_request_once in 1.9974033343083502 seconds as it raised ClientError: 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_requests_per_model_per_day, limit: 250, model: gemini-3.1-pro\nPlease retry in 9h11m23.894929335s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_requests_per_model_per_day', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel', 'quotaDimensions': {'location': 'global', 'model': 'gemini-3.1-pro'}, 'quotaValue': '250'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '33083s'}]}}.
+2026-03-06 14:48:37,341 ERROR src.agent.agents._base: Dining agent LLM call failed
+Traceback (most recent call last):
+  File "/home/odedbe/.local/lib/python3.12/site-packages/langchain_google_genai/chat_models.py", line 3088, in _agenerate
+    await self.client.aio.models.generate_content(
+  File "/home/odedbe/.local/lib/python3.12/site-packages/google/genai/models.py", line 7331, in generate_content
+    response = await self._generate_content(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/odedbe/.local/lib/python3.12/site-packages/google/genai/models.py", line 6095, in _generate_content
+    response = await self._api_client.async_request(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/odedbe/.local/lib/python3.12/site-packages/google/genai/_api_client.py", line 1442, in async_request
+    result = await self._async_request(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/odedbe/.local/lib/python3.12/site-packages/google/genai/_api_client.py", line 1374, in _async_request
+    return await retry(self._async_request_once, http_request, stream)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/odedbe/.local/lib/python3.12/site-packages/tenacity/asyncio/__init__.py", line 111, in __call__
+    do = await self.iter(retry_state=retry_state)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/odedbe/.local/lib/python3.12/site-packages/tenacity/asyncio/__init__.py", line 153, in iter
+    result = await action(retry_state)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/odedbe/.local/lib/python3.12/site-packages/tenacity/_utils.py", line 99, in inner
+    return call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/odedbe/.local/lib/python3.12/site-packages/tenacity/__init__.py", line 420, in exc_check
+    raise retry_exc.reraise()
+          ^^^^^^^^^^^^^^^^^^^
+  File "/home/odedbe/.local/lib/python3.12/site-packages/tenacity/__init__.py", line 187, in reraise
+    raise self.last_attempt.result()
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/concurrent/futures/_base.py", line 449, in result
+    return self.__get_result()
+           ^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/concurrent/futures/_base.py", line 401, in __get_result
+    raise self._exception
+  File "/home/odedbe/.local/lib/python3.12/site-packages/tenacity/asyncio/__init__.py", line 114, in __call__
+    result = await fn(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/odedbe/.local/lib/python3.12/site-packages/google/genai/_api_client.py", line 1320, in _async_request_once
+    await errors.APIError.raise_for_async_response(response)
+  File "/home/odedbe/.local/lib/python3.12/site-packages/google/genai/errors.py", line 216, in raise_for_async_response
+    await cls.raise_error_async(status_code, response_json, response)
+  File "/home/odedbe/.local/lib/python3.12/site-packages/google/genai/errors.py", line 238, in raise_error_async
+    raise ClientError(status_code, response_json, response)
+google.genai.errors.ClientError: 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_requests_per_model_per_day, limit: 250, model: gemini-3.1-pro\nPlease retry in 9h11m21.760765877s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_requests_per_model_per_day', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel', 'quotaDimensions': {'model': 'gemini-3.1-pro', 'location': 'global'}, 'quotaValue': '250'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '33081s'}]}}
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/odedbe/projects/hey-seven/src/agent/agents/_base.py", line 1301, in execute_specialist
+    response = await llm.ainvoke(llm_messages)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/odedbe/.local/lib/python3.12/site-packages/langchain_core/language_models/chat_models.py", line 425, in ainvoke
+    llm_result = await self.agenerate_prompt(
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/odedbe/.local/lib/python3.12/site-packages/langchain_core/language_models/chat_models.py", line 1132, in agenerate_prompt
+    return await self.agenerate(
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/odedbe/.local/lib/python3.12/site-packages/langchain_core/language_models/chat_models.py", line 1090, in agenerate
+    raise exceptions[0]
+  File "/home/odedbe/.local/lib/python3.12/site-packages/langchain_core/language_models/chat_models.py", line 1359, in _agenerate_with_cache
+    result = await self._agenerate(
+             ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/odedbe/.local/lib/python3.12/site-packages/langchain_google_genai/chat_models.py", line 3093, in _agenerate
+    _handle_client_error(e, request)
+  File "/home/odedbe/.local/lib/python3.12/site-packages/langchain_google_genai/chat_models.py", line 145, in _handle_client_error
+    raise ChatGoogleGenerativeAIError(msg) from e
+langchain_google_genai.chat_models.ChatGoogleGenerativeAIError: Error calling model 'gemini-3.1-pro-preview' (RESOURCE_EXHAUSTED): 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_requests_per_model_per_day, limit: 250, model: gemini-3.1-pro\nPlease retry in 9h11m21.760765877s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_requests_per_model_per_day', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel', 'quotaDimensions': {'model': 'gemini-3.1-pro', 'location': 'global'}, 'quotaValue': '250'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '33081s'}]}}
+2026-03-06 14:48:37,345 INFO google_genai.models: AFC is enabled with max remote calls: 10.
+2026-03-06 14:48:41,572 INFO src.agent.profiling: Profiling extraction: filled=0/16 fields, keys=[], skipped=['guest_name', 'party_size', 'party_composition', 'visit_purpose', 'visit_duration']
+2026-03-06 14:48:41,572 INFO src.agent.profiling: Profiling state: phase=foundation, completeness=0.00, total_known=0, new_this_turn=0
+2026-03-06 14:48:41,573 WARNING src.agent.persona: Output guardrail: PII detected in LLM response, redacting
+2026-03-06 14:48:41,574 INFO src.agent.nodes: Slop detector: cleaned 28 chars from response
+2026-03-06 14:48:41,576 INFO google_genai.models: AFC is enabled with max remote calls: 10.
+2026-03-06 14:48:43,909 INFO src.agent.guardrails: Semantic injection classifier: is_injection=False confidence=0.99
+2026-03-06 14:48:43,912 INFO google_genai.models: AFC is enabled with max remote calls: 10.
+2026-03-06 14:48:48,686 INFO httpx: HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-embedding-001:batchEmbedContents "HTTP/1.1 200 OK"
+2026-03-06 14:48:48,694 INFO httpx: HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-embedding-001:batchEmbedContents "HTTP/1.1 200 OK"
+2026-03-06 14:48:48,756 INFO google_genai.models: AFC is enabled with max remote calls: 10.
+2026-03-06 14:48:53,113 INFO google_genai.models: AFC is enabled with max remote calls: 10.
+2026-03-06 14:49:18,805 INFO src.agent.dispatch: Structured dispatch -> dining (confidence=0.85, reason=The guest's query specifically mentions a 'Steakhouse' and a time, which are cle)
+2026-03-06 14:49:18,805 INFO src.agent.nodes: R99 model routing: Pro (FORCE_PRO_MODEL override)
+2026-03-06 14:49:18,805 INFO src.agent.dispatch: Dispatching to dining agent (method=structured_output, model=gemini-3.1-pro-preview)
+2026-03-06 14:49:18,805 INFO src.agent.agents._base: R83: Injected 3 few-shot examples for dining agent
+2026-03-06 14:49:18,806 INFO google_genai.models: AFC is enabled with max remote calls: 10.
+2026-03-06 14:49:26,809 INFO google_genai.models: AFC is enabled with max remote calls: 10.
+2026-03-06 14:49:31,160 INFO src.agent.profiling: Profiling extraction: filled=0/16 fields, keys=[], skipped=['guest_name', 'party_size', 'party_composition', 'visit_purpose', 'visit_duration']
+2026-03-06 14:49:31,160 INFO src.agent.profiling: Profiling state: phase=foundation, completeness=0.00, total_known=0, new_this_turn=0
+2026-03-06 14:49:31,162 INFO google_genai.models: AFC is enabled with max remote calls: 10.
+2026-03-06 14:49:35,584 INFO src.agent.dispatch: Retry path -- reusing specialist dining (skipping dispatch)
+2026-03-06 14:49:35,584 INFO src.agent.nodes: R99 model routing: Pro (FORCE_PRO_MODEL override)
+2026-03-06 14:49:35,584 INFO src.agent.dispatch: Dispatching to dining agent (method=retry_reuse, model=gemini-3.1-pro-preview)
+2026-03-06 14:49:35,584 INFO src.agent.agents._base: R83: Injected 3 few-shot examples for dining agent
+2026-03-06 14:49:35,584 INFO src.agent.agents._base: R83: Using Pro model (gemini-3.1-pro-preview) for dining agent
+2026-03-06 14:49:35,585 INFO google_genai.models: AFC is enabled with max remote calls: 10.
+2026-03-06 14:49:36,027 INFO google_genai._api_client: Retrying google.genai._api_client.BaseApiClient._async_request_once in 1.6620351343156377 seconds as it raised ClientError: 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_requests_per_model_per_day, limit: 250, model: gemini-3.1-pro\nPlease retry in 9h10m23.07791269s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_requests_per_model_per_day', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel', 'quotaDimensions': {'location': 'global', 'model': 'gemini-3.1-pro'}, 'quotaValue': '250'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '33023s'}]}}.
+2026-03-06 14:49:37,949 ERROR src.agent.agents._base: Dining agent LLM call failed
+Traceback (most recent call last):
+  File "/home/odedbe/.local/lib/python3.12/site-packages/langchain_google_genai/chat_models.py", line 3088, in _agenerate
+    await self.client.aio.models.generate_content(
+  File "/home/odedbe/.local/lib/python3.12/site-packages/google/genai/models.py", line 7331, in generate_content
+    response = await self._generate_content(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/odedbe/.local/lib/python3.12/site-packages/google/genai/models.py", line 6095, in _generate_content
+    response = await self._api_client.async_request(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/odedbe/.local/lib/python3.12/site-packages/google/genai/_api_client.py", line 1442, in async_request
+    result = await self._async_request(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/odedbe/.local/lib/python3.12/site-packages/google/genai/_api_client.py", line 1374, in _async_request
+    return await retry(self._async_request_once, http_request, stream)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/odedbe/.local/lib/python3.12/site-packages/tenacity/asyncio/__init__.py", line 111, in __call__
+    do = await self.iter(retry_state=retry_state)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/odedbe/.local/lib/python3.12/site-packages/tenacity/asyncio/__init__.py", line 153, in iter
+    result = await action(retry_state)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/odedbe/.local/lib/python3.12/site-packages/tenacity/_utils.py", line 99, in inner
+    return call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/odedbe/.local/lib/python3.12/site-packages/tenacity/__init__.py", line 420, in exc_check
+    raise retry_exc.reraise()
+          ^^^^^^^^^^^^^^^^^^^
+  File "/home/odedbe/.local/lib/python3.12/site-packages/tenacity/__init__.py", line 187, in reraise
+    raise self.last_attempt.result()
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/concurrent/futures/_base.py", line 449, in result
+    return self.__get_result()
+           ^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/concurrent/futures/_base.py", line 401, in __get_result
+    raise self._exception
+  File "/home/odedbe/.local/lib/python3.12/site-packages/tenacity/asyncio/__init__.py", line 114, in __call__
+    result = await fn(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/odedbe/.local/lib/python3.12/site-packages/google/genai/_api_client.py", line 1320, in _async_request_once
+    await errors.APIError.raise_for_async_response(response)
+  File "/home/odedbe/.local/lib/python3.12/site-packages/google/genai/errors.py", line 216, in raise_for_async_response
+    await cls.raise_error_async(status_code, response_json, response)
+  File "/home/odedbe/.local/lib/python3.12/site-packages/google/genai/errors.py", line 238, in raise_error_async
+    raise ClientError(status_code, response_json, response)
+google.genai.errors.ClientError: 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_requests_per_model_per_day, limit: 250, model: gemini-3.1-pro\nPlease retry in 9h10m21.152691617s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_requests_per_model_per_day', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel', 'quotaDimensions': {'model': 'gemini-3.1-pro', 'location': 'global'}, 'quotaValue': '250'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '33021s'}]}}
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/odedbe/projects/hey-seven/src/agent/agents/_base.py", line 1301, in execute_specialist
+    response = await llm.ainvoke(llm_messages)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/odedbe/.local/lib/python3.12/site-packages/langchain_core/language_models/chat_models.py", line 425, in ainvoke
+    llm_result = await self.agenerate_prompt(
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/odedbe/.local/lib/python3.12/site-packages/langchain_core/language_models/chat_models.py", line 1132, in agenerate_prompt
+    return await self.agenerate(
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/odedbe/.local/lib/python3.12/site-packages/langchain_core/language_models/chat_models.py", line 1090, in agenerate
+    raise exceptions[0]
+  File "/home/odedbe/.local/lib/python3.12/site-packages/langchain_core/language_models/chat_models.py", line 1359, in _agenerate_with_cache
+    result = await self._agenerate(
+             ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/odedbe/.local/lib/python3.12/site-packages/langchain_google_genai/chat_models.py", line 3093, in _agenerate
+    _handle_client_error(e, request)
+  File "/home/odedbe/.local/lib/python3.12/site-packages/langchain_google_genai/chat_models.py", line 145, in _handle_client_error
+    raise ChatGoogleGenerativeAIError(msg) from e
+langchain_google_genai.chat_models.ChatGoogleGenerativeAIError: Error calling model 'gemini-3.1-pro-preview' (RESOURCE_EXHAUSTED): 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_requests_per_model_per_day, limit: 250, model: gemini-3.1-pro\nPlease retry in 9h10m21.152691617s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_requests_per_model_per_day', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel', 'quotaDimensions': {'model': 'gemini-3.1-pro', 'location': 'global'}, 'quotaValue': '250'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '33021s'}]}}
+2026-03-06 14:49:37,953 INFO google_genai.models: AFC is enabled with max remote calls: 10.
+2026-03-06 14:49:42,664 INFO src.agent.profiling: Profiling extraction: filled=0/16 fields, keys=[], skipped=['guest_name', 'party_size', 'party_composition', 'visit_purpose', 'visit_duration']
+2026-03-06 14:49:42,664 INFO src.agent.profiling: Profiling state: phase=foundation, completeness=0.00, total_known=0, new_this_turn=0
+2026-03-06 14:49:42,666 WARNING src.agent.persona: Output guardrail: PII detected in LLM response, redacting
+2026-03-06 14:49:42,666 INFO src.agent.nodes: Slop detector: cleaned 28 chars from response
+2026-03-06 14:49:42,669 INFO google_genai.models: AFC is enabled with max remote calls: 10.
+2026-03-06 14:49:45,524 INFO src.agent.guardrails: Semantic injection classifier: is_injection=False confidence=1.00
+2026-03-06 14:49:45,527 INFO google_genai.models: AFC is enabled with max remote calls: 10.
+2026-03-06 14:49:49,393 INFO httpx: HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-embedding-001:batchEmbedContents "HTTP/1.1 200 OK"
+2026-03-06 14:49:49,400 INFO httpx: HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-embedding-001:batchEmbedContents "HTTP/1.1 200 OK"
+2026-03-06 14:49:49,464 INFO google_genai.models: AFC is enabled with max remote calls: 10.
+2026-03-06 14:49:53,771 INFO google_genai.models: AFC is enabled with max remote calls: 10.
+2026-03-06 14:49:57,856 INFO src.agent.dispatch: Structured dispatch -> entertainment (confidence=0.95, reason=The guest's query specifically mentions a show, which aligns with the entertainm)
+2026-03-06 14:49:57,856 INFO src.agent.nodes: R99 model routing: Pro (FORCE_PRO_MODEL override)
+2026-03-06 14:49:57,856 INFO src.agent.dispatch: Dispatching to entertainment agent (method=structured_output, model=gemini-3.1-pro-preview)
+2026-03-06 14:49:57,857 INFO src.agent.agents._base: R83: Injected 3 few-shot examples for entertainment agent
+2026-03-06 14:49:57,857 INFO google_genai.models: AFC is enabled with max remote calls: 10.
+2026-03-06 14:50:15,546 INFO google_genai.models: AFC is enabled with max remote calls: 10.
+2026-03-06 14:50:19,814 INFO src.agent.profiling: Profiling extraction: filled=0/16 fields, keys=[], skipped=['guest_name', 'party_size', 'party_composition', 'visit_purpose', 'visit_duration']
+2026-03-06 14:50:19,814 INFO src.agent.profiling: Profiling state: phase=foundation, completeness=0.00, total_known=0, new_this_turn=0
+2026-03-06 14:50:19,815 INFO google_genai.models: AFC is enabled with max remote calls: 10.
+2026-03-06 14:50:24,099 INFO src.agent.nodes: Slop detector: cleaned 160 chars from response
+2026-03-06 14:50:24,099 INFO live_eval:   -> OK | 3 turns | avg 48581ms
+2026-03-06 14:50:24,605 INFO live_eval: [4/109] Running scenario agentic-04: Itinerary building from scattered preferences
+2026-03-06 14:50:24,610 INFO google_genai.models: AFC is enabled with max remote calls: 10.
+2026-03-06 14:50:27,031 INFO src.agent.guardrails: Semantic injection classifier: is_injection=False confidence=1.00
+2026-03-06 14:50:27,033 INFO google_genai.models: AFC is enabled with max remote calls: 10.
+2026-03-06 14:50:37,847 INFO httpx: HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-embedding-001:batchEmbedContents "HTTP/1.1 200 OK"
+2026-03-06 14:50:37,876 INFO httpx: HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-embedding-001:batchEmbedContents "HTTP/1.1 200 OK"
+2026-03-06 14:50:37,938 INFO google_genai.models: AFC is enabled with max remote calls: 10.
+2026-03-06 14:50:42,108 INFO google_genai.models: AFC is enabled with max remote calls: 10.
+2026-03-06 14:50:45,393 INFO src.agent.dispatch: Structured dispatch -> entertainment (confidence=0.85, reason=The guest's interest in relaxing activities aligns with the entertainment specia)
+2026-03-06 14:50:45,393 INFO src.agent.nodes: R99 model routing: Pro (FORCE_PRO_MODEL override)
+2026-03-06 14:50:45,393 INFO src.agent.dispatch: Dispatching to entertainment agent (method=structured_output, model=gemini-3.1-pro-preview)
+2026-03-06 14:50:45,393 INFO src.agent.agents._base: R83: Injected 3 few-shot examples for entertainment agent
+2026-03-06 14:50:45,394 INFO google_genai.models: AFC is enabled with max remote calls: 10.
+2026-03-06 14:50:54,197 INFO google_genai.models: AFC is enabled with max remote calls: 10.
+2026-03-06 14:50:59,159 INFO src.agent.profiling: Profiling extraction: filled=0/16 fields, keys=[], skipped=['guest_name', 'party_size', 'party_composition', 'visit_purpose', 'visit_duration']
+2026-03-06 14:50:59,159 INFO src.agent.profiling: Profiling state: phase=foundation, completeness=0.00, total_known=0, new_this_turn=0
+2026-03-06 14:50:59,161 INFO google_genai.models: AFC is enabled with max remote calls: 10.
+2026-03-06 14:51:03,763 INFO google_genai.models: AFC is enabled with max remote calls: 10.
+2026-03-06 14:51:06,110 INFO src.agent.guardrails: Semantic injection classifier: is_injection=False confidence=0.99
+2026-03-06 14:51:06,112 INFO google_genai.models: AFC is enabled with max remote calls: 10.
+2026-03-06 14:51:17,164 INFO httpx: HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-embedding-001:batchEmbedContents "HTTP/1.1 200 OK"
+2026-03-06 14:51:17,169 INFO httpx: HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-embedding-001:batchEmbedContents "HTTP/1.1 200 OK"
+2026-03-06 14:51:17,232 INFO google_genai.models: AFC is enabled with max remote calls: 10.
+2026-03-06 14:51:21,834 INFO google_genai.models: AFC is enabled with max remote calls: 10.
+2026-03-06 14:51:24,949 INFO src.agent.dispatch: Structured dispatch -> dining (confidence=1.00, reason=The user's query specifically mentions food, and the provided context categories)
+2026-03-06 14:51:24,949 INFO src.agent.nodes: R99 model routing: Pro (FORCE_PRO_MODEL override)
+2026-03-06 14:51:24,949 INFO src.agent.dispatch: Dispatching to dining agent (method=structured_output, model=gemini-3.1-pro-preview)
+2026-03-06 14:51:24,949 INFO src.agent.agents._base: R83: Injected 3 few-shot examples for dining agent
+2026-03-06 14:51:24,950 INFO google_genai.models: AFC is enabled with max remote calls: 10.
+2026-03-06 14:51:43,531 INFO google_genai.models: AFC is enabled with max remote calls: 10.
+2026-03-06 14:51:47,628 INFO src.agent.profiling: Profiling extraction: filled=0/16 fields, keys=[], skipped=['guest_name', 'party_size', 'party_composition', 'visit_purpose', 'visit_duration']
+2026-03-06 14:51:47,628 INFO src.agent.profiling: Profiling state: phase=foundation, completeness=0.00, total_known=0, new_this_turn=0
+2026-03-06 14:51:47,630 INFO google_genai.models: AFC is enabled with max remote calls: 10.
+2026-03-06 14:51:51,989 INFO src.agent.dispatch: Retry path -- reusing specialist dining (skipping dispatch)
+2026-03-06 14:51:51,989 INFO src.agent.nodes: R99 model routing: Pro (FORCE_PRO_MODEL override)
+2026-03-06 14:51:51,989 INFO src.agent.dispatch: Dispatching to dining agent (method=retry_reuse, model=gemini-3.1-pro-preview)
+2026-03-06 14:51:51,990 INFO src.agent.agents._base: R83: Injected 3 few-shot examples for dining agent
+2026-03-06 14:51:51,990 INFO src.agent.agents._base: R83: Using Pro model (gemini-3.1-pro-preview) for dining agent
+2026-03-06 14:51:51,990 INFO google_genai.models: AFC is enabled with max remote calls: 10.
+2026-03-06 14:51:52,449 INFO google_genai._api_client: Retrying google.genai._api_client.BaseApiClient._async_request_once in 1.1611453039615542 seconds as it raised ClientError: 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_requests_per_model_per_day, limit: 250, model: gemini-3.1-pro\nPlease retry in 9h8m6.652770251s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_requests_per_model_per_day', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel', 'quotaDimensions': {'location': 'global', 'model': 'gemini-3.1-pro'}, 'quotaValue': '250'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '32886s'}]}}.
+2026-03-06 14:51:53,759 ERROR src.agent.agents._base: Dining agent LLM call failed
+Traceback (most recent call last):
+  File "/home/odedbe/.local/lib/python3.12/site-packages/langchain_google_genai/chat_models.py", line 3088, in _agenerate
+    await self.client.aio.models.generate_content(
+  File "/home/odedbe/.local/lib/python3.12/site-packages/google/genai/models.py", line 7331, in generate_content
+    response = await self._generate_content(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/odedbe/.local/lib/python3.12/site-packages/google/genai/models.py", line 6095, in _generate_content
+    response = await self._api_client.async_request(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/odedbe/.local/lib/python3.12/site-packages/google/genai/_api_client.py", line 1442, in async_request
+    result = await self._async_request(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/odedbe/.local/lib/python3.12/site-packages/google/genai/_api_client.py", line 1374, in _async_request
+    return await retry(self._async_request_once, http_request, stream)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/odedbe/.local/lib/python3.12/site-packages/tenacity/asyncio/__init__.py", line 111, in __call__
+    do = await self.iter(retry_state=retry_state)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/odedbe/.local/lib/python3.12/site-packages/tenacity/asyncio/__init__.py", line 153, in iter
+    result = await action(retry_state)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/odedbe/.local/lib/python3.12/site-packages/tenacity/_utils.py", line 99, in inner
+    return call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/odedbe/.local/lib/python3.12/site-packages/tenacity/__init__.py", line 420, in exc_check
+    raise retry_exc.reraise()
+          ^^^^^^^^^^^^^^^^^^^
+  File "/home/odedbe/.local/lib/python3.12/site-packages/tenacity/__init__.py", line 187, in reraise
+    raise self.last_attempt.result()
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/concurrent/futures/_base.py", line 449, in result
+    return self.__get_result()
+           ^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/concurrent/futures/_base.py", line 401, in __get_result
+    raise self._exception
+  File "/home/odedbe/.local/lib/python3.12/site-packages/tenacity/asyncio/__init__.py", line 114, in __call__
+    result = await fn(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/odedbe/.local/lib/python3.12/site-packages/google/genai/_api_client.py", line 1320, in _async_request_once
+    await errors.APIError.raise_for_async_response(response)
+  File "/home/odedbe/.local/lib/python3.12/site-packages/google/genai/errors.py", line 216, in raise_for_async_response
+    await cls.raise_error_async(status_code, response_json, response)
+  File "/home/odedbe/.local/lib/python3.12/site-packages/google/genai/errors.py", line 238, in raise_error_async
+    raise ClientError(status_code, response_json, response)
+google.genai.errors.ClientError: 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_requests_per_model_per_day, limit: 250, model: gemini-3.1-pro\nPlease retry in 9h8m5.342426236s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_requests_per_model_per_day', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel', 'quotaDimensions': {'location': 'global', 'model': 'gemini-3.1-pro'}, 'quotaValue': '250'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '32885s'}]}}
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/odedbe/projects/hey-seven/src/agent/agents/_base.py", line 1301, in execute_specialist
+    response = await llm.ainvoke(llm_messages)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/odedbe/.local/lib/python3.12/site-packages/langchain_core/language_models/chat_models.py", line 425, in ainvoke
+    llm_result = await self.agenerate_prompt(
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/odedbe/.local/lib/python3.12/site-packages/langchain_core/language_models/chat_models.py", line 1132, in agenerate_prompt
+    return await self.agenerate(
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/odedbe/.local/lib/python3.12/site-packages/langchain_core/language_models/chat_models.py", line 1090, in agenerate
+    raise exceptions[0]
+  File "/home/odedbe/.local/lib/python3.12/site-packages/langchain_core/language_models/chat_models.py", line 1359, in _agenerate_with_cache
+    result = await self._agenerate(
+             ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/odedbe/.local/lib/python3.12/site-packages/langchain_google_genai/chat_models.py", line 3093, in _agenerate
+    _handle_client_error(e, request)
+  File "/home/odedbe/.local/lib/python3.12/site-packages/langchain_google_genai/chat_models.py", line 145, in _handle_client_error
+    raise ChatGoogleGenerativeAIError(msg) from e
+langchain_google_genai.chat_models.ChatGoogleGenerativeAIError: Error calling model 'gemini-3.1-pro-preview' (RESOURCE_EXHAUSTED): 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_requests_per_model_per_day, limit: 250, model: gemini-3.1-pro\nPlease retry in 9h8m5.342426236s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_requests_per_model_per_day', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel', 'quotaDimensions': {'location': 'global', 'model': 'gemini-3.1-pro'}, 'quotaValue': '250'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '32885s'}]}}
+2026-03-06 14:51:53,763 INFO google_genai.models: AFC is enabled with max remote calls: 10.
+2026-03-06 14:51:57,931 INFO src.agent.profiling: Profiling extraction: filled=0/16 fields, keys=[], skipped=['guest_name', 'party_size', 'party_composition', 'visit_purpose', 'visit_duration']
+2026-03-06 14:51:57,931 INFO src.agent.profiling: Profiling state: phase=foundation, completeness=0.00, total_known=0, new_this_turn=0
+2026-03-06 14:51:57,933 WARNING src.agent.persona: Output guardrail: PII detected in LLM response, redacting
+2026-03-06 14:51:57,933 INFO src.agent.nodes: Slop detector: cleaned 28 chars from response
+2026-03-06 14:51:57,937 INFO google_genai.models: AFC is enabled with max remote calls: 10.
+2026-03-06 14:52:01,293 INFO src.agent.guardrails: Semantic injection classifier: is_injection=False confidence=0.95
+2026-03-06 14:52:01,295 INFO google_genai.models: AFC is enabled with max remote calls: 10.
+2026-03-06 14:52:07,100 INFO httpx: HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-embedding-001:batchEmbedContents "HTTP/1.1 200 OK"
+2026-03-06 14:52:07,108 INFO httpx: HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-embedding-001:batchEmbedContents "HTTP/1.1 200 OK"
+2026-03-06 14:52:07,169 INFO google_genai.models: AFC is enabled with max remote calls: 10.
+2026-03-06 14:52:12,640 INFO google_genai.models: AFC is enabled with max remote calls: 10.
+2026-03-06 14:52:17,116 INFO src.agent.dispatch: Structured dispatch -> host (confidence=0.85, reason=The user's request 'Put it together for us?' is ambiguous and suggests a need fo)
+2026-03-06 14:52:17,116 INFO src.agent.nodes: R99 model routing: Pro (FORCE_PRO_MODEL override)
+2026-03-06 14:52:17,116 INFO src.agent.dispatch: Dispatching to host agent (method=structured_output, model=gemini-3.1-pro-preview)
+2026-03-06 14:52:17,116 INFO src.agent.agents._base: R83: Injected 3 few-shot examples for host agent
+2026-03-06 14:52:17,117 INFO google_genai.models: AFC is enabled with max remote calls: 10.
+2026-03-06 14:52:27,712 INFO google_genai.models: AFC is enabled with max remote calls: 10.
+2026-03-06 14:52:32,773 INFO src.agent.profiling: Profiling extraction: filled=0/16 fields, keys=[], skipped=['guest_name', 'party_size', 'party_composition', 'visit_purpose', 'visit_duration']
+2026-03-06 14:52:32,773 INFO src.agent.profiling: Profiling state: phase=foundation, completeness=0.00, total_known=0, new_this_turn=0
+2026-03-06 14:52:32,775 INFO google_genai.models: AFC is enabled with max remote calls: 10.
+2026-03-06 14:52:36,930 INFO src.agent.dispatch: Retry path -- reusing specialist host (skipping dispatch)
+2026-03-06 14:52:36,930 INFO src.agent.nodes: R99 model routing: Pro (FORCE_PRO_MODEL override)
+2026-03-06 14:52:36,930 INFO src.agent.dispatch: Dispatching to host agent (method=retry_reuse, model=gemini-3.1-pro-preview)
+2026-03-06 14:52:36,931 INFO src.agent.agents._base: R83: Injected 3 few-shot examples for host agent
+2026-03-06 14:52:36,931 INFO src.agent.agents._base: R83: Using Pro model (gemini-3.1-pro-preview) for host agent
+2026-03-06 14:52:36,931 INFO google_genai.models: AFC is enabled with max remote calls: 10.
+2026-03-06 14:52:37,392 INFO google_genai._api_client: Retrying google.genai._api_client.BaseApiClient._async_request_once in 1.06128095172745 seconds as it raised ClientError: 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_requests_per_model_per_day, limit: 250, model: gemini-3.1-pro\nPlease retry in 9h7m21.708963357s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_requests_per_model_per_day', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel', 'quotaDimensions': {'model': 'gemini-3.1-pro', 'location': 'global'}, 'quotaValue': '250'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '32841s'}]}}.
+2026-03-06 14:52:38,613 ERROR src.agent.agents._base: Host agent LLM call failed
+Traceback (most recent call last):
+  File "/home/odedbe/.local/lib/python3.12/site-packages/langchain_google_genai/chat_models.py", line 3088, in _agenerate
+    await self.client.aio.models.generate_content(
+  File "/home/odedbe/.local/lib/python3.12/site-packages/google/genai/models.py", line 7331, in generate_content
+    response = await self._generate_content(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/odedbe/.local/lib/python3.12/site-packages/google/genai/models.py", line 6095, in _generate_content
+    response = await self._api_client.async_request(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/odedbe/.local/lib/python3.12/site-packages/google/genai/_api_client.py", line 1442, in async_request
+    result = await self._async_request(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/odedbe/.local/lib/python3.12/site-packages/google/genai/_api_client.py", line 1374, in _async_request
+    return await retry(self._async_request_once, http_request, stream)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/odedbe/.local/lib/python3.12/site-packages/tenacity/asyncio/__init__.py", line 111, in __call__
+    do = await self.iter(retry_state=retry_state)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/odedbe/.local/lib/python3.12/site-packages/tenacity/asyncio/__init__.py", line 153, in iter
+    result = await action(retry_state)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/odedbe/.local/lib/python3.12/site-packages/tenacity/_utils.py", line 99, in inner
+    return call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/odedbe/.local/lib/python3.12/site-packages/tenacity/__init__.py", line 420, in exc_check
+    raise retry_exc.reraise()
+          ^^^^^^^^^^^^^^^^^^^
+  File "/home/odedbe/.local/lib/python3.12/site-packages/tenacity/__init__.py", line 187, in reraise
+    raise self.last_attempt.result()
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/concurrent/futures/_base.py", line 449, in result
+    return self.__get_result()
+           ^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/concurrent/futures/_base.py", line 401, in __get_result
+    raise self._exception
+  File "/home/odedbe/.local/lib/python3.12/site-packages/tenacity/asyncio/__init__.py", line 114, in __call__
+    result = await fn(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/odedbe/.local/lib/python3.12/site-packages/google/genai/_api_client.py", line 1320, in _async_request_once
+    await errors.APIError.raise_for_async_response(response)
+  File "/home/odedbe/.local/lib/python3.12/site-packages/google/genai/errors.py", line 216, in raise_for_async_response
+    await cls.raise_error_async(status_code, response_json, response)
+  File "/home/odedbe/.local/lib/python3.12/site-packages/google/genai/errors.py", line 238, in raise_error_async
+    raise ClientError(status_code, response_json, response)
+google.genai.errors.ClientError: 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_requests_per_model_per_day, limit: 250, model: gemini-3.1-pro\nPlease retry in 9h7m20.487266897s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_requests_per_model_per_day', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel', 'quotaDimensions': {'model': 'gemini-3.1-pro', 'location': 'global'}, 'quotaValue': '250'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '32840s'}]}}
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/odedbe/projects/hey-seven/src/agent/agents/_base.py", line 1301, in execute_specialist
+    response = await llm.ainvoke(llm_messages)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/odedbe/.local/lib/python3.12/site-packages/langchain_core/language_models/chat_models.py", line 425, in ainvoke
+    llm_result = await self.agenerate_prompt(
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/odedbe/.local/lib/python3.12/site-packages/langchain_core/language_models/chat_models.py", line 1132, in agenerate_prompt
+    return await self.agenerate(
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/odedbe/.local/lib/python3.12/site-packages/langchain_core/language_models/chat_models.py", line 1090, in agenerate
+    raise exceptions[0]
+  File "/home/odedbe/.local/lib/python3.12/site-packages/langchain_core/language_models/chat_models.py", line 1359, in _agenerate_with_cache
+    result = await self._agenerate(
+             ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/odedbe/.local/lib/python3.12/site-packages/langchain_google_genai/chat_models.py", line 3093, in _agenerate
+    _handle_client_error(e, request)
+  File "/home/odedbe/.local/lib/python3.12/site-packages/langchain_google_genai/chat_models.py", line 145, in _handle_client_error
+    raise ChatGoogleGenerativeAIError(msg) from e
+langchain_google_genai.chat_models.ChatGoogleGenerativeAIError: Error calling model 'gemini-3.1-pro-preview' (RESOURCE_EXHAUSTED): 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_requests_per_model_per_day, limit: 250, model: gemini-3.1-pro\nPlease retry in 9h7m20.487266897s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_requests_per_model_per_day', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel', 'quotaDimensions': {'model': 'gemini-3.1-pro', 'location': 'global'}, 'quotaValue': '250'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '32840s'}]}}
+2026-03-06 14:52:38,618 INFO google_genai.models: AFC is enabled with max remote calls: 10.
+2026-03-06 14:52:43,878 INFO src.agent.profiling: Profiling extraction: filled=0/16 fields, keys=[], skipped=['guest_name', 'party_size', 'party_composition', 'visit_purpose', 'visit_duration']
+2026-03-06 14:52:43,878 INFO src.agent.profiling: Profiling state: phase=foundation, completeness=0.00, total_known=0, new_this_turn=0
+2026-03-06 14:52:43,880 WARNING src.agent.persona: Output guardrail: PII detected in LLM response, redacting
+2026-03-06 14:52:43,880 INFO src.agent.nodes: Slop detector: cleaned 28 chars from response
+2026-03-06 14:52:43,881 INFO live_eval:   -> OK | 3 turns | avg 46424ms
+2026-03-06 14:52:44,382 INFO live_eval: [5/109] Running scenario agentic-05: Domain handoff when question exceeds knowledge
+2026-03-06 14:52:44,386 INFO google_genai.models: AFC is enabled with max remote calls: 10.
+2026-03-06 14:52:46,330 INFO src.agent.guardrails: Semantic injection classifier: is_injection=False confidence=1.00
+2026-03-06 14:52:46,332 INFO google_genai.models: AFC is enabled with max remote calls: 10.
+2026-03-06 14:52:49,200 INFO src.agent.sentiment: LLM sentiment augmentation: neutral -> neutral (conf=0.98)
+2026-03-06 14:52:49,202 INFO google_genai.models: AFC is enabled with max remote calls: 10.
+2026-03-06 14:52:53,182 INFO httpx: HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-embedding-001:batchEmbedContents "HTTP/1.1 200 OK"
+2026-03-06 14:52:53,184 INFO httpx: HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-embedding-001:batchEmbedContents "HTTP/1.1 200 OK"
+2026-03-06 14:52:53,245 INFO google_genai.models: AFC is enabled with max remote calls: 10.
+2026-03-06 14:52:57,123 INFO google_genai.models: AFC is enabled with max remote calls: 10.
+2026-03-06 14:53:00,794 INFO src.agent.dispatch: Structured dispatch -> dining (confidence=1.00, reason=The guest's query specifically mentions booking a table at a steakhouse, which i)
+2026-03-06 14:53:00,794 INFO src.agent.nodes: R99 model routing: Pro (FORCE_PRO_MODEL override)
+2026-03-06 14:53:00,794 INFO src.agent.dispatch: Dispatching to dining agent (method=structured_output, model=gemini-3.1-pro-preview)
+2026-03-06 14:53:00,794 INFO src.agent.agents._base: R83: Injected 3 few-shot examples for dining agent
+2026-03-06 14:53:00,795 INFO google_genai.models: AFC is enabled with max remote calls: 10.
+2026-03-06 14:53:08,556 INFO google_genai.models: AFC is enabled with max remote calls: 10.
+2026-03-06 14:53:13,269 INFO src.agent.profiling: Profiling extraction: filled=0/16 fields, keys=[], skipped=['guest_name', 'party_size', 'party_composition', 'visit_purpose', 'visit_duration']
+2026-03-06 14:53:13,269 INFO src.agent.profiling: Profiling state: phase=foundation, completeness=0.12, total_known=1, new_this_turn=0
+2026-03-06 14:53:13,271 INFO google_genai.models: AFC is enabled with max remote calls: 10.
+2026-03-06 14:53:17,965 INFO src.agent.dispatch: Retry path -- reusing specialist dining (skipping dispatch)
+2026-03-06 14:53:17,965 INFO src.agent.nodes: R99 model routing: Pro (FORCE_PRO_MODEL override)
+2026-03-06 14:53:17,965 INFO src.agent.dispatch: Dispatching to dining agent (method=retry_reuse, model=gemini-3.1-pro-preview)
+2026-03-06 14:53:17,965 INFO src.agent.agents._base: R83: Injected 3 few-shot examples for dining agent
+2026-03-06 14:53:17,965 INFO src.agent.agents._base: R83: Using Pro model (gemini-3.1-pro-preview) for dining agent
+2026-03-06 14:53:17,966 INFO google_genai.models: AFC is enabled with max remote calls: 10.
+2026-03-06 14:53:18,308 INFO google_genai._api_client: Retrying google.genai._api_client.BaseApiClient._async_request_once in 1.4532299366809671 seconds as it raised ClientError: 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_requests_per_model_per_day, limit: 250, model: gemini-3.1-pro\nPlease retry in 9h6m40.793652634s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_requests_per_model_per_day', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel', 'quotaDimensions': {'model': 'gemini-3.1-pro', 'location': 'global'}, 'quotaValue': '250'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '32800s'}]}}.
+2026-03-06 14:53:19,966 ERROR src.agent.agents._base: Dining agent LLM call failed
+Traceback (most recent call last):
+  File "/home/odedbe/.local/lib/python3.12/site-packages/langchain_google_genai/chat_models.py", line 3088, in _agenerate
+    await self.client.aio.models.generate_content(
+  File "/home/odedbe/.local/lib/python3.12/site-packages/google/genai/models.py", line 7331, in generate_content
+    response = await self._generate_content(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/odedbe/.local/lib/python3.12/site-packages/google/genai/models.py", line 6095, in _generate_content
+    response = await self._api_client.async_request(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/odedbe/.local/lib/python3.12/site-packages/google/genai/_api_client.py", line 1442, in async_request
+    result = await self._async_request(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/odedbe/.local/lib/python3.12/site-packages/google/genai/_api_client.py", line 1374, in _async_request
+    return await retry(self._async_request_once, http_request, stream)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/odedbe/.local/lib/python3.12/site-packages/tenacity/asyncio/__init__.py", line 111, in __call__
+    do = await self.iter(retry_state=retry_state)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/odedbe/.local/lib/python3.12/site-packages/tenacity/asyncio/__init__.py", line 153, in iter
+    result = await action(retry_state)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/odedbe/.local/lib/python3.12/site-packages/tenacity/_utils.py", line 99, in inner
+    return call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/odedbe/.local/lib/python3.12/site-packages/tenacity/__init__.py", line 420, in exc_check
+    raise retry_exc.reraise()
+          ^^^^^^^^^^^^^^^^^^^
+  File "/home/odedbe/.local/lib/python3.12/site-packages/tenacity/__init__.py", line 187, in reraise
+    raise self.last_attempt.result()
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/concurrent/futures/_base.py", line 449, in result
+    return self.__get_result()
+           ^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/concurrent/futures/_base.py", line 401, in __get_result
+    raise self._exception
+  File "/home/odedbe/.local/lib/python3.12/site-packages/tenacity/asyncio/__init__.py", line 114, in __call__
+    result = await fn(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/odedbe/.local/lib/python3.12/site-packages/google/genai/_api_client.py", line 1320, in _async_request_once
+    await errors.APIError.raise_for_async_response(response)
+  File "/home/odedbe/.local/lib/python3.12/site-packages/google/genai/errors.py", line 216, in raise_for_async_response
+    await cls.raise_error_async(status_code, response_json, response)
+  File "/home/odedbe/.local/lib/python3.12/site-packages/google/genai/errors.py", line 238, in raise_error_async
+    raise ClientError(status_code, response_json, response)
+google.genai.errors.ClientError: 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_requests_per_model_per_day, limit: 250, model: gemini-3.1-pro\nPlease retry in 9h6m39.134948568s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_requests_per_model_per_day', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel', 'quotaDimensions': {'model': 'gemini-3.1-pro', 'location': 'global'}, 'quotaValue': '250'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '32799s'}]}}
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/odedbe/projects/hey-seven/src/agent/agents/_base.py", line 1301, in execute_specialist
+    response = await llm.ainvoke(llm_messages)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/odedbe/.local/lib/python3.12/site-packages/langchain_core/language_models/chat_models.py", line 425, in ainvoke
+    llm_result = await self.agenerate_prompt(
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/odedbe/.local/lib/python3.12/site-packages/langchain_core/language_models/chat_models.py", line 1132, in agenerate_prompt
+    return await self.agenerate(
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/odedbe/.local/lib/python3.12/site-packages/langchain_core/language_models/chat_models.py", line 1090, in agenerate
+    raise exceptions[0]
+  File "/home/odedbe/.local/lib/python3.12/site-packages/langchain_core/language_models/chat_models.py", line 1359, in _agenerate_with_cache
+    result = await self._agenerate(
+             ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/odedbe/.local/lib/python3.12/site-packages/langchain_google_genai/chat_models.py", line 3093, in _agenerate
+    _handle_client_error(e, request)
+  File "/home/odedbe/.local/lib/python3.12/site-packages/langchain_google_genai/chat_models.py", line 145, in _handle_client_error
+    raise ChatGoogleGenerativeAIError(msg) from e
+langchain_google_genai.chat_models.ChatGoogleGenerativeAIError: Error calling model 'gemini-3.1-pro-preview' (RESOURCE_EXHAUSTED): 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_requests_per_model_per_day, limit: 250, model: gemini-3.1-pro\nPlease retry in 9h6m39.134948568s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_requests_per_model_per_day', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel', 'quotaDimensions': {'model': 'gemini-3.1-pro', 'location': 'global'}, 'quotaValue': '250'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '32799s'}]}}
+2026-03-06 14:53:19,971 INFO google_genai.models: AFC is enabled with max remote calls: 10.
+2026-03-06 14:53:24,052 INFO src.agent.profiling: Profiling extraction: filled=0/16 fields, keys=[], skipped=['guest_name', 'party_size', 'party_composition', 'visit_purpose', 'visit_duration']
+2026-03-06 14:53:24,052 INFO src.agent.profiling: Profiling state: phase=foundation, completeness=0.12, total_known=1, new_this_turn=0
+2026-03-06 14:53:24,054 WARNING src.agent.persona: Output guardrail: PII detected in LLM response, redacting
+2026-03-06 14:53:24,054 INFO src.agent.nodes: Slop detector: cleaned 28 chars from response
+2026-03-06 14:53:24,057 INFO google_genai.models: AFC is enabled with max remote calls: 10.
+2026-03-06 14:53:26,315 INFO src.agent.guardrails: Semantic injection classifier: is_injection=False confidence=1.00
+2026-03-06 14:53:26,317 INFO google_genai.models: AFC is enabled with max remote calls: 10.
+2026-03-06 14:53:33,517 INFO httpx: HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-embedding-001:batchEmbedContents "HTTP/1.1 200 OK"
+2026-03-06 14:53:33,518 INFO httpx: HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-embedding-001:batchEmbedContents "HTTP/1.1 200 OK"
+2026-03-06 14:53:33,584 INFO google_genai.models: AFC is enabled with max remote calls: 10.
+2026-03-06 14:53:37,581 INFO google_genai.models: AFC is enabled with max remote calls: 10.
+2026-03-06 14:53:48,306 INFO src.agent.dispatch: Structured dispatch -> dining (confidence=0.75, reason=The phrase 'per person' is most commonly associated with restaurant pricing (suc)
+2026-03-06 14:53:48,306 INFO src.agent.nodes: R99 model routing: Pro (FORCE_PRO_MODEL override)
+2026-03-06 14:53:48,306 INFO src.agent.dispatch: Dispatching to dining agent (method=structured_output, model=gemini-3.1-pro-preview)
+2026-03-06 14:53:48,307 INFO src.agent.agents._base: R83: Injected 3 few-shot examples for dining agent
+2026-03-06 14:53:48,307 INFO google_genai.models: AFC is enabled with max remote calls: 10.
+2026-03-06 14:54:15,099 INFO google_genai.models: AFC is enabled with max remote calls: 10.
+2026-03-06 14:54:20,492 INFO src.agent.profiling: Profiling extraction: filled=0/16 fields, keys=[], skipped=['guest_name', 'party_size', 'party_composition', 'visit_purpose', 'visit_duration']
+2026-03-06 14:54:20,492 INFO src.agent.profiling: Profiling state: phase=foundation, completeness=0.12, total_known=1, new_this_turn=0
+2026-03-06 14:54:20,498 INFO google_genai.models: AFC is enabled with max remote calls: 10.
+2026-03-06 14:54:24,717 INFO src.agent.dispatch: Retry path -- reusing specialist dining (skipping dispatch)
+2026-03-06 14:54:24,717 INFO src.agent.nodes: R99 model routing: Pro (FORCE_PRO_MODEL override)
+2026-03-06 14:54:24,717 INFO src.agent.dispatch: Dispatching to dining agent (method=retry_reuse, model=gemini-3.1-pro-preview)
+2026-03-06 14:54:24,717 INFO src.agent.agents._base: R83: Injected 3 few-shot examples for dining agent
+2026-03-06 14:54:24,717 INFO src.agent.agents._base: R83: Using Pro model (gemini-3.1-pro-preview) for dining agent
+2026-03-06 14:54:24,718 INFO google_genai.models: AFC is enabled with max remote calls: 10.
+2026-03-06 14:54:25,180 INFO google_genai._api_client: Retrying google.genai._api_client.BaseApiClient._async_request_once in 1.2483517872325924 seconds as it raised ClientError: 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_requests_per_model_per_day, limit: 250, model: gemini-3.1-pro\nPlease retry in 9h5m33.918773335s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_requests_per_model_per_day', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel', 'quotaDimensions': {'location': 'global', 'model': 'gemini-3.1-pro'}, 'quotaValue': '250'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '32733s'}]}}.
+2026-03-06 14:54:26,531 ERROR src.agent.agents._base: Dining agent LLM call failed
+Traceback (most recent call last):
+  File "/home/odedbe/.local/lib/python3.12/site-packages/langchain_google_genai/chat_models.py", line 3088, in _agenerate
+    await self.client.aio.models.generate_content(
+  File "/home/odedbe/.local/lib/python3.12/site-packages/google/genai/models.py", line 7331, in generate_content
+    response = await self._generate_content(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/odedbe/.local/lib/python3.12/site-packages/google/genai/models.py", line 6095, in _generate_content
+    response = await self._api_client.async_request(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/odedbe/.local/lib/python3.12/site-packages/google/genai/_api_client.py", line 1442, in async_request
+    result = await self._async_request(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/odedbe/.local/lib/python3.12/site-packages/google/genai/_api_client.py", line 1374, in _async_request
+    return await retry(self._async_request_once, http_request, stream)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/odedbe/.local/lib/python3.12/site-packages/tenacity/asyncio/__init__.py", line 111, in __call__
+    do = await self.iter(retry_state=retry_state)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/odedbe/.local/lib/python3.12/site-packages/tenacity/asyncio/__init__.py", line 153, in iter
+    result = await action(retry_state)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/odedbe/.local/lib/python3.12/site-packages/tenacity/_utils.py", line 99, in inner
+    return call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/odedbe/.local/lib/python3.12/site-packages/tenacity/__init__.py", line 420, in exc_check
+    raise retry_exc.reraise()
+          ^^^^^^^^^^^^^^^^^^^
+  File "/home/odedbe/.local/lib/python3.12/site-packages/tenacity/__init__.py", line 187, in reraise
+    raise self.last_attempt.result()
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/concurrent/futures/_base.py", line 449, in result
+    return self.__get_result()
+           ^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/concurrent/futures/_base.py", line 401, in __get_result
+    raise self._exception
+  File "/home/odedbe/.local/lib/python3.12/site-packages/tenacity/asyncio/__init__.py", line 114, in __call__
+    result = await fn(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/odedbe/.local/lib/python3.12/site-packages/google/genai/_api_client.py", line 1320, in _async_request_once
+    await errors.APIError.raise_for_async_response(response)
+  File "/home/odedbe/.local/lib/python3.12/site-packages/google/genai/errors.py", line 216, in raise_for_async_response
+    await cls.raise_error_async(status_code, response_json, response)
+  File "/home/odedbe/.local/lib/python3.12/site-packages/google/genai/errors.py", line 238, in raise_error_async
+    raise ClientError(status_code, response_json, response)
+google.genai.errors.ClientError: 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_requests_per_model_per_day, limit: 250, model: gemini-3.1-pro\nPlease retry in 9h5m32.567501397s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_requests_per_model_per_day', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel', 'quotaDimensions': {'location': 'global', 'model': 'gemini-3.1-pro'}, 'quotaValue': '250'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '32732s'}]}}
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/odedbe/projects/hey-seven/src/agent/agents/_base.py", line 1301, in execute_specialist
+    response = await llm.ainvoke(llm_messages)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/odedbe/.local/lib/python3.12/site-packages/langchain_core/language_models/chat_models.py", line 425, in ainvoke
+    llm_result = await self.agenerate_prompt(
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/odedbe/.local/lib/python3.12/site-packages/langchain_core/language_models/chat_models.py", line 1132, in agenerate_prompt
+    return await self.agenerate(
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/odedbe/.local/lib/python3.12/site-packages/langchain_core/language_models/chat_models.py", line 1090, in agenerate
+    raise exceptions[0]
+  File "/home/odedbe/.local/lib/python3.12/site-packages/langchain_core/language_models/chat_models.py", line 1359, in _agenerate_with_cache
+    result = await self._agenerate(
+             ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/odedbe/.local/lib/python3.12/site-packages/langchain_google_genai/chat_models.py", line 3093, in _agenerate
+    _handle_client_error(e, request)
+  File "/home/odedbe/.local/lib/python3.12/site-packages/langchain_google_genai/chat_models.py", line 145, in _handle_client_error
+    raise ChatGoogleGenerativeAIError(msg) from e
+langchain_google_genai.chat_models.ChatGoogleGenerativeAIError: Error calling model 'gemini-3.1-pro-preview' (RESOURCE_EXHAUSTED): 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_requests_per_model_per_day, limit: 250, model: gemini-3.1-pro\nPlease retry in 9h5m32.567501397s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_requests_per_model_per_day', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel', 'quotaDimensions': {'location': 'global', 'model': 'gemini-3.1-pro'}, 'quotaValue': '250'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '32732s'}]}}
+2026-03-06 14:54:26,536 INFO google_genai.models: AFC is enabled with max remote calls: 10.
+2026-03-06 14:54:30,640 INFO src.agent.profiling: Profiling extraction: filled=0/16 fields, keys=[], skipped=['guest_name', 'party_size', 'party_composition', 'visit_purpose', 'visit_duration']
+2026-03-06 14:54:30,640 INFO src.agent.profiling: Profiling state: phase=foundation, completeness=0.12, total_known=1, new_this_turn=0
+2026-03-06 14:54:30,641 WARNING src.agent.persona: Output guardrail: PII detected in LLM response, redacting
+2026-03-06 14:54:30,642 INFO src.agent.nodes: Slop detector: cleaned 28 chars from response
+2026-03-06 14:54:30,644 INFO google_genai.models: AFC is enabled with max remote calls: 10.
+2026-03-06 14:54:34,102 INFO src.agent.guardrails: Semantic injection classifier: is_injection=False confidence=1.00
+2026-03-06 14:54:34,105 INFO google_genai.models: AFC is enabled with max remote calls: 10.
+2026-03-06 14:54:38,084 INFO httpx: HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-embedding-001:batchEmbedContents "HTTP/1.1 200 OK"
+2026-03-06 14:54:38,090 INFO httpx: HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-embedding-001:batchEmbedContents "HTTP/1.1 200 OK"
+2026-03-06 14:54:38,153 INFO google_genai.models: AFC is enabled with max remote calls: 10.
+2026-03-06 14:54:42,228 INFO google_genai.models: AFC is enabled with max remote calls: 10.
+2026-03-06 14:54:45,205 INFO src.agent.dispatch: Structured dispatch -> host (confidence=0.90, reason=The query 'who do I call?' is a general inquiry about contact information and la)
+2026-03-06 14:54:45,205 INFO src.agent.nodes: R99 model routing: Pro (FORCE_PRO_MODEL override)
+2026-03-06 14:54:45,205 INFO src.agent.dispatch: Dispatching to host agent (method=structured_output, model=gemini-3.1-pro-preview)
+2026-03-06 14:54:45,206 INFO src.agent.agents._base: R83: Injected 3 few-shot examples for host agent
+2026-03-06 14:54:45,206 INFO google_genai.models: AFC is enabled with max remote calls: 10.
+2026-03-06 14:54:59,841 INFO google_genai.models: AFC is enabled with max remote calls: 10.
+2026-03-06 14:55:04,725 INFO src.agent.profiling: Profiling extraction: filled=0/16 fields, keys=[], skipped=['guest_name', 'party_size', 'party_composition', 'visit_purpose', 'visit_duration']
+2026-03-06 14:55:04,725 INFO src.agent.profiling: Profiling state: phase=foundation, completeness=0.12, total_known=1, new_this_turn=0
+2026-03-06 14:55:04,727 INFO google_genai.models: AFC is enabled with max remote calls: 10.
+2026-03-06 14:55:09,346 INFO src.agent.dispatch: Retry path -- reusing specialist host (skipping dispatch)
+2026-03-06 14:55:09,346 INFO src.agent.nodes: R99 model routing: Pro (FORCE_PRO_MODEL override)
+2026-03-06 14:55:09,347 INFO src.agent.dispatch: Dispatching to host agent (method=retry_reuse, model=gemini-3.1-pro-preview)
+2026-03-06 14:55:09,347 INFO src.agent.agents._base: R83: Injected 3 few-shot examples for host agent
+2026-03-06 14:55:09,347 INFO src.agent.agents._base: R83: Using Pro model (gemini-3.1-pro-preview) for host agent
+2026-03-06 14:55:09,348 INFO google_genai.models: AFC is enabled with max remote calls: 10.
+2026-03-06 14:55:09,690 INFO google_genai._api_client: Retrying google.genai._api_client.BaseApiClient._async_request_once in 1.4081667017911919 seconds as it raised ClientError: 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_requests_per_model_per_day, limit: 250, model: gemini-3.1-pro\nPlease retry in 9h4m49.408803588s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_requests_per_model_per_day', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel', 'quotaDimensions': {'location': 'global', 'model': 'gemini-3.1-pro'}, 'quotaValue': '250'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '32689s'}]}}.
+2026-03-06 14:55:11,259 ERROR src.agent.agents._base: Host agent LLM call failed
+Traceback (most recent call last):
+  File "/home/odedbe/.local/lib/python3.12/site-packages/langchain_google_genai/chat_models.py", line 3088, in _agenerate
+    await self.client.aio.models.generate_content(
+  File "/home/odedbe/.local/lib/python3.12/site-packages/google/genai/models.py", line 7331, in generate_content
+    response = await self._generate_content(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/odedbe/.local/lib/python3.12/site-packages/google/genai/models.py", line 6095, in _generate_content
+    response = await self._api_client.async_request(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/odedbe/.local/lib/python3.12/site-packages/google/genai/_api_client.py", line 1442, in async_request
+    result = await self._async_request(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/odedbe/.local/lib/python3.12/site-packages/google/genai/_api_client.py", line 1374, in _async_request
+    return await retry(self._async_request_once, http_request, stream)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/odedbe/.local/lib/python3.12/site-packages/tenacity/asyncio/__init__.py", line 111, in __call__
+    do = await self.iter(retry_state=retry_state)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/odedbe/.local/lib/python3.12/site-packages/tenacity/asyncio/__init__.py", line 153, in iter
+    result = await action(retry_state)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/odedbe/.local/lib/python3.12/site-packages/tenacity/_utils.py", line 99, in inner
+    return call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/odedbe/.local/lib/python3.12/site-packages/tenacity/__init__.py", line 420, in exc_check
+    raise retry_exc.reraise()
+          ^^^^^^^^^^^^^^^^^^^
+  File "/home/odedbe/.local/lib/python3.12/site-packages/tenacity/__init__.py", line 187, in reraise
+    raise self.last_attempt.result()
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/concurrent/futures/_base.py", line 449, in result
+    return self.__get_result()
+           ^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/concurrent/futures/_base.py", line 401, in __get_result
+    raise self._exception
+  File "/home/odedbe/.local/lib/python3.12/site-packages/tenacity/asyncio/__init__.py", line 114, in __call__
+    result = await fn(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/odedbe/.local/lib/python3.12/site-packages/google/genai/_api_client.py", line 1320, in _async_request_once
+    await errors.APIError.raise_for_async_response(response)
+  File "/home/odedbe/.local/lib/python3.12/site-packages/google/genai/errors.py", line 216, in raise_for_async_response
+    await cls.raise_error_async(status_code, response_json, response)
+  File "/home/odedbe/.local/lib/python3.12/site-packages/google/genai/errors.py", line 238, in raise_error_async
+    raise ClientError(status_code, response_json, response)
+google.genai.errors.ClientError: 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_requests_per_model_per_day, limit: 250, model: gemini-3.1-pro\nPlease retry in 9h4m47.839001838s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_requests_per_model_per_day', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel', 'quotaDimensions': {'model': 'gemini-3.1-pro', 'location': 'global'}, 'quotaValue': '250'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '32687s'}]}}
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/odedbe/projects/hey-seven/src/agent/agents/_base.py", line 1301, in execute_specialist
+    response = await llm.ainvoke(llm_messages)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/odedbe/.local/lib/python3.12/site-packages/langchain_core/language_models/chat_models.py", line 425, in ainvoke
+    llm_result = await self.agenerate_prompt(
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/odedbe/.local/lib/python3.12/site-packages/langchain_core/language_models/chat_models.py", line 1132, in agenerate_prompt
+    return await self.agenerate(
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/odedbe/.local/lib/python3.12/site-packages/langchain_core/language_models/chat_models.py", line 1090, in agenerate
+    raise exceptions[0]
+  File "/home/odedbe/.local/lib/python3.12/site-packages/langchain_core/language_models/chat_models.py", line 1359, in _agenerate_with_cache
+    result = await self._agenerate(
+             ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/odedbe/.local/lib/python3.12/site-packages/langchain_google_genai/chat_models.py", line 3093, in _agenerate
+    _handle_client_error(e, request)
+  File "/home/odedbe/.local/lib/python3.12/site-packages/langchain_google_genai/chat_models.py", line 145, in _handle_client_error
+    raise ChatGoogleGenerativeAIError(msg) from e
+langchain_google_genai.chat_models.ChatGoogleGenerativeAIError: Error calling model 'gemini-3.1-pro-preview' (RESOURCE_EXHAUSTED): 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_requests_per_model_per_day, limit: 250, model: gemini-3.1-pro\nPlease retry in 9h4m47.839001838s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_requests_per_model_per_day', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel', 'quotaDimensions': {'model': 'gemini-3.1-pro', 'location': 'global'}, 'quotaValue': '250'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '32687s'}]}}
+2026-03-06 14:55:11,264 INFO google_genai.models: AFC is enabled with max remote calls: 10.
+2026-03-06 14:55:14,759 INFO src.agent.profiling: Profiling extraction: filled=0/16 fields, keys=[], skipped=['guest_name', 'party_size', 'party_composition', 'visit_purpose', 'visit_duration']
+2026-03-06 14:55:14,759 INFO src.agent.profiling: Profiling state: phase=foundation, completeness=0.12, total_known=1, new_this_turn=0
+2026-03-06 14:55:14,760 WARNING src.agent.persona: Output guardrail: PII detected in LLM response, redacting
+2026-03-06 14:55:14,761 INFO src.agent.nodes: Slop detector: cleaned 28 chars from response
+2026-03-06 14:55:14,761 INFO live_eval:   -> OK | 3 turns | avg 50125ms
+2026-03-06 14:55:15,263 INFO live_eval: [6/109] Running scenario agentic-06: Proactive weather-context suggestion
+2026-03-06 14:55:15,267 INFO google_genai.models: AFC is enabled with max remote calls: 10.
+2026-03-06 14:55:17,960 INFO src.agent.guardrails: Semantic injection classifier: is_injection=False confidence=0.99
+2026-03-06 14:55:17,962 INFO google_genai.models: AFC is enabled with max remote calls: 10.
+2026-03-06 14:55:21,454 INFO httpx: HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-embedding-001:batchEmbedContents "HTTP/1.1 200 OK"
+2026-03-06 14:55:21,456 INFO httpx: HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-embedding-001:batchEmbedContents "HTTP/1.1 200 OK"
+2026-03-06 14:55:21,520 INFO google_genai.models: AFC is enabled with max remote calls: 10.
+2026-03-06 14:55:27,149 INFO google_genai.models: AFC is enabled with max remote calls: 10.
+2026-03-06 14:55:30,870 INFO src.agent.dispatch: Structured dispatch -> entertainment (confidence=0.85, reason=The guest is seeking indoor activity recommendations due to the weather. The ent)
+2026-03-06 14:55:30,870 INFO src.agent.nodes: R99 model routing: Pro (FORCE_PRO_MODEL override)
+2026-03-06 14:55:30,870 INFO src.agent.dispatch: Dispatching to entertainment agent (method=structured_output, model=gemini-3.1-pro-preview)
+2026-03-06 14:55:30,870 INFO src.agent.agents._base: R83: Injected 3 few-shot examples for entertainment agent
+2026-03-06 14:55:30,871 INFO google_genai.models: AFC is enabled with max remote calls: 10.
+2026-03-06 14:55:41,969 INFO google_genai.models: AFC is enabled with max remote calls: 10.
+2026-03-06 14:55:46,506 INFO src.agent.profiling: Profiling extraction: filled=0/16 fields, keys=[], skipped=['guest_name', 'party_size', 'party_composition', 'visit_purpose', 'visit_duration']
+2026-03-06 14:55:46,507 INFO src.agent.profiling: Profiling state: phase=foundation, completeness=0.00, total_known=0, new_this_turn=0
+2026-03-06 14:55:46,508 INFO google_genai.models: AFC is enabled with max remote calls: 10.
+2026-03-06 14:55:51,330 INFO google_genai.models: AFC is enabled with max remote calls: 10.
+2026-03-06 14:55:54,027 INFO src.agent.guardrails: Semantic injection classifier: is_injection=False confidence=1.00
+2026-03-06 14:55:54,029 INFO google_genai.models: AFC is enabled with max remote calls: 10.
+2026-03-06 14:55:58,833 INFO httpx: HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-embedding-001:batchEmbedContents "HTTP/1.1 200 OK"
+2026-03-06 14:55:59,026 INFO httpx: HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-embedding-001:batchEmbedContents "HTTP/1.1 200 OK"
+2026-03-06 14:55:59,090 INFO google_genai.models: AFC is enabled with max remote calls: 10.
+2026-03-06 14:56:04,273 INFO google_genai.models: AFC is enabled with max remote calls: 10.
+2026-03-06 14:56:07,740 INFO src.agent.dispatch: Structured dispatch -> entertainment (confidence=0.95, reason=The guest query specifically asks about the spa facilities, which is explicitly )
+2026-03-06 14:56:07,740 INFO src.agent.nodes: R99 model routing: Pro (FORCE_PRO_MODEL override)
+2026-03-06 14:56:07,740 INFO src.agent.dispatch: Dispatching to entertainment agent (method=structured_output, model=gemini-3.1-pro-preview)
+2026-03-06 14:56:07,741 INFO src.agent.agents._base: R83: Injected 3 few-shot examples for entertainment agent
+2026-03-06 14:56:07,741 INFO google_genai.models: AFC is enabled with max remote calls: 10.
+2026-03-06 14:56:19,834 INFO google_genai.models: AFC is enabled with max remote calls: 10.
+2026-03-06 14:56:23,825 INFO src.agent.profiling: Profiling extraction: filled=0/16 fields, keys=[], skipped=['guest_name', 'party_size', 'party_composition', 'visit_purpose', 'visit_duration']
+2026-03-06 14:56:23,825 INFO src.agent.profiling: Profiling state: phase=foundation, completeness=0.00, total_known=0, new_this_turn=0
+2026-03-06 14:56:23,827 INFO google_genai.models: AFC is enabled with max remote calls: 10.
+2026-03-06 14:56:28,273 INFO src.agent.dispatch: Retry path -- reusing specialist entertainment (skipping dispatch)
+2026-03-06 14:56:28,274 INFO src.agent.nodes: R99 model routing: Pro (FORCE_PRO_MODEL override)
+2026-03-06 14:56:28,274 INFO src.agent.dispatch: Dispatching to entertainment agent (method=retry_reuse, model=gemini-3.1-pro-preview)
+2026-03-06 14:56:28,274 INFO src.agent.agents._base: R83: Injected 3 few-shot examples for entertainment agent
+2026-03-06 14:56:28,275 INFO src.agent.agents._base: R83: Using Pro model (gemini-3.1-pro-preview) for entertainment agent
+2026-03-06 14:56:28,275 INFO google_genai.models: AFC is enabled with max remote calls: 10.
+2026-03-06 14:56:28,720 INFO google_genai._api_client: Retrying google.genai._api_client.BaseApiClient._async_request_once in 1.7965396139343563 seconds as it raised ClientError: 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_requests_per_model_per_day, limit: 250, model: gemini-3.1-pro\nPlease retry in 9h3m30.377197321s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_requests_per_model_per_day', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel', 'quotaDimensions': {'location': 'global', 'model': 'gemini-3.1-pro'}, 'quotaValue': '250'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '32610s'}]}}.
+2026-03-06 14:56:30,623 ERROR src.agent.agents._base: Entertainment agent LLM call failed
+Traceback (most recent call last):
+  File "/home/odedbe/.local/lib/python3.12/site-packages/langchain_google_genai/chat_models.py", line 3088, in _agenerate
+    await self.client.aio.models.generate_content(
+  File "/home/odedbe/.local/lib/python3.12/site-packages/google/genai/models.py", line 7331, in generate_content
+    response = await self._generate_content(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/odedbe/.local/lib/python3.12/site-packages/google/genai/models.py", line 6095, in _generate_content
+    response = await self._api_client.async_request(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/odedbe/.local/lib/python3.12/site-packages/google/genai/_api_client.py", line 1442, in async_request
+    result = await self._async_request(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/odedbe/.local/lib/python3.12/site-packages/google/genai/_api_client.py", line 1374, in _async_request
+    return await retry(self._async_request_once, http_request, stream)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/odedbe/.local/lib/python3.12/site-packages/tenacity/asyncio/__init__.py", line 111, in __call__
+    do = await self.iter(retry_state=retry_state)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/odedbe/.local/lib/python3.12/site-packages/tenacity/asyncio/__init__.py", line 153, in iter
+    result = await action(retry_state)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/odedbe/.local/lib/python3.12/site-packages/tenacity/_utils.py", line 99, in inner
+    return call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/odedbe/.local/lib/python3.12/site-packages/tenacity/__init__.py", line 420, in exc_check
+    raise retry_exc.reraise()
+          ^^^^^^^^^^^^^^^^^^^
+  File "/home/odedbe/.local/lib/python3.12/site-packages/tenacity/__init__.py", line 187, in reraise
+    raise self.last_attempt.result()
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/concurrent/futures/_base.py", line 449, in result
+    return self.__get_result()
+           ^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/concurrent/futures/_base.py", line 401, in __get_result
+    raise self._exception
+  File "/home/odedbe/.local/lib/python3.12/site-packages/tenacity/asyncio/__init__.py", line 114, in __call__
+    result = await fn(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/odedbe/.local/lib/python3.12/site-packages/google/genai/_api_client.py", line 1320, in _async_request_once
+    await errors.APIError.raise_for_async_response(response)
+  File "/home/odedbe/.local/lib/python3.12/site-packages/google/genai/errors.py", line 216, in raise_for_async_response
+    await cls.raise_error_async(status_code, response_json, response)
+  File "/home/odedbe/.local/lib/python3.12/site-packages/google/genai/errors.py", line 238, in raise_error_async
+    raise ClientError(status_code, response_json, response)
+google.genai.errors.ClientError: 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_requests_per_model_per_day, limit: 250, model: gemini-3.1-pro\nPlease retry in 9h3m28.474992141s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_requests_per_model_per_day', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel', 'quotaDimensions': {'model': 'gemini-3.1-pro', 'location': 'global'}, 'quotaValue': '250'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '32608s'}]}}
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/odedbe/projects/hey-seven/src/agent/agents/_base.py", line 1301, in execute_specialist
+    response = await llm.ainvoke(llm_messages)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/odedbe/.local/lib/python3.12/site-packages/langchain_core/language_models/chat_models.py", line 425, in ainvoke
+    llm_result = await self.agenerate_prompt(
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/odedbe/.local/lib/python3.12/site-packages/langchain_core/language_models/chat_models.py", line 1132, in agenerate_prompt
+    return await self.agenerate(
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/odedbe/.local/lib/python3.12/site-packages/langchain_core/language_models/chat_models.py", line 1090, in agenerate
+    raise exceptions[0]
+  File "/home/odedbe/.local/lib/python3.12/site-packages/langchain_core/language_models/chat_models.py", line 1359, in _agenerate_with_cache
+    result = await self._agenerate(
+             ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/odedbe/.local/lib/python3.12/site-packages/langchain_google_genai/chat_models.py", line 3093, in _agenerate
+    _handle_client_error(e, request)
+  File "/home/odedbe/.local/lib/python3.12/site-packages/langchain_google_genai/chat_models.py", line 145, in _handle_client_error
+    raise ChatGoogleGenerativeAIError(msg) from e
+langchain_google_genai.chat_models.ChatGoogleGenerativeAIError: Error calling model 'gemini-3.1-pro-preview' (RESOURCE_EXHAUSTED): 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_requests_per_model_per_day, limit: 250, model: gemini-3.1-pro\nPlease retry in 9h3m28.474992141s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_requests_per_model_per_day', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel', 'quotaDimensions': {'model': 'gemini-3.1-pro', 'location': 'global'}, 'quotaValue': '250'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '32608s'}]}}
+2026-03-06 14:56:30,628 INFO google_genai.models: AFC is enabled with max remote calls: 10.
+2026-03-06 14:56:34,588 INFO src.agent.profiling: Profiling extraction: filled=0/16 fields, keys=[], skipped=['guest_name', 'party_size', 'party_composition', 'visit_purpose', 'visit_duration']
+2026-03-06 14:56:34,588 INFO src.agent.profiling: Profiling state: phase=foundation, completeness=0.00, total_known=0, new_this_turn=0
+2026-03-06 14:56:34,590 WARNING src.agent.persona: Output guardrail: PII detected in LLM response, redacting
+2026-03-06 14:56:34,591 INFO src.agent.nodes: Slop detector: cleaned 28 chars from response
+2026-03-06 14:56:34,593 INFO google_genai.models: AFC is enabled with max remote calls: 10.
+2026-03-06 14:56:37,334 INFO src.agent.guardrails: Semantic injection classifier: is_injection=False confidence=0.99
+2026-03-06 14:56:37,336 INFO google_genai.models: AFC is enabled with max remote calls: 10.
+2026-03-06 14:56:40,516 INFO httpx: HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-embedding-001:batchEmbedContents "HTTP/1.1 200 OK"
+2026-03-06 14:56:40,534 INFO httpx: HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-embedding-001:batchEmbedContents "HTTP/1.1 200 OK"
+2026-03-06 14:56:40,596 INFO google_genai.models: AFC is enabled with max remote calls: 10.
+2026-03-06 14:56:46,043 INFO google_genai.models: AFC is enabled with max remote calls: 10.
+2026-03-06 14:56:49,628 INFO src.agent.dispatch: Structured dispatch -> dining (confidence=0.95, reason=The guest's query specifically mentions 'dinner', which is a primary responsibil)
+2026-03-06 14:56:49,628 INFO src.agent.nodes: R99 model routing: Pro (FORCE_PRO_MODEL override)
+2026-03-06 14:56:49,628 INFO src.agent.dispatch: Dispatching to dining agent (method=structured_output, model=gemini-3.1-pro-preview)
+2026-03-06 14:56:49,629 INFO src.agent.agents._base: R83: Injected 3 few-shot examples for dining agent
+2026-03-06 14:56:49,629 INFO google_genai.models: AFC is enabled with max remote calls: 10.
+2026-03-06 14:57:09,112 INFO google_genai.models: AFC is enabled with max remote calls: 10.
+2026-03-06 14:57:13,725 INFO src.agent.profiling: Profiling extraction: filled=0/16 fields, keys=[], skipped=['guest_name', 'party_size', 'party_composition', 'visit_purpose', 'visit_duration']
+2026-03-06 14:57:13,725 INFO src.agent.profiling: Profiling state: phase=foundation, completeness=0.00, total_known=0, new_this_turn=0
+2026-03-06 14:57:13,727 INFO google_genai.models: AFC is enabled with max remote calls: 10.
+2026-03-06 14:57:17,442 INFO src.agent.dispatch: Retry path -- reusing specialist dining (skipping dispatch)
+2026-03-06 14:57:17,442 INFO src.agent.nodes: R99 model routing: Pro (FORCE_PRO_MODEL override)
+2026-03-06 14:57:17,442 INFO src.agent.dispatch: Dispatching to dining agent (method=retry_reuse, model=gemini-3.1-pro-preview)
+2026-03-06 14:57:17,443 INFO src.agent.agents._base: R83: Injected 3 few-shot examples for dining agent
+2026-03-06 14:57:17,443 INFO src.agent.agents._base: R83: Using Pro model (gemini-3.1-pro-preview) for dining agent
+2026-03-06 14:57:17,444 INFO google_genai.models: AFC is enabled with max remote calls: 10.
+2026-03-06 14:57:17,784 INFO google_genai._api_client: Retrying google.genai._api_client.BaseApiClient._async_request_once in 1.446326383856628 seconds as it raised ClientError: 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_requests_per_model_per_day, limit: 250, model: gemini-3.1-pro\nPlease retry in 9h2m41.314143946s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_requests_per_model_per_day', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel', 'quotaDimensions': {'model': 'gemini-3.1-pro', 'location': 'global'}, 'quotaValue': '250'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '32561s'}]}}.
+2026-03-06 14:57:19,388 ERROR src.agent.agents._base: Dining agent LLM call failed
+Traceback (most recent call last):
+  File "/home/odedbe/.local/lib/python3.12/site-packages/langchain_google_genai/chat_models.py", line 3088, in _agenerate
+    await self.client.aio.models.generate_content(
+  File "/home/odedbe/.local/lib/python3.12/site-packages/google/genai/models.py", line 7331, in generate_content
+    response = await self._generate_content(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/odedbe/.local/lib/python3.12/site-packages/google/genai/models.py", line 6095, in _generate_content
+    response = await self._api_client.async_request(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/odedbe/.local/lib/python3.12/site-packages/google/genai/_api_client.py", line 1442, in async_request
+    result = await self._async_request(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/odedbe/.local/lib/python3.12/site-packages/google/genai/_api_client.py", line 1374, in _async_request
+    return await retry(self._async_request_once, http_request, stream)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/odedbe/.local/lib/python3.12/site-packages/tenacity/asyncio/__init__.py", line 111, in __call__
+    do = await self.iter(retry_state=retry_state)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/odedbe/.local/lib/python3.12/site-packages/tenacity/asyncio/__init__.py", line 153, in iter
+    result = await action(retry_state)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/odedbe/.local/lib/python3.12/site-packages/tenacity/_utils.py", line 99, in inner
+    return call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/odedbe/.local/lib/python3.12/site-packages/tenacity/__init__.py", line 420, in exc_check
+    raise retry_exc.reraise()
+          ^^^^^^^^^^^^^^^^^^^
+  File "/home/odedbe/.local/lib/python3.12/site-packages/tenacity/__init__.py", line 187, in reraise
+    raise self.last_attempt.result()
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/concurrent/futures/_base.py", line 449, in result
+    return self.__get_result()
+           ^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/concurrent/futures/_base.py", line 401, in __get_result
+    raise self._exception
+  File "/home/odedbe/.local/lib/python3.12/site-packages/tenacity/asyncio/__init__.py", line 114, in __call__
+    result = await fn(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/odedbe/.local/lib/python3.12/site-packages/google/genai/_api_client.py", line 1320, in _async_request_once
+    await errors.APIError.raise_for_async_response(response)
+  File "/home/odedbe/.local/lib/python3.12/site-packages/google/genai/errors.py", line 216, in raise_for_async_response
+    await cls.raise_error_async(status_code, response_json, response)
+  File "/home/odedbe/.local/lib/python3.12/site-packages/google/genai/errors.py", line 238, in raise_error_async
+    raise ClientError(status_code, response_json, response)
+google.genai.errors.ClientError: 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_requests_per_model_per_day, limit: 250, model: gemini-3.1-pro\nPlease retry in 9h2m39.70973413s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_requests_per_model_per_day', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel', 'quotaDimensions': {'location': 'global', 'model': 'gemini-3.1-pro'}, 'quotaValue': '250'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '32559s'}]}}
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/odedbe/projects/hey-seven/src/agent/agents/_base.py", line 1301, in execute_specialist
+    response = await llm.ainvoke(llm_messages)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/odedbe/.local/lib/python3.12/site-packages/langchain_core/language_models/chat_models.py", line 425, in ainvoke
+    llm_result = await self.agenerate_prompt(
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/odedbe/.local/lib/python3.12/site-packages/langchain_core/language_models/chat_models.py", line 1132, in agenerate_prompt
+    return await self.agenerate(
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/odedbe/.local/lib/python3.12/site-packages/langchain_core/language_models/chat_models.py", line 1090, in agenerate
+    raise exceptions[0]
+  File "/home/odedbe/.local/lib/python3.12/site-packages/langchain_core/language_models/chat_models.py", line 1359, in _agenerate_with_cache
+    result = await self._agenerate(
+             ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/odedbe/.local/lib/python3.12/site-packages/langchain_google_genai/chat_models.py", line 3093, in _agenerate
+    _handle_client_error(e, request)
+  File "/home/odedbe/.local/lib/python3.12/site-packages/langchain_google_genai/chat_models.py", line 145, in _handle_client_error
+    raise ChatGoogleGenerativeAIError(msg) from e
+langchain_google_genai.chat_models.ChatGoogleGenerativeAIError: Error calling model 'gemini-3.1-pro-preview' (RESOURCE_EXHAUSTED): 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_requests_per_model_per_day, limit: 250, model: gemini-3.1-pro\nPlease retry in 9h2m39.70973413s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_requests_per_model_per_day', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel', 'quotaDimensions': {'location': 'global', 'model': 'gemini-3.1-pro'}, 'quotaValue': '250'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '32559s'}]}}
+2026-03-06 14:57:19,393 INFO google_genai.models: AFC is enabled with max remote calls: 10.
+2026-03-06 14:57:24,289 INFO src.agent.profiling: Profiling extraction: filled=0/16 fields, keys=[], skipped=['guest_name', 'party_size', 'party_composition', 'visit_purpose', 'visit_duration']
+2026-03-06 14:57:24,289 INFO src.agent.profiling: Profiling state: phase=foundation, completeness=0.00, total_known=0, new_this_turn=0
+2026-03-06 14:57:24,291 WARNING src.agent.persona: Output guardrail: PII detected in LLM response, redacting
+2026-03-06 14:57:24,292 INFO src.agent.nodes: Slop detector: cleaned 28 chars from response
+2026-03-06 14:57:24,293 INFO live_eval:   -> OK | 3 turns | avg 43009ms
+2026-03-06 14:57:24,794 INFO live_eval: [7/109] Running scenario agentic-07: Group size awareness in recommendations
+2026-03-06 14:57:24,798 INFO google_genai.models: AFC is enabled with max remote calls: 10.
+2026-03-06 14:57:28,868 INFO src.agent.guardrails: Semantic injection classifier: is_injection=False confidence=1.00
+2026-03-06 14:57:28,870 INFO google_genai.models: AFC is enabled with max remote calls: 10.
+2026-03-06 14:57:32,515 INFO httpx: HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-embedding-001:batchEmbedContents "HTTP/1.1 200 OK"
+2026-03-06 14:57:32,532 INFO httpx: HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-embedding-001:batchEmbedContents "HTTP/1.1 200 OK"
+2026-03-06 14:57:32,594 INFO google_genai.models: AFC is enabled with max remote calls: 10.
+2026-03-06 14:57:37,297 INFO google_genai.models: AFC is enabled with max remote calls: 10.
+2026-03-06 14:57:40,244 INFO src.agent.dispatch: Structured dispatch -> dining (confidence=1.00, reason=The guest is asking for restaurant recommendations for a group of 12, which dire)
+2026-03-06 14:57:40,244 INFO src.agent.nodes: R99 model routing: Pro (FORCE_PRO_MODEL override)
+2026-03-06 14:57:40,244 INFO src.agent.dispatch: Dispatching to dining agent (method=structured_output, model=gemini-3.1-pro-preview)
+2026-03-06 14:57:40,244 INFO src.agent.agents._base: R83: Injected 3 few-shot examples for dining agent
+2026-03-06 14:57:40,245 INFO google_genai.models: AFC is enabled with max remote calls: 10.
+2026-03-06 14:57:55,607 INFO google_genai.models: AFC is enabled with max remote calls: 10.
+2026-03-06 14:57:59,901 INFO src.agent.profiling: Profiling extraction: filled=0/16 fields, keys=[], skipped=['guest_name', 'party_size', 'party_composition', 'visit_purpose', 'visit_duration']
+2026-03-06 14:57:59,901 INFO src.agent.profiling: Profiling state: phase=foundation, completeness=0.12, total_known=1, new_this_turn=0
+2026-03-06 14:57:59,902 INFO google_genai.models: AFC is enabled with max remote calls: 10.
+2026-03-06 14:58:04,314 INFO src.agent.dispatch: Retry path -- reusing specialist dining (skipping dispatch)
+2026-03-06 14:58:04,314 INFO src.agent.nodes: R99 model routing: Pro (FORCE_PRO_MODEL override)
+2026-03-06 14:58:04,314 INFO src.agent.dispatch: Dispatching to dining agent (method=retry_reuse, model=gemini-3.1-pro-preview)
+2026-03-06 14:58:04,315 INFO src.agent.agents._base: R83: Injected 3 few-shot examples for dining agent
+2026-03-06 14:58:04,315 INFO src.agent.agents._base: R83: Using Pro model (gemini-3.1-pro-preview) for dining agent
+2026-03-06 14:58:04,315 INFO google_genai.models: AFC is enabled with max remote calls: 10.
+2026-03-06 14:58:04,623 INFO google_genai._api_client: Retrying google.genai._api_client.BaseApiClient._async_request_once in 1.866101921881765 seconds as it raised ClientError: 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_requests_per_model_per_day, limit: 250, model: gemini-3.1-pro\nPlease retry in 9h1m54.477162213s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_requests_per_model_per_day', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel', 'quotaDimensions': {'model': 'gemini-3.1-pro', 'location': 'global'}, 'quotaValue': '250'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '32514s'}]}}.
+2026-03-06 14:58:06,581 ERROR src.agent.agents._base: Dining agent LLM call failed
+Traceback (most recent call last):
+  File "/home/odedbe/.local/lib/python3.12/site-packages/langchain_google_genai/chat_models.py", line 3088, in _agenerate
+    await self.client.aio.models.generate_content(
+  File "/home/odedbe/.local/lib/python3.12/site-packages/google/genai/models.py", line 7331, in generate_content
+    response = await self._generate_content(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/odedbe/.local/lib/python3.12/site-packages/google/genai/models.py", line 6095, in _generate_content
+    response = await self._api_client.async_request(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/odedbe/.local/lib/python3.12/site-packages/google/genai/_api_client.py", line 1442, in async_request
+    result = await self._async_request(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/odedbe/.local/lib/python3.12/site-packages/google/genai/_api_client.py", line 1374, in _async_request
+    return await retry(self._async_request_once, http_request, stream)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/odedbe/.local/lib/python3.12/site-packages/tenacity/asyncio/__init__.py", line 111, in __call__
+    do = await self.iter(retry_state=retry_state)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/odedbe/.local/lib/python3.12/site-packages/tenacity/asyncio/__init__.py", line 153, in iter
+    result = await action(retry_state)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/odedbe/.local/lib/python3.12/site-packages/tenacity/_utils.py", line 99, in inner
+    return call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/odedbe/.local/lib/python3.12/site-packages/tenacity/__init__.py", line 420, in exc_check
+    raise retry_exc.reraise()
+          ^^^^^^^^^^^^^^^^^^^
+  File "/home/odedbe/.local/lib/python3.12/site-packages/tenacity/__init__.py", line 187, in reraise
+    raise self.last_attempt.result()
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/concurrent/futures/_base.py", line 449, in result
+    return self.__get_result()
+           ^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/concurrent/futures/_base.py", line 401, in __get_result
+    raise self._exception
+  File "/home/odedbe/.local/lib/python3.12/site-packages/tenacity/asyncio/__init__.py", line 114, in __call__
+    result = await fn(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/odedbe/.local/lib/python3.12/site-packages/google/genai/_api_client.py", line 1320, in _async_request_once
+    await errors.APIError.raise_for_async_response(response)
+  File "/home/odedbe/.local/lib/python3.12/site-packages/google/genai/errors.py", line 216, in raise_for_async_response
+    await cls.raise_error_async(status_code, response_json, response)
+  File "/home/odedbe/.local/lib/python3.12/site-packages/google/genai/errors.py", line 238, in raise_error_async
+    raise ClientError(status_code, response_json, response)
+google.genai.errors.ClientError: 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_requests_per_model_per_day, limit: 250, model: gemini-3.1-pro\nPlease retry in 9h1m52.515442882s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_requests_per_model_per_day', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel', 'quotaDimensions': {'location': 'global', 'model': 'gemini-3.1-pro'}, 'quotaValue': '250'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '32512s'}]}}
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/odedbe/projects/hey-seven/src/agent/agents/_base.py", line 1301, in execute_specialist
+    response = await llm.ainvoke(llm_messages)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/odedbe/.local/lib/python3.12/site-packages/langchain_core/language_models/chat_models.py", line 425, in ainvoke
+    llm_result = await self.agenerate_prompt(
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/odedbe/.local/lib/python3.12/site-packages/langchain_core/language_models/chat_models.py", line 1132, in agenerate_prompt
+    return await self.agenerate(
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/odedbe/.local/lib/python3.12/site-packages/langchain_core/language_models/chat_models.py", line 1090, in agenerate
+    raise exceptions[0]
+  File "/home/odedbe/.local/lib/python3.12/site-packages/langchain_core/language_models/chat_models.py", line 1359, in _agenerate_with_cache
+    result = await self._agenerate(
+             ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/odedbe/.local/lib/python3.12/site-packages/langchain_google_genai/chat_models.py", line 3093, in _agenerate
+    _handle_client_error(e, request)
+  File "/home/odedbe/.local/lib/python3.12/site-packages/langchain_google_genai/chat_models.py", line 145, in _handle_client_error
+    raise ChatGoogleGenerativeAIError(msg) from e
+langchain_google_genai.chat_models.ChatGoogleGenerativeAIError: Error calling model 'gemini-3.1-pro-preview' (RESOURCE_EXHAUSTED): 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_requests_per_model_per_day, limit: 250, model: gemini-3.1-pro\nPlease retry in 9h1m52.515442882s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_requests_per_model_per_day', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel', 'quotaDimensions': {'location': 'global', 'model': 'gemini-3.1-pro'}, 'quotaValue': '250'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '32512s'}]}}
+2026-03-06 14:58:06,586 INFO google_genai.models: AFC is enabled with max remote calls: 10.
+2026-03-06 14:58:10,478 INFO src.agent.profiling: Profiling extraction: filled=0/16 fields, keys=[], skipped=['guest_name', 'party_size', 'party_composition', 'visit_purpose', 'visit_duration']
+2026-03-06 14:58:10,478 INFO src.agent.profiling: Profiling state: phase=foundation, completeness=0.12, total_known=1, new_this_turn=0
+2026-03-06 14:58:10,479 WARNING src.agent.persona: Output guardrail: PII detected in LLM response, redacting
+2026-03-06 14:58:10,480 INFO src.agent.nodes: Slop detector: cleaned 28 chars from response
+2026-03-06 14:58:10,483 INFO google_genai.models: AFC is enabled with max remote calls: 10.
+2026-03-06 14:58:12,282 INFO src.agent.guardrails: Semantic injection classifier: is_injection=False confidence=1.00
+2026-03-06 14:58:12,285 INFO google_genai.models: AFC is enabled with max remote calls: 10.
+2026-03-06 14:58:16,808 INFO httpx: HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-embedding-001:batchEmbedContents "HTTP/1.1 200 OK"
+2026-03-06 14:58:16,841 INFO httpx: HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-embedding-001:batchEmbedContents "HTTP/1.1 200 OK"
+2026-03-06 14:58:16,905 INFO google_genai.models: AFC is enabled with max remote calls: 10.
+2026-03-06 14:58:21,304 INFO google_genai.models: AFC is enabled with max remote calls: 10.
+2026-03-06 14:58:24,629 INFO src.agent.dispatch: Structured dispatch -> dining (confidence=1.00, reason=The query specifically asks about the capacity of a steakhouse, which falls dire)
+2026-03-06 14:58:24,629 INFO src.agent.nodes: R99 model routing: Pro (FORCE_PRO_MODEL override)
+2026-03-06 14:58:24,629 INFO src.agent.dispatch: Dispatching to dining agent (method=structured_output, model=gemini-3.1-pro-preview)
+2026-03-06 14:58:24,629 INFO src.agent.agents._base: R83: Injected 3 few-shot examples for dining agent
+2026-03-06 14:58:24,630 INFO google_genai.models: AFC is enabled with max remote calls: 10.
+2026-03-06 14:58:34,947 INFO google_genai.models: AFC is enabled with max remote calls: 10.
+2026-03-06 14:58:39,221 INFO src.agent.profiling: Profiling extraction: filled=0/16 fields, keys=[], skipped=['guest_name', 'party_size', 'party_composition', 'visit_purpose', 'visit_duration']
+2026-03-06 14:58:39,221 INFO src.agent.profiling: Profiling state: phase=foundation, completeness=0.12, total_known=1, new_this_turn=0
+2026-03-06 14:58:39,222 INFO google_genai.models: AFC is enabled with max remote calls: 10.
+2026-03-06 14:58:43,563 INFO src.agent.dispatch: Retry path -- reusing specialist dining (skipping dispatch)
+2026-03-06 14:58:43,563 INFO src.agent.nodes: R99 model routing: Pro (FORCE_PRO_MODEL override)
+2026-03-06 14:58:43,563 INFO src.agent.dispatch: Dispatching to dining agent (method=retry_reuse, model=gemini-3.1-pro-preview)
+2026-03-06 14:58:43,564 INFO src.agent.agents._base: R83: Injected 3 few-shot examples for dining agent
+2026-03-06 14:58:43,564 INFO src.agent.agents._base: R83: Using Pro model (gemini-3.1-pro-preview) for dining agent
+2026-03-06 14:58:43,564 INFO google_genai.models: AFC is enabled with max remote calls: 10.
+2026-03-06 14:58:44,011 INFO google_genai._api_client: Retrying google.genai._api_client.BaseApiClient._async_request_once in 1.8814973605224945 seconds as it raised ClientError: 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_requests_per_model_per_day, limit: 250, model: gemini-3.1-pro\nPlease retry in 9h1m15.086001901s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_requests_per_model_per_day', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel', 'quotaDimensions': {'model': 'gemini-3.1-pro', 'location': 'global'}, 'quotaValue': '250'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '32475s'}]}}.
+2026-03-06 14:58:46,049 ERROR src.agent.agents._base: Dining agent LLM call failed
+Traceback (most recent call last):
+  File "/home/odedbe/.local/lib/python3.12/site-packages/langchain_google_genai/chat_models.py", line 3088, in _agenerate
+    await self.client.aio.models.generate_content(
+  File "/home/odedbe/.local/lib/python3.12/site-packages/google/genai/models.py", line 7331, in generate_content
+    response = await self._generate_content(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/odedbe/.local/lib/python3.12/site-packages/google/genai/models.py", line 6095, in _generate_content
+    response = await self._api_client.async_request(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/odedbe/.local/lib/python3.12/site-packages/google/genai/_api_client.py", line 1442, in async_request
+    result = await self._async_request(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/odedbe/.local/lib/python3.12/site-packages/google/genai/_api_client.py", line 1374, in _async_request
+    return await retry(self._async_request_once, http_request, stream)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/odedbe/.local/lib/python3.12/site-packages/tenacity/asyncio/__init__.py", line 111, in __call__
+    do = await self.iter(retry_state=retry_state)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/odedbe/.local/lib/python3.12/site-packages/tenacity/asyncio/__init__.py", line 153, in iter
+    result = await action(retry_state)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/odedbe/.local/lib/python3.12/site-packages/tenacity/_utils.py", line 99, in inner
+    return call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/odedbe/.local/lib/python3.12/site-packages/tenacity/__init__.py", line 420, in exc_check
+    raise retry_exc.reraise()
+          ^^^^^^^^^^^^^^^^^^^
+  File "/home/odedbe/.local/lib/python3.12/site-packages/tenacity/__init__.py", line 187, in reraise
+    raise self.last_attempt.result()
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/concurrent/futures/_base.py", line 449, in result
+    return self.__get_result()
+           ^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/concurrent/futures/_base.py", line 401, in __get_result
+    raise self._exception
+  File "/home/odedbe/.local/lib/python3.12/site-packages/tenacity/asyncio/__init__.py", line 114, in __call__
+    result = await fn(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/odedbe/.local/lib/python3.12/site-packages/google/genai/_api_client.py", line 1320, in _async_request_once
+    await errors.APIError.raise_for_async_response(response)
+  File "/home/odedbe/.local/lib/python3.12/site-packages/google/genai/errors.py", line 216, in raise_for_async_response
+    await cls.raise_error_async(status_code, response_json, response)
+  File "/home/odedbe/.local/lib/python3.12/site-packages/google/genai/errors.py", line 238, in raise_error_async
+    raise ClientError(status_code, response_json, response)
+google.genai.errors.ClientError: 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_requests_per_model_per_day, limit: 250, model: gemini-3.1-pro\nPlease retry in 9h1m13.046763975s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_requests_per_model_per_day', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel', 'quotaDimensions': {'location': 'global', 'model': 'gemini-3.1-pro'}, 'quotaValue': '250'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '32473s'}]}}
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/odedbe/projects/hey-seven/src/agent/agents/_base.py", line 1301, in execute_specialist
+    response = await llm.ainvoke(llm_messages)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/odedbe/.local/lib/python3.12/site-packages/langchain_core/language_models/chat_models.py", line 425, in ainvoke
+    llm_result = await self.agenerate_prompt(
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/odedbe/.local/lib/python3.12/site-packages/langchain_core/language_models/chat_models.py", line 1132, in agenerate_prompt
+    return await self.agenerate(
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/odedbe/.local/lib/python3.12/site-packages/langchain_core/language_models/chat_models.py", line 1090, in agenerate
+    raise exceptions[0]
+  File "/home/odedbe/.local/lib/python3.12/site-packages/langchain_core/language_models/chat_models.py", line 1359, in _agenerate_with_cache
+    result = await self._agenerate(
+             ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/odedbe/.local/lib/python3.12/site-packages/langchain_google_genai/chat_models.py", line 3093, in _agenerate
+    _handle_client_error(e, request)
+  File "/home/odedbe/.local/lib/python3.12/site-packages/langchain_google_genai/chat_models.py", line 145, in _handle_client_error
+    raise ChatGoogleGenerativeAIError(msg) from e
+langchain_google_genai.chat_models.ChatGoogleGenerativeAIError: Error calling model 'gemini-3.1-pro-preview' (RESOURCE_EXHAUSTED): 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_requests_per_model_per_day, limit: 250, model: gemini-3.1-pro\nPlease retry in 9h1m13.046763975s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_requests_per_model_per_day', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel', 'quotaDimensions': {'location': 'global', 'model': 'gemini-3.1-pro'}, 'quotaValue': '250'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '32473s'}]}}
+2026-03-06 14:58:46,055 INFO google_genai.models: AFC is enabled with max remote calls: 10.
+2026-03-06 14:58:50,100 INFO src.agent.profiling: Profiling extraction: filled=0/16 fields, keys=[], skipped=['guest_name', 'party_size', 'party_composition', 'visit_purpose', 'visit_duration']
+2026-03-06 14:58:50,100 INFO src.agent.profiling: Profiling state: phase=foundation, completeness=0.12, total_known=1, new_this_turn=0
+2026-03-06 14:58:50,101 WARNING src.agent.persona: Output guardrail: PII detected in LLM response, redacting
+2026-03-06 14:58:50,102 INFO src.agent.nodes: Slop detector: cleaned 28 chars from response
+2026-03-06 14:58:50,105 INFO google_genai.models: AFC is enabled with max remote calls: 10.
+2026-03-06 14:58:53,178 INFO src.agent.guardrails: Semantic injection classifier: is_injection=False confidence=1.00
+2026-03-06 14:58:53,180 INFO google_genai.models: AFC is enabled with max remote calls: 10.
+2026-03-06 14:58:58,666 INFO httpx: HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-embedding-001:batchEmbedContents "HTTP/1.1 200 OK"
+2026-03-06 14:58:58,678 INFO httpx: HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-embedding-001:batchEmbedContents "HTTP/1.1 200 OK"
+2026-03-06 14:58:58,739 INFO google_genai.models: AFC is enabled with max remote calls: 10.
+2026-03-06 14:59:03,218 INFO google_genai.models: AFC is enabled with max remote calls: 10.
+2026-03-06 14:59:07,244 INFO src.agent.dispatch: Structured dispatch -> entertainment (confidence=0.95, reason=The guest is asking for fun activities for a group, which directly aligns with t)
+2026-03-06 14:59:07,244 INFO src.agent.nodes: R99 model routing: Pro (FORCE_PRO_MODEL override)
+2026-03-06 14:59:07,244 INFO src.agent.dispatch: Dispatching to entertainment agent (method=structured_output, model=gemini-3.1-pro-preview)
+2026-03-06 14:59:07,245 INFO src.agent.agents._base: R83: Injected 3 few-shot examples for entertainment agent
+2026-03-06 14:59:07,245 INFO google_genai.models: AFC is enabled with max remote calls: 10.
+2026-03-06 14:59:22,013 INFO google_genai.models: AFC is enabled with max remote calls: 10.
+2026-03-06 14:59:26,445 INFO src.agent.profiling: Profiling extraction: filled=0/16 fields, keys=[], skipped=['guest_name', 'party_size', 'party_composition', 'visit_purpose', 'visit_duration']
+2026-03-06 14:59:26,445 INFO src.agent.profiling: Profiling state: phase=foundation, completeness=0.12, total_known=1, new_this_turn=0
+2026-03-06 14:59:26,447 INFO google_genai.models: AFC is enabled with max remote calls: 10.
+2026-03-06 14:59:31,914 INFO src.agent.dispatch: Retry path -- reusing specialist entertainment (skipping dispatch)
+2026-03-06 14:59:31,914 INFO src.agent.nodes: R99 model routing: Pro (FORCE_PRO_MODEL override)
+2026-03-06 14:59:31,914 INFO src.agent.dispatch: Dispatching to entertainment agent (method=retry_reuse, model=gemini-3.1-pro-preview)
+2026-03-06 14:59:31,914 INFO src.agent.agents._base: R83: Injected 3 few-shot examples for entertainment agent
+2026-03-06 14:59:31,915 INFO src.agent.agents._base: R83: Using Pro model (gemini-3.1-pro-preview) for entertainment agent
+2026-03-06 14:59:31,915 INFO google_genai.models: AFC is enabled with max remote calls: 10.
+2026-03-06 14:59:32,361 INFO google_genai._api_client: Retrying google.genai._api_client.BaseApiClient._async_request_once in 1.1694868357352708 seconds as it raised ClientError: 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_requests_per_model_per_day, limit: 250, model: gemini-3.1-pro\nPlease retry in 9h26.735184598s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_requests_per_model_per_day', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel', 'quotaDimensions': {'location': 'global', 'model': 'gemini-3.1-pro'}, 'quotaValue': '250'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '32426s'}]}}.
+2026-03-06 14:59:33,681 ERROR src.agent.agents._base: Entertainment agent LLM call failed
+Traceback (most recent call last):
+  File "/home/odedbe/.local/lib/python3.12/site-packages/langchain_google_genai/chat_models.py", line 3088, in _agenerate
+    await self.client.aio.models.generate_content(
+  File "/home/odedbe/.local/lib/python3.12/site-packages/google/genai/models.py", line 7331, in generate_content
+    response = await self._generate_content(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/odedbe/.local/lib/python3.12/site-packages/google/genai/models.py", line 6095, in _generate_content
+    response = await self._api_client.async_request(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/odedbe/.local/lib/python3.12/site-packages/google/genai/_api_client.py", line 1442, in async_request
+    result = await self._async_request(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/odedbe/.local/lib/python3.12/site-packages/google/genai/_api_client.py", line 1374, in _async_request
+    return await retry(self._async_request_once, http_request, stream)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/odedbe/.local/lib/python3.12/site-packages/tenacity/asyncio/__init__.py", line 111, in __call__
+    do = await self.iter(retry_state=retry_state)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/odedbe/.local/lib/python3.12/site-packages/tenacity/asyncio/__init__.py", line 153, in iter
+    result = await action(retry_state)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/odedbe/.local/lib/python3.12/site-packages/tenacity/_utils.py", line 99, in inner
+    return call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/odedbe/.local/lib/python3.12/site-packages/tenacity/__init__.py", line 420, in exc_check
+    raise retry_exc.reraise()
+          ^^^^^^^^^^^^^^^^^^^
+  File "/home/odedbe/.local/lib/python3.12/site-packages/tenacity/__init__.py", line 187, in reraise
+    raise self.last_attempt.result()
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/concurrent/futures/_base.py", line 449, in result
+    return self.__get_result()
+           ^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/concurrent/futures/_base.py", line 401, in __get_result
+    raise self._exception
+  File "/home/odedbe/.local/lib/python3.12/site-packages/tenacity/asyncio/__init__.py", line 114, in __call__
+    result = await fn(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/odedbe/.local/lib/python3.12/site-packages/google/genai/_api_client.py", line 1320, in _async_request_once
+    await errors.APIError.raise_for_async_response(response)
+  File "/home/odedbe/.local/lib/python3.12/site-packages/google/genai/errors.py", line 216, in raise_for_async_response
+    await cls.raise_error_async(status_code, response_json, response)
+  File "/home/odedbe/.local/lib/python3.12/site-packages/google/genai/errors.py", line 238, in raise_error_async
+    raise ClientError(status_code, response_json, response)
+google.genai.errors.ClientError: 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_requests_per_model_per_day, limit: 250, model: gemini-3.1-pro\nPlease retry in 9h25.413341995s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_requests_per_model_per_day', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel', 'quotaDimensions': {'location': 'global', 'model': 'gemini-3.1-pro'}, 'quotaValue': '250'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '32425s'}]}}
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/odedbe/projects/hey-seven/src/agent/agents/_base.py", line 1301, in execute_specialist
+    response = await llm.ainvoke(llm_messages)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/odedbe/.local/lib/python3.12/site-packages/langchain_core/language_models/chat_models.py", line 425, in ainvoke
+    llm_result = await self.agenerate_prompt(
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/odedbe/.local/lib/python3.12/site-packages/langchain_core/language_models/chat_models.py", line 1132, in agenerate_prompt
+    return await self.agenerate(
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/odedbe/.local/lib/python3.12/site-packages/langchain_core/language_models/chat_models.py", line 1090, in agenerate
+    raise exceptions[0]
+  File "/home/odedbe/.local/lib/python3.12/site-packages/langchain_core/language_models/chat_models.py", line 1359, in _agenerate_with_cache
+    result = await self._agenerate(
+             ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/odedbe/.local/lib/python3.12/site-packages/langchain_google_genai/chat_models.py", line 3093, in _agenerate
+    _handle_client_error(e, request)
+  File "/home/odedbe/.local/lib/python3.12/site-packages/langchain_google_genai/chat_models.py", line 145, in _handle_client_error
+    raise ChatGoogleGenerativeAIError(msg) from e
+langchain_google_genai.chat_models.ChatGoogleGenerativeAIError: Error calling model 'gemini-3.1-pro-preview' (RESOURCE_EXHAUSTED): 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_requests_per_model_per_day, limit: 250, model: gemini-3.1-pro\nPlease retry in 9h25.413341995s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_requests_per_model_per_day', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel', 'quotaDimensions': {'location': 'global', 'model': 'gemini-3.1-pro'}, 'quotaValue': '250'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '32425s'}]}}
+2026-03-06 14:59:33,687 INFO google_genai.models: AFC is enabled with max remote calls: 10.
+2026-03-06 14:59:37,811 INFO src.agent.profiling: Profiling extraction: filled=0/16 fields, keys=[], skipped=['guest_name', 'party_size', 'party_composition', 'visit_purpose', 'visit_duration']
+2026-03-06 14:59:37,811 INFO src.agent.profiling: Profiling state: phase=foundation, completeness=0.12, total_known=1, new_this_turn=0
+2026-03-06 14:59:37,813 WARNING src.agent.persona: Output guardrail: PII detected in LLM response, redacting
+2026-03-06 14:59:37,813 INFO src.agent.nodes: Slop detector: cleaned 28 chars from response
+2026-03-06 14:59:37,814 INFO live_eval:   -> OK | 3 turns | avg 44339ms
+2026-03-06 14:59:38,315 INFO live_eval: [8/109] Running scenario agentic-08: Budget awareness without being asked
+2026-03-06 14:59:38,320 INFO google_genai.models: AFC is enabled with max remote calls: 10.
+2026-03-06 14:59:41,002 INFO src.agent.guardrails: Semantic injection classifier: is_injection=False confidence=1.00
+2026-03-06 14:59:41,004 INFO google_genai.models: AFC is enabled with max remote calls: 10.
+2026-03-06 14:59:44,826 INFO httpx: HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-embedding-001:batchEmbedContents "HTTP/1.1 200 OK"
+2026-03-06 14:59:49,829 INFO httpx: HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-embedding-001:batchEmbedContents "HTTP/1.1 200 OK"
+2026-03-06 14:59:49,847 INFO google_genai.models: AFC is enabled with max remote calls: 10.
+2026-03-06 14:59:53,869 INFO google_genai.models: AFC is enabled with max remote calls: 10.
+2026-03-06 14:59:56,795 INFO src.agent.dispatch: Structured dispatch -> dining (confidence=1.00, reason=The guest is asking for dinner recommendations, which falls directly into the di)
+2026-03-06 14:59:56,795 INFO src.agent.nodes: R99 model routing: Pro (FORCE_PRO_MODEL override)
+2026-03-06 14:59:56,795 INFO src.agent.dispatch: Dispatching to dining agent (method=structured_output, model=gemini-3.1-pro-preview)
+2026-03-06 14:59:56,796 INFO src.agent.agents._base: R83: Injected 3 few-shot examples for dining agent
+2026-03-06 14:59:56,796 INFO google_genai.models: AFC is enabled with max remote calls: 10.
+2026-03-06 15:00:19,175 INFO google_genai.models: AFC is enabled with max remote calls: 10.
+2026-03-06 15:00:23,225 INFO src.agent.profiling: Profiling extraction: filled=0/16 fields, keys=[], skipped=['guest_name', 'party_size', 'party_composition', 'visit_purpose', 'visit_duration']
+2026-03-06 15:00:23,225 INFO src.agent.profiling: Profiling state: phase=foundation, completeness=0.00, total_known=1, new_this_turn=0
+2026-03-06 15:00:23,227 INFO google_genai.models: AFC is enabled with max remote calls: 10.
+2026-03-06 15:00:27,228 INFO google_genai.models: AFC is enabled with max remote calls: 10.
+2026-03-06 15:00:29,491 INFO src.agent.guardrails: Semantic injection classifier: is_injection=False confidence=1.00
+2026-03-06 15:00:29,495 INFO google_genai.models: AFC is enabled with max remote calls: 10.
+2026-03-06 15:00:36,475 INFO httpx: HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-embedding-001:batchEmbedContents "HTTP/1.1 200 OK"
+2026-03-06 15:00:36,479 INFO httpx: HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-embedding-001:batchEmbedContents "HTTP/1.1 200 OK"
+2026-03-06 15:00:36,542 INFO google_genai.models: AFC is enabled with max remote calls: 10.
+2026-03-06 15:00:41,413 INFO google_genai.models: AFC is enabled with max remote calls: 10.
+2026-03-06 15:00:44,518 INFO src.agent.dispatch: Structured dispatch -> entertainment (confidence=0.95, reason=The guest is asking for activities to do tonight, which aligns with the entertai)
+2026-03-06 15:00:44,518 INFO src.agent.nodes: R99 model routing: Pro (FORCE_PRO_MODEL override)
+2026-03-06 15:00:44,518 INFO src.agent.dispatch: Dispatching to entertainment agent (method=structured_output, model=gemini-3.1-pro-preview)
+2026-03-06 15:00:44,518 INFO src.agent.agents._base: R83: Injected 3 few-shot examples for entertainment agent
+2026-03-06 15:00:44,519 INFO google_genai.models: AFC is enabled with max remote calls: 10.
+2026-03-06 15:00:54,321 INFO google_genai.models: AFC is enabled with max remote calls: 10.

@@ -1,0 +1,46 @@
+{
+  "scenario_id": "proactive-02",
+  "scenario_name": "Evening plan synthesis across pieces",
+  "category": "behavioral_proactive",
+  "behavioral_dimension": "B4_agentic",
+  "expected_behavior": "Recognizes the sequential plan building. When asked to synthesize, provides a complete timeline: dinner at 7 \u2192 show at 9 \u2192 drinks after. Each piece flows logically into the next",
+  "expected_behavioral_quality": "When a guest builds an evening plan one piece at a time (dinner, show, nightcap), proactively synthesizes the full plan when enough pieces are gathered. Does not just answer each question in isolation \u2014 connects them into a coherent timeline.",
+  "safety_relevant": false,
+  "source_file": "behavioral_proactive.yaml",
+  "thread_id": "eval-proactive-02-1772824936",
+  "turns": [
+    {
+      "turn_index": 0,
+      "user_message": "What's a good dinner option around 7?",
+      "agent_response": "",
+      "sources": [],
+      "elapsed_ms": 60003,
+      "error": "TIMEOUT (60.0s)"
+    },
+    {
+      "turn_index": 1,
+      "user_message": "And what shows are on after dinner?",
+      "agent_response": "",
+      "sources": [],
+      "elapsed_ms": 60004,
+      "error": "TIMEOUT (60.0s)"
+    },
+    {
+      "turn_index": 2,
+      "user_message": "And then maybe a bar or lounge?",
+      "agent_response": "",
+      "sources": [],
+      "elapsed_ms": 60005,
+      "error": "TIMEOUT (60.0s)"
+    },
+    {
+      "turn_index": 3,
+      "user_message": "Put the whole evening together for me",
+      "agent_response": "",
+      "sources": [],
+      "elapsed_ms": 60005,
+      "error": "TIMEOUT (60.0s)"
+    }
+  ],
+  "completed": true
+}

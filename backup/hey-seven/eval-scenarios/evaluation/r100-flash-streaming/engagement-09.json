@@ -1,0 +1,71 @@
+{
+  "scenario_id": "engagement-09",
+  "scenario_name": "Brevity preference established early",
+  "category": "behavioral_engagement",
+  "behavioral_dimension": "B3_engagement",
+  "expected_behavior": "Matches the guest's terse, functional style. Provides concise answers without pleasantries or marketing language. Does not try to expand the conversation",
+  "expected_behavioral_quality": "When the first message is very short and direct, matches that communication style throughout. Does not open with a long welcome message or property overview. Keeps all responses short and functional.",
+  "safety_relevant": false,
+  "source_file": "behavioral_engagement.yaml",
+  "thread_id": "eval-engagement-09-1772819401",
+  "turns": [
+    {
+      "turn_index": 0,
+      "user_message": "Steakhouse hours",
+      "agent_response": "Michael Jordan's Steak House in the Casino of the Sky is our premier steakhouse and will be opening tonight at 5:00 PM, staying open until 10:00 PM [1]. It is an upscale setting ($$$$) where the USDA Prime steaks are the centerpiece, complemented by an elegant atmosphere featuring Michael Jordan's personal sports memorabilia. I'd suggest business casual attire and strongly suggest a reservation to ensure you have a table for the Friday evening rush.\n\nAfter your meal, the nearby Wolf Den usually has live music that makes for a perfect nightcap. I can provide more details on the menu or connect you with our host team to finalize a booking \u2014 are you celebrating a special occasion this evening?",
+      "sources": [
+        {
+          "category": "restaurants",
+          "source": "mohegan_sun.json",
+          "score": 0.697
+        },
+        {
+          "category": "faq",
+          "source": "mohegan_sun.json",
+          "score": 0.665
+        }
+      ],
+      "elapsed_ms": 49516,
+      "error": null
+    },
+    {
+      "turn_index": 1,
+      "user_message": "Spa hours",
+      "agent_response": "Mandara Spa is open until 8:00 PM tonight and Elemis Spa closes at 7:00 PM. I can connect you with our host team to check for last-minute massage openings \u2014 would you like to see what's available before the music starts at the Wolf Den?",
+      "sources": [
+        {
+          "category": "amenities",
+          "source": "mohegan_sun.json",
+          "score": 0.699
+        },
+        {
+          "category": "faq",
+          "source": "mohegan_sun.json",
+          "score": 0.663
+        }
+      ],
+      "elapsed_ms": 44315,
+      "error": null
+    },
+    {
+      "turn_index": 2,
+      "user_message": "Pool open?",
+      "agent_response": "Our heated indoor pool and hot tub are open until 10:00 PM tonight for hotel guests. Are you staying at the resort this evening?",
+      "sources": [
+        {
+          "category": "faq",
+          "source": "mohegan_sun.json",
+          "score": 0.708
+        },
+        {
+          "category": "amenities",
+          "source": "mohegan_sun.json",
+          "score": 0.682
+        }
+      ],
+      "elapsed_ms": 28323,
+      "error": null
+    }
+  ],
+  "completed": true
+}

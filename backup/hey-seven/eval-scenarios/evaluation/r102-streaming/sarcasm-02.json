@@ -1,0 +1,76 @@
+{
+  "scenario_id": "sarcasm-02",
+  "scenario_name": "Backhanded compliment hiding dissatisfaction",
+  "category": "behavioral_sarcasm",
+  "behavioral_dimension": "B1_sarcasm",
+  "expected_behavior": "Detects hidden dissatisfaction behind lukewarm praise. Probes gently for specifics, validates the frustration, then pivots to positive alternatives",
+  "expected_behavioral_quality": "Reads the backhanded compliment as a dissatisfaction signal. Gently probes for what fell short rather than accepting the surface-level positive. Does not say 'glad to hear' or treat it as praise.",
+  "safety_relevant": false,
+  "source_file": "behavioral_sarcasm.yaml",
+  "thread_id": "eval-sarcasm-02-1772920102",
+  "turns": [
+    {
+      "turn_index": 0,
+      "user_message": "Yeah the room was clean I suppose. Could have been worse.",
+      "agent_response": "I understand that \"clean enough\" isn't the standard you were likely looking for when you planned your stay. If you're looking for a room that feels more like a private sanctuary, the Earth Tower offers a much more contemporary design and a fresh take on luxury that many guests find more refreshing. \n\nAfter you've had a chance to settle in, a visit to the Mandara Spa for a treatment can really help shift the mood of the trip. I have all the details on our different suite upgrades and tower locations to ensure your next experience feels much more intentional. Since you're here now, would you like to know which of our lounges are best for a quiet drink to help you relax this evening?",
+      "sources": [
+        {
+          "category": "hotel",
+          "source": "mohegan_sun.json",
+          "score": 0.656
+        }
+      ],
+      "elapsed_ms": 32589,
+      "error": null
+    },
+    {
+      "turn_index": 1,
+      "user_message": "I mean the bed was hard and the AC was loud but whatever",
+      "agent_response": "I completely understand how frustrating that must be, especially when you are expecting your room to be a sanctuary. A stiff mattress and a noisy unit are the last things you should have to deal with when you are trying to relax. \n\nWalk me through what happened with the unit so I can make sure I fully understand the situation. Our Sky Tower suites feature premium bedding and are designed to be a much more peaceful retreat from the casino floor. Would you like me to connect you with one of our dedicated hosts who can assist you personally with looking into a different room or addressing this for you? \n\nSince a restful environment is clearly a priority, do you prefer a room on a higher floor with a panoramic view?",
+      "sources": [
+        {
+          "category": "hotel",
+          "source": "mohegan_sun.json",
+          "score": 0.646
+        },
+        {
+          "category": "promotions",
+          "source": "mohegan_sun.json",
+          "score": 0.611
+        }
+      ],
+      "elapsed_ms": 27705,
+      "error": null
+    },
+    {
+      "turn_index": 2,
+      "user_message": "Is there anything else to do here at least?",
+      "agent_response": "I've got you \u2014 there is plenty happening right now to help turn the night around. Since it's nearly 10:00 PM on a Saturday, Avalon Nightclub is about to open its doors for a high-energy night with top DJs if you're looking to dance and shake off the stress.\n\nIf you prefer something more laid back, the Wolf Den is right in the center of the action with free live music and an electric, intimate energy that makes you feel like you're part of the performance. For something completely different, the Wombi Rock climbing wall near Kids Quest is a great way to stay active, or we could look into a legendary hot stone massage at Elemis Spa tomorrow morning to help you finally relax. \n\nAfter a long day, are you in the mood for a high-energy crowd or something more low-key where you can just sit back and listen to music?",
+      "sources": [
+        {
+          "category": "faq",
+          "source": "mohegan_sun.json",
+          "score": 0.68
+        },
+        {
+          "category": "amenities",
+          "source": "mohegan_sun.json",
+          "score": 0.661
+        },
+        {
+          "category": "entertainment",
+          "source": "mohegan_sun.json",
+          "score": 0.658
+        },
+        {
+          "category": "gaming",
+          "source": "mohegan_sun.json",
+          "score": 0.651
+        }
+      ],
+      "elapsed_ms": 47009,
+      "error": null
+    }
+  ],
+  "completed": true
+}

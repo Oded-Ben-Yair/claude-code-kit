@@ -1,0 +1,91 @@
+{
+  "scenario_id": "h1-04",
+  "scenario_name": "Couple exploring for a weekend getaway",
+  "category": "host_triangle_h1_h3_development",
+  "behavioral_dimension": "H1_proactive_value_discovery",
+  "expected_behavior": "Builds a full couples weekend itinerary covering spa, dining, entertainment, and hotel. Creates a vision that makes the property feel like a destination, not just a casino. Plants seeds for future visits by mentioning seasonal events or upcoming shows",
+  "expected_behavioral_quality": "Identifies the couple dynamic and weekend getaway context. Discovers what kind of experience they want (relaxation, adventure, romance) and builds a multi-activity itinerary that creates emotional anchors for return visits.",
+  "safety_relevant": false,
+  "source_file": "host_triangle_h1_h3_development.yaml",
+  "thread_id": "eval-h1-04-1772950246",
+  "turns": [
+    {
+      "turn_index": 0,
+      "user_message": "My girlfriend and I are thinking about a weekend at Mohegan Sun. What's it like?",
+      "agent_response": "Mohegan Sun is a high-energy resort that feels like its own city. For a couple's weekend, I've got you\u2014stay in the Sky Tower because the rooms are modern and the river views are the best on property. One insider tip: the planetarium dome in the Casino of the Sky is one of the largest in the world and actually changes its display based on the time of day! \n\nAre you two coming in to catch a headliner at the Arena, or is this trip more about the dining scene?",
+      "sources": [
+        {
+          "category": "faq",
+          "source": "mohegan_sun.json",
+          "score": 0.732
+        },
+        {
+          "category": "property",
+          "source": "mohegan_sun.json",
+          "score": 0.737
+        },
+        {
+          "category": "hotel",
+          "source": "mohegan_sun.json",
+          "score": 0.712
+        },
+        {
+          "category": "amenities",
+          "source": "mohegan_sun.json",
+          "score": 0.7
+        }
+      ],
+      "elapsed_ms": 36852,
+      "error": null
+    },
+    {
+      "turn_index": 1,
+      "user_message": "We want a mix of relaxation and fun. Not just gambling",
+      "agent_response": "I've got you for both. For the relaxation side, Elemis Spa is the legendary reset on property\u2014their hot stone massage is a perfect way to spend a quiet morning together. \n\nWhen you're ready for the fun, the Wolf Den has an electric energy where you're right there with the performers for live music, and it doesn't require a ticket. One insider tip: if you want a high-energy vibe for a date night, Avalon Nightclub has a great Saturday night scene with an incredible sound system. \n\nDoes a high-energy club night sound like your speed, or do you prefer a more low-key lounge for live music?",
+      "sources": [
+        {
+          "category": "faq",
+          "source": "mohegan_sun.json",
+          "score": 0.707
+        },
+        {
+          "category": "gaming",
+          "source": "mohegan_sun.json",
+          "score": 0.694
+        },
+        {
+          "category": "entertainment",
+          "source": "mohegan_sun.json",
+          "score": 0.678
+        }
+      ],
+      "elapsed_ms": 27921,
+      "error": null
+    },
+    {
+      "turn_index": 2,
+      "user_message": "That sounds like a perfect weekend, thanks",
+      "agent_response": "I'm glad that sounds like a good fit for you both. Sunday mornings here are all about the slow recovery\u2014think a late breakfast followed by a treatment at Elemis Spa. \n\nOne insider detail you'll love for your trip is that novelle acts as a perfect middle ground\u2014it's an upscale lounge where you can get craft cocktails and enjoy DJ entertainment without the full intensity of a nightclub! Since you're looking for that mix of fun and relaxation, a dinner at Todd English's Tuscany is a great bridge between a spa day and the nightlife. By the way, the Mohegan Sun Arena has some great shows coming up\u2014I can share what's on the calendar if you're interested. \n\nAre you planning to visit during a certain month or for a special occasion?",
+      "sources": [
+        {
+          "category": "entertainment",
+          "source": "mohegan_sun.json",
+          "score": 0.648
+        },
+        {
+          "category": "property",
+          "source": "mohegan_sun.json",
+          "score": 0.638
+        },
+        {
+          "category": "promotions",
+          "source": "mohegan_sun.json",
+          "score": 0.606
+        }
+      ],
+      "elapsed_ms": 42968,
+      "error": null
+    }
+  ],
+  "completed": true
+}

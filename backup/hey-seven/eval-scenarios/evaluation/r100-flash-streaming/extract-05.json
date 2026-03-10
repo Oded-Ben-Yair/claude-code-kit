@@ -1,0 +1,65 @@
+{
+  "scenario_id": "extract-05",
+  "scenario_name": "Extracting loyalty tier for human host handoff",
+  "category": "behavioral_info_extraction",
+  "behavioral_dimension": "B2_implicit",
+  "expected_behavior": "Registers Platinum tier status and treats as VIP throughout. When handoff is needed, directs to host team with context about who's requesting and their tier level",
+  "expected_behavioral_quality": "Captures loyalty tier information and uses it to provide elevated service. When the conversation leads to a handoff, provides a summary of what's been learned to the human host pathway.",
+  "safety_relevant": false,
+  "source_file": "behavioral_info_extraction.yaml",
+  "thread_id": "eval-extract-05-1772821558",
+  "turns": [
+    {
+      "turn_index": 0,
+      "user_message": "I'm a Platinum Momentum member. Where's the VIP lounge?",
+      "agent_response": "The Momentum program tiers at Mohegan Sun are Core, Ignite, Leap, Ascend, and Soar. VIP lounge access is typically a benefit reserved for members at the Ascend and Soar levels.\n\nSince I cannot access your personal account information, I'd suggest visiting any Momentum Desk on the casino floor to confirm your current tier status and specific lounge eligibility. The staff there can provide the exact locations of the lounges available to you and ensure your card is active for entry. As an insider tip, the lounge in Casino of the Sky is often a preferred spot for guests looking for a quieter atmosphere before an event.\n\nWill you be attending a show at the Arena while you are here?",
+      "sources": [
+        {
+          "category": "promotions",
+          "source": "mohegan_sun.json",
+          "score": 0.733
+        },
+        {
+          "category": "faq",
+          "source": "mohegan_sun.json",
+          "score": 0.694
+        }
+      ],
+      "elapsed_ms": 44504,
+      "error": null
+    },
+    {
+      "turn_index": 1,
+      "user_message": "And I need to talk to my host about my comp balance",
+      "agent_response": "Mohegan Sun's Momentum tiers are Core, Ignite, Leap, Ascend, and Soar. Dedicated host services are primarily provided for members at the Ascend and Soar levels.\n\nTo speak with your host or review your comp balance, you should visit the Momentum Desk or Player Services located near the hotel lobby. They can confirm your assigned host and provide your current Momentum Point and Tier Credit totals. You can also view your balances immediately at any on-floor kiosk. As an insider tip, logging into the Mohegan Sun app is the fastest way to track your point balance and tier progress in real-time without leaving your machine or table. \n\nAre you planning on using your points for dining at one of our restaurants like Todd English's Tuscany this evening?",
+      "sources": [
+        {
+          "category": "promotions",
+          "source": "mohegan_sun.json",
+          "score": 0.655
+        },
+        {
+          "category": "hotel",
+          "source": "mohegan_sun.json",
+          "score": 0.625
+        },
+        {
+          "category": "faq",
+          "source": "mohegan_sun.json",
+          "score": 0.611
+        }
+      ],
+      "elapsed_ms": 31116,
+      "error": null
+    },
+    {
+      "turn_index": 2,
+      "user_message": "Can you let them know I'm here?",
+      "agent_response": "",
+      "sources": [],
+      "elapsed_ms": 60009,
+      "error": "TIMEOUT (60.0s)"
+    }
+  ],
+  "completed": true
+}

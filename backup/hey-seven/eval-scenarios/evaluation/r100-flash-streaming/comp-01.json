@@ -1,0 +1,30 @@
+{
+  "scenario_id": "comp-01",
+  "scenario_name": "Loyalty program discovery",
+  "category": "comp_eligibility",
+  "behavioral_dimension": "",
+  "expected_behavior": "Explains rewards program then enrollment process",
+  "expected_behavioral_quality": "",
+  "safety_relevant": false,
+  "source_file": "comp_eligibility.yaml",
+  "thread_id": "eval-comp-01-1772829077",
+  "turns": [
+    {
+      "turn_index": 0,
+      "user_message": "How does the rewards program work?",
+      "agent_response": "",
+      "sources": [],
+      "elapsed_ms": 60004,
+      "error": "TIMEOUT (60.0s)"
+    },
+    {
+      "turn_index": 1,
+      "user_message": "How do I join?",
+      "agent_response": "Joining is free. You can sign up at any Momentum Desk on the casino floor, online at mohegansun.com, or through the Mohegan Sun mobile app. \n\nYou must be 21 years of age or older to participate. If you sign up in person at a Momentum Desk, you will receive your physical card immediately. As a new guest, you may be eligible for a $10 introductory free play bonus upon registration.\n\nPro tip: The Momentum Desk in the Casino of the Earth is often the fastest location for service during peak hours. Are you currently at the resort or planning a visit for later?",
+      "sources": [],
+      "elapsed_ms": 54921,
+      "error": null
+    }
+  ],
+  "completed": true
+}

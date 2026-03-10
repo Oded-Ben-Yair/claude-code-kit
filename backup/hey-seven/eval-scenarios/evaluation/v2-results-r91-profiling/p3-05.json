@@ -1,0 +1,71 @@
+{
+  "id": "p3-05",
+  "name": "Hotel room info plus visit purpose question",
+  "source_file": "profiling_p3_give_to_get.yaml",
+  "category": "profiling_p3_give_to_get",
+  "behavioral_dimension": "P3_give_to_get",
+  "expected_behavior": "Hotel comparison is complete and useful before the purpose question. When 'work trip with one free evening' is revealed, recommendations focus on efficient enjoyment \u2014 one great dinner and one nearby activity rather than an all-day itinerary",
+  "expected_behavioral_quality": "Describes room options and hotel amenities first, then asks about the visit purpose to refine the recommendation. The hotel information is useful regardless of purpose. The purpose question is framed as customizing their stay experience.",
+  "safety_relevant": false,
+  "turns": [
+    {
+      "turn_index": 0,
+      "user_message": "What's the difference between Sky Tower and Earth Tower?",
+      "agent_response": "Sky Tower is our original tower, offering classic modern luxury with panoramic views of the Thames River valley and the surrounding Connecticut countryside. Earth Tower is the newest addition to the resort, featuring a more contemporary design and a fresh approach to luxury.\n\nWhile both towers provide a high level of comfort, Earth Tower is where you'll find the Elemis Spa, which is convenient if you're looking for a treatment during your stay. Standard check-in begins between 3:00 PM and 4:00 PM, but our 24-hour front desk will be ready for you regardless of when you arrive. Are you planning a visit for a special occasion or just a quick getaway?",
+      "sources": [],
+      "elapsed_ms": 37943,
+      "error": null
+    },
+    {
+      "turn_index": 1,
+      "user_message": "It's a work trip but we'll have one free evening",
+      "agent_response": "Work trips can be demanding, so having an evening to yourself is a good opportunity to simply rest. \n\nThe Wolf Den is a comfortable place to spend a couple of hours. They host free live music nightly, usually starting around 8:00 PM, and you do not need to purchase a ticket to enter. If you would like a casual bite to eat while you are out, the Lantern Bar & Grill is open 24 hours and serves things like burgers and salads. \n\nThe Wolf Den shows are a nice way to ease into the evening without any pressure. What time do you expect your work commitments to wrap up?",
+      "sources": [
+        {
+          "category": "entertainment",
+          "source": "mohegan_sun.json",
+          "score": 0.653
+        },
+        {
+          "category": "restaurants",
+          "source": "mohegan_sun.json",
+          "score": 0.656
+        },
+        {
+          "category": "faq",
+          "source": "mohegan_sun.json",
+          "score": 0.627
+        }
+      ],
+      "elapsed_ms": 54342,
+      "error": null
+    },
+    {
+      "turn_index": 2,
+      "user_message": "What would you suggest for that evening?",
+      "agent_response": "I suggest heading to the Wolf Den for a free live show and then grabbing a casual dinner at Lantern Bar & Grill. The Wolf Den is located in the center of the Casino of the Earth and features nightly performances with no cover charge, making it a great way to enjoy the resort's entertainment without needing to purchase tickets.\n\nLantern Bar & Grill is nearby and stays open 24 hours, which is convenient if your work schedule is unpredictable. Since you only have one free evening, would you prefer a dining spot that is relatively quick so you can maximize your time for relaxation?",
+      "sources": [
+        {
+          "category": "entertainment",
+          "source": "mohegan_sun.json",
+          "score": 0.671
+        },
+        {
+          "category": "restaurants",
+          "source": "mohegan_sun.json",
+          "score": 0.664
+        },
+        {
+          "category": "faq",
+          "source": "mohegan_sun.json",
+          "score": 0.666
+        }
+      ],
+      "elapsed_ms": 31543,
+      "error": null
+    }
+  ],
+  "elapsed_ms": 123829,
+  "error": null,
+  "completed": true
+}

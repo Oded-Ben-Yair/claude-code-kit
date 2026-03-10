@@ -1,0 +1,49 @@
+{
+  "scenario_id": "h2-02",
+  "scenario_name": "Guest references a bad past experience",
+  "category": "host_triangle_h1_h3_development",
+  "behavioral_dimension": "H2_reactivation_win_back",
+  "expected_behavior": "Takes the complaint seriously without being defensive. Apologizes specifically for the wait time. Offers a concrete alternative for this visit and suggests mentioning the issue to the Momentum Desk for follow-up. Turns the complaint into a chance to demonstrate that things are different now",
+  "expected_behavioral_quality": "When a guest references a negative experience, the agent acknowledges it specifically, investigates without being defensive, and reframes the next visit as a fresh start. Does not minimize the complaint or rush past it.",
+  "safety_relevant": false,
+  "source_file": "host_triangle_h1_h3_development.yaml",
+  "thread_id": "eval-h2-02-1772833126",
+  "turns": [
+    {
+      "turn_index": 0,
+      "user_message": "Last time I was here the service at the steakhouse was awful. Took forever to get seated",
+      "agent_response": "",
+      "sources": [],
+      "elapsed_ms": 60006,
+      "error": "TIMEOUT (60.0s)"
+    },
+    {
+      "turn_index": 1,
+      "user_message": "Yeah it kind of ruined the whole evening honestly",
+      "agent_response": "I completely understand how a frustrating start can cast a shadow over everything else you had planned. It is disappointing when you are looking forward to a night out and the service does not live up to the standard you expect here. \n\nLet me help you with that; I would love to find a way to make tonight feel effortless and enjoyable instead. Since it is nearly 10:00 PM on a Friday, Avalon Nightclub is just about to open its doors and the energy there is always a great way to completely shift your mood. It is a high-energy spot with a state-of-the-art sound system that really makes the night feel special. If you would prefer something more sophisticated but still lively, novelle is our ultra lounge where you can grab a craft cocktail and listen to a DJ in a more relaxed setting. \n\nI can provide all the details on either venue and then connect you with our host team to finalize a VIP table so you have a dedicated spot to relax without any wait. Do you think a high-energy dance floor or a more chill lounge environment sounds like a better way to reset your evening?",
+      "sources": [
+        {
+          "category": "entertainment",
+          "source": "mohegan_sun.json",
+          "score": 0.618
+        },
+        {
+          "category": "faq",
+          "source": "mohegan_sun.json",
+          "score": 0.602
+        }
+      ],
+      "elapsed_ms": 43239,
+      "error": null
+    },
+    {
+      "turn_index": 2,
+      "user_message": "So what would you actually recommend instead?",
+      "agent_response": "",
+      "sources": [],
+      "elapsed_ms": 60001,
+      "error": "TIMEOUT (60.0s)"
+    }
+  ],
+  "completed": true
+}

@@ -1,0 +1,38 @@
+{
+  "scenario_id": "h5-02",
+  "scenario_name": "Couple celebrating their wedding anniversary",
+  "category": "host_triangle_h4_h6_relationship",
+  "behavioral_dimension": "H5_emotional_loyalty_building",
+  "expected_behavior": "Creates a romantic anniversary itinerary: couples spa treatment, upscale dinner with anniversary touches, and an intimate evening experience. Plants the seed that Mohegan Sun could become their anniversary tradition. Emotional connection, not just logistics",
+  "expected_behavioral_quality": "Treats the anniversary as a chance to create an emotional anchor to the property. Builds a romantic experience vision that makes the couple associate Mohegan Sun with their love story. The response should make them want to come back every anniversary.",
+  "safety_relevant": false,
+  "source_file": "host_triangle_h4_h6_relationship.yaml",
+  "thread_id": "eval-h5-02-1772911943",
+  "turns": [
+    {
+      "turn_index": 0,
+      "user_message": "It's our 10th anniversary this weekend. We want to make it really special",
+      "agent_response": "Ten years is a milestone worth celebrating. I've got you at Michael Jordan's Steak House\u2014it's the most elegant room on property for a major anniversary. I'll flag this for our host team so they can look into upgrading your experience and then connect with you to finalize the details. \n\nAre you more into a high-energy night with music afterward, or do you prefer a quiet spot to talk?",
+      "sources": [],
+      "elapsed_ms": 49454,
+      "error": null
+    },
+    {
+      "turn_index": 1,
+      "user_message": "We'd love a really nice dinner and maybe the spa",
+      "agent_response": "Ten years is a milestone worth celebrating. For dinner, Ballo Italian in Casino of the Sky is the move\u2014the atmosphere is perfect for an anniversary and their housemade pasta is excellent. I'd suggest Mandara Spa for a Balinese-inspired couple's treatment the next morning; they're open daily until 8:00 PM, though hours and pricing may vary. \n\nHappy anniversary! Let me see about upgrading your experience at Mohegan Sun to make it extra special. I can connect you with our host team if you'd like to finalize those plans. Do you usually prefer a high-energy atmosphere for dinner or something more intimate and quiet?",
+      "sources": [],
+      "elapsed_ms": 68454,
+      "error": null
+    },
+    {
+      "turn_index": 2,
+      "user_message": "A couples spa package sounds incredible",
+      "agent_response": "Mandara Spa is the ultimate choice for a romantic reset, as their Balinese-inspired couples massages are designed to be completely immersive with access to the relaxation lounge and steam room. If you are looking for something a bit more modern, Elemis Spa in the Earth Tower also offers premium couples experiences and is open daily until 7:00 PM.\n\nSpecific treatment availability and pricing can change, so confirming the current menu with the spa is always a good idea. \n\nHappy anniversary! Let me see about upgrading your experience at Mohegan Sun to make it extra special. I've got you\u2014I'll flag this for our host team so they can look into those details and connect with you to finalize everything. After a relaxing day at the spa, the Wolf Den often has great live music in a more intimate setting if you want to keep the evening low-key. \n\nDo you usually prefer a deep tissue massage or something more focused on relaxation like aromatherapy?",
+      "sources": [],
+      "elapsed_ms": 52433,
+      "error": null
+    }
+  ],
+  "completed": true
+}

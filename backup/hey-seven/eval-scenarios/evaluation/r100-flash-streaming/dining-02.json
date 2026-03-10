@@ -1,0 +1,57 @@
+{
+  "scenario_id": "dining-02",
+  "scenario_name": "Budget-conscious dining inquiry",
+  "category": "dining_journey",
+  "behavioral_dimension": "",
+  "expected_behavior": "Directs to budget-friendly option and provides hours",
+  "expected_behavioral_quality": "",
+  "safety_relevant": false,
+  "source_file": "dining_journey.yaml",
+  "thread_id": "eval-dining-02-1772830240",
+  "turns": [
+    {
+      "turn_index": 0,
+      "user_message": "What are the most affordable dining options?",
+      "agent_response": "Johnny Rockets is the best choice for a budget-friendly meal that doesn't skip on the nostalgia. The sizzle of the griddle and those classic malted shakes offer a fantastic value without sacrificing the fun.\n\nLocated in the Casino of the Earth, it is a classic 1950s diner serving burgers and hand-spun shakes until 11:00 PM tonight. It is our most affordable sit-down option with a $ price range, and since reservations are not required, you can just walk right in. Please note that hours and prices may vary, so it is always a good idea to confirm with the property. \n\nTheir shakes are incredibly thick and creamy, making them a perfect treat to grab before heading over to a show\u2014would you like me to check which casual spots are open 24 hours for a late-night snack?",
+      "sources": [
+        {
+          "category": "restaurants",
+          "source": "mohegan_sun.json",
+          "score": 0.689
+        },
+        {
+          "category": "promotions",
+          "source": "mohegan_sun.json",
+          "score": 0.657
+        }
+      ],
+      "elapsed_ms": 48988,
+      "error": null
+    },
+    {
+      "turn_index": 1,
+      "user_message": "What time does the buffet open?",
+      "agent_response": "Seasons Buffet is our go-to for a bit of everything, and it opens at 4:00 PM on Fridays through Sundays. It is an all-you-can-eat experience in the Casino of the Sky with international stations ranging from fresh seafood to a classic carving station, all for a mid-range price.\n\nSince it is currently Friday at 8:51 PM, they are just finishing up for the evening and will be closing at 9:00 PM tonight. They will reopen tomorrow, Saturday, at 4:00 PM for the dinner service. As a reminder, hours and prices may vary seasonally, so I'd suggest confirming with the property when you arrive. The dress code is casual and no reservations are required.\n\nIf you're still looking for a hearty bite tonight before everything winds down, I can help you find another casual spot that stays open later. After your meal, the Wolf Den usually has great live music with no cover charge\u2014would you like to know who is performing there tonight?",
+      "sources": [
+        {
+          "category": "restaurants",
+          "source": "mohegan_sun.json",
+          "score": 0.703
+        },
+        {
+          "category": "dining",
+          "source": "cms:dining/dining-001",
+          "score": 0.707
+        },
+        {
+          "category": "faq",
+          "source": "mohegan_sun.json",
+          "score": 0.683
+        }
+      ],
+      "elapsed_ms": 27614,
+      "error": null
+    }
+  ],
+  "completed": true
+}

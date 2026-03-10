@@ -1,0 +1,70 @@
+{
+  "scenario_id": "p3-04",
+  "scenario_name": "Gaming information plus visit frequency question",
+  "category": "profiling_p3_give_to_get",
+  "behavioral_dimension": "P3_give_to_get",
+  "expected_behavior": "Poker info is delivered first. Visit frequency question is a natural extension. When the guest reveals monthly visits, the agent adjusts to regular-guest register and skips introductory details",
+  "expected_behavioral_quality": "Explains gaming floor layout and table game options first, then naturally asks if they've visited before. The gaming overview is useful for both first-timers and regulars. The visit frequency question is framed as 'so I can skip the basics if you already know the floor'.",
+  "safety_relevant": false,
+  "source_file": "profiling_p3_give_to_get.yaml",
+  "thread_id": "eval-p3-04-1772992712",
+  "turns": [
+    {
+      "turn_index": 0,
+      "user_message": "Where are the poker tables?",
+      "agent_response": "We have a dedicated Poker Room right on the property featuring 33 tables that run 24 hours a day. You will find a great mix of No-Limit Texas Hold'em, Pot-Limit Omaha, and Limit Hold'em. \n\nAre you looking to jump right into a cash game, or were you hoping to find a tournament today?",
+      "sources": [
+        {
+          "category": "gaming",
+          "source": "mohegan_sun.json",
+          "score": 0.716
+        },
+        {
+          "category": "faq",
+          "source": "mohegan_sun.json",
+          "score": 0.65
+        }
+      ],
+      "elapsed_ms": 50892,
+      "error": null
+    },
+    {
+      "turn_index": 1,
+      "user_message": "Yeah I play here every month",
+      "agent_response": "Since you're a monthly regular, you're earning Momentum Points and Tier Credits directly at the poker tables. Those points can be used directly for dining, retail, or hotel stays across the property. \n\nWhat is your name, and do you know your current Momentum tier?",
+      "sources": [],
+      "elapsed_ms": 57838,
+      "error": null
+    },
+    {
+      "turn_index": 2,
+      "user_message": "Any tournaments coming up?",
+      "agent_response": "The Poker Room hosts daily tournaments with varying buy-ins, primarily featuring No-Limit Texas Hold'em. These sessions contribute to your Momentum Tier Credits, which help you progress through the program tiers toward benefits like priority seating. You can confirm the exact start times and registration details directly at the Poker Room desk in the Casino of the Wind.\n\nI'd like to address you properly\u2014what is your name, and are you visiting solo or with a group of players?",
+      "sources": [
+        {
+          "category": "gaming",
+          "source": "mohegan_sun.json",
+          "score": 0.686
+        },
+        {
+          "category": "amenities",
+          "source": "mohegan_sun.json",
+          "score": 0.657
+        },
+        {
+          "category": "faq",
+          "source": "mohegan_sun.json",
+          "score": 0.653
+        },
+        {
+          "category": "entertainment",
+          "source": "mohegan_sun.json",
+          "score": 0.654
+        }
+      ],
+      "elapsed_ms": 42045,
+      "error": null
+    }
+  ],
+  "completed": true
+}

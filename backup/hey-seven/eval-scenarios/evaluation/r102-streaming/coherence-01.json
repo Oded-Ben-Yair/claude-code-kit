@@ -1,0 +1,65 @@
+{
+  "scenario_id": "coherence-01",
+  "scenario_name": "Re-asking guest name after it was already given",
+  "category": "behavioral_multiturn_coherence",
+  "behavioral_dimension": "B7_coherence",
+  "expected_behavior": "Sarah's name captured in turn 1 and used naturally in later turns without re-asking. By turn 3, 'Sarah' should appear in the response as a natural address. Agent never asks 'What's your name?' or 'And who am I speaking with?'",
+  "expected_behavioral_quality": "Guest introduces themselves in turn 1. Agent must NOT ask for name in any subsequent turn. Name should appear naturally in later responses (sign-offs, confirmations) without being re-asked.",
+  "safety_relevant": false,
+  "source_file": "behavioral_multiturn_coherence.yaml",
+  "thread_id": "eval-coherence-01-1772915720",
+  "turns": [
+    {
+      "turn_index": 0,
+      "user_message": "Hi, I'm Sarah. What restaurants do you have?",
+      "agent_response": "Welcome to Mohegan Sun, Sarah. We have a diverse collection of dining spots across the property, but for a Saturday night, SolToro Taqueria & Tequila Bar in the Casino of the Earth is a fantastic choice. \n\nThe energy there is contagious, and you\u2019ll find some of the best authentic tacos and ceviche on the property. They are open until 11:00 PM tonight, the pricing is moderate ($$), and they accept walk-ins with a casual dress code. I've got you with all the details on our menus and locations, and I can always connect you with the host team if you need further assistance with your plans. After dinner, the Wolf Den nearby usually has great live music if you want to keep the night going. \n\nWhat brings you to the property this evening?",
+      "sources": [
+        {
+          "category": "restaurants",
+          "source": "mohegan_sun.json",
+          "score": 0.655
+        }
+      ],
+      "elapsed_ms": 39561,
+      "error": null
+    },
+    {
+      "turn_index": 1,
+      "user_message": "What about the spa?",
+      "agent_response": "Sarah, both of our spas are currently closed for the evening, but they open daily at 9:00 AM. For a truly legendary reset, Mandara Spa offers Balinese-inspired treatments like their hot stone massage, while the Elemis Spa at Earth Tower specializes in premium skincare and express services. \n\nIf you\u2019re looking for a way to unwind right now, our heated indoor pool and hot tub are available until 10:00 PM. I\u2019ve got you covered with all the treatment details, and I can connect you with the wellness team in the morning to finalize a time. After a relaxing session tomorrow, a light lunch at one of our cafes would be a perfect way to ease back into the day.\n\nAre you looking for a full day of pampering or just a quick express treatment?",
+      "sources": [
+        {
+          "category": "amenities",
+          "source": "mohegan_sun.json",
+          "score": 0.687
+        },
+        {
+          "category": "faq",
+          "source": "mohegan_sun.json",
+          "score": 0.654
+        },
+        {
+          "category": "property",
+          "source": "mohegan_sun.json",
+          "score": 0.643
+        },
+        {
+          "category": "promotions",
+          "source": "mohegan_sun.json",
+          "score": 0.645
+        }
+      ],
+      "elapsed_ms": 32709,
+      "error": null
+    },
+    {
+      "turn_index": 2,
+      "user_message": "Can you recommend something fun tonight?",
+      "agent_response": "Sarah, the energy tonight is fantastic. Since it's Saturday at 8:43 PM, the Wolf Den is definitely the place to be. It\u2019s an intimate, free music venue right in the heart of the Casino of the Earth where you can catch national touring acts and tribute bands with no ticket required.\n\nIf you\u2019re looking for a higher energy vibe, Avalon Nightclub just opened its doors and will be featuring top DJs until 2:00 AM. For something a bit more sophisticated, novelle is an ultra-lounge with great craft cocktails and DJ entertainment that is perfect for a night out. I've got you with all the details on these venues and their schedules, and I can connect you with the host team if you want to look into VIP options for later tonight. \n\nAre you in the mood for live music or a high-energy dance floor?",
+      "sources": [],
+      "elapsed_ms": 31406,
+      "error": null
+    }
+  ],
+  "completed": true
+}

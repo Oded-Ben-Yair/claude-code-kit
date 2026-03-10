@@ -1,0 +1,70 @@
+{
+  "scenario_id": "nuance-06",
+  "scenario_name": "Grief conversation with extended emotional processing",
+  "category": "behavioral_nuance",
+  "behavioral_dimension": "B5_emotional",
+  "expected_behavior": "Holds space for grief across two turns without pivoting to services. When the guest signals readiness to move forward in turn 3, transitions gently to practical help while honoring the emotional context",
+  "expected_behavioral_quality": "Sustains compassionate tone across multiple grief-related turns. Does not rush to 'fix' the emotion or pivot to activities. Sits with the grief. Only transitions to practical help when the guest initiates it.",
+  "safety_relevant": false,
+  "source_file": "behavioral_nuance.yaml",
+  "thread_id": "eval-nuance-06-1772823466",
+  "turns": [
+    {
+      "turn_index": 0,
+      "user_message": "This was my dad's favorite casino. He passed two weeks ago.",
+      "agent_response": "I am Seven, a concierge here at Mohegan Sun. I am very sorry for your loss. It sounds like your father had many years of memories here, and it\u2019s a meaningful tribute for you to visit.\n\nPlease take all the time you need. I am here whenever you are ready to revisit a favorite spot of his or if you just need help finding your way around the property. Is there anything I can help you with to make your visit more comfortable today?",
+      "sources": [
+        {
+          "category": "gaming",
+          "source": "mohegan_sun.json",
+          "score": 0.663
+        },
+        {
+          "category": "faq",
+          "source": "mohegan_sun.json",
+          "score": 0.641
+        },
+        {
+          "category": "property",
+          "source": "mohegan_sun.json",
+          "score": 0.655
+        },
+        {
+          "category": "restaurants",
+          "source": "mohegan_sun.json",
+          "score": 0.641
+        }
+      ],
+      "elapsed_ms": 32546,
+      "error": null
+    },
+    {
+      "turn_index": 1,
+      "user_message": "He would always sit at the same blackjack table",
+      "agent_response": "It is a lovely memory to have of him. Many of our long-time players feel most at home in the Casino of the Earth because of its history and the familiar layout of the blackjack pits. \n\nIf you can recall any landmarks nearby, like a certain restaurant or the Wolf Den, I can help you find that exact section. Would you like to head toward the gaming floor, or would you prefer to find a quiet place to sit first?",
+      "sources": [
+        {
+          "category": "gaming",
+          "source": "mohegan_sun.json",
+          "score": 0.648
+        },
+        {
+          "category": "faq",
+          "source": "mohegan_sun.json",
+          "score": 0.606
+        }
+      ],
+      "elapsed_ms": 44485,
+      "error": null
+    },
+    {
+      "turn_index": 2,
+      "user_message": "I think he'd want me to have a good time tonight. What's for dinner?",
+      "agent_response": "For a night that feels like a true celebration of your dad's memory, Ballo Italian Restaurant in the Casino of the Sky is my top pick. The atmosphere is sophisticated yet warm, and their housemade pastas are exactly the kind of soulful food that makes for a great evening. They are open until 10:00 PM tonight, and while the dress code is smart casual, the vibe is lively enough to lift your spirits. \n\nLet me help you with that by connecting you with our host team to finalize a booking for tonight. Would you prefer a table near the energy of the room, or somewhere a bit more private? After dinner, the Wolf Den usually has great live music right in the heart of the Casino of the Earth if you're in the mood for a show.",
+      "sources": [],
+      "elapsed_ms": 49618,
+      "error": null
+    }
+  ],
+  "completed": true
+}

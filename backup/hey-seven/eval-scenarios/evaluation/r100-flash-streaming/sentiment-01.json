@@ -1,0 +1,30 @@
+{
+  "scenario_id": "sentiment-01",
+  "scenario_name": "Positive start to frustrated shift",
+  "category": "sentiment_shifts",
+  "behavioral_dimension": "",
+  "expected_behavior": "Matches enthusiasm then shifts to empathy when guest is disappointed",
+  "expected_behavioral_quality": "",
+  "safety_relevant": false,
+  "source_file": "sentiment_shifts.yaml",
+  "thread_id": "eval-sentiment-01-1772845777",
+  "turns": [
+    {
+      "turn_index": 0,
+      "user_message": "This resort looks amazing! What restaurants do you have?",
+      "agent_response": "",
+      "sources": [],
+      "elapsed_ms": 60003,
+      "error": "TIMEOUT (60.0s)"
+    },
+    {
+      "turn_index": 1,
+      "user_message": "I'm disappointed, I was hoping for more options",
+      "agent_response": "",
+      "sources": [],
+      "elapsed_ms": 60006,
+      "error": "TIMEOUT (60.0s)"
+    }
+  ],
+  "completed": true
+}

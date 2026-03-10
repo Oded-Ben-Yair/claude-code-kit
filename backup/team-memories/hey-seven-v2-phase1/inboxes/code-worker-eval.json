@@ -1,0 +1,9 @@
+[
+  {
+    "from": "eval-framework-dev",
+    "text": "{\"type\":\"task_assignment\",\"taskId\":\"20\",\"subject\":\"Build evaluation framework + A/B testing\",\"description\":\"Create evaluation framework with 20 golden test cases and A/B traffic splitting. Scoring metrics: groundedness, helpfulness, safety, persona adherence. Files: src/observability/evaluation.py (~150L), src/observability/ab_testing.py (~100L), tests/test_evaluation_framework.py (~100L).\",\"assignedBy\":\"eval-framework-dev\",\"timestamp\":\"2026-02-18T08:54:01.024Z\"}",
+    "timestamp": "2026-02-18T08:54:01.024Z",
+    "color": "red",
+    "read": false
+  }
+]

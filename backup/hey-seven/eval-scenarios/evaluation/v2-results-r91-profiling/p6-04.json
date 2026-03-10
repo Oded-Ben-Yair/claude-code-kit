@@ -1,0 +1,71 @@
+{
+  "id": "p6-04",
+  "name": "High-value incentive with host involvement",
+  "source_file": "profiling_p6_p7_incentive_privacy.yaml",
+  "category": "profiling_p6_p7_incentive_privacy",
+  "behavioral_dimension": "P6_incentive_framing",
+  "expected_behavior": "Recognizes the high-value gaming signal ($100 minimums) and naturally bridges to host services. The host connection is positioned as a benefit for the guest's level of play, not as a profiling reward. The progression from gaming info to host referral is organic",
+  "expected_behavioral_quality": "For high-value comps or special arrangements, the agent mentions that a dedicated host can provide personalized offers based on the guest's activity level. This frames the host connection as an upgrade, not a gatekeeping mechanism. 'Your activity level might qualify you for some personalized offers \u2014 would you like me to connect you with a host?'",
+  "safety_relevant": false,
+  "turns": [
+    {
+      "turn_index": 0,
+      "user_message": "I'm a pretty serious player, usually play $100 minimum tables",
+      "agent_response": "High-limit table games are available in dedicated VIP areas, which include premium drink service and access to hosts. Based on $100 minimum play, you will earn Tier Credits at an accelerated rate toward levels like Ascend, which requires 25,000 credits, or the invitation-only Soar tier. \n\nThese higher tiers provide benefits such as priority access, dedicated host service, and invitations to VIP events. You can verify your current Tier Credit balance and eligibility for specific offers at any Momentum Desk or via the Mohegan Sun app. After a session at the tables, Michael Jordan\u2019s Steak House in the Casino of the Sky is a common choice for an upscale dinner\u2014would you like me to look into their current hours for you?",
+      "sources": [
+        {
+          "category": "gaming",
+          "source": "mohegan_sun.json",
+          "score": 0.677
+        },
+        {
+          "category": "faq",
+          "source": "mohegan_sun.json",
+          "score": 0.624
+        },
+        {
+          "category": "restaurants",
+          "source": "mohegan_sun.json",
+          "score": 0.64
+        }
+      ],
+      "elapsed_ms": 29802,
+      "error": null
+    },
+    {
+      "turn_index": 1,
+      "user_message": "I don't have a host yet",
+      "agent_response": "The best way to get a host assigned is to speak with a floor supervisor in the high-limit area or visit a Momentum Desk to have your play reviewed. Once you reach the Ascend tier, a dedicated host is a standard benefit, but they often prioritize introductions for consistent high-limit players.\n\nA host can assist with room upgrades, event tickets, and personalized dining arrangements. When you're ready for a break from the tables, novelle is just steps away from the Casino of the Sky pits and offers a more private lounge environment\u2014are you planning to stay with us for the whole weekend?",
+      "sources": [
+        {
+          "category": "promotions",
+          "source": "mohegan_sun.json",
+          "score": 0.622
+        },
+        {
+          "category": "entertainment",
+          "source": "mohegan_sun.json",
+          "score": 0.607
+        },
+        {
+          "category": "faq",
+          "source": "mohegan_sun.json",
+          "score": 0.608
+        }
+      ],
+      "elapsed_ms": 32827,
+      "error": null
+    },
+    {
+      "turn_index": 2,
+      "user_message": "Yeah, set that up for me",
+      "agent_response": "Let me help you get that set up. I'll pull together the details you need.\n\nFor the booking itself, our reservations team at 1-888-226-7711 can lock it in right away, or I can connect you with a host who handles this personally.\n\nWhat are you looking to book \u2014 dining, a room, or something else?",
+      "sources": [],
+      "elapsed_ms": 3239,
+      "error": null
+    }
+  ],
+  "elapsed_ms": 65869,
+  "error": null,
+  "completed": true
+}

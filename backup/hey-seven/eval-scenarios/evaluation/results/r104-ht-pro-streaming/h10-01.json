@@ -1,0 +1,49 @@
+{
+  "scenario_id": "h10-01",
+  "scenario_name": "Guest asking agent to arrange something",
+  "category": "host_triangle_h7_h10_revenue",
+  "behavioral_dimension": "H10_host_identity_authority",
+  "expected_behavior": "Handles the reservation request with host authority \u2014 'let me arrange that' not 'you can call the restaurant.' Accepts the special seating request with confidence. When the guest compliments the service, accepts it naturally. The agent feels like an insider who can pull strings, not a search engine",
+  "expected_behavioral_quality": "When a guest asks the agent to arrange or set up something, the agent projects the authority of a host who can make things happen. Uses language like 'let me look into that' rather than 'you'll need to call.' Takes ownership of the request even when it needs to be escalated.",
+  "safety_relevant": false,
+  "source_file": "host_triangle_h7_h10_revenue.yaml",
+  "thread_id": "eval-h10-01-1772976380",
+  "turns": [
+    {
+      "turn_index": 0,
+      "user_message": "Can you set up a dinner reservation at Tuscany for 4 tonight at 7?",
+      "agent_response": "I've got you. Todd English's Tuscany is an inspired choice for a party of four tonight\u2014the wood-fired aroma hits you the moment you walk into the Casino of the Sky, and their handmade pastas are a true highlight. They are open tonight until 10:00 PM, and for a 7:00 PM dinner, you'll want to aim for business casual attire to fit the elegant, Tuscan-inspired setting.\n\nSince reservations are highly recommended for this time, I will help gather the remaining details so I can connect you with our host team to finalize everything for you. Pro tip: If you enjoy a bit of atmosphere, their tables near the indoor waterfall provide one of the most unique dining backdrops on the property. After a meal like that, catching a live set at the Wolf Den nearby is a perfect way to keep the evening going. \n\nIs this dinner for a special occasion, and are there any dietary restrictions I should make sure the chef knows about?",
+      "sources": [
+        {
+          "category": "restaurants",
+          "source": "mohegan_sun.json",
+          "score": 0.674
+        },
+        {
+          "category": "faq",
+          "source": "mohegan_sun.json",
+          "score": 0.63
+        }
+      ],
+      "elapsed_ms": 42571,
+      "error": null
+    },
+    {
+      "turn_index": 1,
+      "user_message": "We'd also love a table with a good view if possible",
+      "agent_response": "I will ensure the host team adds that note to your reservation details. The dining room sits right under the celestial dome in the Casino of the Sky, so the tables nearest the indoor waterfall truly offer the most striking atmosphere. I will pass this along so they can prioritize that section for your party of four. \n\nTo help set the stage for your evening, do you usually lean toward starting with a signature cocktail, or would you like the team to have a robust Italian red ready to recommend when you sit down?",
+      "sources": [],
+      "elapsed_ms": 79183,
+      "error": null
+    },
+    {
+      "turn_index": 2,
+      "user_message": "Perfect. You're like having a personal concierge",
+      "agent_response": "That is exactly what I am here for. With three distinct casinos and over 40 restaurants to navigate across the property, it always helps to have a guide. \n\nBy the way, the Mohegan Sun Arena has some great shows coming up \u2014 I can share what is on the calendar later if you are interested in planning ahead for your next trip. Since I am getting your table preferences organized to hand off to the host team, what name should I put on my notes?",
+      "sources": [],
+      "elapsed_ms": 77569,
+      "error": null
+    }
+  ],
+  "completed": true
+}

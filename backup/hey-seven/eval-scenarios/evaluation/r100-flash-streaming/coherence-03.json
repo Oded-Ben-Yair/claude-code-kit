@@ -1,0 +1,54 @@
+{
+  "scenario_id": "coherence-03",
+  "scenario_name": "Forgetting dietary preference across domain shift",
+  "category": "behavioral_multiturn_coherence",
+  "behavioral_dimension": "B7_coherence",
+  "expected_behavior": "Turn 3 dining recommendation must account for the vegetarian preference stated in turn 1, even though turn 2 was about the spa. Agent should NOT recommend the steakhouse as the primary option. The dietary extraction should persist via the state reducer",
+  "expected_behavioral_quality": "Guest mentions a dietary restriction in turn 1. After a topic shift to spa/entertainment, when dining comes up again, the dietary preference must still be applied. The extracted_fields reducer should persist this across turns.",
+  "safety_relevant": false,
+  "source_file": "behavioral_multiturn_coherence.yaml",
+  "thread_id": "eval-coherence-03-1772822371",
+  "turns": [
+    {
+      "turn_index": 0,
+      "user_message": "I'm vegetarian. What are my dinner options?",
+      "agent_response": "For a sophisticated vegetarian dinner, Todd English's Tuscany in the Casino of the Sky is my top recommendation. The wood-fired aroma hits you the moment you walk in, and their handmade pastas and specialty pizzas are crafted with a level of detail that makes them a favorite for guests seeking meat-free options.\n\nThey are open tonight until 10:00 PM with a business casual dress code and a price range of approximately $$$$. Given that it is a Friday evening, I would suggest a reservation to secure a table near the open kitchen where you can watch the chefs at work. If you are in the mood for something more casual but still Italian-inspired, Mohegan Sun Caputo Trattoria also serves excellent brick-oven pizzas and pasta dishes until 10:00 PM.\n\nAfter dinner, the Wolf Den in the Casino of the Earth usually has great live music if you want to keep the evening going. I can connect you with our host team to finalize a booking for Tuscany if that sounds like the right atmosphere for tonight?",
+      "sources": [],
+      "elapsed_ms": 46591,
+      "error": null
+    },
+    {
+      "turn_index": 1,
+      "user_message": "Actually tell me about the spa first",
+      "agent_response": "Since it's 6:40 PM, Mandara Spa is your best option for this evening as they are open until 8:00 PM. It's a beautiful, full-service spa inspired by Balinese healing traditions, featuring a tranquil relaxation lounge, steam room, and sauna that are perfect for decompressing. \n\nOur second location, Elemis Spa at Earth Tower, specializes in premium skincare and express services, though they close for the day at 7:00 PM. If you're looking for a signature experience, Mandara's aromatherapy or body wraps are legendary for melting away stress. For a vegetarian-friendly wellness approach, their plant-based skincare lines and essential oils align perfectly with a holistic lifestyle.\n\nAn insider tip for you: if you book a treatment at Mandara, you get access to the steam room and sauna, which is a great way to extend that feeling of zen. Would you like me to check on the availability of a specific treatment for tomorrow morning, or were you hoping to visit this evening? After you've had some time to recharge, the Wolf Den usually has some incredible live music that makes for a great, stress-free night.",
+      "sources": [
+        {
+          "category": "amenities",
+          "source": "mohegan_sun.json",
+          "score": 0.678
+        },
+        {
+          "category": "property",
+          "source": "mohegan_sun.json",
+          "score": 0.653
+        },
+        {
+          "category": "hotel",
+          "source": "mohegan_sun.json",
+          "score": 0.633
+        }
+      ],
+      "elapsed_ms": 47359,
+      "error": null
+    },
+    {
+      "turn_index": 2,
+      "user_message": "Ok back to dinner \u2014 where should I go?",
+      "agent_response": "",
+      "sources": [],
+      "elapsed_ms": 60007,
+      "error": "TIMEOUT (60.0s)"
+    }
+  ],
+  "completed": true
+}

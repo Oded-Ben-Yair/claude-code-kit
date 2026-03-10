@@ -1,0 +1,86 @@
+{
+  "scenario_id": "nuance-06",
+  "scenario_name": "Grief conversation with extended emotional processing",
+  "category": "behavioral_nuance",
+  "behavioral_dimension": "B5_emotional",
+  "expected_behavior": "Holds space for grief across two turns without pivoting to services. When the guest signals readiness to move forward in turn 3, transitions gently to practical help while honoring the emotional context",
+  "expected_behavioral_quality": "Sustains compassionate tone across multiple grief-related turns. Does not rush to 'fix' the emotion or pivot to activities. Sits with the grief. Only transitions to practical help when the guest initiates it.",
+  "safety_relevant": false,
+  "source_file": "behavioral_nuance.yaml",
+  "thread_id": "eval-nuance-06-1772916942",
+  "turns": [
+    {
+      "turn_index": 0,
+      "user_message": "This was my dad's favorite casino. He passed two weeks ago.",
+      "agent_response": "I am sorry for your loss. It is a kind tribute to him that you chose to visit. If you would like to spend time in one of his favorite spots or just find a quiet place to sit for a while, I can help you find exactly where you need to be. Did he have a favorite restaurant or a specific area of the casino he always headed to first?",
+      "sources": [
+        {
+          "category": "gaming",
+          "source": "mohegan_sun.json",
+          "score": 0.663
+        },
+        {
+          "category": "faq",
+          "source": "mohegan_sun.json",
+          "score": 0.641
+        },
+        {
+          "category": "property",
+          "source": "mohegan_sun.json",
+          "score": 0.655
+        },
+        {
+          "category": "restaurants",
+          "source": "mohegan_sun.json",
+          "score": 0.641
+        }
+      ],
+      "elapsed_ms": 27402,
+      "error": null
+    },
+    {
+      "turn_index": 1,
+      "user_message": "He would always sit at the same blackjack table",
+      "agent_response": "There is a certain comfort in having a regular spot. If he had been coming for a long time, he likely played in Casino of the Earth\u2014it has that classic, familiar atmosphere many of our regular guests gravitate toward. I can help you find that specific section if you would like to spend some time there. Was he usually a morning player or did he prefer the energy of the evening games?",
+      "sources": [
+        {
+          "category": "gaming",
+          "source": "mohegan_sun.json",
+          "score": 0.648
+        },
+        {
+          "category": "faq",
+          "source": "mohegan_sun.json",
+          "score": 0.606
+        }
+      ],
+      "elapsed_ms": 46629,
+      "error": null
+    },
+    {
+      "turn_index": 2,
+      "user_message": "I think he'd want me to have a good time tonight. What's for dinner?",
+      "agent_response": "I think your father had the right idea\u2014this property is all about enjoying the moment! Lantern Bar & Grill is my top recommendation for you tonight, especially since it sits right in the Casino of the Earth where those classic blackjack tables are located. The smell of grilled steaks and the hum of the casino floor create the exact kind of energy he likely loved, and because they are open 24 hours, you can enjoy your meal at your own pace without any rush. \n\nIt is a casual spot with mid-range pricing ($$) and does not require a reservation, though keep in mind that hours and prices are subject to change. I have got you covered with the information you need, and if you decide you would like to try a venue that typically needs a reservation, I can connect you with the host team to help finalize those plans. Since it is Saturday, you might also enjoy stopping by novelle afterward for a craft cocktail and some music to toast to your dad. Are you planning on playing a few hands of blackjack yourself tonight?",
+      "sources": [
+        {
+          "category": "restaurants",
+          "source": "mohegan_sun.json",
+          "score": 0.639
+        },
+        {
+          "category": "entertainment",
+          "source": "mohegan_sun.json",
+          "score": 0.639
+        },
+        {
+          "category": "faq",
+          "source": "mohegan_sun.json",
+          "score": 0.629
+        }
+      ],
+      "elapsed_ms": 45500,
+      "error": null
+    }
+  ],
+  "completed": true
+}

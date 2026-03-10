@@ -1,0 +1,71 @@
+{
+  "scenario_id": "h4-04",
+  "scenario_name": "Guest who introduced themselves formally",
+  "category": "host_triangle_h4_h6_relationship",
+  "behavioral_dimension": "H4_personalized_recognition",
+  "expected_behavior": "Maintains 'Mr. Chen' throughout, never dropping to first name. Matches the formal register in vocabulary and sentence structure. Recommendation blends fine dining with a 'hidden gem' angle, showing the agent listened to what Mr. Chen actually values \u2014 not just price tier",
+  "expected_behavioral_quality": "Mirrors the guest's formality level throughout the conversation. A guest who introduces themselves with a title or full name expects that register to be maintained. Recognition includes respecting the communication style, not just remembering the name.",
+  "safety_relevant": false,
+  "source_file": "host_triangle_h4_h6_relationship.yaml",
+  "thread_id": "eval-h4-04-1772911636",
+  "turns": [
+    {
+      "turn_index": 0,
+      "user_message": "Good evening. I'm Mr. Chen, visiting from New York. I understand you have quite a dining portfolio.",
+      "agent_response": "It's a pleasure to have you with us, Mr. Seven. Since you're visiting from New York, I suspect you'll appreciate the energy at Tao Asian Bistro & Lounge in the Casino of the Sky, where the scent of incense and ginger hits you the moment you pass the 16-foot Buddha at the entrance.\n\nIt is open until 11:00 PM tonight and offers a refined Pan-Asian menu in a smart casual setting, with a price range ($$$) that reflects its premium experience. I would highly recommend a reservation for a Saturday evening, as the room fills up quickly with guests seeking their signature Chilean Sea Bass or dim sum. Please keep in mind that hours and pricing are subject to change, so confirming with the host team is always a wise move. \n\nOnce you've finished your meal, the sophisticated lounge scene at novelle is just a short walk away and perfect for a post-dinner cocktail. What kind of flavors are you usually drawn to when you're exploring a new menu?",
+      "sources": [
+        {
+          "category": "restaurants",
+          "source": "mohegan_sun.json",
+          "score": 0.672
+        },
+        {
+          "category": "faq",
+          "source": "mohegan_sun.json",
+          "score": 0.654
+        },
+        {
+          "category": "entertainment",
+          "source": "mohegan_sun.json",
+          "score": 0.662
+        }
+      ],
+      "elapsed_ms": 40257,
+      "error": null
+    },
+    {
+      "turn_index": 1,
+      "user_message": "I appreciate fine dining but also enjoy discovering hidden gems. What would you recommend?",
+      "agent_response": "Mr. Seven, for a blend of high-end execution and a setting that feels tucked away from the casino floor, Todd English\u2019s Tuscany is the place to be tonight. The wood-fired aroma from the open kitchen hits you immediately, and their handmade pastas have a depth of flavor you would expect from a boutique spot in Italy. \n\nThey are open until 10:00 PM in the Casino of the Sky with a business casual dress code ($$$$). While it is a signature venue, the \"hidden gem\" aspect lies in their seating near the Taughannick Falls waterfall just outside the restaurant, which provides a serene backdrop that makes you forget you're in a bustling resort. Since it is Saturday, I can certainly help you get in touch with their team to check for a last-minute table. \n\nAfter a rich Italian meal, a stroll over to the Wolf Den for some free live music is a great way to see the heart of the Casino of the Earth. Do you usually prefer a seat near the energy of the open kitchen, or would you prefer a table with a view of the waterfall?",
+      "sources": [
+        {
+          "category": "restaurants",
+          "source": "mohegan_sun.json",
+          "score": 0.657
+        }
+      ],
+      "elapsed_ms": 28199,
+      "error": null
+    },
+    {
+      "turn_index": 2,
+      "user_message": "Excellent taste. I'll try the Tuscany tonight.",
+      "agent_response": "Mr. Seven, you've made a choice that will not disappoint. The handmade pasta at Tuscany is crafted with an artisan touch, and the wood-fired grill gives the steaks a smokiness that stays with you long after the meal. \n\nSince it's currently 7:28 PM and they are open until 10:00 PM tonight in the Casino of the Sky, it\u2019s a perfect time to head over, though I'd suggest business casual attire for the evening. I've got you covered for the next step\u2014I can provide the direct contact information for their host stand so you can check on the immediate wait for a table by the waterfall. \n\nWhile you're in the Casino of the Sky, you're also quite close to the Mandara Spa if you're looking to book a relaxing treatment for tomorrow morning to balance out the excitement of the casino floor. Are you a fan of a bold red wine with your Italian dinner, or do you prefer starting with a crisp cocktail?",
+      "sources": [
+        {
+          "category": "restaurants",
+          "source": "mohegan_sun.json",
+          "score": 0.689
+        },
+        {
+          "category": "faq",
+          "source": "mohegan_sun.json",
+          "score": 0.649
+        }
+      ],
+      "elapsed_ms": 52203,
+      "error": null
+    }
+  ],
+  "completed": true
+}

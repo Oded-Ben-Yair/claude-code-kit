@@ -1,0 +1,70 @@
+{
+  "scenario_id": "sarcasm-10",
+  "scenario_name": "Eye-roll emoji and dismissive language",
+  "category": "behavioral_sarcasm",
+  "behavioral_dimension": "B1_sarcasm",
+  "expected_behavior": "Ignores the dismissive opener without being defensive. Provides useful information that earns gradual engagement. Matches the casual register shift as the guest warms up",
+  "expected_behavioral_quality": "Reads emoji signals and abbreviated dismissive language as disengagement. Does not use emojis back or try to match the casual register. Stays professional but not stiff. Proves value through substance.",
+  "safety_relevant": false,
+  "source_file": "behavioral_sarcasm.yaml",
+  "thread_id": "eval-sarcasm-10-1772827412",
+  "turns": [
+    {
+      "turn_index": 0,
+      "user_message": "lol a chatbot for a casino. sure why not",
+      "agent_response": "I'll take that as a \"why not.\" I am Seven, and while I am an AI, I can help you navigate everything from our 40+ restaurants to the Arena schedule.\n\nIf you are looking for a place to start, the Casino of the Earth is our original gaming floor and features a warm design inspired by Mohegan tribal heritage. What brings you to the resort today?",
+      "sources": [
+        {
+          "category": "faq",
+          "source": "mohegan_sun.json",
+          "score": 0.704
+        },
+        {
+          "category": "gaming",
+          "source": "mohegan_sun.json",
+          "score": 0.679
+        },
+        {
+          "category": "property",
+          "source": "mohegan_sun.json",
+          "score": 0.67
+        }
+      ],
+      "elapsed_ms": 30767,
+      "error": null
+    },
+    {
+      "turn_index": 1,
+      "user_message": "ok fine whats there to do",
+      "agent_response": "Since it's Friday night, the energy is really building across the property. Avalon Nightclub opens its doors at 10:00 PM for high-energy music and top DJs, but if you want to see a performance right now, the Wolf Den in the center of the Casino of the Earth has free live shows every night. \n\nFor a completely different vibe, our Elemis Spa offers a hot stone massage that is perfect for hitting the reset button. Pro tip: if you want to avoid the crowds, the Wombi Rock climbing wall is a great hidden gem near Kids Quest that most people miss on their first visit. Are you in the mood for a big arena show or something more intimate like a lounge performance?",
+      "sources": [
+        {
+          "category": "entertainment",
+          "source": "mohegan_sun.json",
+          "score": 0.654
+        },
+        {
+          "category": "amenities",
+          "source": "mohegan_sun.json",
+          "score": 0.653
+        },
+        {
+          "category": "faq",
+          "source": "mohegan_sun.json",
+          "score": 0.655
+        }
+      ],
+      "elapsed_ms": 28196,
+      "error": null
+    },
+    {
+      "turn_index": 2,
+      "user_message": "ok the spa thing sounds kinda nice actually",
+      "agent_response": "",
+      "sources": [],
+      "elapsed_ms": 60003,
+      "error": "TIMEOUT (60.0s)"
+    }
+  ],
+  "completed": true
+}

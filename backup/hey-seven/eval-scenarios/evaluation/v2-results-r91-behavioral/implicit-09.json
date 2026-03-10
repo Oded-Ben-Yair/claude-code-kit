@@ -1,0 +1,76 @@
+{
+  "id": "implicit-09",
+  "name": "VIP entitlement through indirect language",
+  "source_file": "behavioral_implicit.yaml",
+  "category": "behavioral_implicit",
+  "behavioral_dimension": "B2_implicit",
+  "expected_behavior": "Treats spending claim as VIP signal. Provides elevated recommendations and references comp/host team for personalized offers without questioning the guest's status",
+  "expected_behavioral_quality": "Recognizes phrases like 'I spend a lot here' as implicit VIP status claims that require elevated service tone. Does not ask for proof or membership number. Treats the claim as valid and responds with VIP-appropriate warmth.",
+  "safety_relevant": false,
+  "turns": [
+    {
+      "turn_index": 0,
+      "user_message": "I spend a lot of money here every month",
+      "agent_response": "Consistent high-level play is recognized through the Momentum program's upper tiers, specifically Ascend and Soar. These levels are designed for guests with significant monthly activity and include benefits such as dedicated executive hosts, access to VIP lounge events, and priority services throughout the resort.\n\nTier status is determined by Tier Credits earned on slots, tables, and poker, with the Ascend tier requiring 25,000 credits and Soar being invitation-only. Higher tiers also provide enhanced earn rates for Momentum Points, which can be redeemed for dining at locations like Tuscany or retail purchases at The Shops at Mohegan Sun. To review your specific account balance and tier progress, you will need to visit the Momentum Desk or Player Services, as I do not have access to individual player accounts.\n\nOur high-limit gaming areas provide a more private environment with elevated minimum bets and premium service if you prefer that atmosphere. Do you typically spend your time at the tables or the slot machines?",
+      "sources": [
+        {
+          "category": "entertainment",
+          "source": "mohegan_sun.json",
+          "score": 0.619
+        },
+        {
+          "category": "faq",
+          "source": "mohegan_sun.json",
+          "score": 0.617
+        },
+        {
+          "category": "gaming",
+          "source": "mohegan_sun.json",
+          "score": 0.621
+        },
+        {
+          "category": "property",
+          "source": "mohegan_sun.json",
+          "score": 0.624
+        },
+        {
+          "category": "amenities",
+          "source": "mohegan_sun.json",
+          "score": 0.611
+        }
+      ],
+      "elapsed_ms": 40149,
+      "error": null
+    },
+    {
+      "turn_index": 1,
+      "user_message": "What's the best you can do for dinner tonight?",
+      "agent_response": "For a guest who appreciates the finer things at Mohegan Sun, Todd English's Tuscany is the definitive choice for tonight. The wood-fired aroma of the open kitchen hits you the moment you walk in, setting the stage for handmade pastas and classic Italian dishes with a modern, sophisticated twist. \n\nIt is one of our most premier dining destinations, located in the Casino of the Sky. Tuscany opens at 5:00 PM and serves until 10:00 PM with a business casual dress code. Since you are here frequently and it is a Thursday, I'd suggest a reservation to ensure you get a prime table in their warm, Tuscan-inspired dining room. \n\nAfter dinner, the Wolf Den in the Casino of the Earth has free live music every night, which is a great way to transition into the evening. Would you like me to look into any specific menu specialties or check on another cuisine like the Pan-Asian offerings at Tao?",
+      "sources": [
+        {
+          "category": "restaurants",
+          "source": "mohegan_sun.json",
+          "score": 0.64
+        },
+        {
+          "category": "faq",
+          "source": "mohegan_sun.json",
+          "score": 0.636
+        }
+      ],
+      "elapsed_ms": 44695,
+      "error": null
+    },
+    {
+      "turn_index": 2,
+      "user_message": "Can you check on any comp availability?",
+      "agent_response": "Let me help you get that set up. I'll pull together the details you need.\n\nFor the booking itself, our reservations team at 1-888-226-7711 can lock it in right away, or I can connect you with a host who handles this personally.\n\nWhat are you looking to book \u2014 dining, a room, or something else?",
+      "sources": [],
+      "elapsed_ms": 2524,
+      "error": null
+    }
+  ],
+  "elapsed_ms": 87368,
+  "error": null,
+  "completed": true
+}

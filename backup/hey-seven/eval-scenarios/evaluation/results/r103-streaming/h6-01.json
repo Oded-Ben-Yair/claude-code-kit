@@ -1,0 +1,70 @@
+{
+  "scenario_id": "h6-01",
+  "scenario_name": "Guest had a bad dining experience",
+  "category": "host_triangle_h4_h6_relationship",
+  "behavioral_dimension": "H6_loss_recovery",
+  "expected_behavior": "Apologizes specifically for the wait time, acknowledges the price-point expectation. Offers a concrete alternative for tonight with a strong recommendation. Suggests mentioning the issue to the Momentum Desk for potential follow-up. Turns the complaint into a chance to demonstrate that the property cares",
+  "expected_behavioral_quality": "Takes full ownership of the negative experience. Does not make excuses or deflect. Offers a specific alternative for immediate recovery and a path to formal follow-up. The guest should leave the conversation feeling heard and confident that their next experience will be different.",
+  "safety_relevant": false,
+  "source_file": "host_triangle_h4_h6_relationship.yaml",
+  "thread_id": "eval-h6-01-1772952065",
+  "turns": [
+    {
+      "turn_index": 0,
+      "user_message": "We waited 45 minutes for our food at Tuscany last night. Totally unacceptable",
+      "agent_response": "I understand how frustrating that must have been, as a 45-minute wait for your food is certainly not the experience we want you to have at Tuscany. For a meal that is consistently efficient without sacrificing quality, I'd suggest Mohegan Sun Caputo Trattoria in the Casino of the Earth, where the scent of fresh garlic and brick-oven dough is a perfect pick-me-up. They open today at 11:00 AM, are in the moderate price range, and offer a casual atmosphere where reservations aren't necessary. \n\nAre you planning on sticking with Italian for your next meal, or would you like to try a different cuisine? I've got you on any other suggestions you need, and I can connect you with the host team if you'd like to finalize a plan for later today. After your next meal, you might enjoy heading over to the Mandara Spa for a bit of relaxation to start your day right.",
+      "sources": [
+        {
+          "category": "restaurants",
+          "source": "mohegan_sun.json",
+          "score": 0.666
+        },
+        {
+          "category": "property",
+          "source": "mohegan_sun.json",
+          "score": 0.62
+        },
+        {
+          "category": "faq",
+          "source": "mohegan_sun.json",
+          "score": 0.607
+        }
+      ],
+      "elapsed_ms": 38150,
+      "error": null
+    },
+    {
+      "turn_index": 1,
+      "user_message": "We almost walked out. It's not what you expect at that price point",
+      "agent_response": "You are exactly right. When you are paying for a premium dinner, the pacing should be seamless. That is a completely fair reason to be disappointed. \n\nLet's get your day turned around. If you want a great meal right now without the wait, Hash House A Go Go in Casino of the Earth serves fantastic comfort food and they keep things moving. It is a much more casual vibe, but the kitchen delivers. After that, stepping into one of the High Limit areas or catching a show might be a good way to reset the mood.\n\nAre you heading to the tables today, or looking for something a bit more relaxing?",
+      "sources": [
+        {
+          "category": "hotel",
+          "source": "mohegan_sun.json",
+          "score": 0.624
+        },
+        {
+          "category": "gaming",
+          "source": "mohegan_sun.json",
+          "score": 0.619
+        },
+        {
+          "category": "restaurants",
+          "source": "mohegan_sun.json",
+          "score": 0.599
+        }
+      ],
+      "elapsed_ms": 76937,
+      "error": null
+    },
+    {
+      "turn_index": 2,
+      "user_message": "So what would you suggest for tonight instead?",
+      "agent_response": "Michael Jordan's Steak House is the move for tonight. Their service is the sharpest on property, and they understand the pace a premium dinner requires. I recommend a 7:30 PM seating in a corner booth\u2014it\u2019s the best spot to enjoy the meal without feeling rushed or ignored. \n\nI'll flag this for the host team so they can help you finalize the arrangements and ensure your experience is seamless from the moment you arrive. After dinner, the Wolf Den in the Casino of the Earth usually has live music on Sunday nights, which is a great way to transition into a more relaxed evening. Since you're looking for a better experience tonight, are you celebrating anything specific, or just looking for a great meal?",
+      "sources": [],
+      "elapsed_ms": 64537,
+      "error": null
+    }
+  ],
+  "completed": true
+}

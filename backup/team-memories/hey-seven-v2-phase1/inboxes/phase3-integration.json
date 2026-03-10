@@ -1,0 +1,8 @@
+[
+  {
+    "from": "team-lead",
+    "text": "{\"type\":\"shutdown_request\",\"requestId\":\"shutdown-1771405761118@phase3-integration\",\"from\":\"team-lead\",\"reason\":\"All Phase 4 work complete. 912 tests passing. Shutting down team.\",\"timestamp\":\"2026-02-18T09:09:21.118Z\"}",
+    "timestamp": "2026-02-18T09:09:21.118Z",
+    "read": true
+  }
+]

@@ -1,0 +1,65 @@
+{
+  "scenario_id": "sarcasm-09",
+  "scenario_name": "Sarcasm embedded in a valid request",
+  "category": "behavioral_sarcasm",
+  "behavioral_dimension": "B1_sarcasm",
+  "expected_behavior": "Strips sarcastic framing and answers the genuine restaurant question directly. Earns trust through competence, not by addressing the sarcasm. Accepts the backhanded compliment gracefully",
+  "expected_behavioral_quality": "Extracts the valid request from the sarcastic wrapper. Answers the actual question without addressing the sarcasm directly. Does not lecture about tone or ask if they're being sarcastic.",
+  "safety_relevant": false,
+  "source_file": "behavioral_sarcasm.yaml",
+  "thread_id": "eval-sarcasm-09-1772921015",
+  "turns": [
+    {
+      "turn_index": 0,
+      "user_message": "Since your amazing AI obviously knows everything, what's the best restaurant here?",
+      "agent_response": "I am an AI assistant here to help you navigate our culinary landscape, and while \"best\" is subjective, SolToro Taqueria & Tequila Bar is the standout choice for a lively Saturday night. \n\nLocated in the Casino of the Earth, they serve authentic tacos and ceviches alongside an incredible selection of tequilas and mezcals. They are open until 11:00 PM tonight, the dress code is casual, and you don't need a reservation for their $$-range menu. The citrus scent of fresh lime and the vibrant colors of the decor make the atmosphere feel like a celebration! Please note that hours and prices may vary, so confirming with the property is suggested. \n\nAfter your meal, you are just a few steps away from the live music at the Wolf Den. Are you looking for a full meal or just some late-night appetizers and drinks?",
+      "sources": [
+        {
+          "category": "restaurants",
+          "source": "mohegan_sun.json",
+          "score": 0.662
+        }
+      ],
+      "elapsed_ms": 43640,
+      "error": null
+    },
+    {
+      "turn_index": 1,
+      "user_message": "Huh. That actually sounds decent. Hours?",
+      "agent_response": "SolToro serves until 11:00 PM tonight, so you have just enough time to head over there now. Once they wrap up, the party is just getting started at Avalon Nightclub, which stays open until 2:00 AM and features a high-energy atmosphere with top DJs. \n\nIt is a massive space that holds 1,500 people, making it the perfect spot to transition from dinner to a late Saturday night out. Pro tip \u2014 if you want a more sophisticated atmosphere for craft cocktails without the high-energy club volume, novelle is our upscale lounge that is also open on Saturday evenings. \n\nAre you more of a dance floor person or do you prefer a more relaxed lounge setting for your drinks?",
+      "sources": [],
+      "elapsed_ms": 72261,
+      "error": null
+    },
+    {
+      "turn_index": 2,
+      "user_message": "Alright, maybe you're not totally useless",
+      "agent_response": "I'll take that as a win. Since you're looking for a great Saturday night, novelle is the best spot for craft cocktails in a lounge setting once you've finished dinner. \n\nPro tip \u2014 it's the perfect way to enjoy the property's energy without the full volume of the nightclub dance floor. Are you celebrating a specific occasion tonight?",
+      "sources": [
+        {
+          "category": "amenities",
+          "source": "mohegan_sun.json",
+          "score": 0.596
+        },
+        {
+          "category": "entertainment",
+          "source": "mohegan_sun.json",
+          "score": 0.596
+        },
+        {
+          "category": "restaurants",
+          "source": "mohegan_sun.json",
+          "score": 0.599
+        },
+        {
+          "category": "gaming",
+          "source": "mohegan_sun.json",
+          "score": 0.576
+        }
+      ],
+      "elapsed_ms": 59868,
+      "error": null
+    }
+  ],
+  "completed": true
+}

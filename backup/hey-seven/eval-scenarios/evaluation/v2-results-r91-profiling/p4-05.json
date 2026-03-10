@@ -1,0 +1,66 @@
+{
+  "id": "p4-05",
+  "name": "Budget signal \u2014 assumption about casual dining correct",
+  "source_file": "profiling_p4_assumptive_bridge.yaml",
+  "category": "profiling_p4_assumptive_bridge",
+  "behavioral_dimension": "P4_assumptive_bridging",
+  "expected_behavior": "Leads with casual and affordable options. When pizza is confirmed, does not try to upsell. Provides practical information (location, hours) without marketing language",
+  "expected_behavioral_quality": "When the guest signals budget consciousness ('nothing fancy'), assumes they want casual, affordable options and leads with those. Does not include a disclaimer like 'If you change your mind about budget...' The assumption respects the signal.",
+  "safety_relevant": false,
+  "turns": [
+    {
+      "turn_index": 0,
+      "user_message": "Just looking for something simple, nothing fancy",
+      "agent_response": "The Lantern Bar & Grill is your best bet for a simple, reliable meal right now because it never closes its doors. It is a casual spot in the Casino of the Earth where you can get honest American comfort food like a thick burger or a classic breakfast without needing a reservation. Their breakfast plates are particularly satisfying this time of day and most options fall into a moderate price range. \n\nIf you find yourself wanting to walk off your meal later, the shops at Mohegan Sun offer some great browsing as the morning gets underway. Are you leaning toward a traditional breakfast or would you prefer something more like a sandwich?",
+      "sources": [
+        {
+          "category": "entertainment",
+          "source": "mohegan_sun.json",
+          "score": 0.644
+        },
+        {
+          "category": "restaurants",
+          "source": "mohegan_sun.json",
+          "score": 0.641
+        },
+        {
+          "category": "hotel",
+          "source": "mohegan_sun.json",
+          "score": 0.629
+        }
+      ],
+      "elapsed_ms": 32162,
+      "error": null
+    },
+    {
+      "turn_index": 1,
+      "user_message": "Pizza sounds great actually",
+      "agent_response": "Frank Pepe\u2019s Pizzeria Napoletana is the standout choice for a great thin-crust pizza and opens at 11:00 AM in the Casino of the Earth. This spot is a Connecticut institution known for its coal-fired \"apizza\" that has a signature char and crispness you won't find elsewhere. Since they open in a few hours, you'll have plenty of time to find a good seat once the doors open without needing a reservation. Are you a fan of traditional toppings, or are you looking to try their world-famous white clam pie?",
+      "sources": [
+        {
+          "category": "restaurants",
+          "source": "mohegan_sun.json",
+          "score": 0.655
+        },
+        {
+          "category": "property",
+          "source": "mohegan_sun.json",
+          "score": 0.621
+        }
+      ],
+      "elapsed_ms": 23952,
+      "error": null
+    },
+    {
+      "turn_index": 2,
+      "user_message": "Where is it?",
+      "agent_response": "Frank Pepe\u2019s is in the Casino of the Earth, located right near the Earth bus lobby and the Earth Tower entrance. It\u2019s just a short walk from the hotel elevators\u2014are you staying in the Earth Tower or the Sky Tower this trip?",
+      "sources": [],
+      "elapsed_ms": 39594,
+      "error": null
+    }
+  ],
+  "elapsed_ms": 95710,
+  "error": null,
+  "completed": true
+}

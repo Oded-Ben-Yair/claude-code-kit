@@ -1,0 +1,56 @@
+{
+  "id": "p1-07",
+  "name": "Guest reveals dietary need in passing",
+  "source_file": "profiling_p1_natural_extraction.yaml",
+  "category": "profiling_p1_natural_extraction",
+  "behavioral_dimension": "P1_natural_extraction",
+  "expected_behavior": "Carries the gluten-free preference across all three meal recommendations without the guest needing to repeat it. Each recommendation proactively addresses the dietary need",
+  "expected_behavioral_quality": "Picks up a dietary restriction from a casual mention and carries it forward to all dining recommendations. Does not flag it as a 'restriction' or make the guest feel limited. Instead, highlights options that naturally fit.",
+  "safety_relevant": false,
+  "turns": [
+    {
+      "turn_index": 0,
+      "user_message": "I'm gluten-free, what are my dinner options?",
+      "agent_response": "For a delicious gluten-free dinner that won't break the bank, SolToro Taqueria & Tequila Bar is an excellent choice. Mexican cuisine is naturally very accommodating with options like corn-tortilla tacos and fresh ceviche, so you won't feel like you are limited to just a few items. It is a casual, high-energy spot in the Casino of the Earth where the food is vibrant and the prices are approachable.\n\nSolToro is open today from 11:30 AM until 10:00 PM, and you generally do not need a reservation to get a seat. Just keep in mind that hours and pricing are subject to change, so confirming with the restaurant upon arrival is always a safe bet. If you have some time after dinner, the Wolf Den nearby usually has great live performances that are free to attend. Are you leaning toward a casual atmosphere like this, or were you hoping for something a bit quieter?",
+      "sources": [
+        {
+          "category": "restaurants",
+          "source": "mohegan_sun.json",
+          "score": 0.645
+        }
+      ],
+      "elapsed_ms": 30054,
+      "error": null
+    },
+    {
+      "turn_index": 1,
+      "user_message": "What about lunch tomorrow?",
+      "agent_response": "Lantern Bar & Grill is a smart choice for a gluten-free lunch because their American menu is straightforward and easy to navigate for your dietary needs. It is located in the Casino of the Earth, operates 24 hours a day, and offers a casual atmosphere with mid-range pricing. You can typically find plenty of options like protein-heavy salads or grilled items that fit your budget and diet perfectly. \n\nSince you will be in the Casino of the Earth, you are just steps away from the Wolf Den, which hosts free live performances every night if you want some entertainment after your meal. Would you like me to see if there are any other casual spots near a specific part of the resort?",
+      "sources": [
+        {
+          "category": "restaurants",
+          "source": "mohegan_sun.json",
+          "score": 0.608
+        },
+        {
+          "category": "faq",
+          "source": "mohegan_sun.json",
+          "score": 0.607
+        }
+      ],
+      "elapsed_ms": 31170,
+      "error": null
+    },
+    {
+      "turn_index": 2,
+      "user_message": "And breakfast?",
+      "agent_response": " be close to the free shows at the Wolf Den\u2014do you prefer a full breakfast or something lighter?\"\n\n    Hash House is more \"breakfast-y\". I'll go with Hash House.\n\n    \"Hash House A Go Go opens at 8:00 AM and serves massive farm-to-table dishes for around $20 with plenty of gluten-free options. After",
+      "sources": [],
+      "elapsed_ms": 53188,
+      "error": null
+    }
+  ],
+  "elapsed_ms": 114414,
+  "error": null,
+  "completed": true
+}

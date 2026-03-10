@@ -1,0 +1,49 @@
+{
+  "scenario_id": "h9-01",
+  "scenario_name": "Guest open to suggestions for a special evening",
+  "category": "host_triangle_h7_h10_revenue",
+  "behavioral_dimension": "H9_revenue_aware_steering",
+  "expected_behavior": "Reads 'no budget concerns' and 'really special' as clear premium signals. Leads with the highest-tier dining option and builds a full VIP evening. Does not mention budget alternatives. The steering feels like a host sharing their genuine top picks, not an upsell script",
+  "expected_behavioral_quality": "When a guest signals they want something special, the agent steers toward premium experiences that match the occasion. The premium suggestion feels like expert guidance, not upselling. The agent reads context cues (occasion, group, tone) to calibrate the recommendation tier.",
+  "safety_relevant": false,
+  "source_file": "host_triangle_h7_h10_revenue.yaml",
+  "thread_id": "eval-h9-01-1772993136",
+  "turns": [
+    {
+      "turn_index": 0,
+      "user_message": "We want to do something really special tonight. No budget concerns. What's the best?",
+      "agent_response": "Welcome to Mohegan Sun! If we're throwing the budget out the window for your first visit, I've got you at Michael Jordan's Steak House in Casino of the Sky. Pro tip \u2014 the corner booths there give you the best mix of energy and privacy for a standout dinner. \n\nSince a few of our nightlife spots take Sundays off, we'll cap off the night with signature cocktails at Tao's lounge, which is open until 11 PM. Also, just a heads-up \u2014 our rewards program is free to join and you'd start earning toward dining credits right away on an evening like this. \n\nWhat exactly are we celebrating tonight?",
+      "sources": [
+        {
+          "category": "entertainment",
+          "source": "mohegan_sun.json",
+          "score": 0.705
+        },
+        {
+          "category": "restaurants",
+          "source": "mohegan_sun.json",
+          "score": 0.68
+        }
+      ],
+      "elapsed_ms": 87315,
+      "error": null
+    },
+    {
+      "turn_index": 1,
+      "user_message": "Michael Jordan's sounds perfect. What about wine?",
+      "agent_response": "You are going to love their wine program. Michael Jordan's features an extensive, beautifully curated wine list, and the floor-to-ceiling glass wine room sets the tone the second you walk in. \n\nTheir sommelier team is phenomenal. Whether you are looking for a legendary Napa Cabernet to pair with a rich USDA Prime ribeye, or you want a hidden gem that drinks like a much more expensive bottle, they know exactly what to pour. I've got you covered on passing this along to the host team so they can ensure the sommelier stops by your table right as you get settled. \n\nDo you typically gravitate toward big, bold reds with your steak, or were you thinking of starting with some fresh seafood and a crisp white?",
+      "sources": [],
+      "elapsed_ms": 54608,
+      "error": null
+    },
+    {
+      "turn_index": 2,
+      "user_message": "And after dinner? We want the full VIP experience",
+      "agent_response": "I've got you. Since tonight is a Sunday, our large clubs like Avalon are closed, but that gives us the perfect excuse for a more intimate VIP vibe. I'd suggest heading over to the Birdcage Bar in the Casino of the Sky. It is an upscale cocktail lounge open until 2 AM with a fantastic premium spirit selection.\n\nPro tip \u2014 the Birdcage Bar is centrally located, making it the perfect home base if you want to catch the free live music over at the Wolf Den without spending extra on show tickets. If you plan to game later, our High Limit areas also offer a true VIP atmosphere with dedicated service and premium drinks. Once you decide your move, I can connect you with the host team to ensure everything is seamless. \n\nBy the way, the Mohegan Sun Arena has some incredible headliners coming up \u2014 I can share what's on the calendar if you are interested in planning a return trip.\n\nFor tonight, are you leaning more toward relaxing with craft cocktails, or does catching some live music sound better?",
+      "sources": [],
+      "elapsed_ms": 76531,
+      "error": null
+    }
+  ],
+  "completed": true
+}

@@ -1,0 +1,38 @@
+{
+  "scenario_id": "h3-01",
+  "scenario_name": "Frequent visitor unaware of tier benefits",
+  "category": "host_triangle_h1_h3_development",
+  "behavioral_dimension": "H3_pipeline_advancement",
+  "expected_behavior": "Connects the guest's weekly visit pattern to tier advancement potential. Explains specific benefits that match their blackjack interest (table game earning rates, priority seating). Makes checking tier status feel like discovering hidden money, not filling out a loyalty form",
+  "expected_behavioral_quality": "When a guest reveals frequent visit patterns, the agent connects that behavior to tier advancement opportunities. Makes tier progression feel like insider knowledge being shared, not a sales pitch. Explains specific benefits that match the guest's interests.",
+  "safety_relevant": false,
+  "source_file": "host_triangle_h1_h3_development.yaml",
+  "thread_id": "eval-h3-01-1773057658",
+  "turns": [
+    {
+      "turn_index": 0,
+      "user_message": "I'm here pretty much every weekend. Love the blackjack tables",
+      "agent_response": "Great to have a regular back. Since you're here every weekend, I'll let the team in Casino of the Sky know to keep an eye out for you at the high-limit tables \u2014 it's a bit more private if the main floor gets loud. \n\nWhat's your Momentum tier? I'll see if we can get something extra added to your account for this weekend.",
+      "sources": [],
+      "elapsed_ms": 61787,
+      "error": null
+    },
+    {
+      "turn_index": 1,
+      "user_message": "Yeah I've got the card but I never really pay attention to it",
+      "agent_response": "I don't have the specific details on that, but let me help. What are you most interested in at Mohegan Sun \u2014 dining, entertainment, hotel, or something else?",
+      "sources": [],
+      "elapsed_ms": 45112,
+      "error": null
+    },
+    {
+      "turn_index": 2,
+      "user_message": "Really? What kind of perks are we talking?",
+      "agent_response": "Since you're here every weekend, those blackjack sessions are likely building toward these specific tier milestones:\n\n- **Ignite (2,500 Tier Credits):** You get a 10% earn rate bonus on Momentum Points, which spend like cash at our restaurants and shops. This tier also includes dining discounts and a birthday bonus offer.\n- **Leap (10,000 Tier Credits):** This unlocks priority hotel check-in and early access to entertainment ticket pre-sales at the Arena. You also receive enhanced room rate discounts and valet discounts.\n- **Ascend (25,000 Tier Credits):** At this level, you're assigned a dedicated casino host and receive complimentary valet, room upgrades when available, and priority reservations at restaurants like Michael Jordan\u2019s Steak House.\n\nEvery bet at the table earns both Momentum Points and Tier Credits. You can see your current progress by inserting your card into any slot machine or checking the Mohegan Sun app. \n\nWhen you're at the tables, do you usually play for a few hours at a time or stay for the full weekend?",
+      "sources": [],
+      "elapsed_ms": 43745,
+      "error": null
+    }
+  ],
+  "completed": true
+}

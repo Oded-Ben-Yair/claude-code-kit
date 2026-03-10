@@ -30,7 +30,7 @@
       "repo": "wshobson/agents"
     },
     "installLocation": "${CLAUDE_HOME:-$HOME/.claude}/plugins/marketplaces/wshobson-agents",
-    "lastUpdated": "2026-03-09T16:21:40.093Z",
+    "lastUpdated": "2026-03-10T06:11:10.978Z",
     "autoUpdate": false
   },
   "claude-code-plugins-plus": {
@@ -48,6 +48,6 @@
       "repo": "anthropics/claude-code"
     },
     "installLocation": "${CLAUDE_HOME:-$HOME/.claude}/plugins/marketplaces/claude-code-plugins",
-    "lastUpdated": "2026-03-09T14:14:49.495Z"
+    "lastUpdated": "2026-03-10T06:15:41.155Z"
   }
 }

@@ -1,0 +1,60 @@
+{
+  "scenario_id": "p2-06",
+  "scenario_name": "Agent probes after providing value first",
+  "category": "profiling_p2_active_probing",
+  "behavioral_dimension": "P2_active_probing",
+  "expected_behavior": "First response lists shows AND naturally asks who's attending or what kind of show they enjoy. The show listing is complete regardless of whether the guest answers the follow-up. Value first, probe second",
+  "expected_behavioral_quality": "Demonstrates the give-to-get pattern: first delivers a genuine answer to the guest's question, THEN asks a natural follow-up profiling question. The answer must be complete and useful on its own, not gated behind the profiling question.",
+  "safety_relevant": false,
+  "source_file": "profiling_p2_active_probing.yaml",
+  "thread_id": "eval-p2-06-1772955973",
+  "turns": [
+    {
+      "turn_index": 0,
+      "user_message": "What shows are on tonight?",
+      "agent_response": "The Wolf Den is the place to be tonight for live music. Since it's Sunday, you can expect a show starting around 8:00 PM, and the best part is that it's completely complimentary. It's an intimate 350-seat venue that puts you right in the middle of the action with national touring acts or talented tribute bands.\n\nPro tip: because there are no tickets required for the Wolf Den, seats fill up on a first-come, first-served basis, so I'd suggest heading over a little early to grab a spot near the stage. If you want to grab a drink beforehand, the lounge atmosphere at novelle is fantastic, though their full DJ lineups typically run Thursday through Saturday.\n\nAre you looking for a high-energy show to kick off the week or more of a relaxed vibe for your evening?",
+      "sources": [
+        {
+          "category": "entertainment",
+          "source": "mohegan_sun.json",
+          "score": 0.663
+        },
+        {
+          "category": "faq",
+          "source": "mohegan_sun.json",
+          "score": 0.668
+        }
+      ],
+      "elapsed_ms": 28347,
+      "error": null
+    },
+    {
+      "turn_index": 1,
+      "user_message": "Just me and a friend",
+      "agent_response": "A high-top at Michael Jordan\u2019s Steak House is the best spot for two. It\u2019s right near the Wolf Den, so you\u2019ll be ready for the 8:00 PM show. I've got you\u2014a 6:15 PM seating keeps the evening relaxed, and I can connect you with the host team to finalize that. \n\nDo you and your friend prefer a full dinner or just drinks and appetizers?",
+      "sources": [],
+      "elapsed_ms": 48370,
+      "error": null
+    },
+    {
+      "turn_index": 2,
+      "user_message": "Comedy sounds fun",
+      "agent_response": "Comix Roadhouse is the go-to for comedy tonight. It is a 400-seat venue that hosts national touring comedians and has a full dinner menu available right at your table during the performances.\n\nPro tip: since it is a club setting with tables, you and your friend can enjoy a meal and drinks while you watch the show. I've got you\u2014I can connect you with the host team to see which comedians are taking the stage tonight and what the exact showtimes are.\n\nAfter the show, Avalon Nightclub is right nearby if you want to keep the energy going\u2014do you usually like to head to a club after a night of entertainment?",
+      "sources": [
+        {
+          "category": "entertainment",
+          "source": "mohegan_sun.json",
+          "score": 0.677
+        },
+        {
+          "category": "property",
+          "source": "mohegan_sun.json",
+          "score": 0.639
+        }
+      ],
+      "elapsed_ms": 60859,
+      "error": null
+    }
+  ],
+  "completed": true
+}

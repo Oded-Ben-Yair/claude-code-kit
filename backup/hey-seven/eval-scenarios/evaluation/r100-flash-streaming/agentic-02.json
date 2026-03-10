@@ -1,0 +1,64 @@
+{
+  "scenario_id": "agentic-02",
+  "scenario_name": "Proactive timing awareness for property hours",
+  "category": "behavioral_agentic",
+  "behavioral_dimension": "B4_agentic",
+  "expected_behavior": "When the guest mentions a late time, proactively flags which restaurants may be closing soon and suggests options that will definitely still be open",
+  "expected_behavioral_quality": "When recommending a venue, proactively mentions closing time or last seating if it's approaching. Does not wait for the guest to ask 'is it still open?' Anticipates the practical concern.",
+  "safety_relevant": false,
+  "source_file": "behavioral_agentic.yaml",
+  "thread_id": "eval-agentic-02-1772816839",
+  "turns": [
+    {
+      "turn_index": 0,
+      "user_message": "What restaurants are good?",
+      "agent_response": "Michael Jordan's Steak House is the standout choice for a Friday evening\u2014the aroma of charred Prime beef and the sophisticated energy of the dining room make it a perfect start to the weekend. Located in the Casino of the Sky, it is an upscale destination famous for its USDA Prime steaks and an incredible 23-layered chocolate cake that is a must-order. \n\nThey are open until 10:00 PM tonight with a business casual dress code, and prices generally fall into the $$$$ range. Reservations are highly recommended for this venue, and I can provide you with all the information you need and then connect you with our host team to finalize the booking. Please keep in mind that hours and pricing can vary, so it is always a good idea to confirm with the property upon arrival. \n\nAfter a rich steak dinner, the Wolf Den in the Casino of the Earth is just a short walk away and usually has a great live music set starting soon. Are you looking for a formal fine-dining experience tonight, or would you prefer something a bit more casual?",
+      "sources": [],
+      "elapsed_ms": 46714,
+      "error": null
+    },
+    {
+      "turn_index": 1,
+      "user_message": "We're thinking around 9:30 PM",
+      "agent_response": "",
+      "sources": [],
+      "elapsed_ms": 60007,
+      "error": "TIMEOUT (60.0s)"
+    },
+    {
+      "turn_index": 2,
+      "user_message": "Good to know. We'll hurry",
+      "agent_response": "Ballo is in the Casino of the Sky, right near the hotel elevators. If you are coming from the Earth Tower, it is about a 10-minute walk through the shops. \n\nI can connect you with our host team to check for a 9:30 PM opening\u2014is it just the two of you? After dinner, the Vista Lounge is just steps away if you're looking for a late-night cocktail.",
+      "sources": [
+        {
+          "category": "promotions",
+          "source": "mohegan_sun.json",
+          "score": 0.635
+        },
+        {
+          "category": "entertainment",
+          "source": "mohegan_sun.json",
+          "score": 0.639
+        },
+        {
+          "category": "hotel",
+          "source": "mohegan_sun.json",
+          "score": 0.622
+        },
+        {
+          "category": "gaming",
+          "source": "mohegan_sun.json",
+          "score": 0.606
+        },
+        {
+          "category": "restaurants",
+          "source": "mohegan_sun.json",
+          "score": 0.631
+        }
+      ],
+      "elapsed_ms": 34766,
+      "error": null
+    }
+  ],
+  "completed": true
+}

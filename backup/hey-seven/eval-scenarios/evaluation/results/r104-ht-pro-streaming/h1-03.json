@@ -1,0 +1,75 @@
+{
+  "scenario_id": "h1-03",
+  "scenario_name": "Guest with a specific interest looking for depth",
+  "category": "host_triangle_h1_h3_development",
+  "behavioral_dimension": "H1_proactive_value_discovery",
+  "expected_behavior": "Demonstrates deep poker knowledge, treats the guest as a serious player, and builds a full weekend vision around the poker interest. Cross-sells dining and entertainment as part of a poker trip, not as disconnected amenities",
+  "expected_behavioral_quality": "When a guest signals deep interest in one domain (poker, spa, comedy), the agent demonstrates deep knowledge of that domain and connects it to related experiences. Discovers what level of engagement the guest wants and builds a personalized visit plan.",
+  "safety_relevant": false,
+  "source_file": "host_triangle_h1_h3_development.yaml",
+  "thread_id": "eval-h1-03-1772970601",
+  "turns": [
+    {
+      "turn_index": 0,
+      "user_message": "I'm really into poker. What's the poker scene like here?",
+      "agent_response": "Our Poker Room is one of the premier spots in the Northeast, and with 33 tables running 24/7, there is a game waiting for you right now. We feature daily tournaments with various buy-ins alongside cash games for No-Limit Texas Hold'em and Pot-Limit Omaha. \n\nOne thing that sets our room apart is the consistent energy from the regular special event series we host throughout the year. After a long session at the table, a hot stone massage at Elemis Spa is the perfect way to reset your back and shoulders. Do you usually prefer the fast pace of a tournament or the steady grind of a cash game?",
+      "sources": [
+        {
+          "category": "gaming",
+          "source": "mohegan_sun.json",
+          "score": 0.681
+        },
+        {
+          "category": "faq",
+          "source": "mohegan_sun.json",
+          "score": 0.627
+        },
+        {
+          "category": "entertainment",
+          "source": "mohegan_sun.json",
+          "score": 0.622
+        }
+      ],
+      "elapsed_ms": 41418,
+      "error": null
+    },
+    {
+      "turn_index": 1,
+      "user_message": "Any tournaments coming up? I play pretty seriously",
+      "agent_response": "Daily tournaments are held in the Poker Room with varying buy-ins and formats, primarily focusing on No-Limit Texas Hold'em. Since you play seriously, you may also want to track our regular special event series, which feature larger prize pools and more competitive structures throughout the year.\n\nFor every hour of rated play at the tables, you earn Momentum Points and Tier Credits, which contribute to your status and can be redeemed for dining or hotel stays. After a long session, a steak at Michael Jordan's Steak House is a great way to refuel right near the gaming floor. What buy-in range do you typically look for in a daily tournament?",
+      "sources": [
+        {
+          "category": "gaming",
+          "source": "mohegan_sun.json",
+          "score": 0.647
+        },
+        {
+          "category": "faq",
+          "source": "mohegan_sun.json",
+          "score": 0.626
+        },
+        {
+          "category": "amenities",
+          "source": "mohegan_sun.json",
+          "score": 0.612
+        },
+        {
+          "category": "entertainment",
+          "source": "mohegan_sun.json",
+          "score": 0.606
+        }
+      ],
+      "elapsed_ms": 51371,
+      "error": null
+    },
+    {
+      "turn_index": 2,
+      "user_message": "Nice. What else is good for a poker weekend?",
+      "agent_response": "For a serious poker weekend, pacing your sessions is key. We have various seasonal hotel packages that combine a room stay with dining credits or entertainment tickets, keeping everything convenient between your tournaments. \n\nPro tip \u2014 the Poker Room is located in Casino of the Earth, which features a warm design inspired by Mohegan tribal heritage. When you need a break from the tables, stepping out to grab a drink at the nearby Bow & Arrow sports bar is a great way to clear your head. If you haven't joined our Momentum rewards program yet, as a new guest you are eligible for a $10 introductory free play bonus when you sign up. I can also look into arranging a complimentary appetizer at one of our casual dining spots to start your weekend off right.\n\nAre you planning to head down solo to focus on the cards, or are you bringing a group with you?",
+      "sources": [],
+      "elapsed_ms": 71294,
+      "error": null
+    }
+  ],
+  "completed": true
+}

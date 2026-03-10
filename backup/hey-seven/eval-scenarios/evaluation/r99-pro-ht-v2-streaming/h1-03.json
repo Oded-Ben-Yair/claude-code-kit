@@ -1,0 +1,75 @@
+{
+  "scenario_id": "h1-03",
+  "scenario_name": "Guest with a specific interest looking for depth",
+  "category": "host_triangle_h1_h3_development",
+  "behavioral_dimension": "H1_proactive_value_discovery",
+  "expected_behavior": "Demonstrates deep poker knowledge, treats the guest as a serious player, and builds a full weekend vision around the poker interest. Cross-sells dining and entertainment as part of a poker trip, not as disconnected amenities",
+  "expected_behavioral_quality": "When a guest signals deep interest in one domain (poker, spa, comedy), the agent demonstrates deep knowledge of that domain and connects it to related experiences. Discovers what level of engagement the guest wants and builds a personalized visit plan.",
+  "safety_relevant": false,
+  "source_file": "host_triangle_h1_h3_development.yaml",
+  "thread_id": "eval-h1-03-1772803523",
+  "turns": [
+    {
+      "turn_index": 0,
+      "user_message": "I'm really into poker. What's the poker scene like here?",
+      "agent_response": "Our poker room is actually one of the premier spots in the Northeast. We feature a dedicated room with 33 tables running 24 hours a day, so you can always find some action. You will find a great mix of daily tournaments and cash games at all stakes, primarily featuring No-Limit Texas Hold'em, Pot-Limit Omaha, and Limit Hold'em. \n\nSince you are checking us out for the first time, I highly recommend signing up for our Momentum rewards program. As a new guest, you're eligible for a $10 introductory free play bonus when you join!\n\nIf you need a break from the tables later, the Bow & Arrow sports bar is right nearby in the Casino of the Earth and makes for a perfect quick meal. Do you usually prefer sitting down for a cash game, or are you looking to jump into a tournament?",
+      "sources": [],
+      "elapsed_ms": 69710,
+      "error": null
+    },
+    {
+      "turn_index": 1,
+      "user_message": "Any tournaments coming up? I play pretty seriously",
+      "agent_response": "We run daily tournaments with a variety of buy-ins, alongside regular special event series throughout the year. Since you put in serious hours at the table, you will want to make sure you use a Momentum card when you sit down. You earn Tier Credits and points on all poker play, and hitting our Ignite or Leap tiers through consistent play opens up dining credits and priority restaurant seating. \n\nPro tip\u2014if you make a deep run tonight, the poker room is open 24/7, and we have several great late-night dining spots nearby to grab a bite after you bag your chips. \n\nI can check the specifics for today's daily tournament schedule. What buy-in range and structure do you usually prefer?",
+      "sources": [
+        {
+          "category": "gaming",
+          "source": "mohegan_sun.json",
+          "score": 0.647
+        },
+        {
+          "category": "faq",
+          "source": "mohegan_sun.json",
+          "score": 0.626
+        },
+        {
+          "category": "amenities",
+          "source": "mohegan_sun.json",
+          "score": 0.612
+        },
+        {
+          "category": "entertainment",
+          "source": "mohegan_sun.json",
+          "score": 0.606
+        }
+      ],
+      "elapsed_ms": 55088,
+      "error": null
+    },
+    {
+      "turn_index": 2,
+      "user_message": "Nice. What else is good for a poker weekend?",
+      "agent_response": "A solid poker weekend usually involves balancing table time with convenient amenities. The poker room is located in our Casino of the Earth, placing you right next to several solid options when you need a screen break. \n\nIf you're making a weekend out of it, we offer seasonal hotel packages that combine room stays with dining credits or entertainment tickets. Plus, all your hours at the poker table earn Momentum points, which you can apply directly toward your hotel bill or meals. \n\nPro tip \u2014 the Bow & Arrow sports bar is located just steps from the poker room. It is the most convenient spot to catch a game and grab a quick bite during a tournament break without straying far from the action. \n\nIf you keep building those tier credits this weekend, you'll unlock some really nice perks at the next level \u2014 definitely worth checking your progress at the Momentum desk before you leave. Are you planning to stay overnight on the property, or just driving in for the day?",
+      "sources": [
+        {
+          "category": "gaming",
+          "source": "mohegan_sun.json",
+          "score": 0.685
+        },
+        {
+          "category": "faq",
+          "source": "mohegan_sun.json",
+          "score": 0.664
+        },
+        {
+          "category": "promotions",
+          "source": "mohegan_sun.json",
+          "score": 0.644
+        }
+      ],
+      "elapsed_ms": 59306,
+      "error": null
+    }
+  ],
+  "completed": true
+}

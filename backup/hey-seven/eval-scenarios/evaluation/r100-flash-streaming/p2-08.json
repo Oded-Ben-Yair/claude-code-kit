@@ -1,0 +1,65 @@
+{
+  "scenario_id": "p2-08",
+  "scenario_name": "Agent asks about entertainment interests",
+  "category": "profiling_p2_active_probing",
+  "behavioral_dimension": "P2_active_probing",
+  "expected_behavior": "First response provides a broad overview and asks a narrowing question about entertainment type. When 'live music' is volunteered, immediately narrows to music venues and upcoming acts",
+  "expected_behavioral_quality": "When the guest asks a generic question about things to do, the agent provides options AND asks a narrowing question about entertainment preferences. The question is specific enough to be useful ('More into music or comedy?') rather than vague ('What do you like?').",
+  "safety_relevant": false,
+  "source_file": "profiling_p2_active_probing.yaml",
+  "thread_id": "eval-p2-08-1772839828",
+  "turns": [
+    {
+      "turn_index": 0,
+      "user_message": "What's there to do here besides gambling?",
+      "agent_response": "Welcome to Mohegan Sun. I'm Seven, your AI entertainment and wellness concierge, and I can tell you that the gaming floor is just the beginning of what we have here. Since it's late on a Friday night, the energy is high and the Wolf Den is usually the center of the action with free live music from national touring acts.\n\nFor tomorrow, you have plenty of options outside of the casino. You could spend the morning at the Elemis Spa for their legendary hot stone massage or browse through the Shops at Mohegan Sun, which features over 40 different retailers. An insider tip for a first-timer: the Wolf Den is first-come, first-served, so if you see a band on the schedule you're excited about, arriving a bit early ensures you get a great seat close to the stage.\n\nIf you're planning on catching a performance, Todd English's Tuscany is a short walk from the venues and serves incredible wood-fired dishes. Are you more in the mood for a high-energy concert at the Arena or a relaxing day at the spa?",
+      "sources": [
+        {
+          "category": "faq",
+          "source": "mohegan_sun.json",
+          "score": 0.705
+        },
+        {
+          "category": "amenities",
+          "source": "mohegan_sun.json",
+          "score": 0.679
+        },
+        {
+          "category": "entertainment",
+          "source": "mohegan_sun.json",
+          "score": 0.672
+        }
+      ],
+      "elapsed_ms": 48172,
+      "error": null
+    },
+    {
+      "turn_index": 1,
+      "user_message": "We love live music",
+      "agent_response": "You're in the right place because live music is a huge part of the experience here. The Wolf Den has a free performance starting soon tonight, usually at 8:00 PM or 9:00 PM, in an intimate 350-seat setting. \n\nPro tip \u2014 seating is first-come, first-served, so I'd recommend heading over early to grab a spot near the stage. If you want to grab a bite first, Todd English's Tuscany is right next door and perfect for a pre-show meal. Are you more into high-energy dance floors or sitting back to enjoy a live band?",
+      "sources": [
+        {
+          "category": "entertainment",
+          "source": "mohegan_sun.json",
+          "score": 0.646
+        },
+        {
+          "category": "property",
+          "source": "mohegan_sun.json",
+          "score": 0.637
+        }
+      ],
+      "elapsed_ms": 35973,
+      "error": null
+    },
+    {
+      "turn_index": 2,
+      "user_message": "What's playing this weekend?",
+      "agent_response": "",
+      "sources": [],
+      "elapsed_ms": 60003,
+      "error": "TIMEOUT (60.0s)"
+    }
+  ],
+  "completed": true
+}

@@ -1,0 +1,38 @@
+{
+  "scenario_id": "p2-04",
+  "scenario_name": "Agent avoids re-asking known information",
+  "category": "profiling_p2_active_probing",
+  "behavioral_dimension": "P2_active_probing",
+  "expected_behavior": "Uses all three pieces of info (name, party size, occasion) from turn 1 throughout. Never re-asks any of them. Recommendations are shaped by the 50th birthday milestone and party of 4",
+  "expected_behavioral_quality": "When the guest has already provided information (name, party size, occasion), the agent does NOT ask for it again. If the guest said 'party of 4 for a birthday' in turn 1, the agent never asks 'how many?' or 'celebrating anything?' in later turns.",
+  "safety_relevant": false,
+  "source_file": "profiling_p2_active_probing.yaml",
+  "thread_id": "eval-p2-04-1772839262",
+  "turns": [
+    {
+      "turn_index": 0,
+      "user_message": "Hi, I'm Rachel. Party of 4, it's my husband's 50th birthday.",
+      "agent_response": "",
+      "sources": [],
+      "elapsed_ms": 60004,
+      "error": "TIMEOUT (60.0s)"
+    },
+    {
+      "turn_index": 1,
+      "user_message": "What restaurant do you recommend?",
+      "agent_response": "",
+      "sources": [],
+      "elapsed_ms": 60002,
+      "error": "TIMEOUT (60.0s)"
+    },
+    {
+      "turn_index": 2,
+      "user_message": "And after dinner?",
+      "agent_response": "",
+      "sources": [],
+      "elapsed_ms": 60002,
+      "error": "TIMEOUT (60.0s)"
+    }
+  ],
+  "completed": true
+}

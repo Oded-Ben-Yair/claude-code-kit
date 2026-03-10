@@ -1,0 +1,91 @@
+{
+  "scenario_id": "proactive-06",
+  "scenario_name": "Return guest agent should recognize from conversation history",
+  "category": "behavioral_proactive",
+  "behavioral_dimension": "B4_agentic",
+  "expected_behavior": "Acknowledges returning guest status warmly. When they reference past experience, builds on it rather than starting fresh. Suggests new options they haven't tried",
+  "expected_behavioral_quality": "When a guest references a prior conversation or visit, acknowledges the returning status even without explicit CRM data. Uses 'welcome back' naturally. Treats returning guests with familiarity rather than first-visit formality.",
+  "safety_relevant": false,
+  "source_file": "behavioral_proactive.yaml",
+  "thread_id": "eval-proactive-06-1772919302",
+  "turns": [
+    {
+      "turn_index": 0,
+      "user_message": "Hey, I was here last month. Remember I asked about the steakhouse?",
+      "agent_response": "Welcome back to Mohegan Sun. If you're looking for a steak tonight, Bobby Flay's Bar Americain in the Casino of the Earth is the best move since they stay open until 11:00 PM on Saturdays. \n\nTheir spice-rubbed steaks have that bold, smoky flavor Bobby is known for, and the atmosphere has a great energy this late in the evening. Michael Jordan's Steak House is our other premier spot, but they close at 10:00 PM, so you would have to head there immediately to catch their last seating. Bar Americain is in the $$$ price range and usually recommends smart casual attire.\n\nSince you are back for another visit, are you planning on catching a show at the Wolf Den after your meal?",
+      "sources": [
+        {
+          "category": "restaurants",
+          "source": "mohegan_sun.json",
+          "score": 0.679
+        },
+        {
+          "category": "faq",
+          "source": "mohegan_sun.json",
+          "score": 0.645
+        }
+      ],
+      "elapsed_ms": 39573,
+      "error": null
+    },
+    {
+      "turn_index": 1,
+      "user_message": "Yeah, we loved it. What else is new?",
+      "agent_response": "Glad the steakhouse lived up to the hype. The newest addition to the property is our Earth Tower, which features a contemporary design and its own private entrance for a more boutique experience. For tonight's energy, head to novelle in the Casino of the Sky\u2014it\u2019s an upscale lounge with craft cocktails and a DJ that really hits its stride on Saturday nights. The Earth Tower actually has its own separate check-in and lobby, which keeps things much quieter than the main hotel towers.\n\nAre you celebrating anything specific this weekend, or just back for the atmosphere?",
+      "sources": [
+        {
+          "category": "hotel",
+          "source": "mohegan_sun.json",
+          "score": 0.645
+        },
+        {
+          "category": "entertainment",
+          "source": "mohegan_sun.json",
+          "score": 0.647
+        },
+        {
+          "category": "faq",
+          "source": "mohegan_sun.json",
+          "score": 0.626
+        },
+        {
+          "category": "property",
+          "source": "mohegan_sun.json",
+          "score": 0.627
+        }
+      ],
+      "elapsed_ms": 70450,
+      "error": null
+    },
+    {
+      "turn_index": 2,
+      "user_message": "We'll try the spa this time",
+      "agent_response": "Since you are already exploring the Earth Tower area, the Elemis Spa is the perfect modern retreat for premium skincare or a couples' massage. If you prefer a more traditional experience, Mandara Spa in the Sky Tower offers Balinese-inspired treatments and features a beautiful relaxation lounge with a steam room and sauna. \n\nBoth spas open tomorrow morning at 9:00 AM, and heading there early is a great way to reset before the day gets busy. Mandara is legendary for their hot stone massage, while Elemis is excellent if you want something more results-oriented like their high-end facials. Would you be looking for a full-body massage or more of a refreshing facial treatment?",
+      "sources": [
+        {
+          "category": "amenities",
+          "source": "mohegan_sun.json",
+          "score": 0.675
+        },
+        {
+          "category": "promotions",
+          "source": "mohegan_sun.json",
+          "score": 0.657
+        },
+        {
+          "category": "faq",
+          "source": "mohegan_sun.json",
+          "score": 0.646
+        },
+        {
+          "category": "hotel",
+          "source": "mohegan_sun.json",
+          "score": 0.635
+        }
+      ],
+      "elapsed_ms": 45398,
+      "error": null
+    }
+  ],
+  "completed": true
+}

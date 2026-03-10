@@ -1,0 +1,82 @@
+{
+  "id": "p2-10",
+  "name": "Agent asks about companion needs",
+  "source_file": "profiling_p2_active_probing.yaml",
+  "category": "profiling_p2_active_probing",
+  "behavioral_dimension": "P2_active_probing",
+  "expected_behavior": "First response asks about group composition to narrow restaurant options. When the multi-generational family is described, adjusts to accommodate all ages. When accessibility need is mentioned, immediately factors it into recommendations",
+  "expected_behavioral_quality": "When the guest mentions companions, the agent probes for specific companion needs (kids menu, accessibility, allergies) framed as helping plan the best experience. The question is contextual ('Do the kids have any favorites?') not clinical ('Any dietary restrictions in the group?').",
+  "safety_relevant": false,
+  "turns": [
+    {
+      "turn_index": 0,
+      "user_message": "Need a restaurant for 6 of us tonight",
+      "agent_response": "Tao Asian Bistro & Lounge in the Casino of the Sky is a fantastic choice for a party of six tonight. The atmosphere is visually striking, and their menu is designed for sharing, which makes the experience feel like a true celebration as plates of dim sum and specialty sushi circulate the table.\n\nThey open at 5:00 PM tonight and stay open until 11:00 PM with a smart casual dress code and prices in the $$$ range. Since it is a favorite for larger groups, I'd suggest securing a reservation. After dinner, you might enjoy walking over to the Wolf Den nearby to catch some live music. Would you like me to look into the specifics of another cuisine type, or does Pan-Asian sound right for your group?",
+      "sources": [
+        {
+          "category": "restaurants",
+          "source": "mohegan_sun.json",
+          "score": 0.672
+        }
+      ],
+      "elapsed_ms": 31590,
+      "error": null
+    },
+    {
+      "turn_index": 1,
+      "user_message": "Two adults, my parents, and two teenagers",
+      "agent_response": "For a multi-generational group like yours, having the right home base makes all the difference in your stay. Since you have six people including teenagers and your parents, I'd suggest looking into connecting rooms in the Sky Tower. These allow the kids to have their own space while keeping the family close, and the floor-to-ceiling windows provide a great view of the Thames River that your parents might enjoy.",
+      "sources": [
+        {
+          "category": "hotel",
+          "source": "mohegan_sun.json",
+          "score": 0.639
+        },
+        {
+          "category": "entertainment",
+          "source": "mohegan_sun.json",
+          "score": 0.635
+        }
+      ],
+      "elapsed_ms": 40587,
+      "error": null
+    },
+    {
+      "turn_index": 2,
+      "user_message": "My dad uses a wheelchair",
+      "agent_response": "Both the Sky and Earth towers offer ADA-compliant rooms featuring roll-in showers, grab bars, and wider entryways to ensure your dad is comfortable during his stay. The entire resort is designed with accessibility in mind, so he will have no trouble navigating the wide concourses, restaurants, and gaming floors alongside the rest of the family.\n\nIf he would prefer a motorized scooter to get around the property more easily, those are typically available for rent through the bell desk or the coat check in the Casino of the Earth. Since you are a group of six, would you like me to suggest a dining spot that has particularly spacious table layouts to accommodate his wheelchair comfortably?",
+      "sources": [
+        {
+          "category": "promotions",
+          "source": "mohegan_sun.json",
+          "score": 0.604
+        },
+        {
+          "category": "amenities",
+          "source": "mohegan_sun.json",
+          "score": 0.589
+        },
+        {
+          "category": "faq",
+          "source": "mohegan_sun.json",
+          "score": 0.563
+        },
+        {
+          "category": "property",
+          "source": "mohegan_sun.json",
+          "score": 0.593
+        },
+        {
+          "category": "entertainment",
+          "source": "mohegan_sun.json",
+          "score": 0.562
+        }
+      ],
+      "elapsed_ms": 36909,
+      "error": null
+    }
+  ],
+  "elapsed_ms": 109088,
+  "error": null,
+  "completed": true
+}

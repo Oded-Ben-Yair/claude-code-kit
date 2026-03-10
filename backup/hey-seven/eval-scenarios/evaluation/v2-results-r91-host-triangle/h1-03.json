@@ -1,0 +1,76 @@
+{
+  "id": "h1-03",
+  "name": "Guest with a specific interest looking for depth",
+  "source_file": "host_triangle_h1_h3_development.yaml",
+  "category": "host_triangle_h1_h3_development",
+  "behavioral_dimension": "H1_proactive_value_discovery",
+  "expected_behavior": "Demonstrates deep poker knowledge, treats the guest as a serious player, and builds a full weekend vision around the poker interest. Cross-sells dining and entertainment as part of a poker trip, not as disconnected amenities",
+  "expected_behavioral_quality": "When a guest signals deep interest in one domain (poker, spa, comedy), the agent demonstrates deep knowledge of that domain and connects it to related experiences. Discovers what level of engagement the guest wants and builds a personalized visit plan.",
+  "safety_relevant": false,
+  "turns": [
+    {
+      "turn_index": 0,
+      "user_message": "I'm really into poker. What's the poker scene like here?",
+      "agent_response": "The poker room here is a major draw, featuring 33 tables and operating 24 hours a day. You'll find a steady rotation of cash games like No-Limit Texas Hold'em, Pot-Limit Omaha, and Limit Hold'em, along with daily tournaments for various buy-in levels. \n\nIf you're looking for a high-energy spot to grab a drink between sessions, the Bow & Arrow Sports Bar is nearby in the Casino of the Earth. Are you planning to jump into a cash game today, or are you more interested in the tournament schedule?",
+      "sources": [
+        {
+          "category": "gaming",
+          "source": "mohegan_sun.json",
+          "score": 0.681
+        },
+        {
+          "category": "faq",
+          "source": "mohegan_sun.json",
+          "score": 0.627
+        },
+        {
+          "category": "entertainment",
+          "source": "mohegan_sun.json",
+          "score": 0.622
+        }
+      ],
+      "elapsed_ms": 26434,
+      "error": null
+    },
+    {
+      "turn_index": 1,
+      "user_message": "Any tournaments coming up? I play pretty seriously",
+      "agent_response": "The poker room runs daily tournaments with buy-ins that vary by day and event series. With 33 tables open 24/7, you'll find No-Limit Texas Hold'em and Pot-Limit Omaha games available whenever you're ready to play. \n\nYou earn Momentum Points and Tier Credits for your time at the table, which you can use for dining at spots like Michael Jordan's Steak House right nearby in the Casino of the Sky. Are you looking for a specific buy-in level for your tournament play today?",
+      "sources": [
+        {
+          "category": "gaming",
+          "source": "mohegan_sun.json",
+          "score": 0.647
+        },
+        {
+          "category": "faq",
+          "source": "mohegan_sun.json",
+          "score": 0.626
+        },
+        {
+          "category": "amenities",
+          "source": "mohegan_sun.json",
+          "score": 0.612
+        },
+        {
+          "category": "entertainment",
+          "source": "mohegan_sun.json",
+          "score": 0.606
+        }
+      ],
+      "elapsed_ms": 30545,
+      "error": null
+    },
+    {
+      "turn_index": 2,
+      "user_message": "Nice. What else is good for a poker weekend?",
+      "agent_response": "The poker room is located in the Casino of the Earth, which also houses the Bow & Arrow Sports Bar for quick meals between sessions. For a weekend stay, seasonal hotel packages are available that often combine room rates with dining credits or entertainment tickets. \n\nYour play at the poker tables earns Momentum Points and Tier Credits, which can be redeemed at over 40 dining locations or for retail purchases throughout the property. If you need a break from the cards, the Wolf Den in the center of the Casino of the Earth features live music nightly with no cover charge. Are you planning to stay in one of our hotel towers during your visit?",
+      "sources": [],
+      "elapsed_ms": 51236,
+      "error": null
+    }
+  ],
+  "elapsed_ms": 108215,
+  "error": null,
+  "completed": true
+}

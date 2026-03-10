@@ -1,0 +1,60 @@
+{
+  "scenario_id": "agentic-03",
+  "scenario_name": "Follow-up anticipation for incomplete plan",
+  "category": "behavioral_agentic",
+  "behavioral_dimension": "B4_agentic",
+  "expected_behavior": "Recognizes the guest is building a sequential evening plan. After each decision, proactively suggests the logical next activity in the timeline without waiting to be asked",
+  "expected_behavioral_quality": "When a guest is building an evening plan piece by piece, anticipates the next question rather than waiting passively. After dinner is settled, offers 'and for after dinner...' without being asked.",
+  "safety_relevant": false,
+  "source_file": "behavioral_agentic.yaml",
+  "thread_id": "eval-agentic-03-1772910102",
+  "turns": [
+    {
+      "turn_index": 0,
+      "user_message": "We need to plan our evening. Start with dinner.",
+      "agent_response": "I've got you. For a Saturday evening, Todd English's Tuscany in the Casino of the Sky is the standout choice for a refined dinner. The wood-fired aroma hits you the moment you walk in, and the open kitchen creates a vibrant energy that complements the warm, Tuscan-inspired decor. They are open tonight until 10:00 PM, and since it is a premier destination ($$$$), I'd suggest a business casual dress code. I can connect you with our host team to finalize a reservation so you have the perfect table. \n\nFun fact: the handmade pastas are a specialty here, crafted with techniques that celebrity chef Todd English is famous for. After your meal, you might enjoy the craft cocktails and sophisticated lounge atmosphere at Novelle. What kind of cuisine do you usually lean toward when you're planning a night out?",
+      "sources": [
+        {
+          "category": "entertainment",
+          "source": "mohegan_sun.json",
+          "score": 0.655
+        },
+        {
+          "category": "restaurants",
+          "source": "mohegan_sun.json",
+          "score": 0.65
+        }
+      ],
+      "elapsed_ms": 42897,
+      "error": null
+    },
+    {
+      "turn_index": 1,
+      "user_message": "Steakhouse at 7. What next?",
+      "agent_response": "Michael Jordan's Steak House in the Casino of the Sky is the right choice for 7:00 PM. Let me help you with that by recommending novelle afterward for craft cocktails and a live DJ to keep the Saturday energy going. The 23-ounce Delmonico is their signature cut if you want the full experience. I can connect you with our host team to finalize these plans for your evening. \n\nIs this a celebration for two, or are you with a larger group?",
+      "sources": [],
+      "elapsed_ms": 76650,
+      "error": null
+    },
+    {
+      "turn_index": 2,
+      "user_message": "A show would be fun. And then?",
+      "agent_response": "Since you are heading into dinner now, the 9:00 PM set at the Wolf Den is the perfect follow-up. It's an intimate venue right in the heart of the action with an electric energy, and because shows are complimentary, you can just walk right in after your meal. Afterward, you should head to novelle for their Saturday night DJ set and craft cocktails to round out the evening. I've got you covered with these recommendations, and I can connect you with the host team if you need directions between the venues.\n\nInsider tip: The Wolf Den has a unique centerpiece that actually changes color and pulses with the music, which really adds to the atmosphere during a live set. I'd suggest checking the latest schedule at the box office or on the Mohegan Sun website as specific lineups can sometimes change at the last minute. Are you more into a high-energy tribute band or a soulful live performance for your Saturday night?",
+      "sources": [
+        {
+          "category": "entertainment",
+          "source": "mohegan_sun.json",
+          "score": 0.65
+        },
+        {
+          "category": "faq",
+          "source": "mohegan_sun.json",
+          "score": 0.625
+        }
+      ],
+      "elapsed_ms": 31657,
+      "error": null
+    }
+  ],
+  "completed": true
+}

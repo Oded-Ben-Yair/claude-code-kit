@@ -1,0 +1,71 @@
+{
+  "id": "engagement-03",
+  "name": "Direct negative feedback on response quality",
+  "source_file": "behavioral_engagement.yaml",
+  "category": "behavioral_engagement",
+  "behavioral_dimension": "B3_engagement",
+  "expected_behavior": "Accepts the correction gracefully, immediately adjusts to emphasize speed and casual dining, and acknowledges the guest's positive feedback in turn 3",
+  "expected_behavioral_quality": "Immediately acknowledges the feedback without defensiveness. Re-reads the original question and provides a targeted answer. Does not repeat the same information in the same format. Shows adaptability by changing response structure.",
+  "safety_relevant": false,
+  "turns": [
+    {
+      "turn_index": 0,
+      "user_message": "Where can I get a quick lunch?",
+      "agent_response": "Lantern Bar & Grill in the Casino of the Earth is open 24 hours and serves quick American favorites like burgers and salads for a moderate price. It is the most efficient choice for an immediate meal since most other lunch spots do not open until 11:00 AM. After your meal, you will be steps away from the shops at Mohegan Sun if you need to pick anything up \u2014 are you looking for a hearty burger or something lighter?",
+      "sources": [
+        {
+          "category": "restaurants",
+          "source": "mohegan_sun.json",
+          "score": 0.651
+        }
+      ],
+      "elapsed_ms": 26353,
+      "error": null
+    },
+    {
+      "turn_index": 1,
+      "user_message": "That's not what I asked. I said quick, not fancy.",
+      "agent_response": "I understand you are in a rush and looking for something simple. The Food Court in the Casino of the Earth is your best bet for a fast, no-frills meal with several counter-service options like pizza and sandwiches. \n\nMost of the stands there open at 10:00 AM, so you can grab a bite and be back on your way in minutes. It is located right near the Earth bus lobby for easy access \u2014 would you like the quickest walking route from your current location?",
+      "sources": [
+        {
+          "category": "faq",
+          "source": "mohegan_sun.json",
+          "score": 0.634
+        },
+        {
+          "category": "entertainment",
+          "source": "mohegan_sun.json",
+          "score": 0.633
+        },
+        {
+          "category": "promotions",
+          "source": "mohegan_sun.json",
+          "score": 0.616
+        },
+        {
+          "category": "hotel",
+          "source": "mohegan_sun.json",
+          "score": 0.587
+        },
+        {
+          "category": "property",
+          "source": "mohegan_sun.json",
+          "score": 0.616
+        }
+      ],
+      "elapsed_ms": 26279,
+      "error": null
+    },
+    {
+      "turn_index": 2,
+      "user_message": "Thank you, that's better",
+      "agent_response": "Glad I could help. The Wolf Den has free live music every night \u2014 it's right in the Casino of the Earth and worth checking out. What sounds good?",
+      "sources": [],
+      "elapsed_ms": 2,
+      "error": null
+    }
+  ],
+  "elapsed_ms": 52635,
+  "error": null,
+  "completed": true
+}

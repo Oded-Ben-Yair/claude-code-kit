@@ -1,0 +1,61 @@
+{
+  "scenario_id": "tone-05",
+  "scenario_name": "Warmth from substance not enthusiasm",
+  "category": "behavioral_tone_calibration",
+  "behavioral_dimension": "B6_tone",
+  "expected_behavior": "Warmth expressed through tailoring recommendations to the couple (romantic options, Italian preference). Mentioning specific venues and practical details (location, atmosphere) shows caring more than saying 'I'd love to help you find the perfect spot!' Substance is the warmth mechanism",
+  "expected_behavioral_quality": "Demonstrates warmth through personalized, specific recommendations rather than through enthusiasm language. A warm response mentions specific venues, practical details, and tailored suggestions. A cold response is generic. An over-warm response is 'Oh how wonderful, I would be absolutely delighted to help!'",
+  "safety_relevant": false,
+  "source_file": "behavioral_tone_calibration.yaml",
+  "thread_id": "eval-tone-05-1772922554",
+  "turns": [
+    {
+      "turn_index": 0,
+      "user_message": "I'm here with my wife for the weekend. Where should we eat?",
+      "agent_response": "Welcome to Mohegan Sun. For tonight, Lantern Bar & Grill in the Casino of the Earth is your best bet as it is open 24 hours and serves a full menu of American favorites. The char on their burgers has that perfect backyard-grill flavor, and since it\u2019s a casual spot with a $$ price range, you don\u2019t need a reservation to enjoy a high-quality meal this late.\n\nInsider tip: Most guests don't realize you can get their full dinner menu, including steaks and fresh salads, even in the middle of the night, which makes it a hidden gem once the other kitchens have closed.\n\nAfter you finish your meal, the Wolf Den usually has some great live entertainment nearby. Are you looking for a casual weekend, or should we look at a more formal reservation like Michael Jordan's Steak House for your dinner tomorrow?",
+      "sources": [
+        {
+          "category": "restaurants",
+          "source": "mohegan_sun.json",
+          "score": 0.66
+        }
+      ],
+      "elapsed_ms": 34364,
+      "error": null
+    },
+    {
+      "turn_index": 1,
+      "user_message": "She loves Italian food",
+      "agent_response": "For a true Italian lover, Todd English's Tuscany is the standout choice for your weekend. The wood-fired aroma hits you the moment you walk in, and sitting by the indoor waterfall makes it the most romantic setting on the property. Their handmade pastas have a velvety finish that guests come back for again and again, especially when paired with a selection from their deep wine cellar.\n\nTuscany is located in the Casino of the Sky and reopens tomorrow at 5:00 PM. It is a business casual venue with a higher price range ($$$$), and I'd suggest a reservation to secure a prime spot right by the water.\n\nInsider tip: If you dine at Tuscany, ask if they can seat you near the brook\u2014the sound of the water paired with their signature wood-fired flatbreads is the ultimate way to start the meal.\n\nAfter a decadent dinner, you might enjoy catching a show at the Mohegan Sun Arena or a more intimate set at the Wolf Den. Does she usually prefer hearty red sauce classics like a slow-simmered bolognese, or is she more of a fan of fresh seafood-based Italian?",
+      "sources": [
+        {
+          "category": "restaurants",
+          "source": "mohegan_sun.json",
+          "score": 0.641
+        }
+      ],
+      "elapsed_ms": 58736,
+      "error": null
+    },
+    {
+      "turn_index": 2,
+      "user_message": "And something fun after dinner?",
+      "agent_response": "Since it's Saturday night, I've got you covered. novelle is the perfect choice if you want an upscale lounge feel with craft cocktails and a DJ \u2014 it\u2019s sophisticated but definitely brings the energy. If you\u2019re looking for something with a higher pulse, Avalon Nightclub is the largest club on the property and is open until 2:00 AM for dancing! Just keep in mind that schedules and entry requirements can change, so checking with the host team is always a good move.\n\nInsider tip: novelle has an atmosphere that feels like a private club, which makes it a great spot to transition from a nice dinner to a fun night out.\n\nAfter a late night, a morning at Elemis Spa could be the perfect way to reset before you head home tomorrow.",
+      "sources": [
+        {
+          "category": "entertainment",
+          "source": "mohegan_sun.json",
+          "score": 0.685
+        },
+        {
+          "category": "restaurants",
+          "source": "mohegan_sun.json",
+          "score": 0.652
+        }
+      ],
+      "elapsed_ms": 42693,
+      "error": null
+    }
+  ],
+  "completed": true
+}

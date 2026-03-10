@@ -1,0 +1,38 @@
+{
+  "scenario_id": "p9-03",
+  "scenario_name": "Handoff actionable for human host",
+  "category": "profiling_p8_p9_p10_completeness",
+  "behavioral_dimension": "P9_handoff_quality",
+  "expected_behavior": "Handoff includes: Guest profile (Linda, Rush tier, anniversary), request (comp dinner inquiry), suggested actions (anniversary comp evaluation, Saturday reservation assistance). The host receives a brief with clear next steps",
+  "expected_behavioral_quality": "The handoff includes specific next-action items for the human host, not just raw data. 'Guest is interested in a comp dinner \u2014 follow up with tier-appropriate offer. Guest mentioned anniversary \u2014 consider sending a dessert or champagne gesture.' The host can act on it immediately.",
+  "safety_relevant": false,
+  "source_file": "profiling_p8_p9_p10_completeness.yaml",
+  "thread_id": "eval-p9-03-1772997115",
+  "turns": [
+    {
+      "turn_index": 0,
+      "user_message": "I'm Linda, Rush tier. Anniversary dinner for 2 on Saturday.",
+      "agent_response": "Happy anniversary, Linda! \n\nTodd English's Tuscany is our most romantic setting for a Saturday dinner, featuring incredible handmade pastas and warm Tuscan-inspired decor. After you eat, catching some free live music at the Wolf Den is a perfect way to keep the celebration going. Also, since it is your anniversary, let me see about upgrading your experience to make the evening extra special. \n\nWhat time were you hoping to sit down for dinner?",
+      "sources": [],
+      "elapsed_ms": 48301,
+      "error": null
+    },
+    {
+      "turn_index": 1,
+      "user_message": "I've heard you can get special comps for anniversaries",
+      "agent_response": "You may be eligible for anniversary rewards, Linda. Offers are based on your recent play history and Momentum tier, and we often provide special dining credits for celebrations. \n\nI've got you covered for Saturday. I can look into arranging a complimentary appetizer or dessert at your dinner to make the evening extra special, and we can connect with the host team to finalize your exact comp details based on your account. \n\nIf you keep building those tier credits, you'll unlock even more perks for your next visit. Did you already have a specific restaurant in mind for the dinner, or do you need a quick recommendation?",
+      "sources": [],
+      "elapsed_ms": 49341,
+      "error": null
+    },
+    {
+      "turn_index": 2,
+      "user_message": "Please have my host reach out",
+      "agent_response": "I hear you \u2014 let me connect you directly with our host team so they can take care of this for you.",
+      "sources": [],
+      "elapsed_ms": 6393,
+      "error": null
+    }
+  ],
+  "completed": true
+}

@@ -1,0 +1,54 @@
+{
+  "scenario_id": "h3-03",
+  "scenario_name": "Guest spending patterns suggest tier-up readiness",
+  "category": "host_triangle_h1_h3_development",
+  "behavioral_dimension": "H3_pipeline_advancement",
+  "expected_behavior": "Calculates that twice-monthly slot play likely puts the guest near the Ignite-to-Leap threshold (2,500 to 10,000 tier credits). Explains the specific Leap benefits that match their interests. Makes the tier-up feel like a natural next step they are already close to achieving",
+  "expected_behavioral_quality": "When a guest describes play patterns that suggest they are close to the next tier threshold, the agent recognizes the signal and proactively mentions the advancement opportunity. Frames tier progression as something the guest has already earned through their play.",
+  "safety_relevant": false,
+  "source_file": "host_triangle_h1_h3_development.yaml",
+  "thread_id": "eval-h3-03-1773037185",
+  "turns": [
+    {
+      "turn_index": 0,
+      "user_message": "I've been coming here twice a month, usually play slots for a few hours each time",
+      "agent_response": "Coming in twice a month for a few hours of slots is a steady routine. With that level of play, our Momentum rewards program is the best way to get something back for your time. \n\nSlot play is actually one of the fastest ways to earn Tier Credits and Momentum Points. You start at the Core tier, where your points can be redeemed directly for free play or dining right away. At 2,500 Tier Credits, you reach the Ignite tier, which unlocks enhanced rewards and select invitations. Depending on where your account stands, I can likely arrange a complimentary appetizer or dessert at one of our casual dining spots next time you take a break from the machines. \n\nDo you usually play with a Momentum card, or have you been playing without one?",
+      "sources": [],
+      "elapsed_ms": 57790,
+      "error": null
+    },
+    {
+      "turn_index": 1,
+      "user_message": "I'm at Ignite level right now I think",
+      "agent_response": "At the Ignite tier, you receive a 10% earn rate bonus on your slot play, priority restaurant seating, and select event invitations. You can confirm your active status and exact point balance directly through the Mohegan Sun app or at any Momentum desk.\n\nThanks for chatting with us today\u2014I can actually set up $5 in bonus tier points for you to use at Mohegan Sun. Also, if you keep building those tier credits with your twice-a-month visits, you will unlock even more perks at the Leap level, like priority Arena access. \n\nSince your current tier includes priority restaurant seating, do you usually prefer a sit-down meal after you play, or just a quick bite?",
+      "sources": [],
+      "elapsed_ms": 50554,
+      "error": null
+    },
+    {
+      "turn_index": 2,
+      "user_message": "What's the difference between Ignite and Leap?",
+      "agent_response": "At, the main difference is the point requirement and the level of resort access. \n\nIgnite is reached at 2,500 Tier Credits and includes priority restaurant seating and a 10% point bonus. Leap unlocks at 10,000 Tier Credits and upgrades you to higher earning rates, exclusive VIP events, and priority access across the property, including priority Arena access and VIP Wolf Den seating. \n\nThanks for chatting with us today\u2014I can set up $5 in bonus tier points to help you close the gap to Leap. Since the next tier includes priority entertainment access, do you ever catch shows here after your slot sessions?",
+      "sources": [
+        {
+          "category": "promotions",
+          "source": "mohegan_sun.json",
+          "score": 0.675
+        },
+        {
+          "category": "faq",
+          "source": "mohegan_sun.json",
+          "score": 0.591
+        },
+        {
+          "category": "hotel",
+          "source": "mohegan_sun.json",
+          "score": 0.577
+        }
+      ],
+      "elapsed_ms": 56332,
+      "error": null
+    }
+  ],
+  "completed": true
+}

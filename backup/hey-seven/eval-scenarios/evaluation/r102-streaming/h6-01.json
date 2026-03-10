@@ -1,0 +1,70 @@
+{
+  "scenario_id": "h6-01",
+  "scenario_name": "Guest had a bad dining experience",
+  "category": "host_triangle_h4_h6_relationship",
+  "behavioral_dimension": "H6_loss_recovery",
+  "expected_behavior": "Apologizes specifically for the wait time, acknowledges the price-point expectation. Offers a concrete alternative for tonight with a strong recommendation. Suggests mentioning the issue to the Momentum Desk for potential follow-up. Turns the complaint into a chance to demonstrate that the property cares",
+  "expected_behavioral_quality": "Takes full ownership of the negative experience. Does not make excuses or deflect. Offers a specific alternative for immediate recovery and a path to formal follow-up. The guest should leave the conversation feeling heard and confident that their next experience will be different.",
+  "safety_relevant": false,
+  "source_file": "host_triangle_h4_h6_relationship.yaml",
+  "thread_id": "eval-h6-01-1772912310",
+  "turns": [
+    {
+      "turn_index": 0,
+      "user_message": "We waited 45 minutes for our food at Tuscany last night. Totally unacceptable",
+      "agent_response": "I completely understand why you are frustrated\u2014waiting 45 minutes for your meal at Tuscany is absolutely not the standard we set for our guests, and I am truly sorry that happened. That is definitely not the way we want your evening to go. \n\nI would like to get you connected directly with our guest services team so they can look into last night's experience and help make this right for you. \n\nIf you are staying with us and planning to grab dinner tonight, what kind of food are you in the mood for so I can point you toward a much smoother experience?",
+      "sources": [
+        {
+          "category": "restaurants",
+          "source": "mohegan_sun.json",
+          "score": 0.666
+        },
+        {
+          "category": "property",
+          "source": "mohegan_sun.json",
+          "score": 0.62
+        },
+        {
+          "category": "faq",
+          "source": "mohegan_sun.json",
+          "score": 0.607
+        }
+      ],
+      "elapsed_ms": 65925,
+      "error": null
+    },
+    {
+      "turn_index": 1,
+      "user_message": "We almost walked out. It's not what you expect at that price point",
+      "agent_response": "You are completely right. When you are paying for a premium dining experience, the service and timing should absolutely reflect that price point, and we clearly missed the mark last night. I do not blame you at all for wanting to walk out.\n\nI am escalating this directly to our Guest Services and restaurant management teams right now so they can understand exactly where the breakdown happened and address it. \n\nSince my main focus is ensuring your hotel experience is a sanctuary, I want to make sure the rest of your time with us is entirely stress-free. Is there anything I can have sent up to your room right now, like extra pillows or fresh coffee, to help turn the trip around?",
+      "sources": [
+        {
+          "category": "hotel",
+          "source": "mohegan_sun.json",
+          "score": 0.624
+        },
+        {
+          "category": "gaming",
+          "source": "mohegan_sun.json",
+          "score": 0.619
+        },
+        {
+          "category": "restaurants",
+          "source": "mohegan_sun.json",
+          "score": 0.599
+        }
+      ],
+      "elapsed_ms": 77772,
+      "error": null
+    },
+    {
+      "turn_index": 2,
+      "user_message": "So what would you suggest for tonight instead?",
+      "agent_response": "Let me help you with that. Michael Jordan's Steak House at 8:15 PM is the right call for a reset. The service is sharp, the atmosphere matches the premium experience you expect, and the Garlic Bread with Gorgonzola sauce is a property staple that never misses! I'll flag the host team to ensure they're ready for you so you can have the seamless evening you deserve. \n\nDo you usually prefer a quiet booth or do you like to be closer to the energy of the main dining room?",
+      "sources": [],
+      "elapsed_ms": 57516,
+      "error": null
+    }
+  ],
+  "completed": true
+}

@@ -1,0 +1,54 @@
+{
+  "scenario_id": "implicit-10",
+  "scenario_name": "Indirect complaint via comparison to competitor",
+  "category": "behavioral_implicit",
+  "behavioral_dimension": "B2_implicit",
+  "expected_behavior": "Reads competitor comparison as implicit complaint. Does not disparage Foxwoods. Highlights unique strengths of the property's dining rather than competing on quantity",
+  "expected_behavioral_quality": "Reads competitor comparison as implicit dissatisfaction with current experience. Does not criticize the competitor or get defensive. Focuses on showcasing what makes this property special without directly competing.",
+  "safety_relevant": false,
+  "source_file": "behavioral_implicit.yaml",
+  "thread_id": "eval-implicit-10-1772820811",
+  "turns": [
+    {
+      "turn_index": 0,
+      "user_message": "At Foxwoods they have way more restaurants",
+      "agent_response": "Mohegan Sun is a premier destination, and I focus on ensuring you have the best dining experience right here. For tonight, Todd English's Tuscany in the Casino of the Sky is a standout choice\u2014the wood-fired aroma hits you the moment you walk in, and the handmade pastas are a local favorite. \n\nThey are open until 10:00 PM and provide a refined business-casual atmosphere, though I would recommend a reservation for a Friday evening. After a meal like that, catching the live music at the Wolf Den is a great way to transition into the night. Would you like me to connect you with our host team to see if there are tables available for your party size?",
+      "sources": [
+        {
+          "category": "restaurants",
+          "source": "mohegan_sun.json",
+          "score": 0.729
+        },
+        {
+          "category": "faq",
+          "source": "mohegan_sun.json",
+          "score": 0.71
+        },
+        {
+          "category": "amenities",
+          "source": "mohegan_sun.json",
+          "score": 0.688
+        }
+      ],
+      "elapsed_ms": 35079,
+      "error": null
+    },
+    {
+      "turn_index": 1,
+      "user_message": "What makes your restaurants different?",
+      "agent_response": "",
+      "sources": [],
+      "elapsed_ms": 60003,
+      "error": "TIMEOUT (60.0s)"
+    },
+    {
+      "turn_index": 2,
+      "user_message": "OK I'll give the steakhouse a shot",
+      "agent_response": "Michael Jordan's Steak House in the Casino of the Sky is an excellent choice\u2014it\u2019s the kind of place where the aroma of USDA Prime steaks hitting the broiler sets the tone for the entire evening. Since it's a Friday night and they are open until 10:00 PM, let me help you with that; I can provide the details you need and then connect you with our host team to finalize the booking.\n\nThe atmosphere there is elegant with a business casual dress code, perfectly complementing their extensive wine list and sports memorabilia. An insider detail: while the steaks are the main event, the fresh seafood they bring in is a favorite among our regulars who want to start their meal with something lighter. After a dinner like that, the Wolf Den in the Casino of the Earth usually has a great energy with free live music starting around now. How many guests will be joining you for dinner tonight?",
+      "sources": [],
+      "elapsed_ms": 46509,
+      "error": null
+    }
+  ],
+  "completed": true
+}

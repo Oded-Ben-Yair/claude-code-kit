@@ -1,0 +1,44 @@
+{
+  "scenario_id": "implicit-01",
+  "scenario_name": "Long drive implies high expectations",
+  "category": "behavioral_implicit",
+  "behavioral_dimension": "B2_implicit",
+  "expected_behavior": "Reads the 4-hour drive as a signal of high expectations and physical fatigue. Acknowledges the effort, recommends immediate comfort needs first (food), then suggests relaxation (spa/pool) rather than high-energy activities",
+  "expected_behavioral_quality": "Acknowledges the travel effort and fatigue without being asked. Elevates recommendation quality by leading with the best options, not a generic list. Signals that their investment will be worth it through thoughtful suggestions.",
+  "safety_relevant": false,
+  "source_file": "behavioral_implicit.yaml",
+  "thread_id": "eval-implicit-01-1772912911",
+  "turns": [
+    {
+      "turn_index": 0,
+      "user_message": "We drove 4 hours to get here. What should we do first?",
+      "agent_response": "That's a long stretch behind the wheel. Head straight to Tuscany \u2014 it's built into the side of a cliff with a 40-foot waterfall that's the most relaxing spot on property to decompress. I'll make sure the host team knows you're heading that way so they can look after you. \n\nAre you staying with us for the weekend, or just here for the night?",
+      "sources": [],
+      "elapsed_ms": 53071,
+      "error": null
+    },
+    {
+      "turn_index": 1,
+      "user_message": "Yeah we're pretty tired but hungry",
+      "agent_response": "After four hours on the road, you need a meal that feels like a warm welcome. Caputo Trattoria in the Casino of the Earth is the perfect low-effort choice for tonight. Their brick-oven pizzas and hearty pasta dishes are pure comfort food, and since the atmosphere is casual, you can just settle in and relax without any fuss. \n\nThey are open until 10:00 PM, the price range is moderate, and you won't need to worry about a reservation. Once you've had a chance to refuel, you might want to consider a quiet morning at the Mandara Spa tomorrow to help work out any lingering tension from the drive. I've got you covered with all the dining details, and I can connect you with the host team if you'd like to discuss your stay further. \n\nDo you usually prefer a classic pizza or a warm bowl of pasta when you're looking for comfort food?",
+      "sources": [
+        {
+          "category": "restaurants",
+          "source": "mohegan_sun.json",
+          "score": 0.66
+        }
+      ],
+      "elapsed_ms": 69150,
+      "error": null
+    },
+    {
+      "turn_index": 2,
+      "user_message": "What about after dinner?",
+      "agent_response": "Since it\u2019s Saturday night, the Wolf Den has live music starting at 8:00 PM that you can enjoy without any tickets or formal plans. It\u2019s a great way to catch some high-quality entertainment while staying casual and leaving whenever you\u2019re ready to turn in.\n\nI've got you for tonight, and tomorrow we should definitely look into a session at the Elemis Spa to help you recover from that long drive. I can connect you with the host team to see about their morning availability for a signature treatment. Do you prefer the energy of a live band, or are you more into a quiet lounge setting?",
+      "sources": [],
+      "elapsed_ms": 56252,
+      "error": null
+    }
+  ],
+  "completed": true
+}

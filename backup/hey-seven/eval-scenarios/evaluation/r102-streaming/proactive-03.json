@@ -1,0 +1,96 @@
+{
+  "scenario_id": "proactive-03",
+  "scenario_name": "Guest mentions checkout \u2014 agent proactively suggests late checkout",
+  "category": "behavioral_proactive",
+  "behavioral_dimension": "B4_agentic",
+  "expected_behavior": "Reads the checkout constraint and provides morning-only recommendations. Suggests activities that fit within the time window. Proactively mentions late checkout availability through the front desk",
+  "expected_behavioral_quality": "When a guest mentions tomorrow's checkout, proactively asks about late checkout or suggests activities that fit the departure timeline. Does not wait for the guest to bring up time constraints.",
+  "safety_relevant": false,
+  "source_file": "behavioral_proactive.yaml",
+  "thread_id": "eval-proactive-03-1772918828",
+  "turns": [
+    {
+      "turn_index": 0,
+      "user_message": "We check out tomorrow at noon. What can we do in the morning?",
+      "agent_response": "Since you have until noon, you could start your morning with a reset at the Elemis Spa in the Earth Tower, which opens right at 9:00 AM. If you want to get some movement in before the drive or flight home, the Shops at Mohegan Sun open at 10:00 AM for some morning browsing. For a final meal, Hash House A Go Go in the Casino of the Earth starts serving their famous oversized brunch dishes at 8:00 AM.\n\nPro tip \u2014 the Elemis Spa often has more availability for express services right when they open if you want a quick treatment without spending the whole morning there. Are you looking for a relaxing way to end the trip, or are you trying to fit in one last bit of excitement?",
+      "sources": [
+        {
+          "category": "faq",
+          "source": "mohegan_sun.json",
+          "score": 0.714
+        },
+        {
+          "category": "amenities",
+          "source": "mohegan_sun.json",
+          "score": 0.654
+        },
+        {
+          "category": "entertainment",
+          "source": "mohegan_sun.json",
+          "score": 0.651
+        },
+        {
+          "category": "restaurants",
+          "source": "mohegan_sun.json",
+          "score": 0.635
+        }
+      ],
+      "elapsed_ms": 45055,
+      "error": null
+    },
+    {
+      "turn_index": 1,
+      "user_message": "Is there a spa appointment available in the morning?",
+      "agent_response": "I've got you \u2014 both Mandara Spa and the Elemis Spa at Earth Tower open at 9:00 AM tomorrow morning. Since you are heading out by noon, the Elemis Spa is an excellent choice as they specialize in express services that can get you recharged without taking up your entire morning. \n\nIf you would rather spend your final hours here in a steam room or sauna, Mandara Spa offers a more traditional Balinese-inspired retreat that opens at the same time. Availability for Sunday mornings can fill up fast, so I'd suggest confirming your preferred time with the spa desks directly or I can connect you with our host team to help finalize those details. Before you head to the spa, a quick breakfast at The Bean and Leaf is right on the way and perfect for a light morning. \n\nAre you looking for a quick express treatment or a full-body massage to wrap up your stay?",
+      "sources": [
+        {
+          "category": "amenities",
+          "source": "mohegan_sun.json",
+          "score": 0.706
+        },
+        {
+          "category": "faq",
+          "source": "mohegan_sun.json",
+          "score": 0.661
+        },
+        {
+          "category": "hotel",
+          "source": "mohegan_sun.json",
+          "score": 0.623
+        }
+      ],
+      "elapsed_ms": 30713,
+      "error": null
+    },
+    {
+      "turn_index": 2,
+      "user_message": "Good idea. And breakfast before that?",
+      "agent_response": "Hash House A Go Go is the standout choice for a Sunday morning, and since they open at 8:00 AM in the Casino of the Earth, you'll have just enough time to eat before a 9:00 AM spa appointment. They are famous for what they call \"twisted farm food,\" which means you're getting massive, high-energy portions like their signature sage fried chicken and waffles or pancakes the size of a steering wheel.\n\nIt is a casual spot and doesn't require reservations, but because the portions are so legendary, you might want to share a plate if you're planning on a spa treatment right after. If you find yourself running a few minutes behind, our 24-hour room service is also an excellent fallback to ensure you don't miss a second of your relaxation time. After your treatment and checkout, a quick stroll through the Shops at Mohegan Sun is a great way to walk off that breakfast before the drive home.\n\nAre you more of a savory breakfast person, or do those giant pancakes sound like the right move for your final morning?",
+      "sources": [
+        {
+          "category": "restaurants",
+          "source": "mohegan_sun.json",
+          "score": 0.659
+        },
+        {
+          "category": "hotel",
+          "source": "mohegan_sun.json",
+          "score": 0.636
+        },
+        {
+          "category": "faq",
+          "source": "mohegan_sun.json",
+          "score": 0.636
+        },
+        {
+          "category": "amenities",
+          "source": "mohegan_sun.json",
+          "score": 0.634
+        }
+      ],
+      "elapsed_ms": 38712,
+      "error": null
+    }
+  ],
+  "completed": true
+}

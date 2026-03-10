@@ -1,0 +1,76 @@
+{
+  "scenario_id": "p2-06",
+  "scenario_name": "Agent probes after providing value first",
+  "category": "profiling_p2_active_probing",
+  "behavioral_dimension": "P2_active_probing",
+  "expected_behavior": "First response lists shows AND naturally asks who's attending or what kind of show they enjoy. The show listing is complete regardless of whether the guest answers the follow-up. Value first, probe second",
+  "expected_behavioral_quality": "Demonstrates the give-to-get pattern: first delivers a genuine answer to the guest's question, THEN asks a natural follow-up profiling question. The answer must be complete and useful on its own, not gated behind the profiling question.",
+  "safety_relevant": false,
+  "source_file": "profiling_p2_active_probing.yaml",
+  "thread_id": "eval-p2-06-1772839602",
+  "turns": [
+    {
+      "turn_index": 0,
+      "user_message": "What shows are on tonight?",
+      "agent_response": "It is a lively Friday night here, and Avalon Nightclub is currently the center of the action with its state-of-the-art sound system and DJs playing until 2:00 AM. If you are looking for something more upscale, novelle is also open tonight, offering a sophisticated lounge vibe that is perfect for late-night cocktails. While the Wolf Den's main performance typically starts earlier in the evening, the energy in that intimate space is always worth a visit.\n\nPro tip: if you plan on heading to Avalon, the 1,500-capacity room fills up fast on weekends, so heading over now will help you beat the peak crowd. Tomorrow morning, you might appreciate a visit to Elemis Spa to reset for the day. Are you looking for a high-energy dance floor or a more relaxed spot for a drink tonight?",
+      "sources": [
+        {
+          "category": "entertainment",
+          "source": "mohegan_sun.json",
+          "score": 0.663
+        },
+        {
+          "category": "faq",
+          "source": "mohegan_sun.json",
+          "score": 0.668
+        }
+      ],
+      "elapsed_ms": 36691,
+      "error": null
+    },
+    {
+      "turn_index": 1,
+      "user_message": "Just me and a friend",
+      "agent_response": "Novelle is a great choice for two people since it offers a mix of an upscale lounge and a dance floor without being as crowded as the main nightclub. They specialize in craft cocktails and have a more intimate feel, which makes it easier to actually catch up with a friend while still enjoying the DJ. \n\nPro tip: if you find yourselves getting hungry later, The Lansdowne Irish Pub is nearby and stays open late for a casual bite. Tomorrow, the Mandara Spa is a great place to relax after a night out. Would you prefer a table with bottle service or are you happy just grabbing a spot at the bar tonight?",
+      "sources": [
+        {
+          "category": "entertainment",
+          "source": "mohegan_sun.json",
+          "score": 0.618
+        },
+        {
+          "category": "amenities",
+          "source": "mohegan_sun.json",
+          "score": 0.592
+        },
+        {
+          "category": "hotel",
+          "source": "mohegan_sun.json",
+          "score": 0.59
+        }
+      ],
+      "elapsed_ms": 28540,
+      "error": null
+    },
+    {
+      "turn_index": 2,
+      "user_message": "Comedy sounds fun",
+      "agent_response": "Comix Roadhouse is our premier comedy club, and while the Friday night sets are likely wrapping up at this hour, the bar and restaurant area stays lively for a late-night hang with a friend. It is an intimate 400-seat venue that brings in major touring acts every weekend, so you can definitely catch a full show tomorrow.\n\nPro tip: The club has hosted legends like Kevin Hart and Bill Burr, so the talent level is always high even for the earlier sets. If you stay out late, the Elemis Spa offers a legendary hot stone massage that is the perfect way to recharge on Saturday morning. Would you like me to find the specific showtimes for tomorrow's comedy lineup?",
+      "sources": [
+        {
+          "category": "entertainment",
+          "source": "mohegan_sun.json",
+          "score": 0.677
+        },
+        {
+          "category": "property",
+          "source": "mohegan_sun.json",
+          "score": 0.639
+        }
+      ],
+      "elapsed_ms": 36962,
+      "error": null
+    }
+  ],
+  "completed": true
+}

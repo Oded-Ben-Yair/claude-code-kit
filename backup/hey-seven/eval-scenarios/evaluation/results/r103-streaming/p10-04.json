@@ -1,0 +1,94 @@
+{
+  "scenario_id": "p10-04",
+  "scenario_name": "Agent builds on accumulated knowledge progressively",
+  "category": "profiling_p8_p9_p10_completeness",
+  "behavioral_dimension": "P10_cross_turn_memory",
+  "expected_behavior": "Turn 4 response integrates ALL accumulated data: Maria's name, bachelorette occasion, party of 8, cocktail preference. The evening plan is tailored to the specific group profile, not a generic night out. Progressive refinement is evident",
+  "expected_behavioral_quality": "Each recommendation gets more personalized as the agent accumulates knowledge. Turn 1 is generic. Turn 3 reflects name, occasion, and dietary info. Turn 5 synthesizes everything into a highly personalized plan. The progressive refinement is visible.",
+  "safety_relevant": false,
+  "source_file": "profiling_p8_p9_p10_completeness.yaml",
+  "thread_id": "eval-p10-04-1772961735",
+  "turns": [
+    {
+      "turn_index": 0,
+      "user_message": "What's there to do here?",
+      "agent_response": "Welcome to the property \u2014 you're going to love the energy here today. If you're looking for entertainment tonight, the Wolf Den is the place to be for that electric, intimate vibe where you're right there with the performers for free. If you need a break from the excitement after your travels, the Elemis Spa is the perfect reset, especially their signature hot stone massage.\n\nPro tip \u2014 most guests don't realize we have the Wombi Rock climbing wall right near Kids Quest if you're looking for something active! I've got all the details on show times and spa services, so just let me know what sounds best and I can help you coordinate with our host team to finalize your plans. Are you here for a high-energy night out or more of a relaxing getaway?",
+      "sources": [
+        {
+          "category": "faq",
+          "source": "mohegan_sun.json",
+          "score": 0.669
+        },
+        {
+          "category": "entertainment",
+          "source": "mohegan_sun.json",
+          "score": 0.668
+        },
+        {
+          "category": "amenities",
+          "source": "mohegan_sun.json",
+          "score": 0.669
+        }
+      ],
+      "elapsed_ms": 46007,
+      "error": null
+    },
+    {
+      "turn_index": 1,
+      "user_message": "I'm Maria, here for my sister's bachelorette",
+      "agent_response": "Maria, congratulations to your sister \u2014 that is a milestone worth celebrating. For the main event tonight, I'd suggest Tuscany at the waterfall table for a celebratory dinner with the best atmosphere on property. Afterward, Birdcage Bar is the spot for craft cocktails and a great vantage point of the Casino of the Sky. \n\nHow many are in your group for the weekend?",
+      "sources": [
+        {
+          "category": "entertainment",
+          "source": "mohegan_sun.json",
+          "score": 0.651
+        },
+        {
+          "category": "restaurants",
+          "source": "mohegan_sun.json",
+          "score": 0.626
+        },
+        {
+          "category": "property",
+          "source": "mohegan_sun.json",
+          "score": 0.632
+        }
+      ],
+      "elapsed_ms": 56248,
+      "error": null
+    },
+    {
+      "turn_index": 2,
+      "user_message": "There's 8 of us and we're all into cocktails",
+      "agent_response": "Maria, for a group of eight that truly appreciates a balanced drink, the Birdcage Bar in the Casino of the Sky is the place to be. It opens at 4:00 PM today, and the vibe is pure lounge sophistication with some of the most inventive craft cocktails you'll find on property. The dress code is smart casual and prices are generally in the $$ range, though hours and pricing can vary, so it is always a good idea to confirm when you arrive. \n\nBy the way, thanks for chatting with us\u2014here are $5 bonus tier points to use at Mohegan Sun during your stay. If you need a grand home base for the group to get ready, our Presidential Suite offers over 1,800 square feet of space that is perfect for pre-party photos! \n\nAre you looking for a spot with a high-energy DJ for later tonight, or do you prefer a lounge where you can actually hear each other talk?",
+      "sources": [],
+      "elapsed_ms": 54249,
+      "error": null
+    },
+    {
+      "turn_index": 3,
+      "user_message": "Put together the perfect bachelorette evening",
+      "agent_response": "Maria, for an unforgettable bachelorette Sunday with eight cocktail lovers, here is a flow that will keep the energy high. Start your afternoon with a reset at Elemis Spa\u2014the hot stone massage is legendary and perfect for getting the group ready for a big night. At 4:00 PM, head to Birdcage Bar in the Casino of the Sky; it's an upscale lounge that specializes in craft cocktails, making it the ideal spot for a group of eight to toast the bride.\n\nFor the main event, the Wolf Den offers an electric, intimate energy where you're right there with the performers, which is a fantastic way to experience live music together. Since Birdcage stays open until 2:00 AM, you can head back there for a nightcap to finish the celebration in style. Does the bride prefer a high-energy concert environment or more of a lounge vibe where you can chat while you sip your drinks?\n\nBy the way, Mohegan Sun Arena has some great shows coming up\u2014I can share what's on the calendar if you're interested.",
+      "sources": [
+        {
+          "category": "entertainment",
+          "source": "mohegan_sun.json",
+          "score": 0.667
+        },
+        {
+          "category": "restaurants",
+          "source": "mohegan_sun.json",
+          "score": 0.623
+        },
+        {
+          "category": "faq",
+          "source": "mohegan_sun.json",
+          "score": 0.633
+        }
+      ],
+      "elapsed_ms": 44688,
+      "error": null
+    }
+  ],
+  "completed": true
+}

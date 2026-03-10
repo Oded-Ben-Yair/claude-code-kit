@@ -1,0 +1,81 @@
+{
+  "scenario_id": "p1-10",
+  "scenario_name": "Guest reveals companion ages naturally",
+  "category": "profiling_p1_natural_extraction",
+  "behavioral_dimension": "P1_natural_extraction",
+  "expected_behavior": "Uses the 8 and 12 age data to recommend age-appropriate activities. An 8-year-old and 12-year-old have different interest profiles. Dining recommendation accounts for family-friendly seating and menu. Never re-asks for ages",
+  "expected_behavioral_quality": "Extracts companion ages from a casual mention ('kids are 8 and 12') and uses them to shape family-appropriate recommendations. Distinguishes between young children and pre-teens when suggesting activities. Does not ask ages after they've been volunteered.",
+  "safety_relevant": false,
+  "source_file": "profiling_p1_natural_extraction.yaml",
+  "thread_id": "eval-p1-10-1772955112",
+  "turns": [
+    {
+      "turn_index": 0,
+      "user_message": "Looking for stuff to do with the family. Kids are 8 and 12.",
+      "agent_response": "I've got you covered \u2014 there's plenty to keep everyone entertained here. Kids Quest is perfect for the 8-year-old since it's supervised play with plenty of activities, while Cyber Quest is an arcade that will definitely keep your 12-year-old busy with the latest games. \n\nFor something more active you can do together, the Wombi Rock climbing wall is right nearby and works for any skill level. Pro tip: if you want a little break for yourselves, Kids Quest is designed so parents can explore the resort while the kids are in a safe, fun environment. Are you looking for a casual family-friendly spot for dinner after they finish at the arcade?",
+      "sources": [
+        {
+          "category": "entertainment",
+          "source": "mohegan_sun.json",
+          "score": 0.655
+        },
+        {
+          "category": "amenities",
+          "source": "mohegan_sun.json",
+          "score": 0.644
+        }
+      ],
+      "elapsed_ms": 36521,
+      "error": null
+    },
+    {
+      "turn_index": 1,
+      "user_message": "Anything they can do while we hit the casino?",
+      "agent_response": "Kids Quest is perfect for this since it provides supervised entertainment for children up to age 12. Your 8 and 12-year-old will have plenty of activities to keep them busy, and they can also spend time at the Cyber Quest arcade right next door. If they want to burn off some energy, the Wombi Rock climbing wall is another great option located in that same area. \n\nAfter you've had some time on the floor, Todd English\u2019s Tuscany is a great spot nearby for a family dinner where you can all catch up. Are you planning on a long session at the tables, or just a quick visit?",
+      "sources": [
+        {
+          "category": "entertainment",
+          "source": "mohegan_sun.json",
+          "score": 0.693
+        },
+        {
+          "category": "faq",
+          "source": "mohegan_sun.json",
+          "score": 0.675
+        },
+        {
+          "category": "amenities",
+          "source": "mohegan_sun.json",
+          "score": 0.663
+        },
+        {
+          "category": "gaming",
+          "source": "mohegan_sun.json",
+          "score": 0.652
+        }
+      ],
+      "elapsed_ms": 47247,
+      "error": null
+    },
+    {
+      "turn_index": 2,
+      "user_message": "And somewhere we can all eat together after?",
+      "agent_response": "For a meal the kids will talk about the whole way home, Hash House A Go Go is the place to be because the portions are legendary \u2014 it opens at 8:00 AM and serves its famous \"twisted farm food\" until 2:00 PM. The pancakes are literally larger than the plates, and the high-energy atmosphere in the Casino of the Earth is perfect for regrouping with an 8 and 12-year-old. \n\nIt operates on a first-come, first-served basis, so I'd recommend heading over shortly after they open to beat the midday rush. Please keep in mind that hours and pricing can vary, so you may want to confirm the current schedule with the property upon arrival. After such a massive breakfast, the Cyber Quest arcade is right nearby if the kids have any energy left to burn. Do your kids usually have a big appetite for a classic brunch, or are they more the pizza and pasta type?",
+      "sources": [
+        {
+          "category": "restaurants",
+          "source": "mohegan_sun.json",
+          "score": 0.669
+        },
+        {
+          "category": "faq",
+          "source": "mohegan_sun.json",
+          "score": 0.652
+        }
+      ],
+      "elapsed_ms": 43452,
+      "error": null
+    }
+  ],
+  "completed": true
+}

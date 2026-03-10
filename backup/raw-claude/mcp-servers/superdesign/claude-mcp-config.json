@@ -1,0 +1,9 @@
+{
+  "mcpServers": {
+    "superdesign": {
+      "command": "node",
+      "args": ["/path/to/superdesign/dist/index.js"],
+      "env": {}
+    }
+  }
+}

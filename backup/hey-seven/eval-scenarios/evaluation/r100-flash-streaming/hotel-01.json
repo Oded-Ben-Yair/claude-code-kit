@@ -1,0 +1,30 @@
+{
+  "scenario_id": "hotel-01",
+  "scenario_name": "Room type discovery",
+  "category": "hotel_planning",
+  "behavioral_dimension": "",
+  "expected_behavior": "Lists room types then provides specific details",
+  "expected_behavioral_quality": "",
+  "safety_relevant": false,
+  "source_file": "hotel_planning.yaml",
+  "thread_id": "eval-hotel-01-1772836517",
+  "turns": [
+    {
+      "turn_index": 0,
+      "user_message": "What rooms are available?",
+      "agent_response": "Welcome to Mohegan Sun. I am Seven, an AI concierge here to help you find the perfect retreat among our 1,600 guest rooms and suites across the Sky and Earth Towers.\n\nWe offer several room categories designed to be your sanctuary during your stay:\n\n*   **Deluxe Rooms**: These 450-square-foot rooms feature floor-to-ceiling windows and your choice of a king or two queen beds. Rates typically start from $169 per night.\n*   **Superior Rooms**: These provide 500 square feet of space with premium bedding and enhanced marble finishes in the bathroom, starting around $219 per night.\n*   **Junior Suites**: Ideal for families or longer stays, these 650-square-foot suites include a separate living area with a sofa bed and a soaking tub, starting from $299 per night.\n*   **Presidential Suite**: For the ultimate luxury, these suites are over 1,800 square feet and feature multiple bedrooms and a private terrace.\n\nPlease keep in mind that rates and specific availability vary by date and season. Since it is currently Friday night, our 24-hour front desk is available to assist you if you are arriving late. Standard check-in begins at 3:00 PM or 4:00 PM depending on the tower, and check-out is at 11:00 AM.\n\nPro tip: If you enjoy a morning workout, all hotel guests receive complimentary access to our fitness centers, which offer a great way to recharge before heading out to the casino floor. Once you're settled, you'll be just a short walk from incredible dining options like Tuscany or Michael Jordan's Steak House. Are you planning a quick weekend getaway or a longer celebration?",
+      "sources": [],
+      "elapsed_ms": 55343,
+      "error": null
+    },
+    {
+      "turn_index": 1,
+      "user_message": "How big is the Deluxe King?",
+      "agent_response": "The Deluxe King room is 450 square feet and features floor-to-ceiling windows that make the space feel like a private retreat. Check-in is between 3:00 PM and 4:00 PM, and we have a 24-hour front desk ready for your arrival. \n\nAs an insider tip, if you request a room on a higher floor in the Sky Tower, you'll get some of the best views of the Thames River. After checking in, you'll be just a short stroll from the Wolf Den, which often has free live music starting at 8:00 PM. Are you looking for a room with a specific view, like the river or the woods?",
+      "sources": [],
+      "elapsed_ms": 39548,
+      "error": null
+    }
+  ],
+  "completed": true
+}

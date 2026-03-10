@@ -1,0 +1,59 @@
+{
+  "scenario_id": "h8-03",
+  "scenario_name": "Guest receiving a promotional offer",
+  "category": "host_triangle_h7_h10_revenue",
+  "behavioral_dimension": "H8_strategic_offer_framing",
+  "expected_behavior": "Validates that the double points weekend is worthwhile by connecting it to the guest's tier progression and earning potential. Frames the promotion as an accelerator for benefits the guest already cares about. Makes coming in this weekend feel like a strategic decision, not a marketing response",
+  "expected_behavioral_quality": "When presenting a promotion, the agent frames it as something special rather than mass-distributed. Uses personal language and connects the offer to the guest's known preferences. The promotion should feel selected for them, not blasted to an email list.",
+  "safety_relevant": false,
+  "source_file": "host_triangle_h7_h10_revenue.yaml",
+  "thread_id": "eval-h8-03-1772953178",
+  "turns": [
+    {
+      "turn_index": 0,
+      "user_message": "I got an email about double Momentum Points this weekend. Is that worth coming in for?",
+      "agent_response": "Double Momentum Points allow you to earn spendable rewards at twice the standard rate for gaming, hotel stays, and dining. These points are redeemable for dining, hotel stays, and retail purchases throughout the property. This promotion helps you build a balance for your next visit more efficiently.\n\nAt 2,500 Tier Credits you hit the Ignite tier, which opens up a 10% point earning bonus and priority restaurant seating. Pro tip: Points earned during these promotions can be used immediately at any of our shops or restaurants, allowing you to cover your meal with your morning's play.\n\nYou should visit any Momentum Desk to confirm the promotion is active on your account before you start. Do you usually prefer table games or slots?",
+      "sources": [],
+      "elapsed_ms": 58723,
+      "error": null
+    },
+    {
+      "turn_index": 1,
+      "user_message": "How much faster does that add up?",
+      "agent_response": "Double Momentum Points means you earn spendable rewards at twice the standard rate for your play and purchases. For example, if you typically earn $10 in points during a session, you would earn $20 during this promotion.\n\nThese points are redeemable for dining, hotel stays, and retail purchases. It is important to distinguish points from Tier Credits; while points are spendable currency, Tier Credits determine your status level. Reaching the Ignite tier at 2,500 Tier Credits provides a permanent 10% boost to your point earning rate.\n\nThe exact speed of earning depends on the games you play and your duration of play. You should visit the Momentum Desk to confirm if this double point offer also applies to Tier Credits for your specific account.\n\nAre you planning to use your points for dinner at a spot like Tuscany or for shopping while you're here?",
+      "sources": [
+        {
+          "category": "promotions",
+          "source": "mohegan_sun.json",
+          "score": 0.638
+        },
+        {
+          "category": "faq",
+          "source": "mohegan_sun.json",
+          "score": 0.623
+        },
+        {
+          "category": "gaming",
+          "source": "mohegan_sun.json",
+          "score": 0.626
+        },
+        {
+          "category": "hotel",
+          "source": "mohegan_sun.json",
+          "score": 0.623
+        }
+      ],
+      "elapsed_ms": 50115,
+      "error": null
+    },
+    {
+      "turn_index": 2,
+      "user_message": "Alright, I'm in. Coming this Saturday",
+      "agent_response": "I've got you, in, and coming this Saturday is a smart move with those double points in play. The resort has an electric energy on Saturday nights that you'll really enjoy. \n\nFor entertainment, you can catch live music at the Wolf Den or head over to Avalon Nightclub starting at 10:00 PM if you want a higher-energy atmosphere. If you're looking to balance the excitement with some relaxation, Elemis Spa is the perfect spot for a reset\u2014their hot stone massage is legendary. Since you'll be here for the nightlife, staying at the resort means you can just walk back to your room instead of making the drive home. \n\nTo help me tailor your Saturday, are you coming with a group or is this more of a solo trip to focus on your play?",
+      "sources": [],
+      "elapsed_ms": 65132,
+      "error": null
+    }
+  ],
+  "completed": true
+}

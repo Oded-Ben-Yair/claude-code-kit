@@ -1,0 +1,75 @@
+{
+  "scenario_id": "p2-07",
+  "scenario_name": "Agent asks about visit duration naturally",
+  "category": "profiling_p2_active_probing",
+  "behavioral_dimension": "P2_active_probing",
+  "expected_behavior": "Uses the hotel check-in and 'through Sunday' mentions to shape a multi-day experience plan. Suggests tonight's activities with awareness that more days are available for other experiences",
+  "expected_behavioral_quality": "Learns visit duration through context rather than directly asking 'how long are you staying?' When the guest mentions hotel or multiple days, the agent can frame a multi-day plan. Otherwise, infers from cues like checkout or 'tomorrow'.",
+  "safety_relevant": false,
+  "source_file": "profiling_p2_active_probing.yaml",
+  "thread_id": "eval-p2-07-1772991673",
+  "turns": [
+    {
+      "turn_index": 0,
+      "user_message": "We just checked into the Sky Tower",
+      "agent_response": "Welcome to your retreat in the Sky Tower. Those rooms offer such a modern, tranquil feel, and the floor-to-ceiling windows provide a stunning perspective of the Thames River valley as evening approaches. \n\nSince you are centrally located, you have easy access to the Casino of the Sky and its celestial-themed atmosphere, which houses some of our most popular dining destinations. If you need any assistance with your room features or have questions about your stay, our 24-hour front desk is always available to ensure everything is perfect. \n\nAre you looking for a great spot for dinner tonight, or would you prefer some information on where to find the best morning coffee near the tower?",
+      "sources": [
+        {
+          "category": "hotel",
+          "source": "mohegan_sun.json",
+          "score": 0.728
+        },
+        {
+          "category": "gaming",
+          "source": "mohegan_sun.json",
+          "score": 0.65
+        },
+        {
+          "category": "faq",
+          "source": "mohegan_sun.json",
+          "score": 0.647
+        }
+      ],
+      "elapsed_ms": 33970,
+      "error": null
+    },
+    {
+      "turn_index": 1,
+      "user_message": "Yeah we're here through Sunday",
+      "agent_response": "A full week at the Sky Tower gives you the perfect window to experience the resort at a relaxed pace. For tonight, head to Michael Jordan\u2019s Steak House \u2014 it\u2019s right near your elevators and the best way to kick off a stay. \n\nIf you'd like, I can connect you with the host team to help coordinate your plans for the week. What brings you out for this visit?",
+      "sources": [
+        {
+          "category": "entertainment",
+          "source": "mohegan_sun.json",
+          "score": 0.648
+        },
+        {
+          "category": "hotel",
+          "source": "mohegan_sun.json",
+          "score": 0.642
+        },
+        {
+          "category": "promotions",
+          "source": "mohegan_sun.json",
+          "score": 0.641
+        },
+        {
+          "category": "faq",
+          "source": "mohegan_sun.json",
+          "score": 0.639
+        }
+      ],
+      "elapsed_ms": 49266,
+      "error": null
+    },
+    {
+      "turn_index": 2,
+      "user_message": "What should we do tonight?",
+      "agent_response": "Since it's Sunday, Comix Roadhouse is your best bet for tonight. They have comedy shows this evening, and as an insider tip: they serve a full dinner menu right at your table so you do not have to rush to eat beforehand. \n\nIf you would rather hear some live music, the Wolf Den always has free nightly shows you can just walk right into. \n\nI can have the host team look into Comix seating for you. To help me tailor my recommendations for the rest of your week, what brings you to Mohegan Sun, and how many are in your group?",
+      "sources": [],
+      "elapsed_ms": 60524,
+      "error": null
+    }
+  ],
+  "completed": true
+}

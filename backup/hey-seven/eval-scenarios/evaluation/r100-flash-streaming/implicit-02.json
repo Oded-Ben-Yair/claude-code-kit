@@ -1,0 +1,86 @@
+{
+  "scenario_id": "implicit-02",
+  "scenario_name": "Long-term loyalty member expecting recognition",
+  "category": "behavioral_implicit",
+  "behavioral_dimension": "B2_implicit",
+  "expected_behavior": "Treats 20-year membership as a VIP signal. Acknowledges their loyalty history warmly, highlights new offerings as updates for a returning guest, and references loyalty program benefits",
+  "expected_behavioral_quality": "Recognizes '20 years' as a deep loyalty signal requiring elevated treatment. Acknowledges the loyalty explicitly and with genuine warmth. Does not respond generically or treat them like a new guest. References their loyalty status even without CRM data.",
+  "safety_relevant": false,
+  "source_file": "behavioral_implicit.yaml",
+  "thread_id": "eval-implicit-02-1772819795",
+  "turns": [
+    {
+      "turn_index": 0,
+      "user_message": "I'm a Momentum member, 20 years now",
+      "agent_response": "Twenty years of membership indicates a long-standing history with Mohegan Sun. With that level of consistency, you may be eligible for benefits associated with our higher tiers, such as Ascend or the invitation-only Soar tier. These levels include access to a dedicated host, priority restaurant seating, and VIP event invitations. \n\nBased on your history, you may qualify for elevated dining options or specialized host services. To confirm your specific tier status and see any personalized offers, you can visit a Momentum Desk or check the Mohegan Sun mobile app. Pro tip: the Momentum Desk in Casino of the Sky often has shorter wait times during peak hours\u2014do you know which casino floor you'll be on today?",
+      "sources": [
+        {
+          "category": "faq",
+          "source": "mohegan_sun.json",
+          "score": 0.674
+        },
+        {
+          "category": "promotions",
+          "source": "mohegan_sun.json",
+          "score": 0.679
+        }
+      ],
+      "elapsed_ms": 34649,
+      "error": null
+    },
+    {
+      "turn_index": 1,
+      "user_message": "What's new since my last visit?",
+      "agent_response": "Since you\u2019ve been visiting for two decades, the most significant addition you'll notice is the Earth Tower. It features contemporary rooms and the Elemis Spa, which offers a more modern, tranquil atmosphere compared to the original Mandara Spa. \n\nAnother newer highlight is novelle in the Casino of the Sky\u2014it\u2019s an upscale \"ultra-lounge\" that's excellent for a sophisticated cocktail before a show. If you're looking for a more relaxed evening, the Elemis Spa has some great express treatments for guests on the move. Are you planning to stay overnight during this visit?",
+      "sources": [
+        {
+          "category": "hotel",
+          "source": "mohegan_sun.json",
+          "score": 0.664
+        },
+        {
+          "category": "entertainment",
+          "source": "mohegan_sun.json",
+          "score": 0.653
+        },
+        {
+          "category": "gaming",
+          "source": "mohegan_sun.json",
+          "score": 0.637
+        },
+        {
+          "category": "promotions",
+          "source": "mohegan_sun.json",
+          "score": 0.621
+        },
+        {
+          "category": "amenities",
+          "source": "mohegan_sun.json",
+          "score": 0.646
+        }
+      ],
+      "elapsed_ms": 42715,
+      "error": null
+    },
+    {
+      "turn_index": 2,
+      "user_message": "Do I get any perks for being a long-time member?",
+      "agent_response": "Perks in the Momentum program are based on Tier Credits earned through play and spending rather than the length of time you have been a member. Higher tiers such as Ascend or Soar provide benefits like priority restaurant seating, complimentary valet, and a dedicated host. \n\nBased on your 20-year history, you may be eligible for these types of rewards or personalized offers tied to your specific level of play. You can confirm your current tier status and point balance at any Momentum Desk or via the Mohegan Sun mobile app. Many of our long-term guests find that having a dedicated host helps streamline their visits\u2014would you like me to find out if you qualify for a host introduction?",
+      "sources": [
+        {
+          "category": "promotions",
+          "source": "mohegan_sun.json",
+          "score": 0.675
+        },
+        {
+          "category": "faq",
+          "source": "mohegan_sun.json",
+          "score": 0.646
+        }
+      ],
+      "elapsed_ms": 28583,
+      "error": null
+    }
+  ],
+  "completed": true
+}

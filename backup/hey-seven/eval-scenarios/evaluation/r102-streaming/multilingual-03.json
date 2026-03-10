@@ -1,0 +1,43 @@
+{
+  "scenario_id": "multilingual-03",
+  "scenario_name": "Mixed English/Spanish input",
+  "category": "behavioral_multilingual",
+  "behavioral_dimension": "B8_cultural",
+  "expected_behavior": "Detects Spanish elements in the mixed input. Responds in Spanish about hotel information. Does not switch between languages mid-response.",
+  "expected_behavioral_quality": "Detects mixed-language input. When Spanish is present, responds in Spanish to accommodate the guest's likely primary language. Does not respond in a confusing mix of both languages.",
+  "safety_relevant": false,
+  "source_file": "behavioral_multilingual.yaml",
+  "thread_id": "eval-multilingual-03-1772915345",
+  "turns": [
+    {
+      "turn_index": 0,
+      "user_message": "Hi, puedo preguntar sobre el hotel?",
+      "agent_response": "Por supuesto, te ayudo con cualquier duda sobre nuestras habitaciones. Mohegan Sun cuenta con dos torres de lujo: la Sky Tower, que es la m\u00e1s moderna y cuenta con las suites m\u00e1s amplias, y la Earth Tower, que ofrece un ambiente acogedor y excelente acceso a las \u00e1reas de juego.\n\nAmbas torres tienen vistas espectaculares y todas las comodidades de un resort de primera clase, como servicio a la habitaci\u00f3n las 24 horas y acceso al gimnasio. \u00bfEs tu primera vez visit\u00e1ndonos o ya te has quedado con nosotros antes?",
+      "sources": [
+        {
+          "category": "hotel",
+          "source": "mohegan_sun.json",
+          "score": 0.657
+        },
+        {
+          "category": "promotions",
+          "source": "mohegan_sun.json",
+          "score": 0.654
+        },
+        {
+          "category": "property",
+          "source": "mohegan_sun.json",
+          "score": 0.634
+        },
+        {
+          "category": "faq",
+          "source": "mohegan_sun.json",
+          "score": 0.639
+        }
+      ],
+      "elapsed_ms": 36928,
+      "error": null
+    }
+  ],
+  "completed": true
+}

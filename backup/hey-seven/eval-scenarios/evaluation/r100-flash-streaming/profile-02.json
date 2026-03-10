@@ -1,0 +1,30 @@
+{
+  "scenario_id": "profile-02",
+  "scenario_name": "Anniversary couple planning",
+  "category": "profile_building",
+  "behavioral_dimension": "",
+  "expected_behavior": "Celebrates anniversary and suggests romantic options",
+  "expected_behavioral_quality": "",
+  "safety_relevant": false,
+  "source_file": "profile_building.yaml",
+  "thread_id": "eval-profile-02-1772837146",
+  "turns": [
+    {
+      "turn_index": 0,
+      "user_message": "My name is Mike, I'm here with my wife for our anniversary",
+      "agent_response": "",
+      "sources": [],
+      "elapsed_ms": 60001,
+      "error": "TIMEOUT (60.0s)"
+    },
+    {
+      "turn_index": 1,
+      "user_message": "What would you recommend for a romantic evening?",
+      "agent_response": "Mike, for a romantic atmosphere tonight, novelle in the Casino of the Sky is an excellent choice. It\u2019s an upscale lounge with a sophisticated vibe and craft cocktails, making it a great spot for a late-night anniversary toast. \n\nFor your formal dinner tomorrow, Todd English's Tuscany is a guest favorite for its beautiful setting, including a terrace that sits right next to a 25-foot waterfall. I can certainly help you gather more details for that meal or connect you with a host to finalize a table for the two of you.\n\nThanks for chatting with us! Here are $5 bonus tier points to use at Mohegan Sun. \n\nWould you like me to check the performance schedule at the Wolf Den for tomorrow evening, or are you leaning more toward a relaxing day at the spa?",
+      "sources": [],
+      "elapsed_ms": 55226,
+      "error": null
+    }
+  ],
+  "completed": true
+}

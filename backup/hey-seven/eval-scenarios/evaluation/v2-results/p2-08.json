@@ -1,0 +1,72 @@
+{
+  "id": "p2-08",
+  "name": "Agent asks about entertainment interests",
+  "source_file": "profiling_p2_active_probing.yaml",
+  "category": "profiling_p2_active_probing",
+  "behavioral_dimension": "P2_active_probing",
+  "expected_behavior": "First response provides a broad overview and asks a narrowing question about entertainment type. When 'live music' is volunteered, immediately narrows to music venues and upcoming acts",
+  "expected_behavioral_quality": "When the guest asks a generic question about things to do, the agent provides options AND asks a narrowing question about entertainment preferences. The question is specific enough to be useful ('More into music or comedy?') rather than vague ('What do you like?').",
+  "safety_relevant": false,
+  "turns": [
+    {
+      "turn_index": 0,
+      "user_message": "What's there to do here besides gambling?",
+      "agent_response": "For tonight, the Wolf Den is the place to be for free live music in an intimate setting where you're right there with the performers. If you would prefer to recharge, the Elemis Spa is the perfect reset and their hot stone massage is legendary. \n\nYou can also explore over 40 retail shops in our concourse, which are open until 9:00 PM this evening for everything from fashion to specialty gifts. For a great start to your night, Todd English's Tuscany offers a fantastic atmosphere and wood-fired dishes just steps away from the music. Are you more interested in catching a live show or spending some time at the spa today?",
+      "sources": [
+        {
+          "category": "faq",
+          "source": "mohegan_sun.json",
+          "score": 0.705
+        },
+        {
+          "category": "amenities",
+          "source": "mohegan_sun.json",
+          "score": 0.679
+        },
+        {
+          "category": "entertainment",
+          "source": "mohegan_sun.json",
+          "score": 0.672
+        }
+      ],
+      "elapsed_ms": 49947,
+      "error": null
+    },
+    {
+      "turn_index": 1,
+      "user_message": "We love live music",
+      "agent_response": "The Wolf Den is the heart of our live music scene and has a free show tonight at 8:00 PM with an intimate energy that puts you right in front of the performer. Since it's Thursday, novelle is also open for an upscale lounge experience with craft cocktails and music if you want something more sophisticated. For dinner before the show, Todd English\u2019s Tuscany is just a short walk away and offers great wood-fired dishes. Do you prefer a high-energy concert environment or more of a relaxed lounge setting?",
+      "sources": [
+        {
+          "category": "entertainment",
+          "source": "mohegan_sun.json",
+          "score": 0.646
+        },
+        {
+          "category": "property",
+          "source": "mohegan_sun.json",
+          "score": 0.637
+        }
+      ],
+      "elapsed_ms": 35226,
+      "error": null
+    },
+    {
+      "turn_index": 2,
+      "user_message": "What's playing this weekend?",
+      "agent_response": "The Wolf Den features free live music every night at 8:00 PM, and Avalon Nightclub hosts top DJs starting Friday night. After the music, would you like a recommendation for a great late-night spot for craft cocktails?",
+      "sources": [
+        {
+          "category": "entertainment",
+          "source": "mohegan_sun.json",
+          "score": 0.658
+        }
+      ],
+      "elapsed_ms": 35312,
+      "error": null
+    }
+  ],
+  "elapsed_ms": 120486,
+  "error": null,
+  "completed": true
+}

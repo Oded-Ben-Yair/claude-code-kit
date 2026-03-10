@@ -1,0 +1,87 @@
+{
+  "id": "agentic-10",
+  "name": "Domain tracking across conversation turns",
+  "source_file": "behavioral_agentic.yaml",
+  "category": "behavioral_agentic",
+  "behavioral_dimension": "B4_agentic",
+  "expected_behavior": "Tracks that spa and dining are already done. Suggests entertainment, gaming, and other uncovered domains. When asked for more, covers the remaining property categories",
+  "expected_behavioral_quality": "Tracks what domains have been discussed and what hasn't. When the guest asks 'what else?', suggests categories not yet covered rather than repeating dining or spa. Shows awareness of the full property scope.",
+  "safety_relevant": false,
+  "turns": [
+    {
+      "turn_index": 0,
+      "user_message": "We've already been to the spa and had dinner. What else is there?",
+      "agent_response": "It sounds like you've had a great start, but there is still plenty of energy to tap into across the property. The Shops at Mohegan Sun open in just a few minutes at 10:00 AM, featuring over 40 stores ranging from jewelry to unique boutiques if you're in the mood to browse. \n\nFor later tonight, you really should check out the Wolf Den; it has an intimate energy where you're right there with the performers. Since you've already spent some time at the spa, are you looking for a high-energy show tonight or something a bit more low-key?",
+      "sources": [
+        {
+          "category": "amenities",
+          "source": "mohegan_sun.json",
+          "score": 0.702
+        },
+        {
+          "category": "faq",
+          "source": "mohegan_sun.json",
+          "score": 0.678
+        },
+        {
+          "category": "entertainment",
+          "source": "mohegan_sun.json",
+          "score": 0.669
+        }
+      ],
+      "elapsed_ms": 31473,
+      "error": null
+    },
+    {
+      "turn_index": 1,
+      "user_message": "Any events happening?",
+      "agent_response": "The energy on the property tonight is going to be fantastic. You can catch a free live performance at the Wolf Den this evening, as they host national acts and local favorites nightly, typically starting at 8:00 PM or 9:00 PM. \n\nSince it is Thursday, novelle is also open tonight, which is our upscale ultra-lounge that features craft cocktails and a sophisticated DJ atmosphere. If you're looking for something on a grander scale, the Mohegan Sun Arena hosts world-class concerts and events throughout the week, and it has an electric atmosphere when a headliner is in town.\n\nBefore you settle in for a show, you might want to grab a drink at one of the bars in Casino of the Sky to soak in the pre-event buzz. Are you in the mood for a high-energy concert or a more relaxed lounge setting tonight?",
+      "sources": [
+        {
+          "category": "entertainment",
+          "source": "mohegan_sun.json",
+          "score": 0.646
+        },
+        {
+          "category": "faq",
+          "source": "mohegan_sun.json",
+          "score": 0.632
+        }
+      ],
+      "elapsed_ms": 24752,
+      "error": null
+    },
+    {
+      "turn_index": 2,
+      "user_message": "Good ideas. Anything else we're missing?",
+      "agent_response": "You shouldn't miss the 55-foot indoor waterfall, Taughannick Falls, located in the Casino of the Sky\u2014it\u2019s one of our most photographed spots. Right above it is the world's largest indoor planetarium dome, which creates a distinct atmosphere as it shifts throughout the evening.\n\nIf you're up for a bit of exploration, the Casino of the Wind offers a more contemporary and high-energy gaming environment that feels quite different from the Earth and Sky sections. Since you\u2019ve already checked out the spa and dinner, would you prefer to see some of the property's unique architecture or are you looking to jump into some gaming next?",
+      "sources": [
+        {
+          "category": "entertainment",
+          "source": "mohegan_sun.json",
+          "score": 0.656
+        },
+        {
+          "category": "faq",
+          "source": "mohegan_sun.json",
+          "score": 0.646
+        },
+        {
+          "category": "promotions",
+          "source": "mohegan_sun.json",
+          "score": 0.635
+        },
+        {
+          "category": "gaming",
+          "source": "mohegan_sun.json",
+          "score": 0.621
+        }
+      ],
+      "elapsed_ms": 30487,
+      "error": null
+    }
+  ],
+  "elapsed_ms": 86712,
+  "error": null,
+  "completed": true
+}

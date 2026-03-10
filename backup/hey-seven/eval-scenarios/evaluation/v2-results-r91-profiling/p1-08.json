@@ -1,0 +1,77 @@
+{
+  "id": "p1-08",
+  "name": "Guest signals budget range indirectly",
+  "source_file": "profiling_p1_natural_extraction.yaml",
+  "category": "profiling_p1_natural_extraction",
+  "behavioral_dimension": "P1_natural_extraction",
+  "expected_behavior": "Leads with affordable and mid-range options, not the steakhouse. When asked about Ballo, provides honest pricing context. Does not upsell or push premium alternatives",
+  "expected_behavioral_quality": "Interprets 'nothing too pricey' as a budget signal without asking for a dollar amount. Adjusts recommendations away from premium options toward mid-range and casual dining. Does not condescend or suggest the guest cannot afford better.",
+  "safety_relevant": false,
+  "turns": [
+    {
+      "turn_index": 0,
+      "user_message": "Where can we eat? Nothing too pricey though",
+      "agent_response": "Since it is early in the morning, Lantern Bar & Grill in the Casino of the Earth is your best option as it stays open 24 hours. It is a comfortable American spot where you can get a hearty burger or a fresh salad without the fine-dining price tag, and the wood-paneled atmosphere is quite relaxing at this hour.\n\nIf you can wait until 8:00 AM, Hash House A Go Go opens up with some of the most generous portions on the property\u2014their \"twisted farm food\" like the oversized pancakes is a guest favorite and offers great value for the price. After a big breakfast there, many guests enjoy heading over to the Wolf Den nearby, which features free live music most nights. Are you looking for a quick bite to tide you over right now, or are you planning a larger sit-down meal for your group later this morning?",
+      "sources": [
+        {
+          "category": "restaurants",
+          "source": "mohegan_sun.json",
+          "score": 0.672
+        }
+      ],
+      "elapsed_ms": 44846,
+      "error": null
+    },
+    {
+      "turn_index": 1,
+      "user_message": "What about that Italian place?",
+      "agent_response": "For a meal that is approachable and high quality, **Caputo Trattoria** in the Casino of the Earth is your best bet for Italian. \n\nIt is a more casual, budget-friendly spot compared to our fine-dining Italian venues, and the smell of their fresh brick-oven pizzas hits you before you even see the host stand. They open daily at 11:00 AM, making it a great choice for a relaxed lunch or dinner where you can enjoy classic pasta dishes and Italian sandwiches without needing a reservation.\n\nIf you are just looking for a legendary slice of coal-fired pizza, Frank Pepe's Pizzeria Napoletana also opens at 11:00 AM and is a Connecticut staple known for its thin, charred crust. After a hearty Italian lunch, the walk through the Casino of the Earth usually leads guests toward the Wolf Den, which hosts free live music every night and has a great energy. Are you in the mood for a full sit-down pasta dinner, or is a quick brick-oven pizza more what you had in mind?",
+      "sources": [
+        {
+          "category": "restaurants",
+          "source": "mohegan_sun.json",
+          "score": 0.681
+        },
+        {
+          "category": "faq",
+          "source": "mohegan_sun.json",
+          "score": 0.635
+        }
+      ],
+      "elapsed_ms": 23220,
+      "error": null
+    },
+    {
+      "turn_index": 2,
+      "user_message": "Yeah that works. Thanks",
+      "agent_response": "You're welcome. Since those spots open at 11:00 AM, you have some time to explore the shops or the casino floor first. \n\nIf you want a free show later, the Wolf Den in the Casino of the Earth has live music most nights with no cover charge. It's a great way to enjoy the atmosphere without spending much! Are you visiting Mohegan Sun to celebrate a birthday or a special party tonight?",
+      "sources": [
+        {
+          "category": "promotions",
+          "source": "mohegan_sun.json",
+          "score": 0.638
+        },
+        {
+          "category": "faq",
+          "source": "mohegan_sun.json",
+          "score": 0.611
+        },
+        {
+          "category": "property",
+          "source": "mohegan_sun.json",
+          "score": 0.626
+        },
+        {
+          "category": "hotel",
+          "source": "mohegan_sun.json",
+          "score": 0.62
+        }
+      ],
+      "elapsed_ms": 23260,
+      "error": null
+    }
+  ],
+  "elapsed_ms": 91328,
+  "error": null,
+  "completed": true
+}

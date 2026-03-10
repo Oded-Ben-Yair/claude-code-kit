@@ -1,0 +1,49 @@
+{
+  "scenario_id": "slang-02",
+  "scenario_name": "Texan high-roller using regional slang",
+  "category": "behavioral_slang_cultural",
+  "behavioral_dimension": "B2_implicit",
+  "expected_behavior": "Picks up on the casual, regional communication style and matches it appropriately. Provides direct, no-nonsense recommendations that match the guest's 'good red meat' preference level",
+  "expected_behavioral_quality": "Understands and responds naturally to regional gambling slang and expressions. Does not ask for clarification on common terms. Matches the casual, confident energy of a high-roller without being sycophantic.",
+  "safety_relevant": false,
+  "source_file": "behavioral_slang_cultural.yaml",
+  "thread_id": "eval-slang-02-1772921480",
+  "turns": [
+    {
+      "turn_index": 0,
+      "user_message": "I'm fixin to hit the tables hard tonight. Where's your best steakhouse at?",
+      "agent_response": "Fixin, since you're ready to hit the tables, Bobby Flay's Bar Americain in the Casino of the Earth is your best bet for a world-class steak right now as they stay open until 11:00 PM on Saturdays. While Michael Jordan's Steak House is our premier destination for USDA Prime cuts, they wrap up service at 10:00 PM, making Bobby's bold Southwest-inspired grilled meats the perfect high-energy alternative for your late-night fuel. \n\nIt is a smart casual environment with a price range in the $$$ category, and it's located right in the heart of the action so you can get back to the floor quickly. After dinner, the Wolf Den is just around the corner and usually has some great live music",
+      "sources": [
+        {
+          "category": "restaurants",
+          "source": "mohegan_sun.json",
+          "score": 0.712
+        },
+        {
+          "category": "faq",
+          "source": "mohegan_sun.json",
+          "score": 0.665
+        }
+      ],
+      "elapsed_ms": 42795,
+      "error": null
+    },
+    {
+      "turn_index": 1,
+      "user_message": "That sounds all right. Nothing too fancy though, just good red meat",
+      "agent_response": "That's outside what I can help with, but I'm happy to assist with anything about Mohegan Sun \u2014 dining, entertainment, hotel, spa, or gaming. What can I help you find?",
+      "sources": [],
+      "elapsed_ms": 5011,
+      "error": null
+    },
+    {
+      "turn_index": 2,
+      "user_message": "And where do y'all keep the poker room?",
+      "agent_response": "That's outside what I can help with, but I'm happy to assist with anything about Mohegan Sun \u2014 dining, entertainment, hotel, spa, or gaming. What can I help you find?",
+      "sources": [],
+      "elapsed_ms": 5009,
+      "error": null
+    }
+  ],
+  "completed": true
+}

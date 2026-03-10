@@ -1,0 +1,44 @@
+{
+  "scenario_id": "p3-01",
+  "scenario_name": "Restaurant recommendation plus party composition question",
+  "category": "profiling_p3_give_to_get",
+  "behavioral_dimension": "P3_give_to_get",
+  "expected_behavior": "Turn 1 provides a genuine recommendation AND asks about party composition. The recommendation is not held hostage to the answer \u2014 it's useful immediately. Turn 2 refines the recommendation with the new information",
+  "expected_behavioral_quality": "Delivers a complete, useful restaurant recommendation FIRST, then naturally asks about party size or composition. The recommendation stands on its own \u2014 the guest gets value even if they ignore the follow-up question. The question feels like a service refinement, not data collection.",
+  "safety_relevant": false,
+  "source_file": "profiling_p3_give_to_get.yaml",
+  "thread_id": "eval-p3-01-1772840301",
+  "turns": [
+    {
+      "turn_index": 0,
+      "user_message": "What's a good dinner spot?",
+      "agent_response": "The aroma of seared steaks and seasoned burgers at Lantern Bar & Grill is the best way to lean into the weekend, especially since they are open 24 hours! Located in the Casino of the Earth, this spot offers a full American menu in a casual setting that is perfect for late-night dining without the need for a reservation. \n\nPro tip\u2014if you find a seat near the perimeter, you get a great view of the casino energy while you enjoy your meal. After you finish dinner, the lounge scene nearby is usually quite vibrant. Are you in the mood for a full sit-down steak or just a quick burger to keep the night going?",
+      "sources": [
+        {
+          "category": "restaurants",
+          "source": "mohegan_sun.json",
+          "score": 0.661
+        }
+      ],
+      "elapsed_ms": 40579,
+      "error": null
+    },
+    {
+      "turn_index": 1,
+      "user_message": "Four of us, two couples",
+      "agent_response": "",
+      "sources": [],
+      "elapsed_ms": 60004,
+      "error": "TIMEOUT (60.0s)"
+    },
+    {
+      "turn_index": 2,
+      "user_message": "Perfect, we'll try the steakhouse",
+      "agent_response": "Glad I could help. The Wolf Den has free live music every night \u2014 it's right in the Casino of the Earth and worth checking out. What sounds good?",
+      "sources": [],
+      "elapsed_ms": 3,
+      "error": null
+    }
+  ],
+  "completed": true
+}

@@ -1,0 +1,59 @@
+{
+  "scenario_id": "p2-01",
+  "scenario_name": "Agent asks about party size after dinner question",
+  "category": "profiling_p2_active_probing",
+  "behavioral_dimension": "P2_active_probing",
+  "expected_behavior": "First response includes a dinner recommendation AND a natural follow-up question about party size. The question feels like part of the service, not an information harvest",
+  "expected_behavioral_quality": "After answering a dinner question, naturally asks how many guests will be dining. The question flows from the recommendation context ('Should I look into a table for how many?') rather than a standalone interrogation ('How many people?').",
+  "safety_relevant": false,
+  "source_file": "profiling_p2_active_probing.yaml",
+  "thread_id": "eval-p2-01-1772838833",
+  "turns": [
+    {
+      "turn_index": 0,
+      "user_message": "What's a good dinner spot tonight?",
+      "agent_response": "",
+      "sources": [],
+      "elapsed_ms": 60007,
+      "error": "TIMEOUT (60.0s)"
+    },
+    {
+      "turn_index": 1,
+      "user_message": "Just the two of us",
+      "agent_response": "",
+      "sources": [],
+      "elapsed_ms": 60007,
+      "error": "TIMEOUT (60.0s)"
+    },
+    {
+      "turn_index": 2,
+      "user_message": "That sounds great, thanks",
+      "agent_response": "You're very welcome. If you head to novelle, the \"Midnight in Paris\" cocktail is a guest favorite for late-night sipping. Since it's Friday night, the Wolf Den usually has a live band playing until midnight if you want some free entertainment after your drinks. \n\nWill you be staying with us for the rest of the weekend? Next time you visit, I can share the Arena schedule with you if you're interested in catching a major concert.",
+      "sources": [
+        {
+          "category": "promotions",
+          "source": "mohegan_sun.json",
+          "score": 0.64
+        },
+        {
+          "category": "entertainment",
+          "source": "mohegan_sun.json",
+          "score": 0.636
+        },
+        {
+          "category": "property",
+          "source": "mohegan_sun.json",
+          "score": 0.641
+        },
+        {
+          "category": "amenities",
+          "source": "mohegan_sun.json",
+          "score": 0.636
+        }
+      ],
+      "elapsed_ms": 34450,
+      "error": null
+    }
+  ],
+  "completed": true
+}

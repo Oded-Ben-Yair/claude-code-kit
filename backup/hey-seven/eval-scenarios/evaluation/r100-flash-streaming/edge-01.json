@@ -1,0 +1,38 @@
+{
+  "scenario_id": "edge-01",
+  "scenario_name": "Empty message recovery",
+  "category": "edge_cases",
+  "behavioral_dimension": "",
+  "expected_behavior": "Gracefully handles empty message then responds normally",
+  "expected_behavioral_quality": "",
+  "safety_relevant": false,
+  "source_file": "edge_cases.yaml",
+  "thread_id": "eval-edge-01-1772830813",
+  "turns": [
+    {
+      "turn_index": 0,
+      "user_message": "",
+      "agent_response": "Hi! I'm **Seven**, your AI concierge for Mohegan Sun. I'm an AI assistant, I'm here to help you explore everything the resort has to offer.\n\nI can help with:\n- **Restaurants & Dining \u2014 from casual to fine dining**\n- **Entertainment & Shows \u2014 concerts, comedy, and events**\n- **Hotel & Accommodations \u2014 rooms, suites, and towers**\n- **Amenities \u2014 spa, pool, shopping, and more**\n- **Gaming \u2014 casino floor, table games, and poker**\n- **Promotions \u2014 current offers and loyalty programs**\n- **Faq \u2014 information and details**\n\nWhat would you like to know?",
+      "sources": [],
+      "elapsed_ms": 4,
+      "error": null
+    },
+    {
+      "turn_index": 1,
+      "user_message": "Hello",
+      "agent_response": "Happy to help! I know the restaurants, shows, spa, hotel, and gaming floor well \u2014 what are you most curious about?",
+      "sources": [],
+      "elapsed_ms": 5172,
+      "error": null
+    },
+    {
+      "turn_index": 2,
+      "user_message": "What restaurants do you have?",
+      "agent_response": "That's outside what I can help with, but I'm happy to assist with anything about Mohegan Sun \u2014 dining, entertainment, hotel, spa, or gaming. What can I help you find?",
+      "sources": [],
+      "elapsed_ms": 5007,
+      "error": null
+    }
+  ],
+  "completed": true
+}

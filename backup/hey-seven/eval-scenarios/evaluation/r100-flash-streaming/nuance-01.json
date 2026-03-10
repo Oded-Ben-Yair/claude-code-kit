@@ -1,0 +1,80 @@
+{
+  "scenario_id": "nuance-01",
+  "scenario_name": "Grief context requires extreme sensitivity",
+  "category": "behavioral_nuance",
+  "behavioral_dimension": "B5_emotional",
+  "expected_behavior": "Handles grief with genuine compassion and restraint. Acknowledges the loss and the meaningful connection to the property. When the guest asks a practical question, answers warmly without breaking the emotional tone",
+  "expected_behavioral_quality": "Responds to grief with genuine warmth and restraint. Acknowledges the loss explicitly and gently. Does not pivot to promotions, upsells, or enthusiasm. Allows space for the emotion. Only offers help when the guest signals readiness. Never says 'that's great' or 'exciting'.",
+  "safety_relevant": false,
+  "source_file": "behavioral_nuance.yaml",
+  "thread_id": "eval-nuance-01-1772822817",
+  "turns": [
+    {
+      "turn_index": 0,
+      "user_message": "My mom passed away last month. She loved this place.",
+      "agent_response": "I am truly sorry for your loss. It sounds like she had many fond memories here, and it is a meaningful gesture to return in her honor. \n\nWhen you feel ready, I would be happy to help you find any of the specific spots she enjoyed most or suggest a quiet area of the resort for you to spend some time. Is there a particular restaurant or part of the property you're thinking of visiting today?",
+      "sources": [
+        {
+          "category": "property",
+          "source": "mohegan_sun.json",
+          "score": 0.633
+        },
+        {
+          "category": "restaurants",
+          "source": "mohegan_sun.json",
+          "score": 0.621
+        },
+        {
+          "category": "gaming",
+          "source": "mohegan_sun.json",
+          "score": 0.608
+        },
+        {
+          "category": "entertainment",
+          "source": "mohegan_sun.json",
+          "score": 0.606
+        }
+      ],
+      "elapsed_ms": 27733,
+      "error": null
+    },
+    {
+      "turn_index": 1,
+      "user_message": "I just wanted to come back one more time for her",
+      "agent_response": "That is a very touching way to honor her memory. Many guests find that returning to a place their loved ones enjoyed brings a sense of closeness and peace.\n\nPlease take all the time you need as you walk through the property today. If there is a particular spot she loved\u2014perhaps a favorite view of the Thames River or a specific corner of the casino\u2014I can help you find the best way there. Would you like to know about any of our quieter areas where you can sit and reflect?",
+      "sources": [
+        {
+          "category": "entertainment",
+          "source": "mohegan_sun.json",
+          "score": 0.635
+        },
+        {
+          "category": "hotel",
+          "source": "mohegan_sun.json",
+          "score": 0.594
+        },
+        {
+          "category": "faq",
+          "source": "mohegan_sun.json",
+          "score": 0.65
+        },
+        {
+          "category": "gaming",
+          "source": "mohegan_sun.json",
+          "score": 0.591
+        }
+      ],
+      "elapsed_ms": 33111,
+      "error": null
+    },
+    {
+      "turn_index": 2,
+      "user_message": "Where was the restaurant she always went to?",
+      "agent_response": "",
+      "sources": [],
+      "elapsed_ms": 60005,
+      "error": "TIMEOUT (60.0s)"
+    }
+  ],
+  "completed": true
+}

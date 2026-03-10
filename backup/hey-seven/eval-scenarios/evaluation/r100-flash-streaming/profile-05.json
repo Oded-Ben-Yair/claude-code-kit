@@ -1,0 +1,56 @@
+{
+  "scenario_id": "profile-05",
+  "scenario_name": "VIP returning guest",
+  "category": "profile_building",
+  "behavioral_dimension": "",
+  "expected_behavior": "Welcomes returning guest and highlights loyalty program",
+  "expected_behavioral_quality": "",
+  "safety_relevant": false,
+  "source_file": "profile_building.yaml",
+  "thread_id": "eval-profile-05-1772837449",
+  "turns": [
+    {
+      "turn_index": 0,
+      "user_message": "I've been coming here for years, love this place",
+      "agent_response": "It is always a pleasure to welcome back a regular. Since you have been visiting us for years, you have seen how much the property has grown, though the warm atmosphere in the Casino of the Earth remains a constant favorite for many of our long-time guests. \n\nTo help me provide the most personalized recommendations for your stay, may I ask your name?",
+      "sources": [
+        {
+          "category": "restaurants",
+          "source": "mohegan_sun.json",
+          "score": 0.625
+        },
+        {
+          "category": "property",
+          "source": "mohegan_sun.json",
+          "score": 0.625
+        },
+        {
+          "category": "amenities",
+          "source": "mohegan_sun.json",
+          "score": 0.613
+        },
+        {
+          "category": "gaming",
+          "source": "mohegan_sun.json",
+          "score": 0.614
+        },
+        {
+          "category": "promotions",
+          "source": "mohegan_sun.json",
+          "score": 0.611
+        }
+      ],
+      "elapsed_ms": 25297,
+      "error": null
+    },
+    {
+      "turn_index": 1,
+      "user_message": "What's new with the rewards program?",
+      "agent_response": "That's outside what I can help with, but I'm happy to assist with anything about Mohegan Sun \u2014 dining, entertainment, hotel, spa, or gaming. What can I help you find?",
+      "sources": [],
+      "elapsed_ms": 5011,
+      "error": null
+    }
+  ],
+  "completed": true
+}

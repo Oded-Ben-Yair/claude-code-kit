@@ -1,0 +1,76 @@
+{
+  "scenario_id": "agentic-09",
+  "scenario_name": "Mobility awareness from contextual cues",
+  "category": "behavioral_agentic",
+  "behavioral_dimension": "B4_agentic",
+  "expected_behavior": "Proactively includes accessibility information in every recommendation after the wheelchair mention. Does not suggest venues requiring stairs or long walks without noting accessibility",
+  "expected_behavioral_quality": "When a guest mentions wheelchair, mobility issues, or difficulty walking, proactively includes accessibility information in all recommendations. Does not wait to be asked about accessibility.",
+  "safety_relevant": false,
+  "source_file": "behavioral_agentic.yaml",
+  "thread_id": "eval-agentic-09-1772911074",
+  "turns": [
+    {
+      "turn_index": 0,
+      "user_message": "My mom uses a wheelchair. What restaurants are easy to get to?",
+      "agent_response": "I've got you covered. All of our dining venues are designed to be accessible, but **Ballo Italian Restaurant** in the Casino of the Sky is especially easy to navigate with a wheelchair due to its wide-open layout and spacious floor plan. The restaurant's design is inspired by a 12th-century Italian abbey, so you'll find high ceilings and plenty of room between tables for a comfortable experience.\n\nThe housemade pastas and risottos are the stars here, making it a perfect choice for a refined Saturday night meal. They are open until 10:00 PM tonight with a price range of approximately $$$ and a smart casual dress code. Since it is the weekend, I'd suggest a reservation to ensure the team can set aside a table with the best clearance for her chair.\n\nHow many people will be dining with you?\n\nIf you are in the mood for some entertainment afterward, the Wolf Den is just a short distance away and always has great live music on Saturday nights.",
+      "sources": [
+        {
+          "category": "restaurants",
+          "source": "mohegan_sun.json",
+          "score": 0.638
+        }
+      ],
+      "elapsed_ms": 39469,
+      "error": null
+    },
+    {
+      "turn_index": 1,
+      "user_message": "And can she get to the spa?",
+      "agent_response": "She absolutely can\u2014both Mandara Spa and Elemis Spa are fully accessible and easy to navigate with a wheelchair. \n\nIf she's looking for something tonight, Mandara Spa in the Sky Tower is open until 8:00 PM, while Elemis Spa in the Earth Tower closed at 7:00 PM. Mandara is the larger of the two and has a wonderful, Balinese-inspired relaxation lounge that is very easy for her to access. If she just wants to relax by the water, our heated indoor pool and hot tub are open until 10:00 PM and are also fully accessible for hotel guests.\n\nPro tip: if you visit Mandara Spa tomorrow morning, the relaxation lounge is usually much quieter right when they open at 9:00 AM, which makes for a very peaceful start to the day.\n\nIs she looking for a specific treatment like a massage or facial, or just a quiet place to unwind?",
+      "sources": [
+        {
+          "category": "amenities",
+          "source": "mohegan_sun.json",
+          "score": 0.662
+        },
+        {
+          "category": "faq",
+          "source": "mohegan_sun.json",
+          "score": 0.643
+        }
+      ],
+      "elapsed_ms": 26206,
+      "error": null
+    },
+    {
+      "turn_index": 2,
+      "user_message": "Great. She'll love that.",
+      "agent_response": "I'm so glad to hear that. The Mandara Spa truly feels like a hidden sanctuary with its soft lighting and calming aromas, making it a wonderful way to escape the hustle and bustle of the Saturday crowds. \n\nIf she heads there tomorrow, I'd suggest their Fire and Ice Massage, which is a signature treatment that uses hot stones and cooling gels to completely melt away any tension from traveling. It is a very serene experience, and their staff is excellent at making sure every guest is comfortable and well-cared for.\n\nFor later this evening, once she is feeling refreshed, you might want to check out the Wolf Den in the center of the Casino of the Earth. It has an electric energy on Saturday nights with live music, and because it's an open venue, it's very easy to find a spot with a great view without worrying about tiered seating or stairs.\n\nDoes your mom prefer more upbeat live music, or would she enjoy a more sophisticated, lounge-style atmosphere like Novelle for a late-night drink?",
+      "sources": [
+        {
+          "category": "entertainment",
+          "source": "mohegan_sun.json",
+          "score": 0.645
+        },
+        {
+          "category": "promotions",
+          "source": "mohegan_sun.json",
+          "score": 0.63
+        },
+        {
+          "category": "amenities",
+          "source": "mohegan_sun.json",
+          "score": 0.638
+        },
+        {
+          "category": "hotel",
+          "source": "mohegan_sun.json",
+          "score": 0.602
+        }
+      ],
+      "elapsed_ms": 50899,
+      "error": null
+    }
+  ],
+  "completed": true
+}

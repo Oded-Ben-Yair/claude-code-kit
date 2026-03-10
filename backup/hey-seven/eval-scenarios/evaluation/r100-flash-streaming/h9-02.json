@@ -1,0 +1,70 @@
+{
+  "scenario_id": "h9-02",
+  "scenario_name": "Guest on a budget needing value guidance",
+  "category": "host_triangle_h7_h10_revenue",
+  "behavioral_dimension": "H9_revenue_aware_steering",
+  "expected_behavior": "Leads with genuinely good affordable options, not just the cheapest. Bobby's Burgers, Frank Pepe's, and the Buffet all have real culinary appeal. Pairs with the Wolf Den (free shows) to create a full evening without pressure. The guest leaves excited about a great night out, not feeling like they got the budget tour",
+  "expected_behavioral_quality": "When a guest signals budget constraints, the agent steers toward high-value experiences without condescending. Finds genuinely great options at every price point. Never makes the guest feel like they are getting a lesser experience \u2014 just a different one.",
+  "safety_relevant": false,
+  "source_file": "host_triangle_h7_h10_revenue.yaml",
+  "thread_id": "eval-h9-02-1772836030",
+  "turns": [
+    {
+      "turn_index": 0,
+      "user_message": "What's good for dinner that won't break the bank?",
+      "agent_response": "For a late dinner that is easy on the wallet, Lantern Bar & Grill in the Casino of the Earth is your best bet tonight. \n\nIt is open 24 hours and serves a full menu of American favorites like burgers, steaks, and salads in a relaxed, casual setting. Since it is already 10:27 PM, it is the perfect spot to grab a satisfying meal without worrying about a closing time. A little insider tip: their late-night snacks are a hidden gem for guests who want something flavorful after most other kitchens have closed for the evening. \n\nIf you are looking for something even more casual, Johnny Rockets is open until 11:00 PM for a quick burger and shake. How many people are in your party for dinner?",
+      "sources": [
+        {
+          "category": "restaurants",
+          "source": "mohegan_sun.json",
+          "score": 0.644
+        }
+      ],
+      "elapsed_ms": 43554,
+      "error": null
+    },
+    {
+      "turn_index": 1,
+      "user_message": "The Buffet sounds good. Any free entertainment after?",
+      "agent_response": "",
+      "sources": [],
+      "elapsed_ms": 60005,
+      "error": "TIMEOUT (60.0s)"
+    },
+    {
+      "turn_index": 2,
+      "user_message": "Wait, the Wolf Den is free? That's awesome",
+      "agent_response": "It's one of the best parts of the Mohegan Sun experience. The Wolf Den features national touring acts and tribute bands every night with no cover charge. With 350 seats, it's an intimate setting where you're right there with the performers. Pro tip\u2014since it is first-come, first-served, showing up about 30 to 45 minutes early is usually the best way to snag a seat close to the stage. For those late sets, staying at the resort means you can just walk back to your room instead of making the drive home! \n\nAre you more into rock, country, or maybe some tribute bands?",
+      "sources": [
+        {
+          "category": "entertainment",
+          "source": "mohegan_sun.json",
+          "score": 0.773
+        },
+        {
+          "category": "faq",
+          "source": "mohegan_sun.json",
+          "score": 0.667
+        },
+        {
+          "category": "promotions",
+          "source": "mohegan_sun.json",
+          "score": 0.637
+        },
+        {
+          "category": "gaming",
+          "source": "mohegan_sun.json",
+          "score": 0.629
+        },
+        {
+          "category": "amenities",
+          "source": "mohegan_sun.json",
+          "score": 0.633
+        }
+      ],
+      "elapsed_ms": 34109,
+      "error": null
+    }
+  ],
+  "completed": true
+}

@@ -1,0 +1,30 @@
+{
+  "scenario_id": "cultural-02",
+  "scenario_name": "Dietary restrictions inquiry",
+  "category": "cultural_sensitivity",
+  "behavioral_dimension": "",
+  "expected_behavior": "Provides dietary info with sensitivity",
+  "expected_behavioral_quality": "",
+  "safety_relevant": false,
+  "source_file": "cultural_sensitivity.yaml",
+  "thread_id": "eval-cultural-02-1772829644",
+  "turns": [
+    {
+      "turn_index": 0,
+      "user_message": "Do any of your restaurants accommodate dietary restrictions?",
+      "agent_response": "",
+      "sources": [],
+      "elapsed_ms": 60004,
+      "error": "TIMEOUT (60.0s)"
+    },
+    {
+      "turn_index": 1,
+      "user_message": "What about the buffet, do they have many options?",
+      "agent_response": "Seasons Buffet is your best bet for variety, as the rotating international stations feature everything from fresh sushi to a hearty carving station. Our chefs there provide an incredible gluten-free and vegetarian selection, so you'll have many options to choose from regardless of your dietary needs.\n\nThey are located in the Casino of the Sky with a casual dress code and a price range of $$. Since they close at 9:00 PM on Fridays and it is currently 8:41 PM, you'll want to head over there shortly to enjoy the spread before they wrap up for the night. Reservations are not required there, so you can walk right in. \n\nFun fact\u2014the seafood station is a guest favorite because the selection is refreshed constantly to ensure everything is at its peak. After your meal, you might want to stop by the Wolf Den in the Casino of the Earth to catch some live music while you digest.\n\nWould you like to try for the buffet tonight, or would you prefer a recommendation for a venue that stays open a bit later?",
+      "sources": [],
+      "elapsed_ms": 55202,
+      "error": null
+    }
+  ],
+  "completed": true
+}

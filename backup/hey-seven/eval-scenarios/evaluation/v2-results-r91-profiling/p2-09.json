@@ -1,0 +1,71 @@
+{
+  "id": "p2-09",
+  "name": "Agent probes gaming level for comp eligibility",
+  "source_file": "profiling_p2_active_probing.yaml",
+  "category": "profiling_p2_active_probing",
+  "behavioral_dimension": "P2_active_probing",
+  "expected_behavior": "Explains the Momentum program and naturally asks about the guest's current tier. Frames the tier question as enabling better guidance. When they say 'base level', provides actionable path to the next tier",
+  "expected_behavioral_quality": "When a guest asks about comps or the loyalty program, the agent asks about their Momentum tier or gaming level in a way that feels like helping them get better value, not assessing their worth. Frames as 'So I can check what's available for you'.",
+  "safety_relevant": false,
+  "turns": [
+    {
+      "turn_index": 0,
+      "user_message": "How do I earn free stuff here?",
+      "agent_response": "Free rewards are earned through the Momentum program by playing slots, table games, and poker, as well as through spending on dining and hotel stays. These activities earn you Momentum Points and Tier Credits, which you can redeem for free play, dining, or retail purchases.\n\nIf you are looking for entertainment that does not require spending points, the Wolf Den offers free nightly live music with no ticket required. You can sign up for the Momentum program for free at any Momentum Desk to begin earning on your first visit. Are you interested in playing slots or table games while you are here?",
+      "sources": [
+        {
+          "category": "faq",
+          "source": "mohegan_sun.json",
+          "score": 0.681
+        },
+        {
+          "category": "promotions",
+          "source": "mohegan_sun.json",
+          "score": 0.666
+        },
+        {
+          "category": "entertainment",
+          "source": "mohegan_sun.json",
+          "score": 0.651
+        }
+      ],
+      "elapsed_ms": 24385,
+      "error": null
+    },
+    {
+      "turn_index": 1,
+      "user_message": "I think I'm at the base level",
+      "agent_response": "The base level of the Momentum program is the Core tier. It is free to join and allows you to begin earning Momentum Points and Tier Credits through gaming, dining, and hotel stays. \n\nTo confirm your exact status or point balance, you can visit any Momentum Desk, use the Mohegan Sun app, or log in at mohegansun.com. The next level is the Ignite tier, which requires 2,500 Tier Credits and includes a 10% earn rate bonus and priority restaurant seating. For budget-friendly options, you can redeem your points for meals at casual locations like the Food Court or various quick-service spots. Do you have a specific type of food in mind for your visit?",
+      "sources": [],
+      "elapsed_ms": 36938,
+      "error": null
+    },
+    {
+      "turn_index": 2,
+      "user_message": "How do I move up?",
+      "agent_response": "To move up from the Core tier to the Ignite tier, you need to earn 2,500 Tier Credits. These credits are earned through slot play, table games, and poker, as well as on hotel stays and dining purchases throughout the resort.\n\nTier Credits are different from Momentum Points because they determine your status level, while points are what you spend like cash. Since you are looking for budget-friendly ways to earn, keep in mind that even smaller purchases at the Food Court or Johnny Rockets contribute to your Tier Credit total when you present your card. Reaching the Ignite level also increases your point earning rate by 10%. \n\nWould you like to know which table games typically have the lowest minimums to help you earn credits at your own pace?",
+      "sources": [
+        {
+          "category": "promotions",
+          "source": "mohegan_sun.json",
+          "score": 0.679
+        },
+        {
+          "category": "faq",
+          "source": "mohegan_sun.json",
+          "score": 0.637
+        },
+        {
+          "category": "hotel",
+          "source": "mohegan_sun.json",
+          "score": 0.611
+        }
+      ],
+      "elapsed_ms": 36552,
+      "error": null
+    }
+  ],
+  "elapsed_ms": 97876,
+  "error": null,
+  "completed": true
+}

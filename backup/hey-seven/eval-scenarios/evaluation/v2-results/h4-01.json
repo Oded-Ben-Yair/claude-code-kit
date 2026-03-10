@@ -1,0 +1,50 @@
+{
+  "id": "h4-01",
+  "name": "Returning guest with earlier preferences in conversation",
+  "source_file": "host_triangle_h4_h6_relationship.yaml",
+  "category": "host_triangle_h4_h6_relationship",
+  "behavioral_dimension": "H4_personalized_recognition",
+  "expected_behavior": "Integrates all three data points (couple, Italian preference, gluten-free) into the entertainment recommendation. Does not suggest dinner options that conflict with the dietary need. Uses Linda's name naturally. The evening plan feels curated for this specific couple",
+  "expected_behavioral_quality": "Uses information shared in earlier turns to personalize later recommendations. By turn 3, every recommendation should reflect accumulated knowledge. The guest should feel increasingly 'known' with each interaction.",
+  "safety_relevant": false,
+  "turns": [
+    {
+      "turn_index": 0,
+      "user_message": "Hi, I'm Linda. My husband and I love Italian food. What's good here?",
+      "agent_response": "Welcome, Linda. Since you and your husband are fans of Italian cuisine, Todd English's Tuscany is the standout choice for your evening. \n\nThe wood-fired aroma hits you the moment you walk into the restaurant in the Casino of the Sky, and their handmade pastas have a delicate, fresh texture that guests come back for again and again. It opens today at 5:00 PM and follows a business casual dress code, so I highly recommend a reservation to ensure you get a great table; I can certainly help connect you with our host team to finalize that booking. \n\nAfter dinner, the Wolf Den is just a short walk away and offers free live music every night which makes for a perfect post-meal stroll. Are you celebrating a special occasion during this visit, or are you just looking to enjoy a great meal together?",
+      "sources": [],
+      "elapsed_ms": 56255,
+      "error": null
+    },
+    {
+      "turn_index": 1,
+      "user_message": "We also have a gluten-free situation so that limits things",
+      "agent_response": "Linda, for an Italian meal that is both budget-friendly and accommodating for gluten-free needs, Caputo Trattoria in the Casino of the Earth is a fantastic choice. The kitchen team is very experienced with dietary restrictions and can prepare gluten-free versions of their classic pasta dishes, ensuring you don't have to miss out on those authentic flavors. It is open now until 10:00 PM and offers a relaxed atmosphere in the $$ price range, and since it is casual, reservations are not required. \n\nI can certainly connect you with our host team to finalize any details or answer specific questions for the chef if you'd like. After your meal, the Wolf Den is just a short walk away and features free live music every night, which is a perfect way to enjoy the resort",
+      "sources": [],
+      "elapsed_ms": 66132,
+      "error": null
+    },
+    {
+      "turn_index": 2,
+      "user_message": "What about after dinner? Any shows tonight?",
+      "agent_response": "Linda, Since it is Thursday, you have some great options for tonight, and the Wolf Den is the standout choice for a fun, budget-friendly evening. It features free live music every single night, and there is something special about the intimate 350-seat setup where you are right in the middle of the action without needing to buy a ticket.\n\nShows there typically start at 8:00 PM or 9:00 PM, and because it is complimentary, I'd suggest getting there a bit early to snag a good seat near the stage. If you are looking for something different, Comix Roadhouse also kicks off its weekend of comedy tonight, and novelle offers a more sophisticated lounge atmosphere with DJ entertainment on Thursday evenings. \n\nI can help you with more details on any of these venues or connect you with our team to check on ticket availability for the comedy shows. After the shows, Lantern Bar & Grill is open 24 hours if you find yourselves wanting a late-night snack\u2014are you more in the mood for a high-energy tribute band or some stand-up comedy?",
+      "sources": [
+        {
+          "category": "restaurants",
+          "source": "mohegan_sun.json",
+          "score": 0.689
+        },
+        {
+          "category": "entertainment",
+          "source": "mohegan_sun.json",
+          "score": 0.687
+        }
+      ],
+      "elapsed_ms": 56348,
+      "error": null
+    }
+  ],
+  "elapsed_ms": 178736,
+  "error": null,
+  "completed": true
+}

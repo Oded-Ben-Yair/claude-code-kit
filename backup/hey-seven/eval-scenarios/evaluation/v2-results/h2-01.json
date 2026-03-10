@@ -1,0 +1,97 @@
+{
+  "id": "h2-01",
+  "name": "Lapsed guest signals they stopped coming",
+  "source_file": "host_triangle_h1_h3_development.yaml",
+  "category": "host_triangle_h1_h3_development",
+  "behavioral_dimension": "H2_reactivation_win_back",
+  "expected_behavior": "Welcomes the guest back without making the absence feel awkward. Asks what brought them back (not why they left). Highlights what has changed or is new since their last visit \u2014 new restaurants, new entertainment, new loyalty perks. Creates urgency around what they have been missing",
+  "expected_behavioral_quality": "When a guest says they stopped visiting, the agent investigates the reason without being pushy. Acknowledges the gap, discovers what changed, and creates a specific reason to return based on what has changed at the property or what the guest now values.",
+  "safety_relevant": false,
+  "turns": [
+    {
+      "turn_index": 0,
+      "user_message": "I used to come here all the time but haven't been in like two years",
+      "agent_response": "Welcome back\u2014it is good to have a regular returning to Mohegan Sun after a break. While the 24-hour gaming in the Casino of the Earth remains the heart of the property, you might notice some newer additions like novelle, an upscale lounge that offers a sophisticated atmosphere for cocktails and social scoring.\n\nAre you planning to revisit one of your old favorite restaurants, or are you interested in seeing what else has changed since your last stay?",
+      "sources": [
+        {
+          "category": "entertainment",
+          "source": "mohegan_sun.json",
+          "score": 0.641
+        },
+        {
+          "category": "gaming",
+          "source": "mohegan_sun.json",
+          "score": 0.63
+        },
+        {
+          "category": "faq",
+          "source": "mohegan_sun.json",
+          "score": 0.652
+        },
+        {
+          "category": "amenities",
+          "source": "mohegan_sun.json",
+          "score": 0.62
+        }
+      ],
+      "elapsed_ms": 38798,
+      "error": null
+    },
+    {
+      "turn_index": 1,
+      "user_message": "Just got busy with work, lost the habit I guess",
+      "agent_response": "I understand how that goes\u2014work has a way of taking over your schedule. \n\nSince you have been away for a while, a good place to start might be the Mandara Spa in the Sky Tower. It is an excellent spot to reset after a long stretch of work, offering a tranquil relaxation lounge and steam rooms to help you transition into your stay. They are open until 8:00 PM tonight if you are looking for a quiet way to ease back into the resort experience. \n\nAre you here for a quick getaway, or are you staying with us for a few days?",
+      "sources": [
+        {
+          "category": "amenities",
+          "source": "mohegan_sun.json",
+          "score": 0.619
+        },
+        {
+          "category": "entertainment",
+          "source": "mohegan_sun.json",
+          "score": 0.621
+        },
+        {
+          "category": "hotel",
+          "source": "mohegan_sun.json",
+          "score": 0.567
+        }
+      ],
+      "elapsed_ms": 27845,
+      "error": null
+    },
+    {
+      "turn_index": 2,
+      "user_message": "What's actually new since I was last here?",
+      "agent_response": "The Earth Tower is the most significant addition to our skyline, featuring contemporary rooms and its own dedicated Elemis Spa. If you're looking for a change of pace from the traditional gaming floor, novelle is our newer upscale lounge in the Casino of the Sky\u2014it's a sophisticated spot for craft cocktails and a higher-energy social scene.\n\nI'd recommend stopping by novelle for a drink before dinner to see the atmosphere for yourself. Does that sound like the kind of upgrade you're looking for, or were you hoping for something more focused on the gaming floors?",
+      "sources": [
+        {
+          "category": "hotel",
+          "source": "mohegan_sun.json",
+          "score": 0.658
+        },
+        {
+          "category": "entertainment",
+          "source": "mohegan_sun.json",
+          "score": 0.66
+        },
+        {
+          "category": "amenities",
+          "source": "mohegan_sun.json",
+          "score": 0.644
+        },
+        {
+          "category": "gaming",
+          "source": "mohegan_sun.json",
+          "score": 0.631
+        }
+      ],
+      "elapsed_ms": 40650,
+      "error": null
+    }
+  ],
+  "elapsed_ms": 107294,
+  "error": null,
+  "completed": true
+}

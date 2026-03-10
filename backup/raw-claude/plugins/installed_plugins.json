@@ -1,0 +1,88 @@
+{
+  "version": 2,
+  "plugins": {
+    "example-skills@anthropic-agent-skills": [
+      {
+        "scope": "project",
+        "projectPath": "/home/odedbe",
+        "installPath": "/home/odedbe/.claude/plugins/cache/anthropic-agent-skills/example-skills/b0cbd3df1533",
+        "version": "b0cbd3df1533",
+        "installedAt": "2025-10-30T08:44:21.703Z",
+        "lastUpdated": "2026-03-07T07:54:39.829Z",
+        "gitCommitSha": "c74d647e56e6daa12029b6acb11a821348ad044b"
+      }
+    ],
+    "document-skills@anthropic-agent-skills": [
+      {
+        "scope": "project",
+        "projectPath": "/home/odedbe",
+        "installPath": "/home/odedbe/.claude/plugins/cache/anthropic-agent-skills/document-skills/b0cbd3df1533",
+        "version": "b0cbd3df1533",
+        "installedAt": "2025-10-30T08:44:21.703Z",
+        "lastUpdated": "2026-03-07T07:54:39.838Z",
+        "gitCommitSha": "c74d647e56e6daa12029b6acb11a821348ad044b"
+      }
+    ],
+    "superpowers@superpowers-marketplace": [
+      {
+        "scope": "project",
+        "projectPath": "/home/odedbe",
+        "installPath": "/home/odedbe/.claude/plugins/cache/superpowers-marketplace/superpowers/3.2.3",
+        "version": "3.2.3",
+        "installedAt": "2025-10-30T08:44:23.282Z",
+        "lastUpdated": "2026-01-09T08:41:00.751Z",
+        "gitCommitSha": "31fd7642854d6d3dfd65959fcefabe71ccee86d9"
+      }
+    ],
+    "superpowers-lab@superpowers-marketplace": [
+      {
+        "scope": "user",
+        "installPath": "/home/odedbe/.claude/plugins/cache/superpowers-marketplace/superpowers-lab/0.1.0",
+        "version": "0.1.0",
+        "installedAt": "2025-10-30T08:44:23.901Z",
+        "lastUpdated": "2025-10-30T08:44:23.901Z",
+        "gitCommitSha": "e2bea3b300f8370ec1fe650fde608c815458dd0b"
+      }
+    ],
+    "double-shot-latte@superpowers-marketplace": [
+      {
+        "scope": "user",
+        "installPath": "/home/odedbe/.claude/plugins/cache/superpowers-marketplace/double-shot-latte/1.1.5",
+        "version": "1.1.5",
+        "installedAt": "2025-12-16T05:27:59.431Z",
+        "lastUpdated": "2025-12-16T05:27:59.431Z",
+        "gitCommitSha": "a8516cc5f6b62b25044b69a5ddcfac39d4a4177e"
+      }
+    ],
+    "frontend-design@claude-plugins-official": [
+      {
+        "scope": "project",
+        "projectPath": "/home/odedbe",
+        "installPath": "/home/odedbe/.claude/plugins/cache/claude-plugins-official/frontend-design/205b6e0b3036",
+        "version": "205b6e0b3036",
+        "installedAt": "2025-12-31T14:01:21.014Z",
+        "lastUpdated": "2026-03-04T05:52:39.810Z"
+      }
+    ],
+    "ralph-wiggum@claude-code-plugins": [
+      {
+        "scope": "project",
+        "projectPath": "/home/odedbe",
+        "installPath": "/home/odedbe/.claude/plugins/cache/claude-code-plugins/ralph-wiggum/1.0.0",
+        "version": "1.0.0",
+        "installedAt": "2026-01-09T09:42:31.687Z",
+        "lastUpdated": "2026-01-09T09:43:00.329Z"
+      }
+    ],
+    "code-simplifier@claude-plugins-official": [
+      {
+        "scope": "user",
+        "installPath": "/home/odedbe/.claude/plugins/cache/claude-plugins-official/code-simplifier/1.0.0",
+        "version": "1.0.0",
+        "installedAt": "2026-02-08T17:25:28.554Z",
+        "lastUpdated": "2026-02-08T17:25:28.554Z",
+        "gitCommitSha": "2cd88e7947b7382e045666abee790c7f55f669f3"
+      }
+    ]
+  }
+}

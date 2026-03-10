@@ -1,0 +1,60 @@
+{
+  "scenario_id": "h1-02",
+  "scenario_name": "Guest comparing Mohegan Sun to competitor",
+  "category": "host_triangle_h1_h3_development",
+  "behavioral_dimension": "H1_proactive_value_discovery",
+  "expected_behavior": "Highlights Mohegan Sun's dining portfolio as a competitive advantage without badmouthing Foxwoods. Discovers the guest's foodie identity and uses it to position the property. Creates a switching reason tied to the guest's stated values",
+  "expected_behavioral_quality": "When a guest compares to a competitor (Foxwoods, MGM), the agent highlights Mohegan Sun's unique differentiators without disparaging the competitor. Discovers what the guest values most and positions Mohegan Sun as the better fit for those specific preferences.",
+  "safety_relevant": false,
+  "source_file": "host_triangle_h1_h3_development.yaml",
+  "thread_id": "eval-h1-02-1773056900",
+  "turns": [
+    {
+      "turn_index": 0,
+      "user_message": "We usually go to Foxwoods. What's different about Mohegan Sun?",
+      "agent_response": "Mohegan Sun is built around the heritage and stories of the Mohegan Tribe, which gives the entire property a distinct atmosphere you won't find anywhere else. The Casino of the Earth is the best place to start, featuring a massive planetarium-like ceiling and design elements that reflect the changing seasons. \n\nA local tip for your first visit: head to the Wolf Den at the center of the Earth casino for free live music in a setting that feels like you're right on top of the stage. \n\nWhat usually makes a trip for you \u2014 the gaming floor energy or the dining and entertainment options?",
+      "sources": [
+        {
+          "category": "faq",
+          "source": "mohegan_sun.json",
+          "score": 0.769
+        },
+        {
+          "category": "gaming",
+          "source": "mohegan_sun.json",
+          "score": 0.729
+        },
+        {
+          "category": "property",
+          "source": "mohegan_sun.json",
+          "score": 0.741
+        }
+      ],
+      "elapsed_ms": 43528,
+      "error": null
+    },
+    {
+      "turn_index": 1,
+      "user_message": "We're big foodies and love trying new spots",
+      "agent_response": "For a true foodie, Sushi Palace in the Casino of the Sky is the standout choice. The chefs there prepare incredible omakase options where you can really see their skill with fresh sashimi and Japanese specialties, all paired with an extensive sake list. It is open daily starting at noon until 10:00 PM (11:00 PM on weekends), and while prices are generally in the $$$ range, the precision of the knife work is unmatched! I'd recommend a reservation if you're bringing a group of six or more, but do keep in mind that hours and pricing can vary.\n\nInsider tip: If you want something with a bit more heat, SolToro has a mezcal selection and authentic ceviche that is a hidden gem for those who know their tequila.\n\nAfter dinner, you might want to wander over to the Wolf Den to catch some free live music. What is the occasion for your visit, and how many people are in your party?",
+      "sources": [
+        {
+          "category": "restaurants",
+          "source": "mohegan_sun.json",
+          "score": 0.643
+        }
+      ],
+      "elapsed_ms": 32711,
+      "error": null
+    },
+    {
+      "turn_index": 2,
+      "user_message": "Those sound amazing. Maybe we'll make the switch",
+      "agent_response": "I don't have the specific details on that, but let me help. What are you most interested in at Mohegan Sun \u2014 dining, entertainment, hotel, or something else?",
+      "sources": [],
+      "elapsed_ms": 50375,
+      "error": null
+    }
+  ],
+  "completed": true
+}

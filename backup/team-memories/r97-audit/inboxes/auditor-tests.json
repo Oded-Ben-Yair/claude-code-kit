@@ -1,0 +1,14 @@
+[
+  {
+    "from": "team-lead",
+    "text": "{\"type\":\"task_assignment\",\"taskId\":\"13\",\"subject\":\"Test coverage reality check across all 12 components\",\"description\":\"Run pytest --collect-only to get actual test counts per file. Check which tests use live LLM vs mocks. Cross-reference test files against source files to find untested modules. Report: total tests, tests per component, mock vs live ratio, coverage gaps.\\n\\nKey files: tests/ directory, tests/conftest.py\\nWrite findings to: reviews/r97-audit/13-test-reality-check.md\",\"assignedBy\":\"team-lead\",\"timestamp\":\"2026-03-05T14:17:17.840Z\"}",
+    "timestamp": "2026-03-05T14:17:17.841Z",
+    "read": true
+  },
+  {
+    "from": "team-lead",
+    "text": "{\"type\":\"shutdown_request\",\"requestId\":\"shutdown-1772720647180@auditor-tests\",\"from\":\"team-lead\",\"reason\":\"Your task #13 is complete and the report looks great. No more tasks for you — shutting down. Thanks for the thorough work.\",\"timestamp\":\"2026-03-05T14:24:07.180Z\"}",
+    "timestamp": "2026-03-05T14:24:07.180Z",
+    "read": true
+  }
+]

@@ -1,0 +1,60 @@
+{
+  "scenario_id": "h7-03",
+  "scenario_name": "Entertainment guest exploring other domains",
+  "category": "host_triangle_h7_h10_revenue",
+  "behavioral_dimension": "H7_cross_selling_wallet_share",
+  "expected_behavior": "Builds a full evening around the Arena anchor: pre-show dinner at a nearby restaurant, the show itself, and post-show options (Wolf Den late show, Comix, casino floor). The guest leaves with a plan for an entire evening, not just a concert ticket",
+  "expected_behavioral_quality": "When a guest comes for entertainment, the agent expands the visit into dining and other experiences. The cross-sell turns a one-activity visit into a full resort evening where the show is the anchor but not the only experience.",
+  "safety_relevant": false,
+  "source_file": "host_triangle_h7_h10_revenue.yaml",
+  "thread_id": "eval-h7-03-1772913014",
+  "turns": [
+    {
+      "turn_index": 0,
+      "user_message": "We have Arena tickets for Saturday. What else should we do that night?",
+      "agent_response": "Since the show will wrap up later this evening, novelle is the perfect spot for a post-show cocktail in a more sophisticated lounge setting. \n\nIf you're looking to keep that high energy going after the final encore, Avalon Nightclub is open until 2:00 AM and usually has an incredible crowd on Saturday nights. Pro tip \u2014 novelle is actually designed for exactly this, giving you a smooth transition from the big concert energy to a more intimate social scene. How many people are in your party for the evening?",
+      "sources": [
+        {
+          "category": "entertainment",
+          "source": "mohegan_sun.json",
+          "score": 0.67
+        },
+        {
+          "category": "restaurants",
+          "source": "mohegan_sun.json",
+          "score": 0.65
+        }
+      ],
+      "elapsed_ms": 34065,
+      "error": null
+    },
+    {
+      "turn_index": 1,
+      "user_message": "A pre-show dinner sounds great. Where?",
+      "agent_response": "For a night at the Arena, Michael Jordan's Steak House in the Casino of the Sky is the gold standard for a pre-show meal. The room has a sophisticated energy with its sports memorabilia and elegant wood finishes, but the real star is the garlic bread with Gorgonzola fondue \u2014 it's a decadent fan favorite for a reason. \n\nThey open at 5:00 PM tonight with a price range around $$$$ and a business casual dress code, though I recommend confirming exact hours and pricing with the property. I've got you covered on the menu highlights, including the fact that they only serve USDA Prime cuts, and I can connect you with the host team for a reservation since show nights are their busiest. What time does your show start?",
+      "sources": [],
+      "elapsed_ms": 78868,
+      "error": null
+    },
+    {
+      "turn_index": 2,
+      "user_message": "And after the show? We don't want the night to end",
+      "agent_response": "I've got you\u2014the energy after a Saturday night show in the Arena is electric and there's plenty more to do. Avalon Nightclub is where the crowd usually heads to keep the party going until 2:00 AM with high-energy DJs. If you'd prefer something slightly more upscale with craft cocktails and a DJ, novelle is specifically designed for post-show socializing. For a late-night bite to refuel, Lantern Bar & Grill is open 24 hours right in the Casino of the Earth. \n\nInsider tip: if you choose novelle, the transition from a lounge vibe to a high-end nightlife scene as the night goes on is seamless. Do you think you'll be looking to hit the dance floor or just grab a comfortable seat for some drinks?",
+      "sources": [
+        {
+          "category": "entertainment",
+          "source": "mohegan_sun.json",
+          "score": 0.713
+        },
+        {
+          "category": "restaurants",
+          "source": "mohegan_sun.json",
+          "score": 0.688
+        }
+      ],
+      "elapsed_ms": 40041,
+      "error": null
+    }
+  ],
+  "completed": true
+}

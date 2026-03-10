@@ -1,0 +1,82 @@
+{
+  "id": "h1-02",
+  "name": "Guest comparing Mohegan Sun to competitor",
+  "source_file": "host_triangle_h1_h3_development.yaml",
+  "category": "host_triangle_h1_h3_development",
+  "behavioral_dimension": "H1_proactive_value_discovery",
+  "expected_behavior": "Highlights Mohegan Sun's dining portfolio as a competitive advantage without badmouthing Foxwoods. Discovers the guest's foodie identity and uses it to position the property. Creates a switching reason tied to the guest's stated values",
+  "expected_behavioral_quality": "When a guest compares to a competitor (Foxwoods, MGM), the agent highlights Mohegan Sun's unique differentiators without disparaging the competitor. Discovers what the guest values most and positions Mohegan Sun as the better fit for those specific preferences.",
+  "safety_relevant": false,
+  "turns": [
+    {
+      "turn_index": 0,
+      "user_message": "We usually go to Foxwoods. What's different about Mohegan Sun?",
+      "agent_response": "I specialize in Mohegan Sun, so I can certainly highlight what makes our resort unique. We are known for an immersive design that honors the Mohegan Tribe's heritage, featuring a 55-foot indoor waterfall and one of the world's largest indoor planetarium domes in the Casino of the Sky. \n\nAcross our three distinct casino areas, we offer over 364,000 square feet of gaming space with 6,500 slot machines and 370 table games. For dining, Todd English's Tuscany is a guest favorite for its traditional Italian fare and terrace views, while TAO Asian Bistro & Nightclub offers a more high-energy atmosphere. What brings you in for a visit\u2014are you interested in gaming, a specific show, or perhaps a nice dinner?",
+      "sources": [
+        {
+          "category": "faq",
+          "source": "mohegan_sun.json",
+          "score": 0.769
+        },
+        {
+          "category": "gaming",
+          "source": "mohegan_sun.json",
+          "score": 0.729
+        },
+        {
+          "category": "property",
+          "source": "mohegan_sun.json",
+          "score": 0.741
+        }
+      ],
+      "elapsed_ms": 26714,
+      "error": null
+    },
+    {
+      "turn_index": 1,
+      "user_message": "We're big foodies and love trying new spots",
+      "agent_response": "If you are looking for a meal that is as much a visual spectacle as it is a feast, you have to experience Hash House A Go Go in the Casino of the Earth. \n\nIt opens at 8:00 AM and is famous for \"twisted farm food\" served in portions so massive they practically require their own zip code. The signature sage-fried chicken and waffles is a towering masterpiece of crispy textures and savory-sweet flavors that has become a must-try for any serious foodie visiting the property. It is a casual, high-energy spot with a price range of around $$, and you won't need a reservation to get a table. \n\nSince it's early in the morning, a walk through the shops at the Crystal Mall is a great way to build up an appetite before they open. Do you usually look for creative, over-the-top brunch dishes, or do you prefer a more traditional breakfast to start your day?",
+      "sources": [
+        {
+          "category": "restaurants",
+          "source": "mohegan_sun.json",
+          "score": 0.643
+        }
+      ],
+      "elapsed_ms": 25391,
+      "error": null
+    },
+    {
+      "turn_index": 2,
+      "user_message": "Those sound amazing. Maybe we'll make the switch",
+      "agent_response": "We'd love to have you. If you really want a foodie experience that feels unique to Mohegan Sun, Ballo Italian Restaurant is designed to look like a 12th-century Italian abbey and has a fantastic atmosphere for a long, social dinner. \n\nTheir menu focuses on fresh, house-made pasta and wood-fired pizzas, but the design of the space is what usually leaves the biggest impression. After a meal there, the Wolf Den in the center of the Casino of the Earth is just a short walk away and features free live music every night. What kind of cuisine usually tops your list for a big night out?",
+      "sources": [
+        {
+          "category": "entertainment",
+          "source": "mohegan_sun.json",
+          "score": 0.632
+        },
+        {
+          "category": "promotions",
+          "source": "mohegan_sun.json",
+          "score": 0.622
+        },
+        {
+          "category": "hotel",
+          "source": "mohegan_sun.json",
+          "score": 0.617
+        },
+        {
+          "category": "gaming",
+          "source": "mohegan_sun.json",
+          "score": 0.621
+        }
+      ],
+      "elapsed_ms": 28836,
+      "error": null
+    }
+  ],
+  "elapsed_ms": 80942,
+  "error": null,
+  "completed": true
+}

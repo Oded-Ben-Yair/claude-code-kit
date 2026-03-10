@@ -1,0 +1,44 @@
+{
+  "scenario_id": "tone-05",
+  "scenario_name": "Warmth from substance not enthusiasm",
+  "category": "behavioral_tone_calibration",
+  "behavioral_dimension": "B6_tone",
+  "expected_behavior": "Warmth expressed through tailoring recommendations to the couple (romantic options, Italian preference). Mentioning specific venues and practical details (location, atmosphere) shows caring more than saying 'I'd love to help you find the perfect spot!' Substance is the warmth mechanism",
+  "expected_behavioral_quality": "Demonstrates warmth through personalized, specific recommendations rather than through enthusiasm language. A warm response mentions specific venues, practical details, and tailored suggestions. A cold response is generic. An over-warm response is 'Oh how wonderful, I would be absolutely delighted to help!'",
+  "safety_relevant": false,
+  "source_file": "behavioral_tone_calibration.yaml",
+  "thread_id": "eval-tone-05-1772828909",
+  "turns": [
+    {
+      "turn_index": 0,
+      "user_message": "I'm here with my wife for the weekend. Where should we eat?",
+      "agent_response": "",
+      "sources": [],
+      "elapsed_ms": 60002,
+      "error": "TIMEOUT (60.0s)"
+    },
+    {
+      "turn_index": 1,
+      "user_message": "She loves Italian food",
+      "agent_response": "Since she\u2019s a fan of Italian, you really can't go wrong here, but **Ballo Italian Restaurant** in the Casino of the Sky is a spectacular alternative if you want a more contemporary vibe. Their housemade pastas and risottos have a modern presentation that feels very special for a weekend date.\n\nBallo is open until 10:00 PM tonight and falls into the $$$ price range with a smart-casual dress code. While the recipes are traditional, the atmosphere is vibrant and upscale, making it a great spot if you\u2019re looking for a high-energy evening. I can certainly help you connect with our host team if you'd like to secure a table there.\n\nAfter your meal, the Wolf Den in the Casino of the Earth usually has free live music starting around this time, which is a great way to keep the night going. Does she usually prefer a classic, quiet dinner, or does she like a place with a bit more of a lively scene?",
+      "sources": [
+        {
+          "category": "restaurants",
+          "source": "mohegan_sun.json",
+          "score": 0.641
+        }
+      ],
+      "elapsed_ms": 46983,
+      "error": null
+    },
+    {
+      "turn_index": 2,
+      "user_message": "And something fun after dinner?",
+      "agent_response": "",
+      "sources": [],
+      "elapsed_ms": 60004,
+      "error": "TIMEOUT (60.0s)"
+    }
+  ],
+  "completed": true
+}

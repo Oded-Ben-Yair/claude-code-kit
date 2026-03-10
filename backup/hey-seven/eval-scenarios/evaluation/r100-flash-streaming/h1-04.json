@@ -1,0 +1,75 @@
+{
+  "scenario_id": "h1-04",
+  "scenario_name": "Couple exploring for a weekend getaway",
+  "category": "host_triangle_h1_h3_development",
+  "behavioral_dimension": "H1_proactive_value_discovery",
+  "expected_behavior": "Builds a full couples weekend itinerary covering spa, dining, entertainment, and hotel. Creates a vision that makes the property feel like a destination, not just a casino. Plants seeds for future visits by mentioning seasonal events or upcoming shows",
+  "expected_behavioral_quality": "Identifies the couple dynamic and weekend getaway context. Discovers what kind of experience they want (relaxation, adventure, romance) and builds a multi-activity itinerary that creates emotional anchors for return visits.",
+  "safety_relevant": false,
+  "source_file": "host_triangle_h1_h3_development.yaml",
+  "thread_id": "eval-h1-04-1772832898",
+  "turns": [
+    {
+      "turn_index": 0,
+      "user_message": "My girlfriend and I are thinking about a weekend at Mohegan Sun. What's it like?",
+      "agent_response": "Mohegan Sun is an expansive resort that feels like a city of its own, featuring two luxury hotel towers, three casinos, and over 40 dining options. It is a high-energy destination, but it also has plenty of spots for relaxation, like the Mandara Spa and the pools in each tower.\n\nSince you're visiting as a couple, TAO Asian Bistro is a popular choice for its vibrant atmosphere and iconic 16-foot Buddha statue. An insider tip: if you're looking for a great photo, head to the Taughannick Falls in the Casino of the Sky. It's a 55-foot indoor waterfall that's particularly impressive at night.\n\nOur Arena often hosts major headliners on Friday and Saturday nights\u2014do you have a specific weekend in mind for your visit!",
+      "sources": [
+        {
+          "category": "faq",
+          "source": "mohegan_sun.json",
+          "score": 0.732
+        },
+        {
+          "category": "property",
+          "source": "mohegan_sun.json",
+          "score": 0.737
+        },
+        {
+          "category": "hotel",
+          "source": "mohegan_sun.json",
+          "score": 0.712
+        },
+        {
+          "category": "amenities",
+          "source": "mohegan_sun.json",
+          "score": 0.7
+        }
+      ],
+      "elapsed_ms": 36191,
+      "error": null
+    },
+    {
+      "turn_index": 1,
+      "user_message": "We want a mix of relaxation and fun. Not just gambling",
+      "agent_response": "For relaxation, Mandara Spa is the ultimate escape; their hot stone massage is legendary for resetting after a long week. \n\nWhen you're ready for some high-energy fun, Avalon Nightclub is open tonight and tomorrow starting at 10:00 PM with state-of-the-art sound and lighting. Pro tip: the Wolf Den has this intimate energy where you're right there with the performer, and those shows are free every night. Since you're looking for a balance, would you prefer a high-energy dance floor at Avalon or a more relaxed live music set at the Wolf Den?",
+      "sources": [
+        {
+          "category": "faq",
+          "source": "mohegan_sun.json",
+          "score": 0.707
+        },
+        {
+          "category": "gaming",
+          "source": "mohegan_sun.json",
+          "score": 0.694
+        },
+        {
+          "category": "entertainment",
+          "source": "mohegan_sun.json",
+          "score": 0.678
+        }
+      ],
+      "elapsed_ms": 44030,
+      "error": null
+    },
+    {
+      "turn_index": 2,
+      "user_message": "That sounds like a perfect weekend, thanks",
+      "agent_response": "",
+      "sources": [],
+      "elapsed_ms": 60003,
+      "error": "TIMEOUT (60.0s)"
+    }
+  ],
+  "completed": true
+}

@@ -1,0 +1,81 @@
+{
+  "scenario_id": "h1-02",
+  "scenario_name": "Guest comparing Mohegan Sun to competitor",
+  "category": "host_triangle_h1_h3_development",
+  "behavioral_dimension": "H1_proactive_value_discovery",
+  "expected_behavior": "Highlights Mohegan Sun's dining portfolio as a competitive advantage without badmouthing Foxwoods. Discovers the guest's foodie identity and uses it to position the property. Creates a switching reason tied to the guest's stated values",
+  "expected_behavioral_quality": "When a guest compares to a competitor (Foxwoods, MGM), the agent highlights Mohegan Sun's unique differentiators without disparaging the competitor. Discovers what the guest values most and positions Mohegan Sun as the better fit for those specific preferences.",
+  "safety_relevant": false,
+  "source_file": "host_triangle_h1_h3_development.yaml",
+  "thread_id": "eval-h1-02-1772970466",
+  "turns": [
+    {
+      "turn_index": 0,
+      "user_message": "We usually go to Foxwoods. What's different about Mohegan Sun?",
+      "agent_response": "We focus on providing the best experience right here at Mohegan Sun. You'll notice the design reflects the Mohegan Tribe's heritage, from the three-story crystal mountain in the Casino of the Sky to the 55-foot indoor waterfall. \n\nStart your night at the Wolf Den\u2014it's the heart of the property with free live music in a setting you won't find anywhere else. Are you more into the high-energy table games or do you prefer finding a favorite slot machine?",
+      "sources": [
+        {
+          "category": "faq",
+          "source": "mohegan_sun.json",
+          "score": 0.769
+        },
+        {
+          "category": "gaming",
+          "source": "mohegan_sun.json",
+          "score": 0.729
+        },
+        {
+          "category": "property",
+          "source": "mohegan_sun.json",
+          "score": 0.741
+        }
+      ],
+      "elapsed_ms": 31383,
+      "error": null
+    },
+    {
+      "turn_index": 1,
+      "user_message": "We're big foodies and love trying new spots",
+      "agent_response": "Since you appreciate the culinary arts, Sushi Palace in the Casino of the Sky opens in just a few minutes at noon. Their omakase service is the standout\u2014letting the chef curate your meal ensures you're getting the freshest, most seasonal cuts available, and watching the precision of the sushi chefs is half the experience. \n\nThe atmosphere is refined yet approachable, with an extensive sake list to round out your lunch. I've got you covered on the details, and I can connect you with our host team if you'd like to finalize a plan for a larger group later this evening. Since you're exploring the property today, are you here for a specific celebration or just a well-deserved getaway?",
+      "sources": [
+        {
+          "category": "restaurants",
+          "source": "mohegan_sun.json",
+          "score": 0.643
+        }
+      ],
+      "elapsed_ms": 36562,
+      "error": null
+    },
+    {
+      "turn_index": 2,
+      "user_message": "Those sound amazing. Maybe we'll make the switch",
+      "agent_response": "We'd love to be your new home base. If culinary experiences drive your trips, you're going to have a lot of fun here. \n\nPro tip\u2014make sure to stop by any Momentum Desk to sign up for our rewards program. It's free to join, and your play immediately starts building toward dining comps at all those new restaurants you want to try. After lunch, taking a walk through the Casino of the Wind is a great way to check out the gaming floor and get a feel for the property's energy.\n\nAre you planning to stay for dinner tonight, or just scouting us out for the afternoon?",
+      "sources": [
+        {
+          "category": "entertainment",
+          "source": "mohegan_sun.json",
+          "score": 0.632
+        },
+        {
+          "category": "promotions",
+          "source": "mohegan_sun.json",
+          "score": 0.622
+        },
+        {
+          "category": "hotel",
+          "source": "mohegan_sun.json",
+          "score": 0.617
+        },
+        {
+          "category": "gaming",
+          "source": "mohegan_sun.json",
+          "score": 0.621
+        }
+      ],
+      "elapsed_ms": 66225,
+      "error": null
+    }
+  ],
+  "completed": true
+}

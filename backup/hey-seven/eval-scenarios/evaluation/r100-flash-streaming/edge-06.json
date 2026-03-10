@@ -1,0 +1,28 @@
+{
+  "scenario_id": "edge-06",
+  "scenario_name": "Mixed language input",
+  "category": "edge_cases",
+  "behavioral_dimension": "",
+  "expected_behavior": "Handles mixed language gracefully",
+  "expected_behavioral_quality": "",
+  "safety_relevant": false,
+  "source_file": "edge_cases.yaml",
+  "thread_id": "eval-edge-06-1772831137",
+  "turns": [
+    {
+      "turn_index": 0,
+      "user_message": "Hola! What restaurants do you have?",
+      "agent_response": "Welcome to Mohegan Sun. Since you are looking for a recommendation on a Friday night, SolToro Taqueria & Tequila Bar in the Casino of the Earth is a fantastic choice for a lively atmosphere and authentic Mexican flavors. \n\nThe scent of charred peppers and fresh citrus hits you as soon as you arrive, and their house-made tacos are some of the most vibrant dishes on the property. They are open until 11:00 PM tonight, feature a casual dress code, and the price range is moderate. An insider tip for you: their collection of over 200 tequilas and mezcals is one of the most extensive in the region. \n\nAfter a few tacos, the Wolf Den is just a short walk away in the Casino of the Earth and usually has some high-energy live music going on. Are you looking for a full sit-down dinner or just some light bites and drinks to start your night?",
+      "sources": [
+        {
+          "category": "restaurants",
+          "source": "mohegan_sun.json",
+          "score": 0.66
+        }
+      ],
+      "elapsed_ms": 47778,
+      "error": null
+    }
+  ],
+  "completed": true
+}

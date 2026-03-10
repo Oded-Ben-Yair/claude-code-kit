@@ -1,0 +1,65 @@
+{
+  "scenario_id": "p1-01",
+  "scenario_name": "Guest volunteers name casually",
+  "category": "profiling_p1_natural_extraction",
+  "behavioral_dimension": "P1_natural_extraction",
+  "expected_behavior": "Captures 'Mike' from the opening and uses it naturally by the final turn without re-asking. The name appears in the farewell or confirmation, not as a forced acknowledgment",
+  "expected_behavioral_quality": "Extracts the guest's name from a casual mention and uses it naturally in subsequent responses. Does NOT re-ask for the name. Does NOT echo it back awkwardly ('Nice to meet you, Mike!'). Weaves it into recommendations or sign-offs organically.",
+  "safety_relevant": false,
+  "source_file": "profiling_p1_natural_extraction.yaml",
+  "thread_id": "eval-p1-01-1772953994",
+  "turns": [
+    {
+      "turn_index": 0,
+      "user_message": "Hey, I'm Mike. What's good for dinner tonight?",
+      "agent_response": "Welcome, Mike. For tonight, Michael Jordan's Steak House is hard to beat\u2014the aroma of USDA Prime steaks hitting the broiler is unmistakable the moment you step into the Casino of the Sky. \n\nThey are open from 5:00 PM to 10:00 PM tonight, and as it is an upscale venue ($$$$) with a business casual dress code, reservations are highly recommended [1]. I've got you on the details, and I can connect you with our host team if you'd like to finalize a table. Afterward, you might enjoy catching a comedy show over at Comix Roadhouse to finish the evening [5]. \n\nAre you in the mood for a bold, dry-aged ribeye, or are you leaning more toward fresh seafood tonight?",
+      "sources": [
+        {
+          "category": "restaurants",
+          "source": "mohegan_sun.json",
+          "score": 0.62
+        },
+        {
+          "category": "entertainment",
+          "source": "mohegan_sun.json",
+          "score": 0.606
+        }
+      ],
+      "elapsed_ms": 37232,
+      "error": null
+    },
+    {
+      "turn_index": 1,
+      "user_message": "What about something more casual?",
+      "agent_response": "Mike, for a relaxed atmosphere where you can just slide into a booth, Johnny Rockets in the Casino of the Earth is the perfect spot. \n\nThe scent of sizzling burgers and malted shakes makes it a nostalgic favorite, and the retro 1950s diner energy is great for a low-key evening. They are open tonight until 11:00 PM, and since the price range is quite approachable ($), you don't need to worry about a dress code or making a reservation [4]. \n\nIf you are staying in the Casino of the Earth area, you might want to swing by the Wolf Den afterward\u2014they have free live music every night, and it's a great way to keep the casual vibe going. Are you more of a classic cheeseburger and fries person, or are you specifically looking for a place with a great hand-spun milkshake?",
+      "sources": [
+        {
+          "category": "faq",
+          "source": "mohegan_sun.json",
+          "score": 0.674
+        },
+        {
+          "category": "entertainment",
+          "source": "mohegan_sun.json",
+          "score": 0.674
+        },
+        {
+          "category": "restaurants",
+          "source": "mohegan_sun.json",
+          "score": 0.663
+        }
+      ],
+      "elapsed_ms": 26849,
+      "error": null
+    },
+    {
+      "turn_index": 2,
+      "user_message": "Perfect, we'll do the buffet",
+      "agent_response": "Mike, The Wolf Den has free live music every night \u2014 it's right in the Casino of the Earth and worth checking out. Anything else I can set up for you?",
+      "sources": [],
+      "elapsed_ms": 7,
+      "error": null
+    }
+  ],
+  "completed": true
+}

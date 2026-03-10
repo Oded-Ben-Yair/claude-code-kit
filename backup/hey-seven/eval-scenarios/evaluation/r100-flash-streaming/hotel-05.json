@@ -1,0 +1,41 @@
+{
+  "scenario_id": "hotel-05",
+  "scenario_name": "Room for a couple",
+  "category": "hotel_planning",
+  "behavioral_dimension": "",
+  "expected_behavior": "Suggests king room for couple, mentions spa",
+  "expected_behavioral_quality": "",
+  "safety_relevant": false,
+  "source_file": "hotel_planning.yaml",
+  "thread_id": "eval-hotel-05-1772836916",
+  "turns": [
+    {
+      "turn_index": 0,
+      "user_message": "My wife and I are coming for the weekend, what room do you suggest?",
+      "agent_response": "It sounds like a wonderful weekend ahead. For a couple's getaway, I recommend a Junior Suite in our Sky Tower. \n\nAt 650 square feet, this suite offers a separate living area and an expanded bathroom with a soaking tub that feels like a private retreat after a day at the resort. If you prefer a more classic setup, our Deluxe Rooms are also a fantastic choice, featuring floor-to-ceiling windows that provide panoramic views of the Thames River valley. \n\nStandard check-in begins between 3:00 PM and 4:00 PM, though our 24-hour front desk is ready for you whenever you arrive on Friday night. Since you'll be steps away from everything, you might enjoy a dinner at Tuscany for authentic Italian before heading back to your room. To help me narrow down the best options for your stay, are you looking to visit this coming weekend or a later date?",
+      "sources": [],
+      "elapsed_ms": 59836,
+      "error": null
+    },
+    {
+      "turn_index": 1,
+      "user_message": "Is there a spa we can visit?",
+      "agent_response": "You have two excellent options for a spa day, depending on the vibe you are looking for. \n\nMandara Spa is our full-service retreat inspired by Balinese healing traditions, featuring a tranquil relaxation lounge, steam room, and sauna. If you prefer something more modern, the Elemis Spa at Earth Tower specializes in premium skincare and specifically offers couples experiences that are perfect for a weekend getaway. \n\nMandara is open daily from 9:00 AM to 8:00 PM, while Elemis Spa is available from 9:00 AM to 7:00 PM. A pro tip for your visit: the morning slots tend to be the most peaceful if you want to truly decompress before the casino floor gets busy. I can certainly help you decide on a specific treatment, and once you've chosen, I can connect you with our host team to finalize the booking. \n\nAfter a relaxing afternoon at the spa, you might enjoy the live music at the Wolf Den where the atmosphere is always electric. Are you interested in a specific type of treatment, like a deep tissue massage or perhaps a rejuvenating facial?",
+      "sources": [
+        {
+          "category": "amenities",
+          "source": "mohegan_sun.json",
+          "score": 0.705
+        },
+        {
+          "category": "faq",
+          "source": "mohegan_sun.json",
+          "score": 0.667
+        }
+      ],
+      "elapsed_ms": 55547,
+      "error": null
+    }
+  ],
+  "completed": true
+}

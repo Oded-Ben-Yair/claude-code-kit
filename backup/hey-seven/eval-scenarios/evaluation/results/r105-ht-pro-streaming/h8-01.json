@@ -1,0 +1,75 @@
+{
+  "scenario_id": "h8-01",
+  "scenario_name": "Comp-eligible guest receiving offer",
+  "category": "host_triangle_h7_h10_revenue",
+  "behavioral_dimension": "H8_strategic_offer_framing",
+  "expected_behavior": "Presents Leap benefits as things the guest has earned through their loyalty, not as promotions being pushed. Uses insider language \u2014 'a lot of people don't realize' or 'one of the quieter Leap perks' \u2014 that makes the guest feel like they are learning something exclusive",
+  "expected_behavioral_quality": "When mentioning comp eligibility or perks, frames them as earned recognition rather than marketing. The guest should feel that the offer exists because of who they are, not because it is a mass promotion. Uses language like 'you've unlocked' rather than 'we're offering.'",
+  "safety_relevant": false,
+  "source_file": "host_triangle_h7_h10_revenue.yaml",
+  "thread_id": "eval-h8-01-1772992701",
+  "turns": [
+    {
+      "turn_index": 0,
+      "user_message": "I'm at Leap tier. Are there any dining perks I should know about?",
+      "agent_response": "At, the Leap tier provides priority restaurant seating and an enhanced earning rate on Momentum Points for all dining purchases at participating locations. Based on available information, your status may also qualify you for specific dining offers or invitations to exclusive culinary events. You should check your account balance and available vouchers via the Mohegan Sun app or at any Momentum Desk to confirm your current eligibility.\n\nYou are already earning toward your next tier just by being here. At 25,000 credits you hit Ascend, which opens up additional benefits including complimentary valet and room upgrades. Since it is Sunday evening, Bobby Flay's Bar Americain is open until 10:00 PM in the Casino of the Earth if you want to utilize your priority seating for dinner.\n\nHow often do you visit Mohegan Sun? I can give you a better sense of how close you might be to reaching that next tier.",
+      "sources": [
+        {
+          "category": "promotions",
+          "source": "mohegan_sun.json",
+          "score": 0.707
+        },
+        {
+          "category": "restaurants",
+          "source": "mohegan_sun.json",
+          "score": 0.636
+        },
+        {
+          "category": "faq",
+          "source": "mohegan_sun.json",
+          "score": 0.621
+        }
+      ],
+      "elapsed_ms": 38548,
+      "error": null
+    },
+    {
+      "turn_index": 1,
+      "user_message": "Nice, I didn't know about those. What about entertainment?",
+      "agent_response": "As a Leap member, you can actually use your Momentum Dollars directly at the Box Office to pick up tickets for the Mohegan Sun Arena. It is a world-class, 10,000-seat venue that brings in massive headliners, and using your points is a great way to experience it. \n\nIf you are looking for something to check out tonight, the Wolf Den has this intimate energy where you are right there with the performer \u2014 it is electric. The best part is that there is no cover charge or tickets required, so you can just walk in whenever you are ready. \n\nAre you typically hunting for big arena concerts, or do you prefer the vibe of a smaller, close-up performance?",
+      "sources": [],
+      "elapsed_ms": 54998,
+      "error": null
+    },
+    {
+      "turn_index": 2,
+      "user_message": "That's actually really cool. I should be using these more",
+      "agent_response": "At, your Momentum Points are essentially currency here, and at the Leap tier, you earn them at an accelerated rate compared to the entry level. You can use those points for dining at over 40 outlets, shopping at our retail stores, or even booking a room at the Earth Tower. Since it is Sunday evening, the shops in the Casino of the Sky are a great place to see what your points can get you if you want a break from the gaming floor.\n\nThe most efficient way to track your point balance and see any specific offers you may be eligible for is through the Mohegan Sun app. If you prefer to stay at the resort rather than drive home late, your points can often cover the cost of a room based on your play. \n\nDo you usually prefer to spend your points as you go, or are you looking to save them for a larger hotel stay?",
+      "sources": [
+        {
+          "category": "entertainment",
+          "source": "mohegan_sun.json",
+          "score": 0.632
+        },
+        {
+          "category": "hotel",
+          "source": "mohegan_sun.json",
+          "score": 0.621
+        },
+        {
+          "category": "gaming",
+          "source": "mohegan_sun.json",
+          "score": 0.616
+        },
+        {
+          "category": "promotions",
+          "source": "mohegan_sun.json",
+          "score": 0.616
+        }
+      ],
+      "elapsed_ms": 32671,
+      "error": null
+    }
+  ],
+  "completed": true
+}

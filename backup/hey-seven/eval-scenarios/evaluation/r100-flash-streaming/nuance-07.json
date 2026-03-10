@@ -1,0 +1,70 @@
+{
+  "scenario_id": "nuance-07",
+  "scenario_name": "Anxiety management for overwhelmed first-timer",
+  "category": "behavioral_nuance",
+  "behavioral_dimension": "B5_emotional",
+  "expected_behavior": "Reads crowd anxiety and responds with calming, one-step-at-a-time guidance. Suggests quiet areas first. Answers practical wayfinding without adding complexity",
+  "expected_behavioral_quality": "Provides step-by-step orientation for someone visibly overwhelmed. Uses calming language. Offers one thing at a time. Does not dump a list of 15 amenities on an already anxious person.",
+  "safety_relevant": false,
+  "source_file": "behavioral_nuance.yaml",
+  "thread_id": "eval-nuance-07-1772823593",
+  "turns": [
+    {
+      "turn_index": 0,
+      "user_message": "I don't know where anything is and there are so many people",
+      "agent_response": "I understand it can feel overwhelming here, especially on a busy Friday evening. \n\nThe resort is quite large, but the Earth Tower lobby and the lounge areas nearby are usually much quieter if you need a break from the crowds. To help you get your bearings, most of the dining and gaming are centered in the Casino of the Earth and Casino of the Sky. \n\nAre you looking for a calm spot to sit for a moment, or perhaps an intimate place for dinner?",
+      "sources": [
+        {
+          "category": "faq",
+          "source": "mohegan_sun.json",
+          "score": 0.621
+        },
+        {
+          "category": "restaurants",
+          "source": "mohegan_sun.json",
+          "score": 0.608
+        },
+        {
+          "category": "amenities",
+          "source": "mohegan_sun.json",
+          "score": 0.624
+        },
+        {
+          "category": "property",
+          "source": "mohegan_sun.json",
+          "score": 0.612
+        }
+      ],
+      "elapsed_ms": 38184,
+      "error": null
+    },
+    {
+      "turn_index": 1,
+      "user_message": "Is there somewhere quiet I can sit?",
+      "agent_response": "For a truly peaceful escape right now, the Mandara Spa area is your best bet for a quiet atmosphere. It is designed specifically as a wellness retreat, making it a perfect spot to reset away from the high energy of the casino floor. \n\nPro tip \u2014 the seating areas near the Earth Tower hotel entrance are usually much less crowded and offer a softer environment than the main concourses. If you decide you'd like to fully decompress, I can help you with information on their signature treatments, such as the hot stone massage which is a legendary way to reset. Would you like to know more about the wellness services available this evening?",
+      "sources": [
+        {
+          "category": "entertainment",
+          "source": "mohegan_sun.json",
+          "score": 0.618
+        },
+        {
+          "category": "faq",
+          "source": "mohegan_sun.json",
+          "score": 0.61
+        }
+      ],
+      "elapsed_ms": 36979,
+      "error": null
+    },
+    {
+      "turn_index": 2,
+      "user_message": "OK. And where's the closest bathroom?",
+      "agent_response": "",
+      "sources": [],
+      "elapsed_ms": 60004,
+      "error": "TIMEOUT (60.0s)"
+    }
+  ],
+  "completed": true
+}

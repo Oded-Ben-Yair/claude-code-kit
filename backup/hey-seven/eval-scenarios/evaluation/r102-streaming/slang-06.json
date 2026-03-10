@@ -1,0 +1,66 @@
+{
+  "scenario_id": "slang-06",
+  "scenario_name": "Gen Z guest using TikTok-influenced slang",
+  "category": "behavioral_slang_cultural",
+  "behavioral_dimension": "B3_engagement",
+  "expected_behavior": "Understands bussin=great, lowkey=somewhat, no cap=honestly, fire=excellent, bet=agreed, slaps=is great. Responds helpfully without code-switching to match the slang. Maintains professional warmth",
+  "expected_behavioral_quality": "Understands modern slang (bussin, lowkey, no cap, slay) without asking for translation. Does NOT use the slang back \u2014 responds in warm professional English. Matches the casual energy without mimicking the register.",
+  "safety_relevant": false,
+  "source_file": "behavioral_slang_cultural.yaml",
+  "thread_id": "eval-slang-06-1772921946",
+  "turns": [
+    {
+      "turn_index": 0,
+      "user_message": "ok so whats bussin for food here? lowkey starving",
+      "agent_response": "Since you're looking for something substantial right now, Lantern Bar & Grill is your best bet. It's open 24 hours in the Casino of the Earth and serves a full menu of American favorites like steaks and burgers, so you won't be limited to just snacks this late. \n\nIt\u2019s a casual spot with no reservations required, and the kitchen stays busy all night making it a reliable choice for when you're starving. Are you in the mood for a heavy steak and potatoes meal, or are you leaning more toward a massive burger? \n\nAfter you've refueled, you might want to walk over to the Wolf Den nearby to catch whatever live music is playing.",
+      "sources": [
+        {
+          "category": "restaurants",
+          "source": "mohegan_sun.json",
+          "score": 0.665
+        }
+      ],
+      "elapsed_ms": 25588,
+      "error": null
+    },
+    {
+      "turn_index": 1,
+      "user_message": "the steakhouse looks fire no cap. is it expensive tho",
+      "agent_response": "Michael Jordan's Steak House is definitely the top-tier choice for a serious cut of meat, but it carries a $$$$ price tag and actually just closed for the night at 10:00 PM. \n\nFor a more budget-friendly steak that you can get right now, I'd suggest Lantern Bar & Grill in the Casino of the Earth, which is open 24 hours and falls into the $$ range. It's a casual spot where you can get a solid steak dinner without needing a reservation or a business casual dress code. \n\nAre you looking to fuel up for a long night at the tables, or are you just trying to get a good meal before heading to bed? After you finish eating, the Wolf Den is right nearby in the Casino of the Earth and usually has free live music going.",
+      "sources": [
+        {
+          "category": "restaurants",
+          "source": "mohegan_sun.json",
+          "score": 0.679
+        }
+      ],
+      "elapsed_ms": 41515,
+      "error": null
+    },
+    {
+      "turn_index": 2,
+      "user_message": "bet. what else should we do tonight that slaps",
+      "agent_response": "Since it's Saturday night and you're looking for high energy, Avalon Nightclub is definitely where the peak energy is right now. It just opened at 10:00 PM and usually stays packed until 2:00 AM with top DJs and a massive sound system that really hits.\n\nIf you want something a bit more upscale but still has a DJ and great cocktails, novelle is an ultra-lounge that's perfect for a Saturday night vibe without being a full-on club. Both are great options depending on how hard you want to go tonight.\n\nAre you more of a \"hit the dance floor\" person or do you prefer a lounge vibe where you can still grab a drink and talk? If the night goes late, the Elemis Spa is the best way to recover tomorrow morning with a massage.",
+      "sources": [
+        {
+          "category": "entertainment",
+          "source": "mohegan_sun.json",
+          "score": 0.657
+        },
+        {
+          "category": "faq",
+          "source": "mohegan_sun.json",
+          "score": 0.639
+        },
+        {
+          "category": "restaurants",
+          "source": "mohegan_sun.json",
+          "score": 0.621
+        }
+      ],
+      "elapsed_ms": 37939,
+      "error": null
+    }
+  ],
+  "completed": true
+}

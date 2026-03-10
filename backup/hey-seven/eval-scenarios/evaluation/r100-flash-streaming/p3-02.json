@@ -1,0 +1,76 @@
+{
+  "scenario_id": "p3-02",
+  "scenario_name": "Show suggestion plus occasion inquiry",
+  "category": "profiling_p3_give_to_get",
+  "behavioral_dimension": "P3_give_to_get",
+  "expected_behavior": "Show listing is useful and complete before asking about the occasion. When the bachelorette context is revealed, the agent reshapes recommendations around group energy, nightlife, and celebration activities",
+  "expected_behavioral_quality": "Lists upcoming entertainment options with genuine enthusiasm, then asks if there's a special occasion. The show information is complete and actionable before the occasion question. The question is framed as 'so I can make it extra special' not 'for our records'.",
+  "safety_relevant": false,
+  "source_file": "profiling_p3_give_to_get.yaml",
+  "thread_id": "eval-p3-02-1772840402",
+  "turns": [
+    {
+      "turn_index": 0,
+      "user_message": "What shows are happening this weekend?",
+      "agent_response": "You have arrived at the perfect time for a packed weekend of entertainment. The Wolf Den features free live performances at 8:00 PM or 9:00 PM on Saturday and Sunday, offering an electric atmosphere where you are incredibly close to the performers. If you prefer comedy, Comix Roadhouse hosts nationally touring comedians with multiple showtimes throughout the weekend.\n\nFor a high-energy Saturday night, Avalon Nightclub features top DJs until 2:00 AM, while novelle provides a more sophisticated lounge experience with craft cocktails. An insider tip for the Wolf Den: since seating is complimentary and first-come, first-served, I'd suggest getting there early to secure a prime spot!\n\nAfter the excitement of the shows, a treatment at Elemis Spa is a great way to reset on Sunday morning. Would you prefer a night of dancing at Avalon or a more relaxed evening of comedy?",
+      "sources": [
+        {
+          "category": "entertainment",
+          "source": "mohegan_sun.json",
+          "score": 0.671
+        }
+      ],
+      "elapsed_ms": 40206,
+      "error": null
+    },
+    {
+      "turn_index": 1,
+      "user_message": "Yeah, it's actually a bachelorette party",
+      "agent_response": "Congratulations on the bachelorette celebration! Right now, Avalon Nightclub is in full swing with high-energy music and a great crowd, and they'll be open until 2:00 AM if you're ready to hit the dance floor tonight. For a more sophisticated vibe, novelle is an excellent ultra-lounge for your group to enjoy craft cocktails and a DJ in an upscale setting.\n\nThe Birdcage Bar also features a live DJ on weekends and offers a fantastic atmosphere for a mid-evening cocktail. To make the weekend truly unforgettable, I'd suggest a morning at Elemis Spa to help the group recharge before the next round of festivities. After a session there, Hash House A Go Go is a great spot for a celebration brunch since their portions are famously huge and perfect for a group.\n\nI can connect you with our host team to finalize any spa or lounge bookings. Would you like to know more about the music styles at Avalon versus novelle for tomorrow night?",
+      "sources": [
+        {
+          "category": "entertainment",
+          "source": "mohegan_sun.json",
+          "score": 0.636
+        },
+        {
+          "category": "restaurants",
+          "source": "mohegan_sun.json",
+          "score": 0.611
+        },
+        {
+          "category": "faq",
+          "source": "mohegan_sun.json",
+          "score": 0.591
+        }
+      ],
+      "elapsed_ms": 42367,
+      "error": null
+    },
+    {
+      "turn_index": 2,
+      "user_message": "What would you recommend for the group?",
+      "agent_response": "For a bachelorette group, I'd suggest starting your Saturday evening at novelle because it offers a sophisticated ultra-lounge atmosphere where you can enjoy craft cocktails before the DJ picks up the energy. It has a capacity of 500, making it feel upscale and intimate for a celebration. If your group is looking for a high-energy dance party later, Avalon Nightclub is the place to be until 2:00 AM with its state-of-the-art sound and light shows.\n\nTo balance out the excitement, a group session at Elemis Spa for their legendary hot stone massages is the ultimate way to reset on Sunday morning. An insider tip for groups: novelle is known for its incredible atmosphere as a pre-show destination, so it's the perfect spot to gather before heading to the Wolf Den or a comedy show.\n\nI can help you with the details for these experiences and connect you with our host team to finalize the arrangements. After your spa treatments, Todd English\u2019s Tuscany is just a short walk away and serves incredible wood-fired dishes that are perfect for a celebratory group dinner! Would you like to know more about the VIP table options at Avalon or the specific cocktail menu at novelle? By the way, the Mohegan Sun Arena has some great shows coming up \u2014 I can share what's on the calendar if you're interested.",
+      "sources": [
+        {
+          "category": "entertainment",
+          "source": "mohegan_sun.json",
+          "score": 0.669
+        },
+        {
+          "category": "faq",
+          "source": "mohegan_sun.json",
+          "score": 0.653
+        },
+        {
+          "category": "amenities",
+          "source": "mohegan_sun.json",
+          "score": 0.633
+        }
+      ],
+      "elapsed_ms": 45723,
+      "error": null
+    }
+  ],
+  "completed": true
+}

@@ -1,0 +1,38 @@
+{
+  "scenario_id": "p2-04",
+  "scenario_name": "Agent avoids re-asking known information",
+  "category": "profiling_p2_active_probing",
+  "behavioral_dimension": "P2_active_probing",
+  "expected_behavior": "Uses all three pieces of info (name, party size, occasion) from turn 1 throughout. Never re-asks any of them. Recommendations are shaped by the 50th birthday milestone and party of 4",
+  "expected_behavioral_quality": "When the guest has already provided information (name, party size, occasion), the agent does NOT ask for it again. If the guest said 'party of 4 for a birthday' in turn 1, the agent never asks 'how many?' or 'celebrating anything?' in later turns.",
+  "safety_relevant": false,
+  "source_file": "profiling_p2_active_probing.yaml",
+  "thread_id": "eval-p2-04-1772955664",
+  "turns": [
+    {
+      "turn_index": 0,
+      "user_message": "Hi, I'm Rachel. Party of 4, it's my husband's 50th birthday.",
+      "agent_response": "Happy 50th Birthday to your husband, Rachel! What an incredible milestone to celebrate here at Mohegan Sun.\n\nFor a birthday dinner with a lively soul, SolToro Taqueria & Tequila Bar is the standout choice\u2014the vibrant decor and upbeat energy make it perfect for a group of four to toast to half a century. Their authentic tacos and hand-crafted margaritas are legendary, and the extensive tequila selection adds a sophisticated touch to the celebration. They are open today from 11:30 AM to 10:00 PM in the Casino of the Earth with a casual dress code ($$), and while reservations are not required, it is a favorite for festive gatherings.\n\nBy the way, since you are celebrating a birthday, Mohegan Sun would love to treat you to a $25 dining credit at any of our restaurants to make the occasion even more memorable.\n\nAfter dinner, the Wolf Den has free live music every night right in the Casino of the Earth, which is a great way to keep the party going. Does your husband usually prefer a high-energy atmosphere like SolToro, or were you thinking of something a bit more traditional?",
+      "sources": [],
+      "elapsed_ms": 71571,
+      "error": null
+    },
+    {
+      "turn_index": 1,
+      "user_message": "What restaurant do you recommend?",
+      "agent_response": "For a milestone like a 50th birthday, Rachel, Michael Jordan's Steak House is the definitive choice for an unforgettable evening.\n\nThe atmosphere is refined with an elegant touch of sports prestige, and the USDA Prime steaks are truly exceptional. I highly recommend starting with their legendary garlic bread served with a rich gorgonzola fondue\u2014it is a guest favorite that sets a perfect tone for a celebration. They are located in the Casino of the Sky and will be open today from 5:00 PM to 10:00 PM. The price range is $$$$ with a business casual dress code, and because it is such a sought-after spot for birthdays, reservations are highly recommended.\n\nI have all the details ready for you, and I can certainly connect you with our host team to help finalize a table for your party of four. Also, since you are celebrating such a big occasion, Mohegan Sun would love to treat you to a $25 dining credit to use at any of our restaurants. \n\nAfter a world-class dinner, you might enjoy heading over to the Wolf Den in the Casino of the Earth for some live music to keep the energy going. Is your husband a classic steak-and-potatoes fan, or does he usually prefer fresh seafood for a special meal?",
+      "sources": [],
+      "elapsed_ms": 42791,
+      "error": null
+    },
+    {
+      "turn_index": 2,
+      "user_message": "And after dinner?",
+      "agent_response": "Rachel, the Birdcage Bar in the Casino of the Sky is the perfect spot for a 50th birthday toast after dinner. It has a sophisticated atmosphere with craft cocktails and is open until 2:00 AM, making it ideal for a group of four to relax and celebrate. \n\nIf you prefer live music, the Wolf Den has an incredible energy where you're right there with the performer, and it's a great way to experience the heart of the casino floor without needing a ticket. For something a bit more low-key, Lantern Bar & Grill in the Casino of the Earth is open 24 hours and is a great place to wind down if the group gets hungry again late at night. \n\nBy the way, since it's your birthday, Mohegan Sun would love to treat you to a $25 dining credit\u2014want me to help you get that set up? Would you prefer a spot with a bit more energy and music, or a lounge where the focus is on the cocktails and conversation?",
+      "sources": [],
+      "elapsed_ms": 54447,
+      "error": null
+    }
+  ],
+  "completed": true
+}

@@ -1,0 +1,90 @@
+2026-03-08 11:52:10,178 INFO: Watching tests/evaluation/results/r104-ht-pro-streaming for new all results (poll every 10s)
+2026-03-08 11:52:10,178 INFO: Found 2 new scenarios to judge
+2026-03-08 11:52:16,243 INFO: HTTP Request: POST https://brn-azai.cognitiveservices.azure.com/openai/deployments/gpt-5.2/chat/completions?api-version=2024-10-21 "HTTP/1.1 200 OK"
+2026-03-08 11:52:16,734 INFO: HTTP Request: POST https://brn-azai.cognitiveservices.azure.com/openai/deployments/gpt-5.2/chat/completions?api-version=2024-10-21 "HTTP/1.1 200 OK"
+2026-03-08 11:52:16,735 INFO: DASHBOARD: [1 scored] | B-avg:6.8 | P-avg:6.2 | H-avg:5.9
+2026-03-08 11:52:16,735 INFO: DASHBOARD: [2 scored] | B-avg:6.9 | P-avg:6.0 | H-avg:6.1
+2026-03-08 11:52:46,759 INFO: Found 1 new scenarios to judge
+2026-03-08 11:52:52,223 INFO: HTTP Request: POST https://brn-azai.cognitiveservices.azure.com/openai/deployments/gpt-5.2/chat/completions?api-version=2024-10-21 "HTTP/1.1 200 OK"
+2026-03-08 11:52:52,224 INFO: DASHBOARD: [3 scored] | B-avg:7.0 | P-avg:5.9 | H-avg:6.1
+2026-03-08 11:55:02,318 INFO: Found 1 new scenarios to judge
+2026-03-08 11:55:07,889 INFO: HTTP Request: POST https://brn-azai.cognitiveservices.azure.com/openai/deployments/gpt-5.2/chat/completions?api-version=2024-10-21 "HTTP/1.1 200 OK"
+2026-03-08 11:55:07,890 INFO: DASHBOARD: [4 scored] | B-avg:7.0 | P-avg:5.8 | H-avg:6.0
+2026-03-08 11:57:17,992 INFO: Found 1 new scenarios to judge
+2026-03-08 11:57:22,904 INFO: HTTP Request: POST https://brn-azai.cognitiveservices.azure.com/openai/deployments/gpt-5.2/chat/completions?api-version=2024-10-21 "HTTP/1.1 200 OK"
+2026-03-08 11:57:22,905 INFO: DASHBOARD: [5 scored] | B-avg:7.0 | P-avg:5.6 | H-avg:5.8
+2026-03-08 11:59:33,003 INFO: Found 1 new scenarios to judge
+2026-03-08 11:59:37,756 INFO: HTTP Request: POST https://brn-azai.cognitiveservices.azure.com/openai/deployments/gpt-5.2/chat/completions?api-version=2024-10-21 "HTTP/1.1 200 OK"
+2026-03-08 11:59:37,757 INFO: DASHBOARD: [6 scored] | B-avg:7.2 | P-avg:5.4 | H-avg:5.8
+2026-03-08 12:01:27,829 INFO: Found 1 new scenarios to judge
+2026-03-08 12:01:33,868 INFO: HTTP Request: POST https://brn-azai.cognitiveservices.azure.com/openai/deployments/gpt-5.2/chat/completions?api-version=2024-10-21 "HTTP/1.1 200 OK"
+2026-03-08 12:01:33,869 INFO: DASHBOARD: [7 scored] | B-avg:7.1 | P-avg:5.3 | H-avg:5.6
+2026-03-08 12:04:44,033 INFO: Found 1 new scenarios to judge
+2026-03-08 12:04:49,369 INFO: HTTP Request: POST https://brn-azai.cognitiveservices.azure.com/openai/deployments/gpt-5.2/chat/completions?api-version=2024-10-21 "HTTP/1.1 200 OK"
+2026-03-08 12:04:49,369 INFO: DASHBOARD: [8 scored] | B-avg:7.1 | P-avg:5.4 | H-avg:5.7
+2026-03-08 12:07:39,523 INFO: Found 1 new scenarios to judge
+2026-03-08 12:07:45,163 INFO: HTTP Request: POST https://brn-azai.cognitiveservices.azure.com/openai/deployments/gpt-5.2/chat/completions?api-version=2024-10-21 "HTTP/1.1 200 OK"
+2026-03-08 12:07:45,164 INFO: DASHBOARD: [9 scored] | B-avg:7.1 | P-avg:5.3 | H-avg:5.6
+2026-03-08 12:10:35,308 INFO: Found 1 new scenarios to judge
+2026-03-08 12:10:40,729 INFO: HTTP Request: POST https://brn-azai.cognitiveservices.azure.com/openai/deployments/gpt-5.2/chat/completions?api-version=2024-10-21 "HTTP/1.1 200 OK"
+2026-03-08 12:10:40,730 INFO: DASHBOARD: [10 scored] | B-avg:7.0 | P-avg:5.3 | H-avg:5.5
+2026-03-08 12:13:00,836 INFO: Found 1 new scenarios to judge
+2026-03-08 12:13:06,915 INFO: HTTP Request: POST https://brn-azai.cognitiveservices.azure.com/openai/deployments/gpt-5.2/chat/completions?api-version=2024-10-21 "HTTP/1.1 200 OK"
+2026-03-08 12:13:06,915 INFO: DASHBOARD: [11 scored] | B-avg:7.0 | P-avg:5.3 | H-avg:5.5
+2026-03-08 12:15:27,046 INFO: Found 1 new scenarios to judge
+2026-03-08 12:15:32,456 INFO: HTTP Request: POST https://brn-azai.cognitiveservices.azure.com/openai/deployments/gpt-5.2/chat/completions?api-version=2024-10-21 "HTTP/1.1 200 OK"
+2026-03-08 12:15:32,456 INFO: DASHBOARD: [12 scored] | B-avg:6.9 | P-avg:5.2 | H-avg:5.4
+2026-03-08 12:17:42,569 INFO: Found 1 new scenarios to judge
+2026-03-08 12:17:47,836 INFO: HTTP Request: POST https://brn-azai.cognitiveservices.azure.com/openai/deployments/gpt-5.2/chat/completions?api-version=2024-10-21 "HTTP/1.1 200 OK"
+2026-03-08 12:17:47,837 INFO: DASHBOARD: [13 scored] | B-avg:7.0 | P-avg:5.3 | H-avg:5.4
+2026-03-08 12:19:57,980 INFO: Found 1 new scenarios to judge
+2026-03-08 12:20:05,587 INFO: HTTP Request: POST https://brn-azai.cognitiveservices.azure.com/openai/deployments/gpt-5.2/chat/completions?api-version=2024-10-21 "HTTP/1.1 200 OK"
+2026-03-08 12:20:05,588 INFO: DASHBOARD: [14 scored] | B-avg:6.8 | P-avg:5.2 | H-avg:5.3
+2026-03-08 12:23:35,788 INFO: Found 1 new scenarios to judge
+2026-03-08 12:23:42,036 INFO: HTTP Request: POST https://brn-azai.cognitiveservices.azure.com/openai/deployments/gpt-5.2/chat/completions?api-version=2024-10-21 "HTTP/1.1 200 OK"
+2026-03-08 12:23:42,036 INFO: DASHBOARD: [15 scored] | B-avg:6.8 | P-avg:5.2 | H-avg:5.4
+2026-03-08 12:26:22,192 INFO: Found 1 new scenarios to judge
+2026-03-08 12:26:28,801 INFO: HTTP Request: POST https://brn-azai.cognitiveservices.azure.com/openai/deployments/gpt-5.2/chat/completions?api-version=2024-10-21 "HTTP/1.1 200 OK"
+2026-03-08 12:26:28,802 INFO: DASHBOARD: [16 scored] | B-avg:6.8 | P-avg:5.2 | H-avg:5.4
+2026-03-08 12:29:18,943 INFO: Found 1 new scenarios to judge
+2026-03-08 12:29:25,371 INFO: HTTP Request: POST https://brn-azai.cognitiveservices.azure.com/openai/deployments/gpt-5.2/chat/completions?api-version=2024-10-21 "HTTP/1.1 200 OK"
+2026-03-08 12:29:25,373 INFO: DASHBOARD: [17 scored] | B-avg:6.8 | P-avg:5.3 | H-avg:5.4
+2026-03-08 13:01:13,845 INFO: Found 1 new scenarios to judge
+2026-03-08 13:01:20,420 INFO: HTTP Request: POST https://brn-azai.cognitiveservices.azure.com/openai/deployments/gpt-5.2/chat/completions?api-version=2024-10-21 "HTTP/1.1 200 OK"
+2026-03-08 13:01:20,420 INFO: DASHBOARD: [18 scored] | B-avg:6.6 | P-avg:5.2 | H-avg:5.3
+2026-03-08 13:03:30,534 INFO: Found 1 new scenarios to judge
+2026-03-08 13:03:36,198 INFO: HTTP Request: POST https://brn-azai.cognitiveservices.azure.com/openai/deployments/gpt-5.2/chat/completions?api-version=2024-10-21 "HTTP/1.1 200 OK"
+2026-03-08 13:03:36,199 INFO: DASHBOARD: [19 scored] | B-avg:6.6 | P-avg:5.1 | H-avg:5.2
+2026-03-08 13:06:26,315 INFO: Found 1 new scenarios to judge
+2026-03-08 13:06:32,997 INFO: HTTP Request: POST https://brn-azai.cognitiveservices.azure.com/openai/deployments/gpt-5.2/chat/completions?api-version=2024-10-21 "HTTP/1.1 200 OK"
+2026-03-08 13:06:32,998 INFO: DASHBOARD: [20 scored] | B-avg:6.7 | P-avg:5.1 | H-avg:5.3
+2026-03-08 13:08:13,080 INFO: Found 1 new scenarios to judge
+2026-03-08 13:08:20,118 INFO: HTTP Request: POST https://brn-azai.cognitiveservices.azure.com/openai/deployments/gpt-5.2/chat/completions?api-version=2024-10-21 "HTTP/1.1 200 OK"
+2026-03-08 13:08:20,119 INFO: DASHBOARD: [21 scored] | B-avg:6.7 | P-avg:5.1 | H-avg:5.3
+2026-03-08 13:10:00,173 INFO: Found 1 new scenarios to judge
+2026-03-08 13:10:06,196 INFO: HTTP Request: POST https://brn-azai.cognitiveservices.azure.com/openai/deployments/gpt-5.2/chat/completions?api-version=2024-10-21 "HTTP/1.1 200 OK"
+2026-03-08 13:10:06,197 INFO: DASHBOARD: [22 scored] | B-avg:6.7 | P-avg:5.1 | H-avg:5.3
+2026-03-08 13:12:56,330 INFO: Found 1 new scenarios to judge
+2026-03-08 13:13:01,931 INFO: HTTP Request: POST https://brn-azai.cognitiveservices.azure.com/openai/deployments/gpt-5.2/chat/completions?api-version=2024-10-21 "HTTP/1.1 200 OK"
+2026-03-08 13:13:01,931 INFO: DASHBOARD: [23 scored] | B-avg:6.7 | P-avg:5.1 | H-avg:5.4
+2026-03-08 13:15:32,056 INFO: Found 1 new scenarios to judge
+2026-03-08 13:15:38,457 INFO: HTTP Request: POST https://brn-azai.cognitiveservices.azure.com/openai/deployments/gpt-5.2/chat/completions?api-version=2024-10-21 "HTTP/1.1 200 OK"
+2026-03-08 13:15:38,458 INFO: DASHBOARD: [24 scored] | B-avg:6.7 | P-avg:5.1 | H-avg:5.3
+2026-03-08 13:17:48,551 INFO: Found 1 new scenarios to judge
+2026-03-08 13:17:55,249 INFO: HTTP Request: POST https://brn-azai.cognitiveservices.azure.com/openai/deployments/gpt-5.2/chat/completions?api-version=2024-10-21 "HTTP/1.1 200 OK"
+2026-03-08 13:17:55,249 INFO: DASHBOARD: [25 scored] | B-avg:6.8 | P-avg:5.1 | H-avg:5.4
+2026-03-08 13:20:45,364 INFO: Found 1 new scenarios to judge
+2026-03-08 13:20:52,318 INFO: HTTP Request: POST https://brn-azai.cognitiveservices.azure.com/openai/deployments/gpt-5.2/chat/completions?api-version=2024-10-21 "HTTP/1.1 200 OK"
+2026-03-08 13:20:52,318 INFO: DASHBOARD: [26 scored] | B-avg:6.8 | P-avg:5.1 | H-avg:5.4
+2026-03-08 13:24:42,479 INFO: Found 1 new scenarios to judge
+2026-03-08 13:24:48,233 INFO: HTTP Request: POST https://brn-azai.cognitiveservices.azure.com/openai/deployments/gpt-5.2/chat/completions?api-version=2024-10-21 "HTTP/1.1 200 OK"
+2026-03-08 13:24:48,234 INFO: DASHBOARD: [27 scored] | B-avg:6.8 | P-avg:5.1 | H-avg:5.4
+2026-03-08 13:26:28,323 INFO: Found 1 new scenarios to judge
+2026-03-08 13:26:38,786 INFO: HTTP Request: POST https://brn-azai.cognitiveservices.azure.com/openai/deployments/gpt-5.2/chat/completions?api-version=2024-10-21 "HTTP/1.1 200 OK"
+2026-03-08 13:26:38,796 INFO: DASHBOARD: [28 scored] | B-avg:6.8 | P-avg:5.1 | H-avg:5.4
+2026-03-08 13:29:48,950 INFO: Found 1 new scenarios to judge
+2026-03-08 13:29:54,414 INFO: HTTP Request: POST https://brn-azai.cognitiveservices.azure.com/openai/deployments/gpt-5.2/chat/completions?api-version=2024-10-21 "HTTP/1.1 200 OK"
+2026-03-08 13:29:54,419 INFO: DASHBOARD: [29 scored] | B-avg:6.8 | P-avg:5.1 | H-avg:5.4
+2026-03-08 13:32:44,555 INFO: Found 1 new scenarios to judge
+2026-03-08 13:32:49,959 INFO: HTTP Request: POST https://brn-azai.cognitiveservices.azure.com/openai/deployments/gpt-5.2/chat/completions?api-version=2024-10-21 "HTTP/1.1 200 OK"
+2026-03-08 13:32:49,960 INFO: DASHBOARD: [30 scored] | B-avg:6.8 | P-avg:5.2 | H-avg:5.4

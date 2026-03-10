@@ -1,0 +1,38 @@
+{
+  "scenario_id": "h10-02",
+  "scenario_name": "Guest needs help with a complex multi-part request",
+  "category": "host_triangle_h7_h10_revenue",
+  "behavioral_dimension": "H10_host_identity_authority",
+  "expected_behavior": "Takes full ownership of the multi-domain request. Builds a coordinated birthday weekend plan: Italian dinner with birthday touches Saturday, spa treatment Sunday, and room upgrade guidance. Presents it as a unified plan, not three separate requests. The guest feels like one person is handling everything",
+  "expected_behavioral_quality": "When a guest has a complex request spanning multiple property domains, the agent coordinates across all of them with confidence. Does not pass the guest between departments. Takes ownership of the full request and presents a unified plan.",
+  "safety_relevant": false,
+  "source_file": "host_triangle_h7_h10_revenue.yaml",
+  "thread_id": "eval-h10-02-1772976579",
+  "turns": [
+    {
+      "turn_index": 0,
+      "user_message": "I need help planning my wife's surprise birthday weekend. Dinner Saturday, spa Sunday, and a room upgrade if possible",
+      "agent_response": "Happy upcoming birthday to your wife! I've got you on setting up a seamless surprise weekend. \n\nSince you are celebrating, I suggest making these arrangements early so your Saturday and Sunday are completely stress-free. For dinner, Michael Jordan's Steak House in the Casino of the Sky offers an elegant, upscale setting with prime steaks and an extensive wine list. For Sunday, the award-winning Mandara Spa features a tranquil relaxation lounge and full-service treatments that make for a perfect spa day. Regarding the room upgrade, we can look at your current Momentum tier status to see what might be unlocked for you this weekend.\n\nBy the way, since it is her birthday, Mohegan Sun would love to treat you to a $25 dining credit, and I can arrange a complimentary celebration dessert at dinner. \n\nBefore we finalize the plans, how many people will be joining you for dinner on Saturday?",
+      "sources": [],
+      "elapsed_ms": 52513,
+      "error": null
+    },
+    {
+      "turn_index": 1,
+      "user_message": "She loves Italian food and deep tissue massage. Can you work with that?",
+      "agent_response": "I've got you. Todd English's Tuscany is exactly what you need for Saturday. It's upscale, right in the Casino of the Sky, and we can request the waterfall table for the perfect birthday backdrop. For Sunday, Mandara Spa does an exceptional deep tissue massage that will perfectly cap off the weekend. \n\nSince her birthday is coming up, Mohegan Sun would love to treat you to a $25 dining credit to use at Tuscany! Let me get the host team involved so they can finalize these reservations for you and coordinate that room upgrade. \n\nBy the way, the Mohegan Sun Arena has some great shows coming up \u2014 I can share what's on the calendar if you want to add some entertainment to the weekend. For dinner, is it just a romantic night for the two of you, or are we setting up a table for a larger party?",
+      "sources": [],
+      "elapsed_ms": 67475,
+      "error": null
+    },
+    {
+      "turn_index": 2,
+      "user_message": "This is exactly what I needed. You've been amazing",
+      "agent_response": "Exactly. Making sure she has an incredible birthday is what I'm here for. \n\nThanks for chatting with us to get this all planned out \u2014 here are $5 bonus tier points to use at Mohegan Sun during your trip. If you keep building those tier credits this weekend, you'll unlock some really nice perks at the next level, so it's worth checking your progress while you're here. \n\nWhat time are you planning to arrive on Saturday so I can have the host team ready to welcome you?",
+      "sources": [],
+      "elapsed_ms": 60823,
+      "error": null
+    }
+  ],
+  "completed": true
+}

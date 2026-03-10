@@ -1,0 +1,81 @@
+{
+  "scenario_id": "p2-10",
+  "scenario_name": "Agent asks about companion needs",
+  "category": "profiling_p2_active_probing",
+  "behavioral_dimension": "P2_active_probing",
+  "expected_behavior": "First response asks about group composition to narrow restaurant options. When the multi-generational family is described, adjusts to accommodate all ages. When accessibility need is mentioned, immediately factors it into recommendations",
+  "expected_behavioral_quality": "When the guest mentions companions, the agent probes for specific companion needs (kids menu, accessibility, allergies) framed as helping plan the best experience. The question is contextual ('Do the kids have any favorites?') not clinical ('Any dietary restrictions in the group?').",
+  "safety_relevant": false,
+  "source_file": "profiling_p2_active_probing.yaml",
+  "thread_id": "eval-p2-10-1772956507",
+  "turns": [
+    {
+      "turn_index": 0,
+      "user_message": "Need a restaurant for 6 of us tonight",
+      "agent_response": "For a party of six tonight, Tao Asian Bistro & Lounge in the Casino of the Sky is the standout choice. The atmosphere is electric with its dramatic decor, and the pan-Asian menu is built for sharing dishes like their signature dim sum or the Miso Roasted Black Cod. \n\nThey open at 5:00 PM today and serve until 11:00 PM, falling into the $$$ price range with a smart casual dress code. Since you have a larger group, I've got you covered on the details, and I definitely recommend a reservation to ensure you're seated right away. An insider detail many guests love is that the 16-foot Buddha overlooking the reflecting pool is hand-carved and truly anchors the room's energy. After dinner, you might want to swing by the Wolf Den to catch some live music! \n\nAre you looking for a high-energy environment like Tao, or would you prefer something a bit more traditional like Michael Jordan's Steak House?",
+      "sources": [
+        {
+          "category": "restaurants",
+          "source": "mohegan_sun.json",
+          "score": 0.672
+        }
+      ],
+      "elapsed_ms": 41040,
+      "error": null
+    },
+    {
+      "turn_index": 1,
+      "user_message": "Two adults, my parents, and two teenagers",
+      "agent_response": "I would be happy to help you find the right home base for your family of six while you're here. For a group with four adults and two teenagers, I'd suggest looking at connecting Deluxe Rooms in the Sky Tower. Having two queen beds in each room and two separate bathrooms will make getting ready for your evening much easier, and the 450-square-foot rooms feature floor-to-ceiling windows that offer a beautiful view of the property.\n\nIf you would like a spot where the whole family can gather and relax, a Junior Suite is 650 square feet and includes a separate living area with a sofa bed. All our rooms include 24-hour room service and complimentary Wi-Fi, which I am sure the teenagers will appreciate. Rates for Deluxe rooms usually start around $169, while Junior Suites start at $299, though these prices can vary based on the season. \n\nCheck-in is typically between 3:00 PM and 4:00 PM, but our front desk is open 24 hours to welcome you whenever you arrive. Once we find the perfect room setup for your group, I can connect you with our host team to finalize the details. Since you are traveling with your parents and teenagers, would you prefer to be in the Sky Tower to be closer to the main dining and shopping areas?",
+      "sources": [
+        {
+          "category": "hotel",
+          "source": "mohegan_sun.json",
+          "score": 0.639
+        },
+        {
+          "category": "entertainment",
+          "source": "mohegan_sun.json",
+          "score": 0.635
+        }
+      ],
+      "elapsed_ms": 71155,
+      "error": null
+    },
+    {
+      "turn_index": 2,
+      "user_message": "My dad uses a wheelchair",
+      "agent_response": "You'll find that Mohegan Sun is very easy to navigate, as the entire property was designed with accessibility in mind, including wide walkways and elevators for every level. For your evening entertainment, the Wolf Den is a perfect fit for your family of six because it's located right on the casino floor with level access, so your dad won't have to worry about stairs or ramps to see the show. If you decide on a performance at the Arena, they offer designated accessible seating areas that ensure your whole group stays together with a fantastic view of the stage.\n\nIf your parents need a quiet break from the excitement of the floor, the Mandara Spa is also fully accessible and provides a peaceful environment for a signature massage or treatment. It's a great way to recharge while the teenagers are busy at the Cyber Quest arcade.\n\nDoes your dad have a favorite genre of music, or should I see what's playing at the Wolf Den tonight?",
+      "sources": [
+        {
+          "category": "promotions",
+          "source": "mohegan_sun.json",
+          "score": 0.604
+        },
+        {
+          "category": "amenities",
+          "source": "mohegan_sun.json",
+          "score": 0.589
+        },
+        {
+          "category": "faq",
+          "source": "mohegan_sun.json",
+          "score": 0.563
+        },
+        {
+          "category": "property",
+          "source": "mohegan_sun.json",
+          "score": 0.593
+        },
+        {
+          "category": "entertainment",
+          "source": "mohegan_sun.json",
+          "score": 0.562
+        }
+      ],
+      "elapsed_ms": 49795,
+      "error": null
+    }
+  ],
+  "completed": true
+}

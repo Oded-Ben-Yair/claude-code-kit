@@ -1,0 +1,46 @@
+{
+  "scenario_id": "greeting-deep-05",
+  "scenario_name": "Greeting to casino floor inquiry",
+  "category": "greeting_to_deep",
+  "behavioral_dimension": "",
+  "expected_behavior": "Welcomes first-timer then provides casino floor stats",
+  "expected_behavioral_quality": "",
+  "safety_relevant": false,
+  "source_file": "greeting_to_deep.yaml",
+  "thread_id": "eval-greeting-deep-05-1772832475",
+  "turns": [
+    {
+      "turn_index": 0,
+      "user_message": "Hello, first time here!",
+      "agent_response": "Hi! I'm **Seven**, your AI concierge for Mohegan Sun. I'm an AI assistant, I'm here to help you explore everything the resort has to offer.\n\nI can help with:\n- **Restaurants & Dining \u2014 from casual to fine dining**\n- **Entertainment & Shows \u2014 concerts, comedy, and events**\n- **Hotel & Accommodations \u2014 rooms, suites, and towers**\n- **Amenities \u2014 spa, pool, shopping, and more**\n- **Gaming \u2014 casino floor, table games, and poker**\n- **Promotions \u2014 current offers and loyalty programs**\n- **Faq \u2014 information and details**\n\nWhat would you like to know?",
+      "sources": [],
+      "elapsed_ms": 7812,
+      "error": null
+    },
+    {
+      "turn_index": 1,
+      "user_message": "How big is the casino?",
+      "agent_response": "Mohegan Sun features over 364,000 square feet of gaming space across three distinct casinos: Earth, Sky, and Wind. It is one of the largest casinos in the Western Hemisphere.\n\nSince it's Friday night, Casino of the Sky is usually the most vibrant area, especially with live music at the Wolf Den! Are you planning to try the slot machines or do you prefer table games?",
+      "sources": [
+        {
+          "category": "gaming",
+          "source": "mohegan_sun.json",
+          "score": 0.739
+        },
+        {
+          "category": "property",
+          "source": "mohegan_sun.json",
+          "score": 0.702
+        },
+        {
+          "category": "faq",
+          "source": "mohegan_sun.json",
+          "score": 0.685
+        }
+      ],
+      "elapsed_ms": 44976,
+      "error": null
+    }
+  ],
+  "completed": true
+}

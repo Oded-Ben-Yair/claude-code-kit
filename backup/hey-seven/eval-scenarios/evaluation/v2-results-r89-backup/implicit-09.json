@@ -1,0 +1,50 @@
+{
+  "id": "implicit-09",
+  "name": "VIP entitlement through indirect language",
+  "source_file": "behavioral_implicit.yaml",
+  "category": "behavioral_implicit",
+  "behavioral_dimension": "B2_implicit",
+  "expected_behavior": "Treats spending claim as VIP signal. Provides elevated recommendations and references comp/host team for personalized offers without questioning the guest's status",
+  "expected_behavioral_quality": "Recognizes phrases like 'I spend a lot here' as implicit VIP status claims that require elevated service tone. Does not ask for proof or membership number. Treats the claim as valid and responds with VIP-appropriate warmth.",
+  "safety_relevant": false,
+  "turns": [
+    {
+      "turn_index": 0,
+      "user_message": "I spend a lot of money here every month",
+      "agent_response": "Let me provide more specific details for frequent guests. High monthly activity typically correlates with the Ascend or Soar tiers of the Momentum program. \n\nThe Ascend tier, which requires 25,000 Tier Credits, includes a 25% earn rate bonus, priority restaurant seating, and access to a dedicated host. The Soar tier is invitation-only and offers the highest level of benefits. Momentum Points earned from your play are redeemable for dining at restaurants like Tuscany, hotel stays, or retail purchases at The Shops at Mohegan Sun. Your specific point balance and any individual offers are only accessible at a Momentum Desk or through the Mohegan Sun app. All rewards and comps are determined by play history and are subject to availability. \n\nWould you like more information about the VIP high-limit gaming areas for table games and slots? After gaming, you might consider visiting novelle, which offers an upscale lounge atmosphere on Thursday through Saturday evenings.",
+      "sources": [],
+      "elapsed_ms": 87154,
+      "error": null
+    },
+    {
+      "turn_index": 1,
+      "user_message": "What's the best you can do for dinner tonight?",
+      "agent_response": "For an evening that matches your history with us, Todd English's Tuscany is the premier choice opening at 5:00 PM tonight. The aroma of the wood-fired stone oven defines the atmosphere the moment you walk in, setting the stage for signature dishes like their handmade pastas and salt-crusted branzino. \n\nAs a regular guest, you likely appreciate that Tuscany offers a sophisticated, business-casual environment in the Casino of the Sky. Since you mentioned your frequent play, keep in mind that your Momentum status may grant you priority seating, though I still recommend a reservation to ensure your preferred time. You can also redeem your Momentum Points directly for this meal, making it a seamless way to enjoy the rewards of your loyalty.\n\nAre you planning to dine with a group or is this a more intimate dinner for two? After dinner, you might want to check the schedule at the Wolf Den, as they often have great live music just a short walk from the restaurant.",
+      "sources": [
+        {
+          "category": "restaurants",
+          "source": "mohegan_sun.json",
+          "score": 0.64
+        },
+        {
+          "category": "faq",
+          "source": "mohegan_sun.json",
+          "score": 0.636
+        }
+      ],
+      "elapsed_ms": 59038,
+      "error": null
+    },
+    {
+      "turn_index": 2,
+      "user_message": "Can you check on any comp availability?",
+      "agent_response": "I appreciate you asking! While I can't make reservations, bookings, or take any actions on your behalf, I can provide all the information you need to do so yourself.\n\nFor reservations and bookings, please contact Mohegan Sun directly at 1-888-226-7711 or visit mohegansun.com.\n\nIs there any information I can help you with?",
+      "sources": [],
+      "elapsed_ms": 8832,
+      "error": null
+    }
+  ],
+  "elapsed_ms": 247066,
+  "error": null,
+  "completed": true
+}

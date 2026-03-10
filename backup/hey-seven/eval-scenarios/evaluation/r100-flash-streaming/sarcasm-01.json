@@ -1,0 +1,96 @@
+{
+  "scenario_id": "sarcasm-01",
+  "scenario_name": "Sarcastic opener dismissing chatbot",
+  "category": "behavioral_sarcasm",
+  "behavioral_dimension": "B1_sarcasm",
+  "expected_behavior": "Does not match sarcasm with excessive enthusiasm. Stays grounded, earns trust through useful answers, and naturally warms as guest engagement shifts",
+  "expected_behavioral_quality": "Acknowledges the skepticism without defensiveness or forced enthusiasm. Does not mirror sarcasm. Calm, competent opener that proves value through substance, not cheerfulness.",
+  "safety_relevant": false,
+  "source_file": "behavioral_sarcasm.yaml",
+  "thread_id": "eval-sarcasm-01-1772826289",
+  "turns": [
+    {
+      "turn_index": 0,
+      "user_message": "Oh wonderful, another chatbot. This should be fun.",
+      "agent_response": "I understand the skepticism\u2014I am an AI assistant, but I can provide direct information about our restaurants, entertainment, and amenities to help you navigate the property. Since it is Friday night, our venues like the Wolf Den and novelle are currently open and active. Are you visiting for a specific event or just looking for a recommendation?",
+      "sources": [
+        {
+          "category": "faq",
+          "source": "mohegan_sun.json",
+          "score": 0.635
+        },
+        {
+          "category": "entertainment",
+          "source": "mohegan_sun.json",
+          "score": 0.635
+        },
+        {
+          "category": "gaming",
+          "source": "mohegan_sun.json",
+          "score": 0.607
+        },
+        {
+          "category": "promotions",
+          "source": "mohegan_sun.json",
+          "score": 0.605
+        },
+        {
+          "category": "property",
+          "source": "mohegan_sun.json",
+          "score": 0.613
+        }
+      ],
+      "elapsed_ms": 30172,
+      "error": null
+    },
+    {
+      "turn_index": 1,
+      "user_message": "Fine. What restaurants do you have?",
+      "agent_response": "For a Friday night, Ballo Italian Restaurant in the Casino of the Sky is a standout choice for contemporary Italian. The atmosphere is vibrant, and they are well-known for their housemade pastas and an impressive selection of Italian wines. \n\nThey are open until 10:00 PM tonight with a smart casual dress code, and while the price range is around $$$, I would recommend a reservation to ensure you get a table during the weekend rush. After dinner, the Wolf Den in the Casino of the Earth usually has free live music, which is a great way to keep the night going without a cover charge. \n\nI can provide more details on our other spots or even connect you with our host team to finalize a booking\u2014would you prefer a high-energy spot like Ballo or something more low-key?",
+      "sources": [
+        {
+          "category": "restaurants",
+          "source": "mohegan_sun.json",
+          "score": 0.672
+        },
+        {
+          "category": "faq",
+          "source": "mohegan_sun.json",
+          "score": 0.658
+        }
+      ],
+      "elapsed_ms": 44349,
+      "error": null
+    },
+    {
+      "turn_index": 2,
+      "user_message": "Alright that was actually useful. What about the spa?",
+      "agent_response": "Mandara Spa is our signature full-service retreat, and it is inspired by Balinese healing traditions with a fantastic relaxation lounge and steam room. It is open until 8:00 PM daily, so while they are closing shortly tonight, it is a perfect way to start your morning. We also have the Elemis Spa in the Earth Tower which focuses on premium skincare and express services, though they close at 7:00 PM.\n\nIf you are looking for a way to unwind right now, our heated indoor pool and hot tub are available to hotel guests until 10:00 PM. Pro tip\u2014if you book one of the first appointments at 9:00 AM tomorrow, you will often have the steam room and sauna almost entirely to yourself before the midday rush.\n\nI can help you look at the signature treatments for either location and then connect you with our host team to finalize a booking. Would you prefer a deep-tissue massage or something more focused on skincare like a facial?\n\nBy the way, the Mohegan Sun Arena has some great shows coming up later this weekend\u2014I can share what's on the calendar if you're interested in some entertainment after your spa day.",
+      "sources": [
+        {
+          "category": "amenities",
+          "source": "mohegan_sun.json",
+          "score": 0.703
+        },
+        {
+          "category": "promotions",
+          "source": "mohegan_sun.json",
+          "score": 0.65
+        },
+        {
+          "category": "faq",
+          "source": "mohegan_sun.json",
+          "score": 0.646
+        },
+        {
+          "category": "property",
+          "source": "mohegan_sun.json",
+          "score": 0.649
+        }
+      ],
+      "elapsed_ms": 49306,
+      "error": null
+    }
+  ],
+  "completed": true
+}

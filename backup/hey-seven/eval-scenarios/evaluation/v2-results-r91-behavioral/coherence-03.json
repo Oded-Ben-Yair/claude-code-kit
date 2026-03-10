@@ -1,0 +1,67 @@
+{
+  "id": "coherence-03",
+  "name": "Forgetting dietary preference across domain shift",
+  "source_file": "behavioral_multiturn_coherence.yaml",
+  "category": "behavioral_multiturn_coherence",
+  "behavioral_dimension": "B7_coherence",
+  "expected_behavior": "Turn 3 dining recommendation must account for the vegetarian preference stated in turn 1, even though turn 2 was about the spa. Agent should NOT recommend the steakhouse as the primary option. The dietary extraction should persist via the state reducer",
+  "expected_behavioral_quality": "Guest mentions a dietary restriction in turn 1. After a topic shift to spa/entertainment, when dining comes up again, the dietary preference must still be applied. The extracted_fields reducer should persist this across turns.",
+  "safety_relevant": false,
+  "turns": [
+    {
+      "turn_index": 0,
+      "user_message": "I'm vegetarian. What are my dinner options?",
+      "agent_response": "Todd English's Tuscany is an exceptional choice for a vegetarian dinner, where the scent of wood-fired dough and fresh herbs greets you at the door. Their menu features delicate handmade pastas and artisanal pizzas that highlight fresh, seasonal ingredients, providing plenty of flavorful options in the $$$$ price range. They open today at 5:00 PM in the Casino of the Sky and follow a business casual dress code. Since this is one of our most popular venues, I'd suggest making a reservation to ensure you have a table waiting for you. How many people will be in your party tonight? After a meal like that, the nearby Wolf Den often has great live music to keep the evening going.",
+      "sources": [
+        {
+          "category": "restaurants",
+          "source": "mohegan_sun.json",
+          "score": 0.673
+        }
+      ],
+      "elapsed_ms": 28166,
+      "error": null
+    },
+    {
+      "turn_index": 1,
+      "user_message": "Actually tell me about the spa first",
+      "agent_response": "Mandara Spa is our award-winning sanctuary that incorporates Balinese healing traditions into their massages, body wraps, and facials. It features a tranquil relaxation lounge, steam room, and sauna, so you can really take your time and decompress before or after your treatment. \n\nIf you're looking for something more modern, the Elemis Spa at the Earth Tower specializes in premium skincare and offers express services if you're on a tighter schedule. Both spas open at 9:00 AM today, and the morning hours are typically the most peaceful. Would you prefer a deep-tissue massage to work out any tension, or are you more interested in a refreshing facial? After you've had a chance to unwind, the fresh, plant-forward flavors at Todd English's Tuscany would be a great way to continue that wellness focus for your vegetarian dinner.",
+      "sources": [
+        {
+          "category": "amenities",
+          "source": "mohegan_sun.json",
+          "score": 0.678
+        },
+        {
+          "category": "property",
+          "source": "mohegan_sun.json",
+          "score": 0.653
+        },
+        {
+          "category": "hotel",
+          "source": "mohegan_sun.json",
+          "score": 0.633
+        }
+      ],
+      "elapsed_ms": 25352,
+      "error": null
+    },
+    {
+      "turn_index": 2,
+      "user_message": "Ok back to dinner \u2014 where should I go?",
+      "agent_response": "Ballo Italian Restaurant is a standout for vegetarian dining, where you can watch the chefs hand-craft pasta while the scent of fresh basil and toasted garlic fills the room. Their menu features contemporary takes on traditional Italian recipes, including rich risottos and housemade pastas that make vegetables the star of the plate. They open today at 5:00 PM in the Casino of the Sky with a smart casual",
+      "sources": [
+        {
+          "category": "restaurants",
+          "source": "mohegan_sun.json",
+          "score": 0.657
+        }
+      ],
+      "elapsed_ms": 48028,
+      "error": null
+    }
+  ],
+  "elapsed_ms": 101548,
+  "error": null,
+  "completed": true
+}

@@ -1,0 +1,56 @@
+{
+  "id": "h4-04",
+  "name": "Guest who introduced themselves formally",
+  "source_file": "host_triangle_h4_h6_relationship.yaml",
+  "category": "host_triangle_h4_h6_relationship",
+  "behavioral_dimension": "H4_personalized_recognition",
+  "expected_behavior": "Maintains 'Mr. Chen' throughout, never dropping to first name. Matches the formal register in vocabulary and sentence structure. Recommendation blends fine dining with a 'hidden gem' angle, showing the agent listened to what Mr. Chen actually values \u2014 not just price tier",
+  "expected_behavioral_quality": "Mirrors the guest's formality level throughout the conversation. A guest who introduces themselves with a title or full name expects that register to be maintained. Recognition includes respecting the communication style, not just remembering the name.",
+  "safety_relevant": false,
+  "turns": [
+    {
+      "turn_index": 0,
+      "user_message": "Good evening. I'm Mr. Chen, visiting from New York. I understand you have quite a dining portfolio.",
+      "agent_response": "Welcome to Mohegan Sun, Mr. Chen. Since you are visiting from New York, you might find the sophisticated energy of Tao Asian Bistro & Lounge to be the perfect introduction to our dining scene when it opens at 5:00 PM tonight.\n\nLocated in the Casino of the Sky, the restaurant is visually arresting with its 16-foot Buddha centerpiece and a menu that masterfully blends Chinese",
+      "sources": [],
+      "elapsed_ms": 47294,
+      "error": null
+    },
+    {
+      "turn_index": 1,
+      "user_message": "I appreciate fine dining but also enjoy discovering hidden gems. What would you recommend?",
+      "agent_response": "Mr, for a fine dining experience that feels like a true discovery, Todd English's Tuscany is where you want to be. The moment you cross the threshold, the scent of wood-smoke from the open kitchen transports you straight to Italy. It is tucked away in the Casino of the Sky and feels worlds apart from the gaming floor with its rustic stone walls and warm lighting. Their handmade pastas are exceptional, but the wood-fired flatbreads have a char and texture that are truly artisan.\n\nThey open tonight at 5:00 PM and close at 10:00 PM. Since it is a more formal setting, business casual attire is required and a reservation is highly recommended. Please keep in mind that hours and pricing can vary, so confirming with the property is always a wise move.\n\nAfter dinner, you might enjoy the live music at the Wolf Den in the Casino of the Earth\u2014the energy there is always a great way to end the night. Do you tend to favor classic Italian flavors, or are you in the mood for a perfectly seared steak this evening?",
+      "sources": [
+        {
+          "category": "restaurants",
+          "source": "mohegan_sun.json",
+          "score": 0.657
+        }
+      ],
+      "elapsed_ms": 25775,
+      "error": null
+    },
+    {
+      "turn_index": 2,
+      "user_message": "Excellent taste. I'll try the Tuscany tonight.",
+      "agent_response": "Tuscany is a superb choice for your first evening, Mr. \n\nSeven-fired aroma hits you the moment you walk in, setting the stage for their incredible handmade pastas and rustic flavors. Since they open at 5:00 PM today, I would suggest securing a reservation as it is a highly sought-after spot, and do keep in mind that business casual attire is preferred for this setting. After dinner, the Wolf Den in the Casino of the Earth often has live music that provides a great change of pace from the intimate atmosphere at Tuscany. \n\nSince you enjoy Italian cuisine, are you more of a pasta aficionado or do you prefer a classic wood-fired pizza?",
+      "sources": [
+        {
+          "category": "restaurants",
+          "source": "mohegan_sun.json",
+          "score": 0.689
+        },
+        {
+          "category": "faq",
+          "source": "mohegan_sun.json",
+          "score": 0.649
+        }
+      ],
+      "elapsed_ms": 26882,
+      "error": null
+    }
+  ],
+  "elapsed_ms": 99952,
+  "error": null,
+  "completed": true
+}

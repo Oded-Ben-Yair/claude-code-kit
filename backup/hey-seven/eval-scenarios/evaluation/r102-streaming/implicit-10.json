@@ -1,0 +1,76 @@
+{
+  "scenario_id": "implicit-10",
+  "scenario_name": "Indirect complaint via comparison to competitor",
+  "category": "behavioral_implicit",
+  "behavioral_dimension": "B2_implicit",
+  "expected_behavior": "Reads competitor comparison as implicit complaint. Does not disparage Foxwoods. Highlights unique strengths of the property's dining rather than competing on quantity",
+  "expected_behavioral_quality": "Reads competitor comparison as implicit dissatisfaction with current experience. Does not criticize the competitor or get defensive. Focuses on showcasing what makes this property special without directly competing.",
+  "safety_relevant": false,
+  "source_file": "behavioral_implicit.yaml",
+  "thread_id": "eval-implicit-10-1772914189",
+  "turns": [
+    {
+      "turn_index": 0,
+      "user_message": "At Foxwoods they have way more restaurants",
+      "agent_response": "I'm here to ensure you find the perfect table right here at Mohegan Sun, where we focus on bringing together some of the most iconic names in the culinary world. For a Saturday night, Frank Pepe\u2019s Pizzeria Napoletana is a must-try if you want a true taste of Connecticut history; they're famous for their New Haven-style coal-fired \"apizza\" and are open until 11:00 PM tonight.\n\nIt's a local legend for a reason\u2014the charred, thin crust on their signature white clam pie has a smoky finish that guests travel from all over the state to experience. Once you've finished dinner, the Wolf Den usually has a fantastic live performance happening just a short walk away in the center of the Casino of the Earth.\n\nWhat kind of flavors are you usually drawn to when you're dining out!",
+      "sources": [
+        {
+          "category": "restaurants",
+          "source": "mohegan_sun.json",
+          "score": 0.729
+        },
+        {
+          "category": "faq",
+          "source": "mohegan_sun.json",
+          "score": 0.71
+        },
+        {
+          "category": "amenities",
+          "source": "mohegan_sun.json",
+          "score": 0.688
+        }
+      ],
+      "elapsed_ms": 37339,
+      "error": null
+    },
+    {
+      "turn_index": 1,
+      "user_message": "What makes your restaurants different?",
+      "agent_response": "What defines our restaurants is the level of craft and specific culinary identity in each kitchen\u2014from the housemade pastas at Ballo to the massive \"twisted comfort food\" portions at Hash House A Go Go. For tonight, Bobby Flay's Bar Americain is the standout choice because it captures the energy of a classic brasserie but with those unmistakable bold, Southwest-inspired flavors the chef is famous for!\n\nThe room has a fantastic buzz on a Saturday night and stays open until 11:00 PM in the Casino of the Earth. It is smart casual, and I've got you with the details: reservations are highly recommended for dinner to ensure you get a table during the prime rush. Once you have finished your meal, the Wolf Den is right around the corner and always has great live music to keep the night going.\n\nDo you usually lean toward bold, spicy flavors or something more traditional like Italian?",
+      "sources": [
+        {
+          "category": "restaurants",
+          "source": "mohegan_sun.json",
+          "score": 0.669
+        },
+        {
+          "category": "faq",
+          "source": "mohegan_sun.json",
+          "score": 0.629
+        },
+        {
+          "category": "promotions",
+          "source": "mohegan_sun.json",
+          "score": 0.622
+        }
+      ],
+      "elapsed_ms": 51009,
+      "error": null
+    },
+    {
+      "turn_index": 2,
+      "user_message": "OK I'll give the steakhouse a shot",
+      "agent_response": "Michael Jordan\u2019s Steak House in the Casino of the Sky is the definitive choice for a Saturday night steak. The dry-aged USDA Prime cuts have a rich, concentrated flavor that pairs perfectly with their famous garlic bread and blue cheese fondue. \n\nThey are open until 10:00 PM tonight, and the atmosphere is elegant with a business casual dress code. Since it is Saturday night, I would suggest heading over soon as reservations are highly recommended for a table. After your meal, the Wolf Den in the Casino of the Earth is a great spot to grab a drink and catch some free live music.\n\nAre you more of a ribeye fan, or do you usually go for a leaner cut like the filet mignon?",
+      "sources": [
+        {
+          "category": "restaurants",
+          "source": "mohegan_sun.json",
+          "score": 0.681
+        }
+      ],
+      "elapsed_ms": 26714,
+      "error": null
+    }
+  ],
+  "completed": true
+}

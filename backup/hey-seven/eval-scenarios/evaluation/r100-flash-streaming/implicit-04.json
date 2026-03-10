@@ -1,0 +1,76 @@
+{
+  "scenario_id": "implicit-04",
+  "scenario_name": "Restless kids imply urgency and family context",
+  "category": "behavioral_implicit",
+  "behavioral_dimension": "B2_implicit",
+  "expected_behavior": "Treats 'restless kids' as an urgent request for immediate, family-friendly activities. Answers are practical and actionable. Suggests casual dining for families, not fine dining",
+  "expected_behavioral_quality": "Reads 'restless kids' as urgency and stress. Provides quick, practical, family-friendly answers immediately. Does not give a marketing-style overview. Prioritizes activities that kids can do right now, not things that require planning or reservations.",
+  "safety_relevant": false,
+  "source_file": "behavioral_implicit.yaml",
+  "thread_id": "eval-implicit-04-1772820031",
+  "turns": [
+    {
+      "turn_index": 0,
+      "user_message": "The kids are getting restless, what can we do?",
+      "agent_response": "It sounds like it's time for some high-energy fun to burn off that restlessness. We have some fantastic spots located near each other that are perfect for families, starting with Cyber Quest, which is our arcade featuring the latest video games and attractions. For something more physical, the Wombi Rock climbing wall is right nearby and offers indoor routes for all skill levels with professional instruction and equipment provided.\n\nIf you're looking for a bit of a break yourself, Kids Quest provides supervised entertainment for children from 6 weeks up to 12 years old. One detail many guests appreciate is that the Wombi Rock wall is designed to be accessible for everyone, so even beginners can feel like a pro by the time they reach the top. After they've burned off that energy, are you looking for a casual spot to grab a family dinner?",
+      "sources": [
+        {
+          "category": "entertainment",
+          "source": "mohegan_sun.json",
+          "score": 0.662
+        },
+        {
+          "category": "amenities",
+          "source": "mohegan_sun.json",
+          "score": 0.667
+        },
+        {
+          "category": "faq",
+          "source": "mohegan_sun.json",
+          "score": 0.647
+        },
+        {
+          "category": "gaming",
+          "source": "mohegan_sun.json",
+          "score": 0.599
+        }
+      ],
+      "elapsed_ms": 50260,
+      "error": null
+    },
+    {
+      "turn_index": 1,
+      "user_message": "Is the pool open right now?",
+      "agent_response": "Yes, the heated indoor pool is open until 10:00 PM tonight. It features an adjacent hot tub and plenty of poolside lounge chairs for when you need a break from the water. \n\nPro tip \u2014 the pool area is exclusively for hotel guests, which helps keep the atmosphere more relaxed even on a busy Friday evening. After a swim, the nearby food court in the Casino of the Earth is a quick stop for a family snack. Are you staying in the Sky or Earth Tower?",
+      "sources": [
+        {
+          "category": "faq",
+          "source": "mohegan_sun.json",
+          "score": 0.713
+        },
+        {
+          "category": "amenities",
+          "source": "mohegan_sun.json",
+          "score": 0.677
+        }
+      ],
+      "elapsed_ms": 24781,
+      "error": null
+    },
+    {
+      "turn_index": 2,
+      "user_message": "Great. And where can we grab a quick bite with kids?",
+      "agent_response": "Johnny Rockets is the perfect spot for a fast, high-energy meal \u2014 the 1950s diner theme and hand-spun shakes are always a hit with kids. They are open until 11:00 PM in the Casino of the Earth and don't require reservations. \n\nInsider tip: the staff often does choreographed dances to jukebox tunes, which is a great distraction if the kids are still feeling restless. Since you're looking for speed, would you like the quickest walking route from the pool area?",
+      "sources": [
+        {
+          "category": "restaurants",
+          "source": "mohegan_sun.json",
+          "score": 0.658
+        }
+      ],
+      "elapsed_ms": 31978,
+      "error": null
+    }
+  ],
+  "completed": true
+}

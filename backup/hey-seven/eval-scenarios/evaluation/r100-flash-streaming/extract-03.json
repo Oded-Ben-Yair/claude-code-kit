@@ -1,0 +1,99 @@
+{
+  "scenario_id": "extract-03",
+  "scenario_name": "Building party composition across 4 turns naturally",
+  "category": "behavioral_info_extraction",
+  "behavioral_dimension": "B4_agentic",
+  "expected_behavior": "Accumulates party info across turns: adults + 2 kids + elderly parent with mobility issues. Adjusts for kid-friendliness, accessibility, and group size without explicitly asking for these details",
+  "expected_behavioral_quality": "Assembles party composition from scattered mentions across multiple turns. Uses 'we' as a group indicator, then picks up specifics (kids, grandma) as they appear. Adjusts recommendations to fit the emerging group profile without asking for a headcount.",
+  "safety_relevant": false,
+  "source_file": "behavioral_info_extraction.yaml",
+  "thread_id": "eval-extract-03-1772821242",
+  "turns": [
+    {
+      "turn_index": 0,
+      "user_message": "We're looking for something to do tonight",
+      "agent_response": "It's a fantastic Friday night to be at the property! For a high-energy experience, Avalon Nightclub opens at 10:00 PM tonight with top DJs and a state-of-the-art sound system. If you're looking for a more sophisticated lounge vibe, novelle offers craft cocktails and DJ entertainment in an intimate setting, while Comix Roadhouse has live comedy shows scheduled throughout the evening. \n\nPro tip \u2014 novelle is an excellent spot for a pre-show drink if you want to soak in the atmosphere before the night really peaks. After the shows wrap up, the casino floor is open 24 hours a day to keep the excitement going. \n\nWould you prefer a high-energy club environment or a more relaxed comedy show tonight?",
+      "sources": [
+        {
+          "category": "entertainment",
+          "source": "mohegan_sun.json",
+          "score": 0.671
+        },
+        {
+          "category": "faq",
+          "source": "mohegan_sun.json",
+          "score": 0.65
+        }
+      ],
+      "elapsed_ms": 41346,
+      "error": null
+    },
+    {
+      "turn_index": 1,
+      "user_message": "The kids are with us too, ages 8 and 12",
+      "agent_response": "Friday nights are perfect for the family because Cyber Quest is usually buzzing with energy; it's a massive arcade featuring the latest video games that both an 8 and 12-year-old will find exciting! For something more active, the Wombi Rock climbing wall is right nearby and offers challenges for all skill levels with professional instruction included. \n\nPro tip \u2014 the climbing wall staff provides all the necessary gear and guidance, so it's a very easy \"drop-in\" activity even if you didn't plan for it. If the kids get hungry, Bobby's Burgers is a great spot nearby for a quick family meal before heading back to the games. \n\nAre you looking for an activity where the whole family stays together, or would you like to know about the supervised options at Kids Quest?",
+      "sources": [
+        {
+          "category": "entertainment",
+          "source": "mohegan_sun.json",
+          "score": 0.67
+        },
+        {
+          "category": "amenities",
+          "source": "mohegan_sun.json",
+          "score": 0.631
+        },
+        {
+          "category": "hotel",
+          "source": "mohegan_sun.json",
+          "score": 0.635
+        },
+        {
+          "category": "faq",
+          "source": "mohegan_sun.json",
+          "score": 0.616
+        }
+      ],
+      "elapsed_ms": 47679,
+      "error": null
+    },
+    {
+      "turn_index": 2,
+      "user_message": "Oh and my mother-in-law, she doesn't walk well",
+      "agent_response": "",
+      "sources": [],
+      "elapsed_ms": 60003,
+      "error": "TIMEOUT (60.0s)"
+    },
+    {
+      "turn_index": 3,
+      "user_message": "Put something together for all of us?",
+      "agent_response": "I'd suggest starting your evening at **Bobby's Burgers**; it's a casual spot with plenty of seating that's very close to the main action. From there, it is a short, flat walk to the **Taughannock Falls**, our 55-foot indoor waterfall, where your mother-in-law can rest on a nearby bench while the kids explore the area.\n\nAfterward, the kids can head into **Cyber Quest** for arcade games while the adults relax at **Carlo's Bake Shop** right next door. This entire loop is located within the Casino of the Sky, which keeps the walking distance very manageable and utilizes elevators for any floor changes.\n\nPro tip \u2014 the area near the waterfall is one of the best spots for a family photo, and you can often hear the live music from the Wolf Den nearby without having to navigate the crowds inside the venue.\n\nHow many people will be in your party for dinner so I can check on the best seating options for you?",
+      "sources": [
+        {
+          "category": "faq",
+          "source": "mohegan_sun.json",
+          "score": 0.646
+        },
+        {
+          "category": "entertainment",
+          "source": "mohegan_sun.json",
+          "score": 0.642
+        },
+        {
+          "category": "hotel",
+          "source": "mohegan_sun.json",
+          "score": 0.606
+        },
+        {
+          "category": "promotions",
+          "source": "mohegan_sun.json",
+          "score": 0.632
+        }
+      ],
+      "elapsed_ms": 49210,
+      "error": null
+    }
+  ],
+  "completed": true
+}

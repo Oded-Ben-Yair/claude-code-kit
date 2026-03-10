@@ -1,0 +1,87 @@
+{
+  "id": "p3-04",
+  "name": "Gaming information plus visit frequency question",
+  "source_file": "profiling_p3_give_to_get.yaml",
+  "category": "profiling_p3_give_to_get",
+  "behavioral_dimension": "P3_give_to_get",
+  "expected_behavior": "Poker info is delivered first. Visit frequency question is a natural extension. When the guest reveals monthly visits, the agent adjusts to regular-guest register and skips introductory details",
+  "expected_behavioral_quality": "Explains gaming floor layout and table game options first, then naturally asks if they've visited before. The gaming overview is useful for both first-timers and regulars. The visit frequency question is framed as 'so I can skip the basics if you already know the floor'.",
+  "safety_relevant": false,
+  "turns": [
+    {
+      "turn_index": 0,
+      "user_message": "Where are the poker tables?",
+      "agent_response": "The Mohegan Sun Poker Room is open 24 hours a day and features 33 tables. You'll find a variety of games including No-Limit Texas Hold'em, Pot-Limit Omaha, and Limit Hold'em, along with daily tournaments.\n\nWhile I don't have the specific wing or entrance location in my notes, it is a dedicated space designed for both",
+      "sources": [
+        {
+          "category": "gaming",
+          "source": "mohegan_sun.json",
+          "score": 0.716
+        },
+        {
+          "category": "faq",
+          "source": "mohegan_sun.json",
+          "score": 0.65
+        }
+      ],
+      "elapsed_ms": 56255,
+      "error": null
+    },
+    {
+      "turn_index": 1,
+      "user_message": "Yeah I play here every month",
+      "agent_response": "Monthly play is a consistent way to earn Tier Credits toward your Momentum status. Reaching the Ignite level at 2,500 credits provides a 10% point bonus and priority seating at restaurants like Tuscany. \n\nHave you checked your current tier progress at a Momentum Desk or through the mobile app recently?",
+      "sources": [
+        {
+          "category": "gaming",
+          "source": "mohegan_sun.json",
+          "score": 0.641
+        },
+        {
+          "category": "amenities",
+          "source": "mohegan_sun.json",
+          "score": 0.641
+        },
+        {
+          "category": "faq",
+          "source": "mohegan_sun.json",
+          "score": 0.624
+        }
+      ],
+      "elapsed_ms": 46758,
+      "error": null
+    },
+    {
+      "turn_index": 2,
+      "user_message": "Any tournaments coming up?",
+      "agent_response": "Daily tournaments with varying buy-ins are held in the Poker Room, with specific schedules available at the desk or on the Mohegan Sun app. After a tournament session, the Wolf Den provides free live music in the center of the Casino of the Earth\u2014would you like to know who is performing tonight?",
+      "sources": [
+        {
+          "category": "gaming",
+          "source": "mohegan_sun.json",
+          "score": 0.686
+        },
+        {
+          "category": "amenities",
+          "source": "mohegan_sun.json",
+          "score": 0.657
+        },
+        {
+          "category": "faq",
+          "source": "mohegan_sun.json",
+          "score": 0.653
+        },
+        {
+          "category": "entertainment",
+          "source": "mohegan_sun.json",
+          "score": 0.654
+        }
+      ],
+      "elapsed_ms": 58620,
+      "error": null
+    }
+  ],
+  "elapsed_ms": 161635,
+  "error": null,
+  "completed": true
+}

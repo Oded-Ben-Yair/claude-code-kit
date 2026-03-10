@@ -1,0 +1,65 @@
+{
+  "id": "p1-09",
+  "name": "Guest mentions visit frequency",
+  "source_file": "profiling_p1_natural_extraction.yaml",
+  "category": "profiling_p1_natural_extraction",
+  "behavioral_dimension": "P1_natural_extraction",
+  "expected_behavior": "Treats the guest as a repeat visitor. Skips the standard property overview and highlights what has changed or what they may not have tried. Uses the anniversary context to personalize",
+  "expected_behavioral_quality": "Registers 'we come every year' as a repeat visitor signal. Adjusts recommendations toward what's new or different rather than the standard first-timer overview. Does not explain basic property information to a returning guest.",
+  "safety_relevant": false,
+  "turns": [
+    {
+      "turn_index": 0,
+      "user_message": "We come every year for our anniversary. What's new this time?",
+      "agent_response": "Happy anniversary and welcome back. The Earth Tower is our newest hotel addition, featuring a contemporary design and the Elemis Spa, which is a great spot for couples treatments. Since you are celebrating a special occasion, I would like to see about ways to upgrade your experience to make this visit stand out.\n\nFor your anniversary dinner, Todd English's Tuscany is a guest favorite because of the terrace seating near the Taughannick Falls. Do you usually prefer an intimate dinner or a more lively atmosphere for your celebration?",
+      "sources": [
+        {
+          "category": "hotel",
+          "source": "mohegan_sun.json",
+          "score": 0.675
+        },
+        {
+          "category": "promotions",
+          "source": "mohegan_sun.json",
+          "score": 0.662
+        },
+        {
+          "category": "amenities",
+          "source": "mohegan_sun.json",
+          "score": 0.661
+        },
+        {
+          "category": "faq",
+          "source": "mohegan_sun.json",
+          "score": 0.696
+        },
+        {
+          "category": "gaming",
+          "source": "mohegan_sun.json",
+          "score": 0.646
+        }
+      ],
+      "elapsed_ms": 27241,
+      "error": null
+    },
+    {
+      "turn_index": 1,
+      "user_message": "We already know the steakhouse and the spa",
+      "agent_response": "Since you\u2019re familiar with the staples, the Casino of the Sky offers a different energy with its soaring celestial-themed architecture and several upscale dining alternatives to the steakhouse. If you're looking for something more active, the Mohegan Sun Arena hosts major headliners that provide a great anchor for a celebration.\n\nI\u2019d like to see about a special anniversary upgrade for your room to help make",
+      "sources": [],
+      "elapsed_ms": 55238,
+      "error": null
+    },
+    {
+      "turn_index": 2,
+      "user_message": "Now that sounds interesting",
+      "agent_response": "Novelle is a newer addition that functions as an upscale lounge with a social gaming area, providing a more interactive night out than a traditional dinner. It is located in the Casino of the Sky and has a very sophisticated, modern atmosphere that feels quite different from the rest of the property. Since it is your anniversary, I would also like to see about a room upgrade to help make this stay feel a bit more special. \n\nHave you already checked the concert schedule for the Arena to see who is performing during your visit?",
+      "sources": [],
+      "elapsed_ms": 60007,
+      "error": null
+    }
+  ],
+  "elapsed_ms": 142487,
+  "error": null,
+  "completed": true
+}

@@ -1,0 +1,49 @@
+{
+  "scenario_id": "h9-01",
+  "scenario_name": "Guest open to suggestions for a special evening",
+  "category": "host_triangle_h7_h10_revenue",
+  "behavioral_dimension": "H9_revenue_aware_steering",
+  "expected_behavior": "Reads 'no budget concerns' and 'really special' as clear premium signals. Leads with the highest-tier dining option and builds a full VIP evening. Does not mention budget alternatives. The steering feels like a host sharing their genuine top picks, not an upsell script",
+  "expected_behavioral_quality": "When a guest signals they want something special, the agent steers toward premium experiences that match the occasion. The premium suggestion feels like expert guidance, not upselling. The agent reads context cues (occasion, group, tone) to calibrate the recommendation tier.",
+  "safety_relevant": false,
+  "source_file": "host_triangle_h7_h10_revenue.yaml",
+  "thread_id": "eval-h9-01-1772976043",
+  "turns": [
+    {
+      "turn_index": 0,
+      "user_message": "We want to do something really special tonight. No budget concerns. What's the best?",
+      "agent_response": "Welcome. I know you mentioned no budget, but some of our most memorable spots aren't actually the most expensive. My top pick for you tonight is The Cabaret Theatre. It's an intimate 400-seat room with table-side cocktail service that gives you a completely VIP feel. Pro tip: it\u2019s a hidden gem for catching great acts up close without dealing with the massive arena crowds. \n\nBy the way, with your visit today you're earning toward rewards \u2014 I can connect you with a host who can check your exact tier and what comps you qualify for. \n\nHow many are in your group tonight?",
+      "sources": [
+        {
+          "category": "entertainment",
+          "source": "mohegan_sun.json",
+          "score": 0.705
+        },
+        {
+          "category": "restaurants",
+          "source": "mohegan_sun.json",
+          "score": 0.68
+        }
+      ],
+      "elapsed_ms": 107980,
+      "error": null
+    },
+    {
+      "turn_index": 1,
+      "user_message": "Michael Jordan's sounds perfect. What about wine?",
+      "agent_response": "Michael Jordan's Steak House is a phenomenal choice. Their wine program is extensive and heavily features bold, robust reds that are curated specifically to stand up to their USDA Prime cuts. Walking in, you get that classic, upscale steakhouse energy, and pairing a premium Cabernet with their prime ribeye is an unmatched experience here.\n\nSince you are looking to go all out tonight, I've got you. They open at 5:00 PM over in the Casino of the Sky, and I can have the host team reach out to finalize your table and make sure your evening is set perfectly. \n\nAfter dinner, catching the free live music over at the Wolf Den is a great way to keep the energy going. \n\nAre you typically drawn to a heavy red with your steak, or are you thinking of starting with some champagne to celebrate the occasion?",
+      "sources": [],
+      "elapsed_ms": 51390,
+      "error": null
+    },
+    {
+      "turn_index": 2,
+      "user_message": "And after dinner? We want the full VIP experience",
+      "agent_response": "I love that energy! Since it is Sunday night, our big weekend clubs like Avalon are resting, but we can absolutely keep that exclusive vibe going.\n\nI highly recommend heading over to Birdcage Bar after your steaks. It's an upscale cocktail lounge right in the Casino of the Sky. Pro tip: it gives you that sophisticated, premium nightlife atmosphere with incredible craft cocktails, but it is actually a fantastic value compared to typical VIP bottle service. They stay open until 2:00 AM, making it the perfect post-dinner spot.\n\nAfter grabbing a drink, you can catch the live music at the Wolf Den. The shows are completely free, but getting right up near the stage has an electric, intimate energy that feels incredibly special. I've got you covered \u2014 I can have our host team reach out to make sure your transition from dinner to the rest of your evening is completely seamless.\n\nBy the way, the Mohegan Sun Arena has some great shows coming up \u2014 I can share what's on the calendar if you're interested for your next visit.\n\nWhat kind of music do you usually look for when you are out for the night?",
+      "sources": [],
+      "elapsed_ms": 71220,
+      "error": null
+    }
+  ],
+  "completed": true
+}

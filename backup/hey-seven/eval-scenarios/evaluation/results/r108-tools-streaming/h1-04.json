@@ -1,0 +1,91 @@
+{
+  "scenario_id": "h1-04",
+  "scenario_name": "Couple exploring for a weekend getaway",
+  "category": "host_triangle_h1_h3_development",
+  "behavioral_dimension": "H1_proactive_value_discovery",
+  "expected_behavior": "Builds a full couples weekend itinerary covering spa, dining, entertainment, and hotel. Creates a vision that makes the property feel like a destination, not just a casino. Plants seeds for future visits by mentioning seasonal events or upcoming shows",
+  "expected_behavioral_quality": "Identifies the couple dynamic and weekend getaway context. Discovers what kind of experience they want (relaxation, adventure, romance) and builds a multi-activity itinerary that creates emotional anchors for return visits.",
+  "safety_relevant": false,
+  "source_file": "host_triangle_h1_h3_development.yaml",
+  "thread_id": "eval-h1-04-1773057151",
+  "turns": [
+    {
+      "turn_index": 0,
+      "user_message": "My girlfriend and I are thinking about a weekend at Mohegan Sun. What's it like?",
+      "agent_response": "Mohegan Sun is a full-scale resort experience that blends modern luxury with Mohegan tribal heritage. For a weekend for two, the Sky Tower is the way to go\u2014the rooms are spacious and the views of the Thames River are unbeatable.\n\nA quick tip: the 55-foot indoor waterfall at Tuscany is the best spot for a quiet drink before dinner. What's the main goal for your weekend\u2014relaxing at the spa or hitting the gaming floor?",
+      "sources": [
+        {
+          "category": "faq",
+          "source": "mohegan_sun.json",
+          "score": 0.732
+        },
+        {
+          "category": "property",
+          "source": "mohegan_sun.json",
+          "score": 0.737
+        },
+        {
+          "category": "hotel",
+          "source": "mohegan_sun.json",
+          "score": 0.712
+        },
+        {
+          "category": "amenities",
+          "source": "mohegan_sun.json",
+          "score": 0.7
+        }
+      ],
+      "elapsed_ms": 31657,
+      "error": null
+    },
+    {
+      "turn_index": 1,
+      "user_message": "We want a mix of relaxation and fun. Not just gambling",
+      "agent_response": "For relaxation, the Elemis Spa is the move\u2014their hot stone massage is legendary for hitting the reset button after a long week. On the fun side, you don't even need tickets for the Wolf Den, which has free live music every single night in an intimate setting right in the heart of the action.\n\nPro tip: since the Wolf Den is first-come, first-served, grabbing a drink at the nearby Bow & Arrow Sports Bar about 30 minutes before the set starts is the best way to snag a prime seat. Do either of you have a favorite genre of music or a comedian you're both into?",
+      "sources": [
+        {
+          "category": "faq",
+          "source": "mohegan_sun.json",
+          "score": 0.707
+        },
+        {
+          "category": "gaming",
+          "source": "mohegan_sun.json",
+          "score": 0.694
+        },
+        {
+          "category": "entertainment",
+          "source": "mohegan_sun.json",
+          "score": 0.678
+        }
+      ],
+      "elapsed_ms": 32849,
+      "error": null
+    },
+    {
+      "turn_index": 2,
+      "user_message": "That sounds like a perfect weekend, thanks",
+      "agent_response": "Glad that sounds like a good fit for you both. Having the quiet of the spa in the morning and the energy of the Wolf Den at night makes for a great balance. \n\nBefore you go\u2014if you'd like, I can connect you with one of our hosts who can help with anything from spa reservations to special arrangements during your weekend visit. \n\nThe Mohegan Sun Arena has some great shows coming up\u2014I can share what's on the calendar if you're interested. Are you both celebrating anything special like an anniversary or a birthday during your visit?",
+      "sources": [
+        {
+          "category": "entertainment",
+          "source": "mohegan_sun.json",
+          "score": 0.648
+        },
+        {
+          "category": "property",
+          "source": "mohegan_sun.json",
+          "score": 0.638
+        },
+        {
+          "category": "promotions",
+          "source": "mohegan_sun.json",
+          "score": 0.606
+        }
+      ],
+      "elapsed_ms": 38435,
+      "error": null
+    }
+  ],
+  "completed": true
+}

@@ -1,0 +1,77 @@
+{
+  "id": "p2-06",
+  "name": "Agent probes after providing value first",
+  "source_file": "profiling_p2_active_probing.yaml",
+  "category": "profiling_p2_active_probing",
+  "behavioral_dimension": "P2_active_probing",
+  "expected_behavior": "First response lists shows AND naturally asks who's attending or what kind of show they enjoy. The show listing is complete regardless of whether the guest answers the follow-up. Value first, probe second",
+  "expected_behavioral_quality": "Demonstrates the give-to-get pattern: first delivers a genuine answer to the guest's question, THEN asks a natural follow-up profiling question. The answer must be complete and useful on its own, not gated behind the profiling question.",
+  "safety_relevant": false,
+  "turns": [
+    {
+      "turn_index": 0,
+      "user_message": "What shows are on tonight?",
+      "agent_response": "Tonight at the Wolf Den, we have free live music typically starting at 8:00 PM or 9:00 PM. It is an incredible, intimate venue where you can catch national acts or tribute bands without needing a ticket, and the energy there is always electric. For a more sophisticated atmosphere this evening, novelle is also open, featuring DJ entertainment and craft cocktails in our ultra lounge. \n\nIf you have time before the music starts, a treatment at Elemis Spa is a perfect way to recharge for the night. Do you prefer the high-energy feel of a live band or a more laid-back lounge setting?",
+      "sources": [
+        {
+          "category": "entertainment",
+          "source": "mohegan_sun.json",
+          "score": 0.663
+        },
+        {
+          "category": "faq",
+          "source": "mohegan_sun.json",
+          "score": 0.668
+        }
+      ],
+      "elapsed_ms": 26418,
+      "error": null
+    },
+    {
+      "turn_index": 1,
+      "user_message": "Just me and a friend",
+      "agent_response": "The Wolf Den is a great spot for two since it's casual and you can easily grab a drink while watching the band. If you'd prefer a more upscale lounge setting where it's easier to talk, novelle is also open tonight with DJ entertainment. \n\nBefore the music starts, Todd English's Tuscany is a short walk from the Wolf Den and their bar area is perfect for a quick bite. Are you planning on having dinner before you head to the show?",
+      "sources": [
+        {
+          "category": "entertainment",
+          "source": "mohegan_sun.json",
+          "score": 0.618
+        },
+        {
+          "category": "amenities",
+          "source": "mohegan_sun.json",
+          "score": 0.592
+        },
+        {
+          "category": "hotel",
+          "source": "mohegan_sun.json",
+          "score": 0.59
+        }
+      ],
+      "elapsed_ms": 25546,
+      "error": null
+    },
+    {
+      "turn_index": 2,
+      "user_message": "Comedy sounds fun",
+      "agent_response": "Comix Roadhouse is the perfect choice for tonight since they host nationally touring comedians every Thursday through Sunday. It is an intimate 400-seat club that brings a great energy, and you can even enjoy a full dinner during the performance.\n\nSince you are with a friend, I'd suggest grabbing a table early to get a good view of the stage. After the laughs, Avalon Nightclub is right nearby if you want to keep the night going. Do you prefer the front-row experience where you might become part of the act, or would you rather a booth in the back?",
+      "sources": [
+        {
+          "category": "entertainment",
+          "source": "mohegan_sun.json",
+          "score": 0.677
+        },
+        {
+          "category": "property",
+          "source": "mohegan_sun.json",
+          "score": 0.639
+        }
+      ],
+      "elapsed_ms": 27067,
+      "error": null
+    }
+  ],
+  "elapsed_ms": 79032,
+  "error": null,
+  "completed": true
+}

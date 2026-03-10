@@ -1,0 +1,76 @@
+{
+  "id": "h10-02",
+  "name": "Guest needs help with a complex multi-part request",
+  "source_file": "host_triangle_h7_h10_revenue.yaml",
+  "category": "host_triangle_h7_h10_revenue",
+  "behavioral_dimension": "H10_host_identity_authority",
+  "expected_behavior": "Takes full ownership of the multi-domain request. Builds a coordinated birthday weekend plan: Italian dinner with birthday touches Saturday, spa treatment Sunday, and room upgrade guidance. Presents it as a unified plan, not three separate requests. The guest feels like one person is handling everything",
+  "expected_behavioral_quality": "When a guest has a complex request spanning multiple property domains, the agent coordinates across all of them with confidence. Does not pass the guest between departments. Takes ownership of the full request and presents a unified plan.",
+  "safety_relevant": false,
+  "turns": [
+    {
+      "turn_index": 0,
+      "user_message": "I need help planning my wife's surprise birthday weekend. Dinner Saturday, spa Sunday, and a room upgrade if possible",
+      "agent_response": "Let me help you get that set up. I'll pull together the details you need.\n\nFor the booking itself, our reservations team at 1-888-226-7711 can lock it in right away, or I can connect you with a host who handles this personally.\n\nWhat are you looking to book \u2014 dining, a room, or something else?",
+      "sources": [],
+      "elapsed_ms": 3184,
+      "error": null
+    },
+    {
+      "turn_index": 1,
+      "user_message": "She loves Italian food and deep tissue massage. Can you work with that?",
+      "agent_response": "For a birthday dinner on Saturday, Todd English's Tuscany in the Casino of the Sky is a standout choice for high-end Italian cuisine. It's a guest favorite for celebrations because of the handmade pastas and the beautiful atmosphere!\n\nOn Sunday, she can enjoy a deep tissue massage at Mandara Spa, which is located in the Sky Tower. Regarding the room upgrade, I'd suggest speaking with the front desk at check-in or  to see if a suite can be secured for your stay.\n\nDining and spa times can fill up quickly on weekends, so it's a good idea to confirm those as soon as possible. After dinner, our novelle lounge offers a sophisticated spot for a birthday cocktail \u2014 does she have a favorite type of drink?",
+      "sources": [
+        {
+          "category": "restaurants",
+          "source": "mohegan_sun.json",
+          "score": 0.642
+        },
+        {
+          "category": "entertainment",
+          "source": "mohegan_sun.json",
+          "score": 0.612
+        },
+        {
+          "category": "promotions",
+          "source": "mohegan_sun.json",
+          "score": 0.607
+        }
+      ],
+      "elapsed_ms": 32924,
+      "error": null
+    },
+    {
+      "turn_index": 2,
+      "user_message": "This is exactly what I needed. You've been amazing",
+      "agent_response": "Exactly, I'm glad those details help with your plans. If you'd like to add a special touch to the dinner, the team at Todd English's Tuscany is usually excellent with birthday surprises if you mention it when booking. \n\nAre you interested in seeing a show at the Arena or the Wolf Den during your stay?",
+      "sources": [
+        {
+          "category": "hotel",
+          "source": "mohegan_sun.json",
+          "score": 0.619
+        },
+        {
+          "category": "entertainment",
+          "source": "mohegan_sun.json",
+          "score": 0.619
+        },
+        {
+          "category": "promotions",
+          "source": "mohegan_sun.json",
+          "score": 0.616
+        },
+        {
+          "category": "property",
+          "source": "mohegan_sun.json",
+          "score": 0.629
+        }
+      ],
+      "elapsed_ms": 33680,
+      "error": null
+    }
+  ],
+  "elapsed_ms": 70693,
+  "error": null,
+  "completed": true
+}

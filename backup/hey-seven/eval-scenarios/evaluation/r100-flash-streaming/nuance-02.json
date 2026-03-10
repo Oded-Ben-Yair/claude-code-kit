@@ -1,0 +1,76 @@
+{
+  "scenario_id": "nuance-02",
+  "scenario_name": "First-time casino visitor with anxiety",
+  "category": "behavioral_nuance",
+  "behavioral_dimension": "B5_emotional",
+  "expected_behavior": "Validates the anxiety as completely normal. Provides gentle orientation without overwhelming. When the guest self-selects dining as a comfortable first step, supports that choice warmly",
+  "expected_behavioral_quality": "Validates the nervousness without dismissing it. Orients them gently with manageable next steps rather than an overwhelming property overview. Suggests low-pressure activities first. Does not say 'don't worry' or 'there's nothing to be nervous about'.",
+  "safety_relevant": false,
+  "source_file": "behavioral_nuance.yaml",
+  "thread_id": "eval-nuance-02-1772822939",
+  "turns": [
+    {
+      "turn_index": 0,
+      "user_message": "First time at a casino, kind of nervous honestly",
+      "agent_response": "It is completely natural to feel a bit overwhelmed on your first visit. You are in great hands here, and there is no rush to jump into anything\u2014take your time exploring the property at your own pace.\n\nA good place to start is the Casino of the Earth. It has a warm, relaxed atmosphere inspired by Mohegan tribal heritage and tends to feel very grounded, making it a comfortable spot to get your bearings. Since the casino is open 24 hours a day, you can always find a quieter time to walk around and see the sights without any pressure.\n\nAre you visiting us for a specific show or event, or are you just here to explore the resort for the day?",
+      "sources": [
+        {
+          "category": "gaming",
+          "source": "mohegan_sun.json",
+          "score": 0.662
+        },
+        {
+          "category": "faq",
+          "source": "mohegan_sun.json",
+          "score": 0.651
+        }
+      ],
+      "elapsed_ms": 26604,
+      "error": null
+    },
+    {
+      "turn_index": 1,
+      "user_message": "It's just a lot bigger than I expected",
+      "agent_response": "At over three million square feet, it is one of the largest resorts in the country. A helpful tip for navigating is to use the \"Earth\" and \"Sky\" casino themes as your main landmarks to stay oriented. \n\nIf the main gaming floors feel like too much, the Earth Tower lobby is usually much quieter and offers a great place to sit and decompress for a few minutes. Would you prefer to find a spot for a relaxed dinner or are you more interested in seeing a show tonight?",
+      "sources": [
+        {
+          "category": "property",
+          "source": "mohegan_sun.json",
+          "score": 0.651
+        },
+        {
+          "category": "gaming",
+          "source": "mohegan_sun.json",
+          "score": 0.637
+        },
+        {
+          "category": "hotel",
+          "source": "mohegan_sun.json",
+          "score": 0.629
+        },
+        {
+          "category": "restaurants",
+          "source": "mohegan_sun.json",
+          "score": 0.633
+        }
+      ],
+      "elapsed_ms": 34410,
+      "error": null
+    },
+    {
+      "turn_index": 2,
+      "user_message": "Maybe we should just get something to eat first",
+      "agent_response": "Lantern Bar & Grill in the Casino of the Earth is a perfect first stop because it is easy to find and has a very relaxed, casual vibe. The aroma of grilled steaks and burgers is incredibly inviting, and since they're open 24 hours, there is never any rush to finish your meal. It is located right on the edge of the gaming floor, which lets you get a feel for the resort's energy without being right in the middle of the action. \n\nThe menu is full of familiar American favorites in the mid-price range, and since they don't require reservations, you can walk right in whenever you are ready. If you sit near the perimeter of the dining area, you get a great view of the Casino of the Earth's unique architecture while you eat. After you've had a bite to eat, the Wolf Den is just a short walk away and usually has free live music if you want to ease into the evening!\n\nDo you generally prefer a classic burger and fries, or are you in the mood for something like a sit-down Italian dinner?",
+      "sources": [
+        {
+          "category": "restaurants",
+          "source": "mohegan_sun.json",
+          "score": 0.649
+        }
+      ],
+      "elapsed_ms": 41512,
+      "error": null
+    }
+  ],
+  "completed": true
+}

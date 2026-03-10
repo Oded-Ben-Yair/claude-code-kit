@@ -1,0 +1,92 @@
+{
+  "id": "nuance-03",
+  "name": "Honeymoon celebration energy matching",
+  "source_file": "behavioral_nuance.yaml",
+  "category": "behavioral_nuance",
+  "behavioral_dimension": "B5_emotional",
+  "expected_behavior": "Celebrates the honeymoon with genuine enthusiasm. Recommends romantic dining and couples experiences. Maintains elevated celebratory tone throughout without being performative",
+  "expected_behavioral_quality": "Matches the celebration energy authentically. Congratulates the couple genuinely. Recommends romantic and special experiences without being generic. Treats this as a milestone occasion deserving elevated suggestions.",
+  "safety_relevant": false,
+  "turns": [
+    {
+      "turn_index": 0,
+      "user_message": "We just got married! Honeymoon trip!",
+      "agent_response": "Congratulations on your marriage and welcome to Mohegan Sun. It is an honor to have you celebrating such a special milestone with us.\n\nFor a memorable honeymoon dinner, I'd suggest Todd English's Tuscany; the atmosphere near the indoor waterfall is wonderful for a romantic evening. If you're looking to unwind after the wedding festivities, the Mandara Spa offers Balinese-inspired treatments and is open until 8:00 PM tonight.\n\nWould you prefer a high-energy evening with some live music, or are you looking for a more quiet, intimate stay?",
+      "sources": [
+        {
+          "category": "hotel",
+          "source": "mohegan_sun.json",
+          "score": 0.603
+        },
+        {
+          "category": "amenities",
+          "source": "mohegan_sun.json",
+          "score": 0.59
+        },
+        {
+          "category": "property",
+          "source": "mohegan_sun.json",
+          "score": 0.6
+        },
+        {
+          "category": "entertainment",
+          "source": "mohegan_sun.json",
+          "score": 0.591
+        },
+        {
+          "category": "restaurants",
+          "source": "mohegan_sun.json",
+          "score": 0.586
+        }
+      ],
+      "elapsed_ms": 27030,
+      "error": null
+    },
+    {
+      "turn_index": 1,
+      "user_message": "What's the most romantic dinner option?",
+      "agent_response": "For an unforgettable honeymoon dinner tonight, Michael Jordan's Steak House in the Casino of the Sky is the most elegant choice for a romantic celebration. The rich aroma of seared prime beef and the sophisticated, warm lighting create a perfect atmosphere for a toast to your new life together. \n\nAs our premier steakhouse, they specialize in USDA Prime cuts and fresh seafood, complemented by an extensive wine list",
+      "sources": [
+        {
+          "category": "entertainment",
+          "source": "mohegan_sun.json",
+          "score": 0.637
+        },
+        {
+          "category": "restaurants",
+          "source": "mohegan_sun.json",
+          "score": 0.639
+        }
+      ],
+      "elapsed_ms": 52715,
+      "error": null
+    },
+    {
+      "turn_index": 2,
+      "user_message": "And something special we can do together tomorrow?",
+      "agent_response": "Since tomorrow is Thursday, novelle opens for the weekend. It is an upscale ultra lounge with a sophisticated atmosphere and DJ entertainment, which is an excellent way to celebrate your first trip as a married couple.\n\nIf you would rather focus on relaxation, the Elemis Spa is a legendary reset; their hot stone massage is a wonderful way to let go of any lingering wedding stress together.\n\nAre you looking to keep the celebration high-energy, or would a relaxing spa afternoon be more your speed?\n\nIf you decide on the spa, the resort also offers seasonal hotel packages that can bundle your stay with dining credits to make your honeymoon dining even more seamless.",
+      "sources": [
+        {
+          "category": "entertainment",
+          "source": "mohegan_sun.json",
+          "score": 0.637
+        },
+        {
+          "category": "faq",
+          "source": "mohegan_sun.json",
+          "score": 0.637
+        },
+        {
+          "category": "promotions",
+          "source": "mohegan_sun.json",
+          "score": 0.616
+        }
+      ],
+      "elapsed_ms": 66191,
+      "error": null
+    }
+  ],
+  "elapsed_ms": 145937,
+  "error": null,
+  "completed": true
+}

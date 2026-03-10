@@ -1,0 +1,87 @@
+{
+  "id": "engagement-05",
+  "name": "Request to switch from verbose to concise",
+  "source_file": "behavioral_engagement.yaml",
+  "category": "behavioral_engagement",
+  "behavioral_dimension": "B3_engagement",
+  "expected_behavior": "Delivers a detailed overview first, then compresses to bullet-point or single-sentence format when asked. Maintains concise style in subsequent turns without reverting to verbose",
+  "expected_behavioral_quality": "Immediately shifts to a concise format when asked. Subsequent responses are noticeably shorter without losing useful content. Does not explain why it was verbose or justify the previous style. Just adapts.",
+  "safety_relevant": false,
+  "turns": [
+    {
+      "turn_index": 0,
+      "user_message": "Tell me about the property",
+      "agent_response": "Mohegan Sun is an expansive resort owned by the Mohegan Tribe, featuring two distinct hotel towers with approximately 1,600 rooms and suites. You will find the Earth Tower offers a contemporary feel with cutting-edge amenities, while the Sky Tower provides a refined atmosphere with incredible views. Beyond the rooms, the property spans over three million square feet, housing three casinos, a world-class spa, and over 40 different dining options.\n\nAs a hotel guest, you have access to 24-hour room service and our fitness center to make your stay as seamless as possible. Since you are just steps away from the action, you might consider catching a show at the Wolf Den after you get settled in. What brings you to the resort for this visit \u2014 are you planning a relaxing getaway or a celebration with a group?",
+      "sources": [
+        {
+          "category": "property",
+          "source": "mohegan_sun.json",
+          "score": 0.668
+        },
+        {
+          "category": "hotel",
+          "source": "mohegan_sun.json",
+          "score": 0.633
+        },
+        {
+          "category": "faq",
+          "source": "mohegan_sun.json",
+          "score": 0.619
+        }
+      ],
+      "elapsed_ms": 49502,
+      "error": null
+    },
+    {
+      "turn_index": 1,
+      "user_message": "Can you just give me the quick version?",
+      "agent_response": "Mohegan Sun is an expansive resort in Uncasville, CT, featuring two hotel towers, three casinos, and over 40 restaurants. You will find world-class entertainment at our 10,000-seat Arena and free nightly shows at the Wolf Den. Our newest hotel, the Earth Tower, is known for its modern design and quieter atmosphere compared to the bustling Sky Tower. Since you are looking for a quick overview, are you planning a one-night stay or just stopping by for the evening?",
+      "sources": [
+        {
+          "category": "entertainment",
+          "source": "mohegan_sun.json",
+          "score": 0.65
+        },
+        {
+          "category": "gaming",
+          "source": "mohegan_sun.json",
+          "score": 0.613
+        },
+        {
+          "category": "property",
+          "source": "mohegan_sun.json",
+          "score": 0.636
+        },
+        {
+          "category": "hotel",
+          "source": "mohegan_sun.json",
+          "score": 0.606
+        }
+      ],
+      "elapsed_ms": 24082,
+      "error": null
+    },
+    {
+      "turn_index": 2,
+      "user_message": "What time does the steakhouse open?",
+      "agent_response": "Michael Jordan\u2019s Steak House opens at 5:00 PM tonight in the Casino of the Sky. It is our premier upscale steakhouse where the USDA Prime cuts are the star of the show, and business casual attire is recommended. Hours and pricing may vary, so confirming with the property is always a good idea. If you need something sooner, Lantern Bar & Grill is open 24 hours and also serves steak \u2014 would you like the location for that?",
+      "sources": [
+        {
+          "category": "restaurants",
+          "source": "mohegan_sun.json",
+          "score": 0.702
+        },
+        {
+          "category": "faq",
+          "source": "mohegan_sun.json",
+          "score": 0.663
+        }
+      ],
+      "elapsed_ms": 37104,
+      "error": null
+    }
+  ],
+  "elapsed_ms": 110690,
+  "error": null,
+  "completed": true
+}

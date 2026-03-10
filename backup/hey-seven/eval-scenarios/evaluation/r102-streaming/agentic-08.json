@@ -1,0 +1,44 @@
+{
+  "scenario_id": "agentic-08",
+  "scenario_name": "Budget awareness without being asked",
+  "category": "behavioral_agentic",
+  "behavioral_dimension": "B4_agentic",
+  "expected_behavior": "Picks up budget signal from turn 1 and carries it through all recommendations. Leads with free or affordable options. Does not suggest the premium steakhouse after a budget signal",
+  "expected_behavioral_quality": "When the guest signals budget consciousness (e.g., 'nothing too expensive'), adjusts all subsequent recommendations without requiring a reminder each turn. Maintains budget awareness throughout the conversation.",
+  "safety_relevant": false,
+  "source_file": "behavioral_agentic.yaml",
+  "thread_id": "eval-agentic-08-1772910942",
+  "turns": [
+    {
+      "turn_index": 0,
+      "user_message": "What's good for dinner? Nothing too expensive",
+      "agent_response": "Lantern Bar & Grill in the Casino of the Earth is a fantastic choice if you want a hearty meal without the fine-dining price tag. It is open 24 hours and serves everything from solid burgers and salads to full steak dinners in a relaxed, casual setting. \n\nAn insider tip for you: it is a favorite spot for locals and regulars to grab a bite because the kitchen keeps the full menu running all night long, making it perfect for a late-Saturday dinner. If you are looking for more budget-friendly fun after you eat, the Wolf Den usually has free live music right nearby in the center of the casino. \n\nWhat brings you to Mohegan Sun this weekend?",
+      "sources": [
+        {
+          "category": "restaurants",
+          "source": "mohegan_sun.json",
+          "score": 0.633
+        }
+      ],
+      "elapsed_ms": 28693,
+      "error": null
+    },
+    {
+      "turn_index": 1,
+      "user_message": "That works. What else can we do tonight?",
+      "agent_response": "The Wolf Den is the perfect spot for tonight since it features free live music right in the center of the action. It is such a unique experience because the stage is surrounded by the casino floor, so you get all that energy without having to buy a ticket! \n\nAn insider tip for you: since it is a Saturday, the lounge fills up quickly, so heading over about 30 minutes before the set starts is your best bet to snag a seat close to the stage. If you are looking for a higher energy vibe later on, Avalon Nightclub opens at 10:00 PM tonight for dancing, or you can check out novelle for a more sophisticated lounge atmosphere. \n\nAre you more into catching a live band or hitting the dance floor tonight?",
+      "sources": [],
+      "elapsed_ms": 51787,
+      "error": null
+    },
+    {
+      "turn_index": 2,
+      "user_message": "Are any shows free?",
+      "agent_response": "The Wolf Den is your go-to for free entertainment because every show there is complimentary and requires no ticket. Since it is 7:17 PM now, you are perfectly timed for the Saturday night performance which usually kicks off at 8:00 PM.\n\nAn insider tip: despite being a free venue, the Wolf Den has a top-tier sound system and only 350 seats, so you get an incredibly intimate experience with national acts that often play much larger arenas. If you want to balance out the high-energy music with some relaxation tomorrow, the Elemis Spa is the perfect place to reset after a late night.\n\nAre you coming with a group of friends or is it just a couple of you tonight?",
+      "sources": [],
+      "elapsed_ms": 50610,
+      "error": null
+    }
+  ],
+  "completed": true
+}

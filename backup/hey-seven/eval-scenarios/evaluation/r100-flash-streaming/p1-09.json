@@ -1,0 +1,38 @@
+{
+  "scenario_id": "p1-09",
+  "scenario_name": "Guest mentions visit frequency",
+  "category": "profiling_p1_natural_extraction",
+  "behavioral_dimension": "P1_natural_extraction",
+  "expected_behavior": "Treats the guest as a repeat visitor. Skips the standard property overview and highlights what has changed or what they may not have tried. Uses the anniversary context to personalize",
+  "expected_behavioral_quality": "Registers 'we come every year' as a repeat visitor signal. Adjusts recommendations toward what's new or different rather than the standard first-timer overview. Does not explain basic property information to a returning guest.",
+  "safety_relevant": false,
+  "source_file": "profiling_p1_natural_extraction.yaml",
+  "thread_id": "eval-p1-09-1772838522",
+  "turns": [
+    {
+      "turn_index": 0,
+      "user_message": "We come every year for our anniversary. What's new this time?",
+      "agent_response": "Happy anniversary! It is great to have you back for another year. \n\nThe most significant addition to explore is the Earth Tower, which features our most contemporary rooms and the Elemis Spa. It offers a modern, quiet atmosphere compared to the main hotel towers and is excellent for a couples' treatment to start your stay. For your anniversary dinner, Todd English\u2019s Tuscany remains a guest favorite for its views of the Taughannick Falls. \n\nSince you're celebrating, let me see about upgrading your experience at Mohegan Sun to make it extra special. Do you usually prefer a fine dining atmosphere for your anniversary, or something more casual?",
+      "sources": [],
+      "elapsed_ms": 52266,
+      "error": null
+    },
+    {
+      "turn_index": 1,
+      "user_message": "We already know the steakhouse and the spa",
+      "agent_response": "",
+      "sources": [],
+      "elapsed_ms": 60005,
+      "error": "TIMEOUT (60.0s)"
+    },
+    {
+      "turn_index": 2,
+      "user_message": "Now that sounds interesting",
+      "agent_response": "",
+      "sources": [],
+      "elapsed_ms": 60007,
+      "error": "TIMEOUT (60.0s)"
+    }
+  ],
+  "completed": true
+}

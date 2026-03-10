@@ -1,0 +1,52 @@
+{
+  "scenario_id": "profile-03",
+  "scenario_name": "Business group arrival",
+  "category": "profile_building",
+  "behavioral_dimension": "",
+  "expected_behavior": "Acknowledges group context and suggests group-friendly dining",
+  "expected_behavioral_quality": "",
+  "safety_relevant": false,
+  "source_file": "profile_building.yaml",
+  "thread_id": "eval-profile-03-1772837262",
+  "turns": [
+    {
+      "turn_index": 0,
+      "user_message": "We're a group of 6 colleagues coming for a corporate retreat this weekend",
+      "agent_response": "Welcome to Mohegan Sun for your retreat. For a group of six, SolToro Taqueria & Tequila Bar in the Casino of the Earth is a great choice for a high-energy team dinner with authentic tacos and a solid tequila list. If you're looking for something more sophisticated to wrap up the evening, novelle is our upscale lounge that features craft cocktails and a DJ on weekend nights.\n\nPro tip: novelle often has a more relaxed atmosphere earlier in the evening if you want to talk shop before the music picks up. Are you looking to coordinate a formal sit-down dinner or something more casual for the group?",
+      "sources": [
+        {
+          "category": "entertainment",
+          "source": "mohegan_sun.json",
+          "score": 0.656
+        },
+        {
+          "category": "restaurants",
+          "source": "mohegan_sun.json",
+          "score": 0.642
+        },
+        {
+          "category": "hotel",
+          "source": "mohegan_sun.json",
+          "score": 0.644
+        }
+      ],
+      "elapsed_ms": 30196,
+      "error": null
+    },
+    {
+      "turn_index": 1,
+      "user_message": "We need a place to eat together",
+      "agent_response": "Lantern Bar & Grill in the Casino of the Earth is a great option for a group of six because it stays open 24 hours and offers a reliable menu of American favorites that everyone can enjoy. The kitchen serves everything from steaks to late-night snacks, so your team won't feel rushed even if you arrive late this evening. \n\nThe comforting scent of grilled burgers and the steady energy of the room make it a welcoming spot to regroup and kick off the weekend. After your meal, the Wolf Den is right nearby and often has live bands performing late into the evening. Are you arriving tonight and looking for an immediate spot to eat, or are you primarily planning out your meals for Saturday and Sunday?",
+      "sources": [
+        {
+          "category": "restaurants",
+          "source": "mohegan_sun.json",
+          "score": 0.646
+        }
+      ],
+      "elapsed_ms": 55854,
+      "error": null
+    }
+  ],
+  "completed": true
+}

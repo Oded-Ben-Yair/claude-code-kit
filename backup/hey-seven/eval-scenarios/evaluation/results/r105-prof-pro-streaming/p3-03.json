@@ -1,0 +1,91 @@
+{
+  "scenario_id": "p3-03",
+  "scenario_name": "Spa information plus companion question",
+  "category": "profiling_p3_give_to_get",
+  "behavioral_dimension": "P3_give_to_get",
+  "expected_behavior": "Full spa overview provided before asking who's attending. When 'sister' is mentioned, pivots to duo-friendly services without making assumptions about the relationship dynamic",
+  "expected_behavioral_quality": "Provides spa details (services, hours, pricing context) first, then asks who they'll be visiting with. The spa info is actionable on its own. The companion question is framed as helping recommend couples treatments, group packages, or solo relaxation.",
+  "safety_relevant": false,
+  "source_file": "profiling_p3_give_to_get.yaml",
+  "thread_id": "eval-p3-03-1772992548",
+  "turns": [
+    {
+      "turn_index": 0,
+      "user_message": "Tell me about the spa",
+      "agent_response": "Mohegan Sun offers two distinct spa experiences depending on the kind of recharge you're looking for. Mandara Spa is a full-service retreat inspired by Balinese healing traditions, featuring a tranquil relaxation lounge, steam room, and sauna that are perfect for a deep reset. If you prefer something more modern, the Elemis Spa in the Earth Tower specializes in premium skincare treatments and offers express services if you're on a tighter schedule.\n\nAn insider tip for your visit: the relaxation lounge at Mandara is widely considered the best spot on property to truly unplug, and many guests find that arriving early to use the steam room really enhances the benefits of their massage. Both locations are open daily, with Mandara staying open until 8:00 PM and Elemis until 7:00 PM.\n\nAre you looking for a full afternoon of pampering, or just a quick treatment to bridge the gap between dinner and a show?",
+      "sources": [
+        {
+          "category": "amenities",
+          "source": "mohegan_sun.json",
+          "score": 0.693
+        },
+        {
+          "category": "property",
+          "source": "mohegan_sun.json",
+          "score": 0.667
+        },
+        {
+          "category": "faq",
+          "source": "mohegan_sun.json",
+          "score": 0.639
+        },
+        {
+          "category": "promotions",
+          "source": "mohegan_sun.json",
+          "score": 0.639
+        }
+      ],
+      "elapsed_ms": 30179,
+      "error": null
+    },
+    {
+      "turn_index": 1,
+      "user_message": "It would be for me and my sister",
+      "agent_response": "A sister getaway is the perfect excuse for a spa day. \n\nIf you two are planning to make a trip out of it, our Deluxe Rooms can easily be set up with two queen beds so you both have your own space. Or, if you want to treat yourselves, the Junior Suites are fantastic \u2014 they feature an incredible expanded bathroom with a soaking tub and a separate living area where you can just relax and catch up after your treatments. \n\nAre you planning to stay overnight with us, or just visiting for the day?",
+      "sources": [
+        {
+          "category": "hotel",
+          "source": "mohegan_sun.json",
+          "score": 0.645
+        },
+        {
+          "category": "faq",
+          "source": "mohegan_sun.json",
+          "score": 0.613
+        }
+      ],
+      "elapsed_ms": 72148,
+      "error": null
+    },
+    {
+      "turn_index": 2,
+      "user_message": "A couples massage would be fun",
+      "agent_response": "That is actually a wonderful idea. Booking a couples massage room for sisters is incredibly popular here and such a relaxing way to share the experience. \n\nThe Elemis Spa over in the Earth Tower specifically features dedicated couples experiences in a beautiful, modern setting. Alternatively, Mandara Spa is perfect if you both want to make a full afternoon out of lounging in the steam room and relaxation areas before your side-by-side treatments. I have got you covered with all the details, and whenever you are ready, I can help connect you with our spa team to finalize your itinerary. \n\nAfter a relaxing massage, stepping right into a nice dinner or a lounge is the perfect way to keep the good energy going. Just so I can personalize some dining or entertainment ideas for you, what is your name, and when are you and your sister planning to visit?",
+      "sources": [
+        {
+          "category": "amenities",
+          "source": "mohegan_sun.json",
+          "score": 0.638
+        },
+        {
+          "category": "promotions",
+          "source": "mohegan_sun.json",
+          "score": 0.603
+        },
+        {
+          "category": "property",
+          "source": "mohegan_sun.json",
+          "score": 0.615
+        },
+        {
+          "category": "hotel",
+          "source": "mohegan_sun.json",
+          "score": 0.585
+        }
+      ],
+      "elapsed_ms": 61480,
+      "error": null
+    }
+  ],
+  "completed": true
+}

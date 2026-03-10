@@ -1,0 +1,70 @@
+{
+  "scenario_id": "p4-02",
+  "scenario_name": "Party of 4 assumption about kids \u2014 incorrect (business colleagues)",
+  "category": "profiling_p4_assumptive_bridge",
+  "behavioral_dimension": "P4_assumptive_bridging",
+  "expected_behavior": "Handles the correction gracefully. Immediately shifts from family-friendly to business-appropriate recommendations. When 'clients' is revealed, further elevates to impressive and upscale options. No dwelling on the wrong assumption",
+  "expected_behavioral_quality": "Makes the same soft assumption about a family group, but when corrected ('No, it's colleagues'), pivots immediately without embarrassment. Does NOT apologize excessively. Seamlessly adjusts to a business dinner register with appropriate restaurant suggestions.",
+  "safety_relevant": false,
+  "source_file": "profiling_p4_assumptive_bridge.yaml",
+  "thread_id": "eval-p4-02-1772841148",
+  "turns": [
+    {
+      "turn_index": 0,
+      "user_message": "Table for 4 tonight",
+      "agent_response": "Since it is just before midnight, Lantern Bar & Grill in the Casino of the Earth is your best bet for a fantastic meal right now as they are open 24 hours. The aroma of flame-grilled burgers and savory steaks makes it a favorite for guests looking for a high-quality sit-down meal well into the late-night hours. It is a casual spot with a price range around $$, and since reservations are not required, it is perfect for a party of four to walk right in. \n\nPro tip \u2014 while it has a relaxed bar and grill feel, their steaks are prepared with the same care you would expect from a specialty steakhouse. Please keep in mind that hours and prices can vary, so it is always a good idea to confirm with the venue upon arrival. \n\nI can help you coordinate with our host team to check the current seating availability for your group \u2014 what time were you looking to head over, and are there any dietary restrictions I should let them know about? If you are looking for a bit of energy after your meal, novelle is our upscale lounge nearby that stays lively with craft cocktails and music late into the night.",
+      "sources": [
+        {
+          "category": "restaurants",
+          "source": "mohegan_sun.json",
+          "score": 0.646
+        },
+        {
+          "category": "entertainment",
+          "source": "mohegan_sun.json",
+          "score": 0.643
+        },
+        {
+          "category": "faq",
+          "source": "mohegan_sun.json",
+          "score": 0.664
+        }
+      ],
+      "elapsed_ms": 38743,
+      "error": null
+    },
+    {
+      "turn_index": 1,
+      "user_message": "No kids, it's a work dinner with colleagues",
+      "agent_response": "I apologize, but I'm having trouble generating a response right now. Please try again, or  at [PHONE].",
+      "sources": [
+        {
+          "category": "entertainment",
+          "source": "mohegan_sun.json",
+          "score": 0.619
+        },
+        {
+          "category": "restaurants",
+          "source": "mohegan_sun.json",
+          "score": 0.596
+        },
+        {
+          "category": "promotions",
+          "source": "mohegan_sun.json",
+          "score": 0.596
+        }
+      ],
+      "elapsed_ms": 55388,
+      "error": null
+    },
+    {
+      "turn_index": 2,
+      "user_message": "Somewhere impressive, they're clients",
+      "agent_response": "",
+      "sources": [],
+      "elapsed_ms": 60003,
+      "error": "TIMEOUT (60.0s)"
+    }
+  ],
+  "completed": true
+}

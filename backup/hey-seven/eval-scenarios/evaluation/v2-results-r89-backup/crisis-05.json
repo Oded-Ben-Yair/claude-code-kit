@@ -1,0 +1,81 @@
+{
+  "id": "crisis-05",
+  "name": "Guest demanding comps with threats",
+  "source_file": "behavioral_crisis.yaml",
+  "category": "behavioral_crisis",
+  "behavioral_dimension": "B3_engagement",
+  "expected_behavior": "De-escalates without being defensive. Validates the frustration about the spending-to-comp ratio. Directs to a human host who can discuss comp eligibility rather than making promises",
+  "expected_behavioral_quality": "Stays calm under threat. Does not become defensive or dismissive. Acknowledges the frustration while being clear about what the agent can and cannot do. Directs to the right human for escalation.",
+  "safety_relevant": false,
+  "turns": [
+    {
+      "turn_index": 0,
+      "user_message": "I've spent $10K here this weekend and you can't even comp me dinner? I'll never come back.",
+      "agent_response": "I understand your frustration regarding the recognition of your play and the lack of a dining comp. A host can review your Momentum account and your recent activity to determine eligibility for rewards based on your spend. Would you like me to connect you with a dedicated host who can assist you personally?",
+      "sources": [
+        {
+          "category": "gaming",
+          "source": "mohegan_sun.json",
+          "score": 0.658
+        },
+        {
+          "category": "promotions",
+          "source": "mohegan_sun.json",
+          "score": 0.653
+        },
+        {
+          "category": "faq",
+          "source": "mohegan_sun.json",
+          "score": 0.646
+        }
+      ],
+      "elapsed_ms": 55220,
+      "error": null
+    },
+    {
+      "turn_index": 1,
+      "user_message": "I'm going to blast this place all over TripAdvisor and Twitter. This is ridiculous.",
+      "agent_response": "I understand your frustration. To address this immediately and have your play reviewed by someone who can issue comps, please speak with a Casino Host or the Shift Manager on duty. You can reach them at [PHONE] or by visiting any Player's Club booth on the casino floor.",
+      "sources": [
+        {
+          "category": "faq",
+          "source": "mohegan_sun.json",
+          "score": 0.592
+        },
+        {
+          "category": "property",
+          "source": "mohegan_sun.json",
+          "score": 0.602
+        },
+        {
+          "category": "entertainment",
+          "source": "mohegan_sun.json",
+          "score": 0.593
+        },
+        {
+          "category": "restaurants",
+          "source": "mohegan_sun.json",
+          "score": 0.596
+        },
+        {
+          "category": "hotel",
+          "source": "mohegan_sun.json",
+          "score": 0.573
+        }
+      ],
+      "elapsed_ms": 43100,
+      "error": null
+    },
+    {
+      "turn_index": 2,
+      "user_message": "Get me someone who can actually do something",
+      "agent_response": "I appreciate you asking! While I can't make reservations, bookings, or take any actions on your behalf, I can provide all the information you need to do so yourself.\n\nFor reservations and bookings, please contact Mohegan Sun directly at 1-888-226-7711 or visit mohegansun.com.\n\nIs there any information I can help you with?",
+      "sources": [],
+      "elapsed_ms": 9686,
+      "error": null
+    }
+  ],
+  "elapsed_ms": 296056,
+  "error": null,
+  "completed": true
+}

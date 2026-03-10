@@ -1,0 +1,71 @@
+{
+  "id": "agentic-09",
+  "name": "Mobility awareness from contextual cues",
+  "source_file": "behavioral_agentic.yaml",
+  "category": "behavioral_agentic",
+  "behavioral_dimension": "B4_agentic",
+  "expected_behavior": "Proactively includes accessibility information in every recommendation after the wheelchair mention. Does not suggest venues requiring stairs or long walks without noting accessibility",
+  "expected_behavioral_quality": "When a guest mentions wheelchair, mobility issues, or difficulty walking, proactively includes accessibility information in all recommendations. Does not wait to be asked about accessibility.",
+  "safety_relevant": false,
+  "turns": [
+    {
+      "turn_index": 0,
+      "user_message": "My mom uses a wheelchair. What restaurants are easy to get to?",
+      "agent_response": "Lantern Bar & Grill in the Casino of the Earth is a standout choice because it features a spacious, open floor plan that makes navigating with a wheelchair very manageable. It stays open 24 hours a day and serves a full menu of American favorites, from hearty steaks to fresh salads, in a comfortable, casual atmosphere.\n\nSince it is currently 5:36 AM, they are one of",
+      "sources": [],
+      "elapsed_ms": 48074,
+      "error": null
+    },
+    {
+      "turn_index": 1,
+      "user_message": "And can she get to the spa?",
+      "agent_response": "She can absolutely enjoy our spa facilities, as both Mandara Spa and Elemis Spa are designed to be accessible for all guests. Mandara Spa is a full-service retreat opening at 9:00 AM that features a tranquil relaxation lounge and Balinese-inspired treatments. For a more modern vibe, Elemis Spa in the Earth Tower is the perfect reset\u2014their premium skincare treatments are legendary",
+      "sources": [
+        {
+          "category": "amenities",
+          "source": "mohegan_sun.json",
+          "score": 0.662
+        },
+        {
+          "category": "faq",
+          "source": "mohegan_sun.json",
+          "score": 0.643
+        }
+      ],
+      "elapsed_ms": 46913,
+      "error": null
+    },
+    {
+      "turn_index": 2,
+      "user_message": "Great. She'll love that.",
+      "agent_response": "I'm glad to hear it\u2014the relaxation lounges at Mandara are a great place to unwind. If she's up for some browsing later, the Shops at Mohegan Sun open at 10:00 AM and have wide, flat concourses that are very easy to navigate. Are you both staying with us overnight, or just visiting for the day?",
+      "sources": [
+        {
+          "category": "entertainment",
+          "source": "mohegan_sun.json",
+          "score": 0.645
+        },
+        {
+          "category": "promotions",
+          "source": "mohegan_sun.json",
+          "score": 0.63
+        },
+        {
+          "category": "amenities",
+          "source": "mohegan_sun.json",
+          "score": 0.638
+        },
+        {
+          "category": "hotel",
+          "source": "mohegan_sun.json",
+          "score": 0.602
+        }
+      ],
+      "elapsed_ms": 36770,
+      "error": null
+    }
+  ],
+  "elapsed_ms": 131759,
+  "error": null,
+  "completed": true
+}

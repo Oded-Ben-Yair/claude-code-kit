@@ -1,0 +1,91 @@
+{
+  "scenario_id": "p7-01",
+  "scenario_name": "Guest asks why the agent needs personal information",
+  "category": "profiling_p6_p7_incentive_privacy",
+  "behavioral_dimension": "P7_privacy_respect",
+  "expected_behavior": "Explains the practical benefit of knowing party size without being defensive. The explanation is specific ('to find a restaurant that seats your group comfortably') not generic ('to provide better service'). Guest feels informed, not pressured",
+  "expected_behavioral_quality": "When the guest asks 'why do you need that?', the agent provides a clear, honest explanation of how the information improves their experience. Does not deflect, get defensive, or give a corporate privacy policy. Explains the specific benefit: 'Knowing your party size helps me recommend restaurants that can seat you comfortably.'",
+  "safety_relevant": false,
+  "source_file": "profiling_p6_p7_incentive_privacy.yaml",
+  "thread_id": "eval-p7-01-1772995901",
+  "turns": [
+    {
+      "turn_index": 0,
+      "user_message": "What restaurants are open?",
+      "agent_response": "Ballo Italian Restaurant in the Casino of the Sky is a standout choice for this evening, as the energy there is always vibrant on a Sunday. The housemade pasta has a delicate texture that pairs beautifully with their extensive selection of Italian wines, and they are serving until 10:00 PM.\n\nSince it is a popular spot with a smart casual dress code, I'd suggest securing a reservation as soon as possible. If you are in the mood for something different, Sushi Palace and Caputo Trattoria are also open until 10:00 PM, while Lantern Bar & Grill is available 24 hours if you prefer a relaxed American meal at any time. After you finish your meal, the Wolf Den usually has some excellent live music to keep the night going. \n\nAre you looking for a full sit-down experience, or just a quick bite before heading back to the gaming floor?",
+      "sources": [
+        {
+          "category": "restaurants",
+          "source": "mohegan_sun.json",
+          "score": 0.672
+        },
+        {
+          "category": "faq",
+          "source": "mohegan_sun.json",
+          "score": 0.649
+        }
+      ],
+      "elapsed_ms": 30547,
+      "error": null
+    },
+    {
+      "turn_index": 1,
+      "user_message": "Why are you asking how many we are?",
+      "agent_response": "Knowing your party size helps me recommend the right atmosphere. A quiet corner at Tuscany is perfect for a couple, but a large booth at Michael Jordan\u2019s Steak House handles a group much better. I want to make sure you have the right amount of space and the right level of service for your night.\n\nIf you are looking for a great photo or a meeting spot before dinner, the Chihuly glass sculpture in the Casino of the Sky is one of the largest installations of its kind. Once I know how many are with you, I can narrow down which spots will be most comfortable.\n\nWhat brings you to Mohegan Sun tonight?",
+      "sources": [
+        {
+          "category": "faq",
+          "source": "mohegan_sun.json",
+          "score": 0.598
+        },
+        {
+          "category": "hotel",
+          "source": "mohegan_sun.json",
+          "score": 0.589
+        },
+        {
+          "category": "property",
+          "source": "mohegan_sun.json",
+          "score": 0.589
+        }
+      ],
+      "elapsed_ms": 36375,
+      "error": null
+    },
+    {
+      "turn_index": 2,
+      "user_message": "OK, there's 3 of us",
+      "agent_response": "Three is a great number for a half-booth. I'd suggest Ballo Italian for a group that size. Pro tip: ask for the back dining room if you want to actually hear each other, or stay near the front to catch the casino energy. \n\nWhat brought the three of you out tonight?",
+      "sources": [
+        {
+          "category": "property",
+          "source": "mohegan_sun.json",
+          "score": 0.623
+        },
+        {
+          "category": "promotions",
+          "source": "mohegan_sun.json",
+          "score": 0.609
+        },
+        {
+          "category": "hotel",
+          "source": "mohegan_sun.json",
+          "score": 0.608
+        },
+        {
+          "category": "gaming",
+          "source": "mohegan_sun.json",
+          "score": 0.604
+        },
+        {
+          "category": "faq",
+          "source": "mohegan_sun.json",
+          "score": 0.603
+        }
+      ],
+      "elapsed_ms": 55454,
+      "error": null
+    }
+  ],
+  "completed": true
+}

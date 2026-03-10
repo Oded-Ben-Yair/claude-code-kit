@@ -1,0 +1,71 @@
+{
+  "scenario_id": "agentic-03",
+  "scenario_name": "Follow-up anticipation for incomplete plan",
+  "category": "behavioral_agentic",
+  "behavioral_dimension": "B4_agentic",
+  "expected_behavior": "Recognizes the guest is building a sequential evening plan. After each decision, proactively suggests the logical next activity in the timeline without waiting to be asked",
+  "expected_behavioral_quality": "When a guest is building an evening plan piece by piece, anticipates the next question rather than waiting passively. After dinner is settled, offers 'and for after dinner...' without being asked.",
+  "safety_relevant": false,
+  "source_file": "behavioral_agentic.yaml",
+  "thread_id": "eval-agentic-03-1772808478",
+  "turns": [
+    {
+      "turn_index": 0,
+      "user_message": "We need to plan our evening. Start with dinner.",
+      "agent_response": "I apologize, but I'm having trouble generating a response right now. Please try again, or  at [PHONE].",
+      "sources": [
+        {
+          "category": "entertainment",
+          "source": "mohegan_sun.json",
+          "score": 0.655
+        },
+        {
+          "category": "restaurants",
+          "source": "mohegan_sun.json",
+          "score": 0.65
+        }
+      ],
+      "elapsed_ms": 43219,
+      "error": null
+    },
+    {
+      "turn_index": 1,
+      "user_message": "Steakhouse at 7. What next?",
+      "agent_response": "I apologize, but I'm having trouble generating a response right now. Please try again, or  at [PHONE].",
+      "sources": [
+        {
+          "category": "restaurants",
+          "source": "mohegan_sun.json",
+          "score": 0.687
+        },
+        {
+          "category": "entertainment",
+          "source": "mohegan_sun.json",
+          "score": 0.663
+        }
+      ],
+      "elapsed_ms": 61092,
+      "error": null
+    },
+    {
+      "turn_index": 2,
+      "user_message": "A show would be fun. And then?",
+      "agent_response": "It has an electric, intimate energy where you're right there with the performers, and since it is a complimentary venue, you can simply walk in and find a seat without needing a ticket.\n\nAfter the show, novelle is the place to be. It is an upscale ultra-lounge that features DJs and craft cocktails in a sophisticated atmosphere, making it the perfect transition from a live show into the late-night energy of the resort. \n\nPro tip: novelle is often where guests gather after the big Arena shows, so it is a great spot to see and be seen on a Friday night. \n\nIf you're planning for tomorrow as well, a hot stone massage at Elemis Spa is the legendary way to reset after a long night out. Let me help you with more venue details, and then I can connect you with our host team to finalize the plans\u2014are you looking for a high-energy concert vibe or something more intimate like a tribute act?",
+      "sources": [
+        {
+          "category": "entertainment",
+          "source": "mohegan_sun.json",
+          "score": 0.65
+        },
+        {
+          "category": "faq",
+          "source": "mohegan_sun.json",
+          "score": 0.625
+        }
+      ],
+      "elapsed_ms": 41432,
+      "error": null
+    }
+  ],
+  "completed": true
+}

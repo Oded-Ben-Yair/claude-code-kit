@@ -1,0 +1,96 @@
+{
+  "scenario_id": "sarcasm-01",
+  "scenario_name": "Sarcastic opener dismissing chatbot",
+  "category": "behavioral_sarcasm",
+  "behavioral_dimension": "B1_sarcasm",
+  "expected_behavior": "Does not match sarcasm with excessive enthusiasm. Stays grounded, earns trust through useful answers, and naturally warms as guest engagement shifts",
+  "expected_behavioral_quality": "Acknowledges the skepticism without defensiveness or forced enthusiasm. Does not mirror sarcasm. Calm, competent opener that proves value through substance, not cheerfulness.",
+  "safety_relevant": false,
+  "source_file": "behavioral_sarcasm.yaml",
+  "thread_id": "eval-sarcasm-01-1772919994",
+  "turns": [
+    {
+      "turn_index": 0,
+      "user_message": "Oh wonderful, another chatbot. This should be fun.",
+      "agent_response": "Fair point. I'm Seven, and I'm here to cut through the noise so you can get what you need at Mohegan Sun. If you want a recommendation for a quiet dinner or need to know who's playing at the Wolf Den, I have the details ready. What brought you out to the property tonight?",
+      "sources": [
+        {
+          "category": "faq",
+          "source": "mohegan_sun.json",
+          "score": 0.635
+        },
+        {
+          "category": "entertainment",
+          "source": "mohegan_sun.json",
+          "score": 0.635
+        },
+        {
+          "category": "gaming",
+          "source": "mohegan_sun.json",
+          "score": 0.607
+        },
+        {
+          "category": "promotions",
+          "source": "mohegan_sun.json",
+          "score": 0.605
+        },
+        {
+          "category": "property",
+          "source": "mohegan_sun.json",
+          "score": 0.613
+        }
+      ],
+      "elapsed_ms": 28335,
+      "error": null
+    },
+    {
+      "turn_index": 1,
+      "user_message": "Fine. What restaurants do you have?",
+      "agent_response": "For right now, Lantern Bar & Grill is your best bet since it is open 24 hours and serves a solid menu of American favorites like steaks and burgers right in the Casino of the Earth. Our signature fine dining spots, such as Ballo Italian Restaurant and Todd English's Tuscany, close their doors at 10:00 PM on Saturdays, so Lantern is the perfect choice if you want to take your time without rushing a meal. It is a casual environment with no reservations needed, and while prices and hours can vary, you can typically expect to spend between $25 and $50 per person.\n\nPro tip: Lantern is a favorite for guests looking to refuel after a set at the Wolf Den since it is located just steps away from the stage. Are you in the mood for a full sit-down dinner or just some late-night appetizers?",
+      "sources": [
+        {
+          "category": "restaurants",
+          "source": "mohegan_sun.json",
+          "score": 0.672
+        },
+        {
+          "category": "faq",
+          "source": "mohegan_sun.json",
+          "score": 0.658
+        }
+      ],
+      "elapsed_ms": 50874,
+      "error": null
+    },
+    {
+      "turn_index": 2,
+      "user_message": "Alright that was actually useful. What about the spa?",
+      "agent_response": "I'm glad that helped. Since it's 9:47 PM, both of our spas have closed for the evening, but the hotel pool and hot tub are open for about another ten minutes if you're looking for a quick soak.\n\nFor tomorrow morning, Mandara Spa is the go-to for a total reset with their Balinese-inspired massages and steam rooms, while Elemis Spa in the Earth Tower is excellent if you're looking for a high-end facial or a quicker express treatment. Both open at 9:00 AM daily. Pro tip: Mandara's relaxation lounge is a hidden gem where you can truly escape the energy of the casino floor for an hour of peace. \n\nI've got you\u2014if you'd like to set something up for tomorrow, I can connect you with the host team to check their exact availability for you. Since you're looking into wellness, are you leaning more toward a deep tissue massage or a refreshing skincare treatment?",
+      "sources": [
+        {
+          "category": "amenities",
+          "source": "mohegan_sun.json",
+          "score": 0.703
+        },
+        {
+          "category": "promotions",
+          "source": "mohegan_sun.json",
+          "score": 0.65
+        },
+        {
+          "category": "faq",
+          "source": "mohegan_sun.json",
+          "score": 0.646
+        },
+        {
+          "category": "property",
+          "source": "mohegan_sun.json",
+          "score": 0.649
+        }
+      ],
+      "elapsed_ms": 28016,
+      "error": null
+    }
+  ],
+  "completed": true
+}

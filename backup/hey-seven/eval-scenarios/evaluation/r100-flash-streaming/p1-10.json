@@ -1,0 +1,60 @@
+{
+  "scenario_id": "p1-10",
+  "scenario_name": "Guest reveals companion ages naturally",
+  "category": "profiling_p1_natural_extraction",
+  "behavioral_dimension": "P1_natural_extraction",
+  "expected_behavior": "Uses the 8 and 12 age data to recommend age-appropriate activities. An 8-year-old and 12-year-old have different interest profiles. Dining recommendation accounts for family-friendly seating and menu. Never re-asks for ages",
+  "expected_behavioral_quality": "Extracts companion ages from a casual mention ('kids are 8 and 12') and uses them to shape family-appropriate recommendations. Distinguishes between young children and pre-teens when suggesting activities. Does not ask ages after they've been volunteered.",
+  "safety_relevant": false,
+  "source_file": "profiling_p1_natural_extraction.yaml",
+  "thread_id": "eval-p1-10-1772838695",
+  "turns": [
+    {
+      "turn_index": 0,
+      "user_message": "Looking for stuff to do with the family. Kids are 8 and 12.",
+      "agent_response": "Right now, Cyber Quest is the place to be for an 8 and 12-year-old, as it is a high-tech arcade featuring the latest video games and attractions that stay exciting late into the evening.\n\nFor tomorrow, the Wombi Rock Climbing Wall offers a great physical challenge for both ages with professional instruction provided right on-site. If you and your partner want to sneak away for a legendary hot stone massage at Elemis Spa, Kids Quest provides supervised entertainment for children up to age 12 so you can have some time to yourselves. I can help you with the specifics for any of these activities and then connect you with our host team to finalize the arrangements. \n\nDo you think the kids would prefer starting with the arcade or the climbing wall?",
+      "sources": [
+        {
+          "category": "entertainment",
+          "source": "mohegan_sun.json",
+          "score": 0.655
+        },
+        {
+          "category": "amenities",
+          "source": "mohegan_sun.json",
+          "score": 0.644
+        }
+      ],
+      "elapsed_ms": 44027,
+      "error": null
+    },
+    {
+      "turn_index": 1,
+      "user_message": "Anything they can do while we hit the casino?",
+      "agent_response": "",
+      "sources": [],
+      "elapsed_ms": 60002,
+      "error": "TIMEOUT (60.0s)"
+    },
+    {
+      "turn_index": 2,
+      "user_message": "And somewhere we can all eat together after?",
+      "agent_response": "For tonight, **Lantern Bar & Grill** is your best bet since it is open 24 hours and has a menu that easily pleases both kids and adults. It is located right in the Casino of the Earth and serves up hearty American classics like juicy burgers, steaks, and fresh salads in a relaxed, casual environment. \n\nThe atmosphere is perfect for a late-night family meal because it stays lively without being too formal for the kids. Since it's a 24-hour spot, you don't need to worry about reservations or rushing back from the tables. Let me help you with the specific menu highlights and the best path to get there from the gaming floor, and then I can connect you with our host team to see if there is a wait for a table.\n\nAfter a big meal there, the walk back through the Casino of the Earth usually has some great people-watching near the Wolf Den. Do your kids have a favorite type of food, or are they usually happy with standard American fare like burgers and fries?",
+      "sources": [
+        {
+          "category": "restaurants",
+          "source": "mohegan_sun.json",
+          "score": 0.669
+        },
+        {
+          "category": "faq",
+          "source": "mohegan_sun.json",
+          "score": 0.652
+        }
+      ],
+      "elapsed_ms": 33638,
+      "error": null
+    }
+  ],
+  "completed": true
+}

@@ -1,0 +1,33 @@
+{
+  "scenario_id": "multilingual-08",
+  "scenario_name": "Spanish celebration \u2014 anniversary",
+  "category": "behavioral_multilingual",
+  "behavioral_dimension": "B8_cultural",
+  "expected_behavior": "Congratulates the couple in Spanish. Provides curated evening suggestions: romantic dinner spot, entertainment option, possibly spa. Suggestions flow as a planned evening rather than disconnected options.",
+  "expected_behavioral_quality": "Recognizes the celebration context in Spanish. Responds with genuine warmth and curated suggestions for an anniversary evening \u2014 not a generic list. Maintains celebratory energy in Spanish.",
+  "safety_relevant": false,
+  "source_file": "behavioral_multilingual.yaml",
+  "thread_id": "eval-multilingual-08-1772915552",
+  "turns": [
+    {
+      "turn_index": 0,
+      "user_message": "Estamos celebrando nuestro aniversario de bodas! Que nos recomiendas para esta noche?",
+      "agent_response": "\u00a1Felicidades por su aniversario! Para una cena memorable, mi recomendaci\u00f3n principal es Ballo Italian Restaurant en el Casino of the Sky. Lo que lo hace especial para una pareja es su ambiente inspirado en las abad\u00edas italianas y su pasta hecha a mano; es un lugar sofisticado y muy \u00edntimo.\n\nComo detalle de conocedor, la iluminaci\u00f3n y la arquitectura del restaurante est\u00e1n dise\u00f1adas para permitir una conversaci\u00f3n privada incluso en las noches m\u00e1s concurridas. Si despu\u00e9s de cenar buscan algo m\u00e1s animado, novelle es el lugar ideal para disfrutar de un c\u00f3ctel artesanal en un ambiente de lounge de primer nivel.\n\n\u00bfEs su primera vez celebrando con nosotros o ya tienen alg\u00fan lugar favorito en el resort?",
+      "sources": [
+        {
+          "category": "restaurants",
+          "source": "mohegan_sun.json",
+          "score": 0.648
+        },
+        {
+          "category": "entertainment",
+          "source": "mohegan_sun.json",
+          "score": 0.646
+        }
+      ],
+      "elapsed_ms": 72083,
+      "error": null
+    }
+  ],
+  "completed": true
+}

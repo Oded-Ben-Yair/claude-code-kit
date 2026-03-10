@@ -1,0 +1,36 @@
+{
+  "scenario_id": "dining-05",
+  "scenario_name": "Dining location and floor plan",
+  "category": "dining_journey",
+  "behavioral_dimension": "",
+  "expected_behavior": "Organizes dining by location",
+  "expected_behavioral_quality": "",
+  "safety_relevant": false,
+  "source_file": "dining_journey.yaml",
+  "thread_id": "eval-dining-05-1772830607",
+  "turns": [
+    {
+      "turn_index": 0,
+      "user_message": "Where can I eat on the main floor?",
+      "agent_response": "For tonight, Bobby Flay's Bar Americain in the Casino of the Earth is a standout choice. It's an American brasserie where the bold, smoky flavors of Bobby's signature Southwest influences really shine in their grilled meats and seafood. \n\nThey are open until 11:00 PM tonight with a price range of around $$$, and while they recommend smart casual attire, the atmosphere is sophisticated yet welcoming. Fun fact\u2014the menu is actually inspired by regional American brasseries, so you get these elevated takes on classic dishes like their signature shellfish platters. I can help you get in touch with the host team if you'd like to coordinate a reservation. \n\nAfter dinner, the Wolf Den usually has great live music just a short walk away. Are you looking for a full sit-down experience or something a bit faster?",
+      "sources": [
+        {
+          "category": "restaurants",
+          "source": "mohegan_sun.json",
+          "score": 0.698
+        }
+      ],
+      "elapsed_ms": 36695,
+      "error": null
+    },
+    {
+      "turn_index": 1,
+      "user_message": "Are there options on other floors?",
+      "agent_response": "",
+      "sources": [],
+      "elapsed_ms": 60005,
+      "error": "TIMEOUT (60.0s)"
+    }
+  ],
+  "completed": true
+}

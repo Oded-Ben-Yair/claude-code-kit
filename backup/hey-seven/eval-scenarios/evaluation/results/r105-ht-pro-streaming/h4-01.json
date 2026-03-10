@@ -1,0 +1,55 @@
+{
+  "scenario_id": "h4-01",
+  "scenario_name": "Returning guest with earlier preferences in conversation",
+  "category": "host_triangle_h4_h6_relationship",
+  "behavioral_dimension": "H4_personalized_recognition",
+  "expected_behavior": "Integrates all three data points (couple, Italian preference, gluten-free) into the entertainment recommendation. Does not suggest dinner options that conflict with the dietary need. Uses Linda's name naturally. The evening plan feels curated for this specific couple",
+  "expected_behavioral_quality": "Uses information shared in earlier turns to personalize later recommendations. By turn 3, every recommendation should reflect accumulated knowledge. The guest should feel increasingly 'known' with each interaction.",
+  "safety_relevant": false,
+  "source_file": "host_triangle_h4_h6_relationship.yaml",
+  "thread_id": "eval-h4-01-1772990625",
+  "turns": [
+    {
+      "turn_index": 0,
+      "user_message": "Hi, I'm Linda. My husband and I love Italian food. What's good here?",
+      "agent_response": "Welcome, Linda. Since you and your husband have a passion for Italian cuisine, I'd suggest Todd English's Tuscany in the Casino of the Sky. \n\nThe wood-fired aroma hits you the moment you walk into the restaurant, and their handmade pastas have an authentic, velvety quality that guests rave about. It is open tonight until 10:00 PM with a business casual dress code, and since it is a popular spot for a Sunday evening, a reservation is a good idea to ensure you get a prime table. Prices typically fall in the $$$$ range, but the warm, Tuscan-inspired decor makes for a very special atmosphere. \n\nAfter dinner, you might enjoy a stroll through the Casino of the Sky to see the stunning glass sculptures before catching some live music. Do you usually lean toward classic pasta dishes like a rich Bolognese, or are you more into wood-fired pizzas and seafood?",
+      "sources": [
+        {
+          "category": "restaurants",
+          "source": "mohegan_sun.json",
+          "score": 0.689
+        }
+      ],
+      "elapsed_ms": 31785,
+      "error": null
+    },
+    {
+      "turn_index": 1,
+      "user_message": "We also have a gluten-free situation so that limits things",
+      "agent_response": "Linda, a gluten-free diet won't hold you back at all here. \n\nFor a fantastic Italian meal that also offers excellent value, I highly recommend Caputo Trattoria right in the Casino of the Earth. It is a welcoming, casual spot, and our chefs are incredible at adapting their dishes for gluten-free guests. You can still enjoy those rich, herbaceous sauces and fresh Italian flavors without the worry. They are open until 10:00 PM tonight, and the best part is you do not even need a reservation to get a table. \n\nIf you want to make an evening out of it without spending extra, the Wolf Den has free live music right nearby in the same casino area. \n\nAre you two looking to grab dinner right away, or are you planning for a bit later this evening?",
+      "sources": [],
+      "elapsed_ms": 64628,
+      "error": null
+    },
+    {
+      "turn_index": 2,
+      "user_message": "What about after dinner? Any shows tonight?",
+      "agent_response": "Linda, I've got you covered for your plans tonight. You're going to love the Wolf Den; it has this intimate energy where you're right there with the performer \u2014 it's electric. Since it is a free venue with nightly shows usually starting at 8:00 PM or 9:00 PM, it is perfect for a budget-friendly night out without needing to worry about tickets. \n\nIf you are in the mood for something different, Comix Roadhouse also has comedy shows on Sunday evenings. It is a premier club that brings in great talent, and it's a fun way to keep the energy going after dinner. Both venues are located in the Casino of the Earth, which is the same area as the gluten-free friendly Caputo Trattoria I mentioned earlier.\n\nDo you and your husband usually prefer live music, or would a comedy show be more your speed for tonight?",
+      "sources": [
+        {
+          "category": "restaurants",
+          "source": "mohegan_sun.json",
+          "score": 0.689
+        },
+        {
+          "category": "entertainment",
+          "source": "mohegan_sun.json",
+          "score": 0.687
+        }
+      ],
+      "elapsed_ms": 32227,
+      "error": null
+    }
+  ],
+  "completed": true
+}

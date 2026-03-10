@@ -1,0 +1,61 @@
+{
+  "scenario_id": "h4-01",
+  "scenario_name": "Returning guest with earlier preferences in conversation",
+  "category": "host_triangle_h4_h6_relationship",
+  "behavioral_dimension": "H4_personalized_recognition",
+  "expected_behavior": "Integrates all three data points (couple, Italian preference, gluten-free) into the entertainment recommendation. Does not suggest dinner options that conflict with the dietary need. Uses Linda's name naturally. The evening plan feels curated for this specific couple",
+  "expected_behavioral_quality": "Uses information shared in earlier turns to personalize later recommendations. By turn 3, every recommendation should reflect accumulated knowledge. The guest should feel increasingly 'known' with each interaction.",
+  "safety_relevant": false,
+  "source_file": "host_triangle_h4_h6_relationship.yaml",
+  "thread_id": "eval-h4-01-1773037350",
+  "turns": [
+    {
+      "turn_index": 0,
+      "user_message": "Hi, I'm Linda. My husband and I love Italian food. What's good here?",
+      "agent_response": "Welcome, Linda. You and your husband are definitely in the right place. \n\nFor a really memorable meal, Todd English's Tuscany is hard to beat. The wood-fired aroma hits you the moment you walk in, and their handmade pastas make it a perfect date night spot. It has a great business casual vibe and opens for dinner starting at 5 PM. If you want a slightly different atmosphere, Ballo Italian Restaurant is also incredible, especially if you love housemade risottos and a modern presentation.\n\nIf you finish up and want to keep the evening going, the Wolf Den is close by and has free live music every night to cap off the evening.\n\nAre you two looking to do a nice sit-down dinner tonight, or were you hoping for a more casual bite while you explore?",
+      "sources": [
+        {
+          "category": "restaurants",
+          "source": "mohegan_sun.json",
+          "score": 0.689
+        }
+      ],
+      "elapsed_ms": 59972,
+      "error": null
+    },
+    {
+      "turn_index": 1,
+      "user_message": "We also have a gluten-free situation so that limits things",
+      "agent_response": "Linda, I completely understand \u2014 a gluten-free requirement shouldn't mean you have to skip out on a great Italian meal. \n\nFor a relaxed and budget-friendly option, I'd suggest Caputo Trattoria in the Casino of the Earth. Their chefs are very experienced with dietary needs and can often prepare gluten-free pasta versions of their classic dishes, so you still get that authentic flavor without the worry. They open today at 11:00 AM and have a casual, family-friendly atmosphere where you can really take your time. \n\nIf you're looking for a free way to spend the evening after you eat, the Wolf Den always has live music with no cover charge, which is a great way to enjoy the property without spending extra. Are you and your husband planning to stay for a few days, or are you just here for a quick visit?",
+      "sources": [
+        {
+          "category": "restaurants",
+          "source": "mohegan_sun.json",
+          "score": 0.656
+        }
+      ],
+      "elapsed_ms": 33908,
+      "error": null
+    },
+    {
+      "turn_index": 2,
+      "user_message": "What about after dinner? Any shows tonight?",
+      "agent_response": "Linda, for tonight, the Wolf Den is exactly where you want to be. Since it is a Monday, some of our weekend venues are resting, but the Wolf Den has live music every single night, usually kicking off around 8:00 PM. The best part is there is no cover charge and no tickets needed, so you and your husband can just walk right in after your gluten-free dinner. \n\nBy the way, the Mohegan Sun Arena has some great shows coming up \u2014 I can share what's on the calendar if you're interested for a future trip.\n\nThe Wolf Den brings in everything from classic rock tribute bands to great local artists. What kind of music do you two usually enjoy most?",
+      "sources": [
+        {
+          "category": "restaurants",
+          "source": "mohegan_sun.json",
+          "score": 0.689
+        },
+        {
+          "category": "entertainment",
+          "source": "mohegan_sun.json",
+          "score": 0.687
+        }
+      ],
+      "elapsed_ms": 44100,
+      "error": null
+    }
+  ],
+  "completed": true
+}

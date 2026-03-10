@@ -1,0 +1,66 @@
+{
+  "id": "h7-02",
+  "name": "Hotel guest looking for daytime activities",
+  "source_file": "host_triangle_h7_h10_revenue.yaml",
+  "category": "host_triangle_h7_h10_revenue",
+  "behavioral_dimension": "H7_cross_selling_wallet_share",
+  "expected_behavior": "Builds a full day arc: morning at the pool, afternoon spa, shopping at The Shops, then dinner and evening entertainment. Each suggestion flows naturally from the previous one. The guest feels like the property has a full day's worth of experiences, not just a casino with a hotel attached",
+  "expected_behavioral_quality": "When a hotel guest asks about daytime activities, the agent introduces spa, dining, and entertainment as a full-day experience. The cross-sell creates a vision of a resort day, not just a list of things to do.",
+  "safety_relevant": false,
+  "turns": [
+    {
+      "turn_index": 0,
+      "user_message": "We're staying at the Sky Tower tonight. What should we do during the day?",
+      "agent_response": "The Sky Tower rooms offer some of the best views of the Thames River valley, which are particularly nice in the morning light. For your daytime plans, I'd suggest visiting the Elemis Spa in the Earth Tower. It's a short walk from your tower and opens at 9:00 AM, making it an ideal spot for a treatment if you're looking to unwind before the evening.",
+      "sources": [
+        {
+          "category": "hotel",
+          "source": "mohegan_sun.json",
+          "score": 0.692
+        },
+        {
+          "category": "amenities",
+          "source": "mohegan_sun.json",
+          "score": 0.675
+        },
+        {
+          "category": "restaurants",
+          "source": "mohegan_sun.json",
+          "score": 0.673
+        }
+      ],
+      "elapsed_ms": 37671,
+      "error": null
+    },
+    {
+      "turn_index": 1,
+      "user_message": "The spa sounds nice. Anything else before dinner?",
+      "agent_response": "The Shops at Mohegan Sun are a great way to spend your afternoon, featuring over 40 retail options ranging from fashion to unique gifts that stay open until 9:00 PM. If you want to lean into the wellness side of things, the Mandara Spa has a wonderful relaxation lounge and sauna inspired by Balinese traditions that you can enjoy until 8:00 PM. Later this afternoon, novelle opens its doors as an upscale lounge where you can grab a cocktail and enjoy the DJ as the atmosphere starts to pick up. Since it's Thursday, the Wolf Den will have live music later tonight as well \u2014 are you more interested in a high-energy lounge or a live concert environment?",
+      "sources": [],
+      "elapsed_ms": 47519,
+      "error": null
+    },
+    {
+      "turn_index": 2,
+      "user_message": "Great, and where should we eat for dinner?",
+      "agent_response": "For tonight, Ballo Italian Restaurant in the Casino of the Sky is a fantastic choice, especially since they open at 5:00 PM on Thursdays. The space is inspired by an Italian cathedral and features incredible housemade pastas and a great selection of Italian wines that pair perfectly with their contemporary dishes. It's a smart casual environment, so it feels a bit more special after a day at the spa, and I'd recommend a reservation to secure your spot. After dinner, you're just steps away from the Wolf Den if you'd like to catch some live music \u2014 will it be just the two of you for your reservation tonight?",
+      "sources": [
+        {
+          "category": "restaurants",
+          "source": "mohegan_sun.json",
+          "score": 0.642
+        },
+        {
+          "category": "faq",
+          "source": "mohegan_sun.json",
+          "score": 0.653
+        }
+      ],
+      "elapsed_ms": 23561,
+      "error": null
+    }
+  ],
+  "elapsed_ms": 108752,
+  "error": null,
+  "completed": true
+}

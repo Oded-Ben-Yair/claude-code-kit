@@ -1,0 +1,75 @@
+{
+  "scenario_id": "p4-06",
+  "scenario_name": "VIP language \u2014 assumption about premium expectations correct",
+  "category": "profiling_p4_assumptive_bridge",
+  "behavioral_dimension": "P4_assumptive_bridging",
+  "expected_behavior": "Immediately leads with the most premium options. When Soar tier is confirmed, elevates to VIP-specific benefits and access. The assumption about premium expectations was correct from the first message's language",
+  "expected_behavioral_quality": "When the guest uses VIP language ('I'm used to the best', 'premium experience'), assumes they expect top-tier recommendations and elevated service. Leads with the most exclusive options and uses a premium service register throughout.",
+  "safety_relevant": false,
+  "source_file": "profiling_p4_assumptive_bridge.yaml",
+  "thread_id": "eval-p4-06-1772993790",
+  "turns": [
+    {
+      "turn_index": 0,
+      "user_message": "I want the best dinner experience you've got",
+      "agent_response": "For the ultimate dining experience tonight, Tao Asian Bistro & Lounge is visually spectacular and my top recommendation. The dramatic, stylish ambiance sets an incredible mood the second you walk in, and the quality of their sushi and dim sum is exceptional. It is located right in the Casino of the Sky and is open until 11:00 PM tonight. \n\nPro tip \u2014 pay close attention to their signature cocktail menu, as the drinks are meticulously crafted to pair perfectly with the pan-Asian flavors. \n\nAre you leaning more toward an energetic, stylish vibe like Tao, or were you picturing a classic, elegant steakhouse for tonight?",
+      "sources": [
+        {
+          "category": "restaurants",
+          "source": "mohegan_sun.json",
+          "score": 0.65
+        },
+        {
+          "category": "entertainment",
+          "source": "mohegan_sun.json",
+          "score": 0.645
+        },
+        {
+          "category": "promotions",
+          "source": "mohegan_sun.json",
+          "score": 0.65
+        }
+      ],
+      "elapsed_ms": 60449,
+      "error": null
+    },
+    {
+      "turn_index": 1,
+      "user_message": "That's more like it. We're Soar tier members.",
+      "agent_response": "Being at the Soar tier means you receive our highest level of VIP treatment, which includes priority restaurant seating and personalized service through your dedicated host. \n\nWhether you choose the vibrant energy of Tao or the classic elegance of Michael Jordan's, your Momentum status ensures you bypass the standard Sunday evening wait. I've got you covered on the dining details, and when you are ready, I can connect you directly with the VIP host team to finalize your table arrangements. As Soar members, that status also carries over after dinner with priority access to lounges and VIP seating at the Wolf Den.\n\nTo help tailor the rest of your evening, are you celebrating a special occasion tonight?",
+      "sources": [
+        {
+          "category": "promotions",
+          "source": "mohegan_sun.json",
+          "score": 0.74
+        },
+        {
+          "category": "faq",
+          "source": "mohegan_sun.json",
+          "score": 0.628
+        },
+        {
+          "category": "hotel",
+          "source": "mohegan_sun.json",
+          "score": 0.627
+        },
+        {
+          "category": "property",
+          "source": "mohegan_sun.json",
+          "score": 0.632
+        }
+      ],
+      "elapsed_ms": 72670,
+      "error": null
+    },
+    {
+      "turn_index": 2,
+      "user_message": "What else is available at our level?",
+      "agent_response": "The Soar tier is our highest, invitation-only level. It includes full VIP treatment, a dedicated host, personalized service, complimentary valet, room upgrades, and exclusive access to events and amenities. You also have access to our VIP high-limit gaming areas for table games and slots, which feature premium drink service. \n\nTo review your specific account balance, available comps, or targeted offers, I recommend speaking directly with your dedicated host or visiting the Momentum desk, as they can look up your individual account details. \n\nAfter your dinner at Tao or Michael Jordan's, your tier status provides excellent access to our upscale nightlife, such as novelle, our ultra lounge featuring craft cocktails and DJ entertainment. \n\nHow many are in your party tonight, and what name should I use to help the host team prepare your reservation?",
+      "sources": [],
+      "elapsed_ms": 59596,
+      "error": null
+    }
+  ],
+  "completed": true
+}
